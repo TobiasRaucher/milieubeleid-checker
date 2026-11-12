@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:01:28Z",
+ "bijgewerkt": "2026-11-12T20:02:08Z",
  "debatten": [
   {
    "id": "246687",
@@ -1533,6 +1533,91 @@
    },
    "bron": "https://gehoord.de/beraadslagingen/197151",
    "video": "https://debatdirect.tweedekamer.nl/2026-09-08/klimaat/thorbeckezaal/circulaire-economie-voortzetting-tweede-termijn-18-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "21982",
+   "datum": "2026-04-09",
+   "type": "Tweeminutendebat",
+   "commissie": "Plenaire vergadering",
+   "titel": "Tweeminutendebat Klimaatbeleid gebouwde omgeving (CD 25/3)",
+   "dossiers": [
+    "huishoudens-warmte"
+   ],
+   "bewindspersoon": "Minister Boekholt-O'Sullivan (Volkshuisvesting en Ruimtelijke Ordening)",
+   "activiteit": "2026A02614",
+   "aanzet": "Afronding van het commissiedebat Klimaatbeleid gebouwde omgeving van 25 maart 2026, waarin fracties moties konden indienen. Het debat viel midden in de energieprijsschok door de spanningen in het Midden-Oosten.",
+   "gist": "Zestien moties over warmtepompen, isolatie, warmtenetten, VvE's en zonnepanelen. De minister ontraadde de PVV-motie om de hybride warmtepomp voor bestaande bouw niet te verplichten, maar beloofde in de uitwerking goed naar haalbaarheid te kijken; ook een tijdelijke terugkeer van de gasaansluitplicht voor nieuwbouw ontraadde ze. Moties voor een isolatieoffensief met voorrang voor wijken met energiearmoede, meerjarige zekerheid voor warmtenetten, een sterkere collectieve isolatieaanpak en collectieve financiering van warmtenetten kregen oordeel Kamer. SP-moties voor compensatie na het afschaffen van de salderingsregeling werden ontraden (geen dekking).",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PVV",
+      "spreker": "Jeremy Mooiman",
+      "positie": "Vijf moties: hybride warmtepomp voor bestaande bouw niet verplichten (ontraden), landelijke oplossing voor knelpunten bij spouwmuurisolatie door natuurregels (oordeel Kamer), ruimtelijke belemmeringen voor gasgestookte noodopwek wegnemen (oordeel Kamer), onderzoek naar tijdelijke terugkeer van de gasaansluitplicht voor nieuwbouw (ontraden), en circulariteitsdoelen mogen woningbouw niet belemmeren (oordeel Kamer).",
+      "link": "https://gehoord.de/beraadslagingen/21982?segment=14308"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Motie (met CDA) om de collectieve, ontzorgende aanpak van woningisolatie te versterken via standaardisatie, opschaling en afspraken met grote verhuurders en VvE's; en een motie om bij de nieuwe Europese rekenmethode voor CO2 over de levenscyclus van gebouwen de beleidskeuzes vooraf aan de Kamer voor te leggen. Beide oordeel Kamer.",
+      "link": "https://gehoord.de/beraadslagingen/21982?segment=14353"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Robin van Leijen",
+      "positie": "Motie (met ChristenUnie) om voor- en nadelen van collectieve financiering van de aanleg van warmtenetten in kaart te brengen, net als bij het elektriciteitsnet. Oordeel Kamer.",
+      "link": "https://gehoord.de/beraadslagingen/21982?segment=14393"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Moties (met Kröger) voor een grootschalig isolatieoffensief met voorrang voor wijken met de meeste energiearmoede, en voor de zomer meerjarige helderheid over financiering van warmtenetten. Beide oordeel Kamer. Volgens de ChristenUnie bestaat het isolatieoffensief al; volgens PRO ontbreekt het geld na 2030.",
+      "link": "https://gehoord.de/beraadslagingen/21982?segment=14416"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Jurgen Nobel",
+      "positie": "Motie om lokale bovenwettelijke duurzaamheidseisen aan te pakken zodat modulair bouwen sneller kan. Na aanpassing richting strengere handhaving oordeel Kamer.",
+      "link": "https://gehoord.de/beraadslagingen/21982?segment=14482"
+     },
+     {
+      "fractie": "FVD",
+      "spreker": "Tom Russcher",
+      "positie": "Twee moties om bestaande verzwaarde meerderheden in VvE's te respecteren bij verduurzamingsbesluiten. Ontijdig (eerst internetconsultatie).",
+      "link": "https://gehoord.de/beraadslagingen/21982?segment=14504"
+     },
+     {
+      "fractie": "SP",
+      "spreker": "Sandra Beckerman",
+      "positie": "Moties voor een plan om zonnepanelen rendabel te houden na het afschaffen van de salderingsregeling (1 januari 2027), eenmalige compensatie voor huurders met zonnepanelen, en per direct tijdelijk lagere energiebelasting. De eerste twee ontraden, de derde ontijdig (wachten op crisisbesluiten).",
+      "link": "https://gehoord.de/beraadslagingen/21982?segment=14536"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Hanneke Steen",
+      "positie": "De 1,6 miljard euro voor gemeenten blijft grotendeels liggen; het isolatieprogramma zit op ongeveer 80.000 woningen terwijl het doel 750.000 in 2030 is. Steunt de motie van Grinwis en wil eenvoudigere regels.",
+      "link": "https://gehoord.de/beraadslagingen/21982?segment=14565"
+     }
+    ],
+    "kabinet": [
+     "De normering van de hybride warmtepomp blijft (coalitieakkoord), maar de minister kijkt in de uitwerking nadrukkelijk naar betaalbaarheid voor alle huishoudens.",
+     "Blijven verwarmen op aardgas is volgens de minister niet toekomstbestendig; netcongestie moet op een andere manier worden opgelost.",
+     "De minister erkent dat het afschaffen van de saldering vertrouwen schaadt, maar ziet geen budget voor compensatie; de zorg neemt ze mee in het isolatieoffensief."
+    ],
+    "toezeggingen": [
+     "In de uitwerking van de warmtepompnormering nadrukkelijk kijken naar haalbaarheid voor huishoudens (aan Mooiman)."
+    ],
+    "doorgeleid": [],
+    "moties": "Zestien moties. Oordeel Kamer: o.a. isolatieoffensief met voorrang voor energiearmoede en meerjarige zekerheid warmtenetten (PRO), collectieve isolatieaanpak en levenscyclusmethode (ChristenUnie), collectieve financiering warmtenetten (D66), spouwmuurisolatie, gasgestookte noodopwek en circulariteit (PVV), bovenwettelijke eisen (VVD, na aanpassing). Ontraden: geen verplichte hybride warmtepomp en gasaansluitplicht (PVV), compensatie saldering (SP). Ontijdig: VvE-moties (FVD) en tijdelijk lagere energiebelasting (SP). De uitslagen van de stemmingen staan niet in dit overzicht.",
+    "vervolg": [
+     "Internetconsultatie over VvE-besluitvorming.",
+     "Commissiedebat Klimaatbeleid gebouwde omgeving (14 en 29 oktober 2026)."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/21982",
+   "video": "https://debatdirect.tweedekamer.nl/2026-04-09/huisvesting/plenaire-zaal/tweeminutendebat-klimaatbeleid-gebouwde-omgeving-cd-25-3-10-15",
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
