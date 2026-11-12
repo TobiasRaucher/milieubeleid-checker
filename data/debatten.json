@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:21:24Z",
+ "bijgewerkt": "2026-11-12T20:22:48Z",
  "debatten": [
   {
    "id": "246687",
@@ -2671,6 +2671,102 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/100110"
+  },
+  {
+   "id": "78280",
+   "datum": "2026-05-27",
+   "type": "Plenair debat (wetgeving)",
+   "commissie": "Plenaire vergadering",
+   "titel": "Wijziging Kernenergiewet voor bedrijfsduurverlenging kerncentrale Borssele (27 mei en 9 juni)",
+   "dossiers": [
+    "36847",
+    "kernenergie"
+   ],
+   "bewindspersoon": "Staatssecretaris De Bat (KGG)",
+   "activiteit": "2026A03081",
+   "extraActiviteiten": [
+    "2026A04318"
+   ],
+   "video": "https://debatdirect.tweedekamer.nl/2026-05-27/natuur-en-milieu/plenaire-zaal/wijziging-van-de-kernenergiewet-ten-behoeve-van-bedrijfsduurverlenging-van-kerncentrale-borssele-36847-10-45",
+   "aanzet": "Plenaire behandeling van wetsvoorstel 36847, dat de wettelijke sluitingsdatum van 31 december 2033 voor kerncentrale Borssele uit artikel 15a van de Kernenergiewet schrapt, zodat de exploitant EPZ een langere bedrijfsduur kan aanvragen. De eerste termijn van de Kamer was op 27 mei; het antwoord van de staatssecretaris en de tweede termijn volgden op 9 juni (transcript: https://gehoord.de/beraadslagingen/108643).",
+   "gist": "Een ruime meerderheid (VVD, JA21, PVV, SGP, D66, CDA, FVD, BBB) steunde het schrappen van de einddatum: Borssele levert al sinds 1973 vrijwel CO2-vrije stroom en de wet maakt alleen een vergunningaanvraag mogelijk, met toetsing door de ANVS. PRO noemde het 'een blanco cheque', omdat kosten, de overname van de aandelen in EPZ en de veiligheid nog onbekend zijn, en vroeg om een kosten-batenanalyse tegenover zon, wind en opslag. D66 en PRO maakten punt van de afhankelijkheid van een Russische dienstverlener in de splijtstofketen; volgens de staatssecretaris is daar nog geen alternatief voor, maar wordt aan afbouw gewerkt. De D66-motie om die afhankelijkheid zo snel mogelijk af te bouwen kreeg (na wijziging) oordeel Kamer; PRO-moties over de Borsselse voorwaarden en een volledig kostenplaatje vooraf heetten overbodig. De Tweede Kamer nam de wet op 16 juni aan (124 voor, 26 tegen).",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Tegen: 'een blanco cheque' van een minderheidskabinet, terwijl onbekend is wat het kost, wie betaalt en of het veilig is. Wijst op kostenoverschrijdingen bij Hinkley Point en Flamanville en vraagt om een kosten-batenanalyse, een maximumbedrag en duidelijkheid over overname, afval en ontmanteling. Stelt dat 36 van de 42 Borsselse voorwaarden expliciet over bedrijfsduurverlenging gaan, anders dan de staatssecretaris schreef. Moties daarover en over een volledig kostenplaatje vooraf (overbodig) en een motie die EPZ onder meer om een analyse van geopolitieke risico's vraagt (ontraden).",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=60431"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "'Gooi niet weg wat goed werkt': de wet haalt een politieke blokkade weg die er volgens JA21 kwam omdat 'emotie boven feiten' ging. Borssele kan mogelijk tot 2053 bijdragen. Diende moties in over onder meer innovatieve nucleaire technologie (een motie over de routekaart werd aangehouden).",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=60679"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Kernenergie is een onmisbaar fundament; steunt de wet 'vol overtuiging' en vraagt naar de onderhandelingen over de aandelen in EPZ en naar snellere vergunningverlening voor SMR's en voldoende capaciteit bij de ANVS.",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=60791"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Alexander Kops",
+      "positie": "Steunt de verlenging en wil nieuwe centrales, ook kleine reactoren. Vraagt of de ANVS bij een wijzigingsaanvraag alles opnieuw moet toetsen; volgens de staatssecretaris is geen volledig nieuwe toets nodig, maar moet de veiligheid bij langere bedrijfsduur worden aangetoond.",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=60816"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Blij met de wet, met Duitsland als afschrikwekkend voorbeeld van de 'Atomausstieg'. Vraagt om snelle duidelijkheid voor EPZ en een onderhandelaarsakkoord over de regionale publieke aandelen voor de zomer. Stelt dat geen enkele energievorm vrij is van afhankelijkheid van lastige regimes.",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=60871"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Steunt de verlenging ('het sluiten van een veilige kerncentrale is onverantwoord'), maar wil af van de afhankelijkheid van een Russische onderaannemer in de splijtstofketen. Moties: die afhankelijkheid zo snel mogelijk afbouwen en uiterlijk eind 2027 rapporteren (oordeel Kamer na wijziging), en een motie over Europese sancties.",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=60931"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Voor: klimaatdoelen en leveringszekerheid vragen een mix van zon, wind en kernenergie. De wet volgt een motie uit 2020 en betekent niet dat Borssele automatisch open blijft.",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=61010"
+     },
+     {
+      "fractie": "FVD",
+      "spreker": "Peter van Duijvenvoorde",
+      "positie": "Steunt de wet; FVD wil de klimaatneutraliteitsambitie van tafel, maar ziet kernenergie als basis van het energiesysteem in plaats van wind en zon.",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=61029"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Henk Vermeer",
+      "positie": "In de basis positief; kernenergie is 'de basis'. Wil wel scherp kijken naar hoe het gebeurt, omdat de echte afweging over veiligheid, milieu en kosten later komt, en vraagt naar het convenant met EPZ en naar ontmantelingsgaranties bij zon en wind.",
+      "link": "https://gehoord.de/beraadslagingen/78280?segment=61107"
+     }
+    ],
+    "kabinet": [
+     "De wet schrapt alleen het jaartal; een besluit over verlenging volgt pas na haalbaarheidsstudies, een vergunningaanvraag door EPZ en toetsing door de onafhankelijke ANVS.",
+     "Volgens een TNO-studie (oktober 2025) leidt een energiesysteem met kernenergie tot vergelijkbare kosten als zonder.",
+     "Over de overname van de aandelen in EPZ wordt onderhandeld op basis van de huidige bedrijfsduur; daarna wordt bezien of het convenant moet worden aangepast.",
+     "Voor de Russische dienstverlening in de splijtstofketen is nog geen alternatief; het kabinet zet de zoektocht naar afbouw voort."
+    ],
+    "toezeggingen": [
+     "Brief over ontmanteling en afval van zon- en windparken (richting Vermeer).",
+     "Brief over de routekaart kernenergie voor het commissiedebat van 2 juli."
+    ],
+    "moties": "Twaalf moties. Oordeel Kamer: onder meer de motie-Klos over afbouw van de Russische afhankelijkheid in de splijtstofketen (na wijziging), een motie-Müller over de ANVS (met uitleg) en moties 5 tot en met 8 en 12. Overbodig: twee moties-Van Oosterhout (Borsselse voorwaarden; volledig kostenplaatje vooraf). Ontraden: de derde motie-Van Oosterhout, die van vergunninghouder EPZ onder meer een analyse van geopolitieke risico's vraagt. Aangehouden: een motie-Van den Berg over de routekaart.",
+    "vervolg": [
+     "Aangenomen door de Tweede Kamer op 16 juni 2026 (124 voor, 26 tegen); verdere behandeling in de Eerste Kamer.",
+     "Onderhandelingen over overname van de aandelen in EPZ."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/78280"
   }
  ]
 }
