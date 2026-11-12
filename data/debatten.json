@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:20:07Z",
+ "bijgewerkt": "2026-11-12T20:21:24Z",
  "debatten": [
   {
    "id": "246687",
@@ -2588,6 +2588,89 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/170397"
+  },
+  {
+   "id": "100110",
+   "datum": "2026-06-04",
+   "type": "Commissiedebat",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Gasmarkt en leveringszekerheid (met tweeminutendebat 30 juni)",
+   "dossiers": [
+    "gas-leveringszekerheid",
+    "elektriciteitsnet"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
+   "activiteit": "2026A02321",
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-04/klimaat/wttewaall-van-stoetwegenzaal/gasmarkt-en-leveringszekerheid-13-00",
+   "aanzet": "Commissiedebat over de gasmarkt en leveringszekerheid in een jaar waarin de Straat van Hormuz dicht ging, gasprijzen sterk stegen en de Nederlandse gasopslagen bijna leeg aan het vulseizoen begonnen (16,9% begin juni tegen 39% een jaar eerder, volgens de VVD). Op 30 juni volgde het tweeminutendebat met moties (transcript: https://gehoord.de/beraadslagingen/161652).",
+   "gist": "Alle fracties maakten zich zorgen over de lage vulgraad; marktpartijen kochten nauwelijks in door de hoge prijzen, zodat EBN met extra werkkapitaal moest bijspringen. Volgens de minister is de leveringszekerheid voor huishoudens geborgd, maar is 'alertheid' gepast. Er is nu een noodvoorraad van 5 TWh in Alkmaar; over een grotere strategische reserve wordt na de zomer besloten in de brief strategisch gasbeleid (samen met het Nationaal Plan Energiesysteem), waarbij de minister ook het gebruik van gas dat nog in Norg zit niet uitsloot. JA21 wilde langetermijncontracten en behoud van gasopslagen, PRO een routekaart voor afbouw van fossiel en CO2 als criterium in het capaciteitsmechanisme, CDA vroeg waarom Norg en Grijpskerk leeg zijn opgeleverd. In het tweeminutendebat kregen JA21-moties over langetermijncontracten en een NOGAT-verbinding en PRO-moties over een fossiele afbouwroutekaart en CO2 in de capaciteitsmarkt oordeel Kamer; een JA21-motie over gasopslagen als strategische reserve (met heroverweging van Groningen) werd ontraden.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Vraagt tempo met de strategische gasvisie en een deel van het kussengas als strategische reserve. Volgens experts drijven verplichte vulgraden de prijs op; de SGP wil de markt zijn werk laten doen naast een strategische voorraad buiten de markt. Vraagt hoe stroomuitval in de regio Rotterdam vanaf 2028 wordt voorkomen als gascentrales sluiten, en naar fysieke beveiliging van het energienet.",
+      "link": "https://gehoord.de/beraadslagingen/100110?segment=76964"
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "spreker": "Hidde Heutink",
+      "positie": "Steunt werkkapitaal voor EBN om de opslagen te vullen, maar vreest dat EBN het dure gas later met verlies moet verkopen, ten koste van de belastingbetaler. Motie in het tweeminutendebat om dat te voorkomen (volgens de minister overbodig).",
+      "link": "https://gehoord.de/beraadslagingen/100110?segment=77030"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Leveringszekerheid is geen vanzelfsprekendheid meer; vraagt naar de 'ladder' van maatregelen bij schaarste en pleit voor fysieke langetermijncontracten (ook voor olie en kritieke grondstoffen). Moties: langetermijncontracten meenemen in strategisch gasbeleid (oordeel Kamer), een 'strategisch gasakkoord' om gasopslagen als reserve te behouden (ontraden; ook vroeg hij gaswinning in Groningen in een oorlogsscenario te overwegen, waartoe de minister niet bereid is) en onderzoek naar een NOGAT-verbinding met Europipe 1 (oordeel Kamer).",
+      "link": "https://gehoord.de/beraadslagingen/100110?segment=77106"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Fossiel is niet stabiel of goedkoop: Europa betaalt na de sluiting van de Straat van Hormuz meer dan een kwart miljard euro per dag extra voor import. Vraagt welke ingrepen de minister overweegt als vuldoelen in gevaar komen, en hoe extreem weer de infrastructuur bedreigt. Kritisch over afzwakking van de methaanverordening.",
+      "link": "https://gehoord.de/beraadslagingen/100110?segment=77152"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Echte leveringszekerheid begint bij energieonafhankelijkheid: wil weerbaarheid en afbouwdoelen voor olie en gas in het Nationaal Plan Energiesysteem, en wijst erop dat de afhankelijkheid van Russisch gas is ingeruild voor Amerikaans LNG. Moties: CO2-uitstoot als wegingsfactor in de capaciteitsmarkt (oordeel Kamer, binnen de technologieneutraliteit van de richtlijn) en een zo concreet mogelijke routekaart voor afbouw van fossiel in het NPE (oordeel Kamer).",
+      "link": "https://gehoord.de/beraadslagingen/100110?segment=77263"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Vraagt waarom de gasopslagen Norg en Grijpskerk in april leeg zijn opgeleverd toen GasTerra stopte, of de staat (50% aandeelhouder van GasTerra) het werkgas had kunnen overnemen, en of het capaciteitsmechanisme breed naar opties kijkt, inclusief biomassa.",
+      "link": "https://gehoord.de/beraadslagingen/100110?segment=77321"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Noemt de vulgraad alarmerend en vraagt naar de verwachting voor het vulseizoen, de samenwerking met EBN en een plan B; wil voor de zomer een update. Verdedigt de inzet op een uitvoerbare methaanverordening. Motie om de IKC-regeling ook open te stellen voor raffinaderijen (aangehouden tot de verduurzamingsbrief van september).",
+      "link": "https://gehoord.de/beraadslagingen/100110?segment=77387"
+     }
+    ],
+    "kabinet": [
+     "Onderscheid tussen lange termijn (strategisch gasbeleid, brief na de zomer samen met het NPE) en korte termijn (vullen van de opslagen voor deze winter).",
+     "De noodvoorraad van 5 TWh in Alkmaar is bedoeld om bij een fysiek tekort gebruikers gecontroleerd af te schakelen zodat beschermde afnemers geleverd blijven; een grotere strategische reserve kost veel geld, dat uiteindelijk bij bedrijven en huishoudens terechtkomt, en vraagt Europese coördinatie.",
+     "Het capaciteitsmechanisme voor leveringszekerheid van elektriciteit moet volgens de Europese regels technologieneutraal zijn.",
+     "Over het leeg opleveren van Norg en Grijpskerk: ook bij overname zou de marktprijs zijn betaald; de minister wil wel lessen trekken voor een volgende keer."
+    ],
+    "toezeggingen": [
+     "Het PwC-rapport over strategisch gasbeleid voor het zomerreces naar de Kamer.",
+     "Voor de zomer een update over het vullen van de gasopslagen (richting Müller).",
+     "Brief strategisch gasbeleid rond Prinsjesdag, samen met het Nationaal Plan Energiesysteem.",
+     "Voorbeelden uit Frankrijk en België meenemen in het ontwerp van het capaciteitsmechanisme."
+    ],
+    "moties": "Tweeminutendebat 30 juni, zeven moties. Oordeel Kamer: Van den Berg (langetermijncontracten; NOGAT-verbinding), Van Oosterhout (CO2 in capaciteitsmarkt, binnen de richtlijn; routekaart afbouw fossiel in NPE). Ontraden: Van den Berg (strategisch gasakkoord met behoud van opslagen). Overbodig: Heutink (verliezen EBN). Aangehouden: Müller (IKC voor raffinage).",
+    "vervolg": [
+     "Brief strategisch gasbeleid en Nationaal Plan Energiesysteem rond Prinsjesdag.",
+     "Verduurzamingsbrief industrie in september, met de afweging over IKC voor raffinaderijen."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/100110"
   }
  ]
 }
