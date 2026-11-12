@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:23:44Z",
+ "bijgewerkt": "2026-11-12T20:27:26Z",
  "debatten": [
   {
    "id": "246687",
@@ -2858,6 +2858,209 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/92208"
+  },
+  {
+   "id": "111618",
+   "datum": "2026-06-10",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "PBL-rapport 'Het ETS2 en de gevolgen voor Nederlandse huishoudens'",
+   "niveau": "kort",
+   "dossiers": [
+    "klimaatbeleid",
+    "internationaal-eu",
+    "huishoudens-warmte"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A04171",
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-10/klimaat/klompezaal/pbl-rapport-het-ets2-en-de-gevolgen-voor-nederlandse-huishoudens-14-30",
+   "deskundigen": [
+    {
+     "naam": "Jaco Stremler",
+     "organisatie": "Planbureau voor de Leefomgeving"
+    },
+    {
+     "naam": "Roel van der Veen",
+     "organisatie": "Planbureau voor de Leefomgeving"
+    },
+    {
+     "naam": "Gerben Kuilenkluger",
+     "organisatie": "Planbureau voor de Leefomgeving"
+    }
+   ],
+   "aanzet": "Toelichting door het PBL op zijn rapport over het Europese emissiehandelssysteem voor gebouwen en wegvervoer (ETS2) en wat dat betekent voor de energierekening en brandstofkosten van huishoudens.",
+   "gist": "Volgens het PBL start het ETS2 in 2028 en geldt het voor de uitstoot van gebouwen en wegvervoer; Nederland heeft ongeveer 4,5 procent van de Europese emissies onder dit systeem. Bij een CO2-prijs tussen 57 en 135 euro per ton in 2030 betalen huishoudens volgens het PBL gemiddeld 10 tot 70 euro per maand meer, ongeveer 10 tot 24 cent per kuub gas en 14 tot 35 cent per liter brandstof. Nederland ontvangt naar verwachting zo'n 960 miljoen euro uit het Europese Sociaal Klimaatfonds. Het PBL adviseert flankerend beleid voor kwetsbare huishoudens en noemt opties als een teruggave aan burgers ('klimaatgeld', zoals in Duitsland, Oostenrijk en Zwitserland) en een prijscorridor of koppeling met de energiebelasting. Kamerleden van onder meer VVD, D66, ChristenUnie en PRO vroegen naar de spreiding van de lasten, de inzet van de opbrengsten en de verhouding tot de energiebelasting.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/111618"
+  },
+  {
+   "id": "147248",
+   "datum": "2026-06-24",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Ontwerpbesluit Besluit collectieve warmte",
+   "niveau": "kort",
+   "dossiers": [
+    "36576",
+    "huishoudens-warmte"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A05055",
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-24/klimaat/klompezaal/ontwerpbesluit-besluit-collectieve-warmte-14-00",
+   "deskundigen": [
+    {
+     "naam": "Reinier Koppelaar",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Geert Olthuis",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Ewa Mendys",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Erica Hasper",
+     "organisatie": "Ministerie van KGG"
+    }
+   ],
+   "aanzet": "Ambtelijke toelichting op het ontwerp van het Besluit collectieve warmte, de belangrijkste uitvoeringsregels onder de Wet collectieve warmte, dat bij de Kamer is voorgehangen.",
+   "gist": "De ambtenaren lichtten toe dat de voorhangprocedure loopt; volgens de planning gaat het besluit voor de zomer naar de Raad van State en treedt het op 1 januari 2027 in werking. In de eerste fase blijft het tarief gekoppeld aan een gasreferentie; kostengebaseerde tarieven volgen rond 2030/2031, na benchmarks door de ACM. Bij de aanwijzing van warmtekavels zijn eerst gemeenten aan zet, waarna de ACM de gereguleerde tarieven bepaalt. BBB vroeg vooral naar het verdere proces in de Kamer (schriftelijk overleg en de mogelijkheid om het kabinet te vragen geen onomkeerbare stappen te zetten), PRO (toen GL-PvdA) of de overgang naar kostengebaseerde tarieven sneller of parallel kan, en VVD en CDA naar de kosten voor huurders, verhuurders en woningcorporaties.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Schriftelijk overleg over het ontwerpbesluit; daarna advies van de Raad van State."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/147248"
+  },
+  {
+   "id": "3445",
+   "datum": "2026-04-01",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "De verwachte gevolgen van de ontwikkelingen in Iran op de energieprijzen",
+   "niveau": "kort",
+   "dossiers": [
+    "gas-leveringszekerheid",
+    "huishoudens-warmte"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A02309",
+   "video": "https://debatdirect.tweedekamer.nl/2026-04-01/bestuur/troelstrazaal/de-verwachte-gevolgen-van-de-ontwikkelingen-in-iran-op-de-energieprijzen-14-00",
+   "deskundigen": [
+    {
+     "naam": "Sybe Noordermeer",
+     "organisatie": "Rijksoverheid (ministeries EZ en KGG)"
+    },
+    {
+     "naam": "Camiel Schuijren",
+     "organisatie": "Rijksoverheid (ministeries EZ en KGG)"
+    },
+    {
+     "naam": "Mirthe Kuenen",
+     "organisatie": "Rijksoverheid (ministeries EZ en KGG)"
+    },
+    {
+     "naam": "Maaike Bouwhuis",
+     "organisatie": "Rijksoverheid (ministeries EZ en KGG)"
+    },
+    {
+     "naam": "Jan van der Voet",
+     "organisatie": "Rijksoverheid (ministeries EZ en KGG)"
+    },
+    {
+     "naam": "Martijn Haring",
+     "organisatie": "Rijksoverheid (ministeries EZ en KGG)"
+    }
+   ],
+   "aanzet": "Ambtelijke briefing over de gevolgen van het conflict rond Iran (en de verstoring van de aanvoer via de Straat van Hormuz) voor de prijzen van olie, gas en stroom in Nederland.",
+   "gist": "Volgens de ambtenaren gaat het om een forse prijsschok, al liggen de prijzen nog onder het niveau van 2022: kerosine was ongeveer 166 procent duurder, diesel 83 procent en ruwe olie 79 procent. De gemiddelde energierekening van een huishouden blijft volgens de ramingen onder de 2000 euro per jaar, maar energie-intensieve sectoren worden hard geraakt; uit de evaluatie van 2022 blijkt volgens het ministerie dat gerichte maatregelen effectiever zijn dan generieke. Kamerleden vroegen onder meer naar raffinagecapaciteit en diversificatie van LNG-import (VVD), scenario's en het effect van het afschaffen van salderen (CDA), de meest doelmatige steun voor huishoudens en de nettarieven (D66), afhankelijkheid van Amerikaans LNG en versnelde besparing (PRO, toen GL-PvdA) en de gevolgen voor kunstmest en voedselproductie (BBB; het ministerie zegde toe dit bij LVVN na te gaan).",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/3445"
+  },
+  {
+   "id": "54907",
+   "datum": "2026-05-13",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Leveringszekerheid",
+   "niveau": "kort",
+   "dossiers": [
+    "gas-leveringszekerheid",
+    "elektriciteitsnet"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A02992",
+   "video": "https://debatdirect.tweedekamer.nl/2026-05-13/klimaat/wttewaall-van-stoetwegenzaal/leveringszekerheid-15-30",
+   "deskundigen": [
+    {
+     "naam": "IJmert Muilwijk",
+     "organisatie": "Energie-Nederland"
+    },
+    {
+     "naam": "René Peters",
+     "organisatie": "TNO"
+    },
+    {
+     "naam": "Jeroen Zanting",
+     "organisatie": "Gasunie"
+    },
+    {
+     "naam": "Nicolien Vrisou van Eck",
+     "organisatie": "EBN"
+    },
+    {
+     "naam": "Remco de Boer",
+     "organisatie": "Studio Energie"
+    },
+    {
+     "naam": "Kornelis Blok",
+     "organisatie": "Wetenschappelijke Klimaatraad"
+    },
+    {
+     "naam": "Louise van Schaik",
+     "organisatie": "Clingendael"
+    }
+   ],
+   "aanzet": "Briefing in drie blokken over de leveringszekerheid van gas en elektriciteit, tegen de achtergrond van de grotere importafhankelijkheid sinds de sluiting van het Groningenveld en de geopolitieke spanningen.",
+   "gist": "Volgens TNO en Energie-Nederland is het Nederlandse gassysteem fundamenteel veranderd van exporteur naar importeur, en zitten er nog zeker 100 miljard kuub in kleine velden die onder meer om economische en vergunningsredenen moeizaam worden ontwikkeld; Energie-Nederland pleitte ook voor snelle invoering van een capaciteitsmarkt om gascentrales beschikbaar te houden. Gasunie en EBN waarschuwden dat de gasopslagen met de huidige vulsnelheid niet op tijd vol raken en dat ingrijpen binnen enkele weken nodig is; Gasunie riep op om voor de zomer te besluiten over een strategische gasvoorraad (waarvan winning van kussengas een onderdeel kan zijn), en EBN adviseerde 10 tot 20 procent van de import met langjarige contracten vast te leggen. Studio Energie vond dat leveringszekerheid en betaalbaarheid te lang ondergeschikt zijn geweest en pleitte voor meer eigen winning en het achter de hand houden van Groningen. In het derde blok wezen de Wetenschappelijke Klimaatraad en Clingendael op geopolitieke afhankelijkheden, vraagbeperking en flexibiliteit (zoals variabele tarieven), cyberrisico's en het energieverbruik van defensie, en op de kosten die leveringszekerheid met zich meebrengt. Kamerleden van JA21, PRO (toen GL-PvdA; onder meer over energiebesparing en de risico's van kleine velden in Friesland), CDA (regie op de gasopslag), VVD, D66 (Russisch LNG) en BBB stelden vragen.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/54907"
   }
  ]
 }
