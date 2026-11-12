@@ -334,3 +334,9 @@ li.tz { padding: 14px 0; }
 .nieuw-lijst { margin-top: 8px; }
 .nieuw-lijst li { padding: 6px 0; }
 .nieuw-uitleg { margin: 10px 0 0; }
+/* per fractie */
+a.chip { text-decoration: none; }
+.themastem li { display: grid; grid-template-columns: 220px minmax(0, 1fr) 110px; gap: 12px; align-items: center; }
+.themastem .balk { height: 10px; background: var(--neutraal); border-radius: 5px; overflow: hidden; }
+.themastem .balk span { display: block; height: 100%; background: var(--voor); }
+@media (max-width: 640px) { .themastem li { grid-template-columns: 1fr; gap: 4px; } }

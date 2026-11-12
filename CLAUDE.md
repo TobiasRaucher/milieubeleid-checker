@@ -59,6 +59,8 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 - Agendafeed: `pipeline/maak_ics.py` schrijft `data/agenda.ics` (geplande en recente activiteiten plus mijlpalen met vaste datum); de Action draait hem na de data-update. Abonneerknop op de Agenda-pagina.
 - Toezeggingen (`#toezeggingen`, subtab van Vergaderingen): uit het toezeggingenregister van de Kamer (`data/tk/toezeggingen.json`, door de pipeline opgehaald; alleen bij gevolgde activiteiten plus ministeries in `toezeggingen.altijdMinisteries`). Voor samengevatte vergaderingen zonder registratie toont de site de toezeggingen uit de samenvatting. Los bijwerken: `python3 pipeline/fetch_tk.py --toezeggingen`.
 - "Nieuw sinds je vorige bezoek" (Overzicht en gele labels): bijgehouden in localStorage van de bezoeker; telt samenvattingen (`samengevatOp`), stemmingen, stukken, toezeggingen en dossierstappen vanaf de dag van het vorige bezoek. Zet `samengevatOp` dus altijd op de datum van samenvatten.
+- Per fractie (`#fracties`, subtab van Vergaderingen): inbreng uit samenvattingen, ingediende moties en amendementen (eerste indiener) en stemgedrag, alfabetisch en voor alle fracties gelijk opgebouwd. GroenLinks-PvdA telt mee bij PRO (alias in `FRACTIE_ALIAS` in app.js).
+- Moties bij vergaderingen: gekoppeld op datum (dag zelf of dag ervoor) plus Kamerstukdossier op de agenda; tweeminutendebat "X (CD d/m)" aan commissiedebat X.
 - To-do (Tobias, nov 2026): eigen themafilter op Wetgeving, Moties, Stukken en Agenda; de algemene sectorfilter is verwijderd.
 
 ## Ontwerp

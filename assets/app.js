@@ -133,7 +133,7 @@
       a.classList.toggle("active", a.dataset.tab === navTab);
       if (a.dataset.tab === navTab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
-    const views = { overzicht, wetgeving, moties, vergaderingen, toezeggingen, stukken, agenda, over, zoeken };
+    const views = { overzicht, wetgeving, moties, vergaderingen, toezeggingen, fracties, stukken, agenda, over, zoeken };
     if (tab !== "agenda") S.agendaGescrold = false;
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
     $("#view").innerHTML = (views[tab] || overzicht)();
@@ -842,6 +842,76 @@
     tq.addEventListener("input", () => { S.tf.q = tq.value; clearTimeout(S._tqt); S._tqt = setTimeout(() => { renderToezeggingen(); const n = $("#tq"); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }, 200); });
   }
 
+  /* ---------- Per fractie ---------- */
+  // Alle fracties krijgen dezelfde opbouw en staan alfabetisch. GroenLinks-PvdA is voortgezet als PRO en telt daarom mee bij PRO.
+  const FRACTIE_ALIAS = { "GroenLinks-PvdA": "PRO", "GL-PvdA": "PRO", "GroenLinks": "PRO", "PvdA": "PRO" };
+  const fractieNaam = (f) => { const n = String(f || "").replace(/\s*\(.*\)\s*$/, "").replace(/^Lid\s+/i, "").trim(); return FRACTIE_ALIAS[n] || n; };
+  let _fr = null;
+  function fractieData() {
+    if (_fr) return _fr;
+    const fr = new Map();
+    const get = (n) => { if (!fr.has(n)) fr.set(n, { naam: n, inbreng: [], ingediend: [], mede: [], stemmen: [] }); return fr.get(n); };
+    for (const d of S.data.debatten) for (const p of (d.samenvatting || {}).partijen || []) { const n = fractieNaam(p.fractie); if (n) get(n).inbreng.push({ d, p }); }
+    for (const z of S.data.zaken) {
+      if (z.soort !== "Motie" && z.soort !== "Amendement") continue;
+      for (const i of z.indieners || []) { const n = fractieNaam(i.fractie); if (!n) continue; (/^indiener/i.test(i.relatie || "") ? get(n).ingediend : get(n).mede).push(z); }
+      const b = [...(z.besluiten || [])].reverse().find((x) => x.stemmen && x.stemmen.length);
+      if (!b) continue;
+      const per = new Map();
+      for (const st of b.stemmen) { const n = fractieNaam(st.fractie); if (!n) continue; if (!per.has(n)) per.set(n, { Voor: 0, Tegen: 0 }); if (st.soort in per.get(n)) per.get(n)[st.soort]++; }
+      for (const [n, t] of per) if (t.Voor + t.Tegen) get(n).stemmen.push({ z, voor: t.Voor >= t.Tegen });
+    }
+    // alleen fracties die deze Kamerperiode echt actief zijn (stemmen of inbreng)
+    const lijst = [...fr.values()].filter((f) => f.stemmen.length >= 25 || f.inbreng.length).map((f) => ({ ...f, ingediend: uniek(f.ingediend), mede: uniek(f.mede) }))
+      .sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+    return (_fr = lijst);
+  }
+  function fracties() {
+    const p = new URLSearchParams(location.hash.split("?")[1] || "");
+    const keuze = p.get("f") || "";
+    const thema = p.get("thema") || "";
+    const lijst = fractieData();
+    const pct = (a, b) => (b ? Math.round((100 * a) / b) + "%" : "–");
+    const kies = `<div class="filters" role="group" aria-label="Kies een fractie">${lijst.map((f) => `<a class="chip" href="#fracties?f=${encodeURIComponent(f.naam)}${thema ? "&thema=" + thema : ""}" aria-pressed="${f.naam === keuze}" ${f.naam === keuze ? 'aria-current="page"' : ""}>${esc(f.naam)}</a>`).join("")}</div>`;
+    const themaKeuze = (basis) => `<div class="filterkeuzes"><label class="label" for="fthema">Thema</label><select id="fthema" onchange="location.hash='${basis}'+(this.value?'&thema='+this.value:'')">
+      <option value="">Alle thema's</option>${S.T.lijst.map((t) => `<option value="${t.id}" ${t.id === thema ? "selected" : ""}>${esc(t.naam)}</option>`).join("")}</select></div>`;
+    const zaakThemas = (z) => themasVanTekst(korteTitel(z), z.sectoren);
+    const inThema = (ids) => !thema || ids.includes(thema);
+    const intro = `${subnav("fracties")}<h2>Per fractie</h2>
+      <p class="muted small">Wat elke fractie inbracht in de samengevatte vergaderingen, welke moties en amendementen ze indiende en hoe ze stemde over de moties en amendementen op milieuradar. Alle fracties krijgen dezelfde opbouw en staan op alfabet. PRO is de voortzetting van GroenLinks-PvdA; die worden samen geteld. Stemmen over moties zeggen niet alles: een fractie kan om uiteenlopende redenen voor of tegen stemmen.</p>
+      ${kies}`;
+    if (!keuze) {
+      return `${intro}${themaKeuze("#fracties?")}
+        <div class="tablewrap"><table><thead><tr><th>Fractie</th><th>Inbreng in samengevatte vergaderingen</th><th>Moties en amendementen ingediend (eerste indiener)</th><th>Daarvan aangenomen</th><th>Stemde voor (van de moties en amendementen waarover gestemd is)</th></tr></thead><tbody>
+        ${lijst.map((f) => {
+          const inb = f.inbreng.filter(({ d }) => inThema(themasVanDebat(d)));
+          const ing = f.ingediend.filter((z) => inThema(zaakThemas(z)));
+          const st = f.stemmen.filter(({ z }) => inThema(zaakThemas(z)));
+          return `<tr><td><a href="#fracties?f=${encodeURIComponent(f.naam)}${thema ? "&thema=" + thema : ""}"><b>${esc(f.naam)}</b></a></td><td>${inb.length}</td><td>${ing.length}</td><td>${ing.filter((z) => z.uitslag === "aangenomen").length} (${pct(ing.filter((z) => z.uitslag === "aangenomen").length, ing.filter((z) => ["aangenomen", "verworpen"].includes(z.uitslag)).length)})</td><td>${st.filter((s) => s.voor).length} van ${st.length} (${pct(st.filter((s) => s.voor).length, st.length)})</td></tr>`;
+        }).join("")}
+        </tbody></table></div>`;
+    }
+    const f = lijst.find((x) => x.naam === keuze);
+    if (!f) return `${intro}<p class="empty">Onbekende fractie.</p>`;
+    const inb = f.inbreng.filter(({ d }) => inThema(themasVanDebat(d))).sort((a, b) => b.d.datum.localeCompare(a.d.datum));
+    const ing = f.ingediend.filter((z) => inThema(zaakThemas(z))).sort((a, b) => (b.gestartOp || "").localeCompare(a.gestartOp || ""));
+    const st = f.stemmen.filter(({ z }) => inThema(zaakThemas(z)));
+    const perThema = S.T.lijst.map((t) => { const l = f.stemmen.filter(({ z }) => zaakThemas(z).includes(t.id)); return { t, n: l.length, voor: l.filter((s) => s.voor).length }; }).filter((x) => x.n >= 3);
+    return `${intro}${themaKeuze(`#fracties?f=${encodeURIComponent(f.naam)}`)}
+      <h2>${esc(f.naam)}</h2>
+      <div class="grid kpi">
+        <div class="card tile"><div class="num">${inb.length}</div><div class="lbl">keer inbreng in samengevatte vergaderingen</div></div>
+        <div class="card tile"><div class="num">${ing.length}</div><div class="lbl">moties en amendementen als eerste indiener, ${ing.filter((z) => z.uitslag === "aangenomen").length} aangenomen</div></div>
+        <div class="card tile"><div class="num">${pct(st.filter((s) => s.voor).length, st.length)}</div><div class="lbl">voor gestemd (${st.filter((s) => s.voor).length} van ${st.length} stemmingen)</div></div>
+      </div>
+      ${perThema.length && !thema ? `<h3 class="groepkop">Stemgedrag per thema</h3><div class="card"><ul class="list themastem">${perThema.map((x) => `<li><span class="tchip"><i style="background:${x.t.kleur}"></i>${esc(x.t.naam)}</span><span class="balk" role="img" aria-label="${x.voor} van ${x.n} voor"><span style="width:${(100 * x.voor) / x.n}%"></span></span><span class="small">${x.voor} van ${x.n} voor</span></li>`).join("")}</ul></div>` : ""}
+      <h3 class="groepkop">Inbreng in vergaderingen <span class="muted small">(${inb.length})</span></h3>
+      ${inb.length ? `<div class="card"><ul class="list">${inb.map(({ d, p }) => `<li><div class="zmeta"><span class="tag">${esc(d.type)}</span><span>${fmtDatum(d.datum)}</span><span>${esc(p.spreker || "")}</span></div>
+        <a href="#vergaderingen/d-${esc(d.id)}"><b>${esc(d.titel)}</b></a><div>${esc(p.positie)}</div>${p.link ? `<a class="small" href="${esc(p.link)}" target="_blank" rel="noopener">Terugluisteren →</a>` : ""}</li>`).join("")}</ul></div>` : `<p class="empty">Geen inbreng in samengevatte vergaderingen${thema ? " over dit thema" : ""}.</p>`}
+      <h3 class="groepkop">Ingediende moties en amendementen <span class="muted small">(${ing.length})</span></h3>
+      ${ing.length ? `<div class="card"><ul class="motielijst">${ing.slice(0, 80).map((z) => `<li>${uitslagPill(z.uitslag)} <span class="tag">${esc(z.soort)}</span> <a href="${esc(z.link)}" target="_blank" rel="noopener">${esc(korteTitel(z))}</a> <span class="small muted">${fmtDatum(z.gestartOp)}</span></li>`).join("")}</ul>${ing.length > 80 ? `<p class="small muted">En ${ing.length - 80} meer; zie <a href="#moties">Moties</a>.</p>` : ""}</div>` : `<p class="empty">Geen moties of amendementen als eerste indiener${thema ? " over dit thema" : ""}.</p>`}`;
+  }
+
   /* ---------- Agenda (tijdlijn) ---------- */
   const isDatum = (d) => /^\d{4}-\d{2}-\d{2}$/.test(d || "");
   function maandagVan(dag) { const d = new Date(dag + "T12:00:00"); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return dagNL(d); }
@@ -1038,6 +1108,9 @@ ${uit.typeFilter ? ` Alleen <b>${esc(uit.typeFilter)}</b>, omdat dat woord in je
           <li><b>Automatisch:</b> een script haalt moties, amendementen, stemmingen, activiteiten en stukken van ministeries (Kamerbrieven en antwoorden op Kamervragen) op uit de <a href="https://opendata.tweedekamer.nl">open data van de Tweede Kamer</a>. Daar komt geen AI aan te pas.</li>
           <li><b>Samenvattingen:</b> debatten worden door Claude samengevat op basis van automatische transcripten van <a href="https://gehoord.de/beraadslagingen">gehoord.de</a>. Die transcripten zijn niet door mensen gecorrigeerd en sprekers kunnen er soms een paar seconden naast zitten. Gebruik de links om na te luisteren en citeer de Handelingen.</li>
           <li><b>Wetgevingsdossiers</b> worden handmatig bijgehouden met bronvermelding.</li>
+          <li><b>Toezeggingen</b> komen uit het toezeggingenregister van de Tweede Kamer; voor recente vergaderingen die daar nog niet in staan uit onze samenvatting.</li>
+          <li><b>Thema's</b> worden automatisch toegekend op basis van trefwoorden in titels en agendapunten, en bij samenvattingen met de hand gecontroleerd. Moties worden aan een vergadering gekoppeld als de datum en het Kamerstukdossier overeenkomen; bij twijfel niet.</li>
+          <li><b>Privacy:</b> de site gebruikt geen cookies of tracking. "Nieuw sinds je vorige bezoek" wordt alleen in je eigen browser onthouden.</li>
         </ul>
         <h3>Status</h3>
         <dl class="facts"><dt>Kamerdata</dt><dd>${m.bijgewerkt ? fmtDatum(m.bijgewerkt) : "nog niet opgehaald"} (${m.aantalZaken ?? 0} zaken, ${m.aantalActiviteiten ?? 0} activiteiten, ${m.aantalStukken ?? 0} stukken van ministeries)</dd>
