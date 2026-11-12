@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:27:26Z",
+ "bijgewerkt": "2026-11-12T20:32:11Z",
  "debatten": [
   {
    "id": "246687",
@@ -3061,6 +3061,164 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/54907"
+  },
+  {
+   "id": "128207",
+   "datum": "2026-06-17",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Wet jaarverplichting hernieuwbare brandstoffen van niet-biologische oorsprong in de industrie (technische briefing en rondetafelgesprek)",
+   "niveau": "kort",
+   "dossiers": [
+    "36936",
+    "industrie",
+    "hernieuwbaar"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A03946",
+   "extraActiviteiten": [
+    "2026A03947"
+   ],
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-17/economie/wttewaall-van-stoetwegenzaal/technische-briefing-wet-jaarverplichting-hernieuwbare-brandstoffen-van-niet-biologische-oorsprong-in-de-industrie-13-00",
+   "deskundigen": [
+    {
+     "naam": "Maarten Neelis",
+     "organisatie": "Ministerie, directie Verduurzaming Industrie"
+    },
+    {
+     "naam": "Brigitte Blijdorp",
+     "organisatie": "Ministerie, directie Verduurzaming Industrie"
+    },
+    {
+     "naam": "Kirstine Schiebel",
+     "organisatie": "Nederlandse Emissieautoriteit"
+    },
+    {
+     "naam": "Hans Grünfeld",
+     "organisatie": "VEMW (rondetafelgesprek)"
+    },
+    {
+     "naam": "Lijs Groenendaal",
+     "organisatie": "NLHydrogen (rondetafelgesprek)"
+    },
+    {
+     "naam": "Gijsbrecht Gunter",
+     "organisatie": "Yara (rondetafelgesprek)"
+    },
+    {
+     "naam": "Cor Leguijt",
+     "organisatie": "CE Delft (rondetafelgesprek)"
+    },
+    {
+     "naam": "Olof van der Gaag",
+     "organisatie": "NVDE (rondetafelgesprek)"
+    }
+   ],
+   "aanzet": "Voorbereiding op de behandeling van het wetsvoorstel dat de industrie verplicht een groeiend aandeel hernieuwbare waterstof (RFNBO's) te gebruiken, ter uitvoering van de Europese richtlijn hernieuwbare energie (RED III). 's Middags volgde een rondetafelgesprek met de sector.",
+   "gist": "Volgens het ministerie moet Nederland op grond van RED III zorgen dat in 2030 minstens 42 procent en in 2035 minstens 60 procent van de waterstof in de industrie hernieuwbaar is; de Nederlandse industrie is na de Duitse de grootste waterstofgebruiker in de EU. Het wetsvoorstel legt een jaarverplichting op bedrijfsniveau met verhandelbare rechten, een ingroeipad van 4 procent (in de consultatie lag 8 en 24 procent voor), flexibiliteit (doorschuiven en sparen, tijdelijke versoepeling van de inboekeisen zolang de infrastructuur ontbreekt) en een uitzondering van 60 procent voor ammoniakproductie, waarvan onzeker is of de Europese Commissie die accepteert; de NEa houdt toezicht en er is geen afkoopmogelijkheid. Op vragen van D66 bleek dat het CO2-effect niet is berekend, en op vragen van PRO (toen GL-PvdA) dat de keuze tussen opties om het doel alsnog te halen een politieke afweging is. In het rondetafelgesprek zeiden NLHydrogen en CE Delft dat een verplichting nodig is naast subsidies (zonder verplichting worden investeringen volgens NLHydrogen afgeschaald), vonden VEMW en Yara het doel niet realistisch en wezen zij op de kosten (volgens Yara circa 35 miljoen euro per procentpunt) en de concurrentiepositie, en pleitte de NVDE voor vraagcreatie in eindmarkten, zoals een oplopend aandeel groen staal in auto's.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/128207"
+  },
+  {
+   "id": "147232",
+   "datum": "2026-06-24",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Wet bijmengverplichting groen gas (technische briefing en rondetafelgesprek)",
+   "niveau": "kort",
+   "dossiers": [
+    "36947",
+    "gas-leveringszekerheid",
+    "huishoudens-warmte"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A04207",
+   "extraActiviteiten": [
+    "2026A04208"
+   ],
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-24/klimaat/thorbeckezaal/wet-bijmengverplichting-groen-gas-10-00",
+   "deskundigen": [
+    {
+     "naam": "Caroline Kollau",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Lotte Visser",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Menno ten Holder",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Jan Wouter Langenberg",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Kirstine Schiebel",
+     "organisatie": "Nederlandse Emissieautoriteit"
+    },
+    {
+     "naam": "Ilona Bruens",
+     "organisatie": "Vertogas (rondetafelgesprek)"
+    },
+    {
+     "naam": "Hans Coenen",
+     "organisatie": "Gasunie (rondetafelgesprek)"
+    },
+    {
+     "naam": "Olof van der Gaag",
+     "organisatie": "NVDE (rondetafelgesprek)"
+    },
+    {
+     "naam": "Erwin Haveman",
+     "organisatie": "LTO Nederland (rondetafelgesprek)"
+    },
+    {
+     "naam": "Ruud Paap",
+     "organisatie": "groengassector (rondetafelgesprek)"
+    },
+    {
+     "naam": "Karsten Klein",
+     "organisatie": "Vereniging Eigen Huis (rondetafelgesprek)"
+    },
+    {
+     "naam": "IJmert Muilwijk",
+     "organisatie": "Energie-Nederland (rondetafelgesprek)"
+    },
+    {
+     "naam": "Cor Leguijt",
+     "organisatie": "CE Delft (rondetafelgesprek)"
+    },
+    {
+     "naam": "Adri Bom",
+     "organisatie": "Glastuinbouw Nederland (rondetafelgesprek)"
+    }
+   ],
+   "aanzet": "Voorbereiding op de behandeling van het wetsvoorstel dat gasleveranciers verplicht een oplopend aandeel groen gas bij te mengen, met een ambtelijke briefing en aansluitend een rondetafelgesprek in drie blokken (uitvoering en toezicht, productie en vergunningverlening, kosten en eindgebruikers).",
+   "gist": "Volgens het ministerie stuurt de verplichting op ketenemissiereductie, oplopend van 0,6 megaton in 2027 tot circa 2,9 megaton per jaar vanaf 2031 (ongeveer 1 tot 6 procent van het gasverbruik in de ETS2-sectoren); leveranciers voldoen met verhandelbare groengaseenheden, kunnen beperkt sparen en hebben een afkoopmogelijkheid (buy-out) die in feite een maximumprijs vormt. Bij de afkoopprijs uit de concept-AMvB (450 euro per ton) kost het een huishouden met 1000 kuub gas in 2031 maximaal circa 90 euro per jaar (ongeveer 4,5 procent van de rekening); beoogde inwerkingtreding is 1 januari 2027, met een evaluatie rond 2029. JA21 vroeg naar de stapeling met ETS2 en nettarieven en het frauderisico bij buitenlands groen gas, VVD naar voldoende aanbod en een doel voor 2040, en CDA naar vergunningverlening door de stikstofproblematiek. In het rondetafelgesprek steunden Energie-Nederland, Gasunie, de NVDE, CE Delft en de groengassector de verplichting (met de vraag om langjarige zekerheid, ook na 2035, en oplossingen voor stikstofvergunningen), terwijl Vereniging Eigen Huis en Glastuinbouw Nederland het voorstel in deze vorm afwezen vanwege de stapeling van kosten voor huishoudens en telers, en LTO wees op voorwaarden om productie in eigen land te laten plaatsvinden.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Wetgevingsoverleg over het wetsvoorstel (zie de samenvatting van het WGO groen gas)."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/147232"
   }
  ]
 }
