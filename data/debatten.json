@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T19:46:23Z",
+ "bijgewerkt": "2026-11-12T19:49:44Z",
  "debatten": [
   {
    "id": "246687",
@@ -430,6 +430,179 @@
    },
    "bron": "https://gehoord.de/beraadslagingen/253480",
    "video": "https://debatdirect.tweedekamer.nl/2026-10-01/klimaat/troelstrazaal/rondetafelgesprek-advies-nationaal-burgerberaad-klimaat-10-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "317767",
+   "datum": "2026-11-04",
+   "type": "Plenair debat (wetgeving)",
+   "commissie": "Plenaire vergadering",
+   "titel": "Begroting Klimaat en Groene Groei 2027: eerste termijn Kamer",
+   "dossiers": [
+    "begroting",
+    "klimaatbeleid"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer en staatssecretaris De Bat (KGG)",
+   "activiteit": "2026A05417",
+   "aanzet": "Jaarlijkse behandeling van de begroting van het ministerie van Klimaat en Groene Groei (37 020-XXIII) en het Klimaat- en Energiefonds. Op 4 november spraken de fracties in eerste termijn; het kabinet antwoordde op 5 november. Het debat stond in het teken van de hoge gasprijs en energierekening, de positie van de industrie en de KEV-conclusie dat het klimaatdoel voor 2030 niet wordt gehaald.",
+   "gist": "De oppositie ter linkerzijde (PRO, PvdD) verwijt het kabinet stilstand en 'fossiele' keuzes, zoals het schrappen van de CO2-heffing en geld voor Shell en Total; D66 verdedigt de investeringen in wind op zee en schone energie. Een grote groep fracties (PVV, SP, DENK, JA21, BBB, Keijzer) maakt de hoge energierekening tot hoofdpunt en vraagt om lagere energiebelasting of btw, of een prijsplafond. VVD, CDA, ChristenUnie, SGP en JA21 waarschuwen voor het verdwijnen van de industrie en vragen lagere energiekosten, voorspelbaar beleid en oplossingen voor netcongestie; VVD en CDA willen eerst het Europese 2040-pakket afwachten. FVD ontkent dat er een klimaatprobleem is.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PRO",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Vraagt 'waar is Rob Jetten?': PBL meldt voor het derde jaar stilstand en de Raad van State hekelt gebrek aan actie, terwijl volgens PRO fossiele subsidies terugkomen, de CO2-heffing wordt geschrapt en geld naar een project van Shell en Total gaat. Stelt dat er geld voor duurzame energie is weggehaald voor belastingverlaging. Vraagt wat het kabinet in het aangekondigde 'groene voorjaar' gaat doen nu er vrijwel geen vrije ruimte meer is in het Klimaatfonds; wil voorwaarden bij steun aan de industrie.",
+      "link": "https://gehoord.de/beraadslagingen/317767?segment=242248"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Ziet een 'revolutie van schone energie' en verdedigt de begroting met grote investeringen in wind op zee, energiebesparing en netcongestie. Stelt dat het kabinet herstelt wat het vorige kabinet afzwakte. Pleit voor social leasing van warmtepompen, balkonzonnepanelen en snellere uitrol van kleine kerncentrales (SMR's); wil overwinstbelasting op Europees niveau regelen.",
+      "link": "https://gehoord.de/beraadslagingen/317767?segment=242522"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Dion Huidekooper",
+      "positie": "Waarschuwt voor afhankelijkheid van China bij kritieke grondstoffen, vergelijkbaar met de afhankelijkheid van Russisch gas. Wil inzetten op urban mining en recycling, met de rijksoverheid als eerste afnemer (launching customer) van gerecyclede materialen.",
+      "link": "https://gehoord.de/beraadslagingen/317767?segment=242800"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Alexander Kops",
+      "positie": "Hekelt miljarden voor SDE++ en wind op zee terwijl er 'geen rooie cent' is voor een lagere energierekening, behalve een noodfonds. Wijst op stijgende gasprijzen en groeiende (verborgen) energiearmoede; wil de btw op energie naar 9% en geen warmtepompplicht.",
+      "link": "https://gehoord.de/beraadslagingen/317767?segment=242877"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Wil dat het kabinet economie, weerbaarheid en klimaat zichtbaar afweegt en ook voor economie en weerbaarheid meetbare doelen stelt. Prioriteiten: netcongestie oplossen, industrie behouden en verduurzamen (met CCS zoals Aramis) en een betrouwbaar energiesysteem met kleine kerncentrales. Wil eerst het Europese pakket afwachten voordat over extra nationale maatregelen wordt besloten.",
+      "link": "https://gehoord.de/beraadslagingen/317767?segment=242906"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Breekt een lans voor de industrie: volgens een RVO-rapport kwam 80% van de emissiedaling bij onderzochte bedrijven door sluiting en minder productie. Wil lagere energiekosten en nettarieven voor bedrijven, minder ambitie voor wind en meer gaswinning; steunt de begroting niet zonder beweging op die punten.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243225"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Verduurzaming en economische groei gaan samen (verwijst naar CBS-cijfers). Wil klimaatbeleid dat ook opbouwt: innovatie, een sterke industrie, kernenergie en een weerbaar energiesysteem. Vraagt bij nieuwe maatregelen uitvoerbaarheid en betaalbaarheid te borgen en wil duidelijkheid over het capaciteitsmechanisme.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243331"
+     },
+     {
+      "fractie": "SP",
+      "spreker": "Jimmy Dijk",
+      "positie": "Wil mensen nu helpen met de energierekening: btw op energie naar 9%, een permanent energieplafond en een belasting op overwinsten. Las brieven voor van mensen die hun verwarming uitzetten. Kritisch op kernenergie vanwege onbetaalde afvalkosten.",
+      "link": "https://gehoord.de/beraadslagingen/317767?segment=242349"
+     },
+     {
+      "fractie": "PvdD",
+      "spreker": "Christine Teunissen",
+      "positie": "Noemt het een fossiele begroting: CO2-heffing geschrapt, miljarden voor de grootste vervuilers, accijnsverlaging op diesel en geld voor kernenergie die te laat komt. Wil een economie binnen planetaire grenzen in plaats van ongebreidelde groei, en overwinsten van oliebedrijven ook nationaal aanpakken.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243720"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Waarschuwt dat de basischemie dreigt te verdwijnen en vraagt inzicht in de kostenstapeling voor de industrie. Wil voorspelbaar beleid en duidelijkheid over geld voor woningisolatie en warmtenetten na 2030. Wil dat EBN gas over meerdere jaren kan opslaan.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243770"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "De industrie staat op een kruispunt door de stapeling van heffingen en netkosten. Vraagt waarom de elektriciteitsenvelop voorwaarden stelt (50% investeren in efficiëntie en elektrificatie), wil uitbreiding van de flexregeling tegen netcongestie, steun voor ijzerpoedertechnologie, diepe geothermie en kleine kerncentrales.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243694"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Henk Vermeer",
+      "positie": "Energiebeleid moet beginnen bij leveringszekerheid, betaalbaarheid en draagvlak in plaats van hogere ambities. Vraagt wat de investeringen in netcongestie concreet opleveren per provincie en wil dat de systeemkosten (netverzwaring, opslag, back-up) worden meegerekend bij wind en zon. Vroeg aandacht voor de warmteproblemen in Transvaal.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243841"
+     },
+     {
+      "fractie": "DENK",
+      "spreker": "Ismail el Abassi",
+      "positie": "Meer dan 500.000 huishoudens leven in energiearmoede. Meer dan de helft van de gasprijs bestaat uit belastingen; vraagt tijdelijk lagere energiebelasting of een gericht prijsplafond en een wettelijke betaalbaarheidstoets.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243688"
+     },
+     {
+      "fractie": "Volt",
+      "spreker": "Laurens Dassen",
+      "positie": "Vraagt blijvende financiering van het onderzoek naar de verzwakking van de Atlantische golfstroom (AMOC) en steun voor de circulaire schaalsprong; wijst op hitteslachtoffers en de noodzaak schone lucht en biodiversiteit te beschermen.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243903"
+     },
+     {
+      "fractie": "FVD",
+      "spreker": "Gideon van Meijeren",
+      "positie": "Stelt dat er geen klimaatprobleem is en dat klimaatverandering vooral natuurlijk is. Wil al het klimaatbeleid schrappen; ziet in slimme meters en elektrificatie een middel voor overheidscontrole.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243538"
+     },
+     {
+      "fractie": "Lid Keijzer",
+      "spreker": "Mona Keijzer",
+      "positie": "Vindt dat de transitie te snel gaat, ondernemers het land verlaten en mensen hun energierekening niet kunnen betalen voor een volgens haar verwaarloosbaar klimaateffect. Fel tegen windturbines ('terreurturbines') en voor ruimere afstandsnormen.",
+      "link": "https://gehoord.de/beraadslagingen/317776?segment=243951"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "doorgeleid": [
+     "Informatieverzoek van Van den Berg (JA21) over de voorwaarden van de elektriciteitsprijsenvelop."
+    ],
+    "moties": "In eerste termijn zijn nog geen moties ingediend; zie het antwoord van het kabinet en de tweede termijn op 5 november.",
+    "vervolg": [
+     "Antwoord kabinet en tweede termijn op 5 november 2026.",
+     "Stemming over de begroting en amendementen."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/317767",
+   "video": "https://debatdirect.tweedekamer.nl/2026-11-04/klimaat/plenaire-zaal/begroting-klimaat-en-groene-groei-37-020-xxiii-1e-tk-10-15",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "322999",
+   "datum": "2026-11-05",
+   "type": "Plenair debat (wetgeving)",
+   "commissie": "Plenaire vergadering",
+   "titel": "Begroting Klimaat en Groene Groei 2027: antwoord kabinet en tweede termijn",
+   "dossiers": [
+    "begroting",
+    "klimaatbeleid"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer en staatssecretaris De Bat (KGG)",
+   "activiteit": "2026A07995",
+   "aanzet": "Vervolg van de begrotingsbehandeling: het kabinet beantwoordde de vragen uit de eerste termijn van 4 november, daarna dienden de fracties in tweede termijn moties in en gaf het kabinet een oordeel over moties en amendementen.",
+   "gist": "De minister zet in op weerbaarheid, concurrentievermogen en grip op de energierekening, en noemt 1,3 miljard euro voor offshore CO2-opslag voor de industrie, een locatiebesluit over twee nieuwe kerncentrales vóór het eind van het jaar en een capaciteitsmechanisme. Ze erkent dat meer nodig is en verwijst voor extra klimaatbeleid naar het voorjaar en het Europese beleid. Van de 37 moties bij de begroting werden er 26 aangenomen, onder meer over SMR-locaties, netcongestie, balkonzonnepanelen, het uitsluiten van Groningen als locatie voor grote kerncentrales en geen steun voor BECCS met houtige biomassa. Moties voor lagere btw op energie, een energieplafond, een overwinstbelasting en een klimaatpakket voor 2040 haalden het niet.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [
+     "Het kabinet trekt 1,3 miljard euro uit voor offshore CO2-opslag, zodat industrie die (nog) niet kan elektrificeren haar uitstoot kan verminderen. Ook werkt het aan de waterstofinfrastructuur en aan afspraken met grote stroomafnemers bij aanlandpunten van wind op zee.",
+     "Vóór het eind van het jaar volgt een locatiebesluit over twee nieuwe grote kerncentrales (verwacht rond 2040 in bedrijf); daarom komt er ook een capaciteitsmechanisme voor momenten zonder zon en wind.",
+     "Het kabinet erkent dat meer klimaatbeleid nodig is en spreekt de komende maanden met partijen over extra maatregelen, waarbij het Europees beleid wordt gevolgd en benut.",
+     "Over de importafhankelijkheid van gas: inzet op energiebesparing, overstap van gas naar elektriciteit en diversificatie van leveranciers (meer lng-capaciteit).",
+     "Het amendement om het geld voor de maatwerkafspraak met Tata Steel te schrappen (PvdD) is ontraden: de middelen zijn nodig voor die afspraak."
+    ],
+    "toezeggingen": [
+     "In december een brief over onder meer de garantieregeling warmtenetten; de regeling gaat in het eerste halfjaar van 2027 open (minister, aan Van Oosterhout).",
+     "Samen met VNO-NCW kijken naar de knelpunten die de industrie heeft aangedragen (minister, genoemd door Müller).",
+     "In gesprek gaan over de opbouw van de brede netkosten en hoe daarop te sturen is (minister).",
+     "Vóór het eind van het jaar uitzoeken hoe bedrijven die nu vastlopen alsnog in bestaande regelingen passen (staatssecretaris, aan Jumelet)."
+    ],
+    "doorgeleid": [],
+    "moties": "Aangenomen o.a.: SMR-locatieverkenningen en snellere uitrol (VVD, D66), datadeling en mkb-projecten tegen netcongestie (VVD), inzicht in netbelasting bij aansluitstops en meerjarige gasopslag via EBN (ChristenUnie), impactanalyse en borgen van uitvoerbaarheid en betaalbaarheid bij nieuwe klimaatmaatregelen en contouren van het capaciteitsmechanisme vóór het voorjaar (CDA), onderzoek naar varianten om nettarieven te dempen en een planning voor compensatie van industriële elektriciteitskosten (JA21), Groningen uitsluiten als locatie voor grote nieuwe kerncentrales (PRO), geen publieke steun voor BECCS op basis van houtige biomassa (PvdD), kader voor balkonzonnepanelen en social leasing van warmtepompen (D66), AMOC-onderzoek financieren tot en met 2033 (Volt), opex-subsidie ijzerpoeder en capex-subsidie diepe geothermie (SGP), steun uit het Noodfonds Energie voor huishoudens in verborgen energiearmoede (PVV). Verworpen o.a.: btw op energie naar 9% (PVV en SP), permanent energieplafond en overwinstbelasting (SP), lagere belastingen op gas en een betaalbaarheidstoets (DENK), maatregelen bij de Voorjaarsnota om het 2040-doel te halen (PRO), klimaatdoelen voor de landbouw (PvdD). Over de amendementen wordt gestemd bij de eindstemming over de begroting.",
+    "vervolg": [
+     "Locatiebesluit twee nieuwe kerncentrales (eind 2026).",
+     "Brief in december over de garantieregeling warmtenetten.",
+     "Voorjaarsbesluitvorming 2027 over aanvullend klimaatbeleid."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/322999",
+   "video": "https://debatdirect.tweedekamer.nl/2026-11-05/klimaat/plenaire-zaal/begroting-klimaat-en-groene-groei-37-020-xxiii-voortzetting-16-00",
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
