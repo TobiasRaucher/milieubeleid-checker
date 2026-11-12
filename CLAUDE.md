@@ -67,6 +67,16 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 
 - Huisstijl (nov 2026): "milieuradar" in kleine letters, DM Sans, groene merkkleur, rood als alarmkleur (vandaag, eerstvolgend), alleen licht thema. Alle kleuren en vormen staan als ontwerpknoppen bovenaan `assets/style.css`; sectorkleuren als `--s-<sectorcode>` (gelijke helderheid en verzadiging).
 - Het vooruitzicht-blok op Overzicht is een placeholder; Tobias beslist later of het een echte functie wordt.
+- Verfijning volgens Apple-ontwerpprincipes (nov 2026):
+  - directe feedback bij indrukken (`--duur-druk`);
+  - kritisch gedempte "veer" voor beweging (`--veer`, `--duur-veer`), zonder doorschieten;
+  - doorschijnende kop met een rand die pas verschijnt als er inhoud onder schuift;
+  - popovers die vanuit hun knop verschijnen;
+  - vloeiend uitklappen van samenvattingen;
+  - tracking en regelafstand per tekstgrootte;
+  - ondersteuning voor minder beweging, minder transparantie en meer contrast.
+
+  Houd nieuwe onderdelen in die lijn.
 
 ## Zoekfunctie
 

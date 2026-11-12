@@ -40,6 +40,11 @@
   --s-circulair-vervuiling: #865db0;
   --s-ruimte-mobiliteit: #008489;
 
+  /* Beweging: kritisch gedempte "veer" (geen doorschieten), zoals Apple als standaard gebruikt */
+  --veer: cubic-bezier(0.22, 0.9, 0.24, 1);
+  --duur-veer: 340ms;
+  --duur-druk: 100ms;
+
   /* Vorm */
   --radius: 18px;                /* afronding van kaarten (0 = strak, 24px = zacht) */
   --radius-klein: 8px;           /* afronding van labels en knoppen */
@@ -53,7 +58,7 @@
 /* ===================== einde ontwerpknoppen ===================== */
 
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--page); color: var(--ink); line-height: 1.5; font-size: var(--tekstgrootte); }
+body { margin: 0; background: var(--page); color: var(--ink); line-height: 1.55; font-size: var(--tekstgrootte); font-optical-sizing: auto; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
 h1, h2, h3, h4 { font-family: var(--font-kop); font-weight: var(--kop-gewicht); }
 a { color: var(--accent); }
 a:hover { text-decoration-thickness: 2px; }
@@ -158,12 +163,15 @@ tr.detail td { background: var(--surface); }
 .debat .links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; }
 .debat .toggle { margin-top: 12px; background: none; border: 1px solid var(--line); border-radius: 999px; min-height: 40px; padding: 6px 16px; font: inherit; font-size: 14px; color: var(--ink); cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
 .debat .toggle:hover { background: var(--surface); }
-.debat .toggle .pijltje { transition: transform .15s; }
+.debat .toggle .pijltje { transition: transform var(--duur-veer) var(--veer); display: inline-block; }
 .debat.open .toggle .pijltje { transform: rotate(180deg); }
 .debat .toggle .opn, .debat.open .toggle .dicht { display: none; }
 .debat.open .toggle .opn { display: inline; }
-.debat .body { display: none; margin-top: 14px; border-top: 1px solid var(--line); }
-.debat.open .body { display: block; }
+/* uitklappen: hoogte veert mee vanaf de huidige stand (CSS-overgang is onderbreekbaar en keert om vanaf waar hij is) */
+.debat .body-wrap { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--duur-veer) var(--veer), visibility 0s linear var(--duur-veer); visibility: hidden; }
+.debat.open .body-wrap { grid-template-rows: 1fr; visibility: visible; transition: grid-template-rows var(--duur-veer) var(--veer), visibility 0s; }
+.debat .body { min-height: 0; overflow: hidden; }
+.debat .body > :first-child { margin-top: 14px; border-top: 1px solid var(--line); }
 .debat section { padding-top: 14px; }
 .debat h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); margin: 0 0 6px; }
 .debat h5 { font-size: 13px; margin: 0 0 4px; color: var(--ink-2); }
@@ -340,3 +348,96 @@ a.chip { text-decoration: none; }
 .themastem .balk { height: 10px; background: var(--neutraal); border-radius: 5px; overflow: hidden; }
 .themastem .balk span { display: block; height: 100%; background: var(--voor); }
 @media (max-width: 640px) { .themastem li { grid-template-columns: 1fr; gap: 4px; } }
+
+
+/* =====================================================================
+   VERFIJNING (apple-design): directe feedback, materialen, typografie
+   ===================================================================== */
+
+/* Typografie: tracking en regelafstand per grootte. Groot = strakker, klein = iets ruimer. */
+h2 { line-height: 1.25; letter-spacing: -0.012em; }
+h3 { line-height: 1.3; letter-spacing: -0.006em; }
+.debat .titelrij h3 { letter-spacing: -0.014em; line-height: 1.25; }
+.vooruitzicht .vz-kop { letter-spacing: -0.024em; line-height: 1.15; }
+.tile .num, .tl-datum .dn, .nieuw-tegel b { letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.small, .zmeta, .tl-meta, .tag, .pill, .tchip, .dchip, .badge, .chip .muted, .facet-n, .stamp { letter-spacing: 0.01em; }
+td, .n, .tl-tijd, .votelegend { font-variant-numeric: tabular-nums; }
+.tl-titel, .ztitel, .tz-tekst { text-wrap: pretty; }
+h1, h2, h3, .vz-kop { text-wrap: balance; }
+
+/* Kop: doorschijnend materiaal; inhoud schuift eronder. Rand pas zichtbaar als er iets onder schuift. */
+header.top {
+  background: rgba(255, 255, 255, 0.78);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  backdrop-filter: saturate(180%) blur(18px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+body.gescrold header.top { border-bottom-color: var(--line); box-shadow: 0 8px 20px -16px rgba(20, 35, 27, 0.35); }
+nav.tabs { background: rgba(20, 35, 27, 0.05); }
+nav.tabs a { transition: background-color 150ms ease, color 150ms ease, transform var(--duur-druk) ease-out; }
+nav.tabs a:hover:not(.active) { background: rgba(255, 255, 255, 0.7); }
+:target, .debat, .tl-dag { scroll-margin-top: 92px; }
+
+/* Directe feedback bij indrukken (pointer-down), niet pas bij loslaten */
+button, .chip, .knop, nav.tabs a, .subnav a, .facet > summary, .tchip, .dchip, .linkknop, .nieuw-tegel, .card.tile, .merk {
+  transition: transform var(--duur-druk) ease-out, background-color 150ms ease, border-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
+}
+button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .subnav a:active, .facet > summary:active, button.tchip:active, .dchip:active, .nieuw-tegel:active, .merk:active { transform: scale(0.97); }
+.card.tile:active { transform: scale(0.985); }
+.chip:hover:not(:disabled):not([aria-pressed="true"]) { background: var(--surface); }
+
+/* Popovers: komen voort uit hun knop (transform-origin) en "materialiseren" in plaats van alleen in te faden */
+.facet-menu {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  backdrop-filter: saturate(180%) blur(24px);
+  border-color: rgba(20, 35, 27, 0.1);
+  box-shadow: 0 1px 2px rgba(20, 35, 27, 0.06), 0 16px 40px -12px rgba(20, 35, 27, 0.28);
+  transform-origin: top left;
+}
+.facet-menu.rechts { transform-origin: top right; }
+.facet[open] > .facet-menu { animation: materialiseer 220ms var(--veer) both; }
+@keyframes materialiseer {
+  from { opacity: 0; transform: translateY(-4px) scale(0.96); filter: blur(2px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+.facet > summary::after { transition: transform var(--duur-veer) var(--veer); display: inline-block; }
+.facet[open] > summary::after { transform: rotate(180deg); }
+
+/* Nieuwe pagina: korte, rustige binnenkomst (alleen bij wisselen van tab) */
+#view.binnenkomst { animation: binnenkomst 260ms var(--veer) both; }
+@keyframes binnenkomst { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* Kaarten: subtiele diepte bij aanwijzen, geen verspringing */
+.card { transition: border-color 150ms ease, box-shadow 200ms ease; }
+.debat:hover, .tl-item.eerst:hover { box-shadow: 0 1px 2px rgba(20, 35, 27, 0.05), 0 8px 24px -16px rgba(20, 35, 27, 0.25); }
+
+/* Toegankelijkheid: minder beweging = kort vervagen in plaats van schuiven of schalen */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+  button:active, .chip:active, .knop:active, nav.tabs a:active, .subnav a:active, .facet > summary:active, .card.tile:active, .merk:active, .nieuw-tegel:active { transform: none !important; }
+  .debat .body-wrap, .debat.open .body-wrap { transition: none; }
+  .facet[open] > .facet-menu { animation: vervaag 120ms ease both !important; animation-duration: 120ms !important; }
+  #view.binnenkomst { animation: vervaag 150ms ease both !important; animation-duration: 150ms !important; }
+}
+@keyframes vervaag { from { opacity: 0; } to { opacity: 1; } }
+/* Minder transparantie: massieve oppervlakken */
+@media (prefers-reduced-transparency: reduce) {
+  header.top, .facet-menu { background: #fff; -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+/* Meer contrast: duidelijke randen en donkerdere grijstinten */
+@media (prefers-contrast: more) {
+  :root { --line: #9aaba0; --muted: #3f4d45; --ink-2: #2c3a32; }
+  header.top { background: #fff; border-bottom-color: var(--ink); backdrop-filter: none; }
+  .tag, .pill, .tchip, .chip { border-color: var(--ink-2); }
+}
+
+/* Telefoon: compacte tegels (twee naast elkaar) en een kop die meescrollt, zodat er meer ruimte voor inhoud is */
+@media (max-width: 640px) {
+  .grid.kpi { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .tile .num { font-size: 26px; }
+  .card.tile { padding: 12px 14px; }
+  header.top { position: relative; }
+  .vooruitzicht .vz-kop { font-size: 21px; }
+}

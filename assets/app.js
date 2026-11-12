@@ -124,6 +124,10 @@
     return s.includes(S.sector);
   }
 
+  // randeffect onder de kop: alleen als er inhoud onder schuift
+  const zetScrollRand = () => document.body.classList.toggle("gescrold", window.scrollY > 4);
+  window.addEventListener("scroll", zetScrollRand, { passive: true });
+  let _vorigeTab = null;
   function route() {
     const pad = (location.hash || "#overzicht").slice(1).split("?")[0];
     let tab = pad.split("/")[0] || "overzicht";
@@ -137,6 +141,9 @@
     if (tab !== "agenda") S.agendaGescrold = false;
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
     $("#view").innerHTML = (views[tab] || overzicht)();
+    if (tab !== _vorigeTab) { const v = $("#view"); v.classList.remove("binnenkomst"); void v.offsetWidth; v.classList.add("binnenkomst"); }
+    _vorigeTab = tab;
+    zetScrollRand();
     if (tab === "moties") bindMoties();
     if (tab === "stukken") bindStukken();
     if (tab === "zoeken") renderZoekResultaten();
@@ -465,7 +472,7 @@
         <a href="${esc(d.bron)}" target="_blank" rel="noopener">Transcript</a>
       </div>
       <button class="toggle" aria-expanded="false" aria-controls="b-${esc(d.id)}"><span class="pijltje" aria-hidden="true">▾</span><span class="dicht">Toon samenvatting</span><span class="opn">Verberg samenvatting</span></button>
-      <div class="body" id="b-${esc(d.id)}">
+      <div class="body-wrap"><div class="body" id="b-${esc(d.id)}">
         ${blok("Aanzet", d.aanzet ? `<p>${esc(d.aanzet)}</p>` : "")}
         ${blok("Agendapunten", agendapunten)}
         ${blok("Kern", `<p>${esc(d.gist)}</p>${(s.kern || []).length ? lijst(s.kern) : ""}`)}
@@ -475,7 +482,7 @@
         ${blok("Vervolg", (s.vervolg || []).length ? lijst(s.vervolg) : "")}
         ${blok("Deelnemers", deelnemers ? `<div class="deelnemers">${deelnemers}</div>` : "")}
         <div class="small muted" style="margin-top:12px">${d.niveau === "kort" ? "Korte samenvatting" : "Samengevat"} door ${esc(d.samengevatDoor)} op ${fmtDatum(d.samengevatOp)} op basis van het automatische transcript.</div>
-      </div>
+      </div></div>
     </article>`;
   }
 
@@ -670,6 +677,12 @@
       b.setAttribute("aria-expanded", kaart.classList.contains("open"));
     }));
   }
+  // Escape sluit een open filtermenu en zet de focus terug op de knop
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    const open = document.querySelector("details.facet[open]");
+    if (open) { open.open = false; S.vOpen = ""; open.querySelector("summary").focus(); }
+  });
   // klik buiten een open filtermenu sluit het
   document.addEventListener("click", (e) => {
     if (e.target.closest("details.facet")) return;
@@ -1020,7 +1033,7 @@
       const ref2 = $("#vandaag") || el.querySelector(".tl-week");
       if (ref2) window.scrollBy(0, ref2.getBoundingClientRect().top - voor);
     });
-    $("#naarvandaag").addEventListener("click", () => { const v = $("#vandaag"); if (v) v.scrollIntoView({ behavior: "smooth", block: "start" }); });
+    $("#naarvandaag").addEventListener("click", () => { const v = $("#vandaag"); if (v) v.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" }); });
   }
 
   /* ---------- Zoeken ---------- */
@@ -1131,7 +1144,7 @@ ${uit.typeFilter ? ` Alleen <b>${esc(uit.typeFilter)}</b>, omdat dat woord in je
       if (tab === "vergaderingen" && S.vf) {
         S.vf[f] = S.vf[f].includes(id) ? S.vf[f].filter((x) => x !== id) : [...S.vf[f], id];
         vfToepassen();
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
       } else if (tab === "agenda" && f === "dossier") {
         location.hash = S.agendaDossier === id ? "#agenda" : "#agenda?dossier=" + encodeURIComponent(id);
       } else if (b.tagName !== "A") {
