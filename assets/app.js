@@ -1,7 +1,8 @@
 /* Milieubeleid-checker: leest de JSON-bestanden in data/ en tekent de pagina. Geen build-stap nodig. */
 (function () {
   "use strict";
-  const S = { sector: "alle", data: null, motieFilter: { q: "", soort: "", uitslag: "", fractie: "", dossier: "" } };
+  const S = { sector: "alle", data: null, motieFilter: { q: "", soort: "", uitslag: "", fractie: "", dossier: "" },
+    dossierFilter: "", debatOrde: "nieuw", agendaOrde: "oud" };
   const $ = (sel, el = document) => el.querySelector(sel);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
@@ -129,6 +130,83 @@
   }
   function faseIndex(code) { return S.data.dossiers.fasen.findIndex((f) => f.code === code); }
 
+  /* ---------- Dossiers: koppeling van debatten en agenda aan dossiers ---------- */
+  // Een debat of agenda-item hoort bij een dossier als (1) het handmatig is gekoppeld (veld "dossiers"),
+  // (2) een van de agendastukken in een Kamerstukdossier van dat dossier zit, of (3) een zoekterm in het onderwerp staat.
+  // Eén debat kan zo bij meerdere dossiers horen.
+  let _dos = null;
+  function alleDossiers() {
+    if (_dos) return _dos;
+    const D = S.data.dossiers;
+    const norm = (d, groep) => ({
+      id: d.id, groep, titel: d.kortTitel || d.titel,
+      kamerstukken: [d.kamerstuk, ...(d.kamerstukken || [])].filter(Boolean).map(String),
+      zoektermen: (d.zoektermen || []).map((z) => z.toLowerCase()),
+      sectoren: d.sectoren || (d.sector ? [d.sector] : []),
+    });
+    _dos = [...(D.beleidsdossiers || []).map((d) => norm(d, "Beleidsdossiers")), ...D.dossiers.map((d) => norm(d, "Wetgeving"))];
+    return _dos;
+  }
+  const dossierTitel = (id) => alleDossiers().find((d) => d.id === id)?.titel || id;
+  const _actCache = new Map();
+  function dossiersVanActiviteit(a) {
+    if (!a) return [];
+    if (_actCache.has(a.Nummer)) return _actCache.get(a.Nummer);
+    const nums = new Set();
+    let tekst = a.Onderwerp || "";
+    for (const ap of a.agendapunten || []) {
+      tekst += " | " + (ap.onderwerp || "");
+      for (const st of ap.stukken || []) { if (st.kamerstuk) nums.add(st.kamerstuk.split("-")[0]); }
+    }
+    // Kamerstuknummers in de titel, bv. "Begroting (37 020-XXIII)"
+    for (const m of (a.Onderwerp || "").replace(/(\d{2}) (\d{3})/g, "$1$2").matchAll(/\b(\d{5})\b/g)) nums.add(m[1]);
+    const t = tekst.toLowerCase();
+    const uit = alleDossiers().filter((d) => d.kamerstukken.some((k) => nums.has(k)) || d.zoektermen.some((z) => t.includes(z))).map((d) => d.id);
+    _actCache.set(a.Nummer, uit);
+    return uit;
+  }
+  const uniek = (arr) => [...new Set(arr)];
+  const dossiersVanDebat = (d) => uniek([...(d.dossiers || []), ...dossiersVanActiviteit(activiteitVan(d))]);
+  const dossiersVanAgendaItem = (i) => uniek([...(i.dossiers || []), ...(i.dossier ? [i.dossier] : []), ...dossiersVanActiviteit(i._act)]);
+  const pastBijFilter = (ids) => !S.dossierFilter || ids.includes(S.dossierFilter);
+
+  function dossierChips(ids) {
+    if (!ids.length) return "";
+    return `<span class="dchips">${ids.map((id) => `<button type="button" class="dchip" data-setdossier="${esc(id)}" aria-pressed="${S.dossierFilter === id}" title="Toon alles bij dit dossier">${esc(dossierTitel(id))}</button>`).join("")}</span>`;
+  }
+
+  // Filterbalk: dossierkeuze (met aantallen) en ordening. items = lijst van [ids] om te tellen.
+  function dossierBalk(idLijsten, ordeKey, ordeOpties) {
+    const tel = {};
+    for (const ids of idLijsten) for (const id of ids) tel[id] = (tel[id] || 0) + 1;
+    const opts = alleDossiers().filter((d) => S.sector === "alle" || d.sectoren.includes(S.sector));
+    const groep = (g) => {
+      const o = opts.filter((d) => d.groep === g && (tel[d.id] || S.dossierFilter === d.id));
+      return o.length ? `<optgroup label="${g}">${o.map((d) => `<option value="${esc(d.id)}" ${S.dossierFilter === d.id ? "selected" : ""}>${esc(d.titel)} (${tel[d.id] || 0})</option>`).join("")}</optgroup>` : "";
+    };
+    return `<div class="filters dossierbalk">
+      <label class="label" for="dsel">Dossier</label>
+      <select id="dsel"><option value="">Alle dossiers (${idLijsten.length})</option>${groep("Beleidsdossiers")}${groep("Wetgeving")}</select>
+      <label class="label" for="dorde">Ordenen</label>
+      <select id="dorde" data-key="${ordeKey}">${ordeOpties.map(([v, l]) => `<option value="${v}" ${S[ordeKey] === v ? "selected" : ""}>${l}</option>`).join("")}</select>
+      ${S.dossierFilter ? `<button type="button" class="chip" data-setdossier="">Filter wissen ✕</button>` : ""}
+    </div>`;
+  }
+  function bindDossierBalk() {
+    const sel = $("#dsel"), orde = $("#dorde");
+    if (sel) sel.addEventListener("change", () => { S.dossierFilter = sel.value; route(); });
+    if (orde) orde.addEventListener("change", () => { S[orde.dataset.key] = orde.value; route(); });
+  }
+  // Groepeert items per dossier (een item kan in meerdere groepen staan); items zonder dossier onderaan.
+  function perDossier(items, idsVan, render) {
+    const opts = alleDossiers().filter((d) => !S.dossierFilter || d.id === S.dossierFilter);
+    const blokken = opts.map((d) => [d, items.filter((x) => idsVan(x).includes(d.id))]).filter(([, l]) => l.length)
+      .map(([d, l]) => `<h3 class="groepkop">${esc(d.titel)} <span class="muted small">(${l.length})</span></h3>${render(l)}`);
+    const zonder = S.dossierFilter ? [] : items.filter((x) => !idsVan(x).length);
+    if (zonder.length) blokken.push(`<h3 class="groepkop">Zonder dossier <span class="muted small">(${zonder.length})</span></h3>${render(zonder)}`);
+    return blokken.join("") || `<p class="empty">Niets gevonden.</p>`;
+  }
+
   /* ---------- Overzicht ---------- */
   function overzicht() {
     const ma = motiesEnAmendementen();
@@ -157,7 +235,7 @@
           ${recentStem.map((z) => `<li>${uitslagPill(z.uitslag)} <span class="tag">${esc(z.soort)}</span><div>${esc(korteTitel(z))}</div><div class="small muted">${indienersTekst(z)}</div>${voteBar(z.stemtelling)}</li>`).join("") || `<li class="empty">Nog geen stemmingen.</li>`}
         </ul><a class="small" href="#moties">Alle moties en amendementen →</a></div></div>
         <div><h2>Komt eraan</h2><div class="card"><ul class="list">
-          ${komend.map(agendaLi).join("") || `<li class="empty">Niets gepland.</li>`}
+          ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland.</li>`}
         </ul><a class="small" href="#agenda">Volledige agenda →</a></div>
         <h2>Laatste samenvattingen</h2><div class="card"><ul class="list">
           ${deb.slice().sort((a, b) => b.datum.localeCompare(a.datum)).slice(0, 3).map((d) => `<li><span class="tag">${esc(d.type)}</span> <b>${esc(d.titel)}</b> <span class="small muted">${fmtDatum(d.datum)}</span><div class="small">${esc(d.gist)}</div><a class="small" href="#debatten/d-${d.id}">Lees de samenvatting →</a></li>`).join("")}
@@ -171,7 +249,8 @@
     const fasen = S.data.dossiers.fasen;
     const idx = faseIndex(d.fase);
     const gekoppeld = d.kamerstuk ? S.data.zaken.filter((z) => (z.soort === "Motie" || z.soort === "Amendement") && z.dossiers.some((x) => String(x.nummer) === String(d.kamerstuk))) : [];
-    const deb = (d.debatten || []).map((id) => S.data.debatten.find((x) => x.id === id)).filter(Boolean);
+    const deb = uniek([...(d.debatten || []).map((id) => S.data.debatten.find((x) => x.id === id)),
+      ...S.data.debatten.filter((x) => dossiersVanDebat(x).includes(d.id))]).filter(Boolean).sort((a, b) => b.datum.localeCompare(a.datum));
     return `<div class="card ${d.prioriteit ? "prio" : ""}" id="w-${esc(d.id)}">
       <div class="small muted">${esc(d.type)}${d.kamerstuk ? ` · Kamerstuk ${esc(d.kamerstuk)}` : " · nog geen Kamerstuknummer"} · ${esc(d.thema || "")}</div>
       <h3>${esc(d.titel)}</h3>
@@ -187,6 +266,7 @@
       ${!compact && d.kanttekeningen?.length ? `<h3 style="margin-top:12px">Kanttekeningen</h3><ul>${d.kanttekeningen.map((k) => `<li>${esc(k)}</li>`).join("")}</ul>` : ""}
       ${deb.length ? `<div class="small" style="margin-top:10px">Debatten: ${deb.map((x) => `<a href="#debatten/d-${x.id}">${esc(x.titel)} (${fmtDatum(x.datum)})</a>`).join(" · ")}</div>` : ""}
       ${gekoppeld.length ? `<div class="small">Moties/amendementen bij dit dossier: <a href="#moties" data-dossier="${esc(d.kamerstuk)}">${gekoppeld.length}</a></div>` : ""}
+      <div class="small"><a href="#debatten" data-setdossier="${esc(d.id)}">Alle debatten bij dit dossier →</a> · <a href="#agenda" data-setdossier="${esc(d.id)}">Agenda →</a></div>
       ${!compact && d.bronnen?.length ? `<div class="small muted" style="margin-top:8px">Bronnen: ${d.bronnen.map((b) => `<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.titel)}</a>`).join(" · ")}</div>` : ""}
       ${compact ? `<div class="small" style="margin-top:8px"><a href="#wetgeving/w-${esc(d.id)}">Volledig dossier →</a></div>` : ""}
     </div>`;
@@ -273,6 +353,7 @@
   function agendaLijst() {
     const ev = S.data.activiteiten
       .filter((a) => inSector(a) && isDebat(a) && a.Datum && (a.Status === "Gepland" || a.Status === "Uitgevoerd"))
+      .filter((a) => pastBijFilter(uniek([...dossiersVanActiviteit(a), ...((samengevatVoor(a) || {}).dossiers || [])])))
       .map((a) => ({ a, dag: dagNL(new Date(a.Datum)), t: a.Datum }))
       .sort((x, y) => x.t.localeCompare(y.t));
     let mid = ev.findIndex((e) => e.dag === VANDAAG);
@@ -317,21 +398,30 @@
   }
 
   function debatten() {
-    const deb = S.data.debatten.filter(inSector).sort((a, b) => b.datum.localeCompare(a.datum));
-    const open = S.data.activiteiten.filter((a) => inSector(a) && isDebat(a) && a.Status === "Uitgevoerd" && !samengevatVoor(a))
-      .sort((a, b) => (b.Datum || "").localeCompare(a.Datum || ""));
-    setTimeout(bindDebatten, 0);
-    return `<h2>Agenda</h2>${agendaBalk()}
-      <h2>Samengevatte debatten</h2>
-      <p class="muted small">Klik op een debat voor aanleiding, agendapunten, samenvatting, standpunten, toezeggingen en deelnemers. Samenvattingen zijn gebaseerd op automatische transcripten; geen officiële bron.</p>
-      <div class="grid">${deb.map(debatCard).join("")}</div>
-      <h2>Nog niet samengevat <span class="muted small">(${open.length})</span></h2>
-      <div class="tablewrap"><table><thead><tr><th>Datum</th><th>Soort</th><th>Onderwerp</th><th class="hide-sm">Commissie</th></tr></thead><tbody>
-        ${open.map((a) => `<tr><td>${fmtDatum(a.Datum ? dagNL(new Date(a.Datum)) : null)}</td><td>${esc(soortLabel(a))}</td><td><a href="${esc(a.tkLink)}" target="_blank" rel="noopener">${esc(a.Onderwerp)}</a></td><td class="hide-sm">${esc(commissieNaam(a))}</td></tr>`).join("") || `<tr><td colspan="4" class="empty">Alles is samengevat.</td></tr>`}
+    const desc = S.debatOrde !== "oud";
+    const cmp = (x, y) => desc ? y.localeCompare(x) : x.localeCompare(y);
+    const alleDeb = S.data.debatten.filter(inSector);
+    const alleOpen = S.data.activiteiten.filter((a) => inSector(a) && isDebat(a) && a.Status === "Uitgevoerd" && !samengevatVoor(a));
+    const deb = alleDeb.filter((d) => pastBijFilter(dossiersVanDebat(d))).sort((a, b) => cmp(a.datum, b.datum));
+    const open = alleOpen.filter((a) => pastBijFilter(dossiersVanActiviteit(a))).sort((a, b) => cmp(a.Datum || "", b.Datum || ""));
+    const perD = S.debatOrde === "dossier";
+    const kaarten = (l) => `<div class="grid">${l.map(debatCard).join("")}</div>`;
+    const tabel = (l) => `<div class="tablewrap"><table><thead><tr><th>Datum</th><th>Soort</th><th>Onderwerp</th><th class="hide-sm">Commissie</th></tr></thead><tbody>
+        ${l.map((a) => `<tr><td>${fmtDatum(a.Datum ? dagNL(new Date(a.Datum)) : null)}</td><td>${esc(soortLabel(a))}</td><td><a href="${esc(a.tkLink)}" target="_blank" rel="noopener">${esc(a.Onderwerp)}</a><div>${dossierChips(dossiersVanActiviteit(a))}</div></td><td class="hide-sm">${esc(commissieNaam(a))}</td></tr>`).join("") || `<tr><td colspan="4" class="empty">${S.dossierFilter ? "Niets bij dit dossier." : "Alles is samengevat."}</td></tr>`}
       </tbody></table></div>`;
+    setTimeout(bindDebatten, 0);
+    return `${dossierBalk([...alleDeb.map(dossiersVanDebat), ...alleOpen.map(dossiersVanActiviteit)], "debatOrde",
+        [["nieuw", "Nieuwste eerst"], ["oud", "Oudste eerst"], ["dossier", "Per dossier"]])}
+      <h2>Agenda</h2>${agendaBalk()}
+      <h2>Samengevatte debatten <span class="muted small">(${deb.length})</span></h2>
+      <p class="muted small">Klik op een debat voor aanleiding, agendapunten, samenvatting, standpunten, toezeggingen en deelnemers. Klik op een dossierlabel om alles bij dat dossier te zien. Samenvattingen zijn gebaseerd op automatische transcripten; geen officiële bron.</p>
+      ${deb.length ? (perD ? perDossier(deb, dossiersVanDebat, kaarten) : kaarten(deb)) : `<p class="empty">Nog geen samenvattingen${S.dossierFilter ? " bij dit dossier" : ""}.</p>`}
+      <h2>Nog niet samengevat <span class="muted small">(${open.length})</span></h2>
+      ${perD && open.length ? perDossier(open, dossiersVanActiviteit, tabel) : tabel(open)}`;
   }
   function bindDebatten() {
     bindAgendaBalk();
+    bindDossierBalk();
     document.querySelectorAll(".debat .toggle").forEach((b) => b.addEventListener("click", () => {
       const kaart = b.closest(".debat");
       kaart.classList.toggle("open");
@@ -368,6 +458,7 @@
     return `<article class="card debat" id="d-${esc(d.id)}">
       <div class="meta">${esc(commissie || "")} · ${fmtDatum(d.datum)}</div>
       <div class="titelrij"><span class="tag">${esc(d.type)}</span><h3>${esc(d.titel)}</h3></div>
+      ${dossierChips(dossiersVanDebat(d))}
       <div class="links">
         ${d.video ? `<a href="${esc(d.video)}" target="_blank" rel="noopener">▶ Terugkijken op Debat Direct</a>` : ""}
         ${tkLink ? `<a href="${esc(tkLink)}" target="_blank" rel="noopener">Pagina Tweede Kamer</a>` : ""}
@@ -393,20 +484,28 @@
     const eigen = S.data.agenda.filter(inSector).map((i) => ({ ...i, bron: "eigen" }));
     const kamer = S.data.activiteiten.filter((a) => inSector(a) && a.Status === "Gepland").map((a) => ({
       datum: a.Datum ? dagNL(new Date(a.Datum)) : null, tijd: a.Aanvangstijd ? tijdNL(a.Aanvangstijd) : null,
-      type: soortLabel(a), titel: a.Onderwerp, url: a.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${a.Nummer}`, bron: "tk", commissie: commissieNaam(a),
+      type: soortLabel(a), titel: a.Onderwerp, url: a.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${a.Nummer}`, bron: "tk", commissie: commissieNaam(a), _act: a,
     }));
     const seen = new Set();
     return [...eigen, ...kamer].filter((i) => { const k = `${i.datum}|${(i.titel || "").toLowerCase().slice(0, 20)}`; if (seen.has(k)) return false; seen.add(k); return true; })
       .sort((a, b) => sortKey(a.datum).localeCompare(sortKey(b.datum)));
   }
-  function agendaLi(i) {
-    return `<li><b>${fmtDatum(i.datum)}</b>${i.tijd ? ` ${esc(i.tijd)}` : ""} <span class="tag">${esc(i.type)}</span><div>${i.url ? `<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : esc(i.titel)}</div>${i.commissie ? `<div class="small muted">${esc(i.commissie)}</div>` : ""}</li>`;
+  function agendaLi(i, chips) {
+    return `<li><b>${fmtDatum(i.datum)}</b>${i.tijd ? ` ${esc(i.tijd)}` : ""} <span class="tag">${esc(i.type)}</span><div>${i.url ? `<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : esc(i.titel)}</div>${i.commissie ? `<div class="small muted">${esc(i.commissie)}</div>` : ""}${chips ? dossierChips(dossiersVanAgendaItem(i)) : ""}</li>`;
   }
   function agenda() {
-    const items = agendaItems();
-    const toekomst = items.filter((i) => sortKey(i.datum) >= VANDAAG);
-    return `<h2>Agenda</h2><p class="muted small">Geplande Kameractiviteiten (automatisch) plus mijlpalen en deadlines. Activiteiten zonder datum staan onderaan.</p>
-      <div class="card"><ul class="list">${toekomst.map(agendaLi).join("") || `<li class="empty">Niets gepland.</li>`}</ul></div>`;
+    const alle = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG);
+    let items = alle.filter((i) => pastBijFilter(dossiersVanAgendaItem(i)));
+    if (S.agendaOrde === "nieuw") {
+      // verste eerst, maar items zonder datum blijven onderaan
+      const zonder = items.filter((i) => !i.datum);
+      items = items.filter((i) => i.datum).reverse().concat(zonder);
+    }
+    const lijst = (l) => `<div class="card"><ul class="list">${l.map((i) => agendaLi(i, true)).join("") || `<li class="empty">Niets gepland${S.dossierFilter ? " bij dit dossier" : ""}.</li>`}</ul></div>`;
+    setTimeout(bindDossierBalk, 0);
+    return `${dossierBalk(alle.map(dossiersVanAgendaItem), "agendaOrde", [["oud", "Eerstvolgende eerst"], ["nieuw", "Verste eerst"], ["dossier", "Per dossier"]])}
+      <h2>Agenda</h2><p class="muted small">Geplande Kameractiviteiten (automatisch) plus mijlpalen en deadlines. Activiteiten zonder datum staan onderaan. Klik op een dossierlabel om alleen dat dossier te zien.</p>
+      ${S.agendaOrde === "dossier" ? perDossier(items, dossiersVanAgendaItem, lijst) : lijst(items)}`;
   }
 
   /* ---------- Over ---------- */
@@ -431,6 +530,13 @@
   document.addEventListener("click", (e) => {
     const a = e.target.closest("a[data-dossier]");
     if (a) { S.motieFilter.dossier = a.dataset.dossier; }
-  });
+    const b = e.target.closest("[data-setdossier]");
+    if (b) {
+      const id = b.dataset.setdossier;
+      // nogmaals klikken op het actieve label wist het filter
+      S.dossierFilter = b.classList.contains("dchip") && S.dossierFilter === id ? "" : id;
+      if (b.tagName !== "A") { e.preventDefault(); e.stopPropagation(); route(); }
+    }
+  }, true);
   init();
 })();

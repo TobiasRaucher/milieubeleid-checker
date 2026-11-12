@@ -1,25 +1,45 @@
+/* =====================================================================
+   ONTWERPKNOPPEN (design tokens)
+   Pas hier het uiterlijk van de hele site aan. Alles hieronder in dit
+   bestand gebruikt deze variabelen; je hoeft de rest niet aan te raken.
+   Tip: wijzig één ding tegelijk en ververs de site (Ctrl/Cmd+Shift+R).
+   ===================================================================== */
 :root {
-  --page: #f9f9f7;
-  --surface: #fcfcfb;
-  --card: #ffffff;
-  --ink: #0b0b0b;
-  --ink-2: #52514e;
-  --muted: #6f6d68;
-  --line: #e1e0d9;
-  --accent: #1f6f4a;
-  --accent-soft: #e6f2ec;
-  --voor: #2a78d6;
-  --tegen: #e34948;
-  --neutraal: #d9d8d2;
-  --good: #0ca30c;
-  --warning: #fab219;
+  /* Lettertypes. Kop en tekst mogen verschillen (bv. een serif voor koppen).
+     Een Google Font gebruiken? Voeg de <link> toe in index.html en zet de naam hier vooraan. */
+  --font-tekst: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-kop: var(--font-tekst);
+  --tekstgrootte: 15px;          /* basisgrootte lopende tekst */
+  --kop-gewicht: 650;            /* dikte van koppen (400 = normaal, 700 = vet) */
+
+  /* Kleuren, licht thema */
+  --page: #f9f9f7;               /* achtergrond van de pagina */
+  --surface: #fcfcfb;            /* kopbalk, tabelkoppen, hover */
+  --card: #ffffff;               /* kaarten */
+  --ink: #0b0b0b;                /* hoofdtekst */
+  --ink-2: #52514e;              /* secundaire tekst */
+  --muted: #6f6d68;              /* toelichtingen, datums */
+  --line: #e1e0d9;               /* randen en scheidingslijnen */
+  --accent: #1f6f4a;             /* merkkleur: links, actieve tab, fase-stepper */
+  --accent-soft: #e6f2ec;        /* zachte merkkleur: geselecteerde labels, "vandaag" */
+  --voor: #2a78d6;               /* stemmen voor */
+  --tegen: #e34948;              /* stemmen tegen */
+  --neutraal: #d9d8d2;           /* nog niet bereikte fase */
+  --good: #0ca30c;               /* aangenomen */
+  --warning: #fab219;            /* in behandeling, aangehouden */
   --serious: #ec835a;
-  --critical: #d03b3b;
-  --radius: 10px;
-  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 2px 8px rgba(0,0,0,.04);
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --critical: #d03b3b;           /* verworpen */
+
+  /* Vorm */
+  --radius: 10px;                /* afronding van kaarten (0 = strak, 16px = zacht) */
+  --radius-klein: 6px;           /* afronding van labels en knoppen */
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 2px 8px rgba(0,0,0,.04);  /* "none" = plat */
+  --breedte: 1120px;             /* maximale breedte van de inhoud */
+
+  font-family: var(--font-tekst);
   color-scheme: light dark;
 }
+/* Kleuren, donker thema (volgt de instelling van het apparaat) */
 @media (prefers-color-scheme: dark) {
   :root {
     --page: #0d0d0d;
@@ -37,11 +57,14 @@
     --shadow: none;
   }
 }
+/* ===================== einde ontwerpknoppen ===================== */
+
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--page); color: var(--ink); line-height: 1.5; font-size: 15px; }
+body { margin: 0; background: var(--page); color: var(--ink); line-height: 1.5; font-size: var(--tekstgrootte); }
+h1, h2, h3, h4 { font-family: var(--font-kop); font-weight: var(--kop-gewicht); }
 a { color: var(--accent); }
 a:hover { text-decoration-thickness: 2px; }
-.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.wrap { max-width: var(--breedte); margin: 0 auto; padding: 0 20px; }
 
 header.top { background: var(--surface); border-bottom: 1px solid var(--line); }
 header.top .wrap { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; padding-top: 18px; padding-bottom: 6px; }
@@ -88,7 +111,7 @@ h3 { font-size: 16px; margin: 0 0 6px; }
 .pill.verworpen .dot { background: var(--critical); }
 .pill.aangehouden .dot, .pill.in-behandeling .dot { background: var(--warning); }
 .pill.ingetrokken .dot, .pill.vervallen .dot { background: var(--muted); }
-.tag { font-size: 12px; color: var(--ink-2); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; }
+.tag { font-size: 12px; color: var(--ink-2); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-klein); padding: 1px 7px; }
 
 /* fase-stepper */
 .stepper { display: flex; gap: 2px; margin: 12px 0 6px; }
@@ -171,6 +194,15 @@ ul.stukken { margin: 2px 0 0; padding-left: 18px; font-size: 13px; color: var(--
 .party b { display: inline-block; min-width: 54px; }
 .party ul { margin: 4px 0 0; }
 .pending { border-style: dashed; }
+
+/* dossierlabels en -filter */
+.dossierbalk { padding: 10px 12px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
+.dossierbalk select { max-width: 100%; }
+.dchips { display: flex; flex-wrap: wrap; gap: 4px 6px; margin: 4px 0 6px; }
+.dchip { font: inherit; font-size: 12px; line-height: 1.4; color: var(--accent); background: transparent; border: 1px solid var(--line); border-radius: var(--radius-klein); padding: 1px 7px; cursor: pointer; }
+.dchip:hover { border-color: var(--accent); }
+.dchip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); font-weight: 600; }
+h3.groepkop { margin: 22px 0 8px; font-size: 15px; color: var(--ink-2); border-bottom: 1px solid var(--line); padding-bottom: 4px; }
 
 .note { background: var(--accent-soft); border-radius: var(--radius); padding: 12px 16px; font-size: 14px; color: var(--ink); margin: 14px 0; }
 footer { color: var(--muted); font-size: 13px; padding: 30px 0; border-top: 1px solid var(--line); }

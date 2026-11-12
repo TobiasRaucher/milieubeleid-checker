@@ -18,10 +18,17 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
      - Bij technische briefings en rondetafelgesprekken: `deskundigen` (naam + organisatie), want die staan niet in de TK-data.
    - Schrijf toe aan de spreker ("volgens PRO") wat niet geverifieerd feit is. Neutraal, geen eigen oordeel.
    - Technische briefings en rondetafelgesprekken: deskundigen in `kern`, vragen van Kamerleden in `partijen`.
+   - `dossiers`: lijst van dossier-id's waar het debat over gaat. De site koppelt debatten en agenda-items ook automatisch aan dossiers (via Kamerstukdossiers van de agendapunten en zoektermen; zie `beleidsdossiers` en `kamerstukken`/`zoektermen` in `data/dossiers.json`). Vul `dossiers` alleen aan als de automatische koppeling iets mist, bv. een wetsdossier dat in het debat ter sprake kwam.
 4. Werk `data/dossiers.json` en `data/agenda.json` bij als er nieuwe stappen, consultaties of deadlines zijn (met bron-URL). Zoek bij twijfel op internet (eerstekamer.nl, internetconsultatie.nl, officielebekendmakingen.nl).
    - Zet bij elke wijziging het veld `bijgewerkt` bovenin het gewijzigde bestand op het huidige tijdstip (ISO, UTC, bv. `2026-11-12T15:49:00Z`). De kop van de site toont het meest recente tijdstip van alle bestanden als "Laatste update: hh:mm dd/mm/yyyy" (Nederlandse tijd).
 5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit.
 6. Commit en push naar `main` (GitHub Pages publiceert automatisch).
+
+## Dossiers
+
+- `dossiers` in `data/dossiers.json` zijn wetsvoorstellen (met fase-stepper op de Wetgeving-pagina). `kortTitel` is het label in filters.
+- `beleidsdossiers` zijn thema's (bv. Elektriciteitsnet & netcongestie). Ze hebben geen fase; ze dienen om debatten en agenda te filteren en te groeperen.
+- Nieuw wetsvoorstel volgen: voeg het Kamerstuknummer toe aan `pipeline/config.json` (voor moties en amendementen) en een dossier aan `data/dossiers.json` (fase, laatste/volgende stap, bronnen). Controleer de status op eerstekamer.nl.
 
 ## Prioriteit
 

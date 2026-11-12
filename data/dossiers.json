@@ -1,180 +1,606 @@
 {
-  "_uitleg": "Handmatig (door Claude) bijgehouden wetgevingsdossiers. De pipeline vult data/tk/ aan met moties, amendementen en stemmingen.",
-  "bijgewerkt": "2026-11-12T18:57:30Z",
-  "fasen": [
+ "_uitleg": "Handmatig (door Claude) bijgehouden wetgevingsdossiers. De pipeline vult data/tk/ aan met moties, amendementen en stemmingen.",
+ "bijgewerkt": "2026-11-12T20:30:00Z",
+ "fasen": [
+  {
+   "code": "voorbereiding",
+   "naam": "Voorbereiding"
+  },
+  {
+   "code": "consultatie",
+   "naam": "Internetconsultatie"
+  },
+  {
+   "code": "raad-van-state",
+   "naam": "Raad van State"
+  },
+  {
+   "code": "tk",
+   "naam": "Tweede Kamer"
+  },
+  {
+   "code": "ek",
+   "naam": "Eerste Kamer"
+  },
+  {
+   "code": "staatsblad",
+   "naam": "Staatsblad"
+  },
+  {
+   "code": "in-werking",
+   "naam": "In werking"
+  }
+ ],
+ "dossiers": [
+  {
+   "id": "klimaatwet-bonaire",
+   "titel": "Wijziging Klimaatwet ter uitvoering van het vonnis in de Klimaatzaak Bonaire",
+   "kamerstuk": null,
+   "sector": "klimaat-energie",
+   "thema": "Klimaatwet",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "voorbereiding",
+   "prioriteit": true,
+   "samenvatting": "Op 28 januari 2026 oordeelde de rechtbank Den Haag dat de Staat de mensenrechten van inwoners van Bonaire schendt. De Staat moet binnen 6 maanden de resterende Nederlandse emissieruimte (eerlijk deel van het mondiale budget voor 1,5 °C) inzichtelijk maken en binnen 18 maanden nieuwe bindende reductiedoelen vastleggen, inclusief tussendoelen. Volgens de minister is daarvoor een wijziging van de Klimaatwet nodig.",
+   "laatsteStap": {
+    "datum": "2026-09-30",
+    "tekst": "Minister (KGG) in commissiedebat Voortgang klimaatbeleid: streven is het wetsvoorstel in Q4 2026 in internetconsultatie te brengen; werkhypothese Raad van State-advies begin 2027."
+   },
+   "volgendeStap": {
+    "datum": "2026-Q4",
+    "tekst": "Internetconsultatie (gepland Q4 2026). Op 12-11-2026 nog geen consultatie gevonden."
+   },
+   "deadline": {
+    "datum": "2027-07-28",
+    "tekst": "Door de rechtbank genoemde datum waarop de wetswijziging in werking moet zijn."
+   },
+   "kanttekeningen": [
+    "Het kabinet heeft schorsing van de uitvoerbaarheid bij voorraad gevraagd en is in hoger beroep (genoemd door de minister op 30-09-2026).",
+    "Kamerleden (PRO, PvdD) vragen om externe toetsing van het emissiebudget door de Wetenschappelijke Klimaatraad of het PBL; de minister noemde betrokkenheid van de planbureaus."
+   ],
+   "debatten": [
+    "246687",
+    "54894"
+   ],
+   "bronnen": [
     {
-      "code": "voorbereiding",
-      "naam": "Voorbereiding"
+     "titel": "Commissiedebat Voortgang klimaatbeleid (30-09-2026), antwoord minister",
+     "url": "https://gehoord.de/beraadslagingen/246687?segment=215332"
     },
     {
-      "code": "consultatie",
-      "naam": "Internetconsultatie"
-    },
-    {
-      "code": "raad-van-state",
-      "naam": "Raad van State"
-    },
-    {
-      "code": "tk",
-      "naam": "Tweede Kamer"
-    },
-    {
-      "code": "ek",
-      "naam": "Eerste Kamer"
-    },
-    {
-      "code": "staatsblad",
-      "naam": "Staatsblad"
-    },
-    {
-      "code": "in-werking",
-      "naam": "In werking"
+     "titel": "Greenpeace: briefing vonnis Klimaatzaak Bonaire",
+     "url": "https://www.greenpeace.org/nl/algemeen/74130/briefing-vonnis-klimaatzaak-bonaire/"
     }
-  ],
-  "dossiers": [
+   ],
+   "kortTitel": "Klimaatwet na Bonaire-vonnis",
+   "zoektermen": [
+    "bonaire",
+    "emissiebudget"
+   ]
+  },
+  {
+   "id": "35953",
+   "titel": "Klimaatwet 1.5 (initiatiefwet Teunissen, PvdD)",
+   "kamerstuk": "35953",
+   "sector": "klimaat-energie",
+   "thema": "Klimaatwet",
+   "type": "Initiatiefwetsvoorstel",
+   "fase": "tk",
+   "prioriteit": false,
+   "samenvatting": "Initiatiefwet van het lid Teunissen (PvdD) die de Klimaatwet wijzigt zodat Nederland zo spoedig mogelijk een zo groot mogelijke bijdrage levert aan het voorkomen van verdere opwarming van de aarde (afgestemd op 1,5 °C).",
+   "laatsteStap": {
+    "datum": "2021-10-29",
+    "tekst": "Wetsvoorstel aanhangig in de Tweede Kamer (zaak gestart)."
+   },
+   "volgendeStap": {
+    "datum": null,
+    "tekst": "Plenaire behandeling in de Tweede Kamer staat gepland, maar zonder datum (activiteit 2023A06087)."
+   },
+   "bronnen": [
     {
-      "id": "klimaatwet-bonaire",
-      "titel": "Wijziging Klimaatwet ter uitvoering van het vonnis in de Klimaatzaak Bonaire",
-      "kamerstuk": null,
-      "sector": "klimaat-energie",
-      "thema": "Klimaatwet",
-      "type": "Wetsvoorstel (regering)",
-      "fase": "voorbereiding",
-      "prioriteit": true,
-      "samenvatting": "Op 28 januari 2026 oordeelde de rechtbank Den Haag dat de Staat de mensenrechten van inwoners van Bonaire schendt. De Staat moet binnen 6 maanden de resterende Nederlandse emissieruimte (eerlijk deel van het mondiale budget voor 1,5 °C) inzichtelijk maken en binnen 18 maanden nieuwe bindende reductiedoelen vastleggen, inclusief tussendoelen. Volgens de minister is daarvoor een wijziging van de Klimaatwet nodig.",
-      "laatsteStap": {
-        "datum": "2026-09-30",
-        "tekst": "Minister (KGG) in commissiedebat Voortgang klimaatbeleid: streven is het wetsvoorstel in Q4 2026 in internetconsultatie te brengen; werkhypothese Raad van State-advies begin 2027."
-      },
-      "volgendeStap": {
-        "datum": "2026-Q4",
-        "tekst": "Internetconsultatie (gepland Q4 2026). Op 12-11-2026 nog geen consultatie gevonden."
-      },
-      "deadline": {
-        "datum": "2027-07-28",
-        "tekst": "Door de rechtbank genoemde datum waarop de wetswijziging in werking moet zijn."
-      },
-      "kanttekeningen": [
-        "Het kabinet heeft schorsing van de uitvoerbaarheid bij voorraad gevraagd en is in hoger beroep (genoemd door de minister op 30-09-2026).",
-        "Kamerleden (PRO, PvdD) vragen om externe toetsing van het emissiebudget door de Wetenschappelijke Klimaatraad of het PBL; de minister noemde betrokkenheid van de planbureaus."
-      ],
-      "debatten": [
-        "246687",
-        "54894"
-      ],
-      "bronnen": [
-        {
-          "titel": "Commissiedebat Voortgang klimaatbeleid (30-09-2026), antwoord minister",
-          "url": "https://gehoord.de/beraadslagingen/246687?segment=215332"
-        },
-        {
-          "titel": "Greenpeace: briefing vonnis Klimaatzaak Bonaire",
-          "url": "https://www.greenpeace.org/nl/algemeen/74130/briefing-vonnis-klimaatzaak-bonaire/"
-        }
-      ]
-    },
-    {
-      "id": "35953",
-      "titel": "Klimaatwet 1.5 (initiatiefwet Teunissen, PvdD)",
-      "kamerstuk": "35953",
-      "sector": "klimaat-energie",
-      "thema": "Klimaatwet",
-      "type": "Initiatiefwetsvoorstel",
-      "fase": "tk",
-      "prioriteit": false,
-      "samenvatting": "Initiatiefwet van het lid Teunissen (PvdD) die de Klimaatwet wijzigt zodat Nederland zo spoedig mogelijk een zo groot mogelijke bijdrage levert aan het voorkomen van verdere opwarming van de aarde (afgestemd op 1,5 °C).",
-      "laatsteStap": {
-        "datum": "2021-10-29",
-        "tekst": "Wetsvoorstel aanhangig in de Tweede Kamer (zaak gestart)."
-      },
-      "volgendeStap": {
-        "datum": null,
-        "tekst": "Plenaire behandeling in de Tweede Kamer staat gepland, maar zonder datum (activiteit 2023A06087)."
-      },
-      "bronnen": [
-        {
-          "titel": "OpenTK: kamerstukdossier 35953",
-          "url": "https://berthub.eu/tkconv/ksd.html?ksd=35953&toevoeging="
-        }
-      ]
-    },
-    {
-      "id": "36776",
-      "titel": "Verzamelwet KGG (o.a. wettelijke verankering Wetenschappelijke Klimaatraad en aanpassing beleidscyclus Klimaatwet)",
-      "kamerstuk": "36776",
-      "sector": "klimaat-energie",
-      "thema": "Klimaatwet",
-      "type": "Wetsvoorstel (regering)",
-      "fase": "staatsblad",
-      "prioriteit": false,
-      "samenvatting": "Verzamelwet die onder meer de Wetenschappelijke Klimaatraad een permanente wettelijke basis geeft in de Klimaatwet en de jaarlijkse beleidscyclus aanpast. De reductiedoelen van de Klimaatwet veranderen niet.",
-      "laatsteStap": {
-        "datum": "2025-11-13",
-        "tekst": "Wet gepubliceerd. Inwerkingtreding per onderdeel bij koninklijk besluit."
-      },
-      "volgendeStap": null,
-      "stemmingen": [
-        {
-          "kamer": "TK",
-          "datum": "2025-10-02",
-          "uitslag": "aangenomen (hamerstuk)"
-        },
-        {
-          "kamer": "EK",
-          "datum": "2025-10-28",
-          "uitslag": "aangenomen (hamerstuk)"
-        }
-      ],
-      "bronnen": [
-        {
-          "titel": "Eerste Kamer: 36776 Verzamelwet KGG",
-          "url": "https://www.eerstekamer.nl/wetsvoorstel/36776_verzamelwet_kgg_20"
-        }
-      ]
-    },
-    {
-      "id": "36169",
-      "titel": "Wijziging van de Klimaatwet (implementatie Europese klimaatwet)",
-      "kamerstuk": "36169",
-      "sector": "klimaat-energie",
-      "thema": "Klimaatwet",
-      "type": "Wetsvoorstel (regering)",
-      "fase": "in-werking",
-      "prioriteit": false,
-      "samenvatting": "Brengt de Klimaatwet in lijn met de Europese klimaatwet, met onder meer het doel van ten minste 55% reductie in 2030.",
-      "laatsteStap": {
-        "datum": "2023-07-22",
-        "tekst": "In werking getreden (Wet van 10 juli 2023, Stb. 2023, 271)."
-      },
-      "volgendeStap": null,
-      "bronnen": [
-        {
-          "titel": "Memorie van toelichting Verzamelwet KGG (verwijzing naar Stb. 2023, 271)",
-          "url": "https://internetconsultatie.nl/verzamelwetklimaatengroenegroei/document/13143"
-        }
-      ]
-    },
-    {
-      "id": "34534",
-      "titel": "Klimaatwet (initiatiefwet Klaver c.s.)",
-      "kamerstuk": "34534",
-      "sector": "klimaat-energie",
-      "thema": "Klimaatwet",
-      "type": "Initiatiefwetsvoorstel",
-      "fase": "in-werking",
-      "prioriteit": false,
-      "samenvatting": "Basiswet met een kader voor het onomkeerbaar en stapsgewijs terugdringen van de Nederlandse broeikasgasemissies. Sindsdien gewijzigd via 36169 en 36776.",
-      "laatsteStap": {
-        "datum": "2019",
-        "tekst": "In werking sinds 2019."
-      },
-      "volgendeStap": null,
-      "bronnen": [
-        {
-          "titel": "OpenTK: kamerstukdossier 34534",
-          "url": "https://berthub.eu/tkconv/ksd.html?ksd=34534&toevoeging="
-        }
-      ]
+     "titel": "OpenTK: kamerstukdossier 35953",
+     "url": "https://berthub.eu/tkconv/ksd.html?ksd=35953&toevoeging="
     }
-  ]
+   ],
+   "kortTitel": "Klimaatwet 1.5"
+  },
+  {
+   "id": "36776",
+   "titel": "Verzamelwet KGG (o.a. wettelijke verankering Wetenschappelijke Klimaatraad en aanpassing beleidscyclus Klimaatwet)",
+   "kamerstuk": "36776",
+   "sector": "klimaat-energie",
+   "thema": "Klimaatwet",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "staatsblad",
+   "prioriteit": false,
+   "samenvatting": "Verzamelwet die onder meer de Wetenschappelijke Klimaatraad een permanente wettelijke basis geeft in de Klimaatwet en de jaarlijkse beleidscyclus aanpast. De reductiedoelen van de Klimaatwet veranderen niet.",
+   "laatsteStap": {
+    "datum": "2025-11-13",
+    "tekst": "Wet gepubliceerd. Inwerkingtreding per onderdeel bij koninklijk besluit."
+   },
+   "volgendeStap": null,
+   "stemmingen": [
+    {
+     "kamer": "TK",
+     "datum": "2025-10-02",
+     "uitslag": "aangenomen (hamerstuk)"
+    },
+    {
+     "kamer": "EK",
+     "datum": "2025-10-28",
+     "uitslag": "aangenomen (hamerstuk)"
+    }
+   ],
+   "bronnen": [
+    {
+     "titel": "Eerste Kamer: 36776 Verzamelwet KGG",
+     "url": "https://www.eerstekamer.nl/wetsvoorstel/36776_verzamelwet_kgg_20"
+    }
+   ],
+   "kortTitel": "Verzamelwet KGG"
+  },
+  {
+   "id": "36169",
+   "titel": "Wijziging van de Klimaatwet (implementatie Europese klimaatwet)",
+   "kamerstuk": "36169",
+   "sector": "klimaat-energie",
+   "thema": "Klimaatwet",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "in-werking",
+   "prioriteit": false,
+   "samenvatting": "Brengt de Klimaatwet in lijn met de Europese klimaatwet, met onder meer het doel van ten minste 55% reductie in 2030.",
+   "laatsteStap": {
+    "datum": "2023-07-22",
+    "tekst": "In werking getreden (Wet van 10 juli 2023, Stb. 2023, 271)."
+   },
+   "volgendeStap": null,
+   "bronnen": [
+    {
+     "titel": "Memorie van toelichting Verzamelwet KGG (verwijzing naar Stb. 2023, 271)",
+     "url": "https://internetconsultatie.nl/verzamelwetklimaatengroenegroei/document/13143"
+    }
+   ],
+   "kortTitel": "Klimaatwet (EU-klimaatwet)"
+  },
+  {
+   "id": "34534",
+   "titel": "Klimaatwet (initiatiefwet Klaver c.s.)",
+   "kamerstuk": "34534",
+   "sector": "klimaat-energie",
+   "thema": "Klimaatwet",
+   "type": "Initiatiefwetsvoorstel",
+   "fase": "in-werking",
+   "prioriteit": false,
+   "samenvatting": "Basiswet met een kader voor het onomkeerbaar en stapsgewijs terugdringen van de Nederlandse broeikasgasemissies. Sindsdien gewijzigd via 36169 en 36776.",
+   "laatsteStap": {
+    "datum": "2019",
+    "tekst": "In werking sinds 2019."
+   },
+   "volgendeStap": null,
+   "bronnen": [
+    {
+     "titel": "OpenTK: kamerstukdossier 34534",
+     "url": "https://berthub.eu/tkconv/ksd.html?ksd=34534&toevoeging="
+    }
+   ],
+   "kortTitel": "Klimaatwet (2019)"
+  },
+  {
+   "id": "36947",
+   "kortTitel": "Bijmengverplichting groen gas",
+   "titel": "Wet bijmengverplichting groen gas",
+   "kamerstuk": "36947",
+   "sector": "klimaat-energie",
+   "thema": "Hernieuwbare energie",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "ek",
+   "samenvatting": "Gasleveranciers worden verplicht jaarlijks een oplopend aandeel groen gas te leveren aan hun afnemers, met een certificatenstelsel onder toezicht van de Nederlandse Emissieautoriteit (NEa). Ingediend op 20 mei 2026.",
+   "laatsteStap": {
+    "datum": "2026-10-06",
+    "tekst": "Aangenomen door de Tweede Kamer (89 voor, 61 tegen), na wetgevingsoverleggen op 7 en 21 september 2026."
+   },
+   "volgendeStap": {
+    "datum": null,
+    "tekst": "Behandeling in de Eerste Kamer (schriftelijke voorbereiding)."
+   },
+   "bronnen": [
+    {
+     "titel": "Eerste Kamer: 36947",
+     "url": "https://www.eerstekamer.nl/wetsvoorstel/36947_wet_bijmengverplichting"
+    },
+    {
+     "titel": "Memorie van toelichting (kst-36947-3)",
+     "url": "https://zoek.officielebekendmakingen.nl/kst-36947-3.pdf"
+    }
+   ]
+  },
+  {
+   "id": "36936",
+   "kortTitel": "Jaarverplichting hernieuwbare waterstof industrie",
+   "titel": "Wet jaarverplichting hernieuwbare brandstoffen van niet-biologische oorsprong (RFNBO) in de industrie",
+   "kamerstuk": "36936",
+   "sector": "klimaat-energie",
+   "thema": "Hernieuwbare energie",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "tk",
+   "samenvatting": "Industriële installaties die waterstof gebruiken moeten jaarlijks een deel daarvan vervangen door hernieuwbare waterstof (RFNBO), via een wijziging van de Wet milieubeheer. Ingediend op 29 april 2026.",
+   "laatsteStap": {
+    "datum": "2026-09-09",
+    "tekst": "Commissie heeft het wetsvoorstel aangemeld voor plenaire behandeling, na een technische briefing en rondetafelgesprek op 17 juni 2026."
+   },
+   "volgendeStap": {
+    "datum": null,
+    "tekst": "Plenaire behandeling in de Tweede Kamer (datum nog niet bekend)."
+   },
+   "bronnen": [
+    {
+     "titel": "Eerste Kamer: 36936",
+     "url": "https://www.eerstekamer.nl/wetsvoorstel/36936"
+    }
+   ]
+  },
+  {
+   "id": "36973",
+   "kortTitel": "Tweerichtingscontracten (CfD's)",
+   "titel": "Wet toepassing tweerichtingscontracten ter verrekening van verschillen voor klimaat en energie",
+   "kamerstuk": "36973",
+   "sector": "klimaat-energie",
+   "thema": "Hernieuwbare energie",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "tk",
+   "samenvatting": "Regelt tweerichtingscontracten (contracts for difference) waarmee de overheid producenten van onder meer hernieuwbare elektriciteit een prijs garandeert en overwinsten terugvordert, ter uitvoering van de EU-elektriciteitsmarktverordening. Ingediend op 25 juni 2026.",
+   "laatsteStap": {
+    "datum": "2026-10-01",
+    "tekst": "Inbreng voor het verslag geleverd, na een technische briefing op 23 september 2026."
+   },
+   "volgendeStap": {
+    "datum": null,
+    "tekst": "Nota naar aanleiding van het verslag van de regering."
+   },
+   "bronnen": [
+    {
+     "titel": "Eerste Kamer: 36973",
+     "url": "https://www.eerstekamer.nl/wetsvoorstel/36973"
+    }
+   ]
+  },
+  {
+   "id": "36990",
+   "kortTitel": "Implementatiewet EU-elektriciteitsmarkt",
+   "titel": "Implementatiewet EMD-pakket (opzet Europese elektriciteitsmarkt)",
+   "kamerstuk": "36990",
+   "sector": "klimaat-energie",
+   "thema": "Elektriciteitsmarkt",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "tk",
+   "samenvatting": "Wijzigt de Energiewet, de Wet belastingen op milieugrondslag en de Wet op de accijns om het EU-wetgevingspakket over de opzet van de elektriciteitsmarkt (EMD) te implementeren. Ingediend op 7 juli 2026.",
+   "laatsteStap": {
+    "datum": "2026-10-01",
+    "tekst": "Inbreng voor het verslag geleverd."
+   },
+   "volgendeStap": {
+    "datum": null,
+    "tekst": "Nota naar aanleiding van het verslag van de regering."
+   },
+   "bronnen": [
+    {
+     "titel": "Eerste Kamer: 36990",
+     "url": "https://www.eerstekamer.nl/wetsvoorstel/36990"
+    }
+   ]
+  },
+  {
+   "id": "36897",
+   "kortTitel": "Uitvoeringswet methaanverordening",
+   "titel": "Uitvoeringswet methaanverordening (vermindering methaanemissies in de energiesector)",
+   "kamerstuk": "36897",
+   "sector": "klimaat-energie",
+   "thema": "Mijnbouw",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "tk",
+   "samenvatting": "Wijzigt de Mijnbouwwet en enkele andere wetten om de EU-verordening 2024/1787 over de vermindering van methaanemissies in de energiesector uit te voeren. Ingediend op 18 februari 2026.",
+   "laatsteStap": {
+    "datum": "2026-04-02",
+    "tekst": "Inbrengdatum voor het verslag."
+   },
+   "volgendeStap": {
+    "datum": null,
+    "tekst": "Nota naar aanleiding van het verslag van de regering."
+   },
+   "bronnen": [
+    {
+     "titel": "Eerste Kamer: 36897",
+     "url": "https://www.eerstekamer.nl/wetsvoorstel/36897"
+    }
+   ]
+  },
+  {
+   "id": "36847",
+   "kortTitel": "Bedrijfsduurverlenging Borssele",
+   "titel": "Wijziging van de Kernenergiewet ten behoeve van bedrijfsduurverlenging van kerncentrale Borssele",
+   "kamerstuk": "36847",
+   "sector": "klimaat-energie",
+   "thema": "Kernenergie",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "ek",
+   "samenvatting": "Schrapt de wettelijke einddatum voor kerncentrale Borssele in artikel 15a van de Kernenergiewet, zodat de vergunninghouder een langere bedrijfsduur kan aanvragen. Ingediend op 4 november 2025.",
+   "laatsteStap": {
+    "datum": "2026-09-04",
+    "tekst": "Nota naar aanleiding van het verslag aan de Eerste Kamer gestuurd. De Tweede Kamer nam het voorstel op 16 juni 2026 aan (124 voor, 26 tegen)."
+   },
+   "volgendeStap": {
+    "datum": null,
+    "tekst": "Verdere behandeling in de Eerste Kamer."
+   },
+   "stemmingen": [
+    {
+     "kamer": "TK",
+     "datum": "2026-06-16",
+     "uitslag": "aangenomen (124 voor, 26 tegen)"
+    }
+   ],
+   "bronnen": [
+    {
+     "titel": "Eerste Kamer: 36847",
+     "url": "https://www.eerstekamer.nl/wetsvoorstel/36847_bedrijfsduurverlenging"
+    }
+   ]
+  },
+  {
+   "id": "36576",
+   "kortTitel": "Wet collectieve warmte",
+   "titel": "Wet collectieve warmte (Wcw)",
+   "kamerstuk": "36576",
+   "sector": "klimaat-energie",
+   "thema": "Gebouwde omgeving",
+   "type": "Wetsvoorstel (regering)",
+   "fase": "staatsblad",
+   "samenvatting": "Vervangt de Warmtewet: gemeenten wijzen per warmtekavel een warmtebedrijf aan (in principe met een publiek meerderheidsbelang) en tarieven worden gereguleerd op basis van kosten. Gefaseerde inwerkingtreding; uitwerking in het Besluit collectieve warmte.",
+   "laatsteStap": {
+    "datum": "2026-10-13",
+    "tekst": "Het ontwerpbesluit en de voorhang van het Besluit collectieve warmte stonden op de agenda van het commissiedebat Energie voor huishoudens (24 september, voortgezet 13 oktober 2026)."
+   },
+   "volgendeStap": {
+    "datum": "2027-01-01",
+    "tekst": "Verwachte inwerkingtreding van (het grootste deel van) de wet, volgens de VNG."
+   },
+   "stemmingen": [
+    {
+     "kamer": "TK",
+     "datum": "2025-07-03",
+     "uitslag": "aangenomen"
+    },
+    {
+     "kamer": "EK",
+     "datum": "2025-12-09",
+     "uitslag": "aangenomen"
+    }
+   ],
+   "bronnen": [
+    {
+     "titel": "Eerste Kamer: 36576",
+     "url": "https://www.eerstekamer.nl/wetsvoorstel/36576_wet_collectieve_warmte"
+    },
+    {
+     "titel": "VNG: Wet collectieve warmte",
+     "url": "https://vng.nl/artikelen/wet-collectieve-warmte-wcw"
+    }
+   ]
+  }
+ ],
+ "_uitleg_beleidsdossiers": "Beleidsdossiers zijn thema's (geen wetten). Debatten en agenda-items worden er automatisch aan gekoppeld via de Kamerstukdossiers van hun agendapunten (kamerstukken) of via zoektermen in het onderwerp. Handmatig koppelen kan met het veld 'dossiers' in debatten.json en agenda.json.",
+ "beleidsdossiers": [
+  {
+   "id": "klimaatbeleid",
+   "titel": "Klimaatbeleid & klimaatdoelen",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [
+    "32813",
+    "33043"
+   ],
+   "zoektermen": [
+    "klimaatbeleid",
+    "klimaatnota",
+    "klimaat- en energieverkenning",
+    "klimaat- en energienota",
+    "burgerberaad klimaat",
+    "klimaatraad",
+    "wkr-advies",
+    "klimaatbeschouwing",
+    "amoc",
+    "bonaire",
+    "klimaatwet"
+   ]
+  },
+  {
+   "id": "internationaal-eu",
+   "titel": "Internationaal & EU",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [
+    "31793",
+    "21501",
+    "22112"
+   ],
+   "zoektermen": [
+    "cop30",
+    "cop31",
+    "klimaatconferentie",
+    "energieraad",
+    "ets-herziening",
+    "emissiehandel",
+    "internationale klimaat"
+   ]
+  },
+  {
+   "id": "elektriciteitsnet",
+   "titel": "Elektriciteitsnet & netcongestie",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [],
+   "zoektermen": [
+    "netcongestie",
+    "elektriciteitsnet",
+    "nettarieven",
+    "netbeheer",
+    "energie-infrastructuur",
+    "energiesysteem",
+    "invoedingstarief"
+   ]
+  },
+  {
+   "id": "gas-leveringszekerheid",
+   "titel": "Gas, leveringszekerheid & mijnbouw",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [
+    "29023",
+    "33529",
+    "32849",
+    "34682",
+    "36861",
+    "29684",
+    "36933"
+   ],
+   "zoektermen": [
+    "gasmarkt",
+    "leveringszekerheid",
+    "mijnbouw",
+    "gaswinning",
+    "ternaard",
+    "strategisch gas",
+    "energieschok",
+    "energieprijzen",
+    "energie-en brandstof",
+    "mijnraad"
+   ]
+  },
+  {
+   "id": "hernieuwbaar",
+   "titel": "Hernieuwbare energie (wind, zon, waterstof, groen gas)",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [
+    "31239",
+    "33561",
+    "36947",
+    "36936",
+    "36973"
+   ],
+   "zoektermen": [
+    "hernieuwbare",
+    "windenergie",
+    "offshore wind",
+    "wind op zee",
+    "zon op dak",
+    "waterstof",
+    "groen gas",
+    "energiedragers",
+    "bijmengverplichting",
+    "tweerichtingscontract"
+   ]
+  },
+  {
+   "id": "kernenergie",
+   "titel": "Kernenergie",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [
+    "32645",
+    "36839",
+    "36847"
+   ],
+   "zoektermen": [
+    "kernenergie",
+    "kerncentrale",
+    "nucleair"
+   ]
+  },
+  {
+   "id": "huishoudens-warmte",
+   "titel": "Huishoudens, warmte & gebouwde omgeving",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [
+    "30196",
+    "36576",
+    "27879",
+    "33016",
+    "32847"
+   ],
+   "zoektermen": [
+    "huishoudens",
+    "energierekening",
+    "gebouwde omgeving",
+    "collectieve warmte",
+    "stadswarmte",
+    "energiebesparing",
+    "ets2"
+   ]
+  },
+  {
+   "id": "industrie",
+   "titel": "Verduurzaming industrie",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [
+    "29826",
+    "31209"
+   ],
+   "zoektermen": [
+    "industrie",
+    "tata steel",
+    "maatwerkafspraak",
+    "moerdijk",
+    "productketens"
+   ]
+  },
+  {
+   "id": "circulair",
+   "titel": "Circulaire economie & afval",
+   "sectoren": [
+    "klimaat-energie",
+    "circulair-vervuiling"
+   ],
+   "kamerstukken": [
+    "32852",
+    "28694",
+    "32011",
+    "30872"
+   ],
+   "zoektermen": [
+    "circulair",
+    "statiegeld",
+    "afvalbeleid",
+    "wegwerpplastic"
+   ]
+  },
+  {
+   "id": "begroting",
+   "titel": "Begroting & verantwoording KGG",
+   "sectoren": [
+    "klimaat-energie"
+   ],
+   "kamerstukken": [
+    "36800",
+    "37020",
+    "36945"
+   ],
+   "zoektermen": [
+    "begroting klimaat",
+    "suppletoire begroting",
+    "verantwoordingsonderzoek",
+    "jaarverslag"
+   ]
+  }
+ ]
 }
