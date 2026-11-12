@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T19:53:49Z",
+ "bijgewerkt": "2026-11-12T19:59:32Z",
  "debatten": [
   {
    "id": "246687",
@@ -1044,6 +1044,249 @@
    },
    "bron": "https://gehoord.de/beraadslagingen/286128",
    "video": "https://debatdirect.tweedekamer.nl/2026-10-14/binnenlandse-zaken/troelstrazaal/klimaatbeleid-gebouwde-omgeving-10-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "8233",
+   "datum": "2026-04-02",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "WKR-adviesrapport 'Kiezen of verliezen'",
+   "dossiers": [
+    "industrie",
+    "klimaatbeleid"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A01158",
+   "aanzet": "De Wetenschappelijke Klimaatraad (WKR) lichtte zijn ongevraagde advies 'Kiezen of verliezen' (januari 2026) toe over de toekomst van de energie-intensieve industrie in een klimaatneutraal Nederland.",
+   "gist": "Volgens de WKR is de CO2-uitstoot van de Nederlandse industrie sinds 1990 nauwelijks gedaald, mede door onzekerheid over klimaatbeleid. Alle huidige industrie verduurzaamd in Nederland houden kost te veel ruimte, netcapaciteit, grondstoffen en geld, dus moet de politiek kiezen welke industrie past in 2050, met brede welvaart als maatstaf en op Europese schaal. De raad noemt groene chemie in het cluster Antwerpen-Rotterdam-Ruhr kansrijk, is voorzichtiger over staal en raffinage, en is kritisch over generieke steun en maatwerkafspraken zoals met Tata Steel.",
+   "deskundigen": [
+    {
+     "naam": "Jan Willem Erisman",
+     "organisatie": "Wetenschappelijke Klimaatraad (voorzitter)"
+    },
+    {
+     "naam": "Heleen de Coninck",
+     "organisatie": "Wetenschappelijke Klimaatraad"
+    },
+    {
+     "naam": "Henri de Groot",
+     "organisatie": "Wetenschappelijke Klimaatraad"
+    }
+   ],
+   "samenvatting": {
+    "kern": [
+     "Sluitingen van industrie tot nu toe komen volgens de WKR niet door klimaatbeleid maar door andere factoren, zoals geopolitiek, energieprijzen, goedkope import uit China en arbeids- en transportkosten. De vestigingsfactoren die Nederland groot maakten, veranderen (De Coninck).",
+     "Brede welvaart als uitgangspunt dwingt tot een balans tussen duurzaamheid, verdienvermogen en sociale inclusie, met rechtvaardigheid als kern. De raad adviseert vanuit functies te denken (wat heeft de samenleving van 2050 nodig?) in plaats van bestaande bedrijven of sectoren als vertrekpunt te nemen (De Groot).",
+     "Vijf raffinaderijen fossielvrij in stand houden vraagt enorme hoeveelheden biomassa, recycling, groene waterstof en dus elektriciteit. Op lange termijn daalt de vraag naar brandstoffen door elektrificatie (De Coninck).",
+     "Strategische autonomie betekent niet volledige zelfvoorziening: kijk welke importen risicovol zijn (olie en gas) en welke minder (bijvoorbeeld ammoniak of ruwstaal), en spreid risico's (De Coninck).",
+     "Maatwerkafspraken zijn voor de politiek lastig door informatieachterstand ten opzichte van het bedrijf. Bij de afspraak met Tata Steel vraagt de raad zich af of die genoeg is, en wat het doel is: uitstootvermindering, autonomie of werkgelegenheid (De Groot, De Coninck).",
+     "Groene vraag creëren gaat het best via Europese normering in samenhang met het ETS. De raad wil CBAM uitbreiden naar verdere producten en instrumenten voor koolstof in producten (zoals plastics), die nu niet onder het ETS vallen."
+    ],
+    "partijen": [
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Vroeg hoe de raad tot de conclusie komt dat er geen ruimte is om alle industrie te verduurzamen, en hoe groene vraag naar bijvoorbeeld staal kan worden gecreëerd.",
+      "link": "https://gehoord.de/beraadslagingen/8233?segment=4979"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Voegt strategische autonomie toe als derde pijler naast klimaat en economie; vreest dat het probleem wordt verplaatst als Nederland activiteiten opgeeft, en wees op tekorten aan diesel en kerosine in Europa bij sluiting van raffinaderijen.",
+      "link": "https://gehoord.de/beraadslagingen/8233?segment=5033"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Suzanne Kröger",
+      "positie": "Dringt al lang aan op een industrievisie; vroeg of de raad keuzes per sector bepleit in plaats van generieke subsidies en of de dalende vraag naar olie en plastic genoeg in het industriebeleid zit.",
+      "link": "https://gehoord.de/beraadslagingen/8233?segment=5087"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Vroeg hoe het advies zich verhoudt tot de intentieverklaring met Tata Steel (eerst van kolen naar gas) en hoe kansrijk Europese normering voor groen staal is.",
+      "link": "https://gehoord.de/beraadslagingen/8233?segment=5147"
+     },
+     {
+      "fractie": "Volt",
+      "spreker": "Laurens Dassen",
+      "positie": "Vroeg waar in Europa ruimte is voor industrie die Nederland nu wil houden, en welke instrumenten nodig zijn om CBAM uit te breiden en de afname van groene producten te stimuleren.",
+      "link": "https://gehoord.de/beraadslagingen/8233?segment=5109"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "doorgeleid": [],
+    "moties": "Technische briefing: geen moties of toezeggingen.",
+    "vervolg": [
+     "Commissiedebat Verduurzaming industrie (16 april 2026)."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/8233",
+   "video": "https://debatdirect.tweedekamer.nl/2026-04-02/klimaat/wttewaall-van-stoetwegenzaal/wkr-adviesrapport-kiezen-of-verliezen-10-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "209101",
+   "datum": "2026-09-10",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Rapporten CE Delft en TNO inzake het Nationaal Burgerberaad Klimaat",
+   "dossiers": [
+    "klimaatbeleid"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A05577",
+   "aanzet": "CE Delft rekende de klimaatimpact en kosten van het advies van het Nationaal Burgerberaad Klimaat door; TNO gaf in opdracht van het ministerie een gedrags- en rechtvaardigheidsreflectie op de kabinetsreactie. De briefing ging vooraf aan die over de kabinetsreactie zelf.",
+   "gist": "Volgens CE Delft levert het volledige advies van het Burgerberaad (13 aanbevelingen) tussen 5 en 17 megaton CO2-reductie op, grotendeels wereldwijd; als alles wordt uitgevoerd ligt het voor Nederland rond de 10 megaton, maar de uitwerking is bepalend. Waar het kabinet het doel deelt, kiest het vaker voor vrijwillige afspraken waar burgers wetten of heffingen voorstelden. TNO ziet dat het principe 'de vervuiler betaalt' wel wordt toegepast, maar draagkracht en een minimale ondergrens nog weinig, en adviseert pakketten van subsidies, normen, prijsprikkels en informatie.",
+   "deskundigen": [
+    {
+     "naam": "Geert Bergsma",
+     "organisatie": "CE Delft"
+    },
+    {
+     "naam": "Denise Hilster",
+     "organisatie": "CE Delft"
+    },
+    {
+     "naam": "Geerte Paradies",
+     "organisatie": "TNO"
+    }
+   ],
+   "samenvatting": {
+    "kern": [
+     "De grootste onbenutte impact zit volgens CE Delft in voedsel, zoals een wettelijke aanpak van voedselverspilling naar Spaans voorbeeld en een verplichting voor supermarkten om het aandeel plantaardig te verhogen (lage uitvoeringskosten, hoge impact). Burgers hadden weinig vertrouwen in convenanten zonder sancties.",
+     "Bij vliegen is een mondiale kerosineheffing lastig; alternatieven zijn een vliegbelasting gedifferentieerd naar afstand of naar hoe vaak iemand vliegt ('frequent flyer'). Burgers wilden luxe beprijzen met een vrije voet, zoals bij de waterbelasting.",
+     "Mensen overschatten hoe sceptisch hun buren over klimaat zijn; in het Burgerberaad groeide begrip tussen mensen met verschillende opvattingen (Bergsma).",
+     "Positief noemt TNO de inruilregeling voor tweedehands elektrische auto's voor lage en middeninkomens. Bij ruimtelijke verdichting rond ov-knooppunten moet het ov dan ook op orde zijn (Hilster)."
+    ],
+    "partijen": [
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Vroeg welke niet-overgenomen maatregelen de meeste impact hebben, naar vliegen en naar de rechtvaardigheidsbril van TNO.",
+      "link": "https://gehoord.de/beraadslagingen/209101?segment=189998"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Vroeg welke overgenomen aanbevelingen echt nieuw zijn, naar de economische kosten, en of burgerberaden vaker zinvol zijn (is zelf geen voorstander van overal burgerberaden).",
+      "link": "https://gehoord.de/beraadslagingen/209101?segment=190091"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Vroeg wat de bandbreedte van 5 tot 17 megaton verklaart, hoeveel aan Nederland toe te rekenen is en welke maatregelen de politiek als eerste zou moeten oppakken.",
+      "link": "https://gehoord.de/beraadslagingen/209101?segment=190123"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Wil vooral inzetten op gedrag en duurzame keuzes aantrekkelijk maken in plaats van snel te normeren; vroeg naar rechtvaardigheid bij beprijzing voor mensen zonder alternatieven.",
+      "link": "https://gehoord.de/beraadslagingen/209101?segment=190186"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "doorgeleid": [],
+    "moties": "Technische briefing: geen moties of toezeggingen.",
+    "vervolg": [
+     "Technische briefing over de kabinetsreactie (zelfde dag).",
+     "Plenair debat over het advies (12 november 2026)."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/209101",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-10/klimaat/wttewaall-van-stoetwegenzaal/rapporten-ce-delft-en-tno-inzake-het-nationaal-burgerberaad-klimaat-10-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "209110",
+   "datum": "2026-09-10",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Kabinetsreactie op het advies van het Nationaal Burgerberaad Klimaat",
+   "dossiers": [
+    "klimaatbeleid",
+    "circulair"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A05654",
+   "aanzet": "Ambtenaren van KGG, LVVN en IenW lichtten de kabinetsreactie toe op het advies van het Nationaal Burgerberaad Klimaat (175 gelote deelnemers, zeven weekenden, advies aangeboden op 1 december 2025).",
+   "gist": "Het kabinet splitste de 13 aangenomen aanbevelingen op in 82 deelaanbevelingen: 41 overgenomen, 18 later besloten en 23 niet overgenomen, telkens met uitleg. Veel van het overgenomene is bestaand of Europees beleid; het CO2-effect van de kabinetsreactie is niet doorgerekend. Voor extra klimaatbeleid verwijzen de ambtenaren naar de voorjaarsbesluitvorming 2027, na het Europese 2040-pakket. Niet overgenomen zijn onder meer een deltacommissaris tegen voedselverspilling, een ETS voor de landbouw, btw-vrijstelling op reparaties en een vaste garantie van zes jaar.",
+   "deskundigen": [
+    {
+     "naam": "Niels Redekers",
+     "organisatie": "Ministerie van KGG (directeur Klimaat)"
+    },
+    {
+     "naam": "Veerle Weustink",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Merel Berling",
+     "organisatie": "Ministerie van LVVN"
+    },
+    {
+     "naam": "Ruben Dekker",
+     "organisatie": "Ministerie van IenW (Circulaire economie)"
+    },
+    {
+     "naam": "Petrouschka Werther",
+     "organisatie": "Ministerie van IenW (directeur Duurzame mobiliteit)"
+    }
+   ],
+   "samenvatting": {
+    "kern": [
+     "Eten: het kabinet wil voedselverspilling halveren in 2030; in het najaar volgt een Kamerbrief, en over de Spaanse verspillingswet wordt in voorjaar 2027 besloten. Het investeringsfonds duurzame landbouw wordt met 43 miljoen euro verhoogd (via het stikstofpakket van 26 juni); voor methaan kiest het kabinet bedrijfsspecifieke emissienormen in plaats van een ETS.",
+     "Spullen: het recht op reparatie wordt geïmplementeerd via een wetsvoorstel naar Europese richtlijn; een reparatiefonds wordt bekeken via uitgebreide producentenverantwoordelijkheid (Kamer eind 2026 geïnformeerd).",
+     "Reizen: de inruilregeling van een fossiele auto voor een tweedehands elektrische auto wordt versneld ingevoerd voor lagere inkomens (zo mogelijk nog in 2026); HVO krijgt een plek in de brandstoftransitieverplichting; een accukwaliteitsrapport komt via Europa.",
+     "Het kabinet rapporteert twee keer over de opvolging, via de jaarlijkse Klimaat- en Energienota. In november is er een slotbijeenkomst met de deelnemers; het instrument burgerberaad wordt onafhankelijk geëvalueerd (BZK).",
+     "Aan een kader voor verdelende rechtvaardigheid in klimaatbeleid wordt gewerkt (Weustink)."
+    ],
+    "partijen": [
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Vroeg naar draagkracht en rechtvaardigheid (TNO zag daar weinig aandacht voor), welke niet-overgenomen maatregelen veel CO2-winst opleveren en naar de rol van supermarkten in de eiwittransitie.",
+      "link": "https://gehoord.de/beraadslagingen/209110?segment=191677"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Vroeg welke aanbevelingen echt nieuw waren voor de ambtenaren en wat de toegevoegde waarde van een burgerberaad is.",
+      "link": "https://gehoord.de/beraadslagingen/209110?segment=191740"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Merkte op dat de helft is overgenomen, maar dat veel daarvan al bestaand beleid is; vroeg hoeveel nieuw beleid oplevert en hoeveel CO2-reductie de kabinetsreactie oplevert (niet doorgerekend).",
+      "link": "https://gehoord.de/beraadslagingen/209110?segment=191750"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Vroeg of de daadwerkelijke CO2-winst en uitvoerbaarheid zijn meegewogen, en wat er gebeurt met niet-overgenomen aanbevelingen, om teleurstelling bij deelnemers te voorkomen.",
+      "link": "https://gehoord.de/beraadslagingen/209110?segment=191777"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "doorgeleid": [],
+    "moties": "Technische briefing: geen moties of toezeggingen.",
+    "vervolg": [
+     "Plenair debat over het advies (12 november 2026).",
+     "Voorjaarsbesluitvorming 2027 over aanvullend klimaatbeleid."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/209110",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-10/klimaat/wttewaall-van-stoetwegenzaal/kabinetsreactie-op-het-advies-van-het-nationaal-burgerberaad-klimaat-11-30",
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
