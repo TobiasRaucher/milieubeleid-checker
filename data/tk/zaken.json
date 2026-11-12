@@ -8356,6 +8356,649 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20668"
  },
  {
+  "id": "065a814f-0134-4b81-8cc8-70087b128c14",
+  "nummer": "2026Z20852",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van het lid Kostić c.s. over definiëren wat binnen het Nederlandse klimaatfinancieringsbeleid wordt verstaan onder innovatieve financiering ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-01",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-06",
+    "stemmen": [
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-01",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 104,
+   "tegen": 46,
+   "datum": "2026-10-06"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20852"
+ },
+ {
+  "id": "7b48a87c-5d29-45e4-9cb8-813e0512b496",
+  "nummer": "2026Z20850",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van de leden Kostić en Teunissen over zich ervoor inzetten dat emissiereductie en CO2-verwijdering strikt gescheiden worden verantwoord ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-01",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-06",
+    "stemmen": [
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-01",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 27,
+   "tegen": 123,
+   "datum": "2026-10-06"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20850"
+ },
+ {
+  "id": "c58fa192-a895-4cea-8805-a992192a5185",
+  "nummer": "2026Z20851",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van het lid Kostić c.s. over onafhankelijk onderzoek naar de werkelijke Nederlandse klimaatfinanciering ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-01",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-01",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-06",
+    "stemmen": [
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 33,
+   "tegen": 91,
+   "datum": "2026-10-06"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20851"
+ },
+ {
+  "id": "1f7fc6bf-2491-4937-9228-e1d4a341b349",
+  "nummer": "2026Z20849",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van het lid Kröger over de Internationale Klimaatstrategie actualiseren met een groeipad voor de Nederlandse publieke klimaatfinanciering naar het nieuwe internationale doel ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-01",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-01",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-06",
+    "stemmen": [
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 32,
+   "tegen": 118,
+   "datum": "2026-10-06"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20849"
+ },
+ {
   "id": "63285551-138d-4d98-9c65-4ddf8acc2bea",
   "nummer": "2026Z20828",
   "soort": "Motie",
@@ -21958,6 +22601,866 @@
    "klimaat-energie"
   ],
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z02915"
+ },
+ {
+  "id": "f7bc56c0-c1ba-4395-ae05-3928c894e11a",
+  "nummer": "2026Z02897",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van het lid Teunissen over een structurele bijdrage voorbereiden aan het Tropical Forest Forever Facility ",
+  "citeertitel": null,
+  "gestartOp": "2026-02-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Verzocht motie aan te houden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-02-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-05-12",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-09-22",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
+    "stemmingssoort": null,
+    "datum": "2026-03-03",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-06-30",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z02897"
+ },
+ {
+  "id": "c74567b8-a9ed-46c9-ad0a-5318747d4de8",
+  "nummer": "2026Z02895",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van het lid Van Oosterhout over geen vertegenwoordigers van de fossiele industrie uitnodigen voor de klimaatconferentie in Colombia ",
+  "citeertitel": null,
+  "gestartOp": "2026-02-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-02-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-03-03",
+    "stemmen": [
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 53,
+   "tegen": 97,
+   "datum": "2026-03-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z02895"
+ },
+ {
+  "id": "1dcf290d-e475-48c2-8ef2-6159902cf8c1",
+  "nummer": "2026Z02898",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van de leden Vermeer en Van den Berg over afzien van het organiseren van een nieuwe klimaattop over het uitfaseren van fossiele brandstoffen ",
+  "citeertitel": null,
+  "gestartOp": "2026-02-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-03-03",
+    "stemmen": [
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-02-10",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 46,
+   "tegen": 104,
+   "datum": "2026-03-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z02898"
+ },
+ {
+  "id": "ff49a9c2-9cce-431c-88b4-6efeff36ebdb",
+  "nummer": "2026Z02900",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van de leden Van den Berg en Flach over in de opvolging van COP30 inzetten op kernenergie als volwaardig onderdeel van een CO2-arme energiemix ",
+  "citeertitel": null,
+  "gestartOp": "2026-02-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-02-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-03-03",
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 98,
+   "tegen": 52,
+   "datum": "2026-03-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z02900"
+ },
+ {
+  "id": "f5efe5ea-bae4-4e3c-b8d9-bb834abad5c0",
+  "nummer": "2026Z02896",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van het lid Teunissen over de uitkomsten van de conferentie in Colombia opnemen in de Transitioning Away From Fossil Fuels Roadmap ",
+  "citeertitel": null,
+  "gestartOp": "2026-02-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-02-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-03-03",
+    "stemmen": [
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 104,
+   "tegen": 46,
+   "datum": "2026-03-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z02896"
+ },
+ {
+  "id": "05a8a6c9-6f5a-40da-b78e-bc0c0766ab8c",
+  "nummer": "2026Z02899",
+  "soort": "Motie",
+  "titel": "Internationale klimaatafspraken ",
+  "onderwerp": "Motie van het lid Van den Berg over in (inter)nationaal beleid kiezen voor een realistisch en uitvoerbaar tijdpad richting klimaatneutraliteit ",
+  "citeertitel": null,
+  "gestartOp": "2026-02-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-03-03",
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-02-10",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 24,
+   "tegen": 126,
+   "datum": "2026-03-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z02899"
  },
  {
   "id": "33821f28-2e29-4b2e-8b22-a672a06f09a7",
