@@ -1,11 +1,12 @@
 name: Data bijwerken (Tweede Kamer open data)
 
-# Voor nu alleen handmatig: Actions > "Data bijwerken" > "Run workflow".
-# Later automatisch maken? Haal het # weg voor de schedule-regels hieronder.
+# Draait automatisch elke werkdag om 05:17 UTC (06:17 Nederlandse wintertijd).
+# Handmatig kan ook: Actions > "Data bijwerken" > "Run workflow".
+# Uitzetten? Zet een # voor de twee schedule-regels hieronder.
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "17 5 * * 1-5"   # werkdagen om 05:17 UTC
+  schedule:
+    - cron: "17 5 * * 1-5"   # werkdagen om 05:17 UTC
 
 permissions:
   contents: write
