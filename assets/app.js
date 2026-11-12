@@ -1,4 +1,4 @@
-/* Milieubeleid-checker: leest de JSON-bestanden in data/ en tekent de pagina. Geen build-stap nodig. */
+/* MilieuRadar: leest de JSON-bestanden in data/ en tekent de pagina. Geen build-stap nodig. */
 (function () {
   "use strict";
   const S = { sector: "alle", data: null, motieFilter: { q: "", soort: "", uitslag: "", fractie: "", dossier: "" },
@@ -560,9 +560,9 @@
   /* ---------- Over ---------- */
   function over() {
     const m = S.data.meta;
-    return `<h2>Over deze checker</h2>
+    return `<h2>Over MilieuRadar</h2>
       <div class="card">
-        <p>Deze checker volgt Nederlands milieubeleid in het parlement: de fase van wetsvoorstellen, moties en amendementen met de stemming per fractie, samenvattingen van debatten en wat er op de agenda staat. Alle fracties krijgen evenveel ruimte.</p>
+        <p>MilieuRadar volgt Nederlands milieubeleid in het parlement: de fase van wetsvoorstellen, moties en amendementen met de stemming per fractie, samenvattingen van debatten en wat er op de agenda staat. Alle fracties krijgen evenveel ruimte.</p>
         <h3>Hoe het werkt</h3>
         <ul>
           <li><b>Automatisch:</b> een script haalt moties, amendementen, stemmingen, activiteiten en stukken van ministeries (Kamerbrieven en antwoorden op Kamervragen) op uit de <a href="https://opendata.tweedekamer.nl">open data van de Tweede Kamer</a>. Daar komt geen AI aan te pas.</li>

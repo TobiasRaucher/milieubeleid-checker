@@ -1,4 +1,4 @@
-# Milieubeleid-checker
+# MilieuRadar
 
 Een overzicht van Nederlands milieu- en klimaatbeleid in de Tweede Kamer: de fase van wetsvoorstellen, moties en amendementen met de stemming per fractie, samenvattingen van debatten en de agenda.
 

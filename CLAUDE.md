@@ -1,8 +1,8 @@
-# Werkwijze voor Claude: milieubeleid-checker
+# Werkwijze voor Claude: MilieuRadar (repo milieubeleid-checker)
 
 Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubeleid in het parlement. Alle inhoud op de site is **Nederlands**; alle fracties krijgen gelijk gewicht. Geen gedachtestreepjes (em dashes) in teksten; gebruik haakjes of puntkomma's.
 
-## Bij "werk de checker bij"
+## Bij "werk de checker bij" (of "werk MilieuRadar bij")
 
 1. `git pull`, dan `python3 pipeline/fetch_tk.py` (Tweede Kamer open data; geen AI). Controleer `data/tk/meta.json` op fouten.
 2. Zoek nieuwe debatten: vergelijk `data/tk/activiteiten.json` (Status `Uitgevoerd`, relevante soorten) met `data/debatten.json` (koppeling op datum + soort). Sla procedurevergaderingen over.
