@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:14:19Z",
+ "bijgewerkt": "2026-11-12T20:17:09Z",
  "debatten": [
   {
    "id": "246687",
@@ -1966,6 +1966,295 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/286143"
+  },
+  {
+   "id": "292944",
+   "datum": "2026-10-15",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Het Nationaal Plan Energiesysteem Actualisatie 2026",
+   "niveau": "kort",
+   "dossiers": [
+    "elektriciteitsnet",
+    "industrie"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A07120",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-15/klimaat/suze-groenewegzaal/het-nationaal-plan-energiesysteem-13-00",
+   "deskundigen": [
+    {
+     "naam": "Niels Redeker",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Bas Ebskamp",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Onne Hoogland",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Tycho Smit",
+     "organisatie": "Ministerie van KGG"
+    }
+   ],
+   "aanzet": "Ambtelijke toelichting op de actualisatie 2026 van het Nationaal Plan Energiesysteem (verschenen met Prinsjesdag), ter voorbereiding op het notaoverleg van 26 oktober. De Kamer had vooraf 122 schriftelijke vragen gesteld.",
+   "gist": "De ambtenaren lichtten toe dat het NPE (wettelijk verankerd in de Energiewet) richting geeft aan het langjarige energiebeleid en op een brede set scenario's een 'verstandige middenkoers' kiest, met elke drie tot vijf jaar een herijking; de grootste bijstelling ten opzichte van 2023 betreft waterstof (meer import van energierijke halffabricaten, minder eigen productie). Kamerleden vroegen naar de haalbaarheid van een verdubbeling van de stroomvraag (VVD), de doorvertaling van systeemkosten naar huishoudens en bedrijven (PRO; volgt later in een kennisprogramma), vergelijkbare plannen in het buitenland (CDA; onder meer Duitsland, Frankrijk en het VK), of het NPE volgend of sturend is (D66) en hoeveel 'wensdenken' er zit in de aanname dat de industrie blijft (ChristenUnie). Volgens het ministerie gaat het NPE uit van behoud van industrie en minimale systeemkosten, maar is de goedkoopste route voor het systeem niet automatisch betaalbaar voor bedrijven.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Notaoverleg Energiesysteem op 26 oktober 2026."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/292944"
+  },
+  {
+   "id": "292951",
+   "datum": "2026-10-15",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Volume- en tijdsafhankelijke nettarieven (ACM)",
+   "niveau": "kort",
+   "dossiers": [
+    "elektriciteitsnet",
+    "huishoudens-warmte"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A06655",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-15/klimaat/suze-groenewegzaal/inzake-volume-en-tijdsafhankelijke-nettarieven-namens-acm-16-00",
+   "deskundigen": [
+    {
+     "naam": "Manon Leijten",
+     "organisatie": "ACM (bestuurder)"
+    },
+    {
+     "naam": "Rens van de Ven",
+     "organisatie": "ACM"
+    },
+    {
+     "naam": "Rob van der Werf",
+     "organisatie": "ACM"
+    }
+   ],
+   "aanzet": "Toelichting door de ACM op haar ontwerpbesluit voor volume- en tijdsafhankelijke nettarieven voor kleinverbruikers, die per 1 januari 2029 moeten ingaan.",
+   "gist": "Nu betaalt elk huishouden een vast transporttarief (ongeveer 360 euro per jaar); in het ontwerpbesluit blijft een derde daarvan vast en wordt de rest afhankelijk van hoeveel en wanneer je stroom gebruikt. Huishoudens in kleine woningen en op een warmtenet gaan er volgens de ACM op vooruit, grote woningen met veel elektrische apparaten erop achteruit; een warmtepomp blijft over de levensduur lonen maar verdient zich trager terug, zonnepanelen worden weer aantrekkelijker. Kamerleden vroegen naar de verhouding met piek- en daltarieven van leveranciers en de begrijpelijkheid van de rekening (BBB), het risico dat de piek alleen verschuift (VVD; volgens de ACM bij deze variant niet, wel te monitoren) en huishoudens met medische apparatuur (CDA; volgens onderzoek met netbeheerders vergoeden zorgverzekeraars hier vaak stroomkosten). De ACM koos bewust voor een eenvoudige variant boven een complexere die beter zou zijn voor het net.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Definitief besluit van de ACM; invoering per 1 januari 2029, met aangepaste eisen aan de factuur van leveranciers."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/292951"
+  },
+  {
+   "id": "286137",
+   "datum": "2026-10-14",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "ROB-advies over democratische controle en zeggenschap bij keuzes rondom netbeheer",
+   "niveau": "kort",
+   "dossiers": [
+    "elektriciteitsnet"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A06388",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-14/bestuur/klompezaal/rob-advies-over-democratische-controle-en-zeggenschap-bij-keuzes-rondom-netbeheer-13-00",
+   "deskundigen": [
+    {
+     "naam": "Jurgen Goossens",
+     "organisatie": "Raad voor het Openbaar Bestuur"
+    },
+    {
+     "naam": "Michael Mekel",
+     "organisatie": "Raad voor het Openbaar Bestuur"
+    }
+   ],
+   "aanzet": "Toelichting op het advies 'Eerst programmeren, dan prioriteren' van de Raad voor het Openbaar Bestuur (7 oktober 2026), gevraagd na een motie-Grinwis/Jumelet van december 2025 naar aanleiding van het debat over het prioriteringskader van de ACM voor toegang tot het stroomnet.",
+   "gist": "De ROB vindt dat politieke keuzes over het stroomnet (wat krijgt voorrang, waar komt welke infrastructuur) vooraf door kabinet en Kamer gemaakt moeten worden in plaats van achteraf via ACM-besluiten, onder meer via programmering in het ruimtelijke domein en het energiebeleid. Nationaal beleid kan het tariefstelsel beïnvloeden zolang het niet in de exclusieve bevoegdheden van de onafhankelijke toezichthouder treedt (de ROB wees op een uitspraak van het Europees Hof over Finland). De Kamer kan de publieke verantwoording van de ACM versterken door tijdig informatie te vragen over belangrijke ontwerpbesluiten, en kan in Europa bondgenoten zoeken voor meer ruimte. BBB vroeg hoe de Kamer grip krijgt op concrete tracékeuzes (zoals bij Moerdijk), CDA naar de sturing via provinciale programma's, PRO naar de Europese route en de nettarieven voor huishoudens.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Kabinetsreactie op het ROB-advies."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/286137"
+  },
+  {
+   "id": "303744",
+   "datum": "2026-10-28",
+   "type": "Rondetafelgesprek",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Zon op dak: van potentie naar realisatie",
+   "niveau": "kort",
+   "dossiers": [
+    "hernieuwbaar",
+    "huishoudens-warmte"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A07432",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-28/landbouw-natuur-voedselkwaliteit/groen-van-prinstererzaal/zon-op-dak-van-potentie-naar-realisatie-14-15",
+   "deskundigen": [
+    {
+     "naam": "Gerard de Leede",
+     "organisatie": "zonnepanelensector"
+    },
+    {
+     "naam": "Peter Derk Wekx",
+     "organisatie": "Nationaal Programma RES"
+    },
+    {
+     "naam": "Nold Jaeger",
+     "organisatie": "Holland Solar"
+    },
+    {
+     "naam": "Sandra Molenaar",
+     "organisatie": "Consumentenbond (mede namens Vereniging Eigen Huis)"
+    },
+    {
+     "naam": "Bert Halm",
+     "organisatie": "woningcorporatie, lid algemeen bestuur Aedes"
+    },
+    {
+     "naam": "Karin Keijzer-van den Bosch",
+     "organisatie": "RVO"
+    }
+   ],
+   "aanzet": "Rondetafelgesprek over hoe het potentieel van zonnepanelen op daken (woningen, publieke en bedrijfsdaken, parkeerplaatsen) beter benut kan worden, nu het NPE drie keer zoveel zonnestroom in 2040 nodig acht en de groei afvlakt.",
+   "gist": "De sector noemde zon op dak een fundamenteel onderdeel van het energiesysteem, geremd door constructief zwakke daken, netcongestie en het einde van de salderingsregeling. Het Nationaal Programma RES waarschuwde dat zon op dak alleen niet genoeg is voor de verdrievoudiging, en wees op de Franse verplichting van zonnecarports bij grote parkeerterreinen. Holland Solar vroeg zonne-energie als vitale infrastructuur aan te merken (cyberweerbaarheid) en gaf voorbeelden van zonnecarports met batterij die een zware netaansluiting overbodig maken; ook pleitte het ervoor alleen nog slim aanstuurbare warmtepompen te subsidiëren. Consumentenbond en Vereniging Eigen Huis: zonnepanelen moeten na 2027 blijven lonen, ook voor huurders. Kamerleden (CDA, D66, PRO, VVD) vroegen naar innovatie en Europese productie tegenover Chinese dominantie, normering en de begrijpelijkheid van energierekeningen.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/303744"
+  },
+  {
+   "id": "195993",
+   "datum": "2026-09-07",
+   "type": "Wetgevingsoverleg",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Wetgevingsoverleg Wet bijmengverplichting groen gas (7 en 21 september)",
+   "dossiers": [
+    "36947",
+    "hernieuwbaar",
+    "huishoudens-warmte"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
+   "activiteit": "2026A05070",
+   "extraActiviteiten": [
+    "2026A06379"
+   ],
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-21/overig/thorbeckezaal/wet-bijmengverplichting-groen-gas-voortzetting-tweede-termijn-17-00",
+   "aanzet": "Wetgevingsoverleg over het wetsvoorstel dat gasleveranciers verplicht een oplopend aandeel groen gas te leveren (36947). De eerste termijn op 7 september duurde ruim twaalf uur; de tweede termijn met moties en amendementen volgde op 21 september. Deze samenvatting is vooral gebaseerd op de tweede termijn (transcript: https://gehoord.de/beraadslagingen/218208); de eerste termijn staat op https://gehoord.de/beraadslagingen/195993.",
+   "gist": "VVD, D66 en (onder voorwaarden) PRO en ChristenUnie steunden de bijmengverplichting als manier om fossiele gasimport te verminderen en groen gas uit Nederlandse mest en reststromen op te schalen. PVV en JA21 waren tegen vanwege hogere energierekeningen (de PVV spreekt van 'nep groen gas' via certificaten); de PvdD vreesde een lock-in van de intensieve veehouderij via mestvergisting; SGP en BBB twijfelden, onder meer over de compensatie voor de glastuinbouw en het feit dat ook buitenlands biogas meetelt. De minister noemde het een 'behoedzaam pad' en gaf veel moties oordeel Kamer, onder meer over een transitiepad voor de glastuinbouw richting 2040, een evaluatie, monitoring van energiearmoede en een onderzoek naar lock-in bij SDE++-subsidie voor mestvergisting. De amendementen voor een voorhangprocedure voor verplichting en buy-out (Grinwis c.s.) en jaarlijkse monitoring kregen oordeel Kamer; het JA21-amendement om de verplichting te halveren werd ontraden. De Tweede Kamer nam de wet op 6 oktober aan (89 voor, 61 tegen).",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Voor een bijmengverplichting, maar met grote zorgen over de vormgeving: groen gas zou volgens hem eerder in piekvoorziening voor elektriciteit moeten dan bij alle huishoudens en de glastuinbouw. Trok een amendement over doelgroepen in vanwege uitvoeringsbezwaren. Amendement (met Teunissen en Van den Berg) voor een voorhangprocedure voor de hoogte van verplichting en buy-out. Moties over het noodfonds, een transitiepad glastuinbouw 2040, een gericht vraaginstrument, gelijk speelveld en evaluatie; en een motie om eventuele buy-out-opbrengsten terug te geven via lastenverlichting (aangehouden, wacht op Financiën).",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199081"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Twee bezwaren maken steun lastig: ook buitenlands biogas telt mee, zodat Nederland buitenlandse installaties financiert (Flach wil een beroep op artikel 36 van het EU-verdrag onderzoeken), en de compensatie voor de glastuinbouw is alleen voor 2027 ingevuld. Motie om de glastuinbouw buiten ETS2 te houden (ontraden).",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199342"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Alexander Kops",
+      "positie": "Tegen. Huishoudens krijgen volgens de PVV geen echt groen gas maar 'nep groen gas' via certificaten, waarvoor de energierekening in tijden van recordprijzen verder stijgt.",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199105"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Voor: groen gas verkleint de afhankelijkheid van fossiele import en kan sectoren bedienen die niet kunnen elektrificeren. Vraagt modelvergunningen en handreikingen uiterlijk Q1 2027 en toepassing van netcongestie-instrumenten op groengasproducenten. Moties: herijkte langjarige afspraken met de glastuinbouw richting 2040, en (met Jumelet) het uitgangspunt dat de verplichting doorloopt tot 2040. Beide oordeel Kamer.",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199110"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Henk Vermeer",
+      "positie": "Ziet kansen voor groen gas uit mest als verdienmodel voor boeren, maar de wet regelt volgens BBB wel de verplichting en niet de productie. 'Een duivels dilemma': het stemgedrag hangt af van moties en amendementen. Motie om voor de eerste verhoging inzichtelijk te maken of de productiecapaciteit tijdig gerealiseerd kan worden (oordeel Kamer).",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199150"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Aandacht voor binnenlandse productie, betaalbaarheid en de glastuinbouw. Wil dat het versnellingsplan van LTO, NVDE en Rabobank prioriteit krijgt, samen met het ministerie van LVVN.",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199161"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Zorgen over de energierekening en over een lock-in van de intensieve veehouderij via mestvergisting. Wil geen lagere gasbelasting ('symptoombestrijding') maar structurele maatregelen zoals dempen van nettarieven en isolatie. Moties: onderzoek of SDE++ voor mestvergisting tot lock-in leidt (oordeel Kamer), buy-out-opbrengsten evenredig inzetten voor verduurzaming van huishoudens (oordeel Kamer) en maatregelen als energiearmoede niet daalt (ontraden). Kan voor de wet stemmen na weging van moties en amendementen.",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199167"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Voor, en voor snelle inwerkingtreding: meer groen gas maakt minder kwetsbaar voor fossiele prijzen, ontlast het elektriciteitsnet en is goed voor het klimaat. Moties: de bijmengverplichting meenemen in de jaarlijkse integrale prognose van de energierekening, en inzet voor een Europese bijmengverplichting. Beide oordeel Kamer.",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199227"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Kritisch: de wet maakt gas duurder terwijl huishoudens in energiearmoede (vaak in corporatiewoningen) volgens JA21 niets hebben aan lagere nettarieven of stroombelasting. Medeindiener van het voorhang-amendement; amendement om de verplichting te halveren (ontraden).",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199259"
+     },
+     {
+      "fractie": "PvdD",
+      "spreker": "Ines Kostić",
+      "positie": "Tegen: de wet maakt de energievoorziening afhankelijk van de bio-industrie en zou schaalvergroting en het binnen houden van koeien stimuleren (mestvergisting rendeert volgens banken pas vanaf 500 koeien). Wijst op een rapport in opdracht van Urgenda en wil waarborgen in de wet zelf in plaats van moties.",
+      "link": "https://gehoord.de/beraadslagingen/218208?segment=199265"
+     }
+    ],
+    "kabinet": [
+     "De minister kiest een 'behoedzaam pad': de verplichting ligt de eerste drie jaar onder de huidige Nederlandse productie van groen gas, en de aannames over groen gas uit mestvergisting zijn bewust terughoudend.",
+     "De verplichting stuurt niet op een specifiek aandeel mestvergisting; binnen de stikstofplannen blijft volgens het kabinet genoeg mest beschikbaar voor rendabele vergisting.",
+     "Buy-out-opbrengsten zijn niet geraamd; het kabinet hoopt dat er nooit gebruik van wordt gemaakt. Terugsluizen via lastenverlichting staat op gespannen voet met de begrotingsregels; daarover is het kabinet in gesprek met Financiën.",
+     "Glastuinbouw buiten ETS2 houden kan om technische redenen niet; met LVVN worden langjarige afspraken met de sector bekeken."
+    ],
+    "toezeggingen": [
+     "De jaarlijkse NEa-rapportage bevat vanaf het jaar na inwerkingtreding informatie over het aandeel groen gas uit mestvergisting.",
+     "Schriftelijke reactie op het versnellingsplan van NVDE, Rabobank en LTO (samen met LVVN) en op het rapport in opdracht van Urgenda, zo mogelijk voor de stemmingen.",
+     "Inspanning om voor de stemming een appreciatie van Financiën te krijgen van de motie-Grinwis over buy-out-opbrengsten."
+    ],
+    "moties": "Achttien moties en meerdere amendementen. Amendementen: voorhang voor hoogte van verplichting en buy-out (nr. 21) en jaarlijkse monitoring (nr. 22) oordeel Kamer; halvering van de verplichting (nr. 23, Van den Berg) ontraden. Moties oordeel Kamer: onder meer Grinwis (noodfonds, transitiepad glastuinbouw 2040, vraaginstrument, gelijk speelveld productietechnieken, evaluatie), Müller (afspraken glastuinbouw 2040; met Jumelet doorlopen tot 2040), Vermeer (tijdige productiecapaciteit), Van Oosterhout (lock-in SDE++; buy-out voor huishoudens), Klos (energierekening-prognose; Europese bijmengverplichting) en een motie over jaarlijkse evaluatie van energiearmoede. Ontraden: Flach (glastuinbouw buiten ETS2), Van Oosterhout (maatregelen bij stijgende energiearmoede), motie nr. 16 (volgens de minister in strijd met een motie-Grinwis) en, tenzij aangepast, een motie over maatregelen als WKK's op groen gas de leveringszekerheid raken (het capaciteitsmechanisme dekt dat al). Aangehouden: Grinwis (buy-out naar lastenverlichting).",
+    "vervolg": [
+     "Aangenomen door de Tweede Kamer op 6 oktober 2026 (89 voor, 61 tegen).",
+     "Behandeling in de Eerste Kamer."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/195993"
   }
  ]
 }
