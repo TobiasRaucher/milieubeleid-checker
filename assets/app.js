@@ -321,6 +321,7 @@
     const groep = (soort) => b ? b.stemmen.filter((s) => s.soort === soort).map((s) => `${esc(s.fractie)}${s.zetels && !/hoofdelijk/i.test(b.stemmingssoort || "") ? ` (${s.zetels})` : ""}`).join(", ") : "";
     return `<div><b>${esc(z.onderwerp || z.titel)}</b></div>
       <div class="small muted">Zaak ${esc(z.nummer)} · ingediend ${fmtDatum(z.gestartOp)} · indieners: ${z.indieners.map((i) => `${esc(i.naam)} (${esc(i.fractie)})`).join(", ") || "onbekend"}</div>
+      ${((a) => a ? `<div class="small">Ingediend bij: ${((d) => d ? `<a href="#vergaderingen/d-${esc(d.id)}">${esc(a.Onderwerp)}</a>` : `<a href="${esc(a.tkLink || "")}" target="_blank" rel="noopener">${esc(a.Onderwerp)}</a>`)(samengevatVoor(a) || ((cd) => cd && samengevatVoor(cd))(actPerNummer().get(motieKoppeling().tmdNaarCd.get(a.Nummer))))} (${fmtDatum(dagNL(new Date(a.Datum)))})</div>` : "")(motieKoppeling().actVanMotie.get(z.nummer))}
       ${voteBar(z.stemtelling)}
       ${b ? `<div class="fracties"><span class="k">Voor</span><span>${groep("Voor") || "–"}</span><span class="k">Tegen</span><span>${groep("Tegen") || "–"}</span>${groep("Niet deelgenomen") ? `<span class="k">Niet deelgenomen</span><span>${groep("Niet deelgenomen")}</span>` : ""}</div>` : `<div class="small muted">Nog geen stemming.</div>`}
       ${z.besluiten.length ? `<div class="small" style="margin-top:8px">Besluiten: ${z.besluiten.map((x) => `${x.datum ? fmtDatum(x.datum) + ": " : ""}${esc(x.tekst)}`).join(" · ")}</div>` : ""}
@@ -423,7 +424,7 @@
         ${blok("Kern", `<p>${esc(d.gist)}</p>${(s.kern || []).length ? lijst(s.kern) : ""}`)}
         ${blok("Standpunten fracties", standpunten)}
         ${blok("Toezeggingen", toezeggingen || `<p class="muted">Geen toezeggingen.</p>`)}
-        ${blok("Moties", s.moties ? `<p>${esc(s.moties)}</p>` : "")}
+        ${blok("Moties", (s.moties ? `<p>${esc(s.moties)}</p>` : "") + motieLijst(motiesBijActiviteiten([d.activiteit, ...(d.extraActiviteiten || [])])))}
         ${blok("Vervolg", (s.vervolg || []).length ? lijst(s.vervolg) : "")}
         ${blok("Deelnemers", deelnemers ? `<div class="deelnemers">${deelnemers}</div>` : "")}
         <div class="small muted" style="margin-top:12px">${d.niveau === "kort" ? "Korte samenvatting" : "Samengevat"} door ${esc(d.samengevatDoor)} op ${fmtDatum(d.samengevatOp)} op basis van het automatische transcript.</div>
@@ -635,7 +636,63 @@
       <div class="titelrij"><span class="tag">${esc(it.type)}</span><h3><a href="${esc(a.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${a.Nummer}`)}" target="_blank" rel="noopener">${esc(a.Onderwerp)}</a></h3><span class="tag zonder">nog niet samengevat</span></div>
       <div class="kaartlabels">${themaChips(it.thema, true)}${dossierChips(it.dossier)}</div>
       ${it.ministerie.length ? `<div class="small muted">Ministerie: ${esc(it.ministerie.join(", "))}</div>` : ""}
+      ${((ms) => ms.length ? `<details class="motiedetails"><summary>${ms.length} ${ms.length === 1 ? "motie" : "moties"} (${ms.filter((z) => z.uitslag === "aangenomen").length} aangenomen)</summary>${motieLijst(ms)}</details>` : "")(motiesBijActiviteiten([a.Nummer]))}
     </article>`;
+  }
+
+  /* ---------- Moties bij vergaderingen ---------- */
+  // Een motie hoort bij een plenaire vergadering (of wetgevings-/notaoverleg) op de dag van indienen of de dag ervoor,
+  // als het Kamerstukdossier van de motie op de agenda van die vergadering staat. Twijfelgevallen worden niet gekoppeld.
+  // Een tweeminutendebat "X (CD d/m)" wordt gekoppeld aan het commissiedebat X van die datum.
+  let _mk = null;
+  function motieKoppeling() {
+    if (_mk) return _mk;
+    const plenair = S.data.activiteiten.filter((a) => a.Datum && (/^Plenair/.test(a.Soort) || ["Wetgevingsoverleg", "Notaoverleg"].includes(a.Soort)));
+    const perDag = new Map();
+    for (const a of plenair) { const d = dagNL(new Date(a.Datum)); if (!perDag.has(d)) perDag.set(d, []); perDag.get(d).push(a); }
+    const nums = (a) => {
+      const s = new Set();
+      for (const ap of a.agendapunten || []) for (const st of ap.stukken || []) if (st.kamerstuk) s.add(st.kamerstuk.split("-")[0]);
+      for (const m of (a.Onderwerp || "").replace(/(\d{2}) (\d{3})/g, "$1$2").matchAll(/\b(\d{5})\b/g)) s.add(m[1]);
+      return s;
+    };
+    const perAct = new Map(), actVanMotie = new Map();
+    for (const z of S.data.zaken) {
+      if (z.soort !== "Motie" || !z.gestartOp) continue;
+      const dn = new Set(z.dossiers.map((x) => String(x.nummer)));
+      const kand = [...(perDag.get(z.gestartOp) || []), ...(perDag.get(plusDagen(z.gestartOp, -1)) || [])];
+      const hit = kand.filter((a) => [...nums(a)].some((n) => dn.has(n)));
+      if (hit.length !== 1) continue;
+      const nr = hit[0].Nummer;
+      if (!perAct.has(nr)) perAct.set(nr, []);
+      perAct.get(nr).push(z);
+      actVanMotie.set(z.nummer, hit[0]);
+    }
+    // tweeminutendebat -> commissiedebat
+    const tmdNaarCd = new Map(), cdNaarTmd = new Map();
+    const normT = (s) => (s || "").toLowerCase().replace(/\(.*?\)/g, "").replace(/^tweeminutendebat\s*/, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+    const cds = S.data.activiteiten.filter((a) => a.Soort === "Commissiedebat" && a.Datum);
+    for (const t of S.data.activiteiten.filter((a) => /tweeminutendebat/i.test(a.Soort) || /^Tweeminutendebat/i.test(a.Onderwerp || ""))) {
+      const m = /\(CD (\d{1,2})\/(\d{1,2})\)/.exec(t.Onderwerp || "");
+      if (!m) continue;
+      const naam = normT(t.Onderwerp);
+      const cd = cds.filter((c) => { const d = new Date(c.Datum); return d.getDate() === +m[1] && d.getMonth() + 1 === +m[2] && c.Datum <= (t.Datum || "9999"); })
+        .find((c) => { const n = normT(c.Onderwerp); return n && (n.startsWith(naam.slice(0, 12)) || naam.startsWith(n.slice(0, 12))); });
+      if (cd) { tmdNaarCd.set(t.Nummer, cd.Nummer); if (!cdNaarTmd.has(cd.Nummer)) cdNaarTmd.set(cd.Nummer, []); cdNaarTmd.get(cd.Nummer).push(t.Nummer); }
+    }
+    return (_mk = { perAct, actVanMotie, tmdNaarCd, cdNaarTmd });
+  }
+  // alle moties bij een vergadering (inclusief het bijbehorende tweeminutendebat)
+  function motiesBijActiviteiten(nrs) {
+    const { perAct, cdNaarTmd } = motieKoppeling();
+    const alle = uniek(nrs.filter(Boolean).flatMap((n) => [n, ...(cdNaarTmd.get(n) || [])]));
+    return uniek(alle.flatMap((n) => perAct.get(n) || []));
+  }
+  function motieLijst(ms) {
+    if (!ms.length) return "";
+    const aangenomen = ms.filter((z) => z.uitslag === "aangenomen").length;
+    return `<div class="small muted">${ms.length} ${ms.length === 1 ? "motie" : "moties"} ingediend, ${aangenomen} aangenomen.</div>
+      <ul class="motielijst">${ms.map((z) => `<li>${uitslagPill(z.uitslag)} <a href="${esc(z.link)}" target="_blank" rel="noopener">${esc(korteTitel(z))}</a> <span class="small muted">${indienersTekst(z)}</span></li>`).join("")}</ul>`;
   }
 
   /* ---------- Toezeggingen ---------- */
