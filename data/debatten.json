@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T19:49:44Z",
+ "bijgewerkt": "2026-11-12T19:51:43Z",
  "debatten": [
   {
    "id": "246687",
@@ -603,6 +603,252 @@
    },
    "bron": "https://gehoord.de/beraadslagingen/322999",
    "video": "https://debatdirect.tweedekamer.nl/2026-11-05/klimaat/plenaire-zaal/begroting-klimaat-en-groene-groei-37-020-xxiii-voortzetting-16-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "224529",
+   "datum": "2026-09-23",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "ETS-herziening",
+   "dossiers": [
+    "internationaal-eu",
+    "industrie"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A06066",
+   "aanzet": "Een ambtenaar van de Europese Commissie (DG Klimaat) lichtte digitaal het voorstel van 17 juli 2026 toe voor de herziening van het Europese emissiehandelssysteem (ETS1) na 2030. De Raad en het Europees Parlement willen in december hun positie bepalen en in het eerste kwartaal van 2027 een akkoord sluiten.",
+   "gist": "Volgens de Commissie geeft het voorstel bedrijven duidelijkheid tot 2040: het plafond blijft dalen, maar langzamer (reductiefactor van 4,4% naar 3,7% per jaar), met ruimte voor internationale kredieten en CO2-verwijdering. Gratis rechten blijven, maar worden gekoppeld aan investeringsplannen, en er komt een Industrial Decarbonisation Bank. PRO, D66 en ChristenUnie zagen een afzwakking die andere sectoren moeten opvangen; de Commissie noemt het voorstel kostenefficiënt en in lijn met 90% reductie in 2040.",
+   "deskundigen": [
+    {
+     "naam": "Ruben Vermeeren",
+     "organisatie": "Europese Commissie (DG Klimaat)"
+    }
+   ],
+   "samenvatting": {
+    "kern": [
+     "Het ETS heeft sinds 2005 ongeveer 50% emissiereductie opgeleverd in de gedekte sectoren en meer dan 270 miljard euro aan opbrengsten. In 2030 moet het 62% zijn ten opzichte van 2005.",
+     "Vanaf 2036 mag de EU tot 5% van haar doel halen met internationale kredieten; volgens de Commissie is ongeveer 2 procentpunt daarvan een eerlijk aandeel voor het ETS. Het ETS komt zo binnen Europa op 85% reductie in 2040.",
+     "Voor CO2-verwijdering komen 250 miljoen extra rechten. De Commissie koopt met de opbrengst hoogwaardige verwijdering met permanente opslag (zoals BECCS en direct air capture).",
+     "Gratis rechten worden voorwaardelijk: 80% na een goedgekeurd investeringsplan, de laatste 20% pas als de investeringen gedaan zijn. Koplopers (de beste 10% per productgroep) zijn vrijgesteld. Voor sectoren onder de CO2-grensheffing (CBAM) lopen de gratis rechten door tot 2038 in plaats van 2034.",
+     "Een nieuwe Industrial Decarbonisation Bank begint in 2028 met een 'investment booster' van 400 miljoen rechten (ongeveer 30 miljard euro bij 75 euro per recht), met een vaste premie per vermeden ton CO2.",
+     "Lidstaten moeten 50% van hun ETS-inkomsten investeren in de ETS-sectoren. Nederland laat de opbrengsten nu in de algemene middelen vloeien; de Commissie wil die opbrengsten beter zichtbaar geoormerkt zien.",
+     "De scope wordt uitgebreid naar afvalverbranding (vanaf 2031, gefaseerd, Nederland is voor), naar vluchten tot 5000 km van Europa en naar kleinere schepen."
+    ],
+    "partijen": [
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Vroeg welk probleem de herziening eigenlijk oplost en hoe de lijst van sectoren met gratis rechten tot stand komt.",
+      "link": "https://gehoord.de/beraadslagingen/224529?segment=202313"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Stelde dat het ETS stevig wordt afgezwakt (volgens haar 67% meer rechten, meer gratis rechten, uitstel van CBAM, zwakke internationale kredieten en een nulpunt dat tien jaar opschuift) en vroeg welke sectoren dat moeten opvangen. Vroeg ook waarom niet alle vluchten en de niet-CO2-effecten van luchtvaart onder het ETS vallen.",
+      "link": "https://gehoord.de/beraadslagingen/224529?segment=202341"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Vroeg of verdere afzwakking dreigt onder druk van de-industrialisatie en concurrentie uit China, en hoe CBAM waterdicht wordt gemaakt, ook voor halffabricaten.",
+      "link": "https://gehoord.de/beraadslagingen/224529?segment=202357"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Vroeg hoe koplopers worden beschermd die investeerden in de verwachting dat de industrie in 2040 op nul zou zitten, wie de verduurzamingsplannen beoordeelt, en wat er gebeurt als lidstaten het voorstel verder afzwakken.",
+      "link": "https://gehoord.de/beraadslagingen/224529?segment=202386"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "doorgeleid": [],
+    "moties": "Technische briefing: geen moties of toezeggingen.",
+    "vervolg": [
+     "Commissiedebat Milieuraad (7 oktober 2026) en Energieraad (14 oktober 2026).",
+     "Positie Raad en Europees Parlement in december 2026; doel akkoord eerste kwartaal 2027."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/224529",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-23/klimaat/suze-groenewegzaal/ets-herziening-11-30",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "224542",
+   "datum": "2026-09-23",
+   "type": "Rondetafelgesprek",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Versnelde verzwakking van de Atlantische doorstroming (AMOC)",
+   "dossiers": [
+    "klimaatbeleid"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A04788",
+   "aanzet": "De commissie liet zich door oceaan- en klimaatwetenschappers informeren over de verzwakking van de Atlantische omwentelingsstroming (AMOC), een mogelijk klimaatkantelpunt met grote gevolgen voor Nederland, en over het dreigende einde van de metingen ervan.",
+   "gist": "Volgens de deskundigen verzwakt de AMOC door opwarming. Stilvallen zou Nederland droger maken, met kouder winters en ongeveer 60 cm extra zeespiegelstijging; recente studies suggereren dat modellen de verzwakking onderschatten. Het belangrijkste risico is het tempo van de opwarming, dus emissiereductie blijft de eerste remedie. Acuut probleem: de Amerikaanse financiering van de AMOC-metingen halveert en de meetreeks dreigt in 2028 te stoppen. Het Nederlandse deel kost ongeveer 1 tot 1,2 miljoen euro per jaar. Kamerleden van vrijwel alle aanwezige fracties toonden urgentie om die financiering te regelen.",
+   "deskundigen": [
+    {
+     "naam": "Caroline Katsman",
+     "organisatie": "TU Delft en KNMI"
+    },
+    {
+     "naam": "Sjoerd Groeskamp",
+     "organisatie": "NIOZ"
+    },
+    {
+     "naam": "Luca van Duren",
+     "organisatie": "Deltares"
+    },
+    {
+     "naam": "Marjolijn Haasnoot",
+     "organisatie": "Deltares, Universiteit Utrecht, Wetenschappelijke Klimaatraad"
+    }
+   ],
+   "samenvatting": {
+    "kern": [
+     "Klimaatmodellen verwachten deze eeuw 35 tot 45% verzwakking van de AMOC. Stilvallen duurt ongeveer 50 tot 100 jaar en is moeilijk terug te draaien. Of West-Europa netto afkoelt, hangt af van timing en tempo (Katsman).",
+     "Het effect op de zeespiegel is relatief goed bekend; over het effect op temperatuur, droogte en extremen is veel minder bekend (Katsman, Van Duren).",
+     "De AMOC-meetreeksen kosten in totaal ongeveer 15 miljoen euro per jaar; de VS betaalden meer dan de helft. Voor het wegvallen van dat geld is nog geen vervanging. Groeskamp vraagt de metingen als permanente infrastructuur te financieren, een nationaal AMOC-programma en een nationaal coördinatiepunt voor oceaanwaarnemingen.",
+     "Sterke verzwakking valt mogelijk buiten de scenario's van het huidige adaptatiebeleid. Volgens Haasnoot is 'de rek uit het systeem': er zijn nu structurele keuzes nodig, onder meer over zoetwater en verzilting, waterberging en de Rijnmond.",
+     "Voor Caribisch Nederland is de onzekerheid nog groter; de koraalriffen bij Bonaire (al 90% afgenomen volgens Van Duren) zijn belangrijk voor de kustveiligheid."
+    ],
+    "partijen": [
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Vroeg of een temperatuurplafond het risico op het kantelpunt verkleint (volgens Katsman gaat het vooral om het tempo) en welke gevolgen voor Nederland het meest urgent zijn.",
+      "link": "https://gehoord.de/beraadslagingen/224542?segment=203614"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Vroeg welk structureel bedrag nodig is voor de metingen nu de VS bezuinigen, hoe Caribisch Nederland wordt meegenomen in onderzoek en adaptatie (mede gezien de Bonaire-uitspraak) en naar de samenhang met El Niño.",
+      "link": "https://gehoord.de/beraadslagingen/224542?segment=203654"
+     },
+     {
+      "fractie": "Volt",
+      "spreker": "Laurens Dassen",
+      "positie": "Diende eerder een voorstel in voor 1 miljoen euro per jaar voor de metingen (kreeg 26 stemmen) en vroeg of dat bedrag nog volstaat, of Europese plannen genoeg zijn en hoe een nationaal coördinatiepunt eruit moet zien.",
+      "link": "https://gehoord.de/beraadslagingen/224542?segment=203707"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Vroeg welke regio's het hardst worden geraakt, met het oog op een internationale kopgroep, en in welk internationaal forum het onderwerp thuishoort.",
+      "link": "https://gehoord.de/beraadslagingen/224542?segment=203767"
+     },
+     {
+      "fractie": "PvdD",
+      "spreker": "Christine Teunissen",
+      "positie": "Vroeg of er genoeg kennis is om adaptatiescenario's te maken die verzwakking of stilvallen meenemen.",
+      "link": "https://gehoord.de/beraadslagingen/224542?segment=203827"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Proeft brede urgentie om de meetreeks te behouden. Vroeg of adaptief deltamanagement een uitstelstrategie wordt (bijvoorbeeld in de Rijnmond), welke keuzes in het Deltaprogramma zijn blijven liggen en naar economische en demografische gevolgen.",
+      "link": "https://gehoord.de/beraadslagingen/224542?segment=203857"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "doorgeleid": [],
+    "moties": "Rondetafelgesprek: geen moties of toezeggingen. Bij de begroting KGG 2027 werd een motie van Dassen (Volt) aangenomen om het AMOC-onderzoek van het NIOZ te financieren tot en met 2033.",
+    "vervolg": [
+     "Gesprekken tussen NIOZ en het ministerie van IenW over financiering (stukken eind 2026)."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/224542",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-23/klimaat/troelstrazaal/versnelde-verzwakking-van-de-atlantische-doorstroming-amoc-14-30",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "261208",
+   "datum": "2026-10-06",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "EU-wetenschapstoets ETS-herziening en analyse van CPB en PBL over verruiming EU-ETS",
+   "dossiers": [
+    "internationaal-eu",
+    "industrie"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A06787",
+   "aanzet": "Twee briefings over het voorstel van de Europese Commissie om het emissiehandelssysteem (ETS1) na 2030 te herzien: eerst de EU-wetenschapstoets die de Kamer liet maken (de derde ooit), daarna een eigen analyse van CPB en PBL. Felix Klos (D66) was voorzitter en EU-rapporteur.",
+   "gist": "De auteurs van de wetenschapstoets zijn positief: het ETS heeft de uitstoot in de gedekte sectoren met bijna 50% verlaagd en het vastleggen van 90% netto reductie in 2040 is volgens hen winst. Ze raden af gratis rechten te koppelen aan investeringseisen (alleen transactiekosten, geen klimaatwinst) en vragen de Commissie expliciet te maken hoe andere sectoren het verschil opvangen. CPB en PBL concluderen juist dat het voorstel de komende jaren fors meer uitstoot toestaat, de ETS-prijs verlaagt en het systeem minder robuust maakt, terwijl het de concurrentieproblemen van de industrie niet oplost, omdat die vooral door hoge energiekosten komen.",
+   "deskundigen": [
+    {
+     "naam": "Machiel Mulder",
+     "organisatie": "Rijksuniversiteit Groningen (EU-wetenschapstoets)"
+    },
+    {
+     "naam": "Johannes Bollen",
+     "organisatie": "EU-wetenschapstoets"
+    },
+    {
+     "naam": "Sebastiaan Hers",
+     "organisatie": "TNO (EU-wetenschapstoets)"
+    },
+    {
+     "naam": "Corjan Brink",
+     "organisatie": "Planbureau voor de Leefomgeving (PBL)"
+    },
+    {
+     "naam": "Rutger Teulings",
+     "organisatie": "Centraal Planbureau (CPB)"
+    }
+   ],
+   "samenvatting": {
+    "kern": [
+     "Wetenschapstoets: een lagere reductiefactor betekent dat elders meer moet gebeuren; de Commissie moet dat expliciet maken. CO2-verwijdering (BECCS, direct air capture) is relatief goedkoop ten opzichte van de duurste ETS-maatregelen. De 5% internationale kredieten noemen de auteurs voorzichtig, 'misschien nog te veel', omdat die markten nog moeten ontstaan (Mulder, Bollen, Hers).",
+     "Wetenschapstoets: gratis rechten zijn bedoeld om kosten voor internationaal concurrerende bedrijven te dempen; er investeringseisen aan koppelen is economisch niet efficiënt, al begrijpen de auteurs het politieke motief. Ze adviseren de RVO te laten onderzoeken hoeveel productie werkelijk weglekt (Mulder, Bollen).",
+     "CPB en PBL: het plafond daalt minder snel en zou niet meer in 2040 op nul uitkomen. Dat betekent meer uitstoot en een lagere prijs, maar weinig winst voor het concurrentievermogen, omdat de energiekosten in Europa veel hoger blijven (Brink).",
+     "CPB: wie de industrie wil verduurzamen, kan het best directe subsidies gebruiken (zoals SDE++); wie vooral productie wil behouden, kijkt naar productiesubsidies. Gratis rechten zijn in feite een verkapte productiesubsidie (Teulings)."
+    ],
+    "partijen": [
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Vroeg wat het aanvullende beleid buiten het ETS moet zijn, of het aandeel internationale kredieten (5%) groter kan, en hoe de positieve toets zich verhoudt tot de kritischere conclusie van CPB en PBL.",
+      "link": "https://gehoord.de/beraadslagingen/261208?segment=220048"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Ziet een afzwakking die leidt tot meer uitstoot, weinig winst voor het concurrentievermogen en afwenteling op andere sectoren. Vroeg naar de luchtvaart, het risico dat internationale kredieten de prijs en investeringen in Europa ondermijnen (alleen voor restemissies?), en hoe de Kamer de afzwakking kan keren.",
+      "link": "https://gehoord.de/beraadslagingen/261208?segment=220082"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Begrijpt de kritiek op voorwaarden bij gratis rechten, maar ook het doel van de Commissie dat investeringen in Europa landen. Vroeg naar het voorstel om 50% van de ETS-inkomsten in de industrie te investeren, naar weglekeffecten, en waarom meer uitstootrechten een probleem zijn als productie anders naar buiten Europa verdwijnt.",
+      "link": "https://gehoord.de/beraadslagingen/261208?segment=220099"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos (voorzitter)",
+      "positie": "Vroeg of meer uitstoot op korte termijn het risico op kantelpunten zoals het stilvallen van de AMOC niet vergroot, nu het tempo van opwarming ertoe doet.",
+      "link": "https://gehoord.de/beraadslagingen/261208?segment=220121"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "doorgeleid": [],
+    "moties": "Technische briefing: geen moties of toezeggingen.",
+    "vervolg": [
+     "Commissiedebat Energieraad (14 oktober 2026).",
+     "Europese onderhandelingen over de ETS-herziening; doel akkoord begin 2027."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/261208",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-06/klimaat/wttewaall-van-stoetwegenzaal/eu-wetenschapstoets-ets-herziening-en-analyse-van-cpb-en-pbl-over-verruiming-eu-ets-17-45",
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
