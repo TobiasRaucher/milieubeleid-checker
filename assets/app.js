@@ -21,6 +21,11 @@
     if ((m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d))) return `${+m[3]} ${MAANDEN[+m[2] - 1]} ${m[1]}`;
     return d;
   }
+  // korte datum voor tabellen: "11 nov 2026"
+  function fmtKort(d) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d || "");
+    return m ? `${+m[3]} ${MAANDEN[+m[2] - 1].slice(0, 3)} ${m[1]}` : fmtDatum(d);
+  }
   // "hh:mm, dd/mm/yyyy" in Nederlandse tijd
   function fmtTijdstip(d) {
     const p = Object.fromEntries(new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit", year: "numeric", hour12: false })
@@ -63,6 +68,11 @@
       load("data/tk/toezeggingen.json", []),
     ]);
     S.data = { config, dossiers, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData };
+    if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
+      $("#stamp").textContent = "";
+      $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
+      return;
+    }
     S.T = window.MRThemas.maak(themas);
     leesBezoek();
     // meest recente moment waarop data of samenvattingen zijn bijgewerkt
@@ -127,6 +137,65 @@
   // randeffect onder de kop: alleen als er inhoud onder schuift
   const zetScrollRand = () => document.body.classList.toggle("gescrold", window.scrollY > 4);
   window.addEventListener("scroll", zetScrollRand, { passive: true });
+
+  /* ---------- Kop: glijdende tab-aanduiding, hoogte van de kop, randvervaging ---------- */
+  const NAV = $("nav.tabs");
+  const GLIJ = document.createElement("span");
+  GLIJ.className = "tab-glij"; GLIJ.setAttribute("aria-hidden", "true");
+  NAV.prepend(GLIJ); NAV.classList.add("glij");
+  let _glijGezet = false;
+  const minderBeweging = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // De aanduiding beweegt via een CSS-overgang op transform: die start altijd vanaf de huidige stand, dus snel wisselen blijft vloeiend.
+  function zetGlij(animeer) {
+    const a = NAV.querySelector("a.active");
+    if (!a) { GLIJ.style.opacity = "0"; return; }
+    const direct = !animeer || !_glijGezet || GLIJ.style.opacity === "0";
+    if (direct) GLIJ.style.transition = "none";
+    GLIJ.style.width = a.offsetWidth + "px";
+    GLIJ.style.transform = `translateX(${a.offsetLeft}px)`;
+    GLIJ.style.opacity = "1";
+    if (direct) { void GLIJ.offsetWidth; GLIJ.style.transition = ""; }
+    _glijGezet = true;
+    // actieve tab in beeld houden als de tabbalk zelf scrolt (telefoon)
+    if (NAV.scrollWidth > NAV.clientWidth + 1) {
+      const doel = a.offsetLeft - (NAV.clientWidth - a.offsetWidth) / 2;
+      NAV.scrollTo({ left: doel, behavior: animeer && !minderBeweging() ? "smooth" : "auto" });
+    }
+  }
+  function zetNavRand() {
+    NAV.classList.toggle("fade-l", NAV.scrollLeft > 4);
+    NAV.classList.toggle("fade-r", NAV.scrollLeft + NAV.clientWidth < NAV.scrollWidth - 4);
+  }
+  NAV.addEventListener("scroll", zetNavRand, { passive: true });
+  function zetKopHoogte() {
+    const k = $("header.top");
+    const vast = getComputedStyle(k).position === "sticky";
+    document.documentElement.style.setProperty("--kop-h", (vast ? k.offsetHeight : 0) + "px");
+  }
+  let _rsz = null;
+  window.addEventListener("resize", () => { clearTimeout(_rsz); _rsz = setTimeout(() => { zetKopHoogte(); zetGlij(false); zetNavRand(); }, 80); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { zetKopHoogte(); zetGlij(false); zetNavRand(); });
+
+  // Terug naar boven: verschijnt pas na flink scrollen
+  const BOVEN = $("#naarboven");
+  const zetBoven = () => BOVEN.classList.toggle("zichtbaar", window.scrollY > Math.max(900, window.innerHeight * 1.2));
+  window.addEventListener("scroll", zetBoven, { passive: true });
+  BOVEN.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: minderBeweging() ? "auto" : "smooth" }); $("#view").focus({ preventScroll: true }); });
+
+  // Sneltoets "/" zet de cursor in het zoekveld
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
+    const t = e.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    e.preventDefault(); const v = $("#zoekveld"); v.focus(); v.select();
+  });
+
+  // Scrollpositie: een klik op een link begint bovenaan; terug/vooruit in de browser komt terug waar je was.
+  const _scrollBij = new Map();
+  let _klik = true;
+  document.addEventListener("click", (e) => { if (e.target.closest('a[href^="#"]')) { _klik = true; setTimeout(() => { _klik = false; }, 400); } }, true);
+  window.addEventListener("scroll", () => { _scrollBij.set(location.hash || "#overzicht", window.scrollY); }, { passive: true });
+
   let _vorigeTab = null;
   function route() {
     const pad = (location.hash || "#overzicht").slice(1).split("?")[0];
@@ -141,9 +210,17 @@
     if (tab !== "agenda") S.agendaGescrold = false;
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
     $("#view").innerHTML = (views[tab] || overzicht)();
-    if (tab !== _vorigeTab) { const v = $("#view"); v.classList.remove("binnenkomst"); void v.offsetWidth; v.classList.add("binnenkomst"); }
+    const tabGewisseld = tab !== _vorigeTab, eerste = _vorigeTab === null;
+    if (tabGewisseld) { const v = $("#view"); v.classList.remove("binnenkomst"); void v.offsetWidth; v.classList.add("binnenkomst"); }
     _vorigeTab = tab;
-    zetScrollRand();
+    zetKopHoogte(); zetGlij(!eerste); zetNavRand();
+    if (tabGewisseld && !eerste && !pad.includes("/")) {
+      const bewaard = _klik ? null : _scrollBij.get(location.hash || "#overzicht");
+      if (bewaard != null) setTimeout(() => window.scrollTo(0, bewaard), 0);
+      else if (tab !== "agenda") window.scrollTo(0, 0);
+    }
+    _klik = false;
+    zetScrollRand(); zetBoven();
     if (tab === "moties") bindMoties();
     if (tab === "stukken") bindStukken();
     if (tab === "zoeken") renderZoekResultaten();
@@ -269,16 +346,18 @@
       <div class="grid two">
         <div><h2>Recente stemmingen</h2><div class="card"><ul class="list">
           ${recentStem.map((z) => `<li>${uitslagPill(z.uitslag)} <span class="tag">${esc(z.soort)}</span><div>${esc(korteTitel(z))}</div><div class="small muted">${indienersTekst(z)}</div>${voteBar(z.stemtelling)}</li>`).join("") || `<li class="empty">Nog geen stemmingen.</li>`}
-        </ul><a class="small" href="#moties">Alle moties en amendementen →</a></div></div>
+        </ul><a class="small" href="#moties">Alle moties en amendementen →</a></div>
+        <h2>Laatste samenvattingen</h2><div class="card"><ul class="list">
+          ${deb.slice().sort((a, b) => b.datum.localeCompare(a.datum)).slice(0, 3).map((d) => `<li><span class="tag">${esc(d.type)}</span> <b>${esc(d.titel)}</b> <span class="small muted">${fmtDatum(d.datum)}</span><div class="small">${esc(d.gist)}</div><a class="small" href="#vergaderingen/d-${d.id}">Lees de samenvatting →</a></li>`).join("")}
+        </ul></div>
+        </div>
         <div><h2>Komt eraan</h2><div class="card"><ul class="list">
           ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland.</li>`}
         </ul><a class="small" href="#agenda">Volledige agenda →</a></div>
         <h2>Nieuwste stukken van ministeries</h2><div class="card"><ul class="list">
           ${stukkenInSector().slice(0, 5).map((x) => stukLi(x)).join("") || `<li class="empty">Nog geen stukken.</li>`}
         </ul><a class="small" href="#stukken">Alle stukken →</a></div>
-        <h2>Laatste samenvattingen</h2><div class="card"><ul class="list">
-          ${deb.slice().sort((a, b) => b.datum.localeCompare(a.datum)).slice(0, 3).map((d) => `<li><span class="tag">${esc(d.type)}</span> <b>${esc(d.titel)}</b> <span class="small muted">${fmtDatum(d.datum)}</span><div class="small">${esc(d.gist)}</div><a class="small" href="#vergaderingen/d-${d.id}">Lees de samenvatting →</a></li>`).join("")}
-        </ul></div></div>
+</div>
       </div>`;
     function tile(n, lbl, href) { return `<a class="card tile" href="${href}" style="text-decoration:none;color:inherit"><div class="num">${n}</div><div class="lbl">${lbl}</div></a>`; }
   }
@@ -295,14 +374,14 @@
       <h3>${esc(d.titel)}</h3>
       <div class="stepper" title="Fase: ${esc(fasen[idx]?.naam || d.fase)}">${fasen.map((f, i) => `<span class="st ${i < idx ? "done" : i === idx ? "now" : ""}"></span>`).join("")}</div>
       <div class="steplabels">${fasen.map((f, i) => `<span class="${i === idx ? "now" : "hide-sm"}">${esc(f.naam)}</span>`).join("")}</div>
-      <p>${esc(d.samenvatting)}</p>
+      <div class="dos-kolommen"><div class="dos-tekst"><p>${esc(d.samenvatting)}</p>
+      ${!compact && d.kanttekeningen?.length ? `<h4>Kanttekeningen</h4><ul>${d.kanttekeningen.map((k) => `<li>${esc(k)}</li>`).join("")}</ul>` : ""}</div>
       <dl class="facts">
         ${d.laatsteStap ? `<dt>Laatste stap</dt><dd>${fmtDatum(d.laatsteStap.datum)}: ${esc(d.laatsteStap.tekst)}</dd>` : ""}
         ${d.volgendeStap ? `<dt>Volgende stap</dt><dd>${fmtDatum(d.volgendeStap.datum)}: ${esc(d.volgendeStap.tekst)}</dd>` : ""}
         ${d.deadline ? `<dt>Deadline</dt><dd><b>${fmtDatum(d.deadline.datum)}</b>: ${esc(d.deadline.tekst)}</dd>` : ""}
         ${(d.stemmingen || []).map((s) => `<dt>Stemming ${esc(s.kamer)}</dt><dd>${fmtDatum(s.datum)}: ${esc(s.uitslag)}</dd>`).join("")}
-      </dl>
-      ${!compact && d.kanttekeningen?.length ? `<h3 style="margin-top:12px">Kanttekeningen</h3><ul>${d.kanttekeningen.map((k) => `<li>${esc(k)}</li>`).join("")}</ul>` : ""}
+      </dl></div>
       ${deb.length ? `<div class="small" style="margin-top:10px">Debatten: ${deb.map((x) => `<a href="#vergaderingen/d-${x.id}">${esc(x.titel)} (${fmtDatum(x.datum)})</a>`).join(" · ")}</div>` : ""}
       ${gekoppeld.length ? `<div class="small">Moties/amendementen bij dit dossier: <a href="#moties" data-dossier="${esc(d.kamerstuk)}">${gekoppeld.length}</a></div>` : ""}
       <div class="small"><a href="#vergaderingen?dossier=${encodeURIComponent(d.id)}">Alle vergaderingen bij dit dossier →</a> · <a href="#agenda?dossier=${encodeURIComponent(d.id)}">Agenda →</a></div>
@@ -338,7 +417,7 @@
         <select id="mdossier" aria-label="Dossier">${opt("", "Elk dossier", f.dossier)}${dossiers.map((x) => { const [n, t] = x.split("|"); return opt(n, `${n} ${t.slice(0, 50)}`, f.dossier); }).join("")}</select>
       </div>
       <div class="small muted" id="mcount"></div>
-      <div class="tablewrap"><table><thead><tr><th>Uitslag</th><th>Onderwerp</th><th class="hide-sm">Indiener</th><th class="hide-sm">Dossier</th><th>Datum</th></tr></thead><tbody id="mbody"></tbody></table></div>
+      <div class="tablewrap"><table class="motietabel"><thead><tr><th>Uitslag</th><th>Onderwerp</th><th class="hide-sm">Indiener</th><th class="hide-sm">Dossier</th><th>Datum</th></tr></thead><tbody id="mbody"></tbody></table></div>
       <p class="small muted">Klik op een rij voor de stemming per fractie en de link naar het document. Uitslag en stemmen komen rechtstreeks uit de open data van de Tweede Kamer.</p>`;
   }
   function bindMoties() {
@@ -353,18 +432,19 @@
         (!q || `${z.onderwerp} ${z.titel} ${z.indieners.map((i) => i.naam + " " + i.fractie).join(" ")}`.toLowerCase().includes(q))
       ).sort((a, b) => ((b.stemtelling?.datum || b.gestartOp) || "").localeCompare((a.stemtelling?.datum || a.gestartOp) || ""));
       $("#mcount").textContent = `${rows.length} resultaten`;
-      $("#mbody").innerHTML = rows.map((z, i) => `<tr class="row" data-i="${i}" tabindex="0"><td>${uitslagPill(z.uitslag)}${z.stemtelling ? nieuwBadge(z.stemtelling.datum) : ""}</td><td><span class="tag">${esc(z.soort)}</span> ${esc(korteTitel(z))}${z.kabinetsappreciatie && !/nog niet bekend|niet beschikbaar/i.test(z.kabinetsappreciatie) ? `<div class="small muted">Kabinet: ${esc(z.kabinetsappreciatie)}</div>` : ""}</td><td class="hide-sm">${indienersTekst(z)}</td><td class="hide-sm">${dossierLabel(z)}</td><td>${fmtDatum(z.stemtelling?.datum || z.gestartOp)}</td></tr>`).join("") || `<tr><td colspan="5" class="empty">Geen resultaten.</td></tr>`;
+      $("#mbody").innerHTML = rows.map((z, i) => `<tr class="row" data-i="${i}" tabindex="0" aria-expanded="false"><td>${uitslagPill(z.uitslag)}${z.stemtelling ? nieuwBadge(z.stemtelling.datum) : ""}</td><td><span class="tag">${esc(z.soort)}</span> ${esc(korteTitel(z))}${z.kabinetsappreciatie && !/nog niet bekend|niet beschikbaar/i.test(z.kabinetsappreciatie) ? `<div class="small muted">Kabinet: ${esc(z.kabinetsappreciatie)}</div>` : ""}</td><td class="hide-sm">${indienersTekst(z)}</td><td class="hide-sm nw">${dossierLabel(z)}</td><td class="nw datumcel">${fmtKort(z.stemtelling?.datum || z.gestartOp)}</td></tr>`).join("") || `<tr><td colspan="5" class="empty">Geen resultaten.</td></tr>`;
       $("#mbody").querySelectorAll("tr.row").forEach((tr) => {
         const open = () => {
           const nxt = tr.nextElementSibling;
-          if (nxt && nxt.classList.contains("detail")) { nxt.remove(); return; }
+          if (nxt && nxt.classList.contains("detail")) { nxt.remove(); tr.setAttribute("aria-expanded", "false"); return; }
+          tr.setAttribute("aria-expanded", "true");
           const z = rows[+tr.dataset.i];
           const d = document.createElement("tr"); d.className = "detail";
           d.innerHTML = `<td colspan="5">${motieDetail(z)}</td>`;
           tr.after(d);
         };
         tr.addEventListener("click", open);
-        tr.addEventListener("keydown", (e) => { if (e.key === "Enter") open(); });
+        tr.addEventListener("keydown", (e) => { if (e.target !== tr) return; if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
       });
     };
     ["#mq", "#msoort", "#muitslag", "#mfractie", "#mdossier"].forEach((s) => $(s).addEventListener("input", upd));
@@ -389,7 +469,7 @@
   function stukLi(x) {
     const dossier = (x.dossiers || [])[0];
     return `<li><span class="tag">${esc(SOORT_KORT[x.soort] || x.soort)}</span>${nieuwBadge(x.datum)} <span class="small muted">${fmtDatum(x.datum)} · ${esc(x.ministerie || "ministerie onbekend")}</span>
-      <div><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.onderwerp || x.titel)}</a></div>
+      <div><a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.onderwerp || x.titel)}</a></div>
       <div class="small muted">${dossier ? `${esc(x.kamerstuk || dossier.nummer)} ${esc(dossier.titel || "")}` : esc(x.id)}</div>${themaChips(themasVanTekst(x.onderwerp || x.titel, x.sectoren))}</li>`;
   }
   function stukken() {
@@ -473,14 +553,17 @@
       </div>
       <button class="toggle" aria-expanded="false" aria-controls="b-${esc(d.id)}"><span class="pijltje" aria-hidden="true">▾</span><span class="dicht">Toon samenvatting</span><span class="opn">Verberg samenvatting</span></button>
       <div class="body-wrap"><div class="body" id="b-${esc(d.id)}">
+        <div class="sam-raster"><div class="sam-hoofd">
         ${blok("Aanzet", d.aanzet ? `<p>${esc(d.aanzet)}</p>` : "")}
-        ${blok("Agendapunten", agendapunten)}
         ${blok("Kern", `<p>${esc(d.gist)}</p>${(s.kern || []).length ? lijst(s.kern) : ""}`)}
         ${blok("Standpunten fracties", standpunten)}
         ${blok("Toezeggingen", toezeggingen || `<p class="muted">Geen toezeggingen.</p>`)}
         ${blok("Moties", (s.moties ? `<p>${esc(s.moties)}</p>` : "") + motieLijst(motiesBijActiviteiten([d.activiteit, ...(d.extraActiviteiten || [])])))}
         ${blok("Vervolg", (s.vervolg || []).length ? lijst(s.vervolg) : "")}
+        </div><div class="sam-zij">
+        ${blok("Agendapunten", agendapunten)}
         ${blok("Deelnemers", deelnemers ? `<div class="deelnemers">${deelnemers}</div>` : "")}
+        </div></div>
         <div class="small muted" style="margin-top:12px">${d.niveau === "kort" ? "Korte samenvatting" : "Samengevat"} door ${esc(d.samengevatDoor)} op ${fmtDatum(d.samengevatOp)} op basis van het automatische transcript.</div>
       </div></div>
     </article>`;
@@ -498,7 +581,7 @@
       .sort((a, b) => sortKey(a.datum).localeCompare(sortKey(b.datum)));
   }
   function agendaLi(i, chips) {
-    return `<li><b>${fmtDatum(i.datum)}</b>${i.tijd ? ` ${esc(i.tijd)}` : ""} <span class="tag">${esc(i.type)}</span><div>${i.url ? `<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : esc(i.titel)}</div>${i.commissie ? `<div class="small muted">${esc(i.commissie)}</div>` : ""}${chips ? dossierChips(dossiersVanAgendaItem(i)) : ""}</li>`;
+    return `<li><b>${fmtDatum(i.datum)}</b>${i.tijd ? ` ${esc(i.tijd)}` : ""} <span class="tag">${esc(i.type)}</span><div>${i.url ? `<a class="ltitel" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : `<span class="ltitel">${esc(i.titel)}</span>`}</div>${i.commissie ? `<div class="small muted">${esc(i.commissie)}</div>` : ""}${chips ? dossierChips(dossiersVanAgendaItem(i)) : ""}</li>`;
   }
   /* ---------- Thema's, commissies en ministeries ---------- */
   const TYPE_NORM = { "Plenair debat (tweeminutendebat)": "Tweeminutendebat", "Plenair debat (debat)": "Plenair debat", "Plenair debat (dertigledendebat)": "Dertigledendebat", "Plenair debat (initiatiefwetgeving)": "Plenair debat (wetgeving)" };
