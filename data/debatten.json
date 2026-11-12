@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:58:22Z",
+ "bijgewerkt": "2026-11-12T20:59:39Z",
  "debatten": [
   {
    "id": "246687",
@@ -3624,6 +3624,67 @@
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "bron": "https://gehoord.de/beraadslagingen/190239"
+  },
+  {
+   "id": "273313",
+   "datum": "2026-10-08",
+   "type": "Commissiedebat",
+   "commissie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+   "titel": "Gewasbeschermingsmiddelen",
+   "niveau": "kort",
+   "dossiers": [],
+   "sector": "natuur-stikstof-landbouw",
+   "sectoren": [
+    "natuur-stikstof-landbouw",
+    "circulair-vervuiling"
+   ],
+   "bewindspersoon": "Staatssecretaris van LVVN (Erkens), staatssecretaris van IenW (Bertram) en minister van VWS (Hermans)",
+   "activiteit": "2026A04665",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-08/landbouw-natuur-voedselkwaliteit/groen-van-prinstererzaal/gewasbeschermingsmiddelen-10-00",
+   "aanzet": "Commissiedebat over het gewasbeschermingsbeleid terwijl het kabinet met de sector werkt aan een convenant voor minder milieubelasting (technische briefing op 1 oktober), met daarnaast vragen over gezondheid van omwonenden, waterkwaliteit en PFAS-houdende middelen (TFA).",
+   "gist": "D66, PvdD en PRO wezen op de gezondheid van omwonenden en de waterkwaliteit en wilden een bindend reductiedoel en snelle stappen, terwijl BBB, PVV, JA21, VVD en SGP de voedselproductie en de positie van telers centraal stelden en waarschuwden voor angstbeelden en verlies van middelen; ChristenUnie riep op uit de 'loopgraven' te stappen. Staatssecretaris Erkens (LVVN) zei dat het convenant een generiek reductiedoel voor 2040 krijgt met tussendoelen (onder meer rond 2030 en 2033), en dat aanvullende wet- en regelgeving kan volgen als het doel niet in zicht komt. Staatssecretaris Bertram (IenW) meldde dat het Ctgb PFAS-houdende middelen herbeoordeelt en dat koelgassen de grootste bron van TFA zijn, maar dat gewasbeschermingsmiddelen meer bijdragen dan industriële emissies; minister Hermans (VWS) benadrukte dat de gezondheidsvoordelen van groente en fruit opwegen tegen de risico's van residuen. Het tweeminutendebat moet nog plaatsvinden.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Tweeminutendebat Gewasbeschermingsmiddelen (gepland).",
+     "Afronding van het convenant gewasbescherming."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "bron": "https://gehoord.de/beraadslagingen/273313"
+  },
+  {
+   "id": "261199",
+   "datum": "2026-10-06",
+   "type": "Commissiedebat",
+   "commissie": "Infrastructuur en Waterstaat",
+   "titel": "Leefomgeving",
+   "niveau": "kort",
+   "dossiers": [],
+   "sector": "circulair-vervuiling",
+   "sectoren": [
+    "circulair-vervuiling",
+    "ruimte-mobiliteit"
+   ],
+   "bewindspersoon": "Staatssecretaris van Infrastructuur en Waterstaat (Bertram)",
+   "activiteit": "2026A05428",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-06/infrastructuur-waterstaat/thorbeckezaal/leefomgeving-16-30",
+   "aanzet": "Commissiedebat over gezondheid en leefomgeving: luchtkwaliteit (nieuwe, strengere Europese normen voor 2030), PFAS, staalslakken en de voorgestelde afstandsnorm voor windturbines in het ontwerpbesluit windturbines leefomgeving.",
+   "gist": "PRO en D66 wezen op de gezondheidsschade door vervuilde lucht en wilden snel naar de nieuwe Europese normen en de WHO-advieswaarden; PvdD sprak van een PFAS-crisis (PFAS in drinkwater, bloed en moedermelk) en vroeg om vergaande maatregelen; CDA vroeg om snelle toepassing van innovaties bij PFAS-sanering. Over de afstandsnorm van twee keer de tiphoogte voor windturbines waren SGP, PVV, BBB, JA21 en VVD kritisch: zij vonden die te klein of te onduidelijk door uitzonderingen, en PVV en BBB wezen op gezondheidsklachten van omwonenden. Staatssecretaris Bertram noemde het halen van de Europese luchtkwaliteitsnormen voor 2030 leidend, zonder dat woningbouw onnodig wordt geblokkeerd, en zei dat Nederland in Europa blijft aandringen op een totaalverbod op PFAS of anders een brede restrictie, zonder nationale koppen maar met aandacht voor maatregelen in andere landen zoals Zweden.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "bron": "https://gehoord.de/beraadslagingen/261199"
   }
  ]
 }
