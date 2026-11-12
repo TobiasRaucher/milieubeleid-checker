@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:17:09Z",
+ "bijgewerkt": "2026-11-12T20:18:25Z",
  "debatten": [
   {
    "id": "246687",
@@ -2255,6 +2255,220 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/195993"
+  },
+  {
+   "id": "201536",
+   "datum": "2026-09-09",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "ACM over de uitwerking van een invoedingstarief voor grote elektriciteitsproducenten",
+   "niveau": "kort",
+   "dossiers": [
+    "elektriciteitsnet",
+    "hernieuwbaar"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A04188",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-09/klimaat/klompezaal/acm-over-de-uitwerking-van-een-invoedingstarief-voor-grote-elektriciteitsproducenten-10-00",
+   "deskundigen": [
+    {
+     "naam": "Manon Leijten",
+     "organisatie": "ACM (bestuurder)"
+    },
+    {
+     "naam": "Monique Coenraad-van der Zande",
+     "organisatie": "ACM"
+    },
+    {
+     "naam": "Judith van Dijk",
+     "organisatie": "ACM"
+    }
+   ],
+   "aanzet": "Toelichting door de ACM op haar plannen voor een tarief dat grote invoeders (producenten met een aansluiting groter dan 3x80 ampère) gaan betalen voor het gebruik van het stroomnet, waar nu alleen afnemers betalen.",
+   "gist": "Volgens de ACM is een invoedingstarief nodig omdat invoeders kosten veroorzaken maar geen prikkel hebben het net efficiënt te gebruiken; het is techniekneutraal (ook fossiele centrales betalen) en de Europese 'grid package' maakt het verplicht. De ACM gaf drie zekerheden: invoering niet voor 2032, een overgangstermijn van 20 jaar voor projecten met een definitief investeringsbesluit voor 2032 (zoals in Duitsland), en een tarief dat nooit hoger wordt dan in Duitsland. Het besluit over de vormgeving volgt in de loop van 2027. BBB vroeg waar de grens ligt tussen onafhankelijke tariefregulering en energiebeleid; volgens de ACM is de tariefstructuur Europeesrechtelijk haar exclusieve bevoegdheid en is herverdeling (subsidie, belasting) aan kabinet en Kamer. D66 en PRO vroegen naar de onzekerheid voor businesscases van wind- en zonneparken, JA21 naar windparken op zee die al subsidie kregen.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Besluit van de ACM over de vormgeving van het invoedingstarief in de loop van 2027; invoering niet voor 2032."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/201536"
+  },
+  {
+   "id": "209118",
+   "datum": "2026-09-10",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "ACM-onderzoek naar de prijzen van vier leveranciers van stadswarmte en mogelijke overwinsten",
+   "niveau": "kort",
+   "dossiers": [
+    "huishoudens-warmte",
+    "36576"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A05992",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-10/financien/klompezaal/het-onderzoek-door-de-acm-naar-de-prijzen-van-vier-leveranciers-van-stadswarmte-en-mogelijke-overwinsten-16-00",
+   "deskundigen": [
+    {
+     "naam": "Michiel Denkers",
+     "organisatie": "ACM (directeur Toezicht Energie)"
+    },
+    {
+     "naam": "Julia Eijkens",
+     "organisatie": "ACM"
+    },
+    {
+     "naam": "Lars Wittrock",
+     "organisatie": "ACM"
+    },
+    {
+     "naam": "Lars van de Braak",
+     "organisatie": "ACM"
+    }
+   ],
+   "aanzet": "Toelichting op de rendementstoets die de ACM deed bij vier warmtebedrijven (onder meer Vattenfall en Westpoort Warmte) die in 2024 meer verdienden dan het redelijke rendement van 7,1%.",
+   "gist": "De ACM concludeerde dat de hogere rendementen van de vier warmtebedrijven niet onredelijk waren, onder meer vanwege aanloopverliezen en investeringen in nieuwe bronnen en uitbreiding; er werd niets uitgekeerd aan aandeelhouders, dus de tarieven worden niet verlaagd. De sector als geheel laat een grote spreiding zien (van -56% tot +15%) en de helft van de warmtebedrijven draaide verlies. Bij de overstap naar kostengebaseerde tarieven onder de Wet collectieve warmte (op zijn vroegst rond 2031, na een tariefprognose in 2028) zullen tarieven per gebied sterk verschillen en voor ongeveer de helft van de huishoudens stijgen. De ACM schetste drie opties om dat te dempen (tarieflimiet met verevening, prijsgarantie met subsidie, en financiering tegen een lager rendement), maar noemde de keuze daartussen aan de politiek.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Wet collectieve warmte per 1 januari 2027 (eerst nog tarieven op basis van de gasprijs); tariefprognose in 2028."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/209118"
+  },
+  {
+   "id": "224523",
+   "datum": "2026-09-23",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Wet toepassing tweerichtingscontracten ter verrekening van verschillen (CfD's)",
+   "niveau": "kort",
+   "dossiers": [
+    "36973",
+    "hernieuwbaar",
+    "kernenergie"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A05625",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-23/klimaat/klompezaal/wet-toepassing-tweerichtingscontracten-ter-verrekening-van-verschillen-voor-klimaat-en-energie-10-00",
+   "deskundigen": [
+    {
+     "naam": "Kim Solberg",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Jessica Krom",
+     "organisatie": "Ministerie van KGG"
+    }
+   ],
+   "aanzet": "Ambtelijke toelichting op het wetsvoorstel (36973, op 25 juni 2026 naar de Kamer) dat tweerichtingscontracten (contracts for difference) mogelijk maakt, omdat de Europese Elektriciteitsverordening vanaf 17 juli 2027 directe prijssteun in die vorm voorschrijft.",
+   "gist": "Bij een tweerichtingscontract vult de overheid de marktprijs aan als die onder een afgesproken prijs ligt, maar vordert ze geld terug als de prijs erboven ligt. De bestaande SDE++ voldoet niet, omdat daar nooit meer kan worden teruggevorderd dan is uitgekeerd; daarom is een nieuwe wettelijke basis nodig, ook voor eventuele steun aan kernenergie. Het kabinet wil het eerst toepassen voor zon en wind op land en wind op zee; contracten worden via een concurrerende biedprocedure toegekend en per ministeriële regeling uitgewerkt. Kamerleden vroegen naar opslag (BBB), de begrotingssystematiek voor langjarige verplichtingen (VVD; vergelijkbaar met de SDE++) en of rekening wordt gehouden met de systeemwaarde van regelbare bronnen voor leveringszekerheid (JA21; volgens het ministerie loopt dat via het capaciteitsmechanisme).",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Behandeling van wetsvoorstel 36973 in de Tweede Kamer; Europese deadline 17 juli 2027."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/224523"
+  },
+  {
+   "id": "233066",
+   "datum": "2026-09-24",
+   "type": "Tweeminutendebat",
+   "commissie": "Plenaire vergadering",
+   "titel": "Tweeminutendebat Energieraad (informeel) 28-29 september 2026",
+   "niveau": "kort",
+   "dossiers": [
+    "internationaal-eu",
+    "gas-leveringszekerheid"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
+   "activiteit": "2026A06836",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-24/internationaal/plenaire-zaal/onder-voorbehoud-tweeminutendebat-energieraad-28-29-september-2026-2026z19248-10-16",
+   "aanzet": "Tweeminutendebat na het schriftelijk overleg over de informele Energieraad van 28 en 29 september 2026 in Dublin.",
+   "gist": "PRO vroeg of de minister in Europa pleit voor maatregelen voor energiearme huishoudens en lagere nettarieven voor huishoudens, niet alleen de industrie; de minister zegde inzet toe op maatregelen die ook kwetsbare huishoudens helpen (zoals standaarden voor slimme apparaten) en noemde gelijktrekken van de belasting op stroom en gas zinvol, maar duur (ongeveer 800 miljoen euro per jaar) en zonder dekking. De PRO-motie om bidirectioneel laden van elektrische auto's de Europese standaard te maken kreeg oordeel Kamer. Drie PvdD-moties over datacenters (drinkwater voor koeling, bindende energie- en milieunormen, verplichte rapportages) vroeg de minister aan te houden omdat ze niet op de agenda stonden. JA21 vroeg een stresstest voor de gasleveringszekerheid in een zeer koude winter; de minister verwees naar een risico-evaluatie die dit najaar komt en de brief strategisch gasbeleid.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [
+     "In het verslag van de informele Energieraad ingaan op wat de inzet op kernenergie in Europese doelen en netplanning na de JA21-motie concreet veranderde."
+    ],
+    "moties": "Oordeel Kamer: Van Oosterhout (bidirectioneel laden als Europese standaard). Verzoek tot aanhouden: drie moties Kostić over datacenters en de motie-Van den Berg over een stresstest gasleveringszekerheid.",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/233066"
+  },
+  {
+   "id": "246677",
+   "datum": "2026-09-30",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Kennismakingsgesprek Mijnraad",
+   "niveau": "kort",
+   "dossiers": [
+    "gas-leveringszekerheid"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A04239",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-30/natuur-en-milieu/klompezaal/kennismakingsgesprek-mijnraad-10-00",
+   "deskundigen": [
+    {
+     "naam": "Gerard Schouw",
+     "organisatie": "Mijnraad (voorzitter)"
+    },
+    {
+     "naam": "Lucia van Geuns",
+     "organisatie": "Mijnraad"
+    },
+    {
+     "naam": "Jan-Willem Rösingh",
+     "organisatie": "Mijnraad"
+    },
+    {
+     "naam": "Jan Dirk Jansen",
+     "organisatie": "Mijnraad"
+    },
+    {
+     "naam": "Esseline Schieven",
+     "organisatie": "Mijnraad"
+    }
+   ],
+   "aanzet": "Kennismaking van de commissie met de Mijnraad, die de minister integraal adviseert over vergunningen voor activiteiten in de ondergrond.",
+   "gist": "De Mijnraad lichtte zijn rol toe: het geeft een integraal eindadvies op basis van de adviezen van decentrale overheden, TNO en SodM. Leden spraken over gasleveringszekerheid na de sluiting van Groningen en de afhankelijkheid van LNG, over het dalende aantal aardwarmteprojecten (de laatste zes jaar gemiddeld één per jaar, mede omdat tuinders WKK's draaien voor CO2), over de nieuwe Mijnbouwwet (die volgens de raad nog op winstgevende winning is geschreven en risico's van 'gestapelde mijnbouw' samen moet beoordelen) en over eerdere en betere burgerparticipatie. De raad bood aan de conceptwet per artikel te becommentariëren. CDA, VVD en D66 vroegen naar de verhouding met andere adviseurs, de doorlooptijd van vergunningen en de combinatie van CO2-opslag en aardwarmte.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Conceptwetsvoorstel nieuwe Mijnbouwwet."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/246677"
   }
  ]
 }
