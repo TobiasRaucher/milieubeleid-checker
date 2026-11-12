@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:56:17Z",
+ "bijgewerkt": "2026-11-12T20:57:22Z",
  "debatten": [
   {
    "id": "246687",
@@ -3408,6 +3408,113 @@
    "extraActiviteiten": [
     "2026A07374"
    ]
+  },
+  {
+   "id": "100108",
+   "datum": "2026-06-04",
+   "type": "Commissiedebat",
+   "commissie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+   "titel": "Natuur",
+   "dossiers": [],
+   "sector": "natuur-stikstof-landbouw",
+   "bewindspersoon": "Minister van Landbouw, Visserij, Voedselzekerheid en Natuur (Van Essen)",
+   "activiteit": "2026A00650",
+   "extraActiviteiten": [
+    "2026A04798"
+   ],
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-04/landbouw-natuur-voedselkwaliteit/thorbeckezaal/natuur-13-00",
+   "aanzet": "Breed commissiedebat over het natuurbeleid, vlak voor het stikstof- en natuurherstelpakket van het kabinet en het ontwerp-Natuurplan voor de Europese Natuurherstelverordening (september). Op de agenda stonden onder meer de natuurbrief van de minister, het onderzoek naar natuurtaken en middelen van provincies en dossiers over de Waddenzee, visserij en jacht.",
+   "gist": "De partijen verschilden sterk over de koers: PvdD, PRO, SP, D66 en ChristenUnie wilden dat het kabinet zich aan bestaande natuurafspraken houdt en meer investeert in herstel en beheer, terwijl PVV, BBB, JA21, SGP en VVD kritisch waren op juridisch afdwingbare doelen, de KDW-systematiek en referentiewaarden, en meer nadruk wilden op beheer en pragmatisme. Minister Van Essen zei dat natuurherstel en het vlottrekken van vergunningverlening prioriteit hebben, dat het kabinet breder kijkt dan stikstof, en dat de financiering van natuurbeheer dit najaar met provincies en beheerders wordt uitgewerkt. Door tijdgebrek werd een deel van de vragen schriftelijk beantwoord. In het tweeminutendebat werden onder meer moties aangenomen over het niet vaststellen van het Natuurplan voordat de Kamer erover heeft gesproken, over voortzetting van het werk van terreinbeherende organisaties en over een landelijk kader voor beverbeheer.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PvdD",
+      "spreker": "Ines Kostić",
+      "positie": "Kabinetten houden zich volgens haar steeds niet aan natuurafspraken en wettelijke plichten: 'hou je aan de wet'. Vroeg om gevolgen van nieuw onderzoek naar schade door sleepnetvisserij in de Waddenzee en wil dat vergunningen pas worden verleend als is aangetoond dat visserij niet schadelijk is.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=76962"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Diederik Boomsma",
+      "positie": "Wil 'minder juridisch, meer gezond verstand': alleen wettelijk afdwingbare doelen waar Europa dat verplicht, ambities daarboven als transparante politieke keuze. Vroeg naar het onderscheid tussen inspannings- en resultaatverplichtingen, een andere vergunningverlening voor laag-risicoactiviteiten en de methode voor de staat van instandhouding.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77028"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Kiest een pragmatische benadering die vanuit de huidige situatie natuurwinst boekt in plaats van ideaalbeelden. Bekritiseerde de methode voor de beoordeling van de zeebodem (onder verwijzing naar professor Van der Meer) en vroeg om een pragmatische aanpak voor de Noordzee en meer inzet op natuurbeheer in bestaande gebieden.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77126"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Femke Marije Wiersma",
+      "positie": "Wees op een daling van de stikstofuitstoot met bijna 70 procent in dertig jaar en wil een eerlijk verhaal over de staat van de natuur. Vindt dat beter beheer (maaien, begrazing, bodemherstel, waterbeheer) effectiever is dan steeds strengere stikstofdoelen.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77232"
+     },
+     {
+      "fractie": "SP",
+      "spreker": "Sandra Beckerman",
+      "positie": "Vroeg om rechtvaardige vergroening van steden, met voorrang voor arme en warme wijken tegen hittestress. Wees op gestegen beheerkosten die niet worden vergoed (volgens haar is structureel 200 miljoen nodig) en zorgen over zoutwinning onder de Waddenzee en de UNESCO-status.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77400"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Renate den Hollander",
+      "positie": "Natuur is een dynamisch systeem dat in Nederland altijd door mensen is gevormd; natuurbehoud en herstel vragen een duidelijk kader voor beheer. Vroeg aandacht voor praktische vraagstukken zoals beverbeheer en natuurbrandbeheersing.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77423"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Jan Arie Koorevaar",
+      "positie": "Steunt effectgerichte maatregelen in natuurgebieden met voldoende budget, 'zodat de boswachter kan boswachteren en de boer kan boeren'. Vroeg de minister een mozaïektoeslag binnen het agrarisch natuurbeheer te onderzoeken en aandacht voor jacht- en faunabeheer.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77456"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Chris Jansen",
+      "positie": "Ziet een minister gevangen in een 'papieren werkelijkheid' van biodiversiteitsdoelen. Wil dat de onhaalbare doelen voor 2030 worden losgelaten, waarschuwt dat de Natuurherstelverordening een nieuwe stikstofcrisis veroorzaakt en wil sturende zones rond Natura 2000-gebieden schrappen.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77497"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Marieke Vellinga-Beemsterboer",
+      "positie": "Wil de 'vicieuze cirkel' doorbreken door bevoegdheden, middelen en verantwoording tussen overheden beter af te stemmen. Kijkt uit naar het stikstofpakket maar benadrukt dat natuur meer is dan stikstof, vraagt om voldoende geld voor terreinbeherende organisaties en aandacht voor de toegankelijkheid van natuur.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77577"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Laura Bromet",
+      "positie": "Noemde de natuurbrief een verademing, maar wees op bestaande afspraken die nog niet worden nagekomen en nieuwe opgaven door de Natuurherstelverordening. Vroeg om natuurvriendelijk beheer van bermen, dijken en spoorwegen en was kritisch op de onderbouwing van de vergunning voor zoutwinning.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77736"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Natuurherstel is te lang het ondergeschoven kind geweest; wil een geborgd natuurherstel- en emissiereductiepakket dat de weg naar vergunningen opent, met goede beheerplannen en langjarige stabiele financiering. Vroeg naar de rekenkundige ondergrens en naar agrarisch natuurbeheer voor weidevogels.",
+      "link": "https://gehoord.de/beraadslagingen/100108?segment=77893"
+     }
+    ],
+    "kabinet": [
+     "Natuurherstel en het vlottrekken van vergunningverlening hebben prioriteit; het kabinet kijkt breder dan stikstof omdat ook andere drukfactoren vergunningverlening blokkeren, en werkt aan zones rond Natura 2000-gebieden.",
+     "De motie-Kostić over het nakomen van natuurafspraken wordt uitgevoerd en meegenomen in het natuurpakket van de taskforce en de uitvoering van de Natuurherstelverordening. In het ontwerp-Natuurplan wordt duidelijk gemaakt wat inspannings- en wat resultaatverplichtingen zijn.",
+     "De financiering van natuurbeheer wordt dit najaar met provincies en beheerders uitgewerkt; verbreding van het agrarisch natuurbeheer wordt in de taskforce betrokken.",
+     "Een overschrijding van de KDW betekent niet automatisch dat stikstof een probleem is; met een ecologische toets kan een initiatiefnemer soms toch een vergunning krijgen. Een juridisch houdbare rekenkundige ondergrens volgt zo snel mogelijk na een geborgd pakket.",
+     "Voor sleepnetvisserij geldt al dat een vergunning pas wordt verleend als een passende beoordeling geen significante effecten aantoont. De Hollandse kust moet als vogelrichtlijngebied worden aangewezen; een nationale status biedt onvoldoende bescherming.",
+     "Onderzoek naar de methode voor de staat van instandhouding van niet Europees beschermde zoogdieren is begin 2027 klaar; de herziening van het jacht- en faunastelsel volgt eind 2026. Ratificatiewetgeving voor het oceanenverdrag gaat op zijn vroegst eind 2026 naar de Kamer."
+    ],
+    "toezeggingen": [
+     "De resterende vragen (onder meer over exoten, rivierkreeften, Staatsbosbeheer en zoutwinning) worden voor het tweeminutendebat schriftelijk beantwoord."
+    ],
+    "doorgeleid": "",
+    "moties": "Tweeminutendebat aangevraagd door Boomsma (JA21); moties gestemd op 16 juni 2026 en later. Aangenomen onder meer: Flach over het definitieve Natuurplan niet vaststellen voordat het met de Kamer is besproken (149-0); Den Hollander c.s. over natuurbrandbeheersing in de structurele financiering voor natuurherstel (146-3) en over een landelijk kader voor beverbeheer (143-6); Grinwis c.s. over ANLb-middelen voor alle doelen en soorten (143-6) en voor andere ecologisch belangrijke gebieden (117-32); Koorevaar c.s. over aandachtspunten bij de herziening van het jacht- en faunastelsel (122-27); Vellinga-Beemsterboer en Koorevaar over voortzetting van het werk van terreinbeherende organisaties (93-36); Boomsma over de beoordeling van vogelsoorten bij de staat van instandhouding (91-58); Kostić over bescherming van egels (108-41); en gewijzigde moties van Flach c.s. over adequaat natuurbeheer in bestaande gebieden (119-29) en van Bromet over natuurvriendelijk beheer van bermen, dijken en spoorwegen (120-29). Verworpen onder meer: Chris Jansen over het verwerpen van sturende zones (39-110), Wiersma c.s. over het wetsvoorstel om KDW-omgevingswaarden te schrappen (51-98), Beckerman over een groennorm tegen hittestress (61-88) en over het voorkomen van uitbreiding van zoutwinning onder de Waddenzee (53-96), Bromet over 'natuur blijft natuur' (61-88) en een gewijzigde motie-Boomsma c.s. over verhoging van de rekenkundige ondergrens (54-96).",
+    "vervolg": [
+     "Stikstof- en natuurherstelpakket van het kabinet (zomer 2026).",
+     "Commissiedebat Ontwerp-Natuurplan (3 september 2026)."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "bron": "https://gehoord.de/beraadslagingen/100108"
   }
  ]
 }
