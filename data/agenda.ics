@@ -1,0 +1,1669 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//milieuradar//Agenda//NL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:milieuradar
+X-WR-CALDESC:Kameractiviteiten over milieu\, klimaat\, energie\, water en natuur (milieuradar)
+X-WR-TIMEZONE:Europe/Amsterdam
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:2026A07695@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270624T110000Z
+DTEND:20270624T140000Z
+SUMMARY:Wetgevingsoverleg: Jaarverslagen Infrastructuur en Waterstaat
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07695\
+ nAgendapunten:\n- Agenda wordt nader ingevuld
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07695
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07692@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270616T110000Z
+DTEND:20270616T150000Z
+SUMMARY:Commissiedebat: Water
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07692\
+ nAgendapunten:\n- Agenda wordt nader ingevuld
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07692
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07688@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270512T110000Z
+DTEND:20270512T150000Z
+SUMMARY:Commissiedebat: Externe veiligheid
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07688\
+ nAgendapunten:\n- Agenda wordt nader ingevuld
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07688
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07685@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270414T110000Z
+DTEND:20270414T150000Z
+SUMMARY:Commissiedebat: Luchtvaart
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07685\
+ nAgendapunten:\n- Agenda wordt nader ingevuld
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07685
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07684@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270310T120000Z
+DTEND:20270310T160000Z
+SUMMARY:Commissiedebat: Leefomgeving
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07684\
+ nAgendapunten:\n- Agenda wordt nader ingevuld
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07684
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07947@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270303T120000Z
+DTEND:20270303T150000Z
+SUMMARY:Commissiedebat: Wadden
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07947\
+ nAgendapunten:\n- Agenda wordt nader ingevuld\n- Vervoerplannen Waddenvere
+ n 2027
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07947
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05152@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270203T090000Z
+DTEND:20270203T130000Z
+SUMMARY:Commissiedebat: Circulaire economie
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05152\nAgen
+ dapunten:\n- Kabinetsreactie rapport ‘Levensduurverlenging loont’\n- K
+ abinetsreactie rapport ‘Levensduurverlenging loont’\n- Innameplicht vo
+ or verkooppunten statiegeldverpakkingen\n- Eerste wijziging Circulair Mate
+ rialenplan\n- Circulaire hefboom\n- Opvolging verkenning (on)mogelijkheden
+  van meer landelijke standaardisering van afvalinzameling
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05152
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06444@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270127T140000Z
+DTEND:20270127T150000Z
+SUMMARY:Technische briefing: Rapport 'Circulair versterkt' door de Wetensch
+ appelijke Klimaatraad
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06444\nAgen
+ dapunten:\n- Aanbod WKR voor technische briefing over rapport 'Circulair v
+ ersterkt'\n- De technische briefing wordt verzorgd door:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06444
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05151@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270127T090000Z
+DTEND:20270127T130000Z
+SUMMARY:Commissiedebat: Duurzame energiedragers 
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05151\nAgen
+ dapunten:\n- Voortgang waterstofbeleid\n- Voortgang kabinetsvisie watersto
+ fdragers
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05151
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07906@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270120T090000Z
+DTEND:20270120T130000Z
+SUMMARY:Commissiedebat: Kernenergie 
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07906\nAgen
+ dapunten:\n- Voortgang uitvoering van de motie van het lid Van den Berg ov
+ er de Energy & Health Campus (EHC) in Petten aan laten sluiten bij ontwikk
+ elingen in het Nederlandse nucleaire onderzoek (Kamerstuk 33626-48)
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07906
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07067@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270118T090000Z
+DTEND:20270118T153000Z
+SUMMARY:Notaoverleg: AMvB Dierwaardige veehouderij
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A07067\nAgendapunten:\n- Spreektijdverdeling (1e en 2e termij
+ n):\n- Voorhang ontwerp-AMvB dierwaardige veehouderij
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07067
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05097@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20270113T090000Z
+DTEND:20270113T130000Z
+SUMMARY:Commissiedebat: Mijnbouw
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05097\nAgen
+ dapunten:\n- Beantwoording vragen gesteld tijdens het commissiedebat Mijnb
+ ouw van 3 juni 2026\, over het ontwerpbesluit Havenmond\, de zoutwinning d
+ oor Frisia onder de Waddenzee\n- Schadeafhandeling Geelbroek\n- Jaarversla
+ g Delfstoffen en Aardwarmte\n- Vervolg ruimtelijke samenhang windparken en
+  mijnbouwactiviteiten op zee\n- Subsidiebeschikking HyStock ondergrondse w
+ aterstofopslag\n- Schadeafhandeling Geelbroek\n- Voortgang afhandeling mij
+ nbouwschade Limburg\n- Verbetering automatische detectie van aardbevingen 
+ door het KNMI
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05097
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06382@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART;VALUE=DATE:20270111
+SUMMARY:Plenair debat (wetgeving): Wijziging van de Wet milieubeheer en de 
+ Wet op de economische delicten in verband met een jaarverplichting voor he
+ t vervangen van het waterstofgebruik door exploitanten van industriële in
+ stallaties in de industrie door het gebruik van hernieuwbare brandstoffen 
+ van niet-biologische oorsprong ter ondersteuning van het behalen van het d
+ oel in de richtlijn (EU) 2018/2001 van het Europees Parlement en de Raad v
+ an 11 december 2018 ter bevordering van het gebruik van energie uit hernie
+ uwbare bronnen (PbEU 2018\, L 328) ter bevordering van het verbruik van he
+ rnieuwbare brandstoffen van niet-biologische oorsprong in de industrie (We
+ t jaarverplichting hernieuwbare brandstoffen van niet-biologische oorspron
+ g in de industrie) (36936)
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A063
+ 82\nAgendapunten:\n- Wijziging van de Wet milieubeheer en de Wet op de eco
+ nomische delicten in verband met een jaarverplichting voor het vervangen v
+ an het waterstofgebruik door exploitanten van industriële installaties in
+  de industrie door het gebruik van hernieuwbare brandstoffen van niet-biol
+ ogische oorsprong ter ondersteuning van het behalen van het doel in de ric
+ htlijn (EU) 2018/2001 van het Europees Parlement en de Raad van 11 decembe
+ r 2018 ter bevordering van het gebruik van energie uit hernieuwbare bronne
+ n (PbEU 2018\, L 328) ter bevordering van het verbruik van hernieuwbare br
+ andstoffen van niet-biologische oorsprong in de industrie (Wet jaarverplic
+ hting hernieuwbare brandstoffen van niet-biologische oorsprong in de indus
+ trie) (36936)
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A06382
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A02571@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261217T120000Z
+DTEND:20261217T160000Z
+SUMMARY:Commissiedebat: Verduurzaming Industrie 
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02571\nAgen
+ dapunten:\n- Recente ontwikkelingen Tata Steel\n- Stand van zaken bioswap\
+ n- Uitkomsten Bestuurlijk Overleg Powerport regio Moerdijk \n- Reactie op 
+ een burgerbrief over maatwerkafspraak met Tata Steel\n- Clusterplan Chemel
+ ot\n- Voortgang maatwerkafspraak Tata Steel\n- Integrale aanpak industrie\
+ n- Elektriciteitskosten industrie
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A02571
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07540@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261216T160000Z
+DTEND:20261216T200000Z
+SUMMARY:Notaoverleg: Nota Ruimte
+DESCRIPTION:Volkshuisvesting en Ruimtelijke Ordening\nTweede Kamer: https:/
+ /www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id
+ =2026A07540\nAgendapunten:\n- Definitieve Nota Ruimte (nog te ontvangen)
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07540
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A02828@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261210T120000Z
+DTEND:20261210T160000Z
+SUMMARY:Commissiedebat: Externe veiligheid
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02828\
+ nAgendapunten:\n- Reactie op verzoek commissie op een brief met vragen en 
+ opmerkingen van de gemeente Dordrecht ten behoeve van het commissiedebat E
+ xterne veiligheid d.d. 10 juni 2026\n- Stand van zaken over staalslakken\n
+ - Diverse onderwerpen op het gebied van nucleaire veiligheid en stralingsb
+ escherming\n- Voortgang Impulsprogramma Chemische Stoffen\n- Depositieonde
+ rzoek IJmond najaar 2025\n- Veilig vervoer van gevaarlijke stoffen \n- Adv
+ iesrapport van het Adviescollege ICT over het programma BOSON bij de ANVS\
+ n- Afschrift brief Natuur & Milieu mede namens meerdere organisaties
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A02828
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04354@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261209T130000Z
+DTEND:20261209T170000Z
+SUMMARY:Commissiedebat: Natuur
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A04354\nAgendapunten:\n- Aanpak uitheemse rivierkreeften\n- R
+ eactie op verzoek commissie over de brief van Platform Engbertsdijksvenen 
+ inzake de  motie gewijzigde motie van het lid Van der Plas over onderzoeke
+ n of de ontwikkeling van actief hoogveen in de Engbertsdijksvenen ecologis
+ ch en hydrologisch daadwerkelijk haalbaar is (Kamerstuk 29659-167)\n- Reac
+ tie op de recent gepubliceerde faunaschadecijfers door BIJ12\n- Afsprakenk
+ ader Aanvalsplan Grutto\n- De inzet van het Koninkrijk der Nederlanden voo
+ r het VN-Biodiversiteitsverdrag\n- Appreciatie twee aangehouden moties (Ka
+ merstuk 33576-531 en Kamerstuk 33576-532) en reactie op verzoek commissie 
+ over de wolf\n- Actieplan schapensector ‘Kracht van de Kudde’\n- Monit
+ or stikstofdepositie in Natura 2000-gebieden 2026\n- Afschrift van Reactie
+  op de brief ‘Nederland moet leveren voor natuur: gezamenlijke aanbeveli
+ ngen voor CBD COP17’
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04354
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07634@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261209T120000Z
+DTEND:20261209T141500Z
+SUMMARY:Rondetafelgesprek: Een verbod op fossiele reclame
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07634\nAgen
+ dapunten:\n- Programma:\n- Position paper blok 1:\n- Position papers blok 
+ 2:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07634
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04755@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261208T170000Z
+DTEND:20261208T200000Z
+SUMMARY:Commissiedebat: Energieraad (formeel) d.d. 10 december 2026
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04755\nAgen
+ dapunten:\n- Nog te ontvangen geannoteerde agenda\n- Verslag Energieraad (
+ informeel)\, 28 en 29 september 2026
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04755
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04782@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261208T160000Z
+DTEND:20261208T200000Z
+SUMMARY:Commissiedebat: Landbouw- en Visserijraad (december)
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A04782\nAgendapunten:\n- Geannoteerde agenda van de Landbouw-
+  en Visserijraad 14-15 december
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04782
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07640@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261203T090000Z
+DTEND:20261203T130000Z
+SUMMARY:Commissiedebat: Leveringszekerheid
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07640\nAgen
+ dapunten:\n- Voorzieningszekerheid van elektriciteit\n- Update gaslevering
+ szekerheid en rapport PWC\n- Actueel beeld gasleveringszekerheid en voorui
+ tblik op de winter van 2026-2027\n- Gasleveringszekerheid 2027/2028\n- Voo
+ rtgang marktbreed capaciteitsmechanisme 
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07640
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2025A05314@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261203T090000Z
+DTEND:20261203T130000Z
+SUMMARY:Commissiedebat: Klimaat en voedsel
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2025A05314\nAgendapunten:\n- Uitvoering van de gewijzigde motie v
+ an de leden Podt en Vedder over ketenafspraken om de afzet van eiwitgewass
+ en te garanderen en het verdienmodel te versterken (Kamerstuk 30252-203)\n
+ - Biologische Landbouw juli 2025\n- Reactie op rapporten Wetenschappelijke
+  Klimaatraad en Nationaal Klimaatplatform\n- Evaluatie Duurzaam Voedselbel
+ eid 2022-2025\n- Voedselverspilling in Nederland - Stand van zaken en nieu
+ we cijfers Monitor Voedselverspilling Update 2009-2023\n- Skal-tarieven vo
+ or importcontroles\n- Verzamelbrief transparantie voedsel\n- Teelt en afze
+ t eiwitrijke gewassen en vervolg Bean Deal\n- Belemmeringen in regelingen 
+ voor biologische landbouw\n- Reactie signalering WKR 'bossen en bodems in 
+ zwaar weer'\n- Voedselverspilling bij Consumenten Thuis in 2025\n- Voornem
+ en ophoging Subsidieregeling Emissieloos Landbouwmaterieel\n- Subsidie voo
+ r Keurmerkenwijzer Milieu Centraal\n- Stand van zaken uitvoering van het A
+ ctieplan biologische landbouw\n- Stand van zaken klimaatopgave landbouw en
+  landgebruik
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2025A05314
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06511@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261202T130000Z
+DTEND:20261202T170000Z
+SUMMARY:Commissiedebat: Mestbeleid 
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A06511\nAgendapunten:\n- Publicatie CBS Monitor fosfaat- en s
+ tikstofexcretie in dierlijke mest tweede kwartaal 2026\n- Diverse onderwer
+ pen mestbeleid\n- Rapportage Nederlands mestbeleid 2025
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06511
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05439@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261201T153000Z
+DTEND:20261201T183000Z
+SUMMARY:Commissiedebat: Milieuraad op 11 december 2026
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05439\
+ nAgendapunten:\n- [Nog te ontvangen] Geannoteerde agenda Milieuraad op 11 
+ december 2026
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05439
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07452@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART;VALUE=DATE:20261130
+SUMMARY:Plenair debat (wetgeving): Voorstel van wet van het lid Ouwehand to
+ t wijziging van de Wet dieren en de Wet op de economische delicten in verb
+ and met het uitfaseren van de bio-industrie en het waarborgen van een dier
+ waardige veehouderij (36562)
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A074
+ 52\nAgendapunten:\n- Voorstel van wet van het lid Ouwehand tot wijziging v
+ an de Wet dieren en de Wet op de economische delicten in verband met het u
+ itfaseren van de bio-industrie en het waarborgen van een dierwaardige veeh
+ ouderij
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A07452
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05404@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART;VALUE=DATE:20261130
+SUMMARY:Plenair debat (wetgeving): Begroting Volkshuisvesting en Ruimtelijk
+ e Ordening
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A054
+ 04\nAgendapunten:\n- Vaststelling van de begrotingsstaten van Volkshuisves
+ ting en Ruimtelijke Ordening (XXII) voor het jaar 2027
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A05404
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06447@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261126T123000Z
+DTEND:20261126T163000Z
+SUMMARY:Commissiedebat: Ruimtelijke Ordening 
+DESCRIPTION:Volkshuisvesting en Ruimtelijke Ordening\nTweede Kamer: https:/
+ /www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id
+ =2026A06447\nAgendapunten:\n- Permanente bewoning van recreatiewoningen \n
+ - Opzet Periodieke rapportage artikel 3 VRO 2020-2026\n- Kabinetsreactie o
+ p het Rli-advies 'Falen en Opstaan'\n- Digitaal en datageïnformeerd werke
+ n in de fysieke leefomgeving\n- Kabinetsreactie op tweede reflectierapport
+  `Werk aan de winkel’ van de Evaluatiecommissie Omgevingswet\n- Rapporta
+ ge 2025 - Monitor Werking Omgevingswet\n- Resultaten Bestuurlijke Overlegg
+ en Leefomgeving 2026\n- Reactie op motie van het lid Van der Plas over uit
+ eenzetten hoe de eerdere bepaling uit de Crisis- en herstelwet onderdeel k
+ an worden in de Omgevingswet zodat woningbouw en bijbehorende energie-infr
+ astructuur sneller gerealiseerd worden (Kamerstuk 36800-26)
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06447
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04028@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261125T090000Z
+DTEND:20261125T130000Z
+SUMMARY:Commissiedebat: Netcongestie en elektriciteitsnet
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04028\nAgen
+ dapunten:\n- Stukken crisisaanpak netcongestie in de FGU-regio (Flevopolde
+ r\, Gelderland en Utrecht)\n- Aanpak netcongestie\n- Crisiswetgeving netco
+ ngestie\n- Eerder aanvragen woningbouw\n- Voortgang aanpak netcongestie\n-
+  Voortgang aanpak netcongestie FGU-regio
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04028
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07150@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261124T153000Z
+DTEND:20261124T183000Z
+SUMMARY:Wetgevingsoverleg: Water - reservering voor mogelijke voortzetting 
+ wetgevingsoverleg 23 november 
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07150
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07150
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A02981@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261123T090000Z
+DTEND:20261123T140000Z
+SUMMARY:Wetgevingsoverleg: Water
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02981\
+ nAgendapunten:\n- Vaststelling van de begrotingsstaat van het Deltafonds v
+ oor het jaar 2027\n- 37020-J Verslag houdende een lijst van vragen en antw
+ oorden over vaststelling van de begrotingsstaat van het Deltafonds voor he
+ t jaar 2027 \n- Fiche: Mededeling OceanEye: EU-initiatief voor oceaanobser
+ vatie\n- Nederlandse reactie op de openbare consultatie van de Europese Co
+ mmissie over de herziening van de richtlijn Maritieme Ruimtelijke Planning
+ / de EU Oceaanwet\n- Kabinetsreactie op het WKR-advies ‘Meeveranderen me
+ t het klimaat’ en het WRR-advies ‘Mens en klimaat. De kracht van socia
+ le infrastructuur bij adaptatie’\n- Kabinetsreactie op Deltaprogramma 20
+ 27\n- Beantwoording vragen commissie over de kabinetsreactie op Deltaprogr
+ amma 2027 (Kamerstuk 37020-J-4)\n- Beleidsreactie op technisch rapport ILT
+  over risico’s van TFA voor onze drinkwaterkwaliteit\n- Noordzeeoverleg 
+ Voortgangsrapportage 11\n- Reactie op het verzoek van het lid Vellinga-Bee
+ msterboer over het bericht "Natuurvriendelijk ontmantelen als uitzondering
+  op de regel"\n- 30e Voortgangsrapportage Tweede Hoogwaterbeschermingsprog
+ ramma\n- Actualisatie van het Landelijk Crisisplan Hoogwater en Overstromi
+ ng (LCP-HO)\n- Prioritering en perspectief Mobiliteits- en Deltafonds \n- 
+ Aanvaarding BBNJ-overeenkomst met goedkeuring door de Staten-Generaal acht
+ eraf
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A02981
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05409@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART;VALUE=DATE:20261123
+SUMMARY:Plenair debat (wetgeving): Begroting Landbouw\, Visserij\, Voedselz
+ ekerheid en Natuur 
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A054
+ 09\nAgendapunten:\n- Vaststelling van de begrotingsstaten van het Minister
+ ie van Landbouw\, Visserij\, Voedselzekerheid en Natuur (XIV) en het Dierg
+ ezondheidsfonds (F) voor het jaar 2027\n- Beleidsbrief Landbouw\, Visserij
+ \, Voedselzekerheid en Natuur (LVVN)\n- Veegbrief openstaande moties en to
+ ezeggingen op het gebied van Landbouw\, Visserij\, Voedselzekerheid en Nat
+ uur (LVVN)\n- Evaluatierapport WOT-Voedselveiligheid Beleid\n- Publicatie 
+ evaluaties Coronasteun en Integraal Aanpakken\n- Reactie op verzoek commis
+ sie over voortgang opvolging aanbevelingen agentschapsdoorlichting NVWA\n-
+  Opvolging in beeld: Periodieke rapportages ministerie van Landbouw\, Viss
+ erij\, Voedselzekerheid en Natuur vanaf 2024\n- Periodieke Rapportage Land
+ - en tuinbouwbeleid 2019-2024\n- Reactie op verzoek commissie over een pla
+ nningsbrief inzake voorgenomen wet- en regelgeving\n- Prioriteiten Taskfor
+ ce Landbouw\, Natuur en Stikstof\n- Kabinetsreactie op de reflectie van he
+ t PBL en de Landsadvocaat over de samenhangende aanpak voor landbouw\, nat
+ uur en stikstof\n- Vormgeving verkenning interimmers\n- Uitvoering motie S
+ toffer c.s. en Lahlah c.s.\n- Reflectie van PBL op ‘Weer ruimte voor boe
+ r\, natuur en bouw: maatregelpakket voor Landbouw\, Natuur en Stikstof’\
+ n- Reactie op verzoek commissie over de brief van de Stichting Stikstof Cl
+ aim (SSC) over bedrijfsgerichte doelsturing en KPI’s
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A05409
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06124@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261119T091500Z
+DTEND:20261119T101500Z
+SUMMARY:Technische briefing: Aanwijzen van Natura 2000-gebied Hollandse kus
+ t
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A06124
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06124
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A08389@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261119T090000Z
+DTEND:20261119T120000Z
+SUMMARY:Commissiedebat: Vergunningverlening\, toezicht en handhaving (VTH-s
+ telsel)
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08389\
+ nAgendapunten:\n- Voortgang versterking VTH-stelsel december 2025\n- Voort
+ gang versterking VTH-stelsel milieu juni 2026\n- Traject robuustheid omgev
+ ingsdiensten 
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A08389
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A08323@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261118T120000Z
+DTEND:20261118T130000Z
+SUMMARY:Technische briefing: Wijziging van de Omgevingswet (spoedwet vervan
+ gen omgevingswaarden stikstofdepositie door omgevingswaarden stikstofemiss
+ ie)
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A08323
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A08323
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06484@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261116T090000Z
+DTEND:20261116T163000Z
+SUMMARY:Wetgevingsoverleg: Fonds voor stikstof\, landbouw en natuur
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A06484\nAgendapunten:\n- Indicatieve spreektijdverdeling\n- V
+ aststelling van de begrotingsstaten van het Ministerie van Landbouw\, Viss
+ erij\, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) vo
+ or het jaar 2027\n- Verlenging subsidiemodule Hoogwaardige mestverwerking
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06484
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06162@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261112T201500Z
+DTEND:20261112T220000Z
+SUMMARY:Plenair debat: Debat over het advies van het Nationaal Burgerberaad
+  Klimaat
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A061
+ 62\nAgendapunten:\n- Adviesrapport Nationaal Burgerberaad Klimaat\n- Kabin
+ etsreactie op het advies van het Nationaal Burgerberaad Klimaat\n- Onafhan
+ kelijke evaluatie Nationaal Burgerberaad Klimaat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A06162
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A08066@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261111T150000Z
+DTEND:20261111T160000Z
+SUMMARY:Technische briefing: Strategisch gasbeleid
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-332744\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A08066\nAgendapunten:\n- Strategisch gasbeleid
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A08066
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07414@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261111T101500Z
+DTEND:20261111T111500Z
+SUMMARY:Technische briefing: Onderzoeksrapport over natuurbeheer in veengeb
+ ieden door de Algemene Rekenkamer
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A07414\nAgendapunten:\n- Aanbod Algemene Rekenkamer voor brie
+ fing over onderzoeksrapport m.b.t. natuurbeheer in veengebieden d.d. 29 ok
+ tober 2026
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07414
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07995@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261105T150000Z
+DTEND:20261105T211800Z
+SUMMARY:Plenair debat (wetgeving): Begroting Klimaat en Groene Groei (37 02
+ 0-XXIII) (voortzetting)
+DESCRIPTION:Plenaire vergadering\nSamenvatting: https://tobiasraucher.githu
+ b.io/milieubeleid-checker/#vergaderingen/d-322999\nTweede Kamer: https://w
+ ww.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/acti
+ viteit?id=2026A07995\nAgendapunten:\n- Vaststelling van de begrotingsstate
+ n van Klimaat en Groene Groei (XXIII) voor het jaar 2027\n- Vaststelling v
+ an de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027\
+ n- Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn va
+ n de begrotingsbehandeling van Klimaat en Groene Groei (XXIII) op 4 novemb
+ er 2026\n- Moties ingediend tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A07995
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07012@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261104T130000Z
+DTEND:20261104T160000Z
+SUMMARY:Rondetafelgesprek: AMvB Dierwaardige veehouderij
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A07012\nAgendapunten:\n- Programma\n- Voorhang ontwerp-AMvB d
+ ierwaardige veehouderij\n- van genodigden ontvangen papers
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07012
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05417@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261104T091500Z
+DTEND:20261104T143000Z
+SUMMARY:Plenair debat (wetgeving): Begroting Klimaat en Groene Groei (37 02
+ 0-XXIII) (1e TK)
+DESCRIPTION:Plenaire vergadering\nSamenvatting: https://tobiasraucher.githu
+ b.io/milieubeleid-checker/#vergaderingen/d-317767\nTweede Kamer: https://w
+ ww.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/acti
+ viteit?id=2026A05417\nAgendapunten:\n- Vaststelling van de begrotingsstate
+ n van Klimaat en Groene Groei (XXIII) voor het jaar 2027\n- Vaststelling v
+ an de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A05417
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04337@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261103T160000Z
+DTEND:20261103T170000Z
+SUMMARY:Technische briefing: Klimaat- en Energieverkenning in relatie tot d
+ e landbouw
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A04337
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04337
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A03042@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261103T153000Z
+DTEND:20261103T163000Z
+SUMMARY:Technische briefing: Update wetenschappelijk factsheet Toekomst ver
+ duurzaming luchtvaart 
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A03042\
+ nAgendapunten:\n- Wetenschappelijke factsheet dr. ing. Paul Peeters en ir.
+  Joris Melkert "Toekomst verduurzaming luchtvaart - update 2026"
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A03042
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07734@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261029T180000Z
+DTEND:20261029T223800Z
+SUMMARY:Plenair debat (wetgeving): Begroting Infrastructuur en Waterstaat (
+ 37020-XII) voortzetting
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A077
+ 34\nAgendapunten:\n- Vaststelling van de begrotingsstaten van het Minister
+ ie van Infrastructuur en Waterstaat (XII) voor het jaar 2027\n- Vaststelli
+ ng van de begrotingsstaat van het Mobiliteitsfonds voor het jaar 2027\n- B
+ eleidsbrief Infrastructuur en Waterstaat: Nederland bereikbaar\, schoon\, 
+ veilig en economisch sterk houden\n- Opvolging in beeld: Periodieke rappor
+ tages van het Ministerie van Infrastructuur en Waterstaat vanaf 2024\n- Vo
+ ortgang toezeggingen gedaan tijdens het debat over de maatregelen tegen de
+  hoge energie- en brandstofprijzen\, naar aanleiding van de situatie in he
+ t Midden-Oosten\n- Antwoord op vragen commissie over Resultaten van het ve
+ rvolgonderzoek naar luchtvaartemissies (Kamerstuk 31936-1290)\n- Jaarplan 
+ ILT 2027\n- Prioritering en perspectief Mobiliteits- en Deltafonds\n- Kabi
+ netsreactie advies Lelylijngezant\n- Staat van de Infrastructuur Rijkswate
+ rstaat en ProRail 2025\n- Toezegging gedaan tijdens het debat over Luchtha
+ venverkeerbesluit (LVB) Schiphol op 29 september 2026 over de benodigde ca
+ paciteit van de ILT voor het LVB Schiphol\n- Ingetrokken amendement\n- Rea
+ ctie op verzoek commissie over voorrang dierenambulances\n- Analyse concur
+ rentiepositie van Groningen Airport Eelde en Maastricht Aachen Airport en 
+ mogelijke beleidsopties\n- Schriftelijke antwoorden op vragen gesteld tijd
+ ens de eerste termijn van de begrotingsbehandeling van Infrastructuur en W
+ aterstaat (XII) op 28 oktobr 2026
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A07734
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07431@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261029T143000Z
+DTEND:20261029T153000Z
+SUMMARY:Technische briefing: Beschouwing over het concept van de Klimaat- e
+ n Energienota 2026 door de Afdeling advisering van de Raad van State
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07431\nAgen
+ dapunten:\n- Beschouwing over het concept van de Klimaat- en Energienota 2
+ 026 (bijlage 2026D43483 bij de Prinsjesdagbrief Klimaat en Energie)\n- Aan
+ bod RvS voor technische briefing over klimaatbeschouwing Klimaatnota 2026\
+ n- De technische briefing wordt verzorgd door:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07431
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07122@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261029T143000Z
+DTEND:20261029T153000Z
+SUMMARY:Technische briefing: 'Leidende principes dierwaardige veehouderij' 
+  door Raad voor Dierenaangelegenheden (RDA)
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A07122\nAgendapunten:\n- Rapport Raad voor Dieraangelegenhede
+ n (RDA) over een Dierwaardige Veehouderij
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07122
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04274@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261029T120000Z
+DTEND:20261029T130000Z
+SUMMARY:Technische briefing: Stafbriefing (besloten) over Dashboard klimaat
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A04274\nAgendapunten:\n- Stafbriefing (besloten) over Dashboa
+ rd klimaat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04274
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04332@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261029T090000Z
+DTEND:20261029T110000Z
+SUMMARY:Rondetafelgesprek: Biologische Landbouw
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A04332\nAgendapunten:\n- Rondetafelgesprek biologische Landbo
+ uw\n- Van de genodigden ontvangen papers:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04332
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07432@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261028T131500Z
+DTEND:20261028T144500Z
+SUMMARY:Rondetafelgesprek: Zon op dak: van potentie naar realisatie 
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-303744\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A07432\nAgendapunten:\n- Programma:\n- Position papers blok 1:\n- Po
+ sition papers blok 2:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07432
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06391@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261028T120000Z
+DTEND:20261028T130000Z
+SUMMARY:Technische briefing: Inzet onderhandelingen VN-klimaatconferentie (
+ COP31)
+DESCRIPTION:Klimaat en Groene Groei\nTweede Kamer: https://www.tweedekamer.
+ nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06391
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06391
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06125@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261028T101500Z
+DTEND:20261028T111500Z
+SUMMARY:Technische briefing: Uitvoeringswet Natuurherstelverordening
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A06125
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06125
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05415@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261028T094500Z
+DTEND:20261028T151500Z
+SUMMARY:Plenair debat (wetgeving): Begroting Infrastructuur en Waterstaat (
+ 37020-XII) 1e TK
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A054
+ 15\nAgendapunten:\n- Vaststelling van de begrotingsstaten van het Minister
+ ie van Infrastructuur en Waterstaat (XII) voor het jaar 2027\n- Vaststelli
+ ng van de begrotingsstaat van het Mobiliteitsfonds voor het jaar 2027\n- B
+ eleidsbrief Infrastructuur en Waterstaat: Nederland bereikbaar\, schoon\, 
+ veilig en economisch sterk houden\n- Opvolging in beeld: Periodieke rappor
+ tages van het Ministerie van Infrastructuur en Waterstaat vanaf 2024\n- Vo
+ ortgang toezeggingen gedaan tijdens het debat over de maatregelen tegen de
+  hoge energie- en brandstofprijzen\, naar aanleiding van de situatie in he
+ t Midden-Oosten\n- Antwoord op vragen commissie over Resultaten van het ve
+ rvolgonderzoek naar luchtvaartemissies (Kamerstuk 31936-1290)\n- Jaarplan 
+ ILT 2027\n- Prioritering en perspectief Mobiliteits- en Deltafonds\n- Kabi
+ netsreactie advies Lelylijngezant\n- Staat van de Infrastructuur Rijkswate
+ rstaat en ProRail 2025\n- Toezegging gedaan tijdens het debat over Luchtha
+ venverkeerbesluit (LVB) Schiphol op 29 september 2026 over de benodigde ca
+ paciteit van de ILT voor het LVB Schiphol\n- Analyse concurrentiepositie v
+ an Groningen Airport Eelde en Maastricht Aachen Airport en mogelijke belei
+ dsopties\n- Reactie op verzoek commissie over voorrang dierenambulances
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A05415
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07455@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261028T091500Z
+DTEND:20261028T094500Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Luchtvaart (CD 7/10)
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A074
+ 55\nAgendapunten:\n- Afschrift reactie op de brief van Stichting S4R m.b.t
+ . Luchthavenverkeerbesluit Schiphol (LVB)\n- Reactie op de factsheet 'Stik
+ stof en Luchtvaart' van Stichting S4R\n- Dertiende voortgangsbrief Program
+ ma Omgeving Luchthaven Schiphol\n- Reactie op verzoek commissie over de br
+ ief van de Vereniging Bewoners tegen Vliegtuigoverlast Rotterdam (BTV) inz
+ ake luchthavenbesluit Rotterdam\n- Moties ingediend tijdens het debat:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A07455
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05143@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261026T090000Z
+DTEND:20261026T143000Z
+SUMMARY:Notaoverleg: Energiesysteem
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-297835\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A05143\nAgendapunten:\n- Nationaal Plan Energiesysteem Actualisatie 
+ 2026 (bijlagen 2026D43490 en 2026D43491 bij de Prinsjesdagbrief Klimaat en
+  Energie)\n- Lijst van vragen en antwoorden over het Nationaal Plan Energi
+ esysteem Actualisatie 2026 (bijlage bij Prinsjesdagbrief Klimaat en Energi
+ e) (Kamerstuk 32813\, nr. 1576)\n- Voortgang directie Realisatie Energietr
+ ansitie\n- Kabinetsreactie Autonoom en Veilig\n- Aannames en werkwijze Nat
+ ionaal Plan Energiesysteem\n- Moties ingediend tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05143
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06655@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261015T140000Z
+DTEND:20261015T150000Z
+SUMMARY:Technische briefing: Volume- en tijdsafhankelijke nettarieven door 
+ de ACM
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-292951\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A06655\nAgendapunten:\n- Volume- en tijdsafhankelijke nettarieven do
+ or de ACM\n- De technische briefing wordt verzorgd door:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06655
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05429@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261015T120000Z
+DTEND:20261015T150000Z
+SUMMARY:Wetgevingsoverleg: Begrotingsonderzoek Infrastructuur en Waterstaat
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05429\
+ nAgendapunten:\n- ​Verloop Wetgevingsoverleg\n- Vaststelling van de begr
+ otingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voo
+ r het jaar 2027\n- Vaststelling van de begrotingsstaat van het Mobiliteits
+ fonds voor het jaar 2027\n- Vaststelling van de begrotingsstaat van het De
+ ltafonds voor het jaar 2027\n- Parlistest
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05429
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07120@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261015T110000Z
+DTEND:20261015T120000Z
+SUMMARY:Technische briefing: Het Nationaal Plan Energiesysteem Actualisatie
+  2026
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-292944\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A07120\nAgendapunten:\n- Nationaal Plan Energiesysteem Actualisatie 
+ 2026 (bijlagen 2026D43489\, 2026D43490 en 2026D43491 Prinsjesdagbrief Klim
+ aat en Energie)
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07120
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07596@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261015T081600Z
+DTEND:20261015T083000Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Energieraad (formeel) d.d. 29 ok
+ tober 2026
+DESCRIPTION:Plenaire vergadering\nSamenvatting: https://tobiasraucher.githu
+ b.io/milieubeleid-checker/#vergaderingen/d-286143\nTweede Kamer: https://w
+ ww.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/acti
+ viteit?id=2026A07596\nAgendapunten:\n- Moties ingediend tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A07596
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05278@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261015T080000Z
+DTEND:20261015T110000Z
+SUMMARY:Commissiedebat: Dieren buiten de veehouderij en dierproeven
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A05278\nAgendapunten:\n- Reactie op verzoek commissie over he
+ t rapport Tegenrapport over de houdbaarheid van de Huis- en hobbydierenlij
+ st van Stichting Animalia\n- Reactie op verzoek commissie over de petitie 
+ van de Stichting Kortsnuiten Blijven Bestaan\n- Conceptrapport marktonderz
+ oek medische zorg huisdieren\, opvolging motie en toezeggingen\n- Verzamel
+ brief welzijn dieren buiten de veehouderij\n- Antwoorden op vragen commiss
+ ie over reactie op het onderzoek naar de mogelijkheid tot verlaging van he
+ t aantal proeven met niet-humane primaten (Kamerstuk 32336-164)\n- Reactie
+  op aangenomen ontraden moties begroting Landbouw\, Visserij\, Voedselzeke
+ rheid en Natuur 2026 (XIV)\n- Transitie Proefdiervrije Innovatie (TPI) en 
+ dierproeven\n- Verzamelbrief dierenwelzijn\n- Reactie op verzoek commissie
+  over de brief van PETA en PETA UK inzake  over de samenstelling van het N
+ Cad\n- Dierproeven in Nederland 2015-2024\n- Positieflijsten reptielen\n- 
+ Visie dieren buiten de veehouderij\n- Werkprogramma Raad voor Dierenaangel
+ egenheden 2027\n- Visiebrief dierentuinen\n- TPI en dierproeven: toezeggin
+ gen\, aanbieding transitie adviesrapport en subsidies
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05278
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04753@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261014T130000Z
+DTEND:20261014T160000Z
+SUMMARY:Commissiedebat: Energieraad (formeel) d.d. 29 oktober 2026
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-286143\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A04753\nAgendapunten:\n- Geannoteerde Agenda Energieraad 29 oktober 
+ 2026\n- Verslag van de Energieraad van 26 juni 2026\n- Fiche: Omnibus XII 
+ energieproducten en bandenlabelling\n- Fiche: Herziening Richtlijn EU ETS\
+ , Herziening MSR\n- Fiche: Verordening Netwerktarieven en Energiebelasting
+ \n- Fiche: Mededeling Actieplan Elektrificatie\n- Inzet onderhandelingen V
+ N-klimaatconferentie (COP31)
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04753
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06388@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261014T110000Z
+DTEND:20261014T120000Z
+SUMMARY:Technische briefing: ROB-advies over democratische controle en zegg
+ enschap bij keuzes rondom netbeheer
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-286137\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A06388\nAgendapunten:\n- Advies van de Raad voor het Openbaar Bestuu
+ r – Eerst programmeren\, dan prioriteren: democratische zeggenschap over
+  het stroomnet van morgen\n- De technische briefing wordt verzorgd door:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06388
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07200@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261013T170000Z
+DTEND:20261013T193000Z
+SUMMARY:Commissiedebat: Energie voor huishoudens (voortzetting)
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-233069\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A07200\nAgendapunten:\n- Actualisatie collectieve warmte naar aanlei
+ ding van Prinsjesdag\n- Ontwikkelingen over collectieve Warmte\n- Ontwerpb
+ esluit Besluit collectieve warmte\n- Verslag van een schriftelijk overleg 
+ over het ontwerpbesluit Besluit collectieve warmte (Kamerstuk 36576\, nr. 
+ 120)\n- Monitor Energiearmoede 2025\n- Monitor Energiearmoede in Nederland
+  2025\n- De Nederlandse warmtetransitie en de rol van collectieve warmte\n
+ - Stand van zaken voorhang afronden Besluit collectieve warmte\n- Reactie 
+ op Onderzoeken ESB en EERA over collectieve warmte\n- Kabinetsreactie ontw
+ ikkeling energierekening huishoudens\n- Toezegging gedaan tijdens het comm
+ issiedebat Energie voor huishoudens op 24 september over inventarisatie kn
+ oppen om energierekening voor huishoudens te verlagen\n- Antwoorden op vra
+ gen gesteld tijdens het commissiedebat Energie voor Huishoudens op 24 sept
+ ember 2026
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A07200
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05515@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261008T170500Z
+DTEND:20261008T173500Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Water (CD 25/6)
+DESCRIPTION:Plenaire vergadering\nSamenvatting: https://tobiasraucher.githu
+ b.io/milieubeleid-checker/#vergaderingen/d-155160\nTweede Kamer: https://w
+ ww.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/acti
+ viteit?id=2026A05515\nAgendapunten:\n- Verslag van een commissiedebat\, ge
+ houden op 25 juni 2026\, over water\n- Moties ingediend tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A05515
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06595@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261008T131500Z
+DTEND:20261008T161500Z
+SUMMARY:Commissiedebat: Wadden
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06595\
+ nAgendapunten:\n- Reactie op verzoek commissie over 'Natuurmonumenten mede
+  namens CWN m.b.t. kansen voor duurzame toekomst voor Waddenzee'\n- Reacti
+ e op de brief van Natuurmonumenten\, de Waddenvereniging en It Fryske Gea 
+ m.b.t. de briefing 'Bereikbaarheid van Ameland in balans met natuur'\n- Vo
+ ortgang gesprekken over de productiemiddelen voor de nieuwe concessies voo
+ r de Friese Waddenveren\n- Reactie op verzoek commissie over “Afschrift 
+ brief Schelpenwinning Waddenzee BV\, Rousant BV en Testamare Holding over 
+ situatie van schelpenwinners in Waddengebied/Noordzeekustzone”\n- Nachte
+ lijke snelheidsverhoging watertaxi Wadden\n- Reactie op verzoek commissie 
+ over Natura2000 Wadden consultatie bewoners en stakeholders\n- Verzamelbri
+ ef Waddengebied commissiedebat Wadden 8 oktober 2026
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06595
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04665@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261008T080000Z
+DTEND:20261008T130000Z
+SUMMARY:Commissiedebat: Gewasbeschermingsmiddelen
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nSamenvatting:
+  https://tobiasraucher.github.io/milieubeleid-checker/#vergaderingen/d-273
+ 313\nTweede Kamer: https://www.tweedekamer.nl/debat_en_vergadering/commiss
+ ievergaderingen/details?id=2026A04665\nAgendapunten:\n- Stand van zaken ge
+ wasbescherming\n- Hoofdlijnenconvenant gewasbeschermingsmiddelen\n- Rappor
+ t RIVM en WUR 'Verkenning rekenmethode voor veilige afstanden tussen gewas
+ percelen en omwonenden' \n- Ontwerpbesluit wijziging van het Besluit gewas
+ beschermingsmiddelen en biociden in verband met aangepaste beoordelingsmet
+ hoden\, uitbreiding van een adviestaak van het Ctgb en enkele technische w
+ ijzigingen
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04665
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06597@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261007T170000Z
+DTEND:20261007T210000Z
+SUMMARY:Commissiedebat: Luchtvaart
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06597\
+ nAgendapunten:\n- Vervolgstappen uitspraken luchthavens Eindhoven\, RTHA e
+ n Lelystad\n- Beleidsreactie op de Staat van de luchtvaart 2026\n- Nieuwe 
+ besluiten luchthavens Eindhoven\, Rotterdam The Hague en Lelystad\n- React
+ ie op verzoek commissie over Vogel- en Natuurwacht Flevoland m.b.t. openst
+ elling van Lelystad Airport\n- Antwoorden op vragen commissie over de reac
+ tie op het rapport externe adviescommissie "uitvoering programma Luchtruim
+ herziening" (Kamerstuk 31936-1269)\n- Beantwoording vragen commissie over 
+ nieuwe besluiten luchthavens Eindhoven\, Rotterdam The Hague en Lelystad (
+ Kamerstuk 31936-1298)\n- Afdoening van de motie van het lid Heutink over o
+ nderzoeken welke maatregelen genomen kunnen worden om de achterstand bij d
+ e ILT weg te werken (Kamerstuk 31936-1288)\n- Natuur en Milieu Gelderland 
+ over Lelystad Airport\n- Onderzoek Actualisatie PSO Bovenwindse Eilanden\n
+ - Verzamelbrief Luchtvaart Q2 2026\n- Monitoring geluidhinder en slaapvers
+ toring bij civiele en militaire luchthavens\n- Halfjaarverslag milieu en e
+ xterne veiligheid Schiphol\n- Verzamelbrief Luchtvaart\n- Benchmark luchth
+ aventarieven en overheidsheffingen 2025\n- Reactienota over het advies van
+  de Commissie voor de milieueffectrapportage over het milieueffectrapport 
+ Luchthavenbesluit Rotterdam
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06597
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04260@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261007T123000Z
+DTEND:20261007T143000Z
+SUMMARY:Rondetafelgesprek: Investeringsfonds Duurzame Landbouw (IDL) 
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A04260\nAgendapunten:\n- Programma:\n- Van de genodigden ontv
+ angen papers:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04260
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A07374@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261007T110500Z
+DTEND:20261007T112000Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Milieuraad (CD 7/10)
+DESCRIPTION:Plenaire vergadering\nSamenvatting: https://tobiasraucher.githu
+ b.io/milieubeleid-checker/#vergaderingen/d-265694\nTweede Kamer: https://w
+ ww.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/acti
+ viteit?id=2026A07374\nAgendapunten:\n- Moties ingediend tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A07374
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06730@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261007T080000Z
+DTEND:20261007T110000Z
+SUMMARY:Commissiedebat: Milieuraad op 12 oktober 2026
+DESCRIPTION:Infrastructuur en Waterstaat\nSamenvatting: https://tobiasrauch
+ er.github.io/milieubeleid-checker/#vergaderingen/d-265694\nTweede Kamer: h
+ ttps://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/deta
+ ils?id=2026A06730\nAgendapunten:\n- Geannoteerde Agenda Milieuraad 12 okto
+ ber 2026\n- Verslag informele bijeenkomst Milieuministers 23-24 juli 2026\
+ n- Verslag van de Milieuraad van 25 juni 2026 te Luxemburg\n- Uitkomst nat
+ ionale quickscan Milieuomnibus\n- Fiche: Herziening Richtlijn EU ETS\, Her
+ ziening MSR\n- Reactie op verzoek commissie over de uitkomst van de nation
+ ale quickscan over de Milieuomnibus
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06730
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06787@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261006T154500Z
+DTEND:20261006T170000Z
+SUMMARY:Technische briefing: EU-wetenschapstoets ETS-herziening en analyse 
+ van CPB en PBL over verruiming EU-ETS
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-261208\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A06787\nAgendapunten:\n- Programma\n- [EU WETENSCHAPSTOETS] ETS-herz
+ iening \n- CPB-PBL-publicatie Verruiming EU-ETS: Fors meer uitstoot\, nauw
+ elijks lagere energiekosten \n- Notitie van de EU-rapporteur Klimaat met b
+ ehandelvoorstel ETS-herziening
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06787
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05428@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261006T143000Z
+DTEND:20261006T193000Z
+SUMMARY:Commissiedebat: Leefomgeving
+DESCRIPTION:Infrastructuur en Waterstaat\nSamenvatting: https://tobiasrauch
+ er.github.io/milieubeleid-checker/#vergaderingen/d-261199\nTweede Kamer: h
+ ttps://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/deta
+ ils?id=2026A05428\nAgendapunten:\n- Advies 'Aanpassing geurregelgeving vee
+ houderijen' van Commissie m.e.r.’\n- Tweede beleidsreactie op onderzoek 
+ Universiteit Utrecht ‘Naar een robuuste implementatie van het Verdrag va
+ n Aarhus?’\n- Reactie op een vraag van het lid Kostić over de relevanti
+ e van artikel 8 van het Europees Verdrag voor de rechten van de mens en 
+ ‘de huidige wet- en regelgeving voor bestrijdingsmiddelen\, inclusief de
+  afstandsnormen’\n- Afschrift reactie op brief van de Nederlandse Vereni
+ ging voor Weerbedrijven (NVWB) over het besluit van de wijziging Regeling 
+ Taken Meteorologie en Seismologie (RTMS)\n- Besluitvorming afstandsnorm in
+  het ontwerpbesluit windturbines leefomgeving\n- Resultaten Landelijke afw
+ eging primaire bouwgrondstoffen\n- Toezegging gedaan tijdens het commissie
+ debat Externe Veiligheid 10 juni 2026 over aanpak PFAS om de blootstelling
+  terug te dringen met acties\n- Indienen voorstel tot wijziging van de Wet
+  gewasbeschermingsmiddelen en biociden\n- Bestuurlijk Overleg over aandach
+ tlocaties PFAS\n- Verzamelbrief luchtkwaliteit
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05428
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A02265@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261001T184000Z
+DTEND:20261001T191000Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Internationale klimaatstrategie 
+ (CD 12/3)
+DESCRIPTION:Plenaire vergadering\nSamenvatting: https://tobiasraucher.githu
+ b.io/milieubeleid-checker/#vergaderingen/d-253496\nTweede Kamer: https://w
+ ww.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/acti
+ viteit?id=2026A02265\nAgendapunten:\n- Verslag van een commissiedebat\, ge
+ houden op 12 maart 2026\, over Internationale Klimaatstrategie\n- Moties i
+ ngediend tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A02265
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06123@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261001T104500Z
+DTEND:20261001T114500Z
+SUMMARY:Technische briefing: Convenant Gewasbescherming 
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A06123\nAgendapunten:\n- Hoofdlijnenconvenant gewasbeschermin
+ gsmiddelen
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06123
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05578@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20261001T080000Z
+DTEND:20261001T102500Z
+SUMMARY:Rondetafelgesprek: Rondetafelgesprek Advies Nationaal Burgerberaad 
+ Klimaat
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-253480\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A05578\nAgendapunten:\n- Adviesrapport Nationaal Burgerberaad Klimaa
+ t\n- Kabinetsreactie op het advies van het Nationaal Burgerberaad Klimaat\
+ n- Programma:\n- Position paper blok 1:\n- Position paper blok 2:\n- Posit
+ ion paper blok 3:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05578
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A00908@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260930T120000Z
+DTEND:20260930T160000Z
+SUMMARY:Commissiedebat: Voortgang klimaatbeleid
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-246687\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A00908\nAgendapunten:\n- Handhavingsbesluit met betrekking tot de du
+ urzaamheid van houtpellets uit Maleisië\n- Voorjaarsbrief klimaat en ener
+ gie\n- Beleidsbrief Klimaat en Groene Groei\n- Uitkomsten conferentie Sant
+ a Marta over de transitie weg van fossiele brandstoffen\n- Beleidsagenda e
+ missiereductie productketens\n- Kabinetsreactie op het advies 'Eerlijk Ver
+ duurzamen: randvoorwaarden voor rechtvaardig beleid' van Rli\n- Resultaten
+  SDE++ 2025 en openstelling SDE++ 2026\n- Klimaat- en Energieverkenning 20
+ 26 (bijlage 2026D43480 Prinsjesdagbrief Klimaat en Energie)\n- Klimaat- en
+  Energienota 2026 (bijlage 2026D43481 Prinsjesdagbrief Klimaat en Energie)
+ \n- Meerjarenprogramma 2027 Klimaat- en energiefonds (bijlage 2026D43484 P
+ rinsjesdagbrief Klimaat en Energie)\n- Lijst van vragen en antwoorden over
+  de Klimaat- en Energieverkenning 2026
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A00908
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06430@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260930T120000Z
+DTEND:20260930T133000Z
+SUMMARY:Technische briefing: Reflectie van het PBL op de kabinetsbrief ‘W
+ eer ruimte voor boer\, natuur en bouw: maatregelpakket voor landbouw\, nat
+ uur en stikstof'
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A06430\nAgendapunten:\n- Aanbod PBL voor technische briefing 
+ over publicatie "Reflectie op ‘Weer ruimte voor boer\, natuur en bouw: m
+ aatregelpakket voor landbouw\, natuur en stikstof"
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06430
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04239@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260930T080000Z
+DTEND:20260930T090000Z
+SUMMARY:Technische briefing: Kennismakingsgesprek Mijnraad 
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-246677\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A04239\nAgendapunten:\n- Voorstel Mijnraad voor kennismakingsgesprek
+ \n- Het gesprek wordt gevoerd met:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04239
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06147@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260929T163000Z
+DTEND:20260929T215600Z
+SUMMARY:Plenair debat: Debat over het Luchthavenverkeerbesluit Schiphol 
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A061
+ 47\nAgendapunten:\n- Reactienota op het milieueffectrapport (MER) voor de 
+ wijziging van het luchthavenverkeerbesluit Schiphol (LVB)\n- Resultaten tw
+ eede tussentijdse monitoring maatregelen balanced approach-procedure\n- Aa
+ nbieding advies Afdeling Advisering Raad van State en het herziene milieue
+ ffectrapport (MER) bij het Luchthavenverkeersbesluit (LVB) Schiphol\n- Nad
+ ere duiding advies Afdeling Advisering Raad van State\n- Moties ingediend 
+ tijdens het debat:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A06147
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06333@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260929T145000Z
+DTEND:20260929T151000Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Ontwerp-Natuurplan (CD 3/9)
+DESCRIPTION:Plenaire vergadering\nSamenvatting: https://tobiasraucher.githu
+ b.io/milieubeleid-checker/#vergaderingen/d-190239\nTweede Kamer: https://w
+ ww.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/acti
+ viteit?id=2026A06333\nAgendapunten:\n- Antwoord op vragen van het lid ten 
+ Hove\, gesteld tijdens het commissiedebat ontwerp natuurplan van 3 septemb
+ er 2026\, over de staat van de natuur\n- Verslag van een commissiedebat\, 
+ gehouden op 24 juni 2026\, over mentale gezondheid scholieren en studenten
+ \n- Moties ingediend tijdens het debat:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A06333
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06458@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260929T143000Z
+DTEND:20260929T145000Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Informele bijeenkomst van Milieu
+ ministers van 23 en 24 juli 2026 (21501-08-1042)
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A064
+ 58\nAgendapunten:\n- Verslag van een schriftelijk overleg o.a. de geannote
+ erde Agenda Informele bijeenkomst van Milieuministers van 23 en 24 juli 20
+ 26\n- Aanvullende informatie Milieuomnibusonderhandelingen\n- Moties inged
+ iend tijdens het debat:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A06458
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06696@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260924T163000Z
+DTEND:20260924T173000Z
+SUMMARY:Technische briefing: Programma Bescherming Noordzee-infrastructuur
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06696\
+ nAgendapunten:\n- Voortgang Actieplan Strategie ter bescherming Noordzee i
+ nfrastructuur
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06696
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A00657@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260924T084500Z
+DTEND:20260924T120000Z
+SUMMARY:Commissiedebat: Energie voor huishoudens (GESCHORST TOT EEN NADER T
+ E BEPALEN MOMENT)
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-233069\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A00657\nAgendapunten:\n- Actualisatie collectieve warmte naar aanlei
+ ding van Prinsjesdag\n- Ontwikkelingen over collectieve Warmte\n- Ontwerpb
+ esluit Besluit collectieve warmte\n- Verslag van een schriftelijk overleg 
+ over het ontwerpbesluit Besluit collectieve warmte (Kamerstuk 36576\, nr. 
+ 120)\n- Monitor Energiearmoede 2025\n- Monitor Energiearmoede in Nederland
+  2025\n- De Nederlandse warmtetransitie en de rol van collectieve warmte\n
+ - Stand van zaken voorhang afronden Besluit collectieve warmte\n- Reactie 
+ op Onderzoeken ESB en EERA over collectieve warmte\n- Kabinetsreactie ontw
+ ikkeling energierekening huishoudens
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A00657
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06877@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260924T083500Z
+DTEND:20260924T090000Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Landbouw- en Visserijraad d.d. 2
+ 8 en 29 september 2026 (21501-32-1841)
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A068
+ 77\nAgendapunten:\n- Geannoteerde agenda Landbouw- en Visserijraad 28 en 2
+ 9 september 2026\n- Verslag van een schriftelijk overleg over de geannotee
+ rde agenda Landbouw- en Visserijraad 28 en 29 september 2026 \n- Moties in
+ gediend tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A06877
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06836@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260924T081600Z
+DTEND:20260924T083500Z
+SUMMARY:Tweeminutendebat: Tweeminutendebat Energieraad (informeel) 28-29 se
+ ptember 2026 (21501-33-1242)
+DESCRIPTION:Plenaire vergadering\nSamenvatting: https://tobiasraucher.githu
+ b.io/milieubeleid-checker/#vergaderingen/d-233066\nTweede Kamer: https://w
+ ww.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/acti
+ viteit?id=2026A06836\nAgendapunten:\n- Geannoteerde agenda Energieraad (in
+ formeel) 28-29 september 2026\n- Verslag van een schriftelijk overleg over
+  de geannoteerde agenda Energieraad (informeel) 28-29 september 2026\n- Mo
+ ties ingediend tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A06836
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A02516@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260924T080000Z
+DTEND:20260924T110000Z
+SUMMARY:Rondetafelgesprek: Hindermanagement bij waterbouwprojecten
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02516\
+ nAgendapunten:\n- Hindermanagement bij waterbouwprojecten\n- Lijst van gen
+ odigden\n- Ontvangen position papers
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A02516
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06363@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260923T163000Z
+DTEND:20260923T183500Z
+SUMMARY:Plenair debat (wetgeving): Wijziging van de Wet luchtvaart in verba
+ nd met de verankering van de Maatschappelijke Raad Schiphol (36655) antwoo
+ rd 1e termijn + rest
+DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
+ debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A063
+ 63\nAgendapunten:\n- Wijziging van de Wet luchtvaart in verband met de ver
+ ankering van de Maatschappelijke Raad Schiphol (36655)\n- Moties ingediend
+  tijdens het debat
+URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
+ details/activiteit?id=2026A06363
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06681@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260923T141500Z
+DTEND:20260923T151500Z
+SUMMARY:Technische briefing: Droogteproblematiek
+DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
+ amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06681\
+ nAgendapunten:\n- Stand van zaken droogte\n- Stand van zaken droogte en ov
+ ergang naar niveau 1 – dreigend watertekort
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06681
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A04788@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260923T123000Z
+DTEND:20260923T140000Z
+SUMMARY:Rondetafelgesprek: Versnelde verzwakking van de Atlantische doorstr
+ oming (AMOC)
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-224542\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A04788\nAgendapunten:\n- Programma:\n- Position paper blok 1:\n- Pos
+ ition paper blok 2:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A04788
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A03083@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260923T120000Z
+DTEND:20260923T150000Z
+SUMMARY:Commissiedebat: Voedselzekerheid
+DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
+  https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/de
+ tails?id=2026A03083\nAgendapunten:\n- Aankondiging Strategische Agenda Voe
+ dselzekerheid\n- Uitvoering van de motie van het lid Dijk over de concentr
+ atie\, marktmacht en prijsopdrijving in de voedselindustrie in kaart breng
+ en (Kamerstuk 29544-1264)\n- Rapport over Voedselvoorraden in Nederland: v
+ oorbereid of verspilling?
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A03083
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06385@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260923T104500Z
+DTEND:20260923T114500Z
+SUMMARY:Technische briefing: Klimaat- en Energieverkenning 2026
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-224532\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A06385\nAgendapunten:\n- Klimaat- en Energieverkenning 2026 (bijlage
+  2026D43484 Prinsjesdagbrief Klimaat en Energie)\n- De technische briefing
+  wordt verzorgd door:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06385
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06066@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260923T093000Z
+DTEND:20260923T103000Z
+SUMMARY:Technische briefing: ETS-herziening
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-224529\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A06066\nAgendapunten:\n- De technische briefing wordt verzorgd door 
+ de Europese Commissie.
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06066
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A05625@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260923T080000Z
+DTEND:20260923T090000Z
+SUMMARY:Technische briefing: Wet toepassing tweerichtingscontracten ter ver
+ rekening van verschillen voor klimaat en energie
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-224523\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A05625\nAgendapunten:\n- Regels in verband met de toepassing van twe
+ erichtingscontracten ter verrekening van verschillen ter uitvoering van ar
+ tikel 19 quinquies van Verordening (EU) 2019/943 en ten behoeve van andere
+  activiteiten die bijdragen aan de vermindering van broeikasgassen (Wet to
+ epassing tweerichtingscontracten ter verrekening van verschillen voor klim
+ aat en energie)\n- De technische briefing wordt verzorgd door:
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A05625
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2026A06379@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART:20260921T150000Z
+DTEND:20260921T170000Z
+SUMMARY:Wetgevingsoverleg:  Wijziging van de Wet milieubeheer en de Wet op 
+ de economische delicten in verband met het verhogen van het aandeel van ga
+ s uit hernieuwbare bronnen in de totale leveringen van gas aan afnemers (W
+ et bijmengverplichting groen gas) (voortzetting\; tweede termijn)
+DESCRIPTION:Klimaat en Groene Groei\nSamenvatting: https://tobiasraucher.gi
+ thub.io/milieubeleid-checker/#vergaderingen/d-195993\nTweede Kamer: https:
+ //www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?i
+ d=2026A06379\nAgendapunten:\n- Wijziging van de Wet milieubeheer en de Wet
+  op de economische delicten in verband met het verhogen van het aandeel va
+ n gas uit hernieuwbare bronnen in de totale leveringen van gas aan afnemer
+ s (Wet bijmengverplichting groen gas) (voortzetting\; tweede termijn)\n- A
+ ppreciatie amendement en toezegging wetsvoorstel bijmengverplichting groen
+  gas\n- Compensatie Glastuinbouw in het kader van de bijmengverplichting g
+ roen gas\n- Moties ingediend tijdens het debat\n- Ingetrokken amendement
+URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
+ details?id=2026A06379
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-07-28-wijziging-klimaatwet-moet-in-werking-zijn-vonnis-@milieuradar
+DTSTAMP:20261112T221109Z
+DTSTART;VALUE=DATE:20270728
+DTEND;VALUE=DATE:20270729
+SUMMARY:Deadline: Wijziging Klimaatwet moet in werking zijn (vonnis Klimaat
+ zaak Bonaire)
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

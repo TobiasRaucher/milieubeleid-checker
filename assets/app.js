@@ -801,6 +801,7 @@
   function plusDagen(dag, n) { const d = new Date(dag + "T12:00:00"); d.setDate(d.getDate() + n); return dagNL(d); }
   function weekNr(dag) { const d = new Date(dag + "T12:00:00"); d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7)); const j = new Date(d.getFullYear(), 0, 4); return 1 + Math.round(((d - j) / 864e5 - 3 + ((j.getDay() + 6) % 7)) / 7); }
   let _ti = null;
+  const icsUrl = () => new URL("data/agenda.ics", location.href.split("#")[0]).href;
   function tijdlijnItems() {
     if (_ti) return _ti;
     const acts = S.data.activiteiten.filter((a) => a.Datum && (a.Status === "Gepland" || a.Status === "Uitgevoerd")).map((a) => {
@@ -877,7 +878,16 @@
     const komend30 = vast.filter((i) => i.gepland && !i.eigen && past(i) && i.datum >= VANDAAG && i.datum <= plusDagen(VANDAAG, 30)).length;
     $("#agendaknoppen").innerHTML = `
       <span class="small muted">Komende 7 dagen: <b>${komend7}</b> · 30 dagen: <b>${komend30}</b></span>
-      <button type="button" class="chip" id="naarvandaag">Naar vandaag</button>`;
+      <button type="button" class="chip" id="naarvandaag">Naar vandaag</button>
+      <details class="facet abonneer"><summary>In je eigen agenda</summary><div class="facet-menu rechts">
+        <p class="small">Abonneer je op deze agenda; nieuwe en verplaatste vergaderingen verschijnen dan vanzelf in je eigen agenda (elke werkdag bijgewerkt).</p>
+        <a class="knop" href="${esc(icsUrl().replace(/^https:/, "webcal:"))}">Abonneren (Apple Agenda, Outlook)</a>
+        <a class="knop licht" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(icsUrl().replace(/^https:/, "webcal:"))}" target="_blank" rel="noopener">Toevoegen aan Google Agenda</a>
+        <label class="small muted" for="icslink">Of kopieer de link:</label>
+        <div class="kopieer"><input id="icslink" readonly value="${esc(icsUrl())}"><button type="button" class="chip" id="icskopie">Kopieer</button></div>
+      </div></details>`;
+    const kop = $("#icskopie");
+    if (kop) kop.addEventListener("click", () => { const i = $("#icslink"); i.select(); (navigator.clipboard ? navigator.clipboard.writeText(i.value) : Promise.reject()).then(() => { kop.textContent = "Gekopieerd"; }).catch(() => document.execCommand("copy")); });
     el.innerHTML = `
       ${dos ? `<div class="note">Alleen agenda-items bij <b>${esc(dossierTitel(dos))}</b>. <a href="#agenda">Filter wissen</a></div>` : ""}
       ${S.agendaVanaf > start ? `<div class="tl-eerder"><button type="button" class="chip" id="eerder">↑ Eerder laden (4 weken)</button> <span class="small muted">De agenda gaat terug tot ${fmtDatum(start)}.</span></div>` : `<p class="small muted">Begin van de Kamerperiode (${fmtDatum(start)}).</p>`}

@@ -313,3 +313,11 @@ li.tz { padding: 14px 0; }
 
 /* lange tekst leesbaar houden op brede schermen */
 .debat .body p, .debat .body li, .tz-tekst, .zfrag, .card > p { max-width: 110ch; }
+/* agenda-abonnement */
+.abonneer .facet-menu.rechts { left: auto; right: 0; width: 340px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.knop { display: inline-flex; justify-content: center; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; }
+.knop:hover { background: #156a3e; color: #fff; }
+.knop.licht { background: var(--accent-soft); color: var(--accent); }
+.kopieer { display: flex; gap: 6px; }
+.kopieer input { flex: 1; min-width: 0; font: inherit; font-size: 12px; border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; color: var(--ink-2); }
+.abonneer p { margin: 0; }

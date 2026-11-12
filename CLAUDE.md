@@ -4,7 +4,7 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
 
 ## Bij "werk de checker bij" (of "werk MilieuRadar bij")
 
-1. `git pull`, dan `python3 pipeline/fetch_tk.py` (Tweede Kamer open data; geen AI). Controleer `data/tk/meta.json` op fouten.
+1. `git pull`, dan `python3 pipeline/fetch_tk.py` (Tweede Kamer open data; geen AI) en `python3 pipeline/maak_ics.py` (agendafeed `data/agenda.ics`). Controleer `data/tk/meta.json` op fouten.
 2. Zoek nieuwe debatten: vergelijk `data/tk/activiteiten.json` (Status `Uitgevoerd`, relevante soorten) met `data/debatten.json` (koppeling op datum + soort). Sla procedurevergaderingen over.
 3. Vat elk nieuw relevant debat samen met de POLITIEK-connector (gehoord.de):
    - `search_debates` (op titel/datum) → `get_debate` → `get_transcript` (pagina's via offset).
@@ -56,6 +56,7 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 - Tabs: Overzicht, Agenda, Wetgeving, Moties, Vergaderingen, Stukken, Over. `#debatten` blijft werken als alias voor `#vergaderingen`.
 - Vergaderingen: filters (type, commissie, ministerie, thema, dossier; meerdere waarden per filter), samenvatting ja/nee, groeperen en ordenen. De filters staan in de URL (bv. `#vergaderingen?thema=adaptatie&groep=commissie`), dus deelbaar.
 - Agenda: tijdlijn per week en dag, opent bij vandaag; "Eerder laden" gaat per 4 weken terug tot de start van de Kamerperiode. `#agenda?dossier=<id>` filtert op dossier.
+- Agendafeed: `pipeline/maak_ics.py` schrijft `data/agenda.ics` (geplande en recente activiteiten plus mijlpalen met vaste datum); de Action draait hem na de data-update. Abonneerknop op de Agenda-pagina.
 - Toezeggingen (`#toezeggingen`, subtab van Vergaderingen): uit het toezeggingenregister van de Kamer (`data/tk/toezeggingen.json`, door de pipeline opgehaald; alleen bij gevolgde activiteiten plus ministeries in `toezeggingen.altijdMinisteries`). Voor samengevatte vergaderingen zonder registratie toont de site de toezeggingen uit de samenvatting. Los bijwerken: `python3 pipeline/fetch_tk.py --toezeggingen`.
 - To-do (Tobias, nov 2026): eigen themafilter op Wetgeving, Moties, Stukken en Agenda; de algemene sectorfilter is verwijderd.
 
