@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:10:20Z",
+ "bijgewerkt": "2026-11-12T20:14:19Z",
  "debatten": [
   {
    "id": "246687",
@@ -1711,6 +1711,261 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/297835"
+  },
+  {
+   "id": "233069",
+   "datum": "2026-09-24",
+   "type": "Commissiedebat",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Energie voor huishoudens (24 september en 13 oktober)",
+   "dossiers": [
+    "huishoudens-warmte",
+    "elektriciteitsnet",
+    "gas-leveringszekerheid",
+    "36576"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
+   "activiteit": "2026A00657",
+   "extraActiviteiten": [
+    "2026A07200"
+   ],
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-24/klimaat/thorbeckezaal/energie-voor-huishoudens-10-00",
+   "aanzet": "Commissiedebat over de betaalbaarheid van energie voor huishoudens, na TNO- en Berenschot-onderzoek naar de ontwikkeling van de energierekening, de kabinetsreactie daarop en brieven over warmtenetten, tijdsafhankelijke nettarieven en het Noodfonds Energie. Het debat werd op 24 september geschorst wegens tijdgebrek en op 13 oktober afgerond (transcript van de voortzetting: https://gehoord.de/beraadslagingen/282059).",
+   "gist": "Breed gedeelde zorg over de stijgende energierekening, energiearmoede (ruim 500.000 huishoudens) en 'verborgen' energiearmoede: mensen die de kachel uit laten en daardoor niet aan de energiequote van het Noodfonds Energie voldoen. Oppositiepartijen (PVV, SP, Groep Markuszower, BBB, JA21) wilden lagere energiebelasting of btw op energie; volgens de ChristenUnie staat het Europese herstel- en veerkrachtplan een verlaging van de energiebelasting op gas in 2027 in de weg. Over warmtenetten klonk vanuit bijna alle fracties ongeduld: de minister erkende dat het geld niet toereikend is (met de huidige middelen 50.000 tot 100.000 aansluitingen, na 2030 geen WIS-budget) en dat de nieuwe subsidieregeling pas rond september 2027 opengaat. Ze zegde toe na het IBO warmte met de sector te bespreken hoe projecten niet tussen wal en schip vallen. Kröger (PRO) vroeg een tweeminutendebat aan.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Pleit voor warmtenetten op bodem-, rest- en aquathermie in plaats van geïmporteerd gas. De uitrol zit vast (Apeldoorn trok een plan terug); de WIS-subsidie van maximaal 30% is te laag voor grote projecten, en kleine en zeer-lage-temperatuurnetten mogen niet vergeten worden. Vraagt om een waarborgfonds, financiering na 2030, sneller kostengebaseerde warmtetarieven en een koppeling van het noodfonds aan energiefixers.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=207693"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Mist in de kabinetsreactie welke knoppen het kabinet heeft als de betaalbaarheid te veel onder druk komt, en een definitie van betaalbaar. Wijst op Delft, waar een aardwarmtenet 15.000 woningen kan aansluiten en netverzwaring voorkomt, maar de financiering niet rond is. Vraagt aandacht voor huishoudens met medische apparatuur bij tijdsafhankelijke nettarieven.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=206132"
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "spreker": "Hidde Heutink",
+      "positie": "Volgens Heutink zijn hogere rekeningen het gevolg van politieke keuzes (ETS2, bijmengverplichting groen gas, einde saldering). Tegen 40 GW wind op zee (60 miljard euro) en voor kerncentrales. Tegen tijdsafhankelijke nettarieven, omdat die huishoudens met een warmtepomp of elektrische auto zouden straffen voor overheidsfalen bij het net.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=206194"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Wil versnellen naar eigen schone energie om de rekening structureel te verlagen; volgens hem staat de gasprijs rond 70 cent terwijl planbureaus met 20 tot 30 cent rekenen. Vraagt hoe netkosten gedempt kunnen worden, om een aantrekkelijk warmteaanbod en steun voor kansrijke warmteprojecten en warmtegemeenschappen, en om ruimte voor balkonpanelen en zonnepanelen voor huurders.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=206250"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Vraagt of Nederland op schema ligt met het vullen van de gasopslagen en in welk scenario van de kabinetsaanpak voor hoge prijzen we zitten. Zorgen over de 40% huishoudens die met tijdsafhankelijke nettarieven duurder uit is: slim gebruik moet de standaard worden (standaarden voor warmtepompen en laadpalen, slim laden). Wil oplossing voor dubbele belasting op thuisbatterijen, ruimere toegang tot het Warmtefonds voor de middenklasse en inzicht in de 235 miljard euro netinvesteringen.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=206472"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Henk Vermeer",
+      "positie": "'Wie rood staat, kan niet groen doen.' Wijst op 959.000 huishoudens met een laag middeninkomen in een risicogroep en vraagt een integraal overzicht van alle maatregelen op de rekening tot 2031. Kritisch over het verlaagde vuldoel voor gasopslag en over financiële risico's van publieke warmtebedrijven; vraagt hoe gemeenten hybride warmtepompen en groen gas niet voortijdig afschrijven.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=207694"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Suzanne Kröger",
+      "positie": "Wil vaart met warmtenetten: vermeden netkosten meenemen in de businesscase, een waarborgfonds, eenvoudiger WIS 2.0 en opkoop van private netten. Vraagt een concreet doel om energiearmoede te halveren, met een energieplan voor de ongeveer 200 wijken met de meeste energiearmoede, en een prijsplafond dat klaarligt. Vraagt in de voortzetting om een snelle oplossing voor projecten die nu stil dreigen te vallen.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=206614"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Alexander Kops",
+      "positie": "Energie is een 'peperduur luxeproduct' geworden: meer dan de helft van de rekening bestaat uit belastingen en netkosten, en de energiebelasting op gas stijgt volgend jaar verder. Vindt dat het noodfonds tekortschiet (gemiddeld 360 euro) en mensen in verborgen energiearmoede mist. Wil de energierekening structureel verlagen.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=207695"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Uitgangspunt: elk huishouden moet bij normaal verbruik de rekening kunnen betalen. Wilde de energiebelasting op gas verlagen, maar volgens ambtelijke informatie staat het herstel- en veerkrachtplan dat in 2027 in de weg (anders mogelijk 600 miljoen euro korting); vraagt of dat klopt en ook voor 2028 geldt. Vraagt duidelijkheid over het financiële pakket voor warmte, de garantieregeling en de warmtekavels, en of het Warmtefonds wordt aangevuld.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=206775"
+     },
+     {
+      "fractie": "SP",
+      "spreker": "Jimmy Dijk",
+      "positie": "De privatisering van de energievoorziening was volgens de SP een fout; wil publieke investeringen in net, zon op daken en buurtbatterijen in plaats van kerncentrales. Wil btw op energie verlagen (zoals in Spanje), een prijsplafond en een oplossing voor sociale huurders die geraakt worden door het einde van de saldering. Bood de oppositie samenwerking aan voor een gezamenlijk voorstel om energiebelasting te verlagen.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=207696"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Volgens JA21 rekenen de modellen te weinig met installatie- en onderhoudskosten van verduurzaming; lage inkomens betalen relatief veel meer (4,5% van het inkomen met een cv-ketel tegen 1,3% bij hoge inkomens) en kunnen de investeringen niet opbrengen. Zorgen over de gasopslagen bij een koude winter.",
+      "link": "https://gehoord.de/beraadslagingen/233069?segment=206914"
+     }
+    ],
+    "kabinet": [
+     "Bij gas blijven is volgens de doorrekeningen voor vrijwel iedereen het duurst; volledig elektrisch is inclusief investeringen meestal het goedkoopst, maar niet iedereen kan die stap zelf of snel zetten.",
+     "Gerichte steun heeft de voorkeur boven generieke belastingverlaging, die ook bij hogere inkomens terechtkomt. Het herstel- en veerkrachtplan loopt tot en met 2026; over de ruimte daarna gaat Financiën.",
+     "Nederlanders betalen meer belasting op gas dan Belgen, maar Nederland heeft een vaste belastingvermindering van 519 euro en stroom is hier ongeveer een derde goedkoper.",
+     "Vullen van de gasopslagen ligt op schema; de leveringszekerheid is volgens de minister ook bij een koude winter geborgd.",
+     "Bereik: Warmtefonds (22.000 leningen) en energiefixers (95 miljoen) samen ongeveer 400.000 huishoudens; Noodfonds Energie doelgroep ongeveer 500.000. Verborgen energiearmoede: de minister van SZW bespreekt met energieleveranciers hoe deze groep bereikt kan worden.",
+     "Warmtenetten: onvoldoende subsidiemiddelen voor alle projecten; de nieuwe regeling (vanaf ongeveer september 2027) richt zich op de meest robuuste projecten en kan hogere subsidie per aansluiting geven. Een garantieregeling gaat voor op een waarborgfonds, omdat er nog te weinig kritische massa is. Netbeheerders mogen bespaarde netkosten niet in warmtenetten steken ('split incentive'); dat komt terug bij het IBO.",
+     "Er wordt bekeken of een gerichte, staatssteun-proof subsidie aan TenneT kan om nettarieven voor bedrijven te dempen; voor huishoudens zou dat veel budget vergen."
+    ],
+    "toezeggingen": [
+     "Nadere toelichting op waarom de transportkosten van stroomimport en -export binnen Europa moeilijk toe te rekenen zijn (richting Vermeer).",
+     "In de kabinetsreactie op het IBO warmte (begin 2027) ingaan op de vragen over een waarborgfonds, en terugkoppelen van gesprekken met de warmtesector over hoe projecten in de tussentijd niet stilvallen.",
+     "Schriftelijk antwoord, voor het tweeminutendebat, over het faciliterend kader voor warmtegemeenschappen (richting Kröger).",
+     "TNO-prognose van de energierekening (tot 2031) wordt jaarlijks geactualiseerd."
+    ],
+    "moties": "Geen; moties volgen bij het tweeminutendebat dat Kröger (PRO) aanvroeg.",
+    "vervolg": [
+     "Tweeminutendebat Energie voor huishoudens (datum nog niet bekend).",
+     "IBO warmte eind 2026 en kabinetsreactie begin 2027; openstelling nieuwe warmtesubsidie rond september 2027.",
+     "Wet collectieve warmte treedt in werking op 1 januari 2027."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/233069"
+  },
+  {
+   "id": "332744",
+   "datum": "2026-11-11",
+   "type": "Technische briefing",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Strategisch gasbeleid",
+   "niveau": "kort",
+   "dossiers": [
+    "gas-leveringszekerheid"
+   ],
+   "bewindspersoon": null,
+   "activiteit": "2026A08066",
+   "video": "https://debatdirect.tweedekamer.nl/2026-11-11/klimaat/wttewaall-van-stoetwegenzaal/strategisch-gasbeleid-16-00",
+   "deskundigen": [
+    {
+     "naam": "Caroline Kollau",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Gijs Postma",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Johan van Gilst",
+     "organisatie": "Ministerie van KGG"
+    },
+    {
+     "naam": "Martha Brinkman",
+     "organisatie": "Ministerie van KGG"
+    }
+   ],
+   "aanzet": "Technische toelichting door ambtenaren op de brief strategisch gasbeleid, ter voorbereiding op het commissiedebat daarover (begin december 2026). Aanwezig waren Jumelet (CDA, voorzitter), Van Oosterhout (PRO) en Van den Berg (JA21).",
+   "gist": "Het ministerie wil de weerbaarheid (een strategische gasvoorraad onder regie van de overheid, zoals de opslag bij Alkmaar) loskoppelen van de commerciële seizoensopslag, omdat het combineren daarvan de markt zou verstoren en de oude verdienmodellen van seizoensopslag onder druk staan. Daarnaast wordt een leveranciersverplichting overwogen, waarbij leveranciers een deel van hun portfolio in Nederlandse opslagen aanhouden. Omvang en kosten van die 'verzekering' worden nog onderzocht (onder meer met een MKBA) en zijn volgens de ambtenaren een politieke keuze. Van den Berg (JA21) vroeg vooral naar piekcapaciteit zonder Norg en Grijpskerk; volgens de ambtenaren laat de analyse van GTS ook dan een capaciteitsoverschot zien, dat de komende winters groter wordt. Langetermijncontracten bieden volgens hen geen volledige zekerheid (force majeure, zoals bij de sluiting van de Straat van Hormuz).",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Vragen over piekcapaciteit op koude, windstille dagen zonder Norg en een beperkt Grijpskerk (volgens zijn berekening een tekort van 4 GW zonder de strategische opslag), over het meetellen van de strategische opslag Alkmaar in capaciteitsberekeningen, over de GTS-rekenwinter (nu de koudste van 20 in plaats van 30 jaar) en over het risico van bijna lege opslagen eind van de winter.",
+      "link": "https://gehoord.de/beraadslagingen/332744?segment=251120"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Vraagt of een crisisstrategie om de gasafhankelijkheid van kwetsbare gebruikers af te bouwen (advies uit PwC-onderzoek) is meegenomen, en wat de verschuiving van verantwoordelijkheid naar energieleveranciers betekent voor de grip van de staat op gasvoorraden.",
+      "link": "https://gehoord.de/beraadslagingen/332744?segment=251135"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Vraagt hoe de balans tussen weerbaarheid en kosten wordt gewogen en of langetermijncontracten niet meer aandacht verdienen.",
+      "link": "https://gehoord.de/beraadslagingen/332744?segment=251145"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "",
+    "vervolg": [
+     "Commissiedebat over het strategisch gasbeleid (begin december 2026), aangevraagd door JA21; besluit over gasopslag Norg."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/332744"
+  },
+  {
+   "id": "286143",
+   "datum": "2026-10-14",
+   "type": "Commissiedebat",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Energieraad (formeel) 29 oktober 2026, met tweeminutendebat (14 en 15 oktober)",
+   "niveau": "kort",
+   "dossiers": [
+    "internationaal-eu",
+    "elektriciteitsnet",
+    "industrie"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
+   "activiteit": "2026A04753",
+   "extraActiviteiten": [
+    "2026A07596"
+   ],
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-14/klimaat/wttewaall-van-stoetwegenzaal/energieraad-formeel-dd-29-oktober-2026-15-00",
+   "aanzet": "Voorbereiding van de formele Energieraad van 29 oktober 2026, met Commissievoorstellen over betaalbare elektriciteit (nettarieven, energiebelasting), het Europese energiekader na 2030 (onder meer een elektrificatiedoel) en de ETS-herziening. Het tweeminutendebat volgde op 15 oktober (transcript: https://gehoord.de/beraadslagingen/292941).",
+   "gist": "Discussie over hoe Europa de elektriciteitsrekening kan drukken. PRO en D66 wilden dat het kabinet het Commissievoorstel steunt om een lagere belasting op stroom dan op gas via de Elektriciteitsverordening te regelen; de minister houdt vast aan de kabinetslijn dat belastingen een nationale bevoegdheid blijven, en wees erop dat Nederland dit ook zelf kan regelen. Het kabinet zet in op gerichte ondersteuning van netkosten voor de energie-intensieve industrie (CDA en VVD noemden Nyrstar in Budel) en op een indicatief in plaats van bindend Europees elektrificatiedoel. De minister heeft de Commissie gevraagd na te denken over een Europees afbouwpad voor fossiele brandstoffen. In het tweeminutendebat kregen de PRO-motie voor een bindend Europees uitfaseerpad voor fossiele subsidies en de D66-motie over inzicht in en dempen van stijgende nettarieven oordeel Kamer; de JA21-motie tegen een bindend elektrificatiedoel heette ontijdig en de JA21-motie voor uitstel van ETS2 tot na 2028 werd ontraden.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Steunt elektrificatie waar die technisch en economisch het best is, maar wil ruimte voor warmte en duurzame moleculen, toetsing van Europese doelen op uitvoerbaarheid en systeemkosten, en harmonisatie van de IKC-compensatie met buurlanden. Wil dat de ETS-conditionaliteit voor gratis rechten bedrijven niet straft voor netcongestie.",
+      "link": "https://gehoord.de/beraadslagingen/286143?segment=230574"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Kritisch over Europese regeldrang en een bindend elektrificatiedoel; wil wel harmonisatie van netwerktarieven voor de industrie. Pleit voor 'kussengas'-reserves in de opslagen van de NAM als Nederlands aanbod in Europa. Moties: geen bindend Europees elektrificatiedoel (ontijdig) en uitstel van ETS2 tot na 2028 (ontraden).",
+      "link": "https://gehoord.de/beraadslagingen/286143?segment=230597"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Vraagt wanneer duidelijk wordt hoe het kabinet energie-intensieve bedrijven gericht kan ondersteunen bij hoge netkosten, noemt amortisatie van netinvesteringen en Europese verdeling van strategische gasreserves interessante opties, en vraagt naar een geharmoniseerd Europees invoedingstarief.",
+      "link": "https://gehoord.de/beraadslagingen/286143?segment=230683"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Mist inzet voor huishoudens bij nettarieven (+20% in 2027), vraagt naar amortisatie en subsidie van nettarieven, en wil de stroombelasting via de Elektriciteitsverordening regelen zodat die niet strandt in unanimiteit. Wil een concreet afbouwplan voor fossiele subsidies. Motie in het tweeminutendebat: bindend Europees uitfaseerpad met einddatum voor fossiele subsidies (oordeel Kamer).",
+      "link": "https://gehoord.de/beraadslagingen/286143?segment=230785"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Drie opdrachten: vasthouden aan een sterk ETS, een ambitieus elektrificatiedoel en betaalbare elektriciteit. Wil meer Europese harmonisatie in plaats van een compensatierace tussen lidstaten en vroeg de Commissie te vragen interconnectie te stimuleren via het meerjarig financieel kader. Motie in het tweeminutendebat: inzicht in de ontwikkeling van nettarieven en gerichte maatregelen om stijgingen te dempen, voorjaar 2027 (oordeel Kamer).",
+      "link": "https://gehoord.de/beraadslagingen/286143?segment=230824"
+     }
+    ],
+    "kabinet": [
+     "Fiscale maatregelen blijven een nationale bevoegdheid (unanimiteit in de EU); Nederland kan de verhouding tussen belasting op stroom en gas ook zelf aanpassen.",
+     "Inzet op gerichte, staatssteun-proof ondersteuning van netkosten voor energie-intensieve industrie; een integrale industriebrief met de inzet op vraagcreatie volgt binnen weken.",
+     "Voorkeur voor een indicatief Europees elektrificatiedoel; over een bindend doel heeft het kabinet zorgen.",
+     "Milieuraad: Nederland zette in op een ambitieus ETS-pakket; veel lidstaten steunen conditionaliteit voor gratis rechten, met zorgen over uitvoerbaarheid (netcongestie, liquiditeit)."
+    ],
+    "toezeggingen": [
+     "In het verslag van de Energieraad ingaan op amortisatie van netinvesteringen (bestaande inzichten, verschillende vormen en de relatie met waterstof)."
+    ],
+    "moties": "Tweeminutendebat 15 oktober, vier moties. Oordeel Kamer: Van Oosterhout (bindend Europees uitfaseerpad fossiele subsidies) en Klos (nettarieven). Ontijdig: Van den Berg (geen bindend elektrificatiedoel). Ontraden: Van den Berg (uitstel ETS2 tot na 2028). Stemming na het herfstreces.",
+    "vervolg": [
+     "Verslag van de Energieraad van 29 oktober 2026.",
+     "Integrale industriebrief met inzet op vraagcreatie."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/286143"
   }
  ]
 }

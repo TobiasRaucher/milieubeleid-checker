@@ -345,7 +345,7 @@
   /* ---------- Debatten ---------- */
   const activiteitVan = (d) => S.data.activiteiten.find((a) => a.Nummer === d.activiteit);
   function samengevatVoor(a) {
-    return S.data.debatten.find((d) => d.activiteit === a.Nummer) ||
+    return S.data.debatten.find((d) => d.activiteit === a.Nummer || (d.extraActiviteiten || []).includes(a.Nummer)) ||
       S.data.debatten.find((d) => !d.activiteit && d.datum === (a.Datum ? dagNL(new Date(a.Datum)) : "") && d.type === a.Soort);
   }
 
