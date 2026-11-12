@@ -7,7 +7,7 @@ const T = require("../assets/themas.js");
 const lees = (p) => JSON.parse(fs.readFileSync(path.join(__dirname, "..", p), "utf8"));
 const D = {
   dossiers: lees("data/dossiers.json"), debatten: lees("data/debatten.json").debatten, zaken: lees("data/tk/zaken.json"),
-  stukken: lees("data/tk/stukken.json"), activiteiten: lees("data/tk/activiteiten.json"), agenda: lees("data/agenda.json").items,
+  stukken: lees("data/tk/stukken.json"), activiteiten: lees("data/tk/activiteiten.json"), agenda: lees("data/agenda.json").items, toezeggingen: lees("data/tk/toezeggingen.json"),
   T: T.maak(lees("data/themas.json")),
 };
 const z = Z.maak(D, lees("data/zoeksynoniemen.json"));
@@ -47,6 +47,7 @@ const SOORT_TESTS = [
   ["motie stikstof", (d) => d.soort === "Motie"],
   ["kamerbrief netcongestie", (d) => d.soort === "Kamerbrief"],
   ["commissiedebat water", (d) => /^Commissiedebat/.test(d.soort)],
+  ["toezegging drinkwater", (d) => d.soort === "Toezegging"],
 ];
 let fout = 0;
 for (const [q, verwacht, n] of TESTS) {

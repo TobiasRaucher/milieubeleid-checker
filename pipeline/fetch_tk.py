@@ -15,6 +15,11 @@ Wat er wordt opgehaald (per actieve sector in pipeline/config.json):
     trefwoord bevat)
   * stukken van ministeries (Kamerbrieven, antwoorden op Kamervragen) die volgens
     stukDossiers/trefwoorden bij een sector horen; zie "stukken" in config.json
+  * toezeggingen uit het toezeggingenregister van de Kamer die bij een gevolgde activiteit horen
+    (plus alle toezeggingen van de ministeries in toezeggingen.altijdMinisteries)
+
+Alleen de toezeggingen bijwerken (op basis van de bestaande activiteiten.json):
+  python3 pipeline/fetch_tk.py --toezeggingen
 
 Documentatie API: https://opendata.tweedekamer.nl
 """
@@ -355,6 +360,28 @@ def stukken(start):
     return out
 
 
+def toezeggingen(start, act_nummers):
+    """Officiële toezeggingen (toezeggingenregister Tweede Kamer) bij gevolgde activiteiten."""
+    cfg = CONFIG.get("toezeggingen", {})
+    altijd = set(cfg.get("altijdMinisteries", ["Klimaat en Groene Groei"]))
+    rec = odata("Toezegging", {"$filter": f"Verwijderd eq false and Aanmaakdatum ge {start}T00:00:00Z",
+                               "$orderby": "Aanmaakdatum desc"}, max_pages=100)
+    uit = []
+    for t in rec:
+        if t.get("ActiviteitNummer") not in act_nummers and t.get("Ministerie") not in altijd:
+            continue
+        naam = " ".join(x for x in [t.get("Initialen"), t.get("Tussenvoegsel"), t.get("Achternaam")] if x)
+        naam = re.sub(r",?\s*\b(LLM|LL\.M\.|MSc|MA|MBA|BSc|BA|PhD|MPA|MPhil|MBA)\b\.?,?", "", naam).strip(" ,")
+        nak = t.get("DatumNakoming") or ""
+        uit.append({
+            "nummer": t.get("Nummer"), "tekst": (t.get("Tekst") or "").strip(), "status": t.get("Status"),
+            "ministerie": t.get("Ministerie"), "bewindspersoon": naam, "functie": t.get("Functie"),
+            "activiteit": t.get("ActiviteitNummer"), "datum": (t.get("Aanmaakdatum") or "")[:10],
+            "nakoming": None if nak.startswith("0001") else nak[:10], "gewijzigd": (t.get("GewijzigdOp") or "")[:10],
+        })
+    return uit
+
+
 def _act_past(a, rx):
     # alleen het onderwerp: agendapunten van brede debatten maken de selectie te ruim
     return bool(rx.search(a.get("Onderwerp") or ""))
@@ -430,6 +457,15 @@ def main():
         FOUTEN.append(f"stukken: {e}")
         log(f"    FOUT stukken: {e}")
 
+    # 5. toezeggingen bij de gevolgde activiteiten
+    tz_lijst = []
+    try:
+        tz_lijst = toezeggingen(start, {a.get("Nummer") for a in alle_act.values()})
+        log(f"== {len(tz_lijst)} toezeggingen")
+    except Exception as e:
+        FOUTEN.append(f"toezeggingen: {e}")
+        log(f"    FOUT toezeggingen: {e}")
+
     OUT.mkdir(parents=True, exist_ok=True)
     zaken_lijst = sorted(alle_zaken.values(), key=lambda z: z["gestartOp"] or "", reverse=True)
     act_lijst = sorted(alle_act.values(), key=lambda a: a.get("Datum") or "", reverse=True)
@@ -443,17 +479,33 @@ def main():
     (OUT / "activiteiten.json").write_text(json.dumps(act_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     if stuk_lijst:
         (OUT / "stukken.json").write_text(json.dumps(stuk_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
+    if tz_lijst:
+        (OUT / "toezeggingen.json").write_text(json.dumps(tz_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps({
         "bijgewerkt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "status": "ok" if not FOUTEN else "gedeeltelijk",
         "aantalZaken": len(zaken_lijst),
         "aantalActiviteiten": len(act_lijst),
         "aantalStukken": len(stuk_lijst),
+        "aantalToezeggingen": len(tz_lijst),
         "fouten": FOUTEN,
         "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl)",
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Klaar: {len(zaken_lijst)} zaken, {len(act_lijst)} activiteiten, {len(FOUTEN)} fouten")
 
 
+def alleen_toezeggingen():
+    acts = json.loads((OUT / "activiteiten.json").read_text(encoding="utf-8"))
+    tz = toezeggingen(CONFIG["startdatum"], {a.get("Nummer") for a in acts})
+    (OUT / "toezeggingen.json").write_text(json.dumps(tz, ensure_ascii=False, indent=1), encoding="utf-8")
+    meta = json.loads((OUT / "meta.json").read_text(encoding="utf-8"))
+    meta["aantalToezeggingen"] = len(tz)
+    (OUT / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"Klaar: {len(tz)} toezeggingen")
+
+
 if __name__ == "__main__":
-    main()
+    if "--toezeggingen" in sys.argv:
+        alleen_toezeggingen()
+    else:
+        main()

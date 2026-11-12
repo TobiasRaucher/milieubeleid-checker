@@ -56,6 +56,7 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 - Tabs: Overzicht, Agenda, Wetgeving, Moties, Vergaderingen, Stukken, Over. `#debatten` blijft werken als alias voor `#vergaderingen`.
 - Vergaderingen: filters (type, commissie, ministerie, thema, dossier; meerdere waarden per filter), samenvatting ja/nee, groeperen en ordenen. De filters staan in de URL (bv. `#vergaderingen?thema=adaptatie&groep=commissie`), dus deelbaar.
 - Agenda: tijdlijn per week en dag, opent bij vandaag; "Eerder laden" gaat per 4 weken terug tot de start van de Kamerperiode. `#agenda?dossier=<id>` filtert op dossier.
+- Toezeggingen (`#toezeggingen`, subtab van Vergaderingen): uit het toezeggingenregister van de Kamer (`data/tk/toezeggingen.json`, door de pipeline opgehaald; alleen bij gevolgde activiteiten plus ministeries in `toezeggingen.altijdMinisteries`). Voor samengevatte vergaderingen zonder registratie toont de site de toezeggingen uit de samenvatting. Los bijwerken: `python3 pipeline/fetch_tk.py --toezeggingen`.
 - To-do (Tobias, nov 2026): eigen themafilter op Wetgeving, Moties, Stukken en Agenda; de algemene sectorfilter is verwijderd.
 
 ## Ontwerp

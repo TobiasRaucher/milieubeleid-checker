@@ -175,6 +175,13 @@
         themaTekst: (a.agendapunten || []).map((ap) => ap.onderwerp),
       });
     }
+    for (const t of D.toezeggingen || []) {
+      add({
+        id: "tz:" + t.nummer, cat: "toezeggingen", soort: "Toezegging", datum: t.datum, titel: t.tekst,
+        tekst: j([t.ministerie && "ministerie van " + t.ministerie, t.status]), personen: j([t.bewindspersoon, t.functie]),
+        link: "#toezeggingen", status: t.status, themaTekst: [],
+      });
+    }
     const actSleutels = new Set((D.activiteiten || []).filter((a) => a.Datum).map((a) => dag(a.Datum) + "|" + norm(a.Onderwerp).slice(0, 20)));
     for (const i of D.agenda || []) {
       if (actSleutels.has((i.datum || "") + "|" + norm(i.titel).slice(0, 20))) continue;
@@ -203,8 +210,9 @@
     [["debat", "debatten", "vergadering", "vergaderingen"], "vergaderingen", (d) => d.cat === "debatten"],
     [["wetsvoorstel", "wetsvoorstellen"], "wetsvoorstellen", (d) => /^Wetsvoorstel/.test(d.soort)],
     [["agenda"], "agenda", (d) => d.cat === "agenda"],
+    [["toezegging", "toezeggingen"], "toezeggingen", (d) => d.cat === "toezeggingen"],
   ];
-  const CAT_GEWICHT = { debatten: 1.25, dossiers: 1.4, moties: 1, stukken: 1, agenda: 1.05 };
+  const CAT_GEWICHT = { debatten: 1.25, dossiers: 1.4, moties: 1, stukken: 1, agenda: 1.05, toezeggingen: 1 };
 
   function maak(D, synoniemen) {
     const docs = bouwDocumenten(D);

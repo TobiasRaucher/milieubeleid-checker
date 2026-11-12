@@ -211,7 +211,7 @@ footer { color: var(--muted); font-size: 13px; padding: 30px 0; border-top: 1px 
 .zoeklijst li { padding: 14px 0; }
 .zoeklijst .ztitel { font-weight: 600; font-size: 16px; text-decoration: none; color: var(--ink); }
 .zoeklijst .ztitel:hover { color: var(--accent); text-decoration: underline; }
-.zoeklijst .zmeta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 13px; color: var(--muted); margin-bottom: 3px; }
+.zmeta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 13px; color: var(--muted); margin-bottom: 3px; }
 .zoeklijst .zfrag { font-size: 14px; color: var(--ink-2); margin-top: 3px; }
 .zoeklijst mark, .ztitel mark { background: #fff1a8; color: inherit; border-radius: 3px; padding: 0 1px; }
 .sector-label { display: inline-flex; align-items: center; gap: 5px; }
@@ -295,3 +295,14 @@ button.tchip:hover { border-color: var(--line); color: var(--ink); }
   .tl-tijd { padding: 0; }
   .facet-menu { position: fixed; left: 12px; right: 12px; top: auto; max-width: none; }
 }
+
+/* subnavigatie (Vergaderingen, Toezeggingen, Per fractie) */
+.subnav { display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0 -6px; }
+.subnav a { padding: 6px 14px; border-radius: 999px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); font-size: 14px; }
+.subnav a:hover { color: var(--ink); border-color: #b9cbbf; }
+.subnav a.actief { background: var(--ink); border-color: var(--ink); color: #fff; font-weight: 600; }
+/* toezeggingen */
+li.tz { padding: 14px 0; }
+.tz-tekst { margin: 4px 0 2px; line-height: 1.45; }
+.tzlijst { list-style: none; padding: 0; margin: 0 0 6px; display: flex; flex-direction: column; gap: 8px; }
+.filterkeuzes input[type=search] { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 8px 14px; font: inherit; font-size: 14px; min-height: 38px; flex: 1 1 180px; max-width: 320px; }

@@ -577,5 +577,11 @@
       "Klimaat- en Energiefonds",
       "Volkshuisvesting en Ruimtelijke Ordening"
     ]
+  },
+  "toezeggingen": {
+    "_uitleg": "Toezeggingen uit het toezeggingenregister van de Tweede Kamer. Een toezegging komt in de checker als ze bij een gevolgde activiteit hoort, of als ze van een van deze ministeries is.",
+    "altijdMinisteries": [
+      "Klimaat en Groene Groei"
+    ]
   }
 }
