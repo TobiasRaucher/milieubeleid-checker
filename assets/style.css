@@ -321,3 +321,16 @@ li.tz { padding: 14px 0; }
 .kopieer { display: flex; gap: 6px; }
 .kopieer input { flex: 1; min-width: 0; font: inherit; font-size: 12px; border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; color: var(--ink-2); }
 .abonneer p { margin: 0; }
+/* nieuw sinds vorig bezoek */
+.badge.nieuw { background: #fff1a8; color: #6b5300; margin-left: 6px; }
+.nieuw-blok { margin-top: 18px; border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; }
+.nieuw-kop { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.nieuw-kop h2 { margin: 0; font-size: 17px; }
+.nieuw-kop .linkknop { margin-left: auto; }
+.nieuw-tegels { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+.nieuw-tegel { background: var(--surface); border-radius: 12px; padding: 8px 14px; text-decoration: none; color: var(--ink); font-size: 14px; }
+.nieuw-tegel:hover { background: var(--accent-soft); }
+.nieuw-tegel b { font-size: 18px; margin-right: 4px; }
+.nieuw-lijst { margin-top: 8px; }
+.nieuw-lijst li { padding: 6px 0; }
+.nieuw-uitleg { margin: 10px 0 0; }

@@ -64,6 +64,7 @@
     ]);
     S.data = { config, dossiers, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData };
     S.T = window.MRThemas.maak(themas);
+    leesBezoek();
     // meest recente moment waarop data of samenvattingen zijn bijgewerkt
     const stempels = [meta.bijgewerkt, debatten.bijgewerkt, dossiers.bijgewerkt, agenda.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
     $("#stamp").textContent = stempels.length ? `Bijgewerkt ${fmtTijdstip(new Date(Math.max(...stempels)))}` : "Bijgewerkt: onbekend";
@@ -71,6 +72,51 @@
     window.addEventListener("hashchange", route);
     route();
   }
+
+  /* ---------- Nieuw sinds je vorige bezoek (alleen in deze browser) ---------- */
+  // Bij de eerste paginaweergave van een sessie wordt het vorige bezoek onthouden; alles met een datum vanaf die dag telt als nieuw.
+  function leesBezoek() {
+    try {
+      let vorige = sessionStorage.getItem("mr-vorige");
+      if (vorige === null) {
+        vorige = localStorage.getItem("mr-laatsteBezoek") || "";
+        sessionStorage.setItem("mr-vorige", vorige);
+        localStorage.setItem("mr-laatsteBezoek", new Date().toISOString());
+      }
+      S.vorige = vorige ? new Date(vorige) : null;
+    } catch (e) { S.vorige = null; }
+    S.vorigeDag = S.vorige ? dagNL(S.vorige) : null;
+  }
+  const isNieuw = (dag) => !!(S.vorigeDag && dag && String(dag).slice(0, 10) >= S.vorigeDag);
+  const nieuwBadge = (dag) => (isNieuw(dag) ? `<span class="badge nieuw" title="Nieuw sinds je vorige bezoek">nieuw</span>` : "");
+  function nieuwBlok() {
+    if (!S.vorige) return `<p class="small muted nieuw-uitleg">Vanaf je volgende bezoek zie je hier wat er sindsdien nieuw is (onthouden in deze browser).</p>`;
+    const sam = S.data.debatten.filter((d) => isNieuw(d.samengevatOp)).sort((a, b) => (b.samengevatOp || "").localeCompare(a.samengevatOp || "") || b.datum.localeCompare(a.datum));
+    const stuk = (S.data.stukken || []).filter((x) => isNieuw(x.datum));
+    const stem = S.data.zaken.filter((z) => z.stemtelling && isNieuw(z.stemtelling.datum));
+    const tz = (S.data.toezeggingen || []).filter((t) => isNieuw(t.gewijzigd || t.datum));
+    const dos = S.data.dossiers.dossiers.filter((d) => isNieuw(d.laatsteStap?.datum));
+    const totaal = sam.length + stuk.length + stem.length + tz.length + dos.length;
+    const tegel = (n, lbl, href) => (n ? `<a class="nieuw-tegel" href="${href}"><b>${n}</b> ${lbl}</a>` : "");
+    return `<section class="nieuw-blok" aria-label="Nieuw sinds je vorige bezoek">
+      <div class="nieuw-kop"><h2>Nieuw sinds je vorige bezoek</h2><span class="small muted">${fmtDatum(S.vorigeDag)}, ${tijdNL(S.vorige.toISOString())}</span>
+        <button type="button" class="linkknop" id="gelezen">Alles als gelezen markeren</button></div>
+      ${totaal ? `<div class="nieuw-tegels">
+        ${tegel(sam.length, sam.length === 1 ? "nieuwe samenvatting" : "nieuwe samenvattingen", "#vergaderingen?samenvatting=ja")}
+        ${tegel(stem.length, stem.length === 1 ? "stemming" : "stemmingen", "#moties")}
+        ${tegel(stuk.length, stuk.length === 1 ? "stuk van een ministerie" : "stukken van ministeries", "#stukken")}
+        ${tegel(tz.length, tz.length === 1 ? "nieuwe of bijgewerkte toezegging" : "nieuwe of bijgewerkte toezeggingen", "#toezeggingen")}
+        ${tegel(dos.length, dos.length === 1 ? "wetsvoorstel met een nieuwe stap" : "wetsvoorstellen met een nieuwe stap", "#wetgeving")}
+      </div>
+      ${sam.length ? `<ul class="list nieuw-lijst">${sam.slice(0, 5).map((d) => `<li><span class="badge nieuw">nieuw</span> <a href="#vergaderingen/d-${esc(d.id)}">${esc(d.titel)}</a> <span class="small muted">${esc(d.type)}, ${fmtDatum(d.datum)}</span></li>`).join("")}</ul>` : ""}`
+      : `<p class="small muted">Niets nieuws sinds je vorige bezoek.</p>`}
+    </section>`;
+  }
+  document.addEventListener("click", (e) => {
+    if (e.target.id !== "gelezen") return;
+    try { localStorage.setItem("mr-laatsteBezoek", new Date().toISOString()); sessionStorage.setItem("mr-vorige", new Date().toISOString()); } catch (x) { /* geen opslag */ }
+    leesBezoek(); route();
+  });
 
   function inSector(item) {
     if (S.sector === "alle") return true;
@@ -203,6 +249,7 @@
         </div>
         <div class="vz-staven" aria-hidden="true">${[8, 30, 14, 46, 60, 10, 52, 34, 26, 40, 8, 48, 22, 30, 56].map((h) => `<span style="height:${h}px"></span>`).join("")}</div>
       </section>
+      ${nieuwBlok()}
       <div class="grid kpi">
         ${tile(lopend, "wetsvoorstellen in voorbereiding of behandeling", "#wetgeving")}
         ${tile(moties.length, "moties sinds begin Kamerperiode", "#moties")}
@@ -299,7 +346,7 @@
         (!q || `${z.onderwerp} ${z.titel} ${z.indieners.map((i) => i.naam + " " + i.fractie).join(" ")}`.toLowerCase().includes(q))
       ).sort((a, b) => ((b.stemtelling?.datum || b.gestartOp) || "").localeCompare((a.stemtelling?.datum || a.gestartOp) || ""));
       $("#mcount").textContent = `${rows.length} resultaten`;
-      $("#mbody").innerHTML = rows.map((z, i) => `<tr class="row" data-i="${i}" tabindex="0"><td>${uitslagPill(z.uitslag)}</td><td><span class="tag">${esc(z.soort)}</span> ${esc(korteTitel(z))}${z.kabinetsappreciatie && !/nog niet bekend|niet beschikbaar/i.test(z.kabinetsappreciatie) ? `<div class="small muted">Kabinet: ${esc(z.kabinetsappreciatie)}</div>` : ""}</td><td class="hide-sm">${indienersTekst(z)}</td><td class="hide-sm">${dossierLabel(z)}</td><td>${fmtDatum(z.stemtelling?.datum || z.gestartOp)}</td></tr>`).join("") || `<tr><td colspan="5" class="empty">Geen resultaten.</td></tr>`;
+      $("#mbody").innerHTML = rows.map((z, i) => `<tr class="row" data-i="${i}" tabindex="0"><td>${uitslagPill(z.uitslag)}${z.stemtelling ? nieuwBadge(z.stemtelling.datum) : ""}</td><td><span class="tag">${esc(z.soort)}</span> ${esc(korteTitel(z))}${z.kabinetsappreciatie && !/nog niet bekend|niet beschikbaar/i.test(z.kabinetsappreciatie) ? `<div class="small muted">Kabinet: ${esc(z.kabinetsappreciatie)}</div>` : ""}</td><td class="hide-sm">${indienersTekst(z)}</td><td class="hide-sm">${dossierLabel(z)}</td><td>${fmtDatum(z.stemtelling?.datum || z.gestartOp)}</td></tr>`).join("") || `<tr><td colspan="5" class="empty">Geen resultaten.</td></tr>`;
       $("#mbody").querySelectorAll("tr.row").forEach((tr) => {
         const open = () => {
           const nxt = tr.nextElementSibling;
@@ -334,7 +381,7 @@
   function sectorNaam(code) { return (S.data.config.sectoren[code] || {}).naam || code; }
   function stukLi(x) {
     const dossier = (x.dossiers || [])[0];
-    return `<li><span class="tag">${esc(SOORT_KORT[x.soort] || x.soort)}</span> <span class="small muted">${fmtDatum(x.datum)} · ${esc(x.ministerie || "ministerie onbekend")}</span>
+    return `<li><span class="tag">${esc(SOORT_KORT[x.soort] || x.soort)}</span>${nieuwBadge(x.datum)} <span class="small muted">${fmtDatum(x.datum)} · ${esc(x.ministerie || "ministerie onbekend")}</span>
       <div><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.onderwerp || x.titel)}</a></div>
       <div class="small muted">${dossier ? `${esc(x.kamerstuk || dossier.nummer)} ${esc(dossier.titel || "")}` : esc(x.id)}</div>${themaChips(themasVanTekst(x.onderwerp || x.titel, x.sectoren))}</li>`;
   }
@@ -409,7 +456,7 @@
     const tkLink = a.tkLink || d.tkLink;
     return `<article class="card debat" id="d-${esc(d.id)}">
       <div class="meta">${esc(commissie || "")} · ${fmtDatum(d.datum)}</div>
-      <div class="titelrij"><span class="tag">${esc(d.type)}</span><h3>${esc(d.titel)}</h3>${d.niveau === "kort" ? ` <span class="tag" title="Korte samenvatting: alleen de hoofdlijn">kort</span>` : ""}</div>
+      <div class="titelrij"><span class="tag">${esc(d.type)}</span><h3>${esc(d.titel)}</h3>${nieuwBadge(d.samengevatOp)}${d.niveau === "kort" ? ` <span class="tag" title="Korte samenvatting: alleen de hoofdlijn">kort</span>` : ""}</div>
       <div class="kaartlabels">${themaChips(it ? it.thema : themasVanDebat(d), true)}${dossierChips(it ? it.dossier : dossiersVanDebat(d))}</div>
       ${it && it.ministerie.length ? `<div class="small muted">Ministerie: ${esc(it.ministerie.join(", "))}</div>` : ""}
       <div class="links">
@@ -757,7 +804,7 @@
     const ministeries = uniek(alle.map((t) => t.ministerie).filter(Boolean)).sort();
     const opt = (v, l, cur) => `<option value="${esc(v)}" ${v === cur ? "selected" : ""}>${esc(l)}</option>`;
     const item = (t) => `<li class="tz">
-      <div class="zmeta">${statusPill(t.status)}<span>${fmtDatum(t.datum)}</span>${t.bewindspersoon ? `<span>${esc(t.bewindspersoon)}</span>` : ""}${t.ministerie ? `<span>${esc(t.ministerie)}</span>` : ""}${t.nakoming ? `<span>afgedaan ${fmtDatum(t.nakoming)}</span>` : ""}</div>
+      <div class="zmeta">${statusPill(t.status)}${t.bron === "register" ? nieuwBadge(t.gewijzigd || t.datum) : ""}<span>${fmtDatum(t.datum)}</span>${t.bewindspersoon ? `<span>${esc(t.bewindspersoon)}</span>` : ""}${t.ministerie ? `<span>${esc(t.ministerie)}</span>` : ""}${t.nakoming ? `<span>afgedaan ${fmtDatum(t.nakoming)}</span>` : ""}</div>
       <div class="tz-tekst">${esc(t.tekst)}</div>
       <div class="kaartlabels">${t.vergadering ? `<span class="small">Bij: ${t.vergaderLink ? `<a href="${esc(t.vergaderLink)}" ${t.vergaderLink.startsWith("#") ? "" : 'target="_blank" rel="noopener"'}>${esc(t.vergadering)}</a>` : esc(t.vergadering)}${t.vergaderDatum ? ` (${fmtDatum(t.vergaderDatum)})` : ""}</span>` : ""}${themaChips(t.thema)}</div>
     </li>`;
