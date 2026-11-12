@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   const S = { sector: "alle", data: null, motieFilter: { q: "", soort: "", uitslag: "", fractie: "", dossier: "" },
-    dossierFilter: "", debatOrde: "nieuw", agendaOrde: "oud" };
+    dossierFilter: "", debatOrde: "nieuw", agendaOrde: "oud", stukFilter: { q: "", soort: "", ministerie: "", max: 100 } };
   const $ = (sel, el = document) => el.querySelector(sel);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
@@ -48,7 +48,7 @@
   }
 
   async function init() {
-    const [config, dossiers, debatten, agenda, zaken, activiteiten, meta] = await Promise.all([
+    const [config, dossiers, debatten, agenda, zaken, activiteiten, meta, stukken] = await Promise.all([
       load("pipeline/config.json", { sectoren: {} }),
       load("data/dossiers.json", { fasen: [], dossiers: [] }),
       load("data/debatten.json", { debatten: [] }),
@@ -56,8 +56,9 @@
       load("data/tk/zaken.json", []),
       load("data/tk/activiteiten.json", []),
       load("data/tk/meta.json", {}),
+      load("data/tk/stukken.json", []),
     ]);
-    S.data = { config, dossiers, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta };
+    S.data = { config, dossiers, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken };
     // meest recente moment waarop data of samenvattingen zijn bijgewerkt
     const stempels = [meta.bijgewerkt, debatten.bijgewerkt, dossiers.bijgewerkt, agenda.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
     $("#stamp").textContent = stempels.length ? `Laatste update: ${fmtTijdstip(new Date(Math.max(...stempels)))}` : "Laatste update: onbekend";
@@ -87,9 +88,10 @@
   function route() {
     const tab = (location.hash || "#overzicht").slice(1).split("/")[0] || "overzicht";
     document.querySelectorAll("nav.tabs a").forEach((a) => a.classList.toggle("active", a.dataset.tab === tab));
-    const views = { overzicht, wetgeving, moties, debatten, agenda, over };
+    const views = { overzicht, wetgeving, moties, debatten, stukken, agenda, over };
     $("#view").innerHTML = (views[tab] || overzicht)();
     if (tab === "moties") bindMoties();
+    if (tab === "stukken") bindStukken();
     const sub = location.hash.split("/")[1];
     if (sub) { const t = document.getElementById(sub); if (t) { if (t.tagName === "DETAILS") t.open = true; if (t.classList.contains("debat")) t.classList.add("open"); t.scrollIntoView({ behavior: "smooth", block: "start" }); } }
   }
@@ -228,6 +230,7 @@
         ${tile(moties.length, "moties sinds begin Kamerperiode", "#moties")}
         ${tile(besloten ? Math.round((100 * aangenomen) / besloten) + "%" : "–", `van de ${besloten} moties waarover is gestemd aangenomen`, "#moties")}
         ${tile(`${deb.length}<span class="muted" style="font-size:18px"> / ${Math.max(acts.length, deb.length)}</span>`, "debatten samengevat (van uitgevoerde activiteiten)", "#debatten")}
+        ${tile(stukkenInSector().length, "Kamerbrieven en antwoorden van ministeries", "#stukken")}
       </div>
       ${prio.map((d) => `<h2>Aandachtsdossier</h2>${dossierCard(d, true)}`).join("")}
       <div class="grid two">
@@ -237,6 +240,9 @@
         <div><h2>Komt eraan</h2><div class="card"><ul class="list">
           ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland.</li>`}
         </ul><a class="small" href="#agenda">Volledige agenda →</a></div>
+        <h2>Nieuwste stukken van ministeries</h2><div class="card"><ul class="list">
+          ${stukkenInSector().slice(0, 5).map((x) => stukLi(x)).join("") || `<li class="empty">Nog geen stukken.</li>`}
+        </ul><a class="small" href="#stukken">Alle stukken →</a></div>
         <h2>Laatste samenvattingen</h2><div class="card"><ul class="list">
           ${deb.slice().sort((a, b) => b.datum.localeCompare(a.datum)).slice(0, 3).map((d) => `<li><span class="tag">${esc(d.type)}</span> <b>${esc(d.titel)}</b> <span class="small muted">${fmtDatum(d.datum)}</span><div class="small">${esc(d.gist)}</div><a class="small" href="#debatten/d-${d.id}">Lees de samenvatting →</a></li>`).join("")}
         </ul></div></div>
@@ -340,6 +346,49 @@
       ${b ? `<div class="fracties"><span class="k">Voor</span><span>${groep("Voor") || "–"}</span><span class="k">Tegen</span><span>${groep("Tegen") || "–"}</span>${groep("Niet deelgenomen") ? `<span class="k">Niet deelgenomen</span><span>${groep("Niet deelgenomen")}</span>` : ""}</div>` : `<div class="small muted">Nog geen stemming.</div>`}
       ${z.besluiten.length ? `<div class="small" style="margin-top:8px">Besluiten: ${z.besluiten.map((x) => `${x.datum ? fmtDatum(x.datum) + ": " : ""}${esc(x.tekst)}`).join(" · ")}</div>` : ""}
       <div class="small" style="margin-top:6px"><a href="${esc(z.link)}" target="_blank" rel="noopener">Bekijk op OpenTK →</a></div>`;
+  }
+
+  /* ---------- Stukken van ministeries ---------- */
+  const SOORT_KORT = { "Brief regering": "Kamerbrief", "Antwoord schriftelijke vragen": "Antwoord Kamervragen", "Antwoord schriftelijke vragen (nader)": "Antwoord Kamervragen" };
+  const stukkenInSector = () => (S.data.stukken || []).filter(inSector).slice().sort((a, b) => (b.datum || "").localeCompare(a.datum || ""));
+  function sectorNaam(code) { return (S.data.config.sectoren[code] || {}).naam || code; }
+  function stukLi(x) {
+    const dossier = (x.dossiers || [])[0];
+    return `<li><span class="tag">${esc(SOORT_KORT[x.soort] || x.soort)}</span> <span class="small muted">${fmtDatum(x.datum)} · ${esc(x.ministerie || "ministerie onbekend")}</span>
+      <div><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.onderwerp || x.titel)}</a></div>
+      <div class="small muted">${dossier ? `${esc(x.kamerstuk || dossier.nummer)} ${esc(dossier.titel || "")}` : esc(x.id)}${S.sector === "alle" ? ` · ${(x.sectoren || []).map((c) => esc(sectorNaam(c))).join(", ")}` : ""}</div></li>`;
+  }
+  function stukken() {
+    const all = stukkenInSector();
+    const f = S.stukFilter;
+    const ministeries = [...new Set(all.map((x) => x.ministerie).filter(Boolean))].sort();
+    const opt = (v, l, cur) => `<option value="${esc(v)}" ${v === cur ? "selected" : ""}>${esc(l)}</option>`;
+    return `<h2>Stukken van ministeries</h2>
+      <p class="small muted">Kamerbrieven en antwoorden op Kamervragen sinds het begin van de Kamerperiode die over milieu, klimaat, energie, water, natuur of leefomgeving gaan. Een stuk staat hier als het in een relevant Kamerstukdossier zit of als de titel een trefwoord bevat; alle brieven van het ministerie van Klimaat en Groene Groei staan erin. De selectie is automatisch en kan dus iets te ruim of te krap zijn.</p>
+      <div class="filters">
+        <input type="search" id="sq" placeholder="Zoek op onderwerp, dossier of bewindspersoon" value="${esc(f.q)}" aria-label="Zoeken">
+        <select id="ssoort" aria-label="Soort">${opt("", "Alle soorten", f.soort)}${opt("Brief regering", "Kamerbrieven", f.soort)}${opt("Antwoord", "Antwoorden op Kamervragen", f.soort)}</select>
+        <select id="sministerie" aria-label="Ministerie">${opt("", "Alle ministeries", f.ministerie)}${ministeries.map((m) => opt(m, m, f.ministerie)).join("")}</select>
+      </div>
+      <div class="small muted" id="scount"></div>
+      <div class="card"><ul class="list" id="slijst"></ul><div id="smeer"></div></div>`;
+  }
+  function bindStukken() {
+    const f = S.stukFilter;
+    const upd = (reset) => {
+      if (reset) f.max = 100;
+      f.q = $("#sq").value; f.soort = $("#ssoort").value; f.ministerie = $("#sministerie").value;
+      const q = f.q.toLowerCase();
+      const rows = stukkenInSector().filter((x) =>
+        (!f.soort || (x.soort || "").startsWith(f.soort)) && (!f.ministerie || x.ministerie === f.ministerie) &&
+        (!q || `${x.onderwerp} ${x.titel} ${x.ondertekenaar} ${x.kamerstuk} ${(x.dossiers || []).map((d) => d.nummer + " " + (d.titel || "")).join(" ")}`.toLowerCase().includes(q)));
+      $("#scount").textContent = `${rows.length} stukken`;
+      $("#slijst").innerHTML = rows.slice(0, f.max).map(stukLi).join("") || `<li class="empty">Geen stukken gevonden.</li>`;
+      $("#smeer").innerHTML = rows.length > f.max ? `<button class="chip" id="smeerknop">Toon meer (${rows.length - f.max} over)</button>` : "";
+      const k = $("#smeerknop"); if (k) k.addEventListener("click", () => { f.max += 100; upd(false); });
+    };
+    ["#sq", "#ssoort", "#sministerie"].forEach((sel) => $(sel).addEventListener("input", () => upd(true)));
+    upd(false);
   }
 
   /* ---------- Debatten ---------- */
@@ -516,12 +565,12 @@
         <p>Deze checker volgt Nederlands milieubeleid in het parlement: de fase van wetsvoorstellen, moties en amendementen met de stemming per fractie, samenvattingen van debatten en wat er op de agenda staat. Alle fracties krijgen evenveel ruimte.</p>
         <h3>Hoe het werkt</h3>
         <ul>
-          <li><b>Automatisch:</b> een script haalt moties, amendementen, stemmingen en activiteiten op uit de <a href="https://opendata.tweedekamer.nl">open data van de Tweede Kamer</a>. Daar komt geen AI aan te pas.</li>
+          <li><b>Automatisch:</b> een script haalt moties, amendementen, stemmingen, activiteiten en stukken van ministeries (Kamerbrieven en antwoorden op Kamervragen) op uit de <a href="https://opendata.tweedekamer.nl">open data van de Tweede Kamer</a>. Daar komt geen AI aan te pas.</li>
           <li><b>Samenvattingen:</b> debatten worden door Claude samengevat op basis van automatische transcripten van <a href="https://gehoord.de/beraadslagingen">gehoord.de</a>. Die transcripten zijn niet door mensen gecorrigeerd en sprekers kunnen er soms een paar seconden naast zitten. Gebruik de links om na te luisteren en citeer de Handelingen.</li>
           <li><b>Wetgevingsdossiers</b> worden handmatig bijgehouden met bronvermelding.</li>
         </ul>
         <h3>Status</h3>
-        <dl class="facts"><dt>Kamerdata</dt><dd>${m.bijgewerkt ? fmtDatum(m.bijgewerkt) : "nog niet opgehaald"} (${m.aantalZaken ?? 0} zaken, ${m.aantalActiviteiten ?? 0} activiteiten)</dd>
+        <dl class="facts"><dt>Kamerdata</dt><dd>${m.bijgewerkt ? fmtDatum(m.bijgewerkt) : "nog niet opgehaald"} (${m.aantalZaken ?? 0} zaken, ${m.aantalActiviteiten ?? 0} activiteiten, ${m.aantalStukken ?? 0} stukken van ministeries)</dd>
         <dt>Periode</dt><dd>vanaf ${fmtDatum(S.data.config.startdatum)}</dd>
         ${m.fouten?.length ? `<dt>Meldingen</dt><dd>${m.fouten.map(esc).join("<br>")}</dd>` : ""}</dl>
       </div>`;

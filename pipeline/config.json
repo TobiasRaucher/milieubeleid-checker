@@ -104,47 +104,425 @@
         "klimaat",
         "Energie",
         "energie"
+      ],
+      "stukDossiers": [
+        32813,
+        29023,
+        33529,
+        35561,
+        36836,
+        32849,
+        32645,
+        25422,
+        31239,
+        30196,
+        31793,
+        36933,
+        31209,
+        "21501-33"
+      ],
+      "trefwoorden": [
+        "\\bklimaat",
+        "\\benergie",
+        "\\bCO2",
+        "\\bbroeikas",
+        "\\bemissiehandel",
+        "\\bETS ?2?\\b",
+        "\\bgaswinning",
+        "\\bgasopslag",
+        "\\baardgas",
+        "\\bLNG\\b",
+        "\\bkern(energie|centrale)",
+        "\\bwind ?(op|parken|park|energie)",
+        "\\bzonne",
+        "\\bzon op",
+        "\\bwarmte(net|transitie|pomp|wet|fonds)",
+        "\\bcollectieve warmte",
+        "\\bwaterstof",
+        "\\bnetcongestie",
+        "\\belektriciteits",
+        "\\bstroomnet",
+        "\\bSDE",
+        "\\bhernieuwba",
+        "\\bduurzame energie",
+        "\\bmijnbouw",
+        "\\bisolatie",
+        "\\bverduurzam",
+        "\\bCOP ?\\d",
+        "\\bGroningen.*(gas|schade|versterking)|\\bNij Groningen",
+        "\\bfossiel",
+        "\\bCCS\\b|\\bafvang"
       ]
     },
     "water-adaptatie": {
       "naam": "Water & klimaatadaptatie",
-      "actief": false,
+      "actief": true,
       "commissies": [
-        "IenW"
+        "I&W"
       ],
-      "kamerstukdossiers": [],
+      "kamerstukdossiers": [
+        {
+          "nummer": 27625,
+          "toevoeging": null,
+          "label": "Waterbeleid"
+        },
+        {
+          "nummer": 31710,
+          "toevoeging": null,
+          "label": "Deltaprogramma"
+        },
+        {
+          "nummer": 32698,
+          "toevoeging": null,
+          "label": "Hoogwaterbeschermingsprogramma"
+        },
+        {
+          "nummer": 35325,
+          "toevoeging": null,
+          "label": "Nationaal Water Programma"
+        },
+        {
+          "nummer": 37020,
+          "toevoeging": "J",
+          "label": "Begroting Deltafonds 2027"
+        },
+        {
+          "nummer": 29684,
+          "toevoeging": null,
+          "label": "Waddenzeebeleid"
+        },
+        {
+          "nummer": 33450,
+          "toevoeging": null,
+          "label": "Mariene Strategie Noordzee"
+        }
+      ],
       "zoektermen": [
         "Deltafonds",
         "Deltaprogramma",
-        "klimaatadaptatie"
+        "klimaatadaptatie",
+        "Waterbeleid",
+        "drinkwater",
+        "Kaderrichtlijn Water"
+      ],
+      "stukDossiers": [
+        27625,
+        31710,
+        32698,
+        35325,
+        "37020-J",
+        "36800-J",
+        29684,
+        33450
+      ],
+      "trefwoorden": [
+        "\\bwater(beleid|kwaliteit|veiligheid|schaarste|overlast|beheer|systeem|ste[lr]|bodem)",
+        "\\bdrinkwater",
+        "\\bgrondwater",
+        "\\bdelta(programma|fonds|commissaris)",
+        "\\bklimaatadaptatie",
+        "\\boverstroming",
+        "\\bhoogwater",
+        "(?-i:\\bdijk(en|versterking|bewaking|ring)?\\b)",
+        "\\bdroogte",
+        "\\bKaderrichtlijn Water|\\bKRW\\b",
+        "\\bWaddenzee",
+        "\\bNoordzee",
+        "\\bzeespiegel",
+        "\\brivier(en|gebied)",
+        "(?-i:\\bMaas(vlakte|dal|plas)?\\b(?! en)|\\bRijn\\b)"
+      ],
+      "activiteitTrefwoorden": [
+        "\\bwater",
+        "\\bdelta",
+        "\\bklimaat",
+        "\\bNoordzee",
+        "\\bWadden",
+        "\\bdrinkwater",
+        "\\bdroogte",
+        "\\bdijk"
       ]
     },
     "natuur-stikstof-landbouw": {
       "naam": "Natuur, stikstof & landbouw",
-      "actief": false,
+      "actief": true,
       "commissies": [
         "LVVN"
       ],
-      "kamerstukdossiers": [],
+      "kamerstukdossiers": [
+        {
+          "nummer": 33576,
+          "toevoeging": null,
+          "label": "Natuurbeleid"
+        },
+        {
+          "nummer": 35334,
+          "toevoeging": null,
+          "label": "Stikstof en PFAS"
+        },
+        {
+          "nummer": 33037,
+          "toevoeging": null,
+          "label": "Mestbeleid"
+        },
+        {
+          "nummer": 27858,
+          "toevoeging": null,
+          "label": "Gewasbeschermingsbeleid"
+        },
+        {
+          "nummer": 26407,
+          "toevoeging": null,
+          "label": "Biodiversiteit"
+        },
+        {
+          "nummer": 28973,
+          "toevoeging": null,
+          "label": "Toekomst veehouderij"
+        },
+        {
+          "nummer": 30252,
+          "toevoeging": null,
+          "label": "Toekomstvisie agrarische sector"
+        }
+      ],
       "zoektermen": [
         "stikstof",
         "Natura 2000",
-        "mestbeleid"
+        "mestbeleid",
+        "biodiversiteit",
+        "gewasbescherming",
+        "natuurherstel"
+      ],
+      "stukDossiers": [
+        33576,
+        35334,
+        33037,
+        27858,
+        26407,
+        28973,
+        30252,
+        28625,
+        29842
+      ],
+      "trefwoorden": [
+        "\\bstikstof",
+        "\\bNatura ?2000",
+        "\\bnatuur(?!lijk)",
+        "\\bbiodiversiteit",
+        "\\bmest",
+        "\\bgewasbescherming",
+        "\\bbestrijdingsmiddel",
+        "\\bglyfosaat",
+        "\\bveehouderij",
+        "\\blandbouw(transitie|grond|beleid)",
+        "\\blandelijk gebied",
+        "(?-i:\\bbos(sen|strategie|beleid)?\\b)",
+        "\\bpiekbelast",
+        "\\buitkoop",
+        "\\bextensiver",
+        "\\bammoniak",
+        "\\bweidevogel",
+        "\\bbijen\\b|\\bbestuiver",
+        "(?-i:\\bwol(f|ven)\\b)"
+      ],
+      "activiteitTrefwoorden": [
+        "\\bstikstof",
+        "\\bnatuur",
+        "\\bmest",
+        "\\bgewasbescherming",
+        "\\bbiodiversiteit",
+        "\\blandbouw",
+        "\\bveehouderij",
+        "\\blandelijk gebied",
+        "\\bNatura",
+        "\\bbos",
+        "\\bglyfosaat",
+        "\\bvisserij",
+        "\\bklimaat",
+        "\\bvoedsel"
       ]
     },
     "circulair-vervuiling": {
       "naam": "Circulaire economie & vervuiling",
-      "actief": false,
+      "actief": true,
       "commissies": [
-        "IenW",
-        "K&GG"
+        "I&W"
       ],
-      "kamerstukdossiers": [],
+      "kamerstukdossiers": [
+        {
+          "nummer": 32852,
+          "toevoeging": null,
+          "label": "Grondstoffenvoorzieningszekerheid / circulaire economie"
+        },
+        {
+          "nummer": 30175,
+          "toevoeging": null,
+          "label": "Luchtkwaliteit"
+        },
+        {
+          "nummer": 30015,
+          "toevoeging": null,
+          "label": "Bodembeleid"
+        },
+        {
+          "nummer": 28089,
+          "toevoeging": null,
+          "label": "Gezondheid en milieu"
+        },
+        {
+          "nummer": 22343,
+          "toevoeging": null,
+          "label": "Handhaving milieuwetgeving"
+        },
+        {
+          "nummer": 30872,
+          "toevoeging": null,
+          "label": "Landelijk afvalbeheerplan"
+        }
+      ],
       "zoektermen": [
         "circulaire economie",
         "PFAS",
-        "luchtkwaliteit"
+        "luchtkwaliteit",
+        "Tata Steel",
+        "Chemours",
+        "zeer zorgwekkende stoffen"
+      ],
+      "stukDossiers": [
+        32852,
+        30175,
+        30015,
+        28089,
+        22343,
+        30872,
+        "21501-08",
+        29383,
+        30373
+      ],
+      "trefwoorden": [
+        "\\bcirculair",
+        "\\bafval",
+        "\\brecycl",
+        "\\bplastic",
+        "\\bmicroplastic",
+        "\\bPFAS",
+        "\\bChemours",
+        "\\bTata Steel",
+        "\\bluchtkwaliteit",
+        "\\bfijnstof",
+        "\\bbodem",
+        "\\bmilieu",
+        "\\bzeer zorgwekkende|\\bZZS\\b",
+        "\\bchemische stoffen",
+        "\\basbest",
+        "\\bstatiegeld",
+        "\\bverpakking",
+        "\\btextiel",
+        "\\bomgevingsdienst",
+        "\\bgrondstof",
+        "\\bexterne veiligheid",
+        "\\bgevaarlijke stoffen"
+      ],
+      "activiteitTrefwoorden": [
+        "\\bcirculair",
+        "\\bmilieu",
+        "\\bafval",
+        "\\bPFAS",
+        "\\bstoffen",
+        "\\bluchtkwaliteit",
+        "\\bbodem",
+        "\\bexterne veiligheid",
+        "\\bplastic",
+        "\\bTata",
+        "\\bleefomgeving",
+        "\\bVTH\\b|\\bhandhaving"
+      ]
+    },
+    "ruimte-mobiliteit": {
+      "naam": "Ruimte, mobiliteit & leefomgeving",
+      "actief": true,
+      "commissies": [
+        "I&W",
+        "VRO"
+      ],
+      "kamerstukdossiers": [
+        {
+          "nummer": 34682,
+          "toevoeging": null,
+          "label": "Nationale Omgevingsvisie"
+        },
+        {
+          "nummer": 29435,
+          "toevoeging": null,
+          "label": "Nota Ruimte"
+        },
+        {
+          "nummer": 33118,
+          "toevoeging": null,
+          "label": "Omgevingsrecht"
+        }
+      ],
+      "zoektermen": [
+        "Nota Ruimte",
+        "Omgevingswet",
+        "geluidhinder",
+        "duurzame luchtvaart"
+      ],
+      "stukDossiers": [
+        34682,
+        29435,
+        33118,
+        29665
+      ],
+      "trefwoorden": [
+        "\\bNota Ruimte",
+        "\\bOmgevingswet",
+        "\\bomgevingsvisie|\\bNOVI\\b",
+        "\\bruimtelijke ordening",
+        "\\bgeluid",
+        "\\bSchiphol",
+        "\\bnachtvluchten",
+        "\\bzero.?emissie",
+        "\\belektrisch (rijden|vervoer)|\\blaadinfra",
+        "\\bduurzame (mobiliteit|luchtvaart|scheepvaart)",
+        "\\bwalstroom",
+        "\\bvrachtwagenheffing",
+        "\\bvliegbelasting|\\bvliegtaks"
+      ],
+      "activiteitTrefwoorden": [
+        "\\bNota Ruimte",
+        "\\bruimtelijke",
+        "\\bOmgevingswet",
+        "\\bSchiphol",
+        "\\bluchtvaart",
+        "\\bduurzame",
+        "\\bgeluid",
+        "\\bemissie"
       ]
     }
+  },
+  "stukken": {
+    "_uitleg": "Kamerbrieven en antwoorden op Kamervragen van ministeries. Een stuk komt in de checker als het in een van de stukDossiers van een sector zit of als titel/onderwerp een trefwoord (regex, hoofdletterongevoelig) bevat. Stukken van de ministeries in altijdMinisteries komen er altijd in.",
+    "soorten": [
+      "Brief regering",
+      "Antwoord schriftelijke vragen",
+      "Antwoord schriftelijke vragen (nader)"
+    ],
+    "altijdMinisteries": {
+      "Klimaat en Groene Groei": "klimaat-energie"
+    },
+    "uitsluiten": [
+      "^Uitstel\\b",
+      "^Uitstel beantwoording"
+    ],
+    "negeerInTekst": [
+      "Economische Zaken en Klimaat",
+      "Klimaat en Groene Groei",
+      "Infrastructuur en Waterstaat",
+      "Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "Klimaat- en Energiefonds",
+      "Volkshuisvesting en Ruimtelijke Ordening"
+    ]
   }
 }

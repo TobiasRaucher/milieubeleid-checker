@@ -24,6 +24,18 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
 5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit.
 6. Commit en push naar `main` (GitHub Pages publiceert automatisch).
 
+## Samenvattingen: niveaus en meerdere sessies
+
+- Centrale debatten krijgen een volledige samenvatting (partijen, kabinet, toezeggingen, moties). Minder centrale debatten, briefings en tweeminutendebatten mogen kort: zet `"niveau": "kort"`, schrijf `aanzet` en een uitgebreidere `gist` (met de belangrijkste uitkomsten) en laat `partijen` leeg. De site toont dan het label "kort".
+- Hoort een samenvatting bij meer dan één TK-activiteit (bv. technische briefing plus rondetafelgesprek, of een debat met voortzetting), zet de extra activiteitnummers in `extraActiviteiten`. Die activiteiten tellen dan als samengevat.
+- Zet `sector` op de sector van het debat (`klimaat-energie`, `water-adaptatie`, `natuur-stikstof-landbouw`, `circulair-vervuiling`, `ruimte-mobiliteit`).
+- Debatten van vóór april 2026 staan niet op gehoord.de en kunnen niet worden samengevat.
+
+## Sectoren en stukken van ministeries
+
+- Sectoren staan in `pipeline/config.json`. Per sector: `commissies` (activiteiten), `activiteitTrefwoorden` (alleen activiteiten met zo'n woord in het onderwerp; nodig voor brede commissies als I&W en LVVN), `kamerstukdossiers` en `zoektermen` (moties en wetgeving), `stukDossiers` en `trefwoorden` (stukken van ministeries).
+- `data/tk/stukken.json` bevat Kamerbrieven en antwoorden op Kamervragen van alle ministeries die bij een sector horen (KGG altijd). Te ruime of te krappe selectie? Pas `stukDossiers`/`trefwoorden` of `stukken.uitsluiten` aan in de config, niet de data.
+
 ## Dossiers
 
 - `dossiers` in `data/dossiers.json` zijn wetsvoorstellen (met fase-stepper op de Wetgeving-pagina). `kortTitel` is het label in filters.

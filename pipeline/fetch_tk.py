@@ -11,6 +11,10 @@ Wat er wordt opgehaald (per actieve sector in pipeline/config.json):
   * zaken (wetsvoorstellen, moties, amendementen) uit de opgegeven kamerstukdossiers
   * zaken waarvan titel/onderwerp een zoekterm bevat
   * activiteiten (debatten, rondetafelgesprekken, briefings) van de opgegeven commissies
+    (bij sectoren met activiteitTrefwoorden alleen activiteiten waarvan het onderwerp een
+    trefwoord bevat)
+  * stukken van ministeries (Kamerbrieven, antwoorden op Kamervragen) die volgens
+    stukDossiers/trefwoorden bij een sector horen; zie "stukken" in config.json
 
 Documentatie API: https://opendata.tweedekamer.nl
 """
@@ -270,6 +274,92 @@ def normaliseer_activiteit(a):
     return out
 
 
+STUK_EXPAND = ("DocumentActor($select=ActorNaam,Functie,Relatie),"
+               "Kamerstukdossier($select=Nummer,Toevoeging,Titel),Zaak($select=Nummer,Soort)")
+
+
+def _regex(lijst):
+    return re.compile("|".join(f"(?:{t})" for t in lijst), re.I) if lijst else None
+
+
+def ministerie_uit_functie(functie):
+    m = re.sub(r"^(minister-president|minister|staatssecretaris)\b( voor| van)?\s*", "", functie or "", flags=re.I)
+    return m or None
+
+
+def stukken(start):
+    cfg = CONFIG.get("stukken") or {}
+    soort = " or ".join(f"Soort eq '{s}'" for s in cfg.get("soorten", ["Brief regering"]))
+    params = {"$filter": f"Verwijderd eq false and ({soort}) and Datum ge {start}T00:00:00Z",
+              "$select": "Id,Soort,DocumentNummer,Titel,Onderwerp,Datum,Volgnummer",
+              "$expand": STUK_EXPAND, "$orderby": "Datum desc"}
+    ruw = odata("Document", params, max_pages=200)
+    regels = {}
+    for code, s in CONFIG["sectoren"].items():
+        if s.get("actief"):
+            regels[code] = ({str(x) for x in s.get("stukDossiers", [])} |
+                            {str(d["nummer"]) + (f"-{d['toevoeging']}" if d.get("toevoeging") else "") for d in s.get("kamerstukdossiers", [])},
+                            _regex(s.get("trefwoorden", [])))
+    uit = _regex(cfg.get("uitsluiten", []))
+    altijd = cfg.get("altijdMinisteries", {})
+    negeer = cfg.get("negeerInTekst", [])
+    out = []
+    for d in ruw:
+        onderwerp = d.get("Onderwerp") or ""
+        if uit and uit.search(onderwerp):
+            continue
+        eerste = next((a for a in d.get("DocumentActor") or [] if (a.get("Relatie") or "").lower().startswith("eerste")), None)
+        functie = (eerste or {}).get("Functie") or ""
+        if not re.match(r"(minister|staatssecretaris)", functie, re.I):
+            continue  # bv. een commissievoorzitter
+        ministerie = ministerie_uit_functie(functie)
+        dossiers = [{"nummer": k.get("Nummer"), "toevoeging": k.get("Toevoeging"), "titel": k.get("Titel")} for k in d.get("Kamerstukdossier") or []]
+        sleutels = set()
+        for k in dossiers:
+            sleutels.add(str(k["nummer"]))
+            if k["toevoeging"]:
+                sleutels.add(f"{k['nummer']}-{k['toevoeging']}")
+        tekst = f"{d.get('Titel') or ''} {onderwerp}"
+        # namen van Kamerleden ("vragen van het lid Van der Maas over ...") niet als trefwoord laten tellen
+        tekst = re.sub(r"vragen van (het lid|de leden) .+? (over|inzake|naar aanleiding van) ", "", tekst, flags=re.I)
+        for n in negeer:
+            tekst = tekst.replace(n, "")
+        sectoren = [c for c, (ds, rx) in regels.items() if (sleutels & ds) or (rx and rx.search(tekst))]
+        for m, c in altijd.items():
+            if m in (ministerie or "") and c in regels and c not in sectoren:
+                sectoren.append(c)
+        if not sectoren:
+            continue
+        zaak = next((z.get("Nummer") for z in d.get("Zaak") or []), None)
+        ks = dossiers[0] if dossiers else None
+        kamerstuk = None
+        if ks and d.get("Volgnummer") not in (None, -1):
+            kamerstuk = f"{ks['nummer']}{'-' + ks['toevoeging'] if ks.get('toevoeging') else ''}-{d['Volgnummer']}"
+        soort = d.get("Soort")
+        pad = "brieven_regering" if soort == "Brief regering" else "kamervragen"
+        out.append({
+            "id": d.get("DocumentNummer"),
+            "soort": soort,
+            "datum": (d.get("Datum") or "")[:10] or None,
+            "titel": d.get("Titel"),
+            "onderwerp": onderwerp,
+            "ministerie": ministerie,
+            "ondertekenaar": (eerste or {}).get("ActorNaam"),
+            "functie": functie or None,
+            "kamerstuk": kamerstuk,
+            "dossiers": dossiers,
+            "sectoren": sectoren,
+            "link": (f"https://www.tweedekamer.nl/kamerstukken/{pad}/detail?id={zaak}&did={d.get('DocumentNummer')}" if zaak
+                     else f"https://www.tweedekamer.nl/kamerstukken/detail?did={d.get('DocumentNummer')}"),
+        })
+    return out
+
+
+def _act_past(a, rx):
+    # alleen het onderwerp: agendapunten van brede debatten maken de selectie te ruim
+    return bool(rx.search(a.get("Onderwerp") or ""))
+
+
 def main():
     start = CONFIG["startdatum"]
     alle_zaken = {}
@@ -316,13 +406,29 @@ def main():
         # 3. activiteiten
         try:
             rec = activiteiten(s["commissies"], start, s.get("plenaireZoektermen", []))
+            rx = _regex(s.get("activiteitTrefwoorden", []))
+            if rx:
+                rec = [a for a in rec if _act_past(a, rx)]
             for a in rec:
-                a["sectoren"] = [code]
-                alle_act.setdefault(a.get("Id"), a)
+                bestaand = alle_act.get(a.get("Id"))
+                if bestaand:
+                    bestaand["sectoren"] = sorted(set(bestaand["sectoren"]) | {code})
+                else:
+                    a["sectoren"] = [code]
+                    alle_act[a.get("Id")] = a
             log(f"  {len(rec)} activiteiten")
         except Exception as e:
             FOUTEN.append(f"activiteiten {code}: {e}")
             log(f"    FOUT: {e}")
+
+    # 4. stukken van ministeries
+    stuk_lijst = []
+    try:
+        stuk_lijst = stukken(start)
+        log(f"== {len(stuk_lijst)} stukken van ministeries")
+    except Exception as e:
+        FOUTEN.append(f"stukken: {e}")
+        log(f"    FOUT stukken: {e}")
 
     OUT.mkdir(parents=True, exist_ok=True)
     zaken_lijst = sorted(alle_zaken.values(), key=lambda z: z["gestartOp"] or "", reverse=True)
@@ -335,11 +441,14 @@ def main():
         sys.exit(1)
     (OUT / "zaken.json").write_text(json.dumps(zaken_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "activiteiten.json").write_text(json.dumps(act_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
+    if stuk_lijst:
+        (OUT / "stukken.json").write_text(json.dumps(stuk_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps({
         "bijgewerkt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "status": "ok" if not FOUTEN else "gedeeltelijk",
         "aantalZaken": len(zaken_lijst),
         "aantalActiviteiten": len(act_lijst),
+        "aantalStukken": len(stuk_lijst),
         "fouten": FOUTEN,
         "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl)",
     }, ensure_ascii=False, indent=1), encoding="utf-8")
