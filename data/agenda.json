@@ -1,15 +1,7 @@
 {
   "_uitleg": "Handmatig bijgehouden agenda-items en mijlpalen. Geplande Kameractiviteiten komen ook automatisch uit data/tk/activiteiten.json.",
-  "bijgewerkt": "2026-11-12T15:49:00Z",
+  "bijgewerkt": "2026-11-12T18:57:30Z",
   "items": [
-    {
-      "datum": "2026-11-12",
-      "tijd": "19:00",
-      "type": "Plenair debat",
-      "titel": "Advies van het Nationaal Burgerberaad Klimaat",
-      "sector": "klimaat-energie",
-      "url": "https://gehoord.de/beraadslagingen/337716"
-    },
     {
       "datum": "2026-11-25",
       "type": "Commissiedebat",

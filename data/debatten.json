@@ -1,6 +1,6 @@
 {
   "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
-  "bijgewerkt": "2026-11-12T15:49:00Z",
+  "bijgewerkt": "2026-11-12T18:57:30Z",
   "debatten": [
     {
       "id": "246687",
@@ -15,22 +15,17 @@
       "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
       "gist": "De Klimaat- en Energieverkenning laat zien dat het wettelijke 2030-doel (55%) vrijwel zeker niet wordt gehaald. PRO, PvdD en D66 willen nu al extra maatregelen; VVD en CDA willen aansluiten bij het Europese 2040-pakket en letten op uitvoering en concurrentiekracht; PVV en JA21 willen juist minder klimaatuitgaven. De minister bevestigt de planning voor de Klimaatwet-wijziging na het Bonaire-vonnis: consultatie Q4 2026, Raad van State begin 2027, in werking per 28 juli 2027.",
       "samenvatting": {
-        "kern": [
-          "Aanleiding: de KEV 2026 van het PBL. Volgens PRO komt de uitstoot met huidig beleid in 2030 uit op 46 tot 53% minder dan in 1990, met minder dan 5% kans op het wettelijke doel.",
-          "Het kabinet wil in het voorjaar van 2027 besluiten over aanvullend beleid, in samenhang met het Europese 2040-pakket. De oppositie vindt dat te laat; de Raad van State waarschuwde ook tegen uitstel (genoemd door PvdD).",
-          "Bonaire-vonnis: de minister zegt dat de Staat het vonnis uitvoert en dat daarvoor een wijziging van de Klimaatwet nodig is. Tegelijk heeft het kabinet schorsing van de uitvoerbaarheid bij voorraad gevraagd, onder meer vanwege het meetellen van internationale lucht- en scheepvaart."
-        ],
         "partijen": [
           {
             "fractie": "PRO",
             "spreker": "Sjoukje van Oosterhout",
-            "positie": "Wil een voorjaarspakket dat het gat naar 2030 dicht, vooraf getoetst door WKR of PBL. Vraagt een planning met data voor het Bonaire-vonnis en externe toetsing van het emissiebudget; benadrukt dat eerst het eerlijke emissiebudget moet worden bepaald en pas daarna de doelen. Pleit voor een einddatum voor olie en gas (verwijst naar Frankrijk). Vroeg een tweeminutendebat aan.",
+            "positie": "Wijst erop dat de uitstoot volgens het PBL met huidig beleid in 2030 uitkomt op 46 tot 53% minder dan in 1990, met minder dan 5% kans op het wettelijke doel. Wil een voorjaarspakket dat het gat naar 2030 dicht, vooraf getoetst door WKR of PBL. Vraagt een planning met data voor het Bonaire-vonnis en externe toetsing van het emissiebudget; benadrukt dat eerst het eerlijke emissiebudget moet worden bepaald en pas daarna de doelen. Pleit voor een einddatum voor olie en gas (verwijst naar Frankrijk). Vroeg een tweeminutendebat aan.",
             "link": "https://gehoord.de/beraadslagingen/246687?segment=214436"
           },
           {
             "fractie": "PvdD",
             "spreker": "Christine Teunissen",
-            "positie": "Noemt het kabinetsbeleid een 'dikke onvoldoende' van het PBL en wil niet wachten tot 2027. Vraagt een concreet plan en tijdpad voor het Bonaire-vonnis, tijdig inzicht in emissiebudget en doelen, duidelijkheid over de start van de consultatie, een afbouwpad met einddatum voor fossiele subsidies en een stop op subsidie voor houtige biomassa zonder controleerbare herkomst.",
+            "positie": "Noemt het oordeel van het PBL over het kabinetsbeleid een 'dikke onvoldoende' en wil niet wachten tot 2027. Vraagt een concreet plan en tijdpad voor het Bonaire-vonnis, tijdig inzicht in emissiebudget en doelen, duidelijkheid over de start van de consultatie, een afbouwpad met einddatum voor fossiele subsidies en een stop op subsidie voor houtige biomassa zonder controleerbare herkomst. Wijst erop dat ook de Raad van State waarschuwde tegen uitstel van extra maatregelen.",
             "link": "https://gehoord.de/beraadslagingen/246687?segment=214494"
           },
           {
@@ -66,6 +61,7 @@
         ],
         "kabinet": [
           "Bonaire: streven is het wetsvoorstel tot wijziging van de Klimaatwet in Q4 2026 in internetconsultatie te brengen; werkhypothese voor het Raad van State-advies is begin 2027; de rechtbank noemde 28 juli 2027 voor inwerkingtreding.",
+          "Het kabinet heeft schorsing van de uitvoerbaarheid bij voorraad van het vonnis gevraagd, onder meer omdat het meetellen van internationale lucht- en scheepvaart voor het kabinet onduidelijk is. Intussen wordt de uitvoering voorbereid.",
           "Emissieruimte: de Staat baseert reductiedoelen op IPCC-rapporten en berekent daarna de resterende emissieruimte; de planbureaus zijn betrokken. Op inhoudelijke vragen over het wetsvoorstel kon de minister nog niet ingaan (beleidsvorming loopt).",
           "Voorjaarspakket: het PBL is betrokken bij de voorbereiding; een formele doorrekening past niet in de PBL-systematiek, maar de minister bespreekt met het PBL of een reflectie mogelijk is.",
           "Einddatum fossiel: vanuit klimaatperspectief is klimaatneutraliteit de einddatum; de minister kijkt naar het Franse voorbeeld.",
@@ -90,7 +86,9 @@
       "bron": "https://gehoord.de/beraadslagingen/246687",
       "video": "https://debatdirect.tweedekamer.nl/2026-09-30/klimaat/klompezaal/voortgang-klimaatbeleid-14-00",
       "samengevatDoor": "Claude",
-      "samengevatOp": "2026-11-12"
+      "samengevatOp": "2026-11-12",
+      "activiteit": "2026A00908",
+      "aanzet": "Vast commissiedebat over de voortgang van het klimaatbeleid, gepland na de Prinsjesdagbrief Klimaat en Energie van 15 september 2026. Daarin zaten de Klimaat- en Energieverkenning 2026 van het PBL, de Klimaat- en Energienota 2026 en het Meerjarenprogramma 2027 van het Klimaat- en energiefonds. Ook eerdere brieven van de minister stonden op de agenda, zoals de Voorjaarsbrief klimaat en energie en het handhavingsbesluit over houtpellets uit Maleisië."
     },
     {
       "id": "54894",
@@ -106,8 +104,6 @@
       "gist": "Vier juristen lichtten het vonnis toe: binnen 6 maanden de emissieruimte inzichtelijk maken, binnen 18 maanden (juli 2027) bindende reductiedoelen met tussendoelen, en vóór 2030 een adaptatieplan voor Bonaire. Mitigatie en adaptatie zijn aparte verplichtingen die elkaar niet compenseren. Kamerleden vroegen vooral naar het 'eerlijke deel' van het emissiebudget, de status van de 1,5 °C-maatstaf en de rol van de rechter.",
       "samenvatting": {
         "kern": [
-          "Het vonnis vraagt binnen 6 maanden de resterende Nederlandse emissieruimte inzichtelijk te maken en binnen 18 maanden (juli 2027) reductiedoelen vast te stellen die daarbij passen, met tussendoelen. Voor adaptatie moet er vóór 2030 een plan liggen en moet de uitvoering zijn gestart (Laura Burgers).",
-          "Mitigatie en adaptatie zijn twee zelfstandige juridische verplichtingen; inzet op de ene compenseert de andere niet (Burgers).",
           "Het vonnis past in een internationale lijn (o.a. EHRM-uitspraak KlimaSeniorinnen, art. 8 EVRM; advies Internationaal Gerechtshof). Die lijn laat beleidsruimte maar legt een ondergrens (Margaretha Wewerinke-Singh).",
           "Bij een eerlijke verdeling (historische uitstoot en draagkracht) heeft Nederland weinig tot geen emissieruimte meer en bouwt het een 'schuld' op, wat ook financiering van reductie elders vraagt (Wewerinke-Singh).",
           "De 1,5 °C-maatstaf is de grens van rechtmatigheid. Een inspanningsverplichting is ook bindend; andere maatschappelijke belangen mogen worden meegewogen, maar mitigatie en adaptatie krijgen veel gewicht (Tim Bleeker).",
@@ -157,7 +153,27 @@
       "bron": "https://gehoord.de/beraadslagingen/54894",
       "video": "https://debatdirect.tweedekamer.nl/2026-05-13/klimaat/klompezaal/rechtelijke-uitspraak-in-de-bonaire-klimaatzaak-10-00",
       "samengevatDoor": "Claude",
-      "samengevatOp": "2026-11-12"
+      "samengevatOp": "2026-11-12",
+      "activiteit": "2026A02438",
+      "aanzet": "Technische briefing van de vaste commissie voor Klimaat en Groene Groei over het vonnis van de rechtbank Den Haag van 28 januari 2026 in de Klimaatzaak Bonaire. Doel was informatie ophalen bij juridische deskundigen over wat het vonnis van de Staat vraagt; het was uitdrukkelijk geen debat.",
+      "deskundigen": [
+        {
+          "naam": "Laura Burgers",
+          "organisatie": "Universiteit van Amsterdam"
+        },
+        {
+          "naam": "Margaretha Wewerinke-Singh",
+          "organisatie": "Universiteit van Amsterdam"
+        },
+        {
+          "naam": "Tim Bleeker",
+          "organisatie": "Vrije Universiteit Amsterdam"
+        },
+        {
+          "naam": "Wouter den Hollander",
+          "organisatie": "Stibbe"
+        }
+      ]
     }
   ]
 }

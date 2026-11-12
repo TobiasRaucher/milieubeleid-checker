@@ -1,6 +1,6 @@
 {
   "_uitleg": "Handmatig (door Claude) bijgehouden wetgevingsdossiers. De pipeline vult data/tk/ aan met moties, amendementen en stemmingen.",
-  "bijgewerkt": "2026-11-12T15:49:00Z",
+  "bijgewerkt": "2026-11-12T18:57:30Z",
   "fasen": [
     {
       "code": "voorbereiding",
@@ -70,6 +70,31 @@
         {
           "titel": "Greenpeace: briefing vonnis Klimaatzaak Bonaire",
           "url": "https://www.greenpeace.org/nl/algemeen/74130/briefing-vonnis-klimaatzaak-bonaire/"
+        }
+      ]
+    },
+    {
+      "id": "35953",
+      "titel": "Klimaatwet 1.5 (initiatiefwet Teunissen, PvdD)",
+      "kamerstuk": "35953",
+      "sector": "klimaat-energie",
+      "thema": "Klimaatwet",
+      "type": "Initiatiefwetsvoorstel",
+      "fase": "tk",
+      "prioriteit": false,
+      "samenvatting": "Initiatiefwet van het lid Teunissen (PvdD) die de Klimaatwet wijzigt zodat Nederland zo spoedig mogelijk een zo groot mogelijke bijdrage levert aan het voorkomen van verdere opwarming van de aarde (afgestemd op 1,5 °C).",
+      "laatsteStap": {
+        "datum": "2021-10-29",
+        "tekst": "Wetsvoorstel aanhangig in de Tweede Kamer (zaak gestart)."
+      },
+      "volgendeStap": {
+        "datum": null,
+        "tekst": "Plenaire behandeling in de Tweede Kamer staat gepland, maar zonder datum (activiteit 2023A06087)."
+      },
+      "bronnen": [
+        {
+          "titel": "OpenTK: kamerstukdossier 35953",
+          "url": "https://berthub.eu/tkconv/ksd.html?ksd=35953&toevoeging="
         }
       ]
     },

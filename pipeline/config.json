@@ -16,6 +16,11 @@
           "label": "Klimaatwet"
         },
         {
+          "nummer": 35953,
+          "toevoeging": null,
+          "label": "Klimaatwet 1.5 (initiatiefwet Teunissen)"
+        },
+        {
           "nummer": 36169,
           "toevoeging": null,
           "label": "Wijziging Klimaatwet (implementatie Europese klimaatwet)"
@@ -48,6 +53,12 @@
         "Klimaatzaak Bonaire",
         "Bonaire-vonnis",
         "klimaatdoel"
+      ],
+      "plenaireZoektermen": [
+        "Klimaat",
+        "klimaat",
+        "Energie",
+        "energie"
       ]
     },
     "water-adaptatie": {

@@ -15,6 +15,7 @@ Wat er wordt opgehaald (per actieve sector in pipeline/config.json):
 Documentatie API: https://opendata.tweedekamer.nl
 """
 import json
+import re
 import sys
 import time
 import urllib.parse
@@ -173,23 +174,100 @@ def normaliseer_zaak(z, sector):
     }
 
 
-def activiteiten(commissies, start):
+ACT_SELECT = "Id,Nummer,Soort,Onderwerp,Datum,Aanvangstijd,Eindtijd,Locatie,Status,Voortouwnaam,Voortouwafkorting,Besloten,Noot,Kamer"
+# agendapunten met de te behandelen stukken, en deelnemers (voorzitter, Kamerleden, bewindspersonen)
+ACT_EXPAND = (
+    "Agendapunt($filter=Verwijderd eq false;$select=Volgorde,Onderwerp;"
+    "$expand=Zaak($select=Nummer,Soort,Onderwerp;"
+    "$expand=Document($filter=Verwijderd eq false;$select=DocumentNummer,Soort,Datum,Onderwerp,Volgnummer;"
+    "$expand=Kamerstukdossier($select=Nummer,Toevoeging),DocumentActor($select=ActorNaam,Functie,Relatie)))),"
+    "ActiviteitActor($filter=Verwijderd eq false;$select=ActorNaam,ActorFractie,Functie,Relatie,Volgorde)"
+)
+PLENAIRE_SOORTEN = ["Plenair debat", "Tweeminutendebat", "Dertigledendebat", "Debat", "Interpellatie"]
+
+
+def _act_query(filter_expr, max_pages=40):
+    params = {"$filter": filter_expr, "$select": ACT_SELECT, "$expand": ACT_EXPAND, "$orderby": "Datum desc"}
+    try:
+        return odata("Activiteit", params, max_pages=max_pages)
+    except urllib.error.HTTPError as e:
+        log(f"  activiteiten met expand gaf HTTP {e.code}; terugvallen zonder agendapunten/deelnemers")
+        params.pop("$expand")
+        return odata("Activiteit", params, max_pages=max_pages)
+
+
+def activiteiten(commissies, start, plenaire_termen):
     soort = " or ".join(f"Soort eq '{s}'" for s in ACTIVITEIT_SOORTEN)
     voortouw = " or ".join(f"Voortouwafkorting eq '{c}'" for c in commissies)
-    params = {
-        "$filter": f"Verwijderd eq false and ({soort}) and ({voortouw}) and (Datum ge {start}T00:00:00Z or (Status eq 'Gepland' and Datum eq null))",
-        "$select": "Id,Nummer,Soort,Onderwerp,Datum,Aanvangstijd,Eindtijd,Locatie,Status,Voortouwnaam,Voortouwafkorting,Besloten",
-        "$orderby": "Datum desc",
+    datum = f"(Datum ge {start}T00:00:00Z or (Status eq 'Gepland' and Datum eq null))"
+    uit = _act_query(f"Verwijderd eq false and ({soort}) and ({voortouw}) and {datum}")
+    # plenaire debatten hebben geen commissie als voortouw: zoek op termen in het onderwerp
+    if plenaire_termen:
+        psoort = "startswith(Soort,'Plenair debat')"
+        termen = " or ".join(f"contains(Onderwerp,'{t}')" for t in plenaire_termen)
+        uit += _act_query(f"Verwijderd eq false and ({psoort}) and ({termen}) and {datum}")
+    return [normaliseer_activiteit(a) for a in uit]
+
+
+def _stuk(doc, zaak):
+    ks = (doc.get("Kamerstukdossier") or [None])[0]
+    kamerstuk = None
+    if ks and doc.get("Volgnummer") not in (None, -1):
+        kamerstuk = f"{ks['Nummer']}{'-' + ks['Toevoeging'] if ks.get('Toevoeging') else ''}-{doc['Volgnummer']}"
+    ondert = next((a for a in doc.get("DocumentActor") or [] if (a.get("Relatie") or "").lower().startswith("eerste")), None)
+    return {
+        "kamerstuk": kamerstuk,
+        "soort": doc.get("Soort"),
+        "datum": (doc.get("Datum") or "")[:10] or None,
+        "onderwerp": doc.get("Onderwerp"),
+        "ondertekenaar": ondert.get("ActorNaam") if ondert else None,
+        "functie": ondert.get("Functie") if ondert else None,
+        "link": f"https://www.tweedekamer.nl/kamerstukken/detail?id={zaak.get('Nummer')}&did={doc.get('DocumentNummer')}",
     }
-    try:
-        return odata("Activiteit", params)
-    except urllib.error.HTTPError as e:
-        # veldnaam Voortouwafkorting kan afwijken; val terug op alle activiteiten en filter lokaal
-        log(f"  activiteiten-filter gaf HTTP {e.code}; terugvallen op lokaal filteren")
-        params["$filter"] = f"Verwijderd eq false and ({soort}) and Datum ge {start}T00:00:00Z"
-        params.pop("$select")
-        alle = odata("Activiteit", params, max_pages=80)
-        return [a for a in alle if any(c.lower() in json.dumps(a).lower() for c in commissies)]
+
+
+def normaliseer_activiteit(a):
+    agendapunten = []
+    for ap in sorted(a.get("Agendapunt") or [], key=lambda x: x.get("Volgorde") or 0):
+        stukken = []
+        for z in ap.get("Zaak") or []:
+            alle = z.get("Document") or []
+            # voorkeur: de brief zelf (zoals op tweedekamer.nl); anders het nieuwste stuk dat geen bijlage is
+            brieven = [d for d in alle if (d.get("Soort") or "").lower().startswith("brief")]
+            if brieven:
+                docs = brieven[:1]
+            else:
+                rest = sorted([d for d in alle if d.get("Soort") != "Bijlage"] or alle, key=lambda d: d.get("Datum") or "", reverse=True)
+                docs = rest[:1]
+            stukken += [_stuk(d, z) for d in docs]
+        agendapunten.append({"volgorde": ap.get("Volgorde"), "onderwerp": ap.get("Onderwerp"), "stukken": stukken})
+    actoren = sorted(a.get("ActiviteitActor") or [], key=lambda x: x.get("Volgorde") or 0)
+    bewinds = [{"naam": x["ActorNaam"], "functie": x.get("Functie")} for x in actoren if "bewindspersoon" in (x.get("Relatie") or "").lower()]
+    # organisaties (bv. een volgcommissie) zijn geen personen
+    actoren = [x for x in actoren if x.get("ActorFractie") or x.get("Functie") or "bewindspersoon" in (x.get("Relatie") or "").lower()]
+    # de feitelijke voorzitter staat soms als "Naam voorzitter" in de lijst; anders de commissievoorzitter
+    vz = next((x for x in actoren if (x.get("ActorNaam") or "").lower().endswith(" voorzitter")), None) \
+        or next((x for x in actoren if "voorzitter" in (x.get("Functie") or "").lower()), None)
+    voorzitter = {"naam": re.sub(r"\s+voorzitter$", "", vz["ActorNaam"], flags=re.I), "fractie": vz.get("ActorFractie")} if vz else None
+    deelnemers = [{"naam": x["ActorNaam"], "fractie": x.get("ActorFractie"), "functie": x.get("Functie")}
+                  for x in actoren if "bewindspersoon" not in (x.get("Relatie") or "").lower() and x is not vz]
+    plenair = (a.get("Soort") or "").startswith("Plenair") or "plenaire zaal" in (a.get("Locatie") or "").lower()
+    out = {k: a.get(k) for k in ["Id", "Nummer", "Soort", "Onderwerp", "Datum", "Aanvangstijd", "Eindtijd", "Locatie", "Status", "Voortouwnaam", "Voortouwafkorting", "Besloten", "Noot"]}
+    m = re.match(r"Plenair debat \((.+)\)", a.get("Soort") or "")
+    weergave = a.get("Soort")
+    if m:
+        sub = m.group(1).lower()
+        weergave = "Plenair debat" if sub == "debat" else (sub.capitalize() if sub.endswith("debat") or sub == "interpellatie" else f"Plenair debat ({sub})")
+    out.update({
+        "SoortWeergave": weergave,
+        "agendapunten": agendapunten,
+        "bewindspersonen": bewinds,
+        "voorzitter": voorzitter,
+        "deelnemers": deelnemers,
+        "tkLink": (f"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id={a.get('Nummer')}"
+                   if plenair else f"https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id={a.get('Nummer')}"),
+    })
+    return out
 
 
 def main():
@@ -237,7 +315,7 @@ def main():
                 log(f"    FOUT: {e}")
         # 3. activiteiten
         try:
-            rec = activiteiten(s["commissies"], start)
+            rec = activiteiten(s["commissies"], start, s.get("plenaireZoektermen", []))
             for a in rec:
                 a["sectoren"] = [code]
                 alle_act.setdefault(a.get("Id"), a)

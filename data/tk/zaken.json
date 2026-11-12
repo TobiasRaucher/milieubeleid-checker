@@ -9315,6 +9315,125 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z14805"
  },
  {
+  "id": "d3869147-dbf2-4d54-8f86-8cab25bf0a87",
+  "nummer": "2021Z18990",
+  "soort": "Initiatiefwetgeving",
+  "titel": "Voorstel van wet van het lid Teunissen houdende wijziging van de Klimaatwet om te bewerkstelligen dat Nederland zo spoedig mogelijk een zo groot mogelijke bijdrage gaat leveren aan het voorkomen van een verdere opwarming van de Aarde (Klimaatwet 1.5)",
+  "onderwerp": "Voorstel van wet van het lid Teunissen houdende wijziging van de Klimaatwet om te bewerkstelligen dat Nederland zo spoedig mogelijk een zo groot mogelijke bijdrage gaat leveren aan het voorkomen van een verdere opwarming van de Aarde (Klimaatwet 1.5)",
+  "citeertitel": null,
+  "gestartOp": "2021-10-29",
+  "vergaderjaar": "2021-2022",
+  "afgedaan": false,
+  "kabinetsappreciatie": null,
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 35953,
+    "toevoeging": null,
+    "titel": "Voorstel van wet van het lid Teunissen houdende wijziging van de Klimaatwet om te bewerkstelligen dat Nederland zo spoedig mogelijk een zo groot mogelijke bijdrage gaat leveren aan het voorkomen van een verdere opwarming van de Aarde (Klimaatwet 1.5)"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "[Vrij tekstveld / geen Parlisproces]",
+    "tekst": "Van een technische briefing wordt naderhand toch afgezien.",
+    "stemmingssoort": null,
+    "datum": "2022-10-11",
+    "stemmen": []
+   },
+   {
+    "soort": "[Vrij tekstveld / geen Parlisproces]",
+    "tekst": "Advies van de Afdeling advisering van Raad van State en reactie van initiatiefnemer afwachten.",
+    "stemmingssoort": null,
+    "datum": "2021-11-16",
+    "stemmen": []
+   },
+   {
+    "soort": "Ter informatie",
+    "tekst": "Ter informatie.",
+    "stemmingssoort": null,
+    "datum": "2024-04-23",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": null,
+    "stemmen": []
+   },
+   {
+    "soort": "Aanmelden voor plenaire behandeling",
+    "tekst": "Aanmelden voor plenaire behandeling.",
+    "stemmingssoort": null,
+    "datum": "2023-09-12",
+    "stemmen": []
+   },
+   {
+    "soort": "Inbreng - verslag wetsvoorstel",
+    "tekst": "Inbrengdatum voor het verslag vastgesteld op 10 november 2022 te 14.00 uur.",
+    "stemmingssoort": null,
+    "datum": "2022-10-11",
+    "stemmen": []
+   },
+   {
+    "soort": "Agenderen - plenair debat",
+    "tekst": "Agenderen voor plenair debat.",
+    "stemmingssoort": null,
+    "datum": "2023-09-14",
+    "stemmen": []
+   },
+   {
+    "soort": "Controversieel - niet controversieel verklaren [geen Parlisproces] (commissie)",
+    "tekst": "Niet controversieel verklaren.",
+    "stemmingssoort": null,
+    "datum": "2025-06-19",
+    "stemmen": []
+   },
+   {
+    "soort": "In handen van commissie stellen (initiatiefwetgeving)",
+    "tekst": "In handen gesteld van de vaste commissie voor Economische Zaken en Klimaat",
+    "stemmingssoort": null,
+    "datum": "2022-09-27",
+    "stemmen": []
+   },
+   {
+    "soort": "Leveren inbreng",
+    "tekst": "Inbreng geleverd.",
+    "stemmingssoort": null,
+    "datum": "2022-11-10",
+    "stemmen": []
+   },
+   {
+    "soort": "LVIS - inititiatiefwet rondgezonden, gepubliceerd & RvS",
+    "tekst": "Rondgezonden, gepubliceerd en voor advies naar de Raad van State gezonden.",
+    "stemmingssoort": null,
+    "datum": "2022-09-27",
+    "stemmen": []
+   },
+   {
+    "soort": "Controversieel - niet controversieel verklaren [geen Parlisproces] (commissie)",
+    "tekst": "Niet controversieel verklaren.",
+    "stemmingssoort": null,
+    "datum": "2023-09-05",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z18990"
+ },
+ {
   "id": "2cd706c8-e162-412c-a2a6-889fbb2fb874",
   "nummer": "2016Z16372",
   "soort": "Initiatiefwetgeving",
