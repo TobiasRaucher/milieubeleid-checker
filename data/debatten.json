@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:18:25Z",
+ "bijgewerkt": "2026-11-12T20:20:07Z",
  "debatten": [
   {
    "id": "246687",
@@ -2469,6 +2469,125 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/246677"
+  },
+  {
+   "id": "170397",
+   "datum": "2026-07-02",
+   "type": "Commissiedebat",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Kernenergie",
+   "dossiers": [
+    "kernenergie",
+    "elektriciteitsnet"
+   ],
+   "bewindspersoon": "Staatssecretaris De Bat (KGG)",
+   "activiteit": "2026A04059",
+   "video": "https://debatdirect.tweedekamer.nl/2026-07-02/klimaat/thorbeckezaal/kernenergie-10-00",
+   "aanzet": "Commissiedebat na brieven van de staatssecretaris over de locatiekeuze voor twee nieuwe grote kerncentrales en een routekaart kernenergie. Uit TenneT-analyses en een integrale effectanalyse bleek dat Borssele afvalt voor twee grote centrales, dat de Eemshaven technisch het beste scoort maar geen draagvlak heeft, en dat inpassing bij Terneuzen in het stroomnet zeer complex is. De tribune zat vol met bezoekers uit Groningen en Zeeland.",
+   "gist": "Bijna alle fracties eisten duidelijkheid over Groningen: CDA, D66, ChristenUnie, PRO, SP, PvdD, PVV en BBB wezen een kerncentrale in de Eemshaven af, mede vanwege eerdere moties, en vroegen het voorkeursrecht daar in te trekken. De staatssecretaris hield drie locaties (twee in de Eemshaven, één bij Terneuzen) open en wil eind 2026 of begin 2027 kiezen, waarbij draagvlak 'zwaar weegt'. Voorstanders (VVD, JA21, PVV, Groep Markuszower, FVD, SGP, BBB) wilden tempo en hielden vast aan het doel van 7 gigawatt kernenergie in 2050; VVD geeft de voorkeur aan Terneuzen. PRO, SP en PvdD wilden de gereserveerde miljarden liever in zon, wind, opslag en isolatie steken. Meerdere fracties (D66, SGP, ChristenUnie) zagen meer in kleinere centrales of SMR's verspreid over het land. De staatssecretaris zegde een brief met versnellingsacties voor SMR's eind 2026 toe.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Kernenergie is 'de ruggengraat' van een betaalbaar en soeverein energiesysteem. Wil een routekaart met harde mijlpalen (2030, 2035, 2040, 2050) voor de volgende begrotingsbehandeling, financiering via een staatsdeelneming naar model van TenneT, en uiterlijk in 2027 een concrete SMR-pilot. Volgens JA21 is de inpasbaarheid een politieke keuze tussen wind en kern.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=157957"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Noemt nieuwe kerncentrales 'een fantasie waar miljarden voor zijn gereserveerd'; het kabinet moet kiezen tussen het breken van de belofte aan Groningen of in Zeeland bestaande opwek afschalen. In Zeeland is volgens TenneT in 2040 5,4 GW vraag tegenover 12,7 GW aanbod. Wil de miljarden in goedkope groene energie steken en vraagt wanneer het voorkeursrecht in de Eemshaven wordt beëindigd, nu een vergund windproject daardoor stil ligt.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=157986"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Kernenergie is een hoeksteen; minimaal 7 GW in 2050 'staat als een huis'. Voorkeur voor Terneuzen: vraagt welke acties de staatssecretaris neemt voor de netinpassing in Zeeland, wijst op kansen voor vraagontwikkeling in het Zeeuwse industriecluster en vraagt om een ambitieus rijksregiopakket en lokaal draagvlak.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158090"
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "spreker": "Hidde Heutink",
+      "positie": "Kernenergie is de enige stabiele optie naast 'wiebelstroom'; vindt het tempo onacceptabel, nu na bijna vijf jaar nog geen locatie is gekozen.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158244"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Het doel is een volwaardige plek voor kernenergie in de mix, niet een bepaald aantal centrales; vraagt naar andere routes naar 7 GW (verspreide locaties, kleinere centrales). De Eemshaven is volgens eerdere moties 'geen begaanbaar pad'. Wil kernenergie bekijken in samenhang met het Nationaal Plan Energiesysteem.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158287"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Vraagt een realistisch tijdpad voor de vier sporen, waarom pas nu blijkt dat Borssele niet past, en hoe Terneuzen in het net past zonder dat de vraag in Zeeland moet vervijfvoudigen. Vraagt hoe de staatssecretaris de suggestie van TenneT waardeert om zes grote SMR's over het land te spreiden.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158417"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Henk Vermeer",
+      "positie": "Regio's die de lasten dragen, moeten er zichtbaar beter van worden: een stevig regiopakket is een voorwaarde, geen sluitstuk, en een deel van de opbrengsten moet in de regio landen. Wil snel duidelijkheid, geen uitstel naar 2027, en geen kerncentrales op vruchtbare landbouwgrond in Zeeuwse polders. Vroeg of de staatssecretaris 'de trein' van twee grote centrales niet beter kan stilzetten.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158449"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Klimaatverandering laat geen ruimte om schone technieken uit te sluiten, kernenergie inbegrepen. Groningen is geen begaanbare weg; vraagt naar draagvlak in Zeeuws-Vlaanderen (bezocht een boerenfamilie in de Paulinapolder) en naar de grootste belemmeringen voor SMR's bij industrieclusters.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158487"
+     },
+     {
+      "fractie": "SP",
+      "spreker": "Jimmy Dijk",
+      "positie": "Na twee jaar onderzoek is de conclusie volgens de SP dat kernenergie niet in te passen is. Herinnert aan de aangenomen motie-Beckerman (geen kerncentrale in Groningen). Het Klimaatfonds heeft 13,5 miljard euro terwijl twee centrales 20 tot 30 miljard kosten; wil investeren in wind op zee, zon op dak, isolatie en batterijen.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158576"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Alexander Kops",
+      "positie": "Voor kernenergie, maar verbaasd over 'de bizarre wending': Borssele was sinds 2022 de voorkeurslocatie en de vorige minister had de Eemshaven volgens Kops feitelijk uitgesloten. Vraagt wat er sindsdien veranderd is.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158684"
+     },
+     {
+      "fractie": "PvdD",
+      "spreker": "Christine Teunissen",
+      "positie": "Kernenergie is volgens de PvdD ook niet stabiel (Franse centrales gaan bij hitte terug) en een 'bodemloze put'. Wil de 14 miljard euro in opslag en een slimmer net steken en vraagt de staatssecretaris kernenergie in Groningen vandaag uit te sluiten.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158761"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Vraagt of de TenneT-analyse niet de facto een streep zet door twee centrales van 1,6 GW, en of het kabinet doorschakelt naar kleinere centrales of SMR's. Noemt het vestigen van voorkeursrecht in de Eemshaven 'ongelooflijk bestuurlijk onbetrouwbaar'. Vraagt naar de verkenning naar Delta21 en het meenemen van systeemkosten in de SDE++.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158849"
+     },
+     {
+      "fractie": "FVD",
+      "spreker": "Peter van Duijvenvoorde",
+      "positie": "Kernenergie levert continuïteit; vraagt hoe voorkomen wordt dat voorzichtige rekenaannames over netcapaciteit zwaarder wegen dan de fysieke werkelijkheid, en ziet geen tegenstelling tussen grote centrales en SMR's.",
+      "link": "https://gehoord.de/beraadslagingen/170397?segment=158880"
+     }
+    ],
+    "kabinet": [
+     "Er ligt nog geen keuze maar een dilemma: de Eemshaven is technisch geschikt maar mist maatschappelijk en politiek draagvlak, Terneuzen heeft meer draagvlak maar is lastig in te passen. Na de zomer, uiterlijk begin 2027, volgt een integrale keuze waarin draagvlak zwaar weegt.",
+     "Borssele valt af omdat twee grote centrales meer ruimte vragen dan daar beschikbaar is. Het voorkeursrecht geldt op alle overgebleven locaties om niet op een keuze vooruit te lopen; met het stilliggende windproject wordt gezocht naar wat wel kan.",
+     "Routekaart met vier sporen (twee grote centrales, SMR's, onder meer kennisontwikkeling) richting 7 GW in 2050; piketpalen volgen voor het eind van het jaar. Publieke financiering is volgens eerder onderzoek het meest efficiënt; een TenneT-constructie lijkt de staatssecretaris niet sneller.",
+     "In het Nationaal Plan Energiesysteem (na de zomer) wordt de balans tussen wind, kern en vraagontwikkeling uitgewerkt."
+    ],
+    "toezeggingen": [
+     "Brief met versnellingsacties en een stappenplan voor SMR's, eind 2026 (richting Van den Berg).",
+     "Terugkomen op het meenemen van systeemkosten (netcongestie) in regelingen als de SDE++, in een aparte brief of bij het Nationaal Plan Energiesysteem (richting Grinwis).",
+     "Informatie over de uitwisseling met TenneT voor 1 oktober (richting Vermeer)."
+    ],
+    "moties": "Geen; Müller (VVD) vroeg een tweeminutendebat aan, met Van den Berg als eerste spreker, na het zomerreces.",
+    "vervolg": [
+     "Tweeminutendebat Kernenergie na het zomerreces.",
+     "Locatiekeuze voor twee nieuwe kerncentrales, eind 2026 of begin 2027.",
+     "Notaoverleg Energiesysteem in oktober 2026."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/170397"
   }
  ]
 }
