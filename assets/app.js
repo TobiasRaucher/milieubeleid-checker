@@ -457,7 +457,7 @@
     const tkLink = a.tkLink || d.tkLink;
     return `<article class="card debat" id="d-${esc(d.id)}">
       <div class="meta">${esc(commissie || "")} · ${fmtDatum(d.datum)}</div>
-      <div class="titelrij"><span class="tag">${esc(d.type)}</span><h3>${esc(d.titel)}</h3></div>
+      <div class="titelrij"><span class="tag">${esc(d.type)}</span><h3>${esc(d.titel)}</h3>${d.niveau === "kort" ? ` <span class="tag" title="Korte samenvatting: alleen de hoofdlijn">kort</span>` : ""}</div>
       ${dossierChips(dossiersVanDebat(d))}
       <div class="links">
         ${d.video ? `<a href="${esc(d.video)}" target="_blank" rel="noopener">▶ Terugkijken op Debat Direct</a>` : ""}
@@ -474,7 +474,7 @@
         ${blok("Moties", s.moties ? `<p>${esc(s.moties)}</p>` : "")}
         ${blok("Vervolg", (s.vervolg || []).length ? lijst(s.vervolg) : "")}
         ${blok("Deelnemers", deelnemers ? `<div class="deelnemers">${deelnemers}</div>` : "")}
-        <div class="small muted" style="margin-top:12px">Samengevat door ${esc(d.samengevatDoor)} op ${fmtDatum(d.samengevatOp)} op basis van het automatische transcript.</div>
+        <div class="small muted" style="margin-top:12px">${d.niveau === "kort" ? "Korte samenvatting" : "Samengevat"} door ${esc(d.samengevatDoor)} op ${fmtDatum(d.samengevatOp)} op basis van het automatische transcript.</div>
       </div>
     </article>`;
   }

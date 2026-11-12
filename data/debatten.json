@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:02:08Z",
+ "bijgewerkt": "2026-11-12T20:10:20Z",
  "debatten": [
   {
    "id": "246687",
@@ -1621,6 +1621,96 @@
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
+  },
+  {
+   "id": "297835",
+   "datum": "2026-10-26",
+   "type": "Notaoverleg",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Notaoverleg Energiesysteem (actualisatie Nationaal Plan Energiesysteem)",
+   "dossiers": [
+    "elektriciteitsnet",
+    "gas-leveringszekerheid",
+    "industrie",
+    "hernieuwbaar",
+    "kernenergie"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer en staatssecretaris De Bat (KGG)",
+   "activiteit": "2026A05143",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-26/klimaat/troelstrazaal/energiesysteem-10-00",
+   "aanzet": "Notaoverleg over de actualisatie 2026 van het Nationaal Plan Energiesysteem (NPE), het kabinetsbeeld van het energiesysteem in 2040. De Kamer had TNO en hoogleraar Reyer Gerlagh om een toets van het plan gevraagd; beide waren kritisch over de stap van visie naar uitvoering.",
+   "gist": "Bijna alle fracties vonden het geactualiseerde NPE te weinig een uitvoeringsplan: CDA, ChristenUnie en VVD vroegen om meerdere scenario's en een toetsbare uitvoeringsagenda, PRO vond dat ambities (CO2-vrije stroom 2035, wind op zee, warmtenetten) worden losgelaten, en JA21 wilde de gasopslagen Norg en Grijpskerk behouden. De minister stelde dat de doelen niet veranderen, alleen de instrumentenmix, en erkende een 'beleidsgat' (onder meer warmtenetten, industrie, koolstofverwijdering) dat in de voorjaarsbesluitvorming 2027 aan bod komt. Ze zegde een brief toe over de samenhang van alle uitvoeringsagenda's en het beleidsgat, en een brief over het Franse einddatum-beleid voor fossiel. Uitgangspunt voor wind op zee blijft 40 gigawatt in 2040. De JA21-moties over gasopslag noemde ze ontijdig tot het debat over strategisch gasbeleid.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PRO",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Noemt het NPE 'meer een samenvatting dan een plan'. Bekritiseert het loslaten of verlagen van doelen (CO2-vrije stroom 2035, wind op zee 35 GW in 2035 naar 30 GW in 2040, collectieve warmte van 500.000 naar 200.000 woningen), het ontbreken van een nationaal programma energiebesparing en van einddata per fossiele brandstof, de rekengasprijs en de kosten van kernenergie. Vraagt naar het Noordzeepact en datacenters. Moties: einddata voor olie en gas (aangehouden), energiebesparing met sectordoelen (aangehouden) en harde eisen aan datacenters (ontraden).",
+      "link": "https://gehoord.de/beraadslagingen/297835?segment=234174"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Zorgen over gasleveringszekerheid: de eigen productie daalt van ongeveer 30% naar 13% van de vraag in 2040, en een NAM-plan om gas uit opslag Norg te winnen zou de opslag de facto sluiten. Wil Norg en Grijpskerk behouden, eventueel in nationale handen. Drie moties: voorstel strategische gasreserve voor 1 februari 2027, gesprek met NAM-eigenaren over nationalisatie van Norg en Grijpskerk, en in het NPE vastleggen welke gascapaciteit nodig blijft. Het kabinet noemde ze ontijdig; Van den Berg brengt ze toch in stemming.",
+      "link": "https://gehoord.de/beraadslagingen/297835?segment=234182"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Alexander Kops",
+      "positie": "Richt zich op energiearmoede en verborgen energiearmoede, hoge belastingen en netkosten op de energierekening en vraagt wat de minister doet zodat huishoudens deze winter niet in de kou zitten. Is tegen de hybride warmtepompnorm per 2029, tegen meer windturbines (ook vanwege gezondheidsklachten volgens de PVV) en wijst op meer stroomstoringen in het laagspanningsnet.",
+      "link": "https://gehoord.de/beraadslagingen/297835?segment=234186"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Het NPE is een stap vooruit maar laat onvoldoende zien of de route uitvoerbaar, betaalbaar en betrouwbaar is. Vraagt om alternatieve scenario's, aandacht voor mkb en regionale industrie (cluster 6), regelbaar vermogen, koolstofverwijdering (20 tot 25 megaton) en weerbaarheid. Vraagt een reactie op een PwC-studie die CCS, blauwe waterstof en hybride oplossingen als goedkoopste route voor de industrie ziet. Motie voor een concrete, toetsbare uitvoeringsagenda met scenario's (oordeel Kamer na aanpassing).",
+      "link": "https://gehoord.de/beraadslagingen/297835?segment=234193"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Positief over de richting. Wil versnelling van zon en wind op land met bindende afspraken met provincies, de routekaart wind op zee met 40 GW in 2040 als uitgangspunt, energiehubs als standaard bij bedrijventerreinen en nieuwbouw, heroverweging van energiebelasting en nettarieven, een grotere rol voor binnenlandse groene waterstof en een einddatum voor fossiel in de routekaart (naar Frans voorbeeld). Geen moties.",
+      "link": "https://gehoord.de/beraadslagingen/297835?segment=234218"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Twijfelt aan de haalbaarheid van een verdubbeling van de stroomvraag naar 260 TWh in 2040 (PBL verwacht 148 tot 218 TWh), omdat netbeheerders daarop investeren. Wil meer gaswinning op de Noordzee, ruimte voor nieuwe blauwe waterstof en datacenters als deel van de oplossing (zoals in Ierland). Moties: emissiereductie door productievermindering niet als beleidsdoel hanteren, en een visie met kaders voor datacenters die het net ontlasten. Beide oordeel Kamer.",
+      "link": "https://gehoord.de/beraadslagingen/297835?segment=234235"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Kritisch over de aanname dat de industrie richting 2040 maar beperkt krimpt (PBL geeft voor de basischemie een bandbreedte van 7% groei tot 73% krimp), met risico op dure, onderbenutte netten. Vraagt naar groen gas en hybride oplossingen in het eindbeeld, een langetermijncontract met Noorwegen en een toetsbare uitvoeringsagenda. Moties: de Raad voor energie vragen het NPE aan een stresstest te onderwerpen, en in het NPE 2029 meerdere scenario's uitwerken. Beide oordeel Kamer.",
+      "link": "https://gehoord.de/beraadslagingen/297835?segment=234275"
+     }
+    ],
+    "kabinet": [
+     "Het NPE stelt geen nieuwe doelen maar vertaalt de klimaat- en industriedoelen naar het energiesysteem van 2040; de doelen blijven gelijk, alleen de instrumentenmix (bijvoorbeeld minder binnenlandse waterstof) is aangepast.",
+     "Er is een beleidsgat tussen huidig beleid en wat nodig is (onder meer warmtenetten, waar onvoldoende geld is voor 500.000 woningen, industrie en koolstofverwijdering); daarover wordt in het voorjaar van 2027 besloten.",
+     "Wind op zee: 21 GW ligt vast, voor 30 GW zijn plannen, de doorgroei naar 40 GW wordt uitgewerkt in de routekaart wind op zee (eind 2026).",
+     "Regelbaar vermogen wordt geborgd via een capaciteitsmechanisme; daarover volgt een apart debat. De Raad voor energie adviseert in het voorjaar van 2027 over weerbaarheid; TNO doet in 2027 een robuustheidsanalyse.",
+     "Gas: de huidige 5 TWh is een noodvoorraad, geen strategische voorraad; keuzes over omvang, opslag en kosten horen bij het debat over de brief strategisch gasbeleid. Over Norg ligt een uitspraak van de Raad van State dat voor 31 december besloten moet worden; volgens de staatssecretaris zou winning op zijn vroegst rond de winter van 2028 beginnen.",
+     "Tata Steel: de structurele CO2-reductie van 7,2 megaton uit de maatwerkafspraak blijft overeind; tijdelijk worden staalplakken ingekocht om de productie gelijk te houden.",
+     "Staatssecretaris: netcongestie na 2035 opgelost is 'ambitieus maar realistisch'; 500 energiehubs in 2030 is haalbaar; samen met de staatssecretaris voor digitalisering komt snel een aanpak voor datacenters, met op korte termijn een 'streep' onder ongewenste aanvragen. Versnellingsagenda SMR's volgt voor het eind van 2026."
+    ],
+    "toezeggingen": [
+     "Brief over de samenhang van de uitvoeringsagenda's bij het NPE, inclusief het beleidsgat (ook voor energiebesparing), voor de voorjaarsbesluitvorming 2027.",
+     "Brief, uiterlijk eind 2026 en zo mogelijk eerder, over hoe Frankrijk een einddatum voor fossiel gebruik borgt en wat Nederland daarvan kan leren (na gesprek op de marge van de Santa Marta-coalitie bij COP31).",
+     "Beleidsagenda's krijgen voortaan een paragraaf over hoe ze zich verhouden tot het NPE."
+    ],
+    "moties": "Elf moties. Oordeel Kamer: Jumelet (uitvoeringsagenda met scenario's, na aanpassing), Müller (productievermindering niet als beleidsdoel; datacenters die het net ontlasten), Grinwis (stresstest door Raad voor energie; meerdere scenario's in NPE 2029). Ontraden: Van Oosterhout (eisen aan datacenters). Ontijdig: drie moties Van den Berg over gasreserve en gasopslag. Aangehouden: Van Oosterhout over einddata fossiel en over energiebesparing.",
+    "vervolg": [
+     "Stemmingen over de moties.",
+     "Debat over de brief strategisch gasbeleid (aangevraagd door JA21); besluit over gasopslag Norg.",
+     "Routekaart wind op zee en informatie over het Noordzeepact, eind 2026.",
+     "Voorjaarsbesluitvorming 2027 over aanvullend beleid."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/297835"
   }
  ]
 }
