@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Milieubeleid-checker</title>
+  <meta name="description" content="Overzicht van Nederlands milieu- en klimaatbeleid in de Tweede Kamer: wetgeving, moties, amendementen, debatten en agenda.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>Milieubeleid<span>-checker</span></h1>
+      <div class="sub">Wetgeving, moties en debatten over Nederlands milieubeleid</div>
+      <div class="stamp" id="stamp">Laden…</div>
+    </div>
+  </header>
+  <nav class="tabs" aria-label="Onderdelen">
+    <div class="wrap">
+      <a href="#overzicht" data-tab="overzicht">Overzicht</a>
+      <a href="#wetgeving" data-tab="wetgeving">Wetgeving</a>
+      <a href="#moties" data-tab="moties">Moties &amp; amendementen</a>
+      <a href="#debatten" data-tab="debatten">Debatten</a>
+      <a href="#agenda" data-tab="agenda">Agenda</a>
+      <a href="#over" data-tab="over">Over</a>
+    </div>
+  </nav>
+  <main class="wrap">
+    <div class="filters" id="sectorfilter" role="group" aria-label="Sector"></div>
+    <div id="view"></div>
+  </main>
+  <footer>
+    <div class="wrap">
+      Bronnen: <a href="https://opendata.tweedekamer.nl">Tweede Kamer open data</a>,
+      <a href="https://gehoord.de/beraadslagingen">gehoord.de</a> (automatische transcripten),
+      <a href="https://berthub.eu/tkconv/">OpenTK</a>. Samenvattingen zijn AI-gegenereerd en geen officiële bron; citeer de Handelingen.
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

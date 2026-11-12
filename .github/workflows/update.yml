@@ -1,0 +1,33 @@
+name: Data bijwerken (Tweede Kamer open data)
+
+# Voor nu alleen handmatig: Actions > "Data bijwerken" > "Run workflow".
+# Later automatisch maken? Haal het # weg voor de schedule-regels hieronder.
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "17 5 * * 1-5"   # werkdagen om 05:17 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Data ophalen
+        run: python3 pipeline/fetch_tk.py
+      - name: Wijzigingen opslaan
+        run: |
+          git config user.name "checker-bot"
+          git config user.email "checker-bot@users.noreply.github.com"
+          git add data/tk
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen."
+          else
+            git commit -m "Data bijgewerkt $(date -u +%Y-%m-%d)"
+            git push
+          fi

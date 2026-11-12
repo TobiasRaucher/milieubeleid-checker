@@ -1,0 +1,94 @@
+{
+  "_uitleg": "Configuratie voor de pipeline. Voeg hier dossiers, zoektermen en commissies toe om de checker uit te breiden.",
+  "startdatum": "2025-11-12",
+  "_startdatum_uitleg": "Begin van de huidige Kamerperiode (installatie na de verkiezingen van 29 oktober 2025). Alles vanaf deze datum wordt opgehaald.",
+  "sectoren": {
+    "klimaat-energie": {
+      "naam": "Klimaat & energie",
+      "actief": true,
+      "commissies": [
+        "K&GG"
+      ],
+      "kamerstukdossiers": [
+        {
+          "nummer": 34534,
+          "toevoeging": null,
+          "label": "Klimaatwet"
+        },
+        {
+          "nummer": 36169,
+          "toevoeging": null,
+          "label": "Wijziging Klimaatwet (implementatie Europese klimaatwet)"
+        },
+        {
+          "nummer": 36776,
+          "toevoeging": null,
+          "label": "Verzamelwet KGG"
+        },
+        {
+          "nummer": 32813,
+          "toevoeging": null,
+          "label": "Kabinetsaanpak Klimaatbeleid"
+        },
+        {
+          "nummer": 37020,
+          "toevoeging": "XXIII",
+          "label": "Begroting Klimaat en Groene Groei 2027"
+        },
+        {
+          "nummer": 37020,
+          "toevoeging": "M",
+          "label": "Begroting Klimaat- en Energiefonds 2027"
+        }
+      ],
+      "zoektermen": [
+        "Klimaatwet",
+        "klimaatwet",
+        "emissiebudget",
+        "Klimaatzaak Bonaire",
+        "Bonaire-vonnis",
+        "klimaatdoel"
+      ]
+    },
+    "water-adaptatie": {
+      "naam": "Water & klimaatadaptatie",
+      "actief": false,
+      "commissies": [
+        "IenW"
+      ],
+      "kamerstukdossiers": [],
+      "zoektermen": [
+        "Deltafonds",
+        "Deltaprogramma",
+        "klimaatadaptatie"
+      ]
+    },
+    "natuur-stikstof-landbouw": {
+      "naam": "Natuur, stikstof & landbouw",
+      "actief": false,
+      "commissies": [
+        "LVVN"
+      ],
+      "kamerstukdossiers": [],
+      "zoektermen": [
+        "stikstof",
+        "Natura 2000",
+        "mestbeleid"
+      ]
+    },
+    "circulair-vervuiling": {
+      "naam": "Circulaire economie & vervuiling",
+      "actief": false,
+      "commissies": [
+        "IenW",
+        "K&GG"
+      ],
+      "kamerstukdossiers": [],
+      "zoektermen": [
+        "circulaire economie",
+        "PFAS",
+        "luchtkwaliteit"
+      ]
+    }
+  }
+}
