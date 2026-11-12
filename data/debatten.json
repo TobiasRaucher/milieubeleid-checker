@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:00:28Z",
+ "bijgewerkt": "2026-11-12T20:01:28Z",
  "debatten": [
   {
    "id": "246687",
@@ -1391,6 +1391,148 @@
    },
    "bron": "https://gehoord.de/beraadslagingen/32849",
    "video": "https://debatdirect.tweedekamer.nl/2026-04-16/klimaat/thorbeckezaal/verduurzaming-industrie-10-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "164791",
+   "datum": "2026-07-01",
+   "type": "Commissiedebat",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Circulaire economie (eerste termijn)",
+   "dossiers": [
+    "circulair"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG) en staatssecretaris Eerenberg (Financiën)",
+   "activiteit": "2026A04057",
+   "aanzet": "Eerste debat over circulaire economie in bijna een jaar, en het eerste sinds het onderwerp van IenW naar KGG ging. Op de agenda stonden onder meer het Nationaal Programma Circulaire Economie, statiegeld (innameplicht), de plasticheffing voor de afvalsector, producentenverantwoordelijkheid (UPV, ook voor luiers) en (ultra)fast fashion. De tweede termijn volgde op 8 september.",
+   "gist": "Bijna alle fracties zien de circulaire economie als kans voor grondstoffenonafhankelijkheid en groene groei, maar PRO, CDA, PvdD en D66 vinden dat de uitvoering achterblijft bij de ambities en dat er te weinig geld is (de PvdD spreekt van 'wisselgeld'). VVD en JA21 waarschuwen vooral tegen nationale regels bovenop Europese regels en extra lasten voor ondernemers, onder meer bij uitbreiding van statiegeld. De plasticheffing van 567 miljoen euro voor de afvalsector zet volgens de VVD investeringen en CCS-project Aramis onder druk.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Ani Zalinyan",
+      "positie": "Circulaire economie gaat over onafhankelijkheid en schaarse grondstoffen (batterijen gaan nu naar China). Teleurgesteld dat de ambities groot zijn maar de uitvoering achterblijft en de doelen uit zicht raken.",
+      "link": "https://gehoord.de/beraadslagingen/164791?segment=155123"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Jantine Zwinkels",
+      "positie": "Ziet overal kansen, van levensmiddelen tot zorg; vindt de ambitie '100% circulair' te weinig concreet en wil een duidelijke stip op de horizon en meetbare doelen. Steunt reparatie.",
+      "link": "https://gehoord.de/beraadslagingen/164791?segment=155221"
+     },
+     {
+      "fractie": "PvdD",
+      "spreker": "Ines Kostić",
+      "positie": "Noemt de 58 miljoen euro voor circulaire economie in 2030 'wisselgeld'; wil een einde aan dubbele btw voor kringloopwinkels en maatregelen tegen ultrafast fashion naar Frans voorbeeld.",
+      "link": "https://gehoord.de/beraadslagingen/164791?segment=155382"
+     },
+     {
+      "fractie": "FVD",
+      "spreker": "Peter van Duijvenvoorde",
+      "positie": "Waarschuwt in een filosofisch betoog dat innovaties en overheidsingrijpen vaak nieuwe, grotere problemen veroorzaken.",
+      "link": "https://gehoord.de/beraadslagingen/164791?segment=155409"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Ouafa Oualhadj",
+      "positie": "Vindt dat de overheid moet ingrijpen waar de markt het niet regelt, zoals bij virgin plastic en recycling; wil een reclameverbod voor ultrafast fashion.",
+      "link": "https://gehoord.de/beraadslagingen/164791?segment=155476"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Circulair als groene groei, maar uitvoerbaar en zonder nationale regels bovenop Europese. Waarschuwt dat de plasticheffing van 567 miljoen euro investeringen in de afvalsector en Aramis blokkeert; kritisch op lasten van de innameplicht voor kleine ondernemers.",
+      "link": "https://gehoord.de/beraadslagingen/164791?segment=155542"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Kritisch over uitbreiding van statiegeld en de innameplicht (opslag, schoonmaak, ongedierte), wat volgens hem extra lasten voor ondernemers betekent.",
+      "link": "https://gehoord.de/beraadslagingen/164791?segment=155683"
+     }
+    ],
+    "kabinet": [
+     "De minister wil dat circulair 'het nieuwe normaal' wordt en zet in op een schaalsprong in een paar sectoren: innovatieve chemie, elektronica (ook voor strategische autonomie) en de bouw."
+    ],
+    "toezeggingen": [],
+    "doorgeleid": [],
+    "moties": "Moties volgen bij het tweeminutendebat na de tweede termijn.",
+    "vervolg": [
+     "Tweede termijn op 8 september 2026."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/164791",
+   "video": "https://debatdirect.tweedekamer.nl/2026-07-01/klimaat/suze-groenewegzaal/circulaire-economie-16-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "197151",
+   "datum": "2026-09-08",
+   "type": "Commissiedebat",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Circulaire economie (voortzetting, tweede termijn)",
+   "dossiers": [
+    "circulair"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG) en staatssecretaris Eerenberg (Financiën)",
+   "activiteit": "2026A05607",
+   "aanzet": "Tweede termijn van het commissiedebat Circulaire economie van 1 juli 2026, kort na NOS-berichtgeving over de rol van de toenmalige staatssecretaris en de toezichthouder ILT bij statiegeld.",
+   "gist": "PRO (mede namens CDA) vraagt duidelijkheid over de circulaire hefboom, een alternatief voor de plasticheffing en het financieringsgat van volgens de sector 1,5 miljard euro per jaar. PvdD en D66 dringen aan op een reclameverbod voor ultrafast fashion naar Frans voorbeeld; de minister wil eerst een werkbare definitie, samen met Frankrijk en in Europees verband. Over statiegeld zegt de minister dat de 90%-inzameling vóór 1 januari 2029 moet worden aangetoond om het strengere Europese systeem te vermijden; de suggestie dat de ILT is ondermijnd herkent ze niet. Over producentenverantwoordelijkheid voor luiers volgt rond het eind van het jaar een besluit.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PRO (mede namens CDA)",
+      "spreker": "Ani Zalinyan",
+      "positie": "De sector vraagt duidelijkheid: over de circulaire hefboom, een alternatief voor de plasticheffing van 567 miljoen euro, het financieringsgat van 1,5 miljard per jaar, de UPV voor luiers en ultrafast fashion. Wil obstakels voor circulaire ondernemers (bijvoorbeeld in het bouwbesluit) wegnemen; vroeg een tweeminutendebat aan.",
+      "link": "https://gehoord.de/beraadslagingen/197151?segment=182895"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Statiegeld moet proportioneel; blij dat de kleinste ondernemers worden uitgezonderd, maar twijfelt aan de grens van 43 m² en de onderbouwing (44 miljoen extra verpakkingen). Wil een praktijkpilot vóór landelijke uitrol, eventueel uitzondering voor zuivel, en onafhankelijk onderzoek naar de kosten van UPV op luiers voor gezinnen.",
+      "link": "https://gehoord.de/beraadslagingen/197151?segment=182915"
+     },
+     {
+      "fractie": "PvdD",
+      "spreker": "Ines Kostić",
+      "positie": "Vindt dat het kabinet de toezichthouder ILT heeft ondermijnd door met de sector een statiegeldloterij te bedenken, waar het Trimbos-instituut voor waarschuwt; wil die loterij van tafel en een bonusstatiegeld. Wil nu nationaal een reclameverbod voor ultrafast fashion, zoals Frankrijk vanaf 2027.",
+      "link": "https://gehoord.de/beraadslagingen/197151?segment=182966"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Ouafa Oualhadj",
+      "positie": "Wil jongeren beschermen tegen een stortvloed aan reclame voor ultrafast fashion en een eerder verworpen motie voor een reclameverbod opnieuw indienen ('recyclen').",
+      "link": "https://gehoord.de/beraadslagingen/197151?segment=182981"
+     }
+    ],
+    "kabinet": [
+     "De brief over de circulaire hefboom is bijna klaar en komt zeer snel.",
+     "Voor ultrafast fashion werkt de minister met Frankrijk en andere lidstaten aan een Europese definitie (non-paper); zonder werkbare definitie is een reclameverbod lastig af te bakenen.",
+     "Statiegeld: de 90%-inzameling moet vóór 1 januari 2029 zijn aangetoond, anders geldt het strikte Europese systeem zonder uitzondering voor kleine ondernemers. Het Duitse model wordt niet overgenomen, maar een uitzondering voor zuivel bij kleine verkooppunten wordt onderzocht, net als een praktijkpilot.",
+     "Over de UPV voor luiers volgt rond het eind van het jaar een besluit; de geschatte prijsstijging is ongeveer 2%.",
+     "Over de belasting voor de afvalsector: wachten op Prinsjesdag (staatssecretaris van Financiën)."
+    ],
+    "toezeggingen": [
+     "De brief over de circulaire hefboom volgt op zeer korte termijn.",
+     "De agenda maatschappelijk verantwoord opdrachtgeverschap en inkopen gaat op korte termijn naar de Kamer.",
+     "Rond Prinsjesdag informatie over een eventueel interdepartementaal beleidsonderzoek (aan Zwinkels).",
+     "Voor het eind van het jaar een update over bestaande regelingen en financiering voor circulaire economie, en een uitvoeringsagenda (inclusief UPV en de Europese Circular Economy Act), met de aanbevelingen van WKR en PBL (aan Zwinkels en Kostić).",
+     "In die brief een update over dubbele belasting en de Europese ruimte daarvoor (staatssecretaris van Financiën).",
+     "Het Trimbos-advies over de statiegeldloterij nog eens bekijken en met de sector bespreken (aan Kostić)."
+    ],
+    "doorgeleid": [],
+    "moties": "Zalinyan (PRO) vroeg een tweeminutendebat aan; moties volgen daar.",
+    "vervolg": [
+     "Tweeminutendebat Circulaire economie.",
+     "Commissiedebat Circulaire economie op 3 februari 2027."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/197151",
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-08/klimaat/thorbeckezaal/circulaire-economie-voortzetting-tweede-termijn-18-00",
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
