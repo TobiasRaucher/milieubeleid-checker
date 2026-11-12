@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T19:59:32Z",
+ "bijgewerkt": "2026-11-12T20:00:28Z",
  "debatten": [
   {
    "id": "246687",
@@ -1287,6 +1287,110 @@
    },
    "bron": "https://gehoord.de/beraadslagingen/209110",
    "video": "https://debatdirect.tweedekamer.nl/2026-09-10/klimaat/wttewaall-van-stoetwegenzaal/kabinetsreactie-op-het-advies-van-het-nationaal-burgerberaad-klimaat-11-30",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "32849",
+   "datum": "2026-04-16",
+   "type": "Commissiedebat",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Verduurzaming industrie",
+   "dossiers": [
+    "industrie",
+    "klimaatbeleid"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer en staatssecretaris De Bat (KGG)",
+   "activiteit": "2026A00775",
+   "aanzet": "Commissiedebat over de verduurzaming en het vestigingsklimaat van de industrie, kort na de energieprijsschok rond de Straat van Hormuz. Op de agenda stonden onder meer de nieuwe maatwerkaanpak en clusteraanpak, de tegemoetkoming in de elektriciteitskosten (IKC en 'envelop'), het afschaffen van de nationale CO2-heffing, het ETS en CCS (Aramis).",
+   "gist": "Alle fracties maken zich zorgen over sluitingen in de chemie en de positie van de industrie, maar verschillen sterk in de oplossing. PvdD wil keuzes en afbouw van fossiele industrie; PRO en CDA willen een aanpak voor nieuwe groene industrie; D66 noemt beprijzing (ETS), bescherming (CBAM) en vraagcreatie de oplossing; VVD, JA21, SGP, BBB en FVD leggen de nadruk op lagere energiekosten, randvoorwaarden en voorspelbaar beleid. Het kabinet ('groot moet groener, groen moet groter') zet in op het naar voren halen van de IKC, een clusteraanpak en CCS, maar erkent dat er geld tekortkomt voor alle ambities.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PvdD",
+      "spreker": "Ines Kostić",
+      "positie": "Nederland consumeert alsof er drie aardbollen zijn. Wil forse energiebesparing door grote bedrijven, afscheid van fossiele chemie, kunstmest en raffinage, en een wetenschappelijk onderbouwde analyse van wat de industrievisie betekent voor klimaat, natuur en ruimte. Wil transparantie over Tata Steel vóór de maatwerkafspraak; vroeg een tweeminutendebat aan.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=21768"
+     },
+     {
+      "fractie": "FVD",
+      "spreker": "Tom Russcher",
+      "positie": "Klimaatbeleid en koolstofbeprijzing verzwakken de concurrentiepositie; versnellen van verduurzaming is 'vuur bestrijden met benzine'. Wijst op een rapport voor de chemiesector: de productiecapaciteit daalde sinds 2022 met ongeveer 20%.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=21843"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Wil industriepolitiek voor nieuwe groene industrie, met vraag-, investerings- en grondstoffenbeleid. Steunt CfD's en Flex-E, maar vraagt waarom het budget voor Flex-E zoveel lager is dan de vraag; kritisch op ongerichte energiecompensatie en wil voorwaarden. Pleit voor een 'deltaplan groene industrie' en vraagt hoe het financieringsgat na 2030 wordt gedicht.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=21957"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "Wil een strategie om groene bedrijven naar Nederland te halen; vraagt wanneer de nationale CO2-heffing precies wordt afgeschaft en of bedrijven tot die tijd nog moeten betalen, en of de maatwerkaanpak eigen financiering nodig heeft.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=22122"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "De industrie stond al onder druk vóór de crisis; vraagt waarom de verlaging van de elektriciteitskosten pas in 2028 stond en wil die naar voren halen, plus betaalbare energie, gaszekerheid en kernenergie (SMR's).",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=22241"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Economie, klimaat en veiligheid horen bij elkaar; Nederland moet niet volledig afhankelijk worden van productie buiten Europa. Steunt Europese voorstellen voor de industrie en een stikstofvrijstelling voor verduurzamingsprojecten; maakt zich zorgen over de voortgang van CCS-project Aramis.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=22408"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Grootschalige CO2-opslag is nodig om de doelen te halen, maar de glastuinbouw heeft ook CO2 nodig. Bezorgd over afzwakking van het ETS en over het gat dat het afschaffen van de CO2-heffing slaat in lopende maatwerkafspraken; vraagt 'lef, doorpakken en ragfijne coördinatie'.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=22447"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Voorspelbaar en consistent beleid levert meer op dan hoge ambities met 'jojo-maatregelen'; vraagt langjarige zekerheid over subsidies, betaalbare nettarieven en netaansluitingen, en verbreding van Flex-E.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=22470"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Verduurzaming is de oplossing, niet het probleem. Wil drie instrumenten die samenwerken: beprijzen (ETS), beschermen (CBAM) en behoefte creëren (groene vraag); vraagt de minister te bevestigen dat het pad naar nul uitstoot in het ETS blijft.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=22517"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Henk Vermeer (deels voorzitter)",
+      "positie": "Wil een sterke industrie, met aandacht voor regionale en kleinere bedrijven in clusters, en eerst de randvoorwaarden (net, energie) op orde voordat er nieuwe eisen komen.",
+      "link": "https://gehoord.de/beraadslagingen/32849?segment=23875"
+     }
+    ],
+    "kabinet": [
+     "De transitie is 'een knop die je opendraait', geen aan-uitschakelaar; Nederland loopt achter op de ambities, maar maakt volgens de minister voortgang ondanks de complexiteit.",
+     "De staatssecretaris werkt aan een clusteraanpak (eerst Limburg, dan Zeeland en Rotterdam) waarin ook nieuwe bedrijven en ketens een plek krijgen. Flex-E wordt geëvalueerd, aangepast en verbreed.",
+     "Voor CCS-project Aramis wordt een investeringsbesluit in 2027 verwacht; er zijn middelen gereserveerd voor deelname van EBN en voor het afdekken van risico's, en de SDE++ wordt beter afgestemd op CCS.",
+     "Voor de zomer volgt een routekaart naar 7 gigawatt kernenergie, met een rol voor SMR's.",
+     "Er is niet voor alle ambities geld; het kabinet zoekt 'creatieve' andere instrumenten en komt begin 2027 met een analyse van aanvullende maatregelen."
+    ],
+    "toezeggingen": [
+     "In mei 2026 een brief over mogelijke versnelling van de openstelling van de IKC, met alle afwegingen.",
+     "Direct na de zomer een integrale aanpak voor het concurrentievermogen van de industrie, inclusief de chemie en een vergelijking met buurlanden; daarbij worden rapporten over ruimte, klimaat en natuur benut (aan Kostić).",
+     "Een integrale reflectie op de naleving door Tata Steel bij de maatwerkafspraak (niet al in mei).",
+     "De aannames worden meegenomen in de consultatie (aan Jumelet)."
+    ],
+    "doorgeleid": [],
+    "moties": "Kostić (PvdD) vroeg een tweeminutendebat aan; moties volgen daar.",
+    "vervolg": [
+     "Tweeminutendebat Verduurzaming industrie.",
+     "Integrale industrieaanpak na de zomer 2026.",
+     "Commissiedebat Netcongestie (22 april 2026)."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/32849",
+   "video": "https://debatdirect.tweedekamer.nl/2026-04-16/klimaat/thorbeckezaal/verduurzaming-industrie-10-00",
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
