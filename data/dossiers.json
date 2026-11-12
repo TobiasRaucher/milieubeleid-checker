@@ -1,13 +1,35 @@
 {
   "_uitleg": "Handmatig (door Claude) bijgehouden wetgevingsdossiers. De pipeline vult data/tk/ aan met moties, amendementen en stemmingen.",
+  "bijgewerkt": "2026-11-12T15:49:00Z",
   "fasen": [
-    { "code": "voorbereiding", "naam": "Voorbereiding" },
-    { "code": "consultatie", "naam": "Internetconsultatie" },
-    { "code": "raad-van-state", "naam": "Raad van State" },
-    { "code": "tk", "naam": "Tweede Kamer" },
-    { "code": "ek", "naam": "Eerste Kamer" },
-    { "code": "staatsblad", "naam": "Staatsblad" },
-    { "code": "in-werking", "naam": "In werking" }
+    {
+      "code": "voorbereiding",
+      "naam": "Voorbereiding"
+    },
+    {
+      "code": "consultatie",
+      "naam": "Internetconsultatie"
+    },
+    {
+      "code": "raad-van-state",
+      "naam": "Raad van State"
+    },
+    {
+      "code": "tk",
+      "naam": "Tweede Kamer"
+    },
+    {
+      "code": "ek",
+      "naam": "Eerste Kamer"
+    },
+    {
+      "code": "staatsblad",
+      "naam": "Staatsblad"
+    },
+    {
+      "code": "in-werking",
+      "naam": "In werking"
+    }
   ],
   "dossiers": [
     {
@@ -20,17 +42,35 @@
       "fase": "voorbereiding",
       "prioriteit": true,
       "samenvatting": "Op 28 januari 2026 oordeelde de rechtbank Den Haag dat de Staat de mensenrechten van inwoners van Bonaire schendt. De Staat moet binnen 6 maanden de resterende Nederlandse emissieruimte (eerlijk deel van het mondiale budget voor 1,5 °C) inzichtelijk maken en binnen 18 maanden nieuwe bindende reductiedoelen vastleggen, inclusief tussendoelen. Volgens de minister is daarvoor een wijziging van de Klimaatwet nodig.",
-      "laatsteStap": { "datum": "2026-09-30", "tekst": "Minister (KGG) in commissiedebat Voortgang klimaatbeleid: streven is het wetsvoorstel in Q4 2026 in internetconsultatie te brengen; werkhypothese Raad van State-advies begin 2027." },
-      "volgendeStap": { "datum": "2026-Q4", "tekst": "Internetconsultatie (gepland Q4 2026). Op 12-11-2026 nog geen consultatie gevonden." },
-      "deadline": { "datum": "2027-07-28", "tekst": "Door de rechtbank genoemde datum waarop de wetswijziging in werking moet zijn." },
+      "laatsteStap": {
+        "datum": "2026-09-30",
+        "tekst": "Minister (KGG) in commissiedebat Voortgang klimaatbeleid: streven is het wetsvoorstel in Q4 2026 in internetconsultatie te brengen; werkhypothese Raad van State-advies begin 2027."
+      },
+      "volgendeStap": {
+        "datum": "2026-Q4",
+        "tekst": "Internetconsultatie (gepland Q4 2026). Op 12-11-2026 nog geen consultatie gevonden."
+      },
+      "deadline": {
+        "datum": "2027-07-28",
+        "tekst": "Door de rechtbank genoemde datum waarop de wetswijziging in werking moet zijn."
+      },
       "kanttekeningen": [
         "Het kabinet heeft schorsing van de uitvoerbaarheid bij voorraad gevraagd en is in hoger beroep (genoemd door de minister op 30-09-2026).",
         "Kamerleden (PRO, PvdD) vragen om externe toetsing van het emissiebudget door de Wetenschappelijke Klimaatraad of het PBL; de minister noemde betrokkenheid van de planbureaus."
       ],
-      "debatten": ["246687", "54894"],
+      "debatten": [
+        "246687",
+        "54894"
+      ],
       "bronnen": [
-        { "titel": "Commissiedebat Voortgang klimaatbeleid (30-09-2026), antwoord minister", "url": "https://gehoord.de/beraadslagingen/246687?segment=215332" },
-        { "titel": "Greenpeace: briefing vonnis Klimaatzaak Bonaire", "url": "https://www.greenpeace.org/nl/algemeen/74130/briefing-vonnis-klimaatzaak-bonaire/" }
+        {
+          "titel": "Commissiedebat Voortgang klimaatbeleid (30-09-2026), antwoord minister",
+          "url": "https://gehoord.de/beraadslagingen/246687?segment=215332"
+        },
+        {
+          "titel": "Greenpeace: briefing vonnis Klimaatzaak Bonaire",
+          "url": "https://www.greenpeace.org/nl/algemeen/74130/briefing-vonnis-klimaatzaak-bonaire/"
+        }
       ]
     },
     {
@@ -43,14 +83,28 @@
       "fase": "staatsblad",
       "prioriteit": false,
       "samenvatting": "Verzamelwet die onder meer de Wetenschappelijke Klimaatraad een permanente wettelijke basis geeft in de Klimaatwet en de jaarlijkse beleidscyclus aanpast. De reductiedoelen van de Klimaatwet veranderen niet.",
-      "laatsteStap": { "datum": "2025-11-13", "tekst": "Wet gepubliceerd. Inwerkingtreding per onderdeel bij koninklijk besluit." },
+      "laatsteStap": {
+        "datum": "2025-11-13",
+        "tekst": "Wet gepubliceerd. Inwerkingtreding per onderdeel bij koninklijk besluit."
+      },
       "volgendeStap": null,
       "stemmingen": [
-        { "kamer": "TK", "datum": "2025-10-02", "uitslag": "aangenomen (hamerstuk)" },
-        { "kamer": "EK", "datum": "2025-10-28", "uitslag": "aangenomen (hamerstuk)" }
+        {
+          "kamer": "TK",
+          "datum": "2025-10-02",
+          "uitslag": "aangenomen (hamerstuk)"
+        },
+        {
+          "kamer": "EK",
+          "datum": "2025-10-28",
+          "uitslag": "aangenomen (hamerstuk)"
+        }
       ],
       "bronnen": [
-        { "titel": "Eerste Kamer: 36776 Verzamelwet KGG", "url": "https://www.eerstekamer.nl/wetsvoorstel/36776_verzamelwet_kgg_20" }
+        {
+          "titel": "Eerste Kamer: 36776 Verzamelwet KGG",
+          "url": "https://www.eerstekamer.nl/wetsvoorstel/36776_verzamelwet_kgg_20"
+        }
       ]
     },
     {
@@ -63,10 +117,16 @@
       "fase": "in-werking",
       "prioriteit": false,
       "samenvatting": "Brengt de Klimaatwet in lijn met de Europese klimaatwet, met onder meer het doel van ten minste 55% reductie in 2030.",
-      "laatsteStap": { "datum": "2023-07-22", "tekst": "In werking getreden (Wet van 10 juli 2023, Stb. 2023, 271)." },
+      "laatsteStap": {
+        "datum": "2023-07-22",
+        "tekst": "In werking getreden (Wet van 10 juli 2023, Stb. 2023, 271)."
+      },
       "volgendeStap": null,
       "bronnen": [
-        { "titel": "Memorie van toelichting Verzamelwet KGG (verwijzing naar Stb. 2023, 271)", "url": "https://internetconsultatie.nl/verzamelwetklimaatengroenegroei/document/13143" }
+        {
+          "titel": "Memorie van toelichting Verzamelwet KGG (verwijzing naar Stb. 2023, 271)",
+          "url": "https://internetconsultatie.nl/verzamelwetklimaatengroenegroei/document/13143"
+        }
       ]
     },
     {
@@ -79,10 +139,16 @@
       "fase": "in-werking",
       "prioriteit": false,
       "samenvatting": "Basiswet met een kader voor het onomkeerbaar en stapsgewijs terugdringen van de Nederlandse broeikasgasemissies. Sindsdien gewijzigd via 36169 en 36776.",
-      "laatsteStap": { "datum": "2019", "tekst": "In werking sinds 2019." },
+      "laatsteStap": {
+        "datum": "2019",
+        "tekst": "In werking sinds 2019."
+      },
       "volgendeStap": null,
       "bronnen": [
-        { "titel": "OpenTK: kamerstukdossier 34534", "url": "https://berthub.eu/tkconv/ksd.html?ksd=34534&toevoeging=" }
+        {
+          "titel": "OpenTK: kamerstukdossier 34534",
+          "url": "https://berthub.eu/tkconv/ksd.html?ksd=34534&toevoeging="
+        }
       ]
     }
   ]

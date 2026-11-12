@@ -1,13 +1,61 @@
 {
   "_uitleg": "Handmatig bijgehouden agenda-items en mijlpalen. Geplande Kameractiviteiten komen ook automatisch uit data/tk/activiteiten.json.",
+  "bijgewerkt": "2026-11-12T15:49:00Z",
   "items": [
-    { "datum": "2026-11-12", "tijd": "19:00", "type": "Plenair debat", "titel": "Advies van het Nationaal Burgerberaad Klimaat", "sector": "klimaat-energie", "url": "https://gehoord.de/beraadslagingen/337716" },
-    { "datum": "2026-11-25", "type": "Commissiedebat", "titel": "Netcongestie en Elektriciteitsnet", "sector": "klimaat-energie", "url": "https://www.tweedekamer.nl/downloads/document?id=2026D56078" },
-    { "datum": "2026-12-03", "type": "Commissiedebat", "titel": "Leveringszekerheid", "sector": "klimaat-energie", "url": "https://www.tweedekamer.nl/downloads/document?id=2026D56078" },
-    { "datum": null, "type": "Tweeminutendebat", "titel": "Tweeminutendebat Voortgang klimaatbeleid (aangevraagd door Van Oosterhout, PRO); datum nog niet bekend", "sector": "klimaat-energie", "url": "https://gehoord.de/beraadslagingen/246687?segment=215545" },
-    { "datum": "2026-Q4", "type": "Mijlpaal", "titel": "Internetconsultatie wijziging Klimaatwet (Bonaire-vonnis), gepland", "sector": "klimaat-energie", "dossier": "klimaatwet-bonaire" },
-    { "datum": "2026-12", "type": "Mijlpaal", "titel": "Nationale adaptatiestrategie incl. Caribisch Nederland verwacht (minister IenW)", "sector": "water-adaptatie" },
-    { "datum": "2027-voorjaar", "type": "Mijlpaal", "titel": "Voorjaarsbesluitvorming over aanvullend klimaatbeleid (pakket richting 2030/2040)", "sector": "klimaat-energie" },
-    { "datum": "2027-07-28", "type": "Deadline", "titel": "Wijziging Klimaatwet moet in werking zijn (vonnis Klimaatzaak Bonaire)", "sector": "klimaat-energie", "dossier": "klimaatwet-bonaire" }
+    {
+      "datum": "2026-11-12",
+      "tijd": "19:00",
+      "type": "Plenair debat",
+      "titel": "Advies van het Nationaal Burgerberaad Klimaat",
+      "sector": "klimaat-energie",
+      "url": "https://gehoord.de/beraadslagingen/337716"
+    },
+    {
+      "datum": "2026-11-25",
+      "type": "Commissiedebat",
+      "titel": "Netcongestie en Elektriciteitsnet",
+      "sector": "klimaat-energie",
+      "url": "https://www.tweedekamer.nl/downloads/document?id=2026D56078"
+    },
+    {
+      "datum": "2026-12-03",
+      "type": "Commissiedebat",
+      "titel": "Leveringszekerheid",
+      "sector": "klimaat-energie",
+      "url": "https://www.tweedekamer.nl/downloads/document?id=2026D56078"
+    },
+    {
+      "datum": null,
+      "type": "Tweeminutendebat",
+      "titel": "Tweeminutendebat Voortgang klimaatbeleid (aangevraagd door Van Oosterhout, PRO); datum nog niet bekend",
+      "sector": "klimaat-energie",
+      "url": "https://gehoord.de/beraadslagingen/246687?segment=215545"
+    },
+    {
+      "datum": "2026-Q4",
+      "type": "Mijlpaal",
+      "titel": "Internetconsultatie wijziging Klimaatwet (Bonaire-vonnis), gepland",
+      "sector": "klimaat-energie",
+      "dossier": "klimaatwet-bonaire"
+    },
+    {
+      "datum": "2026-12",
+      "type": "Mijlpaal",
+      "titel": "Nationale adaptatiestrategie incl. Caribisch Nederland verwacht (minister IenW)",
+      "sector": "water-adaptatie"
+    },
+    {
+      "datum": "2027-voorjaar",
+      "type": "Mijlpaal",
+      "titel": "Voorjaarsbesluitvorming over aanvullend klimaatbeleid (pakket richting 2030/2040)",
+      "sector": "klimaat-energie"
+    },
+    {
+      "datum": "2027-07-28",
+      "type": "Deadline",
+      "titel": "Wijziging Klimaatwet moet in werking zijn (vonnis Klimaatzaak Bonaire)",
+      "sector": "klimaat-energie",
+      "dossier": "klimaatwet-bonaire"
+    }
   ]
 }

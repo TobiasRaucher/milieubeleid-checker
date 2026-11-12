@@ -17,6 +17,12 @@
     if ((m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d))) return `${+m[3]} ${MAANDEN[+m[2] - 1]} ${m[1]}`;
     return d;
   }
+  // "hh:mm dd/mm/yyyy" in Nederlandse tijd
+  function fmtTijdstip(d) {
+    const p = Object.fromEntries(new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit", year: "numeric", hour12: false })
+      .formatToParts(d).map((x) => [x.type, x.value]));
+    return `${p.hour}:${p.minute} ${p.day}/${p.month}/${p.year}`;
+  }
   // sorteersleutel voor vage datums ("2026-Q4" -> 2026-12-31 etc.)
   function sortKey(d) {
     if (!d) return "9999";
@@ -49,9 +55,9 @@
       load("data/tk/meta.json", {}),
     ]);
     S.data = { config, dossiers, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta };
-    const laatsteSamenvatting = debatten.debatten.map((d) => d.samengevatOp).sort().pop();
-    $("#stamp").textContent = `Kamerdata bijgewerkt: ${meta.bijgewerkt ? fmtDatum(meta.bijgewerkt) : "nog niet"}` +
-      (laatsteSamenvatting ? ` · samenvattingen: ${fmtDatum(laatsteSamenvatting)}` : "");
+    // meest recente moment waarop data of samenvattingen zijn bijgewerkt
+    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, dossiers.bijgewerkt, agenda.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
+    $("#stamp").textContent = stempels.length ? `Laatste update: ${fmtTijdstip(new Date(Math.max(...stempels)))}` : "Laatste update: onbekend";
     renderSectorFilter();
     window.addEventListener("hashchange", route);
     route();

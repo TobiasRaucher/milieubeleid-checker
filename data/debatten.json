@@ -1,5 +1,6 @@
 {
   "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
+  "bijgewerkt": "2026-11-12T15:49:00Z",
   "debatten": [
     {
       "id": "246687",
@@ -8,7 +9,9 @@
       "commissie": "Klimaat en Groene Groei",
       "titel": "Voortgang klimaatbeleid",
       "sector": "klimaat-energie",
-      "dossiers": ["klimaatwet-bonaire"],
+      "dossiers": [
+        "klimaatwet-bonaire"
+      ],
       "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
       "gist": "De Klimaat- en Energieverkenning laat zien dat het wettelijke 2030-doel (55%) vrijwel zeker niet wordt gehaald. PRO, PvdD en D66 willen nu al extra maatregelen; VVD en CDA willen aansluiten bij het Europese 2040-pakket en letten op uitvoering en concurrentiekracht; PVV en JA21 willen juist minder klimaatuitgaven. De minister bevestigt de planning voor de Klimaatwet-wijziging na het Bonaire-vonnis: consultatie Q4 2026, Raad van State begin 2027, in werking per 28 juli 2027.",
       "samenvatting": {
@@ -18,13 +21,48 @@
           "Bonaire-vonnis: de minister zegt dat de Staat het vonnis uitvoert en dat daarvoor een wijziging van de Klimaatwet nodig is. Tegelijk heeft het kabinet schorsing van de uitvoerbaarheid bij voorraad gevraagd, onder meer vanwege het meetellen van internationale lucht- en scheepvaart."
         ],
         "partijen": [
-          { "fractie": "PRO", "spreker": "Sjoukje van Oosterhout", "positie": "Wil een voorjaarspakket dat het gat naar 2030 dicht, vooraf getoetst door WKR of PBL. Vraagt een planning met data voor het Bonaire-vonnis en externe toetsing van het emissiebudget; benadrukt dat eerst het eerlijke emissiebudget moet worden bepaald en pas daarna de doelen. Pleit voor een einddatum voor olie en gas (verwijst naar Frankrijk). Vroeg een tweeminutendebat aan.", "link": "https://gehoord.de/beraadslagingen/246687?segment=214436" },
-          { "fractie": "PvdD", "spreker": "Christine Teunissen", "positie": "Noemt het kabinetsbeleid een 'dikke onvoldoende' van het PBL en wil niet wachten tot 2027. Vraagt een concreet plan en tijdpad voor het Bonaire-vonnis, tijdig inzicht in emissiebudget en doelen, duidelijkheid over de start van de consultatie, een afbouwpad met einddatum voor fossiele subsidies en een stop op subsidie voor houtige biomassa zonder controleerbare herkomst.", "link": "https://gehoord.de/beraadslagingen/246687?segment=214494" },
-          { "fractie": "CDA", "spreker": "Henk Jumelet", "positie": "Legt de nadruk op uitvoering: netcongestie, vergunningen, stikstof, personeelstekort. Vraagt naar steun voor koolstofverwijdering (start-ups, kenniscluster carbon management), resultaten van regionale maatwerkafspraken met de industrie, en of de KEV rekening kan houden met uitstoot door elektriciteitsexport.", "link": "https://gehoord.de/beraadslagingen/246687?segment=214521" },
-          { "fractie": "VVD", "spreker": "Alisha Müller", "positie": "Klimaatbeleid moet klimaat, economie en weerbaarheid tegelijk dienen. Wil eerst het Europese 2040-pakket afwachten en daarna bezien of nationale maatregelen nodig zijn; waarschuwt voor koolstoflekkage en de-industrialisatie. Steunt de risicoafdekking voor CO2-opslag (Aramis) en vraagt naar adaptatie (Rijncorridor, Caribisch Nederland).", "link": "https://gehoord.de/beraadslagingen/246687?segment=214563" },
-          { "fractie": "PVV", "spreker": "Alexander Kops", "positie": "Ziet weinig voortgang en vindt de klimaatuitgaven verspilling, gezien het kleine Nederlandse aandeel in de mondiale uitstoot. Wil geen aanvullend klimaatbeleid maar lagere energierekeningen; kritisch op de late openstelling van het noodfonds energie en vraagt naar huishoudens in verborgen energiearmoede.", "link": "https://gehoord.de/beraadslagingen/246687?segment=214639" },
-          { "fractie": "D66", "spreker": "Felix Klos", "positie": "Wil dat maatregelen die vóór 2030 extra klimaatwinst opleveren worden versneld en eerder aangekondigd. Vraagt in het voorjaarspakket voorstellen voor gebouwde omgeving en mobiliteit met lagere energiekosten als uitgangspunt, een einddatum voor fossiele energie en inzet op afbouw van fossiele subsidies (Europees en nationaal).", "link": "https://gehoord.de/beraadslagingen/246687?segment=214687" },
-          { "fractie": "JA21", "spreker": "Daniël van den Berg", "positie": "Vindt het klimaatbeleid onzeker en te duur. Wil realistische doelen, lagere energiebelasting en brandstofaccijns, meer kernenergie en het Groningenveld niet definitief sluiten (eigen initiatiefwet in consultatie). Riep de minister eerder op in beroep te gaan tegen het Bonaire-vonnis.", "link": "https://gehoord.de/beraadslagingen/246687?segment=214753" }
+          {
+            "fractie": "PRO",
+            "spreker": "Sjoukje van Oosterhout",
+            "positie": "Wil een voorjaarspakket dat het gat naar 2030 dicht, vooraf getoetst door WKR of PBL. Vraagt een planning met data voor het Bonaire-vonnis en externe toetsing van het emissiebudget; benadrukt dat eerst het eerlijke emissiebudget moet worden bepaald en pas daarna de doelen. Pleit voor een einddatum voor olie en gas (verwijst naar Frankrijk). Vroeg een tweeminutendebat aan.",
+            "link": "https://gehoord.de/beraadslagingen/246687?segment=214436"
+          },
+          {
+            "fractie": "PvdD",
+            "spreker": "Christine Teunissen",
+            "positie": "Noemt het kabinetsbeleid een 'dikke onvoldoende' van het PBL en wil niet wachten tot 2027. Vraagt een concreet plan en tijdpad voor het Bonaire-vonnis, tijdig inzicht in emissiebudget en doelen, duidelijkheid over de start van de consultatie, een afbouwpad met einddatum voor fossiele subsidies en een stop op subsidie voor houtige biomassa zonder controleerbare herkomst.",
+            "link": "https://gehoord.de/beraadslagingen/246687?segment=214494"
+          },
+          {
+            "fractie": "CDA",
+            "spreker": "Henk Jumelet",
+            "positie": "Legt de nadruk op uitvoering: netcongestie, vergunningen, stikstof, personeelstekort. Vraagt naar steun voor koolstofverwijdering (start-ups, kenniscluster carbon management), resultaten van regionale maatwerkafspraken met de industrie, en of de KEV rekening kan houden met uitstoot door elektriciteitsexport.",
+            "link": "https://gehoord.de/beraadslagingen/246687?segment=214521"
+          },
+          {
+            "fractie": "VVD",
+            "spreker": "Alisha Müller",
+            "positie": "Klimaatbeleid moet klimaat, economie en weerbaarheid tegelijk dienen. Wil eerst het Europese 2040-pakket afwachten en daarna bezien of nationale maatregelen nodig zijn; waarschuwt voor koolstoflekkage en de-industrialisatie. Steunt de risicoafdekking voor CO2-opslag (Aramis) en vraagt naar adaptatie (Rijncorridor, Caribisch Nederland).",
+            "link": "https://gehoord.de/beraadslagingen/246687?segment=214563"
+          },
+          {
+            "fractie": "PVV",
+            "spreker": "Alexander Kops",
+            "positie": "Ziet weinig voortgang en vindt de klimaatuitgaven verspilling, gezien het kleine Nederlandse aandeel in de mondiale uitstoot. Wil geen aanvullend klimaatbeleid maar lagere energierekeningen; kritisch op de late openstelling van het noodfonds energie en vraagt naar huishoudens in verborgen energiearmoede.",
+            "link": "https://gehoord.de/beraadslagingen/246687?segment=214639"
+          },
+          {
+            "fractie": "D66",
+            "spreker": "Felix Klos",
+            "positie": "Wil dat maatregelen die vóór 2030 extra klimaatwinst opleveren worden versneld en eerder aangekondigd. Vraagt in het voorjaarspakket voorstellen voor gebouwde omgeving en mobiliteit met lagere energiekosten als uitgangspunt, een einddatum voor fossiele energie en inzet op afbouw van fossiele subsidies (Europees en nationaal).",
+            "link": "https://gehoord.de/beraadslagingen/246687?segment=214687"
+          },
+          {
+            "fractie": "JA21",
+            "spreker": "Daniël van den Berg",
+            "positie": "Vindt het klimaatbeleid onzeker en te duur. Wil realistische doelen, lagere energiebelasting en brandstofaccijns, meer kernenergie en het Groningenveld niet definitief sluiten (eigen initiatiefwet in consultatie). Riep de minister eerder op in beroep te gaan tegen het Bonaire-vonnis.",
+            "link": "https://gehoord.de/beraadslagingen/246687?segment=214753"
+          }
         ],
         "kabinet": [
           "Bonaire: streven is het wetsvoorstel tot wijziging van de Klimaatwet in Q4 2026 in internetconsultatie te brengen; werkhypothese voor het Raad van State-advies is begin 2027; de rechtbank noemde 28 juli 2027 voor inwerkingtreding.",
@@ -61,7 +99,9 @@
       "commissie": "Klimaat en Groene Groei",
       "titel": "Rechterlijke uitspraak in de Bonaire-klimaatzaak",
       "sector": "klimaat-energie",
-      "dossiers": ["klimaatwet-bonaire"],
+      "dossiers": [
+        "klimaatwet-bonaire"
+      ],
       "bewindspersoon": null,
       "gist": "Vier juristen lichtten het vonnis toe: binnen 6 maanden de emissieruimte inzichtelijk maken, binnen 18 maanden (juli 2027) bindende reductiedoelen met tussendoelen, en vóór 2030 een adaptatieplan voor Bonaire. Mitigatie en adaptatie zijn aparte verplichtingen die elkaar niet compenseren. Kamerleden vroegen vooral naar het 'eerlijke deel' van het emissiebudget, de status van de 1,5 °C-maatstaf en de rol van de rechter.",
       "samenvatting": {
@@ -74,11 +114,36 @@
           "Greenpeace is ontvankelijk verklaard. Het meest bindende kader is KlimaSeniorinnen (klimaatneutraal rond 2050, een realistisch plan en de emissieruimte kwantificeren); over verdere concretisering, Europese uitvoering en het meetellen van lucht- en scheepvaart is meer discussie mogelijk (Wouter den Hollander, Stibbe)."
         ],
         "partijen": [
-          { "fractie": "PRO (toen GL-PvdA)", "spreker": "Sjoukje van Oosterhout", "positie": "Vroeg hoe Nederland tot een wetenschappelijk onderbouwd eerlijk deel van het emissiebudget komt, nu een gelijke verdeling volgens het vonnis betekent dat de ruimte al op is.", "link": "https://gehoord.de/beraadslagingen/54894?segment=45220" },
-          { "fractie": "CDA", "spreker": "Henk Jumelet", "positie": "Vroeg naar het verschil tussen inspannings- en resultaatverplichting en de verschuiving van 2 naar 1,5 graad.", "link": "https://gehoord.de/beraadslagingen/54894?segment=45261" },
-          { "fractie": "JA21", "spreker": "Daniël van den Berg", "positie": "Noemde 1,5 °C een onrealistisch scenario en was kritisch dat de rechter verwijst naar het hoge emissiescenario (SSP5-8.5).", "link": "https://gehoord.de/beraadslagingen/54894?segment=45289" },
-          { "fractie": "PvdD", "spreker": "Christine Teunissen", "positie": "Vroeg naar de concrete gevolgen voor inwoners van Bonaire, inclusief culturele gevolgen.", "link": "https://gehoord.de/beraadslagingen/54894?segment=45307" },
-          { "fractie": "BBB", "spreker": "Henk Vermeer (voorzitter)", "positie": "Vroeg waar de rechter volgens Den Hollander 'iets van zichzelf toevoegt' en op de stoel van de politiek gaat zitten.", "link": "https://gehoord.de/beraadslagingen/54894?segment=45331" }
+          {
+            "fractie": "PRO (toen GL-PvdA)",
+            "spreker": "Sjoukje van Oosterhout",
+            "positie": "Vroeg hoe Nederland tot een wetenschappelijk onderbouwd eerlijk deel van het emissiebudget komt, nu een gelijke verdeling volgens het vonnis betekent dat de ruimte al op is.",
+            "link": "https://gehoord.de/beraadslagingen/54894?segment=45220"
+          },
+          {
+            "fractie": "CDA",
+            "spreker": "Henk Jumelet",
+            "positie": "Vroeg naar het verschil tussen inspannings- en resultaatverplichting en de verschuiving van 2 naar 1,5 graad.",
+            "link": "https://gehoord.de/beraadslagingen/54894?segment=45261"
+          },
+          {
+            "fractie": "JA21",
+            "spreker": "Daniël van den Berg",
+            "positie": "Noemde 1,5 °C een onrealistisch scenario en was kritisch dat de rechter verwijst naar het hoge emissiescenario (SSP5-8.5).",
+            "link": "https://gehoord.de/beraadslagingen/54894?segment=45289"
+          },
+          {
+            "fractie": "PvdD",
+            "spreker": "Christine Teunissen",
+            "positie": "Vroeg naar de concrete gevolgen voor inwoners van Bonaire, inclusief culturele gevolgen.",
+            "link": "https://gehoord.de/beraadslagingen/54894?segment=45307"
+          },
+          {
+            "fractie": "BBB",
+            "spreker": "Henk Vermeer (voorzitter)",
+            "positie": "Vroeg waar de rechter volgens Den Hollander 'iets van zichzelf toevoegt' en op de stoel van de politiek gaat zitten.",
+            "link": "https://gehoord.de/beraadslagingen/54894?segment=45331"
+          }
         ],
         "kabinet": [],
         "toezeggingen": [],
