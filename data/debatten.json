@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T19:52:30Z",
+ "bijgewerkt": "2026-11-12T19:53:49Z",
  "debatten": [
   {
    "id": "246687",
@@ -936,6 +936,114 @@
    },
    "bron": "https://gehoord.de/beraadslagingen/312911",
    "video": "https://debatdirect.tweedekamer.nl/2026-11-03/landbouw-natuur-voedselkwaliteit/aletta-jacobszaal/klimaat-en-energieverkenning-in-relatie-tot-de-landbouw-17-00",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "286128",
+   "datum": "2026-10-14",
+   "type": "Commissiedebat",
+   "commissie": "Volkshuisvesting en Ruimtelijke Ordening",
+   "titel": "Klimaatbeleid gebouwde omgeving (14 en 29 oktober)",
+   "dossiers": [
+    "huishoudens-warmte",
+    "klimaatbeleid"
+   ],
+   "bewindspersoon": "Minister Boekholt-O'Sullivan (Volkshuisvesting en Ruimtelijke Ordening)",
+   "aanzet": "Commissiedebat over verduurzaming van woningen en gebouwen: isolatie, warmtepompen, warmtenetten en energiearmoede. Aanleiding was onder meer het kabinetsplan om de hybride warmtepomp vanaf 2029 de norm te maken bij vervanging van de cv-ketel. Het debat liep uit en werd op 29 oktober voortgezet.",
+   "gist": "Hoofdpunt was de normering van de hybride warmtepomp vanaf 2029. JA21, PVV, FVD, SGP en Keijzer noemen het een dure 'dwangpomp' en twijfelen aan de besparing; D66 ziet het als duidelijke norm voor bouwers en installateurs. De minister verdedigt de norm als noodzakelijke versnelling: volgens haar verbruikt een hybride warmtepomp gemiddeld 65% minder aardgas. PRO, PvdD, ChristenUnie en SGP wijzen erop dat vrijwel alle verduurzamingsregelingen in 2030 aflopen en dat corporaties geld tekortkomen, en vragen voorrang voor wijken met energiearmoede.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "JA21",
+      "spreker": "Ranjith Clemminck",
+      "positie": "Vindt dat het kabinet milieu boven de portemonnee van Nederlanders stelt; wil af van 'dwang en drang' zoals de verplichte hybride warmtepomp en vraagt lagere belastingen op energie.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229089"
+     },
+     {
+      "fractie": "FVD",
+      "spreker": "Tom Russcher",
+      "positie": "De normering maakt vervanging van een cv-ketel tot 6000 euro duurder, plus mogelijke aanpassingen. Wijst op TNO-cijfers over stijgende energierekeningen en vraagt de verplichting pas in te voeren als huishoudens er aantoonbaar op vooruitgaan; vroeg hoe er wordt gehandhaafd.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229134"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Jurgen Nobel",
+      "positie": "Steunt verduurzaming die ambitieus maar realistisch, voorspelbaar en uitvoerbaar is en de bouw van 100.000 woningen per jaar niet vertraagt. Wil overal dezelfde regels, zonder bovenwettelijke eisen van gemeenten en provincies. Wees PVV en JA21 op de afhankelijkheid van fossiele import.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229171"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Jeremy Mooiman",
+      "positie": "Geen ruimte voor nieuwe eisen nu de woonlasten hoog zijn; tegen de verplichte hybride warmtepomp (6000 tot 8000 euro plus aanpassingen) en voor het weer mogen aansluiten van nieuwbouw op gas.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229256"
+     },
+     {
+      "fractie": "PvdD",
+      "spreker": "Christine Teunissen",
+      "positie": "Isolatie en vergroening beschermen tegen hitte en verlagen de rekening. Wijst op een tekort van volgens haar 20 miljard euro bij woningcorporaties tot 2035 en vraagt meer geld voor isolatie.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229277"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Robin van Leijen",
+      "positie": "Optimistisch: in vijf jaar zijn 850.000 woningen verduurzaamd. Wil zoveel mogelijk slimme warmtepompen, snellere uitrol van warmtenetten en volle inzet op isolatie; noemt de normering in 2029 een grote stap vooruit.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229343"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Vrijwel alle financiële regelingen lopen af in 2030; vraagt wanneer er duidelijkheid komt. Heeft veel bedenkingen bij de normering en wil eerst een gedegen analyse van haalbaarheid en uitvoerbaarheid, ook voor corporaties.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229462"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Suzanne Kröger",
+      "positie": "De doelen voor isolatie, CO2 en warmtenetten worden waarschijnlijk niet gehaald en na 2030 is er geen budget. Wil voorrang voor de ongeveer 200 wijken met veel energiearmoede, behoud van de collectieve wijkaanpak (participatiecoalitie), sociale leasing bij de warmtepomp en duidelijkheid over welke wijken een warmtenet krijgen. Wil dat de motie over nestkastjes in nieuwbouw wordt uitgevoerd.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229478"
+     },
+     {
+      "fractie": "Lid Keijzer",
+      "spreker": "Mona Keijzer",
+      "positie": "Noemt de normering onrealistisch en oneerlijk, in feite een verbod op de cv-ketel: een hybride warmtepomp kost al gauw 8000 euro plus aanpassingen, en lagere energiekosten zijn niet zeker door hogere gasbelasting, bijmenging van groen gas en ETS2.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229560"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Vraagt duidelijkheid over financiering van verduurzaming na 2030; nam het in een interruptie op voor de minister in de ophef over haar interview over woningbouw en migratie.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=229232"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Hanneke Steen (tevens voorzitter)",
+      "positie": "Vroeg hoe initiatieven tegen energiearmoede in steden buiten de NPLV-gebieden worden ondersteund, en naar de rol van groen gas in wijken.",
+      "link": "https://gehoord.de/beraadslagingen/286128?segment=230076"
+     }
+    ],
+    "kabinet": [
+     "In vijf jaar zijn ruim 850.000 woningen verduurzaamd en in 2025 zijn bijna 300.000 subsidies en leningen verstrekt, vooral voor woningen met slechte labels. Het kabinet zet in op het isolatieoffensief, energiefixers, het Energiehuis en het noodfonds.",
+     "De vervanging van cv-ketels loopt achter; de normering van de hybride warmtepomp per 2029 is een 'logische tussenstap', geen einddoel. Volgens de minister verbruikt een hybride warmtepomp gemiddeld 65% minder aardgas en is de CO2-uitstoot 30% lager.",
+     "De normering loopt via het Besluit bouwwerken leefomgeving en gecertificeerde installateurs; handhaving in uitzonderingsgevallen ligt bij gemeenten.",
+     "De beschikbare middelen voor energiearmoede blijven gericht op de NPLV-gebieden; andere gemeenten moeten daarvan leren. Groen gas wil de minister niet inzetten voor wijken, maar voor complexere toepassingen."
+    ],
+    "toezeggingen": [
+     "Vóór de jaarwisseling een brief met een reactie op de motie-Klos over zonnepanelen in de huursector.",
+     "Vóór het eind van het jaar een brief over groen in en om de stad, met de uitvoering van een motie-Kostić.",
+     "Voorjaar 2027 een brief met voorbeelden van onduidelijkheden rond bovenwettelijke eisen (aan Nobel).",
+     "Dit najaar een brief, na overleg met RIVM, GGD'en en VWS, over een realistische norm voor schimmel.",
+     "Nog eens kijken naar landelijke steun voor de participatiecoalitie, zonder geld toe te zeggen (aan Kröger)."
+    ],
+    "doorgeleid": [],
+    "moties": "Een tweeminutendebat werd aangevraagd; moties volgen daar.",
+    "vervolg": [
+     "Tweeminutendebat Klimaatbeleid gebouwde omgeving.",
+     "Debat Staat van de volkshuisvesting."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/286128",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-14/binnenlandse-zaken/troelstrazaal/klimaatbeleid-gebouwde-omgeving-10-00",
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
