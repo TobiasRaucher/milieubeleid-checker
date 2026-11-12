@@ -7525,6 +7525,784 @@
   "zoekterm": "stikstof"
  },
  {
+  "id": "d461faf2-2e8b-4387-a842-7d9774a6bc46",
+  "nummer": "2026Z22342",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Gewijzigde motie van de leden Kostic en Teunissen over zich inzetten voor verplichte, gestandaardiseerde en zo veel mogelijk publiek toegankelijke rapportage door datacenters en andere digitale infrastructuur (t.v.v. 21501-33-1245)",
+  "citeertitel": null,
+  "gestartOp": "2026-10-27",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-27",
+    "stemmen": [
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 61,
+   "tegen": 89,
+   "datum": "2026-10-27"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z22342"
+ },
+ {
+  "id": "9c627f6c-2c82-416c-b065-2c9516ebb5f0",
+  "nummer": "2026Z22364",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van den Berg over niet akkoord gaan met een Europees bindend elektrificatiedoel ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-15",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-27",
+    "stemmen": [
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-15",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 91,
+   "tegen": 59,
+   "datum": "2026-10-27"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z22364"
+ },
+ {
+  "id": "bccf574f-c789-4bc6-b086-7f1f06d67f53",
+  "nummer": "2026Z22367",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Klos over inzicht geven in de verwachte ontwikkeling van de nettarieven en het aandeel daarvan in de energierekening van huishoudens en bedrijven ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-15",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.C.O. Klos",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-27",
+    "stemmen": [
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-15",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 150,
+   "tegen": 0,
+   "datum": "2026-10-27"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z22367"
+ },
+ {
+  "id": "ea8b32ae-3ddb-4b9c-bd25-bede4d56f8a0",
+  "nummer": "2026Z22363",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van Oosterhout over een bindend Europees uitfaseerpad met einddatum voor fossielebrandstofsubsidies als onderdeel van het post-2030-kader ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-15",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-15",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-27",
+    "stemmen": [
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 61,
+   "tegen": 89,
+   "datum": "2026-10-27"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z22363"
+ },
+ {
+  "id": "8800573f-17a2-4715-b7bd-fa4ace2d86ee",
+  "nummer": "2026Z22365",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van den Berg over ETS2 betrekken bij de lopende herziening van het Europese emissiehandelssysteem ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-15",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-15",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-27",
+    "stemmen": [
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 54,
+   "tegen": 96,
+   "datum": "2026-10-27"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z22365"
+ },
+ {
   "id": "1ad59464-0c8b-43d2-813c-56fbff29a8e0",
   "nummer": "2026Z22491",
   "soort": "Motie",
@@ -8932,6 +9710,155 @@
    "klimaat-energie"
   ],
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21691"
+ },
+ {
+  "id": "e10417d9-880d-4f40-a1a7-2bc134788536",
+  "nummer": "2026Z21515",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Gewijzigde motie van het lid Van den Berg over een inventarisatie om aantoonbare Nederlandse achterstanden in compensatie van energiekosten in kaart te brengen (t.v.v. 21501-08-1052)",
+  "citeertitel": null,
+  "gestartOp": "2026-10-08",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-08",
+    "stemmen": [
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 96,
+   "tegen": 53,
+   "datum": "2026-10-08"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21515"
  },
  {
   "id": "f36f9d94-1bf4-4e81-9918-006dcb2a80ce",
@@ -10680,6 +11607,742 @@
    "water-adaptatie"
   ],
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21699"
+ },
+ {
+  "id": "647e2e5c-81c0-45a1-8f56-29138f9391bf",
+  "nummer": "2026Z21383",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van het lid Van den Berg over bindende Europese afspraken over gelijke compensatiepercentages, berekeningsregels en toelatingsvoorwaarden voor vergelijkbare bedrijven",
+  "citeertitel": null,
+  "gestartOp": "2026-10-07",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-10-07",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
+    "stemmingssoort": null,
+    "datum": "2026-10-08",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21383"
+ },
+ {
+  "id": "e0e6679c-b685-4c01-8580-36b01b4c708c",
+  "nummer": "2026Z21388",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van het lid Van Oosterhout over pleiten voor een Europese roadmap om fossiel uit te faseren",
+  "citeertitel": null,
+  "gestartOp": "2026-10-07",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-07",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-08",
+    "stemmen": [
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 79,
+   "tegen": 70,
+   "datum": "2026-10-08"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21388"
+ },
+ {
+  "id": "508d737d-bf7d-48f3-8681-507bd0bfd128",
+  "nummer": "2026Z21387",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Van Oosterhout en Kröger over zich in het kader van de ETS-onderhandelingen hardmaken voor het beprijzen van niet-CO2-effecten van de luchtvaart",
+  "citeertitel": null,
+  "gestartOp": "2026-10-07",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
+    "stemmingssoort": null,
+    "datum": "2026-10-08",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-10-07",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21387"
+ },
+ {
+  "id": "fadc89f3-d295-49f8-a7f2-5baa07b273c8",
+  "nummer": "2026Z21385",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van het lid Klos over zich ervoor inzetten dat internationale koolstofkredieten geen onderdeel worden van het EU ETS ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-07",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.C.O. Klos",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-10-08",
+    "stemmen": []
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-07",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21385"
+ },
+ {
+  "id": "6812bbad-522c-43e4-ae21-6239730db2b6",
+  "nummer": "2026Z21386",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Van Oosterhout en Kröger over de voorgestelde uitbreiding van de ETS-reikwijdte ondersteunen en een constructieve houding aannemen ten aanzien van verdere uitbreiding",
+  "citeertitel": null,
+  "gestartOp": "2026-10-07",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-10-07",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
+    "stemmingssoort": null,
+    "datum": "2026-10-08",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21386"
+ },
+ {
+  "id": "a8c4ed71-5b16-438a-8fb7-a204069c2bc5",
+  "nummer": "2026Z21381",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van het lid Müller c.s. over de steun voor het voorgestelde conditionaliteitsprincipe bij gratis emissierechten heroverwegen ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-07",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. Müller",
+    "fractie": "VVD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "H.G. Jumelet",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-08",
+    "stemmen": [
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-07",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 93,
+   "tegen": 56,
+   "datum": "2026-10-08"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21381"
+ },
+ {
+  "id": "a4166571-8c7b-4893-855a-eecb2f25d714",
+  "nummer": "2026Z21382",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van het lid Van den Berg over een concreet voorstel om aantoonbare Nederlandse achterstanden in compensatie van energiekosten weg te nemen ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-07",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-07",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21382"
+ },
+ {
+  "id": "adde11e1-5883-45a5-be71-3351597d3c77",
+  "nummer": "2026Z21248",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Kathmann en Dassen over het standpunt innemen dat het trainen van AI-modellen op Europese data alleen onder voorwaarden mogelijk blijft ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-06",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "B.C. Kathmann",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-06",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-08",
+    "stemmen": [
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 89,
+   "tegen": 60,
+   "datum": "2026-10-08"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21248"
  },
  {
   "id": "5dec9b15-2488-4f46-81d1-c47ff366a9ef",
@@ -12605,6 +14268,489 @@
    "klimaat-energie"
   ],
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20311"
+ },
+ {
+  "id": "42fc3f99-318d-42a3-be23-226572b20f05",
+  "nummer": "2026Z20416",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Zalinyan en Kostić over de gezondheid van burgers en hun omgeving beschermen als zwaarwegend publiek belang ",
+  "citeertitel": null,
+  "gestartOp": "2026-09-29",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-09-29",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-09-29",
+    "stemmen": [
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Niet deelgenomen",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 77,
+   "tegen": 70,
+   "datum": "2026-09-29"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20416"
+ },
+ {
+  "id": "7d20e3a4-3252-4e77-ad41-6450a48129c3",
+  "nummer": "2026Z20413",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Kostić en Zalinyan over opkomen voor Nederlandse burgers en geen steun verlenen voor de Milieuomnibus door zich te onthouden van stemming",
+  "citeertitel": null,
+  "gestartOp": "2026-09-29",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-09-29",
+    "stemmen": [
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Niet deelgenomen",
+      "zetels": 2
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-09-29",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 27,
+   "tegen": 120,
+   "datum": "2026-09-29"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20413"
+ },
+ {
+  "id": "61392c1f-93ca-44b7-b072-75f831530a77",
+  "nummer": "2026Z20415",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Kostić en Zalinyan over zich in Europees verband inzetten om artikel 8 van de Milieuomnibus zodanig aan te passen dat deze uitsluitend van toepassing is op diersoorten met een gunstige staat van instandhouding",
+  "citeertitel": null,
+  "gestartOp": "2026-09-29",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-09-29",
+    "stemmen": [
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Niet deelgenomen",
+      "zetels": 2
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-09-29",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 75,
+   "tegen": 72,
+   "datum": "2026-09-29"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20415"
  },
  {
   "id": "675682b6-648b-426c-8984-01d85b669230",
@@ -15423,6 +17569,172 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z20003"
  },
  {
+  "id": "e4f9b8fb-23ca-4a08-8d1e-16133944a7d7",
+  "nummer": "2026Z19789",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van Oosterhout c.s. over zich inspannen om bidirectioneel laden de standaard te maken voor nieuwe elektrische auto’s",
+  "citeertitel": null,
+  "gestartOp": "2026-09-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H.E. de Hoop",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "F.C.O. Klos",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-09-24",
+    "stemmen": [
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-09-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 113,
+   "tegen": 37,
+   "datum": "2026-09-24"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z19789"
+ },
+ {
   "id": "49a3fec7-e41b-4a94-b767-4a5d8546282b",
   "nummer": "2026Z19790",
   "soort": "Motie",
@@ -15586,10 +17898,280 @@
    "datum": "2026-10-27"
   },
   "sectoren": [
-   "water-adaptatie"
+   "klimaat-energie"
   ],
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z19790",
-  "zoekterm": "drinkwater"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z19790"
+ },
+ {
+  "id": "dee1dda6-44f7-4765-adea-6443dda78955",
+  "nummer": "2026Z19793",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Kostić en Teunissen over zich inzetten voor bindende normen voor de energie- en milieuprestaties van datacenters",
+  "citeertitel": null,
+  "gestartOp": "2026-09-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-09-24",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
+    "stemmingssoort": null,
+    "datum": "2026-09-24",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-27",
+    "stemmen": [
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 61,
+   "tegen": 89,
+   "datum": "2026-10-27"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z19793"
+ },
+ {
+  "id": "241ee0f6-d5eb-4d1d-b468-8c5d5bd55f74",
+  "nummer": "2026Z19791",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Kostić en Teunissen over zich inzetten voor verplichte, gestandaardiseerde en publiek toegankelijke rapportage door datacenters en andere digitale infrastructuur",
+  "citeertitel": null,
+  "gestartOp": "2026-09-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Verzocht motie aan te houden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-09-24",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
+    "stemmingssoort": null,
+    "datum": "2026-09-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z19791"
+ },
+ {
+  "id": "392588ab-8942-4923-b97a-dad6a0b5af81",
+  "nummer": "2026Z19794",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van den Berg over uiterlijk 15 oktober 2026 een stresstest voor de gasleveringszekerheid in de winter 2026/2027 aan de Kamer sturen",
+  "citeertitel": null,
+  "gestartOp": "2026-09-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Verzocht motie aan te houden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
+    "stemmingssoort": null,
+    "datum": "2026-09-24",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-09-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z19794"
  },
  {
   "id": "411bbb7e-0048-4de9-b356-db8d883c7b90",
@@ -38084,6 +40666,763 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14557"
  },
  {
+  "id": "c33516db-4e58-49ae-bf7d-0a5e223e7116",
+  "nummer": "2026Z14358",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Kostić en Zalinyan over zich er bij de Milieuomnibus voor inzetten dat voorstellen bijdragen aan het sneller behalen van de bestaande doelen van de KRW",
+  "citeertitel": null,
+  "gestartOp": "2026-06-24",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-24",
+    "stemmen": [
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Niet deelgenomen",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 33,
+   "tegen": 114,
+   "datum": "2026-06-24"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14358"
+ },
+ {
+  "id": "bb7f47b9-ae9c-4978-8146-0f90ea7f6a27",
+  "nummer": "2026Z14357",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Kostić en Zalinyan over zich voor nu aansluiten bij een blokkerende minderheid bij de positiebepaling over de Milieuomnibus",
+  "citeertitel": null,
+  "gestartOp": "2026-06-24",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-24",
+    "stemmen": [
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Niet deelgenomen",
+      "zetels": 2
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 33,
+   "tegen": 114,
+   "datum": "2026-06-24"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14357"
+ },
+ {
+  "id": "982ae006-f141-4e58-ad46-976f7be697b9",
+  "nummer": "2026Z14356",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Kostić en Zalinyan over de Kamer actief op de hoogte houden en voorafgaand aan belangrijke stemmingen over de Milieuomnibus een definitief beslismoment voorleggen",
+  "citeertitel": null,
+  "gestartOp": "2026-06-24",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-24",
+    "stemmen": [
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Niet deelgenomen",
+      "zetels": 2
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Niet deelgenomen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 134,
+   "tegen": 10,
+   "datum": "2026-06-24"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14356"
+ },
+ {
+  "id": "fcf3baa6-25da-4c88-a5f4-bf8c1d687935",
+  "nummer": "2026Z14359",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van het lid Zalinyan c.s. over tijdens de Milieuraad niet akkoord  gaan met onomkeerbare stappen ten aanzien van de herziening van de KRW zolang onvoldoende duidelijk is wat de gevolgen zijn voor de waterkwaliteit ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-24",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Overbodig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-24",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-24",
+    "stemmen": [
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 32,
+   "tegen": 117,
+   "datum": "2026-06-24"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14359"
+ },
+ {
+  "id": "b09a46c5-6267-48e5-89c8-14648ea54061",
+  "nummer": "2026Z13887",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Gewijzigde motie van de leden Klos en Oualhadj over een inventarisatie van de mogelijke rol van de ECB in het aanjagen van groene investeringen (t.v.v. 21501-33-1229)",
+  "citeertitel": null,
+  "gestartOp": "2026-06-23",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Niet beschikbaar bij gewijzigde moties en/of amendementen",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.C.O. Klos",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A. Oualhadj",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-06-23",
+    "stemmen": []
+   },
+   {
+    "soort": "Termijn - vervallen in verband met verstrijken termijn",
+    "tekst": "Vervallen in verband met verstrijken termijn.",
+    "stemmingssoort": null,
+    "datum": "2026-09-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "vervallen",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13887"
+ },
+ {
+  "id": "b3ba3ba6-e3f5-46b7-b2bc-6cb5e42a00d5",
+  "nummer": "2026Z13878",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Gewijzigde motie van de leden Teunissen en Van Oosterhout over het aanspreken van Allseas op plannen die in strijd zijn met het VN-Zeerechtverdrag (t.v.v. 21501-33-1225)",
+  "citeertitel": null,
+  "gestartOp": "2026-06-23",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Niet beschikbaar bij gewijzigde moties en/of amendementen",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-09-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-06-23",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13878"
+ },
+ {
   "id": "6d35eaf1-86a3-4061-9c8b-27db3b3951db",
   "nummer": "2026Z13356",
   "soort": "Motie",
@@ -38858,6 +42197,862 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13911"
  },
  {
+  "id": "c4fd9246-ceed-43e8-9f8f-140ffb0b3dba",
+  "nummer": "2026Z13763",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Van Oosterhout en Teunissen over inzetten op een internationale voorzorgpauze op diepzeemijnbouw",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-09-08",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-06-23",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13763"
+ },
+ {
+  "id": "3005b00b-ef19-45aa-a22e-1a3bc80e15ba",
+  "nummer": "2026Z13773",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Russcher en Schenk over inzetten op het pas invoeren van de Methaanverordening nadat is aangetoond dat die niet ten koste gaat van leveringszekerheid, betaalbaarheid en de industrie ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M. Schenk",
+    "fractie": "FVD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "T.K. Russcher",
+    "fractie": "FVD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 38,
+   "tegen": 111,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13773"
+ },
+ {
+  "id": "4866c7c4-25ef-4ee7-893e-4081416c3638",
+  "nummer": "2026Z13771",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Müller c.s. over zich ervoor inspannen dat de Nederlandse leveringszekerheid niet in gevaar komt door de Methaanverordening ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H.G. Jumelet",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "A.S. Müller",
+    "fractie": "VVD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 122,
+   "tegen": 27,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13771"
+ },
+ {
+  "id": "ce7e4355-0577-4971-8860-457340476076",
+  "nummer": "2026Z13769",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van den Berg over inzetten op het volwaardig meenemen van kernenergie in alle Europese doelen en financieringsinstrumenten ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 78,
+   "tegen": 71,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13769"
+ },
+ {
+  "id": "9f5c9c32-cc83-4b43-83e8-6c53c0f98b54",
+  "nummer": "2026Z13764",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van Oosterhout over pleiten voor afschaffing van de IKC en, tot de afschaffing, voor een hogere investeringsplicht",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 32,
+   "tegen": 117,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13764"
+ },
+ {
+  "id": "688ae58c-e2ef-402b-b322-7eccb0925637",
+  "nummer": "2026Z13766",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van Oosterhout over pleiten voor bindende minimale elektrificatiedoelen",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 30,
+   "tegen": 119,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13766"
+ },
+ {
   "id": "8efdd5ae-93c8-4afc-b7dc-9e1073004226",
   "nummer": "2026Z13768",
   "soort": "Motie",
@@ -39011,8 +43206,786 @@
   "sectoren": [
    "klimaat-energie"
   ],
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13768",
-  "zoekterm": "klimaatdoel"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13768"
+ },
+ {
+  "id": "f5af45ef-7e81-4511-8160-9f06814b8371",
+  "nummer": "2026Z13767",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van den Berg over diepzeemijnbouw meenemen in de Nederlandse inzet voor strategische autonomie en maritieme innovatie ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Termijn - vervallen in verband met verstrijken termijn",
+    "tekst": "Vervallen in verband met verstrijken termijn.",
+    "stemmingssoort": null,
+    "datum": "2026-09-17",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-06-23",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "vervallen",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13767"
+ },
+ {
+  "id": "e23d4119-2973-4042-b99e-c92dad93bafb",
+  "nummer": "2026Z13772",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Teunissen en Van Oosterhout over het aanspreken van Allseas op plannen die in strijd zijn met het VN-Zeerechtverdrag ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Nog te ontvangen",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13772"
+ },
+ {
+  "id": "f4f4a58c-4c1b-4435-8754-d32ede5cde59",
+  "nummer": "2026Z13774",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Russcher en Schenk over een nationale impactanalyse van de economische gevolgen van de Methaanverordening op de Nederlandse raffinagesector, de Rotterdamse haven, energieprijzen en leveringszekerheid ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M. Schenk",
+    "fractie": "FVD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "T.K. Russcher",
+    "fractie": "FVD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 51,
+   "tegen": 98,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13774"
+ },
+ {
+  "id": "85ff2bad-cfa0-430e-88f7-d42830bd8cb4",
+  "nummer": "2026Z13776",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Klos en Oualhadj over een inventarisatie van de mogelijke rol van de ECB in het aanjagen van groene investeringen ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.C.O. Klos",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A. Oualhadj",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13776"
+ },
+ {
+  "id": "e0d3c936-664b-4e22-8077-dcdc257ed0fe",
+  "nummer": "2026Z13770",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van den Berg over de strategische gasbrief vóór het zomerreces naar de Kamer sturen",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 58,
+   "tegen": 91,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13770"
+ },
+ {
+  "id": "707c23a4-cdfc-41ba-9fd8-f5ab0bfba111",
+  "nummer": "2026Z13765",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van Oosterhout over enkel pleiten voor een 2040-doel voor hernieuwbare energie",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 32,
+   "tegen": 117,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13765"
+ },
+ {
+  "id": "4ed41b4d-d806-429f-a3b2-feb598bf97f3",
+  "nummer": "2026Z13775",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Russcher over duidelijk maken dat voor Nederland leveringszekerheid en betaalbaarheid van energie, benzine en diesel zwaarder wegen dan het terugdringen van methaanemissies ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-18",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "T.K. Russcher",
+    "fractie": "FVD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-18",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-23",
+    "stemmen": [
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Niet deelgenomen",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 45,
+   "tegen": 104,
+   "datum": "2026-06-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13775"
  },
  {
   "id": "dd8055c0-417b-418f-97a1-767d6214f36c",
@@ -49061,6 +54034,160 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z12522"
  },
  {
+  "id": "f19e3e3e-ba85-4124-a5bf-1748aede800f",
+  "nummer": "2026Z12273",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Gewijzigde motie van de leden Van den Berg en Boomsma  over bij de strategischgasbeleidbrief een uitvoeringstabel voegen (t.v.v. 21501-33-1207)",
+  "citeertitel": null,
+  "gestartOp": "2026-06-09",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "D.T. Boomsma",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-09",
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 104,
+   "tegen": 46,
+   "datum": "2026-06-09"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z12273"
+ },
+ {
   "id": "6d390e67-e18c-4719-b90d-1dbdf147d7c6",
   "nummer": "2026Z12331",
   "soort": "Motie",
@@ -50038,6 +55165,520 @@
   ],
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z12325",
   "zoekterm": "Omgevingswet"
+ },
+ {
+  "id": "de01afa3-d98e-4b60-b4ff-1a6388f90a14",
+  "nummer": "2026Z11945",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van Oosterhout over zich in Europa inzetten voor het behoud van de bestaande CO2-reductie-eisen voor hernieuwbare waterstof ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-03",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-03",
+    "stemmen": []
+   },
+   {
+    "soort": "Termijn - vervallen in verband met verstrijken termijn",
+    "tekst": "Vervallen in verband met verstrijken termijn.",
+    "stemmingssoort": null,
+    "datum": "2026-09-03",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-06-09",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "vervallen",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z11945"
+ },
+ {
+  "id": "2591f7dd-4c56-4e37-9434-476e47629eaa",
+  "nummer": "2026Z11904",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Kathmann over een positieve grondhouding voor een vergaand Europees voorkeursprincipe voor ICT-leveranciers ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-03",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "B.C. Kathmann",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Termijn - vervallen in verband met verstrijken termijn",
+    "tekst": "Vervallen in verband met verstrijken termijn.",
+    "stemmingssoort": null,
+    "datum": "2026-09-02",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-06-04",
+    "stemmen": []
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-03",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "vervallen",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z11904"
+ },
+ {
+  "id": "94e9c541-4306-4615-baec-61af1628523c",
+  "nummer": "2026Z11947",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van Oosterhout over niet instemmen met afzwakkingen van de methaanverordening",
+  "citeertitel": null,
+  "gestartOp": "2026-06-03",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-09",
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-03",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 56,
+   "tegen": 94,
+   "datum": "2026-06-09"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z11947"
+ },
+ {
+  "id": "001cccf3-dff0-4961-b010-68094e6d1bdc",
+  "nummer": "2026Z11905",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van den Berg over fundamentele wijzigingen aan de AVG buiten de Omnibus Digitaal houden",
+  "citeertitel": null,
+  "gestartOp": "2026-06-03",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Overbodig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - ingetrokken",
+    "tekst": "Ingetrokken.",
+    "stemmingssoort": null,
+    "datum": "2026-06-04",
+    "stemmen": []
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-03",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "ingetrokken",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z11905"
+ },
+ {
+  "id": "cf57dd17-e9bb-414f-a27c-af597d6d2127",
+  "nummer": "2026Z11946",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Van Oosterhout over bij de Europese Commissie aandringen op behoud van het moratorium op boren in het Arctisch gebied ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-03",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-09",
+    "stemmen": [
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-03",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 53,
+   "tegen": 94,
+   "datum": "2026-06-09"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z11946"
+ },
+ {
+  "id": "aac87c00-e9db-478e-ae9d-f216904116f4",
+  "nummer": "2026Z11944",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Van den Berg en Boomsma over bij de strategischgasbeleidbrief een uitvoeringstabel voegen",
+  "citeertitel": null,
+  "gestartOp": "2026-06-03",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden, tenzij gewijzigd",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "D.T. Boomsma",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-03",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z11944"
  },
  {
   "id": "5bec0a63-33a4-4350-8df8-e0b3c52877e8",
@@ -53032,6 +58673,167 @@
    "klimaat-energie"
   ],
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z09131"
+ },
+ {
+  "id": "6eeadba1-2ef4-4965-b43a-dbbff2562061",
+  "nummer": "2026Z08855",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Kathmann en El Boujdaini over in de voorbereiding van het voorzitterschap van de Raad van Europa verkennen of en hoe de gevolgen van kunstmatige intelligentie voor mensenrechten en de democratie als onderwerp in het programma meegenomen kan worden",
+  "citeertitel": null,
+  "gestartOp": "2026-04-23",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "S. El Boujdaini",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "B.C. Kathmann",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-04-23",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-04-23",
+    "stemmen": [
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 114,
+   "tegen": 36,
+   "datum": "2026-04-23"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z08855"
  },
  {
   "id": "3f159804-26d8-40a4-bc12-d624d2550bba",
@@ -71034,6 +76836,205 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z03419"
  },
  {
+  "id": "880ec23d-cbac-456e-af78-b2052056df96",
+  "nummer": "2026Z02949",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Gewijzigde motie van het lid Kathmann c.s.  over servers, opslag, infrastructuur en beveiliging van diensten die op Solvinity draaien in Nederlandse of Europese handen houden (t.v.v. 21501-33-1172)",
+  "citeertitel": null,
+  "gestartOp": "2026-03-03",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Niet beschikbaar bij gewijzigde moties en/of amendementen",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "D.G.M. Ceder",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "S. El Boujdaini",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "B.C. Kathmann",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "J.A. Struijs",
+    "fractie": "50PLUS",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. el Abassi",
+    "fractie": "DENK",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "J.M. Zwinkels",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-03-03",
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 141,
+   "tegen": 9,
+   "datum": "2026-03-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z02949"
+ },
+ {
   "id": "81a55b8e-7413-47ec-89ba-94020173f6a3",
   "nummer": "2026Z03862",
   "soort": "Motie",
@@ -84806,6 +90807,698 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z22055"
  },
  {
+  "id": "6360dfb0-a282-4ca1-a927-01a6da613ba3",
+  "nummer": "2025Z21604",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van het lid Kostić over borgen dat aanpassingen in Europese wet- en regelgeving niet leiden tot afgezwakte regelgeving en extra schade aan gezondheid, natuur en milieu",
+  "citeertitel": null,
+  "gestartOp": "2025-12-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-10",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21604"
+ },
+ {
+  "id": "1ff488f3-f543-425f-9ef9-0eab7c882f39",
+  "nummer": "2025Z21631",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Gewijzigde motie van het lid Kostić over borgen dat vereenvoudigingen in Europese wet- en regelgeving niet leiden tot extra schade aan gezondheid, natuur en milieu (t.v.v. 21501-08-1019)",
+  "citeertitel": null,
+  "gestartOp": "2025-12-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Niet beschikbaar bij gewijzigde moties en/of amendementen",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-10",
+    "stemmen": [
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 4
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 79,
+   "tegen": 71,
+   "datum": "2025-12-10"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21631"
+ },
+ {
+  "id": "4b36c9c7-8db6-4e04-8628-587cbeafb619",
+  "nummer": "2025Z21599",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Huidekooper en Zalinyan over een versneld traject voor EU-brede minimumeisen voor gerecyclede kunststof in nieuwe producten ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "D.J. Huidekooper",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-10",
+    "stemmen": [
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 4
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 101,
+   "tegen": 49,
+   "datum": "2025-12-10"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21599"
+ },
+ {
+  "id": "7938479c-b038-4429-b994-79fa3570c5dd",
+  "nummer": "2025Z21601",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van het lid Kostić c.s. over snelle en sterke stappen in de aanpak van fast fashion",
+  "citeertitel": null,
+  "gestartOp": "2025-12-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. Huidekooper",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-10",
+    "stemmen": [
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 4
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 113,
+   "tegen": 37,
+   "datum": "2025-12-10"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21601"
+ },
+ {
+  "id": "641d3eee-153e-47b3-8d22-86876e0869d6",
+  "nummer": "2025Z21602",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Kostić en Zalinyan over maatregelen die de verschillende milieucrises in samenhang aanpakken",
+  "citeertitel": null,
+  "gestartOp": "2025-12-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2025-12-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-10",
+    "stemmen": []
+   },
+   {
+    "soort": "Termijn - vervallen in verband met verstrijken termijn",
+    "tekst": "Vervallen in verband met verstrijken termijn.",
+    "stemmingssoort": null,
+    "datum": "2026-03-10",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "vervallen",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21602"
+ },
+ {
+  "id": "989d0c75-94af-4f8b-8afa-def65c62930a",
+  "nummer": "2025Z21598",
+  "soort": "Motie",
+  "titel": "Milieuraad",
+  "onderwerp": "Motie van de leden Huidekooper en Zalinyan over een voortvarende publicatie van de REACH-herziening ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "08",
+    "titel": "Milieuraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. Huidekooper",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-10",
+    "stemmen": [
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 4
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-10",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 82,
+   "tegen": 68,
+   "datum": "2025-12-10"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21598"
+ },
+ {
   "id": "ed3e1dc8-50e9-4121-ba65-2f4448f1275d",
   "nummer": "2025Z21581",
   "soort": "Motie",
@@ -85793,6 +92486,1272 @@
   ],
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21690",
   "zoekterm": "stikstof"
+ },
+ {
+  "id": "61fef114-80dd-40f1-ba55-5d0713a0cbd7",
+  "nummer": "2025Z21045",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Gewijzigde motie van het lid Vermeer over de Digitale Omnibus steunen  en versterken (t.v.v. 21501-33-1176)",
+  "citeertitel": null,
+  "gestartOp": "2025-12-03",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Niet beschikbaar bij gewijzigde moties en/of amendementen",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-03",
+    "stemmen": [
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 4
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 71,
+   "tegen": 79,
+   "datum": "2025-12-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21045"
+ },
+ {
+  "id": "470dcc2a-daad-4afd-8221-0f121d6ef081",
+  "nummer": "2025Z21006",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Flach en Vermeer over in Europa inzetten op vereenvoudiging van de AVG ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-03",
+    "stemmen": [
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 4
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 117,
+   "tegen": 33,
+   "datum": "2025-12-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21006"
+ },
+ {
+  "id": "42980b70-4d68-4727-ac89-6062d9462c22",
+  "nummer": "2025Z21015",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid De Hoop c.s. over in Europa inzetten op een verbinding Amsterdam-Groningen-Oldenburg",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. Huidekooper",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "H.E. de Hoop",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-03",
+    "stemmen": [
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 4
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 124,
+   "tegen": 26,
+   "datum": "2025-12-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21015"
+ },
+ {
+  "id": "3da6315a-a00c-409e-a5b4-624b5ed238d4",
+  "nummer": "2025Z21012",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Vermeer over de Digitale Omnibus volledig steunen ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21012"
+ },
+ {
+  "id": "298642e4-6a4f-4c85-83ac-910f61104083",
+  "nummer": "2025Z21011",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Frederik Jansen over pleiten voor een versoepeling van artikel 6 van de AI Act",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.J.H. (Frederik) Jansen",
+    "fractie": "FVD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-03",
+    "stemmen": [
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 4
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 45,
+   "tegen": 105,
+   "datum": "2025-12-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21011"
+ },
+ {
+  "id": "36ec97a6-a570-462a-a415-9c79a6d90aa0",
+  "nummer": "2025Z21008",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Kathmann c.s. over servers, opslag en beveiliging van diensten die op Solvinity draaien in Nederlandse of Europese handen houden ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Verzocht motie aan te houden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "J.M. Zwinkels",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "B.C. Kathmann",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2025-12-03",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21008"
+ },
+ {
+  "id": "52d20453-e8a6-4667-9619-c7dd943c86f1",
+  "nummer": "2025Z21016",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Heutink over pleiten tegen het verbod op nieuwe brandstofauto's ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "PVV",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-03",
+    "stemmen": [
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 4
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 76,
+   "tegen": 74,
+   "datum": "2025-12-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21016"
+ },
+ {
+  "id": "3e9d5c25-97c7-4072-954b-cbe44afe5357",
+  "nummer": "2025Z21010",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Frederik Jansen over pleiten voor het in de GDPR opnemen van een rechtsgrond voor het trainen van AI-modellen met openbaar beschikbare data ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Overbodig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.J.H. (Frederik) Jansen",
+    "fractie": "FVD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-03",
+    "stemmen": [
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 4
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 26
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 46,
+   "tegen": 104,
+   "datum": "2025-12-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21010"
+ },
+ {
+  "id": "5ab5543a-60e8-4275-b3d7-e38da7ef22ab",
+  "nummer": "2025Z21013",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van het lid Vermeer over pleiten voor een pas op de plaats bij nieuwe digitale wetten",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-03",
+    "stemmen": [
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 4
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 26
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 73,
+   "tegen": 77,
+   "datum": "2025-12-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21013"
+ },
+ {
+  "id": "1c898f17-36fb-4b1f-84a6-fc9abc9ddcf5",
+  "nummer": "2025Z21009",
+  "soort": "Motie",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Motie van de leden Kathmann en Dassen over Nederlandse voorwaarden stellen bij de Digitale Omnibus ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-02",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "B.C. Kathmann",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-03",
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 4
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-02",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 87,
+   "tegen": 63,
+   "datum": "2025-12-03"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21009"
  },
  {
   "id": "874f5553-a8ea-45ac-8306-ca758a2fd040",

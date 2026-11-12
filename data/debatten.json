@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:32:11Z",
+ "bijgewerkt": "2026-11-12T20:56:17Z",
  "debatten": [
   {
    "id": "246687",
@@ -3219,6 +3219,195 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/147232"
+  },
+  {
+   "id": "155160",
+   "datum": "2026-06-25",
+   "type": "Commissiedebat",
+   "commissie": "Infrastructuur en Waterstaat",
+   "titel": "Water",
+   "dossiers": [],
+   "sector": "water-adaptatie",
+   "bewindspersoon": "Minister van Infrastructuur en Waterstaat (Karremans)",
+   "activiteit": "2025A07712",
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-25/infrastructuur-waterstaat/thorbeckezaal/water-09-30",
+   "aanzet": "Periodiek commissiedebat over het waterbeleid, een jaar voor de deadline van de Kaderrichtlijn Water (KRW) in 2027, kort na het Rli-advies over de toekomst van het drinkwater (30 april) en tijdens een hittegolf. De dag ervoor had de commissie een rondetafelgesprek over de KRW gehouden.",
+   "gist": "Het debat ging vooral over de haalbaarheid van de KRW-doelen in 2027, de drinkwatervoorziening en PFAS. PvdD, D66 en PRO wilden dwingender optreden tegen vervuiling en geen afzwakking van de KRW, terwijl PVV, BBB, VVD, JA21 en SGP wezen op vervuiling uit het buitenland en historische belasting en vroegen om maximale benutting van uitzonderingen zonder nationale koppen. Minister Karremans zei in te zetten op realistische maar ambitieuze doelen met gebruik van uitzonderingsgronden, en kondigde aan dat de doorwerking van de KRW in vergunningen en regels eind 2027 volgt. Hij zegde onder meer een nationale drinkwaterstrategie begin 2027, een brief over harmonisatie van regels voor bestrijdingsmiddelen, mest en water, en een quickscan naar riooloverstorten toe.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PvdD",
+      "spreker": "Ines Kostić",
+      "positie": "Sprak van een watercrisis: Nederland scoort volgens haar slecht in Europa op oppervlaktewaterkwaliteit en drinkwaterbedrijven waarschuwen voor tekorten. Wil dwingende maatregelen in plaats van vrijwillige afspraken: strengere normen en vergunningen, grootverbruikers laten besparen en eerlijk laten betalen. Vroeg de minister zich aan te sluiten bij landen als Denemarken om een afzwakking van de KRW te blokkeren en PFAS in bestrijdingsmiddelen aan te pakken.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143284"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Marieke Vellinga-Beemsterboer",
+      "positie": "Wees op langere droogte, extreme neerslag en vervuiling door industrie, bestrijdingsmiddelen, mest en medicijnresten. Wil het one-out-all-out-principe behouden en een lozingsverbod voor PFAS. Vroeg de minister de regie te nemen over alle waterprogramma's en de overheid als eerste afnemer (launching customer) van waterinnovaties te laten optreden.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143301"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Luciënne Boelsma-Hoekstra",
+      "positie": "Centrale vraag: hoe houden we voldoende schoon zoet water vast voor drinkwater, landbouw en natuur, en wie heeft de regie. Wil PFAS vooral Europees aanpakken, inzet voor realistische KRW-doelen en een gerichte aanpak per sector, stof en gebied samen met het bedrijfsleven. Steunt waterbesparing, onderzoek naar grijswatercircuits in nieuwbouw en structurele financiering voor Wetsus.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143323"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Maakt zich zorgen dat water door klimaatverandering en vervuiling steeds vaker een bedreiging wordt voor drinkwater, landbouw en natuur. Mist in de Nationale adaptatiestrategie de optie om gebieden 'netto te verbeteren' en vroeg de minister actief mee te werken aan projecten als IJstad en Delta21.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143376"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Femke Marije Wiersma",
+      "positie": "Waterbeleid moet eerlijk, uitvoerbaar en proportioneel zijn. Wil niet dat boeren worden aangesproken op historische vervuiling, kwel of aanvoer uit het buitenland, en vroeg aandacht voor illegale lozingen, de aanpak van de Amerikaanse rivierkreeft en een uitzondering voor het verplaatsen van reeds verontreinigd sediment bij baggerwerk.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143409"
+     },
+     {
+      "fractie": "PRO (toen GL-PvdA)",
+      "spreker": "Laura Bromet",
+      "positie": "Grote zorgen over de waterkwaliteit door stoffen uit landbouw en industrie; is tegen het afzwakken van KRW-normen en tegen de Europese herziening die volgens haar door de mijnbouwlobby wordt gedreven. Wil een snel PFAS-verbod in bestrijdingsmiddelen (zoals in Denemarken), een verplicht grijswatercircuit in nieuwbouw en betere informatie voor burgers over wat te doen bij een overstroming.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143466"
+     },
+     {
+      "fractie": "50PLUS",
+      "spreker": "Corrie van Brenk",
+      "positie": "Vroeg aandacht voor medicijnresten en andere hardnekkige stoffen in drinkwaterbronnen en wil dat de bescherming van drinkwaterbronnen leidend wordt, met bronaanpak en handhaving op lozingen. Vroeg naar de leveringsplicht, de systeemverantwoordelijkheid van het Rijk en het stoppen van legionellametingen.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143494"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Björn Schutz",
+      "positie": "Schoon en voldoende water zonder de concurrentiekracht onnodig te schaden: realistische keuzes, ruimte voor innovatie en geen nationale koppen. Wil alternatieve waterbronnen (zoals effluent) voor zakelijke grootgebruikers, het vergunningsrisico voor bedrijven na 2027 in beeld en uitzonderingsgronden benut. Was kritisch op tariefkeuzes van drinkwaterbedrijven en wil investeringen in het tegengaan van lekverlies.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143550"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Chris Jansen",
+      "positie": "Vindt dat de KRW de vergunningverlening voor boeren en bedrijven dreigt plat te leggen. Wil dat de minister alle flexibiliteit uit recente Europese guidance (uitstel, doelverlaging, mengzones) direct benut, geen nationale koppen invoert, boeren niet bestraft voor vervuiling van buitenaf en NVWA-boetes opschort; waarschuwde tegen het overdrijven van PFAS-risico's.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143640"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Maarten Goudzwaard",
+      "positie": "Nederland is volgens hem koploper in schoon drinkwater met weinig lekverlies en laag verbruik per persoon. Wil minder vergunningsprocedures voor nieuwe drinkwaterwinning, meer waterberging, minder verharde tuinen en snel duidelijkheid over de verlaging van de koelwaternorm van 28 naar 25 graden.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143758"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "Chris Stoffer",
+      "positie": "Waarschuwde dat er te snel naar boeren wordt gewezen; volgens hem bleken voorbeelden uit het Rli-advies van gewasbeschermingsmiddelen uit buurlanden te komen. Vroeg naar het achterlopende actieprogramma drinkwaterbronnen, ondergrondse wateropslag voor de landbouw en waterbesparing, en naar de internationale inzet voor schoon water.",
+      "link": "https://gehoord.de/beraadslagingen/155160?segment=143791"
+     }
+    ],
+    "kabinet": [
+     "Volgens de minister scoort Nederland op deeldoelen van de KRW boven het Europese gemiddelde, maar meet het ook veel meer dan andere landen; uitzonderingsgronden zijn mogelijk omdat veel vervuiling uit bovenstroomse landen komt, en daarover is overleg met buurlanden.",
+     "Inzet is op realistische maar ambitieuze KRW-doelen met een gelijk speelveld in Europa (zoals in het coalitieakkoord); met uitzonderingen verwacht hij eind 2027 een heel eind te komen. De doorwerking van de KRW in regelgeving en actuele vergunningen volgt eind 2027.",
+     "De drinkwatervoorziening is al een dwingende reden van openbaar belang (artikel 2 Drinkwaterwet); met het nieuwe Nationaal Water Programma wil hij de regie nemen.",
+     "Hij deelt de urgentie rond PFAS en komt in het najaar met een brief; dat wetgeving twee tot drie jaar duurt, komt volgens hem door democratische procedures en niet door gebrek aan urgentie.",
+     "Legionellametingen zijn niet gestopt maar risicogestuurd gemaakt. Broeikasgassen van nieuwe gaswinning worden pas beoordeeld bij vergunningaanvragen, niet in de plan-MER voor het Programma Noordzee."
+    ],
+    "toezeggingen": [
+     "Eind 2027 aangescherpte regels over bestrijdingsmiddelen en lozingen naar de Kamer.",
+     "Begin 2027 een nationale drinkwaterstrategie, met de adviezen van de Rli, innovaties tegen lekverlies en aandacht voor de gevolgen van tariefkeuzes van drinkwaterbedrijven.",
+     "Na de zomer het tijdpad voor de implementatie van de herziene richtlijn stedelijk afvalwater.",
+     "Schriftelijke terugkoppeling van het gesprek met de minister van OCW over Wetsus; de minister brengt ook een werkbezoek aan Wetsus.",
+     "Eind 2026 een quickscan naar riooloverstorten (eerdere toezegging aan de Eerste Kamer).",
+     "Een brief over de uitkomsten van de pilots met grijs water.",
+     "Na de zomer een brief over harmonisatie van regels en normen voor bestrijdingsmiddelen, mest en water, en over de rol van de overheid als eerste afnemer van waterinnovaties.",
+     "In het Nationaal Water Programma ingaan op de inzet van effluent.",
+     "Na de zomer een stand van zaken over de koelwaternorm.",
+     "Voorlichting over wat burgers moeten doen bij een overstroming meenemen in het uitvoeringsprogramma van de Nationale adaptatiestrategie (eind 2026)."
+    ],
+    "doorgeleid": "De verzoeken van BBB over de aanpak van de rivierkreeft door waterschappen en over de evaluatie van de Staat van de Waddenzee worden doorgeleid naar de minister van LVVN.",
+    "moties": "In het tweeminutendebat (moties ingediend 8 oktober, gestemd 13 oktober 2026) werden onder meer aangenomen: Bromet en Boelsma-Hoekstra over een nationale drinkwaterstrategie (132 voor, 18 tegen); Vellinga-Beemsterboer en Schutz over het vastleggen van keuzes in de toekomstagenda drinkwater (118-32); Boelsma-Hoekstra c.s. over aanvullend infiltratiebeleid (149-1); Schutz c.s. over oplossingen voor waterbesparing, hergebruik en berging (150-0); Wiersma over het per gebied in kaart brengen van bronnen van waterbelasting (126-24); Grinwis c.s. over het robuuster maken van het inlaatwerk Bernisse (128-22); en drie moties van Goudzwaard over koelwaterregels (124-26), de leverings- en zorgplicht voor bedrijven (127-23) en lozings- en onttrekkingsvergunningen (98-52). Verworpen: Kostić over progressieve drinkwatertarieven voor bovenmatig verbruik (61-89). Aangehouden: Kostić over het voorkomen van een nieuwe PFAS-lozingsvergunning voor Chemours, en Wiersma en Van Brenk over diclofenac alleen op voorschrift.",
+    "vervolg": [
+     "Kabinetsreactie op het Rli-advies over drinkwater (najaar 2026).",
+     "Nationale drinkwaterstrategie (begin 2027).",
+     "Wetgevingsoverleg Water (23 november 2026)."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "bron": "https://gehoord.de/beraadslagingen/155160",
+   "extraActiviteiten": [
+    "2026A05515"
+   ]
+  },
+  {
+   "id": "265694",
+   "datum": "2026-10-07",
+   "type": "Commissiedebat",
+   "commissie": "Infrastructuur en Waterstaat",
+   "titel": "Milieuraad op 12 oktober 2026",
+   "dossiers": [
+    "internationaal-eu"
+   ],
+   "sector": "klimaat-energie",
+   "sectoren": [
+    "klimaat-energie",
+    "circulair-vervuiling"
+   ],
+   "bewindspersoon": "Minister van Klimaat en Groene Groei (Van Veldhoven)",
+   "activiteit": "2026A06730",
+   "video": "https://debatdirect.tweedekamer.nl/2026-10-07/infrastructuur-waterstaat/groen-van-prinstererzaal/milieuraad-op-12-oktober-2026-11-15",
+   "aanzet": "Voorbereiding van de Europese Milieuraad van 12 oktober 2026, waar vooral het voorstel van de Europese Commissie voor de herziening van het emissiehandelssysteem (ETS) en de inzet voor de klimaattop COP31 op de agenda stonden. De dag ervoor was er een wetenschapstoets over het ETS-voorstel.",
+   "gist": "Het debat ging bijna geheel over de ETS-herziening. VVD en JA21 steunden een 'herijking' die de industrie meer ruimte geeft en waren kritisch op voorwaarden (conditionaliteit) bij gratis emissierechten zolang netten en infrastructuur ontbreken; D66 en PRO zagen het voorstel als een afzwakking die investeringszekerheid en koplopers schaadt en meer inspanning vraagt van andere sectoren. Minister Van Veldhoven noemde het ETS het belangrijkste klimaatinstrument, wil een evenwichtig reductiepad naar 90 procent in 2040 (niet naar nul) en is kritischer dan de Commissie over internationale koolstofkredieten, maar verwacht dat die deels in het compromis komen. In het tweeminutendebat werden de motie-Müller c.s. over het heroverwegen van de steun voor conditionaliteit en de motie-Van Oosterhout over een Europese routekaart om fossiel uit te faseren aangenomen.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Het ETS werkt, maar Europa heeft een sterke industrie nodig; vertrekkende fabrieken leveren geen klimaatwinst op als de producten worden geïmporteerd. Steunt de herijking die volgens haar het 2040-doel haalt, wil het CBAM snel uitbreiden en vindt dat bedrijven geen gratis rechten mogen verliezen als randvoorwaarden als netaansluitingen ontbreken.",
+      "link": "https://gehoord.de/beraadslagingen/265694?segment=221673"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Bedrijven die investeren in schoon staal en groene chemie moeten erop kunnen vertrouwen dat de spelregels niet veranderen; versoepeling koopt volgens hem tijd voor achterblijvers. Pleit voor een 'gouden driehoek' van voorspelbare beprijzing, bescherming via CBAM en normering, wil meer dan 20 procent voorwaarden aan gratis rechten en geen internationale koolstofkredieten in het ETS.",
+      "link": "https://gehoord.de/beraadslagingen/265694?segment=221718"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Ziet het ETS als het minst slechte instrument, maar wijst op weglek en een slechte concurrentiepositie door hoge energieprijzen. Vindt het goed dat de 'duimschroeven iets losser' worden, wil dat het kabinet randvoorwaarden zoals netcongestie oplost voordat er voorwaarden aan gratis rechten worden gesteld, en vraagt om gelijke compensatie voor industriële elektriciteitskosten in de EU.",
+      "link": "https://gehoord.de/beraadslagingen/265694?segment=221782"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Noemt het ETS de groene motor van het klimaatbeleid en het voorstel een forse afzwakking (meer rechten, meer gratis rechten, vertraging van CBAM, internationale kredieten, aanpassing van de reserve) die oneerlijk is voor sectoren die het gat moeten opvangen. Wil dat de minister het ETS verstevigt, de luchtvaart beter onder het ETS brengt (mede in het licht van de Bonaire-uitspraak) en dat klimaatbeleid rechtvaardig is voor huishoudens.",
+      "link": "https://gehoord.de/beraadslagingen/265694?segment=221829"
+     }
+    ],
+    "kabinet": [
+     "Het ETS is niet het enige maar wel het belangrijkste instrument; hoeveel ruimte bedrijven krijgen, hangt af van de bescherming van de Europese markt (CBAM) en verschilt per sector, met extra aandacht voor de chemie en vraagcreatie.",
+     "Nederland zet in op een evenwichtig verdeeld reductiepad naar 90 procent in 2040, niet naar nul, en verwacht dat enige flexibiliteit in het eindvoorstel komt zonder dat Nederland daarom blokkeert.",
+     "Nederland is kritischer dan de Commissie over internationale koolstofkredieten (vanaf 2036); als ze er toch komen, zet het kabinet in op hoge kwaliteit volgens artikel 6 van Parijs en geen verdere uitbreiding.",
+     "Meer Europese uniformiteit in compensatie voor industriële elektriciteitskosten zou helpen, maar Nederland heeft zolang het speelveld ongelijk is ook de IKC nodig; een geactualiseerde vergelijking van energiekosten met buurlanden volgt in een industriebrief.",
+     "Voor COP31 zet de minister in op de afbouw van fossiele brandstoffen (implementatie van de Dubai-uitkomst) en een dialoog op hoog niveau daarover."
+    ],
+    "toezeggingen": [
+     "Schriftelijke reactie op de aanbevelingen uit de wetenschapstoets en het andere rapport over het ETS-voorstel.",
+     "In het verslag van de Milieuraad terugkomen op de gesprekken met de Commissie en het bedrijfsleven over de uitwerking van conditionaliteit.",
+     "Uiterlijk 1 december 2026 een inventarisatie van de verschillen in compensatie tussen Nederland, België, Duitsland en Frankrijk."
+    ],
+    "doorgeleid": "",
+    "moties": "Tweeminutendebat op 7 oktober 2026. Aangenomen: Müller c.s. over het heroverwegen van de steun voor het conditionaliteitsprincipe bij gratis emissierechten (93 voor, 56 tegen; ontraden), en Van Oosterhout over pleiten voor een Europese routekaart om fossiel uit te faseren (79-70; oordeel Kamer). Aangehouden: Klos over geen internationale koolstofkredieten in het ETS (oordeel Kamer), twee moties van Van Oosterhout en Kröger over uitbreiding van het ETS voor de luchtvaart en beprijzing van niet-CO2-effecten, en Van den Berg over bindende Europese afspraken over compensatie (tot de Energieraad). Een tweede motie van Van den Berg over een concreet voorstel tegen achterstanden in compensatie werd ontijdig genoemd.",
+    "vervolg": [
+     "Milieuraad 12 oktober 2026 en verslag aan de Kamer.",
+     "Brief met internationale vergelijking van compensatie (uiterlijk 1 december 2026).",
+     "Energieraad 29 oktober 2026."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "bron": "https://gehoord.de/beraadslagingen/265694",
+   "extraActiviteiten": [
+    "2026A07374"
+   ]
   }
  ]
 }

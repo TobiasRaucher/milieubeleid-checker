@@ -89,6 +89,16 @@
           "nummer": 31793,
           "toevoeging": null,
           "label": "Internationaal klimaatbeleid (o.a. COP, klimaatfinanciering)"
+        },
+        {
+          "nummer": 21501,
+          "toevoeging": "08",
+          "label": "Milieuraad"
+        },
+        {
+          "nummer": 21501,
+          "toevoeging": "33",
+          "label": "Energieraad (Raad voor Vervoer, Telecommunicatie en Energie)"
         }
       ],
       "zoektermen": [
@@ -241,6 +251,15 @@
         "\\bdrinkwater",
         "\\bdroogte",
         "\\bdijk"
+      ],
+      "plenaireZoektermen": [
+        "Water",
+        "water",
+        "Wadden",
+        "Delta",
+        "Noordzee",
+        "drinkwater",
+        "droogte"
       ]
     },
     "natuur-stikstof-landbouw": {
@@ -341,6 +360,20 @@
         "\\bvisserij",
         "\\bklimaat",
         "\\bvoedsel"
+      ],
+      "plenaireZoektermen": [
+        "Stikstof",
+        "stikstof",
+        "Natuur",
+        "natuur",
+        "Mest",
+        "mest",
+        "Gewasbescherming",
+        "gewasbescherming",
+        "Landbouw",
+        "landbouw",
+        "veehouderij",
+        "Natura 2000"
       ]
     },
     "circulair-vervuiling": {
@@ -437,6 +470,18 @@
         "\\bTata",
         "\\bleefomgeving",
         "\\bVTH\\b|\\bhandhaving"
+      ],
+      "plenaireZoektermen": [
+        "Milieuraad",
+        "Leefomgeving",
+        "leefomgeving",
+        "Externe veiligheid",
+        "Tata Steel",
+        "PFAS",
+        "Circulaire",
+        "circulaire",
+        "milieu",
+        "Milieu"
       ]
     },
     "ruimte-mobiliteit": {
@@ -499,6 +544,14 @@
         "\\bduurzame",
         "\\bgeluid",
         "\\bemissie"
+      ],
+      "plenaireZoektermen": [
+        "Ruimtelijke Ordening",
+        "Schiphol",
+        "Luchtvaart",
+        "luchtvaart",
+        "Nota Ruimte",
+        "Omgevingswet"
       ]
     }
   },
