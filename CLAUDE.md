@@ -20,8 +20,8 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
    - Technische briefings en rondetafelgesprekken: deskundigen in `kern`, vragen van Kamerleden in `partijen`.
    - `dossiers`: lijst van dossier-id's waar het debat over gaat. De site koppelt debatten en agenda-items ook automatisch aan dossiers (via Kamerstukdossiers van de agendapunten en zoektermen; zie `beleidsdossiers` en `kamerstukken`/`zoektermen` in `data/dossiers.json`). Vul `dossiers` alleen aan als de automatische koppeling iets mist, bv. een wetsdossier dat in het debat ter sprake kwam.
 4. Werk `data/dossiers.json` en `data/agenda.json` bij als er nieuwe stappen, consultaties of deadlines zijn (met bron-URL). Zoek bij twijfel op internet (eerstekamer.nl, internetconsultatie.nl, officielebekendmakingen.nl).
-   - Zet bij elke wijziging het veld `bijgewerkt` bovenin het gewijzigde bestand op het huidige tijdstip (ISO, UTC, bv. `2026-11-12T15:49:00Z`). De kop van de site toont het meest recente tijdstip van alle bestanden als "Laatste update: hh:mm dd/mm/yyyy" (Nederlandse tijd).
-5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit.
+   - Zet bij elke wijziging het veld `bijgewerkt` bovenin het gewijzigde bestand op het huidige tijdstip (ISO, UTC, bv. `2026-11-12T15:49:00Z`). De kop van de site toont het meest recente tijdstip van alle bestanden als "Bijgewerkt hh:mm, dd/mm/yyyy" (Nederlandse tijd).
+5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit en draai `node tests/zoektest.js`.
 6. Commit en push naar `main` (GitHub Pages publiceert automatisch).
 
 ## Samenvattingen: niveaus en meerdere sessies
@@ -49,3 +49,14 @@ Dossier `klimaatwet-bonaire` (wijziging Klimaatwet na Klimaatzaak Bonaire) is he
 ## Kosten
 
 Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alleen nieuwe, relevante debatten samen; meld aan Tobias hoeveel er openstaan als het er veel zijn.
+
+## Ontwerp
+
+- Huisstijl (nov 2026): "milieuradar" in kleine letters, DM Sans, groene merkkleur, rood als alarmkleur (vandaag, eerstvolgend), alleen licht thema. Alle kleuren en vormen staan als ontwerpknoppen bovenaan `assets/style.css`; sectorkleuren als `--s-<sectorcode>` (gelijke helderheid en verzadiging).
+- Het vooruitzicht-blok op Overzicht is een placeholder; Tobias beslist later of het een echte functie wordt.
+
+## Zoekfunctie
+
+- `assets/zoek.js` bouwt in de browser een index (MiniSearch, `assets/vendor/`) over debatten, dossiers, moties en amendementen, stukken en Kameractiviteiten. Nederlandse stamvorming, synoniemen, tikfoutcorrectie en titelweging staan daar beschreven.
+- Synoniemen en afkortingen: `data/zoeksynoniemen.json`. Vindt Tobias iets niet terwijl het er wel is, voeg dan een synoniem toe en/of een regel aan `tests/zoektest.js`, en draai de test.
+

@@ -3,29 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MilieuRadar</title>
+  <title>milieuradar</title>
   <meta name="description" content="Overzicht van Nederlands milieu- en klimaatbeleid in de Tweede Kamer: wetgeving, moties, amendementen, debatten, stukken van ministeries en agenda.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="top">
     <div class="wrap">
-      <h1>Milieu<span>Radar</span></h1>
-      <div class="sub">Wetgeving, moties en debatten over Nederlands milieubeleid</div>
+      <a class="merk" href="#overzicht" aria-label="milieuradar, naar het overzicht">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#14231b"/><rect x="10" y="24" width="7" height="14" rx="3.5" fill="#86d6a6"/><rect x="20.5" y="16" width="7" height="22" rx="3.5" fill="#86d6a6"/><rect x="31" y="10" width="7" height="28" rx="3.5" fill="#e5484d"/></svg>
+        <span class="woordmerk">milieu<span>radar</span></span>
+      </a>
+      <nav class="tabs" aria-label="Onderdelen">
+        <a href="#overzicht" data-tab="overzicht">Overzicht</a>
+        <a href="#wetgeving" data-tab="wetgeving">Wetgeving</a>
+        <a href="#moties" data-tab="moties" title="Moties &amp; amendementen">Moties</a>
+        <a href="#debatten" data-tab="debatten">Debatten</a>
+        <a href="#stukken" data-tab="stukken">Stukken</a>
+        <a href="#agenda" data-tab="agenda">Agenda</a>
+        <a href="#over" data-tab="over">Over</a>
+      </nav>
+      <form class="zoek" id="zoekform" role="search">
+        <label for="zoekveld" class="sr-only">Zoek in milieuradar</label>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="zoekveld" placeholder="Zoek debatten, moties, stukken…" autocomplete="off" enterkeyhint="search">
+      </form>
       <div class="stamp" id="stamp">Laden…</div>
     </div>
   </header>
-  <nav class="tabs" aria-label="Onderdelen">
-    <div class="wrap">
-      <a href="#overzicht" data-tab="overzicht">Overzicht</a>
-      <a href="#wetgeving" data-tab="wetgeving">Wetgeving</a>
-      <a href="#moties" data-tab="moties">Moties &amp; amendementen</a>
-      <a href="#debatten" data-tab="debatten">Debatten</a>
-      <a href="#stukken" data-tab="stukken">Stukken</a>
-      <a href="#agenda" data-tab="agenda">Agenda</a>
-      <a href="#over" data-tab="over">Over</a>
-    </div>
-  </nav>
   <main class="wrap">
     <div class="filters" id="sectorfilter" role="group" aria-label="Sector"></div>
     <div id="view"></div>
@@ -37,6 +46,8 @@
       <a href="https://berthub.eu/tkconv/">OpenTK</a>. Samenvattingen zijn AI-gegenereerd en geen officiële bron; citeer de Handelingen.
     </div>
   </footer>
+  <script src="assets/vendor/minisearch.min.js"></script>
+  <script src="assets/zoek.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

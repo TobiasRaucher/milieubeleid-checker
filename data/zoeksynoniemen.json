@@ -1,0 +1,107 @@
+{
+  "_uitleg": "Synoniemen en afkortingen voor de zoekfunctie. Elke groep is een lijst van termen die als gelijk worden behandeld: zoekt iemand op één term, dan vindt de site ook de andere. Termen mogen uit meerdere woorden bestaan. Kleine letters, zonder accenten.",
+  "groepen": [
+    [
+      "krw",
+      "kaderrichtlijn water"
+    ],
+    [
+      "kdw",
+      "kritische depositiewaarde"
+    ],
+    [
+      "co2",
+      "koolstofdioxide",
+      "kooldioxide"
+    ],
+    [
+      "ets",
+      "emissiehandel",
+      "emissiehandelssysteem"
+    ],
+    [
+      "ccs",
+      "co2-opslag",
+      "koolstofopslag",
+      "afvang en opslag"
+    ],
+    [
+      "sde",
+      "sde++",
+      "stimulering duurzame energieproductie"
+    ],
+    [
+      "pfas",
+      "pfos",
+      "pfoa"
+    ],
+    [
+      "kgg",
+      "klimaat en groene groei"
+    ],
+    [
+      "lvvn",
+      "landbouw, visserij, voedselzekerheid en natuur"
+    ],
+    [
+      "ienw",
+      "infrastructuur en waterstaat"
+    ],
+    [
+      "vro",
+      "volkshuisvesting en ruimtelijke ordening"
+    ],
+    [
+      "bzk",
+      "binnenlandse zaken"
+    ],
+    [
+      "ezk",
+      "economische zaken"
+    ],
+    [
+      "pbl",
+      "planbureau voor de leefomgeving"
+    ],
+    [
+      "rivm",
+      "rijksinstituut voor volksgezondheid en milieu"
+    ],
+    [
+      "kev",
+      "klimaat- en energieverkenning"
+    ],
+    [
+      "kernenergie",
+      "kerncentrale",
+      "nucleair",
+      "kerncentrales"
+    ],
+    [
+      "elektriciteitsnet",
+      "stroomnet"
+    ],
+    [
+      "natura 2000",
+      "natura2000",
+      "n2000"
+    ],
+    [
+      "warmtenet",
+      "warmtenetten",
+      "collectieve warmte"
+    ],
+    [
+      "wnb",
+      "wet natuurbescherming"
+    ],
+    [
+      "noordzee",
+      "noordzeegebied"
+    ],
+    [
+      "luchtvaart",
+      "vliegverkeer"
+    ]
+  ]
+}
