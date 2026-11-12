@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T19:51:43Z",
+ "bijgewerkt": "2026-11-12T19:52:30Z",
  "debatten": [
   {
    "id": "246687",
@@ -849,6 +849,93 @@
    },
    "bron": "https://gehoord.de/beraadslagingen/261208",
    "video": "https://debatdirect.tweedekamer.nl/2026-10-06/klimaat/wttewaall-van-stoetwegenzaal/eu-wetenschapstoets-ets-herziening-en-analyse-van-cpb-en-pbl-over-verruiming-eu-ets-17-45",
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie"
+  },
+  {
+   "id": "312911",
+   "datum": "2026-11-03",
+   "type": "Technische briefing",
+   "commissie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+   "titel": "Klimaat- en Energieverkenning in relatie tot de landbouw",
+   "dossiers": [
+    "klimaatbeleid"
+   ],
+   "bewindspersoon": null,
+   "aanzet": "PBL lichtte voor de landbouwcommissie de resultaten van de KEV 2026 toe voor landbouw, landgebruik en glastuinbouw, met een doorkijk naar een klimaatneutraal Nederland in 2050. Het stikstof- en natuurpakket van 26 juni 2026 zit niet in de raming.",
+   "gist": "Ook voor landbouw en landgebruik ligt Nederland niet op koers. De daling van de uitstoot in de veehouderij komt vooral door beëindigingsregelingen, afroming van rechten en minder mest; die effecten zijn in 2030 uitgewerkt, waarna de lijn afvlakt. Volledige uitvoering van het stikstofpakket zou ongeveer 4 megaton extra opleveren in 2035, vooral door een kleinere veestapel, en brengt het sectordoel pas dan binnen bereik. Bossenstrategie, veenweide en glastuinbouw blijven achter bij de ambities.",
+   "deskundigen": [
+    {
+     "naam": "Lena Schulte-Uebbing",
+     "organisatie": "Planbureau voor de Leefomgeving (PBL)"
+    },
+    {
+     "naam": "Emma van der Zanden",
+     "organisatie": "Planbureau voor de Leefomgeving (PBL)"
+    },
+    {
+     "naam": "Arjan Plomp",
+     "organisatie": "Planbureau voor de Leefomgeving (PBL)"
+    }
+   ],
+   "samenvatting": {
+    "kern": [
+     "Van de ongeveer 4 megaton extra reductie door het stikstofpakket komt driekwart van een kleinere veestapel en een kwart van de bedrijfsspecifieke emissienorm voor melkvee; andere maatregelen hebben nauwelijks effect op broeikasgassen. Dit is een grovere inschatting dan de KEV, die alleen uitgewerkt beleid meeneemt (Schulte-Uebbing).",
+     "Voor 2030 zijn weinig snelle winsten mogelijk. Knoppen: minder dieren of minder methaan per dier (voeradditieven, rantsoen, fokkerij) en minder lachgas uit mest. Een dichte stalvloer met vaak mest afvoeren is effectief en bij nieuwbouw niet per se duurder. Weidegang is goed voor ammoniak, maar levert netto weinig op voor broeikasgassen (Schulte-Uebbing).",
+     "Van de bossenstrategie wordt in 2030 naar verwachting ongeveer 10% van de ambitie gerealiseerd. Een hoger waterpeil in veenweidegebieden kan volgens eerdere PBL-verkenningen ongeveer 1,5 tot 2 megaton opleveren, maar lost de opgave niet alleen op (Van der Zanden).",
+     "Glastuinbouw: het sectordoel voor 2030 (4,3 megaton, vastgelegd in een convenant, niet bindend) en klimaatneutraliteit in 2040 zijn niet in zicht, vooral omdat warmtekrachtkoppelingen aantrekkelijk blijven en er onvoldoende subsidie is; netcongestie speelt ook mee (Plomp).",
+     "In de verkenningen van PBL halen beide contrasterende scenario's (technologisch-intensief en natuurinclusief) de doelen voor natuur, water en klimaat alleen met enige krimp van de veestapel, inzet van techniek, extensivering en meer natuur."
+    ],
+    "partijen": [
+     {
+      "fractie": "VVD",
+      "spreker": "Renate den Hollander",
+      "positie": "Vroeg waarom de dalende lijn voor veehouderij na 2030 afvlakt, of er na 2030 doelen zijn voor de glastuinbouw en wanneer PBL de raming actualiseert.",
+      "link": "https://gehoord.de/beraadslagingen/312911?segment=241536"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Laura Bromet",
+      "positie": "Vroeg of de achterblijvende uitvoering van de bossenstrategie is meegenomen en hoeveel CO2 een hoger waterpeil in veenweidegebieden kan vasthouden.",
+      "link": "https://gehoord.de/beraadslagingen/312911?segment=241542"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Chris Jansen",
+      "positie": "Vroeg of PBL heeft gekeken hoe andere landen ervoor staan richting klimaatneutraliteit in 2050 (niet in de KEV).",
+      "link": "https://gehoord.de/beraadslagingen/312911?segment=241556"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Anne-Marijke Podt",
+      "positie": "Vroeg wat het stikstofpakket betekent voor landgebruik (volgens PBL beperkt, met mogelijke meekoppelkansen in veenweidegebieden).",
+      "link": "https://gehoord.de/beraadslagingen/312911?segment=241559"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Joris Lohman",
+      "positie": "Rekende voor dat het sectordoel met het stikstofpakket bijna binnen bereik komt, en vroeg naar spanningen tussen stikstof- en klimaatmaatregelen, de verhouding tussen management- en stalmaatregelen en de belemmeringen in de glastuinbouw.",
+      "link": "https://gehoord.de/beraadslagingen/312911?segment=241563"
+     },
+     {
+      "fractie": "PvdD",
+      "spreker": "Ines Kostić",
+      "positie": "Vroeg welke knoppen nodig zijn om het landbouwdoel wél te halen, hoe het transitiefonds integraal kan worden ingezet (klimaat, natuur, water, dierenwelzijn) en of minder dierlijke productie en consumptie is meegenomen.",
+      "link": "https://gehoord.de/beraadslagingen/312911?segment=241571"
+     }
+    ],
+    "kabinet": [],
+    "toezeggingen": [],
+    "doorgeleid": [],
+    "moties": "Technische briefing: geen moties of toezeggingen. Bij de begroting KGG 2027 werd een motie van Kostić (PvdD) voor klimaatdoelen voor de landbouw tot 2050 verworpen.",
+    "vervolg": [
+     "Commissiedebat Tuinbouw (LVVN).",
+     "PBL-verkenning die ook dierwaardigheid meeneemt (over enkele jaren)."
+    ]
+   },
+   "bron": "https://gehoord.de/beraadslagingen/312911",
+   "video": "https://debatdirect.tweedekamer.nl/2026-11-03/landbouw-natuur-voedselkwaliteit/aletta-jacobszaal/klimaat-en-energieverkenning-in-relatie-tot-de-landbouw-17-00",
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie"
