@@ -76,6 +76,15 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
   - tracking en regelafstand per tekstgrootte;
   - ondersteuning voor minder beweging, minder transparantie en meer contrast.
 
+- Tweede verfijningsronde (nov 2026):
+  - tab-aanduiding die van tab naar tab glijdt (`.tab-glij`, gezet in `zetGlij()` in app.js);
+  - paginatitel (eerste `h2` van een pagina) duidelijk groter dan sectiekoppen;
+  - lopende tekst nooit breder dan `--leesbreedte`; brede schermen worden benut met twee kolommen (dossierkaart: tekst links, stand van zaken rechts; samenvatting: inhoud links, agendapunten en deelnemers rechts);
+  - tabelkop blijft staan onder de vaste paginakop (`--kop-h` wordt door app.js gezet); motierijen tonen een pijltje en klappen uit; op de telefoon is de motietabel een lijst van blokjes;
+  - een klik op een tab begint bovenaan, terug/vooruit in de browser herstelt de scrollpositie;
+  - sneltoets `/` voor zoeken, knop "terug naar boven", laadskelet in `index.html` en een foutmelding als de data niet laadt;
+  - lijsttitels (`.ltitel`) in inktkleur met onderstreping bij aanwijzen; externe links krijgen een pijltje.
+
   Houd nieuwe onderdelen in die lijn.
 
 ## Zoekfunctie

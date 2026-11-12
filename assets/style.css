@@ -642,3 +642,18 @@ footer .wrap { max-width: var(--breedte); line-height: 1.6; }
   a { color: inherit; }
   #view.binnenkomst { animation: none; }
 }
+
+/* Agenda: lucht rond "vandaag" en "eerstvolgend", zonder de tijdkolom te verschuiven */
+.tl-item.eerst { padding: 10px 12px; margin-left: -14px; border-width: 1.5px; box-shadow: 0 0 0 3px var(--alarm-soft); }
+.tl-dag.vandaag { padding: 12px 12px 12px 0; }
+.tl-dag.vandaag .tl-datum .wd { font-size: 11px; letter-spacing: .02em; }
+@media (max-width: 560px) {
+  .tl-dag.vandaag { padding-left: 2px; }
+  .tl-dag.vandaag .tl-datum .wd { font-size: 9.5px; }
+  .tl-item.eerst { margin-left: -6px; padding: 10px; }
+}
+/* Per fractie: themalabel niet uitrekken over de hele kolom */
+.themastem .tchip { justify-self: start; }
+.themastem .balk { height: 8px; border-radius: 999px; }
+.themastem .balk span { border-radius: 999px; }
+.linkknop.inklap { margin: 6px 0 0 -6px; }

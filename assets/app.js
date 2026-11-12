@@ -207,6 +207,8 @@
       if (a.dataset.tab === navTab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
     const views = { overzicht, wetgeving, moties, vergaderingen, toezeggingen, fracties, stukken, agenda, over, zoeken };
+    const TITELS = { agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties & amendementen", vergaderingen: "Vergaderingen", toezeggingen: "Toezeggingen", fracties: "Per fractie", stukken: "Stukken van ministeries", over: "Over", zoeken: "Zoeken" };
+    document.title = TITELS[tab] ? `${TITELS[tab]} · milieuradar` : "milieuradar";
     if (tab !== "agenda") S.agendaGescrold = false;
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
     $("#view").innerHTML = (views[tab] || overzicht)();
@@ -565,6 +567,7 @@
         ${blok("Deelnemers", deelnemers ? `<div class="deelnemers">${deelnemers}</div>` : "")}
         </div></div>
         <div class="small muted" style="margin-top:12px">${d.niveau === "kort" ? "Korte samenvatting" : "Samengevat"} door ${esc(d.samengevatDoor)} op ${fmtDatum(d.samengevatOp)} op basis van het automatische transcript.</div>
+        <button type="button" class="linkknop inklap" data-inklap>Samenvatting inklappen</button>
       </div></div>
     </article>`;
   }
@@ -754,11 +757,14 @@
     $("#vsam").addEventListener("change", (e) => { S.vf.sam = e.target.value; vfToepassen(); });
     $("#vgroep").addEventListener("change", (e) => { S.vf.groep = e.target.value; vfToepassen(); });
     $("#vorde").addEventListener("change", (e) => { S.vf.orde = e.target.value; vfToepassen(); });
-    el.querySelectorAll(".debat .toggle").forEach((b) => b.addEventListener("click", () => {
-      const kaart = b.closest(".debat");
-      kaart.classList.toggle("open");
-      b.setAttribute("aria-expanded", kaart.classList.contains("open"));
-    }));
+    const wissel = (kaart) => {
+      const open = kaart.classList.toggle("open");
+      kaart.querySelector(".toggle").setAttribute("aria-expanded", open);
+      // bij inklappen de kaart in beeld houden, zodat je niet ergens verderop in de lijst belandt
+      if (!open && kaart.getBoundingClientRect().top < 0) kaart.scrollIntoView({ block: "start" });
+    };
+    el.querySelectorAll(".debat .toggle").forEach((b) => b.addEventListener("click", () => wissel(b.closest(".debat"))));
+    el.querySelectorAll("[data-inklap]").forEach((b) => b.addEventListener("click", () => { const k = b.closest(".debat"); wissel(k); k.querySelector(".toggle").focus({ preventScroll: true }); }));
   }
   // Escape sluit een open filtermenu en zet de focus terug op de knop
   document.addEventListener("keydown", (e) => {
