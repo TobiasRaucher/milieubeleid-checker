@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Synoniemen en afkortingen voor de zoekfunctie. Elke groep is een lijst van termen die als gelijk worden behandeld: zoekt iemand op één term, dan vindt de site ook de andere. Termen mogen uit meerdere woorden bestaan. Kleine letters, zonder accenten.",
+  "_uitleg": "Synoniemen en afkortingen voor de zoekfunctie. Elke groep is een lijst van termen die als gelijk worden behandeld: zoekt iemand op één term, dan vindt de site ook de andere. Termen mogen uit meerdere woorden bestaan. Kleine letters, zonder accenten. Partijnamen staan onderaan; PRO is de voortzetting van GroenLinks-PvdA.",
   "groepen": [
     [
       "krw",
@@ -102,6 +102,54 @@
     [
       "luchtvaart",
       "vliegverkeer"
+    ],
+    [
+      "pro",
+      "groenlinks-pvda",
+      "gl-pvda",
+      "groenlinks pvda",
+      "groenlinks",
+      "pvda"
+    ],
+    [
+      "pvdd",
+      "partij voor de dieren"
+    ],
+    [
+      "cu",
+      "christenunie"
+    ],
+    [
+      "bbb",
+      "boerburgerbeweging"
+    ],
+    [
+      "cda",
+      "christen-democratisch appel"
+    ],
+    [
+      "d66",
+      "democraten 66"
+    ],
+    [
+      "pvv",
+      "partij voor de vrijheid"
+    ],
+    [
+      "vvd",
+      "volkspartij voor vrijheid en democratie"
+    ],
+    [
+      "sgp",
+      "staatkundig gereformeerde partij"
+    ],
+    [
+      "sp",
+      "socialistische partij"
+    ],
+    [
+      "fvd",
+      "forum voor democratie"
     ]
   ]
 }

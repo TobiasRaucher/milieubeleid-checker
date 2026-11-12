@@ -1,0 +1,272 @@
+{
+  "_uitleg": "Thema's voor vergaderingen, agenda, dossiers, moties en stukken. Een trefwoord is een reguliere expressie op tekst in kleine letters zonder accenten; \\b betekent 'begin van een woord'. Een item krijgt een thema als een trefwoord in de titel staat, of in minstens twee van de overige teksten (agendapunten). Lukt dat bij geen enkel thema, dan telt één treffer in de overige teksten; en anders het thema uit 'terugval' op basis van de sector uit pipeline/config.json. Bij samengevatte debatten overschrijft het veld 'themas' in data/debatten.json de automatische toekenning.",
+  "themas": [
+    {
+      "id": "mitigatie",
+      "naam": "Mitigatie",
+      "uitleg": "uitstoot verminderen, klimaatdoelen",
+      "kleur": "#b0572a",
+      "trefwoorden": [
+        "klimaatwet",
+        "klimaatbeleid",
+        "klimaatdoel",
+        "klimaatakkoord",
+        "klimaatnota",
+        "klimaat- en energie",
+        "klimaatverkenning",
+        "\\buitstoot",
+        "co2-uitstoot",
+        "\\bemissie",
+        "broeikas",
+        "\\bco2",
+        "\\bets2?\\b",
+        "emissiehandel",
+        "koolstof",
+        "\\bccs\\b",
+        "klimaatneutra",
+        "burgerberaad",
+        "klimaatfonds",
+        "klimaat- en energiefonds",
+        "verduurzaming",
+        "co2-heffing",
+        "beprijzing",
+        "klimaatraad",
+        "klimaatzaak",
+        "voortgang klimaat",
+        "klimaatrecht"
+      ]
+    },
+    {
+      "id": "energie",
+      "naam": "Energie",
+      "uitleg": "energiesysteem, net, gas, duurzame energie",
+      "kleur": "#956b11",
+      "trefwoorden": [
+        "energie",
+        "elektriciteit",
+        "netcongestie",
+        "\\bstroom",
+        "\\bgas",
+        "groen gas",
+        "aardgas",
+        "waterstof",
+        "wind op zee",
+        "windpark",
+        "\\bwind",
+        "zonne",
+        "kernenergie",
+        "kerncentrale",
+        "\\bwarmte",
+        "leveringszekerheid",
+        "mijnbouw",
+        "\\bolie",
+        "\\bsde\\b",
+        "netbeheer",
+        "\\bacm\\b",
+        "biomassa",
+        "houtpellets",
+        "rfnbo",
+        "groningen",
+        "\\bcfd\\b",
+        "isolatie",
+        "verduurzaming gebouw",
+        "batterij",
+        "borssele",
+        "\\bmijn",
+        "zon op dak",
+        "\\bzon\\b",
+        "nettarie",
+        "stadswarmte",
+        "brandstof"
+      ]
+    },
+    {
+      "id": "adaptatie",
+      "naam": "Adaptatie",
+      "uitleg": "water, droogte, hitte, overstromingen",
+      "kleur": "#2f6fd6",
+      "trefwoorden": [
+        "adaptatie",
+        "\\bwater(?!stof)",
+        "\\bkrw\\b",
+        "kaderrichtlijn water",
+        "drinkwater",
+        "deltaprogramma",
+        "deltafonds",
+        "overstroming",
+        "wateroverlast",
+        "droogte",
+        "\\bhitte",
+        "zeespiegel",
+        "kustverdediging",
+        "\\bdijk",
+        "rivier",
+        "\\briool",
+        "grondwater",
+        "hoogwater",
+        "klimaatbestendig"
+      ]
+    },
+    {
+      "id": "natuur",
+      "naam": "Natuur & biodiversiteit",
+      "uitleg": "natuurherstel, Natura 2000, Wadden, Noordzee",
+      "kleur": "#468537",
+      "trefwoorden": [
+        "natuur",
+        "natura 2000",
+        "biodiversiteit",
+        "wadden",
+        "noordzee",
+        "\\bbos",
+        "soortenbescherming",
+        "\\bwolf",
+        "\\bvogel",
+        "\\bbijen",
+        "landschap",
+        "nationaal park",
+        "\\bnvwa"
+      ]
+    },
+    {
+      "id": "stikstof",
+      "naam": "Stikstof & landbouw",
+      "uitleg": "stikstof, mest, veehouderij, voedsel, visserij",
+      "kleur": "#767a0b",
+      "trefwoorden": [
+        "stikstof",
+        "landbouw",
+        "\\bmest",
+        "veehouderij",
+        "\\bboer",
+        "gewasbescherming",
+        "landelijk gebied",
+        "voedsel",
+        "visserij",
+        "glastuinbouw",
+        "bio-industrie",
+        "wet dieren",
+        "dierenwelzijn",
+        "\\bvee\\b",
+        "agrar",
+        "melkvee",
+        "\\bgmo",
+        "nieuwe genomische"
+      ]
+    },
+    {
+      "id": "circulair",
+      "naam": "Circulair & vervuiling",
+      "uitleg": "afval, grondstoffen, chemische stoffen, lucht, bodem",
+      "kleur": "#865db0",
+      "trefwoorden": [
+        "circulair",
+        "\\bafval",
+        "recycl",
+        "plastic",
+        "\\bpfas",
+        "chemische stoffen",
+        "zeer zorgwekkende",
+        "vervuiling",
+        "luchtkwaliteit",
+        "\\bgeluid",
+        "externe veiligheid",
+        "\\bbodem",
+        "vergunningverlening",
+        "toezicht en handhaving",
+        "\\bvth\\b",
+        "\\btata\\b",
+        "chemours",
+        "asbest",
+        "grondstof",
+        "wet milieubeheer",
+        "\\bmilieu",
+        "rivm"
+      ]
+    },
+    {
+      "id": "ruimte",
+      "naam": "Ruimte & mobiliteit",
+      "uitleg": "ruimtelijke ordening, wonen, verkeer, luchtvaart",
+      "kleur": "#008489",
+      "trefwoorden": [
+        "ruimtelijke ordening",
+        "nota ruimte",
+        "omgevingswet",
+        "mobiliteit",
+        "luchtvaart",
+        "schiphol",
+        "verkeer",
+        "\\bspoor",
+        "openbaar vervoer",
+        "\\bauto",
+        "scheepvaart",
+        "woningbouw",
+        "volkshuisvesting",
+        "infrastructuur",
+        "\\bmirt\\b",
+        "\\bwegen",
+        "leefomgeving",
+        "\\bfiets",
+        "vliegveld",
+        "luchthaven",
+        "zeevaart",
+        "binnenvaart"
+      ]
+    },
+    {
+      "id": "bonaire",
+      "naam": "Bonaire & Caribisch Nederland",
+      "uitleg": "Klimaatzaak Bonaire, Caribisch Nederland",
+      "kleur": "#aa507e",
+      "trefwoorden": [
+        "bonaire",
+        "caribisch",
+        "sint eustatius",
+        "\\bsaba\\b",
+        "bes-eilanden",
+        "\\bbes\\b",
+        "aruba",
+        "curacao"
+      ]
+    },
+    {
+      "id": "eu",
+      "naam": "EU & internationaal",
+      "uitleg": "EU-raden, COP, internationale afspraken",
+      "kleur": "#6668be",
+      "trefwoorden": [
+        "europese",
+        "\\beu\\b",
+        "\\beu-",
+        "milieuraad",
+        "energieraad",
+        "landbouw- en visserijraad",
+        "transportraad",
+        "\\bcop\\s?\\d",
+        "internationale klimaat",
+        "klimaatfinanciering",
+        "europese commissie",
+        "akkoord van parijs",
+        "internationaal"
+      ]
+    }
+  ],
+  "terugval": {
+    "klimaat-energie": [
+      "mitigatie"
+    ],
+    "water-adaptatie": [
+      "adaptatie"
+    ],
+    "natuur-stikstof-landbouw": [
+      "natuur"
+    ],
+    "circulair-vervuiling": [
+      "circulair"
+    ],
+    "ruimte-mobiliteit": [
+      "ruimte"
+    ]
+  }
+}

@@ -3,10 +3,12 @@
    een verkeerd resultaat gaf; zo merken we het als een latere wijziging iets breekt. */
 const fs = require("fs"), path = require("path");
 const Z = require("../assets/zoek.js");
+const T = require("../assets/themas.js");
 const lees = (p) => JSON.parse(fs.readFileSync(path.join(__dirname, "..", p), "utf8"));
 const D = {
   dossiers: lees("data/dossiers.json"), debatten: lees("data/debatten.json").debatten, zaken: lees("data/tk/zaken.json"),
   stukken: lees("data/tk/stukken.json"), activiteiten: lees("data/tk/activiteiten.json"), agenda: lees("data/agenda.json").items,
+  T: T.maak(lees("data/themas.json")),
 };
 const z = Z.maak(D, lees("data/zoeksynoniemen.json"));
 
@@ -32,6 +34,19 @@ const TESTS = [
   ["natura 2000 hollandse kust", "hollandse kust", 3],
   ["\"groen gas\"", "groen gas", 3],
   ["van oosterhout", "van oosterhout", 5],
+  // samengestelde woorden
+  ["depositie", "stikstofdepositie", 5],
+  ["wet klimaat", "klimaatwet", 3],
+  // partijnamen
+  ["partij voor de dieren natuur", "natuur", 5],
+  // thema's
+  ["adaptatie", "water", 10],
+];
+// soortwoorden: alle resultaten moeten van die soort zijn
+const SOORT_TESTS = [
+  ["motie stikstof", (d) => d.soort === "Motie"],
+  ["kamerbrief netcongestie", (d) => d.soort === "Kamerbrief"],
+  ["commissiedebat water", (d) => /^Commissiedebat/.test(d.soort)],
 ];
 let fout = 0;
 for (const [q, verwacht, n] of TESTS) {
@@ -40,5 +55,19 @@ for (const [q, verwacht, n] of TESTS) {
   if (!ok) fout++;
   console.log(`${ok ? "ok  " : "FOUT"} ${q.padEnd(28)} verwacht "${verwacht}" in top ${n}${ok ? "" : "\n       kreeg: " + top.join(" | ")}`);
 }
-console.log(`\n${TESTS.length - fout}/${TESTS.length} geslaagd (${z.aantal} documenten in de index)`);
+for (const [q, test] of SOORT_TESTS) {
+  const res = z.zoek(q).resultaten;
+  const ok = res.length > 0 && res.every((r) => test(r.doc));
+  if (!ok) fout++;
+  console.log(`${ok ? "ok  " : "FOUT"} ${q.padEnd(28)} alleen de juiste soort (${res.length} resultaten)`);
+}
+// partij-alias: "groenlinks" moet ook PRO vinden
+{
+  const res = z.zoek("groenlinks").resultaten;
+  const ok = res.some((r) => /\bPRO\b/.test(r.doc.personen || ""));
+  if (!ok) fout++;
+  console.log(`${ok ? "ok  " : "FOUT"} ${"groenlinks".padEnd(28)} vindt ook PRO`);
+}
+const totaal = TESTS.length + SOORT_TESTS.length + 1;
+console.log(`\n${totaal - fout}/${totaal} geslaagd (${z.aantal} documenten in de index)`);
 process.exit(fout ? 1 : 0);

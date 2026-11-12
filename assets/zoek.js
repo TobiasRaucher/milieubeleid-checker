@@ -10,6 +10,9 @@
    - voorvoegsels (stik → stikstof) en kleine tikfouten (stiksof → stikstof);
    - weging: een treffer in de titel telt zwaarder dan in de tekst;
    - "tussen aanhalingstekens" zoekt een exacte woordgroep;
+   - samengestelde woorden worden in de index ook gesplitst (klimaatwet → klimaat + wet), zodat "wet" ook "Klimaatwet" vindt;
+   - soortwoorden werken als filter: "motie stikstof" toont alleen moties;
+   - thema's (data/themas.json) tellen mee, zodat "adaptatie" ook vergaderingen over dat thema vindt;
    - alle woorden moeten voorkomen; levert dat niets op, dan volstaat een deel van de woorden.
 */
 (function (root, factory) {
@@ -98,7 +101,14 @@
 
   function bouwDocumenten(D) {
     const docs = [];
-    const add = (d) => docs.push({ titel: "", kern: "", tekst: "", personen: "", sectoren: [], ...d });
+    const T = D.T;
+    const add = (d) => {
+      const doc = { titel: "", kern: "", tekst: "", personen: "", sectoren: [], ...d };
+      if (T && !doc.themas) doc.themas = T.voor(doc.titel, doc.themaTekst || [], doc.sectoren);
+      if (T) doc.themanamen = (doc.themas || []).map((id) => T.naam(id)).join(" ");
+      delete doc.themaTekst;
+      docs.push(doc);
+    };
     const actPerNr = new Map((D.activiteiten || []).map((a) => [a.Nummer, a]));
     const samengevat = new Set();
 
@@ -113,7 +123,8 @@
           ...(s.vervolg || []), ...(a.agendapunten || []).map((ap) => ap.onderwerp), d.commissie, a.Voortouwnaam]),
         personen: j([...(s.partijen || []).map((p) => `${p.fractie} ${p.spreker}`), d.bewindspersoon, ...(d.deskundigen || []).map((x) => `${x.naam} ${x.organisatie || ""}`),
           ...(a.bewindspersonen || []).map((b) => b.naam)]),
-        link: "#debatten/d-" + d.id, niveau: d.niveau,
+        link: "#vergaderingen/d-" + d.id, niveau: d.niveau,
+        themas: d.themas && d.themas.length ? d.themas : undefined, themaTekst: (a.agendapunten || []).map((ap) => ap.onderwerp),
       });
     }
     const DS = D.dossiers || {};
@@ -129,7 +140,7 @@
       add({
         id: "thema:" + d.id, cat: "dossiers", soort: "Beleidsdossier", sectoren: d.sectoren || [],
         titel: d.titel, kern: d.omschrijving || "", tekst: j([...(d.zoektermen || []), ...(d.kamerstukken || []).map((k) => "Kamerstuk " + k)]),
-        link: "#debatten", setdossier: d.id,
+        link: "#vergaderingen?dossier=" + encodeURIComponent(d.id),
       });
     }
     const eigenKamerstukken = new Set((DS.dossiers || []).flatMap((d) => [d.kamerstuk, ...(d.kamerstukken || [])]).filter(Boolean).map(String));
@@ -161,6 +172,7 @@
         tekst: j([...(a.agendapunten || []).flatMap((ap) => [ap.onderwerp, ...(ap.stukken || []).map((st) => st.onderwerp)]), a.Voortouwnaam, a.Nummer]),
         personen: j((a.bewindspersonen || []).map((b) => b.naam)),
         link: a.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${a.Nummer}`, extern: true,
+        themaTekst: (a.agendapunten || []).map((ap) => ap.onderwerp),
       });
     }
     const actSleutels = new Set((D.activiteiten || []).filter((a) => a.Datum).map((a) => dag(a.Datum) + "|" + norm(a.Onderwerp).slice(0, 20)));
@@ -176,18 +188,61 @@
     return docs.filter((d) => (gezien.has(d.id) ? false : (gezien.add(d.id), true)));
   }
 
+  const KORT = new Set(["wet", "gas", "net", "zee", "bos", "co2", "ets", "mest", "afval"]);
+  const GEEN_STAART = new Set(["heid", "lijk", "baar", "isch", "ende", "atie", "ing", "teit", "ering", "ingen", "elijk"]);
+  // soortwoorden in de zoekvraag worden een filter (alleen als er nog andere zoekwoorden over zijn)
+  const SOORTWOORDEN = [
+    [["motie", "moties"], "moties", (d) => d.soort === "Motie"],
+    [["amendement", "amendementen"], "amendementen", (d) => d.soort === "Amendement"],
+    [["kamerbrief", "kamerbrieven", "brief", "brieven"], "Kamerbrieven", (d) => d.soort === "Kamerbrief"],
+    [["kamervragen", "kamervraag"], "antwoorden op Kamervragen", (d) => d.soort === "Antwoord Kamervragen"],
+    [["commissiedebat", "commissiedebatten"], "commissiedebatten", (d) => /^Commissiedebat/.test(d.soort)],
+    [["tweeminutendebat", "tweeminutendebatten"], "tweeminutendebatten", (d) => /Tweeminutendebat/.test(d.soort)],
+    [["briefing", "briefings"], "technische briefings", (d) => /briefing/i.test(d.soort)],
+    [["rondetafelgesprek", "rondetafelgesprekken", "rondetafel"], "rondetafelgesprekken", (d) => /Rondetafel/.test(d.soort)],
+    [["debat", "debatten", "vergadering", "vergaderingen"], "vergaderingen", (d) => d.cat === "debatten"],
+    [["wetsvoorstel", "wetsvoorstellen"], "wetsvoorstellen", (d) => /^Wetsvoorstel/.test(d.soort)],
+    [["agenda"], "agenda", (d) => d.cat === "agenda"],
+  ];
   const CAT_GEWICHT = { debatten: 1.25, dossiers: 1.4, moties: 1, stukken: 1, agenda: 1.05 };
 
   function maak(D, synoniemen) {
     const docs = bouwDocumenten(D);
     const perId = new Map(docs.map((d) => [d.id, d]));
+    // woordenschat voor het splitsen van samenstellingen
+    const freq = new Map();
+    for (const d of docs) for (const t of tokens([d.titel, d.kern, d.tekst].join(" "))) freq.set(t, (freq.get(t) || 0) + 1);
+    const _split = new Map();
+    function splits(tok) {
+      if (tok.length < 6 || /\d/.test(tok)) return [];
+      if (_split.has(tok)) return _split.get(tok);
+      let uit = [];
+      const kopVorm = (kop) => [kop, kop.replace(/s$/, ""), kop.replace(/en$/, ""), kop.replace(/e$/, "")].find((k) => k.length >= 3 && !STOP.has(k) && (freq.get(k) || 0) >= 2);
+      // eerst: kop en staart komen allebei als los woord voor (langste staart eerst)
+      for (let i = 3; i <= tok.length - 3 && !uit.length; i++) {
+        const kop = tok.slice(0, i), staart = tok.slice(i);
+        if (!((freq.get(staart) || 0) >= (staart.length >= 6 ? 1 : 2) && (staart.length >= 4 || KORT.has(staart)) && !GEEN_STAART.has(staart))) continue;
+        const k = kopVorm(kop);
+        if (k) uit = [k, staart];
+      }
+      // dan: een veelvoorkomende kop met een lange staart die zelf niet los voorkomt (stikstof + depositie)
+      for (let i = tok.length - 6; i >= 4 && !uit.length; i--) {
+        const kop = tok.slice(0, i), staart = tok.slice(i);
+        const k = kopVorm(kop);
+        if (k && (freq.get(k) || 0) >= 5 && !GEEN_STAART.has(staart) && !/^s/.test(staart)) uit = [k, staart];
+      }
+      _split.set(tok, uit);
+      return uit;
+    }
+    const indexTokens = (s) => { const t = tokens(s); return t.concat(t.flatMap(splits)); };
     const ms = new MiniSearch({
-      fields: ["titel", "kern", "tekst", "personen"],
-      tokenize: (s) => tokens(s),
+      fields: ["titel", "kern", "tekst", "personen", "themanamen"],
+      tokenize: (s) => indexTokens(s),
       processTerm: (t) => term(t),
       searchOptions: {
-        boost: { titel: 4, personen: 2, kern: 1.5, tekst: 1 },
-        prefix: (t) => t.length >= 3,
+        tokenize: (s) => tokens(s),
+        boost: { titel: 4, personen: 2, kern: 1.5, tekst: 1, themanamen: 0.7 },
+        prefix: (t) => t.length >= 4,
         fuzzy: (t) => (t.length >= 5 ? 0.2 : false),
         boostDocument: (id) => CAT_GEWICHT[perId.get(id)?.cat] || 1,
       },
@@ -209,7 +264,14 @@
     function zoek(q, opts = {}) {
       const sector = opts.sector || "alle";
       const frasen = [...String(q).matchAll(/"([^"]+)"/g)].map((m) => tokens(m[1]).join(" ")).filter(Boolean);
-      const tk = tokens(String(q).replace(/"/g, " "));
+      let tk = tokens(String(q).replace(/"/g, " "));
+      let typeFilter = null, typeTest = null;
+      const zonderStop = tk.filter((t) => !STOP.has(t));
+      for (const [woorden, label, test] of SOORTWOORDEN) {
+        if (zonderStop.some((t) => woorden.includes(t)) && zonderStop.some((t) => !woorden.includes(t))) {
+          typeFilter = label; typeTest = test; tk = tk.filter((t) => !woorden.includes(t)); break;
+        }
+      }
       const delen = [];
       for (let i = 0; i < tk.length;) {
         const gr = vindGroep(tk, i);
@@ -221,10 +283,11 @@
           i++;
         }
       }
-      if (!delen.length) return { resultaten: [], modus: "AND", frasen, leeg: true };
+      if (!delen.length) return { resultaten: [], modus: "AND", frasen, typeFilter, leeg: true };
       const filter = (r) => {
         const d = perId.get(r.id);
         if (sector !== "alle" && !(d.sectoren || []).includes(sector)) return false;
+        if (typeTest && !typeTest(d)) return false;
         if (frasen.length) {
           const t = " " + tokens([d.titel, d.kern, d.tekst, d.personen].join(" ")).join(" ") + " ";
           if (!frasen.every((f) => t.includes(" " + f + " "))) return false;
@@ -235,7 +298,7 @@
       let res = ms.search({ combineWith: "AND", queries: delen }, { filter });
       if (!res.length && delen.length > 1) { modus = "OR"; res = ms.search({ combineWith: "OR", queries: delen }, { filter }); }
       return {
-        modus, frasen,
+        modus, frasen, typeFilter,
         resultaten: res.map((r) => ({ doc: perId.get(r.id), score: r.score, termen: new Set(r.terms) })),
       };
     }

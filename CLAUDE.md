@@ -28,7 +28,7 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
 
 - Centrale debatten krijgen een volledige samenvatting (partijen, kabinet, toezeggingen, moties). Minder centrale debatten, briefings en tweeminutendebatten mogen kort: zet `"niveau": "kort"`, schrijf `aanzet` en een uitgebreidere `gist` (met de belangrijkste uitkomsten) en laat `partijen` leeg. De site toont dan het label "kort".
 - Hoort een samenvatting bij meer dan één TK-activiteit (bv. technische briefing plus rondetafelgesprek, of een debat met voortzetting), zet de extra activiteitnummers in `extraActiviteiten`. Die activiteiten tellen dan als samengevat.
-- Zet `sector` op de sector van het debat (`klimaat-energie`, `water-adaptatie`, `natuur-stikstof-landbouw`, `circulair-vervuiling`, `ruimte-mobiliteit`).
+- Zet `sector` op de sector van het debat (`klimaat-energie`, `water-adaptatie`, `natuur-stikstof-landbouw`, `circulair-vervuiling`, `ruimte-mobiliteit`). Sectoren bepalen welke data de pipeline ophaalt; op de site worden thema's gebruikt (zie hieronder).
 - Debatten van vóór april 2026 staan niet op gehoord.de en kunnen niet worden samengevat.
 
 ## Sectoren en stukken van ministeries
@@ -49,6 +49,14 @@ Dossier `klimaatwet-bonaire` (wijziging Klimaatwet na Klimaatzaak Bonaire) is he
 ## Kosten
 
 Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alleen nieuwe, relevante debatten samen; meld aan Tobias hoeveel er openstaan als het er veel zijn.
+
+## Thema's en pagina's
+
+- Thema's staan in `data/themas.json` (id, naam, kleur, trefwoorden als reguliere expressies, en `terugval` per sector). `assets/themas.js` kent ze toe: titel telt altijd, agendapunten pas bij twee treffers. Thema's mogen meervoudig zijn.
+- Tabs: Overzicht, Agenda, Wetgeving, Moties, Vergaderingen, Stukken, Over. `#debatten` blijft werken als alias voor `#vergaderingen`.
+- Vergaderingen: filters (type, commissie, ministerie, thema, dossier; meerdere waarden per filter), samenvatting ja/nee, groeperen en ordenen. De filters staan in de URL (bv. `#vergaderingen?thema=adaptatie&groep=commissie`), dus deelbaar.
+- Agenda: tijdlijn per week en dag, opent bij vandaag; "Eerder laden" gaat per 4 weken terug tot de start van de Kamerperiode. `#agenda?dossier=<id>` filtert op dossier.
+- To-do (Tobias, nov 2026): eigen themafilter op Wetgeving, Moties, Stukken en Agenda; de algemene sectorfilter is verwijderd.
 
 ## Ontwerp
 
