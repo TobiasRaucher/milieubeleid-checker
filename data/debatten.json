@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:22:48Z",
+ "bijgewerkt": "2026-11-12T20:23:44Z",
  "debatten": [
   {
    "id": "246687",
@@ -2767,6 +2767,97 @@
    "samengevatOp": "2026-11-12",
    "sector": "klimaat-energie",
    "bron": "https://gehoord.de/beraadslagingen/78280"
+  },
+  {
+   "id": "92206",
+   "datum": "2026-06-03",
+   "type": "Tweeminutendebat",
+   "commissie": "Plenaire vergadering",
+   "titel": "Tweeminutendebat Waterstof, groen gas en andere energiedragers (CD 4/3)",
+   "niveau": "kort",
+   "dossiers": [
+    "hernieuwbaar",
+    "36947",
+    "industrie"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
+   "activiteit": "2026A01875",
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-03/natuur-en-milieu/plenaire-zaal/tweeminutendebat-waterstof-groen-gas-en-andere-energiedragers-cd-4-3-20-00",
+   "aanzet": "Afronding van het commissiedebat Waterstof, groen gas en andere energiedragers van 4 maart 2026, met moties.",
+   "gist": "Tien moties. Oordeel Kamer kregen onder meer drie PRO-moties (groene vraagcreatie onderzoeken en inbrengen in Brussel; amortisatie van het waterstofnetwerk niet ten koste laten gaan van middelen voor hernieuwbare waterstof, met de kanttekening dat de minister niet vooruit kan lopen op Prinsjesdag; weerbaarheidseisen bij subsidies), een JA21-motie over rapportage over kosten en haalbaarheid van het landelijke waterstofnetwerk (na aanpassing naar jaarlijks), een VVD/CDA-motie om voorwaarden uit te werken voor blauwe waterstof uit aardgas met CCS in de SDE++ van 2027, een breed gesteunde CDA-motie voor een openbare consultatie over aannames van het Nationaal Plan Energiesysteem, en een D66-motie dat steun voor blauwe waterstof niet tot extra aardgasimport mag leiden. Ontraden: een JA21-motie om weglekeffecten van industrie te monitoren (volgens CBS en planbureaus statistisch niet goed mogelijk; de minister informeert eind 2026 over het CBS-traject), een SGP-motie voor een fiscale inputvrijstelling voor groen gas en, in de oorspronkelijke vorm, een SGP-motie over ijzerpoeder als brandstof. Volgens de minister moet de bijmengverplichting groen gas uiterlijk 1 oktober door beide Kamers zijn om per 1 januari 2027 in te gaan.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [
+     "Met Prinsjesdag informatie over de compensatie van de glastuinbouw voor ETS2 en de bijmengverplichting (richting Flach).",
+     "Eind 2026 informatie over het CBS-traject om weglek van industrie te monitoren."
+    ],
+    "moties": "Zie de kern. Stemming op 9 juni 2026.",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/92206"
+  },
+  {
+   "id": "92207",
+   "datum": "2026-06-03",
+   "type": "Tweeminutendebat",
+   "commissie": "Plenaire vergadering",
+   "titel": "Tweeminutendebat Betaalbare energierekening voor huishoudens (CD 9/4)",
+   "niveau": "kort",
+   "dossiers": [
+    "huishoudens-warmte",
+    "elektriciteitsnet"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
+   "activiteit": "2026A03250",
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-03/natuur-en-milieu/plenaire-zaal/tweeminutendebat-betaalbare-energierekening-voor-huishoudens-cd-9-4-20-40",
+   "aanzet": "Afronding van het commissiedebat Betaalbare energierekening voor huishoudens van 9 april 2026, midden in de energieprijsschok na de sluiting van de Straat van Hormuz.",
+   "gist": "Ruim twintig moties. Voorstellen voor generieke lastenverlaging werden ontraden: lagere btw op energie (een SP-motie werd aangehouden in afwachting van een appreciatie door Financiën, een latere btw-motie ontraden), lagere energiebelasting, ETS2 niet invoeren en de bijmengverplichting schrappen (PVV), geen gedifferentieerde nettarieven, en een structureel noodfonds (DENK; volgens de minister bij SZW). De minister wil eerst zien wat het steunpakket van 300 miljoen euro voor lage inkomens en de andere maatregelen doen. Oordeel Kamer kregen een motie-Grinwis/Klos om eigen verbruik van zonnestroom te stimuleren (onder meer btw op thuisbatterijen naar Duits voorbeeld te bezien), een PRO-motie om regelingen voor energie- en warmtegemeenschappen te bundelen in een programma, en een JA21-motie voor een landelijke route met e-DNA-onderzoek naar vleermuizen bij spouwmuurisolatie. Een JA21-motie tegen dubbele energiebelasting op thuisbatterijen werd ontraden omdat achter de meter niet bij te houden is welke stroom al belast is; de minister erkende wel het knelpunt. Ook dienden VVD (inspraak van de Kamer bij de ACM-nettarieven), CDA (integrale analyse van stapeling van maatregelen op de energierekening bij de Miljoenennota) en D66 (versnelde verduurzaming voor energiekwetsbare huishoudens) moties in.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [],
+    "moties": "Zie de kern; niet alle appreciaties zijn in het automatische transcript goed te volgen. Raadpleeg voor de volledige lijst de stemmingsuitslagen.",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/92207"
+  },
+  {
+   "id": "92208",
+   "datum": "2026-06-03",
+   "type": "Tweeminutendebat",
+   "commissie": "Plenaire vergadering",
+   "titel": "Tweeminutendebat Hernieuwbare energie (CD 15/4)",
+   "niveau": "kort",
+   "dossiers": [
+    "hernieuwbaar",
+    "36973"
+   ],
+   "bewindspersoon": "Minister Van Veldhoven-van der Meer (KGG)",
+   "activiteit": "2026A03355",
+   "video": "https://debatdirect.tweedekamer.nl/2026-06-03/natuur-en-milieu/plenaire-zaal/tweeminutendebat-hernieuwbare-energie-cd-15-4-21-00",
+   "aanzet": "Afronding van het commissiedebat Hernieuwbare energie van 15 april 2026, met moties.",
+   "gist": "Tien moties. Oordeel Kamer: PRO-moties (met CDA en D66) voor een Noordzeepact dat netbeheerders, windsector, afnemers en natuurorganisaties samenbrengt, voor ambitieuze maar realistische ecologische en circulaire criteria in tenders voor wind op zee (ook in EU-verband), en voor steviger toezicht op de energiebesparingsplicht (rapportage voor eind 2026 in plaats van Prinsjesdag); D66-moties om het wetsvoorstel voor tweerichtingscontracten (CfD's) voor het zomerreces naar de Kamer te sturen en om investeren in zonnepanelen aantrekkelijk te houden na het einde van de saldering (ook voor huurders). Ontraden: een JA21-motie om de klimaatimpact van kolen en LNG uit schaliegas te vergelijken en kolencentrales eventueel langer open te houden (de minister stuurt wel uiterlijk Q3 een schriftelijke reactie over de klimaatimpact), en een BBB-motie om geen extra geld voor de volgende wind-op-zeetender beschikbaar te stellen. Een SGP-motie over steun voor IPCEI nucleair werd aangehouden. De minister kondigde aan dit jaar niet één maar twee gigawatt wind op zee te tenderen.",
+   "samenvatting": {
+    "partijen": [],
+    "kabinet": [],
+    "toezeggingen": [
+     "Binnen enkele weken een brief over de openstelling van de wind-op-zeetenders van 2026 en hoe de slagingskans te vergroten.",
+     "Uiterlijk Q3 een schriftelijke reactie over de klimaatimpact van steenkool tegenover LNG."
+    ],
+    "moties": "Zie de kern.",
+    "vervolg": []
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/92208"
   }
  ]
 }
