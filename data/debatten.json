@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:57:22Z",
+ "bijgewerkt": "2026-11-12T20:58:22Z",
  "debatten": [
   {
    "id": "246687",
@@ -3515,6 +3515,115 @@
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "bron": "https://gehoord.de/beraadslagingen/100108"
+  },
+  {
+   "id": "190239",
+   "datum": "2026-09-03",
+   "type": "Commissiedebat",
+   "commissie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+   "titel": "Ontwerp-Natuurplan",
+   "dossiers": [],
+   "sector": "natuur-stikstof-landbouw",
+   "bewindspersoon": "Minister van Landbouw, Visserij, Voedselzekerheid en Natuur (Van Essen)",
+   "activiteit": "2026A05874",
+   "extraActiviteiten": [
+    "2026A06333"
+   ],
+   "video": "https://debatdirect.tweedekamer.nl/2026-09-03/landbouw-natuur-voedselkwaliteit/groen-van-prinstererzaal/commissiedebat-ontwerp-natuurplan-11-15",
+   "aanzet": "Debat over het ontwerp-Natuurplan waarmee Nederland invulling geeft aan de Europese Natuurherstelverordening; de minister had het ontwerp op 25 augustus 2026 bij de Europese Commissie ingediend. Het definitieve plan moet uiterlijk 1 september 2027 klaar zijn.",
+   "gist": "Het ontwerp bevat vooral bestaand beleid en nog geen nieuwe maatregelen of kosten, wat leidde tot vragen van vrijwel alle fracties over wat Europees verplicht is, wat het kost en hoe groot de restopgave is. BBB, PVV, JA21, FVD en de Groep Markuszower wezen de verordening af en vreesden een 'nieuwe stikstofcrisis' voor het platteland; VVD, CDA, SGP en ChristenUnie wilden een haalbare, betaalbare en juridisch houdbare uitvoering zonder nationale koppen; PvdD, PRO en D66 zagen natuurherstel als noodzakelijk en wilden meer ambitie. Minister Van Essen zei dat het kabinet de verordening uitvoert met oog voor juridische en uitvoeringsrisico's, in het definitieve plan per artikel aangeeft wat Europa vraagt, wat maatregelen kosten en wie verantwoordelijk is, en het PBL vraagt te reflecteren op de restopgaven. In het tweeminutendebat werden onder meer moties aangenomen voor een onafhankelijke sociaal-economische analyse vóór definitieve keuzes en voor het per doel inzichtelijk maken van wat de verordening vereist.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "PvdD",
+      "spreker": "Ines Kostić",
+      "positie": "Natuur is de basis van ons bestaan en brokkelt af: de helft van de bestuivers is bedreigd of verdwenen, terwijl volgens haar te lang de belangen van vervuilers voorop stonden. Wil een juridisch houdbaar plan met gebiedsgerichte herstelmaatregelen en harmonisatie met de Nota Ruimte.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=174454"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Caroline van der Plas",
+      "positie": "Is tegen de Natuurherstelverordening (Nederland stemde ook tegen) en noemt het plan een 'tikkende tijdbom' onder het platteland. Vindt dat het kabinet strenger is dan Europa vraagt, dat de financiële gevolgen niet zijn doorgerekend en dat 'wensnatuur' landbouwgrond opslokt.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=174511"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Voelt zich niet thuis bij een 'maakbaarheidsdenken' over natuur in hectares en depositiewaarden; vreest dat sussende woorden net als bij de Habitatrichtlijn later tot knelpunten leiden. Wil dat het definitieve plan uitsluit dat er nieuwe ingrijpende beperkingen komen.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=174619"
+     },
+     {
+      "fractie": "ChristenUnie",
+      "spreker": "Pieter Grinwis",
+      "positie": "Ziet een goede beweging in het plan (natuur ook buiten Natura 2000), maar vreest een juridisch 'moeras' zoals bij stikstof. Wil aansluiting bij bestaande gebiedsprocessen, betrokkenheid van de Kamer bij de restopgave en een rol voor agrarisch natuurbeheer.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=174654"
+     },
+     {
+      "fractie": "VVD",
+      "spreker": "Renate den Hollander",
+      "positie": "Nederland komt Europese afspraken na, maar alleen haalbaar, betaalbaar, juridisch houdbaar en proportioneel. Wil ruim voor 1 september 2027 weten wat verplicht is, wat Nederland al doet, wat geborgd is en welke restopgave overblijft, en wijst op het PBL dat de restopgave mogelijk onderschat.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=174762"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Marieke Vellinga-Beemsterboer",
+      "positie": "Natuurherstel maakt Nederland gezonder, sterker en rijker en helpt tegen hitte en droogte. Wil beleidsopties voor alle opgaven in de statusupdate van het plan en aandacht voor stedelijke natuur en bestuivers.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=174907"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Laura Bromet",
+      "positie": "Begrijpt dat het plan nu vooral bestaand beleid bevat, maar vindt dat er veel meer moet; ziet natuur als oplossing in plaats van gevaar. Vraagt om duidelijkheid over begrenzing en monitoring van stedelijke ecosystemen.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=175129"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Jan Arie Koorevaar",
+      "positie": "Was kritisch op de verordening en wil een uitvoerbare, betaalbare en uitlegbare uitvoering. Vroeg hoe het plan zich verhoudt tot de Nota Ruimte en om per artikel inzicht in wat verplicht is, wat bestaand beleid al bijdraagt en wat het kost; wil een onafhankelijke sociaal-economische analyse.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=175279"
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "spreker": "Tamara ten Hove",
+      "positie": "Sprak mede namens Keijzer. Twijfelt of het plan beleidsneutraal is, omdat natuurherstel direct wordt gekoppeld aan de stikstofaanpak; boeren zijn volgens haar partners en geen probleem dat moet worden weggewerkt.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=175402"
+     },
+     {
+      "fractie": "FVD",
+      "spreker": "Ralf Dekker",
+      "positie": "Noemt de stelling dat het slecht gaat met de natuur onbewezen en wijst erop dat de Nederlandse natuur door mensen is gemaakt. Wil geen extra beperkingen voor landbouw en visserij zolang verslechtering niet is aangetoond en de verordening politiek bestrijden.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=175463"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Chris Jansen",
+      "positie": "Vindt dat het kabinet verkeerde prioriteiten heeft in tijden van hoge kosten van levensonderhoud; het natuurplan gaat volgens hem tientallen miljarden kosten en veel leed veroorzaken, vooral voor boeren.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=175503"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Diederik Boomsma",
+      "positie": "Vindt de verordening verwerpelijk vanwege top-down juridische afdwingbaarheid en wil dat de minister haar in Europa opnieuw ter discussie stelt. Wil per doel en per habitattype inzicht in wat de verordening vereist en de stedelijke opgave zo beperkt mogelijk invullen.",
+      "link": "https://gehoord.de/beraadslagingen/190239?segment=175590"
+     }
+    ],
+    "kabinet": [
+     "Het kabinet is gecommitteerd aan de uitvoering van de verordening en wil de doelen halen, met oog voor juridische en uitvoeringsrisico's; als onderdelen niet haalbaar blijken, bespreekt het kabinet dat in Europees verband.",
+     "In het definitieve Natuurplan wordt per artikel duidelijk wat Europa vraagt, welke maatregelen er komen, wat ze kosten en wie verantwoordelijk is; het PBL wordt gevraagd te reflecteren op de restopgaven.",
+     "De begrenzing van stedelijke ecosystemen ligt bij VRO en is bepalend voor de opgave; gemeenten en bouwers zijn volgens de minister vaak al ver met natuurinclusief bouwen (city deals).",
+     "Niets doen kost op termijn meer dan investeren in natuur; klimaatverandering maakt natuurherstel volgens de minister urgenter."
+    ],
+    "toezeggingen": [],
+    "doorgeleid": "",
+    "moties": "Tweeminutendebat op 29 september 2026. Aangenomen onder meer: Koorevaar c.s. over een onafhankelijke sociaal-economische analyse vóór definitieve keuzes (147-3); Grinwis en Den Hollander over aansluiten bij bestaande gebiedsprocessen (147-3), over het betrekken van de Kamer bij de restopgave (143-7) en over de bijdrage van het ANLb (121-29); Vellinga-Beemsterboer en Koorevaar over beleidsopties voor alle opgaven in de statusupdate (150-0); Boomsma over per doel inzichtelijk maken wat de verordening vereist (123-27); Van der Plas over geen nieuwe taken voor provincies zonder capaciteit en middelen (81-69) en over vergelijking met de plannen van buurlanden (92-58). Verworpen onder meer: Van der Plas over het peilen van steun voor intrekking van de verordening (49-101), Dekker over het politiek bestrijden van de verordening (49-101) en over geen extra beperkingen zolang verslechtering niet is aangetoond (49-101), en Kostić over het Natuurplan ten minste juridisch houdbaar maken (61-89). Aangehouden onder meer: Kostić over gebiedsgerichte herstelmaatregelen en over harmonisatie met de Nota Ruimte, Diederik van Dijk en Flach over geen nieuwe ingrijpende beperkingen.",
+    "vervolg": [
+     "Statusupdate van het Natuurplan met beleidsopties.",
+     "Definitief Natuurplan uiterlijk 1 september 2027."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-12",
+   "bron": "https://gehoord.de/beraadslagingen/190239"
   }
  ]
 }
