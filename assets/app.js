@@ -279,40 +279,14 @@
   /* ---------- Overzicht ---------- */
   function overzicht() {
     const ma = motiesEnAmendementen();
-    const moties = ma.filter((z) => z.soort === "Motie");
-    const aangenomen = moties.filter((z) => z.uitslag === "aangenomen").length;
-    const besloten = moties.filter((z) => ["aangenomen", "verworpen"].includes(z.uitslag)).length;
-    const dos = S.data.dossiers.dossiers.filter(inSector);
-    const lopend = dos.filter((d) => faseIndex(d.fase) < faseIndex("staatsblad")).length;
-    const deb = S.data.debatten.filter(inSector);
-    const acts = S.data.activiteiten.filter((a) => inSector(a) && isDebat(a) && a.Status === "Uitgevoerd");
-    const prio = dos.filter((d) => d.prioriteit);
-
     const recentStem = ma.filter((z) => z.stemtelling).sort((a, b) => (b.stemtelling.datum || "").localeCompare(a.stemtelling.datum || "")).slice(0, 6);
     const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG).slice(0, 6);
-
-    const uitgevoerd = Math.max(acts.length, deb.length);
-    const tkPeil = S.data.meta.bijgewerkt ? `Tweede Kamer open data · stand ${fmtKort(dagNL(new Date(S.data.meta.bijgewerkt)))}` : "Tweede Kamer open data";
     return `
-      ${window.MRMilieu ? MRMilieu.co2Html() : ""}
-      <div class="stats">
-        ${stat(nl(lopend), "wetsvoorstellen in voorbereiding of behandeling", "#wetgeving")}
-        ${stat(nl(moties.length), "moties sinds het begin van de Kamerperiode", "#moties")}
-        ${stat(besloten ? Math.round((100 * aangenomen) / besloten) + "%" : "–", `aangenomen, van ${nl(besloten)} moties met een stemming`, "#moties")}
-        ${stat(nl(deb.length), `samengevat, van ${nl(uitgevoerd)} gehouden vergaderingen`, "#vergaderingen")}
-        ${stat(nl(stukkenInSector().length), "Kamerbrieven en antwoorden van ministeries", "#stukken")}
-        ${stat(nl((S.data.toezeggingen || []).filter((t) => t.status === "Openstaand").length), "openstaande toezeggingen", "#toezeggingen?status=Openstaand")}
-      </div>
-      <span class="peil">${tkPeil}</span>
       ${window.MRMilieu ? MRMilieu.sectieHtml() : ""}
-      ${prio.map((d) => `<h2>Aandachtsdossier</h2>${dossierCard(d, true)}`).join("")}
       <div class="grid two">
         <div><h2>Recente stemmingen</h2><div class="card"><ul class="list">
           ${recentStem.map((z) => `<li><div class="regelmeta">${uitslagPill(z.uitslag)}<span class="tag">${esc(z.soort)}</span></div><div class="regeltitel">${esc(korteTitel(z))}</div><div class="small muted">${indienersTekst(z)}</div>${voteBar(z.stemtelling)}</li>`).join("") || `<li class="empty">Nog geen stemmingen</li>`}
         </ul><div class="kaartvoet"><a href="#moties">Alle moties en amendementen</a></div></div>
-        <h2>Laatste samenvattingen</h2><div class="card"><ul class="list">
-          ${deb.slice().sort((a, b) => b.datum.localeCompare(a.datum)).slice(0, 3).map((d) => `<li><div class="regelmeta"><span class="tag">${esc(d.type)}</span><span class="datum">${fmtKort(d.datum)}</span></div><a class="ltitel" href="#vergaderingen/d-${d.id}">${esc(d.titel)}</a><div class="small gist">${esc(d.gist)}</div></li>`).join("")}
-        </ul><div class="kaartvoet"><a href="#vergaderingen?samenvatting=ja">Alle samenvattingen</a></div></div>
         </div>
         <div><h2>Komt eraan</h2><div class="card"><ul class="list">
           ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland</li>`}
@@ -322,7 +296,6 @@
         </ul><div class="kaartvoet"><a href="#stukken">Alle stukken</a></div></div>
         </div>
       </div>`;
-    function stat(n, lbl, href) { return `<a class="stat" href="${href}"><div class="num">${n}</div><div class="lbl">${lbl}</div></a>`; }
   }
 
   /* ---------- Wetgeving ---------- */

@@ -67,7 +67,7 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 
 **Lees eerst `DESIGN.md` (bovenin de repo).** Daar staan de richting, alle ontwerpwaarden en de regels (doen en niet doen); die gaan voor alles hieronder. Elke wijziging aan het uiterlijk volgt DESIGN.md.
 
-- Huisstijl (nov 2026): "milieuradar" in kleine letters, DM Sans, groene merkkleur, rood als alarmkleur (vandaag, eerstvolgend), alleen licht thema. Alle kleuren en vormen staan als ontwerpknoppen bovenaan `assets/style.css`; sectorkleuren als `--s-<sectorcode>` (gelijke helderheid en verzadiging).
+- Huisstijl (nov 2026): "milieuradar" in kleine letters (woordmerk 24px met een logo van 36px; op de telefoon 20 en 32), DM Sans, groene merkkleur, rood als alarmkleur (vandaag, eerstvolgend), alleen licht thema. Alle kleuren en vormen staan als ontwerpknoppen bovenaan `assets/style.css`; sectorkleuren als `--s-<sectorcode>` (gelijke helderheid en verzadiging).
 - Verfijning volgens Apple-ontwerpprincipes (nov 2026):
   - directe feedback bij indrukken (`--duur-druk`);
   - kritisch gedempte "veer" voor beweging (`--veer`, `--duur-veer`), zonder doorschieten;
@@ -88,14 +88,16 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 
   Houd nieuwe onderdelen in die lijn.
 
-## Milieu-indicatoren op Overzicht (nov 2026)
+## Overzicht: "Wat Nederland uitstoot" (sinds 13 nov 2026)
 
-- Bovenaan Overzicht staat de CO2-band; onder de kerncijfers staan "Uitstoot naar de lucht in Nederland" en "Planetaire grenzen". Code: `assets/milieu.js` (vanilla JS, lijngrafieken als SVG, geen bibliotheek).
-- CO2: `pipeline/fetch_milieu.py` haalt de daggemiddelden van Mauna Loa (NOAA GML, `co2_daily_mlo.csv`) op en schrijft het laatste jaar naar `data/milieu/co2.json`. Draait in de dagelijkse Action. Het is een daggemiddelde met een of twee dagen vertraging, geen live meting.
-- Uitstoot: de browser haalt CBS-tabel 85668NED rechtstreeks op (OData, CORS toegestaan). Stoffen: CO2 `A044109`, CH4 `A044107`, NH3 `A044111`, NOx `A044112`, PM2.5 `A051771`; totaal van alle bronnen `T001176`. Die sleutel is in de API met spaties opgevuld, dus filter met `startswith(...)`, niet met `eq`. Dit zijn feitelijke emissies op Nederlands grondgebied, niet de IPCC-cijfers waarmee het Klimaatwet-doel wordt gemeten; die toelichting staat op de site en moet blijven staan.
-- Planetaire grenzen: `fetch_milieu.py` kopieert het Datahub-CSV ongewijzigd naar `data/milieu/planetaire-grenzen.csv` (de vaste Datahub-link stuurt door zonder CORS-kop, dus de browser kan hem niet zelf ophalen). Nederlandse namen en correcties staan in `data/planetaire-grenzen.json`. De site bepaalt "overschreden" zelf uit `boundary_direction`; de kolommen `boundary_zone_lower/upper` worden niet gebruikt, want die kloppen niet met de wetenschappelijke onzekerheidszones.
-- Correctie oceaanverzuring: Datahub gebruikt nog 2,75 (Richardson e.a. 2023); de Planetary Health Check 2025 hanteert 2,86 (overschreden, 7 van 9); de editie 2026 (september 2026) bevestigt 7 van 9. De correctie wordt alleen toegepast zolang Datahub een andere waarde heeft. Controleer bij elke nieuwe Planetary Health Check (jaarlijks rond september) of de correcties nog kloppen.
-- Mislukt een bron in de pipeline, dan blijft het oude bestand staan en staat de melding in `data/milieu/meta.json`.
+- Overzicht begint met het blok "Wat Nederland uitstoot" (de hoofdgrafiek), daarna Recente stemmingen, Komt eraan en Nieuwste stukken. De CO2-band, de kerncijfers, het Aandachtsdossier, Laatste samenvattingen en de planetaire grenzen zijn op verzoek van Tobias verwijderd (met hun data en de pipelinestap `fetch_milieu.py`); niet terugzetten zonder te vragen. Code: `assets/milieu.js` (vanilla JS, SVG, geen bibliotheek).
+- Het blok gaat alleen over uitstoot die Nederland zelf in de hand heeft, en elke weergave toont het doel van de wet die erover gaat. Zes weergaven, in twee groepen:
+  - **Klimaatwet**: Totaal broeikasgassen, CO2, CH4, N2O uit CBS-tabel 85669NED (IPCC-richtlijnen, miljard kg CO2-equivalent). Sector `T001616` (Totaal klimaatsectoren: inclusief landgebruik, zonder bunkers); stoffen `T001372` (totaal), `A044109`, `A044107`, `A044110` (CBS noemt dat "Distikstofoxide (N20)" met een nul; op de site N₂O). F-gassen tellen mee in het totaal maar hebben geen eigen weergave.
+  - Doellijn (−55% in 2030 t.o.v. 1990) **alleen bij het totaal**; het doel geldt voor alle broeikasgassen samen. Bij CO2, CH4 en N2O alleen de 1990-lijn en de zin "Klimaatwet: −55% voor alle broeikasgassen samen in 2030."
+  - **Stikstofwet**: NH3 (`A044111`) en NOx (`A044112`) uit CBS-tabel 85668NED (bron `T001176`, eenheid mln kg = kiloton). Gestreepte lijn naar de raming voor 2030 uit PBL ERL 2025 (vastgesteld en voorgenomen beleid: NH3 101, NOx 227 kiloton), een vaste stip bij het doel en de kloof "−36% nodig t.o.v. raming". De 36% komt uit RIVM KN-2025-0026 (wat nodig is voor het Wsn-doel: de helft van de stikstofgevoelige natuur onder de KDW in 2030). De 38% in diezelfde notitie hoort bij het Greenpeace-vonnis en wordt bewust niet getoond. Geen 1990-doel tekenen: het stikstofdoel is relatief aan de raming.
+  - Onder de stikstofgrafieken staat de voetnoot over het wetsvoorstel van 3 november 2026 (sectordoelen 2035). Wordt dat wet, of verschijnt een nieuwe ERL (tweejaarlijks), werk dan `WEERGAVEN[].raming`, `WSN` en de voetnoot in `milieu.js` bij.
+- Sleutels in beide CBS-tabellen kunnen met spaties zijn opgevuld: filter met `startswith(...)`, niet met `eq`.
+- Bewust weggelaten (Tobias, 13 nov 2026): de peilregel, de uitleg per stof, de tabelweergave en de toelichting over stationaire en mobiele bronnen. Wel blijft één bronregel met links onder de grafiek.
 
 ## Zoekfunctie
 

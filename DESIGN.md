@@ -8,9 +8,9 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 
 - **Product.** A Dutch monitor of environmental and climate policy in the Tweede Kamer (laws, moties, debates, ministry letters, agenda), shown next to the measurements that policy answers to, for people who read policy for a living.
 - **Character.** Exact, sober, alert.
-- **World.** The measurement desk: monitoring stations, instrument readouts, CBS/RIVM/NOAA tables and typeset Kamerstukken.
-- **Moments.** The CO₂ readout, the emissions chart (the largest drawn thing on Overzicht) and the planetary boundaries grid, where each indicator sits on a scale against its limit. The chrome stays quiet around all three.
-- **Signature.** The peildatum stamp: every figure carries its source and date in one mono caption, in one format (`NOAA · Mauna Loa, Hawaii · daggemiddelde 11 nov 2026`). Red only ever means past the limit, happening now, or a verworpen vote outcome (a traffic light, by Tobias's choice of 13 Nov 2026).
+- **World.** The measurement desk: monitoring stations, instrument readouts, CBS, PBL and RIVM tables and typeset Kamerstukken.
+- **Moments.** The emissions chart "Wat Nederland uitstoot", the largest drawn thing on Overzicht and the first block on the page: the measured line is the only accent, and the targets from the Klimaatwet and the stikstofwet sit next to it as quiet reference lines. The chrome stays quiet around it.
+- **Signature.** The peildatum stamp: every figure carries its source and date in one mono caption, in one format (`Tweede Kamer open data · stand 11 nov 2026`). Red only ever means past the limit, happening now, or a verworpen vote outcome (a traffic light, by Tobias's choice of 13 Nov 2026).
 
 ## Tokens
 
@@ -44,10 +44,10 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 
 ### Type
 
-- Families: **DM Sans** (400, 500, 600) for everything; **DM Mono** (400, 500) only for source stamps, the header stamp, chart axes and end labels, Kamerstuk, zaak and document numbers, and the measured values in the boundaries grid. Dates and times are DM Sans with `tabular-nums`.
-- Sizes (`--t-*`): 12 meta and stamps, 13 captions, 14 controls and tables, 15 body, 18 card titles, 20 section heads and wordmark, 30 page titles and key figures, 64 the CO₂ figure. Mobile only: 24 for stat figures, 52 for the CO₂ figure.
+- Families: **DM Sans** (400, 500, 600) for everything; **DM Mono** (400, 500) only for source stamps, the header stamp, chart axes, end labels and reference labels, and Kamerstuk, zaak and document numbers. Dates and times are DM Sans with `tabular-nums`.
+- Sizes (`--t-*`): 12 meta and stamps, 13 captions, 14 controls and tables, 15 body, 18 card titles, 20 section heads (and the wordmark on phones), 24 the wordmark, 30 page titles and key figures. Mobile only: 24 for stat figures.
 - Weights: 400 body, 500 headings and figures, 600 for rare emphasis (`<b>`, group heads). Never 700.
-- Tracking: 0 below 20px; −0.005em at 18 to 20; −0.02em at 30; −0.03em at 64.
+- Tracking: 0 below 20px; −0.005em at 18 to 20; −0.015em at 24 (wordmark); −0.02em at 30.
 
 ### Spacing
 
@@ -64,7 +64,7 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 | Tag, label, keycap (keycap 4) | `--r-tag` | 6 |
 | Button, field, select, chip, menu row | `--r-control` | 8 |
 | Card, tile, menu | `--r-card` | 12 |
-| Panel (CO₂ band, filter bar) | `--r-panel` | 16 |
+| Panel (filter bar) | `--r-panel` | 16 |
 | Main tab bar and its tabs | | pill (the only pill on the site) |
 | Large switcher (Moties/Amendementen) | `--r-card` / `--r-control` | 12 outside, 8 per segment |
 
@@ -81,7 +81,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 - Press: `scale(0.98)`. Menus rise 4px and fade. Page entrance: 8px rise and fade, only when the tab changes.
 - Transition only color, background, border, opacity and transform, each named.
 - Two documented exceptions that animate size: the tab indicator (`.tab-glij`, absolutely positioned so it lays out nothing else) and the summary accordion (`grid-template-rows`, interruptible). Nothing else may animate width, height, top, left, margins or blur.
-- The CO₂ figure counts up once per visit from last year's value; that shows the change. No other number animates on load.
+- No number animates on load.
 - `prefers-reduced-motion` turns movement into short fades.
 
 ## Rules (do and don't)
@@ -113,6 +113,13 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 11. No `transition: all`, no looping or bouncy motion, no hover scale on cards.
 12. No greeting copy, exclamation marks, hype words or unverifiable claims.
 
+## Charts
+
+- One main chart per screen: the measured series is the only accent (2px line, 8% fill, open end point when the last figure is voorlopig).
+- Reference lines stay neutral and never take the accent: a baseline is a muted hairline with a ring at its start; a target line is an ink-2 hairline with a solid ink dot at the target year; a projection is an ink-2 dashed line (4 4) to an open ring. Dashes mean "projection" and nothing else.
+- Reference values are labeled once, in DM Mono 12 in the right margin (`1990 226,6`, `doel 102,0`, `raming 101`); on phones only the word. A gap is labeled in words next to a thin bracket (`−36% nodig t.o.v. raming`). Labels get a white halo so they stay legible over lines.
+- Group a chart switcher by what decides the target (here: Klimaatwet, Stikstofwet), with the group name as a muted 12px label.
+
 ## Tables
 
 The Moties/Amendementen table is the reference for every data table.
@@ -137,11 +144,10 @@ Swap "milieuradar" for another environmental site (a city air-quality monitor, a
 | Survives the swap | Rule |
 | --- | --- |
 | Green accent on white | Green is not the identity. It means selection, the primary action, a chart line or a completed phase, and nothing else. The identity comes from the three-bar mark with its red bar, the lowercase wordmark, and red meaning "now or over the limit". |
-| A CO₂ ppm readout with a year line | Every measurement block states in one sentence how it relates to Dutch policy or to a limit (CO₂ against 280 ppm and the 350 ppm boundary; CBS territory emissions are not the IPCC basis of the Klimaatwet). A new indicator without that sentence does not ship. |
-| A planetary boundaries grid | Boundaries are always shown as a value against its limit on a scale, with corrections and their sources visible. No status-only tiles. |
+| An emissions line chart | Every measurement is shown against the target of the Dutch law that governs it, and only that target: the Klimaatwet line (−55% vs 1990) only on the total of all greenhouse gases; the stikstofwet target only as a reduction against the PBL projection for 2030, never as an invented line back to 1990. The target is stated in one sentence next to the chart. A new indicator without a legal target and that sentence does not ship. |
 | A mono source caption | Stamps name the official identifier, not just the organization: `tabel 85668NED`, `Kamerstuk 36169`, zaak and activity numbers, the station. "Bron: CBS" alone is not enough. |
-| A stat strip with counts | Stat labels name the parliamentary unit and its period (moties, Kamerbrieven, toezeggingen; "sinds het begin van de Kamerperiode"). Never generic units like items, updates or records. |
-| Neutral dashboard chrome | Overzicht always puts measurement and parliament on one screen: indicators first, then the Aandachtsdossier and the parliament lists. A page with only one of the two is a different product. |
+| A stat strip with counts (Per fractie) | Stat labels name the parliamentary unit and its period (moties, Kamerbrieven, toezeggingen; "sinds het begin van de Kamerperiode"). Never generic units like items, updates or records. |
+| Neutral dashboard chrome | Overzicht always puts measurement and parliament on one screen: the emissions chart first, then the parliament lists. A page with only one of the two is a different product. |
 
 What did not survive the swap, and must stay: the Kamer-native material itself (moties with the vote per fractie, Kamerstuknummers, commissies, toezeggingen, the agenda of the Kamer), equal weight for all fracties, and Dutch throughout.
 
@@ -149,10 +155,9 @@ What did not survive the swap, and must stay: the Kamer-native material itself (
 
 - Tokens: top of `assets/style.css` ("ontwerpknoppen").
 - Icons: `ICO` and `ico()` near the top of `assets/app.js`.
-- Indicators (CO₂ readout, emissions chart, boundary scales): `assets/milieu.js`.
+- Emissions chart with its targets: `assets/milieu.js`.
 
 ### Known duplication (to dedupe later)
 
 - Six list-item renderers each build their own meta row: `stukLi`, `agendaLi`, the Recente stemmingen row in `overzicht()`, the toezegging item, fractie inbreng, the zoek item. They now share the `.regelmeta`/`.zmeta` style, but the markup is still written six times.
 - `debatCard` and `vergaderCompact` repeat the same header markup.
-- Stat strips are built in `overzicht()` (`stat()`) and inline in `fracties()`.

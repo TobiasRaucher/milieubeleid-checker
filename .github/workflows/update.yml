@@ -23,13 +23,11 @@ jobs:
         run: python3 pipeline/fetch_tk.py
       - name: Agendafeed maken
         run: python3 pipeline/maak_ics.py
-      - name: Milieu-indicatoren ophalen (CO2, planetaire grenzen)
-        run: python3 pipeline/fetch_milieu.py
       - name: Wijzigingen opslaan
         run: |
           git config user.name "checker-bot"
           git config user.email "checker-bot@users.noreply.github.com"
-          git add data/tk data/agenda.ics data/milieu
+          git add data/tk data/agenda.ics
           if git diff --cached --quiet; then
             echo "Geen wijzigingen."
           else

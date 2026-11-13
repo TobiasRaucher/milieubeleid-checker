@@ -15,7 +15,8 @@
   --t-14: 14px;   /* bediening, tabellen, lijsten */
   --t-15: 15px;   /* lopende tekst */
   --t-18: 18px;   /* kaarttitels */
-  --t-20: 20px;   /* sectiekoppen, woordmerk */
+  --t-20: 20px;   /* sectiekoppen, woordmerk op de telefoon */
+  --t-24: 24px;   /* woordmerk */
   --t-30: 30px;   /* paginatitel, kerncijfers */
   --t-64: 64px;   /* het CO2-getal */
 
@@ -92,7 +93,7 @@ b, strong { font-weight: 600; }
 .muted { color: var(--muted); }
 .small { font-size: var(--t-13); }
 /* mono alleen voor bronstempels, assen, Kamerstuk- en zaaknummers en meetwaarden; datums en tijden in DM Sans met vaste cijferbreedte */
-.mono, .peil, .stamp, .mi-as, .mi-eind { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.mono, .peil, .stamp, .mi-as, .mi-eind, .mi-reflabel { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 .datum, td.nw, .datumcel, .n, .tl-tijd, .facet-n { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .nw { white-space: nowrap; }
 
@@ -115,10 +116,11 @@ a[target="_blank"].ltitel::after, .tl-titel a[target="_blank"]::after, .ztitel[t
 header.top { position: sticky; top: 0; z-index: 5; background: var(--page); border-bottom: 1px solid transparent; transition: border-color var(--d-kort) var(--ease); }
 body.gescrold header.top { border-bottom-color: var(--line); }
 header.top .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding-top: 12px; padding-bottom: 12px; }
-.merk { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); border-radius: var(--r-control); }
+.merk { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); border-radius: var(--r-control); }
 .merk:hover { color: var(--ink); }
-.merk .logo { width: 28px; height: 28px; flex: none; }
-.woordmerk { font-size: var(--t-20); font-weight: 600; letter-spacing: -0.01em; line-height: 1; }
+.merk .logo { width: 36px; height: 36px; flex: none; }
+.woordmerk { font-size: var(--t-24); font-weight: 600; letter-spacing: -0.015em; line-height: 1; }
+@media (max-width: 640px) { .merk { gap: 8px; } .merk .logo { width: 32px; height: 32px; } .woordmerk { font-size: var(--t-20); } }
 .woordmerk span { color: var(--accent); }
 
 /* Hoofdnavigatie: het enige pilvormige onderdeel op de site */
@@ -516,35 +518,13 @@ li.tz { padding: 16px 0; }
 .naarboven .ico { width: 18px; height: 18px; }
 .skelet { padding-top: 16px; display: grid; gap: 16px; }
 .sk { background: var(--surface); border-radius: var(--r-card); }
-.sk-held { height: 176px; border-radius: var(--r-panel); }
-.sk-rij { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 0; height: 96px; }
-.sk-rij .sk { height: 96px; border-radius: 0; }
-.sk-rij .sk:first-child { border-radius: var(--r-card) 0 0 var(--r-card); }
-.sk-rij .sk:last-child { border-radius: 0 var(--r-card) var(--r-card) 0; }
 .sk-kop { height: 24px; width: 180px; border-radius: var(--r-tag); margin-top: 16px; }
 .sk-kaart { height: 300px; }
+.sk-uitstoot { height: 460px; margin-top: 24px; border-radius: var(--r-card); }
 .laadfout { margin-top: 40px; padding: 40px 20px; }
 .laadfout h2 { margin-top: 0; }
 
 /* ===================== Milieu-indicatoren op Overzicht (assets/milieu.js) ===================== */
-/* CO2: meetinstrument op een neutraal paneel */
-.co2-band { margin-top: 24px; background: var(--surface); border-radius: var(--r-panel); padding: 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 480px); gap: 16px 40px; align-items: end; min-height: 176px; }
-.co2-band.mi-laadt { background: none; padding: 0; display: block; }
-.co2-sk { height: 176px; border-radius: var(--r-panel); }
-.co2-label { font-size: var(--t-14); font-weight: 500; color: var(--ink-2); }
-.co2-held { display: flex; align-items: baseline; gap: 8px; margin: 4px 0 8px; }
-.co2-getal { font-size: var(--t-64); font-weight: 500; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
-.co2-eenheid { font-size: var(--t-20); color: var(--ink-2); }
-.co2-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: var(--t-14); color: var(--ink-2); }
-.co2-delta { font-weight: 500; color: var(--ink); }
-.co2-ref { margin-top: 4px; }
-.co2-trend { min-width: 0; }
-.co2-trend-kop { margin-bottom: 4px; }
-.co2-bron { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-wrap: wrap; gap: 4px 24px; align-items: baseline; justify-content: space-between; }
-@media (min-width: 761px) { .co2-bron .peil { white-space: nowrap; } }
-.co2-band .mi-punt { stroke: var(--surface); }
-@media (max-width: 760px) { .co2-band { grid-template-columns: 1fr; padding: 20px; } .co2-getal { font-size: 52px; } }
-
 /* lijngrafieken */
 .mi-grafiek { position: relative; border-radius: var(--r-control); outline-offset: 4px; }
 .mi-svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
@@ -563,54 +543,46 @@ li.tz { padding: 16px 0; }
 .mi-tip.aan { opacity: 1; }
 .mi-tip b { font-family: var(--font-mono); font-size: var(--t-14); font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
 .mi-tip-extra { color: var(--muted); }
+/* referentielijnen: stil, in de neutrale tinten; alleen de gemeten lijn is groen */
+.mi-ref { stroke: var(--muted); stroke-width: 1; opacity: 0.6; }
+.mi-basis-punt { fill: var(--card); stroke: var(--muted); stroke-width: 1.5; }
+.mi-ref.doel { stroke: var(--ink-2); opacity: 1; }
+.mi-raming { fill: none; stroke: var(--ink-2); stroke-width: 1.5; stroke-dasharray: 4 4; stroke-linecap: round; }
+.mi-raming-punt { fill: var(--card); stroke: var(--ink-2); stroke-width: 1.5; }
+.mi-doel-punt { fill: var(--ink); stroke: var(--card); stroke-width: 2; }
+.mi-kloof { fill: none; stroke: var(--ink-2); stroke-width: 1; }
+.mi-reflabel { font-size: var(--t-12); fill: var(--muted); }
+.mi-reflabel.doel, .mi-kloof-label { fill: var(--ink-2); }
+.mi-kloof-label { font-size: var(--t-12); }
+.mi-reflabel, .mi-kloof-label, .mi-eind { paint-order: stroke; stroke: var(--card); stroke-width: 4px; stroke-linejoin: round; }
 
-/* kaarten: uitstoot (hoofdgrafiek, volle breedte) en planetaire grenzen */
-.mi-sectie { display: grid; gap: 16px; margin-top: 40px; }
+/* Wat Nederland uitstoot: de hoofdgrafiek van Overzicht, met de doelen uit de Klimaatwet en de stikstofwet */
+.mi-sectie { margin-top: 24px; }
 .mi-kaart { padding: 24px; }
-.mi-kaart > h2 { font-size: var(--t-20); margin: 0 0 4px; }
-.mi-uitstoot-raster { display: grid; gap: 16px 40px; }
-@media (min-width: 1000px) { .mi-uitstoot-raster { grid-template-columns: minmax(260px, 1fr) minmax(0, 2.4fr); align-items: start; } }
-.mi-schakel { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 20px; }
+.mi-kaart > h2 { font-size: var(--t-20); margin: 0; }
+.mi-uitstoot-raster { display: grid; gap: 20px 40px; }
+@media (min-width: 1000px) { .mi-uitstoot-raster { grid-template-columns: minmax(280px, 1fr) minmax(0, 2.6fr); align-items: start; } }
+.mi-schakel { display: flex; flex-wrap: wrap; gap: 16px 24px; margin: 16px 0 24px; }
+.mi-groep { display: grid; gap: 8px; }
+.mi-groep-kop { font-size: var(--t-12); color: var(--muted); line-height: 16px; }
+.mi-groep-knoppen { display: flex; flex-wrap: wrap; gap: 8px; }
 .mi-schakel .chip { min-width: 56px; justify-content: center; }
-.mi-stat { margin-bottom: 4px; }
-.mi-stat + .peil { margin-bottom: 4px; }
 .mi-stat-waarde { font-size: var(--t-15); color: var(--ink-2); }
 .mi-stat-waarde b { font-size: var(--t-30); font-weight: 500; color: var(--ink); letter-spacing: -0.02em; margin-right: 4px; font-variant-numeric: tabular-nums; }
-.mi-stat-sub { color: var(--ink-2); }
-.mi-plek { min-height: 320px; }
-.mi-uitleg { color: var(--ink-2); margin: 16px 0 4px; max-width: var(--leesbreedte); }
-.mi-tabel summary { cursor: pointer; font-size: var(--t-13); color: var(--ink-2); padding: 4px 0; width: fit-content; }
-.mi-tabel summary:hover { color: var(--accent); }
-.mi-tabel .tablewrap { max-height: 300px; overflow: auto; margin-top: 8px; }
-.mi-tabel th.n, .mi-tabel td.n { text-align: right; }
-.mi-tabel td, .mi-tabel th { padding: 8px 12px; }
-.mi-bron { margin: 16px 0 0; max-width: var(--leesbreedte); }
-.mi-correctie { margin: 16px 0 0; color: var(--ink-2); background: var(--surface); border-radius: var(--r-control); padding: 12px 16px; max-width: var(--leesbreedte); }
+.mi-stat-sub { color: var(--ink-2); margin-top: 4px; }
+.mi-stat-sub .nw { white-space: nowrap; }
+.mi-doel { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--t-14); color: var(--ink); max-width: var(--leesbreedte); text-wrap: pretty; }
+.mi-doel + .mi-doel { border-top: 0; padding-top: 0; margin-top: 8px; color: var(--ink-2); font-size: var(--t-13); }
+.mi-plek { min-height: 280px; }
+@media (min-width: 700px) { .mi-plek { min-height: 360px; } }
+.mi-voet { margin: 12px 0 0; color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
+.mi-bron { margin: 8px 0 0; max-width: var(--leesbreedte); }
+.mi-bron a { color: var(--muted); }
+.mi-bron a:hover { color: var(--accent); }
 .mi-fout { padding: 20px 12px; text-align: center; color: var(--muted); }
 .mi-fout p { margin: 0 0 12px; }
-.co2-band .mi-fout { width: 100%; }
-
-/* planetaire grenzen: elke meetwaarde op een schaal met de grens als streep */
-.pg-raster { list-style: none; padding: 0; margin: 20px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-@media (max-width: 1100px) { .pg-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.pg-tegel { background: var(--surface); border-radius: var(--r-card); padding: 16px; display: flex; flex-direction: column; gap: 12px; }
-.pg-kop { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
-.pg-naam { font-weight: 500; line-height: 1.3; }
-.pg-status { font-size: var(--t-12); font-weight: 500; color: var(--muted); white-space: nowrap; }
-.pg-tegel.over .pg-status { color: var(--alarm-tekst); }
-.pg-ind { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; font-size: var(--t-13); color: var(--ink-2); line-height: 1.4; }
-.pg-ind li { display: grid; gap: 4px; }
-.pg-ind-waarde { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; font-family: var(--font-mono); font-size: var(--t-12); color: var(--muted); font-variant-numeric: tabular-nums; }
-.pg-ind-waarde b { font-size: var(--t-13); font-weight: 500; color: var(--ink); }
-.pg-schaal { position: relative; height: 12px; margin-top: 4px; }
-.pg-schaal .spoor { position: absolute; left: 0; right: 0; top: 5px; height: 2px; background: var(--line-sterk); border-radius: 1px; }
-.pg-schaal .zone { position: absolute; top: 4px; height: 4px; background: var(--alarm); opacity: 0.25; border-radius: 2px; }
-.pg-schaal .grens { position: absolute; top: 0; width: 2px; height: 12px; margin-left: -1px; background: var(--ink); border-radius: 1px; }
-.pg-schaal .stand { position: absolute; top: 2px; width: 8px; height: 8px; margin-left: -4px; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 2px var(--surface); }
-.pg-ind li.over .pg-schaal .stand { background: var(--alarm); }
 
 /* ===================== Overzicht: lijsten ===================== */
-.gist { display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; margin-top: 4px; color: var(--ink-2); }
 .regeltitel { font-weight: 500; }
 
 /* ===================== Responsief ===================== */
