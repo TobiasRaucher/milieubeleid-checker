@@ -14,10 +14,19 @@
   /* ---------- bronnen en doelen ---------- */
   // Sleutels zijn in de API met spaties opgevuld; daarom startswith(...) in plaats van eq.
   const TABELLEN = {
-    klimaat: { tabel: "85669NED", dim: "Klimaatsectoren", totaal: "T001616", veld: "EmissieBroeikasgassen_1", eenheid: "miljard kg CO₂-eq" }, // Totaal klimaatsectoren: incl. landgebruik, excl. bunkers
-    stikstof: { tabel: "85668NED", dim: "Emissiebronnen", totaal: "T001176", veld: "EmissiesNaarLucht_1", eenheid: "kiloton" }, // Totaal stationaire en mobiele bronnen
+    klimaat: { tabel: "85669NED", dim: "Klimaatsectoren", totaal: "T001616", veld: "EmissieBroeikasgassen_1", eenheid: "miljard kg CO₂-eq", asTitel: "CO₂-eq (miljard kg)" }, // Totaal klimaatsectoren: incl. landgebruik, excl. bunkers
+    stikstof: { tabel: "85668NED", dim: "Emissiebronnen", totaal: "T001176", veld: "EmissiesNaarLucht_1", eenheid: "kiloton", asTitel: "kiloton" }, // Totaal stationaire en mobiele bronnen
   };
   const KLIMAATWET = { jaar: 1990, reductie: 0.55 }; // Klimaatwet art. 2: 55% minder in 2030 dan in 1990
+  // PBL, Klimaat- en Energieverkenning 2025 (basispad: vastgesteld en voorgenomen beleid per 1 januari 2025):
+  // 45 tot 53% minder broeikasgassen in 2030 dan in 1990; kans op het doel van 55% kleiner dan 5%.
+  // PBL geeft geen jaarcijfers tot 2030 en geen middenwaarde: de band opent vanaf het laatst gemeten jaar naar de bandbreedte
+  // in 2030, de gestreepte lijn loopt naar het midden ervan. Percentages gelden t.o.v. het 1990-cijfer van de grafiek (zoals de doellijn).
+  // Nieuwe KEV (jaarlijks, september)? Werk dit blok bij.
+  const KEV = { editie: "KEV 2025", min: 0.45, max: 0.53, kans: 0.05, kansTekst: "<5%", oordeel: "Heel erg klein", datum: "16 sep 2025",
+    url: "https://www.pbl.nl/publicaties/klimaat-en-energieverkenning-2025" };
+  // Kleur van de kans (stoplicht): rood onder 50%, geel 50 tot 75%, groen boven 75%.
+  const kansKlasse = (p) => (p < 0.5 ? "laag" : p <= 0.75 ? "midden" : "hoog");
   // PBL, Emissieramingen luchtverontreinigende stoffen 2025 (vastgesteld en voorgenomen beleid), kiloton in 2030.
   // RIVM, Gevolgen uitspraak Greenpeace voor doelbereik (KN-2025-0026): voor het Wsn-doel 2030 is 36% minder dan die raming nodig.
   const WSN = { reductie: 0.36 };
@@ -32,8 +41,7 @@
     { id: "co2", wet: "klimaat", code: "A044109", kort: "CO₂", naam: "Kooldioxide" },
     { id: "ch4", wet: "klimaat", code: "A044107", kort: "CH₄", naam: "Methaan" },
     // CBS noemt dit "Distikstofoxide (N20)" (met een nul); in de site heet het N₂O
-    { id: "n2o", wet: "klimaat", code: "A044110", cbsNaam: "Distikstofoxide (N20)", kort: "N₂O", naam: "Lachgas",
-      noot: "Lachgas is ook een stikstofverbinding, maar de stikstofwet gaat over ammoniak en stikstofoxiden." },
+    { id: "n2o", wet: "klimaat", code: "A044110", cbsNaam: "Distikstofoxide (N20)", kort: "N₂O", naam: "Lachgas" },
     { id: "nh3", wet: "stikstof", code: "A044111", kort: "NH₃", naam: "Ammoniak", raming: 101 },
     { id: "nox", wet: "stikstof", code: "A044112", kort: "NOₓ", naam: "Stikstofoxiden", raming: 227 },
   ];
@@ -106,19 +114,22 @@
   function kader(v, r) {
     const basis = r[0], laatst = r[r.length - 1];
     if (v.wet === "klimaat") {
-      return { basis, laatst, doel: v.id === "totaal" ? basis.waarde * (1 - KLIMAATWET.reductie) : null };
+      if (v.id !== "totaal") return { basis, laatst, doel: null };
+      const b = basis.waarde;
+      return { basis, laatst, doel: b * (1 - KLIMAATWET.reductie),
+        kev: { laag: b * (1 - KEV.max), hoog: b * (1 - KEV.min), midden: b * (1 - (KEV.min + KEV.max) / 2) } };
     }
     return { basis, laatst, raming: v.raming, doel: v.raming * (1 - WSN.reductie) };
   }
 
   /* ---------- de grafiek: gemeten lijn (accent) met stille referentielijnen ---------- */
-  function grafiek(houder, v, r, eenheid) {
+  function grafiek(houder, v, r, eenheid, asTitel) {
     const k = kader(v, r);
     const fmt = (x) => NL(x, 1, 1);
     const B = Math.max(280, houder.clientWidth || 600);
     const smal = B < 560;
-    const H = B > 640 ? 360 : 280;
-    const m = { t: 16, r: smal ? 64 : 96, b: 28, l: 44 };
+    const H = B > 640 ? 384 : 304;
+    const m = { t: 32, r: smal ? 64 : 96, b: 48, l: 44 }; // boven: ruimte voor de astitel; onder: jaartallen plus "Jaar"
     const x0 = k.basis.jaar, x1 = 2030;
     const ymax = Math.max(...r.map((p) => p.waarde), k.raming || 0, k.doel || 0);
     const yTicks = mooieTicks(0, ymax, 4);
@@ -128,7 +139,8 @@
     const rechts = X(x1);
 
     const aria = `${v.naam} in Nederland per jaar, ${k.basis.jaar} tot ${k.laatst.jaar}, in ${eenheid}.` +
-      (k.raming ? ` Raming voor 2030: ${NL(k.raming, 0)}; doel: ${NL(k.doel, 0)}.` : k.doel ? ` Doel voor 2030: ${fmt(k.doel)}.` : "");
+      (k.raming ? ` Raming voor 2030: ${NL(k.raming, 0)}; doel: ${NL(k.doel, 0)}.` : k.doel ? ` Doel voor 2030: ${fmt(k.doel)}.` : "") +
+      (k.kev ? ` Raming ${KEV.editie} voor 2030: ${fmt(k.kev.laag)} tot ${fmt(k.kev.hoog)}.` : "");
     const svg = el("svg:svg", { viewBox: `0 0 ${B} ${H}`, width: B, height: H, class: "mi-svg", role: "img", "aria-label": aria });
 
     // raster en assen
@@ -137,10 +149,15 @@
       svg.append(el("svg:text", { x: m.l - 8, y: Y(t), class: "mi-as", "text-anchor": "end", "dominant-baseline": "middle", text: NL(t, 0) }));
     }
     const xt = (smal ? [1990, 2010, 2030] : [1990, 2000, 2010, 2020, 2030]).filter((j) => j >= x0);
-    for (const j of xt) svg.append(el("svg:text", { x: X(j), y: H - 6, class: "mi-as", "text-anchor": j === x0 ? "start" : j === x1 ? "end" : "middle", text: String(j) }));
+    for (const j of xt) svg.append(el("svg:text", { x: X(j), y: H - m.b + 20, class: "mi-as", "text-anchor": j === x0 ? "start" : j === x1 ? "end" : "middle", text: String(j) }));
 
-    // referentielabels rechts van de grafiek
-    const label = (y, tekst, cls) => svg.append(el("svg:text", { x: rechts + 8, y, class: `mi-reflabel ${cls || ""}`, "dominant-baseline": "middle", text: tekst }));
+    // astitels: eenheid boven de y-as, "Jaar" onder de jaartallen
+    svg.append(el("svg:text", { x: 0, y: m.t - 16, class: "mi-astitel", text: asTitel }));
+    svg.append(el("svg:text", { x: (m.l + rechts) / 2, y: H - 4, class: "mi-astitel", "text-anchor": "middle", text: "Jaar" }));
+
+    // referentielabels rechts van de grafiek; verzameld en pas aan het eind geplaatst, met minstens 14px tussen twee labels
+    const labels = [];
+    const label = (y, tekst, cls) => labels.push({ y, tekst, cls });
 
     // gemeten reeks
     const d = r.map((p, i) => `${i ? "L" : "M"}${X(p.jaar).toFixed(1)},${Y(p.waarde).toFixed(1)}`).join("");
@@ -153,6 +170,14 @@
       if (k.doel != null) {
         svg.append(el("svg:line", { x1: m.l, x2: rechts, y1: Y(k.doel), y2: Y(k.doel), class: "mi-ref doel" }));
         label(Y(k.doel), smal ? "doel" : `doel ${fmt(k.doel)}`, "doel");
+      }
+      if (k.kev) {
+        // KEV-raming: neutrale onzekerheidsband vanaf het laatst gemeten jaar, gestreepte lijn naar het midden
+        const lx = X(k.laatst.jaar), ly = Y(k.laatst.waarde);
+        svg.append(el("svg:path", { d: `M${lx},${ly}L${rechts},${Y(k.kev.hoog)}L${rechts},${Y(k.kev.laag)}Z`, class: "mi-band" }));
+        svg.append(el("svg:path", { d: `M${lx},${ly}L${rechts},${Y(k.kev.midden)}`, class: "mi-raming" }));
+        svg.append(el("svg:circle", { cx: rechts, cy: Y(k.kev.midden), r: 4.5, class: "mi-raming-punt" }));
+        label(Y(k.kev.midden), smal ? "KEV" : `KEV ${Math.round(KEV.min * 100)}–${Math.round(KEV.max * 100)}%`);
       }
     }
 
@@ -172,6 +197,11 @@
     } else if (k.doel != null) {
       svg.append(el("svg:circle", { cx: rechts, cy: Y(k.doel), r: 4.5, class: "mi-doel-punt" }));
     }
+
+    // labels rechts plaatsen: van boven naar beneden, elk minstens 14px onder het vorige
+    labels.sort((a, b) => a.y - b.y);
+    labels.forEach((l, i) => { if (i && l.y < labels[i - 1].y + 14) l.y = labels[i - 1].y + 14; });
+    for (const l of labels) svg.append(el("svg:text", { x: rechts + 8, y: l.y, class: `mi-reflabel ${l.cls || ""}`, "dominant-baseline": "middle", text: l.tekst }));
 
     // eindpunt: open als het cijfer voorlopig is
     svg.append(el("svg:circle", { cx: X(k.laatst.jaar), cy: Y(k.laatst.waarde), r: 4.5, class: k.laatst.voorlopig ? "mi-punt open" : "mi-punt" }));
@@ -220,6 +250,19 @@
     houder.replaceChildren(doos);
   }
 
+  /* ---------- kans op het Klimaatwet-doel (alleen bij het totaal) ---------- */
+  // Stoplicht in de stip (kansKlasse); het cijfer en het woord blijven inkt.
+  function kansBlok() {
+    const p = (n) => Math.round(n * 100);
+    return el("div", { class: `mi-kans ${kansKlasse(KEV.kans)}` },
+      el("p", { class: "mi-kans-kop", text: "Kans dat het doel van 2030 wordt gehaald" }),
+      el("p", { class: "mi-kans-regel" },
+        el("b", { class: "mi-kans-waarde", text: KEV.kansTekst }),
+        el("span", { class: "mi-kans-oordeel" }, el("span", { class: "dot", "aria-hidden": "true" }), KEV.oordeel)),
+      el("p", { class: "mi-kans-tekst", text: `Met het huidige beleid daalt de uitstoot volgens de ${KEV.editie} met ${p(KEV.min)} tot ${p(KEV.max)}% in 2030. Het doel van ${p(KLIMAATWET.reductie)}% valt buiten die bandbreedte.` }),
+      el("span", { class: "peil" }, "PBL · ", link(KEV.url, KEV.editie), ` · basispad · ${KEV.datum}`));
+  }
+
   /* ---------- het blok ---------- */
   let _weergave = WEERGAVEN[0].id;
   function vulUitstoot(doos) {
@@ -251,18 +294,19 @@
         if (v.wet === "klimaat") {
           vervang(doelTekst,
             el("p", { class: "mi-doel", text: v.id === "totaal"
-              ? `Klimaatwet: −55% in 2030 ten opzichte van 1990, dus hooguit ${fmt(k.doel)} ${t.eenheid}.`
+              ? "Klimaatwet: −55% in 2030 ten opzichte van 1990."
               : "Klimaatwet: −55% voor alle broeikasgassen samen in 2030." }),
-            v.noot && el("p", { class: "mi-doel", text: v.noot }));
+            k.kev && kansBlok());
         } else {
           vervang(doelTekst, el("p", { class: "mi-doel", text:
             `Stikstofwet: in 2030 moet de helft van de stikstofgevoelige natuur onder de kritische depositiewaarde liggen. Volgens het RIVM is daarvoor 36% minder uitstoot nodig dan het PBL voor 2030 raamt: ${NL(k.doel, 0)} in plaats van ${NL(k.raming, 0)} kiloton.` }));
         }
-        grafiek(plek, v, r, t.eenheid);
+        grafiek(plek, v, r, t.eenheid, t.asTitel);
         vervang(voet,
           v.wet === "stikstof" && el("p", { class: "small mi-voet", text: STIKSTOF_VOET }),
           v.wet === "klimaat"
-            ? el("p", { class: "small muted mi-bron" }, "Bron: ", link(BRON[t.tabel], `CBS StatLine, tabel ${t.tabel}`))
+            ? el("p", { class: "small muted mi-bron" }, "Bron: ", link(BRON[t.tabel], `CBS StatLine, tabel ${t.tabel}`),
+              k.kev && "; raming: ", k.kev && link(KEV.url, `PBL, ${KEV.editie}`))
             : el("p", { class: "small muted mi-bron" }, "Bron: ", link(BRON[t.tabel], `CBS StatLine, tabel ${t.tabel}`), "; raming: ", link(BRON.erl, "PBL, ERL 2025"), "; benodigde reductie: ", link(BRON.rivm, "RIVM, 2025")));
       }
       tekenAlles(); doos._herteken = tekenAlles;

@@ -117,7 +117,10 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 
 - One main chart per screen: the measured series is the only accent (2px line, 8% fill, open end point when the last figure is voorlopig).
 - Reference lines stay neutral and never take the accent: a baseline is a muted hairline with a ring at its start; a target line is an ink-2 hairline with a solid ink dot at the target year; a projection is an ink-2 dashed line (4 4) to an open ring. Dashes mean "projection" and nothing else.
-- Reference values are labeled once, in DM Mono 12 in the right margin (`1990 226,6`, `doel 102,0`, `raming 101`); on phones only the word. A gap is labeled in words next to a thin bracket (`−36% nodig t.o.v. raming`). Labels get a white halo so they stay legible over lines.
+- Reference values are labeled once, in DM Mono 12 in the right margin (`1990 226,6`, `doel 102,0`, `raming 101`, `KEV 45–53%`); on phones only the word. Labels never touch: each sits at least 14px below the one above it. A gap is labeled in words next to a thin bracket (`−36% nodig t.o.v. raming`). Labels get a white halo so they stay legible over lines.
+- The uncertainty of a projection is a neutral band (`.mi-band`: ink at 7%, no edges) that opens from the last measured point to the projected range; the dashed projection line runs through its middle. Never the accent, never red. The KEV band sits on Totaal broeikasgassen only.
+- Every chart has two minimal axis titles in DM Sans 12, muted: the unit above the y-axis labels (`CO₂-eq (miljard kg)`, `kiloton`) and `Jaar` centered under the years. No rotated text.
+- The chance of reaching a target is a quiet tile under the target sentence (`.mi-kans`: `--surface`, radius 8, padding 16): a 12px-style lead line, the figure at 30/500 in ink, a status dot plus the source's own verdict, one sentence, and the peildatum stamp. The dot is the only color, as a traffic light: `--bad` under 50%, `--warning` 50 to 75%, `--good` above 75%. No red text, no colored border or stripe.
 - Group a chart switcher by what decides the target (here: Klimaatwet, Stikstofwet), with the group name as a muted 12px label.
 
 ## Tables
@@ -159,5 +162,5 @@ What did not survive the swap, and must stay: the Kamer-native material itself (
 
 ### Known duplication (to dedupe later)
 
-- Six list-item renderers each build their own meta row: `stukLi`, `agendaLi`, the Recente stemmingen row in `overzicht()`, the toezegging item, fractie inbreng, the zoek item. They now share the `.regelmeta`/`.zmeta` style, but the markup is still written six times.
+- Six list-item renderers each build their own meta row: `stukLi`, `agendaLi`, `feedLi` (Net binnen on Overzicht), the toezegging item, fractie inbreng, the zoek item. They now share the `.regelmeta`/`.zmeta` style, but the markup is still written six times.
 - `debatCard` and `vergaderCompact` repeat the same header markup.

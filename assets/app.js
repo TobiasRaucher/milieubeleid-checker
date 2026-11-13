@@ -209,16 +209,6 @@
     const cls = (u || "in behandeling").replace(/\s+/g, "-");
     return `<span class="status ${cls}"><span class="dot" aria-hidden="true"></span>${esc(hoofd(u || "in behandeling"))}</span>`;
   }
-  function voteBar(t) {
-    if (!t || !(t.voor + t.tegen)) return "";
-    const tot = t.voor + t.tegen;
-    const v = (100 * t.voor) / tot, g = 100 - v;
-    const vCls = g === 0 ? "v only" : "v", tCls = v === 0 ? "t only" : "t";
-    return `<div class="votebar" role="img" aria-label="${t.voor} voor, ${t.tegen} tegen">` +
-      (t.voor ? `<span class="${vCls}" style="width:${v}%" title="Voor: ${t.voor} zetels"></span>` : "") +
-      (t.tegen ? `<span class="${tCls}" style="width:${g}%" title="Tegen: ${t.tegen} zetels"></span>` : "") +
-      `</div><div class="votelegend"><span><i style="background:var(--voor)"></i>Voor ${t.voor}</span><span><i style="background:var(--tegen)"></i>Tegen ${t.tegen}</span>${t.datum ? `<span class="muted">${fmtKort(t.datum)}</span>` : ""}</div>`;
-  }
   function indienersTekst(z) {
     const eerste = z.indieners.find((i) => /^indiener|eerste/i.test(i.relatie || "")) || z.indieners[0];
     if (!eerste) return "";
@@ -277,24 +267,59 @@
   }
 
   /* ---------- Overzicht ---------- */
+  // "Net binnen": één chronologische lijst van stukken, stemmingen en wetgeving.
+  // Alle bronnen gebruiken ISO-datums (JJJJ-MM-DD); alleen datums op de dag nauwkeurig en niet in de toekomst tellen mee.
+  // Geen tijden in de data, dus binnen één dag: Wetgeving, dan Stemming, dan Stuk.
+  const NET_BINNEN_MAX = 10;
+  const FEED_ORDE = { Wetgeving: 0, Stemming: 1, Stuk: 2 };
+  const isDag = (d) => /^\d{4}-\d{2}-\d{2}$/.test(d || "") && d <= VANDAAG;
+  function feedLi(soort, datum, meta, titel, href, onder, extern) {
+    const doel = extern ? ` target="_blank" rel="noopener"` : "";
+    return `<li><div class="regelmeta"><span class="tag">${soort}</span><span class="datum">${fmtKort(datum)}</span>${meta}</div>
+      <div><a class="ltitel" href="${esc(href)}"${doel}>${esc(titel)}</a></div>${onder ? `<div class="small muted">${onder}</div>` : ""}</li>`;
+  }
+  function netBinnen() {
+    const items = [];
+    for (const z of motiesEnAmendementen()) {
+      const t = z.stemtelling;
+      if (!t || !isDag(t.datum)) continue;
+      items.push({ soort: "Stemming", datum: t.datum, html: feedLi("Stemming", t.datum, `${uitslagPill(z.uitslag)}<span>${esc(z.soort)}</span>`,
+        onderwerpZin(z), tkUrl(z), `${indienersTekst(z)}${t.voor + t.tegen ? ` · <span class="nw">Voor ${t.voor} / Tegen ${t.tegen}</span>` : ""}`, true) });
+    }
+    for (const x of stukkenInSector()) {
+      if (!isDag(x.datum)) continue;
+      const dossier = (x.dossiers || [])[0];
+      items.push({ soort: "Stuk", datum: x.datum, html: feedLi("Stuk", x.datum, `<span>${esc(SOORT_KORT[x.soort] || x.soort)}</span><span>${esc(x.ministerie || "ministerie onbekend")}</span>`,
+        x.onderwerp || x.titel, x.link, dossier ? `<span class="mono">${esc(x.kamerstuk || dossier.nummer)}</span> ${esc(dossier.titel || "")}` : "", true) });
+    }
+    // wetgeving: de laatste stap van de gevolgde dossiers, plus nieuwe wetsvoorstellen die (nog) geen eigen dossier hebben
+    const gevolgd = S.data.dossiers.dossiers.filter(inSector);
+    const bekend = new Set(gevolgd.map((d) => String(d.kamerstuk)));
+    for (const d of gevolgd) {
+      const s = d.laatsteStap;
+      if (!s || !isDag(s.datum)) continue;
+      items.push({ soort: "Wetgeving", datum: s.datum, html: feedLi("Wetgeving", s.datum, d.kamerstuk ? `<span class="mono">${esc(d.kamerstuk)}</span>` : "",
+        d.kortTitel || d.titel, `#wetgeving/w-${d.id}`, esc(s.tekst), false) });
+    }
+    for (const z of wetsvoorstellenTK()) {
+      if (!isDag(z.gestartOp) || z.dossiers.some((x) => bekend.has(String(x.nummer)))) continue;
+      items.push({ soort: "Wetgeving", datum: z.gestartOp, html: feedLi("Wetgeving", z.gestartOp, `<span class="mono">${esc(dossierLabel(z))}</span><span>Ingediend</span>`,
+        z.titel || z.onderwerp, z.link, "", true) });
+    }
+    return items.sort((a, b) => b.datum.localeCompare(a.datum) || FEED_ORDE[a.soort] - FEED_ORDE[b.soort]).slice(0, NET_BINNEN_MAX);
+  }
   function overzicht() {
-    const ma = motiesEnAmendementen();
-    const recentStem = ma.filter((z) => z.stemtelling).sort((a, b) => (b.stemtelling.datum || "").localeCompare(a.stemtelling.datum || "")).slice(0, 6);
     const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG).slice(0, 6);
+    const binnen = netBinnen();
     return `
       ${window.MRMilieu ? MRMilieu.sectieHtml() : ""}
-      <div class="grid two">
-        <div><h2>Recente stemmingen</h2><div class="card"><ul class="list">
-          ${recentStem.map((z) => `<li><div class="regelmeta">${uitslagPill(z.uitslag)}<span class="tag">${esc(z.soort)}</span></div><div class="regeltitel">${esc(korteTitel(z))}</div><div class="small muted">${indienersTekst(z)}</div>${voteBar(z.stemtelling)}</li>`).join("") || `<li class="empty">Nog geen stemmingen</li>`}
-        </ul><div class="kaartvoet"><a href="#moties">Alle moties en amendementen</a></div></div>
-        </div>
-        <div><h2>Komt eraan</h2><div class="card"><ul class="list">
+      <div class="ov-onder">
+        <section aria-labelledby="ov-komt"><h2 id="ov-komt">Komt eraan</h2><div class="card"><ul class="list">
           ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland</li>`}
-        </ul><div class="kaartvoet"><a href="#agenda">Volledige agenda</a></div></div>
-        <h2>Nieuwste stukken van ministeries</h2><div class="card"><ul class="list">
-          ${stukkenInSector().slice(0, 5).map((x) => stukLi(x)).join("") || `<li class="empty">Nog geen stukken</li>`}
-        </ul><div class="kaartvoet"><a href="#stukken">Alle stukken</a></div></div>
-        </div>
+        </ul><div class="kaartvoet"><a href="#agenda">Volledige agenda</a></div></div></section>
+        <section aria-labelledby="ov-binnen"><h2 id="ov-binnen">Net binnen</h2><div class="card"><ul class="list">
+          ${binnen.map((i) => i.html).join("") || `<li class="empty">Nog niets binnen</li>`}
+        </ul><div class="kaartvoet"><a href="#stukken">Alle stukken</a><a href="#moties">Alle moties en amendementen</a><a href="#wetgeving">Wetgeving</a></div></div></section>
       </div>`;
   }
 

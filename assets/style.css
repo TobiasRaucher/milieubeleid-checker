@@ -160,6 +160,10 @@ h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px;
 .grid { display: grid; gap: 16px; }
 .grid.two { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px 24px; align-items: start; }
 .grid.two > div > h2:first-child { margin-top: 40px; }
+/* Overzicht onder de grafiek: Komt eraan (smal) en Net binnen (breed) */
+.ov-onder { display: grid; gap: 0 24px; align-items: start; }
+.ov-onder > section > h2:first-child { margin-top: 40px; }
+@media (min-width: 1000px) { .ov-onder { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); } }
 
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 20px; transition: border-color var(--d-kort) var(--ease); }
 .card > h3 { font-size: var(--t-18); line-height: 1.3; letter-spacing: -0.005em; margin: 0 0 8px; }
@@ -380,13 +384,6 @@ tr.detail { animation: binnenkomst var(--d-menu) var(--ease) both; }
 }
 
 /* stem-balk: voor in inkt, tegen in een neutrale stap */
-.votebar { display: flex; gap: 2px; height: 6px; margin: 8px 0 4px; max-width: 420px; }
-.votebar span { height: 100%; }
-.votebar .v { background: var(--voor); border-radius: 3px 0 0 3px; }
-.votebar .t { background: var(--tegen); border-radius: 0 3px 3px 0; }
-.votebar .only { border-radius: 3px; }
-.votelegend { font-size: var(--t-13); color: var(--ink-2); display: flex; gap: 4px 16px; flex-wrap: wrap; font-variant-numeric: tabular-nums; }
-.votelegend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; vertical-align: 0; }
 
 /* fase-stepper: afgerond = accent, huidige fase = accent en vet label, rest = spoor */
 .stepper { display: flex; gap: 4px; margin: 12px 0 8px; }
@@ -551,6 +548,8 @@ li.tz { padding: 16px 0; }
 .mi-raming-punt { fill: var(--card); stroke: var(--ink-2); stroke-width: 1.5; }
 .mi-doel-punt { fill: var(--ink); stroke: var(--card); stroke-width: 2; }
 .mi-kloof { fill: none; stroke: var(--ink-2); stroke-width: 1; }
+.mi-band { fill: var(--ink); opacity: 0.07; }          /* onzekerheid van een raming: neutraal vlak, geen randen */
+.mi-astitel { font-size: var(--t-12); fill: var(--muted); }
 .mi-reflabel { font-size: var(--t-12); fill: var(--muted); }
 .mi-reflabel.doel, .mi-kloof-label { fill: var(--ink-2); }
 .mi-kloof-label { font-size: var(--t-12); }
@@ -573,8 +572,21 @@ li.tz { padding: 16px 0; }
 .mi-stat-sub .nw { white-space: nowrap; }
 .mi-doel { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--t-14); color: var(--ink); max-width: var(--leesbreedte); text-wrap: pretty; }
 .mi-doel + .mi-doel { border-top: 0; padding-top: 0; margin-top: 8px; color: var(--ink-2); font-size: var(--t-13); }
-.mi-plek { min-height: 280px; }
-@media (min-width: 700px) { .mi-plek { min-height: 360px; } }
+/* kans op het doel: een stille tegel; alleen de stip draagt de stoplichtkleur */
+.mi-kans { margin-top: 16px; padding: 16px; background: var(--surface); border-radius: var(--r-control); display: grid; gap: 4px; }
+.mi-kans p { margin: 0; }
+.mi-kans-kop { font-size: var(--t-13); color: var(--ink-2); }
+.mi-kans-regel { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+.mi-kans-waarde { font-size: var(--t-30); font-weight: 500; letter-spacing: -0.02em; color: var(--ink); font-variant-numeric: tabular-nums; line-height: 36px; }
+.mi-kans-oordeel { display: inline-flex; align-items: center; gap: 8px; font-size: var(--t-14); color: var(--ink); }
+.mi-kans .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--neutraal-stip); flex: none; }
+.mi-kans.laag .dot { background: var(--bad); }
+.mi-kans.midden .dot { background: var(--warning); }
+.mi-kans.hoog .dot { background: var(--good); }
+.mi-kans-tekst { font-size: var(--t-13); color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
+.mi-kans .mi-kans-tekst, .mi-kans .peil { margin-top: 4px; }
+.mi-plek { min-height: 304px; }
+@media (min-width: 700px) { .mi-plek { min-height: 384px; } }
 .mi-voet { margin: 12px 0 0; color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
 .mi-bron { margin: 8px 0 0; max-width: var(--leesbreedte); }
 .mi-bron a { color: var(--muted); }
