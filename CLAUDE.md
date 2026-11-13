@@ -34,13 +34,18 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
 ## Sectoren en stukken van ministeries
 
 - Sectoren staan in `pipeline/config.json`. Per sector: `commissies` (activiteiten), `activiteitTrefwoorden` (alleen activiteiten met zo'n woord in het onderwerp; nodig voor brede commissies als I&W en LVVN), `kamerstukdossiers` en `zoektermen` (moties en wetgeving), `stukDossiers` en `trefwoorden` (stukken van ministeries).
+- Welke wetsvoorstellen, moties en amendementen erin komen (sinds 13 nov 2026):
+  - Wetsvoorstellen vanaf 2019 (`wetgeving.startdatum`; de Klimaatwet uit 2016 via zijn dossier): Kamerstuk in een sector of in `wetgeving.insluiten`, voortouw K&GG (`altijdVoortouw`), of een sector-trefwoord in de (citeer)titel. `wetgeving.uitsluiten` houdt Kamerstukken (en hun moties en amendementen) eruit die wel een trefwoord hebben maar geen milieubeleid zijn (vuurwerk, energietoeslag, volkshuisvesting).
+  - Moties en amendementen alleen uit de huidige Kamerperiode (`startdatum`): uit de vaste dossiers, of met een sector-trefwoord in het onderwerp (namen van indieners tellen niet; `schone_tekst()`), of bij een gevolgd wetsvoorstel. Zoektermen kijken alleen naar het onderwerp (de Titel van een motie is de titel van het dossier).
+  - Brede dossiers (`"breed": true` bij een kamerstukdossier, `stukken.bredeDossiers`; nu 21501-33, Raad VTE met ook telecom) tellen alleen samen met een trefwoord.
+  - Relevantiepoort: wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-mapping.json`) is geen milieubeleid en haalt `fetch_tk.py` uit zaken.json en stukken.json (een vraag en haar antwoord samen); het aantal staat in `meta.json` onder `uitgesloten`. "Zonder thema" bij de review betekent dus: weg van de site.
 - `data/tk/stukken.json` bevat Kamerbrieven, Kamervragen (soort `Schriftelijke vragen`, met `indieners` en de ministeries waaraan ze gericht zijn) en antwoorden op Kamervragen die bij een sector horen (KGG altijd). Elk stuk heeft een `zaak`; een vraag en haar antwoord delen die en komen er altijd samen in. Te ruime of te krappe selectie? Pas `stukDossiers`/`trefwoorden` of `stukken.uitsluiten` aan in de config, niet de data.
 
 ## Dossiers
 
 - Sinds 13 nov 2026 gebruikt de site geen dossiers meer (op verzoek van Tobias); alleen thema's. Geen dossierfilters, dossierlabels of dossierkaarten, ook niet op Wetgeving. Niet terugzetten zonder te vragen.
 - `data/dossiers.json` staat nog in git maar wordt door de site, de zoekfunctie en de themascripts niet gelezen.
-- Wetgeving toont de wetsvoorstellen uit de Kamerdata (`zaken.json`, soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Kamerstuk, Ingediend. Nieuw wetsvoorstel volgen: voeg het Kamerstuknummer toe aan `pipeline/config.json`.
+- Wetgeving toont de wetsvoorstellen uit de Kamerdata (`zaken.json`, soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Kamerstuk, Ingediend. Een wetsvoorstel zonder trefwoord in de titel volgen: voeg het Kamerstuknummer toe aan `wetgeving.insluiten` in `pipeline/config.json`; een onterecht wetsvoorstel aan `wetgeving.uitsluiten`.
 - "Kamerstuk" (het Kamerstukdossier uit de TK-data, bv. `36169`) is geen dossier in deze zin en blijft overal staan (kolom in de motietabel, zoeken op Kamerstuknummer, Kamerstuk bij stukken).
 
 ## Prioriteit

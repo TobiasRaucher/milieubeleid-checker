@@ -9,7 +9,12 @@ en schrijft compacte JSON-bestanden naar data/tk/.
 
 Wat er wordt opgehaald (per actieve sector in pipeline/config.json):
   * zaken (wetsvoorstellen, moties, amendementen) uit de opgegeven kamerstukdossiers
-  * zaken waarvan titel/onderwerp een zoekterm bevat
+    (brede dossiers met "breed": true alleen moties en amendementen met een trefwoord)
+  * zaken waarvan het onderwerp een zoekterm bevat
+  * wetsvoorstellen vanaf wetgeving.startdatum (2019) die over milieubeleid gaan (zie "wetgeving" in config.json)
+  * alle moties en amendementen vanaf de startdatum met een trefwoord van een sector in het onderwerp,
+    of bij een gevolgd wetsvoorstel
+  * daarna gaan items die bij de themareview bewust geen thema kregen eruit (data/themas-mapping.json)
   * activiteiten (debatten, rondetafelgesprekken, briefings) van de opgegeven commissies
     (bij sectoren met activiteitTrefwoorden alleen activiteiten waarvan het onderwerp een
     trefwoord bevat)
@@ -103,6 +108,65 @@ def zaken(filter_expr):
         log(f"  volledige expand gaf HTTP {e.code}; terugvallen op eenvoudige expand")
         params["$expand"] = EXPAND_SIMPEL
         return odata("Zaak", params)
+
+
+def zaken_op_id(ids, batch=15):  # meer geeft "node count limit" (HTTP 400)
+    """Volledige zaken (met besluiten en stemmingen) voor een lijst Id's, in kleine porties."""
+    ids = list(dict.fromkeys(ids))
+    uit = []
+    for i in range(0, len(ids), batch):
+        deel = " or ".join(f"Id eq {x}" for x in ids[i:i + batch])
+        params = {"$filter": f"Verwijderd eq false and ({deel})", "$expand": EXPAND_VOL}
+        try:
+            uit += odata("Zaak", params)
+        except urllib.error.HTTPError as e:
+            log(f"  volledige expand gaf HTTP {e.code}; terugvallen op eenvoudige expand")
+            params["$expand"] = EXPAND_SIMPEL
+            uit += odata("Zaak", params)
+    return uit
+
+
+def _regex(lijst):
+    return re.compile("|".join(f"(?:{t})" for t in lijst), re.I) if lijst else None
+
+
+# "Motie van het lid X over ...", "Gewijzigd amendement van de leden X en Y ter vervanging van nr. 9 over ...",
+# "vragen van het lid X over ...": namen van Kamerleden tellen niet als trefwoord
+_INDIENER = re.compile(r"\b(motie|amendement|vragen) van (het lid|de leden) .+? (over|inzake|naar aanleiding van) ", re.I)
+
+
+def schone_tekst(tekst):
+    tekst = _INDIENER.sub("", tekst or "")
+    for n in (CONFIG.get("stukken") or {}).get("negeerInTekst", []):
+        tekst = tekst.replace(n, "")
+    return tekst
+
+
+def dossier_sleutels(dossiers):
+    """Kamerstukdossiers als sleutels: '21501' en '21501-33'."""
+    uit = set()
+    for k in dossiers or []:
+        n, t = k.get("Nummer", k.get("nummer")), k.get("Toevoeging", k.get("toevoeging"))
+        uit.add(str(n))
+        if t:
+            uit.add(f"{n}-{t}")
+    return uit
+
+
+def sector_regels():
+    """Per actieve sector: (dossiersleutels, brede dossiers, trefwoord-regex)."""
+    regels = {}
+    for code, s in CONFIG["sectoren"].items():
+        if not s.get("actief"):
+            continue
+        sleutels = {str(d["nummer"]) + (f"-{d['toevoeging']}" if d.get("toevoeging") else "") for d in s.get("kamerstukdossiers", [])}
+        breed = {str(d["nummer"]) + (f"-{d['toevoeging']}" if d.get("toevoeging") else "") for d in s.get("kamerstukdossiers", []) if d.get("breed")}
+        regels[code] = (sleutels, breed, _regex(s.get("trefwoorden", [])))
+    return regels
+
+
+def sectoren_op_trefwoord(tekst, regels):
+    return [c for c, (_, _, rx) in regels.items() if rx and rx.search(tekst)]
 
 
 def uitslag(besluiten):
@@ -297,10 +361,6 @@ STUK_EXPAND = ("DocumentActor($select=ActorNaam,ActorFractie,Functie,Relatie),"
                "Zaak($select=Nummer,Soort;$expand=ZaakActor($select=ActorNaam,Functie,Relatie))")
 
 
-def _regex(lijst):
-    return re.compile("|".join(f"(?:{t})" for t in lijst), re.I) if lijst else None
-
-
 def ministerie_uit_functie(functie):
     m = re.sub(r"^(minister-president|minister|staatssecretaris)\b( voor| van)?\s*", "", functie or "", flags=re.I)
     return m or None
@@ -321,7 +381,8 @@ def stukken(start):
                             _regex(s.get("trefwoorden", [])))
     uit = _regex(cfg.get("uitsluiten", []))
     altijd = cfg.get("altijdMinisteries", {})
-    negeer = cfg.get("negeerInTekst", [])
+    # brede dossiers (bv. 21501-33, Raad VTE: ook telecom) tellen alleen samen met een trefwoord
+    breed = {str(x) for x in cfg.get("bredeDossiers", [])}
     out, kandidaten = [], []
     for d in ruw:
         onderwerp = d.get("Onderwerp") or ""
@@ -356,12 +417,8 @@ def stukken(start):
             sleutels.add(str(k["nummer"]))
             if k["toevoeging"]:
                 sleutels.add(f"{k['nummer']}-{k['toevoeging']}")
-        tekst = f"{d.get('Titel') or ''} {onderwerp}"
-        # namen van Kamerleden ("vragen van het lid Van der Maas over ...") niet als trefwoord laten tellen
-        tekst = re.sub(r"vragen van (het lid|de leden) .+? (over|inzake|naar aanleiding van) ", "", tekst, flags=re.I)
-        for n in negeer:
-            tekst = tekst.replace(n, "")
-        sectoren = [c for c, (ds, rx) in regels.items() if (sleutels & ds) or (rx and rx.search(tekst))]
+        tekst = schone_tekst(f"{d.get('Titel') or ''} {onderwerp}")
+        sectoren = [c for c, (ds, rx) in regels.items() if ((sleutels & ds) - breed) or (rx and rx.search(tekst))]
         for m, c in altijd.items():
             if any(m in (x or "") for x in (ministeries or [ministerie])) and c in regels and c not in sectoren:
                 sectoren.append(c)
@@ -430,10 +487,104 @@ def _act_past(a, rx):
     return bool(rx.search(a.get("Onderwerp") or ""))
 
 
+LICHT_SELECT = "Id,Nummer,Soort,Titel,Citeertitel,Onderwerp,GestartOp"
+
+
+def wetsvoorstellen(alle_zaken, regels):
+    """Wetsvoorstellen vanaf wetgeving.startdatum (config) die over milieubeleid gaan:
+    Kamerstuk in de config of in wetgeving.insluiten, voortouw bij een commissie uit wetgeving.altijdVoortouw,
+    of een trefwoord van een sector in de (citeer)titel; nooit de Kamerstukken in wetgeving.uitsluiten.
+    Geeft de Kamerstuknummers van alle gevolgde wetsvoorstellen terug."""
+    cfg = CONFIG.get("wetgeving") or {}
+    start = cfg.get("startdatum", CONFIG["startdatum"])
+    uit = {str(x) for x in cfg.get("uitsluiten", [])}
+    insluiten = {str(x["nummer"]): x.get("sector") for x in cfg.get("insluiten", [])}
+    altijd = cfg.get("altijdVoortouw", {})
+    ruw = odata("Zaak", {
+        "$filter": f"Verwijderd eq false and (Soort eq 'Wetgeving' or Soort eq 'Initiatiefwetgeving') and GestartOp ge {start}T00:00:00Z",
+        "$select": LICHT_SELECT,
+        "$expand": "Kamerstukdossier($select=Nummer,Toevoeging),ZaakActor($filter=Relatie eq 'Voortouwcommissie';$select=ActorAfkorting)",
+    }, max_pages=100)
+    gekozen = {}
+    for z in ruw:
+        nrs = {str(k.get("Nummer")) for k in z.get("Kamerstukdossier") or []}
+        if nrs & uit:
+            continue
+        voortouw = {a.get("ActorAfkorting") for a in z.get("ZaakActor") or []}
+        sectoren = [c for c, (ds, breed, _) in regels.items() if nrs & (ds - breed)]
+        sectoren += [insluiten[n] for n in nrs if insluiten.get(n)]
+        sectoren += [altijd[v] for v in voortouw if v in altijd]
+        if not sectoren:
+            sectoren = sectoren_op_trefwoord(f"{z.get('Titel') or ''} {z.get('Citeertitel') or ''}", regels)
+        if sectoren:
+            gekozen[z["Id"]] = list(dict.fromkeys(sectoren))
+    # uitgesloten Kamerstukken ook weghalen als ze via een vast dossier of zoekterm binnenkwamen
+    for nz in list(alle_zaken.values()):
+        if "wetgeving" in (nz["soort"] or "").lower() and {str(d["nummer"]) for d in nz["dossiers"]} & uit:
+            del alle_zaken[nz["id"]]
+    nieuw = [i for i in gekozen if i not in alle_zaken]
+    for z in zaken_op_id(nieuw):
+        nz = normaliseer_zaak(z, gekozen[z["Id"]][0])
+        nz["sectoren"] = sorted(gekozen[z["Id"]])
+        alle_zaken[nz["id"]] = nz
+    wet_dossiers = {str(d["nummer"]) for nz in alle_zaken.values() if "wetgeving" in (nz["soort"] or "").lower() for d in nz["dossiers"]}
+    log(f"== wetsvoorstellen: {len(gekozen)} vanaf {start} ({len(nieuw)} nieuw), {len(wet_dossiers)} Kamerstukken")
+    return wet_dossiers
+
+
+def breed_zoeken(alle_zaken, regels, wet_dossiers, start):
+    """Alle moties en amendementen vanaf de startdatum: binnen als het onderwerp een trefwoord van een sector heeft,
+    of als ze bij een gevolgd wetsvoorstel horen (amendementen en moties bij de behandeling)."""
+    uit = {str(x) for x in (CONFIG.get("wetgeving") or {}).get("uitsluiten", [])}
+    ruw = odata("Zaak", {
+        "$filter": f"Verwijderd eq false and (Soort eq 'Motie' or Soort eq 'Amendement') and GestartOp ge {start}T00:00:00Z",
+        "$select": LICHT_SELECT, "$expand": "Kamerstukdossier($select=Nummer,Toevoeging)",
+    }, max_pages=200)
+    bekend = set(alle_zaken)
+    gekozen = {}
+    for z in ruw:
+        if z["Id"] in bekend:
+            continue
+        nrs = {str(k.get("Nummer")) for k in z.get("Kamerstukdossier") or []}
+        if nrs & uit:
+            continue
+        sectoren = sectoren_op_trefwoord(schone_tekst(z.get("Onderwerp")), regels)
+        if not sectoren and nrs & wet_dossiers:
+            # sector van het wetsvoorstel
+            wet = next((nz for nz in alle_zaken.values() if "wetgeving" in (nz["soort"] or "").lower()
+                        and {str(d["nummer"]) for d in nz["dossiers"]} & nrs), None)
+            sectoren = list(wet["sectoren"]) if wet else []
+        if sectoren:
+            gekozen[z["Id"]] = sectoren
+    for z in zaken_op_id(list(gekozen)):
+        nz = normaliseer_zaak(z, gekozen[z["Id"]][0])
+        nz["sectoren"] = sorted(gekozen[z["Id"]])
+        alle_zaken[nz["id"]] = nz
+    log(f"== moties en amendementen: {len(ruw)} bekeken, {len(gekozen)} erbij")
+
+
+def relevantiepoort(alle_zaken, stuk_lijst):
+    """Items die bij de themareview bewust geen thema kregen (data/themas-mapping.json, themas leeg) zijn niet
+    relevant voor milieubeleid en gaan eruit. Een Kamervraag en haar antwoord gaan samen."""
+    try:
+        mapping = json.loads((ROOT / "data" / "themas-mapping.json").read_text(encoding="utf-8"))
+    except Exception:
+        return alle_zaken, stuk_lijst, {}
+    leeg = {k for k, v in mapping.items() if isinstance(v, dict) and not v.get("themas")}
+    zaken_uit = {i: z for i, z in alle_zaken.items() if f"zaak:{z['nummer']}" not in leeg}
+    weg_zaken = {s["zaak"] for s in stuk_lijst if f"stuk:{s['id']}" in leeg and s.get("zaak")
+                 and (s["soort"] == "Schriftelijke vragen" or s["soort"].startswith("Antwoord"))}
+    stukken_uit = [s for s in stuk_lijst if f"stuk:{s['id']}" not in leeg and s.get("zaak") not in weg_zaken]
+    telling = {"zaken": len(alle_zaken) - len(zaken_uit), "stukken": len(stuk_lijst) - len(stukken_uit)}
+    log(f"== niet relevant (review zonder thema): {telling}")
+    return zaken_uit, stukken_uit, telling
+
+
 def main():
     start = CONFIG["startdatum"]
     alle_zaken = {}
     alle_act = {}
+    regels = sector_regels()
     for code, s in CONFIG["sectoren"].items():
         if not s.get("actief"):
             continue
@@ -448,7 +599,11 @@ def main():
                 kfilter = f"k/Nummer eq {n}" + (f" and k/Toevoeging eq '{tv}'" if tv else "")
                 rec = zaken(f"Kamerstukdossier/any(k: {kfilter}) and "
                             f"((Soort eq 'Wetgeving' or Soort eq 'Initiatiefwetgeving') or GestartOp ge {start}T00:00:00Z)")
+                rx_sector = regels[code][2]
                 for z in rec:
+                    # brede dossiers (Raad VTE: ook telecom; begrotingen): moties en amendementen alleen met een trefwoord
+                    if d.get("breed") and z.get("Soort") in ("Motie", "Amendement") and not (rx_sector and rx_sector.search(schone_tekst(z.get("Onderwerp")))):
+                        continue
                     nz = normaliseer_zaak(z, code)
                     bestaand = alle_zaken.get(nz["id"])
                     if bestaand:
@@ -464,7 +619,7 @@ def main():
             log(f"  zoekterm '{term}'")
             t = term.replace("'", "''")
             try:
-                rec = zaken(f"GestartOp ge {start}T00:00:00Z and (contains(Titel,'{t}') or contains(Onderwerp,'{t}'))")
+                rec = zaken(f"GestartOp ge {start}T00:00:00Z and (contains(Onderwerp,'{t}'))")
                 for z in rec:
                     nz = normaliseer_zaak(z, code)
                     nz["zoekterm"] = term
@@ -491,7 +646,15 @@ def main():
             FOUTEN.append(f"activiteiten {code}: {e}")
             log(f"    FOUT: {e}")
 
-    # 4. stukken van ministeries
+    # 4. wetsvoorstellen vanaf wetgeving.startdatum, en moties/amendementen buiten de vaste dossiers
+    try:
+        wet_dossiers = wetsvoorstellen(alle_zaken, regels)
+        breed_zoeken(alle_zaken, regels, wet_dossiers, start)
+    except Exception as e:
+        FOUTEN.append(f"wetgeving/brede zoektocht: {e}")
+        log(f"    FOUT: {e}")
+
+    # 5. stukken van ministeries
     stuk_lijst = []
     try:
         stuk_lijst = stukken(start)
@@ -500,7 +663,7 @@ def main():
         FOUTEN.append(f"stukken: {e}")
         log(f"    FOUT stukken: {e}")
 
-    # 5. toezeggingen bij de gevolgde activiteiten
+    # 6. toezeggingen bij de gevolgde activiteiten
     tz_lijst = []
     try:
         tz_lijst = toezeggingen(start, {a.get("Nummer") for a in alle_act.values()})
@@ -508,6 +671,9 @@ def main():
     except Exception as e:
         FOUTEN.append(f"toezeggingen: {e}")
         log(f"    FOUT toezeggingen: {e}")
+
+    # 7. wat bij de review "zonder thema" kreeg, is niet relevant en gaat eruit
+    alle_zaken, stuk_lijst, uitgesloten = relevantiepoort(alle_zaken, stuk_lijst)
 
     OUT.mkdir(parents=True, exist_ok=True)
     zaken_lijst = sorted(alle_zaken.values(), key=lambda z: z["gestartOp"] or "", reverse=True)
@@ -531,6 +697,7 @@ def main():
         "aantalActiviteiten": len(act_lijst),
         "aantalStukken": len(stuk_lijst),
         "aantalToezeggingen": len(tz_lijst),
+        "uitgesloten": uitgesloten,
         "fouten": FOUTEN,
         "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl)",
     }, ensure_ascii=False, indent=1), encoding="utf-8")

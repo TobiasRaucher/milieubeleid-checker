@@ -1,6 +1,6 @@
 {
  "_uitleg": "Goedgekeurde thema's per item; gaat voor de regels in data/themas.json. Sleutels: zaak:<zaaknummer>, stuk:<documentnummer>, debat:<activiteitnummer of samenvatting-id>, agenda:<datum>-<titel>. bron: regels (voorstel ongewijzigd goedgekeurd) of review (aangepast bij de review). themas: [] betekent bewust zonder thema.",
- "bijgewerkt": "2026-11-13T20:44:17Z",
+ "bijgewerkt": "2026-11-13T23:02:24Z",
  "agenda:2026-12-nationale-adaptatiestrategie-incl-caribisch-nederland-verwac": {"themas":["adaptatie"],"bron":"regels"},
  "agenda:2026-Q4-internetconsultatie-wijziging-klimaatwet-bonaire-vonnis-gepl": {"themas":["energie-klimaat","adaptatie"],"bron":"regels"},
  "agenda:2027-07-28-wijziging-klimaatwet-moet-in-werking-zijn-vonnis-klimaatzaak": {"themas":["energie-klimaat","adaptatie"],"bron":"regels"},
@@ -1375,6 +1375,7 @@
  "stuk:2026D57377": {"themas":["energie-klimaat","landbouw-natuur-stikstof","water-bodem","oceanen"],"bron":"regels"},
  "stuk:2026D57580": {"themas":["industrie-circulaire-economie"],"bron":"regels"},
  "stuk:2026D57747": {"themas":["mobiliteit-infrastructuur"],"bron":"regels"},
+ "zaak:2020Z25872": {"themas":["energie-klimaat"],"bron":"review"},
  "zaak:2025Z20566": {"themas":["gebouwde-omgeving","landbouw-natuur-stikstof"],"bron":"regels"},
  "zaak:2025Z21006": {"themas":[],"bron":"review"},
  "zaak:2025Z21008": {"themas":[],"bron":"review"},
@@ -1412,6 +1413,7 @@
  "zaak:2025Z22512": {"themas":["industrie-circulaire-economie","luchtkwaliteit"],"bron":"regels"},
  "zaak:2025Z22514": {"themas":["gebouwde-omgeving"],"bron":"regels"},
  "zaak:2025Z22644": {"themas":["energie-klimaat"],"bron":"regels"},
+ "zaak:2025Z22646": {"themas":["industrie-circulaire-economie"],"bron":"review"},
  "zaak:2026Z00282": {"themas":["luchtkwaliteit"],"bron":"regels"},
  "zaak:2026Z00295": {"themas":["gebouwde-omgeving"],"bron":"regels"},
  "zaak:2026Z00404": {"themas":["energie-klimaat","gebouwde-omgeving"],"bron":"regels"},

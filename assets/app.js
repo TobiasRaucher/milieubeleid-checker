@@ -704,7 +704,7 @@
   };
   function wetgeving() {
     return tabelPagina(WET_DEF, { titel: "", links: `<h2 class="tabeltitel">Wetgeving</h2>` },
-      "Wetsvoorstellen over milieu, klimaat, energie, water, natuur en leefomgeving, rechtstreeks uit de open data van de Tweede Kamer. Een klik op een rij opent het wetsvoorstel op OpenTK; de knop naast de titel toont de laatste stappen. Thema, Status en Ingediend door filteren, Ingediend sorteert.",
+      "Wetsvoorstellen sinds 2019 over milieu, klimaat, energie, water, natuur en leefomgeving, rechtstreeks uit de open data van de Tweede Kamer. Een klik op een rij opent het wetsvoorstel op OpenTK; de knop naast de titel toont de laatste stappen. Thema, Status en Ingediend door filteren, Ingediend sorteert.",
       "Zoek op titel, Kamerstuknummer of indiener");
   }
 

@@ -1,10 +1,14 @@
 {
- "bijgewerkt": "2026-11-13T22:20:45+00:00",
+ "bijgewerkt": "2026-11-13T23:01:44+00:00",
  "status": "ok",
- "aantalZaken": 683,
+ "aantalZaken": 1160,
  "aantalActiviteiten": 358,
- "aantalStukken": 1417,
+ "aantalStukken": 1392,
  "aantalToezeggingen": 312,
+ "uitgesloten": {
+  "zaken": 0,
+  "stukken": 23
+ },
  "fouten": [],
  "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl)"
 }

@@ -2,6 +2,70 @@
   "_uitleg": "Configuratie voor de pipeline. Voeg hier dossiers, zoektermen en commissies toe om de checker uit te breiden.",
   "startdatum": "2025-11-12",
   "_startdatum_uitleg": "Begin van de huidige Kamerperiode (installatie na de verkiezingen van 29 oktober 2025). Alles vanaf deze datum wordt opgehaald.",
+  "wetgeving": {
+    "_uitleg": "Wetsvoorstellen vanaf startdatum komen in de checker als hun Kamerstuk in een sector staat of in insluiten, als de voortouwcommissie in altijdVoortouw staat, of als de (citeer)titel een trefwoord van een sector bevat. Kamerstukken in uitsluiten nooit (ook hun moties en amendementen niet). Moties en amendementen vanaf de algemene startdatum komen erin als hun onderwerp een trefwoord bevat of als ze bij een gevolgd wetsvoorstel horen.",
+    "startdatum": "2019-01-01",
+    "altijdVoortouw": {
+      "K&GG": "klimaat-energie"
+    },
+    "insluiten": [
+      {
+        "nummer": 35121,
+        "sector": "circulair-vervuiling",
+        "label": "Wet voorkoming verontreiniging door schepen (o.a.)"
+      },
+      {
+        "nummer": 35247,
+        "sector": "circulair-vervuiling",
+        "label": "Wet ruimte voor duurzaamheidsinitiatieven"
+      },
+      {
+        "nummer": 35328,
+        "sector": "klimaat-energie",
+        "label": "Gaswet: vraag naar laagcalorisch gas beperken"
+      },
+      {
+        "nummer": 35519,
+        "sector": "ruimte-mobiliteit",
+        "label": "Parkeertarieven naar uitlaatemissies"
+      },
+      {
+        "nummer": 35693,
+        "sector": "klimaat-energie",
+        "label": "Voorraadvorming aardolieproducten"
+      },
+      {
+        "nummer": 36323,
+        "sector": "circulair-vervuiling",
+        "label": "HNS-verdrag (gevaarlijke stoffen op zee), goedkeuring"
+      },
+      {
+        "nummer": 36331,
+        "sector": "circulair-vervuiling",
+        "label": "Uitvoeringswet HNS-verdrag"
+      },
+      {
+        "nummer": 36873,
+        "sector": "circulair-vervuiling",
+        "label": "Richtlijn betere duurzaamheidsinformatie voor consumenten"
+      },
+      {
+        "nummer": 36996,
+        "sector": "circulair-vervuiling",
+        "label": "Richtlijn bevordering van reparatie"
+      }
+    ],
+    "uitsluiten": [
+      35386,
+      35566,
+      36057,
+      36389,
+      36512,
+      36588,
+      36881
+    ],
+    "_uitsluiten_uitleg": "Geen milieubeleid ondanks een trefwoord in de titel: veilige jaarwisseling en vuurwerk (35386, 35566), energietoeslag in de Participatiewet (36057, 36389), volkshuisvesting (36512, 36881), Kaderwet EZK- en LNV-subsidies (36588)."
+  },
   "sectoren": {
     "klimaat-energie": {
       "naam": "Klimaat & energie",
@@ -98,7 +162,8 @@
         {
           "nummer": 21501,
           "toevoeging": "33",
-          "label": "Energieraad (Raad voor Vervoer, Telecommunicatie en Energie)"
+          "label": "Energieraad (Raad voor Vervoer, Telecommunicatie en Energie)",
+          "breed": true
         }
       ],
       "zoektermen": [
@@ -156,7 +221,7 @@
         "\\bhernieuwba",
         "\\bduurzame energie",
         "\\bmijnbouw",
-        "\\bisolatie",
+        "(?<!in )\\bisolatie(?! van dissident)",
         "\\bverduurzam",
         "\\bCOP ?\\d",
         "\\bGroningen.*(gas|schade|versterking)|\\bNij Groningen",
@@ -556,7 +621,7 @@
     }
   },
   "stukken": {
-    "_uitleg": "Kamerbrieven, Kamervragen en antwoorden op Kamervragen. Een stuk komt in de checker als het in een van de stukDossiers van een sector zit of als titel/onderwerp een trefwoord (regex, hoofdletterongevoelig) bevat. Stukken van (en vragen aan) de ministeries in altijdMinisteries komen er altijd in. Een vraag en haar antwoord (zelfde zaak) komen er altijd samen in.",
+    "_uitleg": "Kamerbrieven, Kamervragen en antwoorden op Kamervragen. Een stuk komt in de checker als het in een van de stukDossiers van een sector zit of als titel/onderwerp een trefwoord (regex, hoofdletterongevoelig) bevat. Stukken van (en vragen aan) de ministeries in altijdMinisteries komen er altijd in. Een vraag en haar antwoord (zelfde zaak) komen er altijd samen in. Stukken in een van de bredeDossiers tellen alleen met een trefwoord.",
     "soorten": [
       "Brief regering",
       "Antwoord schriftelijke vragen",
@@ -577,6 +642,9 @@
       "Landbouw, Visserij, Voedselzekerheid en Natuur",
       "Klimaat- en Energiefonds",
       "Volkshuisvesting en Ruimtelijke Ordening"
+    ],
+    "bredeDossiers": [
+      "21501-33"
     ]
   },
   "toezeggingen": {
