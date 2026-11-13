@@ -58,7 +58,6 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 - Agenda: tijdlijn per week en dag, opent bij vandaag; "Eerder laden" gaat per 4 weken terug tot de start van de Kamerperiode. `#agenda?dossier=<id>` filtert op dossier.
 - Agendafeed: `pipeline/maak_ics.py` schrijft `data/agenda.ics` (geplande en recente activiteiten plus mijlpalen met vaste datum); de Action draait hem na de data-update. Abonneerknop op de Agenda-pagina.
 - Toezeggingen (`#toezeggingen`, subtab van Vergaderingen): uit het toezeggingenregister van de Kamer (`data/tk/toezeggingen.json`, door de pipeline opgehaald; alleen bij gevolgde activiteiten plus ministeries in `toezeggingen.altijdMinisteries`). Voor samengevatte vergaderingen zonder registratie toont de site de toezeggingen uit de samenvatting. Los bijwerken: `python3 pipeline/fetch_tk.py --toezeggingen`.
-- "Nieuw sinds je vorige bezoek" (Overzicht en gele labels): bijgehouden in localStorage van de bezoeker; telt samenvattingen (`samengevatOp`), stemmingen, stukken, toezeggingen en dossierstappen vanaf de dag van het vorige bezoek. Zet `samengevatOp` dus altijd op de datum van samenvatten.
 - Per fractie (`#fracties`, subtab van Vergaderingen): inbreng uit samenvattingen, ingediende moties en amendementen (eerste indiener) en stemgedrag, alfabetisch en voor alle fracties gelijk opgebouwd. GroenLinks-PvdA telt mee bij PRO (alias in `FRACTIE_ALIAS` in app.js).
 - Moties bij vergaderingen: gekoppeld op datum (dag zelf of dag ervoor) plus Kamerstukdossier op de agenda; tweeminutendebat "X (CD d/m)" aan commissiedebat X.
 - To-do (Tobias, nov 2026): eigen themafilter op Wetgeving, Moties, Stukken en Agenda; de algemene sectorfilter is verwijderd.
@@ -66,7 +65,6 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 ## Ontwerp
 
 - Huisstijl (nov 2026): "milieuradar" in kleine letters, DM Sans, groene merkkleur, rood als alarmkleur (vandaag, eerstvolgend), alleen licht thema. Alle kleuren en vormen staan als ontwerpknoppen bovenaan `assets/style.css`; sectorkleuren als `--s-<sectorcode>` (gelijke helderheid en verzadiging).
-- Het vooruitzicht-blok op Overzicht is een placeholder; Tobias beslist later of het een echte functie wordt.
 - Verfijning volgens Apple-ontwerpprincipes (nov 2026):
   - directe feedback bij indrukken (`--duur-druk`);
   - kritisch gedempte "veer" voor beweging (`--veer`, `--duur-veer`), zonder doorschieten;
@@ -86,6 +84,15 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
   - lijsttitels (`.ltitel`) in inktkleur met onderstreping bij aanwijzen; externe links krijgen een pijltje.
 
   Houd nieuwe onderdelen in die lijn.
+
+## Milieu-indicatoren op Overzicht (nov 2026)
+
+- Bovenaan Overzicht staat de CO2-band; onder de kerncijfers staan "Uitstoot naar de lucht in Nederland" en "Planetaire grenzen". Code: `assets/milieu.js` (vanilla JS, lijngrafieken als SVG, geen bibliotheek).
+- CO2: `pipeline/fetch_milieu.py` haalt de daggemiddelden van Mauna Loa (NOAA GML, `co2_daily_mlo.csv`) op en schrijft het laatste jaar naar `data/milieu/co2.json`. Draait in de dagelijkse Action. Het is een daggemiddelde met een of twee dagen vertraging, geen live meting.
+- Uitstoot: de browser haalt CBS-tabel 85668NED rechtstreeks op (OData, CORS toegestaan). Stoffen: CO2 `A044109`, CH4 `A044107`, NH3 `A044111`, NOx `A044112`, PM2.5 `A051771`; totaal van alle bronnen `T001176`. Die sleutel is in de API met spaties opgevuld, dus filter met `startswith(...)`, niet met `eq`. Dit zijn feitelijke emissies op Nederlands grondgebied, niet de IPCC-cijfers waarmee het Klimaatwet-doel wordt gemeten; die toelichting staat op de site en moet blijven staan.
+- Planetaire grenzen: `fetch_milieu.py` kopieert het Datahub-CSV ongewijzigd naar `data/milieu/planetaire-grenzen.csv` (de vaste Datahub-link stuurt door zonder CORS-kop, dus de browser kan hem niet zelf ophalen). Nederlandse namen en correcties staan in `data/planetaire-grenzen.json`. De site bepaalt "overschreden" zelf uit `boundary_direction`; de kolommen `boundary_zone_lower/upper` worden niet gebruikt, want die kloppen niet met de wetenschappelijke onzekerheidszones.
+- Correctie oceaanverzuring: Datahub gebruikt nog 2,75 (Richardson e.a. 2023); de Planetary Health Check 2025 hanteert 2,86 (overschreden, 7 van 9). De correctie wordt alleen toegepast zolang Datahub een andere waarde heeft. Controleer bij elke nieuwe Planetary Health Check (jaarlijks rond september) of de correcties nog kloppen.
+- Mislukt een bron in de pipeline, dan blijft het oude bestand staan en staat de melding in `data/milieu/meta.json`.
 
 ## Zoekfunctie
 
