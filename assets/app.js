@@ -168,7 +168,7 @@
     if (tab !== "vergaderingen" && tab !== "debatten") return null;
     const sub = pad.split("/")[1];
     const p = new URLSearchParams(location.hash.split("?")[1] || "");
-    const q = ["type", "commissie", "ministerie", "thema", "samenvatting"].filter((k) => p.get(k)).map((k) => `${k}=${encodeURIComponent(p.get(k))}`);
+    const q = ["type", "commissie", "ministerie", "thema"].filter((k) => p.get(k)).map((k) => `${k}=${encodeURIComponent(p.get(k))}`);
     if (!sub) q.push("terugblik=1");
     return `#agenda${sub ? "/" + sub : ""}${q.length ? "?" + q.join("&") : ""}`;
   }
@@ -186,7 +186,6 @@
     const TITELS = { themas: "Thema's", agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties", amendementen: "Amendementen", stukken: "Stukken van ministeries", over: "Over", zoeken: "Zoeken" };
     document.title = TITELS[tab] ? `${TITELS[tab]} · milieuradar` : "milieuradar";
     if (tab === "themas" && pad.split("/")[1]) { const t = S.T.thema(pad.split("/")[1]); document.title = `${t ? t.label : "Thema niet gevonden"} · Thema's · milieuradar`; }
-    if (tab !== "agenda") S.agendaGescrold = false;
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
     $("#view").innerHTML = (views[tab] || overzicht)();
     const tabGewisseld = tab !== _vorigeTab, eerste = _vorigeTab === null;
@@ -198,7 +197,7 @@
     if ((tabGewisseld && !eerste && !pad.includes("/")) || themaWissel) {
       const bewaard = _klik ? null : _scrollBij.get(location.hash || "#overzicht");
       if (bewaard != null) setTimeout(() => window.scrollTo(0, bewaard), 0);
-      else if (tab !== "agenda") window.scrollTo(0, 0);
+      else window.scrollTo(0, 0);
     }
     _vorigPad = pad;
     _klik = false;
@@ -886,15 +885,14 @@
 
   /* ---------- Agenda: tijdlijn van vergaderingen, met samenvattingen ---------- */
   // Eén pagina voor wat komt en wat is geweest: geplande en uitgevoerde Kameractiviteiten, samengevatte vergaderingen
-  // en eigen mijlpalen (data/agenda.json). Standaard vanaf vandaag (met "Eerder laden"); Terugblik toont alleen wat is geweest, nieuwste eerst.
-  // Filters staan in de URL: #agenda?thema=adaptatie&type=Commissiedebat&samenvatting=ja&terugblik=1.
+  // en eigen mijlpalen (data/agenda.json). Standaard vanaf vandaag, bovenaan beginnend; Terugblik toont alleen wat is geweest, nieuwste eerst.
+  // Filters staan in de URL: #agenda?thema=adaptatie&type=Commissiedebat&terugblik=1.
   // #agenda/d-<samenvatting-id> en #agenda/a-<activiteitnummer> openen die dag, met de samenvatting uitgeklapt.
   const isDatum = (d) => /^\d{4}-\d{2}-\d{2}$/.test(d || "");
   function maandagVan(dag) { const d = new Date(dag + "T12:00:00"); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return dagNL(d); }
   function plusDagen(dag, n) { const d = new Date(dag + "T12:00:00"); d.setDate(d.getDate() + n); return dagNL(d); }
   function weekNr(dag) { const d = new Date(dag + "T12:00:00"); d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7)); const j = new Date(d.getFullYear(), 0, 4); return 1 + Math.round(((d - j) / 864e5 - 3 + ((j.getDay() + 6) % 7)) / 7); }
   let _ti = null;
-  const icsUrl = () => new URL("data/agenda.ics", location.href.split("#")[0]).href;
   const tkActLink = (a) => a.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${a.Nummer}`;
   function tijdlijnItems() {
     if (_ti) return _ti;
@@ -930,22 +928,17 @@
   function leesAF() {
     const p = new URLSearchParams(location.hash.split("?")[1] || "");
     const lijst = (k) => (p.get(k) ? p.get(k).split(",").filter(Boolean) : []);
-    const sam = p.get("samenvatting");
-    S.af = { type: lijst("type"), commissie: lijst("commissie"), ministerie: lijst("ministerie"), thema: lijst("thema"),
-      sam: sam === "ja" || sam === "nee" ? sam : "", terug: p.get("terugblik") === "1" };
+    S.af = { type: lijst("type"), commissie: lijst("commissie"), ministerie: lijst("ministerie"), thema: lijst("thema"), terug: p.get("terugblik") === "1" };
   }
   function afUrl() {
     const p = [];
     for (const [f] of AGENDA_FACETTEN) if (S.af[f].length) p.push(`${f}=${S.af[f].map(encodeURIComponent).join(",")}`);
-    if (S.af.sam) p.push("samenvatting=" + S.af.sam);
     if (S.af.terug) p.push("terugblik=1");
     return "#agenda" + (p.length ? "?" + p.join("&") : "");
   }
-  const afGefilterd = () => AGENDA_FACETTEN.some(([f]) => S.af[f].length) || !!S.af.sam;
+  const afGefilterd = () => AGENDA_FACETTEN.some(([f]) => S.af[f].length);
   function afToepassen() { history.replaceState(null, "", afUrl()); renderAgenda(); }
-  // "Nog niet samengevat" gaat alleen over vergaderingen die zijn geweest
-  const pastSam = (i) => !S.af.sam || (S.af.sam === "ja" ? !!i.sam : !i.sam && !i.eigen && !i.gepland);
-  const afPast = (i, behalve) => AGENDA_FACETTEN.every(([f]) => f === behalve || !S.af[f].length || arr(i[f]).some((v) => S.af[f].includes(v))) && pastSam(i);
+  const afPast = (i, behalve) => AGENDA_FACETTEN.every(([f]) => f === behalve || !S.af[f].length || arr(i[f]).some((v) => S.af[f].includes(v)));
 
   // uitgeklapte samenvattingen blijven open als de lijst opnieuw wordt getekend (filter, eerder laden)
   const samOpen = new Set();
@@ -966,24 +959,21 @@
 
   function agenda() {
     leesAF();
-    const start = S.data.config.startdatum || "2025-11-12";
-    if (!S.agendaVanaf) S.agendaVanaf = maandagVan(plusDagen(VANDAAG, -21));
     const sub = location.hash.split("?")[0].split("/")[1] || "";
     let doel = null;
     if (sub) {
       const { vast } = tijdlijnItems();
       doel = vast.find((i) => i.id === sub) || vast.find((i) => i.a && "a-" + i.a.Nummer === sub) || null;
       if (doel && doel.sam && !doel.samHier) doel = vast.find((i) => i.sam === doel.sam && i.samHier) || doel;
-      if (doel && !S.af.terug && doel.datum < S.agendaVanaf) { const m = maandagVan(doel.datum); S.agendaVanaf = m < start ? start : m; }
+      // een vergadering die is geweest staat in Terugblik
+      if (doel && doel.datum < VANDAAG && !S.af.terug) { S.af.terug = true; history.replaceState(null, "", location.hash.split("?")[0] + afUrl().slice("#agenda".length)); }
     }
     setTimeout(() => {
       renderAgenda();
       const el = doel && document.getElementById(doel.id);
-      if (el) { if (el.classList.contains("debat")) zetOpen(el, true); el.scrollIntoView({ block: "start" }); S.agendaGescrold = true; }
-      else if (!S.agendaGescrold && !S.af.terug) { const v = $("#vandaag"); if (v) v.scrollIntoView({ block: "start" }); S.agendaGescrold = true; }
+      if (el) { if (el.classList.contains("debat")) zetOpen(el, true); el.scrollIntoView({ block: "start" }); }
     }, 0);
     return `<div class="agendakop"><h2>Agenda</h2><div id="agendaknoppen" class="agendaknoppen"></div></div>
-      <p class="muted small agenda-intro">Vergaderingen van de Tweede Kamer over milieu en klimaat, wat komt en wat is geweest, met mijlpalen van wetten en beleid. Bij samengevatte vergaderingen staat de samenvatting erbij; die is gebaseerd op het automatische transcript en is geen officiële bron.</p>
       <div id="agendafilters"></div><div id="agendawrap"></div>`;
   }
 
@@ -1036,7 +1026,7 @@
     const start = S.data.config.startdatum || "2025-11-12";
     const terug = S.af.terug;
     // binnen het zichtbare bereik; daarover gaan ook de aantallen in de filtermenu's
-    const bereik = terug ? vast.filter(geweest) : vast.filter((i) => i.datum >= S.agendaVanaf);
+    const bereik = terug ? vast.filter(geweest) : vast.filter((i) => i.datum >= VANDAAG);
     const items = bereik.filter((i) => afPast(i));
     const nu = new Date();
     const eerst = terug ? null : vast.find((i) => i.gepland && !i.eigen && afPast(i) && i.a && new Date(i.a.Datum) >= nu);
@@ -1050,7 +1040,7 @@
       if (item) dagen.get(dag).push(item);
     };
     for (const i of items) voeg(i.datum, i);
-    if (!terug && VANDAAG >= S.agendaVanaf) voeg(VANDAAG, null);
+    if (!terug) voeg(VANDAAG, null);
     const dezeWeek = maandagVan(VANDAAG);
     const volgorde = (a, b) => (terug ? b.localeCompare(a) : a.localeCompare(b));
     const regel = (i) => {
@@ -1088,58 +1078,31 @@
       </section>`;
     }).join("");
 
-    // knoppen naast de titel: weergave, tellingen, naar vandaag, abonneren
-    const komend = (n) => vast.filter((i) => i.gepland && !i.eigen && afPast(i) && i.datum >= VANDAAG && i.datum <= plusDagen(VANDAAG, n)).length;
+    // naast de titel alleen de weergave; in beide weergaven dezelfde knoppen
     $("#agendaknoppen").innerHTML = `
       <div class="agendamodus" role="group" aria-label="Weergave">
         <button type="button" class="chip" data-modus="" aria-pressed="${!terug}">Vanaf vandaag</button>
         <button type="button" class="chip" data-modus="terug" aria-pressed="${terug}">Terugblik</button>
-      </div>
-      ${terug ? "" : `<span class="small muted">Komende 7 dagen <b class="datum">${komend(7)}</b> · 30 dagen <b class="datum">${komend(30)}</b></span>
-      <button type="button" class="chip" id="naarvandaag">Naar vandaag</button>`}
-      <details class="facet abonneer"><summary>In je eigen agenda</summary><div class="facet-menu rechts">
-        <p class="small">Abonneer je op deze agenda; nieuwe en verplaatste vergaderingen verschijnen dan vanzelf in je eigen agenda (elke werkdag bijgewerkt).</p>
-        <a class="knop" href="${esc(icsUrl().replace(/^https:/, "webcal:"))}">Abonneren (Apple Agenda, Outlook)</a>
-        <a class="knop licht" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(icsUrl().replace(/^https:/, "webcal:"))}" target="_blank" rel="noopener">Toevoegen aan Google Agenda</a>
-        <label class="small muted" for="icslink">Of kopieer de link:</label>
-        <div class="kopieer"><input id="icslink" readonly value="${esc(icsUrl())}"><button type="button" class="chip" id="icskopie">Kopieer</button></div>
-      </div></details>`;
-    const kop = $("#icskopie");
-    if (kop) kop.addEventListener("click", () => { const i = $("#icslink"); i.select(); (navigator.clipboard ? navigator.clipboard.writeText(i.value) : Promise.reject()).then(() => { kop.textContent = "Gekopieerd"; }).catch(() => document.execCommand("copy")); });
+      </div>`;
     document.querySelectorAll("#agendaknoppen [data-modus]").forEach((b) => b.addEventListener("click", () => {
       const t = b.dataset.modus === "terug";
       if (t === S.af.terug) return;
       S.af.terug = t;
       afToepassen();
-      if (t) { const k = $(".agendakop"); window.scrollTo(0, k ? k.getBoundingClientRect().top + window.scrollY - (parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--kop-h")) || 0) - 16 : 0); }
-      else { const v = $("#vandaag"); if (v) v.scrollIntoView({ block: "start" }); }
+      window.scrollTo(0, 0);
       $(`#agendaknoppen [data-modus="${b.dataset.modus}"]`).focus({ preventScroll: true });
     }));
-    const nv = $("#naarvandaag");
-    if (nv) nv.addEventListener("click", () => { const v = $("#vandaag"); if (v) v.scrollIntoView({ behavior: minderBeweging() ? "auto" : "smooth", block: "start" }); });
 
     renderAgendaFilters(bereik);
 
-    const nSam = items.filter((i) => i.sam && i.samHier).length;
     const vaagHier = terug ? [] : vaag.filter((i) => afPast(i));
     el.innerHTML = `
-      ${afGefilterd() ? `<p class="small muted telregel">${nl(items.length)} ${items.length === 1 ? "item" : "items"} ${terug ? "sinds het begin van de Kamerperiode" : `vanaf ${fmtKort(S.agendaVanaf)}`}, waarvan ${nl(nSam)} samengevat</p>` : ""}
-      ${terug ? "" : S.agendaVanaf > start ? `<div class="tl-eerder"><button type="button" class="chip" id="eerder">${ico("omhoog")}Eerder laden</button> <span class="small muted">Per 4 weken, terug tot ${fmtKort(start)}</span></div>` : `<p class="small muted">Begin van de Kamerperiode (${fmtKort(start)})</p>`}
+      ${afGefilterd() ? `<p class="small muted telregel">${nl(items.length)} ${items.length === 1 ? "item" : "items"} ${terug ? "sinds het begin van de Kamerperiode" : "vanaf vandaag"}</p>` : ""}
       <div class="tijdlijn">${weekHtml || `<p class="empty">${afGefilterd() ? `Niets met deze filters <button type="button" class="linkknop" data-wisalles>Filters wissen</button>` : "Niets in deze periode"}</p>`}</div>
       ${terug ? `<p class="small muted">Begin van de Kamerperiode (${fmtKort(start)})</p>` : ""}
       ${vaagHier.length ? `<h3 class="groepkop">Mijlpalen zonder vaste dag</h3><div class="card"><ul class="list">${vaagHier.map((i) => `<li><div class="regelmeta"><span class="datum">${fmtDatum(i.datum)}</span><span class="tag">${esc(i.type)}</span></div><div>${i.url ? `<a class="ltitel" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : `<span class="ltitel">${esc(i.titel)}</span>`}</div>${themaChips(i.thema, true)}</li>`).join("")}</ul></div>` : ""}`;
     const wisAlles = el.querySelector("[data-wisalles]");
-    if (wisAlles) wisAlles.addEventListener("click", () => { for (const [f] of AGENDA_FACETTEN) S.af[f] = []; S.af.sam = ""; afToepassen(); });
-    const eerder = $("#eerder");
-    if (eerder) eerder.addEventListener("click", () => {
-      const ref = $("#vandaag") || el.querySelector(".tl-week");
-      const voor = ref ? ref.getBoundingClientRect().top : 0;
-      const nieuw = maandagVan(plusDagen(S.agendaVanaf, -28));
-      S.agendaVanaf = nieuw < start ? start : nieuw;
-      renderAgenda();
-      const ref2 = $("#vandaag") || el.querySelector(".tl-week");
-      if (ref2) window.scrollBy(0, ref2.getBoundingClientRect().top - voor);
-    });
+    if (wisAlles) wisAlles.addEventListener("click", () => { for (const [f] of AGENDA_FACETTEN) S.af[f] = []; afToepassen(); });
   }
 
   // Filterbalk: per facet een menu met vinkjes (meerdere waarden, "of"; facetten samen "en"), met per waarde het aantal
@@ -1162,13 +1125,8 @@
         </div></details>`;
     };
     const actief = AGENDA_FACETTEN.flatMap(([f]) => S.af[f].map((v) => `<button type="button" class="chip actief" data-rm="${f}" data-v="${esc(v)}" aria-label="Filter ${esc(facetLabel(f, v))} wissen">${esc(facetLabel(f, v))}${ico("x")}</button>`));
-    if (S.af.sam) actief.push(`<button type="button" class="chip actief" data-rm="sam" aria-label="Filter samenvatting wissen">${S.af.sam === "ja" ? "Met samenvatting" : "Nog niet samengevat"}${ico("x")}</button>`);
     fb.innerHTML = `<div class="filterbalk">
         <div class="facetten">${AGENDA_FACETTEN.map(facet).join("")}</div>
-        <div class="filterkeuzes">
-          <label class="label" for="asam">Samenvatting</label>
-          <select id="asam"><option value="">Alle</option><option value="ja" ${S.af.sam === "ja" ? "selected" : ""}>Met samenvatting</option><option value="nee" ${S.af.sam === "nee" ? "selected" : ""}>Nog niet samengevat</option></select>
-        </div>
         ${actief.length ? `<div class="actieve-filters">${actief.join("")}<button type="button" class="linkknop" data-wis>Alles wissen</button></div>` : ""}
       </div>`;
     fb.querySelectorAll("details.facet").forEach((d) => d.addEventListener("toggle", () => {
@@ -1182,12 +1140,11 @@
       const terug = document.getElementById(id); if (terug) terug.focus();
     }));
     fb.querySelectorAll("[data-rm]").forEach((b) => b.addEventListener("click", () => {
-      if (b.dataset.rm === "sam") S.af.sam = ""; else S.af[b.dataset.rm] = S.af[b.dataset.rm].filter((x) => x !== b.dataset.v);
+      S.af[b.dataset.rm] = S.af[b.dataset.rm].filter((x) => x !== b.dataset.v);
       afToepassen();
     }));
     const wis = fb.querySelector("[data-wis]");
-    if (wis) wis.addEventListener("click", () => { for (const [f] of AGENDA_FACETTEN) S.af[f] = []; S.af.sam = ""; afToepassen(); });
-    $("#asam").addEventListener("change", (e) => { S.af.sam = e.target.value; afToepassen(); });
+    if (wis) wis.addEventListener("click", () => { for (const [f] of AGENDA_FACETTEN) S.af[f] = []; afToepassen(); });
   }
 
   /* ---------- Zoeken ---------- */
