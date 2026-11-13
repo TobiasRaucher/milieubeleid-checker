@@ -59,6 +59,7 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 - Agendafeed: `pipeline/maak_ics.py` schrijft `data/agenda.ics` (geplande en recente activiteiten plus mijlpalen met vaste datum); de Action draait hem na de data-update. Abonneerknop op de Agenda-pagina.
 - Toezeggingen (`#toezeggingen`, subtab van Vergaderingen): uit het toezeggingenregister van de Kamer (`data/tk/toezeggingen.json`, door de pipeline opgehaald; alleen bij gevolgde activiteiten plus ministeries in `toezeggingen.altijdMinisteries`). Voor samengevatte vergaderingen zonder registratie toont de site de toezeggingen uit de samenvatting. Los bijwerken: `python3 pipeline/fetch_tk.py --toezeggingen`.
 - Per fractie (`#fracties`, subtab van Vergaderingen): inbreng uit samenvattingen, ingediende moties en amendementen (eerste indiener) en stemgedrag, alfabetisch en voor alle fracties gelijk opgebouwd. GroenLinks-PvdA telt mee bij PRO (alias in `FRACTIE_ALIAS` in app.js).
+- Moties (`#moties`) en Amendementen (`#amendementen`): twee subtabs met één gedeelde tabel (`moties()`/`bindMoties()` in app.js). Kolommen: Onderwerp, Uitslag, Appreciatie kabinet, Indiener, Datum, Dossier. Sorteren door op de kolomkop te klikken (standaard Datum, nieuwste eerst); Indiener sorteert op fractie. Een klik op een rij opent het document op tweedekamer.nl (`tkLink`, uit het D-nummer dat `fetch_tk.py` per motie en amendement ophaalt; zonder D-nummer een zoeklink op het zaaknummer). De knop aan het eind van de rij klapt de stemming per fractie uit. Regels voor tabellen staan in DESIGN.md onder "Tables".
 - Moties bij vergaderingen: gekoppeld op datum (dag zelf of dag ervoor) plus Kamerstukdossier op de agenda; tweeminutendebat "X (CD d/m)" aan commissiedebat X.
 - To-do (Tobias, nov 2026): eigen themafilter op Wetgeving, Moties, Stukken en Agenda; de algemene sectorfilter is verwijderd.
 
@@ -80,7 +81,7 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
   - tab-aanduiding die van tab naar tab glijdt (`.tab-glij`, gezet in `zetGlij()` in app.js);
   - paginatitel (eerste `h2` van een pagina) duidelijk groter dan sectiekoppen;
   - lopende tekst nooit breder dan `--leesbreedte`; brede schermen worden benut met twee kolommen (dossierkaart: tekst links, stand van zaken rechts; samenvatting: inhoud links, agendapunten en deelnemers rechts);
-  - tabelkop blijft staan onder de vaste paginakop (`--kop-h` wordt door app.js gezet); motierijen tonen een pijltje en klappen uit; op de telefoon is de motietabel een lijst van blokjes;
+  - tabelkop blijft staan onder de vaste paginakop (`--kop-h` wordt door app.js gezet); op de telefoon is de motietabel een lijst van blokjes;
   - een klik op een tab begint bovenaan, terug/vooruit in de browser herstelt de scrollpositie;
   - sneltoets `/` voor zoeken, knop "terug naar boven", laadskelet in `index.html` en een foutmelding als de data niet laadt;
   - lijsttitels (`.ltitel`) in inktkleur met onderstreping bij aanwijzen; externe links krijgen een pijltje.

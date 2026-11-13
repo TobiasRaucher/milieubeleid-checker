@@ -80,12 +80,14 @@ def odata(entity, params, max_pages=40):
 
 
 EXPAND_VOL = (
+    "Document($filter=Verwijderd eq false;$select=DocumentNummer,Soort,Datum),"
     "ZaakActor($filter=Verwijderd eq false),"
     "Kamerstukdossier($select=Nummer,Toevoeging,Titel),"
     "Besluit($filter=Verwijderd eq false;$expand=Stemming($filter=Verwijderd eq false),"
     "Agendapunt($select=Id;$expand=Activiteit($select=Datum,Soort,Onderwerp)))"
 )
 EXPAND_SIMPEL = (
+    "Document($filter=Verwijderd eq false;$select=DocumentNummer,Soort,Datum),"
     "ZaakActor($filter=Verwijderd eq false),"
     "Kamerstukdossier($select=Nummer,Toevoeging,Titel),"
     "Besluit($filter=Verwijderd eq false;$expand=Stemming($filter=Verwijderd eq false))"
@@ -145,6 +147,15 @@ def normaliseer_zaak(z, sector):
             "datum": datum,
             "stemmen": stemmen,
         })
+    # het document van de motie of het amendement zelf (D-nummer) voor de link naar tweedekamer.nl;
+    # bij gewijzigde versies telt het nieuwste document
+    soort = z.get("Soort") or ""
+    docs = sorted((d for d in (z.get("Document") or []) if (d.get("Soort") or "").startswith(soort)),
+                  key=lambda d: d.get("Datum") or "")
+    dnr = docs[-1].get("DocumentNummer") if docs else None
+    pad = {"Motie": "moties", "Amendement": "amendementen"}.get(soort)
+    tk_link = (f"https://www.tweedekamer.nl/kamerstukken/{pad}/detail?id={z.get('Nummer')}&did={dnr}"
+               if pad and dnr else None)
     stem_besluit = next((b for b in reversed(besluiten) if b["stemmen"]), None)
     telling = None
     if stem_besluit:
@@ -179,6 +190,8 @@ def normaliseer_zaak(z, sector):
         "uitslag": uitslag(z.get("Besluit", []) or []),
         "stemtelling": telling,
         "sectoren": [sector],
+        "document": dnr,
+        "tkLink": tk_link,
         "link": f"https://berthub.eu/tkconv/zaak.html?nummer={z.get('Nummer')}",
     }
 

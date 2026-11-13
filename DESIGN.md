@@ -10,7 +10,7 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 - **Character.** Exact, sober, alert.
 - **World.** The measurement desk: monitoring stations, instrument readouts, CBS/RIVM/NOAA tables and typeset Kamerstukken.
 - **Moments.** The CO₂ readout, the emissions chart (the largest drawn thing on Overzicht) and the planetary boundaries grid, where each indicator sits on a scale against its limit. The chrome stays quiet around all three.
-- **Signature.** The peildatum stamp: every figure carries its source and date in one mono caption, in one format (`NOAA · Mauna Loa, Hawaii · daggemiddelde 11 nov 2026`). Red only ever means past the limit or happening now.
+- **Signature.** The peildatum stamp: every figure carries its source and date in one mono caption, in one format (`NOAA · Mauna Loa, Hawaii · daggemiddelde 11 nov 2026`). Red only ever means past the limit, happening now, or a verworpen vote outcome (a traffic light, by Tobias's choice of 13 Nov 2026).
 
 ## Tokens
 
@@ -37,7 +37,8 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 ### Alarm and meaning
 
 - `--alarm` `#d6343a` (marks, borders, zones) and `--alarm-tekst` `#b4262c` (text, 6.45:1 on white). `--alarm-soft` `#fdf1f1` is only for today's row on Agenda.
-- Status dots: aangenomen/afgedaan `--good` `#1a7f4b`, in behandeling/aangehouden/openstaand `--warning` `#d59a0a`, verworpen/ingetrokken/vervallen `--neutraal-stip` `#a3aba6`.
+- `--bad` `#d6343a` (same red) is only the status dot for verworpen.
+- Status dots, a traffic light: aangenomen/afgedaan `--good` `#1a7f4b`, in behandeling/aangehouden/openstaand `--warning` `#d59a0a`, verworpen `--bad` `#d6343a`, ingetrokken/vervallen `--neutraal-stip` `#a3aba6`. The dot carries the color, the word carries the meaning; the word stays ink.
 - Votes: voor `--voor` = ink, tegen `--tegen` `#cdd3cf`. Empty bars and phases not yet reached: `--spoor` `#e4e7e5`.
 - Theme colors (9, in `data/themas.json`) appear only as an 8px dot.
 
@@ -91,7 +92,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 4. Use the accent once or twice per screen: the selection, the primary action, the chart line, one key figure.
 5. Show status as a dot plus a word in sentence case (`Aangenomen`, `In behandeling`, `Openstaand`).
 6. Use one tag style for document and meeting types (`.tag`), one label style for words next to a title (`.badge`: text, no fill), one selected style (accent fill).
-7. Format dates as `11 nov 2026` in meta, tables and stamps; the long form `11 november 2026` only inside a sentence. Numbers in Dutch notation (`1.092`, `428,38`) with `tabular-nums`.
+7. Format dates as `11 nov 2026` in meta, tables and stamps (months `jan feb mrt apr mei jun jul aug sep okt nov dec`, from `MAANDEN_KORT`); the long form `11 november 2026` only inside a sentence. Numbers in Dutch notation (`1.092`, `428,38`) with `tabular-nums`.
 8. Give every figure a peildatum stamp (`.peil`): source · place or table · date.
 9. Keep one main chart per screen, the largest drawn thing; anything else that shows data is smaller and different in kind (scales, a list with bars, a table).
 10. Give hover and focus a visible state inside the palette; keep a 2px accent focus ring.
@@ -100,7 +101,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 **Don't**
 1. No hue gradients, gradient text, glows, colored shadows, color washes or blurred glass (`backdrop-filter`).
 2. No green surfaces, green borders as decoration, green section labels or green links. Links are ink with a hairline underline and turn green on hover.
-3. No red for anything except over the limit, today and eerstvolgend. Not for votes against, not for verworpen.
+3. No red for anything except over the limit, today, eerstvolgend and the verworpen status dot. Not for votes against, not for text, not for row backgrounds.
 4. No blue or other hue outside the ramp, accent, alarm and the status/theme dots.
 5. No uppercase tracked labels, no weight 700, no italic for emphasis, no negative tracking below 18px.
 6. No emoji or Unicode glyphs as icons; no arrows appended to link text.
@@ -110,6 +111,19 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 10. No equal tiles in a row as a layout default; stats sit in one strip with hairline dividers.
 11. No `transition: all`, no looping or bouncy motion, no hover scale on cards.
 12. No greeting copy, exclamation marks, hype words or unverifiable claims.
+
+## Tables
+
+The Moties/Amendementen table is the reference for every data table.
+
+- Column order: Onderwerp, Uitslag, Appreciatie kabinet, Indiener, Datum, Dossier, then a 48px cell for the row's disclosure button. Onderwerp takes 44% and wraps; every other column stays on one line.
+- Text columns align left; dates and Kamerstuk numbers align right (`tabular-nums`; Kamerstuk numbers in DM Mono 13). Header text sits on exactly the same line as the cell text below it: header cells have the same horizontal padding as body cells, and a sort button has no padding of its own.
+- One line height for every body cell (22px at 14px), so first lines share a baseline. A status (dot plus word) is `display: flex` inside a cell; an inline-flex status takes its baseline from the empty dot and drops 1px.
+- Sorting: the column header is the control (a button inside the `th`, `aria-sort` on the sorted column). First click sorts in the column's natural direction (dates newest first, text A to Z), the next click reverses it. The arrow shows only on the sorted column, and faintly on hover; on right-aligned columns it sits left of the label. Empty values always sort last.
+- Row: hover is `--surface`, pressed `--raised`, an open row stays `--surface`. When the whole row opens a link, the title is the real `<a>` (keyboard and middle click), the row click repeats it, and a hover underlines the title in `--line-sterk`. Other actions in the row are buttons that do not trigger the row.
+- Disclosure: a 32px ghost button with the 16px chevron, rotating 180° when open; the detail row is `--surface`.
+- External arrow in a wrapping title: put it inside a no-wrap span with the last word, so it never sits alone on a line.
+- Phones (≤640px): each row becomes a block with the title on top, status and date beneath, the button at the right; secondary columns are hidden.
 
 ## Template check
 

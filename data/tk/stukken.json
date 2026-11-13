@@ -885,13 +885,19 @@
   "id": "2026D53393",
   "soort": "Brief regering",
   "datum": "2026-10-27",
-  "titel": null,
+  "titel": "Arbeidsomstandigheden",
   "onderwerp": "Reactie op verzoek van het lid Kostić om een actieplan beschermende maatregelen blootstelling werknemers Schiphol aan kankerverwekkende stoffen",
   "ministerie": "Werk en Participatie",
   "ondertekenaar": "A.A. Aartsen",
   "functie": "minister van Werk en Participatie",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "25883-571",
+  "dossiers": [
+   {
+    "nummer": 25883,
+    "toevoeging": null,
+    "titel": "Arbeidsomstandigheden"
+   }
+  ],
   "sectoren": [
    "ruimte-mobiliteit"
   ],

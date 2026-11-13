@@ -8,8 +8,9 @@
   const NL = (n, max = 1, min = 0) => new Intl.NumberFormat("nl-NL", { maximumFractionDigits: max, minimumFractionDigits: min }).format(n);
   const MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
   const datumNL = (iso) => { const [j, m, d] = iso.split("-").map(Number); return `${d} ${MAANDEN[m - 1]} ${j}`; };
-  const datumKort = (iso) => { const [j, m, d] = iso.split("-").map(Number); return `${d} ${MAANDEN[m - 1].slice(0, 3)} ${j}`; };
-  const maandKort = (iso) => MAANDEN[+iso.slice(5, 7) - 1].slice(0, 3);
+  const MAANDEN_KORT = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
+  const datumKort = (iso) => { const [j, m, d] = iso.split("-").map(Number); return `${d} ${MAANDEN_KORT[m - 1]} ${j}`; };
+  const maandKort = (iso) => MAANDEN_KORT[+iso.slice(5, 7) - 1];
   const SVGNS = "http://www.w3.org/2000/svg";
   const minderBeweging = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 
