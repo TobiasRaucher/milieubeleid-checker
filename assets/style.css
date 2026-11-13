@@ -302,13 +302,14 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .actieve-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
 /* grote schakelaar Moties / Amendementen: staat in voor de paginatitel; zelfde vorm als de hoofdtabs (verhoogd vlak op surface), op 20px */
-.schakelaar { display: inline-flex; gap: 4px; padding: 4px; margin: 32px 0 0; background: var(--surface); border-radius: var(--r-card); }
+.schakelaar { display: inline-flex; gap: 4px; padding: 4px; margin: 0; background: var(--surface); border-radius: var(--r-card); }
 .schakelaar a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: var(--r-control); font-size: var(--t-20); font-weight: 500; letter-spacing: -0.005em; color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 .schakelaar a:hover:not([aria-current]) { color: var(--ink); background: var(--raised); }
 .schakelaar a[aria-current="page"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); }
 .schakelaar a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.motiezoek { margin: 24px 0 16px; }
-.motiezoek input[type=search] { flex: 0 1 420px; }
+/* schakelaar en zoekveld op één regel boven de tabel */
+.motiekop { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin: 32px 0 16px; }
+.motiekop input[type=search] { flex: 0 1 420px; min-width: 0; min-height: 44px; }
 
 /* ===================== Lijsten en tabellen ===================== */
 .list { list-style: none; margin: 0; padding: 0; }
@@ -328,7 +329,7 @@ td.datumcel, td.nw { font-size: var(--t-13); color: var(--ink-2); }
 /* Moties en amendementen: rij opent tweedekamer.nl, de knop aan het eind klapt de stemming uit */
 .motietabel th.rechts, .motietabel td.rechts { text-align: right; }
 .motietabel td { line-height: 22px; }
-.motietabel th.ond { width: 44%; }
+.motietabel th.ond { width: 38%; }
 .motietabel th.ond, .motietabel td.ond { padding-right: 4px; }
 .motietabel td.ond { min-width: 280px; }
 .motietabel td.ond .ltitel { font-weight: 400; }
@@ -342,6 +343,9 @@ td.datumcel, td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel td.datum { color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .motietabel td.dossier { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel .leeg { color: var(--muted); }
+.motietabel td.thema { width: 132px; padding-right: 4px; }
+.motietabel td.thema .tchips { flex-direction: column; align-items: flex-start; padding-top: 1px; }
+.motietabel td.thema .tchip { line-height: 18px; padding-top: 1px; padding-bottom: 1px; }
 .motietabel th.knopcel, .motietabel td.knopcel { width: 44px; padding: 7px 12px 7px 0; }
 /* kolomkop als knop: de tekst begint op dezelfde lijn als de inhoud eronder */
 .motietabel thead th { padding-top: 0; padding-bottom: 0; height: 40px; vertical-align: middle; }
@@ -351,7 +355,6 @@ td.datumcel, td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .sorteer:hover .ico { opacity: 0.5; }
 .sorteer.actief { color: var(--ink); }
 .sorteer.actief .ico { opacity: 1; color: var(--ink-2); }
-th.rechts .sorteer { flex-direction: row-reverse; }
 .sorteer:focus-visible, .kopfilter:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: var(--r-tag); }
 /* filterkop: het pijltje omlaag zegt "menu", het pijltje bij Datum zegt "sorteren" */
 .kopfilter::after { content: ""; width: 16px; height: 16px; flex: none; background: var(--chevron) center / 16px no-repeat; transition: transform var(--d-lang) var(--ease); }
@@ -636,10 +639,9 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
   .motietabel thead th { display: none; }
   .motietabel thead th.fkop, .motietabel thead th.dkop { display: block; position: static; height: auto; padding: 0; background: none; box-shadow: none; }
   .motietabel thead .kopfilter, .motietabel thead .sorteer { min-height: 32px; padding: 0 8px 0 12px; font-size: var(--t-13); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); }
-  .motietabel thead th.rechts .sorteer { flex-direction: row; }
   .schakelaar { display: flex; }
   .schakelaar a { flex: 1; justify-content: center; padding: 0 12px; font-size: var(--t-18); }
-  .motiezoek input[type=search] { flex-basis: 100%; }
+  .motiekop .schakelaar, .motiekop input[type=search] { flex-basis: 100%; }
   .mstemmen { grid-template-columns: 1fr; }
   .motietabel tr.row { display: grid; grid-template-columns: auto minmax(0, 1fr) 32px; gap: 8px 12px; padding: 12px 8px 12px 16px; border-top: 1px solid var(--line); align-items: center; }
   .motietabel tbody tr:first-child { border-top: 0; }

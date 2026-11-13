@@ -1,7 +1,7 @@
 /* MilieuRadar: leest de JSON-bestanden in data/ en tekent de pagina. Geen build-stap nodig. */
 (function () {
   "use strict";
-  const S = { sector: "alle", data: null, motieFilter: { q: "", uitslag: [], appreciatie: [], fractie: [], richting: "desc" },
+  const S = { sector: "alle", data: null, motieFilter: { q: "", thema: [], uitslag: [], appreciatie: [], fractie: [], richting: "desc" },
     stukFilter: { q: "", soort: "", ministerie: "", max: 100 },
     zoekCat: "", zoekMax: 30 };
   const $ = (sel, el = document) => el.querySelector(sel);
@@ -38,6 +38,8 @@
   const nl = (n) => (typeof n === "number" ? n.toLocaleString("nl-NL") : n);
   // eerste letter hoofdletter (labels in zinsvorm)
   const hoofd = (s) => { s = String(s ?? ""); return s.charAt(0).toUpperCase() + s.slice(1); };
+  // eerste letter klein, behalve bij een afkorting ("PFAS", "CO2"): daar staat na de eerste letter nog een hoofdletter of cijfer
+  const klein = (s) => { s = String(s ?? ""); return /^\S[^\s]*[A-Z0-9]/.test(s.split(" ")[0]) ? s : s.charAt(0).toLowerCase() + s.slice(1); };
   // lucide-iconen, 16px, lijn 1,5 (stijl in .ico)
   const ICO = { x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>', omhoog: '<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>',
     chevron: '<path d="m6 9 6 6 6-6"/>', pijlop: '<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>', pijlneer: '<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>' };
@@ -183,7 +185,7 @@
       if (a.dataset.tab === navTab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
     const views = { overzicht, themas: themasPagina, wetgeving, moties, amendementen: moties, stukken, agenda, over, zoeken };
-    const TITELS = { themas: "Thema's", agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties", amendementen: "Amendementen", stukken: "Stukken van ministeries", over: "Over", zoeken: "Zoeken" };
+    const TITELS = { themas: "Thema's", agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties & Amendementen", amendementen: "Moties & Amendementen", stukken: "Stukken van ministeries", over: "Over", zoeken: "Zoeken" };
     document.title = TITELS[tab] ? `${TITELS[tab]} · milieuradar` : "milieuradar";
     if (tab === "themas" && pad.split("/")[1]) { const t = S.T.thema(pad.split("/")[1]); document.title = `${t ? t.label : "Thema niet gevonden"} · Thema's · milieuradar`; }
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
@@ -457,6 +459,11 @@
   // link naar het document op tweedekamer.nl (D-nummer uit de pipeline); anders zoeken op het zaaknummer
   const tkUrl = (z) => z.tkLink || `https://www.tweedekamer.nl/zoeken?q=${encodeURIComponent(z.nummer)}`;
   const onderwerpZin = (z) => hoofd(korteTitel(z).trim().replace(/\s+/g, " "));
+  // in de tabel leest de titel door op de kolomkop "Motie over..."
+  const onderwerpKlein = (z) => klein(korteTitel(z).trim().replace(/\s+/g, " ").replace(/^over /i, ""));
+  // thema's per zaak onthouden: de aantallen in het filtermenu vragen ze voor elke rij opnieuw
+  const _motieThemas = new Map();
+  const themasMotie = (z) => { let t = _motieThemas.get(z.nummer); if (!t) _motieThemas.set(z.nummer, (t = themasVanZaak(z))); return t; };
   const titelMetPijl = (t) => { const i = t.lastIndexOf(" "); return `${esc(t.slice(0, i + 1))}<span class="nw">${esc(t.slice(i + 1))}<span class="ext" aria-hidden="true"></span></span>`; };
   const motieDatum = (z) => z.stemtelling?.datum || z.gestartOp || "";
   const eersteIndiener = (z) => z.indieners.find((i) => /^indiener|eerste/i.test(i.relatie || "")) || z.indieners[0];
@@ -485,6 +492,7 @@
   // Filters per kolom. waarden(z): de waarden van een rij (een rij past als één ervan gekozen is);
   // binnen een kolom telt "of", tussen kolommen "en". Indiener telt alle indieners, ook mede-indieners.
   const MOTIE_FILTERS = {
+    thema: { label: "Thema", waarden: (z) => (themasMotie(z).length ? themasMotie(z) : [""]), orde: (vs) => opVolgorde([...S.T.lijst.map((t) => t.slug), ""])(vs), tekst: (v) => esc(v ? S.T.naam(v) : "Geen thema") },
     uitslag: { label: "Uitslag", waarden: (z) => [z.uitslag || "in behandeling"], orde: opVolgorde(UITSLAG_ORDE), tekst: (v) => uitslagPill(v) },
     appreciatie: { label: "Appreciatie kabinet", waarden: (z) => [appreciatie(z)], orde: opVolgorde([...APPRECIATIES, ""]), tekst: (v) => esc(v || "Geen appreciatie") },
     fractie: { label: "Indiener", waarden: (z) => uniek(z.indieners.map((i) => fractieNaam(i.fractie)).filter(Boolean)), orde: opVolgorde([]), tekst: (v) => esc(v) },
@@ -510,7 +518,7 @@
       return `<th class="fkop"><button type="button" class="kopfilter${n ? " actief" : ""}" data-filter="${k}" aria-expanded="false" aria-controls="mfmenu" aria-label="Filter ${esc(label.toLowerCase())}${n ? `, ${n} gekozen` : ""}">${esc(label)}${n ? `<span class="facet-n">${n}</span>` : ""}</button></th>`;
     };
     return `<tr>
-      <th class="ond">${soort}</th><th class="knopcel"><span class="sr-only">Stemming</span></th>
+      ${filterKop("thema")}<th class="ond">${soort} over...</th><th class="knopcel"><span class="sr-only">Stemming</span></th>
       ${filterKop("uitslag")}${filterKop("appreciatie")}${filterKop("fractie")}
       <th class="rechts hide-sm">Kamerstuk</th>
       <th class="rechts dkop" aria-sort="${asc ? "ascending" : "descending"}"><button type="button" class="sorteer actief" data-sort="datum" aria-label="Datum, ${asc ? "oudste" : "nieuwste"} eerst; klik om om te draaien">Datum${ico(asc ? "pijlop" : "pijlneer")}</button></th>
@@ -520,11 +528,11 @@
   function moties() {
     const tab = location.hash.slice(1).split(/[/?]/)[0] === "amendementen" ? "amendementen" : "moties";
     const soort = SOORT_VAN_TAB[tab];
-    return `${motieNav(tab)}<h2 class="sr-only">${tab === "moties" ? "Moties" : "Amendementen"}</h2>
-      <div class="filters motiezoek"><input type="search" id="mq" placeholder="Zoek op onderwerp, Kamerlid of Kamerstuknummer" value="${esc(S.motieFilter.q)}" aria-label="Zoeken"></div>
+    return `<h2 class="sr-only">Moties &amp; Amendementen</h2>
+      <div class="filters motiekop">${motieNav(tab)}<input type="search" id="mq" placeholder="Zoek op onderwerp, Kamerlid of Kamerstuknummer" value="${esc(S.motieFilter.q)}" aria-label="Zoeken"></div>
       <div class="tablewrap"><table class="motietabel" data-soort="${soort}"><thead id="mkop">${motieKoppen(soort)}</thead><tbody id="mbody"></tbody></table></div>
       <div id="mfmenu" class="kopmenu" popover="manual"></div>
-      <p class="small muted">Een klik op een rij opent ${soort === "Motie" ? "de motie" : "het amendement"} op tweedekamer.nl; de knop naast de titel toont de stemming per fractie. Uitslag, Appreciatie kabinet en Indiener filteren, Datum sorteert. Alle gegevens komen rechtstreeks uit de open data van de Tweede Kamer.</p>`;
+      <p class="small muted">Een klik op een rij opent ${soort === "Motie" ? "de motie" : "het amendement"} op tweedekamer.nl; de knop naast de titel toont de stemming per fractie. Thema, Uitslag, Appreciatie kabinet en Indiener filteren, Datum sorteert. Alle gegevens komen rechtstreeks uit de open data van de Tweede Kamer.</p>`;
   }
   function bindMoties() {
     const f = S.motieFilter, soort = $(".motietabel").dataset.soort, menu = $("#mfmenu");
@@ -546,8 +554,10 @@
       const eenheid = soort === "Motie" ? "moties" : "amendementen";
       $("#mbody").innerHTML = rows.map((z, i) => {
         const a = appreciatie(z), ruw = (z.kabinetsappreciatie || "").trim();
+        const th = themasMotie(z);
         return `<tr class="row" data-i="${i}">
-          <td class="ond"><a class="ltitel" href="${esc(tkUrl(z))}" target="_blank" rel="noopener">${titelMetPijl(onderwerpZin(z))}</a></td>
+          <td class="thema hide-sm">${th.length ? themaChips(th) : `<span class="leeg" title="Geen thema"><span aria-hidden="true">–</span><span class="sr-only">Geen thema</span></span>`}</td>
+          <td class="ond"><a class="ltitel" href="${esc(tkUrl(z))}" target="_blank" rel="noopener">${titelMetPijl(onderwerpKlein(z))}</a></td>
           <td class="knopcel"><button type="button" class="uitklap" aria-expanded="false" aria-label="Stemming per fractie tonen">${ico("chevron")}</button></td>
           <td class="uitslag">${uitslagPill(z.uitslag)}</td>
           <td class="appr hide-sm">${a ? esc(a) : `<span class="leeg" title="${esc(ruw || "Geen appreciatie")}"><span aria-hidden="true">–</span><span class="sr-only">${esc(ruw || "Geen appreciatie")}</span></span>`}</td>
@@ -555,7 +565,7 @@
           <td class="kamerstuk rechts mono hide-sm">${esc(dossierLabel(z))}</td>
           <td class="datum rechts">${fmtKort(motieDatum(z))}</td>
         </tr>`;
-      }).join("") || `<tr><td colspan="7" class="empty">Geen ${eenheid} ${motieGefilterd() ? `met deze filters <button type="button" class="linkknop" data-wisalles>Filters wissen</button>` : "gevonden"}</td></tr>`;
+      }).join("") || `<tr><td colspan="8" class="empty">Geen ${eenheid} ${motieGefilterd() ? `met deze filters <button type="button" class="linkknop" data-wisalles>Filters wissen</button>` : "gevonden"}</td></tr>`;
     };
     const toepassen = () => {
       rows = alle.filter((z) => motiePast(z)).sort(motieVolgorde(f.richting));
@@ -659,7 +669,7 @@
         if (open) nxt.remove();
         else {
           const d = document.createElement("tr"); d.className = "detail";
-          d.innerHTML = `<td colspan="7">${motieDetail(rows[+tr.dataset.i])}</td>`;
+          d.innerHTML = `<td colspan="8">${motieDetail(rows[+tr.dataset.i])}</td>`;
           tr.after(d);
         }
         tr.classList.toggle("open", !open);
