@@ -103,14 +103,18 @@ function importeer(bestand) {
     if (onbekend.length) { fout.push(`${r.sleutel}: onbekend thema ${onbekend.join(", ")}`); continue; }
     const x = perSleutel.get(r.sleutel);
     const regel = x ? T.voorstel(x.titel, x.overig, x.dossiers).themas.join(",") : null;
-    mapping[r.sleutel] = { themas: slugs, bron: regel === slugs.join(",") ? "regels" : "review" };
+    const handmatig = /zonder thema|beoordeeld/i.test(r.status) || regel !== slugs.join(",");
+    mapping[r.sleutel] = { themas: slugs, bron: handmatig ? "review" : "regels" };
     n++;
   }
   if (fout.length) { console.error("Niet geïmporteerd:\n" + fout.join("\n")); process.exitCode = 1; }
   mapping._uitleg = "Goedgekeurde thema's per item; gaat voor de regels in data/themas.json. Sleutels: zaak:<zaaknummer>, stuk:<documentnummer>, debat:<activiteitnummer of samenvatting-id>, dossier:<dossier-id>, agenda:<datum>-<titel>. bron: regels (voorstel ongewijzigd goedgekeurd) of review (aangepast bij de review). themas: [] betekent bewust zonder thema.";
   mapping.bijgewerkt = new Date().toISOString().replace(/\.\d+Z$/, "Z");
-  const geordend = Object.fromEntries([["_uitleg", mapping._uitleg], ["bijgewerkt", mapping.bijgewerkt], ...Object.entries(mapping).filter(([k]) => !k.startsWith("_") && k !== "bijgewerkt").sort(([a], [b]) => a.localeCompare(b))]);
-  fs.writeFileSync(path.join(ROOT, MAP_PAD), JSON.stringify(geordend, null, 1) + "\n");
+  // één item per regel: compact (de site laadt dit bestand) en goed te volgen in git-diffs
+  const items = Object.entries(mapping).filter(([k]) => !k.startsWith("_") && k !== "bijgewerkt").sort(([a], [b]) => a.localeCompare(b));
+  const regels = [`"_uitleg": ${JSON.stringify(mapping._uitleg)}`, `"bijgewerkt": ${JSON.stringify(mapping.bijgewerkt)}`,
+    ...items.map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify({ themas: v.themas, bron: v.bron })}`)];
+  fs.writeFileSync(path.join(ROOT, MAP_PAD), "{\n" + regels.map((r) => " " + r).join(",\n") + "\n}\n");
   console.log(`${n} items in ${MAP_PAD}`);
 }
 

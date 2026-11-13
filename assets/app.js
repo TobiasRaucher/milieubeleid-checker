@@ -350,7 +350,8 @@
       if (gezien.has(x.sleutel)) continue;
       gezien.add(x.sleutel);
       x.themas = window.MRThemas.themasVanItem(S.T, x);
-      if (!x.themas.length) zonder.push(x);
+      // nog niet geclassificeerd = geen thema en (nog) niet nagekeken; bewust zonder thema (mapping met []) telt niet mee
+      if (!x.themas.length && !S.T.inMapping(x.sleutel)) zonder.push(x);
       for (const sl of x.themas) perThema.get(sl)?.push(x);
     }
     return (_themaIndex = { items, perThema, zonder });
@@ -383,16 +384,110 @@
       <p class="muted small themas-intro">Alle wetten, moties, amendementen, Kamerbrieven, antwoorden op Kamervragen, vergaderingen en agenda-items in tien vaste thema's. Een item kan bij meer dan één thema horen.${zonder.length ? ` <span class="nw">${nl(zonder.length)} ${zonder.length === 1 ? "item" : "items"} nog niet geclassificeerd.</span>` : ""}</p>
       <ul class="themagrid">${S.T.lijst.map((t) => themaKaart(t, perThema.get(t.slug))).join("")}</ul>`;
   }
+  // Detail: per documentsoort een groep (volgorde uit MRThemas.SOORTEN), lege groepen weg, nieuwste eerst
+  // (Agenda: eerstvolgende eerst). Per item: datum, status, Kamerstuk; de rest achter "Meer details".
+  const GROEP_ZICHTBAAR = 20;
+  const datumVan = (x) => {
+    const r = x.ref;
+    if (x.soort === "motie" || x.soort === "amendement") return motieDatum(r);
+    return x.datum || "";
+  };
+  const feit = (dt, dd) => (dd ? `<dt>${esc(dt)}</dt><dd>${dd}</dd>` : "");
+  const extLink = (url, tekst) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(tekst)}</a>`;
+  function agendapuntenLijst(a) {
+    const ap = (a?.agendapunten || []).map((p) => p.onderwerp).filter(Boolean);
+    return ap.length ? `<ul class="agendapunten">${ap.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : "";
+  }
+  function themaRegel(x, slug) {
+    const r = x.ref;
+    let meta = [], titel = x.titel, href = "", extern = true, feiten = "";
+    const datum = datumVan(x);
+    if (datum) meta.push(`<span class="datum">${fmtKort(datum)}</span>`);
+    if (x.soort === "wet" && x.sleutel.startsWith("dossier:")) {
+      const fase = S.data.dossiers.fasen[faseIndex(r.fase)]?.naam || r.fase;
+      meta.push(`<span>Fase: ${esc(fase)}</span>`);
+      if (r.kamerstuk) meta.push(`<span class="mono">${esc(r.kamerstuk)}</span>`);
+      if (r.deadline) meta.push(`<span>Deadline ${fmtKort(r.deadline.datum)}</span>`);
+      titel = r.titel; href = `#wetgeving/w-${r.id}`; extern = false;
+      feiten = feit("Samenvatting", esc(r.samenvatting)) + feit("Laatste stap", r.laatsteStap ? `${fmtDatum(r.laatsteStap.datum)}: ${esc(r.laatsteStap.tekst)}` : "")
+        + feit("Volgende stap", r.volgendeStap ? `${fmtDatum(r.volgendeStap.datum)}: ${esc(r.volgendeStap.tekst)}` : "")
+        + feit("Deadline", r.deadline ? `${fmtDatum(r.deadline.datum)}: ${esc(r.deadline.tekst)}` : "")
+        + feit("Bronnen", (r.bronnen || []).map((b) => extLink(b.url, b.titel)).join(" · "));
+    } else if (x.soort === "wet") {
+      meta.push(uitslagPill(r.uitslag));
+      if (r.dossiers?.length) meta.push(`<span class="mono">${esc(dossierLabel(r))}</span>`);
+      href = r.link;
+      feiten = feit("Titel", r.onderwerp && r.onderwerp !== r.titel ? esc(r.onderwerp) : "") + feit("Ingediend door", esc(r.indieners.map((i) => i.naam).join(", ")))
+        + feit("Laatste stap", r.gestartOp ? `${fmtDatum(r.gestartOp)}: ingediend` : "") + feit("Links", [r.tkLink && extLink(r.tkLink, "tweedekamer.nl"), extLink(r.link, "OpenTK")].filter(Boolean).join(" · "));
+    } else if (x.soort === "motie" || x.soort === "amendement") {
+      meta.push(uitslagPill(r.uitslag), `<span>${indienerKort(r)}</span>`);
+      if (r.dossiers?.length) meta.push(`<span class="mono">${esc(dossierLabel(r))}</span>`);
+      titel = onderwerpZin(r); href = tkUrl(r);
+      const t = r.stemtelling;
+      feiten = feit("Volledige tekst", esc(r.onderwerp)) + feit("Indieners", esc(r.indieners.map((i) => `${i.naam}${i.fractie ? ` (${i.fractie})` : ""}`).join(", ")))
+        + feit("Appreciatie kabinet", esc(appreciatie(r))) + feit("Stemming", t && t.voor + t.tegen ? `Voor ${t.voor} / Tegen ${t.tegen} (${fmtKort(t.datum)})` : "")
+        + feit("Dossier", esc((r.dossiers || []).map((d) => d.titel).join("; "))) + feit("Links", [extLink(tkUrl(r), "tweedekamer.nl"), extLink(r.link, "OpenTK")].join(" · "));
+    } else if (x.soort === "brief" || x.soort === "antwoord") {
+      meta.push(`<span>${esc(r.ministerie || "ministerie onbekend")}</span>`, `<span class="mono">${esc(r.kamerstuk || r.id)}</span>`);
+      titel = r.onderwerp || r.titel; href = r.link;
+      feiten = feit("Ondertekend door", esc([r.ondertekenaar, r.functie].filter(Boolean).join(", "))) + feit("Dossier", esc((r.dossiers || []).map((d) => `${d.nummer} ${d.titel || ""}`).join("; ")))
+        + feit("Document", `<span class="mono">${esc(r.id)}</span>`);
+    } else if (x.sleutel.startsWith("agenda:")) {
+      meta.push(`<span class="tag">${esc(r.type || "Mijlpaal")}</span>`);
+      href = r.url || ""; feiten = "";
+    } else if (r.Nummer) { // Kameractiviteit (vergadering of agenda)
+      meta.push(`<span class="tag">${esc(window.MRThemas.typeNaam(r.Soort))}</span>`, `<span>${esc(commissieNaam(r))}</span>`);
+      if (x.soort === "agenda" && r.Aanvangstijd) meta.splice(1, 0, `<span class="datum">${esc(tijdNL(r.Aanvangstijd))}</span>`);
+      href = x.soort === "vergadering" ? `#vergaderingen/a-${r.Nummer}` : r.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${r.Nummer}`;
+      extern = x.soort !== "vergadering";
+      feiten = feit("Agendapunten", agendapuntenLijst(r)) + feit("Activiteit", `<span class="mono">${esc(r.Nummer)}</span>`);
+    } else { // samengevat debat
+      const a = activiteitVan(r);
+      meta.push(`<span class="tag">${esc(typeNaam(a ? a.Soort : r.type))}</span>`, `<span>${esc(a ? commissieNaam(a) : r.commissie || "")}</span>`, `<span class="badge stil">samengevat</span>`);
+      href = `#vergaderingen/d-${r.id}`; extern = false;
+      feiten = feit("Kern", esc(r.gist)) + feit("Agendapunten", agendapuntenLijst(a));
+    }
+    const andere = x.themas.filter((sl) => sl !== slug);
+    const link = href ? `<a class="ltitel" href="${esc(href)}"${extern ? ' target="_blank" rel="noopener"' : ""}>${extern ? titelMetPijl(titel) : esc(titel)}</a>` : `<span class="ltitel">${esc(titel)}</span>`;
+    return `<li class="themaregel">
+      <div class="regelmeta">${meta.join("")}</div>
+      <div class="themaregel-titel">${link}</div>
+      ${andere.length ? `<div class="tchips" aria-label="Ook bij">${andere.map((sl) => `<a class="tchip" href="#themas/${esc(sl)}">${esc(S.T.naam(sl))}</a>`).join("")}</div>` : ""}
+      ${feiten ? `<details class="meer"><summary>Meer details</summary><dl class="facts">${feiten}</dl></details>` : ""}
+    </li>`;
+  }
   function themaDetail(slug) {
     const t = S.T.thema(slug);
     if (!t) return `<h2>Thema niet gevonden</h2><p class="themas-intro">Er is geen thema "${esc(slug)}". <a href="#themas">Naar alle thema's</a></p>`;
     const lijst = themaIndex().perThema.get(t.slug);
+    const groepen = window.MRThemas.SOORTEN.map((so) => {
+      const l = lijst.filter((x) => x.soort === so.code)
+        .sort((a, b) => so.code === "agenda" ? sortKey(datumVan(a)).localeCompare(sortKey(datumVan(b))) : sortKey(datumVan(b)).localeCompare(sortKey(datumVan(a))));
+      if (!l.length) return "";
+      const meer = l.length - GROEP_ZICHTBAAR;
+      return `<section aria-labelledby="g-${so.param}">
+        <h3 class="groepkop" id="g-${so.param}">${esc(so.groep)} <span class="muted small">(${nl(l.length)})</span></h3>
+        <div class="card"><ul class="list" id="gl-${so.param}">${l.map((x, i) => themaRegel(x, t.slug).replace('<li class="themaregel">', `<li class="themaregel"${i >= GROEP_ZICHTBAAR ? " hidden" : ""}>`)).join("")}</ul>
+        ${meer > 0 ? `<button type="button" class="knop licht toonalle" data-toonalle="gl-${so.param}" aria-controls="gl-${so.param}" aria-expanded="false">Toon alle ${nl(l.length)} ${so.veel}</button>` : ""}</div>
+      </section>`;
+    }).join("");
     return `<p class="small terug"><a href="#themas">Alle thema's</a></p>
       <h2>${esc(t.label)}</h2>
       <p class="themas-intro">${esc(t.description)}</p>
       <p class="muted small">${lijst.length ? `${nl(lijst.length)} ${lijst.length === 1 ? "item" : "items"}: ${telRegel(lijst)}` : "Nog geen items"}</p>
-      <p class="note">De lijst per documentsoort volgt zodra de thema-indeling is nagekeken.</p>`;
+      ${groepen}`;
   }
+  // "Toon alle": de verborgen regels van een groep tonen en de focus op de eerste nieuwe regel zetten
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-toonalle]");
+    if (!b) return;
+    const ul = document.getElementById(b.dataset.toonalle);
+    const eerste = ul.querySelector("li[hidden]");
+    ul.querySelectorAll("li[hidden]").forEach((li) => { li.hidden = false; });
+    b.remove();
+    const doel = eerste && eerste.querySelector("a, summary");
+    if (doel) doel.focus();
+  });
 
   /* ---------- Wetgeving ---------- */
   function dossierCard(d, compact) {

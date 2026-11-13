@@ -242,9 +242,10 @@ a.stat:active { background: var(--raised); }
 .kaartlabels { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; margin: 4px 0 8px; }
 .tchips, .dchips { display: inline-flex; flex-wrap: wrap; gap: 4px; }
 .tchip, .dchip { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-size: var(--t-12); line-height: 20px; color: var(--ink-2); background: transparent; border: 1px solid var(--line); border-radius: var(--r-tag); padding: 0 8px; }
-button.tchip, .dchip { cursor: pointer; position: relative; transition: border-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease); }
-button.tchip:hover, .dchip:hover { border-color: var(--line-sterk); color: var(--ink); }
-button.tchip::before, .dchip::before { content: ""; position: absolute; inset: -4px 0; }
+a.tchip { text-decoration: none; }
+button.tchip, a.tchip, .dchip { cursor: pointer; position: relative; transition: border-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease); }
+button.tchip:hover, a.tchip:hover, .dchip:hover { border-color: var(--line-sterk); color: var(--ink); }
+button.tchip::before, a.tchip::before, .dchip::before { content: ""; position: absolute; inset: -4px 0; }
 .dchip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 /* ===================== Bediening ===================== */
@@ -531,6 +532,20 @@ li.tz { padding: 16px 0; }
 .themakaart-moment .moment-titel { flex-basis: 100%; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .terug { margin: 24px 0 0; }
 #view > .terug + h2 { margin-top: 8px; }
+/* Thema-detail: groepen per documentsoort, compacte regels, details achter "Meer details" */
+.themaregel .regelmeta { margin-bottom: 4px; }
+.themaregel .regelmeta .datum { font-variant-numeric: tabular-nums; }
+.themaregel-titel { font-size: var(--t-15); line-height: 1.4; max-width: var(--leesbreedte); }
+.themaregel > .tchips { margin-top: 8px; }
+details.meer { margin-top: 8px; font-size: var(--t-13); }
+details.meer > summary { display: inline-flex; align-items: center; gap: 4px; min-height: 24px; cursor: pointer; color: var(--ink-2); list-style: none; width: fit-content; border-radius: var(--r-tag); }
+details.meer > summary::-webkit-details-marker { display: none; }
+details.meer > summary::after { content: ""; width: 16px; height: 16px; background: var(--chevron) center / 16px no-repeat; transition: transform var(--d-kort) var(--ease); }
+details.meer[open] > summary::after { transform: rotate(180deg); }
+details.meer > summary:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+details.meer dl.facts { margin-top: 8px; font-size: var(--t-13); }
+ul.agendapunten { margin: 0; padding-left: 16px; }
+.toonalle { margin-top: 16px; }
 .themastem li { display: grid; grid-template-columns: 220px minmax(0, 1fr) 112px; gap: 12px; align-items: center; }
 .themastem .tchip { justify-self: start; }
 .themastem .balk { height: 6px; background: var(--spoor); border-radius: 3px; overflow: hidden; }

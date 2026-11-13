@@ -98,7 +98,12 @@
         "hormuz",
         "nutsvoorziening",
         "datacent",
-        "zonnepane"
+        "zonnepane",
+        "elektrificatie",
+        "emissierecht",
+        "methaan",
+        "arctisch",
+        "\\bboren\\b"
       ]
     },
     "industrie-circulaire-economie": {
@@ -162,7 +167,8 @@
         "\\bmvoi\\b",
         "maatschappelijk verantwoord (opdrachtgeven|inkopen)",
         "indirecte kosten compensatie",
-        "\\bikc\\b"
+        "\\bikc\\b",
+        "gratis emissierecht"
       ]
     },
     "mobiliteit-infrastructuur": {
@@ -351,7 +357,7 @@
         "afvalwater",
         "rioolwater",
         "riolering",
-        "\\bbodem",
+        "(?<!(europese|nederlandse|eigen|vaderlandse) )\\bbodem",
         "grondverzet",
         "verontreinigde grond",
         "waterschap",

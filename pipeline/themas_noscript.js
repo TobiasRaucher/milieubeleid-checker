@@ -25,7 +25,7 @@ for (const x of M.bronItems(data)) {
   if (gezien.has(x.sleutel)) continue;
   gezien.add(x.sleutel);
   const th = M.themasVanItem(T, x);
-  if (!th.length) zonder++;
+  if (!th.length && !T.inMapping(x.sleutel)) zonder++;
   for (const s of th) per.get(s).push(x);
 }
 const telRegel = (l) => M.SOORTEN.map((s) => { const n = l.filter((x) => x.soort === s.code).length; return n ? `${nl(n)} ${n === 1 ? s.een : s.veel}` : ""; }).filter(Boolean).join(" · ");

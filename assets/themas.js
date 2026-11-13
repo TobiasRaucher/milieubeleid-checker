@@ -78,7 +78,9 @@
         return { themas: sorteer(uit.map((x) => x.slug)), zekerheid: z, grond, suggestie: [] };
       }
       const dos = (dossiers || []).filter(Boolean).map(norm);
-      const begroting = (n) => /begroting/.test(n);
+      // begrotingen en verzameldossiers van EU-raden (bv. "Raad voor Vervoer, Telecommunicatie en Energie", waar ook de Telecomraad onder valt)
+      // zeggen te weinig over het onderwerp: alleen als suggestie
+      const begroting = (n) => /begroting|^raad |^europese raad|milieuraad/.test(n);
       const inDossier = lijst.filter((th) => dos.some((n) => !begroting(n) && th.re.some((r) => r.test(n))));
       // sectoroverstijgend telt in een dossiertitel alleen als er geen ander thema in staat ("Wijziging van de Wet milieubeheer ... groen gas")
       if (inDossier.length > 1) inDossier.splice(0, inDossier.length, ...inDossier.filter((th) => th.slug !== "sectoroverstijgend"));
