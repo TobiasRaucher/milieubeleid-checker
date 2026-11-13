@@ -94,7 +94,7 @@
   const term = (t) => (STOP.has(t) ? null : stam(t));
 
   /* ---------- documenten ---------- */
-  const SOORT_KORT = { "Brief regering": "Kamerbrief", "Antwoord schriftelijke vragen": "Antwoord Kamervragen", "Antwoord schriftelijke vragen (nader)": "Antwoord Kamervragen" };
+  const SOORT_KORT = { "Brief regering": "Kamerbrief", "Schriftelijke vragen": "Kamervragen", "Antwoord schriftelijke vragen": "Antwoord Kamervragen", "Antwoord schriftelijke vragen (nader)": "Antwoord Kamervragen" };
   const korteTitel = (z) => { const t = z.onderwerp || z.titel || ""; return /^(nader )?(gewijzigde )?(motie|amendement)\b/i.test(t) ? t.replace(/^.*? over /i, "") : t; };
   const j = (arr) => arr.filter(Boolean).join(" · ");
   const dag = (iso) => (iso ? String(iso).slice(0, 10) : "");
@@ -141,7 +141,7 @@
       add({
         id: "stuk:" + x.id, cat: "stukken", soort: SOORT_KORT[x.soort] || x.soort, datum: x.datum, sectoren: x.sectoren || [],
         titel: x.onderwerp || x.titel, tekst: j([x.titel, x.kamerstuk, x.id, ...(x.dossiers || []).map((d) => `${d.nummer} ${d.titel || ""}`), x.ministerie && "ministerie van " + x.ministerie]),
-        personen: j([x.ondertekenaar, x.functie]), link: x.link, extern: true, ministerie: x.ministerie,
+        personen: j([x.ondertekenaar, x.functie, ...(x.indieners || []).map((i) => `${i.naam} ${i.fractie || ""}`)]), link: x.link, extern: true, ministerie: x.ministerie,
       });
     }
     for (const a of D.activiteiten || []) {
@@ -183,7 +183,8 @@
     [["motie", "moties"], "moties", (d) => d.soort === "Motie"],
     [["amendement", "amendementen"], "amendementen", (d) => d.soort === "Amendement"],
     [["kamerbrief", "kamerbrieven", "brief", "brieven"], "Kamerbrieven", (d) => d.soort === "Kamerbrief"],
-    [["kamervragen", "kamervraag"], "antwoorden op Kamervragen", (d) => d.soort === "Antwoord Kamervragen"],
+    [["kamervragen", "kamervraag", "vragen"], "Kamervragen en antwoorden", (d) => d.soort === "Kamervragen" || d.soort === "Antwoord Kamervragen"],
+    [["antwoord", "antwoorden"], "antwoorden op Kamervragen", (d) => d.soort === "Antwoord Kamervragen"],
     [["commissiedebat", "commissiedebatten"], "commissiedebatten", (d) => /^Commissiedebat/.test(d.soort)],
     [["tweeminutendebat", "tweeminutendebatten"], "tweeminutendebatten", (d) => /Tweeminutendebat/.test(d.soort)],
     [["briefing", "briefings"], "technische briefings", (d) => /briefing/i.test(d.soort)],

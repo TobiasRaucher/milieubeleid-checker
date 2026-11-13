@@ -48,6 +48,7 @@ const SOORT_TESTS = [
   ["kamerbrief netcongestie", (d) => d.soort === "Kamerbrief"],
   ["commissiedebat water", (d) => /^Commissiedebat/.test(d.soort)],
   ["toezegging drinkwater", (d) => d.soort === "Toezegging"],
+  ["kamervragen wolf", (d) => d.soort === "Kamervragen" || d.soort === "Antwoord Kamervragen"],
 ];
 let fout = 0;
 for (const [q, verwacht, n] of TESTS) {

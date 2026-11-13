@@ -309,7 +309,9 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .schakelaar a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* schakelaar en zoekveld op één regel boven de tabel */
 .motiekop { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin: 32px 0 16px; }
-.motiekop input[type=search] { flex: 0 1 420px; min-width: 0; min-height: 44px; }
+.motiekop input[type=search] { flex: 0 1 420px; min-width: 0; min-height: 44px; margin-left: auto; }
+/* Wetgeving: de paginatitel staat op de plek van de schakelaar */
+.motiekop .tabeltitel { margin: 0; font-size: var(--t-30); line-height: 1.15; letter-spacing: -0.02em; }
 
 /* ===================== Lijsten en tabellen ===================== */
 .list { list-style: none; margin: 0; padding: 0; }
@@ -339,7 +341,9 @@ td.datumcel, td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel td.uitslag, .motietabel td.appr, .motietabel td.indiener, .motietabel td.datum, .motietabel td.kamerstuk { white-space: nowrap; }
 /* als blok, zodat de tekst op dezelfde basislijn staat als de andere cellen (een inline-flex neemt de basislijn van de lege stip) */
 .motietabel td.uitslag .status { display: flex; font-size: var(--t-14); font-weight: 400; line-height: 22px; }
-.motietabel td.appr, .motietabel td.indiener { color: var(--ink-2); }
+.motietabel td.appr, .motietabel td.indiener, .motietabel td.ministerie { color: var(--ink-2); }
+/* ministeries hebben lange namen: die mogen afbreken (Vragen & Brieven) */
+.motietabel td.ministerie { white-space: normal; min-width: 180px; max-width: 280px; }
 .motietabel td.datum { color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .motietabel td.dossier { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel .leeg { color: var(--muted); }
@@ -389,6 +393,9 @@ tr.detail { animation: binnenkomst var(--d-menu) var(--ease) both; }
 .mtelling { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; }
 .mstemmen { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 32px; }
 .mstemmen .k { color: var(--ink); font-weight: 500; }
+/* lijstje in een uitgeklapte rij: laatste stappen (Wetgeving), antwoorden (Kamervragen), Kamerstuk (Kamerbrieven) */
+.mstappen { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.mstappen .datum { color: var(--ink); font-variant-numeric: tabular-nums; margin-right: 4px; }
 .mlinks { display: flex; flex-wrap: wrap; gap: 4px 24px; padding-top: 12px; border-top: 1px solid var(--line); }
 @media (min-width: 901px) {
   .tablewrap { overflow: clip; }
@@ -469,14 +476,6 @@ ul.stukken { margin: 4px 0 0; padding-left: 20px; font-size: var(--t-13); color:
 .tl-item.debat .toggle { margin-top: 8px; }
 .tl-item .motiedetails, .tl-verwijs { margin-top: 8px; }
 .agendamodus { display: flex; gap: 4px; }
-/* Wetgeving: zelfde tabelregels als de motietabel */
-.wettabel th.rechts, .wettabel td.rechts { text-align: right; }
-.wettabel td { line-height: 22px; }
-.wettabel th.ond { width: 60%; }
-.wettabel td.ond .ltitel { font-weight: 400; }
-.wettabel td.ond .tchips { margin-top: 4px; }
-.wettabel td.datum, .wettabel td.nw { white-space: nowrap; }
-.wettabel td.nw .status { display: flex; font-size: var(--t-14); font-weight: 400; line-height: 22px; }
 
 /* ===================== Toezeggingen, zoeken, per fractie ===================== */
 li.tz { padding: 16px 0; }
@@ -651,6 +650,7 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
   .motietabel tr.row td.datum { grid-column: 2; grid-row: 2; text-align: right; font-size: var(--t-13); }
   .motietabel tr.row td.knopcel { grid-column: 3; grid-row: 1 / 3; width: auto; padding: 0; }
   .motietabel tr.row td.hide-sm { display: none; }
+  .motietabel tr.row td.ministerie { min-width: 0; max-width: none; }
   .motietabel tr.detail, .motietabel tr.detail td { display: block; }
   .motietabel tr.detail td { padding: 4px 16px 16px; }
 }

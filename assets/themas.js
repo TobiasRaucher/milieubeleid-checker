@@ -104,7 +104,7 @@
 
   /* ---------- Alle items die een thema kunnen krijgen ----------
      Eén bron voor de site (Thema's), de review-CSV en de noscript-lijst, zodat de tellingen overal gelijk zijn.
-     soort: wet, amendement, motie, brief, antwoord, vergadering, agenda.
+     soort: wet, amendement, motie, brief, vraag, antwoord, vergadering, agenda.
      - wet: de wetsvoorstellen uit de Kamerdata (zoals de tab Wetgeving)
      - vergadering: samengevatte debatten plus uitgevoerde Kameractiviteiten zonder samenvatting (Terugblik op de tab Agenda)
      - agenda: geplande Kameractiviteiten plus eigen mijlpalen (data/agenda.json); sleutel debat: blijft gelijk als een geplande vergadering wordt gehouden
@@ -136,7 +136,7 @@
     }
     // stukken
     for (const s of stukken) {
-      uit.push({ sleutel: sleutel.stuk(s), soort: /antwoord/i.test(s.soort) ? "antwoord" : "brief", datum: s.datum, titel: stukTitel(s), overig: [], dossiers: (s.dossiers || []).map((d) => d.titel), ref: s, momenten: [] });
+      uit.push({ sleutel: sleutel.stuk(s), soort: /antwoord/i.test(s.soort) ? "antwoord" : s.soort === "Schriftelijke vragen" ? "vraag" : "brief", datum: s.datum, titel: stukTitel(s), overig: [], dossiers: (s.dossiers || []).map((d) => d.titel), ref: s, momenten: [] });
     }
     // vergaderingen: samenvattingen en uitgevoerde activiteiten zonder samenvatting
     const perNummer = new Map(acts.map((a) => [a.Nummer, a]));
@@ -179,6 +179,7 @@
     { code: "amendement", param: "amendementen", groep: "Amendementen", een: "amendement", veel: "amendementen" },
     { code: "motie", param: "moties", groep: "Moties", een: "motie", veel: "moties" },
     { code: "brief", param: "kamerbrieven", groep: "Kamerbrieven", een: "brief", veel: "brieven" },
+    { code: "vraag", param: "kamervragen", groep: "Kamervragen", een: "vraag", veel: "vragen" },
     { code: "antwoord", param: "antwoorden", groep: "Antwoorden op Kamervragen", een: "antwoord", veel: "antwoorden" },
     { code: "vergadering", param: "vergaderingen", groep: "Vergaderingen", een: "vergadering", veel: "vergaderingen" },
     { code: "agenda", param: "agenda", groep: "Agenda", een: "op de agenda", veel: "op de agenda" },

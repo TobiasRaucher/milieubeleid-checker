@@ -292,8 +292,9 @@ def normaliseer_activiteit(a):
     return out
 
 
-STUK_EXPAND = ("DocumentActor($select=ActorNaam,Functie,Relatie),"
-               "Kamerstukdossier($select=Nummer,Toevoeging,Titel),Zaak($select=Nummer,Soort)")
+STUK_EXPAND = ("DocumentActor($select=ActorNaam,ActorFractie,Functie,Relatie),"
+               "Kamerstukdossier($select=Nummer,Toevoeging,Titel),"
+               "Zaak($select=Nummer,Soort;$expand=ZaakActor($select=ActorNaam,Functie,Relatie))")
 
 
 def _regex(lijst):
@@ -321,16 +322,34 @@ def stukken(start):
     uit = _regex(cfg.get("uitsluiten", []))
     altijd = cfg.get("altijdMinisteries", {})
     negeer = cfg.get("negeerInTekst", [])
-    out = []
+    out, kandidaten = [], []
     for d in ruw:
         onderwerp = d.get("Onderwerp") or ""
         if uit and uit.search(onderwerp):
             continue
-        eerste = next((a for a in d.get("DocumentActor") or [] if (a.get("Relatie") or "").lower().startswith("eerste")), None)
-        functie = (eerste or {}).get("Functie") or ""
-        if not re.match(r"(minister|staatssecretaris)", functie, re.I):
-            continue  # bv. een commissievoorzitter
-        ministerie = ministerie_uit_functie(functie)
+        soort = d.get("Soort")
+        vraag = soort == "Schriftelijke vragen"
+        actoren = d.get("DocumentActor") or []
+        eerste = next((a for a in actoren if (a.get("Relatie") or "").lower().startswith("eerste")), None)
+        zaak_obj = next(iter(d.get("Zaak") or []), {}) or {}
+        zaak = zaak_obj.get("Nummer")
+        indieners, ministeries = [], []
+        if vraag:
+            # Kamervragen: gesteld door Kamerleden, gericht aan bewindspersonen (uit de zaak)
+            for a in sorted(actoren, key=lambda a: 0 if (a.get("Relatie") or "").lower().startswith("eerste") else 1):
+                if a.get("ActorNaam"):
+                    indieners.append({"naam": a.get("ActorNaam"), "fractie": a.get("ActorFractie"), "relatie": a.get("Relatie")})
+            gericht = [a for a in zaak_obj.get("ZaakActor") or [] if (a.get("Relatie") or "") == "Gericht aan"]
+            ministeries = [m for m in dict.fromkeys(ministerie_uit_functie(a.get("Functie")) for a in gericht) if m]
+            ministerie = ministeries[0] if ministeries else None
+            functie = (gericht[0].get("Functie") if gericht else None) or ""
+            ondertekenaar = gericht[0].get("ActorNaam") if gericht else None
+        else:
+            functie = (eerste or {}).get("Functie") or ""
+            if not re.match(r"(minister|staatssecretaris)", functie, re.I):
+                continue  # bv. een commissievoorzitter
+            ministerie = ministerie_uit_functie(functie)
+            ondertekenaar = (eerste or {}).get("ActorNaam")
         dossiers = [{"nummer": k.get("Nummer"), "toevoeging": k.get("Toevoeging"), "titel": k.get("Titel")} for k in d.get("Kamerstukdossier") or []]
         sleutels = set()
         for k in dossiers:
@@ -344,32 +363,43 @@ def stukken(start):
             tekst = tekst.replace(n, "")
         sectoren = [c for c, (ds, rx) in regels.items() if (sleutels & ds) or (rx and rx.search(tekst))]
         for m, c in altijd.items():
-            if m in (ministerie or "") and c in regels and c not in sectoren:
+            if any(m in (x or "") for x in (ministeries or [ministerie])) and c in regels and c not in sectoren:
                 sectoren.append(c)
-        if not sectoren:
-            continue
-        zaak = next((z.get("Nummer") for z in d.get("Zaak") or []), None)
         ks = dossiers[0] if dossiers else None
         kamerstuk = None
         if ks and d.get("Volgnummer") not in (None, -1):
             kamerstuk = f"{ks['nummer']}{'-' + ks['toevoeging'] if ks.get('toevoeging') else ''}-{d['Volgnummer']}"
-        soort = d.get("Soort")
         pad = "brieven_regering" if soort == "Brief regering" else "kamervragen"
-        out.append({
+        item = {
             "id": d.get("DocumentNummer"),
             "soort": soort,
             "datum": (d.get("Datum") or "")[:10] or None,
             "titel": d.get("Titel"),
             "onderwerp": onderwerp,
+            "zaak": zaak,
             "ministerie": ministerie,
-            "ondertekenaar": (eerste or {}).get("ActorNaam"),
+            "ondertekenaar": ondertekenaar,
             "functie": functie or None,
             "kamerstuk": kamerstuk,
             "dossiers": dossiers,
             "sectoren": sectoren,
             "link": (f"https://www.tweedekamer.nl/kamerstukken/{pad}/detail?id={zaak}&did={d.get('DocumentNummer')}" if zaak
                      else f"https://www.tweedekamer.nl/kamerstukken/detail?did={d.get('DocumentNummer')}"),
-        })
+        }
+        if vraag:
+            item["ministeries"] = ministeries
+            item["indieners"] = indieners
+        kandidaten.append(item)
+    # vraag en antwoord horen bij dezelfde zaak: valt een van beide in een sector, dan komt het paar er samen in
+    per_zaak = {}
+    for x in kandidaten:
+        if x["zaak"] and (x["soort"] == "Schriftelijke vragen" or x["soort"].startswith("Antwoord")):
+            per_zaak.setdefault(x["zaak"], []).append(x)
+    for groep in per_zaak.values():
+        samen = list(dict.fromkeys(c for x in groep for c in x["sectoren"]))
+        for x in groep:
+            x["sectoren"] = samen
+    out = [x for x in kandidaten if x["sectoren"]]
     return out
 
 
@@ -465,7 +495,7 @@ def main():
     stuk_lijst = []
     try:
         stuk_lijst = stukken(start)
-        log(f"== {len(stuk_lijst)} stukken van ministeries")
+        log(f"== {len(stuk_lijst)} stukken (brieven, vragen, antwoorden)")
     except Exception as e:
         FOUTEN.append(f"stukken: {e}")
         log(f"    FOUT stukken: {e}")
