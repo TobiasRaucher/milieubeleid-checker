@@ -1,5 +1,260 @@
 [
  {
+  "id": "010fab05-006f-4ddd-bf0d-8a64904e3047",
+  "nummer": "2026Z25015",
+  "soort": "Motie",
+  "titel": "Kabinetsaanpak Klimaatbeleid",
+  "onderwerp": "Motie van het lid Van Oosterhout over bij de voorjaarsbesluitvorming de deelaanbevelingen meenemen waarover later wordt besloten ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-12",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32813,
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-12",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25015"
+ },
+ {
+  "id": "e38fa4a7-cc9f-463e-b7b5-a17508c4c298",
+  "nummer": "2026Z25016",
+  "soort": "Motie",
+  "titel": "Kabinetsaanpak Klimaatbeleid",
+  "onderwerp": "Motie van de leden Teunissen en Klos over per productcategorie uitwerken welke langere garantie- en reparatieverplichtingen haalbaar zijn ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-12",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32813,
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "F.C.O. Klos",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-12",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25016"
+ },
+ {
+  "id": "d2bbed7e-d455-4991-9fc7-f3c09cc0fbe9",
+  "nummer": "2026Z25018",
+  "soort": "Motie",
+  "titel": "Kabinetsaanpak Klimaatbeleid",
+  "onderwerp": "Motie van het lid Kops over de adviezen naar de prullenbak verwijzen en nooit meer een klimaatberaad organiseren ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-12",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32813,
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A. Kops",
+    "fractie": "PVV",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-12",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25018"
+ },
+ {
+  "id": "e28682cc-bce8-4853-b869-f65b7c5ca70c",
+  "nummer": "2026Z25014",
+  "soort": "Motie",
+  "titel": "Kabinetsaanpak Klimaatbeleid",
+  "onderwerp": "Motie van het lid Van Oosterhout over inzicht in de stand van zaken van elke deelaanbeveling ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-12",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32813,
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-12",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25014"
+ },
+ {
+  "id": "075a2bbd-0969-45a7-8b77-f731b6a5ca06",
+  "nummer": "2026Z25017",
+  "soort": "Motie",
+  "titel": "Kabinetsaanpak Klimaatbeleid",
+  "onderwerp": "Motie van de leden Teunissen en Van Oosterhout over binnen zes maanden komen met een tijdpad voor beter openbaar vervoer en een structureel dalurenticket ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-12",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32813,
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-12",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25017"
+ },
+ {
   "id": "6fb07c56-f73d-479b-8b77-75cb02a03538",
   "nummer": "2026Z24789",
   "soort": "Amendement",
@@ -92130,7 +92385,7 @@
   "citeertitel": null,
   "gestartOp": "2025-12-10",
   "vergaderjaar": "2025-2026",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
@@ -92177,8 +92432,8 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - ingetrokken",
+    "tekst": "Ingetrokken.",
     "stemmingssoort": null,
     "datum": "2026-11-12",
     "stemmen": []
@@ -92191,7 +92446,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "aangehouden",
+  "uitslag": "ingetrokken",
   "stemtelling": null,
   "sectoren": [
    "water-adaptatie"

@@ -1,13 +1,13 @@
 {
  "fouten": [],
  "co2": {
-  "bijgewerkt": "2026-11-13T09:13:59+00:00",
+  "bijgewerkt": "2026-11-13T13:13:53+00:00",
   "laatsteMeting": "2026-11-11"
  },
  "grenzen": {
-  "bijgewerkt": "2026-11-13T09:13:59+00:00",
+  "bijgewerkt": "2026-11-13T13:13:53+00:00",
   "bron": "https://datahub.io/climate-and-environment/planetary-boundaries",
   "dataUrl": "https://datahub.io/climate-and-environment/planetary-boundaries/_r/-/data/boundaries.csv"
  },
- "bijgewerkt": "2026-11-13T09:13:59+00:00"
+ "bijgewerkt": "2026-11-13T13:13:53+00:00"
 }

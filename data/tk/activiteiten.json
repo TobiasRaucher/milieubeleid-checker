@@ -3399,6 +3399,71 @@
   ]
  },
  {
+  "Id": "1435b839-28bd-4a76-b836-55db6988ed08",
+  "Nummer": "2026A06131",
+  "Soort": "Plenair debat (tweeminutendebat)",
+  "Onderwerp": "Tweeminutendebat Kernenergie (CD 2/7)",
+  "Datum": "2026-11-17T16:30:00+01:00",
+  "Aanvangstijd": "2026-11-17T16:30:00+01:00",
+  "Eindtijd": "2026-11-17T16:50:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": "Toegevoegd tijdens de <a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=0b520b92-daa9-4fa7-90af-097cde24bd95&tab=1\">Regeling van werkzaamheden</a> van 1 september 2026 (<a href=\"https://parlisweb.tweedekamer.nl/Parlis/activiteit.aspx?Id=428fb1ff-6383-4e82-91bd-f82f9a978d33\">CD 2/7</a>)",
+  "SoortWeergave": "Tweeminutendebat",
+  "agendapunten": [],
+  "bewindspersonen": [
+   {
+    "naam": "J. de Bat",
+    "functie": "staatssecretaris van Economische Zaken en Klimaat"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.S. Müller",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Kops",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06131",
+  "sectoren": [
+   "klimaat-energie"
+  ]
+ },
+ {
   "Id": "6b5436bd-bc79-4012-a1ef-cca688406a89",
   "Nummer": "2026A06484",
   "Soort": "Wetgevingsoverleg",
@@ -3477,9 +3542,9 @@
   "Onderwerp": "Debat over het advies van het Nationaal Burgerberaad Klimaat",
   "Datum": "2026-11-12T21:15:00+01:00",
   "Aanvangstijd": "2026-11-12T21:15:00+01:00",
-  "Eindtijd": "2026-11-12T23:00:00+01:00",
+  "Eindtijd": "2026-11-12T23:42:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "TK",
   "Voortouwafkorting": "TK",
   "Besloten": false,
@@ -3530,6 +3595,57 @@
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24411&did=2026D56378"
      }
     ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Moties ingediend tijdens het debat",
+    "stukken": [
+     {
+      "kamerstuk": "32813-1593",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van het lid Van Oosterhout over bij de voorjaarsbesluitvorming de deelaanbevelingen meenemen waarover later wordt besloten ",
+      "ondertekenaar": "A.S. van Oosterhout",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25015&did=2026D57777"
+     },
+     {
+      "kamerstuk": "32813-1594",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van de leden Teunissen en Klos over per productcategorie uitwerken welke langere garantie- en reparatieverplichtingen haalbaar zijn ",
+      "ondertekenaar": "C. Teunissen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25016&did=2026D57778"
+     },
+     {
+      "kamerstuk": "32813-1596",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van het lid Kops over de adviezen naar de prullenbak verwijzen en nooit meer een klimaatberaad organiseren ",
+      "ondertekenaar": "A. Kops",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25018&did=2026D57780"
+     },
+     {
+      "kamerstuk": "32813-1592",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van het lid Van Oosterhout over inzicht in de stand van zaken van elke deelaanbeveling ",
+      "ondertekenaar": "A.S. van Oosterhout",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25014&did=2026D57776"
+     },
+     {
+      "kamerstuk": "32813-1595",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van de leden Teunissen en Van Oosterhout over binnen zes maanden komen met een tijdpad voor beter openbaar vervoer en een structureel dalurenticket ",
+      "ondertekenaar": "C. Teunissen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25017&did=2026D57779"
+     }
+    ]
    }
   ],
   "bewindspersonen": [
@@ -3559,11 +3675,6 @@
     "functie": "Tweede Kamerlid"
    },
    {
-    "naam": "D.J. van den Berg",
-    "fractie": "JA21",
-    "functie": "Tweede Kamerlid"
-   },
-   {
     "naam": "A.S. van Oosterhout",
     "fractie": "PRO",
     "functie": "Tweede Kamerlid"
@@ -3574,18 +3685,8 @@
     "functie": "Tweede Kamerlid"
    },
    {
-    "naam": "H. Vermeer",
-    "fractie": "BBB",
-    "functie": "Tweede Kamerlid"
-   },
-   {
     "naam": "A. Kops",
     "fractie": "PVV",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "H.D. Heutink",
-    "fractie": "Groep Markuszower",
     "functie": "Tweede Kamerlid"
    },
    {
@@ -3596,6 +3697,26 @@
    {
     "naam": "A.S. Müller",
     "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "G.F.C. van Meijeren",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
     "functie": "Tweede Kamerlid"
    },
    {
@@ -5009,13 +5130,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-XII-7",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-08",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden",
-      "ondertekenaar": "R.A. Huizenga",
-      "functie": "voorzitter van de vaste commissie voor Infrastructuur en Waterstaat",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17065&did=2026D49762"
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-10-29",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Infrastructuur en Waterstaat (XII) op 28 oktobr 2026",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17065&did=2026D53961"
      }
     ]
    },
@@ -5189,7 +5310,7 @@
     "onderwerp": "Reactie op verzoek commissie over voorrang dierenambulances",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "37020-XII-67",
       "soort": "Brief regering",
       "datum": "2026-10-28",
       "onderwerp": "Reactie op verzoek commissie over voorrang dierenambulances",
@@ -6311,13 +6432,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-XII-7",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-08",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden",
-      "ondertekenaar": "R.A. Huizenga",
-      "functie": "voorzitter van de vaste commissie voor Infrastructuur en Waterstaat",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17065&did=2026D49762"
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-10-29",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Infrastructuur en Waterstaat (XII) op 28 oktobr 2026",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17065&did=2026D53961"
      }
     ]
    },
@@ -6491,7 +6612,7 @@
     "onderwerp": "Reactie op verzoek commissie over voorrang dierenambulances",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "37020-XII-67",
       "soort": "Brief regering",
       "datum": "2026-10-28",
       "onderwerp": "Reactie op verzoek commissie over voorrang dierenambulances",
@@ -7242,13 +7363,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-XII-7",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-08",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden",
-      "ondertekenaar": "R.A. Huizenga",
-      "functie": "voorzitter van de vaste commissie voor Infrastructuur en Waterstaat",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17065&did=2026D49762"
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-10-29",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Infrastructuur en Waterstaat (XII) op 28 oktobr 2026",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17065&did=2026D53961"
      }
     ]
    },
@@ -43317,66 +43438,6 @@
    }
   ],
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06859",
-  "sectoren": [
-   "klimaat-energie"
-  ]
- },
- {
-  "Id": "1435b839-28bd-4a76-b836-55db6988ed08",
-  "Nummer": "2026A06131",
-  "Soort": "Plenair debat (tweeminutendebat)",
-  "Onderwerp": "Tweeminutendebat Kernenergie (CD 2/7)",
-  "Datum": null,
-  "Aanvangstijd": null,
-  "Eindtijd": null,
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "TK",
-  "Voortouwafkorting": "TK",
-  "Besloten": false,
-  "Noot": "Toegevoegd tijdens de <a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=0b520b92-daa9-4fa7-90af-097cde24bd95&tab=1\">Regeling van werkzaamheden</a> van 1 september 2026 (<a href=\"https://parlisweb.tweedekamer.nl/Parlis/activiteit.aspx?Id=428fb1ff-6383-4e82-91bd-f82f9a978d33\">CD 2/7</a>)",
-  "SoortWeergave": "Tweeminutendebat",
-  "agendapunten": [],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [
-   {
-    "naam": "D.J. van den Berg",
-    "fractie": "JA21",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "A.S. Müller",
-    "fractie": "VVD",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "P.A. Grinwis",
-    "fractie": "ChristenUnie",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "H.D. Heutink",
-    "fractie": "Groep Markuszower",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "A. Kops",
-    "fractie": "PVV",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "H. Vermeer",
-    "fractie": "BBB",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "A.S. van Oosterhout",
-    "fractie": "PRO",
-    "functie": "Tweede Kamerlid"
-   }
-  ],
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06131",
   "sectoren": [
    "klimaat-energie"
   ]
