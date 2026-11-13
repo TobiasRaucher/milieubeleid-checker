@@ -38,7 +38,6 @@
     zaak: (z) => "zaak:" + z.nummer,
     stuk: (s) => "stuk:" + s.id,
     debat: (nummerOfId) => "debat:" + nummerOfId,
-    dossier: (d) => "dossier:" + d.id,
     agenda: (i) => "agenda:" + (i.datum || "zonder-datum") + "-" + norm(i.titel).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60),
   };
 
@@ -106,8 +105,8 @@
   /* ---------- Alle items die een thema kunnen krijgen ----------
      Eén bron voor de site (Thema's), de review-CSV en de noscript-lijst, zodat de tellingen overal gelijk zijn.
      soort: wet, amendement, motie, brief, antwoord, vergadering, agenda.
-     - wet: de gevolgde wetsdossiers (data/dossiers.json) plus TK-wetsvoorstellen zonder eigen dossier (zoals de tab Wetgeving)
-     - vergadering: samengevatte debatten plus uitgevoerde Kameractiviteiten zonder samenvatting (zoals de tab Vergaderingen)
+     - wet: de wetsvoorstellen uit de Kamerdata (zoals de tab Wetgeving)
+     - vergadering: samengevatte debatten plus uitgevoerde Kameractiviteiten zonder samenvatting (Terugblik op de tab Agenda)
      - agenda: geplande Kameractiviteiten plus eigen mijlpalen (data/agenda.json); sleutel debat: blijft gelijk als een geplande vergadering wordt gehouden
      momenten: datums vanaf vandaag die als "eerstvolgend moment" kunnen gelden, met een typelabel. */
   const dagNL = (iso) => (iso ? new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Amsterdam", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(iso)) : null);
@@ -122,19 +121,12 @@
   function bronItems(data) {
     const uit = [];
     const zaken = data.zaken || [], stukken = data.stukken || [], acts = data.activiteiten || [];
-    const debatten = data.debatten || [], dossiers = (data.dossiers && data.dossiers.dossiers) || [];
+    const debatten = data.debatten || [];
     const agendapunten = (a) => (a ? (a.agendapunten || []).map((ap) => ap.onderwerp) : []);
 
     // wetten
-    const bekend = new Set(dossiers.map((d) => String(d.kamerstuk)));
-    for (const d of dossiers) {
-      const momenten = [];
-      if (d.volgendeStap?.datum) momenten.push({ label: "Volgende stap", datum: d.volgendeStap.datum, titel: d.kortTitel || d.titel });
-      if (d.deadline?.datum) momenten.push({ label: "Deadline", datum: d.deadline.datum, titel: d.kortTitel || d.titel });
-      uit.push({ sleutel: sleutel.dossier(d), soort: "wet", datum: d.laatsteStap?.datum || null, titel: d.titel, overig: [d.kortTitel, d.thema, ...(d.zoektermen || [])], ref: d, momenten });
-    }
     for (const z of zaken) {
-      if (!/wetgeving/i.test(z.soort) || z.dossiers.some((x) => bekend.has(String(x.nummer)))) continue;
+      if (!/wetgeving/i.test(z.soort)) continue;
       uit.push({ sleutel: sleutel.zaak(z), soort: "wet", datum: z.gestartOp, titel: z.titel || z.onderwerp, overig: [], dossiers: (z.dossiers || []).map((d) => d.titel), ref: z, momenten: [] });
     }
     // moties en amendementen: titel zonder "Motie van het lid X over"; de dossiertitel telt als overige tekst

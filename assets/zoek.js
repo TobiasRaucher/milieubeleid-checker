@@ -1,5 +1,5 @@
 /* MilieuRadar: zoekfunctie.
-   Bouwt een zoekindex (MiniSearch) over debatten, dossiers, moties en amendementen, stukken van ministeries en
+   Bouwt een zoekindex (MiniSearch) over samenvattingen, wetsvoorstellen, moties en amendementen, stukken van ministeries en
    Kameractiviteiten. Werkt in de browser (window.MRZoek) en in Node (tests/zoektest.js).
 
    Wat de zoekfunctie nauwkeurig maakt:
@@ -123,33 +123,14 @@
           ...(s.vervolg || []), ...(a.agendapunten || []).map((ap) => ap.onderwerp), d.commissie, a.Voortouwnaam]),
         personen: j([...(s.partijen || []).map((p) => `${p.fractie} ${p.spreker}`), d.bewindspersoon, ...(d.deskundigen || []).map((x) => `${x.naam} ${x.organisatie || ""}`),
           ...(a.bewindspersonen || []).map((b) => b.naam)]),
-        link: "#vergaderingen/d-" + d.id, niveau: d.niveau,
+        link: "#agenda/d-" + d.id, niveau: d.niveau,
         themas: d.themas && d.themas.length ? d.themas : undefined, themaTekst: (a.agendapunten || []).map((ap) => ap.onderwerp),
       });
     }
-    const DS = D.dossiers || {};
-    for (const d of DS.dossiers || []) {
-      add({
-        id: "dossier:" + d.id, cat: "dossiers", soort: "Wetsvoorstel", datum: d.laatsteStap?.datum, sectoren: d.sectoren || (d.sector ? [d.sector] : []),
-        titel: j([d.titel, d.kortTitel !== d.titel ? d.kortTitel : ""]), kern: d.samenvatting,
-        tekst: j([d.thema, d.kamerstuk && "Kamerstuk " + d.kamerstuk, d.laatsteStap?.tekst, d.volgendeStap?.tekst, d.deadline?.tekst, ...(d.kanttekeningen || []), ...(d.zoektermen || [])]),
-        link: "#wetgeving/w-" + d.id, prioriteit: d.prioriteit,
-      });
-    }
-    for (const d of DS.beleidsdossiers || []) {
-      add({
-        id: "thema:" + d.id, cat: "dossiers", soort: "Beleidsdossier", sectoren: d.sectoren || [],
-        titel: d.titel, kern: d.omschrijving || "", tekst: j([...(d.zoektermen || []), ...(d.kamerstukken || []).map((k) => "Kamerstuk " + k)]),
-        link: "#vergaderingen?dossier=" + encodeURIComponent(d.id),
-      });
-    }
-    const eigenKamerstukken = new Set((DS.dossiers || []).flatMap((d) => [d.kamerstuk, ...(d.kamerstukken || [])]).filter(Boolean).map(String));
     for (const z of D.zaken || []) {
       const isWet = z.soort === "Wetgeving" || z.soort === "Initiatiefwetgeving";
-      // wetsvoorstel dat al als eigen dossier wordt gevolgd: niet dubbel tonen
-      if (isWet && (z.dossiers || []).some((x) => eigenKamerstukken.has(String(x.nummer)))) continue;
       add({
-        id: "zaak:" + z.nummer, cat: isWet ? "dossiers" : "moties", soort: isWet ? "Wetsvoorstel (Kamerdata)" : z.soort, datum: z.stemtelling?.datum || z.gestartOp,
+        id: "zaak:" + z.nummer, cat: isWet ? "wetgeving" : "moties", soort: isWet ? "Wetsvoorstel" : z.soort, datum: z.stemtelling?.datum || z.gestartOp,
         sectoren: z.sectoren || [], titel: isWet ? (z.titel || z.onderwerp) : korteTitel(z),
         tekst: j([z.onderwerp, z.titel, z.nummer, ...(z.dossiers || []).map((x) => `${x.nummer} ${x.titel || ""}`), z.kabinetsappreciatie]),
         personen: j((z.indieners || []).map((i) => `${i.naam} ${i.fractie || ""}`)),
@@ -171,7 +152,7 @@
         datum: dag(a.Datum), sectoren: a.sectoren || [], titel: a.Onderwerp,
         tekst: j([...(a.agendapunten || []).flatMap((ap) => [ap.onderwerp, ...(ap.stukken || []).map((st) => st.onderwerp)]), a.Voortouwnaam, a.Nummer]),
         personen: j((a.bewindspersonen || []).map((b) => b.naam)),
-        link: a.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${a.Nummer}`, extern: true,
+        link: "#agenda/a-" + a.Nummer,
         themaTekst: (a.agendapunten || []).map((ap) => ap.onderwerp),
       });
     }
@@ -179,7 +160,7 @@
       add({
         id: "tz:" + t.nummer, cat: "toezeggingen", soort: "Toezegging", datum: t.datum, titel: t.tekst,
         tekst: j([t.ministerie && "ministerie van " + t.ministerie, t.status]), personen: j([t.bewindspersoon, t.functie]),
-        link: "#toezeggingen", status: t.status, themaTekst: [],
+        link: t.activiteit ? "#agenda/a-" + t.activiteit : "#agenda?terugblik=1", status: t.status, themaTekst: [],
       });
     }
     const actSleutels = new Set((D.activiteiten || []).filter((a) => a.Datum).map((a) => dag(a.Datum) + "|" + norm(a.Onderwerp).slice(0, 20)));
@@ -212,7 +193,7 @@
     [["agenda"], "agenda", (d) => d.cat === "agenda"],
     [["toezegging", "toezeggingen"], "toezeggingen", (d) => d.cat === "toezeggingen"],
   ];
-  const CAT_GEWICHT = { debatten: 1.25, dossiers: 1.4, moties: 1, stukken: 1, agenda: 1.05, toezeggingen: 1 };
+  const CAT_GEWICHT = { debatten: 1.25, wetgeving: 1.4, moties: 1, stukken: 1, agenda: 1.05, toezeggingen: 1 };
 
   function maak(D, synoniemen) {
     const docs = bouwDocumenten(D);

@@ -20,7 +20,7 @@ const MAP_PAD = "data/themas-mapping.json";
 function laad() {
   const data = {
     zaken: lees("data/tk/zaken.json", []), stukken: lees("data/tk/stukken.json", []), activiteiten: lees("data/tk/activiteiten.json", []),
-    debatten: lees("data/debatten.json", { debatten: [] }).debatten, dossiers: lees("data/dossiers.json", { dossiers: [] }), agenda: lees("data/agenda.json", { items: [] }).items,
+    debatten: lees("data/debatten.json", { debatten: [] }).debatten, agenda: lees("data/agenda.json", { items: [] }).items,
   };
   const mapping = lees(MAP_PAD, {});
   return { data, mapping, T: M.maak(lees("data/themas.json", {}), mapping) };
@@ -28,7 +28,6 @@ function laad() {
 
 const LINK = (x) => {
   const r = x.ref || {};
-  if (x.sleutel.startsWith("dossier:")) return `#wetgeving/w-${r.id}`;
   if (x.sleutel.startsWith("zaak:")) return r.tkLink || r.link || "";
   if (x.sleutel.startsWith("stuk:")) return r.link || "";
   if (x.sleutel.startsWith("debat:")) return r.tkLink || r.video || r.bron || "";
@@ -108,7 +107,7 @@ function importeer(bestand) {
     n++;
   }
   if (fout.length) { console.error("Niet geïmporteerd:\n" + fout.join("\n")); process.exitCode = 1; }
-  mapping._uitleg = "Goedgekeurde thema's per item; gaat voor de regels in data/themas.json. Sleutels: zaak:<zaaknummer>, stuk:<documentnummer>, debat:<activiteitnummer of samenvatting-id>, dossier:<dossier-id>, agenda:<datum>-<titel>. bron: regels (voorstel ongewijzigd goedgekeurd) of review (aangepast bij de review). themas: [] betekent bewust zonder thema.";
+  mapping._uitleg = "Goedgekeurde thema's per item; gaat voor de regels in data/themas.json. Sleutels: zaak:<zaaknummer>, stuk:<documentnummer>, debat:<activiteitnummer of samenvatting-id>, agenda:<datum>-<titel>. bron: regels (voorstel ongewijzigd goedgekeurd) of review (aangepast bij de review). themas: [] betekent bewust zonder thema.";
   mapping.bijgewerkt = new Date().toISOString().replace(/\.\d+Z$/, "Z");
   // één item per regel: compact (de site laadt dit bestand) en goed te volgen in git-diffs
   const items = Object.entries(mapping).filter(([k]) => !k.startsWith("_") && k !== "bijgewerkt").sort(([a], [b]) => a.localeCompare(b));

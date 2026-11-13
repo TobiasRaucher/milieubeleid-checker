@@ -15,7 +15,7 @@ const nl = (n) => n.toLocaleString("nl-NL");
 
 const data = {
   zaken: lees("data/tk/zaken.json", []), stukken: lees("data/tk/stukken.json", []), activiteiten: lees("data/tk/activiteiten.json", []),
-  debatten: lees("data/debatten.json", { debatten: [] }).debatten, dossiers: lees("data/dossiers.json", { dossiers: [] }), agenda: lees("data/agenda.json", { items: [] }).items,
+  debatten: lees("data/debatten.json", { debatten: [] }).debatten, agenda: lees("data/agenda.json", { items: [] }).items,
 };
 const T = M.maak(lees("data/themas.json", {}), lees("data/themas-mapping.json", {}));
 const per = new Map(M.THEMAS.map((t) => [t.slug, []]));
