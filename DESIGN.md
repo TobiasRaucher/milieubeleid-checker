@@ -66,6 +66,7 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 | Card, tile, menu | `--r-card` | 12 |
 | Panel (CO₂ band, filter bar) | `--r-panel` | 16 |
 | Main tab bar and its tabs | | pill (the only pill on the site) |
+| Large switcher (Moties/Amendementen) | `--r-card` / `--r-control` | 12 outside, 8 per segment |
 
 Nested: inner = outer minus padding, never below 4.
 
@@ -116,14 +117,18 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 
 The Moties/Amendementen table is the reference for every data table.
 
-- Column order: Onderwerp, Uitslag, Appreciatie kabinet, Indiener, Datum, Dossier, then a 48px cell for the row's disclosure button. Onderwerp takes 44% and wraps; every other column stays on one line.
-- Text columns align left; dates and Kamerstuk numbers align right (`tabular-nums`; Kamerstuk numbers in DM Mono 13). Header text sits on exactly the same line as the cell text below it: header cells have the same horizontal padding as body cells, and a sort button has no padding of its own.
+- Above the table: the large switcher (`.schakelaar`), then one search field. The switcher stands in for the page title (the `h2` stays for screen readers only) and has the shape of the main tab bar: a raised white segment on `--surface`, 44px segments at 20px/500 (18px on phones), outer radius 12 and inner 8. No count line and no dropdowns above the table.
+- Column order: title (header names the kind, "Motie" or "Amendement"), a 44px cell for the row's disclosure button right next to it, Uitslag, Appreciatie kabinet, Indiener, Dossier, Datum. The title takes 44% and wraps; every other column stays on one line. The date is always the last column.
+- Text columns align left; dates and Kamerstuk numbers align right (`tabular-nums`; Kamerstuk numbers in DM Mono 13). Header text sits on exactly the same line as the cell text below it: header cells have the same horizontal padding as body cells, and a header button has no padding of its own.
 - One line height for every body cell (22px at 14px), so first lines share a baseline. A status (dot plus word) is `display: flex` inside a cell; an inline-flex status takes its baseline from the empty dot and drops 1px.
-- Sorting: the column header is the control (a button inside the `th`, `aria-sort` on the sorted column). First click sorts in the column's natural direction (dates newest first, text A to Z), the next click reverses it. The arrow shows only on the sorted column, and faintly on hover; on right-aligned columns it sits left of the label. Empty values always sort last.
+- Filtering: a categorical column header is a button (`.kopfilter`) with a chevron that opens a checkbox menu (`.kopmenu`, a popover in the top layer so the table edge never clips it). Several values per column ("or"), columns combine ("and"). Each option shows how many rows it would give under the other filters; options at zero stay in the list in muted text. A column in use shows its count in accent next to the label; the menu has "Wissen" at the bottom once something is checked. The checkboxes line up under the header text. Escape, a click outside or tabbing out closes it. The chevron means "menu"; only the arrow means "sort".
+- Sorting: only dates sort (a button inside the `th`, `aria-sort` on it). One click reverses the order; the arrow sits left of the label because the column is right-aligned. Empty dates sort last.
+- Empty result: "Geen moties met deze filters" with a "Filters wissen" link button.
 - Row: hover is `--surface`, pressed `--raised`, an open row stays `--surface`. When the whole row opens a link, the title is the real `<a>` (keyboard and middle click), the row click repeats it, and a hover underlines the title in `--line-sterk`. Other actions in the row are buttons that do not trigger the row.
-- Disclosure: a 32px ghost button with the 16px chevron, rotating 180° when open; the detail row is `--surface`.
+- Disclosure: a 32px ghost button with the 16px chevron, rotating 180° when open; the detail row is `--surface`, indented to the title's text edge.
+- Detail row: data only, no title repeat, no history, no bars. Three groups 16 apart at 13px: the identifiers line (`Zaak … · document … · ingediend …, door …`, numbers in DM Mono), the vote (`Voor 111 / Tegen 36`, then the fracties voor and tegen as two columns, stacked on phones, alphabetical, ink-2), and the links below a hairline.
 - External arrow in a wrapping title: put it inside a no-wrap span with the last word, so it never sits alone on a line.
-- Phones (≤640px): each row becomes a block with the title on top, status and date beneath, the button at the right; secondary columns are hidden.
+- Phones (≤640px): the header row becomes a row of 32px buttons (the filters and the date order) on `--surface`; each row becomes a block with the title on top, status and date beneath, the button at the right; secondary columns are hidden.
 
 ## Template check
 

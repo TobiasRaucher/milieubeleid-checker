@@ -271,13 +271,13 @@ button.tchip::before, .dchip::before { content: ""; position: absolute; inset: -
 .facet-menu { position: absolute; z-index: 20; top: calc(100% + 4px); left: 0; min-width: 260px; max-width: min(420px, 90vw); max-height: 340px; overflow: auto; padding: 4px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top left; }
 .facet-menu.rechts { transform-origin: top right; }
 .facet[open] > .facet-menu { animation: menu-in var(--d-menu) var(--ease) both; }
-.facet-menu label { display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 4px 8px; border-radius: var(--r-control); font-size: var(--t-14); cursor: pointer; }
-.facet-menu label:hover { background: var(--surface); }
-.facet-menu label:has(input:checked) { background: var(--accent-soft); }
-.facet-menu label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: -2px; }
-.facet-menu label span:first-of-type { flex: 1; }
-.facet-menu .n { color: var(--muted); font-size: var(--t-12); }
-.facet-menu input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
+.facet-menu label, .kopmenu label { display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 4px 8px; border-radius: var(--r-control); font-size: var(--t-14); cursor: pointer; }
+.facet-menu label:hover, .kopmenu label:hover { background: var(--surface); }
+.facet-menu label:has(input:checked), .kopmenu label:has(input:checked) { background: var(--accent-soft); }
+.facet-menu label:has(input:focus-visible), .kopmenu label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: -2px; }
+.facet-menu label > span:first-of-type, .kopmenu label > span:first-of-type { flex: 1; }
+.facet-menu .n, .kopmenu .n { color: var(--muted); font-size: var(--t-12); }
+.facet-menu input, .kopmenu input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
 .filterkeuzes { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
 .actieve-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
@@ -286,6 +286,14 @@ button.tchip::before, .dchip::before { content: ""; position: absolute; inset: -
 .subnav a { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 12px; border-radius: var(--r-control); text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); font-size: var(--t-14); transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 .subnav a:hover:not(.actief) { color: var(--ink); border-color: var(--line-sterk); background: var(--surface); }
 .subnav a.actief:hover { color: #fff; }
+/* grote schakelaar Moties / Amendementen: staat in voor de paginatitel; zelfde vorm als de hoofdtabs (verhoogd vlak op surface), op 20px */
+.schakelaar { display: inline-flex; gap: 4px; padding: 4px; margin: 32px 0 0; background: var(--surface); border-radius: var(--r-card); }
+.schakelaar a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: var(--r-control); font-size: var(--t-20); font-weight: 500; letter-spacing: -0.005em; color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+.schakelaar a:hover:not([aria-current]) { color: var(--ink); background: var(--raised); }
+.schakelaar a[aria-current="page"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); }
+.schakelaar a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.motiezoek { margin: 24px 0 16px; }
+.motiezoek input[type=search] { flex: 0 1 420px; }
 
 /* ===================== Lijsten en tabellen ===================== */
 .list { list-style: none; margin: 0; padding: 0; }
@@ -306,6 +314,7 @@ td.datumcel, td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel th.rechts, .motietabel td.rechts { text-align: right; }
 .motietabel td { line-height: 22px; }
 .motietabel th.ond { width: 44%; }
+.motietabel th.ond, .motietabel td.ond { padding-right: 4px; }
 .motietabel td.ond { min-width: 280px; }
 .motietabel td.ond .ltitel { font-weight: 400; }
 /* pijltje voor externe link vast aan het laatste woord, zodat het nooit alleen op een regel staat */
@@ -318,17 +327,27 @@ td.datumcel, td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel td.datum { color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .motietabel td.dossier { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel .leeg { color: var(--muted); }
-.motietabel th.knopcel, .motietabel td.knopcel { width: 48px; padding: 7px 8px 7px 0; }
+.motietabel th.knopcel, .motietabel td.knopcel { width: 44px; padding: 7px 12px 7px 0; }
 /* kolomkop als knop: de tekst begint op dezelfde lijn als de inhoud eronder */
 .motietabel thead th { padding-top: 0; padding-bottom: 0; height: 40px; vertical-align: middle; }
-.sorteer { display: inline-flex; align-items: center; gap: 4px; padding: 0; margin: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; white-space: nowrap; min-height: 40px; transition: color var(--d-kort) var(--ease); }
+.sorteer, .kopfilter { display: inline-flex; align-items: center; gap: 4px; padding: 0; margin: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; white-space: nowrap; min-height: 40px; transition: color var(--d-kort) var(--ease); }
 .sorteer .ico { color: var(--muted); opacity: 0; transition: opacity var(--d-kort) var(--ease); }
 .sorteer:hover { color: var(--ink); }
 .sorteer:hover .ico { opacity: 0.5; }
 .sorteer.actief { color: var(--ink); }
 .sorteer.actief .ico { opacity: 1; color: var(--ink-2); }
 th.rechts .sorteer { flex-direction: row-reverse; }
-.sorteer:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: var(--r-tag); }
+.sorteer:focus-visible, .kopfilter:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: var(--r-tag); }
+/* filterkop: het pijltje omlaag zegt "menu", het pijltje bij Datum zegt "sorteren" */
+.kopfilter::after { content: ""; width: 16px; height: 16px; flex: none; background: var(--chevron) center / 16px no-repeat; transition: transform var(--d-lang) var(--ease); }
+.kopfilter:hover, .kopfilter.actief, .kopfilter[aria-expanded="true"] { color: var(--ink); }
+.kopfilter[aria-expanded="true"]::after { transform: rotate(180deg); }
+/* kolomkopmenu: popover in de bovenste laag (de tabelrand knipt het dan niet af); app.js zet top en left */
+.kopmenu { position: fixed; inset: auto; margin: 0; z-index: 30; min-width: 240px; max-width: calc(100vw - 24px); max-height: 340px; overflow: auto; padding: 4px; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top left; }
+.kopmenu:popover-open { animation: menu-in var(--d-menu) var(--ease) both; }
+.kopmenu .status { font-size: var(--t-14); font-weight: 400; }
+.kopmenu label.nul > span { color: var(--muted); }
+.kopmenu-voet { display: flex; justify-content: flex-end; margin-top: 4px; padding-top: 4px; border-top: 1px solid var(--line); }
 tbody tr.row { cursor: pointer; transition: background-color var(--d-kort) var(--ease); }
 tbody tr.row:hover { background: var(--surface); }
 tbody tr.row:active { background: var(--raised); }
@@ -342,11 +361,17 @@ tbody tr.row.open td { border-bottom-color: transparent; }
 .uitklap[aria-expanded="true"] { color: var(--ink); }
 .uitklap[aria-expanded="true"] .ico { transform: rotate(180deg); }
 .uitklap:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }
-tr.detail td { background: var(--surface); border-top: 0; padding: 4px 16px 20px; }
+tr.detail td { background: var(--surface); border-top: 0; padding: 4px 12px 20px; }
 tr.detail td > * { max-width: var(--leesbreedte); }
 tr.detail { animation: binnenkomst var(--d-menu) var(--ease) both; }
-.fracties { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; font-size: var(--t-13); margin-top: 8px; }
-.fracties .k { font-weight: 500; }
+/* uitgeklapte rij: kenmerken, stemming (verhouding en fracties), links; drie groepen, alleen neutrale tinten */
+.mdetail { display: grid; gap: 16px; font-size: var(--t-13); line-height: 20px; color: var(--ink-2); }
+.mdetail p { margin: 0; }
+.mstemming { display: grid; gap: 8px; }
+.mtelling { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; }
+.mstemmen { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 32px; }
+.mstemmen .k { color: var(--ink); font-weight: 500; }
+.mlinks { display: flex; flex-wrap: wrap; gap: 4px 24px; padding-top: 12px; border-top: 1px solid var(--line); }
 @media (min-width: 901px) {
   .tablewrap { overflow: clip; }
   thead th { top: var(--kop-h, 0px); z-index: 2; box-shadow: 0 1px 0 var(--line); }
@@ -613,9 +638,19 @@ li.tz { padding: 16px 0; }
   .subnav a { white-space: nowrap; flex: none; }
   /* Moties: elke rij als blokje; onderwerp boven, uitslag en datum eronder, knop rechts */
   .motietabel, .motietabel tbody { display: block; }
-  .motietabel thead { display: none; }
+  /* kolomkoppen worden een rij knoppen: de drie filters en de datumvolgorde */
+  .motietabel thead { display: block; }
+  .motietabel thead tr { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px; background: var(--surface); border-bottom: 1px solid var(--line); }
+  .motietabel thead th { display: none; }
+  .motietabel thead th.fkop, .motietabel thead th.dkop { display: block; position: static; height: auto; padding: 0; background: none; box-shadow: none; }
+  .motietabel thead .kopfilter, .motietabel thead .sorteer { min-height: 32px; padding: 0 8px 0 12px; font-size: var(--t-13); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); }
+  .motietabel thead th.rechts .sorteer { flex-direction: row; }
+  .schakelaar { display: flex; }
+  .schakelaar a { flex: 1; justify-content: center; padding: 0 12px; font-size: var(--t-18); }
+  .motiezoek input[type=search] { flex-basis: 100%; }
+  .mstemmen { grid-template-columns: 1fr; }
   .motietabel tr.row { display: grid; grid-template-columns: auto minmax(0, 1fr) 32px; gap: 8px 12px; padding: 12px 8px 12px 16px; border-top: 1px solid var(--line); align-items: center; }
-  .motietabel tr.row:first-child { border-top: 0; }
+  .motietabel tbody tr:first-child { border-top: 0; }
   .motietabel tr.row td { display: block; padding: 0; border: 0; min-width: 0; }
   .motietabel tr.row td.ond { grid-column: 1 / 3; grid-row: 1; }
   .motietabel tr.row td.uitslag { grid-column: 1; grid-row: 2; }
@@ -636,7 +671,7 @@ li.tz { padding: 16px 0; }
 
 /* ===================== Beweging ===================== */
 /* Directe feedback bij indrukken: een kleine schaal omlaag */
-button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .subnav a:active, .facet > summary:active, button.tchip:active, .dchip:active, .debat .toggle:active { transform: scale(0.98); }
+button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .subnav a:active, .schakelaar a:active, .facet > summary:active, button.tchip:active, .dchip:active, .debat .toggle:active { transform: scale(0.98); }
 .naarboven.zichtbaar:active { transform: scale(0.96); transition-duration: var(--d-kort); }
 @keyframes menu-in { from { opacity: 0; transform: translateY(-4px) scale(0.98); } to { opacity: 1; transform: none; } }
 @keyframes binnenkomst { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
@@ -648,7 +683,7 @@ button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .su
 /* Toegankelijkheid */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
-  button:active, .chip:active, .knop:active, nav.tabs a:active, .subnav a:active, .facet > summary:active, .debat .toggle:active { transform: none; }
+  button:active, .chip:active, .knop:active, nav.tabs a:active, .subnav a:active, .schakelaar a:active, .facet > summary:active, .debat .toggle:active { transform: none; }
   .debat .body-wrap, .debat.open .body-wrap, .skiplink { transition: none; }
   .tab-glij { transition: opacity var(--d-kort) var(--ease); }
   .naarboven, .naarboven.zichtbaar { transform: none; transition: opacity var(--d-kort) var(--ease), visibility 0s; }
