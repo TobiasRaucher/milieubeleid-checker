@@ -18,13 +18,13 @@
     stikstof: { tabel: "85668NED", dim: "Emissiebronnen", totaal: "T001176", veld: "EmissiesNaarLucht_1", eenheid: "kiloton", asTitel: "kiloton" }, // Totaal stationaire en mobiele bronnen
   };
   const KLIMAATWET = { jaar: 1990, reductie: 0.55 }; // Klimaatwet art. 2: 55% minder in 2030 dan in 1990
-  // PBL, Klimaat- en Energieverkenning 2025 (basispad: vastgesteld en voorgenomen beleid per 1 januari 2025):
-  // 45 tot 53% minder broeikasgassen in 2030 dan in 1990; kans op het doel van 55% kleiner dan 5%.
+  // PBL, Klimaat- en Energieverkenning 2026 (14 september 2026; basispad: vastgesteld en voorgenomen beleid):
+  // 46 tot 53% minder broeikasgassen in 2030 dan in 1990; het doel halen is "heel erg onwaarschijnlijk (minder dan 5 procent)".
   // PBL geeft geen jaarcijfers tot 2030 en geen middenwaarde: de band opent vanaf het laatst gemeten jaar naar de bandbreedte
   // in 2030, de gestreepte lijn loopt naar het midden ervan. Percentages gelden t.o.v. het 1990-cijfer van de grafiek (zoals de doellijn).
   // Nieuwe KEV (jaarlijks, september)? Werk dit blok bij.
-  const KEV = { editie: "KEV 2025", min: 0.45, max: 0.53, kans: 0.05, kansTekst: "<5%", oordeel: "Heel erg klein", datum: "16 sep 2025",
-    url: "https://www.pbl.nl/publicaties/klimaat-en-energieverkenning-2025" };
+  const KEV = { editie: "KEV 2026", min: 0.46, max: 0.53, kans: 0.05, kansTekst: "<5%", oordeel: "Heel erg onwaarschijnlijk", datum: "14 sep 2026",
+    url: "https://www.pbl.nl/publicaties/klimaat-en-energieverkenning-2026" };
   // Kleur van de kans (stoplicht): rood onder 50%, geel 50 tot 75%, groen boven 75%.
   const kansKlasse = (p) => (p < 0.5 ? "laag" : p <= 0.75 ? "midden" : "hoog");
   // PBL, Emissieramingen luchtverontreinigende stoffen 2025 (vastgesteld en voorgenomen beleid), kiloton in 2030.
@@ -253,13 +253,11 @@
   /* ---------- kans op het Klimaatwet-doel (alleen bij het totaal) ---------- */
   // Stoplicht in de stip (kansKlasse); het cijfer en het woord blijven inkt.
   function kansBlok() {
-    const p = (n) => Math.round(n * 100);
     return el("div", { class: `mi-kans ${kansKlasse(KEV.kans)}` },
       el("p", { class: "mi-kans-kop", text: "Kans dat het doel van 2030 wordt gehaald" }),
       el("p", { class: "mi-kans-regel" },
         el("b", { class: "mi-kans-waarde", text: KEV.kansTekst }),
         el("span", { class: "mi-kans-oordeel" }, el("span", { class: "dot", "aria-hidden": "true" }), KEV.oordeel)),
-      el("p", { class: "mi-kans-tekst", text: `Met het huidige beleid daalt de uitstoot volgens de ${KEV.editie} met ${p(KEV.min)} tot ${p(KEV.max)}% in 2030. Het doel van ${p(KLIMAATWET.reductie)}% valt buiten die bandbreedte.` }),
       el("span", { class: "peil" }, "PBL · ", link(KEV.url, KEV.editie), ` · basispad · ${KEV.datum}`));
   }
 
@@ -315,9 +313,8 @@
 
   /* ---------- koppeling met app.js ---------- */
   window.MRMilieu = {
-    sectieHtml: () => `<div class="mi-sectie">
-        <section class="card mi-kaart" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h2 id="mi-uitstoot-kop">Wat Nederland uitstoot</h2><div class="mi-inhoud"><div class="sk sk-kaart"></div></div></section>
-      </div>`,
+    // een sectie op de pagina zelf, zonder kaart eromheen (zoals Net binnen en Komt eraan)
+    sectieHtml: () => `<section class="mi-sectie" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h2 id="mi-uitstoot-kop">Wat Nederland uitstoot</h2><div class="mi-inhoud"><div class="sk sk-kaart"></div></div></section>`,
     vul() {
       const u = document.querySelector("#mi-uitstoot .mi-inhoud"); if (u) vulUitstoot(u);
     },

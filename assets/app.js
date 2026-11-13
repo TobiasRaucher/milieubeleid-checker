@@ -273,23 +273,30 @@
   const NET_BINNEN_MAX = 10;
   const FEED_ORDE = { Wetgeving: 0, Stemming: 1, Stuk: 2 };
   const isDag = (d) => /^\d{4}-\d{2}-\d{2}$/.test(d || "") && d <= VANDAAG;
-  function feedLi(soort, datum, meta, titel, href, onder, extern) {
+  // Kamerleden zonder voorletters, zoals in de motietabel: "van het lid A.B. (Anne) Jansen" -> "van het lid Jansen".
+  // Alleen in titels die "het lid" of "de leden" noemen, en alleen direct na lid/leden/en/komma (niet "Inzet C.W. Artikel 2.25").
+  const zonderVoorletters = (t) => (/\b(het lid|de leden)\b/i.test(t)
+    ? t.replace(/(\b(?:lid|leden|en)\s+|,\s*)(?:[A-ZÀ-Ý][a-z]{0,2}\.)+\s*(?:\([^)]*\)\s*)?(?=\p{Lu}|[a-z]{1,3}\s)/gu, "$1")
+    : t);
+  // Eén doorlopende regel: soort (accent), datum, status of ministerie, titel; daarna eventueel een stille staart (indieners, Kamerstuk).
+  function feedLi(soort, datum, meta, titel, href, staart, extern) {
     const doel = extern ? ` target="_blank" rel="noopener"` : "";
-    return `<li><div class="regelmeta"><span class="tag">${soort}</span><span class="datum">${fmtKort(datum)}</span>${meta}</div>
-      <div><a class="ltitel" href="${esc(href)}"${doel}>${esc(titel)}</a></div>${onder ? `<div class="small muted">${onder}</div>` : ""}</li>`;
+    return `<li class="feed"><span class="feed-soort">${esc(soort)}</span><span class="feed-datum">${fmtKort(datum)}</span>${meta}<a class="ltitel" href="${esc(href)}"${doel}>${esc(zonderVoorletters(titel))}</a>${staart ? `<span class="feed-staart">${staart}</span>` : ""}</li>`;
   }
+  const feedMeta = (html) => (html ? `<span class="feed-meta">${html}</span>` : "");
+  const wetSoort = (type) => (/^wetsvoorstel/i.test(type || "") ? "Wetsvoorstel" : type || "Wetsvoorstel");
   function netBinnen() {
     const items = [];
     for (const z of motiesEnAmendementen()) {
       const t = z.stemtelling;
       if (!t || !isDag(t.datum)) continue;
-      items.push({ soort: "Stemming", datum: t.datum, html: feedLi("Stemming", t.datum, `${uitslagPill(z.uitslag)}<span>${esc(z.soort)}</span>`,
-        onderwerpZin(z), tkUrl(z), `${indienersTekst(z)}${t.voor + t.tegen ? ` · <span class="nw">Voor ${t.voor} / Tegen ${t.tegen}</span>` : ""}`, true) });
+      items.push({ soort: "Stemming", datum: t.datum, html: feedLi(z.soort, t.datum, feedMeta(uitslagPill(z.uitslag)),
+        onderwerpZin(z), tkUrl(z), `<span class="nw">${indienerKort(z)}</span>${t.voor + t.tegen ? ` <span class="nw">· Voor ${t.voor} / Tegen ${t.tegen}</span>` : ""}`, true) });
     }
     for (const x of stukkenInSector()) {
       if (!isDag(x.datum)) continue;
       const dossier = (x.dossiers || [])[0];
-      items.push({ soort: "Stuk", datum: x.datum, html: feedLi("Stuk", x.datum, `<span>${esc(SOORT_KORT[x.soort] || x.soort)}</span><span>${esc(x.ministerie || "ministerie onbekend")}</span>`,
+      items.push({ soort: "Stuk", datum: x.datum, html: feedLi(SOORT_KORT[x.soort] || x.soort, x.datum, feedMeta(esc(x.ministerie || "ministerie onbekend")),
         x.onderwerp || x.titel, x.link, dossier ? `<span class="mono">${esc(x.kamerstuk || dossier.nummer)}</span> ${esc(dossier.titel || "")}` : "", true) });
     }
     // wetgeving: de laatste stap van de gevolgde dossiers, plus nieuwe wetsvoorstellen die (nog) geen eigen dossier hebben
@@ -298,13 +305,13 @@
     for (const d of gevolgd) {
       const s = d.laatsteStap;
       if (!s || !isDag(s.datum)) continue;
-      items.push({ soort: "Wetgeving", datum: s.datum, html: feedLi("Wetgeving", s.datum, d.kamerstuk ? `<span class="mono">${esc(d.kamerstuk)}</span>` : "",
+      items.push({ soort: "Wetgeving", datum: s.datum, html: feedLi(wetSoort(d.type), s.datum, feedMeta(d.kamerstuk ? `<span class="mono">${esc(d.kamerstuk)}</span>` : ""),
         d.kortTitel || d.titel, `#wetgeving/w-${d.id}`, esc(s.tekst), false) });
     }
     for (const z of wetsvoorstellenTK()) {
       if (!isDag(z.gestartOp) || z.dossiers.some((x) => bekend.has(String(x.nummer)))) continue;
-      items.push({ soort: "Wetgeving", datum: z.gestartOp, html: feedLi("Wetgeving", z.gestartOp, `<span class="mono">${esc(dossierLabel(z))}</span><span>Ingediend</span>`,
-        z.titel || z.onderwerp, z.link, "", true) });
+      items.push({ soort: "Wetgeving", datum: z.gestartOp, html: feedLi("Wetsvoorstel", z.gestartOp, feedMeta("Ingediend"),
+        z.titel || z.onderwerp, z.link, `<span class="mono">${esc(dossierLabel(z))}</span>`, true) });
     }
     return items.sort((a, b) => b.datum.localeCompare(a.datum) || FEED_ORDE[a.soort] - FEED_ORDE[b.soort]).slice(0, NET_BINNEN_MAX);
   }
@@ -314,12 +321,12 @@
     return `
       ${window.MRMilieu ? MRMilieu.sectieHtml() : ""}
       <div class="ov-onder">
-        <section aria-labelledby="ov-komt"><h2 id="ov-komt">Komt eraan</h2><div class="card"><ul class="list">
-          ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland</li>`}
-        </ul><div class="kaartvoet"><a href="#agenda">Volledige agenda</a></div></div></section>
         <section aria-labelledby="ov-binnen"><h2 id="ov-binnen">Net binnen</h2><div class="card"><ul class="list">
           ${binnen.map((i) => i.html).join("") || `<li class="empty">Nog niets binnen</li>`}
         </ul><div class="kaartvoet"><a href="#stukken">Alle stukken</a><a href="#moties">Alle moties en amendementen</a><a href="#wetgeving">Wetgeving</a></div></div></section>
+        <section aria-labelledby="ov-komt"><h2 id="ov-komt">Komt eraan</h2><div class="card"><ul class="list">
+          ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland</li>`}
+        </ul><div class="kaartvoet"><a href="#agenda">Volledige agenda</a></div></div></section>
       </div>`;
   }
 

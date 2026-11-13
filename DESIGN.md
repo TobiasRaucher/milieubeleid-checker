@@ -31,7 +31,7 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 ### Accent
 
 - `--accent` `#1a7f4b`: 5.02:1 on white, white text on it 5.02:1, 4.64:1 on surface. Hover `#156a3e`.
-- Used for: the selected state (chips, subnav, pressed dossier chip), the primary button, chart lines and fills, completed phases on the stepper, the "radar" half of the wordmark, focus rings.
+- Used for: the selected state (chips, subnav, pressed dossier chip), the primary button, chart lines and fills, completed phases on the stepper, the "radar" half of the wordmark, focus rings, and the document type that opens each row of Net binnen on Overzicht (text at 500, by Tobias's choice of 13 Nov 2026; the only accent text in a list).
 - `--accent-soft` `#e6f2ea` only as the focus halo and a checked filter row.
 
 ### Alarm and meaning
@@ -101,7 +101,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 
 **Don't**
 1. No hue gradients, gradient text, glows, colored shadows, color washes or blurred glass (`backdrop-filter`).
-2. No green surfaces, green borders as decoration, green section labels or green links. Links are ink with a hairline underline and turn green on hover.
+2. No green surfaces, green borders as decoration, green section labels or green links (the one exception is the per-row type in Net binnen, see Accent). Links are ink with a hairline underline and turn green on hover.
 3. No red for anything except over the limit, today, eerstvolgend and the verworpen status dot. Not for votes against, not for text, not for row backgrounds.
 4. No blue or other hue outside the ramp, accent, alarm and the status/theme dots.
 5. No uppercase tracked labels, no weight 700, no italic for emphasis, no negative tracking below 18px.
@@ -117,11 +117,16 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 
 - One main chart per screen: the measured series is the only accent (2px line, 8% fill, open end point when the last figure is voorlopig).
 - Reference lines stay neutral and never take the accent: a baseline is a muted hairline with a ring at its start; a target line is an ink-2 hairline with a solid ink dot at the target year; a projection is an ink-2 dashed line (4 4) to an open ring. Dashes mean "projection" and nothing else.
-- Reference values are labeled once, in DM Mono 12 in the right margin (`1990 226,6`, `doel 102,0`, `raming 101`, `KEV 45–53%`); on phones only the word. Labels never touch: each sits at least 14px below the one above it. A gap is labeled in words next to a thin bracket (`−36% nodig t.o.v. raming`). Labels get a white halo so they stay legible over lines.
+- Reference values are labeled once, in DM Mono 12 in the right margin (`1990 226,6`, `doel 102,0`, `raming 101`, `KEV 46–53%`); on phones only the word. Labels never touch: each sits at least 14px below the one above it. A gap is labeled in words next to a thin bracket (`−36% nodig t.o.v. raming`). Labels get a white halo so they stay legible over lines.
 - The uncertainty of a projection is a neutral band (`.mi-band`: ink at 7%, no edges) that opens from the last measured point to the projected range; the dashed projection line runs through its middle. Never the accent, never red. The KEV band sits on Totaal broeikasgassen only.
 - Every chart has two minimal axis titles in DM Sans 12, muted: the unit above the y-axis labels (`CO₂-eq (miljard kg)`, `kiloton`) and `Jaar` centered under the years. No rotated text.
-- The chance of reaching a target is a quiet tile under the target sentence (`.mi-kans`: `--surface`, radius 8, padding 16): a 12px-style lead line, the figure at 30/500 in ink, a status dot plus the source's own verdict, one sentence, and the peildatum stamp. The dot is the only color, as a traffic light: `--bad` under 50%, `--warning` 50 to 75%, `--good` above 75%. No red text, no colored border or stripe.
+- The chance of reaching a target is a quiet tile under the target sentence (`.mi-kans`: `--surface`, radius 8, padding 16): a 12px-style lead line, the figure at 30/500 in ink, a status dot plus the source's own verdict, and the peildatum stamp. No explanatory sentence (removed 13 Nov 2026; the band on the chart already shows the range). The dot is the only color, as a traffic light: `--bad` under 50%, `--warning` 50 to 75%, `--good` above 75%. No red text, no colored border or stripe.
 - Group a chart switcher by what decides the target (here: Klimaatwet, Stikstofwet), with the group name as a muted 12px label.
+
+## Overzicht lists
+
+- Order and widths: Net binnen left (3fr), Komt eraan right (2fr) from 1000px; stacked in that order below. Both sections are unboxed headings with a card under them, like "Wat Nederland uitstoot", which has no card at all. The two cards stretch to one bottom edge: the list grows, the kaartvoet stays at the bottom.
+- A Net binnen row is one flowing line, 14/22, pieces 8 apart: the document type in accent at 500 (`Antwoord Kamervragen`, `Kamerbrief`, `Motie`, `Amendement`, `Wetsvoorstel`), the date (muted, tabular), the status (dot plus word) or the ministry or Kamerstuk number (ink-2), the title (ink, 15/500, the link), then a muted 13px tail: indiener as surname plus fractie with c.s. (same `indienerKort` as the Moties table) and `· Voor X / Tegen Y`, the Kamerstuk and dossier for a stuk, or the step for a wetsvoorstel. Names in titles lose their initials after "het lid" or "de leden". Type label, date, indiener and vote never break inside themselves.
 
 ## Tables
 
@@ -162,5 +167,5 @@ What did not survive the swap, and must stay: the Kamer-native material itself (
 
 ### Known duplication (to dedupe later)
 
-- Six list-item renderers each build their own meta row: `stukLi`, `agendaLi`, `feedLi` (Net binnen on Overzicht), the toezegging item, fractie inbreng, the zoek item. They now share the `.regelmeta`/`.zmeta` style, but the markup is still written six times.
+- Five list-item renderers each build their own meta row: `stukLi`, `agendaLi`, the toezegging item, fractie inbreng, the zoek item. They share the `.regelmeta`/`.zmeta` style, but the markup is still written five times. `feedLi` (Net binnen) is deliberately different: one flowing line (`.feed`).
 - `debatCard` and `vergaderCompact` repeat the same header markup.
