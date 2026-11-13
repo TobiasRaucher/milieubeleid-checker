@@ -64,7 +64,7 @@
   }
 
   async function init() {
-    const [config, dossiers, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData] = await Promise.all([
+    const [config, dossiers, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping] = await Promise.all([
       load("pipeline/config.json", { sectoren: {} }),
       load("data/dossiers.json", { fasen: [], dossiers: [] }),
       load("data/debatten.json", { debatten: [] }),
@@ -74,8 +74,9 @@
       load("data/tk/meta.json", {}),
       load("data/tk/stukken.json", []),
       load("data/zoeksynoniemen.json", { groepen: [] }),
-      load("data/themas.json", { themas: [], terugval: {} }),
+      load("data/themas.json", { regels: {} }),
       load("data/tk/toezeggingen.json", []),
+      load("data/themas-mapping.json", {}),
     ]);
     S.data = { config, dossiers, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
@@ -83,7 +84,7 @@
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
       return;
     }
-    S.T = window.MRThemas.maak(themas);
+    S.T = window.MRThemas.maak(themas, themaMapping);
     // meest recente moment waarop data of samenvattingen zijn bijgewerkt
     const stempels = [meta.bijgewerkt, debatten.bijgewerkt, dossiers.bijgewerkt, agenda.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
     $("#stamp").textContent = stempels.length ? `Bijgewerkt ${fmtTijdstip(new Date(Math.max(...stempels)))}` : "Bijgewerkt onbekend";
@@ -160,7 +161,7 @@
   document.addEventListener("click", (e) => { if (e.target.closest('a[href^="#"]')) { _klik = true; setTimeout(() => { _klik = false; }, 400); } }, true);
   window.addEventListener("scroll", () => { _scrollBij.set(location.hash || "#overzicht", window.scrollY); }, { passive: true });
 
-  let _vorigeTab = null;
+  let _vorigeTab = null, _vorigPad = null;
   function route() {
     const pad = (location.hash || "#overzicht").slice(1).split("?")[0];
     let tab = pad.split("/")[0] || "overzicht";
@@ -170,9 +171,10 @@
       a.classList.toggle("active", a.dataset.tab === navTab);
       if (a.dataset.tab === navTab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
-    const views = { overzicht, wetgeving, moties, amendementen: moties, vergaderingen, toezeggingen, fracties, stukken, agenda, over, zoeken };
-    const TITELS = { agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties", amendementen: "Amendementen", vergaderingen: "Vergaderingen", toezeggingen: "Toezeggingen", fracties: "Per fractie", stukken: "Stukken van ministeries", over: "Over", zoeken: "Zoeken" };
+    const views = { overzicht, themas: themasPagina, wetgeving, moties, amendementen: moties, vergaderingen, toezeggingen, fracties, stukken, agenda, over, zoeken };
+    const TITELS = { themas: "Thema's", agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties", amendementen: "Amendementen", vergaderingen: "Vergaderingen", toezeggingen: "Toezeggingen", fracties: "Per fractie", stukken: "Stukken van ministeries", over: "Over", zoeken: "Zoeken" };
     document.title = TITELS[tab] ? `${TITELS[tab]} · milieuradar` : "milieuradar";
+    if (tab === "themas" && pad.split("/")[1]) { const t = S.T.thema(pad.split("/")[1]); document.title = `${t ? t.label : "Thema niet gevonden"} · Thema's · milieuradar`; }
     if (tab !== "agenda") S.agendaGescrold = false;
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
     $("#view").innerHTML = (views[tab] || overzicht)();
@@ -180,18 +182,21 @@
     if (tabGewisseld) { const v = $("#view"); v.classList.remove("binnenkomst"); void v.offsetWidth; v.classList.add("binnenkomst"); }
     _vorigeTab = tab;
     zetKopHoogte(); zetGlij(!eerste); zetNavRand();
-    if (tabGewisseld && !eerste && !pad.includes("/")) {
+    // Thema's: overzicht en detail zijn aparte pagina's binnen dezelfde tab, dus ook daartussen bovenaan beginnen (of herstellen bij terug/vooruit)
+    const themaWissel = tab === "themas" && pad !== _vorigPad && !eerste;
+    if ((tabGewisseld && !eerste && !pad.includes("/")) || themaWissel) {
       const bewaard = _klik ? null : _scrollBij.get(location.hash || "#overzicht");
       if (bewaard != null) setTimeout(() => window.scrollTo(0, bewaard), 0);
       else if (tab !== "agenda") window.scrollTo(0, 0);
     }
+    _vorigPad = pad;
     _klik = false;
     zetScrollRand(); zetBoven();
     if (tab === "moties" || tab === "amendementen") bindMoties();
     if (tab === "stukken") bindStukken();
     if (tab === "zoeken") renderZoekResultaten();
     if (tab === "overzicht" && window.MRMilieu) MRMilieu.vul();
-    const sub = tab === "vergaderingen" ? null : pad.split("/")[1];
+    const sub = tab === "vergaderingen" || tab === "themas" ? null : pad.split("/")[1];
     if (sub) { const t = document.getElementById(sub); if (t) { if (t.tagName === "DETAILS") t.open = true; if (t.classList.contains("debat")) t.classList.add("open"); t.scrollIntoView({ behavior: "smooth", block: "start" }); } }
   }
 
@@ -328,6 +333,65 @@
           ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland</li>`}
         </ul><div class="kaartvoet"><a href="#agenda">Volledige agenda</a></div></div></section>
       </div>`;
+  }
+
+  /* ---------- Thema's ---------- */
+  // Routes: #themas (overzicht) en #themas/<slug> (detail). Gereserveerd voor latere filters: #themas/<slug>?type=<soort>,
+  // met soort uit MRThemas.SOORTEN[].param (wetten, amendementen, moties, kamerbrieven, antwoorden, vergaderingen, agenda).
+  // Alle tellingen komen uit MRThemas.bronItems: dezelfde lijst als de review-CSV en de noscript-lijst.
+  let _themaIndex = null;
+  function themaIndex() {
+    if (_themaIndex) return _themaIndex;
+    const items = window.MRThemas.bronItems(S.data);
+    const perThema = new Map(S.T.lijst.map((t) => [t.slug, []]));
+    const zonder = [];
+    const gezien = new Set();
+    for (const x of items) {
+      if (gezien.has(x.sleutel)) continue;
+      gezien.add(x.sleutel);
+      x.themas = window.MRThemas.themasVanItem(S.T, x);
+      if (!x.themas.length) zonder.push(x);
+      for (const sl of x.themas) perThema.get(sl)?.push(x);
+    }
+    return (_themaIndex = { items, perThema, zonder });
+  }
+  // eerstvolgend moment: vroegste datum vanaf vandaag (vage datums als "Q4 2026" achteraan in hun periode)
+  function eerstvolgend(lijst) {
+    return lijst.flatMap((x) => x.momenten || []).filter((m) => sortKey(m.datum) >= VANDAAG)
+      .sort((a, b) => sortKey(a.datum).localeCompare(sortKey(b.datum)) || (a.label || "").localeCompare(b.label || ""))[0] || null;
+  }
+  function telRegel(lijst) {
+    return window.MRThemas.SOORTEN.map((s) => { const n = lijst.filter((x) => x.soort === s.code).length; return n ? `${nl(n)} ${n === 1 ? s.een : s.veel}` : ""; })
+      .filter(Boolean).join(" · ");
+  }
+  function themaKaart(t, lijst) {
+    const m = eerstvolgend(lijst);
+    const vandaag = m && m.datum === VANDAAG;
+    return `<li><a class="themakaart" href="#themas/${esc(t.slug)}">
+      <h3>${esc(t.label)}</h3>
+      ${lijst.length ? `<p class="themakaart-tal">${nl(lijst.length)} ${lijst.length === 1 ? "item" : "items"}</p>
+      <p class="themakaart-soorten">${telRegel(lijst)}</p>
+      ${m ? `<p class="themakaart-moment"><span class="tag">${esc(m.label)}</span><span class="datum${vandaag ? " vandaag" : ""}">${vandaag ? "Vandaag" : fmtKort(m.datum)}</span><span class="moment-titel">${esc(m.titel)}</span></p>` : ""}`
+        : `<p class="themakaart-leeg">Nog geen items</p>`}
+    </a></li>`;
+  }
+  function themasPagina() {
+    const pad = (location.hash || "").slice(1).split("?")[0].split("/");
+    if (pad[1]) return themaDetail(decodeURIComponent(pad[1]));
+    const { perThema, zonder } = themaIndex();
+    return `<h2>Thema's</h2>
+      <p class="muted small themas-intro">Alle wetten, moties, amendementen, Kamerbrieven, antwoorden op Kamervragen, vergaderingen en agenda-items in tien vaste thema's. Een item kan bij meer dan één thema horen.${zonder.length ? ` <span class="nw">${nl(zonder.length)} ${zonder.length === 1 ? "item" : "items"} nog niet geclassificeerd.</span>` : ""}</p>
+      <ul class="themagrid">${S.T.lijst.map((t) => themaKaart(t, perThema.get(t.slug))).join("")}</ul>`;
+  }
+  function themaDetail(slug) {
+    const t = S.T.thema(slug);
+    if (!t) return `<h2>Thema niet gevonden</h2><p class="themas-intro">Er is geen thema "${esc(slug)}". <a href="#themas">Naar alle thema's</a></p>`;
+    const lijst = themaIndex().perThema.get(t.slug);
+    return `<p class="small terug"><a href="#themas">Alle thema's</a></p>
+      <h2>${esc(t.label)}</h2>
+      <p class="themas-intro">${esc(t.description)}</p>
+      <p class="muted small">${lijst.length ? `${nl(lijst.length)} ${lijst.length === 1 ? "item" : "items"}: ${telRegel(lijst)}` : "Nog geen items"}</p>
+      <p class="note">De lijst per documentsoort volgt zodra de thema-indeling is nagekeken.</p>`;
   }
 
   /* ---------- Wetgeving ---------- */
@@ -621,7 +685,7 @@
     const dossier = (x.dossiers || [])[0];
     return `<li><div class="regelmeta"><span class="tag">${esc(SOORT_KORT[x.soort] || x.soort)}</span><span class="datum">${fmtKort(x.datum)}</span><span>${esc(x.ministerie || "ministerie onbekend")}</span></div>
       <div><a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.onderwerp || x.titel)}</a></div>
-      <div class="small muted">${dossier ? `<span class="mono">${esc(x.kamerstuk || dossier.nummer)}</span> ${esc(dossier.titel || "")}` : `<span class="mono">${esc(x.id)}</span>`}</div>${themaChips(themasVanTekst(x.onderwerp || x.titel, x.sectoren))}</li>`;
+      <div class="small muted">${dossier ? `<span class="mono">${esc(x.kamerstuk || dossier.nummer)}</span> ${esc(dossier.titel || "")}` : `<span class="mono">${esc(x.id)}</span>`}</div>${themaChips(themasVanStuk(x))}</li>`;
   }
   function stukken() {
     const all = stukkenInSector();
@@ -754,22 +818,28 @@
     return uit;
   }
   const _themaCache = new Map();
+  // Thema's per item: de goedgekeurde mapping (data/themas-mapping.json) gaat voor de regels (data/themas.json); zie assets/themas.js.
+  const TS = window.MRThemas.sleutel;
   function themasVanAct(a) {
     if (!a) return [];
-    if (!_themaCache.has(a.Nummer)) _themaCache.set(a.Nummer, S.T.voor(a.Onderwerp, (a.agendapunten || []).map((ap) => ap.onderwerp), a.sectoren));
+    if (!_themaCache.has(a.Nummer)) _themaCache.set(a.Nummer, S.T.item(TS.debat(a.Nummer), a.Onderwerp, (a.agendapunten || []).map((ap) => ap.onderwerp)));
     return _themaCache.get(a.Nummer);
   }
   function themasVanDebat(d) {
+    const sl = TS.debat(d.activiteit || d.id);
+    if (S.T.inMapping(sl)) return S.T.item(sl);
     if (d.themas && d.themas.length) return d.themas;
     const a = activiteitVan(d);
-    return S.T.voor(d.titel, (a?.agendapunten || []).map((ap) => ap.onderwerp), d.sector ? [d.sector] : []);
+    return S.T.voor(d.titel, (a?.agendapunten || []).map((ap) => ap.onderwerp));
   }
-  const themasVanTekst = (titel, sectoren) => S.T.voor(titel, [], sectoren);
+  const themasVanZaak = (z) => S.T.item(TS.zaak(z), window.MRThemas.korteTitel(z), [], (z.dossiers || []).map((d) => d.titel));
+  const themasVanStuk = (x) => S.T.item(TS.stuk(x), window.MRThemas.stukTitel(x), [], (x.dossiers || []).map((d) => d.titel));
+  const themasVanAgendaItem = (i) => S.T.item(TS.agenda(i), i.titel, []);
   function themaChips(ids, klikbaar) {
     if (!ids || !ids.length) return "";
     return `<span class="tchips">${ids.map((id) => klikbaar
-      ? `<button type="button" class="tchip" data-vthema="${esc(id)}" title="Toon alle vergaderingen over ${esc(S.T.naam(id))}"><i style="background:${S.T.kleur(id)}"></i>${esc(S.T.naam(id))}</button>`
-      : `<span class="tchip"><i style="background:${S.T.kleur(id)}"></i>${esc(S.T.naam(id))}</span>`).join("")}</span>`;
+      ? `<button type="button" class="tchip" data-vthema="${esc(id)}" title="Toon alle vergaderingen over ${esc(S.T.naam(id))}">${esc(S.T.naam(id))}</button>`
+      : `<span class="tchip">${esc(S.T.naam(id))}</span>`).join("")}</span>`;
   }
   const arr = (x) => (Array.isArray(x) ? x : x ? [x] : []);
 
@@ -845,10 +915,10 @@
         <summary>${label}${n ? ` <span class="facet-n">${n}</span>` : ""}</summary>
         <div class="facet-menu" role="group" aria-label="${label}">
           ${waarden.map(([v, c], i) => `<label><input type="checkbox" id="vf-${f}-${i}" data-f="${f}" value="${esc(v)}" ${S.vf[f].includes(v) ? "checked" : ""}>
-            ${f === "thema" ? `<i class="dotje" style="background:${S.T.kleur(v)}"></i>` : ""}<span>${esc(facetLabel(f, v))}</span><span class="n">${c}</span></label>`).join("") || `<div class="muted small">Geen waarden</div>`}
+            <span>${esc(facetLabel(f, v))}</span><span class="n">${c}</span></label>`).join("") || `<div class="muted small">Geen waarden</div>`}
         </div></details>`;
     };
-    const actief = FACETTEN.flatMap(([f]) => S.vf[f].map((v) => `<button type="button" class="chip actief" data-rm="${f}" data-v="${esc(v)}" aria-label="Filter ${esc(facetLabel(f, v))} wissen">${f === "thema" ? `<span class="sdot" style="background:${S.T.kleur(v)}"></span>` : ""}${esc(facetLabel(f, v))}${ico("x")}</button>`));
+    const actief = FACETTEN.flatMap(([f]) => S.vf[f].map((v) => `<button type="button" class="chip actief" data-rm="${f}" data-v="${esc(v)}" aria-label="Filter ${esc(facetLabel(f, v))} wissen">${esc(facetLabel(f, v))}${ico("x")}</button>`));
     if (S.vf.sam) actief.push(`<button type="button" class="chip actief" data-rm="sam">${S.vf.sam === "ja" ? "Met" : "Zonder"} samenvatting${ico("x")}</button>`);
 
     const render = (l) => `<div class="grid">${l.map((it) => (it.d ? debatCard(it.d, it) : vergaderCompact(it))).join("")}</div>`;
@@ -863,7 +933,7 @@
       if (S.vf.groep === "maand") volg.sort((a, b) => (desc ? b[0].localeCompare(a[0]) : a[0].localeCompare(b[0])));
       else volg.sort((a, b) => b[1].length - a[1].length || String(a[0]).localeCompare(String(b[0])));
       const kop = (k) => (S.vf.groep === "maand" ? (k === "(onbekend)" ? k : `${MAANDEN[+k.slice(5, 7) - 1]} ${k.slice(0, 4)}`)
-        : S.vf.groep === "thema" ? `<i class="dotje" style="background:${S.T.kleur(k)}"></i>${esc(S.T.naam(k))}` : esc(facetLabel(S.vf.groep, k)));
+        : S.vf.groep === "thema" ? esc(S.T.naam(k)) : esc(facetLabel(S.vf.groep, k)));
       inhoud = volg.map(([k, l]) => `<h3 class="groepkop">${kop(k)} <span class="muted small">(${l.length})</span></h3>${render(l)}`).join("");
     }
     const nSam = lijst.filter((it) => it.d).length;
@@ -1067,7 +1137,7 @@
       const g = new Map();
       for (const t of lijst) for (const k of sleutel(t)) { if (!g.has(k)) g.set(k, []); g.get(k).push(t); }
       inhoud = [...g.entries()].sort((a, b) => b[1].length - a[1].length).map(([k, l]) =>
-        `<h3 class="groepkop">${S.tf.groep === "thema" && S.T.bestaat(k) ? `<i class="dotje" style="background:${S.T.kleur(k)}"></i>${esc(S.T.naam(k))}` : esc(k)} <span class="muted small">(${l.length})</span></h3><div class="card"><ul class="list">${l.map(item).join("")}</ul></div>`).join("");
+        `<h3 class="groepkop">${S.tf.groep === "thema" && S.T.bestaat(k) ? esc(S.T.naam(k)) : esc(k)} <span class="muted small">(${l.length})</span></h3><div class="card"><ul class="list">${l.map(item).join("")}</ul></div>`).join("");
     }
     el.innerHTML = `
       <div class="filterbalk">
@@ -1078,7 +1148,7 @@
         <div class="filterkeuzes">
           <input type="search" id="tq" placeholder="Zoek in toezeggingen" value="${esc(S.tf.q)}" aria-label="Zoek in toezeggingen">
           <label class="label" for="tmin">Ministerie</label><select id="tmin">${opt("", "Alle ministeries", S.tf.ministerie)}${ministeries.map((m) => opt(m, m, S.tf.ministerie)).join("")}</select>
-          <label class="label" for="tthema">Thema</label><select id="tthema">${opt("", "Alle thema's", S.tf.thema)}${S.T.lijst.map((t) => opt(t.id, t.naam, S.tf.thema)).join("")}</select>
+          <label class="label" for="tthema">Thema</label><select id="tthema">${opt("", "Alle thema's", S.tf.thema)}${S.T.lijst.map((t) => opt(t.slug, t.label, S.tf.thema)).join("")}</select>
           <label class="label" for="tgroep">Groeperen</label><select id="tgroep">${[["", "Niet groeperen"], ["ministerie", "Ministerie"], ["thema", "Thema"], ["bewindspersoon", "Bewindspersoon"], ["vergadering", "Vergadering"]].map(([v, l]) => opt(v, l, S.tf.groep)).join("")}</select>
         </div>
       </div>
@@ -1125,8 +1195,8 @@
     const pct = (a, b) => (b ? Math.round((100 * a) / b) + "%" : "–");
     const kies = `<div class="filters" role="group" aria-label="Kies een fractie">${lijst.map((f) => `<a class="chip" href="#fracties?f=${encodeURIComponent(f.naam)}${thema ? "&thema=" + thema : ""}" aria-pressed="${f.naam === keuze}" ${f.naam === keuze ? 'aria-current="page"' : ""}>${esc(f.naam)}</a>`).join("")}</div>`;
     const themaKeuze = (basis) => `<div class="filterkeuzes"><label class="label" for="fthema">Thema</label><select id="fthema" onchange="location.hash='${basis}'+(this.value?'&thema='+this.value:'')">
-      <option value="">Alle thema's</option>${S.T.lijst.map((t) => `<option value="${t.id}" ${t.id === thema ? "selected" : ""}>${esc(t.naam)}</option>`).join("")}</select></div>`;
-    const zaakThemas = (z) => themasVanTekst(korteTitel(z), z.sectoren);
+      <option value="">Alle thema's</option>${S.T.lijst.map((t) => `<option value="${t.slug}" ${t.slug === thema ? "selected" : ""}>${esc(t.label)}</option>`).join("")}</select></div>`;
+    const zaakThemas = themasVanZaak;
     const inThema = (ids) => !thema || ids.includes(thema);
     const intro = `${subnav("fracties")}<h2>Per fractie</h2>
       <p class="muted small">Wat elke fractie inbracht in de samengevatte vergaderingen, welke moties en amendementen ze indiende en hoe ze stemde over de moties en amendementen op milieuradar. Alle fracties krijgen dezelfde opbouw en staan op alfabet. PRO is de voortzetting van GroenLinks-PvdA; die worden samen geteld. Stemmen over moties zeggen niet alles: een fractie kan om uiteenlopende redenen voor of tegen stemmen.</p>
@@ -1147,7 +1217,7 @@
     const inb = f.inbreng.filter(({ d }) => inThema(themasVanDebat(d))).sort((a, b) => b.d.datum.localeCompare(a.d.datum));
     const ing = f.ingediend.filter((z) => inThema(zaakThemas(z))).sort((a, b) => (b.gestartOp || "").localeCompare(a.gestartOp || ""));
     const st = f.stemmen.filter(({ z }) => inThema(zaakThemas(z)));
-    const perThema = S.T.lijst.map((t) => { const l = f.stemmen.filter(({ z }) => zaakThemas(z).includes(t.id)); return { t, n: l.length, voor: l.filter((s) => s.voor).length }; }).filter((x) => x.n >= 3);
+    const perThema = S.T.lijst.map((t) => { const l = f.stemmen.filter(({ z }) => zaakThemas(z).includes(t.slug)); return { t, n: l.length, voor: l.filter((s) => s.voor).length }; }).filter((x) => x.n >= 3);
     return `${intro}${themaKeuze(`#fracties?f=${encodeURIComponent(f.naam)}`)}
       <h2>${esc(f.naam)}</h2>
       <div class="stats drie">
@@ -1155,7 +1225,7 @@
         <div class="stat"><div class="num">${nl(ing.length)}</div><div class="lbl">moties en amendementen als eerste indiener, ${ing.filter((z) => z.uitslag === "aangenomen").length} aangenomen</div></div>
         <div class="stat"><div class="num">${pct(st.filter((s) => s.voor).length, st.length)}</div><div class="lbl">voor gestemd, ${nl(st.filter((s) => s.voor).length)} van ${nl(st.length)} stemmingen</div></div>
       </div>
-      ${perThema.length && !thema ? `<h3 class="groepkop">Stemgedrag per thema</h3><div class="card"><ul class="list themastem">${perThema.map((x) => `<li><span class="tchip"><i style="background:${x.t.kleur}"></i>${esc(x.t.naam)}</span><span class="balk" role="img" aria-label="${x.voor} van ${x.n} voor"><span style="width:${(100 * x.voor) / x.n}%"></span></span><span class="small">${x.voor} van ${x.n} voor</span></li>`).join("")}</ul></div>` : ""}
+      ${perThema.length && !thema ? `<h3 class="groepkop">Stemgedrag per thema</h3><div class="card"><ul class="list themastem">${perThema.map((x) => `<li><span class="tchip">${esc(x.t.label)}</span><span class="balk" role="img" aria-label="${x.voor} van ${x.n} voor"><span style="width:${(100 * x.voor) / x.n}%"></span></span><span class="small">${x.voor} van ${x.n} voor</span></li>`).join("")}</ul></div>` : ""}
       <h3 class="groepkop">Inbreng in vergaderingen <span class="muted small">(${inb.length})</span></h3>
       ${inb.length ? `<div class="card"><ul class="list">${inb.map(({ d, p }) => `<li><div class="zmeta"><span class="tag">${esc(d.type)}</span><span class="datum">${fmtKort(d.datum)}</span><span>${esc(p.spreker || "")}</span></div>
         <a class="ltitel" href="#vergaderingen/d-${esc(d.id)}">${esc(d.titel)}</a><div>${esc(p.positie)}</div>${p.link ? `<a class="small" href="${esc(p.link)}" target="_blank" rel="noopener">Terugluisteren</a>` : ""}</li>`).join("")}</ul></div>` : `<p class="empty">Geen inbreng in samengevatte vergaderingen${thema ? " over dit thema" : ""}.</p>`}
@@ -1181,7 +1251,7 @@
     const sleutels = new Set(acts.map((x) => x.datum + "|" + x.titel.toLowerCase().slice(0, 20)));
     const eigen = S.data.agenda.filter((i) => !sleutels.has((i.datum || "") + "|" + (i.titel || "").toLowerCase().slice(0, 20))).map((i) => ({
       datum: i.datum, t: i.datum || "", tijd: i.tijd || "", type: i.type || "Mijlpaal", titel: i.titel, eigen: true, url: i.url,
-      thema: themasVanTekst(i.titel, i.sectoren || (i.sector ? [i.sector] : [])), dossier: dossiersVanAgendaItem(i), gepland: true }));
+      thema: themasVanAgendaItem(i), dossier: dossiersVanAgendaItem(i), gepland: true }));
     return (_ti = { vast: [...acts, ...eigen.filter((i) => isDatum(i.datum))].sort((a, b) => a.t.localeCompare(b.t)), vaag: eigen.filter((i) => !isDatum(i.datum)).sort((a, b) => sortKey(a.datum).localeCompare(sortKey(b.datum))) });
   }
   function agenda() {
@@ -1360,7 +1430,7 @@ ${uit.typeFilter ? ` Alleen <b>${esc(uit.typeFilter)}</b>, omdat dat woord in je
           <li><b>Samenvattingen:</b> debatten worden door Claude samengevat op basis van automatische transcripten van <a href="https://gehoord.de/beraadslagingen">gehoord.de</a>. Die transcripten zijn niet door mensen gecorrigeerd en sprekers kunnen er soms een paar seconden naast zitten. Gebruik de links om na te luisteren en citeer de Handelingen.</li>
           <li><b>Wetgevingsdossiers</b> worden handmatig bijgehouden met bronvermelding.</li>
           <li><b>Toezeggingen</b> komen uit het toezeggingenregister van de Tweede Kamer; voor recente vergaderingen die daar nog niet in staan uit onze samenvatting.</li>
-          <li><b>Thema's</b> worden automatisch toegekend op basis van trefwoorden in titels en agendapunten, en bij samenvattingen met de hand gecontroleerd. Moties worden aan een vergadering gekoppeld als de datum en het Kamerstukdossier overeenkomen; bij twijfel niet.</li>
+          <li><b>Thema's</b>: alles valt in tien vaste thema's (zie <a href="#themas">Thema's</a>). Een voorstel komt uit trefwoorden in titels, agendapunten en Kamerstukdossiers; nagekeken indelingen gaan daarvoor. Wat de trefwoorden niet zeker kunnen indelen, blijft zonder thema tot het is beoordeeld. Moties worden aan een vergadering gekoppeld als de datum en het Kamerstukdossier overeenkomen; bij twijfel niet.</li>
           <li><b>Privacy:</b> de site gebruikt geen cookies of tracking.</li>
         </ul>
         <h3>Status</h3>

@@ -52,8 +52,12 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 
 ## Thema's en pagina's
 
-- Thema's staan in `data/themas.json` (id, naam, kleur, trefwoorden als reguliere expressies, en `terugval` per sector). `assets/themas.js` kent ze toe: titel telt altijd, agendapunten pas bij twee treffers. Thema's mogen meervoudig zijn.
-- Tabs: Overzicht, Agenda, Wetgeving, Moties, Vergaderingen, Stukken, Over. `#debatten` blijft werken als alias voor `#vergaderingen`.
+- Thema's (sinds 13 nov 2026 tien vaste): de indeling zelf (slug, label, volgorde, beschrijving) staat in `THEMAS` in `assets/themas.js`; alle pagina's lezen die. Geen kleur of icoon per thema (DESIGN.md, "Themes").
+  - Toekenning: eerst de goedgekeurde mapping `data/themas-mapping.json` (platte sleutels `zaak:<nummer>`, `stuk:<D-nummer>`, `debat:<activiteitnummer of samenvatting-id>`, `dossier:<id>`, `agenda:<datum>-<titel>`; velden `themas` en `bron`), dan het veld `themas` in een samenvatting, dan de trefwoordregels in `data/themas.json`. Regels: titel telt altijd, agendapunten pas bij twee treffers, de titel van het Kamerstukdossier alleen als de titel niets oplevert (begrotingen alleen als suggestie). Geen terugval op sector: zonder treffer blijft een item zonder thema ("te beoordelen"). Sectoroverstijgend is een inhoudelijk thema, geen restbak.
+  - Wekelijkse review: `node pipeline/themas_review.js --nieuw` maakt `themas-review-nieuw.csv` met alleen items die nog niet in de mapping staan; Tobias kijkt die na; `node pipeline/themas_review.js --import <csv>` zet de nagekeken rijen in de mapping. `themas-review*.csv` staat niet in git.
+  - Alle items die een thema kunnen krijgen komen uit `MRThemas.bronItems` (wetten = gevolgde dossiers plus TK-wetsvoorstellen zonder dossier; moties; amendementen; Kamerbrieven; antwoorden op Kamervragen; vergaderingen; agenda). Pagina, CSV en noscript-lijst tellen dus hetzelfde.
+  - `pipeline/themas_noscript.js` schrijft de thema's met tellingen in het `<noscript>`-blok van `index.html` (de Action draait het dagelijks).
+- Tabs: Overzicht, Thema's, Agenda, Wetgeving, Moties, Vergaderingen, Stukken, Over. `#themas` is het overzicht, `#themas/<slug>` een thema (`?type=` is gereserveerd voor filters). `#debatten` blijft werken als alias voor `#vergaderingen`.
 - Vergaderingen: filters (type, commissie, ministerie, thema, dossier; meerdere waarden per filter), samenvatting ja/nee, groeperen en ordenen. De filters staan in de URL (bv. `#vergaderingen?thema=adaptatie&groep=commissie`), dus deelbaar.
 - Agenda: tijdlijn per week en dag, opent bij vandaag; "Eerder laden" gaat per 4 weken terug tot de start van de Kamerperiode. `#agenda?dossier=<id>` filtert op dossier.
 - Agendafeed: `pipeline/maak_ics.py` schrijft `data/agenda.ics` (geplande en recente activiteiten plus mijlpalen met vaste datum); de Action draait hem na de data-update. Abonneerknop op de Agenda-pagina.

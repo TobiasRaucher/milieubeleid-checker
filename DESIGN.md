@@ -40,7 +40,7 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 - `--bad` `#d6343a` (same red) is only the status dot for verworpen.
 - Status dots, a traffic light: aangenomen/afgedaan `--good` `#1a7f4b`, in behandeling/aangehouden/openstaand `--warning` `#d59a0a`, verworpen `--bad` `#d6343a`, ingetrokken/vervallen `--neutraal-stip` `#a3aba6`. The dot carries the color, the word carries the meaning; the word stays ink.
 - Votes: voor `--voor` = ink, tegen `--tegen` `#cdd3cf`. Empty bars and phases not yet reached: `--spoor` `#e4e7e5`.
-- Theme colors (9, in `data/themas.json`) appear only as an 8px dot.
+- Themes have no color (since 13 Nov 2026; the nine colored dots are gone). See "Themes".
 
 ### Type
 
@@ -103,7 +103,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 1. No hue gradients, gradient text, glows, colored shadows, color washes or blurred glass (`backdrop-filter`).
 2. No green surfaces, green borders as decoration, green section labels or green links (the one exception is the per-row type in Net binnen, see Accent). Links are ink with a hairline underline and turn green on hover.
 3. No red for anything except over the limit, today, eerstvolgend and the verworpen status dot. Not for votes against, not for text, not for row backgrounds.
-4. No blue or other hue outside the ramp, accent, alarm and the status/theme dots.
+4. No blue or other hue outside the ramp, accent, alarm and the status dots. No color or icon per theme, sector or category.
 5. No uppercase tracked labels, no weight 700, no italic for emphasis, no negative tracking below 18px.
 6. No emoji or Unicode glyphs as icons; no arrows appended to link text.
 7. No filled badges; no pill shapes outside the main tab bar.
@@ -127,6 +127,19 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 
 - Order and widths: Net binnen left (3fr), Komt eraan right (2fr) from 1000px; stacked in that order below. Both sections are unboxed headings with a card under them, like "Wat Nederland uitstoot", which has no card at all. The two cards stretch to one bottom edge: the list grows, the kaartvoet stays at the bottom.
 - A Net binnen row is one flowing line, 14/22, pieces 8 apart: the document type in accent at 500 (`Antwoord Kamervragen`, `Kamerbrief`, `Motie`, `Amendement`, `Wetsvoorstel`), the date (muted, tabular), the status (dot plus word) or the ministry or Kamerstuk number (ink-2), the title (ink, 15/500, the link), then a muted 13px tail: indiener as surname plus fractie with c.s. (same `indienerKort` as the Moties table) and `· Voor X / Tegen Y`, the Kamerstuk and dossier for a stuk, or the step for a wetsvoorstel. Names in titles lose their initials after "het lid" or "de leden". Type label, date, indiener and vote never break inside themselves.
+
+## Themes
+
+Ten fixed themes, defined once in `THEMAS` in `assets/themas.js` (slug, label, order, description). Every page that shows themes (Thema's, filters on Vergaderingen and Stukken, Per fractie, chips on cards) reads that constant; nothing else defines a theme name or order.
+
+- **No color, no icon per theme.** A theme is a word. Theme chips (`.tchip`) are neutral outline chips: 12px ink-2 text, `--line` border, radius 6, the same as dossier chips. Clickable chips get `--line-sterk` and ink on hover; a 4px invisible extension keeps the hit area at least 24px tall. The selected state (a theme chosen as filter) is the one accent fill, as for every chip.
+- **Overview (`#themas`).** Page title, one muted intro line that also says how many items are not yet classified, then the ten themes in fixed order as a grid of cards (`.themagrid`, `minmax(300px, 1fr)`, gap 16). This is a list of destinations, not a row of stat tiles, so Don't 10 does not apply. Each card is one `<a>` (`.themakaart`): title 18/500, the total in 14 ink, the count per document type in 13 ink-2 (`3 wetten · 5 moties · 2 brieven`, singular when 1, types in the order of the detail page), and at the bottom the eerstvolgend moment: the type as a `.tag`, the date, and the title on one muted line with an ellipsis. Hover: border to `--line-sterk` and an underline on the title (like `.ltitel`); focus: the 2px accent ring. No accent fill and no red on the cards; the date turns `--alarm-tekst` only when the moment is today.
+- **"items".** The total and the unclassified count say "items" because they count across document types (Tobias's request of 13 Nov 2026). This is the one exception to the template-check rule against generic units; everywhere else, name the parliamentary unit.
+- **Empty theme.** The card stays, with "Nog geen items" in muted 14. The taxonomy is fixed, so a theme is never hidden.
+- **Unknown slug.** Page title "Thema niet gevonden" and one sentence with a link back to `#themas`, no card.
+- **Detail (`#themas/<slug>`), to build after the mapping review.** Now: a small "Alle thema's" link above the page title, the description at body size under it, the counts. Planned below that: groups follow the order in `SOORTEN` (Wetten, Amendementen, Moties, Kamerbrieven, Antwoorden op Kamervragen, Vergaderingen, Agenda), each with a `h3.groepkop` and its count. Status as the usual dot plus word. Other themes of an item as neutral chips that link to their theme page. Hierarchy: page title (30) > group head (15/600 with hairline) > card title > meta (13, muted).
+- **Routes.** `#themas` and `#themas/<slug>`; `#themas/<slug>?type=<param>` is reserved for filters (`param` in `SOORTEN`: wetten, amendementen, moties, kamerbrieven, antwoorden, vergaderingen, agenda).
+- **Without JavaScript.** `pipeline/themas_noscript.js` writes the ten themes with their counts and descriptions into the `<noscript>` block of `index.html` (between the `themas:begin`/`themas:end` markers; the Action runs it daily). Hash routes need JavaScript; that is a known limit.
 
 ## Tables
 
@@ -164,6 +177,7 @@ What did not survive the swap, and must stay: the Kamer-native material itself (
 - Tokens: top of `assets/style.css` ("ontwerpknoppen").
 - Icons: `ICO` and `ico()` near the top of `assets/app.js`.
 - Emissions chart with its targets: `assets/milieu.js`.
+- Themes: `THEMAS`, the rules engine and the shared item list in `assets/themas.js`; keyword rules in `data/themas.json`; approved per-item themes in `data/themas-mapping.json`; review CSV and import in `pipeline/themas_review.js`; noscript list in `pipeline/themas_noscript.js`.
 
 ### Known duplication (to dedupe later)
 

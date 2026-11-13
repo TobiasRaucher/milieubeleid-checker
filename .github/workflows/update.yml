@@ -23,11 +23,13 @@ jobs:
         run: python3 pipeline/fetch_tk.py
       - name: Agendafeed maken
         run: python3 pipeline/maak_ics.py
+      - name: Thema-lijst voor noscript
+        run: node pipeline/themas_noscript.js
       - name: Wijzigingen opslaan
         run: |
           git config user.name "checker-bot"
           git config user.email "checker-bot@users.noreply.github.com"
-          git add data/tk data/agenda.ics
+          git add data/tk data/agenda.ics index.html
           if git diff --cached --quiet; then
             echo "Geen wijzigingen."
           else

@@ -1,0 +1,3 @@
+{
+ "_uitleg": "Goedgekeurde thema's per item; gaat voor de regels in data/themas.json. Sleutels: zaak:<zaaknummer>, stuk:<documentnummer>, debat:<activiteitnummer of samenvatting-id>, dossier:<dossier-id>, agenda:<datum>-<titel>. bron: regels (voorstel ongewijzigd goedgekeurd) of review (aangepast bij de review). themas: [] betekent bewust zonder thema. Vullen met: node pipeline/themas_review.js --import <nagekeken csv>."
+}

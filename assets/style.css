@@ -50,7 +50,7 @@
   --tegen: #cdd3cf;              /* stemmen tegen: neutrale stap */
   --spoor: #e4e7e5;              /* lege balk, fase nog niet bereikt */
 
-  /* Sectorkleuren (worden niet meer op de site getoond; thema's hebben hun eigen kleur in data/themas.json) */
+  /* Sectorkleuren (worden niet getoond; thema's hebben bewust geen eigen kleur, zie DESIGN.md "Themes") */
   --s-klimaat-energie: #9e6600;
   --s-water-adaptatie: #2f6fd6;
   --s-natuur-stikstof-landbouw: #6d7d00;
@@ -152,8 +152,8 @@ main, main.wrap { padding-bottom: 64px; } /* main.wrap: .wrap zet de padding and
 h2 { font-size: var(--t-20); line-height: 1.3; letter-spacing: -0.005em; margin: 40px 0 12px; }
 h3 { font-size: var(--t-15); line-height: 1.35; margin: 0 0 4px; }
 /* paginatitel: de eerste kop van een pagina */
-#view > h2:first-child, #view > .subnav + h2, #zoekres > h2, .agendakop h2 { font-size: var(--t-30); line-height: 1.15; letter-spacing: -0.02em; margin: 32px 0 8px; }
-#view > h2:first-child + p, #view > .subnav + h2 + p { max-width: 96ch; margin: 0 0 16px; font-size: var(--t-14); line-height: 1.5; }
+#view > h2:first-child, #view > .subnav + h2, #view > .terug + h2, #zoekres > h2, .agendakop h2 { font-size: var(--t-30); line-height: 1.15; letter-spacing: -0.02em; margin: 32px 0 8px; }
+#view > h2:first-child + p, #view > .subnav + h2 + p, #view > .terug + h2 + p { max-width: 96ch; margin: 0 0 16px; font-size: var(--t-14); line-height: 1.5; }
 h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px; font-size: var(--t-15); font-weight: 600; color: var(--ink); padding-bottom: 8px; border-bottom: 1px solid var(--line); }
 .telregel { margin: 12px 0; }
 
@@ -242,8 +242,6 @@ a.stat:active { background: var(--raised); }
 .kaartlabels { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; margin: 4px 0 8px; }
 .tchips, .dchips { display: inline-flex; flex-wrap: wrap; gap: 4px; }
 .tchip, .dchip { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-size: var(--t-12); line-height: 20px; color: var(--ink-2); background: transparent; border: 1px solid var(--line); border-radius: var(--r-tag); padding: 0 8px; }
-.tchip i, .dotje, .sdot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex: none; }
-.tchip { padding-left: 8px; }
 button.tchip, .dchip { cursor: pointer; position: relative; transition: border-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease); }
 button.tchip:hover, .dchip:hover { border-color: var(--line-sterk); color: var(--ink); }
 button.tchip::before, .dchip::before { content: ""; position: absolute; inset: -4px 0; }
@@ -255,7 +253,6 @@ button.tchip::before, .dchip::before { content: ""; position: absolute; inset: -
 .chip:hover:not(:disabled):not([aria-pressed="true"]) { border-color: var(--line-sterk); background: var(--surface); color: var(--ink); }
 .chip[aria-pressed="true"], .subnav a.actief { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 500; }
 .chip[aria-pressed="true"] .muted, .chip[aria-pressed="true"] .n { color: rgba(255, 255, 255, 0.8); }
-.chip[aria-pressed="true"] .sdot { box-shadow: 0 0 0 2px #fff; }
 .chip:disabled { color: var(--muted); cursor: not-allowed; opacity: 0.6; }
 .chip .n { color: var(--muted); font-size: var(--t-12); }
 .chip.actief { min-height: 32px; padding: 4px 8px 4px 12px; font-size: var(--t-13); background: var(--surface); border-color: transparent; }
@@ -515,6 +512,25 @@ li.tz { padding: 16px 0; }
 .zoeklijst mark, .ztitel mark { background: #fff1a8; color: inherit; border-radius: 2px; padding: 0 2px; }
 .zoektips { color: var(--ink-2); }
 .zoektips code { font-family: var(--font-mono); font-size: var(--t-13); background: var(--surface); border-radius: 4px; padding: 0 4px; }
+/* Thema's: overzicht van tien vaste thema's; elke kaart is één link (DESIGN.md, "Themes") */
+.themas-intro { max-width: var(--leesbreedte); text-wrap: pretty; }
+.themagrid { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.themagrid > li { display: flex; min-width: 0; }
+.themakaart { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; min-height: 148px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 20px; color: var(--ink); text-decoration: none; transition: border-color var(--d-kort) var(--ease); }
+.themakaart:hover { border-color: var(--line-sterk); }
+.themakaart:hover h3 { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.themakaart:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.themakaart h3 { font-size: var(--t-18); line-height: 1.3; letter-spacing: -0.005em; font-weight: 500; margin: 0 0 4px; }
+.themakaart p { margin: 0; }
+.themakaart-tal { font-size: var(--t-14); color: var(--ink); font-variant-numeric: tabular-nums; }
+.themakaart-soorten { font-size: var(--t-13); color: var(--ink-2); font-variant-numeric: tabular-nums; text-wrap: pretty; }
+.themakaart-leeg { font-size: var(--t-14); color: var(--muted); }
+.themakaart-moment { margin-top: auto !important; padding-top: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; font-size: var(--t-13); color: var(--ink-2); }
+.themakaart-moment .datum { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.themakaart-moment .datum.vandaag { color: var(--alarm-tekst); font-weight: 500; }
+.themakaart-moment .moment-titel { flex-basis: 100%; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.terug { margin: 24px 0 0; }
+#view > .terug + h2 { margin-top: 8px; }
 .themastem li { display: grid; grid-template-columns: 220px minmax(0, 1fr) 112px; gap: 12px; align-items: center; }
 .themastem .tchip { justify-self: start; }
 .themastem .balk { height: 6px; background: var(--spoor); border-radius: 3px; overflow: hidden; }
