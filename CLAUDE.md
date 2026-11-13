@@ -20,7 +20,7 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
    - Technische briefings en rondetafelgesprekken: deskundigen in `kern`, vragen van Kamerleden in `partijen`.
    - `dossiers`: lijst van dossier-id's waar het debat over gaat. De site koppelt debatten en agenda-items ook automatisch aan dossiers (via Kamerstukdossiers van de agendapunten en zoektermen; zie `beleidsdossiers` en `kamerstukken`/`zoektermen` in `data/dossiers.json`). Vul `dossiers` alleen aan als de automatische koppeling iets mist, bv. een wetsdossier dat in het debat ter sprake kwam.
 4. Werk `data/dossiers.json` en `data/agenda.json` bij als er nieuwe stappen, consultaties of deadlines zijn (met bron-URL). Zoek bij twijfel op internet (eerstekamer.nl, internetconsultatie.nl, officielebekendmakingen.nl).
-   - Zet bij elke wijziging het veld `bijgewerkt` bovenin het gewijzigde bestand op het huidige tijdstip (ISO, UTC, bv. `2026-11-12T15:49:00Z`). De kop van de site toont het meest recente tijdstip van alle bestanden als "Bijgewerkt hh:mm, dd/mm/yyyy" (Nederlandse tijd).
+   - Zet bij elke wijziging het veld `bijgewerkt` bovenin het gewijzigde bestand op het huidige tijdstip (ISO, UTC, bv. `2026-11-12T15:49:00Z`). De kop van de site toont het meest recente tijdstip van alle bestanden als "Bijgewerkt 12 nov 2026 21:59" (Nederlandse tijd).
 5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit en draai `node tests/zoektest.js`.
 6. Commit en push naar `main` (GitHub Pages publiceert automatisch).
 
@@ -64,15 +64,17 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 
 ## Ontwerp
 
+**Lees eerst `DESIGN.md` (bovenin de repo).** Daar staan de richting, alle ontwerpwaarden en de regels (doen en niet doen); die gaan voor alles hieronder. Elke wijziging aan het uiterlijk volgt DESIGN.md.
+
 - Huisstijl (nov 2026): "milieuradar" in kleine letters, DM Sans, groene merkkleur, rood als alarmkleur (vandaag, eerstvolgend), alleen licht thema. Alle kleuren en vormen staan als ontwerpknoppen bovenaan `assets/style.css`; sectorkleuren als `--s-<sectorcode>` (gelijke helderheid en verzadiging).
 - Verfijning volgens Apple-ontwerpprincipes (nov 2026):
   - directe feedback bij indrukken (`--duur-druk`);
   - kritisch gedempte "veer" voor beweging (`--veer`, `--duur-veer`), zonder doorschieten;
-  - doorschijnende kop met een rand die pas verschijnt als er inhoud onder schuift;
+  - kop met een rand die pas verschijnt als er inhoud onder schuift (sinds 13 nov 2026 een vaste witte kop, geen doorschijnend glas);
   - popovers die vanuit hun knop verschijnen;
   - vloeiend uitklappen van samenvattingen;
   - tracking en regelafstand per tekstgrootte;
-  - ondersteuning voor minder beweging, minder transparantie en meer contrast.
+  - ondersteuning voor minder beweging en meer contrast.
 
 - Tweede verfijningsronde (nov 2026):
   - tab-aanduiding die van tab naar tab glijdt (`.tab-glij`, gezet in `zetGlij()` in app.js);

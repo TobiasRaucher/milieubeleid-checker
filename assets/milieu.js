@@ -8,6 +8,7 @@
   const NL = (n, max = 1, min = 0) => new Intl.NumberFormat("nl-NL", { maximumFractionDigits: max, minimumFractionDigits: min }).format(n);
   const MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
   const datumNL = (iso) => { const [j, m, d] = iso.split("-").map(Number); return `${d} ${MAANDEN[m - 1]} ${j}`; };
+  const datumKort = (iso) => { const [j, m, d] = iso.split("-").map(Number); return `${d} ${MAANDEN[m - 1].slice(0, 3)} ${j}`; };
   const maandKort = (iso) => MAANDEN[+iso.slice(5, 7) - 1].slice(0, 3);
   const SVGNS = "http://www.w3.org/2000/svg";
   const minderBeweging = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -193,12 +194,13 @@
           el("div", { class: "co2-label", text: "CO₂ in de atmosfeer" }),
           el("div", { class: "co2-held" }, getal, el("span", { class: "co2-eenheid", text: "ppm" })),
           el("div", { class: "co2-meta" },
-            verschil != null ? el("span", { class: "co2-delta", text: `${verschil >= 0 ? "+" : "−"}${NL(Math.abs(verschil), 2, 2)} ppm vergeleken met een jaar eerder` }) : null,
-            el("span", { text: `Daggemiddelde op ${datumNL(l.datum)}, Mauna Loa (Hawaii)` })),
+            verschil != null ? el("span", { class: "co2-delta", text: `${verschil >= 0 ? "+" : "−"}${NL(Math.abs(verschil), 2, 2)} ppm vergeleken met een jaar eerder` }) : null),
           el("div", { class: "co2-ref small muted" },
             "Voor de industriële revolutie ongeveer 280 ppm; de ", el("a", { href: "#overzicht/planetaire-grenzen", text: "planetaire grens" }), " ligt op 350 ppm.")),
         el("div", { class: "co2-trend" }, el("div", { class: "co2-trend-kop small muted", text: "Afgelopen jaar" }), el("div", { class: "co2-spark" })),
-        el("div", { class: "co2-bron small muted" }, "Bron: ", el("a", { href: c.bronUrl, target: "_blank", rel: "noopener", text: "NOAA Global Monitoring Laboratory" }), ". Daggemiddelden verschijnen met een of twee dagen vertraging; recente waarden zijn voorlopig."));
+        el("div", { class: "co2-bron" },
+          el("span", { class: "small muted" }, "Bron: ", el("a", { href: c.bronUrl, target: "_blank", rel: "noopener", text: "NOAA Global Monitoring Laboratory" }), ". Daggemiddelden verschijnen met een of twee dagen vertraging; recente waarden zijn voorlopig."),
+          el("span", { class: "peil", text: `NOAA · Mauna Loa, Hawaii · daggemiddelde ${datumKort(l.datum)}` })));
       doos.classList.remove("mi-laadt");
       const jaarTerug = new Date(Date.parse(l.datum) - 365 * 864e5).toISOString().slice(0, 10);
       const reeks = c.reeks.filter(([d]) => d >= jaarTerug);
@@ -227,10 +229,14 @@
         STOFFEN.map((s) => el("button", { type: "button", class: "chip", "aria-pressed": String(s.code === _stof), "data-stof": s.code, title: s.naam,
           onclick: () => { _stof = s.code; teken(); } }, s.kort)));
       const kop = el("div", { class: "mi-stat" });
+      const peil = el("span", { class: "peil" });
       const grafiek = el("div", { class: "mi-plek" });
       const uitleg = el("p", { class: "small mi-uitleg" });
       const tabel = el("details", { class: "mi-tabel" });
-      vervang(doos, knoppen, kop, grafiek, uitleg, tabel,
+      vervang(doos,
+        el("div", { class: "mi-uitstoot-raster" },
+          el("div", { class: "mi-links" }, knoppen, kop, peil, uitleg),
+          el("div", { class: "mi-rechts" }, grafiek, tabel)),
         el("p", { class: "small muted mi-bron" }, "Bron: ", el("a", { href: "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85668NED/table", target: "_blank", rel: "noopener", text: "CBS StatLine, tabel 85668NED" }),
           " (totaal van stationaire en mobiele bronnen). Dit is de feitelijke uitstoot op Nederlands grondgebied. Het doel van de Klimaatwet wordt gemeten met de broeikasgascijfers volgens de IPCC-richtlijnen (alle broeikasgassen samen), die het CBS in een aparte tabel publiceert."));
       doos.classList.remove("mi-laadt");
@@ -243,11 +249,12 @@
         kop.replaceChildren(
           el("div", { class: "mi-stat-waarde" }, el("b", { text: NL(laatst.waarde / s.deel, laatst.waarde / s.deel < 100 ? 1 : 0) }), ` ${s.eenheid} ${s.kort}`),
           el("div", { class: "small mi-stat-sub" }, `${s.naam} in ${laatst.jaar}${laatst.voorlopig ? " (voorlopig)" : ""} · ${pct > 0 ? "+" : pct < 0 ? "−" : ""}${Math.abs(pct)}% ten opzichte van ${eerste.jaar}`));
+        peil.textContent = `CBS · tabel 85668NED · ${laatst.jaar}${laatst.voorlopig ? " voorlopig" : ""}`;
         uitleg.textContent = s.uitleg;
         const xt = [1990, 2000, 2010, 2020].filter((j) => j >= eerste.jaar && j < laatst.jaar - 2).map((j) => ({ x: j, label: String(j) }));
         xt.push({ x: laatst.jaar, label: String(laatst.jaar) });
         lijnGrafiek(grafiek, r.map((p) => ({ x: p.jaar, y: p.waarde, voorlopig: p.voorlopig, waarde: `${NL(p.waarde / s.deel, p.waarde / s.deel < 100 ? 1 : 0)} ${s.eenheid}`, label: `${s.kort} in ${p.jaar}`, extra: p.voorlopig ? "voorlopig cijfer" : null })),
-          { hoogte: 240, yNul: true, aria: `Uitstoot van ${s.naam} (${s.kort}) in Nederland per jaar, ${eerste.jaar} tot ${laatst.jaar}, in ${s.eenheid}`, yFmt: fmt, xTicks: xt });
+          { hoogte: grafiek.clientWidth > 640 ? 320 : 240, yNul: true, aria: `Uitstoot van ${s.naam} (${s.kort}) in Nederland per jaar, ${eerste.jaar} tot ${laatst.jaar}, in ${s.eenheid}`, yFmt: fmt, xTicks: xt });
         tabel.replaceChildren(el("summary", { text: `Toon de cijfers als tabel (${s.kort})` }),
           el("div", { class: "tablewrap" }, el("table", {},
             el("thead", {}, el("tr", {}, el("th", { text: "Jaar" }), el("th", { class: "n", text: `${s.kort} (${s.eenheid})` }))),
@@ -274,16 +281,32 @@
       const n = groepen.filter((g) => g.over).length;
       const jaar = Math.max(...rijen.map((r) => +r.current_year || 0));
       const waarde = (v, e) => `${NL(+v, 3)}${!e ? "" : e.startsWith("%") ? e : " " + e}`; // "59%", "30% HANPP", "428,24 ppm"
-      vervang(doos, 
+      // schaal van 0 tot iets voorbij de grootste van stand en grens; de grens is een streep, het gebied voorbij de grens is rood
+      const schaal = (r) => {
+        const cur = +r.current_value, bnd = +r.boundary_value, neg = r.boundary_direction === "negative";
+        const max = Math.max(cur, bnd) * 1.25 || 1;
+        const pos = (v) => Math.max(0, Math.min(100, (v / max) * 100));
+        const zone = neg ? { left: "0%", width: pos(bnd) + "%" } : { left: pos(bnd) + "%", width: 100 - pos(bnd) + "%" };
+        return el("div", { class: "pg-schaal", "aria-hidden": "true" },
+          el("span", { class: "spoor" }),
+          el("span", { class: "zone", style: `left:${zone.left};width:${zone.width}` }),
+          el("span", { class: "grens", style: `left:${pos(bnd)}%` }),
+          el("span", { class: "stand", style: `left:${pos(cur)}%` }));
+      };
+      vervang(doos,
         el("div", { class: "mi-stat" }, el("div", { class: "mi-stat-waarde" }, el("b", { text: `${n} van de ${groepen.length}` }), " grenzen overschreden"),
-          el("div", { class: "small mi-stat-sub", text: `Stand ${jaar}. Volgens de onderzoekers blijft het aardsysteem binnen deze grenzen stabiel; daarbuiten neemt het risico op grote, onomkeerbare veranderingen toe.` })),
+          el("div", { class: "small mi-stat-sub", text: "Volgens de onderzoekers blijft het aardsysteem binnen deze grenzen stabiel; daarbuiten neemt het risico op grote, onomkeerbare veranderingen toe." })),
+        el("span", { class: "peil", text: `Datahub · Planetary Boundaries · stand ${jaar}` }),
         el("ul", { class: "pg-raster" }, groepen.map((g) => el("li", { class: `pg-tegel ${g.over ? "over" : "binnen"}` },
           el("div", { class: "pg-kop" },
-            el("span", { class: `pill pg-status ${g.over ? "over" : "binnen"}` }, el("span", { class: "pg-icoon", "aria-hidden": "true", text: g.over ? "!" : "✓" }), g.over ? "overschreden" : "binnen de grens")),
-          el("div", { class: "pg-naam", text: g.naam }),
-          el("ul", { class: "pg-ind" }, g.ind.map((i) => el("li", {},
+            el("div", { class: "pg-naam", text: g.naam }),
+            el("span", { class: "pg-status", text: g.over ? "Overschreden" : "Binnen de grens" })),
+          el("ul", { class: "pg-ind" }, g.ind.map((i) => el("li", { class: over(i.r) ? "over" : "" },
             el("span", { class: "pg-ind-naam", text: i.naam }),
-            el("span", { class: "pg-ind-waarde" }, el("b", { text: waarde(i.r.current_value, i.eenheid) }), ` (grens ${i.r.boundary_direction === "negative" ? "minimaal" : "maximaal"} ${waarde(i.r.boundary_value, i.eenheid)})`))))))),
+            el("span", { class: "pg-ind-waarde", "aria-label": `${waarde(i.r.current_value, i.eenheid)}, grens ${i.r.boundary_direction === "negative" ? "minimaal" : "maximaal"} ${waarde(i.r.boundary_value, i.eenheid)}` },
+              el("b", { text: waarde(i.r.current_value, i.eenheid) }),
+              el("span", { text: `grens ${i.r.boundary_direction === "negative" ? "min." : "max."} ${waarde(i.r.boundary_value, i.eenheid)}` })),
+            schaal(i.r))))))),
         toegepast.length ? el("p", { class: "small mi-correctie" }, ...toegepast.flatMap((c) => [el("b", { text: "Correctie: " }), c.toelichting + " Bron: ", el("a", { href: c.url, target: "_blank", rel: "noopener", text: c.bron }), ". "])) : null,
         el("p", { class: "small muted mi-bron" }, "Bron: ", el("a", { href: def.bronUrl, target: "_blank", rel: "noopener", text: "Datahub, Planetary Boundaries" }),
           " (Steffen e.a. 2015, Richardson e.a. 2023). Elke grens heeft een of twee meetwaarden; een grens telt als overschreden als een van die waarden over de grens is."));
@@ -296,10 +319,9 @@
   /* ---------- koppeling met app.js ---------- */
   window.MRMilieu = {
     co2Html: () => `<section class="co2-band mi-laadt" id="mi-co2" aria-label="CO₂ in de atmosfeer"><div class="sk co2-sk"></div></section>`,
-    sectieHtml: () => `<h2>Uitstoot en planetaire grenzen</h2>
-      <div class="grid two mi-sectie">
-        <section class="card mi-kaart mi-laadt" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h3 id="mi-uitstoot-kop">Uitstoot naar de lucht in Nederland</h3><div class="mi-inhoud"><div class="sk" style="height:300px"></div></div></section>
-        <section class="card mi-kaart mi-laadt" id="planetaire-grenzen" aria-labelledby="mi-grenzen-kop"><h3 id="mi-grenzen-kop">Planetaire grenzen</h3><div class="mi-inhoud"><div class="sk" style="height:300px"></div></div></section>
+    sectieHtml: () => `<div class="mi-sectie">
+        <section class="card mi-kaart mi-laadt" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h2 id="mi-uitstoot-kop">Uitstoot naar de lucht in Nederland</h2><div class="mi-inhoud"><div class="sk sk-kaart"></div></div></section>
+        <section class="card mi-kaart mi-laadt" id="planetaire-grenzen" aria-labelledby="mi-grenzen-kop"><h2 id="mi-grenzen-kop">Planetaire grenzen</h2><div class="mi-inhoud"><div class="sk sk-kaart"></div></div></section>
       </div>`,
     vul() {
       const c = document.getElementById("mi-co2"); if (c) vulCo2(c);
