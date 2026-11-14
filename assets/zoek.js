@@ -16,9 +16,9 @@
    - alle woorden moeten voorkomen; levert dat niets op, dan volstaat een deel van de woorden.
 */
 (function (root, factory) {
-  if (typeof module === "object" && module.exports) module.exports = factory(require("./vendor/minisearch.min.js"));
-  else root.MRZoek = factory(root.MiniSearch);
-})(typeof self !== "undefined" ? self : this, function (MiniSearch) {
+  if (typeof module === "object" && module.exports) module.exports = factory(require("./vendor/minisearch.min.js"), require("./themas.js"));
+  else root.MRZoek = factory(root.MiniSearch, root.MRThemas);
+})(typeof self !== "undefined" ? self : this, function (MiniSearch, MRThemas) {
   "use strict";
 
   /* ---------- normalisatie ---------- */
@@ -134,7 +134,7 @@
         sectoren: z.sectoren || [], titel: isWet ? (z.titel || z.onderwerp) : korteTitel(z),
         tekst: j([z.onderwerp, z.titel, z.nummer, ...(z.dossiers || []).map((x) => `${x.nummer} ${x.titel || ""}`), z.kabinetsappreciatie]),
         personen: j((z.indieners || []).map((i) => `${i.naam} ${i.fractie || ""}`)),
-        link: z.link, extern: true, uitslag: z.uitslag,
+        link: MRThemas.tkUrl(z), extern: true, uitslag: z.uitslag,
       });
     }
     for (const x of D.stukken || []) {

@@ -185,5 +185,14 @@
     { code: "agenda", param: "agenda", groep: "Agenda", een: "op de agenda", veel: "op de agenda" },
   ];
 
-  return { THEMAS, SOORTEN, maak, norm, sleutel, bronItems, themasVanItem, korteTitel, stukTitel, typeNaam };
+  // officiële pagina op tweedekamer.nl: motie of amendement via het D-nummer (tkLink uit de pipeline), een wetsvoorstel via
+  // zijn Kamerstuknummer, anders zoeken op het zaaknummer. OpenTK (z.link) staat alleen nog als tweede link in de details.
+  function tkUrl(z) {
+    if (z.tkLink) return z.tkLink;
+    const d = (z.dossiers || [])[0];
+    if (/wetgeving/i.test(z.soort || "") && d) return `https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A${encodeURIComponent(`${d.nummer}${d.toevoeging ? "-" + d.toevoeging : ""}`)}`;
+    return `https://www.tweedekamer.nl/zoeken?q=${encodeURIComponent(z.nummer)}`;
+  }
+
+  return { THEMAS, SOORTEN, maak, tkUrl, norm, sleutel, bronItems, themasVanItem, korteTitel, stukTitel, typeNaam };
 });

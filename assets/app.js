@@ -187,7 +187,7 @@
     });
     const views = { overzicht, themas: themasPagina, wetgeving, moties, amendementen: moties, vragen: vragenBrieven, brieven: vragenBrieven, agenda, over, zoeken };
     const TITELS = { themas: "Thema's", agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties & Amendementen", amendementen: "Moties & Amendementen", vragen: "(Antwoord) Kamervragen", brieven: "Kamerbrieven", over: "Over", zoeken: "Zoeken" };
-    S.tabel = null;
+    S.tabel = null; S.themaLijst = null;
     document.title = TITELS[tab] ? `${TITELS[tab]} · milieuradar` : "milieuradar";
     if (tab === "themas" && pad.split("/")[1]) { const t = S.T.thema(pad.split("/")[1]); document.title = `${t ? t.label : "Thema niet gevonden"} · Thema's · milieuradar`; }
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
@@ -207,6 +207,7 @@
     _klik = false;
     zetScrollRand(); zetBoven();
     if (S.tabel) bindTabel();
+    if (S.themaLijst) bindThemaLijst();
     if (tab === "zoeken") renderZoekResultaten();
     if (tab === "overzicht" && window.MRMilieu) MRMilieu.vul();
     const sub = tab === "agenda" || tab === "themas" ? null : pad.split("/")[1];
@@ -258,16 +259,19 @@
     return `<li class="feed"><span class="feed-soort">${esc(soort)}</span><span class="feed-datum">${fmtKort(datum)}</span>${meta}<a class="ltitel" href="${esc(href)}"${doel}>${esc(zonderVoorletters(titel))}</a>${staart ? `<span class="feed-staart">${staart}</span>` : ""}</li>`;
   }
   const feedMeta = (html) => (html ? `<span class="feed-meta">${html}</span>` : "");
-  function netBinnen() {
+  // slug: alleen items met dit thema (themapagina); zonder slug alles (voorpagina)
+  function netBinnen(slug) {
     const items = [];
     for (const z of motiesEnAmendementen()) {
       const t = z.stemtelling;
       if (!t || !isDag(t.datum)) continue;
+      if (slug && !themasMotie(z).includes(slug)) continue;
       items.push({ soort: "Stemming", datum: t.datum, html: feedLi(z.soort, t.datum, feedMeta(uitslagPill(z.uitslag)),
         onderwerpZin(z), tkUrl(z), `<span class="nw">${indienerKort(z)}</span>${t.voor + t.tegen ? ` <span class="nw">· Voor ${t.voor} / Tegen ${t.tegen}</span>` : ""}`, true) });
     }
     for (const x of stukkenInSector()) {
       if (!isDag(x.datum)) continue;
+      if (slug && !themasBrief(x).includes(slug)) continue;
       const dossier = (x.dossiers || [])[0];
       // Kamervragen: aan welk ministerie, en als staart wie ze stelde (achternaam en fractie, zoals in de tabel)
       const staart = isVraag(x) ? `<span class="nw">${vragenstellerKort({ indieners: x.indieners || [] })}</span>`
@@ -278,8 +282,9 @@
     // wetgeving: nieuw ingediende wetsvoorstellen
     for (const z of wetsvoorstellenTK()) {
       if (!isDag(z.gestartOp)) continue;
+      if (slug && !themasWet(z).includes(slug)) continue;
       items.push({ soort: "Wetgeving", datum: z.gestartOp, html: feedLi("Wetsvoorstel", z.gestartOp, feedMeta("Ingediend"),
-        z.titel || z.onderwerp, z.link, `<span class="mono">${esc(dossierLabel(z))}</span>`, true) });
+        z.titel || z.onderwerp, tkUrl(z), `<span class="mono">${esc(dossierLabel(z))}</span>`, true) });
     }
     return items.sort((a, b) => b.datum.localeCompare(a.datum) || FEED_ORDE[a.soort] - FEED_ORDE[b.soort]).slice(0, NET_BINNEN_MAX);
   }
@@ -316,10 +321,6 @@
     }
     return (_themaIndex = { items, perThema });
   }
-  function telRegel(lijst) {
-    return window.MRThemas.SOORTEN.map((s) => { const n = lijst.filter((x) => x.soort === s.code).length; return n ? `${nl(n)} ${n === 1 ? s.een : s.veel}` : ""; })
-      .filter(Boolean).join(" · ");
-  }
   // Overzicht: alleen de naam; tellingen en details staan op de themapagina (Tobias, 14 nov 2026)
   function themaKaart(t) {
     return `<li><a class="themakaart" href="#themas/${esc(t.slug)}"><h3>${esc(t.label)}</h3></a></li>`;
@@ -352,9 +353,9 @@
     if (x.soort === "wet") {
       meta.push(uitslagPill(r.uitslag));
       if (r.dossiers?.length) meta.push(`<span class="mono">${esc(dossierLabel(r))}</span>`);
-      href = r.link;
+      href = tkUrl(r);
       feiten = feit("Titel", r.onderwerp && r.onderwerp !== r.titel ? esc(r.onderwerp) : "") + feit("Ingediend door", esc(r.indieners.map((i) => i.naam).join(", ")))
-        + feit("Laatste stap", r.gestartOp ? `${fmtDatum(r.gestartOp)}: ingediend` : "") + feit("Links", [r.tkLink && extLink(r.tkLink, "tweedekamer.nl"), extLink(r.link, "OpenTK")].filter(Boolean).join(" · "));
+        + feit("Laatste stap", r.gestartOp ? `${fmtDatum(r.gestartOp)}: ingediend` : "") + feit("Links", [extLink(tkUrl(r), "tweedekamer.nl"), extLink(r.link, "OpenTK")].join(" · "));
     } else if (x.soort === "motie" || x.soort === "amendement") {
       meta.push(uitslagPill(r.uitslag), `<span>${indienerKort(r)}</span>`);
       if (r.dossiers?.length) meta.push(`<span class="mono">${esc(dossierLabel(r))}</span>`);
@@ -391,26 +392,90 @@
       ${feiten ? `<details class="meer"><summary>Meer details</summary><dl class="facts">${feiten}</dl></details>` : ""}
     </li>`;
   }
+  // Themapagina: een schakelaar tussen Overzicht (Net binnen en Komt eraan voor dit thema) en de documentsoorten.
+  // Wetten, amendementen, moties, brieven en Kamervragen zijn dezelfde tabellen als op hun eigen pagina, beperkt tot dit thema
+  // (zonder Themakolom); vergaderingen en agenda blijven een lijst. Route: #themas/<slug>?type=<param>&<filters>.
+  const THEMA_TABS = [
+    { param: "wetten", label: "Wetten", def: () => WET_DEF, hint: "Zoek op titel, Kamerstuknummer of indiener", alle: "Wetgeving" },
+    { param: "amendementen", label: "Amendementen", def: () => motieDef("amendementen"), hint: "Zoek op onderwerp, Kamerlid of Kamerstuknummer", alle: "Moties & Amendementen" },
+    { param: "moties", label: "Moties", def: () => motieDef("moties"), hint: "Zoek op onderwerp, Kamerlid of Kamerstuknummer", alle: "Moties & Amendementen" },
+    { param: "kamerbrieven", label: "Kamerbrieven", def: () => BRIEF_DEF, hint: "Zoek op onderwerp of Kamerstuk", alle: "Vragen & Brieven" },
+    { param: "kamervragen", label: "Kamervragen", def: () => VRAAG_DEF, hint: "Zoek op onderwerp, Kamerlid of ministerie", alle: "Vragen & Brieven" },
+    { param: "vergaderingen", label: "Vergaderingen", soort: "vergadering", hint: "Zoek in vergaderingen" },
+    { param: "agenda", label: "Agenda", soort: "agenda", hint: "Zoek in de agenda" },
+  ];
+  // een tabeldefinitie beperkt tot één thema: zonder Themakolom en -filter, met het adres van de themapagina
+  function themaDef(def, slug, param) {
+    const inThema = def.filters.thema.waarden;
+    const { thema, ...filters } = def.filters;
+    return { ...def, filters, kolommen: def.kolommen.filter((c) => c.filter !== "thema"), gedeeld: (def.gedeeld || []).filter((k) => k !== "thema"),
+      rijen: () => def.rijen().filter((z) => inThema(z).includes(slug)), adres: `themas/${slug}`, vast: `type=${param}` };
+  }
+  const themaLijstItems = (slug, soort) => themaIndex().perThema.get(slug).filter((x) => x.soort === soort)
+    .sort((a, b) => soort === "agenda" ? sortKey(datumVan(a)).localeCompare(sortKey(datumVan(b))) : sortKey(datumVan(b)).localeCompare(sortKey(datumVan(a))));
   function themaDetail(slug) {
     const t = S.T.thema(slug);
     if (!t) return `<h2>Thema niet gevonden</h2><p class="themas-intro">Er is geen thema "${esc(slug)}". <a href="#themas">Naar alle thema's</a></p>`;
-    const lijst = themaIndex().perThema.get(t.slug);
-    const groepen = window.MRThemas.SOORTEN.map((so) => {
-      const l = lijst.filter((x) => x.soort === so.code)
-        .sort((a, b) => so.code === "agenda" ? sortKey(datumVan(a)).localeCompare(sortKey(datumVan(b))) : sortKey(datumVan(b)).localeCompare(sortKey(datumVan(a))));
-      if (!l.length) return "";
-      const meer = l.length - GROEP_ZICHTBAAR;
-      return `<section aria-labelledby="g-${so.param}">
-        <h3 class="groepkop" id="g-${so.param}">${esc(so.groep)} <span class="muted small">(${nl(l.length)})</span></h3>
-        <div class="card"><ul class="list" id="gl-${so.param}">${l.map((x, i) => themaRegel(x, t.slug).replace('<li class="themaregel">', `<li class="themaregel"${i >= GROEP_ZICHTBAAR ? " hidden" : ""}>`)).join("")}</ul>
-        ${meer > 0 ? `<button type="button" class="knop licht toonalle" data-toonalle="gl-${so.param}" aria-controls="gl-${so.param}" aria-expanded="false">Toon alle ${nl(l.length)} ${so.veel}</button>` : ""}</div>
-      </section>`;
-    }).join("");
-    return `<p class="small terug"><a href="#themas">Alle thema's</a></p>
+    const tabs = THEMA_TABS.map((tb) => {
+      const def = tb.def ? themaDef(tb.def(), t.slug, tb.param) : null;
+      return { ...tb, tdef: def, n: def ? def.rijen().length : themaLijstItems(t.slug, tb.soort).length };
+    }).filter((tb) => tb.n);
+    let gevraagd = (hashQuery().type || [])[0] || "";
+    if (gevraagd === "antwoorden") gevraagd = "kamervragen";
+    const actief = tabs.find((tb) => tb.param === gevraagd) || null;
+    const adres = `#themas/${esc(t.slug)}`;
+    const schak = `<nav class="schakelaar klein" aria-label="Onderdelen van dit thema">
+        <a href="${adres}"${actief ? "" : ' aria-current="page"'}>Overzicht</a>
+        ${tabs.map((tb) => `<a href="${adres}?type=${tb.param}"${tb === actief ? ' aria-current="page"' : ""}>${esc(tb.label)}<span class="schak-n">${nl(tb.n)}</span></a>`).join("")}
+      </nav>`;
+    const kop = `<p class="small terug"><a href="#themas">Alle thema's</a></p>
       <h2>${esc(t.label)}</h2>
-      <p class="themas-intro">${esc(t.description)}</p>
-      <p class="muted small">${lijst.length ? `${nl(lijst.length)} ${lijst.length === 1 ? "item" : "items"}: ${telRegel(lijst)}` : "Nog geen items"}</p>
-      ${groepen}`;
+      <p class="themas-intro">${esc(t.description)}</p>`;
+    if (actief && actief.tdef) {
+      const basis = actief.def();
+      return tabelPagina(actief.tdef, { titel: kop, links: schak },
+        `${esc(actief.label)} met het thema ${esc(t.label)}; dezelfde tabel als op <a href="#${basis.tab}?thema=${encodeURIComponent(t.slug)}">${esc(actief.alle)}</a>. Een klik op een rij opent het document op tweedekamer.nl.`,
+        actief.hint);
+    }
+    if (actief) {
+      const l = themaLijstItems(t.slug, actief.soort);
+      S.themaLijst = { slug: t.slug, param: actief.param };
+      const q = (hashQuery().q || []).join(",");
+      return `${kop}
+        <div class="filters motiekop">${schak}<input type="search" id="tlq" placeholder="${esc(actief.hint)}" value="${esc(q)}" aria-label="Zoeken"></div>
+        <div class="card"><ul class="list" id="tl-lijst">${l.map((x, i) => themaRegel(x, t.slug).replace('<li class="themaregel">', `<li class="themaregel"${i >= GROEP_ZICHTBAAR ? " hidden" : ""}>`)).join("")}
+          <li class="empty" id="tl-leeg" hidden>Niets gevonden</li></ul>
+        ${l.length > GROEP_ZICHTBAAR ? `<button type="button" class="knop licht toonalle" data-toonalle="tl-lijst" aria-controls="tl-lijst" aria-expanded="false">Toon alle ${nl(l.length)} ${esc(actief.label.toLowerCase())}</button>` : ""}</div>`;
+    }
+    // Overzicht: Net binnen en Komt eraan, zoals op de voorpagina, alleen voor dit thema
+    const binnen = netBinnen(t.slug);
+    const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG && (i._act ? themasVanAct(i._act) : themasVanAgendaItem(i)).includes(t.slug)).slice(0, 6);
+    const tabLink = (param, tekst) => (tabs.some((tb) => tb.param === param) ? `<a href="${adres}?type=${param}">${tekst}</a>` : "");
+    return `${kop}
+      <div class="filters motiekop">${schak}</div>
+      <div class="ov-onder thema-ov">
+        <section aria-labelledby="th-binnen"><h2 id="th-binnen">Net binnen</h2><div class="card"><ul class="list">
+          ${binnen.map((i) => i.html).join("") || `<li class="empty">Nog niets binnen</li>`}
+        </ul><div class="kaartvoet">${tabLink("kamervragen", "Kamervragen")}${tabLink("kamerbrieven", "Kamerbrieven")}${tabLink("moties", "Moties")}${tabLink("wetten", "Wetten")}</div></div></section>
+        <section aria-labelledby="th-komt"><h2 id="th-komt">Komt eraan</h2><div class="card"><ul class="list">
+          ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland</li>`}
+        </ul><div class="kaartvoet"><a href="#agenda?thema=${encodeURIComponent(t.slug)}">Agenda voor dit thema</a></div></div></section>
+      </div>`;
+  }
+  // Vergaderingen en Agenda op een themapagina: het zoekveld filtert de regels op tekst; de zoekterm staat in de URL
+  function bindThemaLijst() {
+    const { slug, param } = S.themaLijst, veld = $("#tlq"), ul = $("#tl-lijst"), leeg = $("#tl-leeg");
+    const regels = [...ul.querySelectorAll("li.themaregel")];
+    const toepassen = () => {
+      const q = veld.value.trim().toLowerCase(), knop = document.querySelector('[data-toonalle="tl-lijst"]');
+      if (q) regels.forEach((li) => { li.hidden = !li.textContent.toLowerCase().includes(q); });
+      else regels.forEach((li, i) => { li.hidden = !!knop && i >= GROEP_ZICHTBAAR; });
+      if (knop) knop.hidden = !!q;
+      leeg.hidden = regels.some((li) => !li.hidden);
+      history.replaceState(null, "", `#themas/${slug}?type=${param}${q ? `&q=${encodeURIComponent(veld.value.trim())}` : ""}`);
+    };
+    veld.addEventListener("input", toepassen);
+    if (veld.value.trim()) toepassen();
   }
   // "Toon alle": de verborgen regels van een groep tonen en de focus op de eerste nieuwe regel zetten
   document.addEventListener("click", (e) => {
@@ -531,7 +596,9 @@
       rows = alle.filter((z) => tabelPast(def, st, z)).sort(tabelVolgorde(def, st.richting));
       tekenKop();
       tekenRijen();
-      history.replaceState(null, "", `#${def.tab}${tabelQuery(def, st)}`);
+      // op een themapagina: eigen adres plus vast deel (type=...)
+      const q = tabelQuery(def, st);
+      history.replaceState(null, "", `#${def.adres || def.tab}${def.vast ? `?${def.vast}${q ? "&" + q.slice(1) : ""}` : q}`);
       // de schakelaar neemt de gedeelde filters mee naar de andere helft
       document.querySelectorAll(".motiekop .schakelaar a[data-tab]").forEach((a) => { a.href = `#${a.dataset.tab}${tabelQuery(def, st, def.gedeeld)}`; });
     };
@@ -667,7 +734,7 @@
     },
     kolommen: [
       themaKolom(themasWet),
-      { kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => `<a class="ltitel" href="${esc(z.link)}" target="_blank" rel="noopener">${titelMetPijl(z.titel || z.onderwerp || "")}</a>` },
+      { kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => `<a class="ltitel" href="${esc(tkUrl(z))}" target="_blank" rel="noopener">${titelMetPijl(z.titel || z.onderwerp || "")}</a>` },
       { knop: true },
       { filter: "status", tdCls: "uitslag", cel: (z) => uitslagPill(z.uitslag) },
       { filter: "soort", tdCls: "indiener hide-sm", cel: (z) => (z.soort === "Initiatiefwetgeving" ? indienerKort(z) : "Regering") },
@@ -681,13 +748,13 @@
       return `<div class="mdetail">
         <p>Zaak <span class="mono">${esc(z.nummer)}</span>${ks ? ` · Kamerstuk <span class="mono">${esc(dossierLabel(z))}</span>` : ""} · ingediend ${fmtKort(z.gestartOp)}${door.length ? `, door ${opsomming(door)}` : ""}</p>
         ${stappen.length ? `<div class="mstemming"><p class="mtelling">Laatste stappen</p><ul class="mstappen">${stappen.map((b) => `<li><span class="datum">${fmtKort(b.datum)}</span> ${esc(b.tekst)}</li>`).join("")}</ul></div>` : ""}
-        <div class="mlinks">${ks ? extLink(`https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A${encodeURIComponent(dossierLabel(z))}`, "Bekijk op tweedekamer.nl") : ""}${extLink(z.link, "Bekijk op OpenTK")}</div>
+        <div class="mlinks">${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
       </div>`;
     },
   };
   function wetgeving() {
     return tabelPagina(WET_DEF, { titel: "", links: `<h2 class="tabeltitel">Wetgeving</h2>` },
-      "Wetsvoorstellen sinds 2019 over milieu, klimaat, energie, water, natuur en leefomgeving, rechtstreeks uit de open data van de Tweede Kamer. Een klik op een rij opent het wetsvoorstel op OpenTK; de knop naast de titel toont de laatste stappen. Thema, Status en Ingediend door filteren, Ingediend sorteert.",
+      "Wetsvoorstellen sinds 2019 over milieu, klimaat, energie, water, natuur en leefomgeving, rechtstreeks uit de open data van de Tweede Kamer. Een klik op een rij opent het wetsvoorstel op tweedekamer.nl; de knop naast de titel toont de laatste stappen. Thema, Status en Ingediend door filteren, Ingediend sorteert.",
       "Zoek op titel, Kamerstuknummer of indiener");
   }
 
@@ -695,7 +762,7 @@
   // Eén tabel voor beide soorten; de grote schakelaar bovenaan wisselt tussen #moties en #amendementen (filters gaan mee).
   const SOORT_VAN_TAB = { moties: "Motie", amendementen: "Amendement" };
   // link naar het document op tweedekamer.nl (D-nummer uit de pipeline); anders zoeken op het zaaknummer
-  const tkUrl = (z) => z.tkLink || `https://www.tweedekamer.nl/zoeken?q=${encodeURIComponent(z.nummer)}`;
+  const tkUrl = window.MRThemas.tkUrl;
   const onderwerpZin = (z) => hoofd(korteTitel(z).trim().replace(/\s+/g, " "));
   // in de tabel leest de titel door op de kolomkop "Motie over..."
   const onderwerpKlein = (z) => klein(korteTitel(z).trim().replace(/\s+/g, " ").replace(/^over /i, ""));
@@ -1028,7 +1095,7 @@
     if (!ms.length) return "";
     const aangenomen = ms.filter((z) => z.uitslag === "aangenomen").length;
     return `<div class="small muted">${ms.length} ${ms.length === 1 ? "motie" : "moties"} ingediend, ${aangenomen} aangenomen</div>
-      <ul class="motielijst">${ms.map((z) => `<li>${uitslagPill(z.uitslag)} <a href="${esc(z.link)}" target="_blank" rel="noopener">${esc(korteTitel(z))}</a> <span class="small muted">${indienersTekst(z)}</span></li>`).join("")}</ul>`;
+      <ul class="motielijst">${ms.map((z) => `<li>${uitslagPill(z.uitslag)} <a href="${esc(tkUrl(z))}" target="_blank" rel="noopener">${esc(korteTitel(z))}</a> <span class="small muted">${indienersTekst(z)}</span></li>`).join("")}</ul>`;
   }
 
   /* ---------- Toezeggingen en fracties (hulpfuncties) ---------- */
