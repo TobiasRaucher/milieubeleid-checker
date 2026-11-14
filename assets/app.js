@@ -307,45 +307,28 @@
     if (_themaIndex) return _themaIndex;
     const items = window.MRThemas.bronItems(S.data);
     const perThema = new Map(S.T.lijst.map((t) => [t.slug, []]));
-    const zonder = [];
     const gezien = new Set();
     for (const x of items) {
       if (gezien.has(x.sleutel)) continue;
       gezien.add(x.sleutel);
       x.themas = window.MRThemas.themasVanItem(S.T, x);
-      // nog niet geclassificeerd = geen thema en (nog) niet nagekeken; bewust zonder thema (mapping met []) telt niet mee
-      if (!x.themas.length && !S.T.inMapping(x.sleutel)) zonder.push(x);
       for (const sl of x.themas) perThema.get(sl)?.push(x);
     }
-    return (_themaIndex = { items, perThema, zonder });
-  }
-  // eerstvolgend moment: vroegste datum vanaf vandaag (vage datums als "Q4 2026" achteraan in hun periode)
-  function eerstvolgend(lijst) {
-    return lijst.flatMap((x) => x.momenten || []).filter((m) => sortKey(m.datum) >= VANDAAG)
-      .sort((a, b) => sortKey(a.datum).localeCompare(sortKey(b.datum)) || (a.label || "").localeCompare(b.label || ""))[0] || null;
+    return (_themaIndex = { items, perThema });
   }
   function telRegel(lijst) {
     return window.MRThemas.SOORTEN.map((s) => { const n = lijst.filter((x) => x.soort === s.code).length; return n ? `${nl(n)} ${n === 1 ? s.een : s.veel}` : ""; })
       .filter(Boolean).join(" · ");
   }
-  function themaKaart(t, lijst) {
-    const m = eerstvolgend(lijst);
-    const vandaag = m && m.datum === VANDAAG;
-    return `<li><a class="themakaart" href="#themas/${esc(t.slug)}">
-      <h3>${esc(t.label)}</h3>
-      ${lijst.length ? `<p class="themakaart-tal">${nl(lijst.length)} ${lijst.length === 1 ? "item" : "items"}</p>
-      <p class="themakaart-soorten">${telRegel(lijst)}</p>
-      ${m ? `<p class="themakaart-moment"><span class="tag">${esc(m.label)}</span><span class="datum${vandaag ? " vandaag" : ""}">${vandaag ? "Vandaag" : fmtKort(m.datum)}</span><span class="moment-titel">${esc(m.titel)}</span></p>` : ""}`
-        : `<p class="themakaart-leeg">Nog geen items</p>`}
-    </a></li>`;
+  // Overzicht: alleen de naam; tellingen en details staan op de themapagina (Tobias, 14 nov 2026)
+  function themaKaart(t) {
+    return `<li><a class="themakaart" href="#themas/${esc(t.slug)}"><h3>${esc(t.label)}</h3></a></li>`;
   }
   function themasPagina() {
     const pad = (location.hash || "").slice(1).split("?")[0].split("/");
     if (pad[1]) return themaDetail(decodeURIComponent(pad[1]));
-    const { perThema, zonder } = themaIndex();
     return `<h2>Thema's</h2>
-      <p class="muted small themas-intro">Alle wetten, moties, amendementen, Kamerbrieven, Kamervragen en antwoorden, vergaderingen en agenda-items in tien vaste thema's. Een item kan bij meer dan één thema horen.${zonder.length ? ` <span class="nw">${nl(zonder.length)} ${zonder.length === 1 ? "item" : "items"} nog niet geclassificeerd.</span>` : ""}</p>
-      <ul class="themagrid">${S.T.lijst.map((t) => themaKaart(t, perThema.get(t.slug))).join("")}</ul>`;
+      <ul class="themagrid">${S.T.lijst.map((t) => themaKaart(t)).join("")}</ul>`;
   }
   // Detail: per documentsoort een groep (volgorde uit MRThemas.SOORTEN), lege groepen weg, nieuwste eerst
   // (Agenda: eerstvolgende eerst). Per item: datum, status, Kamerstuk; de rest achter "Meer details".

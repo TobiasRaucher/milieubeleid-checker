@@ -487,23 +487,15 @@ li.tz { padding: 16px 0; }
 .zoeklijst mark, .ztitel mark { background: #fff1a8; color: inherit; border-radius: 2px; padding: 0 2px; }
 .zoektips { color: var(--ink-2); }
 .zoektips code { font-family: var(--font-mono); font-size: var(--t-13); background: var(--surface); border-radius: 4px; padding: 0 4px; }
-/* Thema's: overzicht van tien vaste thema's; elke kaart is één link (DESIGN.md, "Themes") */
+/* Thema's: overzicht van tien vaste thema's als 5 x 2 tegels met alleen de naam; elke tegel is één link (DESIGN.md, "Themes") */
 .themas-intro { max-width: var(--leesbreedte); text-wrap: pretty; }
-.themagrid { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.themagrid { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
 .themagrid > li { display: flex; min-width: 0; }
-.themakaart { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; min-height: 148px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 20px; color: var(--ink); text-decoration: none; transition: border-color var(--d-kort) var(--ease); }
+.themakaart { flex: 1; min-width: 0; display: flex; min-height: 96px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 20px; color: var(--ink); text-decoration: none; transition: border-color var(--d-kort) var(--ease); }
 .themakaart:hover { border-color: var(--line-sterk); }
 .themakaart:hover h3 { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .themakaart:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.themakaart h3 { font-size: var(--t-18); line-height: 1.3; letter-spacing: -0.005em; font-weight: 500; margin: 0 0 4px; }
-.themakaart p { margin: 0; }
-.themakaart-tal { font-size: var(--t-14); color: var(--ink); font-variant-numeric: tabular-nums; }
-.themakaart-soorten { font-size: var(--t-13); color: var(--ink-2); font-variant-numeric: tabular-nums; text-wrap: pretty; }
-.themakaart-leeg { font-size: var(--t-14); color: var(--muted); }
-.themakaart-moment { margin-top: auto !important; padding-top: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; font-size: var(--t-13); color: var(--ink-2); }
-.themakaart-moment .datum { font-variant-numeric: tabular-nums; white-space: nowrap; }
-.themakaart-moment .datum.vandaag { color: var(--alarm-tekst); font-weight: 500; }
-.themakaart-moment .moment-titel { flex-basis: 100%; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.themakaart h3 { font-size: var(--t-18); line-height: 1.3; letter-spacing: -0.005em; font-weight: 500; margin: 0; text-wrap: balance; }
 .terug { margin: 24px 0 0; }
 #view > .terug + h2 { margin-top: 8px; }
 /* Thema-detail: groepen per documentsoort, compacte regels, details achter "Meer details" */

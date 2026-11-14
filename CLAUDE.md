@@ -63,6 +63,7 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
   - Wekelijkse review: `node pipeline/themas_review.js --nieuw` maakt `themas-review-nieuw.csv` met alleen items die nog niet in de mapping staan; Tobias kijkt die na; `node pipeline/themas_review.js --import <csv>` zet de nagekeken rijen in de mapping. `themas-review*.csv` staat niet in git.
   - Alle items die een thema kunnen krijgen komen uit `MRThemas.bronItems` (wetten = TK-wetsvoorstellen; moties; amendementen; Kamerbrieven; Kamervragen; antwoorden op Kamervragen; vergaderingen; agenda). Pagina, CSV en noscript-lijst tellen dus hetzelfde.
   - `pipeline/themas_noscript.js` schrijft de thema's met tellingen in het `<noscript>`-blok van `index.html` (de Action draait het dagelijks).
+- `#themas` toont sinds 14 nov 2026 alleen de tien namen als 5 x 2 tegels (geen introtekst, tellingen of eerstvolgend moment); alles verder staat op de themapagina.
 - Tabs: Overzicht, Thema's, Agenda, Wetgeving, Moties & Amendementen, Vragen & Brieven, Over. `#themas` is het overzicht, `#themas/<slug>` een thema (`?type=` is gereserveerd voor filters).
 - Wetgeving, Moties & Amendementen en Vragen & Brieven zijn sinds 13 nov 2026 één tabelpatroon (`tabelPagina()`/`bindTabel()` in app.js, een definitie per pagina: `WET_DEF`, `motieDef()`, `VRAAG_DEF`, `BRIEF_DEF`). Filters, zoekterm en volgorde staan in de URL. Zie DESIGN.md, "Tables".
 - Vragen & Brieven (tab sinds 13 nov 2026, vroeger Stukken): `#vragen` (Kamervragen, één rij per zaak met het antwoord erbij; Status Beantwoord, Open of Termijn verstreken na 21 dagen) en `#brieven` (Kamerbrieven). `#stukken` wordt omgezet naar `#vragen`. Geen introtekst boven de tabel (Tobias, 13 nov 2026).
@@ -79,6 +80,8 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 - Alle pagina's met lijsten hebben sinds 13 nov 2026 een themafilter (Agenda, Wetgeving, Moties & Amendementen, Vragen & Brieven); de algemene sectorfilter is verwijderd.
 
 ## Ontwerp
+
+**Alleen desktop** (Tobias, 14 nov 2026): de site hoeft niet op de telefoon te werken; ontwerp en controleer nieuwe onderdelen niet meer voor telefoonbreedte.
 
 **Lees eerst `DESIGN.md` (bovenin de repo).** Daar staan de richting, alle ontwerpwaarden en de regels (doen en niet doen); die gaan voor alles hieronder. Elke wijziging aan het uiterlijk volgt DESIGN.md.
 

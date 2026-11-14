@@ -20,12 +20,10 @@ const data = {
 const T = M.maak(lees("data/themas.json", {}), lees("data/themas-mapping.json", {}));
 const per = new Map(M.THEMAS.map((t) => [t.slug, []]));
 const gezien = new Set();
-let zonder = 0;
 for (const x of M.bronItems(data)) {
   if (gezien.has(x.sleutel)) continue;
   gezien.add(x.sleutel);
   const th = M.themasVanItem(T, x);
-  if (!th.length && !T.inMapping(x.sleutel)) zonder++;
   for (const s of th) per.get(s).push(x);
 }
 const telRegel = (l) => M.SOORTEN.map((s) => { const n = l.filter((x) => x.soort === s.code).length; return n ? `${nl(n)} ${n === 1 ? s.een : s.veel}` : ""; }).filter(Boolean).join(" · ");
@@ -37,7 +35,6 @@ const blok = [
   `${IN}<ul class="noscript-themas">`,
   ...M.THEMAS.map((t) => { const l = per.get(t.slug); return `${IN}  <li><b>${esc(t.label)}</b>: ${l.length ? `${nl(l.length)} ${l.length === 1 ? "item" : "items"} (${esc(telRegel(l))})` : "nog geen items"}. ${esc(t.description)}</li>`; }),
   `${IN}</ul>`,
-  ...(zonder ? [`${IN}<p class="small">${nl(zonder)} ${zonder === 1 ? "item" : "items"} nog niet geclassificeerd.</p>`] : []),
 ].join("\n");
 
 const pad = path.join(ROOT, "index.html");
