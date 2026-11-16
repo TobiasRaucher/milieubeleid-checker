@@ -621,12 +621,14 @@
     }
   },
   "stukken": {
-    "_uitleg": "Kamerbrieven, Kamervragen en antwoorden op Kamervragen. Een stuk komt in de checker als het in een van de stukDossiers van een sector zit of als titel/onderwerp een trefwoord (regex, hoofdletterongevoelig) bevat. Stukken van (en vragen aan) de ministeries in altijdMinisteries komen er altijd in. Een vraag en haar antwoord (zelfde zaak) komen er altijd samen in. Stukken in een van de bredeDossiers tellen alleen met een trefwoord.",
+    "_uitleg": "Kamerbrieven (ook lijsten van vragen en antwoorden van een commissie, bv. bij een begroting), Kamervragen en antwoorden op Kamervragen. Een stuk komt in de checker als het in een van de stukDossiers van een sector zit of als titel/onderwerp een trefwoord (regex, hoofdletterongevoelig) bevat. Stukken van (en vragen aan) de ministeries in altijdMinisteries komen er altijd in. Een vraag en haar antwoord (zelfde zaak) komen er altijd samen in. Stukken in een van de bredeDossiers tellen alleen met een trefwoord.",
     "soorten": [
       "Brief regering",
       "Antwoord schriftelijke vragen",
       "Antwoord schriftelijke vragen (nader)",
-      "Schriftelijke vragen"
+      "Schriftelijke vragen",
+      "Verslag houdende een lijst van vragen en antwoorden",
+      "Verslag houdende een lijst van een vraag en een antwoord"
     ],
     "altijdMinisteries": {
       "Klimaat en Groene Groei": "klimaat-energie"

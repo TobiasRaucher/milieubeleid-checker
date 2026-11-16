@@ -1,5 +1,39 @@
 [
  {
+  "id": "2026D57925",
+  "soort": "Brief regering",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+  "zaak": "2026Z25082",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "E. Boekholt-O’Sullivan",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25082&did=2026D57925"
+ },
+ {
+  "id": "2026D58015",
+  "soort": "Brief regering",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Interdepartementaal Beleidsonderzoek (IBO) energietransitie woningvoorraad 2050",
+  "zaak": "2026Z25117",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "E. Boekholt-O’Sullivan",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25117&did=2026D58015"
+ },
+ {
   "id": "2026D57580",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-11-12",
@@ -314,6 +348,29 @@
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z24533&did=2026D56656"
+ },
+ {
+  "id": "2026D56426",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-11-09",
+  "titel": null,
+  "onderwerp": "Antwoorden op vragen van de commissie over vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "zaak": "2026Z24447",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": null
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z24447&did=2026D56426"
  },
  {
   "id": "2026D56513",
@@ -930,6 +987,29 @@
   ]
  },
  {
+  "id": "2026D53950",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-10-30",
+  "titel": "Vaststelling van de begrotingsstaten van Klimaat en Groene Groei (XXIII) voor het jaar 2027",
+  "onderwerp": "Antwoorden op vragen van de commissie over vaststelling van de begrotingsstaten van Klimaat en Groene Groei (XXIII) voor het jaar 2027",
+  "zaak": "2026Z23412",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37020-XXIII-53",
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XXIII",
+    "titel": "Vaststelling van de begrotingsstaten van Klimaat en Groene Groei (XXIII) voor het jaar 2027"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23412&did=2026D53950"
+ },
+ {
   "id": "2026D54492",
   "soort": "Brief regering",
   "datum": "2026-10-30",
@@ -962,6 +1042,29 @@
    "circulair-vervuiling"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20201&did=2026D54531"
+ },
+ {
+  "id": "2026D53947",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-10-30",
+  "titel": "Vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027",
+  "onderwerp": "Antwoorden op vragen van de commissie over vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027",
+  "zaak": "2026Z17073",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37020-M-6",
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "M",
+    "titel": "Vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z17073&did=2026D53947"
  },
  {
   "id": "2026D54391",
@@ -3094,6 +3197,52 @@
   ]
  },
  {
+  "id": "2026D46409",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-10-06",
+  "titel": "Wijziging van de begrotingsstaat van het Klimaatfonds voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaat van het Klimaatfonds voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)",
+  "zaak": "2026Z17116",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37035-M-3",
+  "dossiers": [
+   {
+    "nummer": 37035,
+    "toevoeging": "M",
+    "titel": "Wijziging van de begrotingsstaat van het Klimaatfonds voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z17116&did=2026D46409"
+ },
+ {
+  "id": "2026D46401",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-10-06",
+  "titel": "Wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)",
+  "zaak": "2026Z17096",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37035-XXIII-4",
+  "dossiers": [
+   {
+    "nummer": 37035,
+    "toevoeging": "XXIII",
+    "titel": "Wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z17096&did=2026D46401"
+ },
+ {
   "id": "2026D48850",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-06",
@@ -3731,6 +3880,29 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "2026D46471",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-10-01",
+  "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)",
+  "zaak": "2026Z20118",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37035-J-3",
+  "dossiers": [
+   {
+    "nummer": 37035,
+    "toevoeging": "J",
+    "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z20118&did=2026D46471"
  },
  {
   "id": "2026D48038",
@@ -14166,6 +14338,29 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z12918&did=2026D29197"
  },
  {
+  "id": "2026D28760",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-06-11",
+  "titel": "Jaarverslag en slotwet Deltafonds 2025",
+  "onderwerp": "Antwoorden op vragen van de commissie over jaarverslag en slotwet Deltafonds 2025",
+  "zaak": "2026Z08548",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36945-J-7",
+  "dossiers": [
+   {
+    "nummer": 36945,
+    "toevoeging": "J",
+    "titel": "Jaarverslag en slotwet Deltafonds 2025"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z08548&did=2026D28760"
+ },
+ {
   "id": "2026D29174",
   "soort": "Brief regering",
   "datum": "2026-06-11",
@@ -14187,6 +14382,29 @@
    "natuur-stikstof-landbouw"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z12912&did=2026D29174"
+ },
+ {
+  "id": "2026D28431",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-06-11",
+  "titel": "Jaarverslag en slotwet Ministerie van Klimaat en Groene Groei 2025",
+  "onderwerp": "Antwoorden op vragen van de commissie over jaarverslag en slotwet Ministerie van Klimaat en Groene Groei 2025",
+  "zaak": "2026Z08457",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36945-XXIII-7",
+  "dossiers": [
+   {
+    "nummer": 36945,
+    "toevoeging": "XXIII",
+    "titel": "Jaarverslag en slotwet Ministerie van Klimaat en Groene Groei 2025"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z08457&did=2026D28431"
  },
  {
   "id": "2026D28658",
@@ -16441,6 +16659,29 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05284&did=2026D23119"
  },
  {
+  "id": "2026D18612",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-05-19",
+  "titel": "Wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+  "zaak": "2026Z08309",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36915-XXIII-5",
+  "dossiers": [
+   {
+    "nummer": 36915,
+    "toevoeging": "XXIII",
+    "titel": "Wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z08309&did=2026D18612"
+ },
+ {
   "id": "2026D23033",
   "soort": "Schriftelijke vragen",
   "datum": "2026-05-19",
@@ -16507,6 +16748,29 @@
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z08869&did=2026D22943"
+ },
+ {
+  "id": "2026D18644",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-05-19",
+  "titel": "Wijziging van de begrotingsstaat van het Klimaatfonds voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaat van het Klimaatfonds voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+  "zaak": "2026Z04503",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36915-M-4",
+  "dossiers": [
+   {
+    "nummer": 36915,
+    "toevoeging": "M",
+    "titel": "Wijziging van de begrotingsstaat van het Klimaatfonds voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z04503&did=2026D18644"
  },
  {
   "id": "2026D23049",
@@ -18566,6 +18830,29 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "2026D18698",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2026-04-21",
+  "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+  "zaak": "2026Z08338",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36915-J-3",
+  "dossiers": [
+   {
+    "nummer": 36915,
+    "toevoeging": "J",
+    "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z08338&did=2026D18698"
  },
  {
   "id": "2026D18995",
@@ -27825,6 +28112,29 @@
   ]
  },
  {
+  "id": "2025D50396",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2025-12-22",
+  "titel": "Wijziging van de begrotingsstaat van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2025 (Incidentele suppletoire begroting inzake Ternaard)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaat van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2025 (Incidentele suppletoire begroting inzake Ternaard)",
+  "zaak": "2025Z21325",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36861-4",
+  "dossiers": [
+   {
+    "nummer": 36861,
+    "toevoeging": null,
+    "titel": "Wijziging van de begrotingsstaat van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2025 (Incidentele suppletoire begroting inzake Ternaard)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z21325&did=2025D50396"
+ },
+ {
   "id": "2025D53937",
   "soort": "Brief regering",
   "datum": "2025-12-22",
@@ -28326,6 +28636,29 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22613&did=2025D53736"
  },
  {
+  "id": "2025D51957",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2025-12-18",
+  "titel": "Wijziging van de begrotingsstaat van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2025 (wijziging samenhangende met de Najaarsnota)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaat van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2025 (wijziging samenhangende met de Najaarsnota)",
+  "zaak": "2025Z19766",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36850-XXIII-6",
+  "dossiers": [
+   {
+    "nummer": 36850,
+    "toevoeging": "XXIII",
+    "titel": "Wijziging van de begrotingsstaat van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2025 (wijziging samenhangende met de Najaarsnota)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z19766&did=2025D51957"
+ },
+ {
   "id": "2025D53226",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2025-12-18",
@@ -28785,6 +29118,29 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21150&did=2025D52851"
  },
  {
+  "id": "2025D52167",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2025-12-16",
+  "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2025 (wijziging samenhangende met de Najaarsnota)",
+  "onderwerp": "Antwoorden op vragen van de commissie over wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2025 (wijziging samenhangende met de Najaarsnota)",
+  "zaak": "2025Z19746",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36850-J-3",
+  "dossiers": [
+   {
+    "nummer": 36850,
+    "toevoeging": "J",
+    "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2025 (wijziging samenhangende met de Najaarsnota)"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z19746&did=2025D52167"
+ },
+ {
   "id": "2025D52447",
   "soort": "Brief regering",
   "datum": "2025-12-16",
@@ -28900,6 +29256,29 @@
   ]
  },
  {
+  "id": "2025D53091",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2025-12-16",
+  "titel": "Vaststelling van de begrotingsstaat van het Klimaatfonds voor het jaar 2026",
+  "onderwerp": "Antwoorden op vragen van de commissie over vaststelling van de begrotingsstaat van het Klimaatfonds voor het jaar 2026",
+  "zaak": "2025Z15678",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-M-4",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "M",
+    "titel": "Vaststelling van de begrotingsstaat van het Klimaatfonds voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z15678&did=2025D53091"
+ },
+ {
   "id": "2025D52491",
   "soort": "Schriftelijke vragen",
   "datum": "2025-12-16",
@@ -28950,6 +29329,29 @@
    "circulair-vervuiling"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22216&did=2025D52589"
+ },
+ {
+  "id": "2025D52468",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2025-12-16",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026",
+  "onderwerp": "Antwoorden op vragen van de commissie over vaststelling van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026",
+  "zaak": "2025Z15652",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XXIII-8",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "XXIII",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z15652&did=2025D52468"
  },
  {
   "id": "2025D52116",
@@ -31261,6 +31663,29 @@
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z20292&did=2025D47734"
+ },
+ {
+  "id": "2025D47306",
+  "soort": "Verslag houdende een lijst van vragen en antwoorden",
+  "datum": "2025-11-21",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2026",
+  "onderwerp": "Antwoorden op vragen van de commissie over vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2026",
+  "zaak": "2025Z15682",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-J-6",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z15682&did=2025D47306"
  },
  {
   "id": "2025D47697",

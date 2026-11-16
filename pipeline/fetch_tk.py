@@ -404,7 +404,24 @@ def normaliseer_activiteit(a):
 
 STUK_EXPAND = ("DocumentActor($select=ActorNaam,ActorFractie,Functie,Relatie),"
                "Kamerstukdossier($select=Nummer,Toevoeging,Titel),"
-               "Zaak($select=Nummer,Soort;$expand=ZaakActor($select=ActorNaam,Functie,Relatie))")
+               "Zaak($select=Nummer,Soort;$expand=ZaakActor($select=ActorNaam,Functie,Relatie),"
+               "Kamerstukdossier($select=Nummer,Toevoeging,Titel))")
+
+# Antwoorden op schriftelijke vragen van een commissie (bv. bij een begroting): soort "Verslag houdende een lijst van
+# vragen en antwoorden". Ondertekend door de commissievoorzitter, niet door de bewindspersoon; de site toont ze als Kamerbrief.
+LIJST_RX = re.compile(r"^Verslag houdende een lijst van (vragen|een vraag)", re.I)
+
+
+def is_lijst(soort):
+    return bool(LIJST_RX.match(soort or ""))
+
+
+def lijst_onderwerp(onderwerp, dossiers):
+    """'37020-J Verslag houdende een lijst van vragen en antwoorden over X' -> 'Antwoorden op vragen van de commissie over X'."""
+    t = re.sub(r"^\d{5}(-[A-Z]+)?\s+", "", (onderwerp or "").strip())
+    m = re.search(r"\bantwoord(en)?\b\s*(\([^)]*\)\s*)?(over|inzake|bij|met betrekking tot)\s+(.+)", t, re.I)
+    rest = m.group(4).strip() if m else (dossiers[0]["titel"] if dossiers and dossiers[0].get("titel") else None)
+    return f"Antwoorden op vragen van de commissie over {rest[0].lower() + rest[1:]}" if rest else (t or onderwerp)
 
 
 def ministerie_uit_functie(functie):
@@ -453,11 +470,26 @@ def stukken(start):
             ondertekenaar = gericht[0].get("ActorNaam") if gericht else None
         else:
             functie = (eerste or {}).get("Functie") or ""
-            if not re.match(r"(minister|staatssecretaris)", functie, re.I):
-                continue  # bv. een commissievoorzitter
-            ministerie = ministerie_uit_functie(functie)
             ondertekenaar = (eerste or {}).get("ActorNaam")
-        dossiers = [{"nummer": k.get("Nummer"), "toevoeging": k.get("Toevoeging"), "titel": k.get("Titel")} for k in d.get("Kamerstukdossier") or []]
+            m = re.match(r"voorzitter van de (vaste )?commissie voor (.+)", functie, re.I)
+            if is_lijst(soort) and m:
+                # antwoorden van het kabinet, aangeboden door de commissie: ministerie afgeleid uit de commissie
+                ministerie, functie, ondertekenaar = m.group(2), None, None
+            elif not re.match(r"(minister|staatssecretaris)", functie, re.I):
+                continue  # bv. een commissievoorzitter
+            else:
+                ministerie = ministerie_uit_functie(functie)
+        ks_ruw = d.get("Kamerstukdossier") or []
+        if not ks_ruw and is_lijst(soort):
+            # nog niet als Kamerstuk genummerd: het dossier staat dan vaak wel bij de zaak
+            ks_ruw = list({(k.get("Nummer"), k.get("Toevoeging")): k for z in d.get("Zaak") or [] for k in z.get("Kamerstukdossier") or []}.values())
+            if not ks_ruw:
+                m = re.match(r"(\d{5})(?:-([A-Z]+))?\s", onderwerp)
+                if m:
+                    ks_ruw = [{"Nummer": int(m.group(1)), "Toevoeging": m.group(2), "Titel": None}]
+        dossiers = [{"nummer": k.get("Nummer"), "toevoeging": k.get("Toevoeging"), "titel": k.get("Titel")} for k in ks_ruw]
+        if is_lijst(soort):
+            onderwerp = lijst_onderwerp(onderwerp, dossiers)
         sleutels = set()
         for k in dossiers:
             sleutels.add(str(k["nummer"]))
@@ -472,7 +504,7 @@ def stukken(start):
         kamerstuk = None
         if ks and d.get("Volgnummer") not in (None, -1):
             kamerstuk = f"{ks['nummer']}{'-' + ks['toevoeging'] if ks.get('toevoeging') else ''}-{d['Volgnummer']}"
-        pad = "brieven_regering" if soort == "Brief regering" else "kamervragen"
+        pad = "brieven_regering" if soort == "Brief regering" or is_lijst(soort) else "kamervragen"
         item = {
             "id": d.get("DocumentNummer"),
             "soort": soort,

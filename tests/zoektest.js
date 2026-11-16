@@ -34,6 +34,8 @@ const TESTS = [
   ["natura 2000 hollandse kust", "hollandse kust", 3],
   ["\"groen gas\"", "groen gas", 3],
   ["van oosterhout", "van oosterhout", 5],
+  // lijsten van vragen en antwoorden van een commissie (soort "Verslag houdende een lijst van vragen en antwoorden")
+  ["deltafonds 2027", "vragen van de commissie over vaststelling van de begrotingsstaat van het deltafonds", 3],
   // samengestelde woorden
   ["depositie", "stikstofdepositie", 5],
   ["wet klimaat", "klimaatwet", 3],

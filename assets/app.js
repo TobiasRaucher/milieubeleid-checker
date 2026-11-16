@@ -864,7 +864,7 @@
   /* ---------- Vragen & Brieven ---------- */
   // Kamerbrieven, Kamervragen en antwoorden daarop (data/tk/stukken.json). Een vraag en haar antwoord delen het zaaknummer
   // en staan samen in één rij van de tabel Kamervragen. Antwoordtermijn: drie weken (Reglement van Orde).
-  const SOORT_KORT = { "Brief regering": "Kamerbrief", "Schriftelijke vragen": "Kamervragen", "Antwoord schriftelijke vragen": "Antwoord Kamervragen", "Antwoord schriftelijke vragen (nader)": "Antwoord Kamervragen" };
+  const SOORT_KORT = { "Brief regering": "Kamerbrief", "Verslag houdende een lijst van vragen en antwoorden": "Kamerbrief", "Verslag houdende een lijst van een vraag en een antwoord": "Kamerbrief", "Schriftelijke vragen": "Kamervragen", "Antwoord schriftelijke vragen": "Antwoord Kamervragen", "Antwoord schriftelijke vragen (nader)": "Antwoord Kamervragen" };
   const stukkenInSector = () => (S.data.stukken || []).filter(inSector).slice().sort((a, b) => (b.datum || "").localeCompare(a.datum || ""));
   const isVraag = (x) => x.soort === "Schriftelijke vragen";
   const isAntwoord = (x) => /^Antwoord/.test(x.soort || "");
@@ -950,7 +950,7 @@
   };
   const BRIEF_DEF = {
     tab: "brieven", eenheid: "Kamerbrieven", knopLabel: ["Details tonen", "Details verbergen"], gedeeld: STUK_GEDEELD,
-    rijen: () => stukkenInSector().filter((x) => x.soort === "Brief regering"),
+    rijen: () => stukkenInSector().filter((x) => SOORT_KORT[x.soort] === "Kamerbrief"),  // ook lijsten van vragen en antwoorden van een commissie
     datum: (x) => x.datum, sleutel: (x) => x.id,
     zoektekst: (x) => `${x.onderwerp} ${x.titel} ${x.ondertekenaar || ""} ${x.ministerie || ""} ${x.kamerstuk || ""} ${x.id} ${(x.dossiers || []).map((d) => `${d.nummer} ${d.titel || ""}`).join(" ")}`,
     filters: {
@@ -962,7 +962,7 @@
       { kop: "Kamerbrief over...", thCls: "ond", tdCls: "ond", cel: (x) => `<a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${titelMetPijl(overKlein(x.onderwerp || x.titel))}</a>` },
       { knop: true },
       { filter: "ministerie", tdCls: "uitslag ministerie", cel: (x) => esc(x.ministerie || "Onbekend") },
-      { kop: "Kamerstuk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (x) => esc(x.kamerstuk || ((x.dossiers || [])[0] || {}).nummer || "") },
+      { kop: "Kamerstuk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (x) => { const d = (x.dossiers || [])[0]; return esc(x.kamerstuk || (d ? d.nummer + (d.toevoeging ? "-" + d.toevoeging : "") : "")); } },
       { datum: true, kop: "Datum" },
     ],
     detail: (x) => {

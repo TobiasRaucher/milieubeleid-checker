@@ -94,7 +94,7 @@
   const term = (t) => (STOP.has(t) ? null : stam(t));
 
   /* ---------- documenten ---------- */
-  const SOORT_KORT = { "Brief regering": "Kamerbrief", "Schriftelijke vragen": "Kamervragen", "Antwoord schriftelijke vragen": "Antwoord Kamervragen", "Antwoord schriftelijke vragen (nader)": "Antwoord Kamervragen" };
+  const SOORT_KORT = { "Brief regering": "Kamerbrief", "Verslag houdende een lijst van vragen en antwoorden": "Kamerbrief", "Verslag houdende een lijst van een vraag en een antwoord": "Kamerbrief", "Schriftelijke vragen": "Kamervragen", "Antwoord schriftelijke vragen": "Antwoord Kamervragen", "Antwoord schriftelijke vragen (nader)": "Antwoord Kamervragen" };
   const korteTitel = (z) => { const t = z.onderwerp || z.titel || ""; return /^(nader )?(gewijzigde )?(motie|amendement)\b/i.test(t) ? t.replace(/^.*? over /i, "") : t; };
   const j = (arr) => arr.filter(Boolean).join(" · ");
   const dag = (iso) => (iso ? String(iso).slice(0, 10) : "");

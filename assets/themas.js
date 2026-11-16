@@ -136,7 +136,7 @@
     }
     // stukken
     for (const s of stukken) {
-      uit.push({ sleutel: sleutel.stuk(s), soort: /antwoord/i.test(s.soort) ? "antwoord" : s.soort === "Schriftelijke vragen" ? "vraag" : "brief", datum: s.datum, titel: stukTitel(s), overig: [], dossiers: (s.dossiers || []).map((d) => d.titel), ref: s, momenten: [] });
+      uit.push({ sleutel: sleutel.stuk(s), soort: /^antwoord/i.test(s.soort) ? "antwoord" : s.soort === "Schriftelijke vragen" ? "vraag" : "brief", datum: s.datum, titel: stukTitel(s), overig: [], dossiers: (s.dossiers || []).map((d) => d.titel), ref: s, momenten: [] });
     }
     // vergaderingen: samenvattingen en uitgevoerde activiteiten zonder samenvatting
     const perNummer = new Map(acts.map((a) => [a.Nummer, a]));
