@@ -1,5 +1,42 @@
 [
  {
+  "id": "194549af-ae17-4b54-9720-900c8faf89f7",
+  "nummer": "2026Z25100",
+  "soort": "Amendement",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Amendement van het lid Koorevaar over middelen voor mobiele stikstofmetingen en vliegtuigmetingen",
+  "citeertitel": null,
+  "gestartOp": "2026-11-16",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIV",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "J.C. Koorevaar",
+    "fractie": "CDA",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D57978",
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/amendementen/detail?id=2026Z25100&did=2026D57978",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25100",
+  "zoekterm": "stikstof"
+ },
+ {
   "id": "010fab05-006f-4ddd-bf0d-8a64904e3047",
   "nummer": "2026Z25015",
   "soort": "Motie",

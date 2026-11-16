@@ -2356,7 +2356,7 @@
     "onderwerp": "Reactie op motie van het lid Van der Plas over uiteenzetten hoe de eerdere bepaling uit de Crisis- en herstelwet onderdeel kan worden in de Omgevingswet zodat woningbouw en bijbehorende energie-infrastructuur sneller gerealiseerd worden (Kamerstuk 36800-26)",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "32127-247",
       "soort": "Brief regering",
       "datum": "2026-10-28",
       "onderwerp": "Reactie op motie van het lid Van der Plas over uiteenzetten hoe de eerdere bepaling uit de Crisis- en herstelwet onderdeel kan worden in de Omgevingswet zodat woningbouw en bijbehorende energie-infrastructuur sneller gerealiseerd worden (Kamerstuk 36800-26)",
@@ -3540,6 +3540,11 @@
     "naam": "A.J. Flach",
     "fractie": "SGP",
     "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
    }
   ],
   "zaal": "Plenaire zaal",
@@ -3598,7 +3603,7 @@
   "Aanvangstijd": "2026-11-16T12:00:00+01:00",
   "Eindtijd": "2026-11-16T12:00:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
   "Voortouwafkorting": "LVVN",
   "Besloten": true,
@@ -3771,8 +3776,94 @@
    "naam": "H.S. Steen",
    "fractie": "CDA"
   },
-  "deelnemers": [],
-  "zaal": "Troelstrazaal",
+  "deelnemers": [
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Podt",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C.A. (Chris) Jansen",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R. den Hollander",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.C. Koorevaar",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.J. Dekker",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.A. Ergin",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C.M. van Brenk",
+    "fractie": "50PLUS",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T. ten Hove",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.C.G. Keijzer",
+    "fractie": "Keijzer",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Thorbeckezaal",
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06484",
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -51389,6 +51480,11 @@
    {
     "naam": "A. Podt",
     "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.C. Koorevaar",
+    "fractie": "CDA",
     "functie": "Tweede Kamerlid"
    }
   ],
