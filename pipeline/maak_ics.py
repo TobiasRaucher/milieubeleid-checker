@@ -13,7 +13,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://tobiasraucher.github.io/milieubeleid-checker/"
 TYPE_NORM = {"Plenair debat (tweeminutendebat)": "Tweeminutendebat", "Plenair debat (debat)": "Plenair debat",
-             "Plenair debat (dertigledendebat)": "Dertigledendebat", "Plenair debat (initiatiefwetgeving)": "Plenair debat (wetgeving)"}
+             "Plenair debat (dertigledendebat)": "Dertigledendebat", "Plenair debat (initiatiefwetgeving)": "Plenair debat (wetgeving)",
+             "Inbreng verslag (wetsvoorstel)": "Inbreng verslag"}
 
 
 def esc(t):
@@ -79,15 +80,16 @@ def main():
         punten = [ap.get("onderwerp") for ap in a.get("agendapunten") or [] if ap.get("onderwerp")]
         if punten:
             tekst.append("Agendapunten:\n- " + "\n- ".join(punten[:15]))
-        allday = begin[11:16] == "00:00"
+        # inbrengtermijnen: de tijd is het einde van de termijn, dus een hele dag
+        allday = begin[11:16] == "00:00" or (a.get("Soort") or "").startswith("Inbreng")
         r += ["BEGIN:VEVENT", f"UID:{a['Nummer']}@milieuradar", f"DTSTAMP:{stempel}"]
         if allday:
             r += [f"DTSTART;VALUE=DATE:{begin[:10].replace('-', '')}"]
         else:
             r += [f"DTSTART:{utc(begin)}", f"DTEND:{utc(eind)}"]
         r += [vouw(f"SUMMARY:{esc(soort + ': ' + (a.get('Onderwerp') or ''))}"), vouw(f"DESCRIPTION:{esc(chr(10).join(tekst))}")]
-        if a.get("Locatie"):
-            r.append(vouw(f"LOCATION:{esc(a['Locatie'])}"))
+        if a.get("zaal") or a.get("Locatie"):
+            r.append(vouw(f"LOCATION:{esc(a.get('zaal') or a['Locatie'])}"))
         if a.get("tkLink"):
             r.append(vouw(f"URL:{a['tkLink']}"))
         r += ["STATUS:CONFIRMED", "END:VEVENT"]

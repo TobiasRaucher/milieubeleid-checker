@@ -49,6 +49,9 @@ ACTIVITEIT_SOORTEN = [
     "Notaoverleg", "Rondetafelgesprek", "Technische briefing", "Hoorzitting",
     "Notaoverleg (wetgeving)", "Debat", "Dertigledendebat", "Interpellatie",
 ]
+# termijnen voor schriftelijke inbreng (Inbreng schriftelijk overleg, verslag, feitelijke vragen; de tijd is het einde
+# van de termijn). Een eigen query met startswith: nog drie soorten in de of-lijst overschrijdt de limiet van 100 knopen.
+INBRENG_FILTER = "startswith(Soort,'Inbreng')"
 FOUTEN = []
 
 
@@ -267,7 +270,8 @@ ACT_EXPAND = (
     "$expand=Zaak($select=Nummer,Soort,Onderwerp;"
     "$expand=Document($filter=Verwijderd eq false;$select=DocumentNummer,Soort,Datum,Onderwerp,Volgnummer;"
     "$expand=Kamerstukdossier($select=Nummer,Toevoeging),DocumentActor($select=ActorNaam,Functie,Relatie)))),"
-    "ActiviteitActor($filter=Verwijderd eq false;$select=ActorNaam,ActorFractie,Functie,Relatie,Volgorde)"
+    "ActiviteitActor($filter=Verwijderd eq false;$select=ActorNaam,ActorFractie,Functie,Relatie,Volgorde),"
+    "Reservering($expand=Zaal($select=Naam))"
 )
 PLENAIRE_SOORTEN = ["Plenair debat", "Tweeminutendebat", "Dertigledendebat", "Debat", "Interpellatie"]
 
@@ -287,12 +291,43 @@ def activiteiten(commissies, start, plenaire_termen):
     voortouw = " or ".join(f"Voortouwafkorting eq '{c}'" for c in commissies)
     datum = f"(Datum ge {start}T00:00:00Z or (Status eq 'Gepland' and Datum eq null))"
     uit = _act_query(f"Verwijderd eq false and ({soort}) and ({voortouw}) and {datum}")
+    uit += _act_query(f"Verwijderd eq false and {INBRENG_FILTER} and ({voortouw}) and {datum}")
     # plenaire debatten hebben geen commissie als voortouw: zoek op termen in het onderwerp
     if plenaire_termen:
         psoort = "startswith(Soort,'Plenair debat')"
         termen = " or ".join(f"contains(Onderwerp,'{t}')" for t in plenaire_termen)
         uit += _act_query(f"Verwijderd eq false and ({psoort}) and ({termen}) and {datum}")
     return [normaliseer_activiteit(a) for a in uit]
+
+
+def stemmingen(start):
+    """{zaaknummer: datum} uit de agendapunten van plenaire Stemmingen. Per zaak de eerstvolgende geplande stemming,
+    en anders de laatst gehouden (een motie kan worden uitgesteld en opnieuw geagendeerd)."""
+    rec = odata("Activiteit", {
+        "$filter": f"Verwijderd eq false and Soort eq 'Stemmingen' and Datum ge {start}T00:00:00Z and (Status eq 'Gepland' or Status eq 'Uitgevoerd')",
+        "$select": "Nummer,Datum,Status",
+        "$expand": "Agendapunt($filter=Verwijderd eq false;$select=Onderwerp;$expand=Zaak($select=Nummer))",
+        "$orderby": "Datum desc",
+    })
+    vandaag = datetime.now(timezone.utc).date().isoformat()
+    uit = {}
+    for a in rec:
+        dag = (a.get("Datum") or "")[:10]
+        if not dag:
+            continue
+        for ap in a.get("Agendapunt") or []:
+            for z in ap.get("Zaak") or []:
+                n = z.get("Nummer")
+                if not n:
+                    continue
+                oud = uit.get(n)
+                if oud is None:
+                    uit[n] = dag
+                elif dag >= vandaag and (oud < vandaag or dag < oud):
+                    uit[n] = dag  # eerstvolgende geplande gaat voor
+                elif dag < vandaag and oud < vandaag and dag > oud:
+                    uit[n] = dag
+    return uit
 
 
 def _stuk(doc, zaak):
@@ -338,6 +373,16 @@ def normaliseer_activiteit(a):
     deelnemers = [{"naam": x["ActorNaam"], "fractie": x.get("ActorFractie"), "functie": x.get("Functie")}
                   for x in actoren if "bewindspersoon" not in (x.get("Relatie") or "").lower() and x is not vz]
     plenair = (a.get("Soort") or "").startswith("Plenair") or "plenaire zaal" in (a.get("Locatie") or "").lower()
+    # zaal: Locatie, anders de gereserveerde zaal, anders de plenaire zaal bij plenaire debatten (de TK-data laat het vaak leeg)
+    reserveringen = a.get("Reservering") or []
+    reserveringen = reserveringen if isinstance(reserveringen, list) else [reserveringen]
+    zalen = []
+    for r in reserveringen:
+        z = r.get("Zaal") if isinstance(r, dict) else None
+        for x in (z if isinstance(z, list) else [z]):
+            if isinstance(x, dict) and x.get("Naam"):
+                zalen.append(x["Naam"])
+    zaal = a.get("Locatie") or next((z for z in zalen if z), None) or ("Plenaire zaal" if (a.get("Soort") or "").startswith("Plenair") else None)
     out = {k: a.get(k) for k in ["Id", "Nummer", "Soort", "Onderwerp", "Datum", "Aanvangstijd", "Eindtijd", "Locatie", "Status", "Voortouwnaam", "Voortouwafkorting", "Besloten", "Noot"]}
     m = re.match(r"Plenair debat \((.+)\)", a.get("Soort") or "")
     weergave = a.get("Soort")
@@ -350,6 +395,7 @@ def normaliseer_activiteit(a):
         "bewindspersonen": bewinds,
         "voorzitter": voorzitter,
         "deelnemers": deelnemers,
+        "zaal": zaal,
         "tkLink": (f"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id={a.get('Nummer')}"
                    if plenair else f"https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id={a.get('Nummer')}"),
     })
@@ -672,8 +718,21 @@ def main():
         FOUTEN.append(f"toezeggingen: {e}")
         log(f"    FOUT toezeggingen: {e}")
 
+    # 6b. stemmingsdatum per motie en amendement (uit de agenda van de plenaire Stemmingen)
+    stem_data = None
+    try:
+        stem_data = stemmingen(start)
+        log(f"== stemmingsdatum voor {len(stem_data)} zaken")
+    except Exception as e:
+        FOUTEN.append(f"stemmingen: {e}")
+        log(f"    FOUT stemmingen: {e}")
+
     # 7. wat bij de review "zonder thema" kreeg, is niet relevant en gaat eruit
     alle_zaken, stuk_lijst, uitgesloten = relevantiepoort(alle_zaken, stuk_lijst)
+    if stem_data:
+        # alleen de moties en amendementen die de checker volgt
+        gevolgd = {z["nummer"] for z in alle_zaken.values()}
+        stem_data = {n: d for n, d in stem_data.items() if n in gevolgd}
 
     OUT.mkdir(parents=True, exist_ok=True)
     zaken_lijst = sorted(alle_zaken.values(), key=lambda z: z["gestartOp"] or "", reverse=True)
@@ -685,9 +744,14 @@ def main():
             "status": "mislukt", "fouten": FOUTEN}, ensure_ascii=False, indent=1), encoding="utf-8")
         sys.exit(1)
     (OUT / "zaken.json").write_text(json.dumps(zaken_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
-    (OUT / "activiteiten.json").write_text(json.dumps(act_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
+    if act_lijst:
+        (OUT / "activiteiten.json").write_text(json.dumps(act_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
+    else:
+        log("Geen activiteiten opgehaald: bestaande activiteiten.json blijft staan.")
     if stuk_lijst:
         (OUT / "stukken.json").write_text(json.dumps(stuk_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
+    if stem_data:
+        (OUT / "stemmingen.json").write_text(json.dumps(stem_data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     if tz_lijst:
         (OUT / "toezeggingen.json").write_text(json.dumps(tz_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps({
