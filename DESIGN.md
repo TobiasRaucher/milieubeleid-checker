@@ -9,7 +9,7 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 - **Product.** A Dutch monitor of environmental and climate policy in the Tweede Kamer (laws, moties, debates, ministry letters, agenda), shown next to the measurements that policy answers to, for people who read policy for a living.
 - **Character.** Exact, sober, alert.
 - **World.** The measurement desk: monitoring stations, instrument readouts, CBS, PBL and RIVM tables and typeset Kamerstukken.
-- **Moments.** The emissions chart "Wat Nederland uitstoot", the largest drawn thing on Overzicht and the first block on the page: the measured line is the only accent, and the targets from the Klimaatwet and the stikstofwet sit next to it as quiet reference lines. The chrome stays quiet around it.
+- **Moments.** The emissions chart "Wat Nederland uitstoot", the largest drawn thing on Overzicht and the first block under the short intro, in a card: the measured line is the only accent, and the targets from the Klimaatwet and the stikstofwet sit next to it as quiet reference lines. The chrome stays quiet around it.
 - **Signature.** The peildatum stamp: every figure carries its source and date in one mono caption, in one format (`Tweede Kamer open data · stand 11 nov 2026`). Red only ever means past the limit, happening now, or a verworpen vote outcome (a traffic light, by Tobias's choice of 13 Nov 2026).
 
 ## Tokens
@@ -125,7 +125,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 
 ## Overzicht lists
 
-- Order and widths: Net binnen left (3fr), Komt eraan right (2fr) from 1000px; stacked in that order below. Both sections are unboxed headings with a card under them, like "Wat Nederland uitstoot", which has no card at all. The two cards stretch to one bottom edge: the list grows, the kaartvoet stays at the bottom.
+- Order and widths: Net binnen left (3fr), Komt eraan right (2fr) from 1000px; stacked in that order below. Both sections are unboxed headings with a card under them, like "Wat Nederland uitstoot" above them (a card since 16 Nov 2026; the switcher has no top margin inside it). Above everything sits `.ov-intro`: one `h1` (`.ov-lead`, 30/500, ink, max 36ch; the only h1 on the site) and one paragraph (`.ov-uitleg`, 15/400, ink-2, max `--leesbreedte`), 32 above, 8 between, no accent or frame. The first row of Komt eraan is the next plenary vote when one is planned (`komendeStemming()`): `dagKort` date, a `Stemmingen` tag, "n moties en n amendementen" linking to `#moties`, muted "Plenaire stemmingen"; no red and no Eerstvolgend badge. The list stays at six rows. The two cards stretch to one bottom edge: the list grows, the kaartvoet stays at the bottom.
 - A Net binnen row is one flowing line, 14/22, pieces 8 apart: the document type in accent at 500 (`Antwoord Kamervragen`, `Kamerbrief`, `Motie`, `Amendement`, `Wetsvoorstel`), the date (muted, tabular), the status (dot plus word) or the ministry or Kamerstuk number (ink-2), the title (ink, 15/500, the link), then a muted 13px tail: indiener as surname plus fractie with c.s. (same `indienerKort` as the Moties table) and `· Voor X / Tegen Y`, the Kamerstuk number and title for a stuk, or the Kamerstuk number for a wetsvoorstel. Names in titles lose their initials after "het lid" or "de leden". Type label, date, indiener and vote never break inside themselves.
 
 ## Themes

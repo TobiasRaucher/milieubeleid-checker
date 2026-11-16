@@ -313,8 +313,8 @@
 
   /* ---------- koppeling met app.js ---------- */
   window.MRMilieu = {
-    // een sectie op de pagina zelf, zonder kaart eromheen (zoals Net binnen en Komt eraan)
-    sectieHtml: () => `<section class="mi-sectie" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h2 id="mi-uitstoot-kop">Wat Nederland uitstoot</h2><div class="mi-inhoud"><div class="sk sk-kaart"></div></div></section>`,
+    // een kop met een kaart eronder, zoals Net binnen en Komt eraan (sinds 16 nov 2026)
+    sectieHtml: () => `<section class="mi-sectie" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h2 id="mi-uitstoot-kop">Wat Nederland uitstoot</h2><div class="card mi-inhoud"><div class="sk sk-kaart"></div></div></section>`,
     vul() {
       const u = document.querySelector("#mi-uitstoot .mi-inhoud"); if (u) vulUitstoot(u);
     },

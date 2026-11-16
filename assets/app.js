@@ -289,17 +289,40 @@
     }
     return items.sort((a, b) => b.datum.localeCompare(a.datum) || FEED_ORDE[a.soort] - FEED_ORDE[b.soort]).slice(0, NET_BINNEN_MAX);
   }
+  // Eerstvolgende plenaire stemming: moties en amendementen zonder uitslag met een stemmingsdatum vanaf vandaag (zoals stemStatus()).
+  // Geeft een regel in de vorm van agendaLi() voor bovenaan Komt eraan, of "" als er niets gepland is.
+  function komendeStemming(slug) {
+    const stemDag = S.data.stemmingen || {}, perDag = new Map();
+    for (const z of motiesEnAmendementen()) {
+      if ([z.uitslag, zaakVanNr(z.nummer)?.uitslag].some((x) => x && x !== "in behandeling")) continue;
+      const dag = stemDag[z.nummer];
+      if (!dag || dag < VANDAAG) continue;
+      if (slug && !themasMotie(z).includes(slug)) continue;
+      const t = perDag.get(dag) || { m: 0, a: 0 };
+      if (z.soort === "Amendement") t.a++; else t.m++;
+      perDag.set(dag, t);
+    }
+    if (!perDag.size) return "";
+    const dag = [...perDag.keys()].sort()[0], t = perDag.get(dag);
+    const deel = (n, een, meer) => (n ? `${nl(n)} ${n === 1 ? een : meer}` : "");
+    const titel = [deel(t.m, "motie", "moties"), deel(t.a, "amendement", "amendementen")].filter(Boolean).join(" en ");
+    return `<li><div class="regelmeta"><span class="datum">${esc(dagKort(dag))}</span><span class="tag">Stemmingen</span></div><div><a class="ltitel" href="#moties">${esc(titel)}</a></div><div class="small muted">Plenaire stemmingen</div></li>`;
+  }
+  const komtEraan = (stemming, items) => (stemming + items.slice(0, stemming ? 5 : 6).map((i) => agendaLi(i)).join("")) || `<li class="empty">Niets gepland</li>`;
+  const OV_INTRO = `<header class="ov-intro"><h1 class="ov-lead">Volg het Nederlandse milieubeleid in de Tweede Kamer.</h1>
+      <p class="ov-uitleg">Bekijk hieronder wat er net binnen is en wat eraan komt, kies een <a href="#themas">thema</a>; of zoek op een wet, motie, Kamerstuknummer of Kamerlid. De gegevens komen uit open data van de Tweede Kamer, het CBS en het PBL.</p></header>`;
   function overzicht() {
     const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG).slice(0, 6);
     const binnen = netBinnen();
     return `
+      ${OV_INTRO}
       ${window.MRMilieu ? MRMilieu.sectieHtml() : ""}
       <div class="ov-onder">
         <section aria-labelledby="ov-binnen"><h2 id="ov-binnen">Net binnen</h2><div class="card"><ul class="list">
           ${binnen.map((i) => i.html).join("") || `<li class="empty">Nog niets binnen</li>`}
         </ul><div class="kaartvoet"><a href="#vragen">Alle vragen en brieven</a><a href="#moties">Alle moties en amendementen</a><a href="#wetgeving">Wetgeving</a></div></div></section>
         <section aria-labelledby="ov-komt"><h2 id="ov-komt">Komt eraan</h2><div class="card"><ul class="list">
-          ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland</li>`}
+          ${komtEraan(komendeStemming(), komend)}
         </ul><div class="kaartvoet"><a href="#agenda">Volledige agenda</a></div></div></section>
       </div>`;
   }
@@ -459,7 +482,7 @@
           ${binnen.map((i) => i.html).join("") || `<li class="empty">Nog niets binnen</li>`}
         </ul><div class="kaartvoet">${tabLink("kamervragen", "Kamervragen")}${tabLink("kamerbrieven", "Kamerbrieven")}${tabLink("moties", "Moties")}${tabLink("wetten", "Wetten")}</div></div></section>
         <section aria-labelledby="th-komt"><h2 id="th-komt">Komt eraan</h2><div class="card"><ul class="list">
-          ${komend.map((i) => agendaLi(i)).join("") || `<li class="empty">Niets gepland</li>`}
+          ${komtEraan(komendeStemming(t.slug), komend)}
         </ul><div class="kaartvoet"><a href="#agenda?thema=${encodeURIComponent(t.slug)}">Agenda voor dit thema</a></div></div></section>
       </div>`;
   }
