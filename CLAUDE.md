@@ -154,3 +154,13 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 - Score (`zoek.js`): binnen een synoniemgroep telt de beste variant, niet de som; afgeleide woorden (voorvoegsel, tikfout) wegen minder; de titel van het Kamerstukdossier staat in een eigen veld met laag gewicht (`dossier`); dubbele agendapunten tellen één keer. Treffers die alleen via tikfoutcorrectie passen, vallen weg zolang er andere zijn.
 - Synoniemen en afkortingen: `data/zoeksynoniemen.json`. Vindt Tobias iets niet terwijl het er wel is, voeg dan een synoniem toe en/of een regel aan `tests/zoektest.js`, en draai de test.
 
+## Kennisgraaf (graphify)
+
+`graphify-out/graph.json` is een kennisgraaf van de code (assets/*.js, pipeline/, tests/, de Action) en van CLAUDE.md, DESIGN.md, README.md en index.html, met verwijzingen naar bestand en regel. Niet in de graaf: `data/tk/`, `assets/vendor/`, `data/debatten.json`, `data/themas-mapping.json`, `data/dossiers.json` (uitsluitingen in `graphify-out/`).
+
+- Vragen over code ("waar zit X", "wat roept Y aan", "welke pagina's gebruiken tabelPagina"): eerst `graphify query "<vraag>"`, pas daarna grep of Read, en dan alleen de regels die de graaf aanwijst. Verband tussen twee dingen: `graphify path "A" "B"`; één functie of begrip: `graphify explain "motieKoppeling"`.
+- Regels uit CLAUDE.md of DESIGN.md: `graphify query` geeft bestand en regel van het begrip (bv. "Tables" staat in DESIGN.md); lees dan alleen dat stuk met Read en offset. Niet `graphify section` gebruiken: dat crasht op deze graaf (KeyError, graphify-fout).
+- Vragen over de inhoud van de data (welke moties, welke debatten): niet de graaf, maar de JSON zelf (bv. met `python3 -c` of `jq`).
+- `graphify-out/GRAPH_REPORT.md` alleen voor een breed overzicht van de opbouw (gemeenschappen, centrale functies).
+- Bijwerken: de git-hooks (`graphify hook install`) werken de graaf na elke commit, merge en checkout bij (alleen code, geen kosten). Na codewijzigingen binnen een sessie, vóór een volgende vraag aan de graaf: `graphify update .`. Na wijzigingen in CLAUDE.md, DESIGN.md, README.md of index.html: `/graphify --update` (kost tokens voor de gewijzigde documenten).
+- `graphify-out/` staat in `.gitignore`: de graaf is lokaal en komt niet op GitHub Pages.
