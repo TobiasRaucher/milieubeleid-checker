@@ -13,7 +13,7 @@ Wat er wordt opgehaald (per actieve sector in pipeline/config.json):
   * zaken waarvan het onderwerp een zoekterm bevat
   * wetsvoorstellen vanaf wetgeving.startdatum (2019) die over milieubeleid gaan (zie "wetgeving" in config.json)
   * alle moties en amendementen vanaf de startdatum met een trefwoord van een sector in het onderwerp,
-    of bij een gevolgd wetsvoorstel
+    of bij een gevolgd wetsvoorstel, of ingediend tijdens een gevolgde vergadering
   * daarna gaan items die bij de themareview bewust geen thema kregen eruit (data/themas-mapping.json)
   * activiteiten (debatten, rondetafelgesprekken, briefings) van de opgegeven commissies
     (bij sectoren met activiteitTrefwoorden alleen activiteiten waarvan het onderwerp een
@@ -585,14 +585,20 @@ def wetsvoorstellen(alle_zaken, regels):
     return wet_dossiers
 
 
-def breed_zoeken(alle_zaken, regels, wet_dossiers, start):
+def breed_zoeken(alle_zaken, regels, wet_dossiers, start, act_sectoren=None):
     """Alle moties en amendementen vanaf de startdatum: binnen als het onderwerp een trefwoord van een sector heeft,
-    of als ze bij een gevolgd wetsvoorstel horen (amendementen en moties bij de behandeling)."""
+    als ze bij een gevolgd wetsvoorstel horen (amendementen en moties bij de behandeling), of als ze zijn ingediend
+    tijdens een gevolgde activiteit (act_sectoren: activiteit-Id -> sectoren), bv. moties bij een wetgevingsoverleg
+    over stikstof waarvan het onderwerp zelf geen trefwoord heeft."""
+    act_sectoren = act_sectoren or {}
     uit = {str(x) for x in (CONFIG.get("wetgeving") or {}).get("uitsluiten", [])}
     ruw = odata("Zaak", {
         "$filter": f"Verwijderd eq false and (Soort eq 'Motie' or Soort eq 'Amendement') and GestartOp ge {start}T00:00:00Z",
-        "$select": LICHT_SELECT, "$expand": "Kamerstukdossier($select=Nummer,Toevoeging)",
+        "$select": LICHT_SELECT,
+        "$expand": "Kamerstukdossier($select=Nummer,Toevoeging),"
+                   "Agendapunt($filter=Verwijderd eq false;$select=Id;$expand=Activiteit($select=Id))",
     }, max_pages=200)
+    via_act = 0
     bekend = set(alle_zaken)
     gekozen = {}
     for z in ruw:
@@ -607,13 +613,18 @@ def breed_zoeken(alle_zaken, regels, wet_dossiers, start):
             wet = next((nz for nz in alle_zaken.values() if "wetgeving" in (nz["soort"] or "").lower()
                         and {str(d["nummer"]) for d in nz["dossiers"]} & nrs), None)
             sectoren = list(wet["sectoren"]) if wet else []
+        if not sectoren:
+            # ingediend tijdens een gevolgde vergadering
+            for ap in z.get("Agendapunt") or []:
+                sectoren += [c for c in act_sectoren.get((ap.get("Activiteit") or {}).get("Id"), []) if c not in sectoren]
+            via_act += bool(sectoren)
         if sectoren:
             gekozen[z["Id"]] = sectoren
     for z in zaken_op_id(list(gekozen)):
         nz = normaliseer_zaak(z, gekozen[z["Id"]][0])
         nz["sectoren"] = sorted(gekozen[z["Id"]])
         alle_zaken[nz["id"]] = nz
-    log(f"== moties en amendementen: {len(ruw)} bekeken, {len(gekozen)} erbij")
+    log(f"== moties en amendementen: {len(ruw)} bekeken, {len(gekozen)} erbij ({via_act} via een gevolgde vergadering)")
 
 
 def relevantiepoort(alle_zaken, stuk_lijst):
@@ -784,7 +795,12 @@ def main():
     # 4. wetsvoorstellen vanaf wetgeving.startdatum, en moties/amendementen buiten de vaste dossiers
     try:
         wet_dossiers = wetsvoorstellen(alle_zaken, regels)
-        breed_zoeken(alle_zaken, regels, wet_dossiers, start)
+        via = CONFIG.get("motiesViaVergadering") or {}
+        rx_niet = _regex(via.get("uitsluiten", []))
+        act_sectoren = {a.get("Id"): a.get("sectoren", []) for a in alle_act.values()
+                        if a.get("Soort") in via.get("soorten", [])
+                        and not (rx_niet and rx_niet.search(a.get("Onderwerp") or ""))}
+        breed_zoeken(alle_zaken, regels, wet_dossiers, start, act_sectoren)
     except Exception as e:
         FOUTEN.append(f"wetgeving/brede zoektocht: {e}")
         log(f"    FOUT: {e}")

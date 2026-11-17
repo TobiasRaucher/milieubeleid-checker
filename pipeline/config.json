@@ -66,6 +66,23 @@
     ],
     "_uitsluiten_uitleg": "Geen milieubeleid ondanks een trefwoord in de titel: veilige jaarwisseling en vuurwerk (35386, 35566), energietoeslag in de Participatiewet (36057, 36389), volkshuisvesting (36512, 36881), Kaderwet EZK- en LNV-subsidies (36588)."
   },
+  "motiesViaVergadering": {
+    "_uitleg": "Moties en amendementen die zijn ingediend tijdens een gevolgde vergadering (activiteiten.json) van een van deze soorten komen erin, ook zonder trefwoord in het onderwerp (bv. moties bij een wetgevingsoverleg over stikstof). Brede plenaire debatten tellen niet (daar komen ook moties over heel andere zaken), en ook niet vergaderingen waarvan het onderwerp past bij 'uitsluiten' (regex: begrotingen en dierenwelzijn). Daar tellen alleen moties met een trefwoord, zoals altijd.",
+    "soorten": [
+      "Commissiedebat",
+      "Wetgevingsoverleg",
+      "Notaoverleg",
+      "Plenair debat (tweeminutendebat)"
+    ],
+    "uitsluiten": [
+      "\\bbegroting",
+      "\\bjaarverslag",
+      "\\bDieren (in|buiten) de veehouderij",
+      "\\bdierproeven",
+      "\\bstroomstootapparatuur",
+      "\\bdierenwelzijn"
+    ]
+  },
   "sectoren": {
     "klimaat-energie": {
       "naam": "Klimaat & energie",
