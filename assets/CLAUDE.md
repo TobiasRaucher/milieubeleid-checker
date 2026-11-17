@@ -56,6 +56,8 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 - Werkbalk (sinds 17 nov 2026, ook op Agenda): zoekveld plus een `details.facet` per filter, actieve filters als chips
   (`werkbalk()`, `tekenWerkbalk()`, `bindWerkbalk()`; filteren met `pastFilters()`). Kolomkoppen zijn gewone labels; alleen
   Datum sorteert.
+- Na zoeken of filteren meldt een verborgen statusregel het aantal resultaten aan schermlezers (`meldAantal()`, ook op Agenda).
+- Elke pagina heeft precies een `h1` (de paginatitel; bij een schakelaar alleen voor schermlezers).
 - Kolommen: titel eerst, Thema vlak voor Kamerstuk/Datum. Een klik op de rij klapt de details uit; de titel is de link naar
   de bron. De uitklapknop (`button.uitklap` in de titelcel, `c.titel`) is alleen zichtbaar bij toetsenbordfocus.
 
@@ -142,7 +144,7 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 
 ## Overzicht (`#overzicht`)
 
-- Volgorde: korte uitleg (`OV_INTRO`: de enige `h1`, 30/500, en één alinea 15/400 in ink-2 met een link naar `#themas`;
+- Volgorde: korte uitleg (`OV_INTRO`: de `h1` van de pagina, 30/500, en één alinea 15/400 in ink-2 met een link naar `#themas`;
   tekst van Tobias, niet herschrijven zonder te vragen), dan "Wat Nederland uitstoot" als kop met kaart
   (`milieu.js`, zie `agent_docs/uitstoot-grafiek.md`), dan Net binnen (breed, links) en Komt eraan (smal, rechts) met dezelfde onderrand.
 - Komt eraan: bovenaan de eerstvolgende plenaire stemming (`komendeStemming()`): aantal moties en amendementen zonder uitslag

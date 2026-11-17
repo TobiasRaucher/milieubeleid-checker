@@ -382,7 +382,7 @@
   function themasPagina() {
     const pad = (location.hash || "").slice(1).split("?")[0].split("/");
     if (pad[1]) return themaDetail(decodeURIComponent(pad[1]));
-    return `<h2>Thema's</h2>
+    return `<h1>Thema's</h1>
       <ul class="themagrid">${S.T.lijst.map((t) => themaKaart(t)).join("")}</ul>`;
   }
   // Detail: per documentsoort een groep (volgorde uit MRThemas.SOORTEN), lege groepen weg, nieuwste eerst
@@ -475,7 +475,7 @@
       : (datumVan(b) ? sortKey(datumVan(b)) : "0000").localeCompare(datumVan(a) ? sortKey(datumVan(a)) : "0000")); // zonder datum (wetten, kerndocumenten) achteraan
   function themaDetail(slug) {
     const t = S.T.thema(slug);
-    if (!t) return `<h2>Thema niet gevonden</h2><p class="themas-intro">Er is geen thema "${esc(slug)}". <a href="#themas">Naar alle thema's</a></p>`;
+    if (!t) return `<h1>Thema niet gevonden</h1><p class="themas-intro">Er is geen thema "${esc(slug)}". <a href="#themas">Naar alle thema's</a></p>`;
     const tabs = THEMA_TABS.map((tb) => {
       const def = tb.def ? themaDef(tb.def(), t.slug, tb.param) : null;
       return { ...tb, tdef: def, n: def ? def.rijen().length : themaLijstItems(t.slug, tb.soort).length };
@@ -489,7 +489,7 @@
         ${tabs.map((tb) => `<a href="${adres}?type=${tb.param}"${tb === actief ? ' aria-current="page"' : ""}>${esc(tb.label)}<span class="schak-n">${nl(tb.n)}</span></a>`).join("")}
       </nav>`;
     const kop = `<p class="small terug"><a href="#themas">Alle thema's</a></p>
-      <h2>${esc(t.label)}</h2>
+      <h1>${esc(t.label)}</h1>
       <p class="themas-intro">${esc(t.description)}</p>`;
     if (actief && actief.tdef) {
       const basis = actief.def();
@@ -601,7 +601,16 @@
   // filters (waarden op nul blijven staan, stil). Actieve filters staan eronder als chips met "Alles wissen".
   // Filters: { k: { label, waarden(rij), orde(set, tel), tekst(v) } }. tekst geeft html.
   const werkbalk = (hint, q) => `<div class="werkbalk"><input type="search" id="wq" placeholder="${esc(hint)}" value="${esc(q)}" aria-label="${esc(hint)}"><div class="facetten" id="wfacetten"></div></div>
-      <div class="actieve-filters" id="wactief" hidden></div>`;
+      <div class="actieve-filters" id="wactief" hidden></div><p class="sr-only" id="wstatus" role="status"></p>`;
+  // statusmelding voor schermlezers na zoeken of filteren (WCAG 4.1.3); de eerste tekening van de pagina meldt niets
+  let _meldTimer = null;
+  function meldAantal(n) {
+    const el = $("#wstatus");
+    if (!el) return;
+    if (!el.dataset.klaar) { el.dataset.klaar = "1"; return; }
+    clearTimeout(_meldTimer);
+    _meldTimer = setTimeout(() => { el.textContent = n ? `${nl(n)} ${n === 1 ? "resultaat" : "resultaten"}` : "Geen resultaten met deze filters"; }, 400);
+  }
   // w: { filters, st, rijen, past(rij, behalve), zoek(q), zet(k, waarden), wis() }
   function tekenWerkbalk(w) {
     const fe = $("#wfacetten"), ae = $("#wactief");
@@ -693,6 +702,7 @@
       $("#mkop").innerHTML = tabelKoppen(def, st);
       tekenRijen();
       tekenWerkbalk(w);
+      meldAantal(rows.length);
       // op een themapagina: eigen adres plus vast deel (type=...)
       const q = tabelQuery(def, st);
       history.replaceState(null, "", `#${def.adres || def.tab}${def.vast ? `?${def.vast}${q ? "&" + q.slice(1) : ""}` : q}`);
@@ -932,7 +942,7 @@
   function wetgeving() {
     const wetten = location.hash.slice(1).split("?")[0] === "wetgeving/wetten";
     const schak = schakelaar("Wetsvoorstellen of geldende wetten", [["wetgeving", "Wetsvoorstellen"], ["wetgeving/wetten", "Geldende wetten"]], wetten ? "wetgeving/wetten" : "wetgeving");
-    const kop = `<h2 class="sr-only">Wetgeving</h2>${schak}`;
+    const kop = `<h1 class="sr-only">Wetgeving</h1>${schak}`;
     if (wetten) return tabelPagina(wettenDef(), kop,
       "Geldende wetten die het kader vormen voor het milieubeleid; de titel opent de geldende tekst op wetten.overheid.nl.",
       "Zoek op naam of BWBR-nummer");
@@ -999,7 +1009,7 @@
   }
   function moties() {
     const tab = location.hash.slice(1).split(/[/?]/)[0] === "amendementen" ? "amendementen" : "moties";
-    return tabelPagina(motieDef(tab), `<h2>${tab === "moties" ? "Moties" : "Amendementen"}</h2>`,
+    return tabelPagina(motieDef(tab), `<h1>${tab === "moties" ? "Moties" : "Amendementen"}</h1>`,
       "Alle gegevens komen rechtstreeks uit de open data van de Tweede Kamer.",
       "Zoek op onderwerp, Kamerlid of Kamerstuknummer");
   }
@@ -1156,7 +1166,7 @@
   function vragenBrieven() {
     const tab = location.hash.slice(1).split(/[/?]/)[0] === "brieven" ? "brieven" : "vragen";
     return tabelPagina(tab === "brieven" ? BRIEF_DEF : VRAAG_DEF,
-      `<h2>${tab === "brieven" ? "Kamerbrieven" : "Kamervragen"}</h2>`,
+      `<h1>${tab === "brieven" ? "Kamerbrieven" : "Kamervragen"}</h1>`,
       tab === "brieven"
         ? "Kamerbrieven van ministeries over milieu, klimaat, energie, water, natuur en leefomgeving."
         : `Schriftelijke vragen van Kamerleden met het antwoord van het kabinet in dezelfde rij. Het kabinet heeft ${ANTWOORD_TERMIJN} dagen om te antwoorden.`,
@@ -1454,7 +1464,7 @@
       const el = doel && document.getElementById(doel.id);
       if (el) { if (el.classList.contains("debat")) zetOpen(el, true); el.scrollIntoView({ block: "start" }); }
     }, 0);
-    return `<h2 class="sr-only">Agenda</h2><div id="agendaknoppen"></div>
+    return `<h1 class="sr-only">Agenda</h1><div id="agendaknoppen"></div>
       ${werkbalk("Zoek in de agenda", S.af.q)}<div id="agendawrap"></div>`;
   }
   const agendaWerkbalk = () => ({ filters: AGENDA_FILTERS, st: S.af, rijen: [], past: afPast,
@@ -1609,6 +1619,7 @@
     }));
 
     tekenWerkbalk({ ...agendaWerkbalk(), rijen: bereik });
+    meldAantal(items.length);
 
     const vaagHier = terug ? [] : vaag.filter((i) => afPast(i));
     el.innerHTML = `
@@ -1728,7 +1739,7 @@
     });
   }
   function zoeken() {
-    return `<h2 class="sr-only">Zoeken</h2><div id="zoekres" aria-live="polite"></div>`;
+    return `<h1 class="sr-only">Zoeken</h1><div id="zoekres" aria-live="polite"></div>`;
   }
   // dezelfde soorten en namen als het menu Documenten; vergaderingen en toezeggingen vallen onder Agenda
   const ZOEK_CATS = [["", "Alles"], ["agenda", "Agenda"], ["wetgeving", "Wetgeving"], ["moties", "Moties"], ["amendementen", "Amendementen"], ["kamervragen", "Kamervragen"], ["kamerbrieven", "Kamerbrieven"], ["kerndocumenten", "Kerndocumenten"]];
@@ -1999,12 +2010,12 @@
   // elke groep is een eigen pagina (menu Documenten); de titel is de naam van de groep
   function kerndocumentenPagina() {
     const groep = kdGroep(), g = kdTabs().find((x) => x.id === groep) || {};
-    return tabelPagina(kerndocDef(groep), `<h2>${esc(g.label || "Kerndocumenten")}</h2>`, "", "Zoek op titel, afkorting, uitgever of kenmerk");
+    return tabelPagina(kerndocDef(groep), `<h1>${esc(g.label || "Kerndocumenten")}</h1>`, "", "Zoek op titel, afkorting, uitgever of kenmerk");
   }
 
   function over() {
     const m = S.data.meta;
-    return `<h2>Over MilieuRadar</h2>
+    return `<h1>Over MilieuRadar</h1>
       <div class="card tekstkaart">
         <p>MilieuRadar volgt Nederlands milieubeleid in het parlement: wetsvoorstellen, moties en amendementen met de stemming per fractie, de agenda van de Kamer met samenvattingen van debatten, Kamervragen met de antwoorden, en Kamerbrieven. Alle fracties krijgen evenveel ruimte.</p>
         <h3>Hoe het werkt</h3>
