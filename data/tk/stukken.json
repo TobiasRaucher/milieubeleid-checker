@@ -2347,14 +2347,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-10-30",
-  "titel": null,
+  "titel": "Internationale klimaatafspraken ",
   "onderwerp": "COP31 inzet Nederland",
   "zaak": "2026Z23655",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "31793-310",
+  "dossiers": [
+   {
+    "nummer": 31793,
+    "toevoeging": null,
+    "titel": "Internationale klimaatafspraken "
+   }
+  ],
   "sectoren": [
    "klimaat-energie"
   ],
@@ -6304,7 +6310,7 @@
  {
   "id": "2026D48321",
   "docId": "de7e1d56-f98b-4a2d-b465-48554de40157",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-02",
   "titel": null,
@@ -6464,7 +6470,7 @@
  {
   "id": "2026D48323",
   "docId": "0a24c913-d21e-40db-b70d-cfa075b29a10",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-02",
   "titel": null,
@@ -11406,7 +11412,7 @@
  {
   "id": "2026D42007",
   "docId": "f15d25b9-f844-4234-af49-c7663063ceac",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-09",
   "titel": "Milieuraad",

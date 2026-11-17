@@ -971,7 +971,7 @@
   "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
   "Voortouwafkorting": "I&W",
   "Besloten": false,
-  "Noot": "HERZIENE CONVOCATIE<br /><strong>Agendapunten toegevoegd</strong><br /><br />In de eerste termijn geldt een indicatieve spreektijd van maximaal 5 minuten per fractie.",
+  "Noot": "HERZIENE CONVOCATIE<br /><strong>Agendapunt toegevoegd</strong><br /><br />In de eerste termijn geldt een indicatieve spreektijd van maximaal 5 minuten per fractie.",
   "SoortWeergave": "Commissiedebat",
   "agendapunten": [
    {
@@ -2118,6 +2118,11 @@
    {
     "naam": "I. Kostić",
     "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
     "functie": "Tweede Kamerlid"
    }
   ],
@@ -3372,16 +3377,16 @@
   "Id": "61764c3e-25ae-4ffc-b654-3e3454d78e05",
   "Nummer": "2026A06124",
   "Soort": "Technische briefing",
-  "Onderwerp": "Aanwijzen van Natura 2000-gebied Hollandse kust",
+  "Onderwerp": "GEANNULEERD - Aanwijzen van Natura 2000-gebied Hollandse kust",
   "Datum": "2026-11-19T10:15:00+01:00",
   "Aanvangstijd": "2026-11-19T10:15:00+01:00",
   "Eindtijd": "2026-11-19T11:15:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Geannuleerd",
   "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
   "Voortouwafkorting": "LVVN",
   "Besloten": false,
-  "Noot": null,
+  "Noot": "De technische briefing is geannuleerd wegens onvoldoende aanmeldingen.",
   "SoortWeergave": "Technische briefing",
   "agendapunten": [],
   "bewindspersonen": [],
@@ -3408,7 +3413,7 @@
     "functie": "Tweede Kamerlid"
    }
   ],
-  "zaal": "Suze Groenewegzaal",
+  "zaal": null,
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06124",
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -3826,7 +3831,7 @@
   "Aanvangstijd": "2026-11-16T10:30:00+01:00",
   "Eindtijd": "2026-11-16T18:00:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
   "Voortouwafkorting": "LVVN",
   "Besloten": false,
@@ -4070,22 +4075,12 @@
     "functie": "Tweede Kamerlid"
    },
    {
-    "naam": "R.J. Dekker",
-    "fractie": "FVD",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "D.A. Ergin",
-    "fractie": "DENK",
-    "functie": "Tweede Kamerlid"
-   },
-   {
     "naam": "A.J. Flach",
     "fractie": "SGP",
     "functie": "Tweede Kamerlid"
    },
    {
-    "naam": "I. Kostić",
+    "naam": "E. Ouwehand",
     "fractie": "PvdD",
     "functie": "Tweede Kamerlid"
    },
@@ -4095,28 +4090,13 @@
     "functie": "Tweede Kamerlid"
    },
    {
-    "naam": "S.M. Beckerman",
-    "fractie": "SP",
-    "functie": "Tweede Kamerlid"
-   },
-   {
     "naam": "C.A.M. van der Plas",
     "fractie": "BBB",
     "functie": "Tweede Kamerlid"
    },
    {
-    "naam": "C.M. van Brenk",
-    "fractie": "50PLUS",
-    "functie": "Tweede Kamerlid"
-   },
-   {
     "naam": "T. ten Hove",
     "fractie": "Groep Markuszower",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "M.C.G. Keijzer",
-    "fractie": "Keijzer",
     "functie": "Tweede Kamerlid"
    }
   ],
