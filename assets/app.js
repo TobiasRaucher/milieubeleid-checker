@@ -79,7 +79,13 @@
       load("data/themas-mapping.json", {}),
       load("data/tk/stemmingen.json", {}),
     ]);
-    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen };
+    // stemmingen.json: {zaak: {datum, activiteit}} (oud formaat: {zaak: datum}); de site gebruikt twee platte tabellen
+    const stemDatum = {}, stemActiviteit = {};
+    for (const [nr, v] of Object.entries(stemmingen || {})) {
+      if (typeof v === "string") stemDatum[nr] = v;
+      else if (v && v.datum) { stemDatum[nr] = v.datum; if (v.activiteit) stemActiviteit[nr] = v.activiteit; }
+    }
+    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
       $("#stamp").textContent = "";
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
@@ -856,9 +862,29 @@
     return `<div class="mdetail">
       <p>Zaak <span class="mono">${esc(z.nummer)}</span>${z.document ? ` · document <span class="mono">${esc(z.document)}</span>` : ""} · ingediend ${fmtKort(z.gestartOp)}${door.length ? `, door ${opsomming(door)}` : ""}</p>
       ${b && t ? `<div class="mstemming"><p class="mtelling">Voor ${nl(t.voor)} / Tegen ${nl(t.tegen)}</p>
-        <div class="mstemmen">${blok("Voor", fracties("Voor"))}${blok("Tegen", fracties("Tegen"))}</div></div>` : `<p class="muted">Nog geen stemming</p>`}
+        <div class="mstemmen">${blok("Voor", fracties("Voor"))}${blok("Tegen", fracties("Tegen"))}</div></div>` : S.data.stemmingen[z.nummer] ? "" : `<p class="muted">Nog geen stemming</p>`}
+      ${vergaderRegels(z)}
       <div class="mlinks">${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
     </div>`;
+  }
+  // "Ingediend bij" (vergadering op de Agenda) en "Stemming" (plenaire Stemmingen op tweedekamer.nl)
+  function vergaderRegels(z) {
+    const { actVanZaak, tmdNaarCd } = motieKoppeling();
+    const actById = (nr) => S.data.activiteiten.find((a) => a.Nummer === nr);
+    const naam = (a) => { const t = typeNaam(a.Soort), o = String(a.Onderwerp || "").trim(); return o && !o.toLowerCase().startsWith(t.toLowerCase()) ? `${t}: ${o}` : o || t; };
+    const vlink = (a) => `<a href="#agenda/a-${esc(a.Nummer)}">${esc(naam(a))}</a>, ${esc(dagKort(dagNL(new Date(a.Datum))))}`;
+    const uit = [];
+    const a = actVanZaak.get(z.nummer);
+    if (a) {
+      const cd = tmdNaarCd.has(a.Nummer) && actById(tmdNaarCd.get(a.Nummer));
+      uit.push(`<p>Ingediend bij ${vlink(a)}${cd ? ` (bij ${vlink(cd)})` : ""}</p>`);
+    }
+    const dag = S.data.stemmingen[z.nummer], sa = S.data.stemActiviteit[z.nummer];
+    if (dag) {
+      const tekst = `${dag >= VANDAAG ? "Stemming gepland" : "Gestemd"} ${dagKort(dag)}`;
+      uit.push(`<p>${sa ? extLink(`https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=${encodeURIComponent(sa)}`, `${tekst} (plenaire stemmingen)`) : esc(tekst)}</p>`);
+    }
+    return uit.join("");
   }
 
   /* ---------- Vragen & Brieven ---------- */
@@ -1114,6 +1140,22 @@
       perAct.get(nr).push(z);
       actVanMotie.set(z.nummer, hit[0]);
     }
+    // Een amendement wordt meestal dagen voor het debat ingediend: koppel aan de eerste plenaire vergadering (of wetgevings-/
+    // notaoverleg) vanaf de dag voor het indienen, tot en met de stemming, met het Kamerstukdossier op de agenda.
+    // Alleen als er op die eerste dag precies één zo'n vergadering is.
+    const actVanZaak = new Map(actVanMotie), dagen = [...perDag.keys()].sort();
+    for (const z of S.data.zaken) {
+      if (z.soort !== "Amendement" || !z.gestartOp) continue;
+      const dn = new Set(z.dossiers.map((x) => String(x.nummer)));
+      const van = plusDagen(z.gestartOp, -1), tot = S.data.stemmingen[z.nummer] || "9999";
+      for (const d of dagen) {
+        if (d < van || d > tot) continue;
+        const hit = perDag.get(d).filter((a) => [...nums(a)].some((n) => dn.has(n)));
+        if (!hit.length) continue;
+        if (hit.length === 1) actVanZaak.set(z.nummer, hit[0]);
+        break;
+      }
+    }
     // tweeminutendebat -> commissiedebat
     const tmdNaarCd = new Map(), cdNaarTmd = new Map();
     const normT = (s) => (s || "").toLowerCase().replace(/\(.*?\)/g, "").replace(/^tweeminutendebat\s*/, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
@@ -1126,7 +1168,7 @@
         .find((c) => { const n = normT(c.Onderwerp); return n && (n.startsWith(naam.slice(0, 12)) || naam.startsWith(n.slice(0, 12))); });
       if (cd) { tmdNaarCd.set(t.Nummer, cd.Nummer); if (!cdNaarTmd.has(cd.Nummer)) cdNaarTmd.set(cd.Nummer, []); cdNaarTmd.get(cd.Nummer).push(t.Nummer); }
     }
-    return (_mk = { perAct, actVanMotie, tmdNaarCd, cdNaarTmd });
+    return (_mk = { perAct, actVanMotie, actVanZaak, tmdNaarCd, cdNaarTmd });
   }
   // alle moties bij een vergadering (inclusief het bijbehorende tweeminutendebat)
   function motiesBijActiviteiten(nrs) {

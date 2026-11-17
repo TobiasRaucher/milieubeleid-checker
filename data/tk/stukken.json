@@ -1,5 +1,22 @@
 [
  {
+  "id": "2026D58363",
+  "soort": "Brief regering",
+  "datum": "2026-11-17",
+  "titel": null,
+  "onderwerp": "Verzamelbrief moties, toezeggingen, en verzoeken LVVN-commissie met betrekking tot aanpak landbouw, natuur en stikstof ",
+  "zaak": "2026Z25255",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25255&did=2026D58363"
+ },
+ {
   "id": "2026D58075",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-11-16",
@@ -16,6 +33,23 @@
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23119&did=2026D58075"
+ },
+ {
+  "id": "2026D58322",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Vermeer over ernstige hinder en slaapverstoring in de woonomgeving door windturbines en de totstandkoming van landelijke windturbinenormen",
+  "zaak": "2026Z21565",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21565&did=2026D58322"
  },
  {
   "id": "2026D58115",
@@ -43,6 +77,23 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "2026D58287",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Beckerman over ‘het nieuws dat gegevens over het energie- en watergebruik van datacenters ontbreken’",
+  "zaak": "2026Z20887",
+  "ministerie": "Economische Zaken en Klimaat",
+  "ondertekenaar": "W.J.M. Aerdts",
+  "functie": "staatssecretaris van Economische Zaken en Klimaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20887&did=2026D58287"
  },
  {
   "id": "2026D58055",
@@ -96,6 +147,94 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25117&did=2026D58015"
  },
  {
+  "id": "2026D58329",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Kostić over de negatieve adviezen van ambtenaren en adviseurs over afspraken met Tata Steel",
+  "zaak": "2026Z17988",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling",
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17988&did=2026D58329"
+ },
+ {
+  "id": "2026D58232",
+  "soort": "Brief regering",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Appreciatie moties ingediend tijdens het commissiedebat Milieuraad op 7 oktober 2026 over luchtvaart",
+  "zaak": "2026Z25188",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25188&did=2026D58232"
+ },
+ {
+  "id": "2026D58339",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid van Oosterhout over het onderzoek ‘Subsidiefuik Tata Steel’ in opdracht van Milieudefensie en het PwC rapport over de toekomst van de Europese staalindustrie",
+  "zaak": "2026Z18395",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling",
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18395&did=2026D58339"
+ },
+ {
+  "id": "2026D58262",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Van Houwelingen over energieprijzen elektriciteit intensieve industrie",
+  "zaak": "2026Z19355",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19355&did=2026D58262"
+ },
+ {
+  "id": "2026D58336",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Kostić over de berekeningen van SOMO met betrekking tot de overheidssubsidie van 10,8 miljard voor Tata Steel Nederland",
+  "zaak": "2026Z18393",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling",
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18393&did=2026D58336"
+ },
+ {
   "id": "2026D58118",
   "soort": "Schriftelijke vragen",
   "datum": "2026-11-16",
@@ -139,6 +278,23 @@
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22880&did=2026D58101"
+ },
+ {
+  "id": "2026D58312",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Flach over het gebrek aan gegevens over het energie- en watergebruik van datacenters",
+  "zaak": "2026Z20698",
+  "ministerie": "Economische Zaken en Klimaat",
+  "ondertekenaar": "W.J.M. Aerdts",
+  "functie": "staatssecretaris van Economische Zaken en Klimaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20698&did=2026D58312"
  },
  {
   "id": "2026D57580",

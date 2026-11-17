@@ -301,8 +301,9 @@ def activiteiten(commissies, start, plenaire_termen):
 
 
 def stemmingen(start):
-    """{zaaknummer: datum} uit de agendapunten van plenaire Stemmingen. Per zaak de eerstvolgende geplande stemming,
-    en anders de laatst gehouden (een motie kan worden uitgesteld en opnieuw geagendeerd)."""
+    """{zaaknummer: {"datum", "activiteit"}} uit de agendapunten van plenaire Stemmingen. Per zaak de eerstvolgende
+    geplande stemming, en anders de laatst gehouden (een motie kan worden uitgesteld en opnieuw geagendeerd).
+    "activiteit" is het nummer van die Stemmingen-activiteit (voor de link naar tweedekamer.nl)."""
     rec = odata("Activiteit", {
         "$filter": f"Verwijderd eq false and Soort eq 'Stemmingen' and Datum ge {start}T00:00:00Z and (Status eq 'Gepland' or Status eq 'Uitgevoerd')",
         "$select": "Nummer,Datum,Status",
@@ -320,13 +321,14 @@ def stemmingen(start):
                 n = z.get("Nummer")
                 if not n:
                     continue
-                oud = uit.get(n)
+                oud = (uit.get(n) or {}).get("datum")
+                nieuw = {"datum": dag, "activiteit": a.get("Nummer")}
                 if oud is None:
-                    uit[n] = dag
+                    uit[n] = nieuw
                 elif dag >= vandaag and (oud < vandaag or dag < oud):
-                    uit[n] = dag  # eerstvolgende geplande gaat voor
+                    uit[n] = nieuw  # eerstvolgende geplande gaat voor
                 elif dag < vandaag and oud < vandaag and dag > oud:
-                    uit[n] = dag
+                    uit[n] = nieuw
     return uit
 
 

@@ -1,5 +1,50 @@
 [
  {
+  "id": "f421e356-e33f-4be1-9b85-7ad4032094c7",
+  "nummer": "2026Z25252",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Van der Plas over afzien van generieke korting op productierechten binnen het landbouw-, natuur- en stikstofpakket ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-16",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIV",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-16",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D58358",
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25252&did=2026D58358",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25252",
+  "zoekterm": "stikstof"
+ },
+ {
   "id": "194549af-ae17-4b54-9720-900c8faf89f7",
   "nummer": "2026Z25100",
   "soort": "Amendement",
@@ -35,6 +80,164 @@
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/amendementen/detail?id=2026Z25100&did=2026D57978",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25100",
   "zoekterm": "stikstof"
+ },
+ {
+  "id": "b0aa1e09-c2ed-409e-ab30-f5fe4c6837c5",
+  "nummer": "2026Z25244",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Koorevaar c.s. over de uitbreiding van mobiele stikstofmetingen en de ontwikkeling en toepassing van vliegtuigmetingen onderdeel maken van fase 2 van het NKS ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-16",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIV",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "J.C. Koorevaar",
+    "fractie": "CDA",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "R. den Hollander",
+    "fractie": "VVD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-16",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D58350",
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25244&did=2026D58350",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25244",
+  "zoekterm": "stikstof"
+ },
+ {
+  "id": "eebeaf1a-ec64-4aa7-9b28-08119a1dfa25",
+  "nummer": "2026Z25247",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Van der Plas over afzien van de voorgestelde ammoniaknorm ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-16",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIV",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-16",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D58353",
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25247&did=2026D58353",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25247"
+ },
+ {
+  "id": "6af9521f-d529-490b-8479-ece067db575a",
+  "nummer": "2026Z25246",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Grinwis c.s. over onderzoeken of en hoe een systematiek van verhandelbare ammoniakrechten kan worden geïmplementeerd ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-16",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIV",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "J.C. Koorevaar",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "R. den Hollander",
+    "fractie": "VVD",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-16",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D58352",
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25246&did=2026D58352",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25246"
  },
  {
   "id": "010fab05-006f-4ddd-bf0d-8a64904e3047",
