@@ -175,7 +175,7 @@
   // Stukken heet sinds 13 nov 2026 Vragen & Brieven (#vragen en #brieven).
   function oudeRoute(tab, pad) {
     if (tab === "stukken") return "#vragen";
-    if (tab === "wetgeving" && pad.includes("/")) return "#wetgeving";
+    if (tab === "wetgeving" && pad.includes("/") && pad !== "wetgeving/wetten") return "#wetgeving";
     if (tab === "toezeggingen" || tab === "fracties") return "#agenda?terugblik=1";
     if (tab !== "vergaderingen" && tab !== "debatten") return null;
     const sub = pad.split("/")[1];
@@ -217,10 +217,9 @@
     zetScrollRand(); zetBoven();
     if (S.tabel) bindTabel();
     if (S.themaLijst) bindThemaLijst();
-    if (tab === "documenten") bindKerndocumenten();
     if (tab === "zoeken") renderZoekResultaten();
     if (tab === "overzicht" && window.MRMilieu) MRMilieu.vul();
-    const sub = tab === "agenda" || tab === "themas" ? null : pad.split("/")[1];
+    const sub = tab === "agenda" || tab === "themas" || tab === "documenten" || tab === "wetgeving" ? null : pad.split("/")[1];
     if (sub) { const t = document.getElementById(sub); if (t) { if (t.tagName === "DETAILS") t.open = true; if (t.classList.contains("debat")) t.classList.add("open"); t.scrollIntoView({ behavior: "smooth", block: "start" }); } }
   }
 
@@ -440,7 +439,7 @@
     { param: "kamervragen", label: "Kamervragen", def: () => VRAAG_DEF, hint: "Zoek op onderwerp, Kamerlid of ministerie", alle: "Vragen & Brieven" },
     { param: "vergaderingen", label: "Vergaderingen", soort: "vergadering", hint: "Zoek in vergaderingen" },
     { param: "agenda", label: "Agenda", soort: "agenda", hint: "Zoek in de agenda" },
-    { param: "kerndocumenten", label: "Kerndocumenten", soort: "kerndocument", hint: "Zoek in de kerndocumenten" },
+    { param: "kerndocumenten", label: "Kerndocumenten", def: () => kerndocDef(null), hint: "Zoek op titel, afkorting, uitgever of kenmerk", alle: "Kerndocumenten" },
   ];
   // een tabeldefinitie beperkt tot één thema: zonder Themakolom en -filter, met het adres van de themapagina
   function themaDef(def, slug, param) {
@@ -593,7 +592,7 @@
   }
   function tabelCel(def, c, z) {
     if (c.knop) return `<td class="knopcel"><button type="button" class="uitklap" aria-expanded="false" aria-label="${esc(def.knopLabel[0])}">${ico("chevron")}</button></td>`;
-    if (c.datum) return `<td class="datum rechts">${fmtKort(def.datum(z))}</td>`;
+    if (c.datum) return `<td class="datum rechts">${def.datum(z) ? fmtKort(def.datum(z)) : leegCel("Geen datum")}</td>`;
     return `<td class="${c.tdCls || ""}">${c.cel(z)}</td>`;
   }
   // kop: de schakelaar of paginatitel met het zoekveld rechts; voet: de uitleg onder de tabel
@@ -938,8 +937,32 @@
       </div>`;
     },
   };
+  // Geldende wetten: de kerndocumenten uit groepen met pagina "wetgeving" (nu Wettelijk kader: Klimaatwet, Omgevingswet)
+  function wettenDef() {
+    const K = kdData(), groepen = new Set(K.groepen.filter((g) => g.pagina === "wetgeving").map((g) => g.id));
+    return {
+      tab: "wetgeving/wetten", eenheid: "wetten", knopLabel: ["Details tonen", "Details verbergen"], gedeeld: ["thema"],
+      rijen: () => K.reeksen.filter((d) => groepen.has(d.groep)),
+      datum: (d) => d.datum, sleutel: (d) => d.id,
+      zoektekst: (d) => [d.titel, d.afkorting, d.kenmerk, d.uitgever].filter(Boolean).join(" "),
+      filters: { thema: themaFilter(K.themasVan) },
+      kolommen: [
+        themaKolom(K.themasVan),
+        { kop: "Wet", thCls: "ond", tdCls: "ond", cel: (d) => `<a class="ltitel" href="${esc(d.url)}" target="_blank" rel="noopener">${titelMetPijl(d.titel)}</a>` },
+        { knop: true },
+        { kop: "Kenmerk", thCls: "rechts", tdCls: "kamerstuk rechts mono", cel: (d) => (d.kenmerk ? esc(d.kenmerk) : leegCel("Geen kenmerk")) },
+      ],
+      detail: kdDetail,
+    };
+  }
   function wetgeving() {
-    return tabelPagina(WET_DEF, { titel: "", links: `<h2 class="tabeltitel">Wetgeving</h2>` },
+    const wetten = location.hash.slice(1).split("?")[0] === "wetgeving/wetten";
+    const schak = schakelaar("Wetsvoorstellen of geldende wetten", [["wetgeving", "Wetsvoorstellen"], ["wetgeving/wetten", "Geldende wetten"]], wetten ? "wetgeving/wetten" : "wetgeving");
+    const kop = { titel: `<h2 class="sr-only">Wetgeving</h2>`, links: schak };
+    if (wetten) return tabelPagina(wettenDef(), kop,
+      "Geldende wetten die het kader vormen voor het milieubeleid, op wetten.overheid.nl (de geldende tekst). Een klik op een rij opent de wet.",
+      "Zoek op naam of BWBR-nummer");
+    return tabelPagina(WET_DEF, kop,
       "Wetsvoorstellen sinds 2019 over milieu, klimaat, energie, water, natuur en leefomgeving, rechtstreeks uit de open data van de Tweede Kamer. Een klik op een rij opent het wetsvoorstel op tweedekamer.nl; de knop naast de titel toont de laatste stappen. Thema, Status en Ingediend door filteren, Ingediend sorteert.",
       "Zoek op titel, Kamerstuknummer of indiener");
   }
@@ -1946,129 +1969,84 @@
 
   /* ---------- Over ---------- */
   /* ---------- Kerndocumenten (#documenten) ----------
-     Vaste documenten voor beleidsonderzoek, per groep (data/kerndocumenten.json) plus de begrotingsstukken uit de Kamerdata
-     (data/tk/begrotingen.json). Per reeks de nieuwste editie, eerdere edities ingeklapt. Begrotingen en jaarverslagen per
-     hoofdstuk staan in één tabel. Thema en zoekterm staan in de URL: #documenten?thema=<slug>&q=<tekst>. */
+     Vaste documenten voor beleidsonderzoek (data/kerndocumenten.json) plus de begrotingsstukken uit de Kamerdata
+     (data/tk/begrotingen.json), in het tabelpatroon van Moties & Amendementen: een schakelaar met een tab per groep
+     (#documenten/<groep>) en één tabel. Per reeks de nieuwste editie; eerdere edities staan in de uitgeklapte rij.
+     Begrotingen en jaarverslagen zijn een rij per hoofdstuk. Groepen met pagina "wetgeving" staan op Wetgeving
+     (Geldende wetten), groepen met verborgen: true nergens (dat filtert MRThemas.kerndocumenten al). */
   let _kd = null;
   function kdData() {
-    if (_kd) return _kd;
+    if (_kd && _kd.bron === S.data.kerndocumenten) return _kd;
     const M = window.MRThemas, alle = M.kerndocumenten(S.data.kerndocumenten, S.data.begrotingen);
-    const groepen = (S.data.kerndocumenten.groepen || []);
-    const reeksen = M.kerndocReeksen(alle.filter((d) => !d.rol));
+    const groepen = (S.data.kerndocumenten.groepen || []).filter((g) => !g.verborgen);
+    const reeksen = M.kerndocReeksen(alle);
     // thema's: mapping (na de review), dan het veld themas
-    const themasVan = (d) => { const k = "kerndoc:" + d.id; return S.T.inMapping(k) ? S.T.item(k) : (d.themas || []).filter((t) => S.T.bestaat(t)); };
-    return (_kd = { alle, groepen, reeksen, themasVan });
+    const themasVan = onthoud((d) => { const k = "kerndoc:" + d.id; return S.T.inMapping(k) ? S.T.item(k) : (d.themas || []).filter((t) => S.T.bestaat(t)); }, (d) => d.id);
+    // naam per begrotingshoofdstuk (XII: Infrastructuur en Waterstaat)
+    const hoofdstukNaam = new Map((S.data.begrotingen || []).filter((b) => b.hoofdstuk && b.naam).map((b) => [b.hoofdstuk, b.naam]));
+    return (_kd = { bron: S.data.kerndocumenten, alle, groepen, reeksen, themasVan, hoofdstukNaam });
   }
+  // tabs op Kerndocumenten: alle zichtbare groepen behalve die op een andere pagina staan
+  const kdTabs = () => kdData().groepen.filter((g) => !g.pagina);
   function kdMeta(d) {
     return [`<span class="tag">${esc(d.soort || "Document")}</span>`, d.datum ? `<span class="datum">${fmtKort(d.datum)}</span>` : "",
       d.uitgever ? `<span>${esc(d.uitgever)}</span>` : "", d.kenmerk ? `<span class="mono">${esc(d.kenmerk)}</span>` : ""].filter(Boolean);
   }
-  const kdZoektekst = (d) => [d.titel, d.afkorting, d.uitgever, d.kenmerk, d.soort, d.document, ...(d.eerder || []).map((e) => e.titel)].filter(Boolean).join(" ").toLowerCase();
-  function kdRegel(d, themasVan) {
-    const th = themasVan(d);
+  // "Kamerstuk 37020 XII" -> "37020-XII"; andere kenmerken (ECLI, BWBR, documentnummer) zoals ze zijn
+  const kdKenmerk = (k) => String(k || "").replace(/^Kamerstuk /, "").replace(/^(\d+) ([A-Z]+)$/, "$1-$2");
+  const kdBron = (url) => { try { const h = new URL(url).hostname.replace(/^www\./, ""); return h === "tweedekamer.nl" ? "Bekijk op tweedekamer.nl" : `Bekijk op ${h}`; } catch (e) { return "Bekijk het document"; } };
+  function kerndocDef(groep) {
+    const K = kdData();
+    const themasKd = K.themasVan;
+    const groepLabel = new Map(K.groepen.map((g) => [g.id, g.label]));
+    const hoofdstukken = (S.data.config.kerndocumenten?.hoofdstukken) || [];
+    const filters = {
+      thema: themaFilter(themasKd),
+      soort: { label: "Soort", waarden: (d) => [d.soort || "Document"], orde: opVolgorde(["Nota", "Begroting", "Jaarverslag", "Wetsvoorstel"]), tekst: (v) => esc(v) },
+      uitgever: { label: "Uitgever", waarden: (d) => [d.uitgever || ""], orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
+    };
+    if (groep === "begroting") filters.hoofdstuk = { label: "Hoofdstuk", waarden: (d) => [d.hoofdstuk || ""], orde: opVolgorde(["", ...hoofdstukken]),
+      tekst: (v) => (v ? `<span class="mono">${esc(v)}</span> ${esc(K.hoofdstukNaam.get(v) || "")}` : "Rijksbreed") };
+    if (!groep) filters.groep = { label: "Groep", waarden: (d) => [d.groep], orde: opVolgorde(K.groepen.map((g) => g.id)), tekst: (v) => esc(groepLabel.get(v) || v) };
+    const kolommen = [
+      themaKolom(themasKd),
+      { kop: "Document", thCls: "ond", tdCls: "ond", cel: (d) => `<a class="ltitel" href="${esc(d.url)}" target="_blank" rel="noopener">${titelMetPijl(d.titel)}</a>` },
+      { knop: true },
+      ...(groep ? [] : [{ filter: "groep", tdCls: "uitslag", cel: (d) => esc(groepLabel.get(d.groep) || "") }]),
+      { filter: "soort", tdCls: "uitslag", cel: (d) => esc(d.soort || "Document") },
+      ...(groep === "begroting" ? [{ filter: "hoofdstuk", tdCls: "kamerstuk mono", cel: (d) => (d.hoofdstuk ? `<span title="${esc(K.hoofdstukNaam.get(d.hoofdstuk) || "")}">${esc(d.hoofdstuk)}</span>` : leegCel("Rijksbreed")) }] : []),
+      { filter: "uitgever", tdCls: "ministerie hide-sm", cel: (d) => (d.uitgever ? esc(d.uitgever) : leegCel("Onbekend")) },
+      { kop: "Kenmerk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (d) => (d.kenmerk ? `<span title="${esc(d.kenmerk)}">${esc(kdKenmerk(d.kenmerk))}</span>` : leegCel("Geen kenmerk")) },
+      { datum: true, kop: "Datum" },
+    ];
+    return {
+      tab: groep ? `documenten/${groep}` : "documenten", eenheid: "kerndocumenten", knopLabel: ["Details tonen", "Details verbergen"], gedeeld: ["thema"],
+      rijen: () => K.reeksen.filter((d) => (groep ? d.groep === groep : K.groepen.some((g) => g.id === d.groep))),
+      datum: (d) => d.datum, sleutel: (d) => d.id,
+      zoektekst: (d) => [d.titel, d.afkorting, d.uitgever, d.kenmerk, kdKenmerk(d.kenmerk), d.soort, d.document, d.documentSoort, d.hoofdstuk, K.hoofdstukNaam.get(d.hoofdstuk), ...(d.eerder || []).map((e) => e.titel)].filter(Boolean).join(" "),
+      filters, kolommen, detail: kdDetail,
+    };
+  }
+  // uitgeklapte rij: kenmerken, eerdere edities en de links
+  function kdDetail(d) {
+    const kenm = [d.kenmerk ? (/^Kamerstuk /.test(d.kenmerk) ? `Kamerstuk <span class="mono">${esc(kdKenmerk(d.kenmerk))}</span>` : `<span class="mono">${esc(d.kenmerk)}</span>`) : "", d.document && d.document !== d.kenmerk ? `document <span class="mono">${esc(d.document)}</span>` : "",
+      d.documentSoort ? esc(d.documentSoort.toLowerCase()) : "", d.datum ? `verschenen ${fmtKort(d.datum)}` : "", d.uitgever ? esc(d.uitgever) : ""].filter(Boolean);
     const eerder = d.eerder || [];
-    const links = (d.links || []).map((l) => extLink(l.url, l.tekst));
-    return `<li class="themaregel kdregel" data-themas="${esc(th.join(" "))}" data-tekst="${esc(kdZoektekst(d))}">
-      <div class="regelmeta">${kdMeta(d).join("")}</div>
-      <div class="themaregel-titel"><a class="ltitel" href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titel)}</a></div>
-      ${th.length ? `<div class="tchips">${th.map((sl) => `<a class="tchip" href="#themas/${esc(sl)}">${esc(S.T.naam(sl))}</a>`).join("")}</div>` : ""}
-      ${links.length ? `<p class="kd-links">${links.join(" · ")}</p>` : ""}
-      ${eerder.length ? `<details class="meer"><summary>Eerdere edities (${nl(eerder.length)})</summary><ul class="kd-eerder">${eerder.map((e) =>
-        `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titel)}</a>${e.datum ? ` <span class="datum muted">${fmtKort(e.datum)}</span>` : ""}${e.kenmerk ? ` <span class="mono muted">${esc(e.kenmerk)}</span>` : ""}</li>`).join("")}</ul></details>` : ""}
-    </li>`;
-  }
-  // begrotingen en jaarverslagen per hoofdstuk: één rij per hoofdstuk, een kolom per begrotingsjaar en het laatste jaarverslag
-  function kdHoofdstukken(K) {
-    const st = K.alle.filter((d) => d.rol);
-    if (!st.length) return "";
-    const jaren = [...new Set(st.filter((d) => d.rol === "begroting").map((d) => d.jaar))].sort((a, b) => b - a);
-    const jv = Math.max(...st.filter((d) => d.rol === "jaarverslag").map((d) => d.jaar), 0);
-    const volgorde = (S.data.config.kerndocumenten?.hoofdstukken) || [];
-    const hs = [...new Set(st.map((d) => d.hoofdstuk))].sort((a, b) => volgorde.indexOf(a) - volgorde.indexOf(b));
-    const cel = (d, extra) => (d ? `<a href="${esc(d.url)}" target="_blank" rel="noopener" title="${esc(d.documentSoort || "")}">${esc(d.document)}</a>${extra || ""}` : `<span class="muted">nog niet verschenen</span>`);
-    const rijen = hs.map((h) => {
-      const per = (rol, j) => st.find((d) => d.hoofdstuk === h && d.rol === rol && d.jaar === j);
-      const nieuw = per("begroting", jaren[0]) || st.find((d) => d.hoofdstuk === h);
-      const naam = nieuw.titel.replace(/^(Begroting|Jaarverslag) /, "").replace(/ \d{4}$/, "");
-      const th = K.themasVan(nieuw), j = per("jaarverslag", jv);
-      const rf = nieuw.rol === "begroting" ? (nieuw.links || []).find((l) => l.tekst === "Rijksfinanciën") : null;
-      const rk = j && (j.links || []).find((l) => l.tekst === "Algemene Rekenkamer");
-      const tekst = [naam, h, ...st.filter((d) => d.hoofdstuk === h).flatMap((d) => [d.titel, d.kenmerk, d.document])].join(" ").toLowerCase();
-      return `<tr class="kdrij" data-themas="${esc(th.join(" "))}" data-tekst="${esc(tekst)}">
-        <td class="mono kd-h">${esc(h)}</td>
-        <td class="kd-naam"><span class="kd-naamtekst">${esc(naam)}</span>${th.length ? themaChips(th) : ""}</td>
-        ${jaren.map((y, i) => `<td class="nw">${cel(per("begroting", y), i === 0 && rf ? `<br><a class="small" href="${esc(rf.url)}" target="_blank" rel="noopener">Rijksfinanciën</a>` : "")}</td>`).join("")}
-        <td class="nw">${cel(j, rk ? `<br><a class="small" href="${esc(rk.url)}" target="_blank" rel="noopener">Rekenkamer</a>` : "")}</td>
-      </tr>`;
-    }).join("");
-    return `<div class="card kd-tabelkaart"><h3 id="kd-hoofdstukken">Begrotingen en jaarverslagen per hoofdstuk</h3>
-      <div class="tabelscroll"><table class="kdtabel" aria-labelledby="kd-hoofdstukken"><thead><tr><th>Hoofdstuk</th><th></th>${jaren.map((y) => `<th class="nw">Begroting ${y}</th>`).join("")}<th class="nw">Jaarverslag ${jv || ""}</th></tr></thead>
-      <tbody>${rijen}</tbody></table></div>
-      <p class="peil">Tweede Kamer open data · memorie van toelichting en jaarverslag per hoofdstuk (documentnummer) · Kamerstuk ${esc(String(st.find((d) => d.rol === "begroting" && d.jaar === jaren[0])?.kenmerk || "").replace(/^Kamerstuk /, "").split(" ")[0])}</p></div>`;
-  }
-  const KD_CYCLUS = ["miljoenennota", "belastingplan", "voorjaarsnota", "najaarsnota", "jaarverslag-rijk"];
-  function kdVolgorde(K, d) {
-    const c = KD_CYCLUS.indexOf(d.reeks);
-    if (c >= 0) return c;
-    const i = (S.data.kerndocumenten.documenten || []).findIndex((x) => (x.reeks || x.id) === (d.reeks || d.id));
-    return 100 + (i < 0 ? 999 : i);
+    const ed = (e) => `<li>${e.datum ? `<span class="datum">${fmtKort(e.datum)}</span> ` : ""}${extLink(e.url, e.titel)}${e.kenmerk ? ` <span class="muted mono">${esc(kdKenmerk(e.kenmerk))}</span>` : ""}${docKnop({ ...e, id: e.document, link: e.url }, "Lees") ? ` · ${docKnop({ ...e, id: e.document, link: e.url }, "Lees")}` : ""}</li>`;
+    return `<div class="mdetail">
+      ${kenm.length ? `<p>${kenm.join(" · ")}</p>` : ""}
+      ${eerder.length ? `<div class="mstemming"><p class="mtelling">${eerder.length === 1 ? "Eerdere editie" : `Eerdere edities (${nl(eerder.length)})`}</p><ul class="mstappen">${eerder.map(ed).join("")}</ul></div>` : ""}
+      <div class="mlinks">${docKnop({ ...d, id: d.document, link: d.url }, "Bekijk het origineel")}${extLink(d.url, kdBron(d.url))}${(d.links || []).map((l) => extLink(l.url, l.tekst)).join("")}</div>
+    </div>`;
   }
   function kerndocumentenPagina() {
-    const K = kdData();
-    const q = (hashQuery().q || []).join(",");
-    const gekozen = (hashQuery().thema || []).filter((t) => S.T.bestaat(t));
-    const tel = new Map(S.T.lijst.map((t) => [t.slug, 0]));
-    for (const d of [...K.reeksen, ...K.alle.filter((x) => x.rol)]) for (const t of K.themasVan(d)) tel.set(t, (tel.get(t) || 0) + 1);
-    const facet = `<details class="facet" id="kd-thema">
-        <summary>Thema${gekozen.length ? ` <span class="facet-n">${gekozen.length}</span>` : ""}</summary>
-        <div class="facet-menu" role="group" aria-label="Thema">
-          ${S.T.lijst.map((t) => `<label><input type="checkbox" value="${esc(t.slug)}"${gekozen.includes(t.slug) ? " checked" : ""}><span>${esc(t.label)}</span><span class="n">${nl(tel.get(t.slug) || 0)}</span></label>`).join("")}
-        </div></details>`;
-    const groepen = K.groepen.map((g) => {
-      // volgorde: begrotingsstukken in de vaste volgorde van de begrotingscyclus, dan de handmatige lijst zoals in het bestand
-      const l = K.reeksen.filter((d) => d.groep === g.id).sort((a, b) => kdVolgorde(K, a) - kdVolgorde(K, b));
-      const tabel = g.id === "begroting" ? kdHoofdstukken(K) : "";
-      if (!l.length && !tabel) return "";
-      return `<section class="kd-groep" aria-labelledby="kd-${esc(g.id)}"><h3 id="kd-${esc(g.id)}" class="kd-kop">${esc(g.label)}</h3>
-        ${l.length ? `<div class="card"><ul class="list">${l.map((d) => kdRegel(d, K.themasVan)).join("")}</ul></div>` : ""}${tabel}</section>`;
-    }).join("");
-    return `<div class="filters motiekop"><h2 class="tabeltitel">Kerndocumenten</h2>${facet}<input type="search" id="kdq" placeholder="Zoek op titel, afkorting, uitgever of kenmerk" value="${esc(q)}" aria-label="Zoeken in kerndocumenten"></div>
-      <div id="kd-actief" class="actieve-filters kd-actief"></div>
-      ${groepen}
-      <div class="card empty" id="kd-leeg" hidden>Geen kerndocumenten met deze filters. <button type="button" class="linkknop" id="kd-wis">Filters wissen</button></div>`;
+    const tabs = kdTabs();
+    const gevraagd = location.hash.slice(1).split("?")[0].split("/")[1];
+    const tab = (tabs.find((g) => g.id === gevraagd) || tabs[0] || {}).id;
+    return tabelPagina(kerndocDef(tab), { titel: `<h2 class="sr-only">Kerndocumenten</h2>`, links: schakelaar("Groep kerndocumenten", tabs.map((g) => [`documenten/${g.id}`, esc(g.kort || g.label)]), `documenten/${tab}`) },
+      `Een klik op een rij opent het document bij de bron (Kamerstukken op tweedekamer.nl); de knop naast de titel toont eerdere edities en de links. Per reeks staat de nieuwste editie in de tabel. Begrotingsstukken komen uit de open data van de Tweede Kamer, de rest is met de hand bijgehouden. Wetten staan bij <a href="#wetgeving/wetten">Wetgeving</a>.`,
+      "Zoek op titel, afkorting, uitgever of kenmerk");
   }
-  function bindKerndocumenten() {
-    const veld = $("#kdq"), fd = $("#kd-thema");
-    const toepassen = () => {
-      const q = veld.value.trim().toLowerCase(), woorden = q.split(/\s+/).filter(Boolean);
-      const th = [...fd.querySelectorAll("input:checked")].map((i) => i.value);
-      const past = (el) => (!th.length || el.dataset.themas.split(" ").some((t) => th.includes(t))) && woorden.every((w) => el.dataset.tekst.includes(w));
-      document.querySelectorAll(".kdregel, .kdrij").forEach((el) => { el.hidden = !past(el); });
-      document.querySelectorAll(".kd-groep").forEach((g) => {
-        g.querySelectorAll(".card").forEach((c) => { c.hidden = !c.querySelector(".kdregel:not([hidden]), .kdrij:not([hidden])"); });
-        g.hidden = !g.querySelector(".kdregel:not([hidden]), .kdrij:not([hidden])");
-      });
-      $("#kd-leeg").hidden = !!document.querySelector(".kdregel:not([hidden]), .kdrij:not([hidden])");
-      const sum = fd.querySelector("summary");
-      sum.innerHTML = `Thema${th.length ? ` <span class="facet-n">${th.length}</span>` : ""}`;
-      $("#kd-actief").innerHTML = th.length ? `${th.map((t) => `<button type="button" class="chip actief" data-kdrm="${esc(t)}" aria-label="Filter ${esc(S.T.naam(t))} wissen">${esc(S.T.naam(t))}${ico("x")}</button>`).join("")}<button type="button" class="linkknop" id="kd-alles">Alles wissen</button>` : "";
-      const p = [th.length ? `thema=${th.map(encodeURIComponent).join(",")}` : "", q ? `q=${encodeURIComponent(veld.value.trim())}` : ""].filter(Boolean).join("&");
-      history.replaceState(null, "", `#documenten${p ? "?" + p : ""}`);
-    };
-    const wis = () => { veld.value = ""; fd.querySelectorAll("input").forEach((i) => { i.checked = false; }); toepassen(); };
-    veld.addEventListener("input", toepassen);
-    fd.addEventListener("change", toepassen);
-    S.kd = { toepassen, wis };
-    toepassen();
-  }
-  // actieve themafilters wissen (één luisteraar; #view blijft tussen pagina's bestaan)
-  document.addEventListener("click", (e) => {
-    const fd = document.getElementById("kd-thema");
-    if (!fd || !S.kd) return;
-    const rm = e.target.closest("[data-kdrm]");
-    if (rm) { const i = fd.querySelector(`input[value="${CSS.escape(rm.dataset.kdrm)}"]`); if (i) i.checked = false; S.kd.toepassen(); }
-    else if (e.target.closest("#kd-alles, #kd-wis")) S.kd.wis();
-  });
 
   function over() {
     const m = S.data.meta;

@@ -728,8 +728,8 @@ def begrotingsstukken():
     for n in sorted({d["Nummer"] for _, _, d in gekozen}):
         for doc in odata("Document", {
                 "$filter": f"Verwijderd eq false and Kamerstukdossier/any(k: k/Nummer eq {n}) and Volgnummer le 3",
-                "$select": "DocumentNummer,Soort,Onderwerp,Datum,Volgnummer",
-                "$expand": "Kamerstukdossier($select=Nummer,Toevoeging)"}, max_pages=3):
+                "$select": "Id,DocumentNummer,Soort,Onderwerp,Datum,Volgnummer,ContentType",
+                "$expand": "Kamerstukdossier($select=Nummer,Toevoeging),Zaak($select=Nummer)"}, max_pages=3):
             for k in doc.get("Kamerstukdossier") or []:
                 docs.setdefault((k.get("Nummer"), k.get("Toevoeging")), []).append(doc)
 
@@ -752,6 +752,9 @@ def begrotingsstukken():
             "naam": _hoofdnaam(d.get("Titel")) if soort in ("begroting", "jaarverslag") else None,
             "nummer": d["Nummer"], "titel": (d.get("Titel") or "").strip(),
             "document": hd["DocumentNummer"], "documentSoort": hd.get("Soort"), "datum": (hd.get("Datum") or "")[:10] or None,
+            # zaak, docId en bestand: voor de pagina op tweedekamer.nl (kamerstukken/detail?id=<zaak>&did=<D>) en de documentweergave
+            "zaak": next((z.get("Nummer") for z in hd.get("Zaak") or [] if z.get("Nummer")), None),
+            "docId": hd.get("Id"), "bestand": bestandssoort(hd.get("ContentType")),
             "rekenkamer": rk["DocumentNummer"] if rk else None,
         })
     return uit

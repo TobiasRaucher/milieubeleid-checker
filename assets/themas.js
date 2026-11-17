@@ -139,22 +139,29 @@
     begroting: { titel: (j, b) => `Begroting ${b.naam} ${j}`, soort: "Begroting", wet: true },
     jaarverslag: { titel: (j, b) => `Jaarverslag ${b.naam} ${j}`, soort: "Jaarverslag" },
   };
+  // pagina van een stuk op tweedekamer.nl (een downloadlink zou het bestand meteen opslaan)
+  const TK_DETAIL = (zaak, d) => `https://www.tweedekamer.nl/kamerstukken/detail?id=${encodeURIComponent(zaak)}&did=${encodeURIComponent(d)}`;
+  const TK_WET = (ks) => `https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A${encodeURIComponent(ks)}`;
   function kerndocumenten(kd, begr) {
     const uit = [];
-    for (const d of (kd && kd.documenten) || []) uit.push({ ...d, themas: d.themas || [], links: d.links || [] });
+    // groepen met verborgen: true (nu Europese Unie) staan nergens op de site: niet op de tab, de themapagina's of in de zoekfunctie
+    const verborgen = new Set(((kd && kd.groepen) || []).filter((g) => g.verborgen).map((g) => g.id));
+    for (const d of (kd && kd.documenten) || []) if (!verborgen.has(d.groep)) uit.push({ ...d, themas: d.themas || [], links: d.links || [] });
     for (const b of begr || []) {
       const s = BEGR_SOORT[b.soort];
       if (!s || !b.document) continue;
       const ks = `${b.nummer}${b.hoofdstuk ? "-" + b.hoofdstuk : ""}`;
+      // de titel opent de pagina op tweedekamer.nl: bij een begroting of Belastingplan het wetsvoorstel, anders het stuk zelf
+      const stukUrl = b.zaak ? TK_DETAIL(b.zaak, b.document) : TK_DOC(b.document);
       const links = [{ tekst: "Kamerstukdossier", url: OB_DOSSIER(b.nummer, b.hoofdstuk) }];
-      if (s.wet) links.unshift({ tekst: "Wetsvoorstel op tweedekamer.nl", url: `https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A${encodeURIComponent(ks)}` });
+      if (s.wet) links.unshift({ tekst: `${b.documentSoort || "Hoofddocument"} op tweedekamer.nl`, url: stukUrl });
       if (b.soort === "begroting") links.push({ tekst: "Rijksfinanciën", url: `https://www.rijksfinancien.nl/memorie-van-toelichting/${b.jaar}/OWB/${encodeURIComponent(b.hoofdstuk)}` });
       if (b.rekenkamer) links.push({ tekst: "Algemene Rekenkamer", url: TK_DOC(b.rekenkamer) });
       const deel = b.hoofdstuk ? "-" + b.hoofdstuk.toLowerCase() : "";
       uit.push({
         id: `${b.soort}${deel}-${b.jaar}`, groep: "begroting", soort: s.soort, titel: s.titel(b.jaar, b),
         afkorting: b.soort === "miljoenennota" ? "MN" : b.hoofdstuk ? `hoofdstuk ${b.hoofdstuk}` : null,
-        uitgever: s.uitgever || (b.naam ? `${/fonds$/i.test(b.naam) ? "" : "Ministerie van "}${b.naam}` : null), datum: b.datum, url: TK_DOC(b.document),
+        uitgever: s.uitgever || (b.naam ? `${/fonds$/i.test(b.naam) ? "" : "Ministerie van "}${b.naam}` : null), datum: b.datum, url: s.wet ? TK_WET(ks) : stukUrl, docId: b.docId, bestand: b.bestand,
         kenmerk: `Kamerstuk ${b.nummer}${b.hoofdstuk ? " " + b.hoofdstuk : ""}`, document: b.document, documentSoort: b.documentSoort,
         reeks: `${b.soort}${deel}`, themas: b.hoofdstuk ? HOOFDSTUK_THEMA[b.hoofdstuk] || [] : ["sectoroverstijgend"],
         hoofdstuk: b.hoofdstuk || null, jaar: b.jaar, rol: b.soort === "begroting" || b.soort === "jaarverslag" ? b.soort : null, links,
@@ -247,7 +254,7 @@
   function tkUrl(z) {
     if (z.tkLink) return z.tkLink;
     const d = (z.dossiers || [])[0];
-    if (/wetgeving/i.test(z.soort || "") && d) return `https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A${encodeURIComponent(`${d.nummer}${d.toevoeging ? "-" + d.toevoeging : ""}`)}`;
+    if (/wetgeving/i.test(z.soort || "") && d) return TK_WET(`${d.nummer}${d.toevoeging ? "-" + d.toevoeging : ""}`);
     return `https://www.tweedekamer.nl/zoeken?q=${encodeURIComponent(z.nummer)}`;
   }
 
