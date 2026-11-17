@@ -22,7 +22,7 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
 4. Werk `data/agenda.json` bij als er nieuwe mijlpalen, consultaties of deadlines zijn (met bron-URL). Zoek bij twijfel op internet (eerstekamer.nl, internetconsultatie.nl, officielebekendmakingen.nl).
    - Zet bij elke wijziging het veld `bijgewerkt` bovenin het gewijzigde bestand op het huidige tijdstip (ISO, UTC, bv. `2026-11-12T15:49:00Z`). De kop van de site toont het meest recente tijdstip van alle bestanden als "Bijgewerkt 12 nov 2026 21:59" (Nederlandse tijd).
    - Kerndocumenten: is er een nieuwe editie verschenen (Prinsjesdag: Troonrede, KEN, KEV, MEV, Deltaprogramma; Voorjaarsnota; Verantwoordingsdag: Monitor Brede Welvaart), voeg dan een item toe aan `data/kerndocumenten.json` met dezelfde `reeks`. Begrotingsstukken niet: die haalt `fetch_tk.py` zelf op.
-5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit en draai `node tests/zoektest.js`.
+5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit en draai `node tests/zoektest.js`. Draai `node pipeline/versie.js` als er iets in `assets/` is gewijzigd (zie "Ontwerp").
 6. Commit en push naar `main` (GitHub Pages publiceert automatisch).
 
 ## Samenvattingen: niveaus en meerdere sessies
@@ -95,6 +95,8 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 
 **Alleen desktop** (Tobias, 14 nov 2026): de site hoeft niet op de telefoon te werken; ontwerp en controleer nieuwe onderdelen niet meer voor telefoonbreedte.
 
+- Versies van scripts en stijl (sinds 17 nov 2026): `index.html` laadt elk bestand uit `assets/` met `?v=<hash van de inhoud>`, zodat bezoekers na een wijziging meteen de nieuwe versie krijgen (GitHub Pages laat browsers anders tot tien minuten of langer de oude gebruiken). `node pipeline/versie.js` zet die versies; draai het voor elke commit die iets in `assets/` wijzigt. De Action draait het ook dagelijks. Zie je een wijziging niet op de site: eerst hard herladen (Cmd+Shift+R).
+
 **Lees eerst `DESIGN.md` (bovenin de repo).** Daar staan de richting, alle ontwerpwaarden en de regels (doen en niet doen); die gaan voor alles hieronder. Elke wijziging aan het uiterlijk volgt DESIGN.md.
 
 - Huisstijl (nov 2026): "milieuradar" in kleine letters (woordmerk 24px met een logo van 36px; op de telefoon 20 en 32), DM Sans, groene merkkleur, rood als alarmkleur (vandaag, eerstvolgend), alleen licht thema. Alle kleuren en vormen staan als ontwerpknoppen bovenaan `assets/style.css`; sectorkleuren als `--s-<sectorcode>` (gelijke helderheid en verzadiging).
@@ -134,5 +136,14 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 ## Zoekfunctie
 
 - `assets/zoek.js` bouwt in de browser een index (MiniSearch, `assets/vendor/`) over samenvattingen, wetsvoorstellen, moties en amendementen, stukken, Kameractiviteiten, toezeggingen en de agenda. Vergaderingen en toezeggingen linken naar de Agenda. Nederlandse stamvorming, synoniemen, tikfoutcorrectie en titelweging staan daar beschreven.
+- Resultatenpagina (sinds 17 nov 2026; `renderZoekResultaten()` in app.js). Alle keuzes staan in de URL: `#zoeken?q=…&cat=moties&volgorde=relevantie&periode=maand&wie=f:pvv`.
+  - Volgorde: standaard "Nieuwste eerst": bovenaan "Komt eraan" (geplande vergaderingen, agenda en geplande stemmingen over moties en amendementen zonder uitslag, eerstvolgende eerst, vijf zichtbaar; agenda zonder datum achteraan), daaronder "Eerder", per maand. "Beste treffer" sorteert op score.
+  - Periode: Alle jaren, Deze Kamerperiode (`config.startdatum`), Afgelopen maand; geldt alleen voor wat is geweest.
+  - "In het kort" (`zoekKort()`, alleen bij Alles en minstens 8 resultaten): tellingen per soort (moties met aangenomen/verworpen, Kamervragen zonder antwoord) als links naar die soort, en het meest passende wetsvoorstel, de nieuwste Kamerbrief en de laatste stemming met de zoekterm in de titel; plus een link naar een thema als de zoekterm in een themanaam staat.
+  - Namen: fracties en Kamerleden of bewindspersonen in de zoekvraag geven een knop "Alleen …" (indiener, vragensteller of spreker; GroenLinks-PvdA telt als PRO). Alleen een naam met die knop toont alles van die persoon of fractie.
+  - Moties en amendementen met dezelfde titel (gewijzigd, ter vervanging, opnieuw ingediend) zijn één rij met "Ook: …" (`voegSamen()`).
+  - Geen resultaten: welk filter het veroorzaakt, "Bedoelde je …?" (dichtstbijzijnde bekende woorden), welke losse woorden wel iets opleveren, en de thema's. "Bedoelde je" staat ook in de telregel als er alleen gedeeltelijke of tikfouttreffers zijn.
+- Zoekveld in de kop: buiten de zoekpagina een lijst met zes suggesties en "Toon alle n resultaten" (combobox, pijltjes en Enter); op de zoekpagina werkt de pagina direct bij.
+- Score (`zoek.js`): binnen een synoniemgroep telt de beste variant, niet de som; afgeleide woorden (voorvoegsel, tikfout) wegen minder; de titel van het Kamerstukdossier staat in een eigen veld met laag gewicht (`dossier`); dubbele agendapunten tellen één keer. Treffers die alleen via tikfoutcorrectie passen, vallen weg zolang er andere zijn.
 - Synoniemen en afkortingen: `data/zoeksynoniemen.json`. Vindt Tobias iets niet terwijl het er wel is, voeg dan een synoniem toe en/of een regel aan `tests/zoektest.js`, en draai de test.
 

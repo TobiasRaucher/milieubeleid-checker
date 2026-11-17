@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   const S = { sector: "alle", data: null, tabel: null,
-    zoekCat: "", zoekMax: 30 };
+    zoekMax: 30, zoekKomendAlles: false };
   const $ = (sel, el = document) => el.querySelector(sel);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const MAANDEN_KORT = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
@@ -1503,39 +1503,165 @@
 
   /* ---------- Zoeken ---------- */
   // De index (assets/zoek.js) wordt pas gebouwd bij de eerste zoekopdracht.
+  // Alles wat de resultaten bepaalt staat in de URL: #zoeken?q=…&cat=moties&volgorde=relevantie&periode=maand&wie=f:pvv
   let _zoek = null;
   const zoekIndex = () => _zoek || (_zoek = window.MRZoek.maak({ ...S.data, T: S.T }, S.data.synoniemen));
-  function zoekVraag() {
-    const qs = (location.hash.split("?")[1] || "");
-    return new URLSearchParams(qs).get("q") || "";
+  const zoekParams = () => new URLSearchParams(location.hash.split("?")[1] || "");
+  function zoekVraag() { return zoekParams().get("q") || ""; }
+  function zoekUrl(wijzig = {}) {
+    const p = zoekParams();
+    for (const [k, v] of Object.entries(wijzig)) { if (v) p.set(k, v); else p.delete(k); }
+    const s = p.toString().replace(/%3A/gi, ":");
+    return "#zoeken" + (s ? "?" + s : "");
   }
+  function zetZoek(wijzig) {
+    history.replaceState(null, "", zoekUrl(wijzig));
+    S.zoekMax = 30; S.zoekKomendAlles = false;
+    renderZoekResultaten();
+  }
+  const ZOEK_PERIODES = [["", "Alle jaren"], ["kamer", "Deze Kamerperiode"], ["maand", "Afgelopen maand"]];
+  const periodeVan = (p) => (p === "maand" ? plusDagen(VANDAAG, -30) : p === "kamer" ? S.data.config.startdatum : "");
+
+  // geplande stemming over een motie of amendement zonder uitslag
+  const stemOp = (d) => (d.cat === "moties" && !d.uitslag ? (S.data.stemmingen || {})[d.nummer] : "") || "";
+  // wanneer iets gebeurt: geplande stemming, anders de datum; agenda zonder datum telt als toekomst
+  const zoekWanneer = (d) => { const st = stemOp(d); return st >= VANDAAG ? st : d.datum ? sortKey(d.datum) : d.cat === "agenda" ? "9999" : ""; };
+  const zoekDatum = (d) => (d.datum === VANDAAG ? `<span class="badge alarm">Vandaag</span>` : d.datum ? `<span class="datum">${fmtKort(d.datum)}</span>` : d.cat === "agenda" ? `<span class="datum">datum volgt</span>` : "");
+
+  // moties en amendementen met dezelfde titel (gewijzigd, ter vervanging, opnieuw ingediend) worden één rij; de nieuwste voorop
+  function voegSamen(res) {
+    const groep = new Map(), uit = [];
+    const nieuwer = (a, b) => (zoekWanneer(a.doc) || "").localeCompare(zoekWanneer(b.doc) || "");
+    for (const r of res) {
+      if (r.doc.cat !== "moties") { uit.push(r); continue; }
+      const k = r.doc.soort + "|" + window.MRZoek.tokens(r.doc.titel).join(" ");
+      const g = groep.get(k);
+      if (!g) { const n = { ...r, ook: [] }; groep.set(k, n); uit.push(n); continue; }
+      g.score = Math.max(g.score, r.score); g.inTitel = g.inTitel || r.inTitel;
+      if (nieuwer(r, g) > 0) { g.ook.push({ doc: g.doc }); g.doc = r.doc; g.termen = new Set([...g.termen, ...r.termen]); }
+      else g.ook.push({ doc: r.doc });
+    }
+    for (const r of uit) if (r.ook) r.ook.sort((a, b) => nieuwer(b, a));
+    return uit;
+  }
+
+  // header: een lijst met suggesties onder het zoekveld (combobox); Enter opent de resultatenpagina.
+  // Op de resultatenpagina zelf werkt de pagina direct bij en is er geen lijst.
   function bindZoekveld() {
     const veld = $("#zoekveld"), form = $("#zoekform");
-    let timer = null;
-    const ga = (direct) => {
-      const q = veld.value.trim();
-      const nieuw = "#zoeken" + (q ? "?q=" + encodeURIComponent(q) : "");
-      if (location.hash.startsWith("#zoeken")) {
-        history.replaceState(null, "", nieuw);
-        S.zoekMax = 30;
-        if ($("#zoekres")) renderZoekResultaten(); else route();
-      } else if (q.length >= 2 || direct) {
-        S.zoekCat = ""; S.zoekMax = 30;
-        location.hash = nieuw;
-      }
+    const lijst = document.createElement("div");
+    lijst.id = "zoeksuggesties"; lijst.className = "zsug"; lijst.setAttribute("role", "listbox"); lijst.setAttribute("aria-label", "Suggesties"); lijst.hidden = true;
+    form.appendChild(lijst);
+    veld.setAttribute("role", "combobox"); veld.setAttribute("aria-autocomplete", "list"); veld.setAttribute("aria-controls", lijst.id); veld.setAttribute("aria-expanded", "false");
+    let timer = null, actief = -1, opties = [];
+    const opZoekpagina = () => location.hash.startsWith("#zoeken");
+    const sluit = () => { lijst.hidden = true; veld.setAttribute("aria-expanded", "false"); veld.removeAttribute("aria-activedescendant"); actief = -1; };
+    const zetActief = (i) => {
+      actief = i;
+      lijst.querySelectorAll("[role=option]").forEach((o, n) => o.setAttribute("aria-selected", String(n === i)));
+      if (i >= 0) { veld.setAttribute("aria-activedescendant", "zsug-" + i); $("#zsug-" + i).scrollIntoView({ block: "nearest" }); } else veld.removeAttribute("aria-activedescendant");
     };
-    veld.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => ga(false), 200); });
-    form.addEventListener("submit", (e) => { e.preventDefault(); clearTimeout(timer); ga(true); });
-    veld.addEventListener("keydown", (e) => { if (e.key === "Escape") { veld.value = ""; ga(false); } });
+    const open = (o) => {
+      sluit();
+      if (o.extern) { window.open(o.href, "_blank", "noopener"); return; }
+      _klik = true; location.hash = o.href;
+    };
+    const naarResultaten = (q) => { sluit(); S.zoekMax = 30; S.zoekKomendAlles = false; _klik = true; location.hash = "#zoeken" + (q ? "?q=" + encodeURIComponent(q) : ""); };
+    const toon = () => {
+      const q = veld.value.trim();
+      if (opZoekpagina()) {
+        sluit();
+        history.replaceState(null, "", zoekUrl({ q }));
+        S.zoekMax = 30; S.zoekKomendAlles = false;
+        if ($("#zoekres")) renderZoekResultaten(); else route();
+        return;
+      }
+      if (q.length < 2) { sluit(); return; }
+      const Z = zoekIndex(), uit = Z.zoek(q), res = voegSamen(uit.resultaten);
+      opties = res.slice(0, 6).map(({ doc: d, termen }) => ({ href: d.link, extern: d.extern,
+        html: `<span class="zsug-meta"><span class="tag">${esc(d.soort.replace(/ \(niet samengevat\)$/, ""))}</span>${zoekDatum(d)}</span><span class="zsug-titel">${Z.markeer(d.titel, termen, esc)}</span>` }));
+      opties.push({ href: "#zoeken?q=" + encodeURIComponent(q), alle: true,
+        html: res.length ? `Toon alle ${nl(res.length)} resultaten voor <b>${esc(q)}</b>` : `Geen directe treffers voor <b>${esc(q)}</b>; open de zoekpagina voor suggesties` });
+      lijst.innerHTML = opties.map((o, i) => `<div role="option" id="zsug-${i}" class="zsug-optie${o.alle ? " zsug-alle" : ""}" aria-selected="false" data-i="${i}">${o.html}</div>`).join("");
+      lijst.hidden = false; veld.setAttribute("aria-expanded", "true"); actief = -1;
+    };
+    veld.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(toon, opZoekpagina() ? 200 : 120); });
+    veld.addEventListener("focus", () => { if (!opZoekpagina() && veld.value.trim().length >= 2) toon(); });
+    veld.addEventListener("blur", () => setTimeout(sluit, 120));
+    lijst.addEventListener("mousedown", (e) => e.preventDefault());
+    lijst.addEventListener("click", (e) => { const o = e.target.closest("[data-i]"); if (o) open(opties[+o.dataset.i]); });
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); clearTimeout(timer);
+      if (!lijst.hidden && actief >= 0) { open(opties[actief]); return; }
+      if (opZoekpagina()) toon(); else naarResultaten(veld.value.trim());
+    });
+    veld.addEventListener("keydown", (e) => {
+      if ((e.key === "ArrowDown" || e.key === "ArrowUp") && !lijst.hidden) {
+        e.preventDefault();
+        const n = opties.length;
+        zetActief(e.key === "ArrowDown" ? (actief + 1) % n : (actief - 1 + n) % n);
+      } else if (e.key === "Escape") {
+        if (!lijst.hidden) { e.preventDefault(); sluit(); return; }
+        veld.value = ""; if (opZoekpagina()) toon();
+      }
+    });
   }
   function zoeken() {
     return `<h2 class="sr-only">Zoeken</h2><div id="zoekres" aria-live="polite"></div>`;
   }
   const ZOEK_CATS = [["", "Alles"], ["debatten", "Vergaderingen"], ["wetgeving", "Wetsvoorstellen"], ["moties", "Moties & amendementen"], ["stukken", "Vragen & brieven"], ["toezeggingen", "Toezeggingen"], ["agenda", "Agenda"], ["kerndocumenten", "Kerndocumenten"]];
+
+  // "In het kort": tellingen per soort en de belangrijkste stukken voor deze zoekvraag
+  function zoekKort(q, binnen, komend, opDatum, Z) {
+    if (binnen.length < 8) return "";
+    const isSoort = (s) => (r) => r.doc.soort === s;
+    const moties = binnen.filter(isSoort("Motie"));
+    const beantwoord = new Set(S.data.stukken.filter((x) => /^Antwoord/.test(x.soort)).map((x) => x.zaak));
+    const vragen = binnen.filter(isSoort("Kamervragen"));
+    const telMot = (u) => moties.filter((r) => r.doc.uitslag === u).length;
+    const cijfers = [
+      ["wetgeving", binnen.filter((r) => r.doc.cat === "wetgeving").length, "Wetsvoorstellen", ""],
+      ["moties", moties.length, "Moties", `${nl(telMot("aangenomen"))} aangenomen, ${nl(telMot("verworpen"))} verworpen`],
+      ["moties", binnen.filter(isSoort("Amendement")).length, "Amendementen", ""],
+      ["stukken", vragen.length, "Kamervragen", `${nl(vragen.filter((r) => !beantwoord.has(r.doc.zaak)).length)} zonder antwoord`],
+      ["stukken", binnen.filter(isSoort("Kamerbrief")).length, "Kamerbrieven", ""],
+      ["debatten", binnen.filter((r) => r.doc.cat === "debatten").length, "Vergaderingen", ""],
+    ].filter((c) => c[1]);
+    const opScore = [...binnen].sort((a, b) => b.score - a.score);
+    const opDatumAf = [...binnen].sort((a, b) => (b.doc.datum || "").localeCompare(a.doc.datum || ""));
+    const regels = [];
+    if (!opDatum && komend[0]) regels.push(["Eerstvolgend", komend[0]]);
+    const wet = opScore.find((r) => r.doc.cat === "wetgeving" && r.inTitel);
+    if (wet) regels.push(["Wetsvoorstel", wet]);
+    const brief = opDatumAf.find((r) => r.doc.soort === "Kamerbrief" && r.inTitel && r.doc.datum <= VANDAAG);
+    if (brief) regels.push(["Nieuwste Kamerbrief", brief]);
+    const kd = opScore.find((r) => r.doc.cat === "kerndocumenten" && r.inTitel);
+    if (kd) regels.push(["Kerndocument", kd]);
+    const stem = opDatumAf.find((r) => r.doc.cat === "moties" && ["aangenomen", "verworpen"].includes(r.doc.uitslag) && r.inTitel);
+    if (stem) regels.push(["Laatste stemming", stem]);
+    if (cijfers.length < 2 && regels.length < 2) return "";
+    // past de zoekvraag bij een thema, dan een link naar de themapagina
+    const qt = window.MRZoek.tokens(q).filter((t) => t.length > 2);
+    const thema = qt.length ? S.T.lijst.find((t) => { const lt = window.MRZoek.tokens(t.label); return qt.every((w) => lt.some((x) => x.startsWith(w.slice(0, Math.max(4, w.length - 2))))); }) : null;
+    const regel = ([lbl, { doc: d, termen }]) => {
+      const link = d.extern ? `href="${esc(d.link)}" target="_blank" rel="noopener"` : `href="${esc(d.link)}"`;
+      const stemDag = stemOp(d);
+      return `<li class="zkort-regel"><span class="zkort-lbl">${esc(lbl)}</span><div>
+        <div class="zmeta"><span class="tag">${esc(d.soort.replace(/ \(niet samengevat\)$/, ""))}</span>${d.cat === "wetgeving" || d.uitslag ? uitslagPill(d.uitslag) : ""}${zoekDatum(d)}${stemDag >= VANDAAG ? `<span>Stemming ${esc(dagKort(stemDag))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
+        <a class="ltitel" ${link}>${Z.markeer(d.titel, termen, esc)}${d.extern ? `<span class="sr-only"> (opent nieuwe pagina)</span>` : ""}</a></div></li>`;
+    };
+    return `<section class="zsectie" aria-labelledby="zkort"><div class="zkop-rij"><h3 id="zkort" class="zkop">In het kort</h3>${thema ? `<a href="#themas/${esc(thema.slug)}">Naar thema ${esc(thema.label)}</a>` : ""}</div>
+      <div class="card zkort">
+        ${cijfers.length >= 2 ? `<div class="stats zkort-stats">${cijfers.map(([cat, n, lbl, sub]) => `<a class="stat" href="${esc(zoekUrl({ cat }))}" data-zcat="${cat}"><div class="num">${nl(n)}</div><div class="lbl">${esc(lbl)}${sub ? `<br><span class="muted">${esc(sub)}</span>` : ""}</div></a>`).join("")}</div>` : ""}
+        ${regels.length ? `<ul class="list zkort-lijst">${regels.map(regel).join("")}</ul>` : ""}
+      </div></section>`;
+  }
+
   function renderZoekResultaten() {
     const el = $("#zoekres");
     if (!el) return;
-    const q = zoekVraag().trim();
+    const P = zoekParams();
+    const q = (P.get("q") || "").trim();
     if (!q) {
       el.innerHTML = `<h2>Zoeken</h2><div class="card zoektips">
         <p>Zoek in alle debatten, samenvattingen, wetsvoorstellen, moties, amendementen, Kamerbrieven en de agenda. </p>
@@ -1547,32 +1673,123 @@
         </ul></div>`;
       return;
     }
-    const uit = zoekIndex().zoek(q);
-    const alle = uit.resultaten;
-    const tel = Object.fromEntries(ZOEK_CATS.map(([c]) => [c, c ? alle.filter((r) => r.doc.cat === c).length : alle.length]));
-    if (S.zoekCat && !tel[S.zoekCat]) S.zoekCat = "";
-    const lijst = S.zoekCat ? alle.filter((r) => r.doc.cat === S.zoekCat) : alle;
     const Z = zoekIndex();
-    const item = ({ doc: d, termen }) => {
+    let cat = P.get("cat") || "";
+    const opDatum = P.get("volgorde") !== "relevantie";
+    const periode = ZOEK_PERIODES.some(([p]) => p === P.get("periode")) ? P.get("periode") || "" : "";
+    const uit = Z.zoek(q, { wie: P.get("wie") || "" });
+    if (P.get("wie") && !uit.wie) history.replaceState(null, "", zoekUrl({ wie: "" }));
+    const alle = voegSamen(uit.resultaten);
+    const isKomend = (r) => zoekWanneer(r.doc) >= VANDAAG;
+    const vanaf = periodeVan(periode);
+    const binnen = vanaf ? alle.filter((r) => isKomend(r) || (r.doc.datum && sortKey(r.doc.datum) >= vanaf)) : alle;
+    const tel = Object.fromEntries(ZOEK_CATS.map(([c]) => [c, c ? binnen.filter((r) => r.doc.cat === c).length : binnen.length]));
+    if (cat && !tel[cat]) cat = "";
+    const lijst = cat ? binnen.filter((r) => r.doc.cat === cat) : binnen;
+
+    const item = ({ doc: d, termen, ook }) => {
       const link = d.extern ? `href="${esc(d.link)}" target="_blank" rel="noopener"` : `href="${esc(d.link)}"`;
+      const stem = stemOp(d);
       return `<li>
-        <div class="zmeta"><span class="tag">${esc(d.soort)}</span>${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${d.datum ? `<span class="datum">${fmtKort(d.datum)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
+        <div class="zmeta"><span class="tag">${esc(d.soort)}</span>${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${zoekDatum(d)}${stem >= VANDAAG ? `<span>Stemming ${esc(dagKort(stem))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${ook && ook.length && d.kamerstuk ? `<span>Kamerstuk ${esc(d.kamerstuk)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
         <a class="ztitel" ${link}>${Z.markeer(d.titel, termen, esc)}${d.extern ? `<span class="sr-only"> (opent nieuwe pagina)</span>` : ""}</a>
-        <div class="zfrag">${Z.fragment(d, termen, esc)}</div>${themaChips(d.themas || [])}
+        <div class="zfrag">${Z.fragment(d, termen, esc)}</div>
+        ${ook && ook.length ? `<ul class="zook">${ook.map(({ doc: o }) => `<li><span class="muted">Ook:</span> <a href="${esc(o.link)}" target="_blank" rel="noopener">${esc(o.soort)}${o.indiener ? ` ${esc(o.indiener)}` : ""}${o.kamerstuk ? `, Kamerstuk ${esc(o.kamerstuk)}` : ""}<span class="sr-only"> (opent nieuwe pagina)</span></a>${o.uitslag ? uitslagPill(o.uitslag) : ""}${o.datum ? `<span class="datum">${fmtKort(o.datum)}</span>` : ""}</li>`).join("")}</ul>` : ""}
+        ${themaChips(d.themas || [])}
       </li>`;
     };
+    const ul = (l) => `<ul class="list zoeklijst">${l.map(item).join("")}</ul>`;
+    let blokken = "", rest = lijst, komend = [];
+    {
+      komend = lijst.filter(isKomend).sort((a, b) => zoekWanneer(a.doc).localeCompare(zoekWanneer(b.doc)) || b.score - a.score);
+    }
+    if (!cat && !uit.typeFilter) blokken += zoekKort(q, binnen, komend, opDatum, Z);
+    if (opDatum) {
+      // Komt eraan: wat vanaf vandaag gepland staat (agenda, vergaderingen, stemmingen), eerstvolgende eerst; agenda zonder datum achteraan
+      const komendSet = new Set(komend);
+      rest = lijst.filter((r) => !komendSet.has(r)).sort((a, b) => (b.doc.datum || "").localeCompare(a.doc.datum || "") || b.score - a.score);
+      if (komend.length) {
+        const toon = S.zoekKomendAlles ? komend : komend.slice(0, 5);
+        blokken += `<section class="zsectie" aria-labelledby="zkomend"><h3 id="zkomend" class="zkop">Komt eraan <span class="n">${nl(komend.length)}</span></h3>
+          <div class="card">${ul(toon)}${komend.length > toon.length ? `<div class="kaartvoet"><button type="button" class="chip" id="zkomendmeer">Toon alle <span class="n">${nl(komend.length)}</span></button></div>` : ""}</div></section>`;
+      }
+    }
+    if (rest.length) {
+      const zicht = rest.slice(0, S.zoekMax);
+      let inhoud;
+      if (opDatum) {
+        // per maand, nieuwste eerst
+        const groepen = [];
+        for (const r of zicht) {
+          const m = /^(\d{4})-(\d{2})/.exec(r.doc.datum || "");
+          const kop = m ? `${MAANDEN[+m[2] - 1]} ${m[1]}` : "Zonder datum";
+          if (!groepen.length || groepen[groepen.length - 1].kop !== kop) groepen.push({ kop, l: [] });
+          groepen[groepen.length - 1].l.push(r);
+        }
+        inhoud = groepen.map((g) => `<h4 class="zmaand">${esc(hoofd(g.kop))}</h4>${ul(g.l)}`).join("");
+      } else inhoud = ul(zicht);
+      const metKop = opDatum && komend.length;
+      blokken += `<section class="zsectie" aria-labelledby="zeerder">${metKop ? `<h3 id="zeerder" class="zkop">Eerder <span class="n">${nl(rest.length)}</span></h3>` : `<h3 id="zeerder" class="${blokken ? "zkop" : "sr-only"}">Resultaten <span class="n">${nl(rest.length)}</span></h3>`}
+        <div class="card">${inhoud}
+        ${rest.length > S.zoekMax ? `<div class="kaartvoet"><button type="button" class="chip" id="zmeer">Toon meer <span class="n">${nl(rest.length - S.zoekMax)} over</span></button></div>` : ""}</div></section>`;
+    }
+
+    // niets gevonden: zeggen waardoor, en wat wel werkt
+    const leeg = () => {
+      const tips = [];
+      const knop = (wijzig, tekst) => `<button type="button" class="chip" data-zzet='${esc(JSON.stringify(wijzig))}'>${tekst}</button>`;
+      if (uit.wie) { const n = voegSamen(Z.zoek(q).resultaten).length; if (n) tips.push(`<p>Niets waarbij ${esc(uit.wie.label)} indiener, vragensteller of spreker is. ${knop({ wie: "" }, `Toon alle ${nl(n)} resultaten`)}</p>`); }
+      if (periode && alle.length) tips.push(`<p>Niets in deze periode. ${knop({ periode: "" }, `Toon alle ${nl(alle.length)} resultaten`)}</p>`);
+      if (!alle.length) {
+        if (uit.frasen.length) { const zq = q.replace(/"/g, ""); const n = Z.zoek(zq).resultaten.length; if (n) tips.push(`<p>Niets met precies deze woordgroep. ${knop({ q: zq }, `Zoek zonder aanhalingstekens <span class="n">${nl(n)}</span>`)}</p>`); }
+        const sug = Z.suggesties(q);
+        const spelling = sug.filter((s) => s.soort === "spelling"), woord = sug.filter((s) => s.soort === "woord");
+        if (spelling.length) tips.push(`<p>Bedoelde je ${spelling.map((s) => knop({ q: s.q }, `${esc(s.q)} <span class="n">${nl(s.n)}</span>`)).join(" ")}</p>`);
+        if (woord.length) tips.push(`<p>Niets met al deze woorden samen. Wel resultaten voor ${woord.map((s) => knop({ q: s.q }, `${esc(s.q)} <span class="n">${nl(s.n)}</span>`)).join(" ")}</p>`);
+        tips.push(`<p class="muted">Zoek op een korter woord, een Kamerstuknummer (bv. <code>36169</code>) of een naam, of kijk per thema:</p>
+          <div class="filters">${S.T.lijst.map((t) => `<a class="chip" href="#themas/${esc(t.slug)}">${esc(t.label)}</a>`).join("")}</div>`);
+      }
+      return `<div class="card empty zleeg">${tips.join("") || "Geen resultaten. Probeer een ander of korter woord."}</div>`;
+    };
+
+    // ook met resultaten: bij alleen gedeeltelijke treffers of alleen tikfouttreffers een betere spelling voorstellen
+    const spelling = binnen.length && (uit.modus === "OR" || uit.tikfout) ? Z.suggesties(q).filter((x) => x.soort === "spelling") : [];
+    const wieChips = uit.wieOpties.slice(0, 3).map((w) => {
+      const aan = uit.wie && uit.wie.k === w.k;
+      return `<button type="button" class="chip" data-zwie="${esc(w.k)}" aria-pressed="${aan}" title="Alleen items waarbij ${esc(w.label)} indiener, vragensteller of spreker is">Alleen ${esc(w.label)}${w.fractie ? ` <span class="n">${esc(w.fractie)}</span>` : ""}</button>`;
+    }).join("");
     el.innerHTML = `
       <div class="filters" role="group" aria-label="Soort resultaat">
-        ${ZOEK_CATS.map(([c, l]) => `<button type="button" class="chip" data-zcat="${c}" aria-pressed="${S.zoekCat === c}" ${!tel[c] && c ? "disabled" : ""}>${esc(l)} <span class="n">${nl(tel[c])}</span></button>`).join("")}
+        ${ZOEK_CATS.map(([c, l]) => `<button type="button" class="chip" data-zcat="${c}" aria-pressed="${cat === c}" ${!tel[c] && c ? "disabled" : ""}>${esc(l)} <span class="n">${nl(tel[c])}</span></button>`).join("")}
       </div>
-      <p class="small muted telregel">${nl(alle.length)} ${alle.length === 1 ? "resultaat" : "resultaten"} voor <b>${esc(q)}</b>.
-        ${uit.modus === "OR" ? " Niets gevonden met al deze woorden; dit zijn resultaten met een deel ervan." : ""}
-${uit.typeFilter ? ` Alleen <b>${esc(uit.typeFilter)}</b>, omdat dat woord in je zoekvraag staat.` : ""}</p>
-      ${lijst.length ? `<div class="card"><ul class="list zoeklijst">${lijst.slice(0, S.zoekMax).map(item).join("")}</ul>
-        ${lijst.length > S.zoekMax ? `<div class="kaartvoet"><button type="button" class="chip" id="zmeer">Toon meer <span class="n">${nl(lijst.length - S.zoekMax)} over</span></button></div>` : ""}</div>`
-        : `<div class="card empty">Geen resultaten. Probeer een ander of korter woord.</div>`}`;
-    el.querySelectorAll("[data-zcat]").forEach((b) => b.addEventListener("click", () => { S.zoekCat = b.dataset.zcat; S.zoekMax = 30; renderZoekResultaten(); }));
+      <div class="zoekkop">
+        <div class="zoekkop-l">
+          <p class="small muted telregel">${nl(binnen.length)} ${binnen.length === 1 ? "resultaat" : "resultaten"} voor <b>${esc(q)}</b>.
+            ${uit.modus === "OR" ? " Niets gevonden met al deze woorden; dit zijn resultaten met een deel ervan." : ""}
+            ${uit.typeFilter ? ` Alleen <b>${esc(uit.typeFilter)}</b>, omdat dat woord in je zoekvraag staat.` : ""}
+            ${uit.wie ? ` Alleen waar <b>${esc(uit.wie.label)}</b> indiener, vragensteller of spreker is.` : ""}
+            ${spelling.length ? ` Bedoelde je ${spelling.map((x) => `<button type="button" class="linkknop" data-zzet='${esc(JSON.stringify({ q: x.q }))}'>${esc(x.q)}</button>`).join(" of ")}?` : ""}</p>
+          ${wieChips ? `<div class="agendamodus" role="group" aria-label="Persoon of fractie">${wieChips}</div>` : ""}
+        </div>
+        <div class="zoekkop-r">
+          <div class="agendamodus" role="group" aria-label="Periode">
+            ${ZOEK_PERIODES.map(([p, l]) => `<button type="button" class="chip" data-zperiode="${p}" aria-pressed="${periode === p}">${esc(l)}</button>`).join("")}
+          </div>
+          <div class="agendamodus" role="group" aria-label="Volgorde">
+            <button type="button" class="chip" data-zvolg="" aria-pressed="${opDatum}">Nieuwste eerst</button>
+            <button type="button" class="chip" data-zvolg="relevantie" aria-pressed="${!opDatum}">Beste treffer</button>
+          </div>
+        </div>
+      </div>
+      ${lijst.length ? blokken : leeg()}`;
+    const houdFocus = (sel) => { const b = $(sel); if (b) b.focus({ preventScroll: true }); };
+    el.querySelectorAll("[data-zcat]").forEach((b) => b.addEventListener("click", (e) => { e.preventDefault(); zetZoek({ cat: b.dataset.zcat }); houdFocus(`button[data-zcat="${b.dataset.zcat}"]`); }));
+    el.querySelectorAll("[data-zvolg]").forEach((b) => b.addEventListener("click", () => { zetZoek({ volgorde: b.dataset.zvolg }); houdFocus(`[data-zvolg="${b.dataset.zvolg}"]`); }));
+    el.querySelectorAll("[data-zperiode]").forEach((b) => b.addEventListener("click", () => { zetZoek({ periode: b.dataset.zperiode }); houdFocus(`[data-zperiode="${b.dataset.zperiode}"]`); }));
+    el.querySelectorAll("[data-zwie]").forEach((b) => b.addEventListener("click", () => { const k = b.dataset.zwie; zetZoek({ wie: uit.wie && uit.wie.k === k ? "" : k }); houdFocus(`[data-zwie="${k}"]`); }));
+    el.querySelectorAll("[data-zzet]").forEach((b) => b.addEventListener("click", () => { const w = JSON.parse(b.dataset.zzet); if (w.q != null) $("#zoekveld").value = w.q; zetZoek(w); }));
     const meer = $("#zmeer"); if (meer) meer.addEventListener("click", () => { S.zoekMax += 30; renderZoekResultaten(); });
+    const km = $("#zkomendmeer"); if (km) km.addEventListener("click", () => { S.zoekKomendAlles = true; renderZoekResultaten(); });
   }
 
   /* ---------- Over ---------- */

@@ -25,6 +25,8 @@ jobs:
         run: python3 pipeline/maak_ics.py
       - name: Thema-lijst voor noscript
         run: node pipeline/themas_noscript.js
+      - name: Asset-versies
+        run: node pipeline/versie.js
       - name: Wijzigingen opslaan
         run: |
           git config user.name "checker-bot"

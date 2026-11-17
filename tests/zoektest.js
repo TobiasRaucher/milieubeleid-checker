@@ -78,6 +78,34 @@ for (const [q, test] of SOORT_TESTS) {
   if (!ok) fout++;
   console.log(`${ok ? "ok  " : "FOUT"} ${"groenlinks".padEnd(28)} vindt ook PRO`);
 }
-const totaal = TESTS.length + SOORT_TESTS.length + 1;
+// tikfoutcorrectie alleen als er niets anders is: "kernenergie" mag geen kolencentrales opleveren
+{
+  const res = z.zoek("kernenergie").resultaten;
+  const ok = res.length > 0 && res.every((r) => !r.zwak) && !res.some((r) => [...r.termen].every((t) => t.startsWith("kolencentral")));
+  if (!ok) fout++;
+  console.log(`${ok ? "ok  " : "FOUT"} ${"kernenergie".padEnd(28)} geen treffers alleen via tikfoutcorrectie`);
+}
+// namen en fracties in de zoekvraag worden een keuze "Alleen ..."; GroenLinks telt als PRO
+const extra = [
+  ["pvv stikstof herkent PVV", () => z.zoek("pvv stikstof").wieOpties[0]?.k === "f:pvv"],
+  ["groenlinks herkent PRO", () => z.zoek("groenlinks wind").wieOpties.some((w) => w.k === "f:pro")],
+  ["van oosterhout herkend", () => z.zoek("van oosterhout kernenergie").wieOpties.some((w) => w.k === "p:van oosterhout")],
+  ["oosterhout zonder tussenvoegsel", () => z.zoek("oosterhout").wieOpties.some((w) => w.k === "p:van oosterhout")],
+  ["Alleen PVV filtert", () => { const r = z.zoek("pvv stikstof", { wie: "f:pvv" }).resultaten; return r.length > 0 && r.every((x) => x.doc.wie.includes("f:pvv")); }],
+  ["alleen een naam: alles van die fractie", () => z.zoek("pvv", { wie: "f:pvv" }).resultaten.length > 20],
+  // "Bedoelde je ...?"
+  ["kernenrgie -> kernenergie", () => z.suggesties("kernenrgie zeehondjes").some((x) => x.soort === "spelling" && x.q.startsWith("kernenergie"))],
+  ["woorden los als niets samen", () => z.suggesties("stikstof xqzwv").length === 0 || z.suggesties("stikstof xqzwv").some((x) => x.q === "stikstof")],
+  ["energieverkenning geen energierekening", () => { const r = z.zoek("klimaat- en energieverkenning").resultaten; return r.length > 0 && !r.some((x) => /energierekening/i.test(x.doc.titel)); }],
+  ["tikfout in één woord blijft werken", () => z.zoek("stiksof water").resultaten.length > 0],
+  // synoniemen tellen één keer: een stuk met kernenergie in de titel staat in de top 10
+  ["kernenergie: titeltreffers bovenaan", () => z.zoek("kernenergie").resultaten.slice(0, 10).filter((r) => r.inTitel).length >= 8],
+];
+for (const [naam, f] of extra) {
+  const ok = !!f();
+  if (!ok) fout++;
+  console.log(`${ok ? "ok  " : "FOUT"} ${naam}`);
+}
+const totaal = TESTS.length + SOORT_TESTS.length + 2 + extra.length;
 console.log(`\n${totaal - fout}/${totaal} geslaagd (${z.aantal} documenten in de index)`);
 process.exit(fout ? 1 : 0);
