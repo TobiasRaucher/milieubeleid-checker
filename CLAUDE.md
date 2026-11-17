@@ -22,7 +22,7 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
 4. Werk `data/agenda.json` bij als er nieuwe mijlpalen, consultaties of deadlines zijn (met bron-URL). Zoek bij twijfel op internet (eerstekamer.nl, internetconsultatie.nl, officielebekendmakingen.nl).
    - Zet bij elke wijziging het veld `bijgewerkt` bovenin het gewijzigde bestand op het huidige tijdstip (ISO, UTC, bv. `2026-11-12T15:49:00Z`). De kop van de site toont het meest recente tijdstip van alle bestanden als "Bijgewerkt 12 nov 2026 21:59" (Nederlandse tijd).
    - Kerndocumenten: is er een nieuwe editie verschenen (Prinsjesdag: Troonrede, KEN, KEV, MEV, Deltaprogramma; Voorjaarsnota; Verantwoordingsdag: Monitor Brede Welvaart), voeg dan een item toe aan `data/kerndocumenten.json` met dezelfde `reeks`. Begrotingsstukken niet: die haalt `fetch_tk.py` zelf op.
-5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit en draai `node tests/zoektest.js`.
+5. Render de site lokaal (`python3 -m http.server`) en bekijk een screenshot; controleer JSON-validiteit en draai `node tests/zoektest.js`. Draai `node pipeline/versie.js` als er iets in `assets/` is gewijzigd (zie "Ontwerp").
 6. Commit en push naar `main` (GitHub Pages publiceert automatisch).
 
 ## Samenvattingen: niveaus en meerdere sessies
@@ -93,6 +93,8 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 ## Ontwerp
 
 **Alleen desktop** (Tobias, 14 nov 2026): de site hoeft niet op de telefoon te werken; ontwerp en controleer nieuwe onderdelen niet meer voor telefoonbreedte.
+
+- Versies van scripts en stijl (sinds 17 nov 2026): `index.html` laadt elk bestand uit `assets/` met `?v=<hash van de inhoud>`, zodat bezoekers na een wijziging meteen de nieuwe versie krijgen (GitHub Pages laat browsers anders tot tien minuten of langer de oude gebruiken). `node pipeline/versie.js` zet die versies; draai het voor elke commit die iets in `assets/` wijzigt. De Action draait het ook dagelijks. Zie je een wijziging niet op de site: eerst hard herladen (Cmd+Shift+R).
 
 **Lees eerst `DESIGN.md` (bovenin de repo).** Daar staan de richting, alle ontwerpwaarden en de regels (doen en niet doen); die gaan voor alles hieronder. Elke wijziging aan het uiterlijk volgt DESIGN.md.
 
