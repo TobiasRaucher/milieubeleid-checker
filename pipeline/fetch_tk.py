@@ -411,7 +411,26 @@ def normaliseer_activiteit(a):
 
 STUK_EXPAND = ("DocumentActor($select=ActorNaam,ActorFractie,Functie,Relatie),"
                "Kamerstukdossier($select=Nummer,Toevoeging,Titel),"
-               "Zaak($select=Nummer,Soort;$expand=ZaakActor($select=ActorNaam,Functie,Relatie))")
+               "Zaak($select=Nummer,Soort;$expand=ZaakActor($select=ActorNaam,Functie,Relatie)),"
+               "BijlageDocument($select=DocumentNummer,Onderwerp,Titel,ContentType,Verwijderd)")
+
+BESTANDSSOORT = {"application/pdf": "PDF", "application/msword": "DOC",
+                 "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "DOCX",
+                 "application/vnd.ms-excel": "XLS",
+                 "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "XLSX"}
+
+
+def bijlagen(d):
+    """Bijlagen bij een Kamerbrief of antwoord (beslisnota, rapporten, analyses), met een downloadlink."""
+    uit = []
+    for b in d.get("BijlageDocument") or []:
+        if b.get("Verwijderd") or not b.get("DocumentNummer"):
+            continue
+        uit.append({"id": b["DocumentNummer"],
+                    "titel": re.sub(r"\s+", " ", (b.get("Onderwerp") or b.get("Titel") or "Bijlage")).strip(),
+                    "bestand": BESTANDSSOORT.get((b.get("ContentType") or "").split(";")[0]),
+                    "link": f"https://www.tweedekamer.nl/downloads/document?id={b['DocumentNummer']}"})
+    return sorted(uit, key=lambda x: (x["titel"].lower().startswith("beslisnota"), x["titel"].lower()))
 
 
 def ministerie_uit_functie(functie):
@@ -499,6 +518,9 @@ def stukken(start):
         if vraag:
             item["ministeries"] = ministeries
             item["indieners"] = indieners
+        bl = bijlagen(d)
+        if bl:
+            item["bijlagen"] = bl
         kandidaten.append(item)
     # vraag en antwoord horen bij dezelfde zaak: valt een van beide in een sector, dan komt het paar er samen in
     per_zaak = {}

@@ -950,6 +950,8 @@
   // titels lezen door op de kolomkop ("Vragen over...", "Kamerbrief over...")
   const overKlein = (t) => klein(String(t || "").trim().replace(/\s+/g, " ").replace(/^(over|inzake) /i, ""));
   const STUK_GEDEELD = ["thema", "ministerie"];
+  // bijlagen bij een Kamerbrief of antwoord (beslisnota, rapporten, analyses), uit de Kamerdata
+  const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}</li>`).join("")}</ul></div>` : "");
   const VRAAG_DEF = {
     tab: "vragen", eenheid: "Kamervragen", knopLabel: ["Vraag en antwoord tonen", "Vraag en antwoord verbergen"], gedeeld: STUK_GEDEELD,
     rijen: vraagRijen, datum: (r) => r.datum, sleutel: (r) => r.id,
@@ -978,6 +980,7 @@
         <p>Zaak <span class="mono">${esc(r.zaak || "onbekend")}</span>${v ? ` · document <span class="mono">${esc(v.id)}</span> · gesteld ${fmtKort(v.datum)}` : ""}${door.length ? `, door ${opsomming(door)}` : ""}${aan.length ? `; gericht aan ${opsomming(aan.map(esc))}` : ""}</p>
         <div class="mstemming"><p class="mtelling">${r.antwoorden.length ? "Antwoord" : r.status === "Termijn verstreken" ? `Nog niet beantwoord, ${nl(r.dagen)} dagen na het stellen (termijn ${ANTWOORD_TERMIJN} dagen)` : `Nog niet beantwoord${r.dagen != null ? `, ${nl(r.dagen)} ${r.dagen === 1 ? "dag" : "dagen"} na het stellen` : ""}`}</p>
           ${antw.length ? `<ul class="mstappen">${antw.join("")}</ul>` : ""}</div>
+        ${bijlagenBlok(r.antwoorden.flatMap((a) => a.bijlagen || []))}
         ${v ? "" : `<p class="muted">De vraag zelf is van voor het begin van deze gegevens.</p>`}
         <div class="mlinks">${v ? extLink(v.link, "Vragen op tweedekamer.nl") : ""}${r.antwoorden.map((a, i) => extLink(a.link, r.antwoorden.length > 1 ? `Antwoord ${i + 1} op tweedekamer.nl` : "Antwoord op tweedekamer.nl")).join("")}</div>
       </div>`;
@@ -987,7 +990,7 @@
     tab: "brieven", eenheid: "Kamerbrieven", knopLabel: ["Details tonen", "Details verbergen"], gedeeld: STUK_GEDEELD,
     rijen: () => stukkenInSector().filter((x) => x.soort === "Brief regering"),
     datum: (x) => x.datum, sleutel: (x) => x.id,
-    zoektekst: (x) => `${x.onderwerp} ${x.titel} ${x.ondertekenaar || ""} ${x.ministerie || ""} ${x.kamerstuk || ""} ${x.id} ${(x.dossiers || []).map((d) => `${d.nummer} ${d.titel || ""}`).join(" ")}`,
+    zoektekst: (x) => `${x.onderwerp} ${x.titel} ${x.ondertekenaar || ""} ${x.ministerie || ""} ${x.kamerstuk || ""} ${x.id} ${(x.dossiers || []).map((d) => `${d.nummer} ${d.titel || ""}`).join(" ")} ${(x.bijlagen || []).map((b) => `${b.id} ${b.titel}`).join(" ")}`,
     filters: {
       thema: themaFilter(themasBrief),
       ministerie: { label: "Ministerie", waarden: (x) => [x.ministerie || ""], orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
@@ -1005,6 +1008,7 @@
       return `<div class="mdetail">
         <p>Document <span class="mono">${esc(x.id)}</span> · ${fmtKort(x.datum)}${x.ondertekenaar ? `, ondertekend door ${esc(x.ondertekenaar)}${x.functie ? ` (${esc(x.functie)})` : ""}` : ""}</p>
         ${ds.length ? `<div class="mstemming"><p class="mtelling">Kamerstuk</p><ul class="mstappen">${ds.map((d) => `<li><span class="mono">${esc(d.nummer)}${d.toevoeging ? "-" + esc(d.toevoeging) : ""}</span> ${esc(d.titel || "")}</li>`).join("")}</ul></div>` : ""}
+        ${bijlagenBlok(x.bijlagen)}
         <div class="mlinks">${extLink(x.link, "Bekijk op tweedekamer.nl")}</div>
       </div>`;
     },

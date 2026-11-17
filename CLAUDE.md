@@ -42,6 +42,7 @@ Eigenaar: Tobias. Doel: een neutraal, actueel overzicht van Nederlands milieubel
   - Brede dossiers (`"breed": true` bij een kamerstukdossier, `stukken.bredeDossiers`; nu 21501-33, Raad VTE met ook telecom) tellen alleen samen met een trefwoord.
   - Relevantiepoort: wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-mapping.json`) is geen milieubeleid en haalt `fetch_tk.py` uit zaken.json en stukken.json (een vraag en haar antwoord samen); het aantal staat in `meta.json` onder `uitgesloten`. "Zonder thema" bij de review betekent dus: weg van de site.
 - `data/tk/stukken.json` bevat Kamerbrieven, Kamervragen (soort `Schriftelijke vragen`, met `indieners` en de ministeries waaraan ze gericht zijn) en antwoorden op Kamervragen die bij een sector horen (KGG altijd). Elk stuk heeft een `zaak`; een vraag en haar antwoord delen die en komen er altijd samen in. Te ruime of te krappe selectie? Pas `stukDossiers`/`trefwoorden` of `stukken.uitsluiten` aan in de config, niet de data.
+- Bijlagen (sinds 17 nov 2026): `fetch_tk.py` zet bij elk stuk de bijlagen uit de Kamerdata (`BijlageDocument`: beslisnota, rapporten, juridische analyses) in `bijlagen` (`id`, `titel`, `bestand` PDF/DOCX, `link` naar tweedekamer.nl/downloads). De site toont ze in de uitgeklapte rij van een Kamerbrief en van een antwoord (`bijlagenBlok()` in app.js); de zoekfunctie zoekt ook op de titels. Idee uit de Greenpeace-nieuwsbrief "In de wandelgangen".
 
 ## Dossiers
 

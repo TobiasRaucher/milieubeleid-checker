@@ -171,7 +171,7 @@
     for (const x of D.stukken || []) {
       add({
         id: "stuk:" + x.id, cat: "stukken", soort: SOORT_KORT[x.soort] || x.soort, datum: x.datum, sectoren: x.sectoren || [],
-        titel: x.onderwerp || x.titel, tekst: j([x.titel !== (x.onderwerp || x.titel) ? x.titel : "", x.kamerstuk, x.id, x.ministerie && "ministerie van " + x.ministerie]),
+        titel: x.onderwerp || x.titel, tekst: j([x.titel !== (x.onderwerp || x.titel) ? x.titel : "", x.kamerstuk, x.id, x.ministerie && "ministerie van " + x.ministerie, ...(x.bijlagen || []).map((b) => b.titel)]),
         dossier: dossierTekst(x.dossiers),
         personen: j([x.ondertekenaar, x.functie, ...(x.indieners || []).map((i) => `${i.naam} ${i.fractie || ""}`)]), link: x.link, extern: true, ministerie: x.ministerie,
         wie: wieVan([...(x.indieners || []).map((i) => i.naam), x.ondertekenaar], (x.indieners || []).map((i) => i.fractie)), zaak: x.zaak,
