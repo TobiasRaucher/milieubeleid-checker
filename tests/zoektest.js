@@ -73,7 +73,7 @@ for (const [q, test] of SOORT_TESTS) {
 // tikfoutcorrectie alleen als er niets anders is: "kernenergie" mag geen kolencentrales opleveren
 {
   const res = z.zoek("kernenergie").resultaten;
-  const ok = res.length > 0 && !res.some((r) => [...r.termen].some((t) => t.startsWith("kolencentral")));
+  const ok = res.length > 0 && res.every((r) => !r.zwak) && !res.some((r) => [...r.termen].every((t) => t.startsWith("kolencentral")));
   if (!ok) fout++;
   console.log(`${ok ? "ok  " : "FOUT"} ${"kernenergie".padEnd(28)} geen treffers alleen via tikfoutcorrectie`);
 }
