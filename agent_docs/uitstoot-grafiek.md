@@ -14,7 +14,7 @@ weergave toont het doel van de wet die erover gaat. Zes weergaven in twee groepe
 - KEV-raming bij het totaal (constante `KEV`; nu KEV 2026 basispad van 14 september 2026: 46 tot 53% reductie in 2030,
   doel halen "heel erg onwaarschijnlijk (minder dan 5 procent)"):
   - neutrale onzekerheidsband vanaf het laatst gemeten jaar naar de bandbreedte in 2030, gestreepte lijn naar het midden;
-  - onder de doelzin een kanstegel met stoplichtstip (rood onder 50%, geel 50 tot 75%, groen boven 75%), het oordeel van
+  - onder de doelzin een kanstegel met stip (vermiljoen onder 50%, half gevulde inktstip 50 tot 75%, volle inktstip boven 75%), het oordeel van
     PBL en de peildatum, zonder uitlegzin.
   - De KEV staat niet in de CBS-data: werk `KEV` bij bij een nieuwe KEV (jaarlijks in september).
 

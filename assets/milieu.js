@@ -25,7 +25,7 @@
   // Nieuwe KEV (jaarlijks, september)? Werk dit blok bij.
   const KEV = { editie: "KEV 2026", min: 0.46, max: 0.53, kans: 0.05, kansTekst: "<5%", oordeel: "Heel erg onwaarschijnlijk", datum: "14 sep 2026",
     url: "https://www.pbl.nl/publicaties/klimaat-en-energieverkenning-2026" };
-  // Kleur van de kans (stoplicht): rood onder 50%, geel 50 tot 75%, groen boven 75%.
+  // Stip van de kans: vermiljoen onder 50%, half gevulde inktstip 50 tot 75%, volle inktstip boven 75%.
   const kansKlasse = (p) => (p < 0.5 ? "laag" : p <= 0.75 ? "midden" : "hoog");
   // PBL, Emissieramingen luchtverontreinigende stoffen 2025 (vastgesteld en voorgenomen beleid), kiloton in 2030.
   // RIVM, Gevolgen uitspraak Greenpeace voor doelbereik (KN-2025-0026): voor het Wsn-doel 2030 is 36% minder dan die raming nodig.

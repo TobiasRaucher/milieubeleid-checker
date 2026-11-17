@@ -139,7 +139,7 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 - Net binnen (`netBinnen()`): de 10 nieuwste items in één chronologische lijst: stukken (`datum`), stemmingen over moties en
   amendementen (`stemtelling.datum`) en wetgeving (`gestartOp`). Alleen ISO-datums op de dag nauwkeurig en niet in de
   toekomst; binnen één dag gaat Wetgeving voor Stemming voor Stuk.
-- Elk item is één regel: documentsoort in accentkleur (Kamervragen, Antwoord Kamervragen, Kamerbrief, Motie, Amendement,
+- Elk item is één regel: documentsoort in inkt (500) (Kamervragen, Antwoord Kamervragen, Kamerbrief, Motie, Amendement,
   Wetsvoorstel; bij Kamervragen "aan <ministerie>" en als staart de vragensteller), datum, status of ministerie, titel, en
   een stille staart (indiener zonder voorletters, Voor/Tegen; Kamerstuk). Voorletters in titels weg (`zonderVoorletters`).
   Zie DESIGN.md, "Overzicht lists".
