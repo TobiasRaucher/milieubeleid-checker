@@ -128,5 +128,6 @@ Een transcript van een commissiedebat kost ongeveer 30k tot 60k tokens. Vat alle
 ## Zoekfunctie
 
 - `assets/zoek.js` bouwt in de browser een index (MiniSearch, `assets/vendor/`) over samenvattingen, wetsvoorstellen, moties en amendementen, stukken, Kameractiviteiten, toezeggingen en de agenda. Vergaderingen en toezeggingen linken naar de Agenda. Nederlandse stamvorming, synoniemen, tikfoutcorrectie en titelweging staan daar beschreven.
+- Volgorde (sinds 17 nov 2026): standaard "Nieuwste eerst", met bovenaan "Komt eraan" (geplande vergaderingen, agenda en geplande stemmingen over moties en amendementen zonder uitslag, eerstvolgende eerst, vijf zichtbaar; agenda zonder datum achteraan) en daaronder "Eerder", per maand, nieuwste eerst. "Beste treffer" sorteert op score. Treffers die alleen via tikfoutcorrectie passen, vallen weg zolang er andere treffers zijn (`zwak` in `zoek.js`).
 - Synoniemen en afkortingen: `data/zoeksynoniemen.json`. Vindt Tobias iets niet terwijl het er wel is, voeg dan een synoniem toe en/of een regel aan `tests/zoektest.js`, en draai de test.
 

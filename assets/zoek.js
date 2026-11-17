@@ -287,10 +287,15 @@
       let modus = "AND";
       let res = ms.search({ combineWith: "AND", queries: delen }, { filter });
       if (!res.length && delen.length > 1) { modus = "OR"; res = ms.search({ combineWith: "OR", queries: delen }, { filter }); }
-      return {
-        modus, frasen, typeFilter,
-        resultaten: res.map((r) => ({ doc: perId.get(r.id), score: r.score, termen: new Set(r.terms) })),
-      };
+      // een treffer is "zwak" als elk gevonden woord alleen via tikfoutcorrectie past (kerncentrales -> kolencentrales);
+      // die tonen we alleen als er niets anders is (de zoekvraag bevat dan zelf een tikfout)
+      const qTermen = [];
+      const verzamel = (x) => (typeof x === "string" ? qTermen.push(term(x)) : (x.queries || []).forEach(verzamel));
+      delen.forEach(verzamel);
+      const direct = (m) => qTermen.some((q) => q && (m.startsWith(q) || q.startsWith(m)));
+      let resultaten = res.map((r) => ({ doc: perId.get(r.id), score: r.score, termen: new Set(r.terms), zwak: !r.terms.some(direct) }));
+      if (resultaten.some((r) => !r.zwak)) resultaten = resultaten.filter((r) => !r.zwak);
+      return { modus, frasen, typeFilter, resultaten };
     }
 
     // markeer woorden waarvan de stam een gevonden term is

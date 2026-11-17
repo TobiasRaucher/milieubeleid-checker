@@ -70,6 +70,13 @@ for (const [q, test] of SOORT_TESTS) {
   if (!ok) fout++;
   console.log(`${ok ? "ok  " : "FOUT"} ${"groenlinks".padEnd(28)} vindt ook PRO`);
 }
-const totaal = TESTS.length + SOORT_TESTS.length + 1;
+// tikfoutcorrectie alleen als er niets anders is: "kernenergie" mag geen kolencentrales opleveren
+{
+  const res = z.zoek("kernenergie").resultaten;
+  const ok = res.length > 0 && !res.some((r) => [...r.termen].some((t) => t.startsWith("kolencentral")));
+  if (!ok) fout++;
+  console.log(`${ok ? "ok  " : "FOUT"} ${"kernenergie".padEnd(28)} geen treffers alleen via tikfoutcorrectie`);
+}
+const totaal = TESTS.length + SOORT_TESTS.length + 2;
 console.log(`\n${totaal - fout}/${totaal} geslaagd (${z.aantal} documenten in de index)`);
 process.exit(fout ? 1 : 0);

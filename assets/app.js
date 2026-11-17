@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   const S = { sector: "alle", data: null, tabel: null,
-    zoekCat: "", zoekMax: 30 };
+    zoekCat: "", zoekMax: 30, zoekVolgorde: "datum", zoekKomendAlles: false };
   const $ = (sel, el = document) => el.querySelector(sel);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const MAANDEN_KORT = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
@@ -1508,10 +1508,10 @@
       const nieuw = "#zoeken" + (q ? "?q=" + encodeURIComponent(q) : "");
       if (location.hash.startsWith("#zoeken")) {
         history.replaceState(null, "", nieuw);
-        S.zoekMax = 30;
+        S.zoekMax = 30; S.zoekKomendAlles = false;
         if ($("#zoekres")) renderZoekResultaten(); else route();
       } else if (q.length >= 2 || direct) {
-        S.zoekCat = ""; S.zoekMax = 30;
+        S.zoekCat = ""; S.zoekMax = 30; S.zoekKomendAlles = false;
         location.hash = nieuw;
       }
     };
@@ -1544,26 +1544,72 @@
     if (S.zoekCat && !tel[S.zoekCat]) S.zoekCat = "";
     const lijst = S.zoekCat ? alle.filter((r) => r.doc.cat === S.zoekCat) : alle;
     const Z = zoekIndex();
+    // geplande stemming over een motie of amendement zonder uitslag
+    const stemOp = (d) => (d.cat === "moties" && !d.uitslag ? (S.data.stemmingen || {})[d.id.slice(5)] : "") || "";
     const item = ({ doc: d, termen }) => {
       const link = d.extern ? `href="${esc(d.link)}" target="_blank" rel="noopener"` : `href="${esc(d.link)}"`;
+      const stem = stemOp(d);
       return `<li>
-        <div class="zmeta"><span class="tag">${esc(d.soort)}</span>${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${d.datum ? `<span class="datum">${fmtKort(d.datum)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
+        <div class="zmeta"><span class="tag">${esc(d.soort)}</span>${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${d.datum ? (d.datum === VANDAAG ? `<span class="badge alarm">Vandaag</span>` : `<span class="datum">${fmtKort(d.datum)}</span>`) : d.cat === "agenda" ? `<span class="datum">datum volgt</span>` : ""}${stem >= VANDAAG ? `<span>Stemming ${esc(dagKort(stem))}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
         <a class="ztitel" ${link}>${Z.markeer(d.titel, termen, esc)}${d.extern ? `<span class="sr-only"> (opent nieuwe pagina)</span>` : ""}</a>
         <div class="zfrag">${Z.fragment(d, termen, esc)}</div>${themaChips(d.themas || [])}
       </li>`;
     };
+    const ul = (l) => `<ul class="list zoeklijst">${l.map(item).join("")}</ul>`;
+    const opDatum = S.zoekVolgorde !== "relevantie";
+    let blokken = "", rest = lijst;
+    if (opDatum) {
+      // Komt eraan: wat vanaf vandaag gepland staat (agenda, vergaderingen, stemmingen), eerstvolgende eerst; agenda zonder datum achteraan
+      const wanneer = (r) => { const st = stemOp(r.doc); return st >= VANDAAG ? st : r.doc.datum ? sortKey(r.doc.datum) : r.doc.cat === "agenda" ? "9999" : ""; };
+      const komend = lijst.filter((r) => wanneer(r) >= VANDAAG).sort((a, b) => wanneer(a).localeCompare(wanneer(b)) || b.score - a.score);
+      const komendSet = new Set(komend);
+      rest = lijst.filter((r) => !komendSet.has(r)).sort((a, b) => (b.doc.datum || "").localeCompare(a.doc.datum || "") || b.score - a.score);
+      if (komend.length) {
+        const toon = S.zoekKomendAlles ? komend : komend.slice(0, 5);
+        blokken += `<section class="zsectie" aria-labelledby="zkomend"><h3 id="zkomend" class="zkop">Komt eraan <span class="n">${nl(komend.length)}</span></h3>
+          <div class="card">${ul(toon)}${komend.length > toon.length ? `<div class="kaartvoet"><button type="button" class="chip" id="zkomendmeer">Toon alle <span class="n">${nl(komend.length)}</span></button></div>` : ""}</div></section>`;
+      }
+    }
+    if (rest.length) {
+      const zicht = rest.slice(0, S.zoekMax);
+      let inhoud;
+      if (opDatum) {
+        // per maand, nieuwste eerst
+        const groepen = [];
+        for (const r of zicht) {
+          const m = /^(\d{4})-(\d{2})/.exec(r.doc.datum || "");
+          const kop = m ? `${MAANDEN[+m[2] - 1]} ${m[1]}` : "Zonder datum";
+          if (!groepen.length || groepen[groepen.length - 1].kop !== kop) groepen.push({ kop, l: [] });
+          groepen[groepen.length - 1].l.push(r);
+        }
+        inhoud = groepen.map((g) => `<h4 class="zmaand">${esc(hoofd(g.kop))}</h4>${ul(g.l)}`).join("");
+      } else inhoud = ul(zicht);
+      blokken += `<section class="zsectie" aria-labelledby="zeerder">${opDatum && blokken ? `<h3 id="zeerder" class="zkop">Eerder <span class="n">${nl(rest.length)}</span></h3>` : `<h3 id="zeerder" class="sr-only">Resultaten</h3>`}
+        <div class="card">${inhoud}
+        ${rest.length > S.zoekMax ? `<div class="kaartvoet"><button type="button" class="chip" id="zmeer">Toon meer <span class="n">${nl(rest.length - S.zoekMax)} over</span></button></div>` : ""}</div></section>`;
+    }
     el.innerHTML = `
       <div class="filters" role="group" aria-label="Soort resultaat">
         ${ZOEK_CATS.map(([c, l]) => `<button type="button" class="chip" data-zcat="${c}" aria-pressed="${S.zoekCat === c}" ${!tel[c] && c ? "disabled" : ""}>${esc(l)} <span class="n">${nl(tel[c])}</span></button>`).join("")}
       </div>
-      <p class="small muted telregel">${nl(alle.length)} ${alle.length === 1 ? "resultaat" : "resultaten"} voor <b>${esc(q)}</b>.
-        ${uit.modus === "OR" ? " Niets gevonden met al deze woorden; dit zijn resultaten met een deel ervan." : ""}
-${uit.typeFilter ? ` Alleen <b>${esc(uit.typeFilter)}</b>, omdat dat woord in je zoekvraag staat.` : ""}</p>
-      ${lijst.length ? `<div class="card"><ul class="list zoeklijst">${lijst.slice(0, S.zoekMax).map(item).join("")}</ul>
-        ${lijst.length > S.zoekMax ? `<div class="kaartvoet"><button type="button" class="chip" id="zmeer">Toon meer <span class="n">${nl(lijst.length - S.zoekMax)} over</span></button></div>` : ""}</div>`
-        : `<div class="card empty">Geen resultaten. Probeer een ander of korter woord.</div>`}`;
-    el.querySelectorAll("[data-zcat]").forEach((b) => b.addEventListener("click", () => { S.zoekCat = b.dataset.zcat; S.zoekMax = 30; renderZoekResultaten(); }));
+      <div class="zoekkop">
+        <p class="small muted telregel">${nl(alle.length)} ${alle.length === 1 ? "resultaat" : "resultaten"} voor <b>${esc(q)}</b>.
+          ${uit.modus === "OR" ? " Niets gevonden met al deze woorden; dit zijn resultaten met een deel ervan." : ""}
+          ${uit.typeFilter ? ` Alleen <b>${esc(uit.typeFilter)}</b>, omdat dat woord in je zoekvraag staat.` : ""}</p>
+        <div class="agendamodus" role="group" aria-label="Volgorde">
+          <button type="button" class="chip" data-zvolg="datum" aria-pressed="${opDatum}">Nieuwste eerst</button>
+          <button type="button" class="chip" data-zvolg="relevantie" aria-pressed="${!opDatum}">Beste treffer</button>
+        </div>
+      </div>
+      ${lijst.length ? blokken : `<div class="card empty">Geen resultaten. Probeer een ander of korter woord.</div>`}`;
+    el.querySelectorAll("[data-zcat]").forEach((b) => b.addEventListener("click", () => { S.zoekCat = b.dataset.zcat; S.zoekMax = 30; S.zoekKomendAlles = false; renderZoekResultaten(); }));
+    el.querySelectorAll("[data-zvolg]").forEach((b) => b.addEventListener("click", () => {
+      if (S.zoekVolgorde === b.dataset.zvolg) return;
+      S.zoekVolgorde = b.dataset.zvolg; S.zoekMax = 30; renderZoekResultaten();
+      $(`[data-zvolg="${b.dataset.zvolg}"]`).focus({ preventScroll: true });
+    }));
     const meer = $("#zmeer"); if (meer) meer.addEventListener("click", () => { S.zoekMax += 30; renderZoekResultaten(); });
+    const km = $("#zkomendmeer"); if (km) km.addEventListener("click", () => { S.zoekKomendAlles = true; renderZoekResultaten(); });
   }
 
   /* ---------- Over ---------- */

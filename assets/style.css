@@ -495,6 +495,13 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 li.tz { padding: 16px 0; }
 .tz-tekst { margin: 4px 0; line-height: 1.5; text-wrap: pretty; }
 .tzlijst { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-direction: column; gap: 8px; }
+.zoekkop { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin-bottom: 16px; }
+.zoekkop .telregel { margin: 0; }
+.zsectie + .zsectie { margin-top: 32px; }
+.zkop { font-size: var(--t-15); font-weight: 600; margin: 0 0 8px; display: flex; gap: 8px; align-items: baseline; }
+.zkop .n { font-size: var(--t-13); font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; }
+.zmaand { font-size: var(--t-13); font-weight: 500; color: var(--muted); margin: 0; padding: 16px 0 4px; border-bottom: 1px solid var(--line); }
+.zmaand:first-child { padding-top: 4px; }
 .zoeklijst li { padding: 16px 0; }
 .zoeklijst .ztitel { font-weight: 500; font-size: var(--t-15); }
 .zoeklijst .zfrag { font-size: var(--t-14); color: var(--ink-2); margin-top: 4px; }
