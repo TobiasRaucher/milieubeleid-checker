@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=4787459c">
+  <link rel="stylesheet" href="assets/style.css?v=2a344ef4">
   <noscript><style>.skelet { display: none; }</style></noscript>
 </head>
 <body>
@@ -29,19 +29,31 @@
         <a href="#overzicht" data-tab="overzicht">Overzicht</a>
         <a href="#themas" data-tab="themas">Thema's</a>
         <a href="#agenda" data-tab="agenda">Agenda</a>
-        <a href="#wetgeving" data-tab="wetgeving">Wetgeving</a>
-        <div class="tab-menu" data-tab="kamerstukken">
-          <button type="button" class="tab-knop" id="kamerstukknop" aria-haspopup="true" aria-expanded="false" aria-controls="kamerstukmenu">Kamerstukken <svg class="ico chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
-          <div class="tab-lijst" id="kamerstukmenu" aria-labelledby="kamerstukknop">
-            <a href="#moties" data-sub="moties">Moties &amp; Amendementen</a>
-            <a href="#vragen" data-sub="vragen">Vragen &amp; Brieven</a>
+        <div class="tab-menu" data-tab="documenten">
+          <button type="button" class="tab-knop" id="docknop" aria-haspopup="true" aria-expanded="false" aria-controls="docmenu">Documenten <svg class="ico chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="tab-lijst" id="docmenu" aria-labelledby="docknop">
+            <div class="tab-groep" role="group" aria-labelledby="gk-kamer">
+              <p class="tab-groepkop" id="gk-kamer">Kamerstukken</p>
+              <a href="#wetgeving" data-sub="wetgeving">Wetgeving<span class="tab-uitleg">Wetsvoorstellen en geldende wetten</span></a>
+              <a href="#moties" data-sub="moties">Moties<span class="tab-uitleg">Verzoeken van Kamerleden, met de stemming</span></a>
+              <a href="#amendementen" data-sub="amendementen">Amendementen<span class="tab-uitleg">Wijzigingen in wetsvoorstellen, met de stemming</span></a>
+              <a href="#vragen" data-sub="vragen">Kamervragen<span class="tab-uitleg">Schriftelijke vragen met het antwoord</span></a>
+              <a href="#brieven" data-sub="brieven">Kamerbrieven<span class="tab-uitleg">Brieven van ministeries aan de Kamer</span></a>
+            </div>
+            <div class="tab-groep" role="group" aria-labelledby="gk-kern">
+              <p class="tab-groepkop" id="gk-kern">Kerndocumenten</p>
+              <a href="#kerndocumenten/kabinet" data-sub="kerndocumenten/kabinet">Kabinet<span class="tab-uitleg">Coalitieakkoord, Troonrede, kabinetsnota's</span></a>
+              <a href="#kerndocumenten/begroting" data-sub="kerndocumenten/begroting">Begroting<span class="tab-uitleg">Miljoenennota, begrotingen, jaarverslagen</span></a>
+              <a href="#kerndocumenten/ramingen" data-sub="kerndocumenten/ramingen">Ramingen<span class="tab-uitleg">KEV, ramingen en monitors</span></a>
+              <a href="#kerndocumenten/advies" data-sub="kerndocumenten/advies">Advies<span class="tab-uitleg">Raad van State en Klimaatraad</span></a>
+              <a href="#kerndocumenten/rechtspraak" data-sub="kerndocumenten/rechtspraak">Rechtspraak<span class="tab-uitleg">Uitspraken over klimaat en stikstof</span></a>
+            </div>
           </div>
         </div>
-        <a href="#documenten" data-tab="documenten">Kerndocumenten</a>
       </nav>
       <form class="zoek" id="zoekform" role="search">
         <label for="zoekveld" class="sr-only">Zoek in milieuradar</label>
-        <button type="button" class="zoek-knop" aria-label="Zoeken" aria-expanded="false" aria-controls="zoekveld" title="Zoeken (/)"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <svg class="ico zoek-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         <input type="search" id="zoekveld" placeholder="Zoeken" autocomplete="off" enterkeyhint="search" aria-keyshortcuts="/">
         <kbd class="zoek-toets" aria-hidden="true" title="Druk op / om te zoeken">/</kbd>
       </form>
@@ -93,6 +105,6 @@
   <script src="assets/themas.js?v=000d3300"></script>
   <script src="assets/zoek.js?v=d30ba96a"></script>
   <script src="assets/milieu.js?v=5566dad4"></script>
-  <script src="assets/app.js?v=58b090c3"></script>
+  <script src="assets/app.js?v=74bb516a"></script>
 </body>
 </html>

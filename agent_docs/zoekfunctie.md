@@ -16,6 +16,10 @@
 
 Alle keuzes staan in de URL: `#zoeken?q=…&cat=moties&volgorde=relevantie&periode=maand&wie=f:pvv`.
 
+- Soorten (`ZOEK_CATS`, sinds 17 nov 2026 gelijk aan het menu Documenten): Alles, Agenda, Wetgeving, Moties, Amendementen,
+  Kamervragen, Kamerbrieven, Kerndocumenten. `zoekCat()` zet de `cat` uit `zoek.js` om: vergaderingen en toezeggingen
+  vallen onder Agenda, moties en amendementen worden gesplitst op soort, stukken in Kamervragen (met antwoorden) en Kamerbrieven.
+
 - Volgorde: standaard "Nieuwste eerst": bovenaan "Komt eraan" (geplande vergaderingen, agenda en geplande stemmingen over
   moties en amendementen zonder uitslag, eerstvolgende eerst, vijf zichtbaar; agenda zonder datum achteraan), daaronder
   "Eerder", per maand. "Beste treffer" sorteert op score.
@@ -32,5 +36,5 @@ Alle keuzes staan in de URL: `#zoeken?q=…&cat=moties&volgorde=relevantie&perio
 
 ## Zoekveld in de kop
 
-Buiten de zoekpagina een lijst met zes suggesties en "Toon alle n resultaten" (combobox, pijltjes en Enter); op de
+Altijd zichtbaar (sinds 17 nov 2026). Buiten de zoekpagina een lijst met zes suggesties en "Toon alle n resultaten" (combobox, pijltjes en Enter); op de
 zoekpagina werkt de pagina direct bij.

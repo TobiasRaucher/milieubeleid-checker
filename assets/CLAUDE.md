@@ -5,10 +5,11 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 
 ## Kop en navigatie (sinds 17 nov 2026)
 
-- Tabs: Overzicht, Thema's, Agenda, Wetgeving, Kamerstukken (menu met Moties & Amendementen en Vragen & Brieven; opent
-  bij hover, klik of pijl omlaag), Kerndocumenten, en rechts een vergrootglas dat het zoekveld uitklapt (klik of `/`;
-  leeg en zonder focus klapt het in, op `#zoeken` blijft het open). "Over" staat in de footer.
-- Op `#moties`, `#amendementen`, `#vragen` en `#brieven` is Kamerstukken actief (`route()`).
+- Tabs: Overzicht, Thema's, Agenda en Documenten (menu in twee kolommen: Kamerstukken met Wetgeving, Moties,
+  Amendementen, Kamervragen, Kamerbrieven; Kerndocumenten met de vijf groepen; opent bij hover, klik of pijl omlaag), dan
+  een zoekveld dat altijd zichtbaar is (`/` zet de cursor erin) en de stempel "Bijgewerkt". "Over" staat in de footer.
+- Op alle documentpagina's is Documenten actief en heeft de menuregel `aria-current` (`route()`, `kdGroep()`).
+- Kop en bediening zijn sinds 17 nov 2026 50% groter (`--h-control` 56, `--h-klein` 48); tabeltekst 18 (zie DESIGN.md).
 - Tab-aanduiding glijdt mee (`.tab-glij`, `zetGlij()`). `--kop-h` wordt door app.js gezet (tabelkop blijft onder de kop staan).
 - Een klik op een tab begint bovenaan; terug/vooruit herstelt de scrollpositie. Knop "terug naar boven", laadskelet in
   `index.html`, foutmelding als de data niet laadt. Lijsttitels (`.ltitel`) in inkt met onderstreping bij aanwijzen.
@@ -21,6 +22,7 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 | `#toezeggingen`, `#fracties` | `#agenda?terugblik=1` |
 | `#wetgeving/w-<id>` | `#wetgeving` |
 | `#stukken` | `#vragen` |
+| `#documenten/<groep>…` | `#kerndocumenten/<groep>…` |
 
 ## Thema's
 
@@ -43,23 +45,29 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
   Moties, Kamerbrieven, Kamervragen (met antwoorden), Vergaderingen, Agenda en Kerndocumenten, met aantallen. De
   documentsoorten zijn dezelfde tabellen als op hun eigen pagina, zonder Themakolom (`themaDef()`); Vergaderingen en
   Agenda zijn een lijst met zoekveld. Adres: `#themas/<slug>?type=<param>` plus filters.
-- Elke lijstpagina heeft een themafilter (Agenda, Wetgeving, Moties & Amendementen, Vragen & Brieven).
+- Elke lijstpagina heeft een themafilter in de werkbalk (Agenda, Wetgeving, Moties, Amendementen, Kamervragen, Kamerbrieven,
+  Kerndocumenten).
 
 ## Tabelpatroon
 
-Wetgeving, Moties & Amendementen, Vragen & Brieven en Kerndocumenten gebruiken `tabelPagina()`/`bindTabel()` met een
-definitie per pagina: `WET_DEF`, `wettenDef()`, `motieDef()`, `VRAAG_DEF`, `BRIEF_DEF`, `kerndocDef()`, `themaDef()`.
+Wetgeving, Moties, Amendementen, Kamervragen, Kamerbrieven en Kerndocumenten gebruiken `tabelPagina()`/`bindTabel()` met
+een definitie per pagina: `WET_DEF`, `wettenDef()`, `motieDef()`, `VRAAG_DEF`, `BRIEF_DEF`, `kerndocDef()`, `themaDef()`.
 Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
+- Werkbalk (sinds 17 nov 2026, ook op Agenda): zoekveld plus een `details.facet` per filter, actieve filters als chips
+  (`werkbalk()`, `tekenWerkbalk()`, `bindWerkbalk()`; filteren met `pastFilters()`). Kolomkoppen zijn gewone labels; alleen
+  Datum sorteert.
+- Kolommen: titel eerst, Thema vlak voor Kamerstuk/Datum. Een klik op de rij klapt de details uit; de titel is de link naar
+  de bron. De uitklapknop (`button.uitklap` in de titelcel, `c.titel`) is alleen zichtbaar bij toetsenbordfocus.
 
-## Moties & Amendementen (`#moties`, `#amendementen`)
+## Moties en Amendementen (`#moties`, `#amendementen`)
 
-- Grote schakelaar bovenaan met het zoekveld ernaast, één gedeelde tabel (`moties()`, `motieDef()`).
-- Kolommen: Thema, "Motie over..."/"Amendement over..." (titel met kleine beginletter, behalve afkortingen), uitklapknop,
-  Uitslag, Appreciatie kabinet, Indiener, Kamerstuk, Datum.
-- Thema, Uitslag, Appreciatie kabinet en Indiener zijn filters met meerdere keuzes (kolomkop opent een menu met vinkjes).
-  Thema zonder thema heet "Geen thema". Indiener telt alle indieners; GroenLinks-PvdA telt als PRO (`FRACTIE_ALIAS`).
+- Twee pagina's (sinds 17 nov 2026) met dezelfde tabel (`moties()`, `motieDef()`).
+- Kolommen: "Motie over..."/"Amendement over..." (titel met kleine beginletter, behalve afkortingen), Uitslag, Appreciatie
+  kabinet, Indiener, Thema, Kamerstuk, Datum.
+- Filters in de werkbalk: Thema, Uitslag, Appreciatie kabinet en Indiener (meerdere keuzes). Thema zonder thema heet
+  "Geen thema". Indiener telt alle indieners; GroenLinks-PvdA telt als PRO (`FRACTIE_ALIAS`).
 - Alleen Datum sorteert (pijltje rechts van het woord). Het zoekveld zoekt ook op Kamerstuknummer.
-- Klik op een rij opent het document op tweedekamer.nl (`tkLink`, via het D-nummer; zonder D-nummer een zoeklink op het zaaknummer).
+- De titel opent het document op tweedekamer.nl (`tkUrl`, via het D-nummer; zonder D-nummer een zoeklink op het zaaknummer).
 - Uitgeklapte rij: zaak, document, indiendatum en indieners; Voor/Tegen in zetels; fracties voor en tegen (uit
   `besluiten[].stemmen`, per fractie ontdubbeld); "Ingediend bij" met link naar `#agenda/a-<nummer>` (bij een
   tweeminutendebat ook het commissiedebat); "Gestemd"/"Stemming gepland" met link naar de plenaire Stemmingen
@@ -74,7 +82,7 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
     wetgevings- of notaoverleg vanaf de dag voor indienen tot en met de stemming met het Kamerstukdossier op de agenda,
     alleen als er op die dag precies één is (`actVanZaak`).
 
-## Vragen & Brieven (`#vragen`, `#brieven`)
+## Kamervragen en Kamerbrieven (`#vragen`, `#brieven`; twee pagina's sinds 17 nov 2026)
 
 - `#vragen`: Kamervragen, één rij per zaak met het antwoord erbij; Status Beantwoord, Open of Termijn verstreken (na 21 dagen).
 - `#brieven`: Kamerbrieven. Geen introtekst boven de tabel.
@@ -88,8 +96,9 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 
 ## Wetgeving (`#wetgeving`, `#wetgeving/wetten`)
 
-- Schakelaar (sinds 17 nov 2026): Wetsvoorstellen en Geldende wetten.
-- Wetsvoorstellen: uit `zaken.json` (soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Kamerstuk, Ingediend.
+- Schakelaar (sinds 17 nov 2026): Wetsvoorstellen en Geldende wetten. De enige documentpagina met een schakelaar.
+- Wetsvoorstellen: uit `zaken.json` (soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Ingediend door,
+  Thema, Kamerstuk, Ingediend.
 - Geldende wetten: de kerndocumentgroep met `"pagina": "wetgeving"` (Wettelijk kader), via `wettenDef()`.
 - Links via het Kamerstuknummer (`MRThemas.tkUrl`); OpenTK alleen als tweede link in de details.
 
@@ -97,24 +106,27 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 
 - Eén tijdlijn per week en dag met geplande en gehouden Kameractiviteiten, samengevatte vergaderingen en eigen mijlpalen
   (`tijdlijnItems()`/`renderAgenda()`).
-- "Vanaf vandaag" (standaard) toont wat komt; "Terugblik" wat is geweest, nieuwste eerst. Naast de titel alleen deze schakelaar.
-- Filters type, commissie, ministerie en thema (meerdere waarden; geen filter op samenvatting), in de URL
-  (bv. `#agenda?thema=adaptatie&type=Commissiedebat&terugblik=1`). Een klik op een themalabel zet dat thema aan of uit.
+- Grote schakelaar in plaats van de titel: "Vanaf vandaag" (standaard) toont wat komt; "Terugblik" wat is geweest, nieuwste
+  eerst. De filters gaan mee.
+- Werkbalk: zoekveld (titel, commissie, type) en filters type, commissie, ministerie en thema (`AGENDA_FILTERS`; meerdere
+  waarden; geen filter op samenvatting), in de URL (bv. `#agenda?thema=adaptatie&type=Commissiedebat&q=water&terugblik=1`).
+  Een klik op een themalabel zet dat thema aan of uit.
 - Vergaderingen zonder samenvatting met agendapunten klappen uit met "Toon agenda (n punten)"
   (`agendaBlok()`/`agendapuntenBlok()`/`deelnemersBlok()`; samenvattingen gebruiken dezelfde blokken). Stukken op
   Kamerstuknummer; moties en amendementen met uitslag of stemmingsdatum; per Kamerstukdossier een link naar `#moties?q=<nummer>`.
 - Zaal (`zaal`, vaak leeg; plenair = "Plenaire zaal"), label Besloten, en bij openbare vergaderingen van vandaag "Live op Debat Direct".
 - Inbrengtermijnen staan zonder tijd op hun dag met "Inbreng tot hh:mm".
-- Samenvattingen klappen uit ("Toon samenvatting"); bij meer activiteiten staat ze bij de hoofdactiviteit en verwijzen de
+- Samenvattingen klappen uit ("Toon samenvatting", of een klik op de regel); bij meer activiteiten staat ze bij de hoofdactiviteit en verwijzen de
   andere ernaar. Samenvatting in twee kolommen: inhoud links, agendapunten en deelnemers rechts.
   Toezeggingen uit het register, anders uit de samenvatting.
 - `#agenda/d-<samenvatting-id>` en `#agenda/a-<activiteitnummer>` openen die vergadering (in Terugblik als ze is geweest).
 
-## Kerndocumenten (`#documenten/<groep>`)
+## Kerndocumenten (`#kerndocumenten/<groep>`)
 
-- Tabelpatroon (`kerndocDef()`/`kerndocumentenPagina()`), schakelaar per groep: Kabinet, Begroting, Ramingen, Advies,
-  Rechtspraak (`kort` in de groepen).
-- Kolommen: Thema, Document, uitklapknop, Soort, (op Begroting) Hoofdstuk, Uitgever, Kenmerk, Datum. Per reeks één rij
+- Tabelpatroon (`kerndocDef()`/`kerndocumentenPagina()`), een pagina per groep (sinds 17 nov 2026): Kabinet, Begroting,
+  Ramingen, Advies, Rechtspraak, met het `label` van de groep als titel. Onbekende of lege groep: de eerste (`kdGroep()`).
+  De menuregels in `index.html` staan vast: een nieuwe groep in `data/kerndocumenten.json` moet daar ook bij.
+- Kolommen: Document, Soort, (op Begroting) Hoofdstuk, Uitgever, Thema, Kenmerk, Datum. Per reeks één rij
   (nieuwste editie); eerdere edities, links en "Bekijk het origineel" in de uitgeklapte rij (`kdDetail()`). Begrotingen en
   jaarverslagen: een rij per hoofdstuk. Thema per hoofdstuk: `HOOFDSTUK_THEMA` in `themas.js`.
 - Groepen met `"verborgen": true` (Europese Unie) staan nergens, ook niet op themapagina's of in zoeken
