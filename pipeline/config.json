@@ -652,5 +652,19 @@
     "altijdMinisteries": [
       "Klimaat en Groene Groei"
     ]
+  },
+  "kerndocumenten": {
+    "_uitleg": "Begrotingsstukken die fetch_tk.py elk jaar zelf opzoekt voor de tab Kerndocumenten (data/tk/begrotingen.json): Miljoenennota, Belastingplan, Voorjaarsnota, Najaarsnota, Financieel Jaarverslag van het Rijk, en per hoofdstuk hieronder de begroting (twee jaren) en het jaarverslag. Hoofdstukletters zoals in de Rijksbegroting; de naam komt uit de titel van het Kamerstukdossier. Overige kerndocumenten staan met de hand in data/kerndocumenten.json.",
+    "hoofdstukken": [
+      "XXIII",
+      "M",
+      "XIII",
+      "XIV",
+      "XII",
+      "A",
+      "J",
+      "XXII",
+      "VII"
+    ]
   }
 }

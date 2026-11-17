@@ -8,6 +8,7 @@ const lees = (p) => JSON.parse(fs.readFileSync(path.join(__dirname, "..", p), "u
 const D = {
   debatten: lees("data/debatten.json").debatten, zaken: lees("data/tk/zaken.json"),
   stukken: lees("data/tk/stukken.json"), activiteiten: lees("data/tk/activiteiten.json"), agenda: lees("data/agenda.json").items, toezeggingen: lees("data/tk/toezeggingen.json"),
+  kerndocumenten: lees("data/kerndocumenten.json"), begrotingen: lees("data/tk/begrotingen.json"),
   T: T.maak(lees("data/themas.json")),
 };
 const z = Z.maak(D, lees("data/zoeksynoniemen.json"));
@@ -15,6 +16,13 @@ const z = Z.maak(D, lees("data/zoeksynoniemen.json"));
 const TESTS = [
   // [zoekvraag, verwachte titel (deel, kleine letters), top-N]
   ["bonaire", "klimaatzaak bonaire", 2],
+  // kerndocumenten
+  ["kev", "klimaat- en energieverkenning", 3],
+  ["miljoenennota", "miljoenennota", 2],
+  ["coalitieakkoord", "coalitieakkoord", 3],
+  ["begroting landbouw", "begroting landbouw", 3],
+  ["klimaat- en energiefonds", "klimaat- en energiefonds", 3],
+  ["belastingplan 2027", "belastingplan 2027", 2],
   ["klimaatwet bonaire", "bonaire", 2],
   ["krw", "kaderrichtlijn water", 5],
   ["kaderrichtlijn water", "kaderrichtlijn water", 3],
@@ -88,6 +96,8 @@ const extra = [
   // "Bedoelde je ...?"
   ["kernenrgie -> kernenergie", () => z.suggesties("kernenrgie zeehondjes").some((x) => x.soort === "spelling" && x.q.startsWith("kernenergie"))],
   ["woorden los als niets samen", () => z.suggesties("stikstof xqzwv").length === 0 || z.suggesties("stikstof xqzwv").some((x) => x.q === "stikstof")],
+  ["energieverkenning geen energierekening", () => { const r = z.zoek("klimaat- en energieverkenning").resultaten; return r.length > 0 && !r.some((x) => /energierekening/i.test(x.doc.titel)); }],
+  ["tikfout in één woord blijft werken", () => z.zoek("stiksof water").resultaten.length > 0],
   // synoniemen tellen één keer: een stuk met kernenergie in de titel staat in de top 10
   ["kernenergie: titeltreffers bovenaan", () => z.zoek("kernenergie").resultaten.slice(0, 10).filter((r) => r.inTitel).length >= 8],
 ];

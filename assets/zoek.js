@@ -1,6 +1,6 @@
 /* MilieuRadar: zoekfunctie.
    Bouwt een zoekindex (MiniSearch) over samenvattingen, wetsvoorstellen, moties en amendementen, stukken van ministeries en
-   Kameractiviteiten. Werkt in de browser (window.MRZoek) en in Node (tests/zoektest.js).
+   Kameractiviteiten, toezeggingen, de agenda en de kerndocumenten. Werkt in de browser (window.MRZoek) en in Node (tests/zoektest.js).
 
    Wat de zoekfunctie nauwkeurig maakt:
    - normalisatie: kleine letters, geen accenten (energieën = energieen), "co₂" = "co2", "36 169" = "36169", "I&W" = "ienw";
@@ -205,6 +205,16 @@
         sectoren: i.sectoren || (i.sector ? [i.sector] : []), titel: i.titel, tekst: i.toelichting || "", link: i.url, extern: !!i.url,
       });
     }
+    // kerndocumenten (alle edities; begrotingsstukken uit de Kamerdata inbegrepen)
+    {
+      for (const k of MRThemas.kerndocumenten(D.kerndocumenten, D.begrotingen)) {
+        add({
+          id: "kerndoc:" + k.id, cat: "kerndocumenten", soort: k.soort || "Kerndocument", datum: k.datum, titel: k.titel,
+          tekst: j([k.afkorting, k.kenmerk, k.document, k.uitgever, k.documentSoort]), personen: "",
+          link: k.url, extern: true, themas: k.themas && k.themas.length ? k.themas : undefined,
+        });
+      }
+    }
     // dubbele id's (zelfde agendaregel) overslaan
     const gezien = new Set();
     return docs.filter((d) => (gezien.has(d.id) ? false : (gezien.add(d.id), true)));
@@ -227,8 +237,9 @@
     [["wetsvoorstel", "wetsvoorstellen"], "wetsvoorstellen", (d) => /^Wetsvoorstel/.test(d.soort)],
     [["agenda"], "agenda", (d) => d.cat === "agenda"],
     [["toezegging", "toezeggingen"], "toezeggingen", (d) => d.cat === "toezeggingen"],
+    [["kerndocument", "kerndocumenten"], "kerndocumenten", (d) => d.cat === "kerndocumenten"],
   ];
-  const CAT_GEWICHT = { debatten: 1.25, wetgeving: 1.4, moties: 1, stukken: 1, agenda: 1.05, toezeggingen: 1 };
+  const CAT_GEWICHT = { debatten: 1.25, wetgeving: 1.4, moties: 1, stukken: 1, agenda: 1.05, toezeggingen: 1, kerndocumenten: 1.3 };
 
   function maak(D, synoniemen) {
     const docs = bouwDocumenten(D);
@@ -321,13 +332,18 @@
     // (anders scoorde een stuk dat kerncentrale, kernenergie en nucleair noemt drie keer).
     function zoekDeel(deel, filter) {
       const varianten = typeof deel === "string" ? [deel] : deel.queries;
+      // direct: elk woord van de variant komt (op voor- of achtervoegsel na) zelf voor, niet alleen via tikfoutcorrectie
+      const past = (q, m) => q && (m.startsWith(q) || q.startsWith(m));
+      const woorden = (v) => (typeof v === "string" ? [term(v)] : (v.queries || []).flatMap(woorden));
       const uit = new Map();
       for (const v of varianten) {
+        const vw = woorden(v).filter(Boolean);
         for (const r of ms.search(v, { filter })) {
           const velden = Object.values(r.match).flat();
           const o = uit.get(r.id);
-          if (!o) uit.set(r.id, { score: r.score, terms: new Set(r.terms), velden: new Set(velden) });
-          else { o.score = Math.max(o.score, r.score); r.terms.forEach((t) => o.terms.add(t)); velden.forEach((x) => o.velden.add(x)); }
+          const d = vw.every((q) => r.terms.some((m) => past(q, m)));
+          if (!o) uit.set(r.id, { score: r.score, terms: new Set(r.terms), velden: new Set(velden), direct: d });
+          else { o.score = Math.max(o.score, r.score); r.terms.forEach((t) => o.terms.add(t)); velden.forEach((x) => o.velden.add(x)); o.direct = o.direct || d; }
         }
       }
       return uit;
@@ -336,9 +352,9 @@
       const maps = delen.map((d) => zoekDeel(d, filter));
       const ids = modus === "AND" ? [...maps[0].keys()].filter((id) => maps.every((m) => m.has(id))) : [...new Set(maps.flatMap((m) => [...m.keys()]))];
       return ids.map((id) => {
-        let score = 0, n = 0; const terms = new Set(), velden = new Set();
-        for (const m of maps) { const o = m.get(id); if (!o) continue; n++; score += o.score; o.terms.forEach((t) => terms.add(t)); o.velden.forEach((v) => velden.add(v)); }
-        return { id, score: modus === "OR" ? score * n : score, terms: [...terms], velden };
+        let score = 0, n = 0, zwak = false; const terms = new Set(), velden = new Set();
+        for (const m of maps) { const o = m.get(id); if (!o) continue; n++; score += o.score; zwak = zwak || !o.direct; o.terms.forEach((t) => terms.add(t)); o.velden.forEach((v) => velden.add(v)); }
+        return { id, score: modus === "OR" ? score * n : score, terms: [...terms], velden, zwak };
       }).sort((a, b) => b.score - a.score);
     }
 
@@ -387,13 +403,9 @@
       let modus = "AND";
       let res = combineer(delen, filter, "AND");
       if (!res.length && delen.length > 1) { modus = "OR"; res = combineer(delen, filter, "OR"); }
-      // een treffer is "zwak" als elk gevonden woord alleen via tikfoutcorrectie past (kerncentrales -> kolencentrales);
-      // die tonen we alleen als er niets anders is (de zoekvraag bevat dan zelf een tikfout)
-      const qTermen = [];
-      const verzamel = (x) => (typeof x === "string" ? qTermen.push(term(x)) : (x.queries || []).forEach(verzamel));
-      delen.forEach(verzamel);
-      const direct = (m) => qTermen.some((q) => q && (m.startsWith(q) || q.startsWith(m)));
-      let resultaten = res.map((r) => ({ doc: perId.get(r.id), score: r.score, termen: new Set(r.terms), inTitel: r.velden.has("titel"), zwak: !r.terms.some(direct) }));
+      // een treffer is "zwak" als een woord uit de vraag alleen via tikfoutcorrectie past (kerncentrales -> kolencentrales,
+      // energieverkenning -> energierekening); die tonen we alleen als er niets anders is (de vraag bevat dan zelf een tikfout)
+      let resultaten = res.map((r) => ({ doc: perId.get(r.id), score: r.score, termen: new Set(r.terms), inTitel: r.velden.has("titel"), zwak: r.zwak }));
       const tikfout = resultaten.length > 0 && resultaten.every((r) => r.zwak);
       if (!tikfout) resultaten = resultaten.filter((r) => !r.zwak);
       return { modus, frasen, typeFilter, wieOpties, wie, resultaten, tikfout };

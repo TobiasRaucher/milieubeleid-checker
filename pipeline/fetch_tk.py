@@ -23,6 +23,11 @@ Wat er wordt opgehaald (per actieve sector in pipeline/config.json):
   * toezeggingen uit het toezeggingenregister van de Kamer die bij een gevolgde activiteit horen
     (plus alle toezeggingen van de ministeries in toezeggingen.altijdMinisteries)
 
+  * begrotingsstukken voor de tab Kerndocumenten (data/tk/begrotingen.json; zie "kerndocumenten" in config.json)
+
+Alleen de begrotingsstukken bijwerken:
+  python3 pipeline/fetch_tk.py --begrotingen
+
 Alleen de toezeggingen bijwerken (op basis van de bestaande activiteiten.json):
   python3 pipeline/fetch_tk.py --toezeggingen
 
@@ -628,6 +633,88 @@ def relevantiepoort(alle_zaken, stuk_lijst):
     return zaken_uit, stukken_uit, telling
 
 
+def _dossiers(filter_expr, top=60):
+    return odata("Kamerstukdossier", {
+        "$filter": f"Verwijderd eq false and {filter_expr}", "$select": "Nummer,Toevoeging,Titel",
+        "$orderby": "Nummer desc", "$top": str(top)}, max_pages=1)
+
+
+def _hoofdnaam(titel):
+    """'Vaststelling van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2027'
+    -> 'Klimaat en Groene Groei'; ook fondsen ('het Klimaat- en Energiefonds')."""
+    m = re.search(r"(?:begrotingsstaa?t(?:en)?|slotwet(?: van)?) (?:van )?(?:het |de )?(?:Ministerie van )?(.+?)(?: en het [A-Z][\w-]*fonds)?(?: \(| voor het jaar| \d{4}|$)", titel or "")
+    naam = (m.group(1) if m else titel or "").strip()
+    return naam[:1].upper() + naam[1:]
+
+
+def begrotingsstukken():
+    """Miljoenennota, begrotingen per hoofdstuk (twee jaren), Belastingplan, Voorjaars- en Najaarsnota en de jaarverslagen,
+    met per Kamerstukdossier het hoofddocument (memorie van toelichting, nota of jaarverslag)."""
+    hoofdstukken = CONFIG.get("kerndocumenten", {}).get("hoofdstukken", [])
+    jaar = date.today().year
+    gekozen = []  # (soort, jaar, dossier)
+    # begrotingen: de twee nieuwste begrotingsjaren die er al zijn
+    jaren = [j for j in (jaar + 1, jaar, jaar - 1) if _dossiers(f"startswith(Titel,'Vaststelling van de begrotingssta') and contains(Titel,'voor het jaar {j}')", 1)][:2]
+    for j in jaren:
+        rec = _dossiers(f"startswith(Titel,'Vaststelling van de begrotingssta') and contains(Titel,'voor het jaar {j}')")
+        for d in rec:
+            if d.get("Toevoeging") in hoofdstukken:
+                gekozen.append(("begroting", j, d))
+        if rec:  # Miljoenennota: zelfde nummer, zonder toevoeging
+            gekozen += [("miljoenennota", j, d) for d in _dossiers(f"Nummer eq {rec[0]['Nummer']} and Toevoeging eq null", 1)]
+    for soort, prefix in (("belastingplan", "contains(Titel,'(Belastingplan 20')"), ("voorjaarsnota", "startswith(Titel,'Voorjaarsnota')"),
+                          ("najaarsnota", "startswith(Titel,'Najaarsnota')")):
+        for d in _dossiers(prefix, 2):
+            m = re.search(r"(20\d\d)", d.get("Titel") or "")
+            gekozen.append((soort, int(m.group(1)) if m else None, d))
+    for d in _dossiers("startswith(Titel,'Financieel Jaarverslag van het Rijk') or startswith(Titel,'Financieel jaarverslag van het Rijk')", 1):
+        m = re.search(r"(20\d\d)", d.get("Titel") or "")
+        j = int(m.group(1)) if m else None
+        gekozen.append(("jaarverslag-rijk", j, d))
+        for h in _dossiers(f"Nummer eq {d['Nummer']} and Toevoeging ne null"):
+            if h.get("Toevoeging") in hoofdstukken:
+                gekozen.append(("jaarverslag", j, h))
+
+    # hoofddocumenten: één query per Kamerstuknummer (alle toevoegingen samen)
+    docs = {}
+    for n in sorted({d["Nummer"] for _, _, d in gekozen}):
+        for doc in odata("Document", {
+                "$filter": f"Verwijderd eq false and Kamerstukdossier/any(k: k/Nummer eq {n}) and Volgnummer le 3",
+                "$select": "DocumentNummer,Soort,Onderwerp,Datum,Volgnummer",
+                "$expand": "Kamerstukdossier($select=Nummer,Toevoeging)"}, max_pages=3):
+            for k in doc.get("Kamerstukdossier") or []:
+                docs.setdefault((k.get("Nummer"), k.get("Toevoeging")), []).append(doc)
+
+    def hoofddoc(lijst):
+        for s in ("Memorie van toelichting", "Jaarverslag"):
+            for d in sorted(lijst, key=lambda x: x.get("Volgnummer") or 9):
+                if d.get("Soort") == s and not re.match(r"Bijlage", d.get("Onderwerp") or ""):
+                    return d
+        return next((d for d in sorted(lijst, key=lambda x: x.get("Volgnummer") or 9) if d.get("Soort") not in ("Koninklijke boodschap", "Voorstel van wet")), None)
+
+    uit = []
+    for soort, j, d in gekozen:
+        lijst = docs.get((d["Nummer"], d.get("Toevoeging")), [])
+        hd = hoofddoc(lijst)
+        if not hd:
+            continue  # dossier bestaat, maar het stuk is nog niet verschenen
+        rk = next((x for x in lijst if x.get("Soort") == "Brief Algemene Rekenkamer"), None)
+        uit.append({
+            "soort": soort, "jaar": j, "hoofdstuk": d.get("Toevoeging"),
+            "naam": _hoofdnaam(d.get("Titel")) if soort in ("begroting", "jaarverslag") else None,
+            "nummer": d["Nummer"], "titel": (d.get("Titel") or "").strip(),
+            "document": hd["DocumentNummer"], "documentSoort": hd.get("Soort"), "datum": (hd.get("Datum") or "")[:10] or None,
+            "rekenkamer": rk["DocumentNummer"] if rk else None,
+        })
+    return uit
+
+
+def alleen_begrotingen():
+    lijst = begrotingsstukken()
+    (OUT / "begrotingen.json").write_text(json.dumps(lijst, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"Klaar: {len(lijst)} begrotingsstukken")
+
+
 def main():
     start = CONFIG["startdatum"]
     alle_zaken = {}
@@ -729,6 +816,15 @@ def main():
         FOUTEN.append(f"stemmingen: {e}")
         log(f"    FOUT stemmingen: {e}")
 
+    # 6c. begrotingsstukken voor de tab Kerndocumenten
+    begr = []
+    try:
+        begr = begrotingsstukken()
+        log(f"== {len(begr)} begrotingsstukken")
+    except Exception as e:
+        FOUTEN.append(f"begrotingen: {e}")
+        log(f"    FOUT begrotingen: {e}")
+
     # 7. wat bij de review "zonder thema" kreeg, is niet relevant en gaat eruit
     alle_zaken, stuk_lijst, uitgesloten = relevantiepoort(alle_zaken, stuk_lijst)
     if stem_data:
@@ -754,6 +850,8 @@ def main():
         (OUT / "stukken.json").write_text(json.dumps(stuk_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     if stem_data:
         (OUT / "stemmingen.json").write_text(json.dumps(stem_data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    if begr:
+        (OUT / "begrotingen.json").write_text(json.dumps(begr, ensure_ascii=False, indent=1), encoding="utf-8")
     if tz_lijst:
         (OUT / "toezeggingen.json").write_text(json.dumps(tz_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps({
@@ -783,5 +881,7 @@ def alleen_toezeggingen():
 if __name__ == "__main__":
     if "--toezeggingen" in sys.argv:
         alleen_toezeggingen()
+    elif "--begrotingen" in sys.argv:
+        alleen_begrotingen()
     else:
         main()
