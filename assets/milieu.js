@@ -314,7 +314,7 @@
   /* ---------- koppeling met app.js ---------- */
   window.MRMilieu = {
     // een kop met een kaart eronder, zoals Net binnen en Komt eraan (sinds 16 nov 2026)
-    sectieHtml: () => `<section class="mi-sectie" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h2 id="mi-uitstoot-kop">Wat Nederland uitstoot</h2><div class="card mi-inhoud"><div class="sk sk-kaart"></div></div></section>`,
+    sectieHtml: () => `<section class="mi-sectie" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h2 id="mi-uitstoot-kop">Hoe staan we er voor?</h2><div class="card mi-inhoud"><div class="sk sk-kaart"></div></div></section>`,
     vul() {
       const u = document.querySelector("#mi-uitstoot .mi-inhoud"); if (u) vulUitstoot(u);
     },

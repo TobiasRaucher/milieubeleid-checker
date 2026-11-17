@@ -18,6 +18,8 @@
   --t-20: 20px;   /* sectiekoppen, woordmerk op de telefoon */
   --t-24: 24px;   /* woordmerk */
   --t-30: 30px;   /* paginatitel, kerncijfers */
+  --t-36: 36px;   /* woordmerk */
+  --t-45: 45px;   /* openingszin Overzicht */
   --t-64: 64px;   /* het CO2-getal */
 
   /* Neutrale reeks "Rapport" (Tobias, 17 nov 2026): wit papier, bijna zwarte inkt, koel lichtgrijs voor panelen */
@@ -112,24 +114,25 @@ body.gescrold header.top { border-bottom-color: var(--line); }
 header.top .wrap { display: flex; align-items: center; gap: 8px 20px; padding-top: 12px; padding-bottom: 12px; }
 .merk { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); border-radius: var(--r-control); }
 .merk:hover { color: var(--ink); }
-.merk .logo { width: var(--h-control); height: var(--h-control); flex: none; }
-.woordmerk { font-size: var(--t-30); font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+.merk .logo { width: var(--h-klein); height: var(--h-klein); flex: none; }
+.woordmerk { font-size: var(--t-36); font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: var(--ink); }
+.woordmerk .groen { color: var(--accent); }
 /* smallere schermen: alleen het beeldmerk (het heeft een eigen aria-label) en de stempel op twee regels */
 @media (max-width: 1279px) { .woordmerk { display: none; } }
 
-/* Hoofdnavigatie: het enige pilvormige onderdeel op de site */
-nav.tabs { position: relative; display: flex; flex: none; gap: 4px; background: var(--surface); padding: 4px; border-radius: 999px; overflow: visible; }
-nav.tabs > a, .tab-knop { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 4px; min-height: var(--h-control); padding: 0 20px; border: 0; border-radius: 999px; background: transparent; font: inherit; font-size: var(--t-20); line-height: 1; text-decoration: none; color: var(--ink-2); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+/* Hoofdnavigatie: zelfde ronding als het zoekveld; balk 48 hoog, zoals logo en zoekveld */
+nav.tabs { position: relative; display: flex; flex: none; gap: 4px; background: var(--surface); padding: 4px; border-radius: var(--r-control); overflow: visible; }
+nav.tabs > a, .tab-knop { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 4px; min-height: calc(var(--h-klein) - 8px); padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); line-height: 1; text-decoration: none; color: var(--ink-2); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 nav.tabs > a:hover, .tab-knop:hover { color: var(--ink); }
 nav.tabs > a:hover:not(.active), .tab-menu:not(.active) .tab-knop:hover { background: var(--raised); }
 nav.tabs > a.active, .tab-menu.active .tab-knop { color: var(--ink); font-weight: 500; }
 nav.tabs:not(.glij) > a.active { background: var(--card); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); }
 /* Uitzondering op "geen breedte animeren": de aanduiding staat los van de opmaak (absolute positie), dus het kost niets. Zie DESIGN.md. */
-.tab-glij { position: absolute; left: 0; top: 4px; bottom: 4px; width: 0; border-radius: 999px; background: var(--card); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); opacity: 0; pointer-events: none; will-change: transform; transition: transform var(--d-lang) var(--ease), width var(--d-lang) var(--ease), opacity var(--d-kort) var(--ease); }
+.tab-glij { position: absolute; left: 0; top: 4px; bottom: 4px; width: 0; border-radius: 4px; background: var(--card); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); opacity: 0; pointer-events: none; will-change: transform; transition: transform var(--d-lang) var(--ease), width var(--d-lang) var(--ease), opacity var(--d-kort) var(--ease); }
 /* Documenten: een tab met een menu in twee kolommen (hover, klik of pijl omlaag; Escape sluit) */
 .tab-menu { position: relative; z-index: 1; }
 .tab-knop .chev { width: 18px; height: 18px; vertical-align: 0; color: var(--muted); transition: transform var(--d-lang) var(--ease); }
-.tab-lijst { position: absolute; top: calc(100% + 8px); right: -4px; display: grid; grid-template-columns: repeat(2, 300px); gap: 8px; padding: 8px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top right; opacity: 0; visibility: hidden; transform: translateY(-4px) scale(0.98); transition: opacity var(--d-kort) var(--ease), transform var(--d-kort) var(--ease), visibility 0s linear var(--d-kort); }
+.tab-lijst { position: absolute; top: calc(100% + 8px); right: -4px; display: grid; grid-template-columns: repeat(2, 300px); gap: 8px; padding: 8px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top right; opacity: 0; visibility: hidden; transform: translateY(-4px) scale(0.98); transition: opacity var(--d-kort) var(--ease), transform var(--d-kort) var(--ease), visibility 0s linear var(--d-kort); }
 .tab-lijst::before { content: ""; position: absolute; left: 0; right: 0; top: -13px; height: 13px; } /* brug: hover valt niet weg tussen knop en menu */
 .tab-menu:is(:hover:not(.dicht), .open) .tab-lijst, .tab-lijst:focus-within { opacity: 1; visibility: visible; transform: none; transition: opacity var(--d-kort) var(--ease), transform var(--d-kort) var(--ease), visibility 0s; }
 .tab-menu:is(:hover:not(.dicht), .open) .chev { transform: rotate(180deg); }
@@ -144,7 +147,7 @@ nav.tabs:not(.glij) > a.active { background: var(--card); box-shadow: 0 1px 2px 
 /* Zoeken in de kop: altijd zichtbaar, zoekt in de hele site */
 form.zoek { position: relative; flex: 1 1 160px; min-width: 0; max-width: 360px; }
 .zoek-ico { position: absolute; left: 16px; top: 50%; width: 20px; height: 20px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-form.zoek input { width: 100%; height: var(--h-control); font: inherit; font-size: var(--t-18); color: var(--ink); background: var(--surface); border: 1px solid transparent; border-radius: var(--r-control); padding: 0 44px 0 48px; transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease); }
+form.zoek input { width: 100%; height: var(--h-klein); font: inherit; font-size: var(--t-18); color: var(--ink); background: var(--surface); border: 1px solid transparent; border-radius: var(--r-control); padding: 0 44px 0 48px; transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease); }
 form.zoek input::placeholder { color: var(--muted); }
 form.zoek input:hover { border-color: var(--line); }
 form.zoek input:focus { outline: none; background: var(--card); border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
@@ -167,7 +170,7 @@ h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px;
 /* Overzicht onder de grafiek: Net binnen (breed, links) en Komt eraan (smal, rechts).
    Beide kaarten rekken mee tot dezelfde onderrand; de lijst vult de ruimte, de kaartvoet blijft onderaan. */
 .ov-intro { margin: 32px 0 0; }
-.ov-lead { font-size: var(--t-30); font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; color: var(--ink); margin: 0; max-width: 36ch; }
+.ov-lead { font-size: var(--t-45); font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; color: var(--ink); margin: 0; max-width: 36ch; }
 .ov-uitleg { margin: 8px 0 0; font-size: var(--t-15); font-weight: 400; color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
 .ov-onder { display: grid; gap: 0 24px; align-items: stretch; }
 .ov-onder > section { display: flex; flex-direction: column; }
@@ -299,7 +302,7 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .facet[open] > summary { border-color: var(--accent); }
 .facet[open] > summary::after { transform: rotate(180deg); }
 .facet-n { color: var(--accent); font-size: var(--t-15); font-weight: 500; }
-.facet-menu { position: absolute; z-index: 20; top: calc(100% + 4px); left: 0; min-width: 320px; max-width: min(520px, 90vw); max-height: 480px; overflow: auto; padding: 4px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top left; }
+.facet-menu { position: absolute; z-index: 20; top: calc(100% + 4px); left: 0; min-width: 320px; max-width: min(520px, 90vw); max-height: 480px; overflow: auto; padding: 4px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top left; }
 .facet-menu.rechts { transform-origin: top right; }
 .facet[open] > .facet-menu { animation: menu-in var(--d-menu) var(--ease) both; }
 .facet-menu label { display: flex; align-items: center; gap: 12px; min-height: var(--h-klein); padding: 4px 12px; border-radius: var(--r-control); font-size: var(--t-18); cursor: pointer; }
@@ -318,9 +321,9 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .actieve-filters .linkknop { font-size: var(--t-15); }
 
 /* grote schakelaar Moties / Amendementen: staat in voor de paginatitel; zelfde vorm als de hoofdtabs (verhoogd vlak op surface), op 20px */
-.schakelaar { display: inline-flex; gap: 4px; padding: 4px; margin: 0; background: var(--surface); border-radius: var(--r-card); }
+.schakelaar { display: inline-flex; gap: 4px; padding: 4px; margin: 0; background: var(--surface); border-radius: var(--r-control); }
 #view > .schakelaar, #agendaknoppen > .schakelaar { margin-top: 32px; }
-.schakelaar a { display: inline-flex; align-items: center; min-height: 64px; padding: 0 28px; border-radius: var(--r-control); font-size: var(--t-30); font-weight: 500; letter-spacing: -0.005em; color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+.schakelaar a { display: inline-flex; align-items: center; min-height: 64px; padding: 0 28px; border-radius: 4px; font-size: var(--t-30); font-weight: 500; letter-spacing: -0.005em; color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 .schakelaar a:hover:not([aria-current]) { color: var(--ink); background: var(--raised); }
 .schakelaar a[aria-current="page"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); }
 .schakelaar a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -578,7 +581,7 @@ ul.zook .status { font-size: var(--t-13); }
 .zleeg .chip { margin: 0 4px 4px 0; }
 .zleeg .filters { margin: 0; }
 /* suggesties onder het zoekveld in de kop (combobox) */
-.zsug { position: absolute; top: calc(100% + 6px); right: 0; z-index: 40; width: 460px; max-width: calc(100vw - 24px); max-height: 70vh; overflow: auto; padding: 4px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top right; animation: menu-in var(--d-menu) var(--ease) both; }
+.zsug { position: absolute; top: calc(100% + 6px); right: 0; z-index: 40; width: 460px; max-width: calc(100vw - 24px); max-height: 70vh; overflow: auto; padding: 4px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top right; animation: menu-in var(--d-menu) var(--ease) both; }
 .zsug[hidden] { display: none; }
 .zsug-optie { display: block; padding: 8px 12px; border-radius: var(--r-control); cursor: pointer; }
 .zsug-optie:hover, .zsug-optie[aria-selected="true"] { background: var(--surface); }
