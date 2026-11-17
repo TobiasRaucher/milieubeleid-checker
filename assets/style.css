@@ -20,31 +20,31 @@
   --t-30: 30px;   /* paginatitel, kerncijfers */
   --t-64: 64px;   /* het CO2-getal */
 
-  /* Neutrale reeks: linnen, crème en bosgroen als inkt */
-  --page: #f5f1e8;               /* pagina: zacht linnen */
-  --surface: #ebe6da;            /* panelen, tegels, tabelkop */
-  --raised: #e1dbcc;             /* actieve rij, ingedrukt, hover op oppervlak, zoekmarkering */
-  --card: #faf7f0;               /* kaarten, grafiek, boxen: wittere crème */
-  --ink: #002918;                /* hoofdtekst: donker bosgroen (14,0:1 op linnen) */
-  --ink-2: #3a4a42;              /* secundaire tekst (8,3:1) */
-  --muted: #5c6a62;              /* meta en bijschriften (5,0:1 op linnen, 4,6:1 op oppervlak) */
-  --line: rgba(0, 41, 24, 0.12);        /* haarlijn */
-  --line-sterk: rgba(0, 41, 24, 0.24);  /* haarlijn bij aanwijzen */
+  /* Neutrale reeks "Rapport" (Tobias, 17 nov 2026): wit papier, bijna zwarte inkt, koel lichtgrijs voor panelen */
+  --page: #ffffff;               /* pagina: wit */
+  --surface: #f1f3f1;            /* panelen, tegels, tabelkop */
+  --raised: #e4e8e5;             /* actieve rij, ingedrukt, hover op oppervlak, zoekmarkering */
+  --card: #ffffff;               /* kaarten, grafiek, boxen: wit met een haarlijn */
+  --ink: #0e1411;                /* hoofdtekst: bijna zwart (18,6:1 op wit) */
+  --ink-2: #46514b;              /* secundaire tekst (8,3:1) */
+  --muted: #5f6a64;              /* meta en bijschriften (5,6:1 op wit, 5,0:1 op oppervlak) */
+  --line: rgba(14, 20, 17, 0.14);       /* haarlijn */
+  --line-sterk: rgba(14, 20, 17, 0.28); /* haarlijn bij aanwijzen */
 
-  /* Hoofdaccent: bosgroen. Selectie, hoofdknop, focus. Tekst erop is crème. */
-  --accent: #004025;             /* 10,6:1 op linnen; crème erop 11,2:1 */
-  --accent-hover: #002918;
-  --accent-soft: #e3ebe4;        /* aangevinkte filterregel, huidige menuregel */
+  /* Hoofdaccent: bosgroen. Selectie, hoofdknop, focus. Tekst erop is wit. */
+  --accent: #00452a;             /* 11,1:1 op wit; wit erop 11,1:1 */
+  --accent-hover: #002e1c;
+  --accent-soft: #e2ece5;        /* aangevinkte filterregel, huidige menuregel */
 
   /* Hoofdaandacht: rood. Nu, over de grens, en de stip voor verworpen. */
-  --alarm: #ff2e00;              /* lijnen, stippen, randen (3,3:1 op linnen); niet als tekst */
-  --alarm-tekst: #c42300;        /* rood als tekst, 5,2:1 op linnen */
-  --alarm-soft: #fde9e3;         /* alleen de rij van vandaag op Agenda */
+  --alarm: #e5320f;              /* lijnen, stippen, randen (4,4:1 op wit); niet als tekst */
+  --alarm-tekst: #c42300;        /* rood als tekst, 5,9:1 op wit */
+  --alarm-soft: #fdeae5;         /* alleen de rij van vandaag op Agenda */
 
   /* Stoplicht voor status: de stip draagt de kleur, het woord de betekenis */
-  --good: #004025;               /* aangenomen, afgedaan, beantwoord */
-  --warning: #a87e00;            /* in behandeling, aangehouden, openstaand (oker, 3,3:1 op linnen) */
-  --bad: #ff2e00;                /* verworpen (zelfde rood als de aandacht) */
+  --good: #00452a;               /* aangenomen, afgedaan, beantwoord */
+  --warning: #a87e00;            /* in behandeling, aangehouden, openstaand (oker, 3,7:1 op wit) */
+  --bad: #e5320f;                /* verworpen (zelfde rood als de aandacht) */
   --neutraal-stip: #a5ada7;      /* ingetrokken, vervallen */
 
   /* Bediening: 50% groter dan de oorspronkelijke 36px (Tobias, 17 nov 2026) */
@@ -264,7 +264,7 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .chip { display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 4px 12px; font: inherit; font-size: var(--t-14); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); cursor: pointer; text-decoration: none; transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 .chip:hover:not(:disabled):not([aria-pressed="true"]) { border-color: var(--line-sterk); background: var(--surface); color: var(--ink); }
 .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--card); font-weight: 500; }
-.chip[aria-pressed="true"] .muted, .chip[aria-pressed="true"] .n { color: rgba(250, 247, 240, 0.8); }
+.chip[aria-pressed="true"] .muted, .chip[aria-pressed="true"] .n { color: rgba(255, 255, 255, 0.8); }
 .chip:disabled { color: var(--muted); cursor: not-allowed; opacity: 0.6; }
 .chip .n { color: var(--muted); font-size: var(--t-12); }
 .chip.actief { min-height: 32px; padding: 4px 8px 4px 12px; font-size: var(--t-13); background: var(--surface); border-color: transparent; }
@@ -436,7 +436,7 @@ button.doclees:hover { color: var(--accent); text-decoration-color: currentColor
 html.dv-open { overflow: hidden; }
 dialog.docview { width: min(960px, calc(100vw - 48px)); height: calc(100vh - 48px); max-width: none; max-height: none; margin: auto; padding: 0; border: 1px solid var(--line); border-radius: var(--r-card); background: var(--card); color: var(--ink); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12); display: none; flex-direction: column; overflow: hidden; }
 dialog.docview[open] { display: flex; animation: dv-in var(--d-menu) var(--ease) both; }
-dialog.docview::backdrop { background: rgba(0, 41, 24, 0.32); }
+dialog.docview::backdrop { background: rgba(14, 20, 17, 0.32); }
 @keyframes dv-in { from { opacity: 0; transform: translateY(8px) scale(0.99); } to { opacity: 1; transform: none; } }
 .dv-kop { display: flex; align-items: flex-start; gap: 24px; padding: 16px 16px 16px 24px; border-bottom: 1px solid var(--line); }
 .dv-kopt { flex: 1; min-width: 0; }
@@ -463,7 +463,7 @@ dialog.docview::backdrop { background: rgba(0, 41, 24, 0.32); }
 .textLayer :is(span, br) { color: transparent; position: absolute; white-space: pre; cursor: text; transform-origin: 0% 0%; }
 .textLayer > :not(.markedContent), .textLayer .markedContent span:not(.markedContent) { z-index: 1; }
 .textLayer span.markedContent { top: 0; height: 0; }
-.textLayer ::selection { background: rgba(0, 64, 37, 0.18); }
+.textLayer ::selection { background: rgba(0, 69, 42, 0.18); }
 @media (min-width: 901px) {
   .tablewrap { overflow: clip; }
   thead th { top: var(--kop-h, 0px); z-index: 2; box-shadow: 0 1px 0 var(--line); }
@@ -786,7 +786,7 @@ button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .ta
   .facet[open] > .facet-menu, #view.binnenkomst, tr.detail { animation: vervaag var(--d-kort) ease both !important; animation-duration: var(--d-kort) !important; }
 }
 @media (prefers-contrast: more) {
-  :root { --line: rgba(0, 41, 24, 0.32); --line-sterk: rgba(0, 41, 24, 0.5); --muted: #3a4a42; --ink-2: #1f3329; }
+  :root { --line: rgba(14, 20, 17, 0.32); --line-sterk: rgba(14, 20, 17, 0.5); --muted: #46514b; --ink-2: #2a332e; }
   .tab-glij { box-shadow: 0 0 0 1.5px var(--ink); }
 }
 

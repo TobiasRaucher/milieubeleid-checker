@@ -16,33 +16,33 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 
 ## Tokens
 
-### Palette (since 17 Nov 2026, Tobias)
+### Palette "Rapport" (since 17 Nov 2026, Tobias)
 
-Soft linen with deep forest green; red is the one colour for attention. Light only. Text is dark forest on a light background and cream on a dark one.
+White paper with near-black ink, deep forest as the one accent, red as the one colour for attention. Chosen over linen and cream, which felt dated and flat. Light only. Cards are white on the white page and are separated by a hairline, not by a fill.
 
 | Role | Token | Value |
 | --- | --- | --- |
-| Page (soft linen) | `--page` | `#f5f1e8` |
-| Card, chart, boxes (whiter cream) | `--card` | `#faf7f0` |
-| Surface (panels, tiles, table head) | `--surface` | `#ebe6da` |
-| Raised (pressed, active row, search highlight) | `--raised` | `#e1dbcc` |
-| Hairline | `--line` | ink at 12% |
-| Hairline on hover | `--line-sterk` | ink at 24% |
-| Primary text (dark forest) | `--ink` | `#002918` (14.0:1 on linen) |
-| Secondary text | `--ink-2` | `#3a4a42` (8.3:1 on linen) |
-| Muted text, meta only | `--muted` | `#5c6a62` (5.0:1 on linen, 4.6:1 on surface) |
+| Page (white) | `--page` | `#ffffff` |
+| Card, chart, boxes (white, with a hairline) | `--card` | `#ffffff` |
+| Surface (panels, tiles, table head, tab bar) | `--surface` | `#f1f3f1` (cool light grey) |
+| Raised (pressed, active row, search highlight) | `--raised` | `#e4e8e5` |
+| Hairline | `--line` | ink at 14% |
+| Hairline on hover | `--line-sterk` | ink at 28% |
+| Primary text (near black) | `--ink` | `#0e1411` (18.6:1 on white) |
+| Secondary text | `--ink-2` | `#46514b` (8.3:1 on white) |
+| Muted text, meta only | `--muted` | `#5f6a64` (5.6:1 on white, 5.0:1 on surface) |
 
 ### Accent
 
-- `--accent` `#004025` deep forest (10.6:1 on linen; cream text on it 11.2:1), hover `#002918`. Used for: the selected state (chips, the Agenda view switch, a theme chip in use as a filter), the primary button, focus rings, checkboxes. Text on it is `--card`.
-- `--accent-soft` `#e3ebe4` only for a checked filter row and the current row in a menu. A focused field gets a 2px forest edge (border plus a 1px ring).
+- `--accent` `#00452a` deep forest (11.1:1 on white; white text on it 11.1:1), hover `#002e1c`. Used for: the selected state (chips, a theme chip in use as a filter), the primary button, focus rings, checkboxes and the logo square. Text on it is white (`--card`).
+- `--accent-soft` `#e2ece5` only for a checked filter row and the current row in a menu. A focused field gets a 2px forest edge (border plus a 1px ring).
 - The document type in Net binnen, badges, filter counts and link hover are ink, not accent.
 
 ### Attention and meaning
 
-- `--alarm` `#ff2e00` red (lines, marks, borders; 3.3:1 on linen, never as text) and `--alarm-tekst` `#c42300` (text, 5.2:1 on linen). `--alarm-soft` `#fde9e3` is only for today's row on Agenda.
+- `--alarm` `#e5320f` red (lines, marks, borders; 4.4:1 on white, never as text) and `--alarm-tekst` `#c42300` (text, 5.9:1 on white). `--alarm-soft` `#fdeae5` is only for today's row on Agenda.
 - Red is used for: the tall bar of the logo, today and the next item on Agenda, the measured series in the emissions chart, and the red of the traffic light. Never for selection, hover, body text or row backgrounds other than today.
-- Status dots, a traffic light (Tobias, 17 Nov 2026): aangenomen/afgedaan/beantwoord `--good` `#004025`, in behandeling/aangehouden/openstaand `--warning` `#a87e00` (ochre; the bright `#ffc300` is 1.4:1 on linen and disappears as a dot), verworpen `--bad` `#ff2e00`, ingetrokken/vervallen `--neutraal-stip` `#a5ada7`. The dot carries the color, the word carries the meaning; the word stays ink.
+- Status dots, a traffic light (Tobias, 17 Nov 2026): aangenomen/afgedaan/beantwoord `--good` `#00452a`, in behandeling/aangehouden/openstaand `--warning` `#a87e00` (ochre, 3.7:1 on white; a bright yellow disappears as a dot), verworpen `--bad` `#e5320f`, ingetrokken/vervallen `--neutraal-stip` `#a5ada7`. The dot carries the color, the word carries the meaning; the word stays ink.
 - Themes have no color (since 13 Nov 2026). See "Themes".
 
 ### Type
@@ -108,7 +108,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 1. No hue gradients, gradient text, glows, colored shadows, color washes or blurred glass (`backdrop-filter`).
 2. No coloured text in lists, coloured section labels or coloured links. Links are ink with a hairline underline; on hover the underline becomes 2px and solid, the colour stays ink.
 3. No red for anything except over the limit, today, eerstvolgend, the measured chart series, the logo bar and the red of the traffic light. Not for selection or hover, not for body text, not for row backgrounds other than today.
-4. No hue outside linen, cream, forest, red and the ochre of the traffic light: no blue, no other greens. No color or icon per theme, sector or category.
+4. No hue outside the neutral greys, forest, red and the ochre of the traffic light: no blue, no other greens. No color or icon per theme, sector or category.
 5. No uppercase tracked labels, no weight 700, no italic for emphasis, no negative tracking below 18px.
 6. No emoji or Unicode glyphs as icons; no arrows appended to link text.
 7. No filled badges; no pill shapes outside the main tab bar.
@@ -199,7 +199,7 @@ Swap "milieuradar" for another environmental site (a city air-quality monitor, a
 
 | Survives the swap | Rule |
 | --- | --- |
-| Green accent | Forest is the accent, but not the identity on its own. The identity is soft linen with dark forest ink, the three-bar mark (forest square, cream bars, one red bar), the lowercase wordmark, and red meaning "now or over the limit". |
+| Green accent | Forest is the accent, but not the identity on its own. The identity is white paper with near-black ink, the three-bar mark (forest square, white bars, one red bar), the lowercase wordmark, and red meaning "now or over the limit". |
 | An emissions line chart | Every measurement is shown against the target of the Dutch law that governs it, and only that target: the Klimaatwet line (−55% vs 1990) only on the total of all greenhouse gases; the stikstofwet target only as a reduction against the PBL projection for 2030, never as an invented line back to 1990. The target is stated in one sentence next to the chart. A new indicator without a legal target and that sentence does not ship. |
 | A mono source caption | Stamps name the official identifier, not just the organization: `tabel 85668NED`, `Kamerstuk 36169`, zaak and activity numbers, the station. "Bron: CBS" alone is not enough. |
 | A stat strip with counts | Stat labels name the parliamentary unit and its period (moties, Kamerbrieven, toezeggingen; "sinds het begin van de Kamerperiode"). Never generic units like items, updates or records. |
