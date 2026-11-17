@@ -65,7 +65,7 @@
   }
 
   async function init() {
-    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen] = await Promise.all([
+    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen] = await Promise.all([
       load("pipeline/config.json", { sectoren: {} }),
       load("data/debatten.json", { debatten: [] }),
       load("data/agenda.json", { items: [] }),
@@ -78,8 +78,10 @@
       load("data/tk/toezeggingen.json", []),
       load("data/themas-mapping.json", {}),
       load("data/tk/stemmingen.json", {}),
+      load("data/kerndocumenten.json", {}),
+      load("data/tk/begrotingen.json", []),
     ]);
-    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen };
+    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen, kerndocumenten, begrotingen };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
       $("#stamp").textContent = "";
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
@@ -87,7 +89,7 @@
     }
     S.T = window.MRThemas.maak(themas, themaMapping);
     // meest recente moment waarop data of samenvattingen zijn bijgewerkt
-    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, agenda.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
+    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, agenda.bijgewerkt, kerndocumenten.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
     $("#stamp").textContent = stempels.length ? `Bijgewerkt ${fmtTijdstip(new Date(Math.max(...stempels)))}` : "Bijgewerkt onbekend";
     bindZoekveld();
     window.addEventListener("hashchange", route);
@@ -186,8 +188,8 @@
       a.classList.toggle("active", a.dataset.tab === navTab);
       if (a.dataset.tab === navTab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
-    const views = { overzicht, themas: themasPagina, wetgeving, moties, amendementen: moties, vragen: vragenBrieven, brieven: vragenBrieven, agenda, over, zoeken };
-    const TITELS = { themas: "Thema's", agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties & Amendementen", amendementen: "Moties & Amendementen", vragen: "(Antwoord) Kamervragen", brieven: "Kamerbrieven", over: "Over", zoeken: "Zoeken" };
+    const views = { overzicht, themas: themasPagina, wetgeving, moties, amendementen: moties, vragen: vragenBrieven, brieven: vragenBrieven, agenda, documenten: kerndocumentenPagina, over, zoeken };
+    const TITELS = { themas: "Thema's", agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties & Amendementen", amendementen: "Moties & Amendementen", vragen: "(Antwoord) Kamervragen", brieven: "Kamerbrieven", documenten: "Kerndocumenten", over: "Over", zoeken: "Zoeken" };
     S.tabel = null; S.themaLijst = null;
     document.title = TITELS[tab] ? `${TITELS[tab]} · milieuradar` : "milieuradar";
     if (tab === "themas" && pad.split("/")[1]) { const t = S.T.thema(pad.split("/")[1]); document.title = `${t ? t.label : "Thema niet gevonden"} · Thema's · milieuradar`; }
@@ -209,6 +211,7 @@
     zetScrollRand(); zetBoven();
     if (S.tabel) bindTabel();
     if (S.themaLijst) bindThemaLijst();
+    if (tab === "documenten") bindKerndocumenten();
     if (tab === "zoeken") renderZoekResultaten();
     if (tab === "overzicht" && window.MRMilieu) MRMilieu.vul();
     const sub = tab === "agenda" || tab === "themas" ? null : pad.split("/")[1];
@@ -393,6 +396,10 @@
       titel = r.onderwerp || r.titel; href = r.link;
       feiten = feit("Ondertekend door", esc([r.ondertekenaar, r.functie].filter(Boolean).join(", "))) + feit("Kamerstuk", esc((r.dossiers || []).map((d) => `${d.nummer} ${d.titel || ""}`).join("; ")))
         + feit("Document", `<span class="mono">${esc(r.id)}</span>`);
+    } else if (x.soort === "kerndocument") {
+      meta.splice(0, meta.length, ...kdMeta(r));
+      href = r.url;
+      feiten = feit("Links", (r.links || []).map((l) => extLink(l.url, l.tekst)).join(" · "));
     } else if (x.sleutel.startsWith("agenda:")) {
       meta.push(`<span class="tag">${esc(r.type || "Mijlpaal")}</span>`);
       href = r.url || ""; feiten = "";
@@ -427,6 +434,7 @@
     { param: "kamervragen", label: "Kamervragen", def: () => VRAAG_DEF, hint: "Zoek op onderwerp, Kamerlid of ministerie", alle: "Vragen & Brieven" },
     { param: "vergaderingen", label: "Vergaderingen", soort: "vergadering", hint: "Zoek in vergaderingen" },
     { param: "agenda", label: "Agenda", soort: "agenda", hint: "Zoek in de agenda" },
+    { param: "kerndocumenten", label: "Kerndocumenten", soort: "kerndocument", hint: "Zoek in de kerndocumenten" },
   ];
   // een tabeldefinitie beperkt tot één thema: zonder Themakolom en -filter, met het adres van de themapagina
   function themaDef(def, slug, param) {
@@ -436,7 +444,8 @@
       rijen: () => def.rijen().filter((z) => inThema(z).includes(slug)), adres: `themas/${slug}`, vast: `type=${param}` };
   }
   const themaLijstItems = (slug, soort) => themaIndex().perThema.get(slug).filter((x) => x.soort === soort)
-    .sort((a, b) => soort === "agenda" ? sortKey(datumVan(a)).localeCompare(sortKey(datumVan(b))) : sortKey(datumVan(b)).localeCompare(sortKey(datumVan(a))));
+    .sort((a, b) => soort === "agenda" ? sortKey(datumVan(a)).localeCompare(sortKey(datumVan(b)))
+      : (datumVan(b) ? sortKey(datumVan(b)) : "0000").localeCompare(datumVan(a) ? sortKey(datumVan(a)) : "0000")); // zonder datum (wetten, kerndocumenten) achteraan
   function themaDetail(slug) {
     const t = S.T.thema(slug);
     if (!t) return `<h2>Thema niet gevonden</h2><p class="themas-intro">Er is geen thema "${esc(slug)}". <a href="#themas">Naar alle thema's</a></p>`;
@@ -1480,7 +1489,7 @@
   function zoeken() {
     return `<h2 class="sr-only">Zoeken</h2><div id="zoekres" aria-live="polite"></div>`;
   }
-  const ZOEK_CATS = [["", "Alles"], ["debatten", "Vergaderingen"], ["wetgeving", "Wetsvoorstellen"], ["moties", "Moties & amendementen"], ["stukken", "Vragen & brieven"], ["toezeggingen", "Toezeggingen"], ["agenda", "Agenda"]];
+  const ZOEK_CATS = [["", "Alles"], ["debatten", "Vergaderingen"], ["wetgeving", "Wetsvoorstellen"], ["moties", "Moties & amendementen"], ["stukken", "Vragen & brieven"], ["toezeggingen", "Toezeggingen"], ["agenda", "Agenda"], ["kerndocumenten", "Kerndocumenten"]];
   function renderZoekResultaten() {
     const el = $("#zoekres");
     if (!el) return;
@@ -1525,6 +1534,131 @@ ${uit.typeFilter ? ` Alleen <b>${esc(uit.typeFilter)}</b>, omdat dat woord in je
   }
 
   /* ---------- Over ---------- */
+  /* ---------- Kerndocumenten (#documenten) ----------
+     Vaste documenten voor beleidsonderzoek, per groep (data/kerndocumenten.json) plus de begrotingsstukken uit de Kamerdata
+     (data/tk/begrotingen.json). Per reeks de nieuwste editie, eerdere edities ingeklapt. Begrotingen en jaarverslagen per
+     hoofdstuk staan in één tabel. Thema en zoekterm staan in de URL: #documenten?thema=<slug>&q=<tekst>. */
+  let _kd = null;
+  function kdData() {
+    if (_kd) return _kd;
+    const M = window.MRThemas, alle = M.kerndocumenten(S.data.kerndocumenten, S.data.begrotingen);
+    const groepen = (S.data.kerndocumenten.groepen || []);
+    const reeksen = M.kerndocReeksen(alle.filter((d) => !d.rol));
+    // thema's: mapping (na de review), dan het veld themas
+    const themasVan = (d) => { const k = "kerndoc:" + d.id; return S.T.inMapping(k) ? S.T.item(k) : (d.themas || []).filter((t) => S.T.bestaat(t)); };
+    return (_kd = { alle, groepen, reeksen, themasVan });
+  }
+  function kdMeta(d) {
+    return [`<span class="tag">${esc(d.soort || "Document")}</span>`, d.datum ? `<span class="datum">${fmtKort(d.datum)}</span>` : "",
+      d.uitgever ? `<span>${esc(d.uitgever)}</span>` : "", d.kenmerk ? `<span class="mono">${esc(d.kenmerk)}</span>` : ""].filter(Boolean);
+  }
+  const kdZoektekst = (d) => [d.titel, d.afkorting, d.uitgever, d.kenmerk, d.soort, d.document, ...(d.eerder || []).map((e) => e.titel)].filter(Boolean).join(" ").toLowerCase();
+  function kdRegel(d, themasVan) {
+    const th = themasVan(d);
+    const eerder = d.eerder || [];
+    const links = (d.links || []).map((l) => extLink(l.url, l.tekst));
+    return `<li class="themaregel kdregel" data-themas="${esc(th.join(" "))}" data-tekst="${esc(kdZoektekst(d))}">
+      <div class="regelmeta">${kdMeta(d).join("")}</div>
+      <div class="themaregel-titel"><a class="ltitel" href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titel)}</a></div>
+      ${th.length ? `<div class="tchips">${th.map((sl) => `<a class="tchip" href="#themas/${esc(sl)}">${esc(S.T.naam(sl))}</a>`).join("")}</div>` : ""}
+      ${links.length ? `<p class="kd-links">${links.join(" · ")}</p>` : ""}
+      ${eerder.length ? `<details class="meer"><summary>Eerdere edities (${nl(eerder.length)})</summary><ul class="kd-eerder">${eerder.map((e) =>
+        `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titel)}</a>${e.datum ? ` <span class="datum muted">${fmtKort(e.datum)}</span>` : ""}${e.kenmerk ? ` <span class="mono muted">${esc(e.kenmerk)}</span>` : ""}</li>`).join("")}</ul></details>` : ""}
+    </li>`;
+  }
+  // begrotingen en jaarverslagen per hoofdstuk: één rij per hoofdstuk, een kolom per begrotingsjaar en het laatste jaarverslag
+  function kdHoofdstukken(K) {
+    const st = K.alle.filter((d) => d.rol);
+    if (!st.length) return "";
+    const jaren = [...new Set(st.filter((d) => d.rol === "begroting").map((d) => d.jaar))].sort((a, b) => b - a);
+    const jv = Math.max(...st.filter((d) => d.rol === "jaarverslag").map((d) => d.jaar), 0);
+    const volgorde = (S.data.config.kerndocumenten?.hoofdstukken) || [];
+    const hs = [...new Set(st.map((d) => d.hoofdstuk))].sort((a, b) => volgorde.indexOf(a) - volgorde.indexOf(b));
+    const cel = (d, extra) => (d ? `<a href="${esc(d.url)}" target="_blank" rel="noopener" title="${esc(d.documentSoort || "")}">${esc(d.document)}</a>${extra || ""}` : `<span class="muted">nog niet verschenen</span>`);
+    const rijen = hs.map((h) => {
+      const per = (rol, j) => st.find((d) => d.hoofdstuk === h && d.rol === rol && d.jaar === j);
+      const nieuw = per("begroting", jaren[0]) || st.find((d) => d.hoofdstuk === h);
+      const naam = nieuw.titel.replace(/^(Begroting|Jaarverslag) /, "").replace(/ \d{4}$/, "");
+      const th = K.themasVan(nieuw), j = per("jaarverslag", jv);
+      const rf = nieuw.rol === "begroting" ? (nieuw.links || []).find((l) => l.tekst === "Rijksfinanciën") : null;
+      const rk = j && (j.links || []).find((l) => l.tekst === "Algemene Rekenkamer");
+      const tekst = [naam, h, ...st.filter((d) => d.hoofdstuk === h).flatMap((d) => [d.titel, d.kenmerk, d.document])].join(" ").toLowerCase();
+      return `<tr class="kdrij" data-themas="${esc(th.join(" "))}" data-tekst="${esc(tekst)}">
+        <td class="mono kd-h">${esc(h)}</td>
+        <td class="kd-naam"><span class="kd-naamtekst">${esc(naam)}</span>${th.length ? themaChips(th) : ""}</td>
+        ${jaren.map((y, i) => `<td class="nw">${cel(per("begroting", y), i === 0 && rf ? `<br><a class="small" href="${esc(rf.url)}" target="_blank" rel="noopener">Rijksfinanciën</a>` : "")}</td>`).join("")}
+        <td class="nw">${cel(j, rk ? `<br><a class="small" href="${esc(rk.url)}" target="_blank" rel="noopener">Rekenkamer</a>` : "")}</td>
+      </tr>`;
+    }).join("");
+    return `<div class="card kd-tabelkaart"><h3 id="kd-hoofdstukken">Begrotingen en jaarverslagen per hoofdstuk</h3>
+      <div class="tabelscroll"><table class="kdtabel" aria-labelledby="kd-hoofdstukken"><thead><tr><th>Hoofdstuk</th><th></th>${jaren.map((y) => `<th class="nw">Begroting ${y}</th>`).join("")}<th class="nw">Jaarverslag ${jv || ""}</th></tr></thead>
+      <tbody>${rijen}</tbody></table></div>
+      <p class="peil">Tweede Kamer open data · memorie van toelichting en jaarverslag per hoofdstuk (documentnummer) · Kamerstuk ${esc(String(st.find((d) => d.rol === "begroting" && d.jaar === jaren[0])?.kenmerk || "").replace(/^Kamerstuk /, "").split(" ")[0])}</p></div>`;
+  }
+  const KD_CYCLUS = ["miljoenennota", "belastingplan", "voorjaarsnota", "najaarsnota", "jaarverslag-rijk"];
+  function kdVolgorde(K, d) {
+    const c = KD_CYCLUS.indexOf(d.reeks);
+    if (c >= 0) return c;
+    const i = (S.data.kerndocumenten.documenten || []).findIndex((x) => (x.reeks || x.id) === (d.reeks || d.id));
+    return 100 + (i < 0 ? 999 : i);
+  }
+  function kerndocumentenPagina() {
+    const K = kdData();
+    const q = (hashQuery().q || []).join(",");
+    const gekozen = (hashQuery().thema || []).filter((t) => S.T.bestaat(t));
+    const tel = new Map(S.T.lijst.map((t) => [t.slug, 0]));
+    for (const d of [...K.reeksen, ...K.alle.filter((x) => x.rol)]) for (const t of K.themasVan(d)) tel.set(t, (tel.get(t) || 0) + 1);
+    const facet = `<details class="facet" id="kd-thema">
+        <summary>Thema${gekozen.length ? ` <span class="facet-n">${gekozen.length}</span>` : ""}</summary>
+        <div class="facet-menu" role="group" aria-label="Thema">
+          ${S.T.lijst.map((t) => `<label><input type="checkbox" value="${esc(t.slug)}"${gekozen.includes(t.slug) ? " checked" : ""}><span>${esc(t.label)}</span><span class="n">${nl(tel.get(t.slug) || 0)}</span></label>`).join("")}
+        </div></details>`;
+    const groepen = K.groepen.map((g) => {
+      // volgorde: begrotingsstukken in de vaste volgorde van de begrotingscyclus, dan de handmatige lijst zoals in het bestand
+      const l = K.reeksen.filter((d) => d.groep === g.id).sort((a, b) => kdVolgorde(K, a) - kdVolgorde(K, b));
+      const tabel = g.id === "begroting" ? kdHoofdstukken(K) : "";
+      if (!l.length && !tabel) return "";
+      return `<section class="kd-groep" aria-labelledby="kd-${esc(g.id)}"><h3 id="kd-${esc(g.id)}" class="kd-kop">${esc(g.label)}</h3>
+        ${l.length ? `<div class="card"><ul class="list">${l.map((d) => kdRegel(d, K.themasVan)).join("")}</ul></div>` : ""}${tabel}</section>`;
+    }).join("");
+    return `<div class="filters motiekop"><h2 class="tabeltitel">Kerndocumenten</h2>${facet}<input type="search" id="kdq" placeholder="Zoek op titel, afkorting, uitgever of kenmerk" value="${esc(q)}" aria-label="Zoeken in kerndocumenten"></div>
+      <div id="kd-actief" class="actieve-filters kd-actief"></div>
+      ${groepen}
+      <div class="card empty" id="kd-leeg" hidden>Geen kerndocumenten met deze filters. <button type="button" class="linkknop" id="kd-wis">Filters wissen</button></div>`;
+  }
+  function bindKerndocumenten() {
+    const veld = $("#kdq"), fd = $("#kd-thema");
+    const toepassen = () => {
+      const q = veld.value.trim().toLowerCase(), woorden = q.split(/\s+/).filter(Boolean);
+      const th = [...fd.querySelectorAll("input:checked")].map((i) => i.value);
+      const past = (el) => (!th.length || el.dataset.themas.split(" ").some((t) => th.includes(t))) && woorden.every((w) => el.dataset.tekst.includes(w));
+      document.querySelectorAll(".kdregel, .kdrij").forEach((el) => { el.hidden = !past(el); });
+      document.querySelectorAll(".kd-groep").forEach((g) => {
+        g.querySelectorAll(".card").forEach((c) => { c.hidden = !c.querySelector(".kdregel:not([hidden]), .kdrij:not([hidden])"); });
+        g.hidden = !g.querySelector(".kdregel:not([hidden]), .kdrij:not([hidden])");
+      });
+      $("#kd-leeg").hidden = !!document.querySelector(".kdregel:not([hidden]), .kdrij:not([hidden])");
+      const sum = fd.querySelector("summary");
+      sum.innerHTML = `Thema${th.length ? ` <span class="facet-n">${th.length}</span>` : ""}`;
+      $("#kd-actief").innerHTML = th.length ? `${th.map((t) => `<button type="button" class="chip actief" data-kdrm="${esc(t)}" aria-label="Filter ${esc(S.T.naam(t))} wissen">${esc(S.T.naam(t))}${ico("x")}</button>`).join("")}<button type="button" class="linkknop" id="kd-alles">Alles wissen</button>` : "";
+      const p = [th.length ? `thema=${th.map(encodeURIComponent).join(",")}` : "", q ? `q=${encodeURIComponent(veld.value.trim())}` : ""].filter(Boolean).join("&");
+      history.replaceState(null, "", `#documenten${p ? "?" + p : ""}`);
+    };
+    const wis = () => { veld.value = ""; fd.querySelectorAll("input").forEach((i) => { i.checked = false; }); toepassen(); };
+    veld.addEventListener("input", toepassen);
+    fd.addEventListener("change", toepassen);
+    S.kd = { toepassen, wis };
+    toepassen();
+  }
+  // actieve themafilters wissen (één luisteraar; #view blijft tussen pagina's bestaan)
+  document.addEventListener("click", (e) => {
+    const fd = document.getElementById("kd-thema");
+    if (!fd || !S.kd) return;
+    const rm = e.target.closest("[data-kdrm]");
+    if (rm) { const i = fd.querySelector(`input[value="${CSS.escape(rm.dataset.kdrm)}"]`); if (i) i.checked = false; S.kd.toepassen(); }
+    else if (e.target.closest("#kd-alles, #kd-wis")) S.kd.wis();
+  });
+
   function over() {
     const m = S.data.meta;
     return `<h2>Over MilieuRadar</h2>

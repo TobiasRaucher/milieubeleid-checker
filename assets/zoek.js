@@ -1,6 +1,6 @@
 /* MilieuRadar: zoekfunctie.
    Bouwt een zoekindex (MiniSearch) over samenvattingen, wetsvoorstellen, moties en amendementen, stukken van ministeries en
-   Kameractiviteiten. Werkt in de browser (window.MRZoek) en in Node (tests/zoektest.js).
+   Kameractiviteiten, toezeggingen, de agenda en de kerndocumenten. Werkt in de browser (window.MRZoek) en in Node (tests/zoektest.js).
 
    Wat de zoekfunctie nauwkeurig maakt:
    - normalisatie: kleine letters, geen accenten (energieën = energieen), "co₂" = "co2", "36 169" = "36169", "I&W" = "ienw";
@@ -171,6 +171,16 @@
         sectoren: i.sectoren || (i.sector ? [i.sector] : []), titel: i.titel, tekst: i.toelichting || "", link: i.url, extern: !!i.url,
       });
     }
+    // kerndocumenten (alle edities; begrotingsstukken uit de Kamerdata inbegrepen)
+    {
+      for (const k of MRThemas.kerndocumenten(D.kerndocumenten, D.begrotingen)) {
+        add({
+          id: "kerndoc:" + k.id, cat: "kerndocumenten", soort: k.soort || "Kerndocument", datum: k.datum, titel: k.titel,
+          tekst: j([k.afkorting, k.kenmerk, k.document, k.uitgever, k.documentSoort]), personen: "",
+          link: k.url, extern: true, themas: k.themas && k.themas.length ? k.themas : undefined,
+        });
+      }
+    }
     // dubbele id's (zelfde agendaregel) overslaan
     const gezien = new Set();
     return docs.filter((d) => (gezien.has(d.id) ? false : (gezien.add(d.id), true)));
@@ -193,8 +203,9 @@
     [["wetsvoorstel", "wetsvoorstellen"], "wetsvoorstellen", (d) => /^Wetsvoorstel/.test(d.soort)],
     [["agenda"], "agenda", (d) => d.cat === "agenda"],
     [["toezegging", "toezeggingen"], "toezeggingen", (d) => d.cat === "toezeggingen"],
+    [["kerndocument", "kerndocumenten"], "kerndocumenten", (d) => d.cat === "kerndocumenten"],
   ];
-  const CAT_GEWICHT = { debatten: 1.25, wetgeving: 1.4, moties: 1, stukken: 1, agenda: 1.05, toezeggingen: 1 };
+  const CAT_GEWICHT = { debatten: 1.25, wetgeving: 1.4, moties: 1, stukken: 1, agenda: 1.05, toezeggingen: 1, kerndocumenten: 1.3 };
 
   function maak(D, synoniemen) {
     const docs = bouwDocumenten(D);

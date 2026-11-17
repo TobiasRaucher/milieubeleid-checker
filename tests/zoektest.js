@@ -8,6 +8,7 @@ const lees = (p) => JSON.parse(fs.readFileSync(path.join(__dirname, "..", p), "u
 const D = {
   debatten: lees("data/debatten.json").debatten, zaken: lees("data/tk/zaken.json"),
   stukken: lees("data/tk/stukken.json"), activiteiten: lees("data/tk/activiteiten.json"), agenda: lees("data/agenda.json").items, toezeggingen: lees("data/tk/toezeggingen.json"),
+  kerndocumenten: lees("data/kerndocumenten.json"), begrotingen: lees("data/tk/begrotingen.json"),
   T: T.maak(lees("data/themas.json")),
 };
 const z = Z.maak(D, lees("data/zoeksynoniemen.json"));
@@ -15,6 +16,13 @@ const z = Z.maak(D, lees("data/zoeksynoniemen.json"));
 const TESTS = [
   // [zoekvraag, verwachte titel (deel, kleine letters), top-N]
   ["bonaire", "klimaatzaak bonaire", 2],
+  // kerndocumenten
+  ["kev", "klimaat- en energieverkenning", 3],
+  ["miljoenennota", "miljoenennota", 2],
+  ["coalitieakkoord", "coalitieakkoord", 3],
+  ["begroting landbouw", "begroting landbouw", 3],
+  ["klimaat- en energiefonds", "klimaat- en energiefonds", 3],
+  ["belastingplan 2027", "belastingplan 2027", 2],
   ["klimaatwet bonaire", "bonaire", 2],
   ["krw", "kaderrichtlijn water", 5],
   ["kaderrichtlijn water", "kaderrichtlijn water", 3],
