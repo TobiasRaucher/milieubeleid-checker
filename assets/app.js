@@ -740,6 +740,7 @@
           const d = document.createElement("tr"); d.className = "detail";
           d.innerHTML = `<td colspan="${n}">${def.detail(rows[+tr.dataset.i])}</td>`;
           tr.after(d);
+          vulTeksten(d);
         }
         tr.classList.toggle("open", !open);
         knop.setAttribute("aria-expanded", String(!open));
@@ -747,7 +748,7 @@
         return;
       }
       // de titel is zelf de link; elders in de rij doet de klik hetzelfde (niet bij tekst selecteren)
-      if (e.target.closest("a, td.knopcel")) return;
+      if (e.target.closest("a, button, td.knopcel")) return;
       if (String(window.getSelection && window.getSelection()).trim()) return;
       window.open(tr.querySelector("a.ltitel").href, "_blank", "noopener");
     });
@@ -756,6 +757,152 @@
   // "A, B en C"
   const opsomming = (xs) => (xs.length > 1 ? `${xs.slice(0, -1).join(", ")} en ${xs[xs.length - 1]}` : xs.join(""));
   const naamFractie = (i) => `${esc(i.naam)}${i.fractie ? ` (${esc(i.fractie)})` : ""}`;
+
+  /* ---------- Tekst van moties en amendementen, en de documentweergave ---------- */
+  // data/tk/teksten.json (pipeline/teksten.py): pas geladen als iemand voor het eerst een rij openklapt
+  let tekstenBelofte = null;
+  const laadTeksten = () => tekstenBelofte || (tekstenBelofte = load("data/tk/teksten.json", {}).then((t) => (S.data.teksten = t || {})));
+  // het besluitende deel van een motie ("verzoekt de regering", "spreekt uit", ...) staat in inkt, de overwegingen in ink-2
+  const DICTUM = /^(verzoekt|spreekt|roept|draagt|wijst|besluit|en gaat over)/i;
+  const TEKST_ZICHTBAAR = 8;
+  function tekstHtml(z) {
+    const t = (S.data.teksten || {})[z.nummer];
+    if (!t || !t.blokken || !t.blokken.length) return `<p class="muted">De tekst is nog niet beschikbaar${z.docId ? "; bekijk het origineel" : ""}.</p>`;
+    const blok = ([soort, x]) => soort === "kop" ? `<p class="mt-kop">${esc(x)}</p>`
+      : `<p${soort === "wijz" ? ` class="mt-wijz"` : DICTUM.test(x) ? ` class="mt-dictum"` : ""}>${esc(x)}</p>`;
+    // amendement: eerst de toelichting (waar het om gaat), de wijziging zelf ingeklapt
+    const tl = t.blokken.map((b) => b[0] === "kop" && b[1] === "Toelichting").lastIndexOf(true);
+    const wijziging = tl > 0 ? t.blokken.slice(0, tl) : [];
+    const bl = tl > 0 ? t.blokken.slice(tl) : t.blokken, rest = bl.length > TEKST_ZICHTBAAR + 2 ? bl.slice(TEKST_ZICHTBAAR) : [];
+    const zicht = rest.length ? bl.slice(0, TEKST_ZICHTBAAR) : bl;
+    const inklap = (label, xs) => `<details class="meer"><summary>${label}</summary><div class="mt-tekst">${xs.map(blok).join("")}</div></details>`;
+    const bron = t.bron === "ob"
+      ? `Officiële tekst · ${extLink(`https://zoek.officielebekendmakingen.nl/kst-${t.kamerstuk}.html`, `Kamerstuk ${t.kamerstuk.replace(/-(\d+)$/, ", nr. $1")}`)}`
+      : `Voorlopige tekst uit het ${esc((z.bestand || "pdf").toLowerCase())}-bestand; de officiële tekst verschijnt na enkele dagen op officielebekendmakingen.nl`;
+    return `<div class="mt-tekst">${zicht.map(blok).join("")}</div>
+      ${rest.length ? inklap(`Toon de rest (${nl(rest.length)} ${rest.length === 1 ? "alinea" : "alinea's"})`, rest) : ""}
+      ${wijziging.length ? inklap("Toon de wijziging zelf", wijziging) : ""}
+      <p class="mt-bron">${bron}</p>`;
+  }
+  function vulTeksten(el) {
+    const plekken = [...el.querySelectorAll("[data-tekst]")];
+    if (!plekken.length) return;
+    laadTeksten().then(() => {
+      for (const p of plekken) {
+        const z = S.data.zaken.find((x) => x.nummer === p.dataset.tekst);
+        if (z) p.innerHTML = tekstHtml(z);
+      }
+    });
+  }
+  const tekstBlok = (z) => (z.soort === "Motie" || z.soort === "Amendement"
+    ? `<div class="mstemming"><p class="mtelling">Tekst</p><div class="mt-plek" data-tekst="${esc(z.nummer)}">${S.data.teksten ? tekstHtml(z) : `<p class="muted">Tekst laden</p>`}</div></div>` : "");
+
+  // Documentweergave: pdf (pdf.js) en Word (mammoth) rechtstreeks uit de open data van de Kamer.
+  // Het gegevensmagazijn staat ophalen vanaf elke site toe (CORS), maar niet tonen in een iframe.
+  const DOC_URL = (docId) => `https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0/Document/${encodeURIComponent(docId)}/resource`;
+  const DOWNLOAD_URL = (dnr) => `https://www.tweedekamer.nl/downloads/document?id=${encodeURIComponent(dnr)}`;
+  const LEESBAAR = new Set(["PDF", "DOCX"]);
+  // knop die het document opent; d: {docId, bestand, id (D-nummer), titel, link}
+  const docKnop = (d, label) => (d && d.docId && LEESBAAR.has(d.bestand)
+    ? `<button type="button" class="doclees" data-doc="${esc(d.docId)}" data-bestand="${esc(d.bestand)}" data-dnr="${esc(d.id || d.document || "")}" data-titel="${esc(d.titel || "")}" data-link="${esc(d.link || "")}">${esc(label)}</button>` : "");
+  let pdfjs = null, viewerToken = 0;
+  async function pdfLib() {
+    if (!pdfjs) {
+      pdfjs = await import(new URL("assets/vendor/pdf.min.mjs", location.href).href);
+      pdfjs.GlobalWorkerOptions.workerSrc = new URL("assets/vendor/pdf.worker.min.mjs", location.href).href;
+    }
+    return pdfjs;
+  }
+  const laadScript = (src) => new Promise((ok, fout) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = fout; document.head.append(s); });
+  function viewer() {
+    let dlg = $("#docview");
+    if (dlg) return dlg;
+    dlg = document.createElement("dialog");
+    dlg.id = "docview"; dlg.className = "docview"; dlg.setAttribute("aria-labelledby", "dv-titel");
+    dlg.innerHTML = `<div class="dv-kop"><div class="dv-kopt"><p class="dv-meta" id="dv-meta"></p><h2 id="dv-titel"></h2></div>
+      <div class="dv-acties" id="dv-acties"></div>
+      <button type="button" class="dv-sluit" aria-label="Sluiten" data-dvsluit>${ico("x")}</button></div>
+      <div class="dv-body" id="dv-body" tabindex="-1"></div>`;
+    document.body.append(dlg);
+    dlg.addEventListener("click", (e) => { if (e.target === dlg || e.target.closest("[data-dvsluit]")) dlg.close(); });
+    dlg.addEventListener("close", () => { viewerToken++; $("#dv-body").innerHTML = ""; document.documentElement.classList.remove("dv-open"); });
+    return dlg;
+  }
+  // alleen eenvoudige opmaak uit een Word-bestand overnemen
+  function schoonHtml(html) {
+    const t = document.createElement("template");
+    t.innerHTML = html;
+    for (const el of t.content.querySelectorAll("*")) {
+      if (/^(SCRIPT|STYLE|IFRAME|OBJECT|EMBED|LINK|META|FORM|INPUT|BUTTON)$/.test(el.tagName)) { el.remove(); continue; }
+      for (const a of [...el.attributes]) {
+        const ok = (a.name === "href" && /^(https?:|mailto:|#)/i.test(a.value)) || (a.name === "src" && /^data:image\//i.test(a.value))
+          || ["alt", "colspan", "rowspan"].includes(a.name);
+        if (!ok) el.removeAttribute(a.name);
+      }
+      if (el.tagName === "A" && el.getAttribute("href") && !el.getAttribute("href").startsWith("#")) { el.target = "_blank"; el.rel = "noopener"; }
+    }
+    return t.innerHTML;
+  }
+  async function toonDocument(k) {
+    const dlg = viewer(), token = ++viewerToken;
+    const { doc, bestand, dnr, titel, link } = k.dataset;
+    const body = $("#dv-body");
+    $("#dv-titel").textContent = titel || "Document";
+    $("#dv-meta").textContent = [bestand, dnr].filter(Boolean).join(" · ");
+    $("#dv-acties").innerHTML = `${dnr ? extLink(DOWNLOAD_URL(dnr), "Download") : extLink(DOC_URL(doc), "Download")}${link ? extLink(link, "Op tweedekamer.nl") : ""}`;
+    body.innerHTML = `<p class="dv-laden muted">Document laden</p>`;
+    document.documentElement.classList.add("dv-open");
+    if (!dlg.open) dlg.showModal();
+    body.focus({ preventScroll: true });
+    const fout = () => { if (token === viewerToken) body.innerHTML = `<div class="dv-fout"><p>Het document kon hier niet worden getoond.</p><p>${extLink(dnr ? DOWNLOAD_URL(dnr) : DOC_URL(doc), "Download het bestand")}${link ? ` of ${extLink(link, "bekijk het op tweedekamer.nl")}` : ""}.</p></div>` };
+    try {
+      if (bestand === "DOCX") {
+        if (!window.mammoth) await laadScript("assets/vendor/mammoth.browser.min.js");
+        const r = await fetch(DOC_URL(doc));
+        if (!r.ok) throw new Error(r.status);
+        const html = (await window.mammoth.convertToHtml({ arrayBuffer: await r.arrayBuffer() })).value;
+        if (token !== viewerToken) return;
+        body.innerHTML = `<article class="dv-docx">${schoonHtml(html)}</article>`;
+        return;
+      }
+      const lib = await pdfLib();
+      const pdf = await lib.getDocument({ url: DOC_URL(doc), isEvalSupported: false }).promise;
+      if (token !== viewerToken) { pdf.destroy(); return; }
+      $("#dv-meta").textContent = [bestand, dnr, `${nl(pdf.numPages)} ${pdf.numPages === 1 ? "pagina" : "pagina's"}`].filter(Boolean).join(" · ");
+      const eerste = await pdf.getPage(1);
+      const breed = Math.min(body.clientWidth - 48, 860), basis = eerste.getViewport({ scale: 1 });
+      const schaal = breed / basis.width;
+      body.innerHTML = `<div class="dv-paginas">${Array.from({ length: pdf.numPages }, (_, i) => `<div class="dv-pagina" data-p="${i + 1}" style="--w:${breed}px;--h:${Math.round(basis.height * schaal)}px" aria-label="Pagina ${i + 1}"></div>`).join("")}</div>`;
+      const teken = async (el) => {
+        const page = await pdf.getPage(+el.dataset.p);
+        if (token !== viewerToken) return;
+        const vp = page.getViewport({ scale: schaal }), dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const c = document.createElement("canvas");
+        c.width = Math.floor(vp.width * dpr); c.height = Math.floor(vp.height * dpr);
+        el.style.setProperty("--h", `${Math.round(vp.height)}px`);
+        el.style.setProperty("--scale-factor", String(schaal));
+        await page.render({ canvasContext: c.getContext("2d"), viewport: vp, transform: dpr !== 1 ? [dpr, 0, 0, dpr, 0, 0] : null }).promise;
+        if (token !== viewerToken) return;
+        el.append(c);
+        const laag = document.createElement("div"); laag.className = "textLayer"; el.append(laag);
+        await new lib.TextLayer({ textContentSource: page.streamTextContent(), container: laag, viewport: vp }).render();
+      };
+      const io = new IntersectionObserver((items) => {
+        for (const it of items) if (it.isIntersecting && !it.target.dataset.klaar) { it.target.dataset.klaar = "1"; io.unobserve(it.target); teken(it.target).catch(() => {}); }
+      }, { root: body, rootMargin: "800px 0px" });
+      body.querySelectorAll(".dv-pagina").forEach((el) => io.observe(el));
+      dlg.addEventListener("close", () => { io.disconnect(); pdf.destroy(); }, { once: true });
+    } catch (e) {
+      console.warn("Document niet getoond:", e);
+      fout();
+    }
+  }
+  document.addEventListener("click", (e) => {
+    const k = e.target.closest("button.doclees");
+    if (!k) return;
+    e.preventDefault(); e.stopPropagation();
+    toonDocument(k);
+  });
 
   /* ---------- Wetgeving ---------- */
   // Wetsvoorstellen uit de open data van de Kamer (soort Wetgeving of Initiatiefwetgeving in de gevolgde Kamerstukdossiers).
@@ -870,10 +1017,11 @@
     const eerste = eersteIndiener(z), door = [eerste, ...z.indieners.filter((i) => i !== eerste)].filter(Boolean).map(naamFractie);
     return `<div class="mdetail">
       <p>Zaak <span class="mono">${esc(z.nummer)}</span>${z.document ? ` · document <span class="mono">${esc(z.document)}</span>` : ""} · ingediend ${fmtKort(z.gestartOp)}${door.length ? `, door ${opsomming(door)}` : ""}</p>
+      ${tekstBlok(z)}
       ${b && t ? `<div class="mstemming"><p class="mtelling">Voor ${nl(t.voor)} / Tegen ${nl(t.tegen)}</p>
         <div class="mstemmen">${blok("Voor", fracties("Voor"))}${blok("Tegen", fracties("Tegen"))}</div></div>` : S.data.stemmingen[z.nummer] ? "" : `<p class="muted">Nog geen stemming</p>`}
       ${vergaderRegels(z)}
-      <div class="mlinks">${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
+      <div class="mlinks">${docKnop({ ...z, id: z.document, titel: z.onderwerp, link: tkUrl(z) }, "Bekijk het origineel")}${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
     </div>`;
   }
   // "Ingediend bij" (vergadering op de Agenda) en "Stemming" (plenaire Stemmingen op tweedekamer.nl)
@@ -951,7 +1099,7 @@
   const overKlein = (t) => klein(String(t || "").trim().replace(/\s+/g, " ").replace(/^(over|inzake) /i, ""));
   const STUK_GEDEELD = ["thema", "ministerie"];
   // bijlagen bij een Kamerbrief of antwoord (beslisnota, rapporten, analyses), uit de Kamerdata
-  const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}</li>`).join("")}</ul></div>` : "");
+  const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}${docKnop(b, "Lees") ? ` · ${docKnop(b, "Lees")}` : ""}</li>`).join("")}</ul></div>` : "");
   const VRAAG_DEF = {
     tab: "vragen", eenheid: "Kamervragen", knopLabel: ["Vraag en antwoord tonen", "Vraag en antwoord verbergen"], gedeeld: STUK_GEDEELD,
     rijen: vraagRijen, datum: (r) => r.datum, sleutel: (r) => r.id,
@@ -982,7 +1130,7 @@
           ${antw.length ? `<ul class="mstappen">${antw.join("")}</ul>` : ""}</div>
         ${bijlagenBlok(r.antwoorden.flatMap((a) => a.bijlagen || []))}
         ${v ? "" : `<p class="muted">De vraag zelf is van voor het begin van deze gegevens.</p>`}
-        <div class="mlinks">${v ? extLink(v.link, "Vragen op tweedekamer.nl") : ""}${r.antwoorden.map((a, i) => extLink(a.link, r.antwoorden.length > 1 ? `Antwoord ${i + 1} op tweedekamer.nl` : "Antwoord op tweedekamer.nl")).join("")}</div>
+        <div class="mlinks">${v ? docKnop({ ...v, titel: v.onderwerp || r.titel }, "Lees de vragen") : ""}${r.antwoorden.map((a, i) => docKnop({ ...a, titel: a.onderwerp || r.titel }, r.antwoorden.length > 1 ? `Lees antwoord ${i + 1}` : "Lees het antwoord")).join("")}${v ? extLink(v.link, "Vragen op tweedekamer.nl") : ""}${r.antwoorden.map((a, i) => extLink(a.link, r.antwoorden.length > 1 ? `Antwoord ${i + 1} op tweedekamer.nl` : "Antwoord op tweedekamer.nl")).join("")}</div>
       </div>`;
     },
   };
@@ -1009,7 +1157,7 @@
         <p>Document <span class="mono">${esc(x.id)}</span> · ${fmtKort(x.datum)}${x.ondertekenaar ? `, ondertekend door ${esc(x.ondertekenaar)}${x.functie ? ` (${esc(x.functie)})` : ""}` : ""}</p>
         ${ds.length ? `<div class="mstemming"><p class="mtelling">Kamerstuk</p><ul class="mstappen">${ds.map((d) => `<li><span class="mono">${esc(d.nummer)}${d.toevoeging ? "-" + esc(d.toevoeging) : ""}</span> ${esc(d.titel || "")}</li>`).join("")}</ul></div>` : ""}
         ${bijlagenBlok(x.bijlagen)}
-        <div class="mlinks">${extLink(x.link, "Bekijk op tweedekamer.nl")}</div>
+        <div class="mlinks">${docKnop({ ...x, titel: x.onderwerp || x.titel }, "Lees de brief")}${extLink(x.link, "Bekijk op tweedekamer.nl")}</div>
       </div>`;
     },
   };

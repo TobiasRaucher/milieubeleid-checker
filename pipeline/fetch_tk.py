@@ -28,6 +28,9 @@ Wat er wordt opgehaald (per actieve sector in pipeline/config.json):
 Alleen de begrotingsstukken bijwerken:
   python3 pipeline/fetch_tk.py --begrotingen
 
+Alleen de tekst van moties en amendementen bijwerken (data/tk/teksten.json, op basis van zaken.json):
+  python3 pipeline/fetch_tk.py --teksten
+
 Alleen de toezeggingen bijwerken (op basis van de bestaande activiteiten.json):
   python3 pipeline/fetch_tk.py --toezeggingen
 
@@ -93,14 +96,14 @@ def odata(entity, params, max_pages=40):
 
 
 EXPAND_VOL = (
-    "Document($filter=Verwijderd eq false;$select=DocumentNummer,Soort,Datum),"
+    "Document($filter=Verwijderd eq false;$select=Id,DocumentNummer,Soort,Datum,Volgnummer,ContentType),"
     "ZaakActor($filter=Verwijderd eq false),"
     "Kamerstukdossier($select=Nummer,Toevoeging,Titel),"
     "Besluit($filter=Verwijderd eq false;$expand=Stemming($filter=Verwijderd eq false),"
     "Agendapunt($select=Id;$expand=Activiteit($select=Datum,Soort,Onderwerp)))"
 )
 EXPAND_SIMPEL = (
-    "Document($filter=Verwijderd eq false;$select=DocumentNummer,Soort,Datum),"
+    "Document($filter=Verwijderd eq false;$select=Id,DocumentNummer,Soort,Datum,Volgnummer,ContentType),"
     "ZaakActor($filter=Verwijderd eq false),"
     "Kamerstukdossier($select=Nummer,Toevoeging,Titel),"
     "Besluit($filter=Verwijderd eq false;$expand=Stemming($filter=Verwijderd eq false))"
@@ -225,6 +228,7 @@ def normaliseer_zaak(z, sector):
     docs = sorted((d for d in (z.get("Document") or []) if (d.get("Soort") or "").startswith(soort)),
                   key=lambda d: d.get("Datum") or "")
     dnr = docs[-1].get("DocumentNummer") if docs else None
+    hoofd = docs[-1] if docs else {}
     pad = {"Motie": "moties", "Amendement": "amendementen"}.get(soort)
     tk_link = (f"https://www.tweedekamer.nl/kamerstukken/{pad}/detail?id={z.get('Nummer')}&did={dnr}"
                if pad and dnr else None)
@@ -263,6 +267,10 @@ def normaliseer_zaak(z, sector):
         "stemtelling": telling,
         "sectoren": [sector],
         "document": dnr,
+        # voor de tekst en de documentweergave op de site (gegevensmagazijn: Document/<docId>/resource)
+        "docId": hoofd.get("Id"),
+        "bestand": bestandssoort(hoofd.get("ContentType")),
+        "volgnummer": hoofd.get("Volgnummer") if hoofd.get("Volgnummer") not in (None, -1) else None,
         "tkLink": tk_link,
         "link": f"https://berthub.eu/tkconv/zaak.html?nummer={z.get('Nummer')}",
     }
@@ -412,12 +420,16 @@ def normaliseer_activiteit(a):
 STUK_EXPAND = ("DocumentActor($select=ActorNaam,ActorFractie,Functie,Relatie),"
                "Kamerstukdossier($select=Nummer,Toevoeging,Titel),"
                "Zaak($select=Nummer,Soort;$expand=ZaakActor($select=ActorNaam,Functie,Relatie)),"
-               "BijlageDocument($select=DocumentNummer,Onderwerp,Titel,ContentType,Verwijderd)")
+               "BijlageDocument($select=Id,DocumentNummer,Onderwerp,Titel,ContentType,Verwijderd)")
 
 BESTANDSSOORT = {"application/pdf": "PDF", "application/msword": "DOC",
                  "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "DOCX",
                  "application/vnd.ms-excel": "XLS",
                  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "XLSX"}
+
+
+def bestandssoort(content_type):
+    return BESTANDSSOORT.get((content_type or "").split(";")[0].strip())
 
 
 def bijlagen(d):
@@ -428,7 +440,8 @@ def bijlagen(d):
             continue
         uit.append({"id": b["DocumentNummer"],
                     "titel": re.sub(r"\s+", " ", (b.get("Onderwerp") or b.get("Titel") or "Bijlage")).strip(),
-                    "bestand": BESTANDSSOORT.get((b.get("ContentType") or "").split(";")[0]),
+                    "bestand": bestandssoort(b.get("ContentType")),
+                    "docId": b.get("Id"),
                     "link": f"https://www.tweedekamer.nl/downloads/document?id={b['DocumentNummer']}"})
     return sorted(uit, key=lambda x: (x["titel"].lower().startswith("beslisnota"), x["titel"].lower()))
 
@@ -442,7 +455,7 @@ def stukken(start):
     cfg = CONFIG.get("stukken") or {}
     soort = " or ".join(f"Soort eq '{s}'" for s in cfg.get("soorten", ["Brief regering"]))
     params = {"$filter": f"Verwijderd eq false and ({soort}) and Datum ge {start}T00:00:00Z",
-              "$select": "Id,Soort,DocumentNummer,Titel,Onderwerp,Datum,Volgnummer",
+              "$select": "Id,Soort,DocumentNummer,Titel,Onderwerp,Datum,Volgnummer,ContentType",
               "$expand": STUK_EXPAND, "$orderby": "Datum desc"}
     ruw = odata("Document", params, max_pages=200)
     regels = {}
@@ -501,6 +514,8 @@ def stukken(start):
         pad = "brieven_regering" if soort == "Brief regering" else "kamervragen"
         item = {
             "id": d.get("DocumentNummer"),
+            "docId": d.get("Id"),
+            "bestand": bestandssoort(d.get("ContentType")),
             "soort": soort,
             "datum": (d.get("Datum") or "")[:10] or None,
             "titel": d.get("Titel"),
@@ -890,6 +905,14 @@ def main():
         (OUT / "stemmingen.json").write_text(json.dumps(stem_data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     if begr:
         (OUT / "begrotingen.json").write_text(json.dumps(begr, ensure_ascii=False, indent=1), encoding="utf-8")
+    # 8. de tekst van moties en amendementen (data/tk/teksten.json; zie pipeline/teksten.py)
+    teksten_telling = None
+    try:
+        import teksten
+        teksten_telling = teksten.bijwerken(zaken_lijst)
+    except Exception as e:
+        FOUTEN.append(f"teksten: {e}")
+        log(f"    FOUT teksten: {e}")
     if tz_lijst:
         (OUT / "toezeggingen.json").write_text(json.dumps(tz_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps({
@@ -900,6 +923,7 @@ def main():
         "aantalStukken": len(stuk_lijst),
         "aantalToezeggingen": len(tz_lijst),
         "uitgesloten": uitgesloten,
+        "teksten": teksten_telling,
         "fouten": FOUTEN,
         "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl)",
     }, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -921,5 +945,8 @@ if __name__ == "__main__":
         alleen_toezeggingen()
     elif "--begrotingen" in sys.argv:
         alleen_begrotingen()
+    elif "--teksten" in sys.argv:
+        import teksten
+        teksten.bijwerken(json.loads((OUT / "zaken.json").read_text(encoding="utf-8")))
     else:
         main()
