@@ -104,7 +104,8 @@
 
   /* ---------- Alle items die een thema kunnen krijgen ----------
      Eén bron voor de site (Thema's), de review-CSV en de noscript-lijst, zodat de tellingen overal gelijk zijn.
-     soort: wet, amendement, motie, brief, vraag, antwoord, vergadering, agenda.
+     soort: wet, amendement, motie, brief, vraag, antwoord, vergadering, agenda, kerndocument.
+     - kerndocument: de nieuwste editie per reeks uit kerndocumenten() (data/kerndocumenten.json plus data/tk/begrotingen.json)
      - wet: de wetsvoorstellen uit de Kamerdata (zoals de tab Wetgeving)
      - vergadering: samengevatte debatten plus uitgevoerde Kameractiviteiten zonder samenvatting (Terugblik op de tab Agenda)
      - agenda: geplande Kameractiviteiten plus eigen mijlpalen (data/agenda.json); sleutel debat: blijft gelijk als een geplande vergadering wordt gehouden
@@ -117,6 +118,57 @@
   const isDebat = (a) => DEBAT_SOORTEN.includes(a.Soort) || (a.Soort || "").startsWith("Plenair debat");
   const TYPE_NORM = { "Plenair debat (tweeminutendebat)": "Tweeminutendebat", "Plenair debat (debat)": "Plenair debat", "Plenair debat (dertigledendebat)": "Dertigledendebat", "Plenair debat (initiatiefwetgeving)": "Plenair debat (wetgeving)", "Inbreng verslag (wetsvoorstel)": "Inbreng verslag" };
   const typeNaam = (s) => TYPE_NORM[s] || s || "Overig";
+
+  /* ---------- Kerndocumenten ----------
+     De handmatige lijst (data/kerndocumenten.json) plus de begrotingsstukken die fetch_tk.py opzoekt (data/tk/begrotingen.json),
+     als één lijst documenten in dezelfde vorm. Gebruikt door de tab Kerndocumenten, de themapagina's, de zoekfunctie en de review-CSV. */
+  const TK_DOC = (d) => `https://www.tweedekamer.nl/downloads/document?id=${encodeURIComponent(d)}`;
+  const OB_DOSSIER = (n, t) => `https://zoek.officielebekendmakingen.nl/dossier/${n}${t ? "-" + t : ""}`;
+  // thema per begrotingshoofdstuk (letters zoals in de Rijksbegroting)
+  const HOOFDSTUK_THEMA = {
+    XXIII: ["energie-klimaat"], M: ["energie-klimaat"], XIII: ["energie-klimaat", "industrie-circulaire-economie"],
+    XIV: ["landbouw-natuur-stikstof"], XII: ["mobiliteit-infrastructuur", "water-bodem"], A: ["mobiliteit-infrastructuur"],
+    J: ["water-bodem", "adaptatie"], XXII: ["gebouwde-omgeving"], VII: ["gebouwde-omgeving"],
+  };
+  const BEGR_SOORT = {
+    miljoenennota: { titel: (j) => `Miljoenennota ${j}`, soort: "Nota", uitgever: "Ministerie van Financiën" },
+    belastingplan: { titel: (j) => `Belastingplan ${j}`, soort: "Wetsvoorstel", uitgever: "Ministerie van Financiën", wet: true },
+    voorjaarsnota: { titel: (j) => `Voorjaarsnota ${j}`, soort: "Nota", uitgever: "Ministerie van Financiën" },
+    najaarsnota: { titel: (j) => `Najaarsnota ${j}`, soort: "Nota", uitgever: "Ministerie van Financiën" },
+    "jaarverslag-rijk": { titel: (j) => `Financieel Jaarverslag van het Rijk ${j}`, soort: "Jaarverslag", uitgever: "Ministerie van Financiën" },
+    begroting: { titel: (j, b) => `Begroting ${b.naam} ${j}`, soort: "Begroting", wet: true },
+    jaarverslag: { titel: (j, b) => `Jaarverslag ${b.naam} ${j}`, soort: "Jaarverslag" },
+  };
+  function kerndocumenten(kd, begr) {
+    const uit = [];
+    for (const d of (kd && kd.documenten) || []) uit.push({ ...d, themas: d.themas || [], links: d.links || [] });
+    for (const b of begr || []) {
+      const s = BEGR_SOORT[b.soort];
+      if (!s || !b.document) continue;
+      const ks = `${b.nummer}${b.hoofdstuk ? "-" + b.hoofdstuk : ""}`;
+      const links = [{ tekst: "Kamerstukdossier", url: OB_DOSSIER(b.nummer, b.hoofdstuk) }];
+      if (s.wet) links.unshift({ tekst: "Wetsvoorstel op tweedekamer.nl", url: `https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A${encodeURIComponent(ks)}` });
+      if (b.soort === "begroting") links.push({ tekst: "Rijksfinanciën", url: `https://www.rijksfinancien.nl/memorie-van-toelichting/${b.jaar}/OWB/${encodeURIComponent(b.hoofdstuk)}` });
+      if (b.rekenkamer) links.push({ tekst: "Algemene Rekenkamer", url: TK_DOC(b.rekenkamer) });
+      const deel = b.hoofdstuk ? "-" + b.hoofdstuk.toLowerCase() : "";
+      uit.push({
+        id: `${b.soort}${deel}-${b.jaar}`, groep: "begroting", soort: s.soort, titel: s.titel(b.jaar, b),
+        afkorting: b.soort === "miljoenennota" ? "MN" : b.hoofdstuk ? `hoofdstuk ${b.hoofdstuk}` : null,
+        uitgever: s.uitgever || (b.naam ? `${/fonds$/i.test(b.naam) ? "" : "Ministerie van "}${b.naam}` : null), datum: b.datum, url: TK_DOC(b.document),
+        kenmerk: `Kamerstuk ${b.nummer}${b.hoofdstuk ? " " + b.hoofdstuk : ""}`, document: b.document, documentSoort: b.documentSoort,
+        reeks: `${b.soort}${deel}`, themas: b.hoofdstuk ? HOOFDSTUK_THEMA[b.hoofdstuk] || [] : ["sectoroverstijgend"],
+        hoofdstuk: b.hoofdstuk || null, jaar: b.jaar, rol: b.soort === "begroting" || b.soort === "jaarverslag" ? b.soort : null, links,
+      });
+    }
+    return uit;
+  }
+  // per reeks de nieuwste editie (datum, dan jaar), met de eerdere edities erbij
+  function kerndocReeksen(docs) {
+    const per = new Map();
+    for (const d of docs) { const k = d.reeks || d.id; if (!per.has(k)) per.set(k, []); per.get(k).push(d); }
+    const sl = (d) => `${d.jaar || ""}|${d.datum || ""}`;
+    return [...per.values()].map((l) => { l.sort((a, b) => sl(b).localeCompare(sl(a))); return { ...l[0], eerder: l.slice(1) }; });
+  }
 
   function bronItems(data) {
     const uit = [];
@@ -163,6 +215,10 @@
       if (gezien.has(`${i.datum}|${norm(i.titel).slice(0, 20)}`)) continue;
       uit.push({ sleutel: sleutel.agenda(i), soort: "agenda", datum: i.datum, titel: i.titel, overig: [], ref: i, momenten: i.datum ? [{ label: i.type || "Mijlpaal", datum: i.datum, titel: i.titel }] : [] });
     }
+    // kerndocumenten: alleen de nieuwste editie per reeks (de eerdere staan erbij op de tab Kerndocumenten)
+    for (const d of kerndocReeksen(kerndocumenten(data.kerndocumenten, data.begrotingen))) {
+      uit.push({ sleutel: "kerndoc:" + d.id, soort: "kerndocument", datum: d.datum, titel: d.titel, overig: [], ref: d, momenten: [], themasVeld: d.themas });
+    }
     return uit;
   }
 
@@ -183,6 +239,7 @@
     { code: "antwoord", param: "antwoorden", groep: "Antwoorden op Kamervragen", een: "antwoord", veel: "antwoorden" },
     { code: "vergadering", param: "vergaderingen", groep: "Vergaderingen", een: "vergadering", veel: "vergaderingen" },
     { code: "agenda", param: "agenda", groep: "Agenda", een: "op de agenda", veel: "op de agenda" },
+    { code: "kerndocument", param: "kerndocumenten", groep: "Kerndocumenten", een: "kerndocument", veel: "kerndocumenten" },
   ];
 
   // officiële pagina op tweedekamer.nl: motie of amendement via het D-nummer (tkLink uit de pipeline), een wetsvoorstel via
@@ -194,5 +251,5 @@
     return `https://www.tweedekamer.nl/zoeken?q=${encodeURIComponent(z.nummer)}`;
   }
 
-  return { THEMAS, SOORTEN, maak, tkUrl, norm, sleutel, bronItems, themasVanItem, korteTitel, stukTitel, typeNaam };
+  return { THEMAS, SOORTEN, maak, tkUrl, kerndocumenten, kerndocReeksen, norm, sleutel, bronItems, themasVanItem, korteTitel, stukTitel, typeNaam };
 });
