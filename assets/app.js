@@ -121,7 +121,7 @@
   const minderBeweging = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
   // De aanduiding beweegt via een CSS-overgang op transform: die start altijd vanaf de huidige stand, dus snel wisselen blijft vloeiend.
   function zetGlij(animeer) {
-    const a = NAV.querySelector("a.active");
+    const a = NAV.querySelector(":scope > a.active, :scope > .tab-menu.active");
     if (!a) { GLIJ.style.opacity = "0"; return; }
     const direct = !animeer || !_glijGezet || GLIJ.style.opacity === "0";
     if (direct) GLIJ.style.transition = "none";
@@ -141,6 +141,31 @@
     NAV.classList.toggle("fade-r", NAV.scrollLeft + NAV.clientWidth < NAV.scrollWidth - 4);
   }
   NAV.addEventListener("scroll", zetNavRand, { passive: true });
+
+  // Kamerstukken-menu: open bij hover (CSS) of met klik, Enter, spatie of pijl omlaag; Escape, klik buiten of een keuze sluit het
+  const MENU = $(".tab-menu"), MKNOP = $(".tab-knop"), MITEMS = () => [...MENU.querySelectorAll(".tab-lijst a")];
+  const zetMenu = (open) => { MENU.classList.toggle("open", open); MKNOP.setAttribute("aria-expanded", String(open)); if (!open) MENU.classList.add("dicht"); };
+  MENU.addEventListener("mouseleave", () => MENU.classList.remove("dicht"));
+  MENU.addEventListener("mouseenter", () => { if (!MENU.classList.contains("open")) MENU.classList.remove("dicht"); });
+  MKNOP.addEventListener("click", () => zetMenu(!MENU.classList.contains("open")));
+  MENU.addEventListener("keydown", (e) => {
+    const items = MITEMS(), i = items.indexOf(document.activeElement);
+    if (e.key === "Escape") { e.preventDefault(); zetMenu(false); MKNOP.focus(); }
+    else if (e.key === "ArrowDown") { e.preventDefault(); zetMenu(true); items[(i + 1) % items.length].focus(); }
+    else if (e.key === "ArrowUp" && i >= 0) { e.preventDefault(); if (i === 0) MKNOP.focus(); else items[i - 1].focus(); }
+  });
+  MENU.addEventListener("focusout", (e) => { if (!MENU.contains(e.relatedTarget)) { MENU.classList.remove("open"); MKNOP.setAttribute("aria-expanded", "false"); } });
+  MENU.querySelector(".tab-lijst").addEventListener("click", (e) => { if (e.target.closest("a")) { zetMenu(false); e.target.closest("a").blur(); } });
+  document.addEventListener("click", (e) => { if (!MENU.contains(e.target) && MENU.classList.contains("open")) zetMenu(false); });
+
+  // Zoeken: het vergrootglas klapt het zoekveld uit; leeg en zonder focus klapt het weer in (behalve op de zoekpagina)
+  const ZFORM = $("#zoekform"), ZKNOP = $(".zoek-knop"), ZVELD = $("#zoekveld");
+  const zetZoekOpen = (open) => { ZFORM.classList.toggle("open", open); ZKNOP.setAttribute("aria-expanded", String(open)); };
+  const openZoek = () => { zetZoekOpen(true); ZVELD.focus(); ZVELD.select(); };
+  const klapZoekIn = () => { if (!location.hash.startsWith("#zoeken") && !ZVELD.value.trim() && document.activeElement !== ZVELD) zetZoekOpen(false); };
+  ZKNOP.addEventListener("click", openZoek);
+  ZVELD.addEventListener("blur", () => setTimeout(klapZoekIn, 150));
+  ZVELD.addEventListener("keydown", (e) => { if (e.key === "Escape" && !ZVELD.value) { ZVELD.blur(); setTimeout(() => { klapZoekIn(); ZKNOP.focus(); }, 0); } });
   function zetKopHoogte() {
     const k = $("header.top");
     const vast = getComputedStyle(k).position === "sticky";
@@ -161,7 +186,7 @@
     if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
     const t = e.target;
     if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
-    e.preventDefault(); const v = $("#zoekveld"); v.focus(); v.select();
+    e.preventDefault(); openZoek();
   });
 
   // Scrollpositie: een klik op een link begint bovenaan; terug/vooruit in de browser komt terug waar je was.
@@ -189,17 +214,20 @@
     const tab = pad.split("/")[0] || "overzicht";
     const oud = oudeRoute(tab, pad);
     if (oud) { history.replaceState(null, "", oud); route(); return; }
-    document.querySelectorAll("nav.tabs a").forEach((a) => {
-      const navTab = { amendementen: "moties", brieven: "vragen" }[tab] || tab;
-      a.classList.toggle("active", a.dataset.tab === navTab);
-      if (a.dataset.tab === navTab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
-    });
+    {
+      const sub = { amendementen: "moties", brieven: "vragen" }[tab] || tab;
+      const navTab = sub === "moties" || sub === "vragen" ? "kamerstukken" : sub;
+      document.querySelectorAll("nav.tabs > a[data-tab], nav.tabs > .tab-menu").forEach((a) => a.classList.toggle("active", a.dataset.tab === navTab));
+      document.querySelectorAll("nav.tabs > a[data-tab], nav.tabs .tab-lijst a").forEach((a) => {
+        if ((a.dataset.tab || a.dataset.sub) === (a.dataset.sub ? sub : navTab)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+      });
+    }
     const views = { overzicht, themas: themasPagina, wetgeving, moties, amendementen: moties, vragen: vragenBrieven, brieven: vragenBrieven, agenda, documenten: kerndocumentenPagina, over, zoeken };
     const TITELS = { themas: "Thema's", agenda: "Agenda", wetgeving: "Wetgeving", moties: "Moties & Amendementen", amendementen: "Moties & Amendementen", vragen: "(Antwoord) Kamervragen", brieven: "Kamerbrieven", documenten: "Kerndocumenten", over: "Over", zoeken: "Zoeken" };
     S.tabel = null; S.themaLijst = null;
     document.title = TITELS[tab] ? `${TITELS[tab]} · milieuradar` : "milieuradar";
     if (tab === "themas" && pad.split("/")[1]) { const t = S.T.thema(pad.split("/")[1]); document.title = `${t ? t.label : "Thema niet gevonden"} · Thema's · milieuradar`; }
-    { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
+    { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); zetZoekOpen(true); } else { v.value = ""; if (document.activeElement !== v) zetZoekOpen(false); } }
     $("#view").innerHTML = (views[tab] || overzicht)();
     const tabGewisseld = tab !== _vorigeTab, eerste = _vorigeTab === null;
     if (tabGewisseld) { const v = $("#view"); v.classList.remove("binnenkomst"); void v.offsetWidth; v.classList.add("binnenkomst"); }

@@ -124,7 +124,7 @@ header.top .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px
 .woordmerk span { color: var(--accent); }
 
 /* Hoofdnavigatie: het enige pilvormige onderdeel op de site */
-nav.tabs { position: relative; display: flex; gap: 4px; background: var(--surface); padding: 4px; border-radius: 999px; overflow-x: auto; max-width: 100%; scrollbar-width: none; }
+nav.tabs { position: relative; display: flex; gap: 4px; background: var(--surface); padding: 4px; border-radius: 999px; overflow: visible; max-width: 100%; }
 nav.tabs a { position: relative; z-index: 1; padding: 8px 12px; border-radius: 999px; text-decoration: none; color: var(--ink-2); font-size: var(--t-14); white-space: nowrap; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 nav.tabs a:hover { color: var(--ink); }
 nav.tabs a:hover:not(.active) { background: var(--raised); }
@@ -132,19 +132,40 @@ nav.tabs a.active { background: var(--card); color: var(--ink); font-weight: 500
 nav.tabs.glij a.active { background: transparent; box-shadow: none; }
 /* Uitzondering op "geen breedte animeren": de aanduiding staat los van de opmaak (absolute positie), dus het kost niets. Zie DESIGN.md. */
 .tab-glij { position: absolute; left: 0; top: 4px; bottom: 4px; width: 0; border-radius: 999px; background: var(--card); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); opacity: 0; pointer-events: none; will-change: transform; transition: transform var(--d-lang) var(--ease), width var(--d-lang) var(--ease), opacity var(--d-kort) var(--ease); }
+/* Kamerstukken: een tab met een menu (hover, klik of pijl omlaag; Escape sluit) */
+.tab-menu { position: relative; z-index: 1; }
+.tab-knop { display: inline-flex; align-items: center; gap: 4px; padding: 8px 12px; border: 0; border-radius: 999px; background: transparent; font: inherit; font-size: var(--t-14); line-height: inherit; color: var(--ink-2); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+.tab-knop:hover { color: var(--ink); }
+.tab-menu:not(.active) .tab-knop:hover { background: var(--raised); }
+.tab-menu.active .tab-knop { color: var(--ink); font-weight: 500; }
+.tab-knop .chev { width: 14px; height: 14px; vertical-align: 0; color: var(--muted); transition: transform var(--d-lang) var(--ease); }
+.tab-lijst { position: absolute; top: calc(100% + 8px); left: -4px; min-width: 220px; padding: 4px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform-origin: top left; opacity: 0; visibility: hidden; transform: translateY(-4px) scale(0.98); transition: opacity var(--d-kort) var(--ease), transform var(--d-kort) var(--ease), visibility 0s linear var(--d-kort); }
+.tab-lijst::before { content: ""; position: absolute; left: 0; right: 0; top: -13px; height: 13px; } /* brug: hover valt niet weg tussen knop en menu */
+.tab-menu:is(:hover:not(.dicht), .open) .tab-lijst, .tab-lijst:focus-within { opacity: 1; visibility: visible; transform: none; transition: opacity var(--d-kort) var(--ease), transform var(--d-kort) var(--ease), visibility 0s; }
+.tab-menu:is(:hover:not(.dicht), .open) .chev { transform: rotate(180deg); }
+nav.tabs .tab-lijst a { display: block; padding: 8px 12px; border-radius: var(--r-control); background: transparent; box-shadow: none; }
+nav.tabs .tab-lijst a:hover { background: var(--surface); }
+nav.tabs .tab-lijst a[aria-current] { color: var(--ink); font-weight: 500; background: var(--accent-soft); }
+nav.tabs .tab-lijst a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 nav.tabs.fade-r { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); }
 nav.tabs.fade-l { -webkit-mask-image: linear-gradient(270deg, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(270deg, #000 calc(100% - 36px), transparent); }
 nav.tabs.fade-l.fade-r { -webkit-mask-image: linear-gradient(90deg, transparent, #000 36px, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(90deg, transparent, #000 36px, #000 calc(100% - 36px), transparent); }
 
-form.zoek { position: relative; flex: 1 1 200px; min-width: 168px; max-width: 300px; }
-form.zoek .ico { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-form.zoek input { width: 100%; font: inherit; font-size: var(--t-14); color: var(--ink); background: var(--surface); border: 1px solid transparent; border-radius: var(--r-control); padding: 8px 36px; min-height: 36px; transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease); }
+/* Zoeken: een knop met een vergrootglas die het zoekveld uitklapt (klik of "/"); leeg en zonder focus klapt het weer in */
+form.zoek { position: relative; flex: none; width: 36px; height: 36px; margin-left: -12px; transition: width var(--d-lang) var(--ease); }
+form.zoek.open { width: 280px; }
+.zoek-knop { position: absolute; left: 0; top: 0; z-index: 1; display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 0; border-radius: var(--r-control); background: var(--surface); color: var(--ink-2); cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+.zoek-knop:hover { color: var(--ink); background: var(--raised); }
+.zoek-knop .ico { width: 18px; height: 18px; vertical-align: 0; }
+form.zoek.open .zoek-knop { background: transparent; color: var(--muted); pointer-events: none; }
+form.zoek input { width: 100%; height: 36px; font: inherit; font-size: var(--t-14); color: var(--ink); background: var(--surface); border: 1px solid transparent; border-radius: var(--r-control); padding: 8px 36px; min-height: 36px; opacity: 0; visibility: hidden; transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), opacity var(--d-kort) var(--ease), visibility 0s linear var(--d-lang); }
+form.zoek.open input { opacity: 1; visibility: visible; transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), opacity var(--d-kort) var(--ease), visibility 0s; }
 form.zoek input::placeholder { color: var(--muted); }
 form.zoek input:hover { border-color: var(--line); }
 form.zoek input:focus { outline: none; background: var(--card); border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 form.zoek input::-webkit-search-cancel-button { cursor: pointer; }
 .zoek-toets { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); font-family: var(--font-mono); font-size: var(--t-12); line-height: 20px; min-width: 20px; text-align: center; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 4px; pointer-events: none; transition: opacity var(--d-kort) var(--ease); }
-form.zoek input:focus ~ .zoek-toets, form.zoek input:not(:placeholder-shown) ~ .zoek-toets { opacity: 0; }
+form.zoek:not(.open) .zoek-toets, form.zoek input:focus ~ .zoek-toets, form.zoek input:not(:placeholder-shown) ~ .zoek-toets { opacity: 0; }
 header.top .stamp { margin-left: auto; color: var(--muted); font-size: var(--t-12); line-height: 16px; text-align: right; white-space: nowrap; }
 
 /* ===================== Pagina-opbouw en koppen ===================== */
@@ -195,6 +216,7 @@ h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px;
 .empty { color: var(--muted); padding: 20px; text-align: center; text-wrap: pretty; }
 footer { color: var(--muted); font-size: var(--t-13); line-height: 1.6; padding: 32px 0; border-top: 1px solid var(--line); }
 footer a { color: var(--ink-2); }
+footer .voet-links { margin: 12px 0 0; }
 
 /* ===================== Kerncijfers: één strook, cellen met haarlijnen ===================== */
 .stats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); overflow: hidden; }
@@ -757,7 +779,7 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
 
 /* ===================== Beweging ===================== */
 /* Directe feedback bij indrukken: een kleine schaal omlaag */
-button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .schakelaar a:active, .facet > summary:active, button.tchip:active, .debat .toggle:active { transform: scale(0.98); }
+button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .tab-knop:active, .schakelaar a:active, .facet > summary:active, button.tchip:active, .debat .toggle:active { transform: scale(0.98); }
 .naarboven.zichtbaar:active { transform: scale(0.96); transition-duration: var(--d-kort); }
 @keyframes menu-in { from { opacity: 0; transform: translateY(-4px) scale(0.98); } to { opacity: 1; transform: none; } }
 @keyframes binnenkomst { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
@@ -772,6 +794,8 @@ button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .sc
   button:active, .chip:active, .knop:active, nav.tabs a:active, .schakelaar a:active, .facet > summary:active, .debat .toggle:active { transform: none; }
   .debat .body-wrap, .debat.open .body-wrap, .skiplink { transition: none; }
   .tab-glij { transition: opacity var(--d-kort) var(--ease); }
+  .tab-lijst, .tab-menu:is(:hover, .open) .tab-lijst, .tab-lijst:focus-within { transform: none; }
+  form.zoek { transition: none; }
   .naarboven, .naarboven.zichtbaar { transform: none; transition: opacity var(--d-kort) var(--ease), visibility 0s; }
   dialog.docview[open] { animation: vervaag var(--d-kort) ease both !important; }
   .facet[open] > .facet-menu, #view.binnenkomst, tr.detail { animation: vervaag var(--d-kort) ease both !important; animation-duration: var(--d-kort) !important; }

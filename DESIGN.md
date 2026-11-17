@@ -56,6 +56,7 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 - Inside controls 4 to 12; list rows 12 apart; groups 12 to 24; above a section head 40; page bottom 64.
 - Card padding 20 (16 on phones), indicator cards 24, filter bar 16, stat cells 16/20.
 - Controls 36 tall (32 for compact chips), main tabs 36.
+- Header (since 17 Nov 2026): at most seven items. Kamerstukken is a tab button with a chevron that opens a menu card (`.tab-lijst`: `--card`, `--line`, radius 12, rows radius 8, current row on `--accent-soft`) from the button, on hover, click or arrow down; the sliding indicator sits under the button. Search is a 36px square button (`--surface`, radius 8) with the magnifying glass right after the tab bar; it widens into the search field (280px). "Over" lives in the footer.
 
 ### Radii
 
@@ -65,7 +66,7 @@ Set in the unslop pass of 13 Nov 2026 (method: unslop by Damir Sokolovsky, [@hey
 | Button, field, select, chip, menu row | `--r-control` | 8 |
 | Card, tile, menu | `--r-card` | 12 |
 | Panel (filter bar) | `--r-panel` | 16 |
-| Main tab bar and its tabs | | pill (the only pill on the site) |
+| Main tab bar and its tabs (also the Kamerstukken menu button) | | pill (the only pill on the site) |
 | Large switcher (Moties/Amendementen) | `--r-card` / `--r-control` | 12 outside, 8 per segment |
 
 Nested: inner = outer minus padding, never below 4.
