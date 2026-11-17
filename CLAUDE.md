@@ -102,6 +102,8 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 - Schrijf toe aan de spreker ("volgens PRO") wat geen geverifieerd feit is.
 - Controleer elke URL voordat je hem toevoegt aan `data/agenda.json` of `data/kerndocumenten.json`.
 - Draai `node pipeline/versie.js` voor elke commit die iets in `assets/` wijzigt.
+- Commit en push naar `main` na elke afgeronde, gecontroleerde wijziging, zonder te vragen, tenzij Tobias anders zegt.
+  Neem `.Rhistory` en `.claude/` niet mee.
 - Vindt Tobias iets niet dat er wel is: voeg een synoniem toe in `data/zoeksynoniemen.json` en/of een regel in `tests/zoektest.js`.
 
 **Eerst vragen**

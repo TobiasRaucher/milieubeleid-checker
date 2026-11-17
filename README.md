@@ -10,16 +10,15 @@ Gestart met **Klimaat & energie** (focus: de Klimaatwet). Water & adaptatie, nat
 
 | Onderdeel | Wie/wat | Bestanden |
 |---|---|---|
-| Moties, amendementen, stemmingen, activiteiten | Script, automatisch, zonder AI (Tweede Kamer open data) | `pipeline/fetch_tk.py` → `data/tk/` |
-| Wetgevingsdossiers (fase, volgende stap, deadlines) | Claude, met bronvermelding | `data/dossiers.json` |
+| Wetsvoorstellen, moties, amendementen, stemmingen, activiteiten, Kamerbrieven en Kamervragen | Script, automatisch, zonder AI (Tweede Kamer open data) | `pipeline/fetch_tk.py` → `data/tk/` |
 | Debatsamenvattingen (kort + gestructureerd) | Claude, op basis van transcripten van gehoord.de | `data/debatten.json` |
 | Mijlpalen en deadlines | Claude | `data/agenda.json` |
 | Website | Statische pagina, geen build-stap | `index.html`, `assets/` |
 
 ## Bijwerken
 
-- **Kamerdata (gratis, geen AI):** GitHub → tabblad *Actions* → *Data bijwerken (Tweede Kamer open data)* → *Run workflow*. Automatisch maken kan door in `.github/workflows/update.yml` het `schedule`-blok aan te zetten.
-- **Samenvattingen en dossiers:** vraag Claude in het project "Checker Dutch Government Environmental Policy": *"Werk de checker bij"*. Claude haalt de nieuwste data op, vat nieuwe debatten samen en pusht naar deze repo. De werkwijze staat in `CLAUDE.md`.
+- **Kamerdata (gratis, geen AI):** GitHub → tabblad *Actions* → *Data bijwerken (Tweede Kamer open data)* → *Run workflow*. De Action draait ook automatisch elke werkdag om 05:17 UTC (`schedule` in `.github/workflows/update.yml`).
+- **Samenvattingen en mijlpalen:** vraag Claude in het project "Checker Dutch Government Environmental Policy": *"Werk de checker bij"*. Claude haalt de nieuwste data op, vat nieuwe debatten samen en pusht naar deze repo. De werkwijze staat in `CLAUDE.md`.
 
 ## Uitbreiden naar een nieuwe sector
 
@@ -29,4 +28,4 @@ Zet in `pipeline/config.json` de sector op `"actief": true` en vul `commissies`,
 
 - Transcripten van gehoord.de zijn automatisch en niet door mensen gecorrigeerd. Samenvattingen zijn een hulpmiddel, geen officiële bron: citeer de Handelingen.
 - Uitslagen en stemmen komen rechtstreeks uit de open data van de Tweede Kamer.
-- De Eerste Kamer heeft geen vergelijkbare open data; EK-stappen worden handmatig bijgehouden in `data/dossiers.json`.
+- De Eerste Kamer heeft geen vergelijkbare open data; EK-stappen worden handmatig bijgehouden als mijlpalen in `data/agenda.json`.
