@@ -642,6 +642,7 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
 .mi-raming { fill: none; stroke: var(--ink-2); stroke-width: 1.5; stroke-dasharray: 4 4; stroke-linecap: round; }
 .mi-raming-punt { fill: var(--card); stroke: var(--ink-2); stroke-width: 1.5; }
 .mi-doel-punt { fill: var(--ink); stroke: var(--card); stroke-width: 2; }
+.mi-doel-punt.eu { fill: var(--card); stroke: var(--ink); stroke-width: 1.5; } /* EU-doel: geen Nederlands doel, daarom open */
 .mi-kloof { fill: none; stroke: var(--ink-2); stroke-width: 1; }
 .mi-band { fill: var(--ink); opacity: 0.07; }          /* onzekerheid van een raming: neutraal vlak, geen randen */
 .mi-astitel { font-size: var(--t-12); fill: var(--muted); }
@@ -654,35 +655,39 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
 /* kop boven een kaart, zoals Net binnen en Komt eraan (sinds 16 nov 2026) */
 .mi-sectie > h2 { margin: 40px 0 12px; }
 .mi-sectie > h2, .ov-onder h2 { font-size: var(--t-24); letter-spacing: -0.015em; }
-.mi-inhoud.card .mi-schakel { margin-top: 0; }
+/* wet kiezen: kleine schakelaar op 18px, zelfde vorm als de andere schakelaars */
+.mi-wetten button { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); font-weight: 500; color: var(--ink-2); cursor: pointer; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease); }
+.mi-wetten button:hover:not([aria-pressed="true"]) { color: var(--ink); background: var(--raised); }
+.mi-wetten button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); }
+.mi-wetten button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* een tegel per doeljaar; de gekozen tegel is de huidige keuze (forest-rand, accent-soft) */
+.mi-jaren { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+.mi-jaren.twee { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.mi-jaar { display: grid; align-content: start; gap: 8px; padding: 16px; text-align: left; font: inherit; color: var(--ink); background: var(--page); border: 1px solid var(--line); border-radius: var(--r-card); cursor: pointer; transition: border-color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease); }
+.mi-jaar:hover:not([aria-pressed="true"]) { border-color: var(--line-sterk); }
+.mi-jaar[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.mi-jaar:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mi-jr-jaar { font-size: var(--t-24); font-weight: 500; letter-spacing: -0.015em; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.mi-jr-regel { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; font-size: var(--t-15); line-height: 22px; }
+.mi-jr-kop { font-size: var(--t-13); color: var(--ink-2); padding-top: 1px; }
+.mi-jr-inhoud { display: grid; gap: 2px; text-wrap: pretty; }
+.mi-jr-stil { font-size: var(--t-13); line-height: 18px; color: var(--ink-2); }
+.mi-jr-kans { display: inline-flex; align-items: center; gap: 8px; }
+.mi-jr-kans .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--neutraal-stip); flex: none; }
+.mi-jr-kans.laag .dot { background: var(--alarm); }
+.mi-jr-kans.midden .dot { background: var(--warning); }
+.mi-jr-kans.hoog .dot { background: var(--good); }
+.mi-jaren-peil { margin: 8px 0 24px; max-width: none; }
 .mi-uitstoot-raster { display: grid; gap: 20px 40px; }
-@media (min-width: 1000px) { .mi-uitstoot-raster { grid-template-columns: minmax(280px, 1fr) minmax(0, 2.6fr); align-items: start; } }
-.mi-schakel { display: flex; flex-wrap: wrap; gap: 16px 24px; margin: 16px 0 24px; }
-.mi-groep { display: grid; gap: 8px; }
-.mi-groep-kop { font-size: var(--t-12); color: var(--muted); line-height: 16px; }
-.mi-groep-knoppen { display: flex; flex-wrap: wrap; gap: 8px; }
-.mi-schakel .chip { min-width: 56px; justify-content: center; }
+@media (min-width: 1000px) { .mi-uitstoot-raster { grid-template-columns: minmax(200px, 1fr) minmax(0, 3.4fr); align-items: start; } }
+.mi-groep-knoppen { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.mi-groep-knoppen .chip { min-width: 56px; justify-content: center; }
 .mi-stat-waarde { font-size: var(--t-15); color: var(--ink-2); }
 .mi-stat-waarde b { font-size: var(--t-30); font-weight: 500; color: var(--ink); letter-spacing: -0.02em; margin-right: 4px; font-variant-numeric: tabular-nums; }
 .mi-stat-sub { color: var(--ink-2); margin-top: 4px; }
 .mi-stat-sub .nw { white-space: nowrap; }
-.mi-doel { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--t-14); color: var(--ink); max-width: var(--leesbreedte); text-wrap: pretty; }
-.mi-doel + .mi-doel { border-top: 0; padding-top: 0; margin-top: 8px; color: var(--ink-2); font-size: var(--t-13); }
-/* kans op het doel: een stille tegel; alleen de stip draagt de stoplichtkleur */
-.mi-kans { margin-top: 16px; padding: 16px; background: var(--surface); border-radius: var(--r-control); display: grid; gap: 4px; }
-.mi-kans p { margin: 0; }
-.mi-kans-kop { font-size: var(--t-13); color: var(--ink-2); }
-.mi-kans-regel { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
-.mi-kans-waarde { font-size: var(--t-30); font-weight: 500; letter-spacing: -0.02em; color: var(--ink); font-variant-numeric: tabular-nums; line-height: 36px; }
-.mi-kans-oordeel { display: inline-flex; align-items: center; gap: 8px; font-size: var(--t-14); color: var(--ink); }
-.mi-kans .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--neutraal-stip); flex: none; }
-.mi-kans.laag .dot { background: var(--alarm); }
-.mi-kans.midden .dot { background: var(--warning); }
-.mi-kans.hoog .dot { background: var(--good); }
-.mi-kans .peil { margin-top: 4px; }
 .mi-plek { min-height: 304px; }
 @media (min-width: 700px) { .mi-plek { min-height: 384px; } }
-.mi-voet { margin: 12px 0 0; color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
 .mi-bron { margin: 8px 0 0; max-width: var(--leesbreedte); }
 .mi-bron a { color: var(--muted); }
 .mi-bron a:hover { color: var(--accent); }
@@ -762,7 +767,7 @@ button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .ta
 /* Afdrukken: alleen de inhoud, alles uitgeklapt */
 @media print {
   header.top { position: static; }
-  nav.tabs, form.zoek, .filters, .werkbalk, .actieve-filters, .naarboven, .debat .toggle, .skiplink, #agendaknoppen, .mi-tip, .mi-hover, .mi-schakel { display: none !important; }
+  nav.tabs, form.zoek, .filters, .werkbalk, .actieve-filters, .naarboven, .debat .toggle, .skiplink, #agendaknoppen, .mi-tip, .mi-hover, .mi-wetten { display: none !important; }
   .debat .body-wrap { grid-template-rows: 1fr; visibility: visible; }
   .card, .tl-dag, tr { break-inside: avoid; }
   a { color: inherit; }

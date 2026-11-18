@@ -144,8 +144,8 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 
 ## Overzicht (`#overzicht`)
 
-- Volgorde: korte uitleg (`OV_INTRO`: de `h1` van de pagina, 30/500, en één alinea 15/400 in ink-2 met een link naar `#themas`;
-  tekst van Tobias, niet herschrijven zonder te vragen), dan "Wat Nederland uitstoot" als kop met kaart
+- Volgorde: korte uitleg (`OV_INTRO`: de `h1` van de pagina, 45/500, en één alinea 18/400 in ink-2 met links naar thema's,
+  Agenda en de documentpagina's; tekst van Tobias, niet herschrijven zonder te vragen), dan "Hoe staan we er voor?" als kop met kaart
   (`milieu.js`, zie `agent_docs/uitstoot-grafiek.md`), dan Net binnen (breed, links) en Komt eraan (smal, rechts) met dezelfde onderrand.
 - Komt eraan: bovenaan de eerstvolgende plenaire stemming (`komendeStemming()`): aantal moties en amendementen zonder uitslag
   met een stemmingsdatum vanaf vandaag, als link naar `#moties`; dan 5 agendaregels. Op een themapagina alleen die van het
@@ -153,10 +153,8 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 - Net binnen (`netBinnen()`): de 10 nieuwste items in één chronologische lijst: stukken (`datum`), stemmingen over moties en
   amendementen (`stemtelling.datum`) en wetgeving (`gestartOp`). Alleen ISO-datums op de dag nauwkeurig en niet in de
   toekomst; binnen één dag gaat Wetgeving voor Stemming voor Stuk.
-- Elk item is één regel: documentsoort in inkt (500) (Kamervragen, Antwoord Kamervragen, Kamerbrief, Motie, Amendement,
-  Wetsvoorstel; bij Kamervragen "aan <ministerie>" en als staart de vragensteller), datum, status of ministerie, titel, en
-  een stille staart (indiener zonder voorletters, Voor/Tegen; Kamerstuk). Voorletters in titels weg (`zonderVoorletters`).
-  Zie DESIGN.md, "Overzicht lists".
+- Elk item volgt de regelopbouw (DESIGN.md, Do 6): soort (link naar de lijstpagina; `soortTag()`), datum en context; de
+  titel op een eigen regel; een staart met indiener zonder voorletters, Voor/Tegen of Kamerstuk. Voorletters in titels weg (`zonderVoorletters`).
 
 ## Zoeken
 
