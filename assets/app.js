@@ -197,7 +197,7 @@
     if (tab !== "vergaderingen" && tab !== "debatten") return null;
     const sub = pad.split("/")[1];
     const p = new URLSearchParams(location.hash.split("?")[1] || "");
-    const q = ["type", "commissie", "ministerie", "thema"].filter((k) => p.get(k)).map((k) => `${k}=${encodeURIComponent(p.get(k))}`);
+    const q = ["type", "ministerie", "thema"].filter((k) => p.get(k)).map((k) => `${k}=${encodeURIComponent(p.get(k))}`);
     if (!sub) q.push("terugblik=1");
     return `#agenda${sub ? "/" + sub : ""}${q.length ? "?" + q.join("&") : ""}`;
   }
@@ -1423,7 +1423,6 @@
   const opAantal = (vs, tel) => [...vs].sort((a, b) => tel.get(b) - tel.get(a) || nlSort.compare(a, b));
   const AGENDA_FILTERS = {
     type: { label: "Type", waarden: (i) => arr(i.type), orde: opAantal, tekst: (v) => esc(v) },
-    commissie: { label: "Commissie", waarden: (i) => arr(i.commissie), orde: opAantal, tekst: (v) => esc(v) },
     ministerie: { label: "Ministerie", waarden: (i) => arr(i.ministerie), orde: opAantal, tekst: (v) => esc(v) },
     thema: { label: "Thema", waarden: (i) => arr(i.thema), orde: (vs) => opVolgorde(S.T.lijst.map((t) => t.slug))(vs), tekst: (v) => esc(S.T.naam(v)) },
   };
@@ -1591,7 +1590,7 @@
       const metSam = !!(i.sam && i.samHier);
       const metAgenda = !metSam && !i.sam && !!i.a && heeftAgenda(i.a);
       const ms = !metSam && !i.sam && !i.gepland && i.a ? motiesBijActiviteiten([i.a.Nummer]) : [];
-      const motieregel = ms.length ? `<details class="motiedetails"><summary>${ms.length} ${ms.length === 1 ? "motie" : "moties"} (${ms.filter((z) => z.uitslag === "aangenomen").length} aangenomen)</summary>${motieLijst(ms)}</details>` : "";
+      const motieregel = ms.length ? `<details class="motiedetails"><summary>Toon ${ms.length} ${ms.length === 1 ? "motie" : "moties"} (${ms.filter((z) => z.uitslag === "aangenomen").length} aangenomen)</summary>${motieLijst(ms)}</details>` : "";
       const extra = metSam ? samenvattingBlok(i.sam)
         : i.sam ? `<div class="tl-verwijs small"><a href="#agenda/d-${esc(i.sam.id)}">Samenvatting bij ${esc(i.sam.titel)}</a></div>`
         : (metAgenda ? agendaBlok(i.a, i.id) : "") + motieregel;
@@ -1654,7 +1653,7 @@
 
   /* ---------- Zoeken ---------- */
   // De index (assets/zoek.js) wordt pas gebouwd bij de eerste zoekopdracht.
-  // Alles wat de resultaten bepaalt staat in de URL: #zoeken?q=…&cat=moties&volgorde=relevantie&periode=maand&wie=f:pvv
+  // Alles wat de resultaten bepaalt staat in de URL: #zoeken?q=…&cat=moties&periode=maand&wie=f:pvv
   let _zoek = null;
   const zoekIndex = () => _zoek || (_zoek = window.MRZoek.maak({ ...S.data, T: S.T }, S.data.synoniemen));
   const zoekParams = () => new URLSearchParams(location.hash.split("?")[1] || "");
@@ -1789,7 +1788,6 @@
     }
     const Z = zoekIndex();
     let cat = P.get("cat") || "";
-    const opDatum = P.get("volgorde") !== "relevantie";
     const periode = ZOEK_PERIODES.some(([p]) => p === P.get("periode")) ? P.get("periode") || "" : "";
     const uit = Z.zoek(q, { wie: P.get("wie") || "" });
     if (P.get("wie") && !uit.wie) history.replaceState(null, "", zoekUrl({ wie: "" }));
@@ -1815,31 +1813,27 @@
     const ul = (l) => `<ul class="list zoeklijst">${l.map(item).join("")}</ul>`;
     let blokken = "", rest = lijst;
     const komend = lijst.filter(isKomend).sort((a, b) => zoekWanneer(a.doc).localeCompare(zoekWanneer(b.doc)) || b.score - a.score);
-    if (opDatum) {
-      // Komt eraan: wat vanaf vandaag gepland staat (agenda, vergaderingen, stemmingen), eerstvolgende eerst; agenda zonder datum achteraan
-      const komendSet = new Set(komend);
-      rest = lijst.filter((r) => !komendSet.has(r)).sort((a, b) => (b.doc.datum || "").localeCompare(a.doc.datum || "") || b.score - a.score);
-      if (komend.length) {
-        const toon = S.zoekKomendAlles ? komend : komend.slice(0, 5);
-        blokken += `<section class="zsectie" aria-labelledby="zkomend"><h3 id="zkomend" class="zkop">Komt eraan <span class="n">${nl(komend.length)}</span></h3>
-          <div class="card">${ul(toon)}${komend.length > toon.length ? `<div class="kaartvoet"><button type="button" class="chip" id="zkomendmeer">Toon alle <span class="n">${nl(komend.length)}</span></button></div>` : ""}</div></section>`;
-      }
+    // Komt eraan: wat vanaf vandaag gepland staat (agenda, vergaderingen, stemmingen), eerstvolgende eerst; agenda zonder datum achteraan.
+    // Daarna de rest, nieuwste eerst (geen keuze voor "Beste treffer" meer, Tobias 18 nov 2026).
+    const komendSet = new Set(komend);
+    rest = lijst.filter((r) => !komendSet.has(r)).sort((a, b) => (b.doc.datum || "").localeCompare(a.doc.datum || "") || b.score - a.score);
+    if (komend.length) {
+      const toon = S.zoekKomendAlles ? komend : komend.slice(0, 5);
+      blokken += `<section class="zsectie" aria-labelledby="zkomend"><h3 id="zkomend" class="zkop">Komt eraan <span class="n">${nl(komend.length)}</span></h3>
+        <div class="card">${ul(toon)}${komend.length > toon.length ? `<div class="kaartvoet"><button type="button" class="chip" id="zkomendmeer">Toon alle <span class="n">${nl(komend.length)}</span></button></div>` : ""}</div></section>`;
     }
     if (rest.length) {
       const zicht = rest.slice(0, S.zoekMax);
-      let inhoud;
-      if (opDatum) {
-        // per maand, nieuwste eerst
-        const groepen = [];
-        for (const r of zicht) {
-          const m = /^(\d{4})-(\d{2})/.exec(r.doc.datum || "");
-          const kop = m ? `${MAANDEN[+m[2] - 1]} ${m[1]}` : "Zonder datum";
-          if (!groepen.length || groepen[groepen.length - 1].kop !== kop) groepen.push({ kop, l: [] });
-          groepen[groepen.length - 1].l.push(r);
-        }
-        inhoud = groepen.map((g) => `<h4 class="zmaand">${esc(hoofd(g.kop))}</h4>${ul(g.l)}`).join("");
-      } else inhoud = ul(zicht);
-      const metKop = opDatum && komend.length;
+      // per maand, nieuwste eerst
+      const groepen = [];
+      for (const r of zicht) {
+        const m = /^(\d{4})-(\d{2})/.exec(r.doc.datum || "");
+        const kop = m ? `${MAANDEN[+m[2] - 1]} ${m[1]}` : "Zonder datum";
+        if (!groepen.length || groepen[groepen.length - 1].kop !== kop) groepen.push({ kop, l: [] });
+        groepen[groepen.length - 1].l.push(r);
+      }
+      const inhoud = groepen.map((g) => `<h4 class="zmaand">${esc(hoofd(g.kop))}</h4>${ul(g.l)}`).join("");
+      const metKop = komend.length;
       blokken += `<section class="zsectie" aria-labelledby="zeerder">${metKop ? `<h3 id="zeerder" class="zkop">Eerder <span class="n">${nl(rest.length)}</span></h3>` : `<h3 id="zeerder" class="${blokken ? "zkop" : "sr-only"}">Resultaten <span class="n">${nl(rest.length)}</span></h3>`}
         <div class="card">${inhoud}
         ${rest.length > S.zoekMax ? `<div class="kaartvoet"><button type="button" class="chip" id="zmeer">Toon meer <span class="n">${nl(rest.length - S.zoekMax)} over</span></button></div>` : ""}</div></section>`;
@@ -1870,8 +1864,13 @@
       return `<button type="button" class="chip" data-zwie="${esc(w.k)}" aria-pressed="${aan}" title="Alleen items waarbij ${esc(w.label)} indiener, vragensteller of spreker is">Alleen ${esc(w.label)}${w.fractie ? ` <span class="n">${esc(w.fractie)}</span>` : ""}</button>`;
     }).join("");
     el.innerHTML = `
-      <div class="filters" role="group" aria-label="Soort resultaat">
-        ${ZOEK_CATS.map(([c, l]) => `<button type="button" class="chip" data-zcat="${c}" aria-pressed="${cat === c}" ${!tel[c] && c ? "disabled" : ""}>${esc(l)} <span class="n">${nl(tel[c])}</span></button>`).join("")}
+      <div class="zfilterrij">
+        <div class="filterkaart" role="group" aria-label="Soort resultaat">
+          ${ZOEK_CATS.map(([c, l]) => `<button type="button" class="chip" data-zcat="${c}" aria-pressed="${cat === c}" ${!tel[c] && c ? "disabled" : ""}>${esc(l)} <span class="n">${nl(tel[c])}</span></button>`).join("")}
+        </div>
+        <div class="filterkaart" role="group" aria-label="Periode">
+          ${ZOEK_PERIODES.map(([p, l]) => `<button type="button" class="chip" data-zperiode="${p}" aria-pressed="${periode === p}">${esc(l)}</button>`).join("")}
+        </div>
       </div>
       <div class="zoekkop">
         <div class="zoekkop-l">
@@ -1882,20 +1881,10 @@
             ${spelling.length ? ` Bedoelde je ${spelling.map((x) => `<button type="button" class="linkknop" data-zzet='${esc(JSON.stringify({ q: x.q }))}'>${esc(x.q)}</button>`).join(" of ")}?` : ""}</p>
           ${wieChips ? `<div class="agendamodus" role="group" aria-label="Persoon of fractie">${wieChips}</div>` : ""}
         </div>
-        <div class="zoekkop-r">
-          <div class="agendamodus" role="group" aria-label="Periode">
-            ${ZOEK_PERIODES.map(([p, l]) => `<button type="button" class="chip" data-zperiode="${p}" aria-pressed="${periode === p}">${esc(l)}</button>`).join("")}
-          </div>
-          <div class="agendamodus" role="group" aria-label="Volgorde">
-            <button type="button" class="chip" data-zvolg="" aria-pressed="${opDatum}">Nieuwste eerst</button>
-            <button type="button" class="chip" data-zvolg="relevantie" aria-pressed="${!opDatum}">Beste treffer</button>
-          </div>
-        </div>
       </div>
       ${lijst.length ? blokken : leeg()}`;
     const houdFocus = (sel) => { const b = $(sel); if (b) b.focus({ preventScroll: true }); };
     el.querySelectorAll("[data-zcat]").forEach((b) => b.addEventListener("click", (e) => { e.preventDefault(); zetZoek({ cat: b.dataset.zcat }); houdFocus(`button[data-zcat="${b.dataset.zcat}"]`); }));
-    el.querySelectorAll("[data-zvolg]").forEach((b) => b.addEventListener("click", () => { zetZoek({ volgorde: b.dataset.zvolg }); houdFocus(`[data-zvolg="${b.dataset.zvolg}"]`); }));
     el.querySelectorAll("[data-zperiode]").forEach((b) => b.addEventListener("click", () => { zetZoek({ periode: b.dataset.zperiode }); houdFocus(`[data-zperiode="${b.dataset.zperiode}"]`); }));
     el.querySelectorAll("[data-zwie]").forEach((b) => b.addEventListener("click", () => { const k = b.dataset.zwie; zetZoek({ wie: uit.wie && uit.wie.k === k ? "" : k }); houdFocus(`[data-zwie="${k}"]`); }));
     el.querySelectorAll("[data-zzet]").forEach((b) => b.addEventListener("click", () => { const w = JSON.parse(b.dataset.zzet); if (w.q != null) $("#zoekveld").value = w.q; zetZoek(w); }));

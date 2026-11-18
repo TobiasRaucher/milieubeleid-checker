@@ -311,6 +311,11 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 /* grote schakelaar Moties / Amendementen: staat in voor de paginatitel; zelfde vorm als de hoofdtabs (verhoogd vlak op surface), op 20px */
 .schakelaar { display: inline-flex; gap: 4px; padding: 4px; margin: 0; background: var(--surface); border-radius: var(--r-control); }
 #view > .schakelaar, #agendaknoppen > .schakelaar { margin-top: 32px; }
+/* Agenda: kleinere knoppen dan op de documentpagina's (Tobias, 18 nov 2026); zelfde maat als de schakelaar in "Hoe staan we er voor?" */
+#agendaknoppen .schakelaar a { min-height: 40px; padding: 0 16px; font-size: var(--t-18); }
+#agendaknoppen + .werkbalk .facet > summary { min-height: 40px; padding: 0 8px 0 12px; font-size: var(--t-15); }
+#agendaknoppen + .werkbalk .facet > summary::after { width: 16px; height: 16px; background-size: 16px; }
+#agendaknoppen + .werkbalk input[type=search] { height: 40px; font-size: var(--t-15); }
 .schakelaar a { display: inline-flex; align-items: center; min-height: 64px; padding: 0 28px; border-radius: 4px; font-size: var(--t-30); font-weight: 500; letter-spacing: -0.005em; color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 .schakelaar a:hover:not([aria-current]) { color: var(--ink); background: var(--raised); }
 .schakelaar a[aria-current="page"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); }
@@ -534,7 +539,13 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-item.eerst { background: var(--card); border: 1px solid var(--alarm); border-radius: var(--r-card); padding: 12px; margin-left: -12px; }
 .tl-item.eerst .tl-tijd { color: var(--alarm-tekst); }
 .tl-item.mijlpaal .tl-titel { color: var(--ink); }
-.tl-item.debat .toggle { margin-top: 8px; min-height: var(--h-klein); padding: 0 16px 0 12px; font-size: var(--t-18); }
+.tl-item.debat .toggle { margin-top: 8px; }
+/* moties bij een vergadering: dezelfde knop als "Toon agenda" (Tobias, 18 nov 2026) */
+.tl-item .motiedetails > summary { list-style: none; display: inline-flex; gap: 8px; align-items: center; min-height: 36px; padding: 4px 12px 4px 8px; font-size: var(--t-14); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease); }
+.tl-item .motiedetails > summary::-webkit-details-marker { display: none; }
+.tl-item .motiedetails > summary::before { content: ""; width: 16px; height: 16px; background: var(--chevron) center / 16px no-repeat; transition: transform var(--d-lang) var(--ease); }
+.tl-item .motiedetails[open] > summary::before { transform: rotate(180deg); }
+.tl-item .motiedetails > summary:hover { color: var(--ink); background: var(--surface); border-color: var(--line-sterk); }
 /* een vergadering met samenvatting of agenda klapt ook uit met een klik op de regel */
 .tl-item.debat { cursor: pointer; }
 .tl-item.debat .body-wrap { cursor: auto; }
@@ -551,7 +562,10 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .zkop .n { font-size: var(--t-13); font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; }
 .zmaand { font-size: var(--t-13); font-weight: 500; color: var(--muted); margin: 0; padding: 16px 0 4px; border-bottom: 1px solid var(--line); }
 .zmaand:first-child { padding-top: 4px; }
-.zoekkop-l, .zoekkop-r { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.zfilterrij { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin: 16px 0 12px; }
+.filterkaart { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); }
+.filterkaart .chip { padding: 4px 8px; border-color: transparent; }
+.zoekkop-l { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
 /* samengevoegde moties en amendementen met dezelfde titel */
 .list.zook, ul.zook { list-style: none; margin: 8px 0 0; padding: 0; font-size: var(--t-13); }
 ul.zook li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 2px 0; border: 0; }
@@ -660,7 +674,7 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
 .mi-wetten button:hover:not([aria-pressed="true"]) { color: var(--ink); background: var(--raised); }
 .mi-wetten button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); }
 .mi-wetten button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.mi-kiezers { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+.mi-kiezers { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
 .mi-doel { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--t-14); color: var(--ink); text-wrap: pretty; }
 .mi-kans { margin-top: 16px; padding: 16px; background: var(--surface); border-radius: var(--r-control); display: grid; gap: 4px; }
 .mi-kans p { margin: 0; }

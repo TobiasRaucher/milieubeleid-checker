@@ -110,7 +110,7 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
   (`tijdlijnItems()`/`renderAgenda()`).
 - Grote schakelaar in plaats van de titel: "Vanaf vandaag" (standaard) toont wat komt; "Terugblik" wat is geweest, nieuwste
   eerst. De filters gaan mee.
-- Werkbalk: zoekveld (titel, commissie, type) en filters type, commissie, ministerie en thema (`AGENDA_FILTERS`; meerdere
+- Werkbalk: zoekveld (titel, commissie, type) en filters type, ministerie en thema (`AGENDA_FILTERS`; geen commissie sinds 18 nov 2026; meerdere
   waarden; geen filter op samenvatting), in de URL (bv. `#agenda?thema=adaptatie&type=Commissiedebat&q=water&terugblik=1`).
   Een klik op een themalabel zet dat thema aan of uit.
 - Vergaderingen zonder samenvatting met agendapunten klappen uit met "Toon agenda (n punten)"

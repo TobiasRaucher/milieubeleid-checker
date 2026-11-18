@@ -14,15 +14,16 @@
 
 ## Resultatenpagina (`renderZoekResultaten()`, sinds 17 nov 2026)
 
-Alle keuzes staan in de URL: `#zoeken?q=…&cat=moties&volgorde=relevantie&periode=maand&wie=f:pvv`.
+Alle keuzes staan in de URL: `#zoeken?q=…&cat=moties&periode=maand&wie=f:pvv`.
 
 - Soorten (`ZOEK_CATS`, sinds 17 nov 2026 gelijk aan het menu Documenten): Alles, Agenda, Wetgeving, Moties, Amendementen,
   Kamervragen, Kamerbrieven, Kerndocumenten. `zoekCat()` zet de `cat` uit `zoek.js` om: vergaderingen en toezeggingen
   vallen onder Agenda, moties en amendementen worden gesplitst op soort, stukken in Kamervragen (met antwoorden) en Kamerbrieven.
 
-- Volgorde: standaard "Nieuwste eerst": bovenaan "Komt eraan" (geplande vergaderingen, agenda en geplande stemmingen over
+- Volgorde: altijd nieuwste eerst (de keuze "Nieuwste eerst / Beste treffer" is weg, Tobias 18 nov 2026): bovenaan "Komt eraan" (geplande vergaderingen, agenda en geplande stemmingen over
   moties en amendementen zonder uitslag, eerstvolgende eerst, vijf zichtbaar; agenda zonder datum achteraan), daaronder
-  "Eerder", per maand. "Beste treffer" sorteert op score.
+  "Eerder", per maand.
+- Filterrij: links een kaart met de soorten, rechts een kaart met de periode (Alle jaren, Deze Kamerperiode, Afgelopen maand).
 - Periode: Alle jaren, Deze Kamerperiode (`config.startdatum`), Afgelopen maand; geldt alleen voor wat is geweest.
 - Namen: fracties en Kamerleden of bewindspersonen in de zoekvraag geven een knop "Alleen …" (indiener, vragensteller of
   spreker; GroenLinks-PvdA telt als PRO). Alleen een naam met die knop toont alles van die persoon of fractie.
