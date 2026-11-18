@@ -118,7 +118,7 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 - Pagina's Toezeggingen en Per fractie, de abonneerknop van de agendafeed, de algemene sectorfilter.
 - Op Overzicht: CO2-band, kerncijfers, Aandachtsdossier, Laatste samenvattingen, planetaire grenzen, Recente stemmingen
   en Nieuwste stukken als losse blokken (met `fetch_milieu.py`). Zie `agent_docs/uitstoot-grafiek.md` voor wat de grafiek bewust weglaat.
-- Introteksten boven tabellen en op Agenda; tellingen en introtekst op `#themas`.
+- Introteksten boven tabellen en op Agenda (sinds 18 nov 2026 wel een titel met één ondertitelregel per Documenten-pagina, op verzoek); tellingen en introtekst op `#themas`.
 - Kerndocumenten in de groep "Europese Unie" (`"verborgen": true`) en EU-documenten in het algemeen: komt later.
 
 **Vermijden**

@@ -514,16 +514,16 @@
       <p class="themas-intro">${esc(t.description)}</p>`;
     if (actief && actief.tdef) {
       const basis = actief.def();
-      return tabelPagina(actief.tdef, `${kop}<div class="motiekop">${schak}</div>`,
+      return tabelPagina(actief.tdef, kop,
         `${esc(actief.label)} met het thema ${esc(t.label)}; dezelfde tabel als op <a href="#${basis.tab}?thema=${encodeURIComponent(t.slug)}">${esc(actief.alle)}</a>.`,
-        actief.hint);
+        actief.hint, schak);
     }
     if (actief) {
       const l = themaLijstItems(t.slug, actief.soort);
       S.themaLijst = { slug: t.slug, param: actief.param };
       const q = (hashQuery().q || []).join(",");
       return `${kop}
-        <div class="filters motiekop">${schak}<input type="search" id="tlq" placeholder="${esc(actief.hint)}" value="${esc(q)}" aria-label="Zoeken"></div>
+        <div class="werkbalk">${schak}<input type="search" id="tlq" placeholder="${esc(actief.hint)}" value="${esc(q)}" aria-label="Zoeken"></div>
         <div class="card"><ul class="list" id="tl-lijst">${l.map((x, i) => themaRegel(x, t.slug).replace('<li class="themaregel">', `<li class="themaregel"${i >= GROEP_ZICHTBAAR ? " hidden" : ""}>`)).join("")}
           <li class="empty" id="tl-leeg" hidden>Niets gevonden</li></ul>
         ${l.length > GROEP_ZICHTBAAR ? `<button type="button" class="knop licht toonalle" data-toonalle="tl-lijst" aria-controls="tl-lijst" aria-expanded="false">Toon alle ${nl(l.length)} ${esc(actief.label.toLowerCase())}</button>` : ""}</div>`;
@@ -533,7 +533,7 @@
     const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG && (i._act ? themasVanAct(i._act) : themasVanAgendaItem(i)).includes(t.slug)).slice(0, KOMT_MAX);
     const tabLink = (param, tekst) => (tabs.some((tb) => tb.param === param) ? `<a href="${adres}?type=${param}">${tekst}</a>` : "");
     return `${kop}
-      <div class="filters motiekop">${schak}</div>
+      <div class="werkbalk">${schak}</div>
       <div class="ov-onder thema-ov">
         <section aria-labelledby="th-binnen"><h2 id="th-binnen">Net binnen</h2><div class="card"><ul class="list">
           ${binnen.map((i) => i.html).join("") || `<li class="empty">Nog niets binnen</li>`}
@@ -621,7 +621,8 @@
   // Het zoekveld filtert deze lijst; elk filter is een menu met vinkjes en per waarde het aantal rijen onder de andere
   // filters (waarden op nul blijven staan, stil). Actieve filters staan eronder als chips met "Alles wissen".
   // Filters: { k: { label, waarden(rij), orde(set, tel), tekst(v) } }. tekst geeft html.
-  const werkbalk = (hint, q) => `<div class="werkbalk"><input type="search" id="wq" placeholder="${esc(hint)}" value="${esc(q)}" aria-label="${esc(hint)}"><div class="facetten" id="wfacetten"></div></div>
+  // Eén rij op elke pagina (Tobias, 18 nov 2026): links de schakelaar (links), rechts de filters en helemaal rechts het zoekveld.
+  const werkbalk = (hint, q, links = "") => `<div class="werkbalk">${links}<div class="facetten" id="wfacetten"></div><input type="search" id="wq" placeholder="${esc(hint)}" value="${esc(q)}" aria-label="${esc(hint)}"></div>
       <div class="actieve-filters" id="wactief" hidden></div><p class="sr-only" id="wstatus" role="status"></p>`;
   // statusmelding voor schermlezers na zoeken of filteren (WCAG 4.1.3); de eerste tekening van de pagina meldt niets
   let _meldTimer = null;
@@ -692,14 +693,15 @@
     const knop = c.titel ? ` <button type="button" class="uitklap" aria-expanded="false" aria-label="${esc(def.knopLabel[0])}">${ico("chevron")}</button>` : "";
     return `<td class="${c.tdCls || ""}">${c.cel(z)}${knop}</td>`;
   }
-  // kop: alles boven de werkbalk (paginatitel of schakelaar); voet: een stille regel onder de tabel
-  function tabelPagina(def, kop, voet, zoekhint) {
+  // kop: titel en ondertitel boven de werkbalk; links: een schakelaar links in de werkbalk; voet: een stille regel onder de tabel
+  function tabelPagina(def, kop, voet, zoekhint, links = "") {
     S.tabel = { def, st: tabelStaat(def) };
     return `${kop}
-      ${werkbalk(zoekhint, S.tabel.st.q)}
+      ${werkbalk(zoekhint, S.tabel.st.q, links)}
       <div class="tablewrap"><table class="motietabel" data-tab="${def.tab}"><thead id="mkop">${tabelKoppen(def, S.tabel.st)}</thead><tbody id="mbody"></tbody></table></div>
       ${voet ? `<p class="small muted">${voet}</p>` : ""}`;
   }
+  const paginaKop = (titel, sub) => `<h1>${esc(titel)}</h1><p>${esc(sub)}</p>`;
   const schakelaar = (label, opties, actief) => `<nav class="schakelaar" aria-label="${esc(label)}">
       ${opties.map(([k, l]) => `<a href="#${k}" data-tab="${k}" ${k === actief ? 'aria-current="page"' : ""}>${l}</a>`).join("")}
     </nav>`;
@@ -962,13 +964,13 @@
   function wetgeving() {
     const wetten = location.hash.slice(1).split("?")[0] === "wetgeving/wetten";
     const schak = schakelaar("Wetsvoorstellen of geldende wetten", [["wetgeving", "Wetsvoorstellen"], ["wetgeving/wetten", "Geldende wetten"]], wetten ? "wetgeving/wetten" : "wetgeving");
-    const kop = `<h1 class="sr-only">Wetgeving</h1>${schak}`;
+    const kop = paginaKop("Wetgeving", "Wetsvoorstellen en geldende wetten");
     if (wetten) return tabelPagina(wettenDef(), kop,
       "Geldende wetten die het kader vormen voor het milieubeleid; de titel opent de geldende tekst op wetten.overheid.nl.",
-      "Zoek op naam of BWBR-nummer");
+      "Zoek op naam of BWBR-nummer", schak);
     return tabelPagina(WET_DEF, kop,
       "Wetsvoorstellen sinds 2019 over milieu, klimaat, energie, water, natuur en leefomgeving, rechtstreeks uit de open data van de Tweede Kamer.",
-      "Zoek op titel, Kamerstuknummer of indiener");
+      "Zoek op titel, Kamerstuknummer of indiener", schak);
   }
 
   /* ---------- Moties en amendementen ---------- */
@@ -1029,7 +1031,7 @@
   }
   function moties() {
     const tab = location.hash.slice(1).split(/[/?]/)[0] === "amendementen" ? "amendementen" : "moties";
-    return tabelPagina(motieDef(tab), `<h1>${tab === "moties" ? "Moties" : "Amendementen"}</h1>`,
+    return tabelPagina(motieDef(tab), tab === "moties" ? paginaKop("Moties", "Verzoeken van Kamerleden, met de stemming") : paginaKop("Amendementen", "Wijzigingen in wetsvoorstellen, met de stemming"),
       "Alle gegevens komen rechtstreeks uit de open data van de Tweede Kamer.",
       "Zoek op onderwerp, Kamerlid of Kamerstuknummer");
   }
@@ -1186,7 +1188,7 @@
   function vragenBrieven() {
     const tab = location.hash.slice(1).split(/[/?]/)[0] === "brieven" ? "brieven" : "vragen";
     return tabelPagina(tab === "brieven" ? BRIEF_DEF : VRAAG_DEF,
-      `<h1>${tab === "brieven" ? "Kamerbrieven" : "Kamervragen"}</h1>`,
+      tab === "brieven" ? paginaKop("Kamerbrieven", "Brieven van ministeries aan de Kamer") : paginaKop("Kamervragen", "Schriftelijke vragen met het antwoord"),
       tab === "brieven"
         ? "Kamerbrieven van ministeries over milieu, klimaat, energie, water, natuur en leefomgeving."
         : `Schriftelijke vragen van Kamerleden met het antwoord van het kabinet in dezelfde rij. Het kabinet heeft ${ANTWOORD_TERMIJN} dagen om te antwoorden.`,
@@ -1483,8 +1485,8 @@
       const el = doel && document.getElementById(doel.id);
       if (el) { if (el.classList.contains("debat")) zetOpen(el, true); el.scrollIntoView({ block: "start" }); }
     }, 0);
-    return `<h1 class="sr-only">Agenda</h1><div id="agendaknoppen"></div>
-      ${werkbalk("Zoek in de agenda", S.af.q)}<div id="agendawrap"></div>`;
+    return `<h1 class="sr-only">Agenda</h1>
+      ${werkbalk("Zoek in de agenda", S.af.q, `<div id="agendaknoppen"></div>`)}<div id="agendawrap"></div>`;
   }
   const agendaWerkbalk = () => ({ filters: AGENDA_FILTERS, st: S.af, rijen: [], past: afPast,
     zoek: (q) => { S.af.q = q; afToepassen(); }, zet: (f, vs) => { S.af[f] = vs; afToepassen(); }, wis: afWis });
@@ -1967,10 +1969,11 @@
     const tabs = kdTabs(), gevraagd = location.hash.slice(1).split("?")[0].split("/")[1];
     return (tabs.find((g) => g.id === gevraagd) || tabs[0] || {}).id;
   }
-  // elke groep is een eigen pagina (menu Documenten); de titel is de naam van de groep
+  // elke groep is een eigen pagina (menu Documenten); de titel is de naam van de groep, de ondertitel staat hier
+  const KD_SUB = { kabinet: "Coalitieakkoord, Troonrede, kabinetsnota's", begroting: "Miljoenennota, begrotingen, jaarverslagen", ramingen: "KEV, ramingen en monitors", advies: "Raad van State en Klimaatraad", rechtspraak: "Uitspraken over klimaat en stikstof" };
   function kerndocumentenPagina() {
     const groep = kdGroep(), g = kdTabs().find((x) => x.id === groep) || {};
-    return tabelPagina(kerndocDef(groep), `<h1>${esc(g.label || "Kerndocumenten")}</h1>`, "", "Zoek op titel, afkorting, uitgever of kenmerk");
+    return tabelPagina(kerndocDef(groep), paginaKop(g.label || "Kerndocumenten", KD_SUB[groep] || ""), "", "Zoek op titel, afkorting, uitgever of kenmerk");
   }
 
   function over() {
