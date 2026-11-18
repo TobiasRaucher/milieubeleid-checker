@@ -507,7 +507,7 @@
     const adres = `#themas/${esc(t.slug)}`;
     const schak = `<nav class="schakelaar klein" aria-label="Onderdelen van dit thema">
         <a href="${adres}"${actief ? "" : ' aria-current="page"'}>Overzicht</a>
-        ${tabs.map((tb) => `<a href="${adres}?type=${tb.param}"${tb === actief ? ' aria-current="page"' : ""}>${esc(tb.label)}<span class="schak-n">${nl(tb.n)}</span></a>`).join("")}
+        ${tabs.map((tb) => `<a href="${adres}?type=${tb.param}"${tb === actief ? ' aria-current="page"' : ""}>${esc(tb.label)}</a>`).join("")}
       </nav>`;
     const kop = `<p class="small terug"><a href="#themas">Alle thema's</a></p>
       <h1>${esc(t.label)}</h1>

@@ -318,8 +318,6 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .schakelaar a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* kleine schakelaar (themapagina): zelfde vorm, 15px, met het aantal in stille cijfers */
 .schakelaar.klein { flex-wrap: wrap; }
-.schakelaar.klein .schak-n { font-size: var(--t-13); color: var(--muted); font-variant-numeric: tabular-nums; }
-.schakelaar.klein a[aria-current="page"] .schak-n { color: var(--ink-2); }
 .thema-ov > section > h2:first-child { margin-top: 8px; }
 /* themapagina: de kleine schakelaar, met daaronder de werkbalk of (Vergaderingen, Agenda) het eigen zoekveld */
 
