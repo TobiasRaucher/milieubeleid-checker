@@ -342,7 +342,7 @@
   }
   const komtEraan = (stemming, items) => (stemming + items.slice(0, stemming ? 5 : 6).map((i) => agendaLi(i)).join("")) || `<li class="empty">Niets gepland</li>`;
   const OV_INTRO = `<header class="ov-intro"><h1 class="ov-lead">Volg het Nederlandse milieubeleid in de Tweede Kamer.</h1>
-      <p class="ov-uitleg">Bekijk hieronder wat er net binnen is en wat eraan komt, kies een <a href="#themas">thema</a>; of zoek op een wet, motie, Kamerstuknummer of Kamerlid. De gegevens komen uit open data van de Tweede Kamer, het CBS en het PBL.</p></header>`;
+      <p class="ov-uitleg">Bekijk hieronder wat er recent is binnengekomen en wat eraan komt. Kies bovenin een <a href="#themas">thema</a>, bekijk de <a href="#agenda">agenda</a> voor de toekomst of het verleden, of zoek een document (bijvoorbeeld een <a href="#wetgeving">wet</a>, <a href="#moties">motie</a>, <a href="#amendementen">amendement</a>, <a href="#vragen">vragen/antwoorden</a> of <a href="#brieven">brief</a>). Je kunt ook zoeken op Kamerstuknummer of Kamerlid.</p></header>`;
   function overzicht() {
     const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG).slice(0, 6);
     const binnen = netBinnen();
@@ -1752,52 +1752,6 @@
     return d.cat;
   }
 
-  // "In het kort": tellingen per soort en de belangrijkste stukken voor deze zoekvraag
-  function zoekKort(q, binnen, komend, opDatum, Z) {
-    if (binnen.length < 8) return "";
-    const isSoort = (s) => (r) => r.doc.soort === s;
-    const moties = binnen.filter(isSoort("Motie"));
-    const beantwoord = new Set(S.data.stukken.filter((x) => /^Antwoord/.test(x.soort)).map((x) => x.zaak));
-    const vragen = binnen.filter(isSoort("Kamervragen"));
-    const telMot = (u) => moties.filter((r) => r.doc.uitslag === u).length;
-    const cijfers = [
-      ["wetgeving", binnen.filter((r) => r.doc.cat === "wetgeving").length, "Wetsvoorstellen", ""],
-      ["moties", moties.length, "Moties", `${nl(telMot("aangenomen"))} aangenomen, ${nl(telMot("verworpen"))} verworpen`],
-      ["amendementen", binnen.filter(isSoort("Amendement")).length, "Amendementen", ""],
-      ["kamervragen", vragen.length, "Kamervragen", `${nl(vragen.filter((r) => !beantwoord.has(r.doc.zaak)).length)} zonder antwoord`],
-      ["kamerbrieven", binnen.filter(isSoort("Kamerbrief")).length, "Kamerbrieven", ""],
-      ["agenda", binnen.filter((r) => r.doc.cat === "debatten").length, "Vergaderingen", ""],
-    ].filter((c) => c[1]);
-    const opScore = [...binnen].sort((a, b) => b.score - a.score);
-    const opDatumAf = [...binnen].sort((a, b) => (b.doc.datum || "").localeCompare(a.doc.datum || ""));
-    const regels = [];
-    if (!opDatum && komend[0]) regels.push(["Eerstvolgend", komend[0]]);
-    const wet = opScore.find((r) => r.doc.cat === "wetgeving" && r.inTitel);
-    if (wet) regels.push(["Wetsvoorstel", wet]);
-    const brief = opDatumAf.find((r) => r.doc.soort === "Kamerbrief" && r.inTitel && r.doc.datum <= VANDAAG);
-    if (brief) regels.push(["Nieuwste Kamerbrief", brief]);
-    const kd = opScore.find((r) => r.doc.cat === "kerndocumenten" && r.inTitel);
-    if (kd) regels.push(["Kerndocument", kd]);
-    const stem = opDatumAf.find((r) => r.doc.cat === "moties" && ["aangenomen", "verworpen"].includes(r.doc.uitslag) && r.inTitel);
-    if (stem) regels.push(["Laatste stemming", stem]);
-    if (cijfers.length < 2 && regels.length < 2) return "";
-    // past de zoekvraag bij een thema, dan een link naar de themapagina
-    const qt = window.MRZoek.tokens(q).filter((t) => t.length > 2);
-    const thema = qt.length ? S.T.lijst.find((t) => { const lt = window.MRZoek.tokens(t.label); return qt.every((w) => lt.some((x) => x.startsWith(w.slice(0, Math.max(4, w.length - 2))))); }) : null;
-    const regel = ([lbl, { doc: d, termen }]) => {
-      const link = d.extern ? `href="${esc(d.link)}" target="_blank" rel="noopener"` : `href="${esc(d.link)}"`;
-      const stemDag = stemOp(d);
-      return `<li class="zkort-regel"><span class="zkort-lbl">${esc(lbl)}</span><div>
-        <div class="zmeta"><span class="tag">${esc(d.soort.replace(/ \(niet samengevat\)$/, ""))}</span>${d.cat === "wetgeving" || d.uitslag ? uitslagPill(d.uitslag) : ""}${zoekDatum(d)}${stemDag >= VANDAAG ? `<span>Stemming ${esc(dagKort(stemDag))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
-        <a class="ltitel" ${link}>${Z.markeer(d.titel, termen, esc)}${d.extern ? `<span class="sr-only"> (opent nieuwe pagina)</span>` : ""}</a></div></li>`;
-    };
-    return `<section class="zsectie" aria-labelledby="zkort"><div class="zkop-rij"><h3 id="zkort" class="zkop">In het kort</h3>${thema ? `<a href="#themas/${esc(thema.slug)}">Naar thema ${esc(thema.label)}</a>` : ""}</div>
-      <div class="card zkort">
-        ${cijfers.length >= 2 ? `<div class="stats zkort-stats">${cijfers.map(([cat, n, lbl, sub]) => `<a class="stat" href="${esc(zoekUrl({ cat }))}" data-zcat="${cat}"><div class="num">${nl(n)}</div><div class="lbl">${esc(lbl)}${sub ? `<br><span class="muted">${esc(sub)}</span>` : ""}</div></a>`).join("")}</div>` : ""}
-        ${regels.length ? `<ul class="list zkort-lijst">${regels.map(regel).join("")}</ul>` : ""}
-      </div></section>`;
-  }
-
   function renderZoekResultaten() {
     const el = $("#zoekres");
     if (!el) return;
@@ -1840,11 +1794,8 @@
       </li>`;
     };
     const ul = (l) => `<ul class="list zoeklijst">${l.map(item).join("")}</ul>`;
-    let blokken = "", rest = lijst, komend = [];
-    {
-      komend = lijst.filter(isKomend).sort((a, b) => zoekWanneer(a.doc).localeCompare(zoekWanneer(b.doc)) || b.score - a.score);
-    }
-    if (!cat && !uit.typeFilter) blokken += zoekKort(q, binnen, komend, opDatum, Z);
+    let blokken = "", rest = lijst;
+    const komend = lijst.filter(isKomend).sort((a, b) => zoekWanneer(a.doc).localeCompare(zoekWanneer(b.doc)) || b.score - a.score);
     if (opDatum) {
       // Komt eraan: wat vanaf vandaag gepland staat (agenda, vergaderingen, stemmingen), eerstvolgende eerst; agenda zonder datum achteraan
       const komendSet = new Set(komend);

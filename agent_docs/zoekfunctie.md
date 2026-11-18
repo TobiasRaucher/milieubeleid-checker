@@ -24,9 +24,6 @@ Alle keuzes staan in de URL: `#zoeken?q=…&cat=moties&volgorde=relevantie&perio
   moties en amendementen zonder uitslag, eerstvolgende eerst, vijf zichtbaar; agenda zonder datum achteraan), daaronder
   "Eerder", per maand. "Beste treffer" sorteert op score.
 - Periode: Alle jaren, Deze Kamerperiode (`config.startdatum`), Afgelopen maand; geldt alleen voor wat is geweest.
-- "In het kort" (`zoekKort()`, alleen bij Alles en minstens 8 resultaten): tellingen per soort (moties met
-  aangenomen/verworpen, Kamervragen zonder antwoord) als links, en het meest passende wetsvoorstel, de nieuwste Kamerbrief
-  en de laatste stemming met de zoekterm in de titel; plus een link naar een thema als de zoekterm in een themanaam staat.
 - Namen: fracties en Kamerleden of bewindspersonen in de zoekvraag geven een knop "Alleen …" (indiener, vragensteller of
   spreker; GroenLinks-PvdA telt als PRO). Alleen een naam met die knop toont alles van die persoon of fractie.
 - Moties en amendementen met dezelfde titel (gewijzigd, ter vervanging, opnieuw ingediend) zijn één rij met "Ook: …" (`voegSamen()`).
