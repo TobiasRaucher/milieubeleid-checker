@@ -48,8 +48,11 @@ White paper with near-black ink, deep forest as the one accent, red as the one c
 ### Type
 
 - Families: **DM Sans** (400, 500, 600) for everything; **DM Mono** (400, 500) only for source stamps, the header stamp, chart axes, end labels and reference labels, and Kamerstuk, zaak and document numbers. Dates and times are DM Sans with `tabular-nums`.
-- Sizes (`--t-*`): 12 meta and stamps, 13 captions, 14 small controls and lists, 15 body, 18 card titles, toolbar controls, filter menus, table cells and detail rows, 20 section heads and main tabs, 30 page titles, the large switcher, key figures and the wordmark. Mobile only: 24 for stat figures.
-- Since 17 Nov 2026 (Tobias) the header and page controls are 50% larger than the old 36px/14px. Table text went to 18, not 20: at 20 the Moties table does not fit at 1440 (1692px wide). Indiener and Appreciatie may wrap for that.
+- Type scale (Tobias, 18 Nov 2026; one scale for the whole site, `--t-*`):
+  - Text: **18** controls and reading text (tabs, menus, filter buttons, search fields, detail rows, the text of a motie); **15** the title of a row in every list *and* table (500, ink; also the body size); **14** meta, line 1 of a row and the other table cells (ink-2), chips and small buttons; **13** tails, help text, footer, table headers; **12** stamps, tags, badges, counts and chart labels.
+  - Headlines: **45** the Overzicht headline; **30** page titles, the large switcher and key figures; **24** section headings (`h2`), the day number on Agenda. The wordmark (36) is a logo, not text.
+  - Known exceptions: the Agenda toolbar (15, smaller on request) and the small switcher (15).
+- Since 17 Nov 2026 (Tobias) the header and page controls are 50% larger than the old 36px/14px. Tables went back from 18 to the row sizes (15 title, 14 cells) on 18 Nov 2026 so they read like Net binnen.
 - Weights: 400 body, 500 headings and figures, 600 for rare emphasis (`<b>`, group heads). Never 700.
 - Tracking: 0 below 20px; −0.005em at 18 to 20; −0.015em at 24 (wordmark); −0.02em at 30.
 

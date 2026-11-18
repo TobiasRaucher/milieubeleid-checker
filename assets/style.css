@@ -157,7 +157,7 @@ header.top .stamp { flex: none; margin-left: auto; color: var(--muted); font-siz
 
 /* ===================== Pagina-opbouw en koppen ===================== */
 main, main.wrap { padding-bottom: 64px; } /* main.wrap: .wrap zet de padding anders op 0 en dan raakt de laatste kaart de voet */
-h2 { font-size: var(--t-20); line-height: 1.3; letter-spacing: -0.005em; margin: 40px 0 12px; }
+h2 { font-size: var(--t-24); line-height: 1.25; letter-spacing: -0.005em; margin: 40px 0 12px; }
 h3 { font-size: var(--t-15); line-height: 1.35; margin: 0 0 4px; }
 /* paginatitel: de eerste kop van een pagina */
 #view > h1:first-child, #view > .terug + h1, #zoekres > h2 { font-size: var(--t-30); line-height: 1.15; letter-spacing: -0.02em; margin: 32px 0 8px; }
@@ -346,7 +346,7 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 
 .tablewrap { position: relative; overflow-x: auto; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); }
 table { width: 100%; border-collapse: collapse; font-size: var(--t-14); }
-.motietabel { font-size: var(--t-18); } /* 30% groter dan 14; 20 past niet op 1440 (Tobias, 17 nov 2026) */
+.motietabel { font-size: var(--t-14); color: var(--ink-2); } /* typeschaal (Tobias, 18 nov 2026): cellen 14 zoals regel 1 van Net binnen, de titel 15/500 */
 th, td { text-align: left; padding: 12px; border-top: 1px solid var(--line); vertical-align: top; }
 thead th { border-top: 0; font-size: var(--t-12); font-weight: 500; color: var(--muted); background: var(--surface); position: sticky; top: 0; white-space: nowrap; }
 td { font-variant-numeric: tabular-nums; }
@@ -354,20 +354,21 @@ td.nw { font-size: var(--t-13); color: var(--ink-2); }
 /* Moties en amendementen: rij opent tweedekamer.nl, de knop aan het eind klapt de stemming uit */
 .motietabel th.rechts, .motietabel td.rechts { text-align: right; }
 .motietabel th, .motietabel td { padding: 16px; }
-.motietabel td { line-height: 28px; }
-.motietabel thead th { font-size: var(--t-15); }
+.motietabel td { line-height: 22px; }
+.motietabel td.ond { font-size: var(--t-15); color: var(--ink); }
+.motietabel thead th { font-size: var(--t-13); }
 .motietabel th.ond { width: 38%; }
 .motietabel th.ond, .motietabel td.ond { padding-right: 4px; }
 .motietabel td.ond { min-width: 360px; }
-.motietabel td.ond .ltitel { font-weight: 400; }
+.motietabel td.ond .ltitel { font-weight: 500; }
 /* pijltje voor externe link vast aan het laatste woord, zodat het nooit alleen op een regel staat */
 .motietabel a.ltitel[target="_blank"]::after { content: none; }
 .motietabel .ext { display: inline-block; width: 16px; height: 16px; margin-left: 4px; vertical-align: -2px; background: var(--muted); -webkit-mask: var(--ext) center / 16px no-repeat; mask: var(--ext) center / 16px no-repeat; }
 .motietabel td.uitslag, .motietabel td.datum, .motietabel td.kamerstuk { white-space: nowrap; }
 /* als blok, zodat de tekst op dezelfde basislijn staat als de andere cellen (een inline-flex neemt de basislijn van de lege stip) */
-.motietabel td.uitslag .status { display: flex; font-size: var(--t-18); font-weight: 400; line-height: 28px; }
-.motietabel .status .dot { width: 10px; height: 10px; }
-.motietabel td.kamerstuk.mono { font-size: var(--t-15); }
+.motietabel td.uitslag .status { display: flex; font-size: var(--t-14); font-weight: 400; line-height: 22px; }
+.motietabel .status .dot { width: 8px; height: 8px; }
+.motietabel td.kamerstuk.mono { font-size: var(--t-14); }
 .motietabel td.appr, .motietabel td.indiener, .motietabel td.ministerie { color: var(--ink-2); }
 /* ministeries hebben lange namen: die mogen afbreken (Vragen & Brieven) */
 .motietabel td.ministerie { white-space: normal; min-width: 240px; max-width: 360px; }
@@ -376,7 +377,7 @@ td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel .leeg { color: var(--muted); }
 .motietabel td.thema { width: 200px; }
 .motietabel td.thema .tchips { flex-direction: column; align-items: flex-start; padding-top: 1px; }
-.motietabel td.thema .tchip { font-size: var(--t-15); line-height: 24px; padding: 1px 8px; }
+.motietabel td.thema .tchip { line-height: 20px; }
 /* kolomkop als knop: de tekst begint op dezelfde lijn als de inhoud eronder */
 .motietabel thead th { padding-top: 0; padding-bottom: 0; height: var(--h-control); vertical-align: middle; }
 .sorteer { display: inline-flex; align-items: center; gap: 4px; padding: 0; margin: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; white-space: nowrap; min-height: var(--h-control); transition: color var(--d-kort) var(--ease); }
@@ -525,14 +526,14 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-dag { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 92px; }
 .tl-datum { text-align: center; line-height: 1.15; }
 .tl-datum .wd { font-size: var(--t-12); font-weight: 500; color: var(--ink-2); }
-.tl-datum .dn { font-size: var(--t-20); font-weight: 500; font-variant-numeric: tabular-nums; }
+.tl-datum .dn { font-size: var(--t-24); font-weight: 500; font-variant-numeric: tabular-nums; }
 .tl-datum .mn { font-size: var(--t-12); color: var(--muted); }
 .tl-dag.vandaag { background: var(--alarm-soft); border-radius: var(--r-card); border-bottom-color: transparent; padding: 12px 12px 12px 0; margin: 4px 0; }
 .tl-dag.vandaag .wd, .tl-dag.vandaag .dn { color: var(--alarm-tekst); }
 .tl-lijst { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
 .tl-item { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 12px; }
 .tl-item.leeg { display: block; padding-top: 4px; }
-.tl-tijd { font-size: var(--t-13); color: var(--muted); padding-top: 2px; }
+.tl-tijd { font-size: var(--t-14); color: var(--ink-2); padding-top: 2px; }
 .tl-titel { font-weight: 500; line-height: 1.35; margin-top: 4px; text-wrap: pretty; }
 .tl-item .kaartlabels { margin: 4px 0 0; }
 .tl-dag.verleden .tl-titel a, .tl-item.voorbij .tl-titel a { color: var(--ink-2); }
