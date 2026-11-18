@@ -58,7 +58,7 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
 ## Teksten (`data/tk/teksten.json`, `teksten.py`)
 
 - Bron: de XML van officielebekendmakingen.nl (`kst-<dossier>[-<toevoeging>]-<volgnummer>`; "Officiële tekst").
-  Zolang die er niet is: het pdf- of Word-bestand van de Kamer (`bron: "pdf"`, "Voorlopige tekst"), alleen als de opbouw
+  Zolang die er niet is: het pdf- of Word-bestand van de Kamer (`bron: "pdf"`; op de site zonder bronregel), alleen als de opbouw
   herkenbaar is, anders geen tekst.
 - Incrementeel: officiële teksten blijven staan, voorlopige worden elke run opnieuw geprobeerd.
 

@@ -359,7 +359,7 @@
     }
   }
   const OV_INTRO = `<header class="ov-intro"><h1 class="ov-lead">Volg het Nederlandse milieubeleid in de Tweede Kamer.</h1>
-      <p class="ov-uitleg">Bekijk hieronder wat er recent is binnengekomen en wat eraan komt. Kies bovenin een <a href="#themas">thema</a>, bekijk de <a href="#agenda">agenda</a> voor de toekomst of het verleden, of zoek een document (bijvoorbeeld een <a href="#wetgeving">wet</a>, <a href="#moties">motie</a>, <a href="#amendementen">amendement</a>, <a href="#vragen">vragen/antwoorden</a> of <a href="#brieven">brief</a>). Je kunt ook zoeken op Kamerstuknummer of Kamerlid.</p></header>`;
+      <p class="ov-uitleg">Bekijk hieronder welke documenten er recent zijn binnengekomen of welke vergaderingen eraan komen. Kies bovenin een <a href="#themas">thema</a>, bekijk de <a href="#agenda">agenda</a> voor komende of eerdere activiteiten, of zoek een document (bijvoorbeeld een <a href="#wetgeving">wet</a>, <a href="#moties">motie</a>, <a href="#amendementen">amendement</a>, <a href="#vragen">vragen/antwoorden</a> of <a href="#brieven">brief</a>). Je kunt ook zoeken op Kamerstuknummer of Kamerlid.</p></header>`;
   function overzicht() {
     const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG).slice(0, KOMT_MAX);
     const binnen = netBinnen();
@@ -782,13 +782,12 @@
     const bl = tl > 0 ? t.blokken.slice(tl) : t.blokken, rest = bl.length > TEKST_ZICHTBAAR + 2 ? bl.slice(TEKST_ZICHTBAAR) : [];
     const zicht = rest.length ? bl.slice(0, TEKST_ZICHTBAAR) : bl;
     const inklap = (label, xs) => `<details class="meer"><summary>${label}</summary><div class="mt-tekst">${xs.map(blok).join("")}</div></details>`;
-    const bron = t.bron === "ob"
-      ? `Officiële tekst · ${extLink(`https://zoek.officielebekendmakingen.nl/kst-${t.kamerstuk}.html`, `Kamerstuk ${t.kamerstuk.replace(/-(\d+)$/, ", nr. $1")}`)}`
-      : `Voorlopige tekst uit het ${esc((z.bestand || "pdf").toLowerCase())}-bestand; de officiële tekst verschijnt na enkele dagen op officielebekendmakingen.nl`;
+    // voorlopige tekst (uit docx of pdf): geen bronregel (Tobias, 18 nov 2026)
+    const bron = t.bron === "ob" ? `Officiële tekst · ${extLink(`https://zoek.officielebekendmakingen.nl/kst-${t.kamerstuk}.html`, `Kamerstuk ${t.kamerstuk.replace(/-(\d+)$/, ", nr. $1")}`)}` : "";
     return `<div class="mt-tekst">${zicht.map(blok).join("")}</div>
       ${rest.length ? inklap(`Toon de rest (${nl(rest.length)} ${rest.length === 1 ? "alinea" : "alinea's"})`, rest) : ""}
       ${wijziging.length ? inklap("Toon de wijziging zelf", wijziging) : ""}
-      <p class="mt-bron">${bron}</p>`;
+      ${bron ? `<p class="mt-bron">${bron}</p>` : ""}`;
   }
   function vulTeksten(el) {
     const plekken = [...el.querySelectorAll("[data-tekst]")];
@@ -943,7 +942,7 @@
       </div>`;
     },
   };
-  // Geldende wetten: de kerndocumenten uit groepen met pagina "wetgeving" (nu Wettelijk kader: Klimaatwet, Omgevingswet)
+  // Geldende wetten: de kerndocumenten uit groepen met pagina "wetgeving" (Wettelijk kader in data/kerndocumenten.json)
   function wettenDef() {
     const K = kdData(), groepen = new Set(K.groepen.filter((g) => g.pagina === "wetgeving").map((g) => g.id));
     return {
