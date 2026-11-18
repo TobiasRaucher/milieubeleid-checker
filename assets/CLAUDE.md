@@ -148,7 +148,7 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
   Agenda en de documentpagina's; tekst van Tobias, niet herschrijven zonder te vragen), dan "Hoe staan we er voor?" als kop met kaart
   (`milieu.js`, zie `agent_docs/uitstoot-grafiek.md`), dan Net binnen (breed, links) en Komt eraan (smal, rechts) met dezelfde onderrand.
 - Komt eraan: bovenaan de eerstvolgende plenaire stemming (`komendeStemming()`): aantal moties en amendementen zonder uitslag
-  met een stemmingsdatum vanaf vandaag, als link naar `#moties`; dan 5 agendaregels. Op een themapagina alleen die van het
+  met een stemmingsdatum vanaf vandaag, als link naar `#moties`; dan agendaregels tot 15, na het tekenen ingekort tot de kaart niet langer is dan Net binnen (`passKomtEraan()`). Op een themapagina alleen die van het
   thema; geen stemming gepland, dan geen regel.
 - Net binnen (`netBinnen()`): de 10 nieuwste items in één chronologische lijst: stukken (`datum`), stemmingen over moties en
   amendementen (`stemtelling.datum`) en wetgeving (`gestartOp`). Alleen ISO-datums op de dag nauwkeurig en niet in de

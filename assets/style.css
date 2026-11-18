@@ -79,7 +79,7 @@
 /* ===================== einde ontwerpknoppen ===================== */
 
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--page); color: var(--ink); font-size: var(--t-15); line-height: 1.55; font-optical-sizing: auto; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; background: var(--page); color: var(--ink); font-size: var(--t-15); line-height: 1.55; font-optical-sizing: auto; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
 h1, h2, h3, h4, h5 { font-weight: 500; text-wrap: balance; }
 b, strong { font-weight: 600; }
 .wrap { max-width: var(--breedte); margin: 0 auto; padding: 0 var(--marge); }
@@ -188,9 +188,9 @@ h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px;
 .kaartvoet a + a::before { content: "·"; color: var(--muted); margin: 0 8px; display: inline-block; text-decoration: none; }
 .note { background: var(--surface); border-radius: var(--r-card); padding: 12px 16px; font-size: var(--t-14); color: var(--ink); margin: 16px 0; text-wrap: pretty; }
 .empty { color: var(--muted); padding: 20px; text-align: center; text-wrap: pretty; }
-footer { color: var(--muted); font-size: var(--t-13); line-height: 1.6; padding: 32px 0; border-top: 1px solid var(--line); }
+main.wrap { width: 100%; } /* body is een kolom: zonder breedte krimpt main door margin: auto */
+footer { margin-top: auto; color: var(--muted); font-size: var(--t-13); line-height: 1.6; padding: 32px 0; border-top: 1px solid var(--line); }
 footer a { color: var(--ink-2); }
-footer .voet-links { margin: 12px 0 0; }
 
 /* ===================== Kerncijfers: één strook, cellen met haarlijnen ===================== */
 .stats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); overflow: hidden; }
@@ -660,24 +660,19 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
 .mi-wetten button:hover:not([aria-pressed="true"]) { color: var(--ink); background: var(--raised); }
 .mi-wetten button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--line); }
 .mi-wetten button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mi-kiezers { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+.mi-doel { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--t-14); color: var(--ink); text-wrap: pretty; }
+.mi-kans { margin-top: 16px; padding: 16px; background: var(--surface); border-radius: var(--r-control); display: grid; gap: 4px; }
+.mi-kans p { margin: 0; }
+.mi-kans-kop { font-size: var(--t-13); color: var(--ink-2); }
+.mi-kans-regel { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+.mi-kans-waarde { font-size: var(--t-30); font-weight: 500; letter-spacing: -0.02em; color: var(--ink); font-variant-numeric: tabular-nums; line-height: 36px; }
+.mi-kans-oordeel { display: inline-flex; align-items: center; gap: 8px; font-size: var(--t-14); color: var(--ink); }
+.mi-kans .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--neutraal-stip); flex: none; }
+.mi-kans.laag .dot { background: var(--alarm); }
+.mi-kans.midden .dot { background: var(--warning); }
+.mi-kans.hoog .dot { background: var(--good); }
 /* een tegel per doeljaar; de gekozen tegel is de huidige keuze (forest-rand, accent-soft) */
-.mi-jaren { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
-.mi-jaren.twee { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.mi-jaar { display: grid; align-content: start; gap: 8px; padding: 16px; text-align: left; font: inherit; color: var(--ink); background: var(--page); border: 1px solid var(--line); border-radius: var(--r-card); cursor: pointer; transition: border-color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease); }
-.mi-jaar:hover:not([aria-pressed="true"]) { border-color: var(--line-sterk); }
-.mi-jaar[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.mi-jaar:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.mi-jr-jaar { font-size: var(--t-24); font-weight: 500; letter-spacing: -0.015em; line-height: 1.2; font-variant-numeric: tabular-nums; }
-.mi-jr-regel { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; font-size: var(--t-15); line-height: 22px; }
-.mi-jr-kop { font-size: var(--t-13); color: var(--ink-2); padding-top: 1px; }
-.mi-jr-inhoud { display: grid; gap: 2px; text-wrap: pretty; }
-.mi-jr-stil { font-size: var(--t-13); line-height: 18px; color: var(--ink-2); }
-.mi-jr-kans { display: inline-flex; align-items: center; gap: 8px; }
-.mi-jr-kans .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--neutraal-stip); flex: none; }
-.mi-jr-kans.laag .dot { background: var(--alarm); }
-.mi-jr-kans.midden .dot { background: var(--warning); }
-.mi-jr-kans.hoog .dot { background: var(--good); }
-.mi-jaren-peil { margin: 8px 0 24px; max-width: none; }
 .mi-uitstoot-raster { display: grid; gap: 20px 40px; }
 @media (min-width: 1000px) { .mi-uitstoot-raster { grid-template-columns: minmax(200px, 1fr) minmax(0, 3.4fr); align-items: start; } }
 .mi-groep-knoppen { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }

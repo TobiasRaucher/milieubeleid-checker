@@ -2,7 +2,7 @@
    Zes weergaven, gegroepeerd naar de wet waarvan het doel getoond wordt:
    - Klimaatwet: totaal broeikasgassen, CO2, CH4, N2O uit CBS-tabel 85669NED (IPCC-richtlijnen, miljard kg CO2-equivalent).
      Doelen (2030 -55%, 2040 EU -90%, 2050 klimaatneutraal) gelden voor alle broeikasgassen samen: stippen alleen bij het totaal.
-   Boven de grafiek een tegel per doeljaar (Doel, Raming, Kans); de gekozen tegel bepaalt tot welk jaar de x-as loopt.
+   Bovenaan de keuze van wet en doeljaar; het jaar bepaalt tot waar de x-as loopt. Links onder: doel en kans voor dat jaar.
    - Stikstofwet: NH3 en NOx uit CBS-tabel 85668NED (Nederlands grondgebied, mln kg = kiloton).
      Het doel is relatief aan de raming voor 2030 (PBL, ERL 2025), niet aan 1990.
    De browser haalt beide tabellen rechtstreeks op (OData, CORS toegestaan). Geen grafiekbibliotheek: gewone SVG. */
@@ -31,19 +31,17 @@
   // PBL, Emissieramingen luchtverontreinigende stoffen 2025 (vastgesteld en voorgenomen beleid), kiloton in 2030 (WEERGAVEN[].raming).
   // RIVM, Gevolgen uitspraak Greenpeace voor doelbereik (KN-2025-0026): voor het Wsn-doel 2030 is 36% minder dan die raming nodig.
   const WSN = { reductie: 0.36 };
-  // Doeljaren per wet, elk een tegel met dezelfde drie regels: Doel, Raming, Kans. Een klik zet de x-as tot dat jaar.
-  // Kans: alleen een percentage krijgt de stoplichtstip; een oordeel zonder percentage staat als citaat met "volgens PBL".
+  // Doeljaren per wet: een knop per jaar zet de x-as tot dat jaar; links onder de grafiek het doel en de kans voor dat jaar.
+  // Kans: alleen een percentage krijgt de stoplichtstip; een oordeel zonder percentage staat met "volgens PBL". Niets bekend: geen kansblok.
   const JAREN = {
     klimaat: [
-      { jaar: 2030, doel: "−55% t.o.v. 1990", bron: "Klimaatwet", reductie: 0.55, kans: { p: 0.05, tekst: "<5%", oordeel: "Heel erg onwaarschijnlijk" } },
-      { jaar: 2040, doel: "−90% t.o.v. 1990", bron: "EU-doel; geldt voor de EU als geheel", reductie: 0.9, eu: true },
-      { jaar: 2050, doel: "Klimaatneutraal", bron: "Klimaatwet", reductie: 1, oordeel: "niet op koers" },
+      { jaar: 2030, doel: "Klimaatwet: −55% in 2030 t.o.v. 1990", reductie: 0.55, kans: { p: 0.05, tekst: "<5%", oordeel: "Heel erg onwaarschijnlijk" } },
+      { jaar: 2040, doel: "EU-doel: −90% in 2040 t.o.v. 1990, voor de EU als geheel", reductie: 0.9, eu: true },
+      { jaar: 2050, doel: "Klimaatwet: klimaatneutraal in 2050", reductie: 1, oordeel: "niet op koers" },
     ],
     stikstof: [
-      { jaar: 2030, doel: "50% van de stikstofgevoelige natuur onder de kritische depositiewaarde", bron: "Wet stikstofreductie en natuurverbetering", oordeel: "ver buiten bereik" },
-      { jaar: 2035, doel: "74% onder de kritische depositiewaarde", bron: "Wet stikstofreductie en natuurverbetering",
-        voorstel: "Wetsvoorstel van 3 nov 2026: ammoniak landbouw −42 tot −46%, NOₓ mobiliteit −50% t.o.v. 2019",
-        raming: "Nog niet; het PBL raamt 2035 in de ERL van begin 2027" },
+      { jaar: 2030, doel: "Stikstofwet: in 2030 de helft van de stikstofgevoelige natuur onder de kritische depositiewaarde", oordeel: "ver buiten bereik" },
+      { jaar: 2035, doel: "Stikstofwet: in 2035 74% van de stikstofgevoelige natuur onder de kritische depositiewaarde" },
     ],
   };
   // Kleur van de kans (stoplicht): rood onder 50%, oker 50 tot 75%, bosgroen boven 75%.
@@ -52,9 +50,7 @@
     "85669NED": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85669NED/table",
     "85668NED": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85668NED/table",
     erl: "https://www.pbl.nl/publicaties/emissieramingen-luchtverontreinigende-stoffen-2025",
-    erlNieuws: "https://www.pbl.nl/actueel/nieuws/pbl-raming-2030-eu-emissiedoelen-luchtverontreiniging-op-schema-nationale-doelen-stikstofdepositie-op-natuur-ver",
     rivm: "https://www.rivm.nl/publicaties/gevolgen-uitspraak-greenpeace-voor-doelbereik",
-    wetsvoorstel: "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/03/kabinet-legt-stikstofaanpak-vast-en-zet-steun-voor-boeren-klaar",
   };
   const WEERGAVEN = [
     { id: "totaal", wet: "klimaat", code: "T001372", kort: "Totaal", naam: "Totaal broeikasgassen" },
@@ -287,25 +283,17 @@
     houder.replaceChildren(doos);
   }
 
-  /* ---------- een tegel per doeljaar: Doel, Raming, Kans ---------- */
-  function tegel(j, v, r, gekozen, kies) {
-    const regel = (kop, ...inhoud) => el("span", { class: "mi-jr-regel" }, el("span", { class: "mi-jr-kop", text: kop }), el("span", { class: "mi-jr-inhoud" }, ...inhoud));
-    const stil = (t) => el("span", { class: "mi-jr-stil", text: t });
-    let raming;
-    if (v.wet === "klimaat") {
-      const kev = KEV_RAMING[v.code], p = kev && kev[j.jaar];
-      raming = p ? `${bandTekst(r[0].waarde, { laag: p[1], hoog: p[2] })}${v.id === "totaal" ? "" : ` ${v.kort}`}` : kev ? "Geen raming" : `Geen aparte raming voor ${v.kort}`;
-    } else {
-      raming = j.raming || `${v.kort} ${NL(v.raming, 0)} kiloton; nodig ${NL(v.raming * (1 - WSN.reductie), 0)} (−${Math.round(WSN.reductie * 100)}%, RIVM)`;
-    }
-    const kans = j.kans
-      ? el("span", { class: `mi-jr-kans ${kansKlasse(j.kans.p)}` }, el("span", { class: "dot", "aria-hidden": "true" }), el("b", { text: j.kans.tekst }), ` ${j.kans.oordeel}`)
-      : j.oordeel ? `“${j.oordeel[0].toUpperCase()}${j.oordeel.slice(1)}”, volgens PBL` : stil("Geen kansschatting");
-    return el("button", { type: "button", class: "mi-jaar", "aria-pressed": String(gekozen), onclick: kies, "aria-label": `${j.jaar}: toon de grafiek tot ${j.jaar}` },
-      el("span", { class: "mi-jr-jaar", text: String(j.jaar) }),
-      regel("Doel", j.doel, stil(j.bron), v.wet === "klimaat" && v.id !== "totaal" && stil("geldt voor alle broeikasgassen samen"), j.voorstel && stil(j.voorstel)),
-      regel("Raming", raming),
-      regel("Kans", kans));
+  /* ---------- links onder: doel en kans voor het gekozen jaar ---------- */
+  function doelKans(j, v) {
+    let doel = `${j.doel}${v.wet === "klimaat" && v.id !== "totaal" ? ", voor alle broeikasgassen samen" : ""}.`;
+    if (v.wet === "stikstof" && j.jaar === 2030) doel += ` Volgens het RIVM is daarvoor ${NL(v.raming * (1 - WSN.reductie), 0)} in plaats van de geraamde ${NL(v.raming, 0)} kiloton ${v.kort} nodig.`;
+    const kans = (j.kans || j.oordeel) && el("div", { class: `mi-kans ${j.kans ? kansKlasse(j.kans.p) : ""}` },
+      el("p", { class: "mi-kans-kop", text: `Kans dat het doel van ${j.jaar} wordt gehaald` }),
+      j.kans
+        ? el("p", { class: "mi-kans-regel" }, el("b", { class: "mi-kans-waarde", text: j.kans.tekst }),
+          el("span", { class: "mi-kans-oordeel" }, el("span", { class: "dot", "aria-hidden": "true" }), `${j.kans.oordeel}, volgens PBL`))
+        : el("p", { class: "mi-kans-oordeel", text: `“${j.oordeel[0].toUpperCase()}${j.oordeel.slice(1)}”, volgens PBL` }));
+    return [el("p", { class: "mi-doel", text: doel }), kans];
   }
 
   /* ---------- het blok ---------- */
@@ -314,14 +302,14 @@
   function vulUitstoot(doos) {
     haal().then((reeks) => {
       const wetten = el("div", { class: "schakelaar mi-wetten", role: "group", "aria-label": "Wet" });
-      const jaren = el("div", { class: "mi-jaren", role: "group", "aria-label": "Doeljaar" });
-      const peil = el("p", { class: "peil mi-jaren-peil" });
+      const jaren = el("div", { class: "schakelaar mi-wetten", role: "group", "aria-label": "Doeljaar" });
       const knoppen = el("div", { class: "mi-groep-knoppen", role: "group", "aria-label": "Stof" });
       const stat = el("div", { class: "mi-stat" });
+      const doelTekst = el("div", { class: "mi-doelen" });
       const plek = el("div", { class: "mi-plek" });
       const voet = el("div", { class: "mi-onder" });
-      vervang(doos, wetten, jaren, peil, el("div", { class: "mi-uitstoot-raster" },
-        el("div", { class: "mi-links" }, knoppen, stat),
+      vervang(doos, el("div", { class: "mi-kiezers" }, wetten, jaren), el("div", { class: "mi-uitstoot-raster" },
+        el("div", { class: "mi-links" }, knoppen, stat, doelTekst),
         el("div", { class: "mi-rechts" }, plek, voet)));
 
       function tekenAlles() {
@@ -329,11 +317,8 @@
         const t = TABELLEN[v.wet], r = reeks[v.code], tot = _jaar[v.wet];
         vervang(wetten, WETTEN.map((w) => el("button", { type: "button", "aria-pressed": String(w.id === v.wet), text: w.naam,
           onclick: () => { if (w.id !== v.wet) { _weergave = WEERGAVEN.find((x) => x.wet === w.id).id; tekenAlles(); } } })));
-        vervang(jaren, JAREN[v.wet].map((j) => tegel(j, v, r, j.jaar === tot, () => { _jaar[v.wet] = j.jaar; tekenAlles(); })));
-        jaren.classList.toggle("twee", JAREN[v.wet].length === 2);
-        vervang(peil, ...(v.wet === "klimaat"
-          ? ["Doelen: Klimaatwet en Europese Klimaatwet · ramingen en kans: PBL, ", link(KEV.url, KEV.editie), ` · basispad · ${KEV.datum}`]
-          : ["Doelen: ", link(BRON.wetsvoorstel, "Wsn en wetsvoorstel"), " · raming: PBL, ", link(BRON.erl, "ERL 2025"), " · oordeel: ", link(BRON.erlNieuws, "PBL"), " · nodig: ", link(BRON.rivm, "RIVM 2025")]));
+        vervang(jaren, JAREN[v.wet].map((j) => el("button", { type: "button", "aria-pressed": String(j.jaar === tot), text: String(j.jaar),
+          "aria-label": `Toon de grafiek tot ${j.jaar}`, onclick: () => { _jaar[v.wet] = j.jaar; tekenAlles(); } })));
         vervang(knoppen, WEERGAVEN.filter((x) => x.wet === v.wet).map((x) => el("button", { type: "button", class: "chip", "aria-pressed": String(x.id === v.id), title: x.naam,
           onclick: () => { _weergave = x.id; tekenAlles(); } }, x.kort)));
         const k = kader(v, r, tot);
@@ -343,9 +328,10 @@
           el("div", { class: "small mi-stat-sub" },
             `${v.naam} in ${k.laatst.jaar}${k.laatst.voorlopig ? " (voorlopig)" : ""}`,
             v.wet === "klimaat" && el("span", { class: "nw", text: ` · ${teken(pct(k.laatst.waarde, k.basis.waarde))} t.o.v. ${k.basis.jaar}` })));
+        vervang(doelTekst, ...doelKans(JAREN[v.wet].find((j) => j.jaar === tot), v));
         grafiek(plek, v, r, t.eenheid, t.asTitel, tot);
         vervang(voet, v.wet === "klimaat"
-          ? el("p", { class: "small muted mi-bron" }, "Bron: ", link(BRON[t.tabel], `CBS StatLine, tabel ${t.tabel}`), KEV_RAMING[v.code] && "; raming: ", KEV_RAMING[v.code] && link(KEV.url, `PBL, ${KEV.editie}`))
+          ? el("p", { class: "small muted mi-bron" }, "Bron: ", link(BRON[t.tabel], `CBS StatLine, tabel ${t.tabel}`), KEV_RAMING[v.code] && "; raming en kans: ", KEV_RAMING[v.code] && link(KEV.url, `PBL, ${KEV.editie}`))
           : el("p", { class: "small muted mi-bron" }, "Bron: ", link(BRON[t.tabel], `CBS StatLine, tabel ${t.tabel}`), "; raming: ", link(BRON.erl, "PBL, ERL 2025"), "; benodigde reductie: ", link(BRON.rivm, "RIVM, 2025")));
       }
       tekenAlles(); doos._herteken = tekenAlles;

@@ -241,6 +241,7 @@
     if (S.themaLijst) bindThemaLijst();
     if (tab === "zoeken") renderZoekResultaten();
     if (tab === "overzicht" && window.MRMilieu) MRMilieu.vul();
+    passKomtEraan(); document.fonts.ready.then(passKomtEraan); // na het laden van DM Sans veranderen de regelhoogtes
     const sub = tab === "agenda" || tab === "themas" || tab === "kerndocumenten" || tab === "wetgeving" ? null : pad.split("/")[1];
     if (sub) { const t = document.getElementById(sub); if (t) { if (t.tagName === "DETAILS") t.open = true; if (t.classList.contains("debat")) t.classList.add("open"); t.scrollIntoView({ behavior: "smooth", block: "start" }); } }
   }
@@ -346,11 +347,21 @@
     const titel = [deel(t.m, "motie", "moties"), deel(t.a, "amendement", "amendementen")].filter(Boolean).join(" en ");
     return `<li><div class="regelmeta">${soortTag("Stemmingen")}<span class="datum">${esc(dagKort(dag))}</span><span>Plenaire vergadering</span></div><a class="ltitel" href="#moties">${esc(titel)}</a></li>`;
   }
-  const komtEraan = (stemming, items) => (stemming + items.slice(0, stemming ? 5 : 6).map((i) => agendaLi(i)).join("")) || `<li class="empty">Niets gepland</li>`;
+  // Ruim gevuld (KOMT_MAX); na het tekenen haalt passKomtEraan() regels weg tot de kaart niet langer is dan Net binnen.
+  const KOMT_MAX = 15;
+  const komtEraan = (stemming, items) => (stemming + items.slice(0, stemming ? KOMT_MAX - 1 : KOMT_MAX).map((i) => agendaLi(i)).join("")) || `<li class="empty">Niets gepland</li>`;
+  function passKomtEraan() {
+    for (const rij of document.querySelectorAll(".ov-onder")) {
+      const [b, k] = rij.querySelectorAll(":scope > section > .card > .list");
+      if (!b || !k || !b.lastElementChild) continue;
+      const onder = b.lastElementChild.getBoundingClientRect().bottom;
+      while (k.children.length > 1 && k.lastElementChild.getBoundingClientRect().bottom > onder + 8) k.lastElementChild.remove();
+    }
+  }
   const OV_INTRO = `<header class="ov-intro"><h1 class="ov-lead">Volg het Nederlandse milieubeleid in de Tweede Kamer.</h1>
       <p class="ov-uitleg">Bekijk hieronder wat er recent is binnengekomen en wat eraan komt. Kies bovenin een <a href="#themas">thema</a>, bekijk de <a href="#agenda">agenda</a> voor de toekomst of het verleden, of zoek een document (bijvoorbeeld een <a href="#wetgeving">wet</a>, <a href="#moties">motie</a>, <a href="#amendementen">amendement</a>, <a href="#vragen">vragen/antwoorden</a> of <a href="#brieven">brief</a>). Je kunt ook zoeken op Kamerstuknummer of Kamerlid.</p></header>`;
   function overzicht() {
-    const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG).slice(0, 6);
+    const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG).slice(0, KOMT_MAX);
     const binnen = netBinnen();
     return `
       ${OV_INTRO}
@@ -519,7 +530,7 @@
     }
     // Overzicht: Net binnen en Komt eraan, zoals op de voorpagina, alleen voor dit thema
     const binnen = netBinnen(t.slug);
-    const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG && (i._act ? themasVanAct(i._act) : themasVanAgendaItem(i)).includes(t.slug)).slice(0, 6);
+    const komend = agendaItems().filter((i) => sortKey(i.datum) >= VANDAAG && (i._act ? themasVanAct(i._act) : themasVanAgendaItem(i)).includes(t.slug)).slice(0, KOMT_MAX);
     const tabLink = (param, tekst) => (tabs.some((tb) => tb.param === param) ? `<a href="${adres}?type=${param}">${tekst}</a>` : "");
     return `${kop}
       <div class="filters motiekop">${schak}</div>
