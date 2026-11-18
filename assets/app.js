@@ -288,6 +288,10 @@
   const SOORT_PAGINA = { Kamerbrief: "#brieven", Kamervragen: "#vragen", "Antwoord Kamervragen": "#vragen", Motie: "#moties", Amendement: "#amendementen", Wetsvoorstel: "#wetgeving", Stemmingen: "#moties" };
   const soortTag = (soort, href = SOORT_PAGINA[soort]) => (href ? `<a class="tag" href="${esc(href)}">${esc(soort)}</a>` : `<span class="tag">${esc(soort)}</span>`);
   const agendaTypeTag = (type) => soortTag(type, `#agenda?type=${encodeURIComponent(type)}`);
+  // Zoekresultaat: vergaderingen naar de Agenda op dat type (geweest: Terugblik), documenten naar hun lijstpagina
+  const zoekSoortTag = (d) => (["agenda", "debatten"].includes(d.cat)
+    ? soortTag(d.soort, `#agenda?type=${encodeURIComponent(d.soort.replace(/ \(niet samengevat\)$/, ""))}${d.cat === "debatten" ? "&terugblik=1" : ""}`)
+    : soortTag(d.soort));
   // Drie regels: soort, datum en context; de titel; eventueel een staart (indieners, stemuitslag, Kamerstuk).
   function feedLi(soort, datum, meta, titel, href, staart, extern) {
     const doel = extern ? ` target="_blank" rel="noopener"` : "";
@@ -1790,7 +1794,7 @@
       const link = d.extern ? `href="${esc(d.link)}" target="_blank" rel="noopener"` : `href="${esc(d.link)}"`;
       const stem = stemOp(d);
       return `<li>
-        <div class="zmeta">${soortTag(d.soort)}${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${zoekDatum(d)}${stem >= VANDAAG ? `<span>Stemming ${esc(dagKort(stem))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${ook && ook.length && d.kamerstuk ? `<span>Kamerstuk ${esc(d.kamerstuk)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
+        <div class="zmeta">${zoekSoortTag(d)}${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${zoekDatum(d)}${stem >= VANDAAG ? `<span>Stemming ${esc(dagKort(stem))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${ook && ook.length && d.kamerstuk ? `<span>Kamerstuk ${esc(d.kamerstuk)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
         <a class="ztitel" ${link}>${Z.markeer(d.titel, termen, esc)}${d.extern ? `<span class="sr-only"> (opent nieuwe pagina)</span>` : ""}</a>
         <div class="zfrag">${Z.fragment(d, termen, esc)}</div>
         ${ook && ook.length ? `<ul class="zook">${ook.map(({ doc: o }) => `<li><span class="muted">Ook:</span> <a href="${esc(o.link)}" target="_blank" rel="noopener">${esc(o.soort)}${o.indiener ? ` ${esc(o.indiener)}` : ""}${o.kamerstuk ? `, Kamerstuk ${esc(o.kamerstuk)}` : ""}<span class="sr-only"> (opent nieuwe pagina)</span></a>${o.uitslag ? uitslagPill(o.uitslag) : ""}${o.datum ? `<span class="datum">${fmtKort(o.datum)}</span>` : ""}</li>`).join("")}</ul>` : ""}
