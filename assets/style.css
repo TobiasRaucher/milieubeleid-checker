@@ -24,9 +24,9 @@
 
   /* Neutrale reeks "Rapport" (Tobias, 17 nov 2026): wit papier, bijna zwarte inkt, koel lichtgrijs voor panelen */
   --page: #ffffff;               /* pagina: wit */
-  --surface: #f1f3f1;            /* panelen, tegels, tabelkop */
-  --raised: #e4e8e5;             /* actieve rij, ingedrukt, hover op oppervlak, zoekmarkering */
-  --card: #ffffff;               /* kaarten, grafiek, boxen: wit met een haarlijn */
+  --surface: #eaedea;            /* panelen, tegels, tabelkop */
+  --raised: #dfe3e0;             /* actieve rij, ingedrukt, hover op oppervlak, zoekmarkering */
+  --card: #f5f6f4;               /* kaarten, kop, grafiek, boxen: licht getint met een haarlijn op de witte pagina */
   --ink: #0e1411;                /* hoofdtekst: bijna zwart (18,6:1 op wit) */
   --ink-2: #46514b;              /* secundaire tekst (8,3:1) */
   --muted: #5f6a64;              /* meta en bijschriften (5,6:1 op wit, 5,0:1 op oppervlak) */
@@ -109,8 +109,7 @@ a[target="_blank"].ltitel::after, .tl-titel a[target="_blank"]::after, .ztitel[t
 /* ===================== Kop ===================== */
 .skiplink { position: absolute; left: 12px; top: -60px; z-index: 50; background: var(--ink); color: #fff; padding: 8px 16px; border-radius: var(--r-control); text-decoration: none; font-weight: 500; transition: transform var(--d-kort) var(--ease); }
 .skiplink:focus { top: 12px; color: #fff; }
-header.top { position: sticky; top: 0; z-index: 5; background: var(--page); border-bottom: 1px solid transparent; transition: border-color var(--d-kort) var(--ease); }
-body.gescrold header.top { border-bottom-color: var(--line); }
+header.top { position: sticky; top: 0; z-index: 5; background: var(--card); border-bottom: 1px solid var(--line); }
 header.top .wrap { display: flex; align-items: center; gap: 8px 20px; padding-top: 12px; padding-bottom: 12px; }
 .merk { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); border-radius: var(--r-control); }
 .merk:hover { color: var(--ink); }
@@ -171,7 +170,7 @@ h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px;
    Beide kaarten rekken mee tot dezelfde onderrand; de lijst vult de ruimte, de kaartvoet blijft onderaan. */
 .ov-intro { margin: 32px 0 0; }
 .ov-lead { font-size: var(--t-45); font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; color: var(--ink); margin: 0; max-width: 36ch; }
-.ov-uitleg { margin: 8px 0 0; font-size: var(--t-24); letter-spacing: -0.015em; font-weight: 400; color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
+.ov-uitleg { margin: 8px 0 0; font-size: var(--t-18); letter-spacing: -0.005em; font-weight: 400; color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
 .ov-onder { display: grid; gap: 0 24px; align-items: stretch; }
 .ov-onder > section { display: flex; flex-direction: column; }
 .ov-onder > section > h2:first-child { margin-top: 40px; }
@@ -289,7 +288,7 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 
 /* werkbalk boven elke lijst: zoekveld (filtert deze lijst), dan de filters; actieve filters eronder */
 .werkbalk { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 24px 0 12px; }
-.werkbalk input[type=search] { flex: 0 1 520px; min-width: 240px; height: var(--h-control); font: inherit; font-size: var(--t-18); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); padding: 0 16px; transition: border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease); }
+.werkbalk input[type=search] { order: 2; margin-left: auto; flex: 0 1 520px; min-width: 240px; height: var(--h-control); font: inherit; font-size: var(--t-18); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); padding: 0 16px; transition: border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease); }
 .werkbalk input[type=search]::placeholder { color: var(--muted); }
 .werkbalk input[type=search]:hover { border-color: var(--line-sterk); }
 .werkbalk input[type=search]:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
@@ -661,6 +660,7 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
 /* Wat Nederland uitstoot: de hoofdgrafiek van Overzicht, met de doelen uit de Klimaatwet en de stikstofwet */
 /* kop boven een kaart, zoals Net binnen en Komt eraan (sinds 16 nov 2026) */
 .mi-sectie > h2 { margin: 40px 0 12px; }
+.mi-sectie > h2, .ov-onder h2 { font-size: var(--t-24); letter-spacing: -0.015em; }
 .mi-inhoud.card .mi-schakel { margin-top: 0; }
 .mi-uitstoot-raster { display: grid; gap: 20px 40px; }
 @media (min-width: 1000px) { .mi-uitstoot-raster { grid-template-columns: minmax(280px, 1fr) minmax(0, 2.6fr); align-items: start; } }

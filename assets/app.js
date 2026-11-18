@@ -111,8 +111,6 @@
   }
 
   // randeffect onder de kop: alleen als er inhoud onder schuift
-  const zetScrollRand = () => document.body.classList.toggle("gescrold", window.scrollY > 4);
-  window.addEventListener("scroll", zetScrollRand, { passive: true });
 
   /* ---------- Kop: glijdende tab-aanduiding, hoogte van de kop, randvervaging ---------- */
   const NAV = $("nav.tabs");
@@ -238,7 +236,7 @@
     }
     _vorigPad = pad;
     _klik = false;
-    zetScrollRand(); zetBoven();
+    zetBoven();
     if (S.tabel) bindTabel();
     if (S.themaLijst) bindThemaLijst();
     if (tab === "zoeken") renderZoekResultaten();
