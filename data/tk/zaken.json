@@ -1,5 +1,934 @@
 [
  {
+  "id": "b0404209-9e99-4ed1-9cd5-0be419533a21",
+  "nummer": "2026Z25373",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Van den Berg over doorberekening van bouwoverschrijdingen aan stroomafnemers vooraf begrenzen ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58674",
+  "docId": "c4afb16a-e6de-48e2-8819-2ef669c7f408",
+  "bestand": "DOCX",
+  "volgnummer": 185,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25373&did=2026D58674",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25373"
+ },
+ {
+  "id": "d27ea6ff-70c5-4c1f-9f42-1257ad682ff4",
+  "nummer": "2026Z25377",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Vermeer over kernenergie volwaardig en structureel meenemen in het Nationaal Plan Energiesysteem ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Overbodig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58680",
+  "docId": "4978029d-1512-4b27-b10e-0727d2e85157",
+  "bestand": "DOCX",
+  "volgnummer": 188,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25377&did=2026D58680",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25377"
+ },
+ {
+  "id": "ce667881-2568-4bf5-a05d-4edf7450786e",
+  "nummer": "2026Z25383",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Flach over kijken naar de mogelijkheid van één enkele centrale per locatie",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58688",
+  "docId": "851e972b-0f8e-416f-b1ee-74f13a206e26",
+  "bestand": "DOCX",
+  "volgnummer": 194,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25383&did=2026D58688",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25383"
+ },
+ {
+  "id": "88d6e902-6f56-4c3e-ab84-51f6853c3e71",
+  "nummer": "2026Z25378",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Vermeer over een eventuele keuze voor een kerncentrale in Zeeland niet laten leiden tot verslechtering van de zoetwaterbeschikbaarheid ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Verzocht motie aan te houden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58681",
+  "docId": "4fcb9990-0588-43bc-9525-7785f42900f1",
+  "bestand": "DOCX",
+  "volgnummer": 189,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25378&did=2026D58681",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25378"
+ },
+ {
+  "id": "99957019-6f78-4c36-bc38-54438ec9360c",
+  "nummer": "2026Z25382",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Van Oosterhout over uitsluitend naar industriegrond kijken voor de bouw van twee grote nieuwe kerncentrales ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58686",
+  "docId": "65a37fa5-3cf5-4de9-8dfa-81f3add97978",
+  "bestand": "DOCX",
+  "volgnummer": 193,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25382&did=2026D58686",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25382"
+ },
+ {
+  "id": "e822af28-51d6-4e08-99fe-752befee7d11",
+  "nummer": "2026Z25381",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Van Oosterhout over borgen dat de ambities voor wind op zee onverkort overeind blijven ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58685",
+  "docId": "92cdef70-aeca-4c01-b096-d6fcda07dbd0",
+  "bestand": "DOCX",
+  "volgnummer": 192,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25381&did=2026D58685",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25381"
+ },
+ {
+  "id": "0f267f16-5ca6-4fd9-adc9-862bddc77f25",
+  "nummer": "2026Z25359",
+  "soort": "Motie",
+  "titel": "Luchtvaartbeleid",
+  "onderwerp": "Motie van het lid Kostić over jaarlijks rapporteren over ontwikkelingen van onder andere geluidshinder door Rotterdam The Hague Airport ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 31936,
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "document": "2026D58619",
+  "docId": "6242345a-a279-4c1b-ab81-b1241d270373",
+  "bestand": "DOCX",
+  "volgnummer": 1330,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25359&did=2026D58619",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25359"
+ },
+ {
+  "id": "9448031d-e501-40cd-8c8f-87173273deae",
+  "nummer": "2026Z25370",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Van den Berg over vóór investeringsbesluiten voor kernenergieprojecten een onderbouwd brandstofplan verlangen ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58670",
+  "docId": "73a93acb-ea40-4ad0-87e3-ec8d3ebc6889",
+  "bestand": "DOCX",
+  "volgnummer": 182,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25370&did=2026D58670",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25370"
+ },
+ {
+  "id": "2388830c-74f8-45b5-972a-8d4c9a234e08",
+  "nummer": "2026Z25369",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Van den Berg over publieke en publiek-private financiering op gelijke uitgangspunten vergelijken",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58668",
+  "docId": "d08dc2f1-192f-4589-a958-4855bba144b4",
+  "bestand": "DOCX",
+  "volgnummer": 181,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25369&did=2026D58668",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25369"
+ },
+ {
+  "id": "5712e8af-8433-43b9-958f-9227fa5aa3e9",
+  "nummer": "2026Z25385",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Beckerman c.s. over erkennen van tegenstrijdigheid van uitsluiting van de Eemshaven en voorkeursrecht op die locatie ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58692",
+  "docId": "6e170d16-5af4-4924-8a3b-fcf0983d4c04",
+  "bestand": "DOCX",
+  "volgnummer": 195,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25385&did=2026D58692",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25385"
+ },
+ {
+  "id": "1e06a7eb-f256-4eb2-8ff4-96934c7b444f",
+  "nummer": "2026Z25376",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Vermeer over het behoud van landbouwgrond als zwaarwegend criterium meenemen bij de locatiekeuze voor kerncentrales ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie",
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D58679",
+  "docId": "bbc98159-8741-462e-a6af-fa8ba2e6c70e",
+  "bestand": "DOCX",
+  "volgnummer": 187,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25376&did=2026D58679",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25376"
+ },
+ {
+  "id": "17872017-3089-4c41-ac10-9826f01340b5",
+  "nummer": "2026Z25368",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Van den Berg over een SMR- of AMR-projectafspraak sluiten met regio, initiatiefnemer en industriële afnemer ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58667",
+  "docId": "d0ce6973-9b7e-4c72-9033-9871b93e3592",
+  "bestand": "DOCX",
+  "volgnummer": 180,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25368&did=2026D58667",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25368"
+ },
+ {
+  "id": "d533d26a-74a3-4275-bace-9d329ede37ed",
+  "nummer": "2026Z25375",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van de leden Grinwis en Van den Berg over bij de inrichting van het energiesysteem systeemkosten vermijden waar mogelijk ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58677",
+  "docId": "86c320e0-657e-43ce-b917-63c2e1590e84",
+  "bestand": "DOCX",
+  "volgnummer": 186,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25375&did=2026D58677",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25375"
+ },
+ {
+  "id": "1a20c623-e7c3-4285-b6bf-a94a565ecd37",
+  "nummer": "2026Z25372",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Van den Berg over een gefaseerd uitvoeringsprogramma voor ten minste 7 gigawatt nieuwe kernenergie ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Verzocht motie aan te houden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangehouden",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58673",
+  "docId": "1efde380-8f53-4806-9e15-7a13238a83c4",
+  "bestand": "DOCX",
+  "volgnummer": 184,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25372&did=2026D58673",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25372"
+ },
+ {
+  "id": "9563ff07-e5ea-4189-8128-c21fa6fd20a8",
+  "nummer": "2026Z25380",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Vermeer over gebieden waarop het voorkeursrecht rust zo snel mogelijk verkleinen zodra de gronden niet meer nodig zijn voor de locatiekeuze ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58684",
+  "docId": "e1856906-5f2c-46e9-aeb7-0ff6b49d66d5",
+  "bestand": "DOCX",
+  "volgnummer": 191,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25380&did=2026D58684",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25380"
+ },
+ {
+  "id": "4119672c-ad63-484d-984b-c7be8cdec4e2",
+  "nummer": "2026Z25386",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Beckerman c.s. over Terneuzen niet beschouwen als optie voor een kerncentrale ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58693",
+  "docId": "c5bc318a-4565-461f-99e0-eb31a8d1953d",
+  "bestand": "DOCX",
+  "volgnummer": 196,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25386&did=2026D58693",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25386"
+ },
+ {
+  "id": "ec825244-7f5c-4616-a605-d869ebecc27d",
+  "nummer": "2026Z25379",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Vermeer over uiterlijk in 2027 één concreet SMR-project richting vergunningverlening brengen ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Overbodig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58682",
+  "docId": "c979fa5b-6e33-4e22-a594-6f0f6ad9edae",
+  "bestand": "DOCX",
+  "volgnummer": 190,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25379&did=2026D58682",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25379"
+ },
+ {
+  "id": "53a1e6d5-c923-4999-b5fe-e542399212a2",
+  "nummer": "2026Z25387",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Beckerman c.s. over minimaal een lokaal bindend referendum organiseren voor het besluit over de bouw van een kerncentrale ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58694",
+  "docId": "29462807-f1b9-49bb-a73e-8636bdbe6ae9",
+  "bestand": "DOCX",
+  "volgnummer": 197,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25387&did=2026D58694",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25387"
+ },
+ {
+  "id": "1a76c282-0b90-4089-831c-f837554f34a9",
+  "nummer": "2026Z25371",
+  "soort": "Motie",
+  "titel": "Kernenergie",
+  "onderwerp": "Motie van het lid Van den Berg over de totale systeemkosten van 0, 7, 20 en 25 gigawatt vergelijken",
+  "citeertitel": null,
+  "gestartOp": "2026-11-17",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 32645,
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-11-17",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D58671",
+  "docId": "3cd763aa-b6c0-4fcb-9ae2-3fd52d078f90",
+  "bestand": "DOCX",
+  "volgnummer": 183,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25371&did=2026D58671",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25371"
+ },
+ {
   "id": "f421e356-e33f-4be1-9b85-7ad4032094c7",
   "nummer": "2026Z25252",
   "soort": "Motie",
@@ -9,7 +938,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -97,7 +1026,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -160,7 +1089,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -207,7 +1136,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -254,7 +1183,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -311,7 +1240,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -358,7 +1287,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -405,7 +1334,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -452,7 +1381,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -514,7 +1443,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -576,7 +1505,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -638,7 +1567,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -695,7 +1624,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -742,7 +1671,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -809,7 +1738,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -866,7 +1795,7 @@
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -912,7 +1841,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-12",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
@@ -938,15 +1867,122 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-17",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    }
   ],
-  "uitslag": "in behandeling",
-  "stemtelling": null,
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 79,
+   "tegen": 71,
+   "datum": "2026-11-17"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -966,7 +2002,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-12",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
@@ -997,15 +2033,122 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-17",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    }
   ],
-  "uitslag": "in behandeling",
-  "stemtelling": null,
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 104,
+   "tegen": 46,
+   "datum": "2026-11-17"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -1025,7 +2168,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-12",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1051,15 +2194,122 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-17",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     }
+    ]
    }
   ],
-  "uitslag": "in behandeling",
-  "stemtelling": null,
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 49,
+   "tegen": 101,
+   "datum": "2026-11-17"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -1079,7 +2329,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-12",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
@@ -1098,11 +2348,114 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-17",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -1112,8 +2465,12 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
-  "stemtelling": null,
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 76,
+   "tegen": 74,
+   "datum": "2026-11-17"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -1133,7 +2490,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-12",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
@@ -1157,11 +2514,114 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-17",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -1171,8 +2631,12 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
-  "stemtelling": null,
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 82,
+   "tegen": 68,
+   "datum": "2026-11-17"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -10255,6 +11719,13 @@
    {
     "soort": null,
     "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-25",
+    "stemmen": []
+   },
+   {
+    "soort": "Inbreng - verslag wetsvoorstel",
+    "tekst": "Inbrengdatum voor het verslag vaststellen op 25 november 2026 te 10.00 uur.",
     "stemmingssoort": null,
     "datum": "2026-11-18",
     "stemmen": []
@@ -49563,8 +51034,8 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Aanmelden voor plenaire behandeling",
+    "tekst": "Aanmelden als hamerstuk. ",
     "stemmingssoort": null,
     "datum": "2026-11-17",
     "stemmen": []

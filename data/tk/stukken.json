@@ -1,5 +1,96 @@
 [
  {
+  "id": "2026D58862",
+  "docId": "db848edd-e824-44d2-8c92-03e6ccbf4029",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-18",
+  "titel": null,
+  "onderwerp": "Verslag Energieraad 29 oktober 2026 (Luxemburg)",
+  "zaak": "2026Z25462",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25462&did=2026D58862",
+  "bijlagen": [
+   {
+    "id": "2026D58863",
+    "titel": "Pieken of dalen Onderzoek naar de mogelijkheid om netkosten anders te verdelen over tijd",
+    "bestand": "PDF",
+    "docId": "2cefb147-a992-43aa-b716-f1fff1c297d9",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58863"
+   },
+   {
+    "id": "2026D58864",
+    "titel": "Beslisnota bij Kamerbrief over verslag Energieraad 29 oktober 2026 (Luxemburg)",
+    "bestand": "PDF",
+    "docId": "0da957e2-fdc8-4fb5-88b1-5a4895b3b3a7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58864"
+   }
+  ]
+ },
+ {
+  "id": "2026D58868",
+  "docId": "08d483b6-b68c-44d9-8730-60020bb9add3",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-18",
+  "titel": null,
+  "onderwerp": "Publicatie derde kwartaalrapportage 2026 CBS-monitor fosfaat- en stikstofexcretie",
+  "zaak": "2026Z25464",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25464&did=2026D58868",
+  "bijlagen": [
+   {
+    "id": "2026D58869",
+    "titel": "Beslisnota bij Kamerbrief over publicatie derde kwartaalrapportage 2026 CBS-monitor fosfaat- en stikstofexcretie",
+    "bestand": "PDF",
+    "docId": "22bfbf42-f948-47d0-a06c-034d3e14a09e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58869"
+   }
+  ]
+ },
+ {
+  "id": "2026D58609",
+  "docId": "7244cbba-3a73-4485-99a5-92c1ad0b87bf",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-17",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Kops over dreigende stroomstoringen bij 800.000 aansluitingen",
+  "zaak": "2026Z22531",
+  "ministerie": "Economische Zaken en Klimaat",
+  "ondertekenaar": "J. de Bat",
+  "functie": "staatssecretaris van Economische Zaken en Klimaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22531&did=2026D58609",
+  "bijlagen": [
+   {
+    "id": "2026D58610",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Kops over dreigende stroomstoringen bij 800.000 aansluitingen",
+    "bestand": "PDF",
+    "docId": "a7755313-d1b1-47d4-a53d-dc3dd7f6a1af",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58610"
+   }
+  ]
+ },
+ {
   "id": "2026D58363",
   "docId": "2cf8e575-5838-4576-92b9-e0defaf5f0f1",
   "bestand": "DOCX",
@@ -6074,7 +6165,7 @@
  {
   "id": "2026D48446",
   "docId": "00e3bb47-ac5a-4355-aae3-d36075beb87e",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-05",
   "titel": null,
@@ -8914,7 +9005,7 @@
  {
   "id": "2026D44647",
   "docId": "b610af67-82e1-47bd-bf0b-20942535e30c",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-18",
   "titel": "Wijziging van de Arbeidsomstandighedenwet in verband met een nieuwe vergunningplicht bij bepaalde asbestwerkzaamheden ten behoeve van de implementatie van Richtlijn (EU) 2023/2668 ",
@@ -9912,7 +10003,7 @@
  {
   "id": "2026D43611",
   "docId": "d6d47e36-61ea-4aaa-9081-3f8465a27852",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-15",
   "titel": "Vaststelling van de begrotingsstaat van het Mobiliteitsfonds voor het jaar 2027",
@@ -9994,7 +10085,7 @@
  {
   "id": "2026D43640",
   "docId": "b7bdf051-818c-48bd-898e-51af9fe27c62",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-15",
   "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
@@ -10842,7 +10933,7 @@
  {
   "id": "2026D42927",
   "docId": "5b620eb8-fe65-4520-80e0-af1e19de7e30",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-11",
   "titel": "Voorzienings- en leveringszekerheid energie",
@@ -11042,7 +11133,7 @@
  {
   "id": "2026D42430",
   "docId": "f992ccdc-7a96-47f6-9acf-08a6441fff35",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-10",
   "titel": "Kabinetsaanpak Klimaatbeleid",
@@ -11787,7 +11878,7 @@
  {
   "id": "2026D41133",
   "docId": "857f9a78-341d-4157-aad9-b0f78643d827",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-04",
   "titel": "Milieuraad",
