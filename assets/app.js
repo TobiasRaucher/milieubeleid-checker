@@ -284,12 +284,16 @@
   const zonderVoorletters = (t) => (/\b(het lid|de leden)\b/i.test(t)
     ? t.replace(/(\b(?:lid|leden|en)\s+|,\s*)(?:[A-ZÀ-Ý][a-z]{0,2}\.)+\s*(?:\([^)]*\)\s*)?(?=\p{Lu}|[a-z]{1,3}\s)/gu, "$1")
     : t);
-  // Eén doorlopende regel: soort (accent), datum, status of ministerie, titel; daarna eventueel een stille staart (indieners, Kamerstuk).
+  // De soort vooraan een regel (DESIGN.md, "Rows"): een link naar zijn lijstpagina als die bestaat, anders gewone tekst.
+  const SOORT_PAGINA = { Kamerbrief: "#brieven", Kamervragen: "#vragen", "Antwoord Kamervragen": "#vragen", Motie: "#moties", Amendement: "#amendementen", Wetsvoorstel: "#wetgeving", Stemmingen: "#moties" };
+  const soortTag = (soort, href = SOORT_PAGINA[soort]) => (href ? `<a class="tag" href="${esc(href)}">${esc(soort)}</a>` : `<span class="tag">${esc(soort)}</span>`);
+  const agendaTypeTag = (type) => soortTag(type, `#agenda?type=${encodeURIComponent(type)}`);
+  // Drie regels: soort, datum en context; de titel; eventueel een staart (indieners, stemuitslag, Kamerstuk).
   function feedLi(soort, datum, meta, titel, href, staart, extern) {
     const doel = extern ? ` target="_blank" rel="noopener"` : "";
-    return `<li class="feed"><span class="feed-soort">${esc(soort)}</span><span class="feed-datum">${fmtKort(datum)}</span>${meta}<a class="ltitel" href="${esc(href)}"${doel}>${esc(zonderVoorletters(titel))}</a>${staart ? `<span class="feed-staart">${staart}</span>` : ""}</li>`;
+    return `<li><div class="regelmeta">${soortTag(soort)}<span class="datum">${fmtKort(datum)}</span>${meta}</div><a class="ltitel" href="${esc(href)}"${doel}>${esc(zonderVoorletters(titel))}</a>${staart ? `<div class="regel-staart">${staart}</div>` : ""}</li>`;
   }
-  const feedMeta = (html) => (html ? `<span class="feed-meta">${html}</span>` : "");
+  const feedMeta = (html) => (html ? `<span>${html}</span>` : "");
   // slug: alleen items met dit thema (themapagina); zonder slug alles (voorpagina)
   function netBinnen(slug) {
     const items = [];
@@ -336,7 +340,7 @@
     const dag = [...perDag.keys()].sort()[0], t = perDag.get(dag);
     const deel = (n, een, meer) => (n ? `${nl(n)} ${n === 1 ? een : meer}` : "");
     const titel = [deel(t.m, "motie", "moties"), deel(t.a, "amendement", "amendementen")].filter(Boolean).join(" en ");
-    return `<li><div class="regelmeta"><span class="datum">${esc(dagKort(dag))}</span><span class="tag">Stemmingen</span></div><div><a class="ltitel" href="#moties">${esc(titel)}</a></div><div class="small muted">Plenaire stemmingen</div></li>`;
+    return `<li><div class="regelmeta">${soortTag("Stemmingen")}<span class="datum">${esc(dagKort(dag))}</span><span>Plenaire vergadering</span></div><a class="ltitel" href="#moties">${esc(titel)}</a></li>`;
   }
   const komtEraan = (stemming, items) => (stemming + items.slice(0, stemming ? 5 : 6).map((i) => agendaLi(i)).join("")) || `<li class="empty">Niets gepland</li>`;
   const OV_INTRO = `<header class="ov-intro"><h1 class="ov-lead">Volg het Nederlandse milieubeleid in de Tweede Kamer.</h1>
@@ -428,16 +432,18 @@
       href = r.url;
       feiten = feit("Links", (r.links || []).map((l) => extLink(l.url, l.tekst)).join(" · "));
     } else if (x.sleutel.startsWith("agenda:")) {
-      meta.push(`<span class="tag">${esc(r.type || "Mijlpaal")}</span>`);
+      meta.unshift(agendaTypeTag(r.type || "Mijlpaal"));
       href = r.url || ""; feiten = "";
     } else if (r.Nummer) { // Kameractiviteit (vergadering of agenda)
-      meta.push(`<span class="tag">${esc(window.MRThemas.typeNaam(r.Soort))}</span>`, `<span>${esc(commissieNaam(r))}</span>`);
-      if (x.soort === "agenda" && r.Aanvangstijd) meta.splice(1, 0, `<span class="datum">${esc(tijdNL(r.Aanvangstijd))}</span>`);
+      meta.unshift(agendaTypeTag(window.MRThemas.typeNaam(r.Soort)));
+      meta.push(`<span>${esc(commissieNaam(r))}</span>`);
+      if (x.soort === "agenda" && r.Aanvangstijd) meta.splice(2, 0, `<span class="datum">${esc(tijdNL(r.Aanvangstijd))}</span>`);
       href = `#agenda/a-${r.Nummer}`; extern = false;
       feiten = feit("Agendapunten", agendapuntenLijst(r)) + feit("Activiteit", `<span class="mono">${esc(r.Nummer)}</span>`);
     } else { // samengevat debat
       const a = activiteitVan(r);
-      meta.push(`<span class="tag">${esc(typeNaam(a ? a.Soort : r.type))}</span>`, `<span>${esc(a ? commissieNaam(a) : r.commissie || "")}</span>`, `<span class="badge stil">samengevat</span>`);
+      meta.unshift(agendaTypeTag(typeNaam(a ? a.Soort : r.type)));
+      meta.push(`<span>${esc(a ? commissieNaam(a) : r.commissie || "")}</span>`, `<span class="badge stil">samengevat</span>`);
       href = `#agenda/d-${r.id}`; extern = false;
       feiten = feit("Kern", esc(r.gist)) + feit("Agendapunten", agendapuntenLijst(a));
     }
@@ -1216,7 +1222,7 @@
       .sort((a, b) => sortKey(a.datum).localeCompare(sortKey(b.datum)));
   }
   function agendaLi(i) {
-    return `<li><div class="regelmeta"><span class="datum">${fmtKort(i.datum)}${i.tijd ? ` ${esc(i.tijd)}` : ""}</span><span class="tag">${esc(i.type)}</span></div><div>${i.url ? `<a class="ltitel" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : `<span class="ltitel">${esc(i.titel)}</span>`}</div>${i.commissie ? `<div class="small muted">${esc(i.commissie)}</div>` : ""}</li>`;
+    return `<li><div class="regelmeta">${agendaTypeTag(i.type)}<span class="datum">${fmtKort(i.datum)}${i.tijd ? ` ${esc(i.tijd)}` : ""}</span>${i.commissie ? `<span>${esc(i.commissie)}</span>` : ""}</div>${i.url ? `<a class="ltitel" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : `<span class="ltitel">${esc(i.titel)}</span>`}</li>`;
   }
   /* ---------- Thema's, commissies en ministeries ---------- */
   const TYPE_NORM = { "Plenair debat (tweeminutendebat)": "Tweeminutendebat", "Plenair debat (debat)": "Plenair debat", "Plenair debat (dertigledendebat)": "Dertigledendebat", "Plenair debat (initiatiefwetgeving)": "Plenair debat (wetgeving)", "Inbreng verslag (wetsvoorstel)": "Inbreng verslag" };
@@ -1626,7 +1632,7 @@
       ${afGefilterd() ? `<p class="small muted telregel">${nl(items.length)} ${items.length === 1 ? "item" : "items"} ${terug ? "sinds het begin van de Kamerperiode" : "vanaf vandaag"}</p>` : ""}
       <div class="tijdlijn">${weekHtml || `<p class="empty">${afGefilterd() ? `Niets met deze filters <button type="button" class="linkknop" data-wisalles>Filters wissen</button>` : "Niets in deze periode"}</p>`}</div>
       ${terug ? `<p class="small muted">Begin van de Kamerperiode (${fmtKort(start)})</p>` : ""}
-      ${vaagHier.length ? `<h3 class="groepkop">Mijlpalen zonder vaste dag</h3><div class="card"><ul class="list">${vaagHier.map((i) => `<li><div class="regelmeta"><span class="datum">${fmtDatum(i.datum)}</span><span class="tag">${esc(i.type)}</span></div><div>${i.url ? `<a class="ltitel" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : `<span class="ltitel">${esc(i.titel)}</span>`}</div>${themaChips(i.thema, true)}</li>`).join("")}</ul></div>` : ""}`;
+      ${vaagHier.length ? `<h3 class="groepkop">Mijlpalen zonder vaste dag</h3><div class="card"><ul class="list">${vaagHier.map((i) => `<li><div class="regelmeta">${soortTag(i.type)}<span class="datum">${fmtDatum(i.datum)}</span></div>${i.url ? `<a class="ltitel" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : `<span class="ltitel">${esc(i.titel)}</span>`}${themaChips(i.thema, true)}</li>`).join("")}</ul></div>` : ""}`;
     const wisAlles = el.querySelector("[data-wisalles]");
     if (wisAlles) wisAlles.addEventListener("click", afWis);
   }
@@ -1784,7 +1790,7 @@
       const link = d.extern ? `href="${esc(d.link)}" target="_blank" rel="noopener"` : `href="${esc(d.link)}"`;
       const stem = stemOp(d);
       return `<li>
-        <div class="zmeta"><span class="tag">${esc(d.soort)}</span>${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${zoekDatum(d)}${stem >= VANDAAG ? `<span>Stemming ${esc(dagKort(stem))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${ook && ook.length && d.kamerstuk ? `<span>Kamerstuk ${esc(d.kamerstuk)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
+        <div class="zmeta">${soortTag(d.soort)}${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${zoekDatum(d)}${stem >= VANDAAG ? `<span>Stemming ${esc(dagKort(stem))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${ook && ook.length && d.kamerstuk ? `<span>Kamerstuk ${esc(d.kamerstuk)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
         <a class="ztitel" ${link}>${Z.markeer(d.titel, termen, esc)}${d.extern ? `<span class="sr-only"> (opent nieuwe pagina)</span>` : ""}</a>
         <div class="zfrag">${Z.fragment(d, termen, esc)}</div>
         ${ook && ook.length ? `<ul class="zook">${ook.map(({ doc: o }) => `<li><span class="muted">Ook:</span> <a href="${esc(o.link)}" target="_blank" rel="noopener">${esc(o.soort)}${o.indiener ? ` ${esc(o.indiener)}` : ""}${o.kamerstuk ? `, Kamerstuk ${esc(o.kamerstuk)}` : ""}<span class="sr-only"> (opent nieuwe pagina)</span></a>${o.uitslag ? uitslagPill(o.uitslag) : ""}${o.datum ? `<span class="datum">${fmtKort(o.datum)}</span>` : ""}</li>`).join("")}</ul>` : ""}
