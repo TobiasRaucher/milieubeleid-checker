@@ -5,6 +5,9 @@
 - `zoek.js` bouwt in de browser een index (MiniSearch, `assets/vendor/`) over samenvattingen, wetsvoorstellen, moties en
   amendementen, stukken (ook titels van bijlagen), Kameractiviteiten, toezeggingen, de agenda en kerndocumenten
   (zonder verborgen groepen). Vergaderingen en toezeggingen linken naar de Agenda.
+- Sinds 19 nov 2026 ook de volledige tekst van moties en amendementen (veld `volledig`, gewicht 0,5, zonder de vaste zinnen
+  "De Kamer," enz.). `data/tk/teksten.json` (1,3 MB) laadt pas bij de eerste zoekopdracht; tot dan zoekt de index zonder
+  teksten en daarna wordt hij opnieuw gebouwd (`zoekIndex()` in app.js). De zoektest leest de teksten wel.
 - Nederlandse stamvorming, synoniemen, tikfoutcorrectie en titelweging staan in `zoek.js` beschreven.
 - Score: binnen een synoniemgroep telt de beste variant, niet de som; afgeleide woorden (voorvoegsel, tikfout) wegen minder;
   de titel van het Kamerstukdossier staat in een eigen veld met laag gewicht (`dossier`); dubbele agendapunten tellen één

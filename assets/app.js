@@ -1580,7 +1580,11 @@
   // De index (assets/zoek.js) wordt pas gebouwd bij de eerste zoekopdracht.
   // Alles wat de resultaten bepaalt staat in de URL: #zoeken?q=…&cat=moties&periode=maand&wie=f:pvv
   let _zoek = null;
-  const zoekIndex = () => _zoek || (_zoek = window.MRZoek.maak({ ...S.data, T: S.T }, S.data.synoniemen));
+  // de index neemt de motieteksten mee zodra die geladen zijn (1,3 MB, pas bij de eerste zoekopdracht); daarna opnieuw bouwen
+  const zoekIndex = () => {
+    if (!S.data.teksten) laadTeksten().then(() => { _zoek = null; if (location.hash.startsWith("#zoeken")) renderZoekResultaten(); });
+    return _zoek || (_zoek = window.MRZoek.maak({ ...S.data, T: S.T }, S.data.synoniemen));
+  };
   const zoekParams = () => new URLSearchParams(location.hash.split("?")[1] || "");
   function zoekVraag() { return zoekParams().get("q") || ""; }
   function zoekUrl(wijzig = {}) {

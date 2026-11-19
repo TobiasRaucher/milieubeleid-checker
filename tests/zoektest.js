@@ -8,7 +8,7 @@ const lees = (p) => JSON.parse(fs.readFileSync(path.join(__dirname, "..", p), "u
 const D = {
   debatten: lees("data/debatten.json").debatten, zaken: lees("data/tk/zaken.json"),
   stukken: lees("data/tk/stukken.json"), activiteiten: lees("data/tk/activiteiten.json"), agenda: lees("data/agenda.json").items, toezeggingen: lees("data/tk/toezeggingen.json"),
-  kerndocumenten: lees("data/kerndocumenten.json"), begrotingen: lees("data/tk/begrotingen.json"),
+  kerndocumenten: lees("data/kerndocumenten.json"), begrotingen: lees("data/tk/begrotingen.json"), teksten: lees("data/tk/teksten.json"),
   T: T.maak(lees("data/themas.json")),
 };
 const z = Z.maak(D, lees("data/zoeksynoniemen.json"));
@@ -41,6 +41,8 @@ const TESTS = [
   ["36169", "klimaatwet", 2],
   // de technische briefing "Natura 2000-gebied Hollandse kust" is op 17 nov 2026 geannuleerd (en dus niet meer in de index)
   ["vogelrichtlijn hollandse kust", "hollandse kust", 3],
+  // alleen in de tekst van de motie: "Natura 2000" staat niet in het onderwerp
+  ["natura 2000 hollandse kust", "hollandse kust", 3],
   ["\"groen gas\"", "groen gas", 3],
   ["van oosterhout", "van oosterhout", 5],
   // samengestelde woorden

@@ -123,12 +123,14 @@
   }
   const dag = (iso) => (iso ? String(iso).slice(0, 10) : "");
 
+  // zinnen die in elke motie staan en dus niets zeggen over de inhoud
+  const VASTE_ZIN = /^(de kamer,?|gehoord de beraadslaging,?|en gaat over tot de orde van de dag\.?)$/i;
   function bouwDocumenten(D) {
     WIE = new Map();
     const docs = [];
     const T = D.T;
     const add = (d) => {
-      const doc = { titel: "", kern: "", tekst: "", dossier: "", personen: "", sectoren: [], wie: [], ...d };
+      const doc = { titel: "", kern: "", tekst: "", volledig: "", dossier: "", personen: "", sectoren: [], wie: [], ...d };
       if (T && !doc.themas) doc.themas = T.voor(doc.titel, doc.themaTekst || [], doc.sectoren);
       if (T) doc.themanamen = (doc.themas || []).map((id) => T.naam(id)).join(" ");
       delete doc.themaTekst;
@@ -160,6 +162,8 @@
         sectoren: z.sectoren || [], titel: isWet ? (z.titel || z.onderwerp) : korteTitel(z),
         // de titel van het Kamerstukdossier in een eigen, licht wegend veld: een motie bij de begroting gaat niet over alles in de begroting
         tekst: j([z.onderwerp, z.nummer, z.kabinetsappreciatie, isWet ? z.citeertitel : ""]),
+        // volledige tekst van een motie of amendement (data/tk/teksten.json, als die al geladen is), zonder de vaste zinnen
+        volledig: j(((D.teksten || {})[z.nummer]?.blokken || []).map((b) => b[1]).filter((x) => !VASTE_ZIN.test(x))),
         dossier: dossierTekst(z.dossiers) + (z.titel && !(z.dossiers || []).some((x) => x.titel === z.titel) && !isWet ? " · " + z.titel : ""),
         personen: j((z.indieners || []).map((i) => `${i.naam} ${i.fractie || ""}`)),
         wie: wieVan((z.indieners || []).map((i) => i.naam), (z.indieners || []).map((i) => i.fractie)),
@@ -271,12 +275,12 @@
     }
     const indexTokens = (s) => { const t = tokens(s); return t.concat(t.flatMap(splits)); };
     const ms = new MiniSearch({
-      fields: ["titel", "kern", "tekst", "dossier", "personen", "themanamen"],
+      fields: ["titel", "kern", "tekst", "volledig", "dossier", "personen", "themanamen"],
       tokenize: (s) => indexTokens(s),
       processTerm: (t) => term(t),
       searchOptions: {
         tokenize: (s) => tokens(s),
-        boost: { titel: 4, personen: 2, kern: 1.5, tekst: 1, dossier: 0.3, themanamen: 0.7 },
+        boost: { titel: 4, personen: 2, kern: 1.5, tekst: 1, volledig: 0.5, dossier: 0.3, themanamen: 0.7 },
         prefix: (t) => t.length >= 4,
         fuzzy: (t) => (t.length >= 5 ? 0.2 : false),
         // afgeleide woorden (kernenergie -> kernenergiewet, tikfouten) tellen minder dan het woord zelf
@@ -395,7 +399,7 @@
         const d = perId.get(r.id);
         if (!past(d)) return false;
         if (frasen.length) {
-          const t = " " + tokens([d.titel, d.kern, d.tekst, d.dossier, d.personen].join(" ")).join(" ") + " ";
+          const t = " " + tokens([d.titel, d.kern, d.tekst, d.volledig, d.dossier, d.personen].join(" ")).join(" ") + " ";
           if (!frasen.every((f) => t.includes(" " + f + " "))) return false;
         }
         return true;
@@ -459,9 +463,9 @@
       }
       return uit + esc(t.slice(last));
     }
-    // tekstfragment rond de eerste treffer (uit kern, tekst of personen)
+    // tekstfragment rond de eerste treffer (uit kern, tekst, de volledige tekst of personen)
     function fragment(doc, termen, esc, lengte = 220) {
-      for (const veld of ["kern", "tekst", "personen"]) {
+      for (const veld of ["kern", "tekst", "volledig", "personen"]) {
         const t = String(doc[veld] || "");
         for (const m of t.matchAll(/[\p{L}\p{N}]+/gu)) {
           const w = term(norm(m[0]).replace(/[^a-z0-9]/g, ""));
