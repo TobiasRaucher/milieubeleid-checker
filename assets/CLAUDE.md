@@ -102,6 +102,13 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 - Schakelaar (sinds 17 nov 2026): Wetsvoorstellen en Geldende wetten. De enige documentpagina met een schakelaar.
 - Wetsvoorstellen: uit `zaken.json` (soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Ingediend door,
   Thema, Kamerstuk, Ingediend.
+- Status (sinds 19 nov 2026): de fase zoals op tweedekamer.nl (Voorbereiding, Debat, Stemming, Afgedaan), maar afgeleid uit
+  onze besluiten, vergaderingen (`kamerstukkenVan()`) en stemmingen (`wetFase()`); afgedaan toont de uitslag.
+  Uitgeklapte rij: fasebalk, "Volgende stap" en het hele Wetgevingsproces in gewone taal (`wetStappen()`, `STAP_WEG`, `STAP_TEKST`).
+- Plan (19 nov 2026, met Tobias): fase 2 haalt alle Kamerstukken per wetsvoorstel op in `fetch_tk.py`; fase 3 is een eigen
+  pagina per Kamerstuk (`#wetgeving/<kamerstuk>`) met één tijdlijn (oudste boven): stappen, Kamerstukken met Lees,
+  vergaderingen, brieven, amendementen en moties per stemdag, Kamervragen als "Mogelijk gerelateerd" (alleen op Kamerstuknummer
+  of exacte titel) en mijlpalen uit `agenda.json` met een veld `kamerstuk`. De titel in de tabel gaat dan naar die pagina.
 - Geldende wetten: de kerndocumentgroep met `"pagina": "wetgeving"` (Wettelijk kader), via `wettenDef()`.
 - Links via het Kamerstuknummer (`MRThemas.tkUrl`); OpenTK alleen als tweede link in de details.
 

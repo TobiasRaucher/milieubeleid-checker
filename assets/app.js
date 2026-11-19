@@ -828,6 +828,51 @@
   // Wetsvoorstellen uit de open data van de Kamer (soort Wetgeving of Initiatiefwetgeving in de gevolgde Kamerstukdossiers).
   const themasWet = onthoud((z) => themasVanZaak(z), (z) => z.nummer);
   const wetSoort = (z) => (z.soort === "Initiatiefwetgeving" ? "Initiatiefwetsvoorstel" : "Regering");
+  // Fasen zoals op tweedekamer.nl; welke fase geldt volgt uit onze besluiten, vergaderingen en stemmingen
+  // (de Kamer zelf zet elk open wetsvoorstel op Voorbereiding).
+  // shortcut: activiteiten gaan terug tot nov 2025; een ouder open wetsvoorstel dat toen al plenair is behandeld blijft op
+  // Voorbereiding. Opnieuw bekijken als de pipeline stukken per Kamerstuk ophaalt (fase 2).
+  const WET_FASEN = ["Voorbereiding", "Debat", "Stemming", "Afgedaan"];
+  const AFGEDAAN = ["aangenomen", "verworpen", "ingetrokken", "vervallen"];
+  const wetActiviteiten = onthoud((z) => {
+    const nr = String(z.dossiers[0]?.nummer || "");
+    return S.data.activiteiten.filter((a) => a.Datum && !["Geannuleerd", "Verplaatst"].includes(a.Status) && a.Soort !== "Procedurevergadering" && kamerstukkenVan(a).has(nr));
+  }, (z) => z.nummer);
+  function wetFase(z) {
+    if (AFGEDAAN.includes(z.uitslag)) return 3;
+    const soorten = z.besluiten.map((b) => b.soort || "");
+    if (S.data.stemmingen[z.nummer] || z.uitslag === "aangehouden" || soorten.some((s) => /^Agenderen - stemmingen|^Stemmen - uitstellen/.test(s))) return 2;
+    if (soorten.includes("Behandeling wordt voortgezet") || wetActiviteiten(z).some((a) => /^Plenair debat|^Wetgevingsoverleg|^Notaoverleg/.test(a.Soort) && a.Status === "Uitgevoerd")) return 1;
+    return 0;
+  }
+  const wetStatus = (z) => (wetFase(z) === 3 ? z.uitslag : WET_FASEN[wetFase(z)].toLowerCase());
+  // Wetgevingsproces in gewone taal: besluiten zonder inhoud voor de lezer vallen weg, vaste soorten krijgen een eigen zin
+  const STAP_WEG = /^LVIS|^Controversieel - niet|^Ter informatie|^Aanhouden - tot de volgende/;
+  const STAP_TEKST = {
+    "Leveren inbreng": "Inbreng voor het verslag geleverd.",
+    "Aanmelden voor plenaire behandeling": "Aangemeld voor plenaire behandeling.",
+    "Agenderen - plenair debat": "Op de lijst gezet voor een plenair debat.",
+    "Stemmen - aangenomen": "Aangenomen door de Tweede Kamer.",
+    "Stemmen - zonder stemming aannemen": "Aangenomen door de Tweede Kamer, zonder stemming.",
+    "Stemmen - verworpen": "Verworpen door de Tweede Kamer.",
+  };
+  function wetStappen(z) {
+    const s = [{ datum: z.gestartOp, html: "Wetsvoorstel ingediend." }];
+    for (const b of z.besluiten) {
+      const t = STAP_TEKST[b.soort] || (b.tekst || "").trim();
+      if (b.datum && t && !STAP_WEG.test(b.soort || "") && !/^Behandeld\.?$/.test(t)) s.push({ datum: b.datum, html: esc(t) });
+    }
+    for (const a of wetActiviteiten(z)) {
+      const dag = dagNL(new Date(a.Datum));
+      if (/^Inbreng/.test(a.Soort) && dag < VANDAAG) continue; // een verstreken inbrengtermijn staat al als besluit ("Inbreng geleverd")
+      s.push({ datum: dag, html: `<a href="#agenda/a-${esc(a.Nummer)}">${esc(typeNaam(a.Soort))}</a>`, gepland: a.Status !== "Uitgevoerd" && dag >= VANDAAG });
+    }
+    const stem = S.data.stemmingen[z.nummer], sa = S.data.stemActiviteit[z.nummer];
+    if (stem >= VANDAAG && !AFGEDAAN.includes(z.uitslag) && !s.some((x) => x.datum === stem && /Stemming/.test(x.html)))
+      s.push({ datum: stem, html: sa ? extLink(`https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=${encodeURIComponent(sa)}`, "Stemmingen") : "Stemmingen", gepland: true });
+    const gezien = new Set();
+    return s.filter((x) => x.datum && !gezien.has(x.datum + x.html) && gezien.add(x.datum + x.html)).sort((a, b) => a.datum.localeCompare(b.datum));
+  }
   const WET_DEF = {
     tab: "wetgeving", eenheid: "wetsvoorstellen", knopLabel: ["Details tonen", "Details verbergen"],
     rijen: () => wetsvoorstellenTK(),
@@ -835,24 +880,28 @@
     zoektekst: (z) => `${z.titel} ${z.onderwerp} ${z.citeertitel || ""} ${z.nummer} ${dossierLabel(z)} ${z.indieners.map((i) => i.naam).join(" ")}`,
     filters: {
       thema: themaFilter(themasWet),
-      status: { label: "Status", waarden: (z) => [z.uitslag || "in behandeling"], orde: opVolgorde(["in behandeling", "aangenomen", "verworpen", "ingetrokken", "vervallen"]), tekst: (v) => uitslagPill(v) },
+      status: { label: "Status", waarden: (z) => [wetStatus(z)], orde: opVolgorde(["voorbereiding", "debat", "stemming", ...AFGEDAAN]), tekst: (v) => uitslagPill(v) },
       soort: { label: "Ingediend door", waarden: (z) => [wetSoort(z)], orde: opVolgorde(["Regering", "Initiatiefwetsvoorstel"]), tekst: (v) => esc(v === "Regering" ? "Regering" : "Kamerleden (initiatief)") },
     },
     kolommen: [
       { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => `<a class="ltitel" href="${esc(tkUrl(z))}" target="_blank" rel="noopener">${titelMetPijl(z.titel || z.onderwerp || "")}</a>` },
-      { filter: "status", tdCls: "uitslag", cel: (z) => uitslagPill(z.uitslag) },
+      { filter: "status", tdCls: "uitslag", cel: (z) => uitslagPill(wetStatus(z)) },
       { filter: "soort", tdCls: "indiener hide-sm", cel: (z) => (z.soort === "Initiatiefwetgeving" ? indienerKort(z) : "Regering") },
       themaKolom(themasWet),
       { kop: "Kamerstuk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (z) => esc(dossierLabel(z)) },
       { datum: true, kop: "Ingediend" },
     ],
     detail: (z) => {
-      const stappen = [...z.besluiten].filter((b) => b.tekst).sort((a, b) => (b.datum || "").localeCompare(a.datum || "")).slice(0, 4);
+      const fase = wetFase(z), stappen = wetStappen(z), volgende = stappen.find((x) => x.gepland);
       const door = z.indieners.map(naamFractie);
       const ks = z.dossiers[0];
       return `<div class="mdetail">
         <p>Zaak <span class="mono">${esc(z.nummer)}</span>${ks ? ` · Kamerstuk <span class="mono">${esc(dossierLabel(z))}</span>` : ""} · ingediend ${fmtKort(z.gestartOp)}${door.length ? `, door ${opsomming(door)}` : ""}</p>
-        ${stappen.length ? `<div class="mstemming"><p class="mtelling">Laatste stappen</p><ul class="mstappen">${stappen.map((b) => `<li><span class="datum">${fmtKort(b.datum)}</span> ${esc(b.tekst)}</li>`).join("")}</ul></div>` : ""}
+        <div class="mstemming">
+          <ol class="wfasen" aria-label="Fase">${WET_FASEN.map((f, i) => `<li class="${i < fase || fase === 3 ? "klaar" : i === fase ? "nu" : ""}"${i === fase ? ` aria-current="step"` : ""}>${f}</li>`).join("")}</ol>
+          ${volgende ? `<p>Volgende stap: ${volgende.html}, ${fmtKort(volgende.datum)}</p>` : z.uitslag === "aangenomen" ? `<p>Na de Tweede Kamer behandelt de Eerste Kamer het wetsvoorstel.</p>` : ""}
+        </div>
+        <div class="mstemming"><p class="mtelling">Wetgevingsproces</p><ul class="mstappen">${stappen.map((x) => `<li><span class="datum">${fmtKort(x.datum)}</span> ${x.html}${x.gepland ? ` <span class="muted">(gepland)</span>` : ""}</li>`).join("")}</ul></div>
         <div class="mlinks">${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
       </div>`;
     },
@@ -1215,23 +1264,24 @@
   // als het Kamerstukdossier van de motie op de agenda van die vergadering staat. Twijfelgevallen worden niet gekoppeld.
   // Een tweeminutendebat "X (CD d/m)" wordt gekoppeld aan het commissiedebat X van die datum.
   let _mk = null;
+  // Kamerstuknummers op de agenda van een vergadering (stukken bij de agendapunten en "36 936" of "36936" in het onderwerp)
+  function kamerstukkenVan(a) {
+    const s = new Set();
+    for (const ap of a.agendapunten || []) for (const st of ap.stukken || []) if (st.kamerstuk) s.add(st.kamerstuk.split("-")[0]);
+    for (const m of (a.Onderwerp || "").replace(/(\d{2}) (\d{3})/g, "$1$2").matchAll(/\b(\d{5})\b/g)) s.add(m[1]);
+    return s;
+  }
   function motieKoppeling() {
     if (_mk) return _mk;
     const plenair = S.data.activiteiten.filter((a) => a.Datum && (/^Plenair/.test(a.Soort) || ["Wetgevingsoverleg", "Notaoverleg"].includes(a.Soort)));
     const perDag = new Map();
     for (const a of plenair) { const d = dagNL(new Date(a.Datum)); if (!perDag.has(d)) perDag.set(d, []); perDag.get(d).push(a); }
-    const nums = (a) => {
-      const s = new Set();
-      for (const ap of a.agendapunten || []) for (const st of ap.stukken || []) if (st.kamerstuk) s.add(st.kamerstuk.split("-")[0]);
-      for (const m of (a.Onderwerp || "").replace(/(\d{2}) (\d{3})/g, "$1$2").matchAll(/\b(\d{5})\b/g)) s.add(m[1]);
-      return s;
-    };
     const perAct = new Map(), actVanMotie = new Map();
     for (const z of S.data.zaken) {
       if (z.soort !== "Motie" || !z.gestartOp) continue;
       const dn = new Set(z.dossiers.map((x) => String(x.nummer)));
       const kand = [...(perDag.get(z.gestartOp) || []), ...(perDag.get(plusDagen(z.gestartOp, -1)) || [])];
-      const hit = kand.filter((a) => [...nums(a)].some((n) => dn.has(n)));
+      const hit = kand.filter((a) => [...kamerstukkenVan(a)].some((n) => dn.has(n)));
       if (hit.length !== 1) continue;
       const nr = hit[0].Nummer;
       if (!perAct.has(nr)) perAct.set(nr, []);
@@ -1248,7 +1298,7 @@
       const van = plusDagen(z.gestartOp, -1), tot = S.data.stemmingen[z.nummer] || "9999";
       for (const d of dagen) {
         if (d < van || d > tot) continue;
-        const hit = perDag.get(d).filter((a) => [...nums(a)].some((n) => dn.has(n)));
+        const hit = perDag.get(d).filter((a) => [...kamerstukkenVan(a)].some((n) => dn.has(n)));
         if (!hit.length) continue;
         if (hit.length === 1) actVanZaak.set(z.nummer, hit[0]);
         break;
