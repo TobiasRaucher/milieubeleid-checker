@@ -760,6 +760,34 @@ def begrotingsstukken():
     return uit
 
 
+def wetstukken(nummers, batch=10):
+    """Kamerstukken per wetsvoorstel ({Kamerstuknummer: [stukken op volgnummer]}): wetsvoorstel, memorie van toelichting,
+    advies Raad van State, verslag, nota's, brieven. Moties en amendementen niet: die staan als zaak in zaken.json."""
+    nummers = sorted(nummers)
+    uit = {}
+    for i in range(0, len(nummers), batch):
+        deel = " or ".join(f"Kamerstukdossier/any(k: k/Nummer eq {n})" for n in nummers[i:i + batch])
+        for d in odata("Document", {
+                "$filter": f"Verwijderd eq false and ({deel})",
+                "$select": "Id,DocumentNummer,Soort,Onderwerp,Datum,Volgnummer,ContentType",
+                "$expand": "Kamerstukdossier($select=Nummer),Zaak($select=Nummer,Soort)"}, max_pages=20):
+            if re.match(r"Motie|Amendement", d.get("Soort") or "") or d.get("Volgnummer") in (None, -1):
+                continue
+            zaken_ = d.get("Zaak") or []
+            zaak = next((z for z in zaken_ if "wetgeving" in (z.get("Soort") or "").lower()), zaken_[0] if zaken_ else {})
+            for k in d.get("Kamerstukdossier") or []:
+                if str(k.get("Nummer")) not in nummers:
+                    continue
+                uit.setdefault(str(k["Nummer"]), []).append({
+                    "volgnummer": d["Volgnummer"], "soort": d.get("Soort"),
+                    "titel": re.sub(r"\s+", " ", d.get("Onderwerp") or d.get("Soort") or "").strip(),
+                    "datum": (d.get("Datum") or "")[:10] or None, "document": d.get("DocumentNummer"),
+                    "docId": d.get("Id"), "bestand": bestandssoort(d.get("ContentType")),
+                    "link": f"https://www.tweedekamer.nl/kamerstukken/detail?id={zaak.get('Nummer', '')}&did={d.get('DocumentNummer')}",
+                })
+    return {n: sorted(v, key=lambda x: x["volgnummer"]) for n, v in sorted(uit.items())}
+
+
 def alleen_begrotingen():
     lijst = begrotingsstukken()
     (OUT / "begrotingen.json").write_text(json.dumps(lijst, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -908,6 +936,15 @@ def main():
         (OUT / "stemmingen.json").write_text(json.dumps(stem_data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     if begr:
         (OUT / "begrotingen.json").write_text(json.dumps(begr, ensure_ascii=False, indent=1), encoding="utf-8")
+    # 7b. Kamerstukken per gevolgd wetsvoorstel (Wetgeving, uitgeklapte rij)
+    try:
+        ws = wetstukken({str(d["nummer"]) for z in zaken_lijst if "wetgeving" in (z["soort"] or "").lower() for d in z["dossiers"]})
+        if ws:
+            (OUT / "wetstukken.json").write_text(json.dumps(ws, ensure_ascii=False, indent=1), encoding="utf-8")
+        log(f"== Kamerstukken voor {len(ws)} wetsvoorstellen")
+    except Exception as e:
+        FOUTEN.append(f"wetstukken: {e}")
+        log(f"    FOUT wetstukken: {e}")
     # 8. de tekst van moties en amendementen (data/tk/teksten.json; zie pipeline/teksten.py)
     teksten_telling = None
     try:

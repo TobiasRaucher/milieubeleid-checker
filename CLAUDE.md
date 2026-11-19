@@ -51,7 +51,7 @@ De Action `.github/workflows/update.yml` draait elke werkdag om 05:17 UTC `fetch
 | `pipeline/fetch_tk.py` | Haalt activiteiten, zaken, stukken, stemmingen, toezeggingen, begrotingen op | script |
 | `pipeline/teksten.py` | Teksten van moties en amendementen (draait in `fetch_tk.py`) | script |
 | `pipeline/config.json` | Sectoren, trefwoorden, dossiers, in- en uitsluitingen | Claude/Tobias |
-| `data/tk/*.json` | `activiteiten`, `zaken`, `stukken`, `stemmingen`, `teksten`, `toezeggingen`, `begrotingen`, `meta` | alleen script |
+| `data/tk/*.json` | `activiteiten`, `zaken`, `stukken`, `stemmingen`, `teksten`, `toezeggingen`, `begrotingen`, `wetstukken`, `meta` | alleen script |
 | `data/debatten.json` | Samenvattingen van debatten | Claude |
 | `data/agenda.json` | Mijlpalen, consultaties, deadlines (met bron-URL) | Claude |
 | `data/kerndocumenten.json` | Handmatige kerndocumenten (reeksen met edities) | Claude |

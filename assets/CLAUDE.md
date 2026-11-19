@@ -105,7 +105,9 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 - Status (sinds 19 nov 2026): de fase zoals op tweedekamer.nl (Voorbereiding, Debat, Stemming, Afgedaan), maar afgeleid uit
   onze besluiten, vergaderingen (`kamerstukkenVan()`) en stemmingen (`wetFase()`); afgedaan toont de uitslag.
   Uitgeklapte rij: fasebalk, "Volgende stap" en het hele Wetgevingsproces in gewone taal (`wetStappen()`, `STAP_WEG`, `STAP_TEKST`).
-- Plan (19 nov 2026, met Tobias): fase 2 haalt alle Kamerstukken per wetsvoorstel op in `fetch_tk.py`; fase 3 is een eigen
+- Kamerstukken (`data/tk/wetstukken.json`, sinds 19 nov 2026) staan in het Wetgevingsproces: titel naar tweedekamer.nl,
+  nummer (`37052-3`) en Lees in de eigen documentweergave.
+- Plan (19 nov 2026, met Tobias): fase 2 (Kamerstukken ophalen) is klaar; fase 3 is een eigen
   pagina per Kamerstuk (`#wetgeving/<kamerstuk>`) met één tijdlijn (oudste boven): stappen, Kamerstukken met Lees,
   vergaderingen, brieven, amendementen en moties per stemdag, Kamervragen als "Mogelijk gerelateerd" (alleen op Kamerstuknummer
   of exacte titel) en mijlpalen uit `agenda.json` met een veld `kamerstuk`. De titel in de tabel gaat dan naar die pagina.

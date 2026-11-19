@@ -72,6 +72,12 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
 Het toezeggingenregister van de Kamer, alleen bij gevolgde activiteiten plus de ministeries in
 `toezeggingen.altijdMinisteries`. De pagina is weg; de site toont ze in de samenvatting van de vergadering.
 
+## Kamerstukken per wetsvoorstel (`data/tk/wetstukken.json`, sinds 19 nov 2026)
+
+`{Kamerstuknummer: [stukken op volgnummer]}` voor elk gevolgd wetsvoorstel (`wetstukken()`, tien Kamerstukken per query):
+koninklijke boodschap, voorstel van wet, memorie van toelichting, advies Raad van State, verslag, nota's, brieven. Met
+`docId`/`bestand` voor de documentweergave en `link` naar tweedekamer.nl. Moties en amendementen niet (die staan in `zaken.json`).
+
 ## Begrotingen (`data/tk/begrotingen.json`)
 
 Miljoenennota, de begrotingen van de twee nieuwste jaren en het laatste jaarverslag per hoofdstuk in

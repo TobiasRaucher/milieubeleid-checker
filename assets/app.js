@@ -68,7 +68,7 @@
   async function init() {
     // shortcut: alle data in één keer (17 nov 2026: ~8 MB, ~0,8 MB met gzip, zaken.json parsen ~30 ms); per pagina laden pas
     // als de data flink groeit of de eerste weergave merkbaar traag wordt (audit .impeccable/audit/, P2 "All data loads up front")
-    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen] = await Promise.all([
+    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken] = await Promise.all([
       load("pipeline/config.json", { sectoren: {} }),
       load("data/debatten.json", { debatten: [] }),
       load("data/agenda.json", { items: [] }),
@@ -83,6 +83,7 @@
       load("data/tk/stemmingen.json", {}),
       load("data/kerndocumenten.json", {}),
       load("data/tk/begrotingen.json", []),
+      load("data/tk/wetstukken.json", {}),
     ]);
     // stemmingen.json: {zaak: {datum, activiteit}} (oud formaat: {zaak: datum}); de site gebruikt twee platte tabellen
     const stemDatum = {}, stemActiviteit = {};
@@ -90,7 +91,7 @@
       if (typeof v === "string") stemDatum[nr] = v;
       else if (v && v.datum) { stemDatum[nr] = v.datum; if (v.activiteit) stemActiviteit[nr] = v.activiteit; }
     }
-    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, kerndocumenten, begrotingen };
+    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, kerndocumenten, begrotingen, wetstukken };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
       $("#stamp").textContent = "";
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
@@ -831,7 +832,7 @@
   // Fasen zoals op tweedekamer.nl; welke fase geldt volgt uit onze besluiten, vergaderingen en stemmingen
   // (de Kamer zelf zet elk open wetsvoorstel op Voorbereiding).
   // shortcut: activiteiten gaan terug tot nov 2025; een ouder open wetsvoorstel dat toen al plenair is behandeld blijft op
-  // Voorbereiding. Opnieuw bekijken als de pipeline stukken per Kamerstuk ophaalt (fase 2).
+  // Voorbereiding. Opwaarderen: plenaire activiteiten per wetsvoorstel ophalen als dat bij een gevolgd wetsvoorstel speelt.
   const WET_FASEN = ["Voorbereiding", "Debat", "Stemming", "Afgedaan"];
   const AFGEDAAN = ["aangenomen", "verworpen", "ingetrokken", "vervallen"];
   const wetActiviteiten = onthoud((z) => {
@@ -858,6 +859,11 @@
   };
   function wetStappen(z) {
     const s = [{ datum: z.gestartOp, html: "Wetsvoorstel ingediend." }];
+    // Kamerstukken (data/tk/wetstukken.json): titel naar tweedekamer.nl, nummer, en Lees in de eigen documentweergave
+    for (const d of S.data.wetstukken[String(z.dossiers[0]?.nummer)] || []) {
+      const lees = docKnop({ ...d, id: d.document }, "Lees");
+      s.push({ datum: d.datum, html: `${extLink(d.link, d.titel)} <span class="muted mono">${esc(`${z.dossiers[0].nummer}-${d.volgnummer}`)}</span>${lees ? ` · ${lees}` : ""}` });
+    }
     for (const b of z.besluiten) {
       const t = STAP_TEKST[b.soort] || (b.tekst || "").trim();
       if (b.datum && t && !STAP_WEG.test(b.soort || "") && !/^Behandeld\.?$/.test(t)) s.push({ datum: b.datum, html: esc(t) });
