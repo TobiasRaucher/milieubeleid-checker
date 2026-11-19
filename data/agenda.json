@@ -1,6 +1,6 @@
 {
-  "_uitleg": "Handmatig bijgehouden agenda-items en mijlpalen. Geplande Kameractiviteiten komen ook automatisch uit data/tk/activiteiten.json.",
-  "bijgewerkt": "2026-11-12T18:57:30Z",
+  "_uitleg": "Handmatig bijgehouden agenda-items en mijlpalen. Geplande Kameractiviteiten komen ook automatisch uit data/tk/activiteiten.json. Optioneel veld \"kamerstuk\" (bv. \"37052\"): de mijlpaal staat dan ook in de tijdlijn op de pagina van dat wetsvoorstel (#wetgeving/<kamerstuk>).",
+  "bijgewerkt": "2026-11-19T10:13:00Z",
   "items": [
     {
       "datum": "2026-11-25",

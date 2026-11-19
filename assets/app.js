@@ -194,7 +194,7 @@
   function oudeRoute(tab, pad) {
     if (tab === "stukken") return "#vragen";
     if (tab === "documenten") return "#kerndocumenten" + location.hash.slice("#documenten".length);
-    if (tab === "wetgeving" && pad.includes("/") && pad !== "wetgeving/wetten") return "#wetgeving";
+    if (tab === "wetgeving" && pad.includes("/") && pad !== "wetgeving/wetten" && !/^wetgeving\/\d+$/.test(pad)) return "#wetgeving";
     if (tab === "toezeggingen" || tab === "fracties") return "#agenda?terugblik=1";
     // themapagina: Agenda en Vergaderingen zijn sinds 19 nov 2026 de Agenda met het themafilter
     const type = (hashQuery().type || [])[0];
@@ -228,12 +228,13 @@
     if (tab === "themas" && pad.split("/")[1]) { const t = S.T.thema(pad.split("/")[1]); document.title = `${t ? t.label : "Thema niet gevonden"} · Thema's · milieuradar`; }
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
     $("#view").innerHTML = (views[tab] || overzicht)();
+    if (/^wetgeving\/\d+$/.test(pad)) document.title = `Kamerstuk ${pad.split("/")[1]} · Wetgeving · milieuradar`;
     const tabGewisseld = tab !== _vorigeTab, eerste = _vorigeTab === null;
     if (tabGewisseld) { const v = $("#view"); v.classList.remove("binnenkomst"); void v.offsetWidth; v.classList.add("binnenkomst"); }
     _vorigeTab = tab;
     zetKopHoogte(); zetGlij(!eerste);
     // Thema's: overzicht en detail zijn aparte pagina's binnen dezelfde tab, dus ook daartussen bovenaan beginnen (of herstellen bij terug/vooruit)
-    const themaWissel = tab === "themas" && pad !== _vorigPad && !eerste;
+    const themaWissel = (tab === "themas" || tab === "wetgeving") && pad !== _vorigPad && !eerste;
     if ((tabGewisseld && !eerste && !pad.includes("/")) || themaWissel) {
       const bewaard = _klik ? null : _scrollBij.get(location.hash || "#overzicht");
       if (bewaard != null) setTimeout(() => window.scrollTo(0, bewaard), 0);
@@ -328,7 +329,7 @@
       if (!isDag(z.gestartOp)) continue;
       if (slug && !themasWet(z).includes(slug)) continue;
       items.push({ soort: "Wetgeving", datum: z.gestartOp, html: feedLi("Wetsvoorstel", z.gestartOp, feedMeta("Ingediend"),
-        z.titel || z.onderwerp, tkUrl(z), `<span class="mono">${esc(dossierLabel(z))}</span>`, true) });
+        z.titel || z.onderwerp, wetHref(z), `<span class="mono">${esc(dossierLabel(z))}</span>`, false) });
     }
     return items.sort((a, b) => b.datum.localeCompare(a.datum) || FEED_ORDE[a.soort] - FEED_ORDE[b.soort]).slice(0, NET_BINNEN_MAX);
   }
@@ -828,6 +829,8 @@
   /* ---------- Wetgeving ---------- */
   // Wetsvoorstellen uit de open data van de Kamer (soort Wetgeving of Initiatiefwetgeving in de gevolgde Kamerstukdossiers).
   const themasWet = onthoud((z) => themasVanZaak(z), (z) => z.nummer);
+  const wetNr = (z) => String(z.dossiers[0]?.nummer || "");
+  const wetHref = (z) => `#wetgeving/${encodeURIComponent(wetNr(z))}`;
   const wetSoort = (z) => (z.soort === "Initiatiefwetgeving" ? "Initiatiefwetsvoorstel" : "Regering");
   // Fasen zoals op tweedekamer.nl; welke fase geldt volgt uit onze besluiten, vergaderingen en stemmingen
   // (de Kamer zelf zet elk open wetsvoorstel op Voorbereiding).
@@ -858,9 +861,11 @@
     "Stemmen - verworpen": "Verworpen door de Tweede Kamer.",
   };
   function wetStappen(z) {
-    const s = [{ datum: z.gestartOp, html: "Wetsvoorstel ingediend." }];
+    // de Kamerstukken (koninklijke boodschap, voorstel van wet) markeren het indienen zelf; anders één regel op de startdatum
+    const stukken = S.data.wetstukken[String(z.dossiers[0]?.nummer)] || [];
+    const s = stukken.length ? [] : [{ datum: z.gestartOp, html: "Wetsvoorstel ingediend." }];
     // Kamerstukken (data/tk/wetstukken.json): titel naar tweedekamer.nl, nummer, en Lees in de eigen documentweergave
-    for (const d of S.data.wetstukken[String(z.dossiers[0]?.nummer)] || []) {
+    for (const d of stukken) {
       const lees = docKnop({ ...d, id: d.document }, "Lees");
       s.push({ datum: d.datum, html: `${extLink(d.link, d.titel)} <span class="muted mono">${esc(`${z.dossiers[0].nummer}-${d.volgnummer}`)}</span>${lees ? ` · ${lees}` : ""}` });
     }
@@ -890,28 +895,89 @@
       soort: { label: "Ingediend door", waarden: (z) => [wetSoort(z)], orde: opVolgorde(["Regering", "Initiatiefwetsvoorstel"]), tekst: (v) => esc(v === "Regering" ? "Regering" : "Kamerleden (initiatief)") },
     },
     kolommen: [
-      { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => `<a class="ltitel" href="${esc(tkUrl(z))}" target="_blank" rel="noopener">${titelMetPijl(z.titel || z.onderwerp || "")}</a>` },
+      { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => `<a class="ltitel" href="${wetHref(z)}">${esc(z.titel || z.onderwerp || "")}</a>` },
       { filter: "status", tdCls: "uitslag", cel: (z) => uitslagPill(wetStatus(z)) },
       { filter: "soort", tdCls: "indiener hide-sm", cel: (z) => (z.soort === "Initiatiefwetgeving" ? indienerKort(z) : "Regering") },
       themaKolom(themasWet),
       { kop: "Kamerstuk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (z) => esc(dossierLabel(z)) },
       { datum: true, kop: "Ingediend" },
     ],
+    // uitgeklapte rij: kenmerken, fase en volgende stap; het hele verloop staat op de eigen pagina
     detail: (z) => {
-      const fase = wetFase(z), stappen = wetStappen(z), volgende = stappen.find((x) => x.gepland);
       const door = z.indieners.map(naamFractie);
       const ks = z.dossiers[0];
       return `<div class="mdetail">
         <p>Zaak <span class="mono">${esc(z.nummer)}</span>${ks ? ` · Kamerstuk <span class="mono">${esc(dossierLabel(z))}</span>` : ""} · ingediend ${fmtKort(z.gestartOp)}${door.length ? `, door ${opsomming(door)}` : ""}</p>
-        <div class="mstemming">
-          <ol class="wfasen" aria-label="Fase">${WET_FASEN.map((f, i) => `<li class="${i < fase || fase === 3 ? "klaar" : i === fase ? "nu" : ""}"${i === fase ? ` aria-current="step"` : ""}>${f}</li>`).join("")}</ol>
-          ${volgende ? `<p>Volgende stap: ${volgende.html}, ${fmtKort(volgende.datum)}</p>` : z.uitslag === "aangenomen" ? `<p>Na de Tweede Kamer behandelt de Eerste Kamer het wetsvoorstel.</p>` : ""}
-        </div>
-        <div class="mstemming"><p class="mtelling">Wetgevingsproces</p><ul class="mstappen">${stappen.map((x) => `<li><span class="datum">${fmtKort(x.datum)}</span> ${x.html}${x.gepland ? ` <span class="muted">(gepland)</span>` : ""}</li>`).join("")}</ul></div>
-        <div class="mlinks">${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
+        ${faseBlok(z)}
+        <div class="mlinks"><a href="${wetHref(z)}">Alles over dit wetsvoorstel</a>${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
       </div>`;
     },
   };
+  function faseBlok(z) {
+    const fase = wetFase(z), volgende = wetStappen(z).find((x) => x.gepland);
+    return `<div class="mstemming">
+      <ol class="wfasen" aria-label="Fase">${WET_FASEN.map((f, i) => `<li class="${i < fase || fase === 3 ? "klaar" : i === fase ? "nu" : ""}"${i === fase ? ` aria-current="step"` : ""}>${f}</li>`).join("")}</ol>
+      ${volgende ? `<p>Volgende stap: ${volgende.html}, ${fmtKort(volgende.datum)}</p>` : z.uitslag === "aangenomen" ? `<p>Na de Tweede Kamer behandelt de Eerste Kamer het wetsvoorstel.</p>` : ""}
+    </div>`;
+  }
+
+  /* Pagina per wetsvoorstel (#wetgeving/<Kamerstuknummer>): fase, dan één tijdlijn per dag (oudste boven) met de stappen,
+     Kamerstukken, vergaderingen, eigen mijlpalen (agenda.json met "kamerstuk") en moties en amendementen per stemdag;
+     onderaan Kamervragen die het Kamerstuknummer of de titel noemen ("Mogelijk gerelateerd"). */
+  const telwoord = (n, een, meer) => `${nl(n)} ${n === 1 ? een : meer}`;
+  function stemBlokken(z) {
+    const nr = wetNr(z), perDag = new Map();
+    for (const x of motiesEnAmendementen().filter((x) => x.dossiers.some((d) => String(d.nummer) === nr))) {
+      const dag = x.stemtelling?.datum || S.data.stemmingen[x.nummer] || x.gestartOp;
+      if (!perDag.has(dag)) perDag.set(dag, []);
+      perDag.get(dag).push(x);
+    }
+    return [...perDag].map(([dag, xs]) => {
+      xs.sort((a, b) => (a.soort === b.soort ? (a.volgnummer || 0) - (b.volgnummer || 0) : a.soort === "Amendement" ? -1 : 1));
+      const gestemd = xs.some((x) => x.stemtelling), gepland = !gestemd && xs.some((x) => S.data.stemmingen[x.nummer] === dag);
+      const am = xs.filter((x) => x.soort === "Amendement").length, mo = xs.length - am;
+      const wat = [am && telwoord(am, "amendement", "amendementen"), mo && telwoord(mo, "motie", "moties")].filter(Boolean).join(" en ");
+      return { datum: dag, gepland, html: `${gestemd ? "Gestemd over" : gepland ? "Stemming over" : "Ingediend:"} ${wat}
+        <ul class="wtl-zaken">${xs.map((x) => `<li><details class="wtl-zaak" data-zaak="${esc(x.nummer)}"><summary>${stemStatus(x.nummer, x.uitslag) || uitslagPill(x.uitslag)}<span>${esc(x.soort)} over ${esc(onderwerpKlein(x))} <span class="muted">${indienerKort(x)}</span></span></summary><div class="wtl-detail"></div></details></li>`).join("")}</ul>` };
+    });
+  }
+  // een motie of amendement in de tijdlijn klapt open met dezelfde inhoud als de rij op Moties
+  document.addEventListener("toggle", (e) => {
+    const d = e.target;
+    if (!d.matches?.("details.wtl-zaak") || !d.open || d.dataset.klaar) return;
+    const z = S.data.zaken.find((x) => x.nummer === d.dataset.zaak);
+    if (!z) return;
+    d.dataset.klaar = "1";
+    const plek = d.querySelector(".wtl-detail");
+    plek.innerHTML = motieDetail(z);
+    vulTeksten(plek);
+  }, true);
+  function wetPagina(nr) {
+    const terug = `<p class="small terug"><a href="#wetgeving">Alle wetsvoorstellen</a></p>`;
+    const z = wetsvoorstellenTK().find((x) => wetNr(x) === nr);
+    if (!z) return `${terug}<h1>Wetsvoorstel niet gevonden</h1><p>Kamerstuk ${esc(nr)} staat niet tussen de wetsvoorstellen op deze site. ${extLink(tkUrl({ soort: "Wetgeving", dossiers: [{ nummer: nr }] }), "Zoek het op tweedekamer.nl")}</p>`;
+    const mijlpalen = (S.data.agenda || []).filter((m) => String(m.kamerstuk || "") === nr && /^\d{4}-\d{2}-\d{2}/.test(m.datum || ""))
+      .map((m) => ({ datum: m.datum.slice(0, 10), gepland: m.datum.slice(0, 10) >= VANDAAG, html: `${esc(m.type || "Mijlpaal")}: ${m.url ? extLink(m.url, m.titel) : esc(m.titel)}` }));
+    const items = [...wetStappen(z), ...stemBlokken(z), ...mijlpalen].filter((x) => x.datum).sort((a, b) => a.datum.localeCompare(b.datum));
+    const dagen = new Map();
+    for (const x of items) { if (!dagen.has(x.datum)) dagen.set(x.datum, []); dagen.get(x.datum).push(x); }
+    // Kamervragen die het Kamerstuknummer ("37052" of "37 052") of de (citeer)titel noemen; een vraag en haar antwoord samen
+    const rx = new RegExp(`\\b${nr.slice(0, 2)} ?${nr.slice(2)}\\b`), titels = [z.citeertitel, z.titel].filter(Boolean).map((t) => t.toLowerCase());
+    const vragen = (S.data.stukken || []).filter((q) => q.soort === "Schriftelijke vragen").filter((q) => {
+      const t = `${q.onderwerp || ""} ${q.titel || ""}`;
+      return rx.test(t) || titels.some((x) => t.toLowerCase().includes(x));
+    });
+    const door = z.soort === "Initiatiefwetgeving" ? opsomming(z.indieners.map(naamFractie)) : "Regering";
+    return `${terug}
+      <h1 class="wp-titel">${esc(z.titel || z.onderwerp || "")}</h1>
+      <p class="wp-meta"><span>Kamerstuk <span class="mono">${esc(dossierLabel(z))}</span></span><span>ingediend ${fmtKort(z.gestartOp)}</span><span>${esc(door)}</span>${themaChips(themasWet(z))}</p>
+      <div class="wp-fase">${faseBlok(z)}</div>
+      <div class="mlinks wp-links">${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
+      <h2>Wetgevingsproces</h2>
+      <ol class="wtl">${[...dagen].map(([d, xs]) => `<li><span class="datum">${fmtKort(d)}</span><ul>${xs.map((x) => `<li>${x.html}${x.gepland ? ` <span class="muted">(gepland)</span>` : ""}</li>`).join("")}</ul></li>`).join("")}</ol>
+      ${vragen.length ? `<h2>Mogelijk gerelateerd</h2><p class="wp-uitleg">Kamervragen die het Kamerstuknummer of de titel van dit wetsvoorstel noemen.</p>
+        <ul class="mstappen">${vragen.map((q) => `<li><span class="datum">${fmtKort(q.datum)}</span> <a href="#vragen?open=${encodeURIComponent(q.id)}">${esc(q.onderwerp || q.titel)}</a></li>`).join("")}</ul>` : ""}`;
+  }
   // Geldende wetten: de kerndocumenten uit groepen met pagina "wetgeving" (Wettelijk kader in data/kerndocumenten.json)
   function wettenDef() {
     const K = kdData(), groepen = new Set(K.groepen.filter((g) => g.pagina === "wetgeving").map((g) => g.id));
@@ -930,6 +996,8 @@
     };
   }
   function wetgeving() {
+    const los = /^wetgeving\/(\d+)$/.exec(location.hash.slice(1).split("?")[0]);
+    if (los) return wetPagina(los[1]);
     const wetten = location.hash.slice(1).split("?")[0] === "wetgeving/wetten";
     const schak = schakelaar("Wetsvoorstellen of geldende wetten", [["wetgeving", "Wetsvoorstellen"], ["wetgeving/wetten", "Geldende wetten"]], wetten ? "wetgeving/wetten" : "wetgeving");
     const kop = paginaKop("Wetgeving", "Wetsvoorstellen en geldende wetten");

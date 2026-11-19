@@ -413,6 +413,23 @@ tr.detail { animation: binnenkomst var(--d-menu) var(--ease) both; }
 .wfasen li { padding-top: 8px; border-top: 2px solid var(--line); }
 .wfasen .klaar { border-top-color: var(--ink); color: var(--ink-2); }
 .wfasen .nu { border-top-color: var(--ink); color: var(--ink); font-weight: 500; }
+/* pagina per wetsvoorstel (#wetgeving/<Kamerstuk>): kop, fase, links, dan de tijdlijn per dag (datum links, oudste boven) */
+.wp-titel { max-width: var(--leesbreedte); }
+.wp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0; font-size: var(--t-14); color: var(--ink-2); }
+.wp-fase { max-width: var(--leesbreedte); margin-top: 24px; font-size: var(--t-15); color: var(--ink-2); }
+.wp-links { max-width: var(--leesbreedte); margin-top: 16px; }
+.wp-uitleg { margin: 0 0 12px; color: var(--ink-2); }
+.wtl { list-style: none; margin: 0; padding: 0; max-width: var(--leesbreedte); }
+.wtl > li { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.wtl > li > .datum { color: var(--ink); font-variant-numeric: tabular-nums; }
+.wtl > li > ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; color: var(--ink-2); }
+.wtl-zaken { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; font-size: var(--t-14); }
+.wtl-zaak summary { display: grid; grid-template-columns: 144px minmax(0, 1fr); align-items: baseline; gap: 8px; padding: 4px 8px; margin: 0 -8px; border-radius: var(--r-control); cursor: pointer; list-style: none; color: var(--ink); }
+.wtl-zaak summary::-webkit-details-marker { display: none; }
+.wtl-zaak summary:hover, .wtl-zaak[open] summary { background: var(--surface); }
+.wtl-zaak summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }
+.wtl-zaak summary .status { flex: none; }
+.wtl-detail { padding: 12px 16px 16px; margin: 0 -8px; background: var(--surface); border-radius: 0 0 var(--r-control) var(--r-control); }
 .mlinks { display: flex; flex-wrap: wrap; gap: 4px 24px; padding-top: 12px; border-top: 1px solid var(--line); }
 /* tekst van een motie of amendement in de uitgeklapte rij: overwegingen ink-2, het besluitende deel in inkt */
 .mt-plek { padding: 16px 20px; background: var(--page); border: 1px solid var(--line); border-radius: var(--r-card); } /* de tekst als eigen kaart op de getinte rij (Tobias, 18 nov 2026) */

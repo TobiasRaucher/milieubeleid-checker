@@ -169,7 +169,8 @@
         wie: wieVan((z.indieners || []).map((i) => i.naam), (z.indieners || []).map((i) => i.fractie)),
         indiener: (() => { const i = (z.indieners || []).find((x) => /^indiener|eerste/i.test(x.relatie || "")) || (z.indieners || [])[0]; return i ? `${hoofdletter(zonderVoorletters(i.naam))}${i.fractie ? ` (${i.fractie})` : ""}${z.indieners.length > 1 ? " c.s." : ""}` : ""; })(),
         kamerstuk: dossierLabel(z.dossiers), nummer: z.nummer,
-        link: MRThemas.tkUrl(z), extern: true, uitslag: z.uitslag,
+        // wetsvoorstel: de eigen pagina per Kamerstuk; moties en amendementen naar tweedekamer.nl
+        link: isWet && z.dossiers?.[0] ? `#wetgeving/${z.dossiers[0].nummer}` : MRThemas.tkUrl(z), extern: !(isWet && z.dossiers?.[0]), uitslag: z.uitslag,
       });
     }
     for (const x of D.stukken || []) {

@@ -114,7 +114,8 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 
 **Bewust weg** (op verzoek van Tobias; data blijft soms bestaan)
 - Dossiers (sinds 13 nov 2026): geen dossierfilters, -labels of -kaarten, ook niet op Wetgeving. Geen `dossiers`-veld
-  in samenvattingen. "Kamerstuk" (bv. `36169`) is geen dossier in deze zin en blijft overal staan.
+  in samenvattingen. "Kamerstuk" (bv. `36169`) is geen dossier in deze zin en blijft overal staan; de pagina per
+  wetsvoorstel (`#wetgeving/<Kamerstuk>`, sinds 19 nov 2026, op verzoek) is dus geen dossierpagina.
 - Pagina's Toezeggingen en Per fractie, de abonneerknop van de agendafeed, de algemene sectorfilter.
 - Op Overzicht: CO2-band, kerncijfers, Aandachtsdossier, Laatste samenvattingen, planetaire grenzen, Recente stemmingen
   en Nieuwste stukken als losse blokken (met `fetch_milieu.py`). Zie `agent_docs/uitstoot-grafiek.md` voor wat de grafiek bewust weglaat.

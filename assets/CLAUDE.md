@@ -21,7 +21,7 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 | `#vergaderingen…`, `#debatten…` | `#agenda…` (filters blijven, zonder subpad met Terugblik) |
 | `#themas/<slug>?type=agenda`, `?type=vergaderingen` | `#agenda?thema=<slug>` (Vergaderingen met `terugblik=1`) |
 | `#toezeggingen`, `#fracties` | `#agenda?terugblik=1` |
-| `#wetgeving/w-<id>` | `#wetgeving` |
+| `#wetgeving/w-<id>` (oude dossierpagina) | `#wetgeving`; `#wetgeving/<Kamerstuknummer>` is de pagina per wetsvoorstel |
 | `#stukken` | `#vragen` |
 | `#documenten/<groep>…` | `#kerndocumenten/<groep>…` |
 
@@ -97,20 +97,23 @@ Knoppen "Bekijk het origineel", "Lees de brief", "Lees de vragen", "Lees het ant
 openen een venster (`toonDocument()`): pdf met pdf.js, Word met mammoth (beide in `vendor/`, pas geladen bij openen),
 rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat open, een iframe niet).
 
-## Wetgeving (`#wetgeving`, `#wetgeving/wetten`)
+## Wetgeving (`#wetgeving`, `#wetgeving/wetten`, `#wetgeving/<Kamerstuk>`)
 
 - Schakelaar (sinds 17 nov 2026): Wetsvoorstellen en Geldende wetten. De enige documentpagina met een schakelaar.
 - Wetsvoorstellen: uit `zaken.json` (soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Ingediend door,
   Thema, Kamerstuk, Ingediend.
 - Status (sinds 19 nov 2026): de fase zoals op tweedekamer.nl (Voorbereiding, Debat, Stemming, Afgedaan), maar afgeleid uit
   onze besluiten, vergaderingen (`kamerstukkenVan()`) en stemmingen (`wetFase()`); afgedaan toont de uitslag.
-  Uitgeklapte rij: fasebalk, "Volgende stap" en het hele Wetgevingsproces in gewone taal (`wetStappen()`, `STAP_WEG`, `STAP_TEKST`).
-- Kamerstukken (`data/tk/wetstukken.json`, sinds 19 nov 2026) staan in het Wetgevingsproces: titel naar tweedekamer.nl,
-  nummer (`37052-3`) en Lees in de eigen documentweergave.
-- Plan (19 nov 2026, met Tobias): fase 2 (Kamerstukken ophalen) is klaar; fase 3 is een eigen
-  pagina per Kamerstuk (`#wetgeving/<kamerstuk>`) met één tijdlijn (oudste boven): stappen, Kamerstukken met Lees,
-  vergaderingen, brieven, amendementen en moties per stemdag, Kamervragen als "Mogelijk gerelateerd" (alleen op Kamerstuknummer
-  of exacte titel) en mijlpalen uit `agenda.json` met een veld `kamerstuk`. De titel in de tabel gaat dan naar die pagina.
+  Uitgeklapte rij: kenmerken, fasebalk en "Volgende stap" (`faseBlok()`), links "Alles over dit wetsvoorstel", tweedekamer.nl, OpenTK.
+- Pagina per wetsvoorstel (`#wetgeving/<Kamerstuk>`, `wetPagina()`, sinds 19 nov 2026, ontworpen met Tobias): de titel in de
+  tabel, Net binnen en de zoekresultaten gaan erheen. Kop (titel, Kamerstuk, ingediend, indiener, thema's), fase, links naar
+  tweedekamer.nl en OpenTK, dan het Wetgevingsproces als één tijdlijn per dag, oudste boven:
+  - stappen in gewone taal (`wetStappen()`, `STAP_WEG`, `STAP_TEKST`) en vergaderingen (`wetActiviteiten()`);
+  - Kamerstukken uit `data/tk/wetstukken.json` (titel naar tweedekamer.nl, nummer `37052-3`, Lees);
+  - moties en amendementen per stemdag (of indiendag zonder stemming) als één blok (`stemBlokken()`); een regel klapt open
+    met `motieDetail()` (tekst via `vulTeksten()`);
+  - eigen mijlpalen uit `data/agenda.json` met een veld `kamerstuk`.
+  Onderaan "Mogelijk gerelateerd": Kamervragen die het Kamerstuknummer of de (citeer)titel noemen (nu nog geen enkele).
 - Geldende wetten: de kerndocumentgroep met `"pagina": "wetgeving"` (Wettelijk kader), via `wettenDef()`.
 - Links via het Kamerstuknummer (`MRThemas.tkUrl`); OpenTK alleen als tweede link in de details.
 
