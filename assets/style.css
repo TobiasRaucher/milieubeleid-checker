@@ -41,7 +41,6 @@
   /* Hoofdaandacht: rood. Nu, over de grens, en de stip voor verworpen. */
   --alarm: #e5320f;              /* lijnen, stippen, randen (4,4:1 op wit); niet als tekst */
   --alarm-tekst: #c42300;        /* rood als tekst, 5,9:1 op wit */
-  --alarm-soft: #fdeae5;         /* alleen de rij van vandaag op Agenda */
 
   /* Stoplicht voor status: de stip draagt de kleur, het woord de betekenis */
   --good: #00452a;               /* aangenomen, afgedaan, beantwoord */
@@ -503,15 +502,12 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .party:first-child { border-top: 0; }
 .party b { display: inline-block; min-width: 56px; }
 .party ul { margin: 4px 0 0; }
-.motiedetails { margin-top: 8px; font-size: var(--t-14); }
-.motiedetails > summary { cursor: pointer; color: var(--ink-2); width: fit-content; }
-.motiedetails > summary:hover { color: var(--accent); }
 .motielijst { list-style: none; padding: 0; margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px; font-size: var(--t-14); }
 .motielijst li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
 
 /* ===================== Agenda-tijdlijn ===================== */
 .tl-week { margin-bottom: 24px; }
-.tl-weekkop { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; font-size: var(--t-15); font-weight: 600; margin: 0 0 8px; padding: 8px 0; border-bottom: 1px solid var(--line-sterk); }
+.tl-weekkop { position: sticky; top: var(--kop-h, 0px); z-index: 3; background: var(--page); display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; font-size: var(--t-15); font-weight: 600; margin: 0 0 8px; padding: 8px 0; border-bottom: 1px solid var(--line-sterk); }
 .tl-weekkop .muted { font-weight: 400; }
 .tl-week.verleden .tl-weekkop { border-bottom-color: var(--line); color: var(--ink-2); }
 .weeklabel { font-size: var(--t-13); font-weight: 500; color: var(--ink); }
@@ -520,29 +516,31 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-datum .wd { font-size: var(--t-12); font-weight: 500; color: var(--ink-2); }
 .tl-datum .dn { font-size: var(--t-24); font-weight: 500; font-variant-numeric: tabular-nums; }
 .tl-datum .mn { font-size: var(--t-12); color: var(--muted); }
-.tl-dag.vandaag { background: var(--alarm-soft); border-radius: var(--r-card); border-bottom-color: transparent; padding: 12px 12px 12px 0; margin: 4px 0; }
+/* vandaag: rood woord en dagnummer en een rode lijn links; geen vlak (Tobias, 19 nov 2026) */
+.tl-dag.vandaag { box-shadow: inset 2px 0 0 var(--alarm); }
 .tl-dag.vandaag .wd, .tl-dag.vandaag .dn { color: var(--alarm-tekst); }
-.tl-lijst { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
-.tl-item { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 12px; }
+.tl-lijst { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+/* regel: tijd (met Eerstvolgend) | inhoud | rechts de uitklapknop en Live; de uitgeklapte inhoud over de volle breedte */
+.tl-item { display: grid; grid-template-columns: 96px minmax(0, 1fr) auto; grid-template-rows: auto auto 1fr; column-gap: 16px; padding: 8px 12px; margin: 0 -12px; border-radius: var(--r-card); transition: background-color var(--d-kort) var(--ease); }
+.tl-item > .tl-tijd, .tl-item > .tl-inhoud { grid-row: 1 / 4; }
+.tl-item > .toggle { grid-column: 3; grid-row: 1; justify-self: end; margin-top: 0; }
+.tl-item > .tl-live { grid-column: 3; grid-row: 2; justify-self: end; }
+.tl-item > .body-wrap { grid-column: 1 / -1; grid-row: 4; }
+.tl-item.debat:not(.open):hover { background: var(--surface); }
+.tl-item.debat:not(.open):hover .toggle { background: var(--card); }
 .tl-item.leeg { display: block; padding-top: 4px; }
 .tl-tijd { font-size: var(--t-14); color: var(--ink-2); padding-top: 2px; }
+.tl-tijd .badge { display: flex; margin-top: 2px; }
 .tl-titel { font-weight: 500; line-height: 1.35; margin-top: 4px; text-wrap: pretty; }
-.tl-item .kaartlabels { margin: 4px 0 0; }
 .tl-dag.verleden .tl-titel a, .tl-item.voorbij .tl-titel a { color: var(--ink-2); }
-.tl-item.eerst { background: var(--card); border: 1px solid var(--alarm); border-radius: var(--r-card); padding: 12px; margin-left: -12px; }
-.tl-item.eerst .tl-tijd { color: var(--alarm-tekst); }
 .tl-item.mijlpaal .tl-titel { color: var(--ink); }
-.tl-item.debat .toggle { margin-top: 8px; }
-/* moties bij een vergadering: dezelfde knop als "Toon agenda" (Tobias, 18 nov 2026) */
-.tl-item .motiedetails > summary { list-style: none; display: inline-flex; gap: 8px; align-items: center; min-height: 36px; padding: 4px 12px 4px 8px; font-size: var(--t-14); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-control); transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease); }
-.tl-item .motiedetails > summary::-webkit-details-marker { display: none; }
-.tl-item .motiedetails > summary::before { content: ""; width: 16px; height: 16px; background: var(--chevron) center / 16px no-repeat; transition: transform var(--d-lang) var(--ease); }
-.tl-item .motiedetails[open] > summary::before { transform: rotate(180deg); }
-.tl-item .motiedetails > summary:hover { color: var(--ink); background: var(--surface); border-color: var(--line-sterk); }
 /* een vergadering met samenvatting of agenda klapt ook uit met een klik op de regel */
 .tl-item.debat { cursor: pointer; }
 .tl-item.debat .body-wrap { cursor: auto; }
-.tl-item .motiedetails, .tl-verwijs, .tl-live { margin-top: 8px; }
+.tl-verwijs { margin-top: 8px; }
+.tl-live { margin-top: 8px; }
+.naar-ander { margin: 0 0 16px; }
+.tijdlijn + .small + .naar-ander { margin-top: 16px; }
 .tl-live a[target="_blank"]::after { content: ""; display: inline-block; width: 12px; height: 12px; margin-left: 4px; vertical-align: -1px; background: var(--muted); -webkit-mask: var(--ext) center / 12px no-repeat; mask: var(--ext) center / 12px no-repeat; }
 .agendamodus { display: flex; gap: 4px; }
 
@@ -595,8 +593,6 @@ ul.zook .status { font-size: var(--t-13); }
 .terug { margin: 24px 0 0; }
 #view > .terug + h1 { margin-top: 8px; }
 /* Thema-detail: groepen per documentsoort, compacte regels, details achter "Meer details" */
-.themaregel-titel { font-size: var(--t-15); line-height: 1.4; max-width: var(--leesbreedte); }
-.themaregel > .tchips { margin-top: 8px; }
 details.meer { margin-top: 8px; font-size: var(--t-13); }
 details.meer > summary { display: inline-flex; align-items: center; gap: 4px; min-height: 24px; cursor: pointer; color: var(--ink-2); list-style: none; width: fit-content; border-radius: var(--r-tag); }
 details.meer > summary::-webkit-details-marker { display: none; }
@@ -604,8 +600,6 @@ details.meer > summary::after { content: ""; width: 16px; height: 16px; backgrou
 details.meer[open] > summary::after { transform: rotate(180deg); }
 details.meer > summary:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 details.meer dl.facts { margin-top: 8px; font-size: var(--t-13); }
-ul.agendapunten { margin: 0; padding-left: 16px; }
-.toonalle { margin-top: 16px; }
 
 /* ===================== Terug naar boven, laden ===================== */
 .naarboven { position: fixed; right: max(16px, var(--marge)); bottom: max(20px, env(safe-area-inset-bottom)); z-index: 6; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; color: var(--ink); background: var(--card); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -732,7 +726,6 @@ ul.agendapunten { margin: 0; padding-left: 16px; }
   .tl-dag { grid-template-columns: 48px minmax(0, 1fr); gap: 12px; }
   .tl-dag.vandaag { padding-left: 4px; }
   .tl-item { grid-template-columns: 1fr; gap: 4px; }
-  .tl-item.eerst { margin-left: -8px; padding: 12px; }
   .tl-tijd { padding: 0; }
   .facet-menu { position: fixed; left: 12px; right: 12px; top: auto; max-width: none; }
 }

@@ -19,6 +19,7 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 | Oud | Nieuw |
 |---|---|
 | `#vergaderingen…`, `#debatten…` | `#agenda…` (filters blijven, zonder subpad met Terugblik) |
+| `#themas/<slug>?type=agenda`, `?type=vergaderingen` | `#agenda?thema=<slug>` (Vergaderingen met `terugblik=1`) |
 | `#toezeggingen`, `#fracties` | `#agenda?terugblik=1` |
 | `#wetgeving/w-<id>` | `#wetgeving` |
 | `#stukken` | `#vragen` |
@@ -41,10 +42,10 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
   Kamervragen, antwoorden, vergaderingen, agenda, kerndocumenten met de nieuwste editie per reeks). Pagina, CSV en
   noscript-lijst tellen dus hetzelfde.
 - `#themas` (sinds 14 nov 2026): alleen de tien namen als 5 x 2 tegels.
-- `#themas/<slug>`: schakelaar met Overzicht (Net binnen en Komt eraan voor dit thema; standaard), Wetten, Amendementen,
-  Moties, Kamerbrieven, Kamervragen (met antwoorden), Vergaderingen, Agenda en Kerndocumenten, met aantallen. De
-  documentsoorten zijn dezelfde tabellen als op hun eigen pagina, zonder Themakolom (`themaDef()`); Vergaderingen en
-  Agenda zijn een lijst met zoekveld. Adres: `#themas/<slug>?type=<param>` plus filters.
+- `#themas/<slug>`: schakelaar met Overzicht (Net binnen en Komt eraan voor dit thema; standaard), "Agenda →" (link naar
+  `#agenda?thema=<slug>`), Wetten, Amendementen, Moties, Kamerbrieven, Kamervragen (met antwoorden) en Kerndocumenten. De
+  documentsoorten zijn dezelfde tabellen als op hun eigen pagina, zonder Themakolom (`themaDef()`).
+  Adres: `#themas/<slug>?type=<param>` plus filters.
 - Elke lijstpagina heeft een themafilter in de werkbalk (Agenda, Wetgeving, Moties, Amendementen, Kamervragen, Kamerbrieven,
   Kerndocumenten).
 
@@ -108,16 +109,19 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 
 - Eén tijdlijn per week en dag met geplande en gehouden Kameractiviteiten, samengevatte vergaderingen en eigen mijlpalen
   (`tijdlijnItems()`/`renderAgenda()`).
-- Grote schakelaar in plaats van de titel: "Vanaf vandaag" (standaard) toont wat komt; "Terugblik" wat is geweest, nieuwste
-  eerst. De filters gaan mee.
+- Grote schakelaar in plaats van de titel: "Komend" (standaard) toont wat komt; "Geweest" (`terugblik=1`) wat is geweest,
+  nieuwste eerst. De filters gaan mee. Knop "Eerdere vergaderingen" boven Komend, "Naar komende vergaderingen" onder Geweest.
+- Regel in drie kolommen: tijd (met "Eerstvolgend", of "tot hh:mm" bij inbreng), inhoud (meta met themalabels, titel),
+  rechts één uitklapknop en "Live op Debat Direct". Weekkop blijft staan bij scrollen.
+- Plenaire stemmingen per dag als regel (`stemmingenPerDag()`, ook voor Komt eraan), type Stemmingen, alleen in Komend.
 - Werkbalk: zoekveld (titel, commissie, type) en filters type, ministerie en thema (`AGENDA_FILTERS`; geen commissie sinds 18 nov 2026; meerdere
   waarden; geen filter op samenvatting), in de URL (bv. `#agenda?thema=adaptatie&type=Commissiedebat&q=water&terugblik=1`).
   Een klik op een themalabel zet dat thema aan of uit.
-- Vergaderingen zonder samenvatting met agendapunten klappen uit met "Toon agenda (n punten)"
-  (`agendaBlok()`/`agendapuntenBlok()`/`deelnemersBlok()`; samenvattingen gebruiken dezelfde blokken). Stukken op
+- Vergaderingen zonder samenvatting met agendapunten en/of moties klappen uit met één knop ("Toon agenda (n punten)",
+  "Toon n moties", "Toon agenda en n moties"; `agendaBlok(a, id, ms)`/`agendapuntenBlok()`/`deelnemersBlok()`).
+  Moties en amendementen linken naar hun opengeklapte rij (`#moties?open=<zaak>`; `open=` werkt op elke tabel via `def.sleutel`). Stukken op
   Kamerstuknummer; moties en amendementen met uitslag of stemmingsdatum; per Kamerstukdossier een link naar `#moties?q=<nummer>`.
 - Zaal (`zaal`, vaak leeg; plenair = "Plenaire zaal"), label Besloten, en bij openbare vergaderingen van vandaag "Live op Debat Direct".
-- Inbrengtermijnen staan zonder tijd op hun dag met "Inbreng tot hh:mm".
 - Samenvattingen klappen uit ("Toon samenvatting", of een klik op de regel); bij meer activiteiten staat ze bij de hoofdactiviteit en verwijzen de
   andere ernaar. Samenvatting in twee kolommen: inhoud links, agendapunten en deelnemers rechts.
   Toezeggingen uit het register, anders uit de samenvatting.
