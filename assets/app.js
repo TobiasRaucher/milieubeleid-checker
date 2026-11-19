@@ -549,7 +549,7 @@
       for (const r of w.rijen) { const p = w.past(r, k); for (const v of f.waarden(r)) tel.set(v, (tel.get(v) || 0) + (p ? 1 : 0)); }
       for (const v of w.st[k]) if (!tel.has(v)) tel.set(v, 0);
       const n = w.st[k].length;
-      return `<details class="facet" data-f="${k}"${open === k ? " open" : ""}>
+      return `<details class="facet${open === k ? " al-open" : ""}" data-f="${k}"${open === k ? " open" : ""}>
         <summary>${esc(f.label)}${n ? ` <span class="facet-n">${n}</span>` : ""}</summary>
         <div class="facet-menu" role="group" aria-label="${esc(f.label)}">${f.orde(new Set(tel.keys()), tel).map((v, i) =>
           `<label${tel.get(v) ? "" : ' class="nul"'}><input type="checkbox" id="wf-${k}-${i}" data-f="${k}" value="${esc(v)}"${w.st[k].includes(v) ? " checked" : ""}><span>${f.tekst(v)}</span><span class="n">${nl(tel.get(v))}</span></label>`).join("") || `<div class="muted small">Geen waarden</div>`}</div></details>`;
@@ -564,7 +564,12 @@
     const fe = $("#wfacetten"), ae = $("#wactief"), veld = $("#wq");
     veld.addEventListener("input", () => w.zoek(veld.value));
     // één menu tegelijk open
-    fe.addEventListener("toggle", (e) => { if (e.target.open) fe.querySelectorAll("details[open]").forEach((d) => { if (d !== e.target) d.open = false; }); }, true);
+    fe.addEventListener("toggle", (e) => {
+      if (e.target.open) fe.querySelectorAll("details[open]").forEach((d) => { if (d !== e.target) d.open = false; });
+      else e.target.classList.remove("al-open");
+    }, true);
+    // een dubbelklik op een regel zet het vinkje niet aan en meteen weer uit
+    fe.addEventListener("click", (e) => { if (e.detail > 1 && e.target.closest(".facet-menu label")) e.preventDefault(); });
     fe.addEventListener("change", (e) => {
       const cb = e.target.closest("input[data-f]");
       if (!cb) return;
@@ -710,7 +715,7 @@
     });
   }
   const tekstBlok = (z) => (z.soort === "Motie" || z.soort === "Amendement"
-    ? `<div class="mstemming"><p class="mtelling">Tekst</p><div class="mt-plek" data-tekst="${esc(z.nummer)}">${S.data.teksten ? tekstHtml(z) : `<p class="muted">Tekst laden</p>`}</div></div>` : "");
+    ? `<div class="mt-plek" data-tekst="${esc(z.nummer)}">${S.data.teksten ? tekstHtml(z) : `<p class="muted">Tekst laden</p>`}</div>` : "");
 
   // Documentweergave: pdf (pdf.js) en Word (mammoth) rechtstreeks uit de open data van de Kamer.
   // Het gegevensmagazijn staat ophalen vanaf elke site toe (CORS), maar niet tonen in een iframe.

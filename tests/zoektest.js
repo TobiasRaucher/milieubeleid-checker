@@ -39,7 +39,8 @@ const TESTS = [
   ["energieën", "energie", 10],
   ["co₂-opslag", "co2-opslag", 3],
   ["36169", "klimaatwet", 2],
-  ["natura 2000 hollandse kust", "hollandse kust", 3],
+  // de technische briefing "Natura 2000-gebied Hollandse kust" is op 17 nov 2026 geannuleerd (en dus niet meer in de index)
+  ["vogelrichtlijn hollandse kust", "hollandse kust", 3],
   ["\"groen gas\"", "groen gas", 3],
   ["van oosterhout", "van oosterhout", 5],
   // samengestelde woorden
