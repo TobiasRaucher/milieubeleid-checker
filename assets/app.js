@@ -608,8 +608,7 @@
   // kop: titel en ondertitel boven de werkbalk; links: een schakelaar links in de werkbalk; voet: een stille regel onder de tabel
   function tabelPagina(def, kop, voet, zoekhint, links = "") {
     S.tabel = { def, st: tabelStaat(def) };
-    return `${kop}
-      ${werkbalk(zoekhint, S.tabel.st.q, links)}
+    return `<div class="kopbalk"><div class="kop">${kop}</div>${werkbalk(zoekhint, S.tabel.st.q, links)}</div>
       <div class="tablewrap"><table class="motietabel" data-tab="${def.tab}"><thead id="mkop">${tabelKoppen(def, S.tabel.st)}</thead><tbody id="mbody"></tbody></table></div>
       ${voet ? `<p class="small muted">${voet}</p>` : ""}`;
   }
@@ -834,13 +833,14 @@
   const wetSoort = (z) => (z.soort === "Initiatiefwetgeving" ? "Initiatiefwetsvoorstel" : "Regering");
   // Fasen zoals op tweedekamer.nl; welke fase geldt volgt uit onze besluiten, vergaderingen en stemmingen
   // (de Kamer zelf zet elk open wetsvoorstel op Voorbereiding).
-  // shortcut: activiteiten gaan terug tot nov 2025; een ouder open wetsvoorstel dat toen al plenair is behandeld blijft op
-  // Voorbereiding. Opwaarderen: plenaire activiteiten per wetsvoorstel ophalen als dat bij een gevolgd wetsvoorstel speelt.
   const WET_FASEN = ["Voorbereiding", "Debat", "Stemming", "Afgedaan"];
   const AFGEDAAN = ["aangenomen", "verworpen", "ingetrokken", "vervallen"];
   const wetActiviteiten = onthoud((z) => {
     const nr = String(z.dossiers[0]?.nummer || "");
-    return S.data.activiteiten.filter((a) => a.Datum && !["Geannuleerd", "Verplaatst"].includes(a.Status) && a.Soort !== "Procedurevergadering" && kamerstukkenVan(a).has(nr));
+    const act = S.data.activiteiten.filter((a) => a.Datum && !["Geannuleerd", "Verplaatst"].includes(a.Status) && a.Soort !== "Procedurevergadering" && kamerstukkenVan(a).has(nr));
+    // z.debatten (pipeline): ook debatten van vóór deze Kamerperiode of bij een commissie die de agenda niet volgt
+    const bekend = new Set(act.map((a) => a.Nummer));
+    return [...act, ...(z.debatten || []).filter((a) => !bekend.has(a.Nummer))];
   }, (z) => z.nummer);
   function wetFase(z) {
     if (AFGEDAAN.includes(z.uitslag)) return 3;
@@ -876,7 +876,8 @@
     for (const a of wetActiviteiten(z)) {
       const dag = dagNL(new Date(a.Datum));
       if (/^Inbreng/.test(a.Soort) && dag < VANDAAG) continue; // een verstreken inbrengtermijn staat al als besluit ("Inbreng geleverd")
-      s.push({ datum: dag, html: `<a href="#agenda/a-${esc(a.Nummer)}">${esc(typeNaam(a.Soort))}</a>`, gepland: a.Status !== "Uitgevoerd" && dag >= VANDAAG });
+      const opAgenda = S.data.activiteiten.some((x) => x.Nummer === a.Nummer);
+      s.push({ datum: dag, html: opAgenda ? `<a href="#agenda/a-${esc(a.Nummer)}">${esc(typeNaam(a.Soort))}</a>` : extLink(a.tkLink, typeNaam(a.Soort)), gepland: a.Status !== "Uitgevoerd" && dag >= VANDAAG });
     }
     const stem = S.data.stemmingen[z.nummer], sa = S.data.stemActiviteit[z.nummer];
     if (stem >= VANDAAG && !AFGEDAAN.includes(z.uitslag) && !s.some((x) => x.datum === stem && /Stemming/.test(x.html)))
@@ -1037,7 +1038,7 @@
     if (/^verzocht/i.test(a)) return "Verzocht aan te houden";
     return APPRECIATIES.includes(a) ? a : "";
   }
-  const UITSLAG_ORDE = ["aangenomen", "in behandeling", "aangehouden", "verworpen", "ingetrokken", "vervallen"];
+  const UITSLAG_ORDE = ["aangenomen", "in behandeling", "aangehouden", "verworpen", "ingetrokken", "vervallen", "vervangen"];
   const fractieFilter = (label, indieners) => ({ label, waarden: (z) => uniek(indieners(z).map((i) => fractieNaam(i.fractie)).filter(Boolean)), orde: opVolgorde([]), tekst: (v) => esc(v) });
   function motieDef(tab) {
     const soort = SOORT_VAN_TAB[tab];
@@ -1726,6 +1727,8 @@
   const periodeVan = (p) => (p === "maand" ? plusDagen(VANDAAG, -30) : p === "kamer" ? S.data.config.startdatum : "");
 
   // geplande stemming over een motie of amendement zonder uitslag
+  // een wetsvoorstel toont in de zoekresultaten zijn fase, zoals op Wetgeving
+  const zoekStatus = (d) => { const z = d.cat === "wetgeving" && zaakVanNr(d.nummer); return z ? wetStatus(z) : d.uitslag; };
   const stemOp = (d) => (d.cat === "moties" && !d.uitslag ? (S.data.stemmingen || {})[d.nummer] : "") || "";
   // wanneer iets gebeurt: geplande stemming, anders de datum; agenda zonder datum telt als toekomst
   const zoekWanneer = (d) => { const st = stemOp(d); return st >= VANDAAG ? st : d.datum ? sortKey(d.datum) : d.cat === "agenda" ? "9999" : ""; };
@@ -1856,10 +1859,10 @@
       const link = d.extern ? `href="${esc(d.link)}" target="_blank" rel="noopener"` : `href="${esc(d.link)}"`;
       const stem = stemOp(d);
       return `<li>
-        <div class="zmeta">${zoekSoortTag(d)}${d.uitslag ? uitslagPill(d.uitslag) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${zoekDatum(d)}${stem >= VANDAAG ? `<span>Stemming ${esc(dagKort(stem))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${ook && ook.length && d.kamerstuk ? `<span>Kamerstuk ${esc(d.kamerstuk)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
+        <div class="zmeta">${zoekSoortTag(d)}${d.uitslag ? uitslagPill(zoekStatus(d)) : ""}${d.cat === "toezeggingen" ? statusPill(d.status) : ""}${d.niveau === "kort" ? `<span class="badge stil">Kort</span>` : ""}${zoekDatum(d)}${stem >= VANDAAG ? `<span>Stemming ${esc(dagKort(stem))}</span>` : ""}${d.indiener ? `<span>${esc(d.indiener)}</span>` : ""}${ook && ook.length && d.kamerstuk ? `<span>Kamerstuk ${esc(d.kamerstuk)}</span>` : ""}${d.ministerie ? `<span>${esc(d.ministerie)}</span>` : ""}</div>
         <a class="ztitel" ${link}>${Z.markeer(d.titel, termen, esc)}${d.extern ? `<span class="sr-only"> (opent nieuwe pagina)</span>` : ""}</a>
         <div class="zfrag">${Z.fragment(d, termen, esc)}</div>
-        ${ook && ook.length ? `<ul class="zook">${ook.map(({ doc: o }) => `<li><span class="muted">Ook:</span> <a href="${esc(o.link)}" target="_blank" rel="noopener">${esc(o.soort)}${o.indiener ? ` ${esc(o.indiener)}` : ""}${o.kamerstuk ? `, Kamerstuk ${esc(o.kamerstuk)}` : ""}<span class="sr-only"> (opent nieuwe pagina)</span></a>${o.uitslag ? uitslagPill(o.uitslag) : ""}${o.datum ? `<span class="datum">${fmtKort(o.datum)}</span>` : ""}</li>`).join("")}</ul>` : ""}
+        ${ook && ook.length ? `<ul class="zook">${ook.map(({ doc: o }) => `<li><span class="muted">Ook:</span> <a href="${esc(o.link)}"${o.extern ? ` target="_blank" rel="noopener"` : ""}>${esc(o.soort)}${o.indiener ? ` ${esc(o.indiener)}` : ""}${o.kamerstuk ? `, Kamerstuk ${esc(o.kamerstuk)}` : ""}${o.extern ? `<span class="sr-only"> (opent nieuwe pagina)</span>` : ""}</a>${o.uitslag ? uitslagPill(zoekStatus(o)) : ""}${o.datum ? `<span class="datum">${fmtKort(o.datum)}</span>` : ""}</li>`).join("")}</ul>` : ""}
         ${themaChips(d.themas || [])}
       </li>`;
     };
@@ -2022,7 +2025,7 @@
     return (tabs.find((g) => g.id === gevraagd) || tabs[0] || {}).id;
   }
   // elke groep is een eigen pagina (menu Documenten); de titel is de naam van de groep, de ondertitel staat hier
-  const KD_SUB = { kabinet: "Coalitieakkoord, Troonrede, kabinetsnota's", begroting: "Miljoenennota, begrotingen, jaarverslagen", ramingen: "KEV, ramingen en monitors", advies: "Raad van State en Klimaatraad", rechtspraak: "Uitspraken over klimaat en stikstof" };
+  const KD_SUB = { kabinet: "Coalitieakkoord, Troonrede, regeringsverklaring, kabinetsnota's", begroting: "Miljoenennota, begrotingen, jaarverslagen", ramingen: "KEV, ramingen en monitors", advies: "Raad van State en Klimaatraad", rechtspraak: "Uitspraken over klimaat en stikstof" };
   function kerndocumentenPagina() {
     const groep = kdGroep(), g = kdTabs().find((x) => x.id === groep) || {};
     return tabelPagina(kerndocDef(groep), paginaKop(g.label || "Kerndocumenten", KD_SUB[groep] || ""), "", "Zoek op titel, afkorting, uitgever of kenmerk");

@@ -2214,6 +2214,11 @@
     "naam": "S.M. Beckerman",
     "fractie": "SP",
     "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Podt",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
    }
   ],
   "zaal": "Plenaire zaal",
@@ -2335,6 +2340,47 @@
   ]
  },
  {
+  "Id": "b0900611-3d12-4633-81ce-f2873ab4a947",
+  "Nummer": "2026A08505",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+  "Datum": "2026-11-27T14:00:00+01:00",
+  "Aanvangstijd": "2026-11-27T14:00:00+01:00",
+  "Eindtijd": "2026-11-27T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+  "Voortouwafkorting": "VRO",
+  "Besloten": true,
+  "Noot": "<div><strong>HERZIENE CONVOCATIE </strong></div><div>(i.v.m. wijziging datum)</div>",
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-16",
+      "onderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
+      "ondertekenaar": "E. Boekholt-O’Sullivan",
+      "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25082&did=2026D57925"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08505",
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ]
+ },
+ {
   "Id": "01e45305-4913-4974-9adc-21688ffe164f",
   "Nummer": "2026A08292",
   "Soort": "Inbreng feitelijke vragen",
@@ -2394,6 +2440,31 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08290",
   "sectoren": [
    "water-adaptatie"
+  ]
+ },
+ {
+  "Id": "369748ee-5a0f-4f5d-8538-464f7f0fccdc",
+  "Nummer": "2026A08549",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota).",
+  "Datum": "2026-11-26T14:00:00+01:00",
+  "Aanvangstijd": "2026-11-26T14:00:00+01:00",
+  "Eindtijd": "2026-11-26T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "Voortouwafkorting": "LVVN",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08549",
+  "sectoren": [
+   "natuur-stikstof-landbouw"
   ]
  },
  {
@@ -2582,6 +2653,10 @@
    {
     "naam": "E. Boekholt-O’Sullivan",
     "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening"
+   },
+   {
+    "naam": "J. de Bat",
+    "functie": "staatssecretaris van Economische Zaken en Klimaat"
    }
   ],
   "voorzitter": null,
@@ -3570,6 +3645,66 @@
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24446&did=2026D56424"
      }
     ]
+   },
+   {
+    "volgorde": 22,
+    "onderwerp": "Ontwerpprogramma Landbouw, Natuur en Stikstof en Wetsvoorstel voor vastlegging van de emissiedoelen",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-03",
+      "onderwerp": "Ontwerpprogramma Landbouw, Natuur en Stikstof en Wetsvoorstel voor vastlegging van de emissiedoelen",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23902&did=2026D55195"
+     }
+    ]
+   },
+   {
+    "volgorde": 23,
+    "onderwerp": "Ondersteuning aan de agrarische sector voor haalbare doelstellingen",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-03",
+      "onderwerp": "Ondersteuning aan de agrarische sector voor haalbare doelstellingen",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23903&did=2026D55201"
+     }
+    ]
+   },
+   {
+    "volgorde": 24,
+    "onderwerp": "Ontwikkelingen in diervoeder die bijdragen aan verdere verduurzaming van de voedselketen",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-05",
+      "onderwerp": "Ontwikkelingen in diervoeder die bijdragen aan verdere verduurzaming van de voedselketen ",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24220&did=2026D55952"
+     }
+    ]
+   },
+   {
+    "volgorde": 25,
+    "onderwerp": "CW 3.1 kaders (Beleidskeuzes Uitgelegd) bij maatregelen uit de LVVN Ontwerpbegroting 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-11",
+      "onderwerp": "CW 3.1 kaders (Beleidskeuzes Uitgelegd) bij maatregelen uit de LVVN Ontwerpbegroting 2027",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24853&did=2026D57334"
+     }
+    ]
    }
   ],
   "bewindspersonen": [],
@@ -3668,47 +3803,6 @@
   ]
  },
  {
-  "Id": "b0900611-3d12-4633-81ce-f2873ab4a947",
-  "Nummer": "2026A08505",
-  "Soort": "Inbreng feitelijke vragen",
-  "Onderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
-  "Datum": "2026-11-20T14:00:00+01:00",
-  "Aanvangstijd": "2026-11-20T14:00:00+01:00",
-  "Eindtijd": "2026-11-20T14:00:00+01:00",
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
-  "Voortouwafkorting": "VRO",
-  "Besloten": true,
-  "Noot": null,
-  "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
-    "stukken": [
-     {
-      "kamerstuk": null,
-      "soort": "Brief regering",
-      "datum": "2026-11-16",
-      "onderwerp": "Nota Ruimte: Nederland wordt niet groter, wel ruimer",
-      "ondertekenaar": "E. Boekholt-O’Sullivan",
-      "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25082&did=2026D57925"
-     }
-    ]
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [],
-  "zaal": null,
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08505",
-  "sectoren": [
-   "ruimte-mobiliteit"
-  ]
- },
- {
   "Id": "61764c3e-25ae-4ffc-b654-3e3454d78e05",
   "Nummer": "2026A06124",
   "Soort": "Technische briefing",
@@ -3758,7 +3852,7 @@
   "Id": "4e2ae4ee-4e9e-4d54-8df3-6287ca8135f1",
   "Nummer": "2026A08492",
   "Soort": "Plenair debat (tweeminutendebat)",
-  "Onderwerp": "Tweeminutendebat Landbouw- en Visserijraad d.d. 23 en 24 november 2026 (2026Z24879)",
+  "Onderwerp": "Tweeminutendebat Landbouw- en Visserijraad d.d. 23 en 24 november 2026 (2026Z25482)",
   "Datum": "2026-11-19T10:15:00+01:00",
   "Aanvangstijd": "2026-11-19T10:15:00+01:00",
   "Eindtijd": "2026-11-19T10:40:00+01:00",
@@ -3784,11 +3878,65 @@
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24879&did=2026D57454"
      }
     ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Moties ingediend tijdens het debat:",
+    "stukken": [
+     {
+      "kamerstuk": "21501-32-1857",
+      "soort": "Motie",
+      "datum": "2026-11-19",
+      "onderwerp": "Motie van de leden Stöteler en Chris Jansen",
+      "ondertekenaar": "T.S.M. Stöteler",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25622&did=2026D59231"
+     },
+     {
+      "kamerstuk": "21501-32-1856",
+      "soort": "Motie",
+      "datum": "2026-11-19",
+      "onderwerp": "Motie van de leden Kröger en Bromet",
+      "ondertekenaar": "S.C. Kröger",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25621&did=2026D59230"
+     },
+     {
+      "kamerstuk": "21501-32-1855",
+      "soort": "Motie",
+      "datum": "2026-11-19",
+      "onderwerp": "Motie van het lid Van der Plas",
+      "ondertekenaar": "C.A.M. van der Plas",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25620&did=2026D59229"
+     }
+    ]
    }
   ],
   "bewindspersonen": [],
   "voorzitter": null,
-  "deelnemers": [],
+  "deelnemers": [
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Podt",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T.S.M. Stöteler",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
   "zaal": "Plenaire zaal",
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08492",
   "sectoren": [
@@ -5212,13 +5360,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-M-6",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-30",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden ",
-      "ondertekenaar": "J.M. Zwinkels",
-      "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D53947"
+      "kamerstuk": "37020-M-7",
+      "soort": "Nota van wijziging",
+      "datum": "2026-11-18",
+      "onderwerp": "Nota van wijziging ",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D58996"
      }
     ]
    },
@@ -6036,13 +6184,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-M-6",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-30",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden ",
-      "ondertekenaar": "J.M. Zwinkels",
-      "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D53947"
+      "kamerstuk": "37020-M-7",
+      "soort": "Nota van wijziging",
+      "datum": "2026-11-18",
+      "onderwerp": "Nota van wijziging ",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D58996"
      }
     ]
    }
@@ -11092,13 +11240,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-M-6",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-30",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden ",
-      "ondertekenaar": "J.M. Zwinkels",
-      "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D53947"
+      "kamerstuk": "37020-M-7",
+      "soort": "Nota van wijziging",
+      "datum": "2026-11-18",
+      "onderwerp": "Nota van wijziging ",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D58996"
      }
     ]
    }
@@ -51726,6 +51874,21 @@
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z21342&did=2026D49281"
      }
     ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Beantwoording vragen commissie over maatregelen in de landbouw vanwege de droogte (Kamerstuk 28625-385)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Lijst van vragen en antwoorden",
+      "datum": "2026-11-06",
+      "onderwerp": "Lijst van vragen en antwoorden over maatregelen in de landbouw vanwege de droogte (Kamerstuk 28625-385)",
+      "ondertekenaar": "H.S. Steen",
+      "functie": "voorzitter van de vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24353&did=2026D56262"
+     }
+    ]
    }
   ],
   "bewindspersonen": [],
@@ -52598,119 +52761,6 @@
   "zaal": "Plenaire zaal",
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08335",
   "sectoren": [
-   "natuur-stikstof-landbouw"
-  ]
- },
- {
-  "Id": "28b71a8b-9b08-48e9-924c-fefc74aea1b1",
-  "Nummer": "2026A06354",
-  "Soort": "Plenair debat (debat)",
-  "Onderwerp": "Debat over de doorrekeningen van het Planbureau voor de Leefomgeving van de stikstofplannen van het kabinet",
-  "Datum": null,
-  "Aanvangstijd": null,
-  "Eindtijd": null,
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "TK",
-  "Voortouwafkorting": "TK",
-  "Besloten": false,
-  "Noot": "Aangevraagd tijdens de <a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=91598758-c88b-4041-8c6a-531e043a1041\">Regeling van werkzaamheden</a> van 8 september 2026",
-  "SoortWeergave": "Plenair debat",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "Reflectie van PBL op ‘Weer ruimte voor boer, natuur en bouw: maatregelpakket voor Landbouw, Natuur en Stikstof’",
-    "stukken": [
-     {
-      "kamerstuk": "36800-XIV-92",
-      "soort": "Brief regering",
-      "datum": "2026-09-04",
-      "onderwerp": "Reflectie van het PBL op ‘Weer ruimte voor boer, natuur en bouw: maatregelpakket voor landbouw, natuur en stikstof'",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17950&did=2026D40920"
-     }
-    ]
-   },
-   {
-    "volgorde": 2,
-    "onderwerp": "Kabinetsreactie op de reflectie van het PBL en de Landsadvocaat over de samenhangende aanpak voor landbouw, natuur en stikstof",
-    "stukken": [
-     {
-      "kamerstuk": "36800-XIV-93",
-      "soort": "Brief regering",
-      "datum": "2026-09-11",
-      "onderwerp": "Kabinetsreactie op de reflectie van het PBL en de Landsadvocaat over de samenhangende aanpak voor landbouw, natuur en stikstof",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18682&did=2026D42867"
-     }
-    ]
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [
-   {
-    "naam": "L. Bromet",
-    "fractie": "PRO",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "L. Bromet",
-    "fractie": "PRO",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "A. Podt",
-    "fractie": "D66",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "L.A.J.M. Dassen",
-    "fractie": "Volt",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "C.A.M. van der Plas",
-    "fractie": "BBB",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "S.M. Beckerman",
-    "fractie": "SP",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "E. Ouwehand",
-    "fractie": "PvdD",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "P.A. Grinwis",
-    "fractie": "ChristenUnie",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "M. Goudzwaard",
-    "fractie": "JA21",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "T. ten Hove",
-    "fractie": "Groep Markuszower",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "J.C. Koorevaar",
-    "fractie": "CDA",
-    "functie": "Tweede Kamerlid"
-   }
-  ],
-  "zaal": "Plenaire zaal",
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06354",
-  "sectoren": [
-   "circulair-vervuiling",
    "natuur-stikstof-landbouw"
   ]
  },

@@ -1,11 +1,11 @@
 {
   "_uitleg": "Kerndocumenten voor beleidsonderzoek (tab Kerndocumenten). Met de hand bijgehouden; de begrotingsstukken (Miljoenennota, begrotingen per hoofdstuk, Belastingplan, Voorjaars- en Najaarsnota, jaarverslagen) komen automatisch uit data/tk/begrotingen.json en staan hier niet. Velden: id (uniek), groep (een id uit groepen), soort (label op de site), titel, afkorting (ook zoekterm), uitgever, datum (ISO; null bij een doorlopend document zoals een wet), url, kenmerk (officieel kenmerk: Kamerstuk, documentnummer, ECLI, BWBR, CELEX), reeks (edities van hetzelfde document; de site toont de nieuwste en klapt de rest in), themas (slugs uit assets/themas.js). Links naar tweedekamer.nl gaan naar de pagina van het stuk (kamerstukken/detail?id=<zaak>&did=<D-nummer>; bij een bijlage de brief waar ze bij hoort), niet naar downloads; document, docId en bestand zijn voor de knop Bekijk het origineel. Een groep met pagina wetgeving staat op Wetgeving (Geldende wetten); een groep met verborgen true staat (nog) nergens op de site. Bij een nieuwe editie: nieuw item met dezelfde reeks.",
-  "bijgewerkt": "2026-11-18T16:00:00Z",
+  "bijgewerkt": "2026-11-19T12:00:00Z",
   "groepen": [
-    { "id": "kabinet", "kort": "Kabinet", "label": "Kabinet en coalitie" },
-    { "id": "begroting", "kort": "Begroting", "label": "Begroting en financiën" },
+    { "id": "kabinet", "kort": "Kabinetsplannen", "label": "Kabinetsplannen" },
+    { "id": "begroting", "kort": "Begrotingen", "label": "Begroting en financiën" },
     { "id": "ramingen", "kort": "Ramingen", "label": "Ramingen en monitoring" },
-    { "id": "advies", "kort": "Advies", "label": "Advies" },
+    { "id": "advies", "kort": "Adviezen", "label": "Adviezen" },
     { "id": "wet", "label": "Wettelijk kader", "pagina": "wetgeving" },
     { "id": "rechtspraak", "kort": "Rechtspraak", "label": "Rechtspraak" },
     { "id": "eu", "label": "Europese Unie", "verborgen": true }

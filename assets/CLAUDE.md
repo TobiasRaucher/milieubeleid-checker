@@ -5,8 +5,8 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 
 ## Kop en navigatie (sinds 17 nov 2026)
 
-- Tabs: Overzicht, Thema's, Agenda en Documenten (menu in twee kolommen: Kamerstukken met Wetgeving, Moties,
-  Amendementen, Kamervragen, Kamerbrieven; Kerndocumenten met de vijf groepen; opent bij hover, klik of pijl omlaag), dan
+- Tabs: Overzicht, Thema's, Agenda en Documenten (menu in twee kolommen: Uit de Tweede Kamer met Wetgeving, Moties,
+  Amendementen, Kamervragen, Kamerbrieven; Kabinet, adviseurs en rechter met de vijf Kerndocumenten-groepen; opent bij hover, klik of pijl omlaag), dan
   een zoekveld dat altijd zichtbaar is (`/` zet de cursor erin) en de stempel "Bijgewerkt". "Over" staat in de footer.
 - Op alle documentpagina's is Documenten actief en heeft de menuregel `aria-current` (`route()`, `kdGroep()`).
 - Kop en bediening zijn sinds 17 nov 2026 50% groter (`--h-control` 56, `--h-klein` 48); tabeltekst 18 (zie DESIGN.md).
@@ -77,6 +77,7 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
   (`vergaderRegels()`); links naar tweedekamer.nl en OpenTK.
 - Tekst (`tekstBlok()`/`tekstHtml()`): overwegingen in ink-2, het besluitende deel in inkt; bij een amendement eerst de
   Toelichting, de wijziging ingeklapt. `data/tk/teksten.json` wordt pas geladen als iemand een rij openklapt.
+- Uitslag "Vervangen" (sinds 19 nov 2026, grijze stip): een amendement dat door een gewijzigde versie is vervangen (pipeline).
 - Moties zonder uitslag tonen de stemmingsdatum ("Stemming di 17 nov") uit `S.data.stemmingen` (`{zaak: datum}`) en
   `S.data.stemActiviteit`.
 - Koppeling aan vergaderingen (`motieKoppeling()`):
@@ -103,7 +104,8 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 - Wetsvoorstellen: uit `zaken.json` (soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Ingediend door,
   Thema, Kamerstuk, Ingediend.
 - Status (sinds 19 nov 2026): de fase zoals op tweedekamer.nl (Voorbereiding, Debat, Stemming, Afgedaan), maar afgeleid uit
-  onze besluiten, vergaderingen (`kamerstukkenVan()`) en stemmingen (`wetFase()`); afgedaan toont de uitslag.
+  onze besluiten, vergaderingen (`kamerstukkenVan()` plus `z.debatten` uit de pipeline) en stemmingen (`wetFase()`); afgedaan
+  toont de uitslag. Ook in de zoekresultaten (`zoekStatus()`).
   Uitgeklapte rij: kenmerken, fasebalk en "Volgende stap" (`faseBlok()`), links "Alles over dit wetsvoorstel", tweedekamer.nl, OpenTK.
 - Pagina per wetsvoorstel (`#wetgeving/<Kamerstuk>`, `wetPagina()`, sinds 19 nov 2026, ontworpen met Tobias): de titel in de
   tabel, Net binnen en de zoekresultaten gaan erheen. Kop (titel, Kamerstuk, ingediend, indiener, thema's), fase, links naar
@@ -141,8 +143,8 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 
 ## Kerndocumenten (`#kerndocumenten/<groep>`)
 
-- Tabelpatroon (`kerndocDef()`/`kerndocumentenPagina()`), een pagina per groep (sinds 17 nov 2026): Kabinet, Begroting,
-  Ramingen, Advies, Rechtspraak, met het `label` van de groep als titel. Onbekende of lege groep: de eerste (`kdGroep()`).
+- Tabelpatroon (`kerndocDef()`/`kerndocumentenPagina()`), een pagina per groep (sinds 17 nov 2026): Kabinetsplannen, Begrotingen,
+  Ramingen, Adviezen, Rechtspraak, met het `label` van de groep als titel. Onbekende of lege groep: de eerste (`kdGroep()`).
   De menuregels in `index.html` staan vast: een nieuwe groep in `data/kerndocumenten.json` moet daar ook bij.
 - Kolommen: Document, Soort, (op Begroting) Hoofdstuk, Uitgever, Thema, Kenmerk, Datum. Per reeks één rij
   (nieuwste editie); eerdere edities, links en "Bekijk het origineel" in de uitgeklapte rij (`kdDetail()`). Begrotingen en

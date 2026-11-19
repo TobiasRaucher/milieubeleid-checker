@@ -760,6 +760,45 @@ def begrotingsstukken():
     return uit
 
 
+_VERVANGT = re.compile(r"ter vervanging van (?:\w+ )?nr\.? ?(\d+)", re.I)
+
+
+def markeer_vervangen(zaken_lijst):
+    """Een amendement 'ter vervanging van nr. 13' maakt nr. 13 in hetzelfde Kamerstuk overbodig: daar komt geen stemming
+    meer over, dus uitslag 'vervangen' in plaats van 'in behandeling'. Geeft het aantal terug."""
+    per_nr = {(d["nummer"], z.get("volgnummer")): z for z in zaken_lijst if z["soort"] == "Amendement" for d in z["dossiers"]}
+    n = 0
+    for z in zaken_lijst:
+        m = z["soort"] == "Amendement" and _VERVANGT.search(z.get("onderwerp") or "")
+        for d in z["dossiers"] if m else []:
+            oud = per_nr.get((d["nummer"], int(m.group(1))))
+            if oud and oud is not z and oud["uitslag"] == "in behandeling":
+                oud["uitslag"] = "vervangen"
+                n += 1
+    return n
+
+
+def wet_debatten(zaken_lijst, batch=5):
+    """Plenaire debatten, wetgevings- en notaoverleggen per wetsvoorstel (alle datums en commissies) in z['debatten'],
+    voor de fase op Wetgeving: activiteiten.json heeft alleen de huidige Kamerperiode en de gevolgde commissies."""
+    wetten = [z for z in zaken_lijst if "wetgeving" in (z["soort"] or "").lower()]
+    for i in range(0, len(wetten), batch):
+        deel = wetten[i:i + batch]
+        ids = " or ".join(f"z/Id eq {z['id']}" for z in deel)
+        rec = odata("Activiteit", {
+            "$filter": f"Verwijderd eq false and Agendapunt/any(a: a/Zaak/any(z: {ids}))",
+            "$select": "Nummer,Soort,Datum,Status",
+            "$expand": f"Agendapunt($select=Id;$expand=Zaak($select=Id;$filter={ids.replace('z/', '')}))"}, max_pages=5)
+        for z in deel:
+            z["debatten"] = sorted(({
+                "Nummer": a["Nummer"], "Soort": a["Soort"], "Datum": a["Datum"], "Status": a["Status"],
+                "tkLink": f"https://www.tweedekamer.nl/debat_en_vergadering/{'plenaire_vergaderingen/details/activiteit' if a['Soort'].startswith('Plenair') else 'commissievergaderingen/details'}?id={a['Nummer']}",
+            } for a in rec if a.get("Datum") and a.get("Status") not in ("Geannuleerd", "Verplaatst")
+                and re.match(r"Plenair debat|Wetgevingsoverleg|Notaoverleg", a.get("Soort") or "")
+                and any(zz.get("Id") == z["id"] for ap in a.get("Agendapunt") or [] for zz in ap.get("Zaak") or [])),
+                key=lambda a: a["Datum"])
+
+
 def wetstukken(nummers, batch=10):
     """Kamerstukken per wetsvoorstel ({Kamerstuknummer: [stukken op volgnummer]}): wetsvoorstel, memorie van toelichting,
     advies Raad van State, verslag, nota's, brieven. Moties en amendementen niet: die staan als zaak in zaken.json."""
@@ -918,6 +957,12 @@ def main():
 
     OUT.mkdir(parents=True, exist_ok=True)
     zaken_lijst = sorted(alle_zaken.values(), key=lambda z: z["gestartOp"] or "", reverse=True)
+    log(f"== {markeer_vervangen(zaken_lijst)} amendementen vervangen door een gewijzigde versie")
+    try:
+        wet_debatten(zaken_lijst)
+    except Exception as e:
+        FOUTEN.append(f"debatten bij wetsvoorstellen: {e}")
+        log(f"    FOUT debatten bij wetsvoorstellen: {e}")
     act_lijst = sorted(alle_act.values(), key=lambda a: a.get("Datum") or "", reverse=True)
     if not zaken_lijst and not act_lijst and FOUTEN:
         log("Niets opgehaald en wel fouten: bestaande data blijft staan.")

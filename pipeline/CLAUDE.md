@@ -72,6 +72,14 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
 Het toezeggingenregister van de Kamer, alleen bij gevolgde activiteiten plus de ministeries in
 `toezeggingen.altijdMinisteries`. De pagina is weg; de site toont ze in de samenvatting van de vergadering.
 
+## Debatten en vervangen amendementen (`zaken.json`, sinds 19 nov 2026)
+
+- `debatten` bij elk wetsvoorstel (`wet_debatten()`): plenaire debatten, wetgevings- en notaoverleggen met die zaak op de
+  agenda, alle datums en commissies (`Nummer`, `Soort`, `Datum`, `Status`, `tkLink`). Voor de fase op Wetgeving; `activiteiten.json`
+  heeft alleen de huidige Kamerperiode en de gevolgde commissies.
+- Uitslag `vervangen` (`markeer_vervangen()`): een amendement zonder uitslag waarvoor een later amendement "ter vervanging van
+  nr. X" in hetzelfde Kamerstuk is ingediend. Daar wordt niet meer over gestemd.
+
 ## Kamerstukken per wetsvoorstel (`data/tk/wetstukken.json`, sinds 19 nov 2026)
 
 `{Kamerstuknummer: [stukken op volgnummer]}` voor elk gevolgd wetsvoorstel (`wetstukken()`, tien Kamerstukken per query):

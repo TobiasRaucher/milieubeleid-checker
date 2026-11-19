@@ -1,5 +1,177 @@
 [
  {
+  "id": "6d2f0407-cae5-47bc-9ae6-23b0b10d1e33",
+  "nummer": "2026Z25622",
+  "soort": "Motie",
+  "titel": "Landbouw- en Visserijraad",
+  "onderwerp": "Motie van de leden Stöteler en Chris Jansen",
+  "citeertitel": null,
+  "gestartOp": "2026-11-19",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "32",
+    "titel": "Landbouw- en Visserijraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "T.S.M. Stöteler",
+    "fractie": "PVV",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "C.A. (Chris) Jansen",
+    "fractie": "PVV",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-19",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-19",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D59231",
+  "docId": "f1783b0f-f0f6-4a77-926e-37cc34ed1fa4",
+  "bestand": "PDF",
+  "volgnummer": 1857,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25622&did=2026D59231",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25622"
+ },
+ {
+  "id": "eba11117-946e-4174-a1fd-73d283bf3e9c",
+  "nummer": "2026Z25621",
+  "soort": "Motie",
+  "titel": "Landbouw- en Visserijraad",
+  "onderwerp": "Motie van de leden Kröger en Bromet",
+  "citeertitel": null,
+  "gestartOp": "2026-11-19",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "32",
+    "titel": "Landbouw- en Visserijraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-19",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-19",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D59230",
+  "docId": "d6387a92-9f77-4508-9b34-930c67e51fe7",
+  "bestand": "PDF",
+  "volgnummer": 1856,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25621&did=2026D59230",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25621"
+ },
+ {
+  "id": "a6eeb36b-2714-42c9-bd68-bd2aaaa544ab",
+  "nummer": "2026Z25620",
+  "soort": "Motie",
+  "titel": "Landbouw- en Visserijraad",
+  "onderwerp": "Motie van het lid Van der Plas",
+  "citeertitel": null,
+  "gestartOp": "2026-11-19",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "32",
+    "titel": "Landbouw- en Visserijraad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-19",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-19",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D59229",
+  "docId": "2645626d-23d9-4e7f-b439-3be8d44fd11f",
+  "bestand": "PDF",
+  "volgnummer": 1855,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25620&did=2026D59229",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25620"
+ },
+ {
   "id": "b0404209-9e99-4ed1-9cd5-0be419533a21",
   "nummer": "2026Z25373",
   "soort": "Motie",
@@ -41,7 +213,7 @@
   ],
   "document": "2026D58674",
   "docId": "c4afb16a-e6de-48e2-8819-2ef669c7f408",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 185,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25373&did=2026D58674",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25373"
@@ -88,7 +260,7 @@
   ],
   "document": "2026D58680",
   "docId": "4978029d-1512-4b27-b10e-0727d2e85157",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 188,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25377&did=2026D58680",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25377"
@@ -135,7 +307,7 @@
   ],
   "document": "2026D58688",
   "docId": "851e972b-0f8e-416f-b1ee-74f13a206e26",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 194,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25383&did=2026D58688",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25383"
@@ -182,7 +354,7 @@
   ],
   "document": "2026D58681",
   "docId": "4fcb9990-0588-43bc-9525-7785f42900f1",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 189,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25378&did=2026D58681",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25378"
@@ -229,7 +401,7 @@
   ],
   "document": "2026D58686",
   "docId": "65a37fa5-3cf5-4de9-8dfa-81f3add97978",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 193,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25382&did=2026D58686",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25382"
@@ -276,7 +448,7 @@
   ],
   "document": "2026D58685",
   "docId": "92cdef70-aeca-4c01-b096-d6fcda07dbd0",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 192,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25381&did=2026D58685",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25381"
@@ -323,7 +495,7 @@
   ],
   "document": "2026D58619",
   "docId": "6242345a-a279-4c1b-ab81-b1241d270373",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 1330,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25359&did=2026D58619",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25359"
@@ -370,7 +542,7 @@
   ],
   "document": "2026D58670",
   "docId": "73a93acb-ea40-4ad0-87e3-ec8d3ebc6889",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 182,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25370&did=2026D58670",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25370"
@@ -417,7 +589,7 @@
   ],
   "document": "2026D58668",
   "docId": "d08dc2f1-192f-4589-a958-4855bba144b4",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 181,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25369&did=2026D58668",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25369"
@@ -474,7 +646,7 @@
   ],
   "document": "2026D58692",
   "docId": "6e170d16-5af4-4924-8a3b-fcf0983d4c04",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 195,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25385&did=2026D58692",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25385"
@@ -522,7 +694,7 @@
   ],
   "document": "2026D58679",
   "docId": "bbc98159-8741-462e-a6af-fa8ba2e6c70e",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 187,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25376&did=2026D58679",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25376"
@@ -569,7 +741,7 @@
   ],
   "document": "2026D58667",
   "docId": "d0ce6973-9b7e-4c72-9033-9871b93e3592",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 180,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25368&did=2026D58667",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25368"
@@ -621,7 +793,7 @@
   ],
   "document": "2026D58677",
   "docId": "86c320e0-657e-43ce-b917-63c2e1590e84",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 186,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25375&did=2026D58677",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25375"
@@ -668,7 +840,7 @@
   ],
   "document": "2026D58673",
   "docId": "1efde380-8f53-4806-9e15-7a13238a83c4",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 184,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25372&did=2026D58673",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25372"
@@ -715,7 +887,7 @@
   ],
   "document": "2026D58684",
   "docId": "e1856906-5f2c-46e9-aeb7-0ff6b49d66d5",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 191,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25380&did=2026D58684",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25380"
@@ -772,7 +944,7 @@
   ],
   "document": "2026D58693",
   "docId": "c5bc318a-4565-461f-99e0-eb31a8d1953d",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 196,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25386&did=2026D58693",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25386"
@@ -819,7 +991,7 @@
   ],
   "document": "2026D58682",
   "docId": "c979fa5b-6e33-4e22-a594-6f0f6ad9edae",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 190,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25379&did=2026D58682",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25379"
@@ -876,7 +1048,7 @@
   ],
   "document": "2026D58694",
   "docId": "29462807-f1b9-49bb-a73e-8636bdbe6ae9",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 197,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25387&did=2026D58694",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25387"
@@ -923,7 +1095,7 @@
   ],
   "document": "2026D58671",
   "docId": "3cd763aa-b6c0-4fcb-9ae2-3fd52d078f90",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 183,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25371&did=2026D58671",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25371"
@@ -3268,7 +3440,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -11028,7 +11200,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "ruimte-mobiliteit"
@@ -11067,7 +11239,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "ruimte-mobiliteit"
@@ -11419,7 +11591,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -11458,7 +11630,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -11742,7 +11914,8 @@
   "volgnummer": null,
   "tkLink": null,
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z23895",
-  "zoekterm": "stikstof"
+  "zoekterm": "stikstof",
+  "debatten": []
  },
  {
   "id": "08099425-1336-4d25-9b3c-e2a5b200d50a",
@@ -13141,7 +13314,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "circulair-vervuiling"
@@ -13922,7 +14095,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z23070"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z23070",
+  "debatten": []
  },
  {
   "id": "11dc7ece-0dbc-40ae-93cf-a7004b4292a2",
@@ -19149,7 +19323,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "circulair-vervuiling"
@@ -24371,7 +24545,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -36696,7 +36870,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -37907,7 +38081,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -43289,7 +43463,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "ruimte-mobiliteit"
@@ -44489,7 +44663,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "ruimte-mobiliteit"
@@ -45389,7 +45563,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "ruimte-mobiliteit"
@@ -45587,7 +45761,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -45626,7 +45800,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -45670,7 +45844,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -46036,7 +46210,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -46397,7 +46571,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -50839,7 +51013,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z16354"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z16354",
+  "debatten": []
  },
  {
   "id": "d60eb62f-4976-4d79-a654-f418d6c0cf27",
@@ -50907,7 +51082,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z16135"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z16135",
+  "debatten": []
  },
  {
   "id": "0abd2ce3-59a8-4eb0-9b93-88f7668646d9",
@@ -50980,7 +51156,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z15891"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z15891",
+  "debatten": []
  },
  {
   "id": "58c093ff-8b01-4900-addf-3b6d0bf56c2a",
@@ -51065,7 +51242,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z15860"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z15860",
+  "debatten": []
  },
  {
   "id": "f9583907-5a09-48dd-b979-fea3ab85ccad",
@@ -59354,7 +59532,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z15076"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z15076",
+  "debatten": []
  },
  {
   "id": "ec219435-cd3c-46ff-9cc2-096e41cb92b6",
@@ -63745,7 +63924,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14605"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14605",
+  "debatten": []
  },
  {
   "id": "c1cc6f6f-3f63-445f-97ad-e05b9bb012a1",
@@ -70759,7 +70939,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14222"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z14222",
+  "debatten": []
  },
  {
   "id": "ce7e4355-0577-4971-8860-457340476076",
@@ -95029,7 +95210,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "circulair-vervuiling"
@@ -97100,7 +97281,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "circulair-vervuiling"
@@ -97341,7 +97522,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z10595"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z10595",
+  "debatten": [
+   {
+    "Nummer": "2026A05070",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2026-09-07T10:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05070"
+   },
+   {
+    "Nummer": "2026A06379",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2026-09-21T17:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06379"
+   }
+  ]
  },
  {
   "id": "f353af4e-05bb-45d2-a0bc-09a8bd4212b9",
@@ -104252,7 +104449,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z09131"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z09131",
+  "debatten": [
+   {
+    "Nummer": "2026A06382",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2027-01-11T00:00:00+01:00",
+    "Status": "Gepland",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06382"
+   }
+  ]
  },
  {
   "id": "3f159804-26d8-40a4-bc12-d624d2550bba",
@@ -114483,7 +114689,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -114579,7 +114785,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -115264,7 +115470,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -117453,7 +117659,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -120119,7 +120325,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -120349,7 +120555,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -120388,7 +120594,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -120755,7 +120961,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -120794,7 +121000,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -120999,7 +121205,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -121099,7 +121305,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -121304,7 +121510,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -121504,7 +121710,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -121543,7 +121749,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -121582,7 +121788,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -121782,7 +121988,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -121987,7 +122193,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -139111,7 +139317,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -139150,7 +139356,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -142359,7 +142565,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z03446"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z03446",
+  "debatten": []
  },
  {
   "id": "1af2b186-8e61-4e20-958e-140b9cac8088",
@@ -152404,7 +152611,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -152495,7 +152702,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -152688,7 +152895,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -159930,7 +160137,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "water-adaptatie"
@@ -159969,7 +160176,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "water-adaptatie"
@@ -161682,7 +161889,16 @@
   "volgnummer": null,
   "tkLink": null,
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z00282",
-  "zoekterm": "luchtkwaliteit"
+  "zoekterm": "luchtkwaliteit",
+  "debatten": [
+   {
+    "Nummer": "2026A04100",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2026-09-09T19:15:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04100"
+   }
+  ]
  },
  {
   "id": "c133d425-26b0-45eb-bae9-34d135273ac5",
@@ -161792,7 +162008,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z00285"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z00285",
+  "debatten": []
  },
  {
   "id": "8aa4345b-74ed-4664-84c2-761e02fdb800",
@@ -162016,7 +162233,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z22734"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z22734",
+  "debatten": [
+   {
+    "Nummer": "2026A04255",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2026-10-12T10:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04255"
+   }
+  ]
  },
  {
   "id": "72425a38-d5c3-4b10-9d34-8a3796b03564",
@@ -162220,7 +162446,8 @@
   "volgnummer": null,
   "tkLink": null,
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z22644",
-  "zoekterm": "Omgevingswet"
+  "zoekterm": "Omgevingswet",
+  "debatten": []
  },
  {
   "id": "5c9df655-ab75-4e1b-aa25-365a82af2c97",
@@ -162321,7 +162548,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z22646"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z22646",
+  "debatten": []
  },
  {
   "id": "a134295d-894b-4dea-aa1d-c4fb19a3b98d",
@@ -167030,7 +167258,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -167216,7 +167444,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -169497,7 +169725,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21679"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21679",
+  "debatten": []
  },
  {
   "id": "c5b63746-18ca-408a-8240-03f849f32968",
@@ -172771,7 +173000,16 @@
   "volgnummer": null,
   "tkLink": null,
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21209",
-  "zoekterm": "Omgevingswet"
+  "zoekterm": "Omgevingswet",
+  "debatten": [
+   {
+    "Nummer": "2026A03497",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2026-06-08T14:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A03497"
+   }
+  ]
  },
  {
   "id": "135ccc1c-c4eb-4836-b4e6-081177f83b4f",
@@ -173367,7 +173605,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "circulair-vervuiling",
@@ -173986,7 +174224,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "circulair-vervuiling",
@@ -174310,7 +174548,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "ruimte-mobiliteit"
@@ -174349,7 +174587,7 @@
    }
   ],
   "besluiten": [],
-  "uitslag": "in behandeling",
+  "uitslag": "vervangen",
   "stemtelling": null,
   "sectoren": [
    "circulair-vervuiling",
@@ -174711,7 +174949,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z19607"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z19607",
+  "debatten": []
  },
  {
   "id": "7b4fcce5-5d44-4de8-b3e7-7d9df9a89784",
@@ -174940,7 +175179,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z19456"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z19456",
+  "debatten": [
+   {
+    "Nummer": "2026A03081",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2026-05-27T11:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03081"
+   },
+   {
+    "Nummer": "2026A04318",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2026-06-09T18:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04318"
+   }
+  ]
  },
  {
   "id": "a9aa7f87-4671-44ee-8ca9-dea945955afa",
@@ -175157,7 +175412,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z19292"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z19292",
+  "debatten": [
+   {
+    "Nummer": "2026A03501",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2026-05-27T15:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03501"
+   }
+  ]
  },
  {
   "id": "a4a66577-ff79-40cd-bf36-81e1260d3570",
@@ -175384,7 +175648,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z18975"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z18975",
+  "debatten": [
+   {
+    "Nummer": "2026A01386",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2026-04-08T13:01:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A01386"
+   }
+  ]
  },
  {
   "id": "b099fe90-35cc-44a5-a611-7b814408414a",
@@ -175473,7 +175746,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z17949"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z17949",
+  "debatten": []
  },
  {
   "id": "0fe9ed71-48b4-45a1-a882-07d49fd6dd83",
@@ -175679,7 +175953,37 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z16934"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z16934",
+  "debatten": [
+   {
+    "Nummer": "2025A05503",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2025-11-17T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A05503"
+   },
+   {
+    "Nummer": "2025A06710",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2025-11-19T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A06710"
+   },
+   {
+    "Nummer": "2025A06529",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-11-20T13:36:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A06529"
+   },
+   {
+    "Nummer": "2025A07146",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-11-25T16:35:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A07146"
+   }
+  ]
  },
  {
   "id": "343fef8f-47f8-4335-a18c-1142ecfcd62f",
@@ -175898,7 +176202,37 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z16943"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z16943",
+  "debatten": [
+   {
+    "Nummer": "2025A05503",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2025-11-17T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A05503"
+   },
+   {
+    "Nummer": "2025A06710",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2025-11-19T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A06710"
+   },
+   {
+    "Nummer": "2025A06529",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-11-20T13:36:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A06529"
+   },
+   {
+    "Nummer": "2025A07146",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-11-25T16:35:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A07146"
+   }
+  ]
  },
  {
   "id": "2bde136d-ba63-40d2-9b4c-b80243979bd8",
@@ -175992,7 +176326,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z13517"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z13517",
+  "debatten": []
  },
  {
   "id": "cfce61df-5cbb-4651-ae7b-d349f3e984df",
@@ -176225,7 +176560,30 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z10611"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z10611",
+  "debatten": [
+   {
+    "Nummer": "2025A05245",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-09-03T11:15:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A05245"
+   },
+   {
+    "Nummer": "2025A05920",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-09-10T10:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A05920"
+   },
+   {
+    "Nummer": "2025A06305",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-09-24T20:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A06305"
+   }
+  ]
  },
  {
   "id": "52da729a-a6ea-49a7-be32-5c60a4063b40",
@@ -176424,7 +176782,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z11485"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z11485",
+  "debatten": [
+   {
+    "Nummer": "2025A06068",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2025-09-29T18:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A06068"
+   }
+  ]
  },
  {
   "id": "e95fa13b-237a-4a9f-b87e-1c7783dac7ae",
@@ -176481,7 +176848,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z10069"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z10069",
+  "debatten": []
  },
  {
   "id": "deba7415-f517-43c0-8699-b79549a62807",
@@ -176719,7 +177087,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z18588"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z18588",
+  "debatten": [
+   {
+    "Nummer": "2026A02519",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2026-09-08T16:15:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02519"
+   },
+   {
+    "Nummer": "2026A06363",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2026-09-23T18:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06363"
+   }
+  ]
  },
  {
   "id": "1e3407fe-7e99-4805-af4d-c8c317a5bd0e",
@@ -176809,7 +177193,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z17511"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z17511",
+  "debatten": []
  },
  {
   "id": "87406a73-1e02-4653-acb2-ea7e5c218331",
@@ -177000,7 +177385,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z15302"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z15302",
+  "debatten": [
+   {
+    "Nummer": "2025A01519",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-03-26T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A01519"
+   }
+  ]
  },
  {
   "id": "87093165-07c4-467b-9bea-a9a56d0618ba",
@@ -177205,7 +177599,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z14035"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z14035",
+  "debatten": [
+   {
+    "Nummer": "2024A06364",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2024-10-07T11:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2024A06364"
+   }
+  ]
  },
  {
   "id": "41e26d16-bbb7-4eb5-b5d4-7816f2157463",
@@ -177309,7 +177712,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z11386"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z11386",
+  "debatten": []
  },
  {
   "id": "316282d3-c881-4a7c-ba16-512f955e51b5",
@@ -177591,7 +177995,30 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z10891"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z10891",
+  "debatten": [
+   {
+    "Nummer": "2025A02353",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2025-05-19T10:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A02353"
+   },
+   {
+    "Nummer": "2025A02897",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-06-10T16:50:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A02897"
+   },
+   {
+    "Nummer": "2025A04826",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-06-19T16:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A04826"
+   }
+  ]
  },
  {
   "id": "69a5e874-7d3e-4f54-9253-c2937b0571ab",
@@ -177789,7 +178216,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z09604"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z09604",
+  "debatten": [
+   {
+    "Nummer": "2024A06204",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2025-02-05T11:10:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A06204"
+   }
+  ]
  },
  {
   "id": "ffe6bc36-4e81-42f8-a945-1586a335dafa",
@@ -177892,7 +178328,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z09210"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z09210",
+  "debatten": [
+   {
+    "Nummer": "2026A07452",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2026-11-30T00:00:00+01:00",
+    "Status": "Gepland",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07452"
+   }
+  ]
  },
  {
   "id": "5bb3b98a-8bad-402d-a255-ca8e8d855bce",
@@ -177988,7 +178433,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z07336"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z07336",
+  "debatten": []
  },
  {
   "id": "83dfb57d-e493-4a28-b4a4-ef337306764d",
@@ -178187,7 +178633,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z04180"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z04180",
+  "debatten": [
+   {
+    "Nummer": "2024A04821",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2024-06-26T13:01:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A04821"
+   }
+  ]
  },
  {
   "id": "cc3958db-838a-4bdc-acb6-b9bb681de14e",
@@ -178283,7 +178738,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z00421"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2024Z00421",
+  "debatten": []
  },
  {
   "id": "21b08a15-db57-4640-9efe-a8ea4f0c4d8b",
@@ -178377,7 +178833,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z18072"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z18072",
+  "debatten": []
  },
  {
   "id": "d57c56e5-d9b6-4519-8889-52172ada3fb1",
@@ -178568,7 +179025,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z16629"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z16629",
+  "debatten": [
+   {
+    "Nummer": "2024A01051",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2024-03-06T10:30:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A01051"
+   }
+  ]
  },
  {
   "id": "642b9f61-94d5-4a1e-a7f4-465f77430ce4",
@@ -178819,7 +179285,30 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z15475"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z15475",
+  "debatten": [
+   {
+    "Nummer": "2023A01807",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2023-10-18T11:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2023A01807"
+   },
+   {
+    "Nummer": "2023A01808",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2023-10-23T11:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2023A01808"
+   },
+   {
+    "Nummer": "2023A05761",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-10-25T10:15:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A05761"
+   }
+  ]
  },
  {
   "id": "c29629ec-c14b-47b8-9134-6b1f784908f6",
@@ -179066,7 +179555,30 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z15483"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z15483",
+  "debatten": [
+   {
+    "Nummer": "2023A01807",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2023-10-18T11:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2023A01807"
+   },
+   {
+    "Nummer": "2023A01808",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2023-10-23T11:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2023A01808"
+   },
+   {
+    "Nummer": "2023A05761",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-10-25T10:15:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A05761"
+   }
+  ]
  },
  {
   "id": "46edd06c-21ae-459a-a6ad-19e07a2f1ca6",
@@ -179292,7 +179804,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z14851"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z14851",
+  "debatten": [
+   {
+    "Nummer": "2023A07957",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2024-04-18T10:50:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A07957"
+   }
+  ]
  },
  {
   "id": "faabdd05-f56a-425a-a3e6-e9164a7b0bf7",
@@ -179489,7 +180010,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z14698"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z14698",
+  "debatten": []
  },
  {
   "id": "1fab61fa-f833-439c-94bd-b88e7d22cbc5",
@@ -179707,7 +180229,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z12468"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z12468",
+  "debatten": [
+   {
+    "Nummer": "2024A00669",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2024-03-27T16:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A00669"
+   },
+   {
+    "Nummer": "2024A02649",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2024-04-10T11:05:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A02649"
+   }
+  ]
  },
  {
   "id": "ea0deddc-0648-4856-83e6-873503558755",
@@ -180036,7 +180574,37 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z10598"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z10598",
+  "debatten": [
+   {
+    "Nummer": "2024A01741",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2024-04-08T10:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2024A01741"
+   },
+   {
+    "Nummer": "2024A01742",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2024-04-15T10:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2024A01742"
+   },
+   {
+    "Nummer": "2024A01827",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2024-05-23T11:45:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A01827"
+   },
+   {
+    "Nummer": "2024A04115",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2024-05-23T19:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A04115"
+   }
+  ]
  },
  {
   "id": "956218c7-d355-4863-a458-1913527ad04e",
@@ -180146,7 +180714,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z10229"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z10229",
+  "debatten": []
  },
  {
   "id": "23f47e92-fd85-4fbd-85cd-e7b88f790c71",
@@ -180242,7 +180811,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z09327"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z09327",
+  "debatten": []
  },
  {
   "id": "b8750f05-2965-4d5f-bbc9-6ab840e36294",
@@ -180364,7 +180934,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z05257"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z05257",
+  "debatten": []
  },
  {
   "id": "3006bc2e-273a-41b5-9962-68596483b52b",
@@ -180484,7 +181055,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z04723"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z04723",
+  "debatten": []
  },
  {
   "id": "5165405b-bb60-4fd2-b178-b6765aff0e96",
@@ -180559,7 +181131,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z04189"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z04189",
+  "debatten": []
  },
  {
   "id": "83df98d6-d03c-4053-8804-6702054b8c03",
@@ -180655,7 +181228,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z03780"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z03780",
+  "debatten": []
  },
  {
   "id": "5f1bbd83-298a-42ae-a010-101df65cd761",
@@ -180752,7 +181326,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z01276"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2023Z01276",
+  "debatten": []
  },
  {
   "id": "9c6d7b9e-073c-4aa6-b428-c95e02bac7be",
@@ -181046,7 +181621,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z25315"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z25315",
+  "debatten": [
+   {
+    "Nummer": "2023A02663",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-04-19T11:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A02663"
+   },
+   {
+    "Nummer": "2023A03048",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-05-10T10:15:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A03048"
+   }
+  ]
  },
  {
   "id": "316a5c52-2ef3-44c1-b722-c382e8e66587",
@@ -181307,7 +181898,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z25132"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z25132",
+  "debatten": [
+   {
+    "Nummer": "2023A03750",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-07-04T16:15:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A03750"
+   }
+  ]
  },
  {
   "id": "46bd495f-2349-4db3-9872-82cf4659e31e",
@@ -181555,7 +182155,37 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z17306"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z17306",
+  "debatten": [
+   {
+    "Nummer": "2022A04836",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2022-10-17T11:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2022A04836"
+   },
+   {
+    "Nummer": "2022A04838",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2022-10-31T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2022A04838"
+   },
+   {
+    "Nummer": "2022A05690",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2022-11-08T16:50:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A05690"
+   },
+   {
+    "Nummer": "2022A08699",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2022-11-09T16:25:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A08699"
+   }
+  ]
  },
  {
   "id": "2d5451a5-e5d8-48c7-9628-97aa54773fdc",
@@ -181802,7 +182432,37 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z17307"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z17307",
+  "debatten": [
+   {
+    "Nummer": "2022A04836",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2022-10-17T11:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2022A04836"
+   },
+   {
+    "Nummer": "2022A04838",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2022-10-31T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2022A04838"
+   },
+   {
+    "Nummer": "2022A05690",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2022-11-08T16:50:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A05690"
+   },
+   {
+    "Nummer": "2022A08699",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2022-11-09T16:25:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A08699"
+   }
+  ]
  },
  {
   "id": "8ebed2ff-b89b-4695-a6b9-fe4362522abc",
@@ -182021,7 +182681,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z17298"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z17298",
+  "debatten": [
+   {
+    "Nummer": "2022A10025",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2024-02-15T10:16:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A10025"
+   }
+  ]
  },
  {
   "id": "773e96ab-752c-4032-a345-ce15d7687108",
@@ -182270,7 +182939,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z14805"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z14805",
+  "debatten": [
+   {
+    "Nummer": "2022A10023",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-02-02T10:16:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A10023"
+   },
+   {
+    "Nummer": "2023A00682",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-02-08T10:15:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A00682"
+   }
+  ]
  },
  {
   "id": "b8463fc0-10e3-4d7f-8fc6-b017a83535b9",
@@ -182499,7 +183184,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z08764"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z08764",
+  "debatten": [
+   {
+    "Nummer": "2022A09554",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2022-12-06T17:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2022A09554"
+   }
+  ]
  },
  {
   "id": "df96e9ca-a05a-462b-8cd5-467dcc9068ac",
@@ -182575,7 +183269,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z07474"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z07474",
+  "debatten": []
  },
  {
   "id": "d3065ee9-33f6-4863-abfb-83a87a5e99cb",
@@ -182622,7 +183317,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z04801"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z04801",
+  "debatten": []
  },
  {
   "id": "0d876d76-aa0b-45a0-9c1a-c6b4bd7c8076",
@@ -182713,7 +183409,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z04260"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z04260",
+  "debatten": []
  },
  {
   "id": "2debabd7-4206-4535-8e83-fd67ff977349",
@@ -182807,7 +183504,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z03479"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2022Z03479",
+  "debatten": []
  },
  {
   "id": "d3869147-dbf2-4d54-8f86-8cab25bf0a87",
@@ -182931,7 +183629,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z18990"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z18990",
+  "debatten": []
  },
  {
   "id": "803c7d46-4f1e-49a5-b710-050ca774d8c6",
@@ -183146,7 +183845,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z18558"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z18558",
+  "debatten": [
+   {
+    "Nummer": "2021A08679",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2022-01-24T10:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2021A08679"
+   }
+  ]
  },
  {
   "id": "5cd5887d-ed83-4680-8c53-7a082de0025e",
@@ -183374,7 +184082,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z15584"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z15584",
+  "debatten": [
+   {
+    "Nummer": "2022A01122",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2022-03-14T13:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2022A01122"
+   }
+  ]
  },
  {
   "id": "2843e4ca-ff9d-494f-9e5c-b6b9d686b523",
@@ -183463,7 +184180,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z13788"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z13788",
+  "debatten": []
  },
  {
   "id": "5259066a-9754-447d-a8c6-514fe9e6b491",
@@ -183559,7 +184277,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z13703"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z13703",
+  "debatten": []
  },
  {
   "id": "40ec4268-ef38-4b6a-9c15-977cf04224a8",
@@ -183655,7 +184374,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z12505"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z12505",
+  "debatten": []
  },
  {
   "id": "7654d04a-a61d-4c16-ad02-a481cd1868cd",
@@ -183752,7 +184472,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z07024"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z07024",
+  "debatten": []
  },
  {
   "id": "85c187da-67d9-46f5-b615-e6e808317eae",
@@ -183967,7 +184688,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z06761"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z06761",
+  "debatten": [
+   {
+    "Nummer": "2021A07236",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2021-12-09T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2021A07236"
+   }
+  ]
  },
  {
   "id": "afd77a70-7a51-4772-bc9e-714fab83e73c",
@@ -184090,7 +184820,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z04465"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z04465",
+  "debatten": []
  },
  {
   "id": "ddd4f743-d666-4b27-82b8-4284322f6100",
@@ -184305,7 +185036,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z04303"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z04303",
+  "debatten": [
+   {
+    "Nummer": "2022A03154",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2022-06-01T11:35:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A03154"
+   },
+   {
+    "Nummer": "2022A04827",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2022-06-29T11:25:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A04827"
+   }
+  ]
  },
  {
   "id": "813c1c37-d0a3-4854-b973-9e006712ea1f",
@@ -184401,7 +185148,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z04305"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2021Z04305",
+  "debatten": []
  },
  {
   "id": "7f2eed3c-1dad-4bcd-a493-fb031a28c0b8",
@@ -184617,7 +185365,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z25872"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z25872",
+  "debatten": [
+   {
+    "Nummer": "2021A01993",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2021-06-15T16:50:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2021A01993"
+   }
+  ]
  },
  {
   "id": "6ec01d83-4754-40ea-a4ca-6dc5add545cf",
@@ -184840,7 +185597,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z24364"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z24364",
+  "debatten": [
+   {
+    "Nummer": "2021A00987",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2021-05-11T16:30:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2021A00987"
+   }
+  ]
  },
  {
   "id": "5575c00c-f1c8-4faa-aa9f-46e2f0a352b1",
@@ -185031,7 +185797,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z22479"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z22479",
+  "debatten": [
+   {
+    "Nummer": "2020A06194",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2020-12-02T16:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2020A06194"
+   }
+  ]
  },
  {
   "id": "28bd5163-80a0-4dfe-9b2f-57bdda18b261",
@@ -185106,7 +185881,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z22334"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z22334",
+  "debatten": []
  },
  {
   "id": "39d73731-a96b-44e5-b4d6-81278a08d70d",
@@ -185298,7 +186074,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z20957"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z20957",
+  "debatten": []
  },
  {
   "id": "3f4339a3-ee3e-43ef-92f3-d7db9fbc1551",
@@ -185522,7 +186299,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z20857"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z20857",
+  "debatten": [
+   {
+    "Nummer": "2021A00277",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2021-05-20T10:45:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2021A00277"
+   }
+  ]
  },
  {
   "id": "ed4fbb19-3af6-4dc3-948f-75b221621e8b",
@@ -185753,7 +186539,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z18867"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z18867",
+  "debatten": [
+   {
+    "Nummer": "2021A00274",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2021-02-10T13:51:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2021A00274"
+   },
+   {
+    "Nummer": "2021A01305",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2021-03-04T15:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2021A01305"
+   }
+  ]
  },
  {
   "id": "70f08ef7-e14c-492b-9c61-04d54040cd54",
@@ -185973,7 +186775,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z18712"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z18712",
+  "debatten": [
+   {
+    "Nummer": "2020A06325",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-12-10T14:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2020A06325"
+   }
+  ]
  },
  {
   "id": "82a4aad6-5e21-4507-93de-ac6190b41782",
@@ -186272,7 +187083,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z18293"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z18293",
+  "debatten": [
+   {
+    "Nummer": "2022A01608",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-01-17T15:45:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A01608"
+   },
+   {
+    "Nummer": "2023A00190",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2023-01-26T13:21:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A00190"
+   }
+  ]
  },
  {
   "id": "548dc265-3a66-4880-ab6e-37805e3ed351",
@@ -186524,7 +187351,37 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z16404"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z16404",
+  "debatten": [
+   {
+    "Nummer": "2020A03035",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2020-10-26T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2020A03035"
+   },
+   {
+    "Nummer": "2020A03036",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2020-11-02T10:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2020A03036"
+   },
+   {
+    "Nummer": "2020A02878",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-11-10T16:15:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2020A02878"
+   },
+   {
+    "Nummer": "2020A05487",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-11-11T16:20:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2020A05487"
+   }
+  ]
  },
  {
   "id": "87b38f37-ad94-4096-baf0-3846a6f02f4b",
@@ -186770,7 +187627,37 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z16414"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z16414",
+  "debatten": [
+   {
+    "Nummer": "2020A03035",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2020-10-26T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2020A03035"
+   },
+   {
+    "Nummer": "2020A03036",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2020-11-02T10:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2020A03036"
+   },
+   {
+    "Nummer": "2020A02878",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-11-10T16:15:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2020A02878"
+   },
+   {
+    "Nummer": "2020A05487",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-11-11T16:20:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2020A05487"
+   }
+  ]
  },
  {
   "id": "f14ff64e-8cb0-43dd-bff9-e1c471d3ebb5",
@@ -187006,7 +187893,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z14083"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z14083",
+  "debatten": [
+   {
+    "Nummer": "2021A06168",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2022-02-17T18:10:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2021A06168"
+   }
+  ]
  },
  {
   "id": "e4cbb0b7-861d-4342-8f51-5dd5aa97ffa1",
@@ -187255,7 +188151,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z13691"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z13691",
+  "debatten": [
+   {
+    "Nummer": "2022A05569",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2022-09-28T16:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A05569"
+   }
+  ]
  },
  {
   "id": "5de2e2f7-7f5b-49cb-9bec-473ed4d54c54",
@@ -187453,7 +188358,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z08961"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z08961",
+  "debatten": [
+   {
+    "Nummer": "2020A05294",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2020-12-15T18:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2020A05294"
+   }
+  ]
  },
  {
   "id": "e111c63b-eab8-42c6-a4b5-125140ad6eed",
@@ -187686,7 +188600,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z07207"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z07207",
+  "debatten": [
+   {
+    "Nummer": "2020A06324",
+    "Soort": "Plenair debat (initiatiefwetgeving)",
+    "Datum": "2020-12-10T10:16:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2020A06324"
+   }
+  ]
  },
  {
   "id": "c0bc7c4e-6109-453e-8e36-3e7a31a5bf61",
@@ -187883,7 +188806,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z06494"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z06494",
+  "debatten": []
  },
  {
   "id": "f7591764-3d06-4c7a-8093-13afa6dcc022",
@@ -188067,7 +188991,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z04562"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2020Z04562",
+  "debatten": []
  },
  {
   "id": "a123cf1f-a352-400f-a4af-040b61aa6666",
@@ -188298,7 +189223,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z23246"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z23246",
+  "debatten": [
+   {
+    "Nummer": "2019A05199",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2019-12-04T12:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2019A05199"
+   }
+  ]
  },
  {
   "id": "2ee35049-5ae1-4da3-a76c-bfaced298e7e",
@@ -188548,7 +189482,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z21719"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z21719",
+  "debatten": [
+   {
+    "Nummer": "2019A05212",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2019-12-04T10:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2019A05212"
+   },
+   {
+    "Nummer": "2019A05213",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2019-12-04T18:30:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2019A05213"
+   }
+  ]
  },
  {
   "id": "46b72bce-aa55-4dac-8c9f-980b08db3977",
@@ -188746,7 +189696,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z21311"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z21311",
+  "debatten": [
+   {
+    "Nummer": "2020A00382",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-03-11T14:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2020A00382"
+   }
+  ]
  },
  {
   "id": "dd5879db-8644-49c1-85f0-df8c7a15028c",
@@ -188930,7 +189889,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z18399"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z18399",
+  "debatten": []
  },
  {
   "id": "8f26427e-fcb1-44c2-b319-01d3165ca53a",
@@ -189135,7 +190095,30 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z17354"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z17354",
+  "debatten": [
+   {
+    "Nummer": "2019A02948",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2019-10-28T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2019A02948"
+   },
+   {
+    "Nummer": "2019A02949",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2019-11-04T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2019A02949"
+   },
+   {
+    "Nummer": "2019A04874",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2019-11-13T15:45:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A04874"
+   }
+  ]
  },
  {
   "id": "44e70e28-bafd-40c9-b8ae-a1b3a29987f2",
@@ -189340,7 +190323,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z16948"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z16948",
+  "debatten": [
+   {
+    "Nummer": "2019A05334",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-02-11T16:15:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A05334"
+   }
+  ]
  },
  {
   "id": "77b3a9ae-3704-47c2-8ada-bf6f493a8974",
@@ -189531,7 +190523,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z16206"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z16206",
+  "debatten": [
+   {
+    "Nummer": "2020A00041",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-03-10T19:30:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2020A00041"
+   }
+  ]
  },
  {
   "id": "3b844101-93ec-42ef-89be-3a60320eab13",
@@ -189747,7 +190748,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z14776"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z14776",
+  "debatten": [
+   {
+    "Nummer": "2019A05330",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-01-14T15:15:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A05330"
+   }
+  ]
  },
  {
   "id": "4e42f285-095a-4a1a-8c79-e1ea0d59dd7e",
@@ -189892,7 +190902,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z14708"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z14708",
+  "debatten": []
  },
  {
   "id": "2f7fefdd-2923-4caa-b162-6424397c4104",
@@ -190109,7 +191120,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z13757"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z13757",
+  "debatten": [
+   {
+    "Nummer": "2019A05195",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2019-12-02T17:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2019A05195"
+   }
+  ]
  },
  {
   "id": "0d67e412-391c-476b-971d-bdda44e60cce",
@@ -190366,7 +191386,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z11071"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z11071",
+  "debatten": [
+   {
+    "Nummer": "2019A04128",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2021-06-16T15:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A04128"
+   }
+  ]
  },
  {
   "id": "b0960da1-7cc3-4b22-a3ac-61663f463c64",
@@ -190564,7 +191593,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z10643"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z10643",
+  "debatten": [
+   {
+    "Nummer": "2019A04280",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-01-15T19:45:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A04280"
+   }
+  ]
  },
  {
   "id": "32b11e2e-773c-4cfa-a898-89a80e8b6483",
@@ -190757,7 +191795,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z10458"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z10458",
+  "debatten": [
+   {
+    "Nummer": "2019A02412",
+    "Soort": "Wetgevingsoverleg",
+    "Datum": "2019-05-29T12:00:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2019A02412"
+   }
+  ]
  },
  {
   "id": "f316000a-6108-465c-a20e-207f9a420ea3",
@@ -190970,7 +192017,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z09396"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z09396",
+  "debatten": [
+   {
+    "Nummer": "2019A04127",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2020-03-11T18:25:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A04127"
+   }
+  ]
  },
  {
   "id": "9b6d0cdb-e5c8-4d02-a415-383789f20336",
@@ -191059,7 +192115,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z07584"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z07584",
+  "debatten": []
  },
  {
   "id": "96e005ef-a5fa-4a61-9471-621f0f5370dc",
@@ -191259,7 +192316,23 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z05404"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z05404",
+  "debatten": [
+   {
+    "Nummer": "2019A02689",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2019-06-26T13:50:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A02689"
+   },
+   {
+    "Nummer": "2019A03136",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2019-07-04T23:05:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A03136"
+   }
+  ]
  },
  {
   "id": "b68b546b-a4ee-4fdf-8a92-88b8aec5c84e",
@@ -191502,7 +192575,16 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z01958"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z01958",
+  "debatten": [
+   {
+    "Nummer": "2019A02809",
+    "Soort": "Plenair debat (wetgeving)",
+    "Datum": "2019-10-08T19:15:00+02:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2019A02809"
+   }
+  ]
  },
  {
   "id": "3fb3ce58-fde7-474d-9810-25933a118d42",
@@ -191591,7 +192673,8 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z00527"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2019Z00527",
+  "debatten": []
  },
  {
   "id": "2cd706c8-e162-412c-a2a6-889fbb2fb874",
@@ -192704,6 +193787,22 @@
   "bestand": null,
   "volgnummer": null,
   "tkLink": null,
-  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2016Z16372"
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2016Z16372",
+  "debatten": [
+   {
+    "Nummer": "2018A05260",
+    "Soort": "Plenair debat (initiatiefwetgeving)",
+    "Datum": "2018-12-06T11:00:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2018A05260"
+   },
+   {
+    "Nummer": "2018A05485",
+    "Soort": "Plenair debat (initiatiefwetgeving)",
+    "Datum": "2018-12-19T17:30:00+01:00",
+    "Status": "Uitgevoerd",
+    "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2018A05485"
+   }
+  ]
  }
 ]

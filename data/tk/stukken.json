@@ -1,5 +1,33 @@
 [
  {
+  "id": "2026D59215",
+  "docId": "f046526f-28ca-46b3-ae60-bd6764b96410",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-19",
+  "titel": null,
+  "onderwerp": "Uitwerking agrarisch natuurbeheer",
+  "zaak": "2026Z25611",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25611&did=2026D59215",
+  "bijlagen": [
+   {
+    "id": "2026D59216",
+    "titel": "Beslisnota bij Kamerbrief over uitwerking agrarisch natuurbeheer",
+    "bestand": "PDF",
+    "docId": "f02f3c42-7781-4039-9d1a-feb2e8f90364",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59216"
+   }
+  ]
+ },
+ {
   "id": "2026D58862",
   "docId": "db848edd-e824-44d2-8c92-03e6ccbf4029",
   "bestand": "DOCX",
@@ -31,6 +59,42 @@
     "bestand": "PDF",
     "docId": "0da957e2-fdc8-4fb5-88b1-5a4895b3b3a7",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58864"
+   }
+  ]
+ },
+ {
+  "id": "2026D59060",
+  "docId": "4a97ca7c-44c3-40e1-a04e-21479786e314",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-18",
+  "titel": null,
+  "onderwerp": "Onderbouwing stikstofmaatregelen industrie (3.1. CW)",
+  "zaak": "2026Z25529",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw",
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25529&did=2026D59060",
+  "bijlagen": [
+   {
+    "id": "2026D59061",
+    "titel": "Onderbouwing doeltreffendheid doelmatigheid en evaluatie (CW 3.1)",
+    "bestand": "PDF",
+    "docId": "aa8af7e7-d5ea-4dfb-82c1-f29fa454692a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59061"
+   },
+   {
+    "id": "2026D59062",
+    "titel": "Beslisnota bij Kamerbrief over onderbouwing stikstofmaatregelen industrie (3.1. CW)",
+    "bestand": "PDF",
+    "docId": "ac22f1f0-4b30-40cd-98a7-d42b5e766b07",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59062"
    }
   ]
  },
@@ -2368,14 +2432,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-02",
-  "titel": null,
+  "titel": "Landelijk afvalbeheerplan",
   "onderwerp": "Eerste wijziging Circulair Materialenplan",
   "zaak": "2026Z23729",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "30872-329",
+  "dossiers": [
+   {
+    "nummer": 30872,
+    "toevoeging": null,
+    "titel": "Landelijk afvalbeheerplan"
+   }
+  ],
   "sectoren": [
    "circulair-vervuiling",
    "klimaat-energie"
@@ -5677,7 +5747,7 @@
  {
   "id": "2026D48850",
   "docId": "df351e53-d3a2-46ad-9ec9-639e032c4884",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-06",
   "titel": null,
@@ -7944,7 +8014,7 @@
  {
   "id": "2026D45904",
   "docId": "16989446-f0a1-49db-887e-0a1513abd91c",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-24",
   "titel": "Schoon en zuinig",
@@ -9655,7 +9725,7 @@
  {
   "id": "2026D44599",
   "docId": "93d75539-845e-43e7-81a6-d0ef4369f04d",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-18",
   "titel": "Gewasbeschermingsbeleid",
@@ -10347,7 +10417,7 @@
  {
   "id": "2026D43041",
   "docId": "01685cc0-b17b-46e4-9590-57280a4e08e6",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-14",
   "titel": "Evaluatie Schipholbeleid",
@@ -10451,7 +10521,7 @@
  {
   "id": "2026D43186",
   "docId": "7b5449e5-9b3c-4672-a298-b1a4986c1040",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-14",
   "titel": "Gaswinning",
@@ -10626,7 +10696,7 @@
  {
   "id": "2026D42909",
   "docId": "c688b8ac-036b-4d90-9c30-05323602aae2",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-11",
   "titel": "Problematiek rondom stikstof en PFAS",
@@ -11001,7 +11071,7 @@
  {
   "id": "2026D42859",
   "docId": "5cfc6e07-8dcb-401b-b705-bde26c0b10cd",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-11",
   "titel": "Voorzienings- en leveringszekerheid energie",
@@ -11098,7 +11168,7 @@
  {
   "id": "2026D42871",
   "docId": "f18c3038-eb08-49ae-9748-d36485ee375c",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-11",
   "titel": "Problematiek rondom stikstof en PFAS",
