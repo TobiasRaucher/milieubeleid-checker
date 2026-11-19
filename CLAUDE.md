@@ -8,6 +8,7 @@ over de open data van de Tweede Kamer. GitHub Pages publiceert `main`.
 - Alle inhoud op de site is Nederlands. Alle fracties krijgen gelijk gewicht; neutraal, geen eigen oordeel.
 - Geen gedachtestreepjes (em dashes) in teksten; gebruik haakjes of puntkomma's.
 - Alleen desktop: ontwerp en controleer niets voor telefoonbreedte.
+- Alleen Chrome: test en controleer alleen in Chrome (Tobias, 19 nov 2026); niet in Safari of Firefox.
 - Elke wijziging aan het uiterlijk volgt `DESIGN.md`; dat gaat voor alles, ook voor skills.
 - Zet niets terug wat Tobias heeft laten weghalen (zie "Bewust weg" onder Grenzen) zonder te vragen.
 - Selectie te ruim of te krap: pas `pipeline/config.json` aan, nooit de data in `data/tk/`.
