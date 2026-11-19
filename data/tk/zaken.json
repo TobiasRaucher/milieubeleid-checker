@@ -8,7 +8,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-19",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Nog niet bekend",
   "behandelstatus": null,
   "dossiers": [
@@ -32,9 +32,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-19",
     "stemmen": []
    },
@@ -46,7 +46,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangenomen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -67,7 +67,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-19",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Nog niet bekend",
   "behandelstatus": null,
   "dossiers": [
@@ -91,9 +91,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-19",
     "stemmen": []
    },
@@ -105,7 +105,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangenomen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -152,14 +152,14 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
     "stemmingssoort": null,
     "datum": "2026-11-19",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangehouden",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -1142,7 +1142,7 @@
   ],
   "document": "2026D58358",
   "docId": "374cecb3-7d62-414b-b3aa-90be4c9a5fea",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 23,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25252&did=2026D58358",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25252",
@@ -1245,7 +1245,7 @@
   ],
   "document": "2026D58350",
   "docId": "2007d511-eaec-4d70-8044-29f727883540",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 15,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25244&did=2026D58350",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25244",
@@ -1293,7 +1293,7 @@
   ],
   "document": "2026D58353",
   "docId": "e699df03-d11d-4594-bbbd-a1be73cedd30",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 18,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25247&did=2026D58353",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25247"
@@ -1340,7 +1340,7 @@
   ],
   "document": "2026D58356",
   "docId": "1a3c826d-7f2c-4a67-bed4-06285b126c42",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 21,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25250&did=2026D58356",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25250"
@@ -1397,7 +1397,7 @@
   ],
   "document": "2026D58343",
   "docId": "1a49c3d2-4341-40a7-a21c-879a68af11c9",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 10,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25237&did=2026D58343",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25237"
@@ -1444,7 +1444,7 @@
   ],
   "document": "2026D58357",
   "docId": "20f51a2a-3a68-42f1-8af8-cbb229964184",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 22,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25251&did=2026D58357",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25251"
@@ -1491,7 +1491,7 @@
   ],
   "document": "2026D58354",
   "docId": "d3bc6549-6cba-4374-bcac-d7a33decd9e8",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 19,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25248&did=2026D58354",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25248"
@@ -1538,7 +1538,7 @@
   ],
   "document": "2026D58355",
   "docId": "3e2f7112-c5c3-4689-a333-4a18e2658f03",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 20,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25249&did=2026D58355",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25249"
@@ -1600,7 +1600,7 @@
   ],
   "document": "2026D58349",
   "docId": "521cb883-d7c2-4c32-9aca-71e108511e3f",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 14,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25243&did=2026D58349",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25243"
@@ -1662,7 +1662,7 @@
   ],
   "document": "2026D58348",
   "docId": "2f6cae1d-eee3-438e-9590-f91a75e1e326",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 13,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25242&did=2026D58348",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25242"
@@ -1724,7 +1724,7 @@
   ],
   "document": "2026D58342",
   "docId": "07de21f4-d9cc-4f75-a6cb-49814f2d9234",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 9,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25236&did=2026D58342",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25236"
@@ -1781,7 +1781,7 @@
   ],
   "document": "2026D58347",
   "docId": "433434c3-67dd-4518-a644-4cb028b838a9",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 12,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25241&did=2026D58347",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25241"
@@ -1828,7 +1828,7 @@
   ],
   "document": "2026D58360",
   "docId": "b88a8c07-34eb-4529-83a5-54c01658e52c",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 25,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25254&did=2026D58360",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25254"
@@ -1895,7 +1895,7 @@
   ],
   "document": "2026D58351",
   "docId": "0efc9fd6-db6a-4858-89a7-20441770f968",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 16,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25245&did=2026D58351",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25245"
@@ -1952,7 +1952,7 @@
   ],
   "document": "2026D58352",
   "docId": "9212f972-933f-45cf-ba36-dbbface0e4dd",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 17,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25246&did=2026D58352",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25246"
@@ -1999,7 +1999,7 @@
   ],
   "document": "2026D58359",
   "docId": "79e4dad2-997c-4afc-9b97-87ea638375e2",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 24,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25253&did=2026D58359",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25253"
@@ -51197,6 +51197,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": null,
+    "stemmen": []
+   },
+   {
     "soort": "In handen van commissie stellen (algemeen)",
     "tekst": "In handen gesteld van de vaste commissie voor Klimaat en Groene Groei",
     "stemmingssoort": null,
@@ -51215,6 +51222,13 @@
     "tekst": "Aanmelden als hamerstuk. ",
     "stemmingssoort": null,
     "datum": "2026-11-17",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-19",
     "stemmen": []
    },
    {

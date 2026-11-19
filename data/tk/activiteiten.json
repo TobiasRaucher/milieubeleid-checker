@@ -105,7 +105,7 @@
   ],
   "voorzitter": null,
   "deelnemers": [],
-  "zaal": "Wttewaall van Stoetwegenzaal",
+  "zaal": "Klompézaal",
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07688",
   "sectoren": [
    "circulair-vervuiling"
@@ -344,7 +344,7 @@
     "onderwerp": "Eerste wijziging Circulair Materialenplan",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "30872-329",
       "soort": "Brief regering",
       "datum": "2026-11-02",
       "onderwerp": "Eerste wijziging Circulair Materialenplan",
@@ -1585,6 +1585,31 @@
   ]
  },
  {
+  "Id": "01eb07b5-7f0e-4024-b65f-31059d1c4b98",
+  "Nummer": "2026A08608",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota).",
+  "Datum": "2026-12-08T14:00:00+01:00",
+  "Aanvangstijd": "2026-12-08T14:00:00+01:00",
+  "Eindtijd": "2026-12-08T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "Voortouwafkorting": "LVVN",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08608",
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ]
+ },
+ {
   "Id": "7723d161-13d3-4bc6-8e51-de40d0a4e311",
   "Nummer": "2026A08390",
   "Soort": "Inbreng verslag (wetsvoorstel)",
@@ -2440,31 +2465,6 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08290",
   "sectoren": [
    "water-adaptatie"
-  ]
- },
- {
-  "Id": "369748ee-5a0f-4f5d-8538-464f7f0fccdc",
-  "Nummer": "2026A08549",
-  "Soort": "Inbreng feitelijke vragen",
-  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota).",
-  "Datum": "2026-11-26T14:00:00+01:00",
-  "Aanvangstijd": "2026-11-26T14:00:00+01:00",
-  "Eindtijd": "2026-11-26T14:00:00+01:00",
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
-  "Voortouwafkorting": "LVVN",
-  "Besloten": true,
-  "Noot": null,
-  "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [],
-  "zaal": null,
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08549",
-  "sectoren": [
-   "natuur-stikstof-landbouw"
   ]
  },
  {
@@ -5345,13 +5345,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaten van Klimaat en Groene Groei (XXIII) voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-XXIII-53",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-30",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden ",
-      "ondertekenaar": "J.M. Zwinkels",
-      "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17054&did=2026D53950"
+      "kamerstuk": null,
+      "soort": "Bijgewerkte tekst",
+      "datum": "2026-11-18",
+      "onderwerp": "37020-XXIII, bijgewerkt t/m nr. 54 (NvW d.d. 18 november 2026)",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17054&did=2026D59363"
      }
     ]
    },
@@ -5360,13 +5360,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-M-7",
-      "soort": "Nota van wijziging",
+      "kamerstuk": null,
+      "soort": "Bijgewerkte tekst",
       "datum": "2026-11-18",
-      "onderwerp": "Nota van wijziging ",
-      "ondertekenaar": "S. van Veldhoven-van der Meer",
-      "functie": "minister van Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D58996"
+      "onderwerp": "37020-M, bijgewerkt t/m nr. 7 (NvW d.d. 18 november 2026)",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D59362"
      }
     ]
    },
@@ -6169,13 +6169,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaten van Klimaat en Groene Groei (XXIII) voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-XXIII-53",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-30",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden ",
-      "ondertekenaar": "J.M. Zwinkels",
-      "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17054&did=2026D53950"
+      "kamerstuk": null,
+      "soort": "Bijgewerkte tekst",
+      "datum": "2026-11-18",
+      "onderwerp": "37020-XXIII, bijgewerkt t/m nr. 54 (NvW d.d. 18 november 2026)",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17054&did=2026D59363"
      }
     ]
    },
@@ -6184,13 +6184,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-M-7",
-      "soort": "Nota van wijziging",
+      "kamerstuk": null,
+      "soort": "Bijgewerkte tekst",
       "datum": "2026-11-18",
-      "onderwerp": "Nota van wijziging ",
-      "ondertekenaar": "S. van Veldhoven-van der Meer",
-      "functie": "minister van Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D58996"
+      "onderwerp": "37020-M, bijgewerkt t/m nr. 7 (NvW d.d. 18 november 2026)",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D59362"
      }
     ]
    }
@@ -11199,13 +11199,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaten van Klimaat en Groene Groei (XXIII) voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-XXIII-53",
-      "soort": "Verslag houdende een lijst van vragen en antwoorden",
-      "datum": "2026-10-30",
-      "onderwerp": "Verslag houdende een lijst van vragen en antwoorden ",
-      "ondertekenaar": "J.M. Zwinkels",
-      "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17054&did=2026D53950"
+      "kamerstuk": null,
+      "soort": "Bijgewerkte tekst",
+      "datum": "2026-11-18",
+      "onderwerp": "37020-XXIII, bijgewerkt t/m nr. 54 (NvW d.d. 18 november 2026)",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17054&did=2026D59363"
      }
     ]
    }
@@ -11240,13 +11240,13 @@
     "onderwerp": "Vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027",
     "stukken": [
      {
-      "kamerstuk": "37020-M-7",
-      "soort": "Nota van wijziging",
+      "kamerstuk": null,
+      "soort": "Bijgewerkte tekst",
       "datum": "2026-11-18",
-      "onderwerp": "Nota van wijziging ",
-      "ondertekenaar": "S. van Veldhoven-van der Meer",
-      "functie": "minister van Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D58996"
+      "onderwerp": "37020-M, bijgewerkt t/m nr. 7 (NvW d.d. 18 november 2026)",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17073&did=2026D59362"
      }
     ]
    }
@@ -52397,6 +52397,31 @@
   "deelnemers": [],
   "zaal": null,
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06897",
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ]
+ },
+ {
+  "Id": "369748ee-5a0f-4f5d-8538-464f7f0fccdc",
+  "Nummer": "2026A08606",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota).",
+  "Datum": null,
+  "Aanvangstijd": null,
+  "Eindtijd": null,
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "Voortouwafkorting": "LVVN",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08606",
   "sectoren": [
    "natuur-stikstof-landbouw"
   ]
