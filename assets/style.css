@@ -135,7 +135,7 @@ nav.tabs:not(.glij) > a.active { background: var(--card); box-shadow: 0 1px 2px 
 .tab-menu:is(:hover:not(.dicht), .open) .tab-lijst, .tab-lijst:focus-within { opacity: 1; visibility: visible; transform: none; transition: opacity var(--d-kort) var(--ease), transform var(--d-kort) var(--ease), visibility 0s; }
 .tab-menu:is(:hover:not(.dicht), .open) .chev { transform: rotate(180deg); }
 .tab-groep { display: flex; flex-direction: column; gap: 8px; }
-.tab-groepkop { margin: 0; padding: 8px 13px 4px; /* 12 + de rand van 1px van de kaarten: kop en kaarttekst op één lijn */ font-size: var(--t-13); font-weight: 500; color: var(--muted); }
+.tab-groepkop { margin: 0; padding: 8px 0 4px; /* kop op één lijn met de linkerrand van de kaarten (Tobias, 19 nov 2026) */ font-size: var(--t-13); font-weight: 500; color: var(--muted); }
 .tab-lijst a { display: flex; align-items: center; min-height: var(--h-klein); padding: 8px 12px; background: var(--page); border: 1px solid var(--line); border-radius: var(--r-control); font-size: var(--t-18); font-weight: 500; line-height: 1.3; color: var(--ink); text-decoration: none; transition: background-color var(--d-kort) var(--ease); }
 .tab-lijst a:hover { background: var(--surface); border-color: var(--line-sterk); }
 .tab-lijst a[aria-current] { background: var(--accent-soft); border-color: var(--accent); }
