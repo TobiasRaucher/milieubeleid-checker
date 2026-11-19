@@ -227,6 +227,7 @@
     document.title = TITELS[tab] ? `${TITELS[tab]} · milieuradar` : "milieuradar";
     if (tab === "themas" && pad.split("/")[1]) { const t = S.T.thema(pad.split("/")[1]); document.title = `${t ? t.label : "Thema niet gevonden"} · Thema's · milieuradar`; }
     { const v = $("#zoekveld"); if (tab === "zoeken") { if (document.activeElement !== v) v.value = zoekVraag(); } else v.value = ""; }
+    if (MENU.classList.contains("open")) zetMenu(false); // ook bij terug/vooruit of een getypt adres
     $("#view").innerHTML = (views[tab] || overzicht)();
     if (/^wetgeving\/\d+$/.test(pad)) document.title = `Kamerstuk ${pad.split("/")[1]} · Wetgeving · milieuradar`;
     const tabGewisseld = tab !== _vorigeTab, eerste = _vorigeTab === null;
@@ -560,6 +561,9 @@
       `<button type="button" class="chip actief" data-rm="${k}" data-v="${esc(v)}" aria-label="Filter ${f.tekst(v).replace(/<[^>]+>/g, "")} wissen">${f.tekst(v)}${ico("x")}</button>`));
     ae.innerHTML = chips.length ? `${chips.join("")}<button type="button" class="linkknop" data-wis>Alles wissen</button>` : "";
     ae.hidden = !chips.length;
+    // een menu dat open bleef bij opnieuw tekenen komt niet opnieuw binnen; daarna mag het weer vervagen bij sluiten
+    const ao = fe.querySelector(".al-open");
+    if (ao) requestAnimationFrame(() => requestAnimationFrame(() => ao.classList.remove("al-open")));
     if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus({ preventScroll: true });
   }
   function bindWerkbalk(w) {
@@ -568,7 +572,6 @@
     // één menu tegelijk open
     fe.addEventListener("toggle", (e) => {
       if (e.target.open) fe.querySelectorAll("details[open]").forEach((d) => { if (d !== e.target) d.open = false; });
-      else e.target.classList.remove("al-open");
     }, true);
     // een dubbelklik op een regel zet het vinkje niet aan en meteen weer uit
     fe.addEventListener("click", (e) => { if (e.detail > 1 && e.target.closest(".facet-menu label")) e.preventDefault(); });
@@ -658,8 +661,8 @@
       if (!tr) return;
       const knop = e.target.closest("button.uitklap");
       if (!knop && (e.target.closest("a, button") || String(window.getSelection && window.getSelection()).trim())) return;
-      const nxt = tr.nextElementSibling, open = nxt && nxt.classList.contains("detail");
-      if (open) nxt.remove();
+      const nxt = tr.nextElementSibling, open = nxt && nxt.classList.contains("detail") && !nxt.classList.contains("weg");
+      if (open) { nxt.classList.add("weg"); setTimeout(() => nxt.remove(), 150); } // vervaagt eerst (--d-kort), zoals hij binnenkwam
       else {
         const d = document.createElement("tr"); d.className = "detail";
         d.innerHTML = `<td colspan="${n}">${def.detail(rows[+tr.dataset.i])}</td>`;
@@ -746,7 +749,7 @@
       <div class="dv-body" id="dv-body" tabindex="-1"></div>`;
     document.body.append(dlg);
     dlg.addEventListener("click", (e) => { if (e.target === dlg || e.target.closest("[data-dvsluit]")) dlg.close(); });
-    dlg.addEventListener("close", () => { viewerToken++; $("#dv-body").innerHTML = ""; document.documentElement.classList.remove("dv-open"); });
+    dlg.addEventListener("close", () => { viewerToken++; document.documentElement.classList.remove("dv-open"); setTimeout(() => { if (!dlg.open) $("#dv-body").innerHTML = ""; }, 200); }); // leeg na het vervagen (--d-menu)
     return dlg;
   }
   // alleen eenvoudige opmaak uit een Word-bestand overnemen
@@ -773,7 +776,12 @@
     $("#dv-acties").innerHTML = `${dnr ? extLink(DOWNLOAD_URL(dnr), "Download") : extLink(DOC_URL(doc), "Download")}${link ? extLink(link, "Op tweedekamer.nl") : ""}`;
     body.innerHTML = `<p class="dv-laden muted">Document laden</p>`;
     document.documentElement.classList.add("dv-open");
-    if (!dlg.open) dlg.showModal();
+    if (!dlg.open) {
+      // het venster groeit uit de knop waarop is geklikt (en krimpt daar weer naartoe); plek berekend zonder layout van het venster
+      const b = k.getBoundingClientRect(), vw = document.documentElement.clientWidth, w = Math.min(960, vw - 48);
+      dlg.style.setProperty("--dv-oorsprong", `${Math.round(b.left + b.width / 2 - (vw - w) / 2)}px ${Math.round(b.top + b.height / 2 - 24)}px`);
+      dlg.showModal();
+    }
     body.focus({ preventScroll: true });
     const fout = () => { if (token === viewerToken) body.innerHTML = `<div class="dv-fout"><p>Het document kon hier niet worden getoond.</p><p>${extLink(dnr ? DOWNLOAD_URL(dnr) : DOC_URL(doc), "Download het bestand")}${link ? ` of ${extLink(link, "bekijk het op tweedekamer.nl")}` : ""}.</p></div>` };
     try {
@@ -962,6 +970,9 @@
     const items = [...wetStappen(z), ...stemBlokken(z), ...mijlpalen].filter((x) => x.datum).sort((a, b) => a.datum.localeCompare(b.datum));
     const dagen = new Map();
     for (const x of items) { if (!dagen.has(x.datum)) dagen.set(x.datum, []); dagen.get(x.datum).push(x); }
+    // per jaar een kop die blijft staan bij scrollen, met Kamerstuk en fase: zo weet je waar je bent in een lange tijdlijn
+    const jaren = new Map();
+    for (const dag of dagen) { const j = dag[0].slice(0, 4); if (!jaren.has(j)) jaren.set(j, []); jaren.get(j).push(dag); }
     // Kamervragen die het Kamerstuknummer ("37052" of "37 052") of de (citeer)titel noemen; een vraag en haar antwoord samen
     const rx = new RegExp(`\\b${nr.slice(0, 2)} ?${nr.slice(2)}\\b`), titels = [z.citeertitel, z.titel].filter(Boolean).map((t) => t.toLowerCase());
     const vragen = (S.data.stukken || []).filter((q) => q.soort === "Schriftelijke vragen").filter((q) => {
@@ -975,7 +986,8 @@
       <div class="wp-fase">${faseBlok(z)}</div>
       <div class="mlinks wp-links">${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}</div>
       <h2>Wetgevingsproces</h2>
-      <ol class="wtl">${[...dagen].map(([d, xs]) => `<li><span class="datum">${fmtKort(d)}</span><ul>${xs.map((x) => `<li>${x.html}${x.gepland ? ` <span class="muted">(gepland)</span>` : ""}</li>`).join("")}</ul></li>`).join("")}</ol>
+      ${[...jaren].map(([j, ds]) => `<section class="wtl-jaar"><h3 class="tl-weekkop">${j}<span class="muted">Kamerstuk ${esc(nr)} · ${WET_FASEN[wetFase(z)]}</span></h3>
+        <ol class="wtl">${ds.map(([d, xs]) => `<li><span class="datum">${fmtKort(d)}</span><ul>${xs.map((x) => `<li>${x.html}${x.gepland ? ` <span class="muted">(gepland)</span>` : ""}</li>`).join("")}</ul></li>`).join("")}</ol></section>`).join("")}
       ${vragen.length ? `<h2>Mogelijk gerelateerd</h2><p class="wp-uitleg">Kamervragen die het Kamerstuknummer of de titel van dit wetsvoorstel noemen.</p>
         <ul class="mstappen">${vragen.map((q) => `<li><span class="datum">${fmtKort(q.datum)}</span> <a href="#vragen?open=${encodeURIComponent(q.id)}">${esc(q.onderwerp || q.titel)}</a></li>`).join("")}</ul>` : ""}`;
   }

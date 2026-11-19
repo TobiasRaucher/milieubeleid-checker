@@ -6,7 +6,7 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 ## Kop en navigatie (sinds 17 nov 2026)
 
 - Tabs: Overzicht, Thema's, Agenda en Documenten (menu in twee kolommen: Uit de Tweede Kamer met Wetgeving, Moties,
-  Amendementen, Kamervragen, Kamerbrieven; Kabinet, adviseurs en rechter met de vijf Kerndocumenten-groepen; opent bij hover, klik of pijl omlaag), dan
+  Amendementen, Kamervragen, Kamerbrieven; Kabinet, adviseurs en rechter met de vijf Kerndocumenten-groepen; opent bij hover (na 100 ms), klik of pijl omlaag; elke routewissel sluit het), dan
   een zoekveld dat altijd zichtbaar is (`/` zet de cursor erin) en de stempel "Bijgewerkt". "Over" staat in de footer.
 - Op alle documentpagina's is Documenten actief en heeft de menuregel `aria-current` (`route()`, `kdGroep()`).
 - Kop en bediening zijn sinds 17 nov 2026 50% groter (`--h-control` 56, `--h-klein` 48); tabeltekst 18 (zie DESIGN.md).
@@ -109,7 +109,7 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
   Uitgeklapte rij: kenmerken, fasebalk en "Volgende stap" (`faseBlok()`), links "Alles over dit wetsvoorstel", tweedekamer.nl, OpenTK.
 - Pagina per wetsvoorstel (`#wetgeving/<Kamerstuk>`, `wetPagina()`, sinds 19 nov 2026, ontworpen met Tobias): de titel in de
   tabel, Net binnen en de zoekresultaten gaan erheen. Kop (titel, Kamerstuk, ingediend, indiener, thema's), fase, links naar
-  tweedekamer.nl en OpenTK, dan het Wetgevingsproces als één tijdlijn per dag, oudste boven:
+  tweedekamer.nl en OpenTK, dan het Wetgevingsproces als tijdlijn per dag, oudste boven, per jaar onder een kop die blijft staan (met Kamerstuk en fase):
   - stappen in gewone taal (`wetStappen()`, `STAP_WEG`, `STAP_TEKST`) en vergaderingen (`wetActiviteiten()`);
   - Kamerstukken uit `data/tk/wetstukken.json` (titel naar tweedekamer.nl, nummer `37052-3`, Lees);
   - moties en amendementen per stemdag (of indiendag zonder stemming) als één blok (`stemBlokken()`); een regel klapt open
