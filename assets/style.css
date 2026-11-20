@@ -403,6 +403,9 @@ tbody tr.row:active { background: var(--raised); }
 tbody tr.row:hover .ltitel { text-decoration: underline; text-decoration-color: var(--line-sterk); text-underline-offset: 3px; }
 tbody tr.row .ltitel:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 tbody tr.row.open { background: var(--surface); }
+/* rode lijn: hierboven is nieuw sinds de vorige werkdag (app.js, grensIndex) */
+tbody tr.row.grens > td { box-shadow: inset 0 2px 0 var(--alarm); }
+.list li.grens { border-top: 2px solid var(--alarm); }
 tbody tr.row.open td { border-bottom-color: transparent; }
 /* uitklapknop in de titelcel: voor het toetsenbord; onzichtbaar tot hij focus heeft (met de muis klapt de rij zelf uit) */
 .motietabel .uitklap:not(:focus-visible) { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
@@ -651,6 +654,9 @@ details.meer > summary::after { content: ""; width: 16px; height: 16px; backgrou
 details.meer[open] > summary::after { transform: rotate(180deg); }
 details.meer > summary:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 details.meer dl.facts { margin-top: 8px; font-size: var(--t-13); }
+details.thematermen { max-width: var(--leesbreedte); }
+details.thematermen > p { margin: 8px 0 0; color: var(--ink-2); }
+details.thematermen > p.termen { color: var(--ink); }
 
 /* ===================== Terug naar boven, laden ===================== */
 .naarboven { position: fixed; right: max(16px, var(--marge)); bottom: max(20px, env(safe-area-inset-bottom)); z-index: 6; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; color: var(--ink); background: var(--card); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);

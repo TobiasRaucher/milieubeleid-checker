@@ -43,7 +43,8 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
   Kamervragen, antwoorden, vergaderingen, agenda, kerndocumenten met de nieuwste editie per reeks). Pagina, CSV en
   noscript-lijst tellen dus hetzelfde.
 - `#themas` (sinds 14 nov 2026): alleen de tien namen als 5 x 2 tegels.
-- `#themas/<slug>`: schakelaar met Overzicht (Net binnen en Komt eraan voor dit thema; standaard), "Agenda →" (link naar
+- `#themas/<slug>`: onder de beschrijving een ingeklapt blok "Welke termen horen bij dit thema" met de trefwoorden uit
+  `data/themas.json` als leesbare termen (`themaTermen()`, `leesbareTermen()`). Daarna een schakelaar met Overzicht (Net binnen en Komt eraan voor dit thema; standaard), "Agenda →" (link naar
   `#agenda?thema=<slug>`), Wetten, Amendementen, Moties, Kamerbrieven, Kamervragen (met antwoorden) en Kerndocumenten. De
   documentsoorten zijn dezelfde tabellen als op hun eigen pagina, zonder Themakolom (`themaDef()`).
   Adres: `#themas/<slug>?type=<param>` plus filters.
@@ -173,7 +174,14 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
   thema; geen stemming gepland, dan geen regel.
 - Net binnen (`netBinnen()`): de 10 nieuwste items in één chronologische lijst: stukken (`datum`), stemmingen over moties en
   amendementen (`stemtelling.datum`) en wetgeving (`gestartOp`). Alleen ISO-datums op de dag nauwkeurig en niet in de
-  toekomst; binnen één dag gaat Wetgeving voor Stemming voor Stuk.
+  toekomst; binnen één dag gaat Wetgeving voor Stemming voor Ingediend voor Stuk.
+- Ingediende moties en amendementen zonder stemming (sinds 20 nov 2026): één regel per vergadering (of dag) en soort,
+  "19 moties ingediend", met een link naar die vergadering op de Agenda.
+- Titels in Net binnen en Komt eraan linken naar de eigen site (`lijstHref()`, `agendaLi()`): een motie, brief of vraag naar
+  haar lijstpagina met `?open=`, op een themapagina naar de tabel van dat thema; een Kameractiviteit naar `#agenda/a-<nummer>`
+  (op een themapagina met `?thema=`). Alleen een eigen mijlpaal zonder Kameractiviteit gaat naar zijn bron.
+- Rode lijn (sinds 20 nov 2026): in Net binnen en in elke tabel met Datum aflopend staat boven het eerste item van vóór de
+  vorige werkdag (op maandag: vrijdag) een 2px `--alarm`-lijn (`NIEUW_VANAF`, `grensIndex()`); geen lijn als er niets nieuws is.
 - Elk item volgt de regelopbouw (DESIGN.md, Do 6): soort (link naar de lijstpagina; `soortTag()`), datum en context; de
   titel op een eigen regel; een staart met indiener zonder voorletters, Voor/Tegen of Kamerstuk. Voorletters in titels weg (`zonderVoorletters`).
 
