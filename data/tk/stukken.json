@@ -1,5 +1,61 @@
 [
  {
+  "id": "2026D59744",
+  "docId": "669270bc-de6b-45b1-8b4b-0beee6694765",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-20",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Keijzer over het annuleren van een stikstofsymposium bij KIVI",
+  "zaak": "2026Z21767",
+  "ministerie": "Onderwijs, Cultuur en Wetenschap",
+  "ondertekenaar": "R.M. Letschert",
+  "functie": "minister van Onderwijs, Cultuur en Wetenschap",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21767&did=2026D59744",
+  "bijlagen": [
+   {
+    "id": "2026D59745",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Keijzer over het annuleren van een stikstofsymposium bij KIVI",
+    "bestand": "PDF",
+    "docId": "273e24bb-ce8a-42b1-9b8f-0d29cead7764",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59745"
+   }
+  ]
+ },
+ {
+  "id": "2026D59740",
+  "docId": "5d4adfb5-8ff5-4071-afb6-679b1f328986",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-20",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Van Duijvenvoorde over mogelijke bemoeienis van de bestuursvoorzitter van Wageningen University & Research met een stikstofsymposium",
+  "zaak": "2026Z21558",
+  "ministerie": "Onderwijs, Cultuur en Wetenschap",
+  "ondertekenaar": "R.M. Letschert",
+  "functie": "minister van Onderwijs, Cultuur en Wetenschap",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21558&did=2026D59740",
+  "bijlagen": [
+   {
+    "id": "2026D59741",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Van Duijvenvoorde over mogelijke bemoeienis van de bestuursvoorzitter van Wageningen University & Research met een stikstofsymposium",
+    "bestand": "PDF",
+    "docId": "655d270e-d809-4d4a-926c-ef6c41baa7f2",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59741"
+   }
+  ]
+ },
+ {
   "id": "2026D59324",
   "docId": "5fa518a2-e474-47a1-bbc8-00d953444b94",
   "bestand": "DOCX",
@@ -2136,14 +2192,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
+  "titel": "Voorzienings- en leveringszekerheid energie",
   "onderwerp": "Voortgang marktbreed capaciteitsmechanisme ",
   "zaak": "2026Z23827",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "29023-753",
+  "dossiers": [
+   {
+    "nummer": 29023,
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2194,19 +2256,59 @@
   ]
  },
  {
+  "id": "2026D55025",
+  "docId": "b5c779c6-39a4-4cae-a449-600ad655a012",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-03",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Verslag van de informele Telecomraad van 12 en 13 oktober 2026 en antwoorden op resterende vragen commissie over geannoteerde agenda informele Telecomraad van 12-13 oktober 2026 (Kamerstuk 21501-33-1249)",
+  "zaak": "2026Z23849",
+  "ministerie": "Economische Zaken en Klimaat",
+  "ondertekenaar": "W.J.M. Aerdts",
+  "functie": "staatssecretaris van Economische Zaken en Klimaat",
+  "kamerstuk": "21501-33-1261",
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23849&did=2026D55025",
+  "bijlagen": [
+   {
+    "id": "2026D55026",
+    "titel": "Beslisnota bij Kamerbrief over het verslag van de informele Telecomraad van 12 en 13 oktober 2026 en antwoorden op resterende vragen commissie over geannoteerde agenda informele Telecomraad van 12-13 oktober 2026 (Kamerstuk 21501-33-1249)",
+    "bestand": "PDF",
+    "docId": "774cfd56-94d0-477b-a4d2-8630f609e12d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55026"
+   }
+  ]
+ },
+ {
   "id": "2026D55001",
   "docId": "4f5ac810-944b-4056-a02e-6ecc4acdf645",
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
+  "titel": "Landelijk afvalbeheerplan",
   "onderwerp": "Opvolging verkenning (on)mogelijkheden van meer landelijke standaardisering van afvalinzameling",
   "zaak": "2026Z23835",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "30872-330",
+  "dossiers": [
+   {
+    "nummer": 30872,
+    "toevoeging": null,
+    "titel": "Landelijk afvalbeheerplan"
+   }
+  ],
   "sectoren": [
    "circulair-vervuiling",
    "klimaat-energie"
@@ -2251,14 +2353,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027",
   "onderwerp": "Antwoorden op vragen commissie over het verslag van de rapporteur over vaststelling van de begrotingsstaten van Klimaat en Groene Groei (XXIII) voor het jaar 2027 (Kamerstuk 37020-XIII) en vaststelling van de begrotingsstaat van het Klimaat- en Energiefonds voor het jaar 2027 (Kamerstuk 37020-M)",
   "zaak": "2026Z23854",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "37020-XIII-43",
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIII",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027"
+   }
+  ],
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2279,14 +2387,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
+  "titel": "Voorzienings- en leveringszekerheid energie",
   "onderwerp": "Voortgang aanpak netcongestie FGU-regio",
   "zaak": "2026Z23815",
   "ministerie": "Economische Zaken en Klimaat",
   "ondertekenaar": "J. de Bat",
   "functie": "staatssecretaris van Economische Zaken en Klimaat",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "29023-752",
+  "dossiers": [
+   {
+    "nummer": 29023,
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2396,27 +2510,74 @@
   "id": "2026D55013",
   "docId": "c8301ee9-861d-49ca-acc6-e920f04d0185",
   "bestand": "DOCX",
-  "soort": "Antwoord schriftelijke vragen",
+  "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
-  "onderwerp": "Appreciatie van de gewijzigde motie van het lid Jumelet over naast het NPE een concrete en toetsbare uitvoeringsagenda opstellen (t.v.v. Kamerstuk 29023-743)",
+  "titel": "Voorzienings- en leveringszekerheid energie",
+  "onderwerp": "Appreciatie van de gewijzigde motie van het lid Jumelet over naast het NPE een concrete en toetsbare uitvoeringsagenda opstellen (Kamerstuk 29023-749)",
   "zaak": "2026Z23840",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "29023-754",
+  "dossiers": [
+   {
+    "nummer": 29023,
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
   "sectoren": [
    "klimaat-energie"
   ],
-  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23840&did=2026D55013",
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23840&did=2026D55013",
   "bijlagen": [
    {
     "id": "2026D55014",
-    "titel": "Beslisnota bij Kamerbrief over appreciatie van de gewijzigde motie van het lid Jumelet over naast het NPE een concrete en toetsbare uitvoeringsagenda opstellen (t.v.v. Kamerstuk 29023-743)",
+    "titel": "Beslisnota bij Kamerbrief over appreciatie van de gewijzigde motie van het lid Jumelet over naast het NPE een concrete en toetsbare uitvoeringsagenda opstellen (Kamerstuk 29023-749)",
     "bestand": "PDF",
     "docId": "b9a9ec9f-4ae0-4c11-9ccd-e61ce2fa8564",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55014"
+   }
+  ]
+ },
+ {
+  "id": "2026D54911",
+  "docId": "cff836fb-cd72-443c-99e8-0e0754681a2b",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-02",
+  "titel": "Mijnbouw",
+  "onderwerp": "Verbetering automatische detectie van aardbevingen door het KNMI",
+  "zaak": "2026Z23795",
+  "ministerie": "Economische Zaken en Klimaat",
+  "ondertekenaar": "J. de Bat",
+  "functie": "staatssecretaris van Economische Zaken en Klimaat",
+  "kamerstuk": "32849-327",
+  "dossiers": [
+   {
+    "nummer": 32849,
+    "toevoeging": null,
+    "titel": "Mijnbouw"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23795&did=2026D54911",
+  "bijlagen": [
+   {
+    "id": "2026D54912",
+    "titel": "Brief KNMI implementatie 3 stations detectie KNMI-2026.4324",
+    "bestand": "PDF",
+    "docId": "f5f750fa-416e-4d3b-b18d-b13a0431aa80",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D54912"
+   },
+   {
+    "id": "2026D54913",
+    "titel": "Beslisnota bij Kamerbrief over verbetering automatische detectie van aardbevingen door het KNMI",
+    "bestand": "PDF",
+    "docId": "4f9501a6-248f-4273-a988-1e27a35761b2",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D54913"
    }
   ]
  },
@@ -2445,14 +2606,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-02",
-  "titel": null,
+  "titel": "Grondstoffenvoorzieningszekerheid",
   "onderwerp": "Circulaire hefboom",
   "zaak": "2026Z23812",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "32852-431",
+  "dossiers": [
+   {
+    "nummer": 32852,
+    "toevoeging": null,
+    "titel": "Grondstoffenvoorzieningszekerheid"
+   }
+  ],
   "sectoren": [
    "circulair-vervuiling",
    "klimaat-energie"
@@ -2482,14 +2649,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-02",
-  "titel": null,
+  "titel": "Zelfstandige bestuursorganen",
   "onderwerp": "Rekening en Verantwoording Bureau Beheer Landbouwgronden over 2025",
   "zaak": "2026Z23809",
   "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
   "ondertekenaar": "S.P.A. Erkens",
   "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "25268-252",
+  "dossiers": [
+   {
+    "nummer": 25268,
+    "toevoeging": null,
+    "titel": "Zelfstandige bestuursorganen"
+   }
+  ],
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -10816,7 +10989,7 @@
  {
   "id": "2026D43216",
   "docId": "7e902f14-57c3-4907-8bca-8b320401a1d3",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-14",
   "titel": "Mobiliteitsbeleid",
@@ -23908,14 +24081,6 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z12785&did=2026D28929",
   "bijlagen": [
    {
-    "id": "2026D28934",
-    "titel": "106663982 Beslisnota bij Kamerbrief onderzoeken sigarettenfilters, vapes en andere wegwerpplastics",
-    "bestand": "PDF",
-    "docId": "b35e27af-02f9-493f-a34b-1590021e2eb1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28934",
-    "rapport": true
-   },
-   {
     "id": "2026D28933",
     "titel": "Onderzoek milieueffecten sigarettenpeuken met en zonder filter",
     "bestand": "PDF",
@@ -23938,6 +24103,13 @@
     "docId": "6f106c8d-755a-4845-be19-42cb07832b93",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28930",
     "rapport": true
+   },
+   {
+    "id": "2026D28934",
+    "titel": "106663982 Beslisnota bij Kamerbrief onderzoeken sigarettenfilters, vapes en andere wegwerpplastics",
+    "bestand": "PDF",
+    "docId": "b35e27af-02f9-493f-a34b-1590021e2eb1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28934"
    },
    {
     "id": "2026D28932",
