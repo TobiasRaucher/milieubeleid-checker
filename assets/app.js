@@ -13,8 +13,9 @@
   const NIEUW_VANAF = (() => { const d = new Date(VANDAAG + "T12:00:00"); do d.setDate(d.getDate() - 1); while (d.getDay() === 0 || d.getDay() === 6); return dagNL(d); })();
   // index van het eerste oudere item in een lijst die nieuwste eerst staat, of -1 (geen lijn als er niets nieuws boven staat)
   const grensIndex = (datums) => { const i = datums.findIndex((d) => String(d || "").slice(0, 10) < NIEUW_VANAF); return i > 0 ? i : -1; };
-  const GRENS_TITEL = "Hierboven: nieuw sinds de vorige werkdag";
   const WEEKDAGEN = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"];
+  // de lijn zelf: over de hele breedte, met links wat erboven staat en rechts wat eronder
+  const GRENS_LABEL = `<span>↑ Nieuw sinds ${WEEKDAGEN[new Date(NIEUW_VANAF + "T12:00:00").getDay()].toLowerCase()} ${fmtKort(NIEUW_VANAF)}</span><span>Eerder ↓</span>`;
 
   function fmtDatum(d) {
     if (!d) return "datum onbekend";
@@ -369,7 +370,7 @@
   }
   const netBinnenHtml = (items) => {
     const g = grensIndex(items.map((i) => i.datum));
-    return items.map((i, n) => (n === g ? i.html.replace("<li>", `<li class="grens" title="${GRENS_TITEL}">`) : i.html)).join("") || `<li class="empty">Nog niets binnen</li>`;
+    return items.map((i, n) => (n === g ? `<li class="grens" role="separator">${GRENS_LABEL}</li>` : "") + i.html).join("") || `<li class="empty">Nog niets binnen</li>`;
   };
   // Plenaire stemmingen: moties en amendementen zonder uitslag met een stemmingsdatum vanaf vandaag (zoals stemStatus()),
   // per dag geteld; slugs beperkt de telling tot die thema's. themas: alle thema's van de getelde moties (voor het themafilter).
@@ -688,7 +689,8 @@
 
     const tekenRijen = () => {
       const grens = st.richting === "desc" && def.datum ? grensIndex(rows.map(def.datum)) : -1;
-      $("#mbody").innerHTML = rows.map((z, i) => `<tr class="row${i === grens ? " grens" : ""}" data-i="${i}"${i === grens ? ` title="${GRENS_TITEL}"` : ""}>${def.kolommen.map((c) => tabelCel(def, c, z)).join("")}</tr>`).join("")
+      $("#mbody").innerHTML = rows.map((z, i) => (i === grens ? `<tr class="grens"><td colspan="${n}">${GRENS_LABEL}</td></tr>` : "")
+        + `<tr class="row" data-i="${i}">${def.kolommen.map((c) => tabelCel(def, c, z)).join("")}</tr>`).join("")
         || `<tr><td colspan="${n}" class="empty">Geen ${def.eenheid} ${tabelGefilterd(def, st) ? `met deze filters <button type="button" class="linkknop" data-wisalles>Filters wissen</button>` : "gevonden"}</td></tr>`;
     };
     const toepassen = () => {

@@ -14,6 +14,9 @@ in de chat. Pas na een wijziging hier de beoordelingen aan die erdoor veranderen
    Nieuwe kandidaten vinden: bijlagen met `rapport: true` waarvan het D-nummer niet in `beoordeeld` staat.
 3. Rapporten die niet via een Kamerbrief komen (PBL, CBS, WKR die zelf publiceren) staan met de hand in
    `data/kerndocumenten.json`, groep `rapporten`. Staat het D-nummer daar als `document`, dan telt de handmatige regel.
+   De WKR stuurt de meeste adviezen niet als bijlage mee: kijk bij elke update op https://www.wkr.nl/documenten (de lijst
+   laadt met JavaScript; lees hem in de browser) en voeg nieuwe adviezen en signaleringen toe. Geen jaarverslagen,
+   werkprogramma's, magazines of brieven.
 
 Beoordeel op de titel van de bijlage plus het onderwerp van de brief; open het document alleen bij twijfel.
 

@@ -181,7 +181,8 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
   haar lijstpagina met `?open=`, op een themapagina naar de tabel van dat thema; een Kameractiviteit naar `#agenda/a-<nummer>`
   (op een themapagina met `?thema=`). Alleen een eigen mijlpaal zonder Kameractiviteit gaat naar zijn bron.
 - Rode lijn (sinds 20 nov 2026): in Net binnen en in elke tabel met Datum aflopend staat boven het eerste item van vóór de
-  vorige werkdag (op maandag: vrijdag) een 2px `--alarm`-lijn (`NIEUW_VANAF`, `grensIndex()`); geen lijn als er niets nieuws is.
+  vorige werkdag (op maandag: vrijdag) een eigen scheidingsregel (`li.grens` of `tr.grens`, geen `.row`) met een 2px `--alarm`-lijn over de
+  hele breedte en de labels uit `GRENS_LABEL` (`NIEUW_VANAF`, `grensIndex()`); geen lijn als er niets nieuws is.
 - Elk item volgt de regelopbouw (DESIGN.md, Do 6): soort (link naar de lijstpagina; `soortTag()`), datum en context; de
   titel op een eigen regel; een staart met indiener zonder voorletters, Voor/Tegen of Kamerstuk. Voorletters in titels weg (`zonderVoorletters`).
 
