@@ -142,11 +142,27 @@
   // pagina van een stuk op tweedekamer.nl (een downloadlink zou het bestand meteen opslaan)
   const TK_DETAIL = (zaak, d) => `https://www.tweedekamer.nl/kamerstukken/detail?id=${encodeURIComponent(zaak)}&did=${encodeURIComponent(d)}`;
   const TK_WET = (ks) => `https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A${encodeURIComponent(ks)}`;
-  function kerndocumenten(kd, begr) {
+  // bijlage van een Kamerbrief die als rapport is herkend (fetch_tk.py) en niet is afgewezen in data/rapporten.json
+  const metRapport = (b, rapp) => !!b.rapport && ((rapp && rapp.beoordeeld) || {})[b.id]?.oordeel !== "nee";
+  function kerndocumenten(kd, begr, rapp, stukken) {
     const uit = [];
     // groepen met verborgen: true (nu Europese Unie) staan nergens op de site: niet op de tab, de themapagina's of in de zoekfunctie
     const verborgen = new Set(((kd && kd.groepen) || []).filter((g) => g.verborgen).map((g) => g.id));
     for (const d of (kd && kd.documenten) || []) if (!verborgen.has(d.groep)) uit.push({ ...d, themas: d.themas || [], links: d.links || [] });
+    // goedgekeurde rapporten uit bijlagen van Kamerbrieven (data/rapporten.json); een handmatig kerndocument met hetzelfde D-nummer gaat voor
+    const handmatig = new Set(uit.flatMap((d) => [d.document, d.kenmerk]).filter(Boolean));
+    const oordeel = (rapp && rapp.beoordeeld) || {};
+    for (const s of stukken || []) {
+      for (const b of s.bijlagen || []) {
+        const o = oordeel[b.id];
+        if (!b.rapport || !o || o.oordeel !== "ja" || handmatig.has(b.id)) continue;
+        uit.push({
+          id: "rapport-" + b.id, groep: "rapporten", soort: "Rapport", titel: b.titel.replace(/^rapport\s*[-:]\s*/i, ""), uitgever: o.uitgever || null,
+          datum: s.datum, url: s.link, kenmerk: b.id, document: b.id, docId: b.docId, bestand: b.bestand, reeks: "rapport-" + b.id,
+          themas: o.themas || [], links: [], brief: { id: s.id, titel: s.onderwerp || s.titel, link: s.link },
+        });
+      }
+    }
     for (const b of begr || []) {
       const s = BEGR_SOORT[b.soort];
       if (!s || !b.document) continue;
@@ -223,7 +239,7 @@
       uit.push({ sleutel: sleutel.agenda(i), soort: "agenda", datum: i.datum, titel: i.titel, overig: [], ref: i, momenten: i.datum ? [{ label: i.type || "Mijlpaal", datum: i.datum, titel: i.titel }] : [] });
     }
     // kerndocumenten: alleen de nieuwste editie per reeks (de eerdere staan erbij op de tab Kerndocumenten)
-    for (const d of kerndocReeksen(kerndocumenten(data.kerndocumenten, data.begrotingen))) {
+    for (const d of kerndocReeksen(kerndocumenten(data.kerndocumenten, data.begrotingen, data.rapporten, data.stukken))) {
       uit.push({ sleutel: "kerndoc:" + d.id, soort: "kerndocument", datum: d.datum, titel: d.titel, overig: [], ref: d, momenten: [], themasVeld: d.themas });
     }
     return uit;
@@ -258,5 +274,5 @@
     return `https://www.tweedekamer.nl/zoeken?q=${encodeURIComponent(z.nummer)}`;
   }
 
-  return { THEMAS, SOORTEN, maak, tkUrl, kerndocumenten, kerndocReeksen, norm, sleutel, bronItems, themasVanItem, korteTitel, stukTitel, typeNaam };
+  return { THEMAS, SOORTEN, maak, tkUrl, kerndocumenten, kerndocReeksen, metRapport, norm, sleutel, bronItems, themasVanItem, korteTitel, stukTitel, typeNaam };
 });

@@ -24,6 +24,7 @@ Naslag (lees bij de taak):
 - `agent_docs/samenvatten.md`: debatten samenvatten met gehoord.de en het formaat van `data/debatten.json`.
 - `agent_docs/uitstoot-grafiek.md`: het blok "Wat Nederland uitstoot" (`assets/milieu.js`).
 - `agent_docs/zoekfunctie.md`: zoekindex en resultatenpagina (`assets/zoek.js`).
+- `agent_docs/rapporten.md`: criteria en werkwijze voor de pagina Rapporten en het label "Met rapport" op Kamerbrieven.
 
 ## Commando's
 
@@ -56,6 +57,7 @@ De Action `.github/workflows/update.yml` draait elke werkdag om 05:17 UTC `fetch
 | `data/debatten.json` | Samenvattingen van debatten | Claude |
 | `data/agenda.json` | Mijlpalen, consultaties, deadlines (met bron-URL) | Claude |
 | `data/kerndocumenten.json` | Handmatige kerndocumenten (reeksen met edities) | Claude |
+| `data/rapporten.json` | Beoordeling van rapportkandidaten (bijlagen bij Kamerbrieven): ja met uitgever, of nee met reden | Claude |
 | `data/themas.json` | Trefwoordregels voor thema's | Claude/Tobias |
 | `data/themas-mapping.json` | Goedgekeurde thema per item (uit de review) | review-script |
 | `data/zoeksynoniemen.json` | Synoniemen en afkortingen voor zoeken | Claude |
@@ -75,6 +77,7 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 2. Zoek nieuwe debatten: activiteiten met Status `Uitgevoerd` (relevante soorten) in `data/tk/activiteiten.json`
    die nog niet in `data/debatten.json` staan (koppeling op datum + soort). Sla procedurevergaderingen over.
 3. Vat elk nieuw relevant debat samen volgens `agent_docs/samenvatten.md`. Staan er veel open, meld dan aan Tobias hoeveel.
+   Beoordeel nieuwe rapportkandidaten (bijlagen met `rapport: true` die nog niet in `data/rapporten.json` staan) volgens `agent_docs/rapporten.md`.
 4. Werk `data/agenda.json` bij bij nieuwe mijlpalen, consultaties of deadlines (met bron-URL; zoek bij twijfel
    op eerstekamer.nl, internetconsultatie.nl, officielebekendmakingen.nl).
    - Zet bij elke wijziging `bijgewerkt` bovenin het gewijzigde bestand (ISO, UTC, bv. `2026-11-12T15:49:00Z`).

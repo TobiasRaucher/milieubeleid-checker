@@ -52,6 +52,9 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
 - Te ruim of te krap: `stukDossiers`/`trefwoorden` of `stukken.uitsluiten` in `config.json`.
 - Bijlagen (sinds 17 nov 2026): uit `BijlageDocument` (beslisnota, rapporten, juridische analyses) in `bijlagen`
   (`id`, `titel`, `bestand` PDF/DOCX, `link` naar tweedekamer.nl/downloads).
+- Rapporten (sinds 20 nov 2026): een bijlage waarvan de titel past bij `rapporten.titel` in `config.json` en niet bij
+  `rapporten.uitsluiten` krijgt `rapport: true` en staat vooraan in `bijlagen`. Claude beoordeelt die kandidaten in
+  `data/rapporten.json` (`agent_docs/rapporten.md`). Te ruim of te krap: de patronen in `config.json`.
 - Voor de documentweergave zet `fetch_tk.py` `docId` en `bestand` (PDF, DOCX) bij moties, amendementen, stukken en
   bijlagen, en `volgnummer` bij moties en amendementen.
 

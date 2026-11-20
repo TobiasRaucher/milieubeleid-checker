@@ -68,7 +68,7 @@
   async function init() {
     // shortcut: alle data in één keer (17 nov 2026: ~8 MB, ~0,8 MB met gzip, zaken.json parsen ~30 ms); per pagina laden pas
     // als de data flink groeit of de eerste weergave merkbaar traag wordt (audit .impeccable/audit/, P2 "All data loads up front")
-    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken] = await Promise.all([
+    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken, rapporten] = await Promise.all([
       load("pipeline/config.json", { sectoren: {} }),
       load("data/debatten.json", { debatten: [] }),
       load("data/agenda.json", { items: [] }),
@@ -84,6 +84,7 @@
       load("data/kerndocumenten.json", {}),
       load("data/tk/begrotingen.json", []),
       load("data/tk/wetstukken.json", {}),
+      load("data/rapporten.json", {}),
     ]);
     // stemmingen.json: {zaak: {datum, activiteit}} (oud formaat: {zaak: datum}); de site gebruikt twee platte tabellen
     const stemDatum = {}, stemActiviteit = {};
@@ -91,7 +92,7 @@
       if (typeof v === "string") stemDatum[nr] = v;
       else if (v && v.datum) { stemDatum[nr] = v.datum; if (v.activiteit) stemActiviteit[nr] = v.activiteit; }
     }
-    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, kerndocumenten, begrotingen, wetstukken };
+    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, kerndocumenten, begrotingen, wetstukken, rapporten };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
       $("#stamp").textContent = "";
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
@@ -99,7 +100,7 @@
     }
     S.T = window.MRThemas.maak(themas, themaMapping);
     // meest recente moment waarop data of samenvattingen zijn bijgewerkt
-    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, agenda.bijgewerkt, kerndocumenten.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
+    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, agenda.bijgewerkt, kerndocumenten.bijgewerkt, rapporten.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
     $("#stamp").textContent = stempels.length ? `Bijgewerkt ${fmtTijdstip(new Date(Math.max(...stempels)))}` : "Bijgewerkt onbekend";
     bindZoekveld();
     window.addEventListener("hashchange", route);
@@ -194,6 +195,8 @@
   function oudeRoute(tab, pad) {
     if (tab === "stukken") return "#vragen";
     if (tab === "documenten") return "#kerndocumenten" + location.hash.slice("#documenten".length);
+    // Ramingen en Adviezen zijn sinds 20 nov 2026 samen Rapporten
+    if (/^kerndocumenten\/(ramingen|advies)$/.test(pad)) return "#kerndocumenten/rapporten";
     if (tab === "wetgeving" && pad.includes("/") && pad !== "wetgeving/wetten" && !/^wetgeving\/\d+$/.test(pad)) return "#wetgeving";
     if (tab === "toezeggingen" || tab === "fracties") return "#agenda?terugblik=1";
     // themapagina: Agenda en Vergaderingen zijn sinds 19 nov 2026 de Agenda met het themafilter
@@ -1174,7 +1177,8 @@
   // titels lezen door op de kolomkop ("Vragen over...", "Kamerbrief over...")
   const overKlein = (t) => klein(String(t || "").trim().replace(/\s+/g, " ").replace(/^(over|inzake) /i, ""));
   // bijlagen bij een Kamerbrief of antwoord (beslisnota, rapporten, analyses), uit de Kamerdata
-  const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}${docKnop(b, "Lees") ? ` · ${docKnop(b, "Lees")}` : ""}</li>`).join("")}</ul></div>` : "");
+  const metRapport = (b) => window.MRThemas.metRapport(b, S.data.rapporten);
+  const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${metRapport(b) ? `<span class="badge">Rapport</span> ` : ""}${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}${docKnop(b, "Lees") ? ` · ${docKnop(b, "Lees")}` : ""}</li>`).join("")}</ul></div>` : "");
   const VRAAG_DEF = {
     tab: "vragen", eenheid: "Kamervragen", knopLabel: ["Vraag en antwoord tonen", "Vraag en antwoord verbergen"],
     rijen: vraagRijen, datum: (r) => r.datum, sleutel: (r) => r.id,
@@ -1216,9 +1220,10 @@
     filters: {
       thema: themaFilter(themasBrief),
       ministerie: { label: "Ministerie", waarden: (x) => [x.ministerie || ""], orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
+      rapport: { label: "Rapport", waarden: (x) => [(x.bijlagen || []).some(metRapport) ? "ja" : "nee"], orde: opVolgorde(["ja", "nee"]), tekst: (v) => (v === "ja" ? "Bevat rapport" : "Zonder rapport") },
     },
     kolommen: [
-      { titel: true, kop: "Kamerbrief over...", thCls: "ond", tdCls: "ond", cel: (x) => `<a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${titelMetPijl(overKlein(x.onderwerp || x.titel))}</a>` },
+      { titel: true, kop: "Kamerbrief over...", thCls: "ond", tdCls: "ond", cel: (x) => `<a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${titelMetPijl(overKlein(x.onderwerp || x.titel))}</a>${(x.bijlagen || []).some(metRapport) ? ` <span class="badge">Met rapport</span>` : ""}` },
       { filter: "ministerie", tdCls: "uitslag ministerie", cel: (x) => esc(x.ministerie || "Onbekend") },
       themaKolom(themasBrief),
       { kop: "Kamerstuk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (x) => esc(x.kamerstuk || ((x.dossiers || [])[0] || {}).nummer || "") },
@@ -1970,7 +1975,7 @@
   let _kd = null;
   function kdData() {
     if (_kd && _kd.bron === S.data.kerndocumenten) return _kd;
-    const M = window.MRThemas, alle = M.kerndocumenten(S.data.kerndocumenten, S.data.begrotingen);
+    const M = window.MRThemas, alle = M.kerndocumenten(S.data.kerndocumenten, S.data.begrotingen, S.data.rapporten, S.data.stukken);
     const groepen = (S.data.kerndocumenten.groepen || []).filter((g) => !g.verborgen);
     const reeksen = M.kerndocReeksen(alle);
     // thema's: mapping (na de review), dan het veld themas
@@ -1998,17 +2003,18 @@
       soort: { label: "Soort", waarden: (d) => [d.soort || "Document"], orde: opVolgorde(["Nota", "Begroting", "Jaarverslag", "Wetsvoorstel"]), tekst: (v) => esc(v) },
       uitgever: { label: "Uitgever", waarden: (d) => [d.uitgever || ""], orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
     };
+    if (groep === "rapporten") delete filters.soort;
     if (groep === "begroting") filters.hoofdstuk = { label: "Hoofdstuk", waarden: (d) => [d.hoofdstuk || ""], orde: opVolgorde(["", ...hoofdstukken]),
       tekst: (v) => (v ? `<span class="mono">${esc(v)}</span> ${esc(K.hoofdstukNaam.get(v) || "")}` : "Rijksbreed") };
     if (!groep) filters.groep = { label: "Groep", waarden: (d) => [d.groep], orde: opVolgorde(K.groepen.map((g) => g.id)), tekst: (v) => esc(groepLabel.get(v) || v) };
     const kolommen = [
-      { titel: true, kop: "Document", thCls: "ond", tdCls: "ond", cel: (d) => `<a class="ltitel" href="${esc(d.url)}" target="_blank" rel="noopener">${titelMetPijl(d.titel)}</a>` },
+      { titel: true, kop: groep === "rapporten" ? "Rapport" : "Document", thCls: "ond", tdCls: "ond", cel: (d) => `<a class="ltitel" href="${esc(d.url)}" target="_blank" rel="noopener">${titelMetPijl(d.titel)}</a>` },
       ...(groep ? [] : [{ filter: "groep", tdCls: "uitslag", cel: (d) => esc(groepLabel.get(d.groep) || "") }]),
-      { filter: "soort", tdCls: "uitslag", cel: (d) => esc(d.soort || "Document") },
+      ...(groep === "rapporten" ? [] : [{ filter: "soort", tdCls: "uitslag", cel: (d) => esc(d.soort || "Document") }]),
       ...(groep === "begroting" ? [{ filter: "hoofdstuk", tdCls: "kamerstuk mono", cel: (d) => (d.hoofdstuk ? `<span title="${esc(K.hoofdstukNaam.get(d.hoofdstuk) || "")}">${esc(d.hoofdstuk)}</span>` : leegCel("Rijksbreed")) }] : []),
       { filter: "uitgever", tdCls: "ministerie hide-sm", cel: (d) => (d.uitgever ? esc(d.uitgever) : leegCel("Onbekend")) },
       themaKolom(themasKd),
-      { kop: "Kenmerk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (d) => (d.kenmerk ? `<span title="${esc(d.kenmerk)}">${esc(kdKenmerk(d.kenmerk))}</span>` : leegCel("Geen kenmerk")) },
+      ...(groep === "rapporten" ? [] : [{ kop: "Kenmerk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (d) => (d.kenmerk ? `<span title="${esc(d.kenmerk)}">${esc(kdKenmerk(d.kenmerk))}</span>` : leegCel("Geen kenmerk")) }]),
       { datum: true, kop: "Datum" },
     ];
     return {
@@ -2027,6 +2033,7 @@
     const ed = (e) => `<li>${e.datum ? `<span class="datum">${fmtKort(e.datum)}</span> ` : ""}${extLink(e.url, e.titel)}${e.kenmerk ? ` <span class="muted mono">${esc(kdKenmerk(e.kenmerk))}</span>` : ""}${docKnop({ ...e, id: e.document, link: e.url }, "Lees") ? ` · ${docKnop({ ...e, id: e.document, link: e.url }, "Lees")}` : ""}</li>`;
     return `<div class="mdetail">
       ${kenm.length ? `<p>${kenm.join(" · ")}</p>` : ""}
+      ${d.brief ? `<div class="mstemming"><p class="mtelling">Bij Kamerbrief</p><ul class="mstappen"><li>${extLink(d.brief.link, d.brief.titel)} <span class="muted mono">${esc(d.brief.id)}</span></li></ul></div>` : ""}
       ${eerder.length ? `<div class="mstemming"><p class="mtelling">${eerder.length === 1 ? "Eerdere editie" : `Eerdere edities (${nl(eerder.length)})`}</p><ul class="mstappen">${eerder.map(ed).join("")}</ul></div>` : ""}
       <div class="mlinks">${docKnop({ ...d, id: d.document, link: d.url }, "Bekijk het origineel")}${extLink(d.url, kdBron(d.url))}${(d.links || []).map((l) => extLink(l.url, l.tekst)).join("")}</div>
     </div>`;
@@ -2037,7 +2044,7 @@
     return (tabs.find((g) => g.id === gevraagd) || tabs[0] || {}).id;
   }
   // elke groep is een eigen pagina (menu Documenten); de titel is de naam van de groep, de ondertitel staat hier
-  const KD_SUB = { kabinet: "Coalitieakkoord, Troonrede, regeringsverklaring, kabinetsnota's", begroting: "Miljoenennota, begrotingen, jaarverslagen", ramingen: "KEV, ramingen en monitors", advies: "Raad van State en Klimaatraad", rechtspraak: "Uitspraken over klimaat en stikstof" };
+  const KD_SUB = { kabinet: "Coalitieakkoord, Troonrede, regeringsverklaring, kabinetsnota's", begroting: "Miljoenennota, begrotingen, jaarverslagen", rapporten: "Onderzoek, evaluaties, adviezen, ramingen en monitors", rechtspraak: "Uitspraken over klimaat en stikstof" };
   function kerndocumentenPagina() {
     const groep = kdGroep(), g = kdTabs().find((x) => x.id === groep) || {};
     return tabelPagina(kerndocDef(groep), paginaKop(g.label || "Kerndocumenten", KD_SUB[groep] || ""), "", "Zoek op titel, afkorting, uitgever of kenmerk");

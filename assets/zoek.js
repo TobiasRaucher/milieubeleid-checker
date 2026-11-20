@@ -212,7 +212,7 @@
     }
     // kerndocumenten (alle edities; begrotingsstukken uit de Kamerdata inbegrepen)
     {
-      for (const k of MRThemas.kerndocumenten(D.kerndocumenten, D.begrotingen)) {
+      for (const k of MRThemas.kerndocumenten(D.kerndocumenten, D.begrotingen, D.rapporten, D.stukken)) {
         add({
           id: "kerndoc:" + k.id, cat: "kerndocumenten", soort: k.soort || "Kerndocument", datum: k.datum, titel: k.titel,
           tekst: j([k.afkorting, k.kenmerk, k.document, k.uitgever, k.documentSoort]), personen: "",

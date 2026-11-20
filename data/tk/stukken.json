@@ -87,6 +87,90 @@
   ]
  },
  {
+  "id": "2026D59495",
+  "docId": "6af02021-97c3-4c0c-8fba-509708f7726d",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-19",
+  "titel": null,
+  "onderwerp": "Ontwikkelingen Carbon Capture and Storage (CCS)",
+  "zaak": "2026Z25723",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25723&did=2026D59495",
+  "bijlagen": [
+   {
+    "id": "2026D59496",
+    "titel": "Beslisnota bij Kamerbrief over ontwikkelingen Carbon Capture and Storage (CCS)",
+    "bestand": "PDF",
+    "docId": "2c6bb3f9-afa7-43ed-a554-7f7d66790fd9",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59496"
+   }
+  ]
+ },
+ {
+  "id": "2026D59515",
+  "docId": "f3464284-7305-49a7-8e73-8415257dc3d2",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-19",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Van der Plas over zonering rond Natura 2000-gebieden",
+  "zaak": "2026Z21185",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21185&did=2026D59515",
+  "bijlagen": [
+   {
+    "id": "2026D59516",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Van der Plas over zonering rond Natura 2000-gebieden",
+    "bestand": "PDF",
+    "docId": "a3557f11-107a-4596-ae3e-944e6bdd2a91",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59516"
+   }
+  ]
+ },
+ {
+  "id": "2026D59493",
+  "docId": "b00650fe-f9f4-4aa7-aee4-aa16d3d6a86d",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-19",
+  "titel": null,
+  "onderwerp": "Beantwoording resterende vragen gesteld tijdens het wetgevingsoverleg Fonds voor stikstof, landbouw en natuur van 16 november 2026",
+  "zaak": "2026Z25722",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25722&did=2026D59493",
+  "bijlagen": [
+   {
+    "id": "2026D59494",
+    "titel": "Beslisnota bij Kamerbrief inzake beantwoording resterende vragen gesteld tijdens het wetgevingsoverleg Fonds voor stikstof, landbouw en natuur van 16 november 2026",
+    "bestand": "PDF",
+    "docId": "6ba3f6cc-a384-42e9-9390-e63681ff9b6c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59494"
+   }
+  ]
+ },
+ {
   "id": "2026D59215",
   "docId": "f046526f-28ca-46b3-ae60-bd6764b96410",
   "bestand": "DOCX",
@@ -115,6 +199,41 @@
   ]
  },
  {
+  "id": "2026D59483",
+  "docId": "983d7cd7-63ac-416b-95f3-f5481dc27c3d",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-19",
+  "titel": null,
+  "onderwerp": "Onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
+  "zaak": "2026Z25719",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25719&did=2026D59483",
+  "bijlagen": [
+   {
+    "id": "2026D59484",
+    "titel": "Hoofdrapport Gedeeltelijk lozingsverbod PFAS",
+    "bestand": "PDF",
+    "docId": "85c6163b-9e1b-45c9-930a-83b91026dcfc",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59484"
+   },
+   {
+    "id": "2026D59485",
+    "titel": "Beslisnota bij Kamerbrief over onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
+    "bestand": "PDF",
+    "docId": "0aecc34f-4d3a-483c-bd54-67135ff68499",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59485"
+   }
+  ]
+ },
+ {
   "id": "2026D58862",
   "docId": "db848edd-e824-44d2-8c92-03e6ccbf4029",
   "bestand": "DOCX",
@@ -138,7 +257,8 @@
     "titel": "Pieken of dalen Onderzoek naar de mogelijkheid om netkosten anders te verdelen over tijd",
     "bestand": "PDF",
     "docId": "2cefb147-a992-43aa-b716-f1fff1c297d9",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58863"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58863",
+    "rapport": true
    },
    {
     "id": "2026D58864",
@@ -174,7 +294,8 @@
     "titel": "Onderbouwing doeltreffendheid doelmatigheid en evaluatie (CW 3.1)",
     "bestand": "PDF",
     "docId": "aa8af7e7-d5ea-4dfb-82c1-f29fa454692a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59061"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59061",
+    "rapport": true
    },
    {
     "id": "2026D59062",
@@ -428,7 +549,8 @@
     "titel": "Juridische analyse Advies Internationaal Gerechtshof Klimaatverandering en Internationaal Recht",
     "bestand": "DOCX",
     "docId": "3008234e-2b23-4613-b2f6-425b57743efa",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58056"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58056",
+    "rapport": true
    },
    {
     "id": "2026D58057",
@@ -459,6 +581,62 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25082&did=2026D57925",
   "bijlagen": [
    {
+    "id": "2026D57932",
+    "titel": "Advies Landsadvocaat - Voorzienbaarheid peilverhoging veenweide",
+    "bestand": "PDF",
+    "docId": "63857128-c341-4f4c-a756-90fff972f3a5",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57932",
+    "rapport": true
+   },
+   {
+    "id": "2026D57933",
+    "titel": "Ontwerpend Onderzoek Ruimtelijk-Economische Ontwikkeling",
+    "bestand": "PDF",
+    "docId": "494e05cd-9d1b-4b83-88dd-b7cab890dfff",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57933",
+    "rapport": true
+   },
+   {
+    "id": "2026D57931",
+    "titel": "Rapport - Mogelijkheden en consequenties van ruimtelijke ontwikkelingen in het Markermeer en IJmeerIJmeer",
+    "bestand": "PDF",
+    "docId": "b5eab726-0a34-444e-aa69-0efc156b309e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57931",
+    "rapport": true
+   },
+   {
+    "id": "2026D57937",
+    "titel": "Rapport - Werkplaats Fellenoord",
+    "bestand": "PDF",
+    "docId": "24997544-dc82-452f-b769-3cbd050f5b9e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57937",
+    "rapport": true
+   },
+   {
+    "id": "2026D57935",
+    "titel": "Rapport - Werkplaats Kraag van Utrecht",
+    "bestand": "PDF",
+    "docId": "7fd5b321-4112-4b13-8f9a-064c380d8c74",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57935",
+    "rapport": true
+   },
+   {
+    "id": "2026D57936",
+    "titel": "Rapport - Werkplaats NSPD-Terneuzen",
+    "bestand": "PDF",
+    "docId": "bb79d5b8-dadd-4c2d-9df8-205dfde13f76",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57936",
+    "rapport": true
+   },
+   {
+    "id": "2026D57934",
+    "titel": "Rapport - Werkplaats Wieringermeer",
+    "bestand": "PDF",
+    "docId": "7892c5e0-2f99-454b-a4ee-96755e783eae",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57934",
+    "rapport": true
+   },
+   {
     "id": "2026D57928",
     "titel": "Aanvulling MER - Nota Ruimte",
     "bestand": "PDF",
@@ -471,13 +649,6 @@
     "bestand": "PDF",
     "docId": "bd8a2ae6-0743-4d62-ab2e-3db55f9c7d7b",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57929"
-   },
-   {
-    "id": "2026D57932",
-    "titel": "Advies Landsadvocaat - Voorzienbaarheid peilverhoging veenweide",
-    "bestand": "PDF",
-    "docId": "63857128-c341-4f4c-a756-90fff972f3a5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57932"
    },
    {
     "id": "2026D57930",
@@ -499,48 +670,6 @@
     "bestand": "PDF",
     "docId": "de1db066-cbc5-4377-a6c3-8431492b988d",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57927"
-   },
-   {
-    "id": "2026D57933",
-    "titel": "Ontwerpend Onderzoek Ruimtelijk-Economische Ontwikkeling",
-    "bestand": "PDF",
-    "docId": "494e05cd-9d1b-4b83-88dd-b7cab890dfff",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57933"
-   },
-   {
-    "id": "2026D57931",
-    "titel": "Rapport - Mogelijkheden en consequenties van ruimtelijke ontwikkelingen in het Markermeer en IJmeerIJmeer",
-    "bestand": "PDF",
-    "docId": "b5eab726-0a34-444e-aa69-0efc156b309e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57931"
-   },
-   {
-    "id": "2026D57937",
-    "titel": "Rapport - Werkplaats Fellenoord",
-    "bestand": "PDF",
-    "docId": "24997544-dc82-452f-b769-3cbd050f5b9e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57937"
-   },
-   {
-    "id": "2026D57935",
-    "titel": "Rapport - Werkplaats Kraag van Utrecht",
-    "bestand": "PDF",
-    "docId": "7fd5b321-4112-4b13-8f9a-064c380d8c74",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57935"
-   },
-   {
-    "id": "2026D57936",
-    "titel": "Rapport - Werkplaats NSPD-Terneuzen",
-    "bestand": "PDF",
-    "docId": "bb79d5b8-dadd-4c2d-9df8-205dfde13f76",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57936"
-   },
-   {
-    "id": "2026D57934",
-    "titel": "Rapport - Werkplaats Wieringermeer",
-    "bestand": "PDF",
-    "docId": "7892c5e0-2f99-454b-a4ee-96755e783eae",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57934"
    },
    {
     "id": "2026D57938",
@@ -575,28 +704,32 @@
     "titel": "Doorrekening IBO energietransitie van de woningvoorraad",
     "bestand": "PDF",
     "docId": "1933b46a-e851-4dea-821c-2c27994aa13f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58018"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58018",
+    "rapport": true
    },
    {
     "id": "2026D58016",
     "titel": "Eindrapport IBO energietransitie van de woningvoorraad",
     "bestand": "PDF",
     "docId": "de19c289-d2ce-4ed3-ba1a-92f594402534",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58016"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58016",
+    "rapport": true
    },
    {
     "id": "2026D58017",
     "titel": "Fichebundel IBO energietransitie van de woningvoorraad",
     "bestand": "PDF",
     "docId": "983f8dde-d9a0-4542-bdd8-8c4b4345b9a0",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58017"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58017",
+    "rapport": true
    },
    {
     "id": "2026D58019",
     "titel": "Mind the gap onderzoek Muzus",
     "bestand": "PDF",
     "docId": "030c452a-f631-41ce-86c0-95f73c48e12c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58019"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58019",
+    "rapport": true
    },
    {
     "id": "2026D58020",
@@ -953,7 +1086,8 @@
     "titel": "Monitoring aardgaswinning onder de Waddenzee vanaf de locaties Moddergat Lauwersoog en Vierhuizen",
     "bestand": "PDF",
     "docId": "ba6d6f59-8c06-4676-aeb5-c3bdb933ca18",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57378"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57378",
+    "rapport": true
    },
    {
     "id": "2026D57379",
@@ -1156,7 +1290,8 @@
     "titel": "Rapport ontwerpend onderzoek Schaarse ruimte, scherpe keuzes",
     "bestand": "PDF",
     "docId": "2e925448-9785-4158-b0c2-188f2a12b098",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56718"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56718",
+    "rapport": true
    },
    {
     "id": "2026D56717",
@@ -1280,14 +1415,16 @@
     "titel": "Evaluatie Nationaal Burgerberaad Klimaat",
     "bestand": "PDF",
     "docId": "6a572803-0e84-41d3-91b1-6a4096a8a97d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56379"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56379",
+    "rapport": true
    },
    {
     "id": "2026D56380",
     "titel": "Evaluatie Nationaal Burgerberaad Klimaat",
     "bestand": "PDF",
     "docId": "ced0b135-e7b3-429b-94bf-b27b5a17ea7a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56380"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56380",
+    "rapport": true
    },
    {
     "id": "2026D56381",
@@ -1318,18 +1455,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z24501&did=2026D56573",
   "bijlagen": [
    {
+    "id": "2026D56576",
+    "titel": "Nationale Rapportage VN-biodiversiteitsverdrag",
+    "bestand": "PDF",
+    "docId": "07ac5218-b6cf-40e8-8d12-6d57a87cda67",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56576",
+    "rapport": true
+   },
+   {
     "id": "2026D56575",
     "titel": "Appreciatie aanbevelingen Wetenschapstoets",
     "bestand": "PDF",
     "docId": "ddfdbea2-de97-4135-9207-bb12c421a23f",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56575"
-   },
-   {
-    "id": "2026D56576",
-    "titel": "Nationale Rapportage VN-biodiversiteitsverdrag",
-    "bestand": "PDF",
-    "docId": "07ac5218-b6cf-40e8-8d12-6d57a87cda67",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56576"
    },
    {
     "id": "2026D56577",
@@ -1520,7 +1658,8 @@
     "titel": "Rapport 'Evaluatie van de kosten van eindberging'",
     "bestand": "PDF",
     "docId": "c211a8b2-56f1-46dc-bfc7-3b66e25ddbe5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56167"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56167",
+    "rapport": true
    },
    {
     "id": "2026D56168",
@@ -1654,7 +1793,8 @@
     "titel": "Rapport 'Evaluatie van de kosten van eindberging'",
     "bestand": "PDF",
     "docId": "84a5fbd4-a833-4fe0-af79-8852d39fa829",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56177"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56177",
+    "rapport": true
    },
    {
     "id": "2026D56178",
@@ -1689,7 +1829,8 @@
     "titel": "Analyse jaarverslagen omgevingsdiensten 2025",
     "bestand": "PDF",
     "docId": "434f3ccd-69fc-40e6-b687-c12a4dc4f35c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55965"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55965",
+    "rapport": true
    },
    {
     "id": "2026D55963",
@@ -1748,6 +1889,22 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z24220&did=2026D55952",
   "bijlagen": [
    {
+    "id": "2026D55953",
+    "titel": "Eindrapport koe en eiwit - Naar 155 RE in het totale melkveerantsoen resultaten van praktijkpilot Koe en e",
+    "bestand": "PDF",
+    "docId": "e1be585b-dfe5-4060-b2f8-afec47279f45",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55953",
+    "rapport": true
+   },
+   {
+    "id": "2026D55954",
+    "titel": "Rapport impact stikstofdepositie Koe en Eiwit",
+    "bestand": "PDF",
+    "docId": "54c53740-23ca-4138-8237-4fe3e5d515b9",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55954",
+    "rapport": true
+   },
+   {
     "id": "2026D55956",
     "titel": "Desk study N-efficiency pigs",
     "bestand": "PDF",
@@ -1762,25 +1919,11 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55955"
    },
    {
-    "id": "2026D55953",
-    "titel": "Eindrapport koe en eiwit - Naar 155 RE in het totale melkveerantsoen resultaten van praktijkpilot Koe en e",
-    "bestand": "PDF",
-    "docId": "e1be585b-dfe5-4060-b2f8-afec47279f45",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55953"
-   },
-   {
     "id": "2026D55957",
     "titel": "Klimaatwinsten kringlooplandbouw varkens- en pluimveehouderij",
     "bestand": "PDF",
     "docId": "97236224-193d-4bf6-8a6a-e8326f281767",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55957"
-   },
-   {
-    "id": "2026D55954",
-    "titel": "Rapport impact stikstofdepositie Koe en Eiwit",
-    "bestand": "PDF",
-    "docId": "54c53740-23ca-4138-8237-4fe3e5d515b9",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55954"
    },
    {
     "id": "2026D55958",
@@ -2075,7 +2218,16 @@
     "titel": "Ipsos IO Rapport - Burgerpanelonderzoek afvalscheiding",
     "bestand": "PDF",
     "docId": "67a58b40-265a-47be-a116-57c6a0dbe623",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55003"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55003",
+    "rapport": true
+   },
+   {
+    "id": "2026D55004",
+    "titel": "Onderzoek toepassing uitzonderingsgronden besluit GIHA toetsingskader en inzameldoelstelling",
+    "bestand": "PDF",
+    "docId": "84ff5e9f-1c2b-4a90-9a0e-feded426f46b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55004",
+    "rapport": true
    },
    {
     "id": "2026D55002",
@@ -2083,13 +2235,6 @@
     "bestand": "PDF",
     "docId": "f0c2569c-863c-4c67-b58f-46847c6388d8",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55002"
-   },
-   {
-    "id": "2026D55004",
-    "titel": "Onderzoek toepassing uitzonderingsgronden besluit GIHA toetsingskader en inzameldoelstelling",
-    "bestand": "PDF",
-    "docId": "84ff5e9f-1c2b-4a90-9a0e-feded426f46b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55004"
    },
    {
     "id": "2026D55005",
@@ -2319,7 +2464,8 @@
     "titel": "Eindrapport Impactanalyse circulaire hefboom",
     "bestand": "PDF",
     "docId": "80af64f6-3fd0-455f-bd23-cc0c2ce8b5b3",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D54942"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D54942",
+    "rapport": true
    },
    {
     "id": "2026D54943",
@@ -2400,14 +2546,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-02",
-  "titel": null,
+  "titel": "Kabinetsaanpak Klimaatbeleid",
   "onderwerp": "Nadere informatie over subsidie aan de Unie van Waterschappen en de waterschappen",
   "zaak": "2026Z23791",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "32813-1597",
+  "dossiers": [
+   {
+    "nummer": 32813,
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2456,14 +2608,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-02",
-  "titel": null,
+  "titel": "Evaluatie Schipholbeleid",
   "onderwerp": "Inwerkingtreding algehele wijziging Luchthavenverkeerbesluit Schiphol",
   "zaak": "2026Z23792",
   "ministerie": "Infrastructuur en Waterstaat",
   "ondertekenaar": "V.P.G. Karremans",
   "functie": "minister van Infrastructuur en Waterstaat",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "29665-665",
+  "dossiers": [
+   {
+    "nummer": 29665,
+    "toevoeging": null,
+    "titel": "Evaluatie Schipholbeleid"
+   }
+  ],
   "sectoren": [
    "ruimte-mobiliteit"
   ],
@@ -2552,6 +2710,74 @@
     "bestand": "PDF",
     "docId": "c95e297e-eac3-4104-990c-d2dc5ce175d9",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D54687"
+   }
+  ]
+ },
+ {
+  "id": "2026D54773",
+  "docId": "fb859344-8c59-4b5c-b536-b4e6db9cf112",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-02",
+  "titel": "Raad voor Vervoer, Telecommunicatie en Energie",
+  "onderwerp": "Verslag van de informele bijeenkomsten van EU-transportministers op 20-21 september 2026",
+  "zaak": "2026Z23769",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": "21501-33-1260",
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "33",
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23769&did=2026D54773",
+  "bijlagen": [
+   {
+    "id": "2026D54774",
+    "titel": "Beslisnota bij Kamerbrief over verslag van de informele bijeenkomsten van EU-transportministers op 20-21 september 2026",
+    "bestand": "PDF",
+    "docId": "33a0a1e1-e1e4-45fa-980a-976083404380",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D54774"
+   }
+  ]
+ },
+ {
+  "id": "2026D54807",
+  "docId": "1cd973b6-b24c-42e5-a9c5-ec62f3fbc40e",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-02",
+  "titel": "Nota Ruimte",
+  "onderwerp": "Voornemen tot overleg met Kavel 10 over de Basisvoorziening Beeldmateriaal",
+  "zaak": "2026Z23778",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "E. Boekholt-O’Sullivan",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": "29435-324",
+  "dossiers": [
+   {
+    "nummer": 29435,
+    "toevoeging": null,
+    "titel": "Nota Ruimte"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23778&did=2026D54807",
+  "bijlagen": [
+   {
+    "id": "2026D54808",
+    "titel": "Beslisnota bij Kamerbrief over voornemen tot overleg met Kavel 10 over de Basisvoorziening Beeldmateriaal",
+    "bestand": "PDF",
+    "docId": "794d53e0-d54d-4c3f-960f-41788e009763",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D54808"
    }
   ]
  },
@@ -3217,32 +3443,35 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23019&did=2026D53017",
   "bijlagen": [
    {
-    "id": "2026D53021",
-    "titel": "Handleiding rekenmodel plankostenscan behorend bij hoofdstuk 13 Omgevingsregeling",
-    "bestand": "PDF",
-    "docId": "fbee67be-25eb-4fd8-b360-5ac147cdd3f7",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53021"
-   },
-   {
     "id": "2026D53020",
     "titel": "Kadaster Onderzoek beleggingspercelen – update 2026",
     "bestand": "PDF",
     "docId": "2adf67f5-46ec-44fb-a4fe-97c6ae1b6623",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53020"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53020",
+    "rapport": true
    },
    {
     "id": "2026D53018",
     "titel": "Rapport `Onderzoek verkenning revitalisering baatbelasting`",
     "bestand": "PDF",
     "docId": "a8f3d382-20a8-4283-8e0c-611720a8f7d9",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53018"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53018",
+    "rapport": true
    },
    {
     "id": "2026D53019",
     "titel": "Rapport vervolgonderzoek ‘Revitalisering van de baatbelasting’",
     "bestand": "PDF",
     "docId": "59ec44a7-45db-49b8-8a1c-cff6257be36e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53019"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53019",
+    "rapport": true
+   },
+   {
+    "id": "2026D53021",
+    "titel": "Handleiding rekenmodel plankostenscan behorend bij hoofdstuk 13 Omgevingsregeling",
+    "bestand": "PDF",
+    "docId": "fbee67be-25eb-4fd8-b360-5ac147cdd3f7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53021"
    },
    {
     "id": "2026D53022",
@@ -4083,7 +4312,8 @@
     "titel": "Rapportage Hernieuwbare Energie voor Vervoer 2025",
     "bestand": "PDF",
     "docId": "9338da77-23db-4ee9-aa78-e19d44cbd78b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51897"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51897",
+    "rapport": true
    },
    {
     "id": "2026D51898",
@@ -4120,18 +4350,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z22576&did=2026D51902",
   "bijlagen": [
    {
+    "id": "2026D51904",
+    "titel": "GTS Rapportage Overzicht gasleveringszekerheid 20272028",
+    "bestand": "PDF",
+    "docId": "ba703a4c-79ef-40f6-9887-bc92c62da6ba",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51904",
+    "rapport": true
+   },
+   {
     "id": "2026D51903",
     "titel": "Brief GTS 15-9-2026 - Overzicht gasleveringszekerheid 20272028",
     "bestand": "PDF",
     "docId": "cd075816-36fa-4c4b-842c-554f482cffce",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51903"
-   },
-   {
-    "id": "2026D51904",
-    "titel": "GTS Rapportage Overzicht gasleveringszekerheid 20272028",
-    "bestand": "PDF",
-    "docId": "ba703a4c-79ef-40f6-9887-bc92c62da6ba",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51904"
    },
    {
     "id": "2026D51905",
@@ -4227,7 +4458,8 @@
     "titel": "WKR Adviesrapport 'Aan de slag met gedrag!'",
     "bestand": "PDF",
     "docId": "1afd6630-262c-4494-892d-30c4e4fe1752",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51971"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51971",
+    "rapport": true
    },
    {
     "id": "2026D51972",
@@ -4264,6 +4496,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z22600&did=2026D51978",
   "bijlagen": [
    {
+    "id": "2026D51980",
+    "titel": "Verduurzamingsplannen en knelpunten bij de Nederlandse industrie 2026 rapportage top 60 interviews RVO",
+    "bestand": "PDF",
+    "docId": "e7eca2d5-f353-45fb-827b-2a1e31f5fc33",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51980",
+    "rapport": true
+   },
+   {
     "id": "2026D51982",
     "titel": "TNO 2026 Barriers to Advanced Biofuels",
     "bestand": "PDF",
@@ -4283,13 +4523,6 @@
     "bestand": "PDF",
     "docId": "97fcf6e4-5b14-4177-b5a6-fbf5d50b82e3",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51979"
-   },
-   {
-    "id": "2026D51980",
-    "titel": "Verduurzamingsplannen en knelpunten bij de Nederlandse industrie 2026 rapportage top 60 interviews RVO",
-    "bestand": "PDF",
-    "docId": "e7eca2d5-f353-45fb-827b-2a1e31f5fc33",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51980"
    },
    {
     "id": "2026D51983",
@@ -5704,18 +5937,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z21269&did=2026D49131",
   "bijlagen": [
    {
+    "id": "2026D49133",
+    "titel": "RLI rapport Zorg voor water",
+    "bestand": "PDF",
+    "docId": "348a8991-2d8f-4827-86f9-2902fc3a7394",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D49133",
+    "rapport": true
+   },
+   {
     "id": "2026D49132",
     "titel": "Addendum Nationaal Plan van Aanpak Drinkwaterbesparing",
     "bestand": "PDF",
     "docId": "54fd4fe0-d0e9-42db-94ba-ba00721c7e18",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D49132"
-   },
-   {
-    "id": "2026D49133",
-    "titel": "RLI rapport Zorg voor water",
-    "bestand": "PDF",
-    "docId": "348a8991-2d8f-4827-86f9-2902fc3a7394",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D49133"
    },
    {
     "id": "2026D49134",
@@ -5937,7 +6171,7 @@
  {
   "id": "2026D48864",
   "docId": "05f8cbe8-0a90-4de9-b9df-a8275b2fcf4d",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-06",
   "titel": null,
@@ -6378,7 +6612,8 @@
     "titel": "RIVM Monitor stikstofdepositie in Natura 2000 gebieden 2026",
     "bestand": "PDF",
     "docId": "2d44158f-23d8-4850-8704-23c70c298f33",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48664"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48664",
+    "rapport": true
    },
    {
     "id": "2026D48665",
@@ -6392,7 +6627,7 @@
  {
   "id": "2026D48747",
   "docId": "8afc5d8c-c707-4bb1-b6dc-ea9f8fbb07b8",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-05",
   "titel": null,
@@ -6443,18 +6678,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z21107&did=2026D48718",
   "bijlagen": [
    {
+    "id": "2026D48720",
+    "titel": "Evaluatie FGUaanpak",
+    "bestand": "PDF",
+    "docId": "b0b39ca6-ac37-4f6f-b17a-2f20adba86fc",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48720",
+    "rapport": true
+   },
+   {
     "id": "2026D48719",
     "titel": "Actualisatie van de voortgang LAN najaar 2026",
     "bestand": "PDF",
     "docId": "d02cf9f8-625a-4b9c-9399-c5be88d69d3f",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48719"
-   },
-   {
-    "id": "2026D48720",
-    "titel": "Evaluatie FGUaanpak",
-    "bestand": "PDF",
-    "docId": "b0b39ca6-ac37-4f6f-b17a-2f20adba86fc",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48720"
    },
    {
     "id": "2026D48721",
@@ -6544,7 +6780,8 @@
     "titel": "Monitoringsrapportage. Doelbereik Schone Lucht Akkoord derde voortgangsmeting",
     "bestand": "PDF",
     "docId": "0050c703-a23e-4d81-9d17-53b13ec89e57",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48328"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48328",
+    "rapport": true
    },
    {
     "id": "2026D48329",
@@ -6704,7 +6941,8 @@
     "titel": "Afstandsafhankelijke vliegbelasting. Aanvullende analyse voor vijf luchthavens",
     "bestand": "PDF",
     "docId": "87f642f2-226b-449f-b813-6a3c078ac37b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48252"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48252",
+    "rapport": true
    },
    {
     "id": "2026D48253",
@@ -7132,14 +7370,16 @@
     "titel": "Advies BOSON",
     "bestand": "PDF",
     "docId": "0224ef0b-a9c5-4c24-b2a7-c5ad74ada77b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47190"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47190",
+    "rapport": true
    },
    {
     "id": "2026D47191",
     "titel": "Advies programma BOSON",
     "bestand": "PDF",
     "docId": "7d19d589-ae88-42a5-ac5e-7180912d0903",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47191"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47191",
+    "rapport": true
    },
    {
     "id": "2026D47192",
@@ -7290,7 +7530,8 @@
     "titel": "Rapport 'PFAS in bloed van volwassenen in Nederland. Een studie onder bloeddonors'",
     "bestand": "PDF",
     "docId": "61cb3313-0467-46c1-bf97-1a630b047b2d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47164"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47164",
+    "rapport": true
    },
    {
     "id": "2026D47165",
@@ -8080,14 +8321,16 @@
     "titel": "Advies van de Commissie mer over het MER over LHB Rotterdam",
     "bestand": "PDF",
     "docId": "fc5583ce-bf68-4072-8809-e01bd97120b0",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D46484"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D46484",
+    "rapport": true
    },
    {
     "id": "2026D46483",
     "titel": "Reactienota op het advies van de Commissie mer over het MER LHB Rotterdam",
     "bestand": "PDF",
     "docId": "f043cea6-f947-4416-bac7-a9aabbe29533",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D46483"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D46483",
+    "rapport": true
    },
    {
     "id": "2026D46485",
@@ -8218,7 +8461,8 @@
     "titel": "Evaluatie verbod stroomstootapparatuur honden (AEF)",
     "bestand": "PDF",
     "docId": "ff2d0dbd-0e9d-4cb7-9a02-0db00f791552",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D45792"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D45792",
+    "rapport": true
    },
    {
     "id": "2026D45791",
@@ -8531,18 +8775,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z19654&did=2026D45528",
   "bijlagen": [
    {
+    "id": "2026D45530",
+    "titel": "De feitenbasis voor de evaluatie van het Nieuw Normen en Handhavingsstelsel Schiphol (NNHS)",
+    "bestand": "PDF",
+    "docId": "8753c91b-120c-4453-bfe6-275aae8ba07f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D45530",
+    "rapport": true
+   },
+   {
     "id": "2026D45529",
     "titel": "Beleidsevaluatie op hoofdlijnen NNHS Schiphol",
     "bestand": "PDF",
     "docId": "ac86c8ce-a153-43bb-b313-8ef64b32074a",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D45529"
-   },
-   {
-    "id": "2026D45530",
-    "titel": "De feitenbasis voor de evaluatie van het Nieuw Normen en Handhavingsstelsel Schiphol (NNHS)",
-    "bestand": "PDF",
-    "docId": "8753c91b-120c-4453-bfe6-275aae8ba07f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D45530"
    },
    {
     "id": "2026D45531",
@@ -8583,7 +8828,8 @@
     "titel": "Evaluatie van de IPCEIregeling voor waterstof in Nederland",
     "bestand": "PDF",
     "docId": "3c6acbb6-4a9a-45be-bcae-1a3cce4f13ce",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D45658"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D45658",
+    "rapport": true
    },
    {
     "id": "2026D45657",
@@ -9114,7 +9360,8 @@
     "titel": "Brief Advies project Vervangen BESW",
     "bestand": "PDF",
     "docId": "2d436257-65d3-4975-85e9-b27434b83966",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44501"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44501",
+    "rapport": true
    },
    {
     "id": "2026D44502",
@@ -9185,18 +9432,27 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z19288&did=2026D44647",
   "bijlagen": [
    {
+    "id": "2026D44655",
+    "titel": "Autoriteit Persoonsgegevens advies Geredigeerd",
+    "bestand": "PDF",
+    "docId": "03192b49-cd6d-4c7e-ae59-36b5e82e3968",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44655",
+    "rapport": true
+   },
+   {
+    "id": "2026D44653",
+    "titel": "Vastgesteld ATR advies Geredigeerd",
+    "bestand": "PDF",
+    "docId": "3e75be17-ef1a-40f0-a955-f3432c390f28",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44653",
+    "rapport": true
+   },
+   {
     "id": "2026D44654",
     "titel": "Aanvullende zienswijze ATR Geredigeerd",
     "bestand": "PDF",
     "docId": "37d2cb29-6dcd-45e9-ac6b-5f994c749acf",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44654"
-   },
-   {
-    "id": "2026D44655",
-    "titel": "Autoriteit Persoonsgegevens advies Geredigeerd",
-    "bestand": "PDF",
-    "docId": "03192b49-cd6d-4c7e-ae59-36b5e82e3968",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44655"
    },
    {
     "id": "2026D44652",
@@ -9232,13 +9488,6 @@
     "bestand": "PDF",
     "docId": "a71c83ca-006e-4ef5-8ffb-a436f45d8240",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44650"
-   },
-   {
-    "id": "2026D44653",
-    "titel": "Vastgesteld ATR advies Geredigeerd",
-    "bestand": "PDF",
-    "docId": "3e75be17-ef1a-40f0-a955-f3432c390f28",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44653"
    },
    {
     "id": "2026D44648",
@@ -9286,7 +9535,16 @@
     "titel": "Achtergrondrapport evaluatie en herijking actieagenda batterijsystemen",
     "bestand": "PDF",
     "docId": "2088fed2-b9e2-485e-8740-0f58f9a5c3ff",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44625"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44625",
+    "rapport": true
+   },
+   {
+    "id": "2026D44624",
+    "titel": "Rapportage evaluatie en herijking actieagenda batterijsystemen",
+    "bestand": "PDF",
+    "docId": "f9155876-8750-4bee-bc97-66ed9378cbe3",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44624",
+    "rapport": true
    },
    {
     "id": "2026D44622",
@@ -9294,13 +9552,6 @@
     "bestand": "PDF",
     "docId": "15e3a4c2-13b7-4a05-ae82-fa197a1c9f41",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44622"
-   },
-   {
-    "id": "2026D44624",
-    "titel": "Rapportage evaluatie en herijking actieagenda batterijsystemen",
-    "bestand": "PDF",
-    "docId": "f9155876-8750-4bee-bc97-66ed9378cbe3",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44624"
    },
    {
     "id": "2026D44623",
@@ -10058,6 +10309,22 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z18884&did=2026D43479",
   "bijlagen": [
    {
+    "id": "2026D43482",
+    "titel": "EZK - Monitor Energiesysteem 2026",
+    "bestand": "PDF",
+    "docId": "74f8c49c-548b-4f88-8a04-cba0d3485cbb",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43482",
+    "rapport": true
+   },
+   {
+    "id": "2026D43483",
+    "titel": "Raad van State - Advies over concept klimaat- en energienota 2026",
+    "bestand": "PDF",
+    "docId": "063f1a6b-a718-4972-b2f6-a446a8173831",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43483",
+    "rapport": true
+   },
+   {
     "id": "2026D43481",
     "titel": "EZK - Klimaat- en Energienota 2026",
     "bestand": "PDF",
@@ -10070,13 +10337,6 @@
     "bestand": "PDF",
     "docId": "62cfa9fd-d84c-450c-8265-7a527ec3cf6f",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43484"
-   },
-   {
-    "id": "2026D43482",
-    "titel": "EZK - Monitor Energiesysteem 2026",
-    "bestand": "PDF",
-    "docId": "74f8c49c-548b-4f88-8a04-cba0d3485cbb",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43482"
    },
    {
     "id": "2026D43489",
@@ -10133,13 +10393,6 @@
     "bestand": "PDF",
     "docId": "a9977d63-16d0-492c-a7ea-0cc4dcf850d5",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43486"
-   },
-   {
-    "id": "2026D43483",
-    "titel": "Raad van State - Advies over concept klimaat- en energienota 2026",
-    "bestand": "PDF",
-    "docId": "063f1a6b-a718-4972-b2f6-a446a8173831",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43483"
    },
    {
     "id": "2026D43487",
@@ -10228,7 +10481,8 @@
     "titel": "Werkprogramma Adviescollege Veiligheid Groningen (ACVG) 2027 2027",
     "bestand": "PDF",
     "docId": "ad31a5c0-6ae1-4006-ba40-1c6eb5dbb3dd",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43573"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43573",
+    "rapport": true
    },
    {
     "id": "2026D43574",
@@ -10454,7 +10708,8 @@
     "titel": "Berenschot Eindrapportage Financiële effecten KV-tarieven",
     "bestand": "PDF",
     "docId": "ce467e0f-2bbc-421a-a5ac-26831dab8751",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43639"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43639",
+    "rapport": true
    },
    {
     "id": "2026D43463",
@@ -10532,7 +10787,8 @@
     "titel": "Advies RvS Ontwerpbesluit tot wijziging LVB Schiphol",
     "bestand": "PDF",
     "docId": "e598a7f6-dc1c-4f27-ad77-ddd45425c1fb",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43043"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43043",
+    "rapport": true
    },
    {
     "id": "2026D43044",
@@ -10587,14 +10843,16 @@
     "titel": "Eindrapportage Evaluatie AanZET",
     "bestand": "PDF",
     "docId": "7d5095c1-b717-4b68-8cf2-18e45583e8bc",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43217"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43217",
+    "rapport": true
    },
    {
     "id": "2026D43218",
     "titel": "Factsheet Evaluatie AanZET",
     "bestand": "PDF",
     "docId": "c37d7863-cd01-4c31-a97f-744415d3d148",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43218"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43218",
+    "rapport": true
    },
    {
     "id": "2026D43219",
@@ -10812,7 +11070,8 @@
     "titel": "ILT-rapport risico's van TFA voor onze drinkwaterkwaliteit",
     "bestand": "PDF",
     "docId": "68795c2b-c001-4fa2-86cb-0eda6ccac870",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42910"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42910",
+    "rapport": true
    },
    {
     "id": "2026D42911",
@@ -10881,7 +11140,8 @@
     "titel": "Advies Landsadvocaat maatregelenpakket",
     "bestand": "PDF",
     "docId": "a98bbde7-1aad-45ac-9a56-4883d75f1bba",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42868"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42868",
+    "rapport": true
    },
    {
     "id": "2026D42869",
@@ -10985,21 +11245,40 @@
     "titel": "ATR advies Min LVVN Besluit dierwaardige veehouderij 2025U111",
     "bestand": "PDF",
     "docId": "b1da95f9-eb1b-49f9-8b90-eab8ddffee91",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42896"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42896",
+    "rapport": true
    },
    {
     "id": "2026D42898",
     "titel": "ATR advies Min LVVN Besluit dierwaardige veehouderij vleesvee 2026U079",
     "bestand": "PDF",
     "docId": "202bfb23-75a9-4ec6-9c15-ff7217a5b989",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42898"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42898",
+    "rapport": true
    },
    {
     "id": "2026D42897",
     "titel": "ATR advies Min LVVN Besluit Dierwaardige_veehouderij 2026U015",
     "bestand": "PDF",
     "docId": "52dc805e-2156-48fb-b3b4-1c25a03592b3",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42897"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42897",
+    "rapport": true
+   },
+   {
+    "id": "2026D42905",
+    "titel": "SWOT analyse van kansen en belemmeringen voor behoud en stimulering van weidegang",
+    "bestand": "PDF",
+    "docId": "380d3ef7-5091-49f2-8289-96579dab3569",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42905",
+    "rapport": true
+   },
+   {
+    "id": "2026D42901",
+    "titel": "WSER CAF aanvullende onderzoeksvragen nav internetconsultatie AMvB dierwaardige veehouderij",
+    "bestand": "PDF",
+    "docId": "4e43307f-e0b1-49e9-85f6-82511ee1874e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42901",
+    "rapport": true
    },
    {
     "id": "2026D42900",
@@ -11044,13 +11323,6 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42805"
    },
    {
-    "id": "2026D42905",
-    "titel": "SWOT analyse van kansen en belemmeringen voor behoud en stimulering van weidegang",
-    "bestand": "PDF",
-    "docId": "380d3ef7-5091-49f2-8289-96579dab3569",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42905"
-   },
-   {
     "id": "2026D42903",
     "titel": "Verslag internetconsultatie AMvB dierwaardige veehouderij",
     "bestand": "PDF",
@@ -11070,13 +11342,6 @@
     "bestand": "PDF",
     "docId": "1537ed99-62b0-4d4e-9237-5e2a927307c7",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42899"
-   },
-   {
-    "id": "2026D42901",
-    "titel": "WSER CAF aanvullende onderzoeksvragen nav internetconsultatie AMvB dierwaardige veehouderij",
-    "bestand": "PDF",
-    "docId": "4e43307f-e0b1-49e9-85f6-82511ee1874e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42901"
    },
    {
     "id": "2026D42806",
@@ -11181,6 +11446,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z18680&did=2026D42859",
   "bijlagen": [
    {
+    "id": "2026D42864",
+    "titel": "RUG Rapport zeefwerking in procedures bij de bestuursrechter",
+    "bestand": "PDF",
+    "docId": "744add42-4dd7-408a-864d-414013475ee0",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42864",
+    "rapport": true
+   },
+   {
     "id": "2026D42861",
     "titel": "Appreciatie NVDE",
     "bestand": "PDF",
@@ -11200,13 +11473,6 @@
     "bestand": "PDF",
     "docId": "4c00d59f-3ed8-4e57-b805-7abf39a61632",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42863"
-   },
-   {
-    "id": "2026D42864",
-    "titel": "RUG Rapport zeefwerking in procedures bij de bestuursrechter",
-    "bestand": "PDF",
-    "docId": "744add42-4dd7-408a-864d-414013475ee0",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42864"
    },
    {
     "id": "2026D42860",
@@ -12136,21 +12402,56 @@
     "titel": "Additionele informatie kwalitatief onderzoek 2025",
     "bestand": "PDF",
     "docId": "2271f62a-4204-4142-809a-69512256f5c6",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41079"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41079",
+    "rapport": true
    },
    {
     "id": "2026D41078",
     "titel": "Detailinformatie kwalitatief onderzoek 2025",
     "bestand": "PDF",
     "docId": "f847c0e7-2a9e-4def-839f-946d96f3c068",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41078"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41078",
+    "rapport": true
    },
    {
     "id": "2026D41082",
     "titel": "Detailinformatie media analyse",
     "bestand": "PDF",
     "docId": "61f2ad7a-65bf-42b9-bd09-3be210d2e2dd",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41082"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41082",
+    "rapport": true
+   },
+   {
+    "id": "2026D41076",
+    "titel": "Eindrapport kwantitatieve monitoring",
+    "bestand": "PDF",
+    "docId": "a4f36e50-cb78-48b6-8349-6110537bd9ae",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41076",
+    "rapport": true
+   },
+   {
+    "id": "2026D41080",
+    "titel": "Eindrapport Tekstanalyseonderzoek Monitor Werking Omgevingswet",
+    "bestand": "PDF",
+    "docId": "ef1db5a7-1271-4149-800d-225aa48c005b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41080",
+    "rapport": true
+   },
+   {
+    "id": "2026D41075",
+    "titel": "Monitor Werking Omgevingswet – Rapportage 2025",
+    "bestand": "PDF",
+    "docId": "29296741-7057-4a45-b0e6-d4c00e8b2511",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41075",
+    "rapport": true
+   },
+   {
+    "id": "2026D41077",
+    "titel": "Rapport `Monitor werking Omgevingswet Kwalitatief deel`",
+    "bestand": "PDF",
+    "docId": "c8bbd653-3e3b-4b25-85ab-d7cec08aaa02",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41077",
+    "rapport": true
    },
    {
     "id": "2026D41081",
@@ -12158,34 +12459,6 @@
     "bestand": "PDF",
     "docId": "7be68916-781a-4c6e-8115-fa11c09edf4c",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41081"
-   },
-   {
-    "id": "2026D41076",
-    "titel": "Eindrapport kwantitatieve monitoring",
-    "bestand": "PDF",
-    "docId": "a4f36e50-cb78-48b6-8349-6110537bd9ae",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41076"
-   },
-   {
-    "id": "2026D41080",
-    "titel": "Eindrapport Tekstanalyseonderzoek Monitor Werking Omgevingswet",
-    "bestand": "PDF",
-    "docId": "ef1db5a7-1271-4149-800d-225aa48c005b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41080"
-   },
-   {
-    "id": "2026D41075",
-    "titel": "Monitor Werking Omgevingswet – Rapportage 2025",
-    "bestand": "PDF",
-    "docId": "29296741-7057-4a45-b0e6-d4c00e8b2511",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41075"
-   },
-   {
-    "id": "2026D41077",
-    "titel": "Rapport `Monitor werking Omgevingswet Kwalitatief deel`",
-    "bestand": "PDF",
-    "docId": "c8bbd653-3e3b-4b25-85ab-d7cec08aaa02",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41077"
    },
    {
     "id": "2026D41083",
@@ -12600,25 +12873,27 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z17600&did=2026D40271",
   "bijlagen": [
    {
-    "id": "2026D40274",
-    "titel": "Ontwerp NAS (vastgesteld op 29 mei 2026 in MR)",
-    "bestand": "PDF",
-    "docId": "66a01677-ac6e-4009-922b-444607b71a9d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40274"
-   },
-   {
     "id": "2026D40272",
     "titel": "WKR-adviesrapport Meeveranderen met het klimaat",
     "bestand": "PDF",
     "docId": "ee6f56c7-caf9-4f76-bc80-c6c137ee8484",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40272"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40272",
+    "rapport": true
    },
    {
     "id": "2026D40273",
     "titel": "WRR-adviesrapport Mens en klimaat De kracht van sociale infrastructuur bij adaptatie",
     "bestand": "PDF",
     "docId": "4230f859-5f27-4cab-968d-05272bca0208",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40273"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40273",
+    "rapport": true
+   },
+   {
+    "id": "2026D40274",
+    "titel": "Ontwerp NAS (vastgesteld op 29 mei 2026 in MR)",
+    "bestand": "PDF",
+    "docId": "66a01677-ac6e-4009-922b-444607b71a9d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40274"
    },
    {
     "id": "2026D40275",
@@ -13573,7 +13848,8 @@
     "titel": "CDM advies Verlenging uitrijdperiode mest i.v.m. droogte",
     "bestand": "PDF",
     "docId": "8661224b-a101-406a-90a0-1fe7ca1ccd69",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D39375"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D39375",
+    "rapport": true
    },
    {
     "id": "2026D39376",
@@ -14404,7 +14680,8 @@
     "titel": "Monitoring BA-maatregelen; Meetmoment 2",
     "bestand": "PDF",
     "docId": "0608c491-60f7-4ccf-8e5e-34612387bcd5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D38486"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D38486",
+    "rapport": true
    },
    {
     "id": "2026D38487",
@@ -16165,18 +16442,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z16165&did=2026D36654",
   "bijlagen": [
    {
+    "id": "2026D36655",
+    "titel": "Rapport 'Waarde van SAF voor NL economie'",
+    "bestand": "PDF",
+    "docId": "1c0afda3-f0ce-4a11-be65-20f731468eb3",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36655",
+    "rapport": true
+   },
+   {
     "id": "2026D36656",
     "titel": "Nationale SAF-roadmap 2025-2035",
     "bestand": "PDF",
     "docId": "3e3cf100-f829-4915-a372-f9eef70649f7",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36656"
-   },
-   {
-    "id": "2026D36655",
-    "titel": "Rapport 'Waarde van SAF voor NL economie'",
-    "bestand": "PDF",
-    "docId": "1c0afda3-f0ce-4a11-be65-20f731468eb3",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36655"
    },
    {
     "id": "2026D36657",
@@ -16317,7 +16595,16 @@
     "titel": "Ecorys Onderzoek naar energiebesparende maatregelen voor het 2030doel",
     "bestand": "PDF",
     "docId": "55bcbb7e-5f78-4ad4-b383-d3a1d54abc91",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36346"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36346",
+    "rapport": true
+   },
+   {
+    "id": "2026D36345",
+    "titel": "Toelichting bij rapporten TNO en Ecorys",
+    "bestand": "PDF",
+    "docId": "d9d2237f-8b98-45b0-bc7e-0bbf4c83d96a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36345",
+    "rapport": true
    },
    {
     "id": "2026D36347",
@@ -16325,13 +16612,6 @@
     "bestand": "PDF",
     "docId": "567a3ee7-602c-4787-ae24-2333563b1ee0",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36347"
-   },
-   {
-    "id": "2026D36345",
-    "titel": "Toelichting bij rapporten TNO en Ecorys",
-    "bestand": "PDF",
-    "docId": "d9d2237f-8b98-45b0-bc7e-0bbf4c83d96a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36345"
    }
   ]
  },
@@ -16488,7 +16768,8 @@
     "titel": "Rli-advies 'Falen en Opstaan'",
     "bestand": "PDF",
     "docId": "e9361f69-9db6-4c6a-9061-1f4a55e2c011",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36456"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36456",
+    "rapport": true
    },
    {
     "id": "2026D36457",
@@ -16649,6 +16930,30 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z16088&did=2026D36392",
   "bijlagen": [
    {
+    "id": "2026D36401",
+    "titel": "Rapport `De psychosociale impact van de gaswinningsproblematiek op de bewoners in 2025`",
+    "bestand": "PDF",
+    "docId": "35871ccf-9f98-4aee-978f-ecfc9b70cbcc",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36401",
+    "rapport": true
+   },
+   {
+    "id": "2026D36402",
+    "titel": "Rapport `Tussen onzekerheid en onveiligheid een kwalitatieve studie naar ervaringen met versterking `",
+    "bestand": "PDF",
+    "docId": "7d899afd-b38f-4261-be31-dba49c93623e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36402",
+    "rapport": true
+   },
+   {
+    "id": "2026D36396",
+    "titel": "Schriftelijke reactie Adviescollege Veiligheid Groningen (ACVG) op Staat van Groningen en Noord-Drenthe",
+    "bestand": "PDF",
+    "docId": "b6472a59-7d5f-480c-8f6e-79ad5a9da648",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36396",
+    "rapport": true
+   },
+   {
     "id": "2026D36403",
     "titel": "De beving van Zeerijp in november 2025",
     "bestand": "PDF",
@@ -16668,27 +16973,6 @@
     "bestand": "PDF",
     "docId": "03a9e916-b5ca-440a-bfce-7b4ec4318fa7",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36400"
-   },
-   {
-    "id": "2026D36401",
-    "titel": "Rapport `De psychosociale impact van de gaswinningsproblematiek op de bewoners in 2025`",
-    "bestand": "PDF",
-    "docId": "35871ccf-9f98-4aee-978f-ecfc9b70cbcc",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36401"
-   },
-   {
-    "id": "2026D36402",
-    "titel": "Rapport `Tussen onzekerheid en onveiligheid een kwalitatieve studie naar ervaringen met versterking `",
-    "bestand": "PDF",
-    "docId": "7d899afd-b38f-4261-be31-dba49c93623e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36402"
-   },
-   {
-    "id": "2026D36396",
-    "titel": "Schriftelijke reactie Adviescollege Veiligheid Groningen (ACVG) op Staat van Groningen en Noord-Drenthe",
-    "bestand": "PDF",
-    "docId": "b6472a59-7d5f-480c-8f6e-79ad5a9da648",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36396"
    },
    {
     "id": "2026D36395",
@@ -16767,18 +17051,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z16083&did=2026D36364",
   "bijlagen": [
    {
+    "id": "2026D36366",
+    "titel": "Rli advies Eerlijk verduurzamen DEF",
+    "bestand": "PDF",
+    "docId": "191202ce-694c-46ed-bdf3-64c4c4e4d42e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36366",
+    "rapport": true
+   },
+   {
     "id": "2026D36365",
     "titel": "Kabinetsreactie Rli advies: 'Eerlijk verduurzamen'",
     "bestand": "PDF",
     "docId": "07fc529d-6565-4b8d-b16e-28478ba7d431",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36365"
-   },
-   {
-    "id": "2026D36366",
-    "titel": "Rli advies Eerlijk verduurzamen DEF",
-    "bestand": "PDF",
-    "docId": "191202ce-694c-46ed-bdf3-64c4c4e4d42e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36366"
    },
    {
     "id": "2026D36367",
@@ -17531,7 +17816,8 @@
     "titel": "SER-advies 'duurzaam toekomst bestendig agrosysteem 2026'",
     "bestand": "PDF",
     "docId": "108ca478-facd-42d7-b849-d39fbec8c796",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35776"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35776",
+    "rapport": true
    },
    {
     "id": "2026D35777",
@@ -17697,7 +17983,8 @@
     "titel": "Rapport RIVM en WUR 'Verkenning rekenmethode voor veilige afstanden tussen gewaspercelen en omwonenden'",
     "bestand": "PDF",
     "docId": "3e94ea67-cacf-408d-8092-1b9b97ae48d5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35763"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35763",
+    "rapport": true
    },
    {
     "id": "2026D35764",
@@ -17830,14 +18117,16 @@
     "titel": "CDM advies 'Beoordeling nieuwe techniek mesttoediening'",
     "bestand": "PDF",
     "docId": "38593eac-485b-40c4-9867-00859de1602e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35904"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35904",
+    "rapport": true
    },
    {
     "id": "2026D35906",
     "titel": "CDM advies Beoordeling fermentatie Meststoffenwet",
     "bestand": "PDF",
     "docId": "3848719b-9fc3-4e95-b2eb-1031e41fc8da",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35906"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35906",
+    "rapport": true
    },
    {
     "id": "2026D35753",
@@ -17927,7 +18216,8 @@
     "titel": "KPMG Eindrapport onderzoek ‘Gebouwgebonden Financiering’",
     "bestand": "PDF",
     "docId": "8f0ff244-d7ac-4203-8f6c-a74667b0f82e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35729"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35729",
+    "rapport": true
    },
    {
     "id": "2026D35730",
@@ -18065,21 +18355,32 @@
     "titel": "Advies Landsadvocaat warmtegemeenschappen",
     "bestand": "PDF",
     "docId": "92ad2608-d838-4742-95e3-81b04ea35bcc",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35662"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35662",
+    "rapport": true
    },
    {
     "id": "2026D35660",
     "titel": "Eindrapport clusteraanpak Collectieve Warmte",
     "bestand": "PDF",
     "docId": "cfe75f9b-7448-4d0a-b97b-fca1a489c7ad",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35660"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35660",
+    "rapport": true
    },
    {
     "id": "2026D35664",
     "titel": "Eindrapport Tussentijdse evaluatie NWN",
     "bestand": "PDF",
     "docId": "76c82e93-7695-41ea-9915-e39f21c859bd",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35664"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35664",
+    "rapport": true
+   },
+   {
+    "id": "2026D35663",
+    "titel": "Rapportage vergelijking restwarmte via WLQ met alternatieve warmteoplossingen",
+    "bestand": "PDF",
+    "docId": "d0b42312-703f-4369-9bed-0ac0e4d3344d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35663",
+    "rapport": true
    },
    {
     "id": "2026D35661",
@@ -18087,13 +18388,6 @@
     "bestand": "PDF",
     "docId": "48893f4b-f74b-471e-ba8c-e61c95235606",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35661"
-   },
-   {
-    "id": "2026D35663",
-    "titel": "Rapportage vergelijking restwarmte via WLQ met alternatieve warmteoplossingen",
-    "bestand": "PDF",
-    "docId": "d0b42312-703f-4369-9bed-0ac0e4d3344d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35663"
    },
    {
     "id": "2026D35665",
@@ -18220,18 +18514,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15809&did=2026D35513",
   "bijlagen": [
    {
+    "id": "2026D35516",
+    "titel": "Tussenevaluatie convenant energietransitie glastuinbouw evaluatie van de EG en MEI-regelingen",
+    "bestand": "PDF",
+    "docId": "d1025aa4-75f0-45d9-ae50-b37694b77430",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35516",
+    "rapport": true
+   },
+   {
     "id": "2026D35515",
     "titel": "Broeikasgasbeprijzing Nederlandse glastuinbouw",
     "bestand": "PDF",
     "docId": "5fe1a647-7084-4cce-930b-93aef18e2aee",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35515"
-   },
-   {
-    "id": "2026D35516",
-    "titel": "Tussenevaluatie convenant energietransitie glastuinbouw evaluatie van de EG en MEI-regelingen",
-    "bestand": "PDF",
-    "docId": "d1025aa4-75f0-45d9-ae50-b37694b77430",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35516"
    },
    {
     "id": "2026D35514",
@@ -18354,7 +18649,8 @@
     "titel": "Aurora - Analyse SDE++ Openstellingsbudgetten 2026 - 2030",
     "bestand": "PDF",
     "docId": "3c2439ac-b019-471a-8d33-c7f0773a49b2",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35281"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35281",
+    "rapport": true
    },
    {
     "id": "2026D35282",
@@ -18815,7 +19111,8 @@
     "titel": "Rapport RIVM: Een programma om chemische stoffen bij inwoners van Nederland te meten Voorstel voor humane biomonitoring",
     "bestand": "PDF",
     "docId": "bef52791-f526-49c1-8812-6a4409821a64",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34603"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34603",
+    "rapport": true
    },
    {
     "id": "2026D34604",
@@ -19145,7 +19442,8 @@
     "titel": "Rapport Gezondheidsgerichte monitoring als randvoorwaarde voor effectieve maatwerkafspraken Tata Steel Nederland",
     "bestand": "PDF",
     "docId": "e21f23ed-ead2-4c82-b8ca-ae31ac3186e3",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34352"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34352",
+    "rapport": true
    },
    {
     "id": "2026D34353",
@@ -19262,14 +19560,16 @@
     "titel": "Rapport Minder blootstelling aan PFAS",
     "bestand": "PDF",
     "docId": "b7dc8993-cf72-4244-99f0-b3a0259fae40",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34073"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34073",
+    "rapport": true
    },
    {
     "id": "2026D34072",
     "titel": "Rapport PFAS in moedermelk van Nederlandse vrouwen",
     "bestand": "PDF",
     "docId": "4a9950b0-7a7c-44b7-ac9b-ac4d4d9854d1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34072"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34072",
+    "rapport": true
    },
    {
     "id": "2026D34074",
@@ -19368,18 +19668,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15063&did=2026D33899",
   "bijlagen": [
    {
+    "id": "2026D33902",
+    "titel": "Rapport Kansen achter de meter",
+    "bestand": "PDF",
+    "docId": "f9fc04e6-ff03-445c-b7c3-02014d078c6e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33902",
+    "rapport": true
+   },
+   {
     "id": "2026D33903",
     "titel": "Flexibiliteit ontsluiten via congestiemanagement",
     "bestand": "PDF",
     "docId": "c1ca2d4c-cdfa-420c-b6c9-5736171e0ada",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33903"
-   },
-   {
-    "id": "2026D33902",
-    "titel": "Rapport Kansen achter de meter",
-    "bestand": "PDF",
-    "docId": "f9fc04e6-ff03-445c-b7c3-02014d078c6e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33902"
    },
    {
     "id": "2026D33901",
@@ -19595,6 +19896,22 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15084&did=2026D33955",
   "bijlagen": [
    {
+    "id": "2026D33956",
+    "titel": "Rapport Vergiftiging van niet-doelsoorten met anticoagulante rodenticiden",
+    "bestand": "PDF",
+    "docId": "2fac8aff-f282-4315-b992-6087deaaac3b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33956",
+    "rapport": true
+   },
+   {
+    "id": "2026D33959",
+    "titel": "RIVM Rapport 'Risico's van combinaties van stoffen overzicht van beoordelingsmethoden",
+    "bestand": "PDF",
+    "docId": "812e5993-d34b-49ad-8c4a-3730da9aa93d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33959",
+    "rapport": true
+   },
+   {
     "id": "2026D33957",
     "titel": "BPR improvement options",
     "bestand": "PDF",
@@ -19607,20 +19924,6 @@
     "bestand": "PDF",
     "docId": "09ed27fe-6a0e-4ee8-b637-0b90127c3eed",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33958"
-   },
-   {
-    "id": "2026D33956",
-    "titel": "Rapport Vergiftiging van niet-doelsoorten met anticoagulante rodenticiden",
-    "bestand": "PDF",
-    "docId": "2fac8aff-f282-4315-b992-6087deaaac3b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33956"
-   },
-   {
-    "id": "2026D33959",
-    "titel": "RIVM Rapport 'Risico's van combinaties van stoffen overzicht van beoordelingsmethoden",
-    "bestand": "PDF",
-    "docId": "812e5993-d34b-49ad-8c4a-3730da9aa93d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33959"
    },
    {
     "id": "2026D33960",
@@ -20245,18 +20548,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z14954&did=2026D33586",
   "bijlagen": [
    {
+    "id": "2026D33589",
+    "titel": "Rapportage Nederlands mestbeleid 2025",
+    "bestand": "PDF",
+    "docId": "a6dc28aa-7a65-4b46-a42f-d69d5c4f03d1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33589",
+    "rapport": true
+   },
+   {
     "id": "2026D33588",
     "titel": "Derogatierapportage 2026",
     "bestand": "PDF",
     "docId": "acac5365-ec2b-4d2f-92d3-b387ab0c81e6",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33588"
-   },
-   {
-    "id": "2026D33589",
-    "titel": "Rapportage Nederlands mestbeleid 2025",
-    "bestand": "PDF",
-    "docId": "a6dc28aa-7a65-4b46-a42f-d69d5c4f03d1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33589"
    },
    {
     "id": "2026D33587",
@@ -20401,7 +20705,32 @@
     "titel": "Advies landsadvocaat over het WUR-rapport \"De Nederlandse stikstofcrisis. Van verwarring naar verbinding\"",
     "bestand": "PDF",
     "docId": "a1174e83-8f1a-4500-9d99-90aad42aa043",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33134"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33134",
+    "rapport": true
+   },
+   {
+    "id": "2026D33131",
+    "titel": "Rapport ‘De Nederlandse stikstofcrisis: van verwarring naar verbinding’",
+    "bestand": "PDF",
+    "docId": "9044c621-c46d-456b-9f9c-0c34b648be83",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33131",
+    "rapport": true
+   },
+   {
+    "id": "2026D33133",
+    "titel": "Voorbij de verwarring? Position paper ten behoeve van de technische briefing over het rapport ‘De Nederlandse stikstofcrisis. Van verwarring naar verbinding’",
+    "bestand": "PDF",
+    "docId": "7f0676e7-efcc-4dd9-b449-71823c7305dd",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33133",
+    "rapport": true
+   },
+   {
+    "id": "2026D33324",
+    "titel": "WUR-rapport \"De Nederlandse stikstofcrisis. Van verwarring naar verbinding\"; aanvullende advisering generaal pardon PAS-melders e.a.",
+    "bestand": "PDF",
+    "docId": "0c90a25b-3360-4a06-926f-9c3800fe0b0d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33324",
+    "rapport": true
    },
    {
     "id": "2026D33132",
@@ -20409,27 +20738,6 @@
     "bestand": "PDF",
     "docId": "bfe1ebfc-ccad-4502-a597-8a6c15347c55",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33132"
-   },
-   {
-    "id": "2026D33131",
-    "titel": "Rapport ‘De Nederlandse stikstofcrisis: van verwarring naar verbinding’",
-    "bestand": "PDF",
-    "docId": "9044c621-c46d-456b-9f9c-0c34b648be83",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33131"
-   },
-   {
-    "id": "2026D33133",
-    "titel": "Voorbij de verwarring? Position paper ten behoeve van de technische briefing over het rapport ‘De Nederlandse stikstofcrisis. Van verwarring naar verbinding’",
-    "bestand": "PDF",
-    "docId": "7f0676e7-efcc-4dd9-b449-71823c7305dd",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33133"
-   },
-   {
-    "id": "2026D33324",
-    "titel": "WUR-rapport \"De Nederlandse stikstofcrisis. Van verwarring naar verbinding\"; aanvullende advisering generaal pardon PAS-melders e.a.",
-    "bestand": "PDF",
-    "docId": "0c90a25b-3360-4a06-926f-9c3800fe0b0d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33324"
    },
    {
     "id": "2026D33135",
@@ -20512,7 +20820,8 @@
     "titel": "Advies Landsadvocaat over rekenkundige ondergrens stikstofberekeningen",
     "bestand": "PDF",
     "docId": "67d800dc-b135-446b-8740-084b49fc0c84",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33116"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33116",
+    "rapport": true
    },
    {
     "id": "2026D33117",
@@ -20686,7 +20995,8 @@
     "titel": "Innameplicht statiegeld. Onderzoek naar effecten van verschillende varianten",
     "bestand": "PDF",
     "docId": "7c29fe51-b78d-4d3e-941c-73a04c710e38",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33149"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33149",
+    "rapport": true
    },
    {
     "id": "2026D33151",
@@ -20752,18 +21062,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z14778&did=2026D33079",
   "bijlagen": [
    {
+    "id": "2026D33081",
+    "titel": "Rapportage Lbv-regelingen",
+    "bestand": "PDF",
+    "docId": "e586dfd6-029e-47a5-930d-e64d782745f3",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33081",
+    "rapport": true
+   },
+   {
     "id": "2026D33080",
     "titel": "Broeikasgasreductie als gevolg van de Lbv-regelingen",
     "bestand": "PDF",
     "docId": "1efe98f6-aa03-447a-9226-ef68922643e2",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33080"
-   },
-   {
-    "id": "2026D33081",
-    "titel": "Rapportage Lbv-regelingen",
-    "bestand": "PDF",
-    "docId": "e586dfd6-029e-47a5-930d-e64d782745f3",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33081"
    },
    {
     "id": "2026D33082",
@@ -20910,7 +21221,80 @@
     "titel": "Eindrapport vervolgonderzoek UPV meubels",
     "bestand": "PDF",
     "docId": "d311104a-d8fd-4aec-95f5-31e91b78a6cc",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32831"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32831",
+    "rapport": true
+   },
+   {
+    "id": "2026D32828",
+    "titel": "Onderzoek naar de nazorgsystematiek van stortplaatsen",
+    "bestand": "PDF",
+    "docId": "cf95524b-07b0-4c54-9d02-ef7c9abbc336",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32828",
+    "rapport": true
+   },
+   {
+    "id": "2026D32834",
+    "titel": "Onderzoek Toepassing uitzonderingsgronden besluit GIHA, toetsingskader en inzameldoelstelling",
+    "bestand": "PDF",
+    "docId": "2d68067c-da49-429b-bff5-b37e6635ab06",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32834",
+    "rapport": true
+   },
+   {
+    "id": "2026D32833",
+    "titel": "Onderzoeksrapport belasting op kunststof verpakkingen voor eenmalig gebruik",
+    "bestand": "PDF",
+    "docId": "37ea10dc-8ddb-4a0b-a0bb-41a60a01ae49",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32833",
+    "rapport": true
+   },
+   {
+    "id": "2026D32824",
+    "titel": "Onderzoeksrapport Creating Market Demand for Sustainable Carbon",
+    "bestand": "PDF",
+    "docId": "94aeab16-66ff-4838-b44a-158b9dc90b1d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32824",
+    "rapport": true
+   },
+   {
+    "id": "2026D32836",
+    "titel": "Onderzoeksrapport De bijdrage van circulariteit aan een betaalbare energietransitie",
+    "bestand": "PDF",
+    "docId": "47c7fa48-8273-4d94-9214-20b62ba58c6d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32836",
+    "rapport": true
+   },
+   {
+    "id": "2026D32826",
+    "titel": "Onderzoeksrapport Minimumnorm voor biobased en gerecycled ektronische apparatuur in de Ecodesign for Sustain",
+    "bestand": "PDF",
+    "docId": "c8be48b9-2acc-44ef-9538-41f91180bfb1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32826",
+    "rapport": true
+   },
+   {
+    "id": "2026D32832",
+    "titel": "Onderzoeksrapport Possibilities for reducing microplastics emissions from textiles",
+    "bestand": "PDF",
+    "docId": "db834afb-0a98-41f3-8989-21ef9c87e44a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32832",
+    "rapport": true
+   },
+   {
+    "id": "2026D32825",
+    "titel": "Onderzoeksrapport verkenning mogelijkheden voor de uitbreiding van het CBAM",
+    "bestand": "PDF",
+    "docId": "2ff6c620-c081-4092-a6ee-a0bce42a8555",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32825",
+    "rapport": true
+   },
+   {
+    "id": "2026D32835",
+    "titel": "Rapport Circulaire Arbeidsmarkt - versnelling van de transitie door gerichte sturing op leven lang ontwikkelen",
+    "bestand": "PDF",
+    "docId": "54839fe3-a691-43ca-829d-086b24aa9909",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32835",
+    "rapport": true
    },
    {
     "id": "2026D32829",
@@ -20918,69 +21302,6 @@
     "bestand": "PDF",
     "docId": "df4739b1-5f54-4263-92c3-21b02a0d94a3",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32829"
-   },
-   {
-    "id": "2026D32828",
-    "titel": "Onderzoek naar de nazorgsystematiek van stortplaatsen",
-    "bestand": "PDF",
-    "docId": "cf95524b-07b0-4c54-9d02-ef7c9abbc336",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32828"
-   },
-   {
-    "id": "2026D32834",
-    "titel": "Onderzoek Toepassing uitzonderingsgronden besluit GIHA, toetsingskader en inzameldoelstelling",
-    "bestand": "PDF",
-    "docId": "2d68067c-da49-429b-bff5-b37e6635ab06",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32834"
-   },
-   {
-    "id": "2026D32833",
-    "titel": "Onderzoeksrapport belasting op kunststof verpakkingen voor eenmalig gebruik",
-    "bestand": "PDF",
-    "docId": "37ea10dc-8ddb-4a0b-a0bb-41a60a01ae49",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32833"
-   },
-   {
-    "id": "2026D32824",
-    "titel": "Onderzoeksrapport Creating Market Demand for Sustainable Carbon",
-    "bestand": "PDF",
-    "docId": "94aeab16-66ff-4838-b44a-158b9dc90b1d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32824"
-   },
-   {
-    "id": "2026D32836",
-    "titel": "Onderzoeksrapport De bijdrage van circulariteit aan een betaalbare energietransitie",
-    "bestand": "PDF",
-    "docId": "47c7fa48-8273-4d94-9214-20b62ba58c6d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32836"
-   },
-   {
-    "id": "2026D32826",
-    "titel": "Onderzoeksrapport Minimumnorm voor biobased en gerecycled ektronische apparatuur in de Ecodesign for Sustain",
-    "bestand": "PDF",
-    "docId": "c8be48b9-2acc-44ef-9538-41f91180bfb1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32826"
-   },
-   {
-    "id": "2026D32832",
-    "titel": "Onderzoeksrapport Possibilities for reducing microplastics emissions from textiles",
-    "bestand": "PDF",
-    "docId": "db834afb-0a98-41f3-8989-21ef9c87e44a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32832"
-   },
-   {
-    "id": "2026D32825",
-    "titel": "Onderzoeksrapport verkenning mogelijkheden voor de uitbreiding van het CBAM",
-    "bestand": "PDF",
-    "docId": "2ff6c620-c081-4092-a6ee-a0bce42a8555",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32825"
-   },
-   {
-    "id": "2026D32835",
-    "titel": "Rapport Circulaire Arbeidsmarkt - versnelling van de transitie door gerichte sturing op leven lang ontwikkelen",
-    "bestand": "PDF",
-    "docId": "54839fe3-a691-43ca-829d-086b24aa9909",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32835"
    },
    {
     "id": "2026D32827",
@@ -21097,7 +21418,8 @@
     "titel": "Advies ‘Beoordeeld, maar vertrouwen onder druk’",
     "bestand": "PDF",
     "docId": "b3eaaaa6-6d60-4ca0-9eb9-303c5895887e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32146"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32146",
+    "rapport": true
    },
    {
     "id": "2026D32147",
@@ -21765,6 +22087,30 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z14136&did=2026D31686",
   "bijlagen": [
    {
+    "id": "2026D31691",
+    "titel": "Rapport 'Noodzaak instandhouding zomerbedverdiepingen'",
+    "bestand": "PDF",
+    "docId": "7fcbfa97-1211-4db6-be5a-87f94f13f2cf",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31691",
+    "rapport": true
+   },
+   {
+    "id": "2026D31694",
+    "titel": "RAPPORT Uitwerking schetsen meergeulensysteem Waal",
+    "bestand": "PDF",
+    "docId": "1a5dcb72-9ccd-42bf-bc71-0ed82a7db3a1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31694",
+    "rapport": true
+   },
+   {
+    "id": "2026D31688",
+    "titel": "Synthese BOA-onderzoeken Rijn",
+    "bestand": "PDF",
+    "docId": "4dec18df-6ef1-4bb8-8fcf-f8f08a9ca46b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31688",
+    "rapport": true
+   },
+   {
     "id": "2026D31687",
     "titel": "Alternatieven en effecten beleidskeuzes Ruimte voor de Rivier 2.0 - Rivierbodemligging en Sedimenthuishouding",
     "bestand": "PDF",
@@ -21791,27 +22137,6 @@
     "bestand": "PDF",
     "docId": "bec25590-e254-447a-a3da-66ff55024338",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31692"
-   },
-   {
-    "id": "2026D31691",
-    "titel": "Rapport 'Noodzaak instandhouding zomerbedverdiepingen'",
-    "bestand": "PDF",
-    "docId": "7fcbfa97-1211-4db6-be5a-87f94f13f2cf",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31691"
-   },
-   {
-    "id": "2026D31694",
-    "titel": "RAPPORT Uitwerking schetsen meergeulensysteem Waal",
-    "bestand": "PDF",
-    "docId": "1a5dcb72-9ccd-42bf-bc71-0ed82a7db3a1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31694"
-   },
-   {
-    "id": "2026D31688",
-    "titel": "Synthese BOA-onderzoeken Rijn",
-    "bestand": "PDF",
-    "docId": "4dec18df-6ef1-4bb8-8fcf-f8f08a9ca46b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31688"
    },
    {
     "id": "2026D31690",
@@ -21907,14 +22232,16 @@
     "titel": "Onderzoek naar toepassing Wet Bibob bij milieuvergunningen",
     "bestand": "PDF",
     "docId": "61d382c5-6c2f-46e1-8e72-07cee2df5e80",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31663"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31663",
+    "rapport": true
    },
    {
     "id": "2026D31664",
     "titel": "Onderzoek Toekomstperspectief IBTO",
     "bestand": "PDF",
     "docId": "c18a4166-b3f3-439d-994f-9ed827f5d397",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31664"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31664",
+    "rapport": true
    },
    {
     "id": "2026D31665",
@@ -22273,7 +22600,16 @@
     "titel": "Analyse netinpassing nieuwe kerncentrales",
     "bestand": "PDF",
     "docId": "11052cbc-c1bf-4395-a673-941702bcc578",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31310"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31310",
+    "rapport": true
+   },
+   {
+    "id": "2026D31311",
+    "titel": "Notitie-Studies WOZ en KC's",
+    "bestand": "PDF",
+    "docId": "739c303a-c1f3-458e-a20c-932cdd673ab3",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31311",
+    "rapport": true
    },
    {
     "id": "2026D31307",
@@ -22288,13 +22624,6 @@
     "bestand": "PDF",
     "docId": "55715b07-bef0-4e30-9b32-46055cabb67a",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31312"
-   },
-   {
-    "id": "2026D31311",
-    "titel": "Notitie-Studies WOZ en KC's",
-    "bestand": "PDF",
-    "docId": "739c303a-c1f3-458e-a20c-932cdd673ab3",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31311"
    },
    {
     "id": "2026D31308",
@@ -22547,7 +22876,8 @@
     "titel": "Eindrapport Taskforce Getij Grevelingencompressed",
     "bestand": "PDF",
     "docId": "3f03b8f7-c5f5-44c7-9ccc-015f8d2507e5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31322"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31322",
+    "rapport": true
    },
    {
     "id": "2026D31323",
@@ -22802,18 +23132,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z13498&did=2026D30485",
   "bijlagen": [
    {
+    "id": "2026D30487",
+    "titel": "Monitor 2025 – Nationaal Programma Groningen 2025",
+    "bestand": "PDF",
+    "docId": "f606e84c-9bd9-4dc3-8c45-86291f648163",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D30487",
+    "rapport": true
+   },
+   {
     "id": "2026D30486",
     "titel": "Imagomonitor Groningen 2025",
     "bestand": "PDF",
     "docId": "abc09255-56c9-4421-b58a-265c78bb7424",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D30486"
-   },
-   {
-    "id": "2026D30487",
-    "titel": "Monitor 2025 – Nationaal Programma Groningen 2025",
-    "bestand": "PDF",
-    "docId": "f606e84c-9bd9-4dc3-8c45-86291f648163",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D30487"
    },
    {
     "id": "2026D30488",
@@ -23087,7 +23418,8 @@
     "titel": "ACVG-advies 'Beoordeeld maar vertrouwen onder druk'",
     "bestand": "PDF",
     "docId": "4fcbd82a-a670-438b-bfbe-21fa46d934ab",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29779"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29779",
+    "rapport": true
    },
    {
     "id": "2026D29780",
@@ -23186,6 +23518,22 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z13166&did=2026D29822",
   "bijlagen": [
    {
+    "id": "2026D29824",
+    "titel": "Evaluatie financiële zekerheidstelling nucleaire inrichtingen",
+    "bestand": "PDF",
+    "docId": "facf2e3a-a083-47ab-a3ab-e9aeac1be967",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29824",
+    "rapport": true
+   },
+   {
+    "id": "2026D29823",
+    "titel": "Rapportage ongewone gebeurtenissen nucleaire installaties 2025",
+    "bestand": "PDF",
+    "docId": "8a3a3005-502c-4983-b279-362fb434005b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29823",
+    "rapport": true
+   },
+   {
     "id": "2026D29826",
     "titel": "CNS 10 Country Review Report the Netherlands",
     "bestand": "PDF",
@@ -23198,20 +23546,6 @@
     "bestand": "PDF",
     "docId": "145cbbef-6476-4b45-a748-206f84bc3d61",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29825"
-   },
-   {
-    "id": "2026D29824",
-    "titel": "Evaluatie financiële zekerheidstelling nucleaire inrichtingen",
-    "bestand": "PDF",
-    "docId": "facf2e3a-a083-47ab-a3ab-e9aeac1be967",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29824"
-   },
-   {
-    "id": "2026D29823",
-    "titel": "Rapportage ongewone gebeurtenissen nucleaire installaties 2025",
-    "bestand": "PDF",
-    "docId": "8a3a3005-502c-4983-b279-362fb434005b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29823"
    },
    {
     "id": "2026D29827",
@@ -23578,7 +23912,32 @@
     "titel": "106663982 Beslisnota bij Kamerbrief onderzoeken sigarettenfilters, vapes en andere wegwerpplastics",
     "bestand": "PDF",
     "docId": "b35e27af-02f9-493f-a34b-1590021e2eb1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28934"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28934",
+    "rapport": true
+   },
+   {
+    "id": "2026D28933",
+    "titel": "Onderzoek milieueffecten sigarettenpeuken met en zonder filter",
+    "bestand": "PDF",
+    "docId": "6437e3c6-ebad-4cc1-b3cd-7fa60aa981b1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28933",
+    "rapport": true
+   },
+   {
+    "id": "2026D28931",
+    "titel": "Onderzoek nationaal verbod op sigarettenfilters",
+    "bestand": "PDF",
+    "docId": "39fc2bfa-e426-49c6-84a0-ae67f60e1dc1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28931",
+    "rapport": true
+   },
+   {
+    "id": "2026D28930",
+    "titel": "Onderzoek uitbreiding aanpak kunststof producten voor eenmalig gebruik",
+    "bestand": "PDF",
+    "docId": "6f106c8d-755a-4845-be19-42cb07832b93",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28930",
+    "rapport": true
    },
    {
     "id": "2026D28932",
@@ -23586,27 +23945,6 @@
     "bestand": "PDF",
     "docId": "846fd13a-98e6-481e-95ab-0b4b4ddaaacd",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28932"
-   },
-   {
-    "id": "2026D28933",
-    "titel": "Onderzoek milieueffecten sigarettenpeuken met en zonder filter",
-    "bestand": "PDF",
-    "docId": "6437e3c6-ebad-4cc1-b3cd-7fa60aa981b1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28933"
-   },
-   {
-    "id": "2026D28931",
-    "titel": "Onderzoek nationaal verbod op sigarettenfilters",
-    "bestand": "PDF",
-    "docId": "39fc2bfa-e426-49c6-84a0-ae67f60e1dc1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28931"
-   },
-   {
-    "id": "2026D28930",
-    "titel": "Onderzoek uitbreiding aanpak kunststof producten voor eenmalig gebruik",
-    "bestand": "PDF",
-    "docId": "6f106c8d-755a-4845-be19-42cb07832b93",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28930"
    }
   ]
  },
@@ -23907,18 +24245,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z12683&did=2026D28752",
   "bijlagen": [
    {
+    "id": "2026D28753",
+    "titel": "Monitoring Toekomstvisie Gewasbescherming 2030",
+    "bestand": "PDF",
+    "docId": "a9083ee5-2ddd-4ff3-bb94-c7643310f8a4",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28753",
+    "rapport": true
+   },
+   {
     "id": "2026D28755",
     "titel": "Lijst actuele knelpunten 2026",
     "bestand": "PDF",
     "docId": "645e7c55-4d47-4713-af3a-279b46e3aec5",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28755"
-   },
-   {
-    "id": "2026D28753",
-    "titel": "Monitoring Toekomstvisie Gewasbescherming 2030",
-    "bestand": "PDF",
-    "docId": "a9083ee5-2ddd-4ff3-bb94-c7643310f8a4",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28753"
    },
    {
     "id": "2026D28754",
@@ -23967,7 +24306,8 @@
     "titel": "Jaarrapportage Landelijke Monitor Zwerfafval 2025",
     "bestand": "PDF",
     "docId": "96692c41-a95f-4cf3-91c6-73e110e984cf",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28583"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28583",
+    "rapport": true
    },
    {
     "id": "2026D28582",
@@ -25003,7 +25343,8 @@
     "titel": "Eindrapport Naar een robuuste implementatie van het Verdrag van Aarhus",
     "bestand": "PDF",
     "docId": "12c6103d-a326-4fc4-84fe-9f4c7f6e2b9c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D26760"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D26760",
+    "rapport": true
    },
    {
     "id": "2026D26761",
@@ -25721,7 +26062,8 @@
     "titel": "Verkenning Stec naar meerwaarde Landelijke Integrale Grondbank",
     "bestand": "PDF",
     "docId": "1e3eea03-895e-49e7-af52-9b73fc3958a5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D25983"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D25983",
+    "rapport": true
    },
    {
     "id": "2026D25984",
@@ -25790,7 +26132,8 @@
     "titel": "Nationaal Burgerberaad Klimaat Reactie van het kabinet op het advies",
     "bestand": "PDF",
     "docId": "3252ba82-cd5e-4651-8d46-174c64ae9518",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D25917"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D25917",
+    "rapport": true
    },
    {
     "id": "2026D25918",
@@ -26642,7 +26985,8 @@
     "titel": "Quick scan reiskosten in onderzoekcao's 2026",
     "bestand": "PDF",
     "docId": "eba29269-24f2-4ddf-b4de-f5c6f247f4cd",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D24206"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D24206",
+    "rapport": true
    },
    {
     "id": "2026D24205",
@@ -27098,21 +27442,24 @@
     "titel": "Bijlage bij Onderzoeksrapport Beoordeling van de effecten van financiële en fiscale rijksmiddelen op biodiversiteit",
     "bestand": "PDF",
     "docId": "c64f74d3-e4b5-42f6-bb91-f9faef33c42e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23892"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23892",
+    "rapport": true
    },
    {
     "id": "2026D23891",
     "titel": "Onderzoeksrapport Beoordeling van de effecten van financiële en fiscale rijksmiddelen op biodiversiteit",
     "bestand": "PDF",
     "docId": "51dbc2d4-9db9-43df-8472-4b3ed98ad525",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23891"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23891",
+    "rapport": true
    },
    {
     "id": "2026D23893",
     "titel": "Rapportage NL aan EC 'nonenergy Environmentally Harmful Subsidies'",
     "bestand": "PDF",
     "docId": "c0abec23-95b4-4497-bc71-534cc2506371",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23893"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23893",
+    "rapport": true
    },
    {
     "id": "2026D23894",
@@ -27228,7 +27575,8 @@
     "titel": "Rapport De Staat van Ons Water 2025",
     "bestand": "PDF",
     "docId": "daac2750-33c0-49ba-8800-0156fd572350",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23291"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23291",
+    "rapport": true
    },
    {
     "id": "2026D23292",
@@ -27549,7 +27897,8 @@
     "titel": "Onderzoeksrapport bij voortgangsrapportage 29 Hoogwaterbeschermingsprogramma 2",
     "bestand": "PDF",
     "docId": "6fa14ac4-cdf2-4ad9-8f87-80af9a0530cc",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22826"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22826",
+    "rapport": true
    },
    {
     "id": "2026D22827",
@@ -27689,18 +28038,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z09993&did=2026D22494",
   "bijlagen": [
    {
+    "id": "2026D22497",
+    "titel": "Advies ten behoeve van de aanvraag herbegrenzing Nationaal Park Utrechtse Heuvelrug",
+    "bestand": "PDF",
+    "docId": "67dd2c15-b55f-41cc-bd0d-80958f97b1b9",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22497",
+    "rapport": true
+   },
+   {
     "id": "2026D22496",
     "titel": "Aangepaste kaart NP Utrechtse Heuvelrug",
     "bestand": "PDF",
     "docId": "e157e97d-6d4a-433d-a992-5bee8411da2a",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22496"
-   },
-   {
-    "id": "2026D22497",
-    "titel": "Advies ten behoeve van de aanvraag herbegrenzing Nationaal Park Utrechtse Heuvelrug",
-    "bestand": "PDF",
-    "docId": "67dd2c15-b55f-41cc-bd0d-80958f97b1b9",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22497"
    },
    {
     "id": "2026D22495",
@@ -27783,7 +28133,8 @@
     "titel": "Advies Commissie mer over LVB Schiphol",
     "bestand": "PDF",
     "docId": "e57b3e8c-945c-497f-9d10-46350c308a41",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22568"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22568",
+    "rapport": true
    },
    {
     "id": "2026D22569",
@@ -28627,18 +28978,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z09524&did=2026D21473",
   "bijlagen": [
    {
+    "id": "2026D21474",
+    "titel": "SEO evaluatie fiscale regelingen bos natuur en cultuurgrond",
+    "bestand": "PDF",
+    "docId": "aaf21105-127f-46f9-b882-f2cfaf3cdff1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21474",
+    "rapport": true
+   },
+   {
     "id": "2026D21475",
     "titel": "Bijdragen belanghebbenden in het kader van de motie Holman en Grinwis",
     "bestand": "PDF",
     "docId": "5c753007-ce3c-4648-9e8b-6ca40abd4fab",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21475"
-   },
-   {
-    "id": "2026D21474",
-    "titel": "SEO evaluatie fiscale regelingen bos natuur en cultuurgrond",
-    "bestand": "PDF",
-    "docId": "aaf21105-127f-46f9-b882-f2cfaf3cdff1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21474"
    },
    {
     "id": "2026D21476",
@@ -28975,28 +29327,32 @@
     "titel": "NEN-advies Clean Fuel Contracts",
     "bestand": "PDF",
     "docId": "7ec35f1b-0627-449e-b279-078a4f80dccd",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21047"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21047",
+    "rapport": true
    },
    {
     "id": "2026D21048",
     "titel": "RVO studie Brandstoftransitieverplichting 2031-2040",
     "bestand": "PDF",
     "docId": "793827e9-7866-4a9e-bac1-8bdf7aa90301",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21048"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21048",
+    "rapport": true
    },
    {
     "id": "2026D21046",
     "titel": "TNO-onderzoek Clean Fuel Contracts",
     "bestand": "PDF",
     "docId": "e6f729a8-5359-4a41-a6b3-ceaa92cf1942",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21046"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21046",
+    "rapport": true
    },
    {
     "id": "2026D21049",
     "titel": "Trinomics Eindrapport effecten op investeringsbeslissingen verlenging brandstoftransitieverplichting 2030-2040",
     "bestand": "PDF",
     "docId": "e0dff856-6614-42f1-8742-b26c508eaa9d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21049"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21049",
+    "rapport": true
    },
    {
     "id": "2026D21050",
@@ -29238,18 +29594,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z09258&did=2026D20790",
   "bijlagen": [
    {
+    "id": "2026D20791",
+    "titel": "Rapport 'Voorbij de risico s keuzes voor een klimaatbestendige leefomgeving'",
+    "bestand": "PDF",
+    "docId": "0f7896ed-2a2d-45ef-9efa-1b12726a3cf6",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20791",
+    "rapport": true
+   },
+   {
     "id": "2026D20792",
     "titel": "Consultatie van de Europese Commissie inzake Europees Initiatief klimaatweerbaarheid",
     "bestand": "PDF",
     "docId": "870988ad-fe8f-4f2b-8f41-ccd9fbca9668",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20792"
-   },
-   {
-    "id": "2026D20791",
-    "titel": "Rapport 'Voorbij de risico s keuzes voor een klimaatbestendige leefomgeving'",
-    "bestand": "PDF",
-    "docId": "0f7896ed-2a2d-45ef-9efa-1b12726a3cf6",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20791"
    },
    {
     "id": "2026D20793",
@@ -29483,7 +29840,8 @@
     "titel": "Advies over de modelontwikkeling van de SDRA Groningen",
     "bestand": "PDF",
     "docId": "ebd578a2-ad97-455f-b235-9cdc4a1e6d22",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20678"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20678",
+    "rapport": true
    },
    {
     "id": "2026D20679",
@@ -29580,7 +29938,8 @@
     "titel": "Advies Statusaanvraag Nationaal Park Hollandse Duinen; 12 december 2024",
     "bestand": "PDF",
     "docId": "02fa4721-49ad-4230-9273-7e3173184bd5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20280"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20280",
+    "rapport": true
    },
    {
     "id": "2026D20281",
@@ -29624,6 +29983,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z09096&did=2026D20354",
   "bijlagen": [
    {
+    "id": "2026D20356",
+    "titel": "Samenvatting Uitkomsten quickscan analyses risicomaatregelen FGU",
+    "bestand": "PDF",
+    "docId": "00998933-cce0-4477-b1d6-e5df9e60a7c5",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20356",
+    "rapport": true
+   },
+   {
     "id": "2026D20358",
     "titel": "Bestuurlijke afspraken en besliskader Netcongestie Flevoland Gelderland Utrecht",
     "bestand": "PDF",
@@ -29643,13 +30010,6 @@
     "bestand": "PDF",
     "docId": "614a3c40-c5f3-4e75-8ac4-143d0957fddb",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20355"
-   },
-   {
-    "id": "2026D20356",
-    "titel": "Samenvatting Uitkomsten quickscan analyses risicomaatregelen FGU",
-    "bestand": "PDF",
-    "docId": "00998933-cce0-4477-b1d6-e5df9e60a7c5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20356"
    },
    {
     "id": "2026D20359",
@@ -30121,7 +30481,8 @@
     "titel": "Verkenning Natuurinclusief - De vruchten plukken van natuurinclusief werken",
     "bestand": "PDF",
     "docId": "cc829129-d208-4c77-95a2-50889a85f073",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20264"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20264",
+    "rapport": true
    },
    {
     "id": "2026D20265",
@@ -30191,7 +30552,8 @@
     "titel": "Juridische verkenning regulering staalslakken",
     "bestand": "PDF",
     "docId": "faaddd96-1b6a-4a6d-8b90-064a5901d6a7",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D19933"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D19933",
+    "rapport": true
    },
    {
     "id": "2026D19934",
@@ -30571,18 +30933,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z08534&did=2026D19152",
   "bijlagen": [
    {
+    "id": "2026D19154",
+    "titel": "Onderzoek prikkels vermindering restafval (Sufficiency Universiteit Utrecht)",
+    "bestand": "PDF",
+    "docId": "d2e96596-97b0-48ba-acb9-1c6e2d671fc6",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D19154",
+    "rapport": true
+   },
+   {
     "id": "2026D19153",
     "titel": "Circulaire instrumenten UPV",
     "bestand": "PDF",
     "docId": "296c1b50-510f-4bcb-8b53-d5281f6aa945",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D19153"
-   },
-   {
-    "id": "2026D19154",
-    "titel": "Onderzoek prikkels vermindering restafval (Sufficiency Universiteit Utrecht)",
-    "bestand": "PDF",
-    "docId": "d2e96596-97b0-48ba-acb9-1c6e2d671fc6",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D19154"
    },
    {
     "id": "2026D19155",
@@ -31215,7 +31578,8 @@
     "titel": "Rapport 'Onderzoek naar natuurtaken en -middelen van provincies'",
     "bestand": "PDF",
     "docId": "556827b5-b4d3-45d5-8cf4-06eb6d555648",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18662"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18662",
+    "rapport": true
    },
    {
     "id": "2026D18663",
@@ -31389,7 +31753,8 @@
     "titel": "Dierwaardige Veehouderijk Verkenning naar oprichting en inrichting van een Autoriteit",
     "bestand": "PDF",
     "docId": "cb3a05bf-26c0-4472-9882-629e3459d792",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18062"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18062",
+    "rapport": true
    },
    {
     "id": "2026D18063",
@@ -31527,21 +31892,24 @@
     "titel": "Eindrapport Periodieke rapportage XII Artikel 22 Omgevingsveiligheid en Milieurisico s",
     "bestand": "PDF",
     "docId": "afc292fa-a844-4398-ba40-6d2b9dd11a3b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17980"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17980",
+    "rapport": true
    },
    {
     "id": "2026D17982",
     "titel": "Review onafhankelijk deskundige dr. Edwin van der Werf op eindrapport periodieke rapportage",
     "bestand": "PDF",
     "docId": "e178a819-07bd-464e-a0d2-e338dfdad683",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17982"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17982",
+    "rapport": true
    },
    {
     "id": "2026D17981",
     "titel": "Review onafhankelijk deskundige prof. dr. Carl Koopmans op eindrapport periodieke rapportage",
     "bestand": "PDF",
     "docId": "db2f03db-b129-43c8-9955-3128e27b2409",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17981"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17981",
+    "rapport": true
    },
    {
     "id": "2026D17983",
@@ -31871,7 +32239,8 @@
     "titel": "Monitoringsrapportage Stimuleringspakket 2024-2025",
     "bestand": "PDF",
     "docId": "7ac2167a-9370-435d-8de6-4c5e97a22baf",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17442"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17442",
+    "rapport": true
    },
    {
     "id": "2026D17443",
@@ -31970,6 +32339,54 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z07809&did=2026D17568",
   "bijlagen": [
    {
+    "id": "2026D17579",
+    "titel": "Evaluatie Subsidieregeling Coöperatieve Energieopwekking",
+    "bestand": "PDF",
+    "docId": "82def9c0-165d-49ef-9430-505e883cb656",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17579",
+    "rapport": true
+   },
+   {
+    "id": "2026D17574",
+    "titel": "Monitor Financiële Participatie Hernieuwbare Energie op Land 2024",
+    "bestand": "PDF",
+    "docId": "a63955a8-6852-42c3-a83e-e6cbfd8acd8e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17574",
+    "rapport": true
+   },
+   {
+    "id": "2026D17570",
+    "titel": "Monitor RES 2025",
+    "bestand": "PDF",
+    "docId": "fef71b10-342e-4eb0-9197-06a7b2036de6",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17570",
+    "rapport": true
+   },
+   {
+    "id": "2026D17572",
+    "titel": "Monitor Wind op Land 2024",
+    "bestand": "PDF",
+    "docId": "22441f76-e6db-4f6e-b36e-9062e23ccc9e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17572",
+    "rapport": true
+   },
+   {
+    "id": "2026D17573",
+    "titel": "Monitor Zon-PV 2025",
+    "bestand": "PDF",
+    "docId": "78a7e82c-e3eb-4225-a70b-a4d1b7337190",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17573",
+    "rapport": true
+   },
+   {
+    "id": "2026D17578",
+    "titel": "Ontwerpend onderzoek naar decentrale ontwikkelingen in het energiesysteem",
+    "bestand": "PDF",
+    "docId": "61f67c31-32a7-47f8-a397-3222d862b0cb",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17578",
+    "rapport": true
+   },
+   {
     "id": "2026D17580",
     "titel": "De Staat van decentrale ontwikkelingen in het energiesysteem",
     "bestand": "PDF",
@@ -31982,13 +32399,6 @@
     "bestand": "PDF",
     "docId": "3e237964-65b9-4eee-bc5d-a2db55d90d04",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17575"
-   },
-   {
-    "id": "2026D17579",
-    "titel": "Evaluatie Subsidieregeling Coöperatieve Energieopwekking",
-    "bestand": "PDF",
-    "docId": "82def9c0-165d-49ef-9430-505e883cb656",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17579"
    },
    {
     "id": "2026D17571",
@@ -32010,41 +32420,6 @@
     "bestand": "PDF",
     "docId": "7621cbeb-5842-44ca-99a3-0a5b06561b18",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17577"
-   },
-   {
-    "id": "2026D17574",
-    "titel": "Monitor Financiële Participatie Hernieuwbare Energie op Land 2024",
-    "bestand": "PDF",
-    "docId": "a63955a8-6852-42c3-a83e-e6cbfd8acd8e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17574"
-   },
-   {
-    "id": "2026D17570",
-    "titel": "Monitor RES 2025",
-    "bestand": "PDF",
-    "docId": "fef71b10-342e-4eb0-9197-06a7b2036de6",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17570"
-   },
-   {
-    "id": "2026D17572",
-    "titel": "Monitor Wind op Land 2024",
-    "bestand": "PDF",
-    "docId": "22441f76-e6db-4f6e-b36e-9062e23ccc9e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17572"
-   },
-   {
-    "id": "2026D17573",
-    "titel": "Monitor Zon-PV 2025",
-    "bestand": "PDF",
-    "docId": "78a7e82c-e3eb-4225-a70b-a4d1b7337190",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17573"
-   },
-   {
-    "id": "2026D17578",
-    "titel": "Ontwerpend onderzoek naar decentrale ontwikkelingen in het energiesysteem",
-    "bestand": "PDF",
-    "docId": "61f67c31-32a7-47f8-a397-3222d862b0cb",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17578"
    },
    {
     "id": "2026D17581",
@@ -32088,6 +32463,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z07811&did=2026D17584",
   "bijlagen": [
    {
+    "id": "2026D17588",
+    "titel": "TNO Monitor Energiebesparing",
+    "bestand": "PDF",
+    "docId": "5c708a64-f1ae-49c4-969c-ef908ae386a6",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17588",
+    "rapport": true
+   },
+   {
     "id": "2026D17586",
     "titel": "Informatiepunt Leefomgeving Middelen voor energietoezicht bij omgevingsdiensten",
     "bestand": "PDF",
@@ -32107,13 +32490,6 @@
     "bestand": "PDF",
     "docId": "d2e6b973-1b46-4b18-97a9-7a02a554e176",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17585"
-   },
-   {
-    "id": "2026D17588",
-    "titel": "TNO Monitor Energiebesparing",
-    "bestand": "PDF",
-    "docId": "5c708a64-f1ae-49c4-969c-ef908ae386a6",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17588"
    },
    {
     "id": "2026D17589",
@@ -32154,7 +32530,16 @@
     "titel": "AMVI advies over maatwerkaanpak",
     "bestand": "PDF",
     "docId": "c1449d28-1aa9-4e49-9e11-f84af84fad03",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17217"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17217",
+    "rapport": true
+   },
+   {
+    "id": "2026D17218",
+    "titel": "Vergelijking waterstofproductietechnieken. Multicriteria-analyse op publieke belangen",
+    "bestand": "PDF",
+    "docId": "c29e1702-f723-4369-b676-0ae5bf2dfc00",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17218",
+    "rapport": true
    },
    {
     "id": "2026D17216",
@@ -32162,13 +32547,6 @@
     "bestand": "PDF",
     "docId": "8255d7d5-660a-4766-95d9-93a69e9425e2",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17216"
-   },
-   {
-    "id": "2026D17218",
-    "titel": "Vergelijking waterstofproductietechnieken. Multicriteria-analyse op publieke belangen",
-    "bestand": "PDF",
-    "docId": "c29e1702-f723-4369-b676-0ae5bf2dfc00",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17218"
    },
    {
     "id": "2026D17219",
@@ -32650,14 +33028,16 @@
     "titel": "CDM-advies 'Biologisch verzuren van mest'",
     "bestand": "PDF",
     "docId": "abe6d561-33e9-47ad-a4a2-f00c278ca609",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D16304"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D16304",
+    "rapport": true
    },
    {
     "id": "2026D16303",
     "titel": "WUR Verkenning opties voor vernieuwing apparatuur voor automatisch registreren van mesttransporten",
     "bestand": "PDF",
     "docId": "be62bbe6-b599-4b23-9926-f29f0cfd9f0d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D16303"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D16303",
+    "rapport": true
    },
    {
     "id": "2026D16305",
@@ -33009,6 +33389,30 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z07003&did=2026D15799",
   "bijlagen": [
    {
+    "id": "2026D15805",
+    "titel": "NRE-Rapportage Netbewust renoveren en elektrificeren",
+    "bestand": "PDF",
+    "docId": "2dfbead7-7474-4bdf-b816-5cef0eddc66e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15805",
+    "rapport": true
+   },
+   {
+    "id": "2026D15802",
+    "titel": "Onderzoek Zwaarder Belasten",
+    "bestand": "PDF",
+    "docId": "2911a7ea-77cc-42b6-b0ce-a6c5f4242644",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15802",
+    "rapport": true
+   },
+   {
+    "id": "2026D15803",
+    "titel": "RVO-rapport neveneffecten financieel instrumentarium netcongestie",
+    "bestand": "PDF",
+    "docId": "bed01823-a8ac-4328-b50d-35213f08f08e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15803",
+    "rapport": true
+   },
+   {
     "id": "2026D15807",
     "titel": "Appreciatie ecologische beoordeling van de aanleg van de energie-infrastructuur en verduurzaming",
     "bestand": "PDF",
@@ -33035,27 +33439,6 @@
     "bestand": "PDF",
     "docId": "3747c418-ec68-486c-bec0-68038205d9f6",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15800"
-   },
-   {
-    "id": "2026D15805",
-    "titel": "NRE-Rapportage Netbewust renoveren en elektrificeren",
-    "bestand": "PDF",
-    "docId": "2dfbead7-7474-4bdf-b816-5cef0eddc66e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15805"
-   },
-   {
-    "id": "2026D15802",
-    "titel": "Onderzoek Zwaarder Belasten",
-    "bestand": "PDF",
-    "docId": "2911a7ea-77cc-42b6-b0ce-a6c5f4242644",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15802"
-   },
-   {
-    "id": "2026D15803",
-    "titel": "RVO-rapport neveneffecten financieel instrumentarium netcongestie",
-    "bestand": "PDF",
-    "docId": "bed01823-a8ac-4328-b50d-35213f08f08e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15803"
    },
    {
     "id": "2026D15804",
@@ -33260,7 +33643,8 @@
     "titel": "TNO-AGE - Rapport ten behoeve van de beantwoording van de schriftelijke vragen van het Tweede Kamerlid Van O",
     "bestand": "PDF",
     "docId": "97a948ef-c034-47a1-9e22-a5d5887b10a5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15575"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15575",
+    "rapport": true
    },
    {
     "id": "2026D15576",
@@ -33298,6 +33682,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z07031&did=2026D15862",
   "bijlagen": [
    {
+    "id": "2026D15864",
+    "titel": "Rapportage Gezondheidseffecten aanvullende maatregelen JLOI",
+    "bestand": "PDF",
+    "docId": "71ba712e-ecf7-4c0e-9056-33ef58715803",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15864",
+    "rapport": true
+   },
+   {
     "id": "2026D15863",
     "titel": "Hoofdlijnenverslag Publieke Consultatie Joint Letter of Intent met Tata Steel",
     "bestand": "PDF",
@@ -33317,13 +33709,6 @@
     "bestand": "PDF",
     "docId": "e6204999-8f23-4760-bc66-16924057f042",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15865"
-   },
-   {
-    "id": "2026D15864",
-    "titel": "Rapportage Gezondheidseffecten aanvullende maatregelen JLOI",
-    "bestand": "PDF",
-    "docId": "71ba712e-ecf7-4c0e-9056-33ef58715803",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15864"
    },
    {
     "id": "2026D15867",
@@ -33502,7 +33887,8 @@
     "titel": "Monitoring Balanced Approach Schiphol",
     "bestand": "PDF",
     "docId": "27e5540c-7c68-4757-b16c-1ed5b75a536f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15797"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15797",
+    "rapport": true
    },
    {
     "id": "2026D15798",
@@ -34005,7 +34391,8 @@
     "titel": "Kennisnotitie 'Mogelijkheden voor onderzoek naar gezondheidseffecten van beroepsmatige blootstelling aan bestrijdingsmiddelen",
     "bestand": "PDF",
     "docId": "e96974c1-7cfb-4d93-8303-74b1badd78d8",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D14910"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D14910",
+    "rapport": true
    },
    {
     "id": "2026D14911",
@@ -34075,7 +34462,8 @@
     "titel": "Aanvullende analyse VGO-III afstand 500-1000 meter",
     "bestand": "PDF",
     "docId": "fbbf47ec-7ecb-40f0-9579-8693fcce7c7c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D14810"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D14810",
+    "rapport": true
    },
    {
     "id": "2026D14809",
@@ -35082,18 +35470,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z05727&did=2026D13034",
   "bijlagen": [
    {
+    "id": "2026D13035",
+    "titel": "Evaluatierapport Programma Noordzee 2022-2027",
+    "bestand": "PDF",
+    "docId": "ca54d7cb-c2b5-439d-b6a0-7801e5a5c23a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D13035",
+    "rapport": true
+   },
+   {
     "id": "2026D13036",
     "titel": "Beleidstheorie Programma Noordzee 2022-2027",
     "bestand": "PDF",
     "docId": "0f7ebdef-a96b-4988-842a-d7375a10519c",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D13036"
-   },
-   {
-    "id": "2026D13035",
-    "titel": "Evaluatierapport Programma Noordzee 2022-2027",
-    "bestand": "PDF",
-    "docId": "ca54d7cb-c2b5-439d-b6a0-7801e5a5c23a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D13035"
    },
    {
     "id": "2026D13037",
@@ -36521,6 +36910,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z04948&did=2026D11285",
   "bijlagen": [
    {
+    "id": "2026D11288",
+    "titel": "Syntheserapport 2026 'Monitoring en evaluatie van het programma stikstofreductie en natuurverbetering'",
+    "bestand": "PDF",
+    "docId": "c58e8f13-6523-465d-bd20-36d7436594f7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D11288",
+    "rapport": true
+   },
+   {
     "id": "2026D11286",
     "titel": "Doeltreffendheid en doelmatigheid stikstofbronmaatregelen",
     "bestand": "PDF",
@@ -36533,13 +36930,6 @@
     "bestand": "PDF",
     "docId": "d9d766dc-64b4-4866-a3fd-97deb6b70913",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D11287"
-   },
-   {
-    "id": "2026D11288",
-    "titel": "Syntheserapport 2026 'Monitoring en evaluatie van het programma stikstofreductie en natuurverbetering'",
-    "bestand": "PDF",
-    "docId": "c58e8f13-6523-465d-bd20-36d7436594f7",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D11288"
    },
    {
     "id": "2026D11289",
@@ -36659,7 +37049,8 @@
     "titel": "Advies over concept-JLoI tussen Alco Energy Rotterdam en de Rijksoverheid",
     "bestand": "PDF",
     "docId": "d020fb16-22ba-4dae-af0e-71aa0dc0b5c1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D11191"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D11191",
+    "rapport": true
    },
    {
     "id": "2026D11190",
@@ -36840,28 +37231,32 @@
     "titel": "Aanbiedingsbrief Evaluatiecommissie Omgevingswet aan minister van VRO over tweede reflectierapport `Werk aan de winkel`",
     "bestand": "PDF",
     "docId": "01e6d797-7e54-4ff6-8360-3f43398c2102",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10857"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10857",
+    "rapport": true
    },
    {
     "id": "2026D10859",
     "titel": "Onderzoek omgevingsvergunning",
     "bestand": "PDF",
     "docId": "63934ede-cd0d-497d-bd37-18d6567be324",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10859"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10859",
+    "rapport": true
    },
    {
     "id": "2026D10860",
     "titel": "Praktijkervaringen met de Omgevingswet - Evaluatie Algemene Rijksregels Omgevingswet 2025",
     "bestand": "PDF",
     "docId": "d9b50815-0404-407f-8f47-29f632ed875c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10860"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10860",
+    "rapport": true
    },
    {
     "id": "2026D10858",
     "titel": "Tweede reflectierapport van de Evaluatiecommissie Omgevingswet `Werk aan de winkel`",
     "bestand": "PDF",
     "docId": "26d87db8-4cde-43a4-a7c2-bea057b39457",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10858"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10858",
+    "rapport": true
    },
    {
     "id": "2026D10861",
@@ -37152,18 +37547,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z04453&did=2026D10149",
   "bijlagen": [
    {
+    "id": "2026D10151",
+    "titel": "Revnext rapport",
+    "bestand": "PDF",
+    "docId": "2a57fae1-43e7-4136-94e9-02e545572b42",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10151",
+    "rapport": true
+   },
+   {
     "id": "2026D10150",
     "titel": "Geannoteerde Agenda Milieuraad 17 maart 2026",
     "bestand": "PDF",
     "docId": "fadc884b-e31e-43a0-aabe-6cca09bce1f3",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10150"
-   },
-   {
-    "id": "2026D10151",
-    "titel": "Revnext rapport",
-    "bestand": "PDF",
-    "docId": "2a57fae1-43e7-4136-94e9-02e545572b42",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10151"
    },
    {
     "id": "2026D10152",
@@ -37342,39 +37738,43 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z18032&did=2026D09360",
   "bijlagen": [
    {
-    "id": "2026D09362",
-    "titel": "Plan-MER Nota Ruimte - Matrix varianten MER Nota Ruimte",
-    "bestand": "PDF",
-    "docId": "6a56e107-79e0-4d32-a621-afaa48a20b0c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09362"
-   },
-   {
     "id": "2026D09365",
     "titel": "Rapport - Effect op bereikbaarheid en mobiliteit van verschillende ruimtelijke varianten Nota Ruimte",
     "bestand": "PDF",
     "docId": "da530743-305f-4939-9970-57bc92ee2dcd",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09365"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09365",
+    "rapport": true
    },
    {
     "id": "2026D09364",
     "titel": "Rapport - Kleinschalig verdichten",
     "bestand": "PDF",
     "docId": "4bb02ab3-2b1d-45c5-b30d-d59c97b6ecc7",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09364"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09364",
+    "rapport": true
    },
    {
     "id": "2026D09361",
     "titel": "Rapport - Netwerkstad – Nevelstad",
     "bestand": "PDF",
     "docId": "459fc64d-66a7-41a8-b622-ac22e14d637f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09361"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09361",
+    "rapport": true
    },
    {
     "id": "2026D09363",
     "titel": "Rapport - Van vitaliseren naar versterken",
     "bestand": "PDF",
     "docId": "7bf747cc-f54e-4be3-a284-2c8976f26796",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09363"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09363",
+    "rapport": true
+   },
+   {
+    "id": "2026D09362",
+    "titel": "Plan-MER Nota Ruimte - Matrix varianten MER Nota Ruimte",
+    "bestand": "PDF",
+    "docId": "6a56e107-79e0-4d32-a621-afaa48a20b0c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09362"
    },
    {
     "id": "2026D09366",
@@ -37799,14 +38199,24 @@
     "titel": "Advies van de Stuurgroep Ingrepen Pluimvee over de mogelijkheden voor het achterwege laten van het behandelen van de achterste teen van hanen",
     "bestand": "PDF",
     "docId": "347e4fa0-a295-4f05-8431-ed70ed96b355",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D08183"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D08183",
+    "rapport": true
    },
    {
     "id": "2026D08180",
     "titel": "Evaluatie vervroegd slachten bij hitte-roodvlees 2025",
     "bestand": "PDF",
     "docId": "bc234b6f-ea7d-4298-82dd-b534d6ebcb48",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D08180"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D08180",
+    "rapport": true
+   },
+   {
+    "id": "2026D08181",
+    "titel": "Sectorreactie van VleesNL op evaluatie roodvleespilot vervroegd slachten",
+    "bestand": "PDF",
+    "docId": "a0dca213-ee83-41ad-9598-7679a291180d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D08181",
+    "rapport": true
    },
    {
     "id": "2026D08182",
@@ -37814,13 +38224,6 @@
     "bestand": "PDF",
     "docId": "b6c70d4b-42e5-4959-ae1f-bf63b4de6900",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D08182"
-   },
-   {
-    "id": "2026D08181",
-    "titel": "Sectorreactie van VleesNL op evaluatie roodvleespilot vervroegd slachten",
-    "bestand": "PDF",
-    "docId": "a0dca213-ee83-41ad-9598-7679a291180d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D08181"
    },
    {
     "id": "2026D08184",
@@ -38135,7 +38538,8 @@
     "titel": "Rapport Verkenning van maatregelen voor het verminderen van emissies van bioaerosolen uit melkgeitenbedrijven",
     "bestand": "PDF",
     "docId": "8f862383-e5de-4f7a-91de-ef3276bff334",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D07715"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D07715",
+    "rapport": true
    },
    {
     "id": "2026D07716",
@@ -39040,7 +39444,8 @@
     "titel": "Rapport 'Effectiviteit strafrechtelijke sancties bij ernstige milieudelicten'",
     "bestand": "PDF",
     "docId": "3cbd6b8b-0223-4f00-b2d2-22238b412263",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06737"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06737",
+    "rapport": true
    },
    {
     "id": "2026D06738",
@@ -39171,21 +39576,24 @@
     "titel": "Advies meetverplichting bij ZLT-netten",
     "bestand": "PDF",
     "docId": "17d48089-5b22-475a-a8e9-3cb32a70821d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06289"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06289",
+    "rapport": true
    },
    {
     "id": "2026D06286",
     "titel": "Brief WTS aan KGG (reactie op Fakton onderzoek)",
     "bestand": "PDF",
     "docId": "51475406-a2a5-4bde-aaf6-00439c538b2e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06286"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06286",
+    "rapport": true
    },
    {
     "id": "2026D06288",
     "titel": "Fakton rapportage review WLQ 2025",
     "bestand": "PDF",
     "docId": "75fb80b4-2591-4690-ad04-0228649ad558",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06288"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06288",
+    "rapport": true
    },
    {
     "id": "2026D06287",
@@ -39460,21 +39868,24 @@
     "titel": "Multifunctionele landbouw in Altena. Onderzoek naar belemmeringen voor het opstarten van multifunctionele landbouw",
     "bestand": "PDF",
     "docId": "ff9d7082-4c86-498a-8a3c-a7a1d80edaf8",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06465"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06465",
+    "rapport": true
    },
    {
     "id": "2026D06466",
     "titel": "Multifunctionele landbouw in Ede. Onderzoek naar belemmeringen voor het opstarten van multifunctionele landbouw",
     "bestand": "PDF",
     "docId": "3dfffef4-2647-40c6-9cbe-e5b62b7c936b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06466"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06466",
+    "rapport": true
    },
    {
     "id": "2026D06467",
     "titel": "Multifunctionele landbouw in Soest. Onderzoek naar belemmeringen voor het opstarten van multifunctionele landbouw",
     "bestand": "PDF",
     "docId": "e63ed0a0-9b12-4470-8acb-cc6f71e4e705",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06467"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06467",
+    "rapport": true
    },
    {
     "id": "2026D06464",
@@ -39652,6 +40063,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z02709&did=2026D06087",
   "bijlagen": [
    {
+    "id": "2026D06090",
+    "titel": "Tussentijdse evaluatie Agenda voor het Waddengebied 2050 en Uitvoeringsprogramma Waddengebied 2021-2026",
+    "bestand": "PDF",
+    "docId": "9fa2986f-bc8d-4d89-aec1-5bf1b883593e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06090",
+    "rapport": true
+   },
+   {
     "id": "2026D06089",
     "titel": "De Europees- en internationaalrechtelijke status van de Waddenzee met overzicht van de gedane aanbevelingen1 en reactie daarop",
     "bestand": "PDF",
@@ -39664,13 +40083,6 @@
     "bestand": "PDF",
     "docId": "02b23000-d1e7-4605-8c5f-985699bc45c5",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06088"
-   },
-   {
-    "id": "2026D06090",
-    "titel": "Tussentijdse evaluatie Agenda voor het Waddengebied 2050 en Uitvoeringsprogramma Waddengebied 2021-2026",
-    "bestand": "PDF",
-    "docId": "9fa2986f-bc8d-4d89-aec1-5bf1b883593e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06090"
    },
    {
     "id": "2026D06091",
@@ -40268,7 +40680,8 @@
     "titel": "Advies ATR over onnodige regeldruk door dubbele gegevensuitvraag bij grondwateractiviteiten",
     "bestand": "PDF",
     "docId": "dd1d5e04-d9fc-4df9-b2be-346316282eb0",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05734"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05734",
+    "rapport": true
    },
    {
     "id": "2026D05735",
@@ -40339,18 +40752,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z02277&did=2026D05209",
   "bijlagen": [
    {
+    "id": "2026D05210",
+    "titel": "Rapport Evaluatie Geactualiseerd Nationaal actieplan duurzaam gebruik gewasbeschermingsmiddelen",
+    "bestand": "PDF",
+    "docId": "ab40d554-1242-4571-89b6-0c037324caec",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05210",
+    "rapport": true
+   },
+   {
     "id": "2026D05211",
     "titel": "Gewasbeschermingsknelpunten 2025, zoals geïdenti?ceerd en toegelicht door de sector",
     "bestand": "PDF",
     "docId": "8d6d27f3-044e-4704-8fa5-7a33cce9c8b7",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05211"
-   },
-   {
-    "id": "2026D05210",
-    "titel": "Rapport Evaluatie Geactualiseerd Nationaal actieplan duurzaam gebruik gewasbeschermingsmiddelen",
-    "bestand": "PDF",
-    "docId": "ab40d554-1242-4571-89b6-0c037324caec",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05210"
    },
    {
     "id": "2026D05212",
@@ -40460,7 +40874,8 @@
     "titel": "Evaluatie CO2-heffing industrie en CO2-minimumprijs elektriciteitsopwekking",
     "bestand": "PDF",
     "docId": "1c28205e-627b-4e47-8207-8e89be660ce4",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05765"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05765",
+    "rapport": true
    },
    {
     "id": "2026D05766",
@@ -40501,14 +40916,16 @@
     "titel": "Onderzoek naar capaciteitsmechanismen voor Nederland",
     "bestand": "PDF",
     "docId": "5f278cf7-c68f-4637-be9e-248d56f5a885",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05460"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05460",
+    "rapport": true
    },
    {
     "id": "2026D05459",
     "titel": "Onderzoek naar vraagrespons in het kader van leveringszekerheid",
     "bestand": "PDF",
     "docId": "7045c1e8-9fec-4af2-bbf3-44960f5203b9",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05459"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05459",
+    "rapport": true
    },
    {
     "id": "2026D05461",
@@ -40861,18 +41278,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z02111&did=2026D04896",
   "bijlagen": [
    {
+    "id": "2026D04898",
+    "titel": "Onderzoek regeldruk Europese emissiehandelssysteem",
+    "bestand": "PDF",
+    "docId": "8033e20d-4d85-43c9-98ed-a293f64d4bc8",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D04898",
+    "rapport": true
+   },
+   {
     "id": "2026D04897",
     "titel": "Joint non-paper by Austria, Belgium, Bulgaria, Croatia, Czechia, Estonia, Germany, Greece, Italy, Latvia, Lithuania, the Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain on ETS2 price uncertainties and possible improvements",
     "bestand": "PDF",
     "docId": "6ba8fbea-4b7f-4053-9535-991485a881dc",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D04897"
-   },
-   {
-    "id": "2026D04898",
-    "titel": "Onderzoek regeldruk Europese emissiehandelssysteem",
-    "bestand": "PDF",
-    "docId": "8033e20d-4d85-43c9-98ed-a293f64d4bc8",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D04898"
    },
    {
     "id": "2026D04899",
@@ -41744,7 +42162,8 @@
     "titel": "Rapport 'Staat van ons Klimaat 2025'",
     "bestand": "PDF",
     "docId": "b4652a35-dada-4f15-a9df-9c4acccdac88",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D04054"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D04054",
+    "rapport": true
    },
    {
     "id": "2026D04049",
@@ -41875,7 +42294,8 @@
     "titel": "Eindrapport Evaluatie Wet gewasbeschermingsmiddelen en biociden",
     "bestand": "PDF",
     "docId": "5b5d7bcb-25e2-4981-9965-f6f9f3c46833",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03996"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03996",
+    "rapport": true
    },
    {
     "id": "2026D03997",
@@ -41957,7 +42377,8 @@
     "titel": "Rapport MARIN onderzoek naar veilige vaarsnelheid op de Waddenzee in het donker",
     "bestand": "PDF",
     "docId": "576a3b71-a279-49ea-bab2-48b58fb9a0ac",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03569"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03569",
+    "rapport": true
    },
    {
     "id": "2026D03570",
@@ -42105,18 +42526,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z01486&did=2026D03584",
   "bijlagen": [
    {
+    "id": "2026D03585",
+    "titel": "Rapportage Evaluatie Voorliggende Keringen",
+    "bestand": "PDF",
+    "docId": "19579ece-7075-4aa9-bb08-43713a827adf",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03585",
+    "rapport": true
+   },
+   {
     "id": "2026D03586",
     "titel": "Bestuurlijke afspraken herijking HWBP",
     "bestand": "PDF",
     "docId": "b0db64e0-e464-4736-8d49-b8c5ae1e6bfb",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03586"
-   },
-   {
-    "id": "2026D03585",
-    "titel": "Rapportage Evaluatie Voorliggende Keringen",
-    "bestand": "PDF",
-    "docId": "19579ece-7075-4aa9-bb08-43713a827adf",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03585"
    },
    {
     "id": "2026D03587",
@@ -42224,6 +42646,62 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z01449&did=2026D03444",
   "bijlagen": [
    {
+    "id": "2026D03457",
+    "titel": "Advies CFL over 8e actieprogramma Nitraatrichtlijn",
+    "bestand": "PDF",
+    "docId": "cf11f101-db16-410f-8555-a520689c8769",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03457",
+    "rapport": true
+   },
+   {
+    "id": "2026D03451",
+    "titel": "Advies RFL Agendapunt 8e Actieprogramma Nitraatrichtlijn",
+    "bestand": "PDF",
+    "docId": "79054430-f941-4f9c-b4f6-1a0c54ca755c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03451",
+    "rapport": true
+   },
+   {
+    "id": "2026D03447",
+    "titel": "MR advies 8e actieprogramma nitraatrichtlijn",
+    "bestand": "PDF",
+    "docId": "c55c8db8-9251-4041-a7fe-96b0f6e61fa7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03447",
+    "rapport": true
+   },
+   {
+    "id": "2026D03455",
+    "titel": "Nota advies MR gebruiksnormen en aandachtsgebieden",
+    "bestand": "PDF",
+    "docId": "15ff04ce-b815-4b16-ac8a-fa32f14f5d24",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03455",
+    "rapport": true
+   },
+   {
+    "id": "2026D03448",
+    "titel": "RFL advies 8e actieprogramma nitraatrichtlijn",
+    "bestand": "PDF",
+    "docId": "32b1af04-a437-4c2f-9079-186df1fe0401",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03448",
+    "rapport": true
+   },
+   {
+    "id": "2026D03446",
+    "titel": "RFL advies 8e actieprogramma nitraatrichtlijn maart 2025",
+    "bestand": "PDF",
+    "docId": "a2b46e8c-448f-4f4c-8cc1-055d8db683ac",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03446",
+    "rapport": true
+   },
+   {
+    "id": "2026D03453",
+    "titel": "RFL advies gebruiksnormen en aandachtsgebieden",
+    "bestand": "PDF",
+    "docId": "fb0f689e-8a21-48ad-859d-e1d46b64aac1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03453",
+    "rapport": true
+   },
+   {
     "id": "2026D03466",
     "titel": "A4 BWO 8e AP",
     "bestand": "PDF",
@@ -42243,20 +42721,6 @@
     "bestand": "PDF",
     "docId": "159e37f0-b4fc-499e-b181-61183cf78495",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03461"
-   },
-   {
-    "id": "2026D03457",
-    "titel": "Advies CFL over 8e actieprogramma Nitraatrichtlijn",
-    "bestand": "PDF",
-    "docId": "cf11f101-db16-410f-8555-a520689c8769",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03457"
-   },
-   {
-    "id": "2026D03451",
-    "titel": "Advies RFL Agendapunt 8e Actieprogramma Nitraatrichtlijn",
-    "bestand": "PDF",
-    "docId": "79054430-f941-4f9c-b4f6-1a0c54ca755c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03451"
    },
    {
     "id": "2026D03445",
@@ -42299,20 +42763,6 @@
     "bestand": "PDF",
     "docId": "59d2a1e9-16e8-49ff-a39a-306c2f352392",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03467"
-   },
-   {
-    "id": "2026D03447",
-    "titel": "MR advies 8e actieprogramma nitraatrichtlijn",
-    "bestand": "PDF",
-    "docId": "c55c8db8-9251-4041-a7fe-96b0f6e61fa7",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03447"
-   },
-   {
-    "id": "2026D03455",
-    "titel": "Nota advies MR gebruiksnormen en aandachtsgebieden",
-    "bestand": "PDF",
-    "docId": "15ff04ce-b815-4b16-ac8a-fa32f14f5d24",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03455"
    },
    {
     "id": "2026D03454",
@@ -42364,27 +42814,6 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03462"
    },
    {
-    "id": "2026D03448",
-    "titel": "RFL advies 8e actieprogramma nitraatrichtlijn",
-    "bestand": "PDF",
-    "docId": "32b1af04-a437-4c2f-9079-186df1fe0401",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03448"
-   },
-   {
-    "id": "2026D03446",
-    "titel": "RFL advies 8e actieprogramma nitraatrichtlijn maart 2025",
-    "bestand": "PDF",
-    "docId": "a2b46e8c-448f-4f4c-8cc1-055d8db683ac",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03446"
-   },
-   {
-    "id": "2026D03453",
-    "titel": "RFL advies gebruiksnormen en aandachtsgebieden",
-    "bestand": "PDF",
-    "docId": "fb0f689e-8a21-48ad-859d-e1d46b64aac1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03453"
-   },
-   {
     "id": "2026D03458",
     "titel": "Beslisnota agendering 8e AP in RFL en MR",
     "bestand": "PDF",
@@ -42426,18 +42855,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z01325&did=2026D03176",
   "bijlagen": [
    {
+    "id": "2026D03177",
+    "titel": "Evaluatie Commissie Mijnbouwschade",
+    "bestand": "PDF",
+    "docId": "776fbff7-be54-4e4d-9f01-804b5896436e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03177",
+    "rapport": true
+   },
+   {
     "id": "2026D03178",
     "titel": "Definitief Verslag Afhandeling Schademeldingen Ekehaar en Hooghalen",
     "bestand": "PDF",
     "docId": "d673b52e-b6af-466b-9049-31a58e863c14",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03178"
-   },
-   {
-    "id": "2026D03177",
-    "titel": "Evaluatie Commissie Mijnbouwschade",
-    "bestand": "PDF",
-    "docId": "776fbff7-be54-4e4d-9f01-804b5896436e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03177"
    },
    {
     "id": "2026D03179",
@@ -42526,7 +42956,8 @@
     "titel": "Rapport Pilot Beoordeling Mijnbouwschade Limburg",
     "bestand": "PDF",
     "docId": "9b2d2158-7ef7-449a-bc09-c76d75eb2213",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03181"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03181",
+    "rapport": true
    },
    {
     "id": "2026D03182",
@@ -42625,6 +43056,94 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z01477&did=2026D03509",
   "bijlagen": [
    {
+    "id": "2026D03544",
+    "titel": "Advies commissie MER",
+    "bestand": "PDF",
+    "docId": "09fd188b-1886-48a2-9dc0-61de2496cfba",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03544",
+    "rapport": true
+   },
+   {
+    "id": "2026D03556",
+    "titel": "Advies landsadvocaat",
+    "bestand": "PDF",
+    "docId": "c14b56fb-2a9e-4793-9332-6c655287b734",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03556",
+    "rapport": true
+   },
+   {
+    "id": "2026D03545",
+    "titel": "CDM advies 'Kwetsbare zones Nitraatrichtlijn'",
+    "bestand": "PDF",
+    "docId": "65f00dcd-59dc-4656-9794-0b1ea176bf40",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03545",
+    "rapport": true
+   },
+   {
+    "id": "2026D03550",
+    "titel": "Nota analyse opmerkingen waterschappen en provincies internetconsultatie aanwijzing aandachtsgebieden",
+    "bestand": "PDF",
+    "docId": "e8f1c15d-921b-4244-bfb6-86eefbdc0707",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03550",
+    "rapport": true
+   },
+   {
+    "id": "2026D03533",
+    "titel": "Nota concept 8e AP tbv advies Commissie MER en internetconsultatie",
+    "bestand": "PDF",
+    "docId": "a9288e47-ead6-4b2c-8d65-7f3e849aaf26",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03533",
+    "rapport": true
+   },
+   {
+    "id": "2026D03530",
+    "titel": "Nota projectvoorstel doorrekening fase 2 ex ante 8e AP",
+    "bestand": "PDF",
+    "docId": "9561b591-9dc5-4ed2-b1b0-4c41930547d7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03530",
+    "rapport": true
+   },
+   {
+    "id": "2026D03531",
+    "titel": "Nota Rapportage Actualisatie bronnenanalyse",
+    "bestand": "PDF",
+    "docId": "182a73da-06b3-4b78-a7ec-f2cf7272853a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03531",
+    "rapport": true
+   },
+   {
+    "id": "2026D03534",
+    "titel": "Nota RFL concept 8e AP internetconsultatie en advies Commissie MER",
+    "bestand": "PDF",
+    "docId": "6f54b037-27bc-4256-9bca-b2760aefbb63",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03534",
+    "rapport": true
+   },
+   {
+    "id": "2026D03520",
+    "titel": "Nota uitzetten onderzoek fase 1 ex ante 8e actieprogramma",
+    "bestand": "PDF",
+    "docId": "450613b1-49aa-432c-970d-4ef1dba610b1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03520",
+    "rapport": true
+   },
+   {
+    "id": "2026D03532",
+    "titel": "Nota vervolg advies concept 8e AP tbv advies Commissie MER en internetconsultatie 24 juni",
+    "bestand": "PDF",
+    "docId": "1d06eb90-e5f3-4f0f-9015-968fba55b4f0",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03532",
+    "rapport": true
+   },
+   {
+    "id": "2026D03546",
+    "titel": "Onderzoek 8AP9",
+    "bestand": "PDF",
+    "docId": "f1ec2168-2e0b-401e-aa75-0d6e30db0fba",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03546",
+    "rapport": true
+   },
+   {
     "id": "2026D03565",
     "titel": "A4 BWO 8e AP",
     "bestand": "PDF",
@@ -42653,32 +43172,11 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03549"
    },
    {
-    "id": "2026D03544",
-    "titel": "Advies commissie MER",
-    "bestand": "PDF",
-    "docId": "09fd188b-1886-48a2-9dc0-61de2496cfba",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03544"
-   },
-   {
-    "id": "2026D03556",
-    "titel": "Advies landsadvocaat",
-    "bestand": "PDF",
-    "docId": "c14b56fb-2a9e-4793-9332-6c655287b734",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03556"
-   },
-   {
     "id": "2026D03564",
     "titel": "BWO 9 december",
     "bestand": "PDF",
     "docId": "e349466e-230d-4d4c-8998-07a4c1448112",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03564"
-   },
-   {
-    "id": "2026D03545",
-    "titel": "CDM advies 'Kwetsbare zones Nitraatrichtlijn'",
-    "bestand": "PDF",
-    "docId": "65f00dcd-59dc-4656-9794-0b1ea176bf40",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03545"
    },
    {
     "id": "2026D03548",
@@ -42737,25 +43235,11 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03554"
    },
    {
-    "id": "2026D03550",
-    "titel": "Nota analyse opmerkingen waterschappen en provincies internetconsultatie aanwijzing aandachtsgebieden",
-    "bestand": "PDF",
-    "docId": "e8f1c15d-921b-4244-bfb6-86eefbdc0707",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03550"
-   },
-   {
     "id": "2026D03553",
     "titel": "Nota besluitvorming 8e AP",
     "bestand": "PDF",
     "docId": "2190316d-4bd5-416c-a41d-b9ef7724823f",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03553"
-   },
-   {
-    "id": "2026D03533",
-    "titel": "Nota concept 8e AP tbv advies Commissie MER en internetconsultatie",
-    "bestand": "PDF",
-    "docId": "a9288e47-ead6-4b2c-8d65-7f3e849aaf26",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03533"
    },
    {
     "id": "2026D03555",
@@ -42779,20 +43263,6 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03521"
    },
    {
-    "id": "2026D03530",
-    "titel": "Nota projectvoorstel doorrekening fase 2 ex ante 8e AP",
-    "bestand": "PDF",
-    "docId": "9561b591-9dc5-4ed2-b1b0-4c41930547d7",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03530"
-   },
-   {
-    "id": "2026D03531",
-    "titel": "Nota Rapportage Actualisatie bronnenanalyse",
-    "bestand": "PDF",
-    "docId": "182a73da-06b3-4b78-a7ec-f2cf7272853a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03531"
-   },
-   {
     "id": "2026D03524",
     "titel": "Nota resultaten fase 1 ex ante 8e actieprogramma Nitraatrichtlijn",
     "bestand": "PDF",
@@ -42800,32 +43270,11 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03524"
    },
    {
-    "id": "2026D03534",
-    "titel": "Nota RFL concept 8e AP internetconsultatie en advies Commissie MER",
-    "bestand": "PDF",
-    "docId": "6f54b037-27bc-4256-9bca-b2760aefbb63",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03534"
-   },
-   {
-    "id": "2026D03520",
-    "titel": "Nota uitzetten onderzoek fase 1 ex ante 8e actieprogramma",
-    "bestand": "PDF",
-    "docId": "450613b1-49aa-432c-970d-4ef1dba610b1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03520"
-   },
-   {
     "id": "2026D03536",
     "titel": "Nota verslag technisch overleg EC inzake derogatieverzoek en opmerkingen IenW ten aanzien van het concept 8e actieprogramma",
     "bestand": "PDF",
     "docId": "cdb6050b-cb66-4d36-8e61-add81403b0ec",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03536"
-   },
-   {
-    "id": "2026D03532",
-    "titel": "Nota vervolg advies concept 8e AP tbv advies Commissie MER en internetconsultatie 24 juni",
-    "bestand": "PDF",
-    "docId": "1d06eb90-e5f3-4f0f-9015-968fba55b4f0",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03532"
    },
    {
     "id": "2026D03543",
@@ -42868,13 +43317,6 @@
     "bestand": "PDF",
     "docId": "070e6a98-2521-4172-b9c2-31f01b5caffd",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03542"
-   },
-   {
-    "id": "2026D03546",
-    "titel": "Onderzoek 8AP9",
-    "bestand": "PDF",
-    "docId": "f1ec2168-2e0b-401e-aa75-0d6e30db0fba",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03546"
    },
    {
     "id": "2026D03510",
@@ -42953,6 +43395,30 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z01369&did=2026D03276",
   "bijlagen": [
    {
+    "id": "2026D03279",
+    "titel": "Evaluatie Garantieregeling Aardwarmte (RNES)",
+    "bestand": "PDF",
+    "docId": "6155e11d-6872-4b28-bc90-47229dad01c1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03279",
+    "rapport": true
+   },
+   {
+    "id": "2026D03278",
+    "titel": "Evaluatie SCAN",
+    "bestand": "PDF",
+    "docId": "28b76807-f843-4c4f-b0d2-e62bc3fae4c5",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03278",
+    "rapport": true
+   },
+   {
+    "id": "2026D03282",
+    "titel": "Evaluatie Schoonebeek Zorgen voor ontzorgen in Schoonebeek",
+    "bestand": "PDF",
+    "docId": "d546fc70-0e0f-4578-be5d-58af07a56e69",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03282",
+    "rapport": true
+   },
+   {
     "id": "2026D03280",
     "titel": "Brief stand van zaken gebiedsproces Schoonebeek",
     "bestand": "PDF",
@@ -42965,27 +43431,6 @@
     "bestand": "PDF",
     "docId": "fa63394f-ddab-46c2-8c03-b93ee98899c0",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03281"
-   },
-   {
-    "id": "2026D03279",
-    "titel": "Evaluatie Garantieregeling Aardwarmte (RNES)",
-    "bestand": "PDF",
-    "docId": "6155e11d-6872-4b28-bc90-47229dad01c1",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03279"
-   },
-   {
-    "id": "2026D03278",
-    "titel": "Evaluatie SCAN",
-    "bestand": "PDF",
-    "docId": "28b76807-f843-4c4f-b0d2-e62bc3fae4c5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03278"
-   },
-   {
-    "id": "2026D03282",
-    "titel": "Evaluatie Schoonebeek Zorgen voor ontzorgen in Schoonebeek",
-    "bestand": "PDF",
-    "docId": "d546fc70-0e0f-4578-be5d-58af07a56e69",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03282"
    },
    {
     "id": "2026D03277",
@@ -43261,7 +43706,8 @@
     "titel": "Rapport 'Onveiligheid door extreme regen'",
     "bestand": "PDF",
     "docId": "8325e816-6399-4222-80e5-f60f28e7262e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03072"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03072",
+    "rapport": true
    },
    {
     "id": "2026D03073",
@@ -43298,18 +43744,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z01155&did=2026D02732",
   "bijlagen": [
    {
+    "id": "2026D03032",
+    "titel": "TNO-rapport 'Ruimtelijke verkenning duurzaam gebruik ondergrond'",
+    "bestand": "PDF",
+    "docId": "7bfa9714-8a60-492d-a9c0-dba7db6b9b51",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03032",
+    "rapport": true
+   },
+   {
     "id": "2026D02733",
     "titel": "Resultaten van een inwonersraadpleging over het toekomstig gebruik van de diepe ondergrond",
     "bestand": "PDF",
     "docId": "a2e8211e-17dc-42ac-9a58-bfb6be512ecd",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02733"
-   },
-   {
-    "id": "2026D03032",
-    "titel": "TNO-rapport 'Ruimtelijke verkenning duurzaam gebruik ondergrond'",
-    "bestand": "PDF",
-    "docId": "7bfa9714-8a60-492d-a9c0-dba7db6b9b51",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03032"
    },
    {
     "id": "2026D02734",
@@ -43346,6 +43793,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z01108&did=2026D02623",
   "bijlagen": [
    {
+    "id": "2026D02625",
+    "titel": "NEa onderzoek duurzaamheid houtpellets Maleisië",
+    "bestand": "PDF",
+    "docId": "f9a9541f-fa93-400f-ba6b-6bfd804b5e9a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02625",
+    "rapport": true
+   },
+   {
     "id": "2026D02624",
     "titel": "Handhavingsbesluit duurzaamheid houtpellets uit Maleisië",
     "bestand": "PDF",
@@ -43358,13 +43813,6 @@
     "bestand": "PDF",
     "docId": "edab7f4b-1bfd-4d3b-b6eb-2ae577e53304",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02626"
-   },
-   {
-    "id": "2026D02625",
-    "titel": "NEa onderzoek duurzaamheid houtpellets Maleisië",
-    "bestand": "PDF",
-    "docId": "f9a9541f-fa93-400f-ba6b-6bfd804b5e9a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02625"
    },
    {
     "id": "2026D02627",
@@ -43460,21 +43908,24 @@
     "titel": "BuRO advies residuen GBM snijbloemen",
     "bestand": "PDF",
     "docId": "59ecd999-906f-4f92-8946-63623ce6598e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02424"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02424",
+    "rapport": true
    },
    {
     "id": "2026D02426",
     "titel": "BuRO advies residuen GBM snijbloemen. Onderbouwing risicobeoordeling milieu (bodemorganismen en bijen)",
     "bestand": "PDF",
     "docId": "9151fa24-8cf7-43ab-8426-df31b82ceab2",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02426"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02426",
+    "rapport": true
    },
    {
     "id": "2026D02425",
     "titel": "BuRO advies residuen GBM snijbloemen. Onderbouwing risicobeoordeling voor mensen",
     "bestand": "PDF",
     "docId": "9a258a8f-6f11-4fa0-88ad-d13c8c74b6ac",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02425"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02425",
+    "rapport": true
    },
    {
     "id": "2026D02427",
@@ -43708,7 +44159,8 @@
     "titel": "Aankondiging gezamenlijke onafhankelijke evaluatie door KLM en Schiphol",
     "bestand": "PDF",
     "docId": "58b584ae-d68a-4ec8-9d72-1003f13240ad",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02087"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02087",
+    "rapport": true
    },
    {
     "id": "2026D02088",
@@ -43856,6 +44308,22 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z00889&did=2026D02129",
   "bijlagen": [
    {
+    "id": "2026D02132",
+    "titel": "NIL Rapportage Staatsbosbeheer aug 2025",
+    "bestand": "PDF",
+    "docId": "3e1ec6af-b2f6-4d3b-bd51-68f1ccd0db7f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02132",
+    "rapport": true
+   },
+   {
+    "id": "2026D02130",
+    "titel": "Rapport Evaluatie Natuursubsidie Het Kroondomein 2018-2024",
+    "bestand": "PDF",
+    "docId": "d5ed050c-80dd-4cbf-95ea-550d3fa4f12a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02130",
+    "rapport": true
+   },
+   {
     "id": "2026D02131",
     "titel": "Beschermingsstatus moeflon",
     "bestand": "PDF",
@@ -43868,20 +44336,6 @@
     "bestand": "PDF",
     "docId": "4ade2bdc-117c-4d31-87c7-8d3ca34515e1",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02569"
-   },
-   {
-    "id": "2026D02132",
-    "titel": "NIL Rapportage Staatsbosbeheer aug 2025",
-    "bestand": "PDF",
-    "docId": "3e1ec6af-b2f6-4d3b-bd51-68f1ccd0db7f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02132"
-   },
-   {
-    "id": "2026D02130",
-    "titel": "Rapport Evaluatie Natuursubsidie Het Kroondomein 2018-2024",
-    "bestand": "PDF",
-    "docId": "d5ed050c-80dd-4cbf-95ea-550d3fa4f12a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02130"
    },
    {
     "id": "2026D02133",
@@ -44051,6 +44505,22 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z00844&did=2026D02031",
   "bijlagen": [
    {
+    "id": "2026D02047",
+    "titel": "Adviesnota LVB n.a.v aanpassing RMI – in gebruik zijnde baancombinatie",
+    "bestand": "PDF",
+    "docId": "3ea19f02-6825-438a-a90d-3c026a48b34a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02047",
+    "rapport": true
+   },
+   {
+    "id": "2026D02048",
+    "titel": "Economische analyse ten behoeve van LVB Schiphol",
+    "bestand": "PDF",
+    "docId": "3471b157-0e64-4ee4-bb07-212dfff4677a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02048",
+    "rapport": true
+   },
+   {
     "id": "2026D02053",
     "titel": "Aanbiedingsbrief LVNL bij Uitvoeringstoets conceptontwerp LVB",
     "bestand": "PDF",
@@ -44063,13 +44533,6 @@
     "bestand": "PDF",
     "docId": "b4da0d37-4e92-4517-9006-583dec5d4596",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02049"
-   },
-   {
-    "id": "2026D02047",
-    "titel": "Adviesnota LVB n.a.v aanpassing RMI – in gebruik zijnde baancombinatie",
-    "bestand": "PDF",
-    "docId": "3ea19f02-6825-438a-a90d-3c026a48b34a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02047"
    },
    {
     "id": "2026D02032",
@@ -44091,13 +44554,6 @@
     "bestand": "PDF",
     "docId": "98411efb-560b-4f2f-8df9-15a4685f080e",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02034"
-   },
-   {
-    "id": "2026D02048",
-    "titel": "Economische analyse ten behoeve van LVB Schiphol",
-    "bestand": "PDF",
-    "docId": "3471b157-0e64-4ee4-bb07-212dfff4677a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02048"
    },
    {
     "id": "2026D02055",
@@ -44346,7 +44802,8 @@
     "titel": "Rapport 'De Nederlandse agrarische sector in internationaal verband' editie 2026",
     "bestand": "PDF",
     "docId": "3c61b246-0731-45d1-9bf9-f7ca6fad7b7b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01526"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01526",
+    "rapport": true
    },
    {
     "id": "2026D01527",
@@ -44539,18 +44996,27 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z00714&did=2026D01627",
   "bijlagen": [
    {
+    "id": "2026D01630",
+    "titel": "Advies inzake Wet en besluit veilige jaarwisseling",
+    "bestand": "PDF",
+    "docId": "2b48c233-73f0-478e-828c-379c1e797afa",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01630",
+    "rapport": true
+   },
+   {
+    "id": "2026D01632",
+    "titel": "Politie Advies ontwerpbesluit veilige jaarwisseling",
+    "bestand": "PDF",
+    "docId": "949aa87e-c0ee-431d-8106-637467b421a5",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01632",
+    "rapport": true
+   },
+   {
     "id": "2026D01629",
     "titel": "Aanvraag HUF-toets Wet en Besluit veilige jaarwisseling",
     "bestand": "PDF",
     "docId": "8f50e055-a2a2-479f-b346-d5ba65c43a4a",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01629"
-   },
-   {
-    "id": "2026D01630",
-    "titel": "Advies inzake Wet en besluit veilige jaarwisseling",
-    "bestand": "PDF",
-    "docId": "2b48c233-73f0-478e-828c-379c1e797afa",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01630"
    },
    {
     "id": "2026D01628",
@@ -44565,13 +45031,6 @@
     "bestand": "PDF",
     "docId": "44228add-ada1-4864-bc85-243644d86b30",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01634"
-   },
-   {
-    "id": "2026D01632",
-    "titel": "Politie Advies ontwerpbesluit veilige jaarwisseling",
-    "bestand": "PDF",
-    "docId": "949aa87e-c0ee-431d-8106-637467b421a5",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01632"
    },
    {
     "id": "2026D01631",
@@ -45468,7 +45927,8 @@
     "titel": "Advies Subsidieregeling Coöperatieve Energieopwekking 2026",
     "bestand": "PDF",
     "docId": "bf6f0470-2fbf-490f-ab5c-e20ede378fb9",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D00057"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D00057",
+    "rapport": true
    },
    {
     "id": "2026D00058",
@@ -45760,14 +46220,32 @@
     "titel": "Advies mestgezant Knops",
     "bestand": "PDF",
     "docId": "8244427c-c77c-4205-9d76-d0bb9ea4c257",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53673"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53673",
+    "rapport": true
    },
    {
     "id": "2025D53674",
     "titel": "Bemest op z'n Best eindrapportage",
     "bestand": "PDF",
     "docId": "feb9a50c-deca-4a05-b0d9-6bd75809af5e",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53674"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53674",
+    "rapport": true
+   },
+   {
+    "id": "2025D53676",
+    "titel": "Onderzoek SEO betreffende de werking van de mestmarkt",
+    "bestand": "PDF",
+    "docId": "09ed0ebf-edb3-4952-87aa-92faa01d1b34",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53676",
+    "rapport": true
+   },
+   {
+    "id": "2025D53678",
+    "titel": "Rapport N-mineraal en relatie met NO3",
+    "bestand": "PDF",
+    "docId": "6422a5c3-fa16-421a-8093-7076f556afed",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53678",
+    "rapport": true
    },
    {
     "id": "2025D53675",
@@ -45777,25 +46255,11 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53675"
    },
    {
-    "id": "2025D53676",
-    "titel": "Onderzoek SEO betreffende de werking van de mestmarkt",
-    "bestand": "PDF",
-    "docId": "09ed0ebf-edb3-4952-87aa-92faa01d1b34",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53676"
-   },
-   {
     "id": "2025D53677",
     "titel": "Quickscan dierlijke mest groeimedia",
     "bestand": "PDF",
     "docId": "c15e30d9-cae3-427e-b786-36353f248194",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53677"
-   },
-   {
-    "id": "2025D53678",
-    "titel": "Rapport N-mineraal en relatie met NO3",
-    "bestand": "PDF",
-    "docId": "6422a5c3-fa16-421a-8093-7076f556afed",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53678"
    },
    {
     "id": "2025D53679",
@@ -45836,7 +46300,8 @@
     "titel": "Advies over de veiligheidsrisico’s van gereviseerde ~ ion batterijen in consumentenproducten",
     "bestand": "PDF",
     "docId": "81c68775-2329-42c2-b480-a3845356d2eb",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53668"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53668",
+    "rapport": true
    },
    {
     "id": "2025D53667",
@@ -45990,25 +46455,27 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22616&did=2025D53744",
   "bijlagen": [
    {
-    "id": "2025D53747",
-    "titel": "NRD - Programma Bodem Ondergrond en Grondwater",
-    "bestand": "PDF",
-    "docId": "e87fc07f-12cf-47aa-90a7-b2100201586d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53747"
-   },
-   {
     "id": "2025D53745",
     "titel": "Oplegnotitie rapport analyse potentie nazorg en stortlocaties Nederland",
     "bestand": "PDF",
     "docId": "80ea9c6e-947a-43fa-8a6b-495024c2928b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53745"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53745",
+    "rapport": true
    },
    {
     "id": "2025D53746",
     "titel": "Rapport analyse potentie nazorg en stortlocaties Nederland revisie 02 - definitief",
     "bestand": "PDF",
     "docId": "a136e872-ff78-4905-b9be-d945ab14a242",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53746"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53746",
+    "rapport": true
+   },
+   {
+    "id": "2025D53747",
+    "titel": "NRD - Programma Bodem Ondergrond en Grondwater",
+    "bestand": "PDF",
+    "docId": "e87fc07f-12cf-47aa-90a7-b2100201586d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53747"
    },
    {
     "id": "2025D53748",
@@ -46056,7 +46523,8 @@
     "titel": "Eindrapport Werkgroep Afvalsector 18 december 2025",
     "bestand": "PDF",
     "docId": "eb0ffe5c-c14d-49fb-ae67-2186c38302b4",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53628"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53628",
+    "rapport": true
    },
    {
     "id": "2025D53629",
@@ -46296,7 +46764,24 @@
     "titel": "Adviesdocumenten van stakeholders Actieagenda Industrie en Omwonenden",
     "bestand": "PDF",
     "docId": "97426d7c-e070-45ae-b3f6-3637a49bfa3f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53651"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53651",
+    "rapport": true
+   },
+   {
+    "id": "2025D53653",
+    "titel": "Onderzoek RIVM Gezondheid en leefomgeving rondom Chemelot",
+    "bestand": "PDF",
+    "docId": "997d5ff7-67a0-442c-af06-14b35b9a7c86",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53653",
+    "rapport": true
+   },
+   {
+    "id": "2025D53650",
+    "titel": "Onderzoeken Actieagenda Industrie en Omwonenden",
+    "bestand": "PDF",
+    "docId": "62ac81ed-6fe8-4fbd-bedf-baca5f8a83e6",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53650",
+    "rapport": true
    },
    {
     "id": "2025D53652",
@@ -46304,20 +46789,6 @@
     "bestand": "PDF",
     "docId": "966c8328-8236-497b-ac07-6b4b23135d63",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53652"
-   },
-   {
-    "id": "2025D53653",
-    "titel": "Onderzoek RIVM Gezondheid en leefomgeving rondom Chemelot",
-    "bestand": "PDF",
-    "docId": "997d5ff7-67a0-442c-af06-14b35b9a7c86",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53653"
-   },
-   {
-    "id": "2025D53650",
-    "titel": "Onderzoeken Actieagenda Industrie en Omwonenden",
-    "bestand": "PDF",
-    "docId": "62ac81ed-6fe8-4fbd-bedf-baca5f8a83e6",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53650"
    },
    {
     "id": "2025D53654",
@@ -46392,7 +46863,8 @@
     "titel": "Rapport OSART Kerncentrale Borssele",
     "bestand": "PDF",
     "docId": "dcbec09a-3065-48ed-a817-d4dda62caff7",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53783"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53783",
+    "rapport": true
    },
    {
     "id": "2025D53784",
@@ -46433,21 +46905,24 @@
     "titel": "Vervolgonderzoek bedrijfstypen onderzoek BeknopteVerkenningMacro-ontwikkelingenInvloedLandbouw_WSER",
     "bestand": "PDF",
     "docId": "a88cf287-8e40-4a07-9f94-3c9ee3a1ca17",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53774"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53774",
+    "rapport": true
    },
    {
     "id": "2025D53775",
     "titel": "Vervolgonderzoek bedrijfstypen onderzoek Hoe kan het wel Interactieve",
     "bestand": "PDF",
     "docId": "6f1af04e-09a2-4da4-9ce8-b24a13890aa0",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53775"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53775",
+    "rapport": true
    },
    {
     "id": "2025D53773",
     "titel": "Vervolgonderzoek bedrijfstypen onderzoeken 2025-59_WSER rapport Het optimaliseren van beleidsinstrumenten om",
     "bestand": "PDF",
     "docId": "ffc4e653-8f8d-48ab-b01a-bc2078ccd64b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53773"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53773",
+    "rapport": true
    },
    {
     "id": "2025D53772",
@@ -46491,6 +46966,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22630&did=2025D53799",
   "bijlagen": [
    {
+    "id": "2025D53802",
+    "titel": "Monitoring Chemische Recycling Projecten 2025. Ontwikkeling projecten in Nederland in 2025",
+    "bestand": "PDF",
+    "docId": "bd54b218-2f3b-4a7c-9d2e-ae2b5a6900f2",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53802",
+    "rapport": true
+   },
+   {
     "id": "2025D53801",
     "titel": "Joint Statement on the necessity of measures supporting the plastics recycling sector. Supported by Austria, Belgium, France, Luxembourg, Spain and the Netherlands",
     "bestand": "PDF",
@@ -46503,13 +46986,6 @@
     "bestand": "PDF",
     "docId": "bbc858cd-a309-4ca7-826e-595e3b4aa35b",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53800"
-   },
-   {
-    "id": "2025D53802",
-    "titel": "Monitoring Chemische Recycling Projecten 2025. Ontwikkeling projecten in Nederland in 2025",
-    "bestand": "PDF",
-    "docId": "bd54b218-2f3b-4a7c-9d2e-ae2b5a6900f2",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53802"
    },
    {
     "id": "2025D53803",
@@ -46737,7 +47213,8 @@
     "titel": "Rapport 'De invloed van overheidsbeleid op energiearmoede. Een doorrekening van het effect van beleidsmaatregelen op de korte en lange termijn'",
     "bestand": "PDF",
     "docId": "0e1d50aa-02d1-4bb9-b898-7fd9c24eaf0b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53078"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53078",
+    "rapport": true
    },
    {
     "id": "2025D53079",
@@ -46812,14 +47289,16 @@
     "titel": "Monitoring aardgaswinning onder de Waddenzee vanaf de locaties Moddergat, Lauwersoog en Vierhuizen. Advies Auditcommissie over de resultaten van het monitoringsjaar 2024",
     "bestand": "PDF",
     "docId": "11a6bbd2-b461-4c2b-a5a4-8cbbf75814a0",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53214"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53214",
+    "rapport": true
    },
    {
     "id": "2025D53215",
     "titel": "Zoutwinning Waddenzee. Advies Auditcommissie over monitoringsjaar 2024",
     "bestand": "PDF",
     "docId": "7d2aae71-7c4c-4124-a1a5-64a1d0e6b6d0",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53215"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53215",
+    "rapport": true
    },
    {
     "id": "2025D53216",
@@ -46957,14 +47436,24 @@
     "titel": "Evaluatie aanscherping energiebesparingsplicht",
     "bestand": "PDF",
     "docId": "aef5250c-868d-4a4f-80c1-399b199e627b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52973"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52973",
+    "rapport": true
    },
    {
     "id": "2025D52976",
     "titel": "Impact-van-versnelde-omschakeling-naar-100-procent-led-verlichting-in-2030-berenschot-rapport",
     "bestand": "PDF",
     "docId": "29d8e27f-ed2e-40d4-9d19-204548b65658",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52976"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52976",
+    "rapport": true
+   },
+   {
+    "id": "2025D52975",
+    "titel": "Rapport energiebesparingsvoorwaarde bij subsidies",
+    "bestand": "PDF",
+    "docId": "63068971-e562-4f39-b419-f94004156b3d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52975",
+    "rapport": true
    },
    {
     "id": "2025D52974",
@@ -46972,13 +47461,6 @@
     "bestand": "PDF",
     "docId": "8a7562d8-aad6-4958-bfbd-59f6d8b9e3d9",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52974"
-   },
-   {
-    "id": "2025D52975",
-    "titel": "Rapport energiebesparingsvoorwaarde bij subsidies",
-    "bestand": "PDF",
-    "docId": "63068971-e562-4f39-b419-f94004156b3d",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52975"
    },
    {
     "id": "2025D52977",
@@ -47538,7 +48020,8 @@
     "titel": "Monitoring luchtkwaliteit 2025. Stand van zaken luchtkwaliteit Nederland",
     "bestand": "PDF",
     "docId": "890abed7-d691-4886-87d7-a58f964d2886",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52590"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52590",
+    "rapport": true
    },
    {
     "id": "2025D52591",
@@ -47579,7 +48062,8 @@
     "titel": "Brief aan CARE Nederland over het rapport 'Climate Finance Shadow Report 2025'",
     "bestand": "PDF",
     "docId": "5c4b5eb4-34f2-4b0d-9d38-a85ac9d4eaeb",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52117"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52117",
+    "rapport": true
    },
    {
     "id": "2025D52118",
@@ -47668,21 +48152,24 @@
     "titel": "Monitoring IG-implementatieplan",
     "bestand": "PDF",
     "docId": "8fa0387d-0a39-4528-929e-0bca37045927",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52091"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52091",
+    "rapport": true
    },
    {
     "id": "2025D52089",
     "titel": "Rapport Genetisch gemodificeerde organismen onderweg",
     "bestand": "PDF",
     "docId": "9ba1e02b-d182-4e3a-b5a8-038e658f3a60",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52089"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52089",
+    "rapport": true
    },
    {
     "id": "2025D52090",
     "titel": "Rapport Verbranding van ggo-afval",
     "bestand": "PDF",
     "docId": "7d8628b4-2386-43f0-a15b-2094899da298",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52090"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52090",
+    "rapport": true
    },
    {
     "id": "2025D52092",
@@ -47761,6 +48248,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22035&did=2025D52097",
   "bijlagen": [
    {
+    "id": "2025D52099",
+    "titel": "Ontwikkeling recreatieve bebouwing in de kustzone. Onderzoek naar omvang van verschillende typen recreatief vastgoed in de kustzone van Nederland tussen 2017 en 2024",
+    "bestand": "PDF",
+    "docId": "83f2ef7f-bfb3-42ac-a539-c5e00c21f64a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52099",
+    "rapport": true
+   },
+   {
     "id": "2025D52100",
     "titel": "Hoe beleven Nederlanders de Noordzeekust?",
     "bestand": "PDF",
@@ -47773,13 +48268,6 @@
     "bestand": "PDF",
     "docId": "084303e0-4924-4ad8-ae2f-62b11696af6c",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52098"
-   },
-   {
-    "id": "2025D52099",
-    "titel": "Ontwikkeling recreatieve bebouwing in de kustzone. Onderzoek naar omvang van verschillende typen recreatief vastgoed in de kustzone van Nederland tussen 2017 en 2024",
-    "bestand": "PDF",
-    "docId": "83f2ef7f-bfb3-42ac-a539-c5e00c21f64a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52099"
    },
    {
     "id": "2025D52101",
@@ -48533,14 +49021,16 @@
     "titel": "Rapport Biohuis Toegankelijkheid financiële regelingen en regeldruk voor biologische boeren en tuinders",
     "bestand": "PDF",
     "docId": "0f2bcffd-5266-4aab-8d4b-923a5926540b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51355"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51355",
+    "rapport": true
    },
    {
     "id": "2025D51354",
     "titel": "Rapport RVO 'Iedere boer telt'",
     "bestand": "PDF",
     "docId": "2a310d71-7106-489f-abe9-b8ee4b26f828",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51354"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51354",
+    "rapport": true
    },
    {
     "id": "2025D51356",
@@ -48639,6 +49129,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z21672&did=2025D51257",
   "bijlagen": [
    {
+    "id": "2025D51258",
+    "titel": "Inspectie Leefomgeving en Transport rapportage Drinkwaterkwaliteit 2024",
+    "bestand": "PDF",
+    "docId": "daa5ddd8-bd28-410f-8dfd-cb3f43bd478c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51258",
+    "rapport": true
+   },
+   {
     "id": "2025D51259",
     "titel": "Bedrijfsverslag 2024 BW",
     "bestand": "PDF",
@@ -48707,13 +49205,6 @@
     "bestand": "PDF",
     "docId": "fe1d37ea-fa38-426b-a66e-c9324670b872",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52344"
-   },
-   {
-    "id": "2025D51258",
-    "titel": "Inspectie Leefomgeving en Transport rapportage Drinkwaterkwaliteit 2024",
-    "bestand": "PDF",
-    "docId": "daa5ddd8-bd28-410f-8dfd-cb3f43bd478c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51258"
    },
    {
     "id": "2025D51268",
@@ -48788,14 +49279,16 @@
     "titel": "Advies Commissie van Rijn uitwerking Woontop-afspraak NPRZ",
     "bestand": "PDF",
     "docId": "b960200f-5258-47d5-b5d5-ed2cd19f827f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51108"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51108",
+    "rapport": true
    },
    {
     "id": "2025D51109",
     "titel": "Samenvatting advies Commissie van Rijn – uitwerking procesafspraak NPRZ Woontop 2024",
     "bestand": "PDF",
     "docId": "1f3cc128-8bea-4edb-b460-c7dbcf81601b",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51109"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51109",
+    "rapport": true
    },
    {
     "id": "2025D51110",
@@ -48888,6 +49381,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z21525&did=2025D50949",
   "bijlagen": [
    {
+    "id": "2025D50952",
+    "titel": "Speciaal Rapport over de aardbeving bij Zeerijp op 14 november 2025",
+    "bestand": "PDF",
+    "docId": "ca80e1fe-500c-4a1d-a3e0-b6118b65c198",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D50952",
+    "rapport": true
+   },
+   {
     "id": "2025D50951",
     "titel": "Brief van het SodM over aardbeving Zeerijp",
     "bestand": "PDF",
@@ -48900,13 +49401,6 @@
     "bestand": "PDF",
     "docId": "62ee017a-a76e-43b8-aa39-563cdfaf480b",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D50950"
-   },
-   {
-    "id": "2025D50952",
-    "titel": "Speciaal Rapport over de aardbeving bij Zeerijp op 14 november 2025",
-    "bestand": "PDF",
-    "docId": "ca80e1fe-500c-4a1d-a3e0-b6118b65c198",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D50952"
    },
    {
     "id": "2025D50953",
@@ -49959,18 +50453,19 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z20985&did=2025D49562",
   "bijlagen": [
    {
+    "id": "2025D49563",
+    "titel": "Advies voor de governance van maritime security op de Noordzee",
+    "bestand": "PDF",
+    "docId": "6e999fb7-415d-4489-8144-a7c1c0086bdc",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49563",
+    "rapport": true
+   },
+   {
     "id": "2025D49564",
     "titel": "Actieplan Strategie ter bescherming Noordzee infrastructuur",
     "bestand": "PDF",
     "docId": "6197c587-5921-47bb-b900-152b39e82db9",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49564"
-   },
-   {
-    "id": "2025D49563",
-    "titel": "Advies voor de governance van maritime security op de Noordzee",
-    "bestand": "PDF",
-    "docId": "6e999fb7-415d-4489-8144-a7c1c0086bdc",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49563"
    },
    {
     "id": "2025D49565",
@@ -50188,7 +50683,8 @@
     "titel": "RIVM Rapport 'Inventarisatie en prioritering van PFAS-bronnen anders van voedsel en drinkwater'",
     "bestand": "PDF",
     "docId": "3451fab7-28f3-414a-a39b-5eaa257dfd1c",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49341"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49341",
+    "rapport": true
    },
    {
     "id": "2025D49342",
@@ -50248,14 +50744,16 @@
     "titel": "Advies Nationaal Burgerberaad Klimaat",
     "bestand": "PDF",
     "docId": "e0b267f2-e73d-49e3-9acb-004239d6f4ec",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49227"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49227",
+    "rapport": true
    },
    {
     "id": "2025D49228",
     "titel": "CE Delft - Impactanalyse advies Nationaal Burgerberaad Klimaat",
     "bestand": "PDF",
     "docId": "6b32dd4a-8d3d-46ca-be37-4cb8c2193d37",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49228"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49228",
+    "rapport": true
    },
    {
     "id": "2025D49229",
@@ -50352,7 +50850,8 @@
     "titel": "Onafhankelijk advies LNG-project Mozambique",
     "bestand": "PDF",
     "docId": "b2d3cf4b-a75c-44c0-9a1a-c2ee8dcae89f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49396"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49396",
+    "rapport": true
    },
    {
     "id": "2025D49397",
@@ -51030,32 +51529,35 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z20476&did=2025D48254",
   "bijlagen": [
    {
-    "id": "2025D48257",
-    "titel": "Dierenwelzijn in de Textielsector",
-    "bestand": "PDF",
-    "docId": "656b6508-204d-4020-a855-1ed024e2b18f",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D48257"
-   },
-   {
     "id": "2025D48255",
     "titel": "Monitoringsystematiek beleidsprogramma circulair textiel",
     "bestand": "PDF",
     "docId": "f3ede610-c1e9-4333-b4b1-a1f39985b282",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D48255"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D48255",
+    "rapport": true
    },
    {
     "id": "2025D48258",
     "titel": "Onderzoek \"Verplichte Retourkosten op Textiel\"",
     "bestand": "PDF",
     "docId": "d61af331-9a1c-4378-8382-f1fadf1ec3c4",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D48258"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D48258",
+    "rapport": true
    },
    {
     "id": "2025D48256",
     "titel": "Resultaten en duiding Monitor Circulair Textiel 2023",
     "bestand": "PDF",
     "docId": "81097421-ef7f-456e-a552-7c98699008d2",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D48256"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D48256",
+    "rapport": true
+   },
+   {
+    "id": "2025D48257",
+    "titel": "Dierenwelzijn in de Textielsector",
+    "bestand": "PDF",
+    "docId": "656b6508-204d-4020-a855-1ed024e2b18f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D48257"
    },
    {
     "id": "2025D48259",
@@ -51475,7 +51977,8 @@
     "titel": "Verkenning effectievere stimulering duurzame warmte",
     "bestand": "PDF",
     "docId": "bd3d7eaf-a64b-4762-b72b-0c0644b9f6ad",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D47737"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D47737",
+    "rapport": true
    },
    {
     "id": "2025D47738",
@@ -52131,7 +52634,8 @@
     "titel": "Rapport Energiemonitor Glastuinbouw 2024",
     "bestand": "PDF",
     "docId": "9d4930d2-4b89-4397-b289-802a43e9f87a",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D47354"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D47354",
+    "rapport": true
    },
    {
     "id": "2025D47355",
@@ -52470,6 +52974,14 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z19937&did=2025D46781",
   "bijlagen": [
    {
+    "id": "2025D46783",
+    "titel": "Verkenning Financieel-economische omgang met bedrijvigheid in grootschalige woningbouwgebieden",
+    "bestand": "PDF",
+    "docId": "7a27f534-cc20-439c-a930-3025776f1302",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D46783",
+    "rapport": true
+   },
+   {
     "id": "2025D46784",
     "titel": "Financieel-economische omgang met bedrijvigheid in grootschalige woningbouwgebieden (Bijlagen)",
     "bestand": "PDF",
@@ -52482,13 +52994,6 @@
     "bestand": "PDF",
     "docId": "e854d6f4-cfa7-4a2c-998b-3fe4245ae07d",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D46782"
-   },
-   {
-    "id": "2025D46783",
-    "titel": "Verkenning Financieel-economische omgang met bedrijvigheid in grootschalige woningbouwgebieden",
-    "bestand": "PDF",
-    "docId": "7a27f534-cc20-439c-a930-3025776f1302",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D46783"
    },
    {
     "id": "2025D46785",
@@ -52631,7 +53136,8 @@
     "titel": "Rapport Ruimte voor Zeespiegelstijging 2",
     "bestand": "PDF",
     "docId": "a0966edb-aa14-4820-a035-3002ad4f0d32",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D46434"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D46434",
+    "rapport": true
    },
    {
     "id": "2025D46435",
@@ -52672,7 +53178,8 @@
     "titel": "Op weg naar het Energiehuis. Onderzoek naar ondersteuningsaanbod verduurzaming gebouwde omgeving",
     "bestand": "PDF",
     "docId": "6af1c502-2fd1-44ce-b933-324c4922a055",
-    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D46400"
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D46400",
+    "rapport": true
    },
    {
     "id": "2025D46399",

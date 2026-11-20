@@ -432,6 +432,16 @@ def bestandssoort(content_type):
     return BESTANDSSOORT.get((content_type or "").split(";")[0].strip())
 
 
+RAPPORT = CONFIG.get("rapporten") or {}
+RAPPORT_RE = re.compile(RAPPORT.get("titel") or r"(?!)", re.I)
+RAPPORT_NIET = [re.compile(p, re.I) for p in RAPPORT.get("uitsluiten") or []]
+
+
+def is_rapport(titel):
+    """Kandidaat voor de pagina Rapporten (config.json, rapporten); Claude beoordeelt ze in data/rapporten.json."""
+    return bool(RAPPORT_RE.search(titel)) and not any(p.search(titel) for p in RAPPORT_NIET)
+
+
 def bijlagen(d):
     """Bijlagen bij een Kamerbrief of antwoord (beslisnota, rapporten, analyses), met een downloadlink."""
     uit = []
@@ -443,7 +453,10 @@ def bijlagen(d):
                     "bestand": bestandssoort(b.get("ContentType")),
                     "docId": b.get("Id"),
                     "link": f"https://www.tweedekamer.nl/downloads/document?id={b['DocumentNummer']}"})
-    return sorted(uit, key=lambda x: (x["titel"].lower().startswith("beslisnota"), x["titel"].lower()))
+        if is_rapport(uit[-1]["titel"]):
+            uit[-1]["rapport"] = True
+    # rapporten eerst, beslisnota's achteraan
+    return sorted(uit, key=lambda x: (x["titel"].lower().startswith("beslisnota"), not x.get("rapport"), x["titel"].lower()))
 
 
 def ministerie_uit_functie(functie):

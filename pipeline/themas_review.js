@@ -21,7 +21,7 @@ function laad() {
   const data = {
     zaken: lees("data/tk/zaken.json", []), stukken: lees("data/tk/stukken.json", []), activiteiten: lees("data/tk/activiteiten.json", []),
     debatten: lees("data/debatten.json", { debatten: [] }).debatten, agenda: lees("data/agenda.json", { items: [] }).items,
-    kerndocumenten: lees("data/kerndocumenten.json", {}), begrotingen: lees("data/tk/begrotingen.json", []),
+    kerndocumenten: lees("data/kerndocumenten.json", {}), begrotingen: lees("data/tk/begrotingen.json", []), rapporten: lees("data/rapporten.json", {}),
   };
   const mapping = lees(MAP_PAD, {});
   return { data, mapping, T: M.maak(lees("data/themas.json", {}), mapping) };
@@ -39,7 +39,8 @@ const SOORT_NAAM = Object.fromEntries(M.SOORTEN.map((s) => [s.code, s.groep]));
 
 function exporteer(alleenNieuw) {
   const { data, mapping, T } = laad();
-  const items = M.bronItems(data).filter((x) => !alleenNieuw || !mapping[x.sleutel]);
+  // rapporten uit bijlagen krijgen hun thema's bij de beoordeling in data/rapporten.json (agent_docs/rapporten.md)
+  const items = M.bronItems(data).filter((x) => !x.sleutel.startsWith("kerndoc:rapport-") && (!alleenNieuw || !mapping[x.sleutel]));
   // dubbele sleutels (een geplande vergadering die ook als uitgevoerd voorkomt) maar één keer
   const gezien = new Set();
   const rijen = [];

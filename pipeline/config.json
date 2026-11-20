@@ -683,5 +683,15 @@
       "XXII",
       "VII"
     ]
+  },
+  "rapporten": {
+    "_uitleg": "Bijlagen bij Kamerbrieven die op een rapport lijken (onderzoek, evaluatie, advies, monitor). fetch_tk.py zet bij zo'n bijlage rapport: true; de site toont dan het label Met rapport bij de brief. Claude beoordeelt de kandidaten in data/rapporten.json (criteria: agent_docs/rapporten.md); alleen goedgekeurde staan op de pagina Rapporten. Regex, hoofdletterongevoelig, op de titel van de bijlage.",
+    "titel": "\\b(rapport|rapportage|eindrapport|onderzoek|evaluatie|ibo|doorrekening|monitor|analyse|verkenning|advies|studie|balans)",
+    "uitsluiten": [
+      "beslisnota",
+      "^reactie op",
+      "^kabinetsreactie",
+      "^antwoord"
+    ]
   }
 }

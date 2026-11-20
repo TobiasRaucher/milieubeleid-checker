@@ -4,12 +4,12 @@
   "nummer": "2026Z25622",
   "soort": "Motie",
   "titel": "Landbouw- en Visserijraad",
-  "onderwerp": "Motie van de leden Stöteler en Chris Jansen",
+  "onderwerp": "Motie van de leden Stöteler en Chris Jansen over de voorwaarden voor beroepsvissers ten aanzien van het wegvangen van invasieve rivierkreeften alsnog versoepelen ",
   "citeertitel": null,
   "gestartOp": "2026-11-19",
   "vergaderjaar": "2026-2027",
   "afgedaan": true,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -36,24 +36,131 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-19",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     }
+    ]
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-19",
     "stemmen": []
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 126,
+   "tegen": 24,
+   "datum": "2026-11-19"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
   "document": "2026D59231",
   "docId": "f1783b0f-f0f6-4a77-926e-37cc34ed1fa4",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 1857,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25622&did=2026D59231",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25622"
@@ -63,12 +170,12 @@
   "nummer": "2026Z25621",
   "soort": "Motie",
   "titel": "Landbouw- en Visserijraad",
-  "onderwerp": "Motie van de leden Kröger en Bromet",
+  "onderwerp": "Motie van de leden Kröger en Bromet over voor de inspectiemissie van UNESCO informeren hoe de daling van de zeehondenpopulatie in de Waddenzee tegen kan worden gegaan",
   "citeertitel": null,
   "gestartOp": "2026-11-19",
   "vergaderjaar": "2026-2027",
   "afgedaan": true,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -95,24 +202,131 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-19",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     }
+    ]
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-19",
     "stemmen": []
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 108,
+   "tegen": 42,
+   "datum": "2026-11-19"
+  },
   "sectoren": [
-   "natuur-stikstof-landbouw"
+   "water-adaptatie"
   ],
   "document": "2026D59230",
   "docId": "d6387a92-9f77-4508-9b34-930c67e51fe7",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 1856,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25621&did=2026D59230",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25621"
@@ -122,12 +336,12 @@
   "nummer": "2026Z25620",
   "soort": "Motie",
   "titel": "Landbouw- en Visserijraad",
-  "onderwerp": "Motie van het lid Van der Plas",
+  "onderwerp": "Motie van het lid Van der Plas over ook voor de actieve vistuigen SumWing en innovatieve visborden toegang tot MFK-middelen voor verduurzaming verkrijgen ",
   "citeertitel": null,
   "gestartOp": "2026-11-19",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Verzocht motie aan te houden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -145,8 +359,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
     "stemmingssoort": null,
     "datum": "2026-11-19",
     "stemmen": []
@@ -162,11 +376,11 @@
   "uitslag": "aangehouden",
   "stemtelling": null,
   "sectoren": [
-   "natuur-stikstof-landbouw"
+   "klimaat-energie"
   ],
   "document": "2026D59229",
   "docId": "2645626d-23d9-4e7f-b439-3be8d44fd11f",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 1855,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25620&did=2026D59229",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25620"
@@ -1128,8 +1342,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1142,7 +1356,7 @@
   ],
   "document": "2026D58358",
   "docId": "374cecb3-7d62-414b-b3aa-90be4c9a5fea",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 23,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25252&did=2026D58358",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25252",
@@ -1231,8 +1445,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1245,7 +1459,7 @@
   ],
   "document": "2026D58350",
   "docId": "2007d511-eaec-4d70-8044-29f727883540",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 15,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25244&did=2026D58350",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25244",
@@ -1279,8 +1493,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1326,8 +1540,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1340,7 +1554,7 @@
   ],
   "document": "2026D58356",
   "docId": "1a3c826d-7f2c-4a67-bed4-06285b126c42",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 21,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25250&did=2026D58356",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25250"
@@ -1383,8 +1597,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1397,7 +1611,7 @@
   ],
   "document": "2026D58343",
   "docId": "1a49c3d2-4341-40a7-a21c-879a68af11c9",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 10,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25237&did=2026D58343",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25237"
@@ -1430,8 +1644,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1444,7 +1658,7 @@
   ],
   "document": "2026D58357",
   "docId": "20f51a2a-3a68-42f1-8af8-cbb229964184",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 22,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25251&did=2026D58357",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25251"
@@ -1477,8 +1691,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1491,7 +1705,7 @@
   ],
   "document": "2026D58354",
   "docId": "d3bc6549-6cba-4374-bcac-d7a33decd9e8",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 19,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25248&did=2026D58354",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25248"
@@ -1524,8 +1738,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1538,7 +1752,7 @@
   ],
   "document": "2026D58355",
   "docId": "3e2f7112-c5c3-4689-a333-4a18e2658f03",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 20,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25249&did=2026D58355",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25249"
@@ -1586,8 +1800,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1600,7 +1814,7 @@
   ],
   "document": "2026D58349",
   "docId": "521cb883-d7c2-4c32-9aca-71e108511e3f",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 14,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25243&did=2026D58349",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25243"
@@ -1648,8 +1862,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1662,7 +1876,7 @@
   ],
   "document": "2026D58348",
   "docId": "2f6cae1d-eee3-438e-9590-f91a75e1e326",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 13,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25242&did=2026D58348",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25242"
@@ -1710,8 +1924,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1724,7 +1938,7 @@
   ],
   "document": "2026D58342",
   "docId": "07de21f4-d9cc-4f75-a6cb-49814f2d9234",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 9,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25236&did=2026D58342",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25236"
@@ -1767,8 +1981,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1781,7 +1995,7 @@
   ],
   "document": "2026D58347",
   "docId": "433434c3-67dd-4518-a644-4cb028b838a9",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 12,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25241&did=2026D58347",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25241"
@@ -1814,8 +2028,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1828,7 +2042,7 @@
   ],
   "document": "2026D58360",
   "docId": "b88a8c07-34eb-4529-83a5-54c01658e52c",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 25,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25254&did=2026D58360",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25254"
@@ -1881,8 +2095,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1895,7 +2109,7 @@
   ],
   "document": "2026D58351",
   "docId": "0efc9fd6-db6a-4858-89a7-20441770f968",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 16,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25245&did=2026D58351",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25245"
@@ -1938,8 +2152,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1952,7 +2166,7 @@
   ],
   "document": "2026D58352",
   "docId": "9212f972-933f-45cf-ba36-dbbface0e4dd",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 17,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25246&did=2026D58352",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25246"
@@ -1985,8 +2199,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-16",
     "stemmen": []
@@ -1999,7 +2213,7 @@
   ],
   "document": "2026D58359",
   "docId": "79e4dad2-997c-4afc-9b97-87ea638375e2",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 24,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z25253&did=2026D58359",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25253"
@@ -51225,8 +51439,8 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Agenderen - plenair debat",
+    "tekst": "Agenderen voor plenair debat.",
     "stemmingssoort": null,
     "datum": "2026-11-19",
     "stemmen": []

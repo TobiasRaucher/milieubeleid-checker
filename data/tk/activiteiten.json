@@ -162,7 +162,7 @@
     "onderwerp": "Inwerkingtreding algehele wijziging Luchthavenverkeerbesluit Schiphol",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "29665-665",
       "soort": "Brief regering",
       "datum": "2026-11-02",
       "onderwerp": "Inwerkingtreding algehele wijziging Luchthavenverkeerbesluit Schiphol",
@@ -1585,6 +1585,68 @@
   ]
  },
  {
+  "Id": "01e45305-4913-4974-9adc-21688ffe164f",
+  "Nummer": "2026A08292",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+  "Datum": "2026-12-08T14:00:00+01:00",
+  "Aanvangstijd": "2026-12-08T14:00:00+01:00",
+  "Eindtijd": "2026-12-08T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
+  "Voortouwafkorting": "I&W",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+    "stukken": []
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08292",
+  "sectoren": [
+   "water-adaptatie"
+  ]
+ },
+ {
+  "Id": "ba1c34f2-b868-471f-9b61-48a8273f8ab1",
+  "Nummer": "2026A08290",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+  "Datum": "2026-12-08T14:00:00+01:00",
+  "Aanvangstijd": "2026-12-08T14:00:00+01:00",
+  "Eindtijd": "2026-12-08T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
+  "Voortouwafkorting": "I&W",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+    "stukken": []
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08290",
+  "sectoren": [
+   "water-adaptatie"
+  ]
+ },
+ {
   "Id": "01eb07b5-7f0e-4024-b65f-31059d1c4b98",
   "Nummer": "2026A08608",
   "Soort": "Inbreng feitelijke vragen",
@@ -2406,68 +2468,6 @@
   ]
  },
  {
-  "Id": "01e45305-4913-4974-9adc-21688ffe164f",
-  "Nummer": "2026A08292",
-  "Soort": "Inbreng feitelijke vragen",
-  "Onderwerp": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-  "Datum": "2026-11-26T14:00:00+01:00",
-  "Aanvangstijd": "2026-11-26T14:00:00+01:00",
-  "Eindtijd": "2026-11-26T14:00:00+01:00",
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
-  "Voortouwafkorting": "I&W",
-  "Besloten": true,
-  "Noot": null,
-  "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-    "stukken": []
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [],
-  "zaal": null,
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08292",
-  "sectoren": [
-   "water-adaptatie"
-  ]
- },
- {
-  "Id": "ba1c34f2-b868-471f-9b61-48a8273f8ab1",
-  "Nummer": "2026A08290",
-  "Soort": "Inbreng feitelijke vragen",
-  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-  "Datum": "2026-11-26T14:00:00+01:00",
-  "Aanvangstijd": "2026-11-26T14:00:00+01:00",
-  "Eindtijd": "2026-11-26T14:00:00+01:00",
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
-  "Voortouwafkorting": "I&W",
-  "Besloten": true,
-  "Noot": null,
-  "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-    "stukken": []
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [],
-  "zaal": null,
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08290",
-  "sectoren": [
-   "water-adaptatie"
-  ]
- },
- {
   "Id": "4af3dda6-d233-4bd3-81ce-9f0d385a4075",
   "Nummer": "2026A06447",
   "Soort": "Commissiedebat",
@@ -2623,7 +2623,7 @@
     "onderwerp": "Voornemen tot overleg met Kavel 10 over de Basisvoorziening Beeldmateriaal",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "29435-324",
       "soort": "Brief regering",
       "datum": "2026-11-02",
       "onderwerp": "Voornemen tot overleg met Kavel 10 over de Basisvoorziening Beeldmateriaal",
@@ -3857,7 +3857,7 @@
   "Aanvangstijd": "2026-11-19T10:15:00+01:00",
   "Eindtijd": "2026-11-19T10:40:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "TK",
   "Voortouwafkorting": "TK",
   "Besloten": false,
@@ -3887,7 +3887,7 @@
       "kamerstuk": "21501-32-1857",
       "soort": "Motie",
       "datum": "2026-11-19",
-      "onderwerp": "Motie van de leden Stöteler en Chris Jansen",
+      "onderwerp": "Motie van de leden Stöteler en Chris Jansen over de voorwaarden voor beroepsvissers ten aanzien van het wegvangen van invasieve rivierkreeften alsnog versoepelen ",
       "ondertekenaar": "T.S.M. Stöteler",
       "functie": "Tweede Kamerlid",
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25622&did=2026D59231"
@@ -3896,7 +3896,7 @@
       "kamerstuk": "21501-32-1856",
       "soort": "Motie",
       "datum": "2026-11-19",
-      "onderwerp": "Motie van de leden Kröger en Bromet",
+      "onderwerp": "Motie van de leden Kröger en Bromet over voor de inspectiemissie van UNESCO informeren hoe de daling van de zeehondenpopulatie in de Waddenzee tegen kan worden gegaan",
       "ondertekenaar": "S.C. Kröger",
       "functie": "Tweede Kamerlid",
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25621&did=2026D59230"
@@ -3905,7 +3905,7 @@
       "kamerstuk": "21501-32-1855",
       "soort": "Motie",
       "datum": "2026-11-19",
-      "onderwerp": "Motie van het lid Van der Plas",
+      "onderwerp": "Motie van het lid Van der Plas over ook voor de actieve vistuigen SumWing en innovatieve visborden toegang tot MFK-middelen voor verduurzaming verkrijgen ",
       "ondertekenaar": "C.A.M. van der Plas",
       "functie": "Tweede Kamerlid",
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25620&did=2026D59229"
@@ -3913,17 +3913,17 @@
     ]
    }
   ],
-  "bewindspersonen": [],
+  "bewindspersonen": [
+   {
+    "naam": "S.P.A. Erkens",
+    "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur"
+   }
+  ],
   "voorzitter": null,
   "deelnemers": [
    {
     "naam": "C.A.M. van der Plas",
     "fractie": "BBB",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "A. Podt",
-    "fractie": "D66",
     "functie": "Tweede Kamerlid"
    },
    {
@@ -3934,6 +3934,11 @@
    {
     "naam": "T.S.M. Stöteler",
     "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Podt",
+    "fractie": "D66",
     "functie": "Tweede Kamerlid"
    }
   ],
@@ -3952,7 +3957,7 @@
   "Aanvangstijd": "2026-11-19T10:00:00+01:00",
   "Eindtijd": "2026-11-19T13:00:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
   "Voortouwafkorting": "I&W",
   "Besloten": false,
@@ -4012,7 +4017,43 @@
    }
   ],
   "voorzitter": null,
-  "deelnemers": [],
+  "deelnemers": [
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.J. Huidekooper",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "B.T. Bikkers",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.M. Zwinkels",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
   "zaal": "Troelstrazaal",
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08389",
   "sectoren": [

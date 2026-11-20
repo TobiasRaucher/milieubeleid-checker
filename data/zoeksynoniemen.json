@@ -2,6 +2,16 @@
   "_uitleg": "Synoniemen en afkortingen voor de zoekfunctie. Elke groep is een lijst van termen die als gelijk worden behandeld: zoekt iemand op één term, dan vindt de site ook de andere. Termen mogen uit meerdere woorden bestaan. Kleine letters, zonder accenten. Partijnamen staan onderaan; PRO is de voortzetting van GroenLinks-PvdA.",
   "groepen": [
     [
+      "rapport",
+      "onderzoeksrapport",
+      "eindrapport",
+      "adviesrapport"
+    ],
+    [
+      "ibo",
+      "interdepartementaal beleidsonderzoek"
+    ],
+    [
       "krw",
       "kaderrichtlijn water"
     ],

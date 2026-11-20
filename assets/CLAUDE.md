@@ -6,7 +6,7 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 ## Kop en navigatie (sinds 17 nov 2026)
 
 - Tabs: Overzicht, Thema's, Agenda en Documenten (menu in twee kolommen: Uit de Tweede Kamer met Wetgeving, Moties,
-  Amendementen, Kamervragen, Kamerbrieven; Kabinet, adviseurs en rechter met de vijf Kerndocumenten-groepen; opent bij hover (na 100 ms), klik of pijl omlaag; elke routewissel sluit het), dan
+  Amendementen, Kamervragen, Kamerbrieven; Kabinet, adviseurs en rechter met de vier Kerndocumenten-groepen (Kabinetsplannen, Begrotingen, Rapporten, Rechtspraak); opent bij hover (na 100 ms), klik of pijl omlaag; elke routewissel sluit het), dan
   een zoekveld dat altijd zichtbaar is (`/` zet de cursor erin) en de stempel "Bijgewerkt". "Over" staat in de footer.
 - Op alle documentpagina's is Documenten actief en heeft de menuregel `aria-current` (`route()`, `kdGroep()`).
 - Kop en bediening zijn sinds 17 nov 2026 50% groter (`--h-control` 56, `--h-klein` 48); tabeltekst 18 (zie DESIGN.md).
@@ -24,6 +24,7 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 | `#wetgeving/w-<id>` (oude dossierpagina) | `#wetgeving`; `#wetgeving/<Kamerstuknummer>` is de pagina per wetsvoorstel |
 | `#stukken` | `#vragen` |
 | `#documenten/<groep>…` | `#kerndocumenten/<groep>…` |
+| `#kerndocumenten/ramingen`, `#kerndocumenten/advies` | `#kerndocumenten/rapporten` (sinds 20 nov 2026) |
 
 ## Thema's
 
@@ -89,7 +90,9 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 ## Kamervragen en Kamerbrieven (`#vragen`, `#brieven`; twee pagina's sinds 17 nov 2026)
 
 - `#vragen`: Kamervragen, één rij per zaak met het antwoord erbij; Status Beantwoord, Open of Termijn verstreken (na 21 dagen).
-- `#brieven`: Kamerbrieven. Geen introtekst boven de tabel.
+- `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Label "Met rapport" (`.badge`) achter de titel en filter Rapport
+  ("Bevat rapport") als een bijlage een rapport is (`MRThemas.metRapport()`: herkend door de pipeline en niet afgewezen
+  in `data/rapporten.json`); in het bijlagenblok staan rapporten vooraan met het label "Rapport".
 - Bijlagen in de uitgeklapte rij van een Kamerbrief en van een antwoord (`bijlagenBlok()`); de zoekfunctie zoekt ook op de titels.
 
 ## Documentweergave
@@ -144,7 +147,7 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 ## Kerndocumenten (`#kerndocumenten/<groep>`)
 
 - Tabelpatroon (`kerndocDef()`/`kerndocumentenPagina()`), een pagina per groep (sinds 17 nov 2026): Kabinetsplannen, Begrotingen,
-  Ramingen, Adviezen, Rechtspraak, met het `label` van de groep als titel. Onbekende of lege groep: de eerste (`kdGroep()`).
+  Rapporten, Rechtspraak, met het `label` van de groep als titel. Onbekende of lege groep: de eerste (`kdGroep()`).
   De menuregels in `index.html` staan vast: een nieuwe groep in `data/kerndocumenten.json` moet daar ook bij.
 - Kolommen: Document, Soort, (op Begroting) Hoofdstuk, Uitgever, Thema, Kenmerk, Datum. Per reeks één rij
   (nieuwste editie); eerdere edities, links en "Bekijk het origineel" in de uitgeklapte rij (`kdDetail()`). Begrotingen en

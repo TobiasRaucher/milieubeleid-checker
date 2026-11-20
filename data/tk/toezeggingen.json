@@ -1,5 +1,101 @@
 [
  {
+  "nummer": "TZ202611-126",
+  "tekst": "De staatssecretaris zal de Kamer in het eerste kwartaal van 2027 informeren over de wijze waarop best practices beter kunnen worden gedeeld tussen omgevingsdiensten.",
+  "status": "Openstaand",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "bewindspersoon": "A.W.H. Bertram",
+  "functie": "Staatssecretaris van Infrastructuur en Waterstaat",
+  "activiteit": "2026A08389",
+  "datum": "2026-11-19",
+  "nakoming": null,
+  "gewijzigd": "2026-11-19"
+ },
+ {
+  "nummer": "TZ202611-125",
+  "tekst": "De staatssecretaris zal de Kamer in het eerste kwartaal van 2027 schriftelijk informeren over de mogelijkheden om het actualiseren van vergunningen te versnellen.",
+  "status": "Openstaand",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "bewindspersoon": "A.W.H. Bertram",
+  "functie": "Staatssecretaris van Infrastructuur en Waterstaat",
+  "activiteit": "2026A08389",
+  "datum": "2026-11-19",
+  "nakoming": null,
+  "gewijzigd": "2026-11-19"
+ },
+ {
+  "nummer": "TZ202611-124",
+  "tekst": "In Q1 2027 zal de staatssecretaris schriftelijke reageren op de zes punten van ILT, omgevingsdiensten en wetenschappers die het lid Kostic aandroeg.",
+  "status": "Openstaand",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "bewindspersoon": "A.W.H. Bertram",
+  "functie": "Staatssecretaris van Infrastructuur en Waterstaat",
+  "activiteit": "2026A08389",
+  "datum": "2026-11-19",
+  "nakoming": null,
+  "gewijzigd": "2026-11-19"
+ },
+ {
+  "nummer": "TZ202611-123",
+  "tekst": "De Kamer ontvangt in het verslag van de Milieuraad een terugkoppeling van de expertsessie met andere lidstaten over PFAS.",
+  "status": "Openstaand",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "bewindspersoon": "A.W.H. Bertram",
+  "functie": "Staatssecretaris van Infrastructuur en Waterstaat",
+  "activiteit": "2026A08389",
+  "datum": "2026-11-19",
+  "nakoming": null,
+  "gewijzigd": "2026-11-19"
+ },
+ {
+  "nummer": "TZ202611-122",
+  "tekst": "In het verslag van de Milieuraad zal de staatssecretaris ook ingaan op het Rekenkamerrapport over PFAS.",
+  "status": "Openstaand",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "bewindspersoon": "A.W.H. Bertram",
+  "functie": "Staatssecretaris van Infrastructuur en Waterstaat",
+  "activiteit": "2026A08389",
+  "datum": "2026-11-19",
+  "nakoming": null,
+  "gewijzigd": "2026-11-19"
+ },
+ {
+  "nummer": "TZ202611-121",
+  "tekst": "De Kamer ontvangt een brief over hoe het zit met de verschillende budgettaire wijzigingen in de begroting.",
+  "status": "Openstaand",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "bewindspersoon": "A.W.H. Bertram",
+  "functie": "Staatssecretaris van Infrastructuur en Waterstaat",
+  "activiteit": "2026A08389",
+  "datum": "2026-11-19",
+  "nakoming": null,
+  "gewijzigd": "2026-11-19"
+ },
+ {
+  "nummer": "TZ202611-120",
+  "tekst": "De staatssecretaris zal in haar brief in Q1 2027 ook ingaan op de aanbevelingen uit de rapporten van de ILT (“De basis moet op orde”) en de universiteiten van Utrecht en Leiden, alsmede op de vraag in hoeverre escalatie tot het Rijk mogelijk wordt bij structurele overtredingen door bedrijven.",
+  "status": "Openstaand",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "bewindspersoon": "A.W.H. Bertram",
+  "functie": "Staatssecretaris van Infrastructuur en Waterstaat",
+  "activiteit": "2026A08389",
+  "datum": "2026-11-19",
+  "nakoming": null,
+  "gewijzigd": "2026-11-19"
+ },
+ {
+  "nummer": "TZ202611-119",
+  "tekst": "In het eerste kwartaal van 2027 ontvangt de Kamer een brief over de follow-up van de gesprekken van de staatssecretaris met bestuurlijk Nederland met een totaaloverzicht hoe het VTH-stelsel verder kan worden versterkt, inclusief de robuustheidscriteria, capaciteitstekorten en de gelden die hiervoor nodig zijn, onafhankelijke metingen en expertisecentra.",
+  "status": "Openstaand",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "bewindspersoon": "A.W.H. Bertram",
+  "functie": "Staatssecretaris van Infrastructuur en Waterstaat",
+  "activiteit": "2026A08389",
+  "datum": "2026-11-19",
+  "nakoming": null,
+  "gewijzigd": "2026-11-19"
+ },
+ {
   "nummer": "TZ202611-040",
   "tekst": "De Kamer wordt geïnformeerd over de vraag in hoeverre, als zou worden besloten tot verdere verlaging van de vliegbelasting voor korte vluchten, dit strijdig zou zijn met Europese afspraken.",
   "status": "Openstaand",
@@ -1286,14 +1382,14 @@
  {
   "nummer": "TZ202607-068",
   "tekst": "Einde van dit jaar ontvangt de Kamer een quick scan met betrekking tot riooloverstorten, naar aanleiding van een eerdere toezegging van de minister van IenW aan de Eerste Kamer.",
-  "status": "Openstaand",
+  "status": "Afgedaan",
   "ministerie": "Infrastructuur en Waterstaat",
   "bewindspersoon": "V.P.G. Karremans",
   "functie": "Minister van Infrastructuur en Waterstaat",
   "activiteit": "2025A07712",
   "datum": "2026-07-08",
-  "nakoming": null,
-  "gewijzigd": "2026-07-08"
+  "nakoming": "2026-11-19",
+  "gewijzigd": "2026-11-20"
  },
  {
   "nummer": "TZ202607-067",
