@@ -410,7 +410,7 @@ tbody tr.grens > td, .list li.grens { padding: 8px 0 0; color: var(--alarm-tekst
 tr.grens span, li.grens span { display: block; padding: 0 12px; }
 li.grens span { padding: 0 20px; }
 tr.grens span:first-child, li.grens span:first-child { padding-bottom: 4px; border-bottom: 2px solid var(--alarm); }
-tr.grens span:last-child, li.grens span:last-child { padding-top: 4px; }
+tr.grens span:last-child, li.grens span:last-child { padding-top: 4px; text-align: right; }
 .list li.grens + li, tbody tr.grens + tr > td { border-top: 0; }
 tbody tr.row.open td { border-bottom-color: transparent; }
 /* uitklapknop in de titelcel: voor het toetsenbord; onzichtbaar tot hij focus heeft (met de muis klapt de rij zelf uit) */
