@@ -29,7 +29,7 @@ The emissions chart ("Wat Nederland uitstoot", CBS and PBL figures against the l
 
 - Desktop only; nothing is designed or checked at phone width.
 - All content is in Dutch.
-- A daily GitHub Action (05:17 UTC, working days) fetches the Kamer open data; Tobias asks Claude to "werk de checker bij" for summaries, mijlpalen and kerndocumenten.
+- A GitHub Action (05:17 and 17:17 UTC, working days) fetches the Kamer open data; Tobias asks Claude to "werk de checker bij" for summaries, mijlpalen and kerndocumenten.
 - Users cite the official source: links go to the document pages on tweedekamer.nl, and the Handelingen remain the official record.
 
 ## Capabilities and Constraints

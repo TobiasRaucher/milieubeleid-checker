@@ -17,7 +17,7 @@ Gestart met **Klimaat & energie** (focus: de Klimaatwet). Water & adaptatie, nat
 
 ## Bijwerken
 
-- **Kamerdata (gratis, geen AI):** GitHub → tabblad *Actions* → *Data bijwerken (Tweede Kamer open data)* → *Run workflow*. De Action draait ook automatisch elke werkdag om 05:17 UTC (`schedule` in `.github/workflows/update.yml`).
+- **Kamerdata (gratis, geen AI):** GitHub → tabblad *Actions* → *Data bijwerken (Tweede Kamer open data)* → *Run workflow*. De Action draait ook automatisch elke werkdag om 05:17 en 17:17 UTC (`schedule` in `.github/workflows/update.yml`).
 - **Samenvattingen en mijlpalen:** vraag Claude in het project "Checker Dutch Government Environmental Policy": *"Werk de checker bij"*. Claude haalt de nieuwste data op, vat nieuwe debatten samen en pusht naar deze repo. De werkwijze staat in `CLAUDE.md`.
 
 ## Uitbreiden naar een nieuwe sector

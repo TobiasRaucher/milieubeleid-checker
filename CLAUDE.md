@@ -42,7 +42,7 @@ Naslag (lees bij de taak):
 | Themareview: nagekeken CSV in de mapping | `node pipeline/themas_review.js --import <csv>` |
 | Site lokaal (poort 8765) | `preview_start` met naam `site` (`.claude/launch.json`) |
 
-De Action `.github/workflows/update.yml` draait elke werkdag om 05:17 UTC `fetch_tk.py`,
+De Action `.github/workflows/update.yml` draait elke werkdag om 05:17 en 17:17 UTC `fetch_tk.py`,
 `maak_ics.py`, `themas_noscript.js` en `versie.js`, en commit `data/tk`, `data/agenda.ics` en `index.html`.
 `fetch_tk.py` heeft `pypdf` nodig (voorlopige teksten uit pdf).
 
