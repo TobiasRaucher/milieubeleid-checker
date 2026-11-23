@@ -544,7 +544,8 @@
   // vaste volgorde in een filtermenu; onbekende waarden achteraan
   const opVolgorde = (vast) => (vs) => [...vast.filter((v) => vs.has(v)), ...[...vs].filter((v) => !vast.includes(v)).sort(nlSort.compare)];
   const leegCel = (t) => `<span class="leeg" title="${esc(t)}"><span aria-hidden="true">–</span><span class="sr-only">${esc(t)}</span></span>`;
-  const titelMetPijl = (t) => { const i = t.lastIndexOf(" "); return `${esc(t.slice(0, i + 1))}<span class="nw">${esc(t.slice(i + 1))}<span class="ext" aria-hidden="true"></span></span>`; };
+  // titels altijd met een hoofdletter (zinsvorm, ook als de bron met een kleine letter begint)
+  const titelMetPijl = (t) => { t = hoofd(t); const i = t.lastIndexOf(" "); return `${esc(t.slice(0, i + 1))}<span class="nw">${esc(t.slice(i + 1))}<span class="ext" aria-hidden="true"></span></span>`; };
   const statusPunt = (woord, cls) => `<span class="status ${cls}"><span class="dot" aria-hidden="true"></span>${esc(woord)}</span>`;
   // ?k=a,b: elke waarde apart gecodeerd, dus een komma in een waarde ("Landbouw, Visserij, ...") blijft heel
   function hashQuery() {
@@ -1488,7 +1489,7 @@
     if (!ms.length) return "";
     const aangenomen = ms.filter((z) => z.uitslag === "aangenomen").length;
     return `<div class="small muted">${ms.length} ${ms.length === 1 ? "motie" : "moties"} ingediend, ${aangenomen} aangenomen</div>
-      <ul class="motielijst">${ms.map((z) => `<li>${stemStatus(z.nummer, z.uitslag) || uitslagPill(z.uitslag)} ${motieA(z, tkUrl(z))}${esc(korteTitel(z))}</a> <span class="small muted">${indienersTekst(z)}</span></li>`).join("")}</ul>`;
+      <ul class="motielijst">${ms.map((z) => `<li>${stemStatus(z.nummer, z.uitslag) || uitslagPill(z.uitslag)} ${motieA(z, tkUrl(z))}${esc(hoofd(korteTitel(z).trim()))}</a> <span class="small muted">${indienersTekst(z)}</span></li>`).join("")}</ul>`;
   }
 
   /* ---------- Toezeggingen en fracties (hulpfuncties) ---------- */
