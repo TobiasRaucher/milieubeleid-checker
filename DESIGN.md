@@ -100,6 +100,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 - The Documenten menu opens on hover after 100ms (passing over it does not flash it open); a click, Enter or arrow down opens it at once. Any route change closes it.
 - Transition only color, background, border, opacity and transform, each named.
 - Two documented exceptions that animate size: the tab indicator (`.tab-glij`, absolutely positioned so it lays out nothing else) and the summary accordion (`grid-template-rows`, interruptible). Nothing else may animate width, height, top, left, margins or blur.
+- Wordmark (`.wm-radar`, since 23 Nov 2026, on request): the one long animation (about 1.7s), once per page load, and once more on the first visit to Overzicht after landing on another page. "milieu" and the logo stand still. Three thin arcs (`--op-accent`) leave the "u" and run right, behind the tabs; each letter of "radar" lights up (`scale(1.14)` to rest) when the first arc reaches it. Only opacity and transform. None with reduced motion.
 - No number animates on load.
 - `prefers-reduced-motion` turns movement into short fades.
 

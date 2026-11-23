@@ -203,6 +203,7 @@
   document.addEventListener("click", (e) => { if (e.target.closest('a[href^="#"]')) { _klik = true; setTimeout(() => { _klik = false; }, 400); } }, true);
   window.addEventListener("scroll", () => { _scrollBij.set(location.hash || "#overzicht", window.scrollY); }, { passive: true });
 
+  let _overzichtGezien = false;
   let _vorigeTab = null, _vorigPad = null;
   // Oude adressen: Vergaderingen (ook #debatten), Toezeggingen en Per fractie zijn opgegaan in de Agenda; wetsdossiers bestaan niet meer;
   // Stukken heet sinds 13 nov 2026 Vragen & Brieven (#vragen en #brieven); Kerndocumenten staan sinds 17 nov 2026 op #kerndocumenten/<groep>.
@@ -249,6 +250,8 @@
     if (/^wetgeving\/\d+$/.test(pad)) document.title = `Kamerstuk ${pad.split("/")[1]} · Wetgeving · milieuradar`;
     const tabGewisseld = tab !== _vorigeTab, eerste = _vorigeTab === null;
     if (tabGewisseld) { const v = $("#view"); v.classList.remove("binnenkomst"); void v.offsetWidth; v.classList.add("binnenkomst"); }
+    // eerste bezoek aan Overzicht na een andere pagina: het radarsignaal speelt nog één keer (bij het laden speelt het vanzelf)
+    if (tab === "overzicht" && !_overzichtGezien) { _overzichtGezien = true; if (!eerste) { const w = $(".wm-radar"); w.replaceWith(w.cloneNode(true)); } }
     _vorigeTab = tab;
     zetKopHoogte(); zetGlij(!eerste);
     // Thema's: overzicht en detail zijn aparte pagina's binnen dezelfde tab, dus ook daartussen bovenaan beginnen (of herstellen bij terug/vooruit)
