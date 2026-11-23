@@ -24,7 +24,7 @@ Naslag (lees bij de taak):
 - `agent_docs/samenvatten.md`: debatten samenvatten met gehoord.de en het formaat van `data/debatten.json`.
 - `agent_docs/uitstoot-grafiek.md`: het blok "Wat Nederland uitstoot" (`assets/milieu.js`).
 - `agent_docs/zoekfunctie.md`: zoekindex en resultatenpagina (`assets/zoek.js`).
-- `agent_docs/rapporten.md`: criteria en werkwijze voor de pagina Rapporten en het label "Met rapport" op Kamerbrieven.
+- `agent_docs/rapporten.md`: criteria en werkwijze voor de pagina Rapporten en de kolom "Rapport?" op Kamerbrieven.
 
 ## Commando's
 
@@ -123,7 +123,8 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 - Pagina's Toezeggingen en Per fractie, de abonneerknop van de agendafeed, de algemene sectorfilter.
 - Op Overzicht: CO2-band, kerncijfers, Aandachtsdossier, Laatste samenvattingen, planetaire grenzen, Recente stemmingen
   en Nieuwste stukken als losse blokken (met `fetch_milieu.py`). Zie `agent_docs/uitstoot-grafiek.md` voor wat de grafiek bewust weglaat.
-- Introteksten boven tabellen en op Agenda (sinds 18 nov 2026 wel een titel met één ondertitelregel per Documenten-pagina, op verzoek); tellingen en introtekst op `#themas`.
+- Introteksten en ondertitels boven tabellen en op Agenda (ondertitels weer weg sinds 23 nov 2026); tellingen en introtekst op `#themas`.
+- De knop "Eerdere vergaderingen" op Agenda (sinds 23 nov 2026).
 - Kerndocumenten in de groep "Europese Unie" (`"verborgen": true`) en EU-documenten in het algemeen: komt later.
 
 **Vermijden**

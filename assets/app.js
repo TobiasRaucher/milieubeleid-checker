@@ -46,9 +46,10 @@
   // eerste letter klein, behalve bij een afkorting ("PFAS", "CO2"): daar staat na de eerste letter nog een hoofdletter of cijfer
   const klein = (s) => { s = String(s ?? ""); return /^\S[^\s]*[A-Z0-9]/.test(s.split(" ")[0]) ? s : s.charAt(0).toLowerCase() + s.slice(1); };
   // lucide-iconen, 16px, lijn 1,5 (stijl in .ico)
-  const ICO = { x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>', omhoog: '<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>',
+  const ICO = { x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
     chevron: '<path d="m6 9 6 6 6-6"/>', pijlop: '<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>', pijlneer: '<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>',
-    pijlrechts: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>' };
+    pijlrechts: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>', vink: '<path d="M20 6 9 17l-5-5"/>',
+    filter: '<path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/>' };
   const ico = (n) => `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">${ICO[n]}</svg>`;
   // sorteersleutel voor vage datums ("2026-Q4" -> 2026-12-31 etc.)
   function sortKey(d) {
@@ -393,16 +394,19 @@
     const deel = (n, een, meer) => (n ? `${nl(n)} ${n === 1 ? een : meer}` : "");
     return [deel(t.m, "motie", "moties"), deel(t.a, "amendement", "amendementen")].filter(Boolean).join(" en ");
   };
-  // Eerstvolgende plenaire stemming als regel in de vorm van agendaLi() voor bovenaan Komt eraan, of "" als er niets gepland is.
+  // Eerstvolgende plenaire stemming als [sorteersleutel, regel in de vorm van agendaLi()] voor Komt eraan, of null als er niets gepland is.
+  // Sleutel dag + "~": achteraan die dag (de stemmingen zijn aan het eind van de vergadering).
   function komendeStemming(slug) {
     const perDag = stemmingenPerDag(slug ? [slug] : []);
-    if (!perDag.size) return "";
+    if (!perDag.size) return null;
     const dag = [...perDag.keys()].sort()[0];
-    return `<li><div class="regelmeta">${soortTag("Stemmingen")}<span class="datum">${esc(dagKort(dag))}</span><span>Plenaire vergadering</span></div><a class="ltitel" href="#moties">${esc(stemTitel(perDag.get(dag)))}</a></li>`;
+    return [dag + "~", `<li><div class="regelmeta">${soortTag("Stemmingen")}<span class="datum">${fmtKort(dag)}</span><span>Plenaire vergadering</span></div><a class="ltitel" href="#moties">${esc(stemTitel(perDag.get(dag)))}</a></li>`];
   }
   // Ruim gevuld (KOMT_MAX); na het tekenen haalt passKomtEraan() regels weg tot de kaart niet langer is dan Net binnen.
   const KOMT_MAX = 15;
-  const komtEraan = (stemming, items, slug) => (stemming + items.slice(0, stemming ? KOMT_MAX - 1 : KOMT_MAX).map((i) => agendaLi(i, slug)).join("")) || `<li class="empty">Niets gepland</li>`;
+  // op datum en tijd (agendaKey), de stemming op haar dag
+  const komtEraan = (stemming, items, slug) => [...items.map((i) => [agendaKey(i), agendaLi(i, slug)]), ...(stemming ? [stemming] : [])]
+    .sort((a, b) => opCode(a[0], b[0])).slice(0, KOMT_MAX).map((r) => r[1]).join("") || `<li class="empty">Niets gepland</li>`;
   function passKomtEraan() {
     for (const rij of document.querySelectorAll(".ov-onder")) {
       const [b, k] = rij.querySelectorAll(":scope > section > .card > .list");
@@ -588,7 +592,8 @@
   // filters (waarden op nul blijven staan, stil). Actieve filters staan eronder als chips met "Alles wissen".
   // Filters: { k: { label, waarden(rij), orde(set, tel), tekst(v) } }. tekst geeft html.
   // Eén rij op elke pagina (Tobias, 18 nov 2026): links de schakelaar (links), rechts de filters en helemaal rechts het zoekveld.
-  const werkbalk = (hint, q, links = "") => `<div class="werkbalk">${links}<div class="facetten" id="wfacetten"></div><input type="search" id="wq" placeholder="${esc(hint)}" value="${esc(q)}" aria-label="${esc(hint)}"></div>
+  // tabelpagina's (metFacetten false): de filters staan in de kolomkoppen (tabelKoppen(); Tobias, 23 nov 2026)
+  const werkbalk = (hint, q, links = "", metFacetten = true) => `<div class="werkbalk">${links}${metFacetten ? `<div class="facetten" id="wfacetten"></div>` : ""}<input type="search" id="wq" placeholder="${esc(hint)}" value="${esc(q)}" aria-label="${esc(hint)}"></div>
       <div class="actieve-filters" id="wactief" hidden></div><p class="sr-only" id="wstatus" role="status"></p>`;
   // statusmelding voor schermlezers na zoeken of filteren (WCAG 4.1.3); de eerste tekening van de pagina meldt niets
   let _meldTimer = null;
@@ -601,20 +606,23 @@
   }
   // w: { filters, st, rijen, past(rij, behalve), zoek(q), zet(k, waarden), wis() }
   function tekenWerkbalk(w) {
-    const fe = $("#wfacetten"), ae = $("#wactief");
+    const fe = $("#wfacetten") || $("#mkop"), ae = $("#wactief");
     if (!fe) return;
     const open = fe.querySelector("details[open]")?.dataset.f || "";
     const focusId = fe.contains(document.activeElement) ? document.activeElement.id : "";
-    fe.innerHTML = Object.entries(w.filters).map(([k, f]) => {
+    const facet = ([k, f]) => {
       const tel = new Map();
       for (const r of w.rijen) { const p = w.past(r, k); for (const v of f.waarden(r)) tel.set(v, (tel.get(v) || 0) + (p ? 1 : 0)); }
       for (const v of w.st[k]) if (!tel.has(v)) tel.set(v, 0);
       const n = w.st[k].length;
       return `<details class="facet${open === k ? " al-open" : ""}" data-f="${k}"${open === k ? " open" : ""}>
-        <summary>${esc(f.label)}${n ? ` <span class="facet-n">${n}</span>` : ""}</summary>
+        <summary>${fe.id === "mkop" ? ico("filter") : ""}${esc(f.label)}${n ? ` <span class="facet-n">${n}</span>` : ""}</summary>
         <div class="facet-menu" role="group" aria-label="${esc(f.label)}">${f.orde(new Set(tel.keys()), tel).map((v, i) =>
           `<label${tel.get(v) ? "" : ' class="nul"'}><input type="checkbox" id="wf-${k}-${i}" data-f="${k}" value="${esc(v)}"${w.st[k].includes(v) ? " checked" : ""}><span>${f.tekst(v)}</span><span class="n">${nl(tel.get(v))}</span></label>`).join("") || `<div class="muted small">Geen waarden</div>`}</div></details>`;
-    }).join("");
+    };
+    // werkbalk (Agenda): alle filters naast elkaar; tabel: elk filter in de kop van zijn kolom
+    if (fe.id === "wfacetten") fe.innerHTML = Object.entries(w.filters).map(facet).join("");
+    else for (const e of Object.entries(w.filters)) { const th = fe.querySelector(`th[data-f="${e[0]}"]`); if (th) th.innerHTML = facet(e); }
     const chips = Object.entries(w.filters).flatMap(([k, f]) => w.st[k].map((v) =>
       `<button type="button" class="chip actief" data-rm="${k}" data-v="${esc(v)}" aria-label="Filter ${f.tekst(v).replace(/<[^>]+>/g, "")} wissen">${f.tekst(v)}${ico("x")}</button>`));
     ae.innerHTML = chips.length ? `${chips.join("")}<button type="button" class="linkknop" data-wis>Alles wissen</button>` : "";
@@ -625,7 +633,7 @@
     if (focusId && document.getElementById(focusId)) document.getElementById(focusId).focus({ preventScroll: true });
   }
   function bindWerkbalk(w) {
-    const fe = $("#wfacetten"), ae = $("#wactief"), veld = $("#wq");
+    const fe = $("#wfacetten") || $("#mkop"), ae = $("#wactief"), veld = $("#wq");
     veld.addEventListener("input", () => w.zoek(veld.value));
     // één menu tegelijk open
     fe.addEventListener("toggle", (e) => {
@@ -655,7 +663,7 @@
   function tabelKoppen(def, st) {
     const asc = st.richting === "asc";
     return `<tr>${def.kolommen.map((c) => {
-      if (c.filter) return `<th>${esc(def.filters[c.filter].label)}</th>`;
+      if (c.filter) return `<th class="kopf" data-f="${c.filter}">${esc(def.filters[c.filter].label)}</th>`;
       if (c.datum) return `<th class="rechts dkop" aria-sort="${asc ? "ascending" : "descending"}"><button type="button" class="sorteer actief" data-sort="datum" aria-label="${esc(c.kop)}, ${asc ? "oudste" : "nieuwste"} eerst; klik om om te draaien">${esc(c.kop)}${ico(asc ? "pijlop" : "pijlneer")}</button></th>`;
       return `<th class="${c.thCls || ""}">${c.kop}</th>`;
     }).join("")}</tr>`;
@@ -666,14 +674,14 @@
     const knop = c.titel ? ` <button type="button" class="uitklap" aria-expanded="false" aria-label="${esc(def.knopLabel[0])}">${ico("chevron")}</button>` : "";
     return `<td class="${c.tdCls || ""}">${c.cel(z)}${knop}</td>`;
   }
-  // kop: titel en ondertitel boven de werkbalk; links: een schakelaar links in de werkbalk; voet: een stille regel onder de tabel
+  // kop: de titel, op één rij met het zoekveld; links: een schakelaar links in de werkbalk; voet: een stille regel onder de tabel
   function tabelPagina(def, kop, voet, zoekhint, links = "") {
     S.tabel = { def, st: tabelStaat(def) };
-    return `<div class="kopbalk"><div class="kop">${kop}</div>${werkbalk(zoekhint, S.tabel.st.q, links)}</div>
+    return `<div class="kopbalk"><div class="kop">${kop}</div>${werkbalk(zoekhint, S.tabel.st.q, links, false)}</div>
       <div class="tablewrap"><table class="motietabel" data-tab="${def.tab}"><thead id="mkop">${tabelKoppen(def, S.tabel.st)}</thead><tbody id="mbody"></tbody></table></div>
       ${voet ? `<p class="small muted">${voet}</p>` : ""}`;
   }
-  const paginaKop = (titel, sub) => `<h1>${esc(titel)}</h1><p>${esc(sub)}</p>`;
+  const paginaKop = (titel) => `<h1>${esc(titel)}</h1>`;
   const schakelaar = (label, opties, actief) => `<nav class="schakelaar" aria-label="${esc(label)}">
       ${opties.map(([k, l]) => `<a href="#${k}" data-tab="${k}" ${k === actief ? 'aria-current="page"' : ""}>${l}</a>`).join("")}
     </nav>`;
@@ -696,7 +704,6 @@
     };
     const toepassen = () => {
       rows = alle.filter((z) => tabelPast(def, st, z)).sort(tabelVolgorde(def, st.richting));
-      $("#mkop").innerHTML = tabelKoppen(def, st);
       tekenRijen();
       tekenWerkbalk(w);
       meldAantal(rows.length);
@@ -704,13 +711,14 @@
       const q = tabelQuery(def, st);
       history.replaceState(null, "", `#${def.adres || def.tab}${def.vast ? `?${def.vast}${q ? "&" + q.slice(1) : ""}` : q}`);
       // de schakelaar op Wetgeving neemt de gedeelde filters mee naar de andere helft
-      document.querySelectorAll("#view > .schakelaar a[data-tab]").forEach((a) => { a.href = `#${a.dataset.tab}${tabelQuery(def, st, def.gedeeld)}`; });
+      document.querySelectorAll("#view .schakelaar a[data-tab]").forEach((a) => { a.href = `#${a.dataset.tab}${tabelQuery(def, st, def.gedeeld)}`; });
     };
     bindWerkbalk(w);
 
     $("#mkop").addEventListener("click", (e) => {
       if (!e.target.closest("button[data-sort]")) return;
       st.richting = st.richting === "asc" ? "desc" : "asc";
+      $("#mkop").innerHTML = tabelKoppen(def, st);
       toepassen();
       $("#mkop button[data-sort]").focus();
     });
@@ -1082,13 +1090,15 @@
     if (los) return wetPagina(los[1]);
     const wetten = location.hash.slice(1).split("?")[0] === "wetgeving/wetten";
     const schak = schakelaar("Wetsvoorstellen of geldende wetten", [["wetgeving", "Wetsvoorstellen"], ["wetgeving/wetten", "Geldende wetten"]], wetten ? "wetgeving/wetten" : "wetgeving");
-    const kop = paginaKop("Wetgeving", "Wetsvoorstellen en geldende wetten");
-    if (wetten) return tabelPagina(wettenDef(), kop,
+    const kop = paginaKop("Wetgeving");
+    // de schakelaar staat in de kop van de titelkolom (Tobias, 23 nov 2026)
+    const metSchak = (def) => ({ ...def, kolommen: def.kolommen.map((c) => (c.titel ? { ...c, kop: schak } : c)) });
+    if (wetten) return tabelPagina(metSchak(wettenDef()), kop,
       "Geldende wetten die het kader vormen voor het milieubeleid; de titel opent de geldende tekst op wetten.overheid.nl.",
-      "Zoek op naam of BWBR-nummer", schak);
-    return tabelPagina(WET_DEF, kop,
+      "Zoek op naam of BWBR-nummer");
+    return tabelPagina(metSchak(WET_DEF), kop,
       "Wetsvoorstellen sinds 2019 over milieu, klimaat, energie, water, natuur en leefomgeving, rechtstreeks uit de open data van de Tweede Kamer.",
-      "Zoek op titel, Kamerstuknummer of indiener", schak);
+      "Zoek op titel, Kamerstuknummer of indiener");
   }
 
   /* ---------- Moties en amendementen ---------- */
@@ -1149,7 +1159,7 @@
   }
   function moties() {
     const tab = location.hash.slice(1).split(/[/?]/)[0] === "amendementen" ? "amendementen" : "moties";
-    return tabelPagina(motieDef(tab), tab === "moties" ? paginaKop("Moties", "Verzoeken van Kamerleden, met de stemming") : paginaKop("Amendementen", "Wijzigingen in wetsvoorstellen, met de stemming"),
+    return tabelPagina(motieDef(tab), tab === "moties" ? paginaKop("Moties") : paginaKop("Amendementen"),
       "Alle gegevens komen rechtstreeks uit de open data van de Tweede Kamer.",
       "Zoek op onderwerp, Kamerlid of Kamerstuknummer");
   }
@@ -1288,11 +1298,13 @@
       thema: themaFilter(themasBrief),
       ministerie: { label: "Ministerie", waarden: (x) => [x.ministerie || ""], orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
       kamer: { label: "Kamer", waarden: (x) => [x.kamer || "Tweede Kamer"], orde: opVolgorde(["Tweede Kamer", "Eerste Kamer"]), tekst: (v) => esc(v) },
-      rapport: { label: "Rapport", waarden: (x) => [(x.bijlagen || []).some(metRapport) ? "ja" : "nee"], orde: opVolgorde(["ja", "nee"]), tekst: (v) => (v === "ja" ? "Bevat rapport" : "Zonder rapport") },
+      rapport: { label: "Rapport?", waarden: (x) => [(x.bijlagen || []).some(metRapport) ? "ja" : "nee"], orde: opVolgorde(["ja", "nee"]), tekst: (v) => (v === "ja" ? "Bevat rapport" : "Zonder rapport") },
     },
     kolommen: [
-      { titel: true, kop: "Kamerbrief over...", thCls: "ond", tdCls: "ond", cel: (x) => `<a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${titelMetPijl(overKlein(x.onderwerp || x.titel))}</a>${x.kamer ? ` <span class="badge">${esc(x.kamer)}</span>` : ""}${(x.bijlagen || []).some(metRapport) ? ` <span class="badge">Met rapport</span>` : ""}` },
+      { titel: true, kop: "Kamerbrief over...", thCls: "ond", tdCls: "ond", cel: (x) => `<a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${titelMetPijl(overKlein(x.onderwerp || x.titel))}</a>` },
       { filter: "ministerie", tdCls: "uitslag ministerie", cel: (x) => esc(x.ministerie || "Onbekend") },
+      { filter: "kamer", tdCls: "uitslag", cel: (x) => esc(x.kamer || "Tweede Kamer") },
+      { filter: "rapport", tdCls: "rapport", cel: (x) => ((x.bijlagen || []).some(metRapport) ? `${ico("vink")}<span class="sr-only">Bevat rapport</span>` : `${ico("x")}<span class="sr-only">Zonder rapport</span>`) },
       themaKolom(themasBrief),
       { kop: "Kamerstuk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (x) => esc(x.kamerstuk || ((x.dossiers || [])[0] || {}).nummer || "") },
       { datum: true, kop: "Datum" },
@@ -1310,7 +1322,7 @@
   function vragenBrieven() {
     const tab = location.hash.slice(1).split(/[/?]/)[0] === "brieven" ? "brieven" : "vragen";
     return tabelPagina(tab === "brieven" ? BRIEF_DEF : VRAAG_DEF,
-      tab === "brieven" ? paginaKop("Kamerbrieven", "Brieven van ministeries aan de Tweede en Eerste Kamer") : paginaKop("Kamervragen", "Schriftelijke vragen met het antwoord"),
+      tab === "brieven" ? paginaKop("Kamerbrieven") : paginaKop("Kamervragen"),
       tab === "brieven"
         ? "Kamerbrieven van ministeries over milieu, klimaat, energie, water, natuur en leefomgeving."
         : `Schriftelijke vragen van Kamerleden met het antwoord van het kabinet in dezelfde rij. Het kabinet heeft ${ANTWOORD_TERMIJN} dagen om te antwoorden.`,
@@ -1353,17 +1365,20 @@
   function agendaItems() {
     const eigen = S.data.agenda.filter(inSector).map((i) => ({ ...i, bron: "eigen" }));
     const kamer = S.data.activiteiten.filter((a) => inSector(a) && a.Status === "Gepland").map((a) => ({
-      datum: a.Datum ? dagNL(new Date(a.Datum)) : null, tijd: a.Aanvangstijd ? tijdNL(a.Aanvangstijd) : null,
+      datum: a.Datum ? dagNL(new Date(a.Datum)) : null, tijd: ((x) => (x && x !== "00:00" ? x : null))(tijdNL(a.Aanvangstijd || a.Datum)), // zoals op de Agenda (tijdlijnItems)
       type: soortLabel(a), titel: a.Onderwerp, url: a.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${a.Nummer}`, bron: "tk", commissie: commissieNaam(a), _act: a,
     }));
     // een eigen regel gaat voor dezelfde Kameractiviteit, maar linkt wel naar die activiteit op de Agenda
     const sleutel = (i) => `${i.datum}|${(i.titel || "").toLowerCase().slice(0, 20)}`;
-    const actVan = new Map(kamer.map((i) => [sleutel(i), i._act]));
-    for (const i of eigen) if (actVan.has(sleutel(i))) i._act = actVan.get(sleutel(i));
+    const actVan = new Map(kamer.map((i) => [sleutel(i), i]));
+    for (const i of eigen) { const k = actVan.get(sleutel(i)); if (k) { i._act = k._act; i.tijd ||= k.tijd; } }
     const seen = new Set();
     return [...eigen, ...kamer].filter((i) => { const k = sleutel(i); if (seen.has(k)) return false; seen.add(k); return true; })
-      .sort((a, b) => sortKey(a.datum).localeCompare(sortKey(b.datum)));
+      .sort((a, b) => opCode(agendaKey(a), agendaKey(b)));
   }
+  // datum plus tijd; zonder tijd achteraan de dag. Vergelijken op code: localeCompare zet "~" vóór de cijfers
+  const agendaKey = (i) => sortKey(i.datum) + (i.tijd || "~");
+  const opCode = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
   // een Kameractiviteit opent op de Agenda (op een themapagina met dat themafilter); een eigen mijlpaal gaat naar zijn bron
   function agendaLi(i, slug) {
     const titel = i._act ? `<a class="ltitel" href="#agenda/a-${esc(i._act.Nummer)}${slug ? `?thema=${esc(slug)}` : ""}">${esc(i.titel)}</a>`
@@ -1537,7 +1552,9 @@
       const t = a.Aanvangstijd || a.Datum;
       const tijd = ((x) => (x === "00:00" ? "" : x))(tijdNL(t));
       const inbreng = /^Inbreng/.test(a.Soort || "");
-      return { id: hier ? "d-" + sam.id : "a-" + a.Nummer, datum: dagNL(new Date(a.Datum)), t, tijd: inbreng && tijd ? "tot " + tijd : tijd, inbreng,
+      // eindtijd onder de begintijd, zodat je ziet wat tegelijk loopt (Tobias, 23 nov 2026); niet bij een inbrengtermijn
+      const eind = !inbreng && tijd && a.Eindtijd && dagNL(new Date(a.Eindtijd)) === dagNL(new Date(a.Datum)) ? tijdNL(a.Eindtijd) : "";
+      return { id: hier ? "d-" + sam.id : "a-" + a.Nummer, datum: dagNL(new Date(a.Datum)), t, tijd: inbreng && tijd ? "tot " + tijd : tijd, eind: eind > tijd ? eind : "", inbreng,
         type: typeNaam(a.Soort), titel: a.Onderwerp, commissie: commissieNaam(a), ministerie: uniek([...ministeriesVan(a), ...((sam && sam.ministeries) || [])]),
         a, sam, samHier: hier, gepland: a.Status === "Gepland", thema: sam ? themasVanDebat(sam) : themasVanAct(a), url: tkActLink(a) };
     });
@@ -1748,10 +1765,10 @@
       const live = i.a && i.datum === VANDAAG && !i.a.Besloten && !i.inbreng && i.a.Status === "Gepland" && new Date(i.a.Eindtijd || i.a.Datum) >= nu;
       const uitklap = !!extra;
       return `<li class="tl-item${voorbij ? " voorbij" : ""}${i.eigen ? " mijlpaal" : ""}${uitklap ? " debat" : ""}${uitklap && samOpen.has(i.id) ? " open" : ""}"${i.id ? ` id="${esc(i.id)}"` : ""}>
-        <div class="tl-tijd">${esc(i.tijd || "")}${i === eerst ? `<span class="badge alarm">Eerstvolgend</span>` : ""}</div>
+        <div class="tl-tijd">${esc(i.tijd || "")}${i.eind ? `<span class="tl-eind">tot ${esc(i.eind)}</span>` : ""}${i === eerst ? `<span class="badge alarm">Eerstvolgend</span>` : ""}</div>
         <div class="tl-inhoud">
-          <div class="tl-meta"><span class="tag">${esc(i.type)}</span>${i.commissie ? `<span>${esc(i.commissie)}</span>` : ""}${i.a?.zaal ? `<span>${esc(i.a.zaal)}</span>` : ""}${i.a?.Besloten && !i.inbreng ? `<span class="badge stil">Besloten</span>` : ""}${metSam && i.sam.niveau === "kort" ? `<span class="badge stil" title="Korte samenvatting: alleen de hoofdlijn">Kort</span>` : ""}${i.thema.length && !i.stem ? themaChips(i.thema, true) : ""}</div>
           <div class="tl-titel">${titel}</div>
+          <div class="tl-meta"><span class="tag">${esc(i.type)}</span>${i.commissie ? `<span>${esc(i.commissie)}</span>` : ""}${i.a?.zaal ? `<span>${esc(i.a.zaal)}</span>` : ""}${i.a?.Besloten && !i.inbreng ? `<span class="badge stil">Besloten</span>` : ""}${metSam && i.sam.niveau === "kort" ? `<span class="badge stil" title="Korte samenvatting: alleen de hoofdlijn">Kort</span>` : ""}${i.thema.length && !i.stem ? themaChips(i.thema, true) : ""}</div>
           ${i.sam && !metSam ? `<div class="tl-verwijs small"><a href="#agenda/d-${esc(i.sam.id)}">Samenvatting bij ${esc(i.sam.titel)}</a></div>` : ""}
         </div>
         ${live ? `<div class="tl-live small"><a href="https://debatdirect.tweedekamer.nl/" target="_blank" rel="noopener">Live op Debat Direct</a></div>` : ""}
@@ -1782,12 +1799,10 @@
     meldAantal(items.length);
 
     const vaagHier = terug ? [] : vaag.filter((i) => afPast(i));
-    const naarAnder = (t, tekst) => `<a class="knop licht naar-ander" href="${esc(afUrl(t))}" data-modus="${t ? "terug" : ""}">${t ? ico("omhoog") : ""}${tekst}</a>`;
     el.innerHTML = `
       ${afGefilterd() ? `<p class="small muted telregel">${nl(items.length)} ${items.length === 1 ? "item" : "items"} ${terug ? "sinds het begin van de Kamerperiode" : "vanaf vandaag"}</p>` : ""}
-      ${terug ? "" : naarAnder(true, "Eerdere vergaderingen")}
       <div class="tijdlijn">${weekHtml || `<p class="empty">${afGefilterd() ? `Niets met deze filters <button type="button" class="linkknop" data-wisalles>Filters wissen</button>` : "Niets in deze periode"}</p>`}</div>
-      ${terug ? `<p class="small muted">Begin van de Kamerperiode (${fmtKort(start)})</p>${naarAnder(false, "Naar komende vergaderingen")}` : ""}
+      ${terug ? `<p class="small muted">Begin van de Kamerperiode (${fmtKort(start)})</p><a class="knop licht naar-ander" href="${esc(afUrl(false))}" data-modus="">Naar komende vergaderingen</a>` : ""}
       ${vaagHier.length ? `<h3 class="groepkop">Mijlpalen zonder vaste dag</h3><div class="card"><ul class="list">${vaagHier.map((i) => `<li><div class="regelmeta">${soortTag(i.type)}<span class="datum">${fmtDatum(i.datum)}</span></div>${i.url ? `<a class="ltitel" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : `<span class="ltitel">${esc(i.titel)}</span>`}${themaChips(i.thema, true)}</li>`).join("")}</ul></div>` : ""}`;
     const wisAlles = el.querySelector("[data-wisalles]");
     if (wisAlles) wisAlles.addEventListener("click", afWis);
@@ -2127,11 +2142,10 @@
     const tabs = kdTabs(), gevraagd = location.hash.slice(1).split("?")[0].split("/")[1];
     return (tabs.find((g) => g.id === gevraagd) || tabs[0] || {}).id;
   }
-  // elke groep is een eigen pagina (menu Documenten); de titel is de naam van de groep, de ondertitel staat hier
-  const KD_SUB = { kabinet: "Coalitieakkoord, Troonrede, regeringsverklaring, kabinetsnota's", begroting: "Miljoenennota, begrotingen, jaarverslagen", rapporten: "Onderzoek, evaluaties, adviezen, ramingen en monitors", rechtspraak: "Uitspraken over klimaat en stikstof" };
+  // elke groep is een eigen pagina (menu Documenten); de titel is de naam van de groep, zonder ondertitel (Tobias, 23 nov 2026)
   function kerndocumentenPagina() {
     const groep = kdGroep(), g = kdTabs().find((x) => x.id === groep) || {};
-    return tabelPagina(kerndocDef(groep), paginaKop(g.label || "Kerndocumenten", KD_SUB[groep] || ""), "", "Zoek op titel, afkorting, uitgever of kenmerk");
+    return tabelPagina(kerndocDef(groep), paginaKop(g.label || "Kerndocumenten"), "", "Zoek op titel, afkorting, uitgever of kenmerk");
   }
 
   function over() {

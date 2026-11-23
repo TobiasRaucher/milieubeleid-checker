@@ -48,7 +48,7 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
   `#agenda?thema=<slug>`), Wetten, Amendementen, Moties, Kamerbrieven, Kamervragen (met antwoorden) en Kerndocumenten. De
   documentsoorten zijn dezelfde tabellen als op hun eigen pagina, zonder Themakolom (`themaDef()`).
   Adres: `#themas/<slug>?type=<param>` plus filters.
-- Elke lijstpagina heeft een themafilter in de werkbalk (Agenda, Wetgeving, Moties, Amendementen, Kamervragen, Kamerbrieven,
+- Elke lijstpagina heeft een themafilter (in de kolomkop Thema; op Agenda in de werkbalk) (Agenda, Wetgeving, Moties, Amendementen, Kamervragen, Kamerbrieven,
   Kerndocumenten).
 
 ## Tabelpatroon
@@ -56,11 +56,13 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 Wetgeving, Moties, Amendementen, Kamervragen, Kamerbrieven en Kerndocumenten gebruiken `tabelPagina()`/`bindTabel()` met
 een definitie per pagina: `WET_DEF`, `wettenDef()`, `motieDef()`, `VRAAG_DEF`, `BRIEF_DEF`, `kerndocDef()`, `themaDef()`.
 Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
-- Werkbalk (sinds 17 nov 2026, ook op Agenda): zoekveld plus een `details.facet` per filter, actieve filters als chips
-  (`werkbalk()`, `tekenWerkbalk()`, `bindWerkbalk()`; filteren met `pastFilters()`). Kolomkoppen zijn gewone labels; alleen
-  Datum sorteert.
+- Titel en zoekveld op één rij, geen ondertitel (sinds 23 nov 2026). Filters zitten in de kolomkoppen (sinds 23 nov 2026):
+  `tabelKoppen()` zet `th.kopf[data-f]`, `tekenWerkbalk()` vult daar de `details.facet` (met trechter); op Agenda staan ze
+  in de werkbalk (`#wfacetten`, `werkbalk(…, metFacetten)`). Actieve filters als chips onder de titelrij
+  (`bindWerkbalk()`; filteren met `pastFilters()`). De kop wordt alleen bij sorteren opnieuw getekend, zodat een open
+  menu blijft staan. Alleen Datum sorteert.
 - Na zoeken of filteren meldt een verborgen statusregel het aantal resultaten aan schermlezers (`meldAantal()`, ook op Agenda).
-- Elke pagina heeft precies een `h1` (de paginatitel; bij een schakelaar alleen voor schermlezers).
+- Elke pagina heeft precies een `h1` (de paginatitel; op Agenda en Zoeken alleen voor schermlezers).
 - Kolommen: titel eerst, Thema vlak voor Kamerstuk/Datum. Een klik op de rij klapt de details uit; de titel is de link naar
   de bron. De uitklapknop (`button.uitklap` in de titelcel, `c.titel`) is alleen zichtbaar bij toetsenbordfocus.
 
@@ -91,11 +93,11 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 ## Kamervragen en Kamerbrieven (`#vragen`, `#brieven`; twee pagina's sinds 17 nov 2026)
 
 - `#vragen`: Kamervragen, één rij per zaak met het antwoord erbij; Status Beantwoord, Open of Termijn verstreken (na 21 dagen).
-- `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Label "Met rapport" (`.badge`) achter de titel en filter Rapport
-  ("Bevat rapport") als een bijlage een rapport is (`MRThemas.metRapport()`: herkend door de pipeline en niet afgewezen
+- `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Kolom en filter "Rapport?" (vinkje of kruisje; tot 23 nov 2026 het label
+  "Met rapport") als een bijlage een rapport is (`MRThemas.metRapport()`: herkend door de pipeline en niet afgewezen
   in `data/rapporten.json`); in het bijlagenblok staan rapporten vooraan met het label "Rapport".
-  Sinds 23 nov 2026 ook brieven en verslagen aan de Eerste Kamer (`kamer: "Eerste Kamer"` in `stukken.json`): label
-  "Eerste Kamer" achter de titel, filter Kamer, link naar officielebekendmakingen.nl; in Net binnen en zoeken "Kamerbrief, Eerste Kamer".
+  Sinds 23 nov 2026 ook brieven en verslagen aan de Eerste Kamer (`kamer: "Eerste Kamer"` in `stukken.json`): kolom en
+  filter Kamer, link naar officielebekendmakingen.nl; in Net binnen en zoeken "Kamerbrief, Eerste Kamer".
 - Bijlagen in de uitgeklapte rij van een Kamerbrief en van een antwoord (`bijlagenBlok()`); de zoekfunctie zoekt ook op de titels.
 
 ## Documentweergave
@@ -106,7 +108,7 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 
 ## Wetgeving (`#wetgeving`, `#wetgeving/wetten`, `#wetgeving/<Kamerstuk>`)
 
-- Schakelaar (sinds 17 nov 2026): Wetsvoorstellen en Geldende wetten. De enige documentpagina met een schakelaar.
+- Schakelaar (sinds 17 nov 2026): Wetsvoorstellen en Geldende wetten, sinds 23 nov 2026 als kop van de titelkolom (`metSchak` in `wetgeving()`).
 - Wetsvoorstellen: uit `zaken.json` (soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Ingediend door,
   Thema, Kamerstuk, Ingediend.
 - Status (sinds 19 nov 2026): de fase zoals op tweedekamer.nl (Voorbereiding, Debat, Stemming, Eerste Kamer, Afgedaan), maar afgeleid uit
@@ -131,8 +133,9 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 - Eén tijdlijn per week en dag met geplande en gehouden Kameractiviteiten, samengevatte vergaderingen en eigen mijlpalen
   (`tijdlijnItems()`/`renderAgenda()`).
 - Grote schakelaar in plaats van de titel: "Komend" (standaard) toont wat komt; "Geweest" (`terugblik=1`) wat is geweest,
-  nieuwste eerst. De filters gaan mee. Knop "Eerdere vergaderingen" boven Komend, "Naar komende vergaderingen" onder Geweest.
-- Regel in drie kolommen: tijd (met "Eerstvolgend", of "tot hh:mm" bij inbreng), inhoud (meta met themalabels, titel),
+  nieuwste eerst. De filters gaan mee. Schakelaar, filters en zoekveld op één rij (geen knop
+  "Eerdere vergaderingen" sinds 23 nov 2026); "Naar komende vergaderingen" onder Geweest.
+- Regel in drie kolommen: tijd (met de eindtijd eronder, "Eerstvolgend", of "tot hh:mm" bij inbreng), inhoud (titel 18/500, daaronder meta met themalabels),
   rechts één uitklapknop en "Live op Debat Direct". Weekkop blijft staan bij scrollen.
 - Plenaire stemmingen per dag als regel (`stemmingenPerDag()`, ook voor Komt eraan), type Stemmingen, alleen in Komend.
 - Werkbalk: zoekveld (titel, commissie, type) en filters type, ministerie en thema (`AGENDA_FILTERS`; geen commissie sinds 18 nov 2026; meerdere
@@ -174,8 +177,8 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 - Volgorde: korte uitleg (`OV_INTRO`: de `h1` van de pagina, 45/500, en één alinea 18/400 in ink-2 met links naar thema's,
   Agenda en de documentpagina's; tekst van Tobias, niet herschrijven zonder te vragen), dan "Hoe staan we er voor?" als kop met kaart
   (`milieu.js`, zie `agent_docs/uitstoot-grafiek.md`), dan Net binnen (breed, links) en Komt eraan (smal, rechts) met dezelfde onderrand.
-- Komt eraan: bovenaan de eerstvolgende plenaire stemming (`komendeStemming()`): aantal moties en amendementen zonder uitslag
-  met een stemmingsdatum vanaf vandaag, als link naar `#moties`; dan agendaregels tot 15, na het tekenen ingekort tot de kaart niet langer is dan Net binnen (`passKomtEraan()`). Op een themapagina alleen die van het
+- Komt eraan: de eerstvolgende plenaire stemming (`komendeStemming()`): aantal moties en amendementen zonder uitslag
+  met een stemmingsdatum vanaf vandaag, als link naar `#moties`; dan agendaregels tot 15, op datum en tijd (`agendaKey()`; de stemming achteraan haar dag), na het tekenen ingekort tot de kaart niet langer is dan Net binnen (`passKomtEraan()`). Op een themapagina alleen die van het
   thema; geen stemming gepland, dan geen regel.
 - Net binnen (`netBinnen()`): de 10 nieuwste items in één chronologische lijst: stukken (`datum`), stemmingen over moties en
   amendementen (`stemtelling.datum`) en wetgeving (`gestartOp`). Alleen ISO-datums op de dag nauwkeurig en niet in de

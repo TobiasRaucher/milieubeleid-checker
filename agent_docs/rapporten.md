@@ -1,6 +1,6 @@
 # Rapporten beoordelen
 
-Pagina `#kerndocumenten/rapporten` en het label "Met rapport" op Kamerbrieven. Criteria van Claude; Tobias stelt ze bij
+Pagina `#kerndocumenten/rapporten` en de kolom "Rapport?" op Kamerbrieven. Criteria van Claude; Tobias stelt ze bij
 in de chat. Pas na een wijziging hier de beoordelingen aan die erdoor veranderen.
 
 ## Hoe het werkt
