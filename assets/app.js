@@ -430,7 +430,6 @@
     const binnen = netBinnen();
     return `
       ${OV_INTRO}
-      ${window.MRMilieu ? MRMilieu.sectieHtml() : ""}
       <div class="ov-onder">
         <section aria-labelledby="ov-binnen"><h2 id="ov-binnen">Net binnen</h2><div class="card"><ul class="list">
           ${netBinnenHtml(binnen)}
@@ -438,7 +437,8 @@
         <section aria-labelledby="ov-komt"><h2 id="ov-komt">Komt eraan</h2><div class="card"><ul class="list">
           ${komtEraan(komendeStemming(), komend)}
         </ul><div class="kaartvoet"><a class="knop licht" href="#agenda">Volledige agenda</a></div></div></section>
-      </div>`;
+      </div>
+      ${window.MRMilieu ? MRMilieu.sectieHtml() : ""}`;
   }
 
   /* ---------- Thema's ---------- */
@@ -460,11 +460,8 @@
     return (_themaIndex = { items, perThema });
   }
   // Overzicht: alleen de naam; tellingen en details staan op de themapagina (Tobias, 14 nov 2026)
-  // "Nieuw" (geen telling): een document van de vorige werkdag of later, dezelfde grens als de rode lijn
-  const themaNieuw = (slug) => (themaIndex().perThema.get(slug) || []).some((x) => !["vergadering", "agenda"].includes(x.soort)
-    && (x.ref?.stemtelling?.datum || x.datum || "") >= NIEUW_VANAF && (x.datum || "") <= VANDAAG);
   function themaKaart(t) {
-    return `<li><a class="themakaart" href="#themas/${esc(t.slug)}"><h3>${esc(t.label)}</h3>${themaNieuw(t.slug) ? `<span class="badge">Nieuw</span>` : ""}</a></li>`;
+    return `<li><a class="themakaart" href="#themas/${esc(t.slug)}"><h3>${esc(t.label)}</h3></a></li>`;
   }
   function themasPagina() {
     const pad = (location.hash || "").slice(1).split("?")[0].split("/");
@@ -573,7 +570,13 @@
     }
     return uit;
   }
-  const themaKolom = (themasVan) => ({ filter: "thema", tdCls: "thema hide-sm", cel: (z) => { const th = themasVan(z); return th.length ? themaChips(th) : leegCel("Geen thema"); } });
+  // in een rij hooguit twee thema's plus "+n"; met de muis op de cel (of focus op de uitklapknop) staan ze er allemaal
+  const themaCel = (ids) => {
+    if (ids.length <= 2) return themaChips(ids);
+    const chip = (id) => `<span class="tchip">${esc(S.T.naam(id))}</span>`, rest = ids.slice(2);
+    return `<span class="tchips">${chip(ids[0])}<span class="tchip-rij">${chip(ids[1])}<span class="tplus" aria-hidden="true">+${rest.length}</span></span></span><span class="sr-only">, ${rest.map((id) => esc(S.T.naam(id))).join(", ")}</span><span class="talle" aria-hidden="true">${themaChips(ids)}</span>`;
+  };
+  const themaKolom = (themasVan) => ({ filter: "thema", tdCls: "thema hide-sm", cel: (z) => { const th = themasVan(z); return th.length ? themaCel(th) : leegCel("Geen thema"); } });
   const themaFilter = (themasVan) => ({ label: "Thema", waarden: (z) => (themasVan(z).length ? themasVan(z) : [""]), orde: (vs) => opVolgorde([...S.T.lijst.map((t) => t.slug), ""])(vs), tekst: (v) => esc(v ? S.T.naam(v) : "Geen thema") });
   // thema's per rij onthouden: de aantallen in het filtermenu vragen ze voor elke rij opnieuw
   const onthoud = (fn, sleutel) => { const m = new Map(); return (z) => { const k = sleutel(z); let t = m.get(k); if (!t) m.set(k, (t = fn(z))); return t; }; };
@@ -705,13 +708,17 @@
     const alle = def.rijen();
     let rows = [];
     const n = def.kolommen.length;
+    // lange lijsten krijgen een kop per maand, tenzij bijna elke rij een eigen maand heeft (Wetgeving)
+    const perMaand = alle.length >= 100 && alle.length >= 5 * uniek(alle.map((z) => (def.datum(z) || "").slice(0, 7))).length;
     const wisAlles = () => { st.q = ""; $("#wq").value = ""; for (const k of Object.keys(def.filters)) st[k] = []; toepassen(); };
     const w = { filters: def.filters, st, rijen: alle, past: (z, behalve) => tabelPast(def, st, z, behalve),
       zoek: (q) => { st.q = q; toepassen(); }, zet: (k, vs) => { st[k] = vs; toepassen(); }, wis: () => wisAlles() };
 
     const tekenRijen = () => {
       const grens = st.richting === "desc" && def.datum ? grensIndex(rows.map(def.datum)) : -1;
+      const maand = (z) => (z ? (def.datum(z) || "").slice(0, 7) : null);
       $("#mbody").innerHTML = rows.map((z, i) => (i === grens ? `<tr class="grens"><td colspan="${n}">${GRENS_LABEL}</td></tr>` : "")
+        + (perMaand && maand(z) !== maand(rows[i - 1]) ? `<tr class="maand"><th colspan="${n}" scope="rowgroup">${maand(z) ? esc(hoofd(fmtDatum(maand(z)))) : "Zonder datum"}</th></tr>` : "")
         + `<tr class="row" data-i="${i}">${def.kolommen.map((c) => tabelCel(def, c, z)).join("")}</tr>`).join("")
         || `<tr><td colspan="${n}" class="empty">Geen ${def.eenheid} ${tabelGefilterd(def, st) ? `met deze filters <button type="button" class="linkknop" data-wisalles>Filters wissen</button>` : "gevonden"}</td></tr>`;
     };
@@ -1409,7 +1416,7 @@
       { titel: true, kop: "Kamerbrief over...", thCls: "ond", tdCls: "ond", cel: (x) => rijTitel(overKlein(x.onderwerp || x.titel)) },
       { filter: "ministerie", tdCls: "uitslag ministerie", cel: (x) => esc(x.ministerie || "Onbekend") },
       { filter: "kamer", tdCls: "uitslag", cel: (x) => esc(x.kamer || "Tweede Kamer") },
-      { filter: "rapport", tdCls: "rapport", cel: (x) => ((x.bijlagen || []).some(metRapport) ? `${ico("vink")}<span class="sr-only">Bevat rapport</span>` : `<span class="sr-only">Zonder rapport</span>`) },
+      { filter: "rapport", tdCls: "rapport", cel: (x) => ((x.bijlagen || []).some(metRapport) ? `${ico("vink")}<span class="sr-only">Bevat rapport</span>` : leegCel("Zonder rapport")) },
       themaKolom(themasBrief),
       { kop: "Kamerstuk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (x) => esc(x.kamerstuk || ((x.dossiers || [])[0] || {}).nummer || "") },
       { datum: true, kop: "Datum" },

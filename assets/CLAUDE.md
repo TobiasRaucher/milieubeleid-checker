@@ -42,7 +42,7 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 - Alle items die een thema kunnen krijgen komen uit `MRThemas.bronItems` (wetten, moties, amendementen, Kamerbrieven,
   Kamervragen, antwoorden, vergaderingen, agenda, kerndocumenten met de nieuwste editie per reeks). Pagina, CSV en
   noscript-lijst tellen dus hetzelfde.
-- `#themas` (sinds 14 nov 2026): alleen de tien namen als 5 x 2 tegels, met "Nieuw" bij een nieuw document (`themaNieuw()`, 23 nov 2026; geen telling).
+- `#themas` (sinds 14 nov 2026): alleen de tien namen als 5 x 2 tegels (geen telling en geen "Nieuw": geprobeerd en weg, 23 nov 2026).
 - `#themas/<slug>`: onder de beschrijving een ingeklapt blok "Welke termen horen bij dit thema" met de trefwoorden uit
   `data/themas.json` als leesbare termen (`themaTermen()`, `leesbareTermen()`). Daarna een schakelaar met Overzicht (Net binnen en Komt eraan voor dit thema; standaard), "Agenda →" (link naar
   `#agenda?thema=<slug>`), Wetten, Amendementen, Moties, Kamerbrieven, Kamervragen (met antwoorden) en Kerndocumenten. De
@@ -62,6 +62,8 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
   (`bindWerkbalk()`; filteren met `pastFilters()`). De kop wordt alleen bij sorteren opnieuw getekend, zodat een open
   menu blijft staan. Alleen Datum sorteert.
 - Na zoeken of filteren meldt een verborgen statusregel het aantal resultaten aan schermlezers (`meldAantal()`, ook op Agenda).
+- Lange tabellen (vanaf 100 rijen, gemiddeld 5 per maand) krijgen een kop per maand (`tr.maand`, `perMaand` in `bindTabel()`); themacel: hooguit twee
+  plus "+n", alles bij muis op de cel (`themaCel()`).
 - Elke pagina heeft precies een `h1` (de paginatitel; op Agenda en Zoeken alleen voor schermlezers).
 - Kolommen: titel eerst, Thema vlak voor Kamerstuk/Datum. Een klik op de rij of de titel (`rijTitel()`, tekst) klapt de details uit
   (sinds 23 nov 2026); de bron is een knop of link in de details (`mlinks()`, één bosgroene knop per rij). De uitklapknop
@@ -94,7 +96,7 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 ## Kamervragen en Kamerbrieven (`#vragen`, `#brieven`; twee pagina's sinds 17 nov 2026)
 
 - `#vragen`: Kamervragen, één rij per zaak met het antwoord erbij; Status Beantwoord, Open of Termijn verstreken (na 21 dagen).
-- `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Kolom en filter "Rapport?" (vinkje of leeg; tot 23 nov 2026 het label
+- `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Kolom en filter "Rapport?" (vinkje of streepje; tot 23 nov 2026 het label
   "Met rapport") als een bijlage een rapport is (`MRThemas.metRapport()`: herkend door de pipeline en niet afgewezen
   in `data/rapporten.json`); in het bijlagenblok staan rapporten vooraan met het label "Rapport".
   Sinds 23 nov 2026 ook brieven en verslagen aan de Eerste Kamer (`kamer: "Eerste Kamer"` in `stukken.json`): kolom en
@@ -183,8 +185,8 @@ alleen klassen `dv-…` en ids `footnote-…` door.
 ## Overzicht (`#overzicht`)
 
 - Volgorde: korte uitleg (`OV_INTRO`: de `h1` van de pagina, 45/500, en één alinea 18/400 in ink-2 met links naar thema's,
-  Agenda en de documentpagina's; tekst van Tobias, niet herschrijven zonder te vragen), dan "Hoe staan we er voor?" als kop met kaart
-  (`milieu.js`, zie `agent_docs/uitstoot-grafiek.md`), dan Net binnen (breed, links) en Komt eraan (smal, rechts) met dezelfde onderrand.
+  Agenda en de documentpagina's; tekst van Tobias, niet herschrijven zonder te vragen), dan Net binnen (breed, links) en Komt eraan (smal, rechts) met dezelfde onderrand, dan (sinds 23 nov 2026 onderaan)
+  "Hoe staan we er voor?" als kop met kaart (`milieu.js`, zie `agent_docs/uitstoot-grafiek.md`).
 - Komt eraan: de eerstvolgende plenaire stemming (`komendeStemming()`): aantal moties en amendementen zonder uitslag
   met een stemmingsdatum vanaf vandaag, als link naar die dag op de Agenda; dan agendaregels tot 15, op datum en tijd (`agendaKey()`; de stemming achteraan haar dag), na het tekenen ingekort tot de kaart niet langer is dan Net binnen (`passKomtEraan()`). Op een themapagina alleen die van het
   thema; geen stemming gepland, dan geen regel.

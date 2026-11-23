@@ -124,6 +124,7 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 - Op Overzicht: CO2-band, kerncijfers, Aandachtsdossier, Laatste samenvattingen, planetaire grenzen, Recente stemmingen
   en Nieuwste stukken als losse blokken (met `fetch_milieu.py`). Zie `agent_docs/uitstoot-grafiek.md` voor wat de grafiek bewust weglaat.
 - Introteksten en ondertitels boven tabellen en op Agenda (ondertitels weer weg sinds 23 nov 2026); tellingen en introtekst op `#themas`.
+- Het label "Nieuw" op `#themas` (sinds 23 nov 2026).
 - De knop "Eerdere vergaderingen" op Agenda (sinds 23 nov 2026).
 - Kerndocumenten in de groep "Europese Unie" (`"verborgen": true`) en EU-documenten in het algemeen: komt later.
 

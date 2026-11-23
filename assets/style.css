@@ -172,7 +172,7 @@ h3 { font-size: var(--t-15); line-height: 1.35; margin: 0 0 4px; }
 h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px; font-size: var(--t-15); font-weight: 600; color: var(--ink); padding-bottom: 8px; border-bottom: 1px solid var(--line); }
 .telregel { margin: 12px 0; }
 
-/* Overzicht onder de grafiek: Net binnen (breed, links) en Komt eraan (smal, rechts).
+/* Overzicht boven de grafiek: Net binnen (breed, links) en Komt eraan (smal, rechts).
    Beide kaarten rekken mee tot dezelfde onderrand; de lijst vult de ruimte, de kaartvoet blijft onderaan. */
 .ov-intro { margin: 32px 0 0; }
 .ov-lead { font-size: var(--t-45); font-weight: 500; line-height: 1.15; letter-spacing: var(--sp-45); color: var(--ink); margin: 0; max-width: 36ch; }
@@ -369,7 +369,7 @@ thead th { border-top: 0; font-size: var(--t-12); font-weight: 500; color: var(-
 td { font-variant-numeric: tabular-nums; }
 td.nw { font-size: var(--t-13); color: var(--ink-2); }
 /* Moties en amendementen: rij opent tweedekamer.nl, de knop aan het eind klapt de stemming uit */
-/* alles links, ook datum en Kamerstuk (Tobias, 23 nov 2026); alleen Rapport? (vinkje of kruisje) in het midden */
+/* alles links, ook datum en Kamerstuk (Tobias, 23 nov 2026); alleen Rapport? (vinkje of streepje) in het midden */
 .motietabel td.rapport, .motietabel th[data-f="rapport"] { text-align: center; }
 .motietabel th[data-f="rapport"] .facet { display: inline-block; }
 .ltitel.wet { font-weight: 400; }
@@ -402,9 +402,18 @@ td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel td.datum { color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .motietabel td.dossier { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel .leeg { color: var(--muted); }
-.motietabel td.thema { width: 200px; }
+.motietabel td.thema { width: 200px; position: relative; }
 .motietabel td.thema .tchips { flex-direction: column; align-items: flex-start; padding-top: 1px; }
 .motietabel td.thema .tchip { line-height: 20px; }
+/* hooguit twee thema's plus "+n"; alle thema's over de cel heen met de muis erop, zodat de rij niet verspringt */
+.tchip-rij { display: flex; align-items: center; gap: 4px; }
+.tplus { font-size: var(--t-12); line-height: 20px; font-weight: 500; color: var(--ink-2); }
+.talle { position: absolute; z-index: 1; top: 7px; left: 3px; padding: 8px; background: var(--card); border: 1px solid var(--line-sterk); border-radius: var(--r-card); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); white-space: nowrap; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity var(--d-kort) var(--ease), visibility var(--d-kort); }
+td.thema:hover > .talle, tr:has(.uitklap:focus-visible) .talle { opacity: 1; visibility: visible; }
+td.thema:hover > .tchips:has(~ .talle), tr:has(.uitklap:focus-visible) .tchips:has(~ .talle) { visibility: hidden; }
+tr.maand > th { position: sticky; top: calc(var(--kop-h, 0px) + var(--h-control) - 1px); z-index: 1; background: var(--page); color: var(--ink); font-size: var(--t-15); font-weight: 600; line-height: 24px; }
+.motietabel tr.maand > th { padding: 8px 12px; }
+tr.grens + tr.maand > th { border-top: 0; }
 /* kolomkop als knop: de tekst begint op dezelfde lijn als de inhoud eronder */
 .motietabel thead th { padding-top: 0; padding-bottom: 0; height: var(--h-control); vertical-align: middle; }
 .sorteer { display: inline-flex; align-items: center; gap: 4px; padding: 0; margin: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; white-space: nowrap; min-height: var(--h-control); transition: color var(--d-kort) var(--ease); }
@@ -694,7 +703,7 @@ ul.zook .status { font-size: var(--t-13); }
 .themas-intro { max-width: var(--leesbreedte); text-wrap: pretty; }
 .themagrid { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
 .themagrid > li { display: flex; min-width: 0; }
-.themakaart { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 8px; min-height: 96px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 20px; color: var(--ink); text-decoration: none; transition: border-color var(--d-kort) var(--ease); }
+.themakaart { flex: 1; min-width: 0; display: flex; min-height: 96px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 20px; color: var(--ink); text-decoration: none; transition: border-color var(--d-kort) var(--ease); }
 .themakaart:hover { border-color: var(--line-sterk); }
 .themakaart:hover h3 { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .themakaart:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
