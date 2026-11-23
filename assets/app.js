@@ -48,8 +48,7 @@
   // lucide-iconen, 16px, lijn 1,5 (stijl in .ico)
   const ICO = { x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
     chevron: '<path d="m6 9 6 6 6-6"/>', pijlop: '<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>', pijlneer: '<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>',
-    pijlrechts: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>', vink: '<path d="M20 6 9 17l-5-5"/>',
-    filter: '<path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/>' };
+    pijlrechts: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>', vink: '<path d="M20 6 9 17l-5-5"/>' };
   const ico = (n) => `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">${ICO[n]}</svg>`;
   // sorteersleutel voor vage datums ("2026-Q4" -> 2026-12-31 etc.)
   function sortKey(d) {
@@ -616,7 +615,7 @@
       for (const v of w.st[k]) if (!tel.has(v)) tel.set(v, 0);
       const n = w.st[k].length;
       return `<details class="facet${open === k ? " al-open" : ""}" data-f="${k}"${open === k ? " open" : ""}>
-        <summary>${fe.id === "mkop" ? ico("filter") : ""}${esc(f.label)}${n ? ` <span class="facet-n">${n}</span>` : ""}</summary>
+        <summary>${esc(f.label)}${n ? ` <span class="facet-n">${n}</span>` : ""}</summary>
         <div class="facet-menu" role="group" aria-label="${esc(f.label)}">${f.orde(new Set(tel.keys()), tel).map((v, i) =>
           `<label${tel.get(v) ? "" : ' class="nul"'}><input type="checkbox" id="wf-${k}-${i}" data-f="${k}" value="${esc(v)}"${w.st[k].includes(v) ? " checked" : ""}><span>${f.tekst(v)}</span><span class="n">${nl(tel.get(v))}</span></label>`).join("") || `<div class="muted small">Geen waarden</div>`}</div></details>`;
     };
@@ -821,6 +820,78 @@
     return dlg;
   }
   // alleen eenvoudige opmaak uit een Word-bestand overnemen
+  // Word-stijlen van de Kamer die mammoth niet kent: vragen (ListParagraph, vaak zonder gedefinieerde nummering) en de
+  // kopjes "1" en "Antwoord" in een antwoord (Huisstijl-Kopje)
+  const WORD_STIJLEN = ["p.ListParagraph => p.dv-nr:fresh", "p.Lijstalinea => p.dv-nr:fresh", "p[style-name='Huisstijl-Kopje'] => p.dv-kopje:fresh"];
+  // Word-weergave dichter bij Word (Tobias, 23 nov 2026): lege regels weg, Kamervragen genummerd, voetnoten bij de tekst,
+  // vanaf 3 tussenkoppen een inhoud in de zijbalk
+  function wordExtra(body) {
+    const art = body.querySelector(".dv-docx");
+    for (const p of art.querySelectorAll("p")) {
+      while (p.lastChild && (p.lastChild.nodeName === "BR" || (p.lastChild.nodeType === 3 && !p.lastChild.textContent.trim()))) p.lastChild.remove();
+      if (!p.textContent.trim() && !p.querySelector("img")) p.remove();
+      // in een antwoord staan het vraagnummer en "Antwoord" vaak als gewone alinea: vet, zoals in Word
+      else if (/^(Vraag\s*)?\d{1,3}\.?$|^Antwoord(\s+\d{1,3})?$/.test(p.textContent.trim())) p.classList.add("dv-kopje");
+    }
+    // shortcut: Kamervragen herkend aan de aanhef; uitbreiden als een ander soort stuk ook genummerd moet
+    if (/Vragen van (het lid|de leden)/.test(art.textContent.slice(0, 800))) art.classList.add("vragen");
+
+    // voetnoten: klik of muis op het cijfer toont de noot eronder; de lijst onderaan blijft staan
+    const isRef = (el) => el.closest?.('a[href^="#footnote-"]:not([href^="#footnote-ref"]), a[href^="#endnote-"]:not([href^="#endnote-ref"])');
+    let noot = null, timer = 0;
+    const sluit = () => { clearTimeout(timer); noot?.remove(); noot = null; };
+    const toon = (a) => {
+      if (noot && noot.dataset.voor === a.getAttribute("href")) return;
+      sluit();
+      const li = art.querySelector(a.getAttribute("href"));
+      if (!li) return;
+      noot = document.createElement("div");
+      noot.className = "dv-noot"; noot.dataset.voor = a.getAttribute("href");
+      noot.innerHTML = li.innerHTML;
+      noot.querySelectorAll('a[href*="note-ref"]').forEach((x) => x.remove());
+      const ra = a.getBoundingClientRect(), rb = art.getBoundingClientRect();
+      noot.style.setProperty("--x", `${Math.round(Math.min(ra.left - rb.left, rb.width - 440))}px`);
+      noot.style.setProperty("--y", `${Math.round(ra.bottom - rb.top + 4)}px`);
+      art.append(noot);
+    };
+    art.addEventListener("click", (e) => {
+      const a = isRef(e.target);
+      if (a) { e.preventDefault(); toon(a); } else if (!e.target.closest(".dv-noot")) sluit();
+    });
+    art.addEventListener("mouseover", (e) => { const a = isRef(e.target); if (a || e.target.closest(".dv-noot")) { clearTimeout(timer); if (a) toon(a); } });
+    art.addEventListener("mouseout", (e) => { if (isRef(e.target) || e.target.closest(".dv-noot")) { clearTimeout(timer); timer = setTimeout(sluit, 250); } });
+    body.onkeydown = (e) => { if (e.key === "Escape" && noot) { e.preventDefault(); sluit(); } };
+
+    // inhoud: koppen, of alinea's die alleen vette tekst zijn (tussenkoppen in Kamerbrieven)
+    const koppen = [...art.querySelectorAll("h1, h2, h3, p")].filter((el) => {
+      const t = el.textContent.trim();
+      if (el.closest("table, li")) return false; // vette cellen en noten zijn geen tussenkop
+      if (/^H/.test(el.tagName)) return !!t;
+      return el.children.length === 1 && el.firstElementChild.tagName === "STRONG" && el.firstElementChild.textContent.trim() === t
+        && t.length < 120 && /[a-z]{3}/.test(t);
+    });
+    if (koppen.length < 3) return;
+    koppen.forEach((k, i) => { k.id = `dv-k${i}`; });
+    art.insertAdjacentHTML("beforebegin", `<nav class="dv-inhoud" aria-label="Inhoud van het document"><p class="dv-inhoud-kop">Inhoud</p><ol>${koppen.map((k, i) =>
+      `<li><a href="#dv-k${i}">${esc(k.textContent.trim())}</a></li>`).join("")}</ol></nav>`);
+    body.classList.add("met-inhoud");
+    const links = [...body.querySelectorAll(".dv-inhoud a")];
+    body.querySelector(".dv-inhoud").addEventListener("click", (e) => {
+      const a = e.target.closest("a");
+      if (!a) return;
+      e.preventDefault(); // geen hashwissel: die zou de router laten springen
+      art.querySelector(a.getAttribute("href")).scrollIntoView({ block: "start" });
+    });
+    // de kop die nu bovenaan in beeld is licht op
+    const markeer = () => {
+      const top = body.getBoundingClientRect().top + 48;
+      let i = -1; // boven de eerste kop: niets
+      koppen.forEach((k, j) => { if (k.getBoundingClientRect().top <= top) i = j; });
+      links.forEach((a, j) => (j === i ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current")));
+    };
+    body.onscroll = markeer;
+    markeer();
+  }
   function schoonHtml(html) {
     const t = document.createElement("template");
     t.innerHTML = html;
@@ -828,7 +899,9 @@
       if (/^(SCRIPT|STYLE|IFRAME|OBJECT|EMBED|LINK|META|FORM|INPUT|BUTTON)$/.test(el.tagName)) { el.remove(); continue; }
       for (const a of [...el.attributes]) {
         const ok = (a.name === "href" && /^(https?:|mailto:|#)/i.test(a.value)) || (a.name === "src" && /^data:image\//i.test(a.value))
-          || ["alt", "colspan", "rowspan"].includes(a.name);
+          || ["alt", "colspan", "rowspan"].includes(a.name)
+          // onze eigen klassen uit de styleMap van mammoth en de ankers van voetnoten (wordExtra())
+          || (a.name === "class" && /^dv-[a-z]+$/.test(a.value)) || (a.name === "id" && /^(foot|end)note(-ref)?-\d+$/.test(a.value));
         if (!ok) el.removeAttribute(a.name);
       }
       if (el.tagName === "A" && el.getAttribute("href") && !el.getAttribute("href").startsWith("#")) { el.target = "_blank"; el.rel = "noopener"; }
@@ -843,6 +916,7 @@
     $("#dv-meta").textContent = [bestand, dnr].filter(Boolean).join(" · ");
     $("#dv-acties").innerHTML = `${dnr ? extLink(DOWNLOAD_URL(dnr), "Download") : extLink(DOC_URL(doc), "Download")}${link ? extLink(link, "Op tweedekamer.nl") : ""}`;
     body.innerHTML = `<p class="dv-laden muted">Document laden</p>`;
+    body.classList.remove("met-inhoud"); body.onscroll = body.onkeydown = null;
     document.documentElement.classList.add("dv-open");
     if (!dlg.open) {
       // het venster groeit uit de knop waarop is geklikt (en krimpt daar weer naartoe); plek berekend zonder layout van het venster
@@ -857,9 +931,10 @@
         if (!window.mammoth) await laadScript("assets/vendor/mammoth.browser.min.js");
         const r = await fetch(DOC_URL(doc));
         if (!r.ok) throw new Error(r.status);
-        const html = (await window.mammoth.convertToHtml({ arrayBuffer: await r.arrayBuffer() })).value;
+        const html = (await window.mammoth.convertToHtml({ arrayBuffer: await r.arrayBuffer() }, { styleMap: WORD_STIJLEN })).value;
         if (token !== viewerToken) return;
         body.innerHTML = `<article class="dv-docx">${schoonHtml(html)}</article>`;
+        wordExtra(body);
         return;
       }
       const lib = await pdfLib();
@@ -1785,7 +1860,7 @@
           const isV = dag === VANDAAG;
           return `<div class="tl-dag ${isV ? "vandaag" : ""} ${dag < VANDAAG ? "verleden" : ""}" ${isV ? 'id="vandaag"' : ""}>
             <div class="tl-datum"><div class="wd">${isV ? "Vandaag" : WEEKDAGEN[d.getDay()].slice(0, 2)}</div><div class="dn">${+dag.slice(8)}</div><div class="mn">${MAANDEN_KORT[+dag.slice(5, 7) - 1]}</div></div>
-            <ul class="tl-lijst">${l.length ? l.sort((a, b) => a.t.localeCompare(b.t)).map(regel).join("") : `<li class="tl-item leeg muted">${afGefilterd() ? "Niets met deze filters vandaag" : "Geen vergaderingen vandaag"}</li>`}</ul>
+            <ul class="tl-lijst">${l.length ? l.sort((a, b) => a.t.localeCompare(b.t) || !!b.inbreng - !!a.inbreng).map(regel).join("") : `<li class="tl-item leeg muted">${afGefilterd() ? "Niets met deze filters vandaag" : "Geen vergaderingen vandaag"}</li>`}</ul>
           </div>`;
         }).join("")}
       </section>`;

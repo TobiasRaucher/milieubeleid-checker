@@ -105,6 +105,9 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 Knoppen "Bekijk het origineel", "Lees de brief", "Lees de vragen", "Lees het antwoord" en "Lees" bij bijlagen (`docKnop()`)
 openen een venster (`toonDocument()`): pdf met pdf.js, Word met mammoth (beide in `vendor/`, pas geladen bij openen),
 rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat open, een iframe niet).
+Word (sinds 23 nov 2026, `WORD_STIJLEN`, `wordExtra()`): Kamervragen genummerd (stijl `ListParagraph`), in een antwoord het
+nummer en "Antwoord" vet, voetnoten in een kaartje bij het cijfer, vanaf 3 tussenkoppen een inhoud links. `schoonHtml()` laat
+alleen klassen `dv-…` en ids `footnote-…` door.
 
 ## Wetgeving (`#wetgeving`, `#wetgeving/wetten`, `#wetgeving/<Kamerstuk>`)
 
@@ -136,7 +139,8 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
   nieuwste eerst. De filters gaan mee. Schakelaar, filters en zoekveld op één rij (geen knop
   "Eerdere vergaderingen" sinds 23 nov 2026); "Naar komende vergaderingen" onder Geweest.
 - Regel in drie kolommen: tijd (met de eindtijd eronder, "Eerstvolgend", of "tot hh:mm" bij inbreng), inhoud (titel 18/500, daaronder meta met themalabels),
-  rechts één uitklapknop en "Live op Debat Direct". Weekkop blijft staan bij scrollen.
+  rechts één uitklapknop (verticaal in het midden) en "Live op Debat Direct". Weekkop blijft staan bij scrollen. Alle lijnen even
+  breed en overal 16px tussen lijn en tekst; binnen een dag op tijd, een inbrengtermijn bij gelijke tijd eerst.
 - Plenaire stemmingen per dag als regel (`stemmingenPerDag()`, ook voor Komt eraan), type Stemmingen, alleen in Komend.
 - Werkbalk: zoekveld (titel, commissie, type) en filters type, ministerie en thema (`AGENDA_FILTERS`; geen commissie sinds 18 nov 2026; meerdere
   waarden; geen filter op samenvatting), in de URL (bv. `#agenda?thema=adaptatie&type=Commissiedebat&q=water&terugblik=1`).
