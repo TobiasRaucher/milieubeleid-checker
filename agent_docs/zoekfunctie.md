@@ -35,6 +35,7 @@ Alle keuzes staan in de URL: `#zoeken?q=…&cat=moties&periode=maand&wie=f:pvv`.
 - Moties en amendementen met dezelfde titel (gewijzigd, ter vervanging, opnieuw ingediend) zijn één rij met "Ook: …" (`voegSamen()`).
 - Geen resultaten: welk filter het veroorzaakt, "Bedoelde je …?" (dichtstbijzijnde bekende woorden), welke losse woorden wel
   iets opleveren, en de thema's. "Bedoelde je" staat ook in de telregel bij alleen gedeeltelijke of tikfouttreffers.
+- Minder dan tien treffers op meer woorden samen: de telregel biedt ook de losse woorden aan ("Zoek ook op ...", sinds 23 nov 2026).
 - Een toezegging leidt naar haar vergadering op de Agenda.
 
 ## Zoekveld in de kop
