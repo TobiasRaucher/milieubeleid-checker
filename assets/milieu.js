@@ -185,7 +185,6 @@
 
     // gemeten reeks
     const d = r.map((p, i) => `${i ? "L" : "M"}${X(p.jaar).toFixed(1)},${Y(p.waarde).toFixed(1)}`).join("");
-    svg.append(el("svg:path", { d: `${d}L${X(k.laatst.jaar)},${Y(0)}L${X(x0)},${Y(0)}Z`, class: "mi-vlak" }));
     if (v.wet === "klimaat") {
       // basisjaar 1990: haarlijn over de hele breedte
       svg.append(el("svg:line", { x1: m.l, x2: rechts, y1: Y(k.basis.waarde), y2: Y(k.basis.waarde), class: "mi-ref" }));
