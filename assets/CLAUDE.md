@@ -137,6 +137,8 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
   Een klik op een themalabel zet dat thema aan of uit.
 - Vergaderingen zonder samenvatting met agendapunten en/of moties klappen uit met één knop ("Toon agenda (n punten)",
   "Toon n moties", "Toon agenda en n moties"; `agendaBlok(a, id, ms)`/`agendapuntenBlok()`/`deelnemersBlok()`).
+  Moties en amendementen die als stuk bij een agendapunt staan (meestal "Moties ingediend tijdens het debat") staan daar
+  in de vorm van `motieLijst()` (`stukMotie()`); het losse blok Moties, ook in een samenvatting, toont alleen de rest (`inPunten()`).
   Moties en amendementen linken naar hun opengeklapte rij (`#moties?open=<zaak>`; `open=` werkt op elke tabel via `def.sleutel`). Stukken op
   Kamerstuknummer; moties en amendementen met uitslag of stemmingsdatum; per Kamerstukdossier een link naar `#moties?q=<nummer>`.
 - Zaal (`zaal`, vaak leeg; plenair = "Plenaire zaal"), label Besloten, en bij openbare vergaderingen van vandaag "Live op Debat Direct".

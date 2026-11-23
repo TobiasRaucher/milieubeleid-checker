@@ -1619,11 +1619,19 @@
   // agendapunten met de te behandelen stukken (op Kamerstuknummer), en per Kamerstukdossier een link naar alle moties daarbij
   const puntenVan = (a) => (a?.agendapunten || []).filter((ap) => (ap.stukken || []).length || !/:\s*$/.test(ap.onderwerp || ""));
   const opKamerstuk = (x, y) => (x.kamerstuk || "~").localeCompare(y.kamerstuk || "~", "nl", { numeric: true });
+  // een motie of amendement uit onze data die als stuk bij een agendapunt staat: die staat daar in de vorm van motieLijst()
+  const stukMotie = (st) => (/^(motie|amendement)/i.test(st.soort || "") && zaakVanNr(zaakUitLink(st.link))) || null;
+  // nummers van de moties die al in de agendapunten staan; het losse blok Moties toont alleen de rest
+  const inPunten = (a) => new Set(heeftAgenda(a) ? puntenVan(a).flatMap((ap) => (ap.stukken || []).map(stukMotie).filter(Boolean).map((z) => z.nummer)) : []);
   function agendapuntenBlok(a) {
     const aps = puntenVan(a);
     if (!aps.length) return "";
     const dossiers = uniek(aps.flatMap((ap) => (ap.stukken || []).map((st) => (st.kamerstuk || "").replace(/-[^-]+$/, "")).filter(Boolean)));
-    return `<ol class="agendapunten">${aps.map((ap) => `<li><b>${esc(ap.onderwerp)}</b>${(ap.stukken || []).length ? `<div class="small muted">Te behandelen:</div><ul class="stukken">${[...ap.stukken].sort(opKamerstuk).map((st) => stukRegel(st, ap.onderwerp)).join("")}</ul>` : ""}</li>`).join("")}</ol>`
+    const punt = (ap) => {
+      const st = [...(ap.stukken || [])].sort(opKamerstuk), ms = st.map(stukMotie).filter(Boolean), rest = st.filter((x) => !stukMotie(x));
+      return `<li><b>${esc((ap.onderwerp || "").replace(/:\s*$/, ""))}</b>${rest.length ? `<div class="small muted">Te behandelen:</div><ul class="stukken">${rest.map((x) => stukRegel(x, ap.onderwerp)).join("")}</ul>` : ""}${motieLijst(ms)}</li>`;
+    };
+    return `<ol class="agendapunten">${aps.map(punt).join("")}</ol>`
       + (dossiers.length ? `<div class="dossierlinks small">${dossiers.map((n) => `<a href="#moties?q=${encodeURIComponent(n)}">Alle moties bij Kamerstuk ${esc(n)}</a>`).join("")}</div>` : "");
   }
   function deelnemersBlok(a, d = {}) {
@@ -1643,6 +1651,7 @@
   }
   // uitklapbare agenda en/of moties bij een vergadering zonder samenvatting: één knop per rij
   function agendaBlok(a, id, ms = []) {
+    const al = inPunten(a); ms = ms.filter((z) => !al.has(z.nummer));
     const n = heeftAgenda(a) ? puntenVan(a).length : 0, open = samOpen.has(id), deelnemers = n ? deelnemersBlok(a) : "";
     if (!n && !ms.length) return "";
     const nm = `${ms.length} ${ms.length === 1 ? "motie" : "moties"}`;
@@ -1679,7 +1688,7 @@
         ${blok("Kern", `<p>${esc(d.gist)}</p>${(s.kern || []).length ? lijst(s.kern) : ""}`)}
         ${blok("Standpunten fracties", standpunten)}
         ${blok("Toezeggingen", toezeggingen || `<p class="muted">Geen toezeggingen</p>`)}
-        ${blok("Moties", (s.moties ? `<p>${esc(s.moties)}</p>` : "") + motieLijst(motiesBijActiviteiten([d.activiteit, ...(d.extraActiviteiten || [])])))}
+        ${blok("Moties", (s.moties ? `<p>${esc(s.moties)}</p>` : "") + motieLijst(motiesBijActiviteiten([d.activiteit, ...(d.extraActiviteiten || [])]).filter((z) => !inPunten(a).has(z.nummer))))}
         ${blok("Vervolg", (s.vervolg || []).length ? lijst(s.vervolg) : "")}
         </div><div class="sam-zij">
         ${blok("Agendapunten", agendapunten)}
