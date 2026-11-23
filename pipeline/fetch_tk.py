@@ -43,6 +43,7 @@ import time
 import urllib.parse
 import urllib.request
 import urllib.error
+import xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -843,6 +844,93 @@ def wetstukken(nummers, batch=10):
     return {n: sorted(v, key=lambda x: x["volgnummer"]) for n, v in sorted(uit.items())}
 
 
+# ---------- Eerste Kamer (officielebekendmakingen.nl, SRU) ----------
+SRU = "https://repository.overheid.nl/sru"
+SRU_NS = {"sru": "http://docs.oasis-open.org/ns/search-ws/sruResponse", "dcterms": "http://purl.org/dc/terms/",
+          "ow": "http://standaarden.overheid.nl/wetgeving/", "gzd": "http://standaarden.overheid.nl/sru"}
+EK = 'dt.creator="Eerste Kamer der Staten-Generaal"'
+# ministerie uit de titel van een Eerste Kamer-stuk ("... met de minister van KGG ..."); de SRU-gegevens noemen het niet
+EK_MINISTERIES = {"KGG": "Klimaat en Groene Groei", "IenW": "Infrastructuur en Waterstaat", "LVVN": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+                  "VRO": "Volkshuisvesting en Ruimtelijke Ordening", "BZK": "Binnenlandse Zaken en Koninkrijksrelaties", "EZ": "Economische Zaken",
+                  "I&W": "Infrastructuur en Waterstaat", "Financiën": "Financiën", "JenV": "Justitie en Veiligheid",
+                  "VWS": "Volksgezondheid, Welzijn en Sport", "BZ": "Buitenlandse Zaken"}
+
+
+def sru(query):
+    """Alle records van een zoekvraag op repository.overheid.nl (1000 per pagina), als platte dicts."""
+    uit, start = [], 1
+    while True:
+        url = SRU + "?" + urllib.parse.urlencode({"operation": "searchRetrieve", "version": "2.0", "maximumRecords": 1000,
+                                                  "startRecord": start, "query": "c.product-area==officielepublicaties AND " + query})
+        for poging in range(4):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "milieubeleid-checker"}), timeout=60) as r:
+                    root = ET.fromstring(r.read())
+                break
+            except Exception as e:
+                log(f"  SRU-fout {e}, opnieuw proberen ({poging + 1})")
+                time.sleep(3 * (poging + 1))
+        else:
+            raise RuntimeError(f"SRU mislukt na 4 pogingen: {query}")
+        for rec in root.iterfind(".//sru:record", SRU_NS):
+            g = lambda pad: re.sub(r"\s+", " ", rec.findtext(pad, "", SRU_NS)).strip()
+            uit.append({"id": g(".//dcterms:identifier"), "titel": g(".//dcterms:title"), "datum": g(".//dcterms:date")[:10] or None,
+                        "documenttitel": g(".//ow:documenttitel"), "dossiertitel": g(".//ow:dossiertitel"),
+                        "dossier": g(".//ow:dossiernummer"), "behandeld": g(".//ow:behandeldDossier"), "ondernummer": g(".//ow:ondernummer"),
+                        "soort": g(".//ow:subrubriek"), "url": g(".//gzd:preferredUrl")})
+        volgende = root.findtext("sru:nextRecordPosition", "", SRU_NS)
+        if not volgende:
+            return uit
+        start = int(volgende)
+
+
+def ek_uniek(records):
+    """Alleen Kamerstukken (geen bijlagen), één per Kamerstuk en ondernummer (de nieuwste versie)."""
+    per = {}
+    for r in sorted(records, key=lambda r: r["datum"] or ""):
+        if r["id"].startswith("kst-") and r["dossier"]:
+            per[(r["dossier"], r["ondernummer"] or r["id"])] = r
+    return list(per.values())
+
+
+def eerste_kamer(start, wet_nrs, aangenomen, regels):
+    """Stukken van de Eerste Kamer. Geeft (stukken, perWet) terug:
+    - stukken: brieven en verslagen (bv. schriftelijk overleg) vanaf de startdatum in een gevolgd Kamerstukdossier of met een
+      trefwoord in de titel, niet bij een wetsvoorstel; in de vorm van stukken.json (soort Brief regering, kamer Eerste Kamer);
+    - perWet: per door de Tweede Kamer aangenomen wetsvoorstel de Eerste Kamer-stukken (A, B, C, ...) en de Staatsblad-publicatie."""
+    ds = {str(x) for s in CONFIG["sectoren"].values() if s.get("actief") for x in s.get("stukDossiers", [])}
+    ds |= {k for ks, breed, _ in regels.values() for k in ks - breed}
+    uit = _regex(CONFIG["stukken"].get("uitsluiten", []))
+    stukken = []
+    for r in ek_uniek(sru(f'w.publicatienaam==Kamerstuk AND {EK} AND dt.date>={start}')):
+        if r["dossier"] in wet_nrs or r["soort"] in ("Motie", "Voorstel van wet") or (uit and uit.search(r["documenttitel"])):
+            continue
+        sectoren = [c for c, (ks, breed, _) in regels.items() if r["dossier"] in ks - breed] or sectoren_op_trefwoord(schone_tekst(r["titel"]), regels)
+        if r["dossier"] in ds and not sectoren:
+            sectoren = [c for c, s in CONFIG["sectoren"].items() if r["dossier"] in {str(x) for x in s.get("stukDossiers", [])}]
+        if not sectoren:
+            continue
+        m = re.search(r"\bvan (" + "|".join(map(re.escape, EK_MINISTERIES)) + r")\b", r["documenttitel"])
+        stukken.append({"id": r["id"], "kamer": "Eerste Kamer", "soort": "Brief regering", "ekSoort": r["soort"] or None, "datum": r["datum"],
+                        "titel": None, "onderwerp": r["documenttitel"] or r["titel"], "zaak": None,
+                        "ministerie": EK_MINISTERIES[m[1]] if m else None, "ondertekenaar": None, "functie": None,
+                        "kamerstuk": f'{r["dossier"]}-{r["ondernummer"]}' if r["ondernummer"] else r["dossier"],
+                        "dossiers": [{"nummer": r["dossier"], "toevoeging": None, "titel": r["dossiertitel"] or None}],
+                        "sectoren": sectoren, "link": r["url"]})
+    # shortcut: twee zoekvragen per aangenomen wetsvoorstel (nu ~90); bij veel meer: alleen die zonder Staatsblad opnieuw vragen
+    per_wet = {}
+    for nr in sorted(aangenomen):
+        lijst = [{"volgnummer": r["ondernummer"], "soort": r["soort"] or None, "titel": r["documenttitel"] or r["soort"] or "Kamerstuk",
+                  "datum": r["datum"], "link": r["url"], "kamer": "Eerste Kamer"}
+                 for r in ek_uniek(sru(f"w.dossiernummer=={nr} AND {EK}")) if r["soort"] != "Motie"]
+        stb = [r for r in sru(f"w.publicatienaam==Staatsblad AND w.behandeldDossier=={nr}") if r["url"]]
+        lijst += [{"volgnummer": None, "soort": "Staatsblad", "titel": r["titel"], "datum": r["datum"], "link": r["url"], "kamer": "Staatsblad"}
+                  for r in sorted(stb, key=lambda r: r["datum"] or "")[:1]]
+        if lijst:
+            per_wet[nr] = sorted(lijst, key=lambda x: x["datum"] or "")
+    return stukken, per_wet
+
+
 def alleen_begrotingen():
     lijst = begrotingsstukken()
     (OUT / "begrotingen.json").write_text(json.dumps(lijst, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -991,6 +1079,18 @@ def main():
         (OUT / "activiteiten.json").write_text(json.dumps(act_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     else:
         log("Geen activiteiten opgehaald: bestaande activiteiten.json blijft staan.")
+    # 7a. Eerste Kamer: brieven en verslagen bij de stukken, Eerste Kamer-fase bij de wetsvoorstellen
+    wet_nrs = {str(d["nummer"]) for z in zaken_lijst if "wetgeving" in (z["soort"] or "").lower() for d in z["dossiers"]}
+    ek_wet = {}
+    try:
+        aangenomen = {str(d["nummer"]) for z in zaken_lijst if "wetgeving" in (z["soort"] or "").lower() and z.get("uitslag") == "aangenomen" for d in z["dossiers"]}
+        ek_stukken, ek_wet = eerste_kamer(start, wet_nrs, aangenomen, regels)
+        if stuk_lijst:
+            stuk_lijst = sorted(stuk_lijst + ek_stukken, key=lambda x: x["datum"] or "", reverse=True)
+        log(f"== Eerste Kamer: {len(ek_stukken)} stukken, {len(ek_wet)} wetsvoorstellen met Eerste Kamer-stukken")
+    except Exception as e:
+        FOUTEN.append(f"Eerste Kamer: {e}")
+        log(f"    FOUT Eerste Kamer: {e}")
     if stuk_lijst:
         (OUT / "stukken.json").write_text(json.dumps(stuk_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     if stem_data:
@@ -999,7 +1099,9 @@ def main():
         (OUT / "begrotingen.json").write_text(json.dumps(begr, ensure_ascii=False, indent=1), encoding="utf-8")
     # 7b. Kamerstukken per gevolgd wetsvoorstel (Wetgeving, uitgeklapte rij)
     try:
-        ws = wetstukken({str(d["nummer"]) for z in zaken_lijst if "wetgeving" in (z["soort"] or "").lower() for d in z["dossiers"]})
+        ws = wetstukken(wet_nrs)
+        for nr, lijst in ek_wet.items():
+            ws.setdefault(nr, []).extend(lijst)
         if ws:
             (OUT / "wetstukken.json").write_text(json.dumps(ws, ensure_ascii=False, indent=1), encoding="utf-8")
         log(f"== Kamerstukken voor {len(ws)} wetsvoorstellen")
@@ -1026,7 +1128,7 @@ def main():
         "uitgesloten": uitgesloten,
         "teksten": teksten_telling,
         "fouten": FOUTEN,
-        "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl)",
+        "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl); Eerste Kamer en Staatsblad via officielebekendmakingen.nl",
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Klaar: {len(zaken_lijst)} zaken, {len(act_lijst)} activiteiten, {len(FOUTEN)} fouten")
 

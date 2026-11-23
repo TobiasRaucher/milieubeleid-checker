@@ -50,7 +50,7 @@ De Action `.github/workflows/update.yml` draait elke werkdag om 05:17 en 17:17 U
 
 | Pad | Wat | Wie schrijft |
 |---|---|---|
-| `pipeline/fetch_tk.py` | Haalt activiteiten, zaken, stukken, stemmingen, toezeggingen, begrotingen op | script |
+| `pipeline/fetch_tk.py` | Haalt activiteiten, zaken, stukken, stemmingen, toezeggingen, begrotingen op; Eerste Kamer-stukken en Staatsblad via officielebekendmakingen.nl (SRU) | script |
 | `pipeline/teksten.py` | Teksten van moties en amendementen (draait in `fetch_tk.py`) | script |
 | `pipeline/config.json` | Sectoren, trefwoorden, dossiers, in- en uitsluitingen | Claude/Tobias |
 | `data/tk/*.json` | `activiteiten`, `zaken`, `stukken`, `stemmingen`, `teksten`, `toezeggingen`, `begrotingen`, `wetstukken`, `meta` | alleen script |

@@ -89,6 +89,20 @@ Het toezeggingenregister van de Kamer, alleen bij gevolgde activiteiten plus de 
 koninklijke boodschap, voorstel van wet, memorie van toelichting, advies Raad van State, verslag, nota's, brieven. Met
 `docId`/`bestand` voor de documentweergave en `link` naar tweedekamer.nl. Moties en amendementen niet (die staan in `zaken.json`).
 
+## Eerste Kamer (sinds 23 nov 2026, `eerste_kamer()`)
+
+De Eerste Kamer heeft geen OData zoals de Tweede Kamer; haar Kamerstukken komen uit de SRU-zoekdienst van
+officielebekendmakingen.nl (`repository.overheid.nl/sru`, `sru()`). Alleen Kamerstukken (`kst-`, geen bijlagen), één per
+Kamerstuk en ondernummer (`ek_uniek()`).
+- Per door de Tweede Kamer aangenomen wetsvoorstel: de Eerste Kamer-stukken (A, B, C, ...; geen moties) en de
+  Staatsblad-publicatie (`w.behandeldDossier`), achteraan in `wetstukken.json` met `kamer: "Eerste Kamer"` of `"Staatsblad"`.
+  Twee zoekvragen per wet.
+- Brieven en verslagen (schriftelijk overleg) vanaf de startdatum, niet bij een wetsvoorstel: in `stukken.json` als soort
+  `Brief regering` met `kamer: "Eerste Kamer"`, `ekSoort` (Brief, Verslag, Overig) en `link` naar officielebekendmakingen.nl.
+  Binnen als het Kamerstukdossier gevolgd wordt of de titel een trefwoord van een sector heeft. Het ministerie komt uit de
+  titel ("van KGG", `EK_MINISTERIES`); anders leeg.
+- Moties, stemmingen en vergaderingen van de Eerste Kamer niet (staan alleen als webpagina op eerstekamer.nl).
+
 ## Begrotingen (`data/tk/begrotingen.json`)
 
 Miljoenennota, de begrotingen van de twee nieuwste jaren en het laatste jaarverslag per hoofdstuk in

@@ -94,6 +94,8 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 - `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Label "Met rapport" (`.badge`) achter de titel en filter Rapport
   ("Bevat rapport") als een bijlage een rapport is (`MRThemas.metRapport()`: herkend door de pipeline en niet afgewezen
   in `data/rapporten.json`); in het bijlagenblok staan rapporten vooraan met het label "Rapport".
+  Sinds 23 nov 2026 ook brieven en verslagen aan de Eerste Kamer (`kamer: "Eerste Kamer"` in `stukken.json`): label
+  "Eerste Kamer" achter de titel, filter Kamer, link naar officielebekendmakingen.nl; in Net binnen en zoeken "Kamerbrief, Eerste Kamer".
 - Bijlagen in de uitgeklapte rij van een Kamerbrief en van een antwoord (`bijlagenBlok()`); de zoekfunctie zoekt ook op de titels.
 
 ## Documentweergave
@@ -107,9 +109,10 @@ rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat o
 - Schakelaar (sinds 17 nov 2026): Wetsvoorstellen en Geldende wetten. De enige documentpagina met een schakelaar.
 - Wetsvoorstellen: uit `zaken.json` (soort Wetgeving of Initiatiefwetgeving) als tabel: Wetsvoorstel, Status, Ingediend door,
   Thema, Kamerstuk, Ingediend.
-- Status (sinds 19 nov 2026): de fase zoals op tweedekamer.nl (Voorbereiding, Debat, Stemming, Afgedaan), maar afgeleid uit
+- Status (sinds 19 nov 2026): de fase zoals op tweedekamer.nl (Voorbereiding, Debat, Stemming, Eerste Kamer, Afgedaan), maar afgeleid uit
   onze besluiten, vergaderingen (`kamerstukkenVan()` plus `z.debatten` uit de pipeline) en stemmingen (`wetFase()`); afgedaan
-  toont de uitslag. Ook in de zoekresultaten (`zoekStatus()`).
+  toont de uitslag. Ook in de zoekresultaten (`zoekStatus()`). Eerste Kamer (sinds 23 nov 2026): aangenomen door de Tweede
+  Kamer en nog niet in het Staatsblad (`wetStb()`); de Eerste Kamer-stukken en de Staatsblad-publicatie staan in de tijdlijn.
   Uitgeklapte rij: kenmerken, fasebalk en "Volgende stap" (`faseBlok()`), links "Alles over dit wetsvoorstel", tweedekamer.nl, OpenTK.
 - Pagina per wetsvoorstel (`#wetgeving/<Kamerstuk>`, `wetPagina()`, sinds 19 nov 2026, ontworpen met Tobias): de titel in de
   tabel, Net binnen en de zoekresultaten gaan erheen. Kop (titel, Kamerstuk, ingediend, indiener, thema's), fase, links naar

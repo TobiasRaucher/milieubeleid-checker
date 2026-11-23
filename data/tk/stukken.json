@@ -56,6 +56,31 @@
   ]
  },
  {
+  "id": "kst-1281314",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-20",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over beleid stikstof",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800 XIV-Q",
+  "dossiers": [
+   {
+    "nummer": "36800 XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1281314.html"
+ },
+ {
   "id": "2026D59324",
   "docId": "5fa518a2-e474-47a1-bbc8-00d953444b94",
   "bestand": "DOCX",
@@ -288,6 +313,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59485"
    }
   ]
+ },
+ {
+  "id": "kst-1280885",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-19",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister en de staatssecretaris van KGG over toekomst beleid klimaat en energie",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-CA",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1280885.html"
  },
  {
   "id": "2026D58862",
@@ -1089,6 +1139,31 @@
   ]
  },
  {
+  "id": "kst-1279737",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-12",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van VRO over de financiële positie van woningcorporaties",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36881-E",
+  "dossiers": [
+   {
+    "nummer": "36881",
+    "toevoeging": null,
+    "titel": "Wijziging van het voorstel van wet tot wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1279737.html"
+ },
+ {
   "id": "2026D57482",
   "docId": "a6311b8d-c37a-4497-b055-7cc24e92cc44",
   "bestand": "DOCX",
@@ -1237,6 +1312,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57277"
    }
   ]
+ },
+ {
+  "id": "kst-1279739",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-11",
+  "titel": null,
+  "onderwerp": "Verslag van een mondeling overleg over de wijziging van het Luchthavenverkeerbesluit (LVB) Schiphol op 28 september 2026",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-CQ",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1279739.html"
  },
  {
   "id": "2026D56826",
@@ -2131,6 +2231,31 @@
   ]
  },
  {
+  "id": "kst-1278786",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-11-05",
+  "titel": null,
+  "onderwerp": "Brief aan de Europese Commissie met vragen over de Commissiemededeling: EU-strategie voor de veehouderij",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-AB",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1278786.html"
+ },
+ {
   "id": "2026D55270",
   "docId": "797c6dd5-68d9-4bf1-afa2-5a921f7c9b25",
   "bestand": "DOCX",
@@ -2213,6 +2338,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55628"
    }
   ]
+ },
+ {
+  "id": "kst-1278413",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-04",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van KGG over de commissiemededeling AccelerateEU",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37003-B",
+  "dossiers": [
+   {
+    "nummer": "37003",
+    "toevoeging": null,
+    "titel": "Mededeling van de Commissie aan het Europees Parlement, de Raad, het Europees Economisch en Sociaal Comité en het Comité van de Regio's - AccelerateEU - Energie-unie Betaalbare en veilige energie door versnelde actie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1278413.html"
  },
  {
   "id": "2026D55239",
@@ -2512,16 +2662,23 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
+  "titel": "Problematiek rondom stikstof en PFAS",
   "onderwerp": "Ontwerpprogramma Landbouw, Natuur en Stikstof en Wetsvoorstel voor vastlegging van de emissiedoelen",
   "zaak": "2026Z23902",
   "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
   "ondertekenaar": "J. van Essen",
   "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "35334-490",
+  "dossiers": [
+   {
+    "nummer": 35334,
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
   "sectoren": [
-   "natuur-stikstof-landbouw"
+   "natuur-stikstof-landbouw",
+   "circulair-vervuiling"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23902&did=2026D55195",
   "bijlagen": [
@@ -2595,6 +2752,131 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55014"
    }
   ]
+ },
+ {
+  "id": "kst-1278486",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-11-03",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN ter aanbieding van tweede voortgangsrapportage SPARK-project 2026",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27858-M",
+  "dossiers": [
+   {
+    "nummer": "27858",
+    "toevoeging": null,
+    "titel": "Gewasbeschermingsbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1278486.html"
+ },
+ {
+  "id": "kst-1278191",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-03",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van KGG over stand van zaken energiemarkt voor consumenten",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27879-M",
+  "dossiers": [
+   {
+    "nummer": "27879",
+    "toevoeging": null,
+    "titel": "Versterking van de positie van de consument"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1278191.html"
+ },
+ {
+  "id": "kst-1278653",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-11-03",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN over ondersteuning agrarische sector voor haalbare doelstellingen",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "30252-L",
+  "dossiers": [
+   {
+    "nummer": "30252",
+    "toevoeging": null,
+    "titel": "Toekomstvisie agrarische sector"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1278653.html"
+ },
+ {
+  "id": "kst-1279602",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-11-03",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN over energietransitie glastuinbouw",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BZ",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1279602.html"
+ },
+ {
+  "id": "kst-1278326",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-03",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van LVVN over wijziging Besluit activiteiten leefomgeving en Besluit kwaliteit leefomgeving (bescherming wolf en goudjakhals)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HL",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1278326.html"
  },
  {
   "id": "2026D54911",
@@ -3292,6 +3574,31 @@
   ]
  },
  {
+  "id": "kst-1278152",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-10-28",
+  "titel": null,
+  "onderwerp": "Brief aan de Europese Commissie met vragen over de evaluatie van de Nitratenrichtlijn",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BU",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1278152.html"
+ },
+ {
   "id": "2026D53319",
   "docId": "8bcf18d7-615d-4330-84b1-578779133fea",
   "bestand": "PDF",
@@ -3446,6 +3753,81 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D53394"
    }
   ]
+ },
+ {
+  "id": "kst-1276333",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-27",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37035 M-A",
+  "dossiers": [
+   {
+    "nummer": "37035 M",
+    "toevoeging": null,
+    "titel": "Wijziging van de begrotingsstaat van het Klimaatfonds voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1276333.html"
+ },
+ {
+  "id": "kst-1276315",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-27",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37035 J-A",
+  "dossiers": [
+   {
+    "nummer": "37035 J",
+    "toevoeging": null,
+    "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Miljoenennota)"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1276315.html"
+ },
+ {
+  "id": "kst-1278094",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-27",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van KGG over inpassing kernenergie in het energiesysteem en routekaart 7 GW",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32645-AA",
+  "dossiers": [
+   {
+    "nummer": "32645",
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1278094.html"
  },
  {
   "id": "2026D52989",
@@ -4221,6 +4603,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D52311"
    }
   ]
+ },
+ {
+  "id": "kst-1275288",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-20",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van LVVN over stand van zaken ontwerp-AMvB dierwaardige veehouderij en relatie tot Taskforce Landbouw, Natuur en Stikstof",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28286-AI",
+  "dossiers": [
+   {
+    "nummer": "28286",
+    "toevoeging": null,
+    "titel": "Dierenwelzijn"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1275288.html"
  },
  {
   "id": "2026D52086",
@@ -5316,6 +5723,81 @@
   ]
  },
  {
+  "id": "kst-1274246",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-10-13",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN met appreciatie motie-Van Wijk c.s. over een gelijkwaardige 'eerlijke balans' in het stikstof- en landbouwbeleid",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-CP",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1274246.html"
+ },
+ {
+  "id": "kst-1274468",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-13",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van KGG over voortgang aanpak netcongestie",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-BA",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1274468.html"
+ },
+ {
+  "id": "kst-1274216",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-13",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over drinkwaterwinning Overijssel en Natura-2000-gebieden in relatie tot Begrotingsstaten LVVN 2026",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800 XIV-P",
+  "dossiers": [
+   {
+    "nummer": "36800 XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1274216.html"
+ },
+ {
   "id": "2026D50522",
   "docId": "ddf05ce6-283d-40e7-a499-50c1c3e8ec83",
   "bestand": "DOCX",
@@ -6374,6 +6856,31 @@
   ]
  },
  {
+  "id": "kst-1273577",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-10-07",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van KGG over voortgang afhandeling mijnbouwschade Limburg",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32849-I",
+  "dossiers": [
+   {
+    "nummer": "32849",
+    "toevoeging": null,
+    "titel": "Mijnbouw"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1273577.html"
+ },
+ {
   "id": "2026D48879",
   "docId": "cb2024ab-df06-470f-9e72-206f438fecbe",
   "bestand": "DOCX",
@@ -6598,6 +7105,81 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-1273810",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-06",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33315-B",
+  "dossiers": [
+   {
+    "nummer": "33315",
+    "toevoeging": null,
+    "titel": "Goedkeuring van enkele ministeriële regelingen tot aanpassing van wetten van Nederlands Antilliaanse oorsprong voor de openbare lichamen Bonaire, Sint Eustatius en Saba (Tweede goedkeuringswet BES)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1273810.html"
+ },
+ {
+  "id": "kst-1273106",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-06",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van KGG over mogelijke uitbreiding wettelijk bewijsvermoeden naar alle mijnbouwactiviteiten in Nederland en afhandeling mijnbouwschade",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33529-AC",
+  "dossiers": [
+   {
+    "nummer": "33529",
+    "toevoeging": null,
+    "titel": "Gaswinning Groningen-veld"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1273106.html"
+ },
+ {
+  "id": "kst-1273316",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-10-06",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over Programma Maatwerk PAS-melders",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CP",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1273316.html"
  },
  {
   "id": "2026D48724",
@@ -7123,6 +7705,56 @@
   ]
  },
  {
+  "id": "kst-1274542",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-10-05",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van publicatie Monitor stikstofdepositie in Natura 2000-gebieden 2026",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CQ",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1274542.html"
+ },
+ {
+  "id": "kst-1273565",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-10-05",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van KGG over voortgang aanpak netcongestie najaar 2026",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AZ",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1273565.html"
+ },
+ {
   "id": "2026D48352",
   "docId": "43db76af-dfdd-4ba8-95f9-03946da418ca",
   "bestand": "DOCX",
@@ -7617,6 +8249,32 @@
   ]
  },
  {
+  "id": "kst-1272649",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-10-01",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN over emissienormen stikstof en klimaat in relatie tot biologische en extensieve melkveebedrijven",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800 XIV-O",
+  "dossiers": [
+   {
+    "nummer": "36800 XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie",
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1272649.html"
+ },
+ {
   "id": "2026D47478",
   "docId": "70e367f7-534e-49ab-9d25-126ed4d1833f",
   "bestand": "PDF",
@@ -7746,6 +8404,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47554"
    }
   ]
+ },
+ {
+  "id": "kst-1272656",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-30",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van J&V over de voorstellen voor Besluiten van de Raad betreffende de ondertekening en sluiting, namens de Europese Unie, van het Verdrag van de Raad van Europa inzake de bescherming van het milieu door middel van het strafrecht",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36842-A",
+  "dossiers": [
+   {
+    "nummer": "36842",
+    "toevoeging": null,
+    "titel": "Voorstellen voor besluiten van de Raad betreffende de sluiting en ondertekening, namens de EU, van het Verdrag van de Raad van Europa inzake de bescherming van het milieu door middel van het strafrecht"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1272656.html"
  },
  {
   "id": "2026D47131",
@@ -8471,6 +9154,56 @@
   ]
  },
  {
+  "id": "kst-1271409",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-28",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van I&W over overzicht aanpak PFAS",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CO",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1271409.html"
+ },
+ {
+  "id": "kst-31936-CF",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-28",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van I&W over het ontwerpbesluit tot wijziging van het Luchthavenverkeerbesluit (LVB) Schiphol",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-CF",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-CF.html"
+ },
+ {
   "id": "2026D46517",
   "docId": "c5c5feaf-7cba-4992-ae5a-4c1f62134364",
   "bestand": "PDF",
@@ -8783,6 +9516,32 @@
   ]
  },
  {
+  "id": "kst-1270853",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-25",
+  "titel": null,
+  "onderwerp": "Brief van de minister van I&W met een nadere duiding over het advies van de Afdeling Advisering van de Raad van State over het besluit tot wijziging van het Luchthavenverkeerbesluit (LVB) Schiphol en het herziene milieueffectrapport (MER)",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-CE",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling",
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1270853.html"
+ },
+ {
   "id": "2026D45904",
   "docId": "16989446-f0a1-49db-887e-0a1513abd91c",
   "bestand": "PDF",
@@ -9092,6 +9851,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D46040"
    }
   ]
+ },
+ {
+  "id": "kst-1279672",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-24",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van I&W en de ministers van KGG en van LVVN over de geannoteerde agenda voor de Milieuraad van 12 oktober 2026",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "21501-08-AS",
+  "dossiers": [
+   {
+    "nummer": "21501-08",
+    "toevoeging": null,
+    "titel": "Milieuraad"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1279672.html"
  },
  {
   "id": "2026D45651",
@@ -9424,6 +10208,31 @@
    "water-adaptatie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z19733&did=2026D45715"
+ },
+ {
+  "id": "kst-1271636",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-23",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van KGG inzake overname ZEH Energy en toewerken naar bedrijfsduurverlenging KCB na 2033",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32645-Z",
+  "dossiers": [
+   {
+    "nummer": "32645",
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1271636.html"
  },
  {
   "id": "2026D45398",
@@ -10757,6 +11566,31 @@
   ]
  },
  {
+  "id": "kst-1270275",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-18",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van BZK over aanpak 'comply or explain' Bonaire, Sint Eustatius en Saba",
+  "zaak": null,
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37020 IV-A",
+  "dossiers": [
+   {
+    "nummer": "37020 IV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2027"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1270275.html"
+ },
+ {
   "id": "2026D44066",
   "docId": "e321d599-2b8b-4284-8b59-35adc1e013bb",
   "bestand": "PDF",
@@ -11342,6 +12176,81 @@
   ]
  },
  {
+  "id": "kst-1270683",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-15",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG, SZW en VRO ter aanbieding van kabinetsreactie op Monitor Energiearmoede in Nederland 2025",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AY",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1270683.html"
+ },
+ {
+  "id": "kst-1270682",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-15",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG ter aanbieding van kabinetsreactie ontwikkeling energierekening huishoudens",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AX",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1270682.html"
+ },
+ {
+  "id": "kst-32813-BY",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-15",
+  "titel": null,
+  "onderwerp": "Brief van de minister en staatssecretaris van KGG ter aanbieding van pakket stukken op Prinsjesdag over toekomst beleid klimaat en energie",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BY",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BY.html"
+ },
+ {
   "id": "2026D43111",
   "docId": "939ac0b4-45a6-4a4b-955e-0b6e0f89b8ce",
   "bestand": "PDF",
@@ -11621,6 +12530,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D43247"
    }
   ]
+ },
+ {
+  "id": "kst-31936-CD",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-14",
+  "titel": null,
+  "onderwerp": "Brief van de minister van I&W ter aanbieding van het advies van de Afdeling advisering Raad van State en het herziene MER bij het LVB Schiphol",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-CD",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-CD.html"
+ },
+ {
+  "id": "kst-27625-P",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-14",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van I&W over de lopende herziening van de Kaderrichtlijn Water (KRW), de Grondwaterrichtlijn en de richtlijn prioritaire stoffen",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27625-P",
+  "dossiers": [
+   {
+    "nummer": "27625",
+    "toevoeging": null,
+    "titel": "Waterbeleid"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-27625-P.html"
  },
  {
   "id": "2026D42811",
@@ -12166,6 +13125,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42872"
    }
   ]
+ },
+ {
+  "id": "kst-36800-XIV-N",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-11",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van kabinetsreactie op reflectie samenhangende aanpak voor landbouw, natuur en stikstof van PBL en Landsadvocaat",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XIV-N",
+  "dossiers": [
+   {
+    "nummer": "36800-XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XIV-N.html"
+ },
+ {
+  "id": "kst-1270217",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-11",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN ter aanbieding van voorhang ontwerp-AMvB Dierwaardige veehouderij",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28286-AH",
+  "dossiers": [
+   {
+    "nummer": "28286",
+    "toevoeging": null,
+    "titel": "Dierenwelzijn"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1270217.html"
  },
  {
   "id": "2026D42430",
@@ -12863,6 +13872,81 @@
   ]
  },
  {
+  "id": "kst-36945-J-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-08",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36945-J-A",
+  "dossiers": [
+   {
+    "nummer": "36945-J",
+    "toevoeging": null,
+    "titel": "Jaarverslag en slotwet Deltafonds 2025"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36945-J-A.html"
+ },
+ {
+  "id": "kst-36945-M-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-08",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36945-M-A",
+  "dossiers": [
+   {
+    "nummer": "36945-M",
+    "toevoeging": null,
+    "titel": "Jaarverslag en slotwet Klimaatfonds 2025"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36945-M-A.html"
+ },
+ {
+  "id": "kst-34682-AF",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-08",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de ministers van I&W en van VRO over het PBL-rapport Stresstest kwetsbare gebieden",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "34682-AF",
+  "dossiers": [
+   {
+    "nummer": "34682",
+    "toevoeging": null,
+    "titel": "Nationale Omgevingsvisie"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-34682-AF.html"
+ },
+ {
   "id": "2026D41028",
   "docId": "fad50241-6bb7-44c6-ab3b-0e1678e8948a",
   "bestand": "PDF",
@@ -13240,6 +14324,81 @@
   ]
  },
  {
+  "id": "kst-36800-XIV-M",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-04",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van Reflectie op ‘Weer ruimte voor boer, natuur en bouw: Maatregelpakket voor Landbouw, Natuur en Stikstof’ van PBL",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XIV-M",
+  "dossiers": [
+   {
+    "nummer": "36800-XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XIV-M.html"
+ },
+ {
+  "id": "kst-33118-HK",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-04",
+  "titel": null,
+  "onderwerp": "Brief van de minister van VRO ter aanbieding van de Monitor Werking Omgevingswet, rapportage 2025",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HK",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HK.html"
+ },
+ {
+  "id": "kst-28973-AA",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-04",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van VWS over gezondheidsrisico’s geitenhouderijen en het voorzorgsbeginsel",
+  "zaak": null,
+  "ministerie": "Volksgezondheid, Welzijn en Sport",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-AA",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-AA.html"
+ },
+ {
   "id": "2026D40764",
   "docId": "bdf5267f-6657-423d-9232-19458147316f",
   "bestand": "PDF",
@@ -13357,6 +14516,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40827"
    }
   ]
+ },
+ {
+  "id": "kst-33118-HJ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-03",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van VRO over diverse stukken over de Omgevingswet",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HJ",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HJ.html"
  },
  {
   "id": "2026D40475",
@@ -13535,6 +14719,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40583"
    }
   ]
+ },
+ {
+  "id": "kst-37003-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-02",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over de commissiemededeling AccelerateEU",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37003-A",
+  "dossiers": [
+   {
+    "nummer": "37003",
+    "toevoeging": null,
+    "titel": "Mededeling van de Commissie aan het Europees Parlement, de Raad, het Europees Economisch en Sociaal Comité en het Comité van de Regio's – AccelerateEU – Energie-unie Betaalbare en veilige energie door versnelde actie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-37003-A.html"
+ },
+ {
+  "id": "kst-34287-AJ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-02",
+  "titel": null,
+  "onderwerp": "Verslag van een mondeling overleg op 16 juni 2026 over de milieueffectrapportage",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "34287-AJ",
+  "dossiers": [
+   {
+    "nummer": "34287",
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet milieubeheer en de Crisis- en herstelwet in verband met de uitvoering van Richtlijn 2014/52/EU van het Europees Parlement en de Raad van 16 april 2014 tot wijziging van Richtlijn 2011/92/EU betreffende de milieueffectbeoordeling van bepaalde openbare en particuliere projecten (PbEU 2014, L 124) (implementatie herziening mer-richtlijn)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-34287-AJ.html"
  },
  {
   "id": "2026D40334",
@@ -13753,6 +14987,31 @@
   ]
  },
  {
+  "id": "kst-29023-AW",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-09-01",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over toetsingskader garantie verlenging LNG-terminal Eemshaven (EET)",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AW",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AW.html"
+ },
+ {
   "id": "2026D39860",
   "docId": "d73a7805-ee23-460e-bdef-1ff4f586f898",
   "bestand": "PDF",
@@ -13962,6 +15221,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40024"
    }
   ]
+ },
+ {
+  "id": "kst-29023-AV",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-08-31",
+  "titel": null,
+  "onderwerp": "Verslag van een mondeling overleg over verschillende actuele onderwerpen op het terrein van Klimaat en Groene Groei d.d. 2 juni 2026.",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AV",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AV.html"
  },
  {
   "id": "2026D39624",
@@ -14317,6 +15601,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D39754"
    }
   ]
+ },
+ {
+  "id": "kst-36800-XIV-L",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-08-28",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN over prioriteiten Taskforce Landbouw, Natuur en Stikstof",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XIV-L",
+  "dossiers": [
+   {
+    "nummer": "36800-XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XIV-L.html"
  },
  {
   "id": "2026D39541",
@@ -14838,6 +16147,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D39243"
    }
   ]
+ },
+ {
+  "id": "kst-33037-BT",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-08-25",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN over publicatie tweede kwartaalrapportage 2026 CBS inzake fosfaat- en stikstofexcretie",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BT",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BT.html"
  },
  {
   "id": "2026D38999",
@@ -15421,6 +16755,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D38487"
    }
   ]
+ },
+ {
+  "id": "kst-36881-D",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-08-17",
+  "titel": null,
+  "onderwerp": "Brief van de minister van VRO over uitwerking regeerakkoord op financiële positie woningcorporaties",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36881-D",
+  "dossiers": [
+   {
+    "nummer": "36881",
+    "toevoeging": null,
+    "titel": "Wijziging van het voorstel van wet tot wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36881-D.html"
  },
  {
   "id": "2026D38339",
@@ -16255,6 +17614,31 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-21501-08-AR",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-07-27",
+  "titel": null,
+  "onderwerp": "Brief van de minister en de staatssecretaris van I&W over kwartaalrapportage Q1 en Q2 2026 op het gebied van milieudossiers en transportdossiers",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "21501-08-AR",
+  "dossiers": [
+   {
+    "nummer": "21501-08",
+    "toevoeging": null,
+    "titel": "Milieuraad"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-21501-08-AR.html"
  },
  {
   "id": "2026D37404",
@@ -17118,6 +18502,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D36835"
    }
   ]
+ },
+ {
+  "id": "kst-35334-CN",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-07-14",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over concept opvolger legalisatieprogramma PAS-melders",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CN",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35334-CN.html"
  },
  {
   "id": "2026D36662",
@@ -18351,6 +19760,56 @@
   ]
  },
  {
+  "id": "kst-33037-BS",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-07-09",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van LVVN over kwartaalrapportages CBS inzake fosfaat- en stikstofexcretie, met name mestfraude",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BS",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BS.html"
+ },
+ {
+  "id": "kst-33118-HH",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-07-09",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van LVVN over wijziging Besluit activiteiten leefomgeving en Besluit kwaliteit leefomgeving (bescherming wolf en goudjakhals)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HH",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HH.html"
+ },
+ {
   "id": "2026D36100",
   "docId": "15c0ba39-14f1-4d81-b88b-0a1116f0f5b8",
   "bestand": "PDF",
@@ -18794,6 +20253,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35764"
    }
   ]
+ },
+ {
+  "id": "kst-21501-33-AB",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-07-07",
+  "titel": null,
+  "onderwerp": "Brief van de voorzitter van de commissie EZ/KGG met vragen over het verslag Telecomraad van 9 juni 2026",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "21501-33-AB",
+  "dossiers": [
+   {
+    "nummer": "21501-33",
+    "toevoeging": null,
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-21501-33-AB.html"
  },
  {
   "id": "2026D35521",
@@ -19283,6 +20767,31 @@
   ]
  },
  {
+  "id": "kst-33118-HI",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-07-06",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN over inwerkingtreding amvb wijziging Besluit activiteiten leefomgeving en Besluit kwaliteit leefomgeving (bescherming wolf en goudjakhals)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HI",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HI.html"
+ },
+ {
   "id": "2026D35478",
   "docId": "f31d4dbd-e3a6-4c70-91b5-08a5112b8154",
   "bestand": "PDF",
@@ -19653,6 +21162,81 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35376"
    }
   ]
+ },
+ {
+  "id": "kst-36867-D",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Overig",
+  "datum": "2026-07-03",
+  "titel": null,
+  "onderwerp": "Nota naar aanleiding van het verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36867-D",
+  "dossiers": [
+   {
+    "nummer": "36867",
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36867-D.html"
+ },
+ {
+  "id": "kst-29023-AU",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-07-03",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over voortgang energiebesparing",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AU",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AU.html"
+ },
+ {
+  "id": "kst-31936-CC",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-07-03",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van I&W over het ontwerpbesluit tot wijziging van het Luchthavenverkeerbesluit (LVB) Schiphol",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-CC",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-CC.html"
  },
  {
   "id": "2026D34975",
@@ -20510,6 +22094,56 @@
   ]
  },
  {
+  "id": "kst-36933-C",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-07-01",
+  "titel": null,
+  "onderwerp": "Brief van de minister van SZW over opzet Noodfonds Energie 2026",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36933-C",
+  "dossiers": [
+   {
+    "nummer": "36933",
+    "toevoeging": null,
+    "titel": "Noodpakket energie, mobiliteit en economie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36933-C.html"
+ },
+ {
+  "id": "kst-27879-L",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-07-01",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van KGG over stand van zaken energiemarkt voor consumenten",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27879-L",
+  "dossiers": [
+   {
+    "nummer": "27879",
+    "toevoeging": null,
+    "titel": "Versterking van de positie van de consument"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-27879-L.html"
+ },
+ {
   "id": "2026D33745",
   "docId": "464f10b9-f277-4254-ac26-0c6ce35ac94d",
   "bestand": "PDF",
@@ -21096,6 +22730,81 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33730"
    }
   ]
+ },
+ {
+  "id": "kst-36915-J-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-06-30",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36915-J-A",
+  "dossiers": [
+   {
+    "nummer": "36915-J",
+    "toevoeging": null,
+    "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36915-J-A.html"
+ },
+ {
+  "id": "kst-32645-W",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-06-30",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van KGG over versnellen voortgang programma SMR’s op gemeentelijk niveau",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32645-W",
+  "dossiers": [
+   {
+    "nummer": "32645",
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32645-W.html"
+ },
+ {
+  "id": "kst-36867-C",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-06-30",
+  "titel": null,
+  "onderwerp": "Verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36867-C",
+  "dossiers": [
+   {
+    "nummer": "36867",
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36867-C.html"
  },
  {
   "id": "2026D33381",
@@ -22075,6 +23784,156 @@
   ]
  },
  {
+  "id": "kst-36800-XIV-J",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-26",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN over informatieverzoek lid Vermeer (BBB) om relevante documenten met betrekking tot Ministeriële Taskforce Landbouw Natuur en Stikstof",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XIV-J",
+  "dossiers": [
+   {
+    "nummer": "36800-XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XIV-J.html"
+ },
+ {
+  "id": "kst-28286-AG",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-26",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN over stand van zaken ontwerp-AMvB dierwaardige veehouderij en relatie tot Taskforce Landbouw, Natuur en Stikstof",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28286-AG",
+  "dossiers": [
+   {
+    "nummer": "28286",
+    "toevoeging": null,
+    "titel": "Dierenwelzijn"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28286-AG.html"
+ },
+ {
+  "id": "kst-36558-C",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Overig",
+  "datum": "2026-06-26",
+  "titel": null,
+  "onderwerp": "Nota naar aanleiding van het verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36558-C",
+  "dossiers": [
+   {
+    "nummer": "36558",
+    "toevoeging": null,
+    "titel": "Wijziging van de Gemeentewet, Provinciewet, Waterschapswet, Wet gemeenschappelijke regelingen en Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met een permanente regeling die beraadslagen en besluiten langs de elektronische weg voor decentrale volksvertegenwoordigingen mogelijk maakt (Wet digitaal vergaderen decentrale overheden)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36558-C.html"
+ },
+ {
+  "id": "kst-36800-XIV-I",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-26",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van maatregelenpakket samenhangende aanpak landbouw natuur stikstof 'Weer ruimte voor boer natuur en bouw'",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XIV-I",
+  "dossiers": [
+   {
+    "nummer": "36800-XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XIV-I.html"
+ },
+ {
+  "id": "kst-35334-CL",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-26",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van Programma Maatwerk PAS-melders",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CL",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35334-CL.html"
+ },
+ {
+  "id": "kst-35334-CM",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-26",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van kabinetsreactie op WUR-rapport 'De Nederlandse stikstofcrisis: van verwarring naar verbinding'",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CM",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35334-CM.html"
+ },
+ {
   "id": "2026D32695",
   "docId": "9b8cef61-33fb-4a3f-9569-0f9d23b217ab",
   "bestand": "PDF",
@@ -22771,6 +24630,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31861"
    }
   ]
+ },
+ {
+  "id": "kst-36915-M-B",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-06-23",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36915-M-B",
+  "dossiers": [
+   {
+    "nummer": "36915-M",
+    "toevoeging": null,
+    "titel": "Wijziging van de begrotingsstaat van het Klimaatfonds voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36915-M-B.html"
+ },
+ {
+  "id": "kst-29023-AT",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-06-23",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van KGG over voortgang aanpak netcongestie",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AT",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AT.html"
  },
  {
   "id": "2026D31573",
@@ -23837,6 +25746,106 @@
   ]
  },
  {
+  "id": "kst-31936-CB",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-19",
+  "titel": null,
+  "onderwerp": "Brief van de minister van I&W ter aanbieding van de reactienota MER voor de wijziging van het luchthavenverkeerbesluit Schiphol (LVB)",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-CB",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-CB.html"
+ },
+ {
+  "id": "kst-32645-X",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-19",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van KGG over routekaart mogelijke uitbouw naar 7 Gigawatt kernenergie in 2050",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32645-X",
+  "dossiers": [
+   {
+    "nummer": "32645",
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32645-X.html"
+ },
+ {
+  "id": "kst-33118-HG",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-19",
+  "titel": null,
+  "onderwerp": "Brief van de minister van VRO met de kabinetsreactie op het tweede reflectierapport ‘Werk aan de winkel’ van de Evaluatiecommissie Omgevingswet",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HG",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HG.html"
+ },
+ {
+  "id": "kst-32645-Y",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-19",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris en minister van KGG over locatie-bepaling, voortgang nieuwbouw en inpassing energiesysteem van eerste twee kerncentrales",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32645-Y",
+  "dossiers": [
+   {
+    "nummer": "32645",
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32645-Y.html"
+ },
+ {
   "id": "2026D30844",
   "docId": "07b9ff4b-bd6e-4f04-9d0a-1c4b17bacacc",
   "bestand": "PDF",
@@ -24281,6 +26290,31 @@
   ]
  },
  {
+  "id": "kst-35334-CK",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-06-16",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over rapportages monitoring en evaluatie van het Programma Stikstofreductie en Natuurverbetering (PSN)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CK",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35334-CK.html"
+ },
+ {
   "id": "2026D29795",
   "docId": "053baadd-8cc2-45fc-a28a-0ae5864289b2",
   "bestand": "PDF",
@@ -24528,6 +26562,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29572"
    }
   ]
+ },
+ {
+  "id": "kst-31936-CA",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-06-15",
+  "titel": null,
+  "onderwerp": "Verslag van de deskundigenbijeenkomst op 21 april 2026 over het Luchthavenverkeerbesluit (LVB) Schiphol",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-CA",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-CA.html"
  },
  {
   "id": "2026D29468",
@@ -24999,6 +27058,31 @@
   ]
  },
  {
+  "id": "kst-21501-08-AQ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-11",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van I&W en ministers van I&W, KGG en LNV over geannoteerde agenda van de Milieuraad van 25 juni 2026",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "21501-08-AQ",
+  "dossiers": [
+   {
+    "nummer": "21501-08",
+    "toevoeging": null,
+    "titel": "Milieuraad"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-21501-08-AQ.html"
+ },
+ {
   "id": "2026D28658",
   "docId": "761aa5c6-79e1-44b8-aa46-0085ad7aa3ad",
   "bestand": "PDF",
@@ -25327,6 +27411,31 @@
   ]
  },
  {
+  "id": "kst-36867-B",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-10",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van BZK met verzoek over spoedige behandeling Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden",
+  "zaak": null,
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36867-B",
+  "dossiers": [
+   {
+    "nummer": "36867",
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36867-B.html"
+ },
+ {
   "id": "2026D28261",
   "docId": "7a8d7e9a-092f-47df-8234-11fd560c695e",
   "bestand": "PDF",
@@ -25517,6 +27626,31 @@
   ]
  },
  {
+  "id": "kst-36558-B",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-06-09",
+  "titel": null,
+  "onderwerp": "Verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36558-B",
+  "dossiers": [
+   {
+    "nummer": "36558",
+    "toevoeging": null,
+    "titel": "Wijziging van de Gemeentewet, Provinciewet, Waterschapswet, Wet gemeenschappelijke regelingen en Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met een permanente regeling die beraadslagen en besluiten langs de elektronische weg voor decentrale volksvertegenwoordigingen mogelijk maakt (Wet digitaal vergaderen decentrale overheden)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36558-B.html"
+ },
+ {
   "id": "2026D27797",
   "docId": "ff18e204-1b24-4a2b-84c4-4a5d9a7c71dd",
   "bestand": "PDF",
@@ -25633,6 +27767,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D27871"
    }
   ]
+ },
+ {
+  "id": "kst-33118-HF",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-08",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN over appreciatie advies Raad van State Besluit activiteiten leefomgeving en van het Besluit kwaliteit leefomgeving (bescherming van de wolf en de goudjakhals)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HF",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HF.html"
  },
  {
   "id": "2026D27701",
@@ -26208,6 +28367,31 @@
   ]
  },
  {
+  "id": "kst-33037-BR",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-03",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN over publicatie eerste kwartaalrapportage 2026 CBS inzake fosfaat- en stikstofexcretie",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BR",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BR.html"
+ },
+ {
   "id": "2026D26788",
   "docId": "bcf63a7c-09fa-4422-8f85-1b610d9cee3c",
   "bestand": "PDF",
@@ -26625,6 +28809,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D26478"
    }
   ]
+ },
+ {
+  "id": "kst-36800-XXIII-E",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Overig",
+  "datum": "2026-06-01",
+  "titel": null,
+  "onderwerp": "Nota naar aanleiding van het verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XXIII-E",
+  "dossiers": [
+   {
+    "nummer": "36800-XXIII",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XXIII-E.html"
+ },
+ {
+  "id": "kst-36800-M-C",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Overig",
+  "datum": "2026-06-01",
+  "titel": null,
+  "onderwerp": "Nota naar aanleiding van het verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-M-C",
+  "dossiers": [
+   {
+    "nummer": "36800-M",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaat van het Klimaatfonds voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-M-C.html"
  },
  {
   "id": "2026D26021",
@@ -27242,6 +29476,31 @@
   ]
  },
  {
+  "id": "kst-32813-BX",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-29",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG, BZK, LVVN en I&W en de staatssecretaris van I&W ter aanbieding van kabinetsreactie op advies Nationaal Burgerberaad Klimaat",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BX",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BX.html"
+ },
+ {
   "id": "2026D25646",
   "docId": "064c9a73-5b7f-4f6f-827b-4c5e8c211218",
   "bestand": "PDF",
@@ -27413,6 +29672,81 @@
   ]
  },
  {
+  "id": "kst-29023-AS",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-28",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG ter aanbieding van toetsingskader garantie verlenging LNG-terminal Eemshaven (EET)",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AS",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AS.html"
+ },
+ {
+  "id": "kst-36881-C",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Overig",
+  "datum": "2026-05-28",
+  "titel": null,
+  "onderwerp": "Nota naar aanleiding van het verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36881-C",
+  "dossiers": [
+   {
+    "nummer": "36881",
+    "toevoeging": null,
+    "titel": "Wijziging van het voorstel van wet tot wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36881-C.html"
+ },
+ {
+  "id": "kst-36512-M",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Overig",
+  "datum": "2026-05-28",
+  "titel": null,
+  "onderwerp": "Nota naar aanleiding van het tweede verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36512-M",
+  "dossiers": [
+   {
+    "nummer": "36512",
+    "toevoeging": null,
+    "titel": "Wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36512-M.html"
+ },
+ {
   "id": "2026D25321",
   "docId": "f8e60539-8a19-4c54-b225-1144689a5381",
   "bestand": "PDF",
@@ -27467,6 +29801,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D25319"
    }
   ]
+ },
+ {
+  "id": "kst-28973-Z",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-27",
+  "titel": null,
+  "onderwerp": "Brief van de vice-president van de Raad van State met de voorlichting over adviezen Gezondheidsraad inzake gezondheidsrisico’s rondom geitenhouderijen",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-Z",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-Z.html"
  },
  {
   "id": "2026D24671",
@@ -27777,6 +30136,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D24882"
    }
   ]
+ },
+ {
+  "id": "kst-33118-HE",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-26",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN over beleid wolven 2026",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HE",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HE.html"
  },
  {
   "id": "2026D24465",
@@ -28430,6 +30814,56 @@
   ]
  },
  {
+  "id": "kst-36933-B",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-22",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van Financiën over nadere uitwerking maatregelenpakket energieschok",
+  "zaak": null,
+  "ministerie": "Financiën",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36933-B",
+  "dossiers": [
+   {
+    "nummer": "36933",
+    "toevoeging": null,
+    "titel": "Noodpakket energie, mobiliteit en economie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36933-B.html"
+ },
+ {
+  "id": "kst-35386-T",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-05-22",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van I&W over ontwerpbesluit veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-T",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-T.html"
+ },
+ {
   "id": "2026D23890",
   "docId": "7faef8ac-b426-4bdf-91e4-deee95c2163b",
   "bestand": "PDF",
@@ -28527,6 +30961,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D24086"
    }
   ]
+ },
+ {
+  "id": "kst-21501-33-AA",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-21",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van EZ over de geannoteerde agenda van de formele Telecomraad van 9 juni 2026",
+  "zaak": null,
+  "ministerie": "Economische Zaken",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "21501-33-AA",
+  "dossiers": [
+   {
+    "nummer": "21501-33",
+    "toevoeging": null,
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-21501-33-AA.html"
  },
  {
   "id": "2026D23694",
@@ -28826,6 +31285,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D23065"
    }
   ]
+ },
+ {
+  "id": "kst-33037-BQ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-05-19",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van LVVN over negatieve beslissing op het Nederlandse derogatieverzoek Nitraatrichtlijn",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BQ",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BQ.html"
  },
  {
   "id": "2026D22828",
@@ -29198,6 +31682,57 @@
   ]
  },
  {
+  "id": "kst-27858-L",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-15",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN ter aanbieding van voortgangsrapportage SPARK-project 2026",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27858-L",
+  "dossiers": [
+   {
+    "nummer": "27858",
+    "toevoeging": null,
+    "titel": "Gewasbeschermingsbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-27858-L.html"
+ },
+ {
+  "id": "kst-31936-BZ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-15",
+  "titel": null,
+  "onderwerp": "Brief van de minister van I&W over de milieueffectrapportage luchthavenverkeerbesluit (LVB) Schiphol",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-BZ",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling",
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-BZ.html"
+ },
+ {
   "id": "2026D22079",
   "docId": "d6a1505a-e8ea-4673-9751-2d097d9516c5",
   "bestand": "PDF",
@@ -29506,6 +32041,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22256"
    }
   ]
+ },
+ {
+  "id": "kst-27858-K",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-05-13",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over uitkomsten en vervolgstappen evaluatie Wet gewasbescherming en biociden (Wgb)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27858-K",
+  "dossiers": [
+   {
+    "nummer": "27858",
+    "toevoeging": null,
+    "titel": "Gewasbeschermingsbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-27858-K.html"
+ },
+ {
+  "id": "kst-35386-S",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-05-13",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van I&W over de Wet veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-S",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-S.html"
  },
  {
   "id": "2026D21591",
@@ -30178,6 +32763,31 @@
   ]
  },
  {
+  "id": "kst-CLXIV-O",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-11",
+  "titel": null,
+  "onderwerp": "Brief van de minister van BZK ter aanbieding van de 'Staat van Groningen en Noord-Drenthe 2026' en de 'Staat van de veiligheid in verband met voormalige gaswinning Groningen-gasveld'",
+  "zaak": null,
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "CLXIV-O",
+  "dossiers": [
+   {
+    "nummer": "CLXIV",
+    "toevoeging": null,
+    "titel": "Herstel Groningen"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-CLXIV-O.html"
+ },
+ {
   "id": "2026D21231",
   "docId": "978fe3f5-40cb-42da-8bb1-0d3393f0741f",
   "bestand": "PDF",
@@ -30376,6 +32986,106 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21217"
    }
   ]
+ },
+ {
+  "id": "kst-35386-P",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-08",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van I&W ter aanbieding van het ontwerpbesluit houdende vaststelling van het tijdstip van inwerkingtreding van de Wet veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-P",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-P.html"
+ },
+ {
+  "id": "kst-35386-R",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-08",
+  "titel": null,
+  "onderwerp": "Brief van de minister van J&V over het geactualiseerde handhavingsplan Wet veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-R",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-R.html"
+ },
+ {
+  "id": "kst-35386-Q",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-08",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van I&W over de nadeelcompensatieregeling voor vuurwerkbedrijven",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-Q",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-Q.html"
+ },
+ {
+  "id": "kst-30175-AE",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-05-08",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van I&W over de rapportage ‘Monitoring luchtkwaliteit 2025'",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "30175-AE",
+  "dossiers": [
+   {
+    "nummer": "30175",
+    "toevoeging": null,
+    "titel": "Luchtkwaliteit"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-30175-AE.html"
  },
  {
   "id": "2026D21045",
@@ -30617,6 +33327,31 @@
   ]
  },
  {
+  "id": "kst-30175-AD",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-05-06",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van I&W over straling en geo-engineering",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "30175-AD",
+  "dossiers": [
+   {
+    "nummer": "30175",
+    "toevoeging": null,
+    "titel": "Luchtkwaliteit"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-30175-AD.html"
+ },
+ {
   "id": "2026D20825",
   "docId": "4385e7ce-d454-4ec4-9297-8542edf534b5",
   "bestand": "PDF",
@@ -30798,6 +33533,81 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20862"
    }
   ]
+ },
+ {
+  "id": "kst-36800-XXIII-D",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-05-04",
+  "titel": null,
+  "onderwerp": "Brief van de minister en staatssecretaris van KGG over niet en gedeeltelijk uitgevoerde moties en over (deels) openstaande toezeggingen",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XXIII-D",
+  "dossiers": [
+   {
+    "nummer": "36800-XXIII",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XXIII-D.html"
+ },
+ {
+  "id": "kst-32645-V",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-05-01",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris en minister van KGG over versnellen voortgang Programma SMR's, in het bijzonder project Opmeer nabij Hollands Kroon",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32645-V",
+  "dossiers": [
+   {
+    "nummer": "32645",
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32645-V.html"
+ },
+ {
+  "id": "kst-29023-AQ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-05-01",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van de staatssecretaris van KGG over eindrapport Aansluitoffensief - Acht doorbraken voor betere benutting van het elektriciteitsnet",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AQ",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AQ.html"
  },
  {
   "id": "2026D20685",
@@ -30987,6 +33797,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20461"
    }
   ]
+ },
+ {
+  "id": "kst-36881-B",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-29",
+  "titel": null,
+  "onderwerp": "Verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36881-B",
+  "dossiers": [
+   {
+    "nummer": "36881",
+    "toevoeging": null,
+    "titel": "Wijziging van het voorstel van wet tot wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36881-B.html"
+ },
+ {
+  "id": "kst-36512-L",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-29",
+  "titel": null,
+  "onderwerp": "Tweede verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36512-L",
+  "dossiers": [
+   {
+    "nummer": "36512",
+    "toevoeging": null,
+    "titel": "Wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36512-L.html"
  },
  {
   "id": "2026D20279",
@@ -31615,6 +34475,31 @@
   ]
  },
  {
+  "id": "kst-33118-HD",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-04-24",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN over voortgang aanpassing ontwerpbesluit wijziging Besluit activiteiten leefomgeving en Besluit kwaliteit leefomgeving (bescherming wolf en goudjakhals)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HD",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HD.html"
+ },
+ {
   "id": "2026D19915",
   "docId": "5aca10f2-c4d0-40e1-a5a6-221e7c5aedfa",
   "bestand": "DOCX",
@@ -31875,6 +34760,56 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-29023-AR",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-04-23",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG over voortgang energiebesparing",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AR",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AR.html"
+ },
+ {
+  "id": "kst-34682-AE",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-04-22",
+  "titel": null,
+  "onderwerp": "Brief van de minister van I&W ter aanbieding van het PBL-rapport stresstest kwetsbare gebieden",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "34682-AE",
+  "dossiers": [
+   {
+    "nummer": "34682",
+    "toevoeging": null,
+    "titel": "Nationale Omgevingsvisie"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-34682-AE.html"
  },
  {
   "id": "2026D19322",
@@ -32139,6 +35074,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18981"
    }
   ]
+ },
+ {
+  "id": "kst-36800-XXIII-C",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-21",
+  "titel": null,
+  "onderwerp": "Verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XXIII-C",
+  "dossiers": [
+   {
+    "nummer": "36800-XXIII",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XXIII-C.html"
+ },
+ {
+  "id": "kst-36800-M-B",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-21",
+  "titel": null,
+  "onderwerp": "Verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-M-B",
+  "dossiers": [
+   {
+    "nummer": "36800-M",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaat van het Klimaatfonds voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-M-B.html"
  },
  {
   "id": "2026D18780",
@@ -32428,6 +35413,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18953"
    }
   ]
+ },
+ {
+  "id": "kst-36933-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-04-20",
+  "titel": null,
+  "onderwerp": "Brief van de ministers van Financiën, EZ, KGG en SZW en de staatssecretaris van Financiën over acties weerbaarheid energieschok",
+  "zaak": null,
+  "ministerie": "Financiën",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36933-A",
+  "dossiers": [
+   {
+    "nummer": "36933",
+    "toevoeging": null,
+    "titel": "Noodpakket energie, mobiliteit en economie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36933-A.html"
  },
  {
   "id": "2026D18657",
@@ -32752,6 +35762,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18596"
    }
   ]
+ },
+ {
+  "id": "kst-35334-CJ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-04-17",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van concept opvolger legalisatieprogramma PAS-melders",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CJ",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35334-CJ.html"
  },
  {
   "id": "2026D18234",
@@ -33260,6 +36295,56 @@
   ]
  },
  {
+  "id": "kst-33118-HC",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-15",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van LVVN over wijziging Besluit activiteiten leefomgeving en Besluit kwaliteit leefomgeving (bescherming wolf en goudjakhals)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HC",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HC.html"
+ },
+ {
+  "id": "kst-33037-BP",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-15",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van LVVN over kwartaalrapportages CBS inzake fosfaat- en stikstofexcretie Nederlandse veestapel",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BP",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BP.html"
+ },
+ {
   "id": "2026D17734",
   "docId": "bc2ff2e6-e3f4-420a-b737-03cb22be1bc1",
   "bestand": "PDF",
@@ -33329,6 +36414,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17715"
    }
   ]
+ },
+ {
+  "id": "kst-36512-K",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-14",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van VRO over voortgang wetsvoorstel Versterking regie volkshuisvesting en daarop gebaseerde lagere regelgeving",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36512-K",
+  "dossiers": [
+   {
+    "nummer": "36512",
+    "toevoeging": null,
+    "titel": "Wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36512-K.html"
  },
  {
   "id": "2026D17363",
@@ -33921,6 +37031,56 @@
   ]
  },
  {
+  "id": "kst-32813-BV",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-04-10",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG ter aanbieding van eindrapport Nationaal Burgerberaad Klimaat",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BV",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BV.html"
+ },
+ {
+  "id": "kst-32813-BW",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-04-10",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG over hoger beroep Klimaatzaak Greenpeace Bonaire",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BW",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BW.html"
+ },
+ {
   "id": "2026D16724",
   "docId": "d4833e58-a011-415b-9e47-024c5a5af973",
   "bestand": "PDF",
@@ -34279,6 +37439,31 @@
   ]
  },
  {
+  "id": "kst-30196-O",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-08",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van LVVN over het voorstel voor een Verordening tot wijziging van Verordening (EU) 2023/1115 wat betreft bepaalde verplichtingen van marktdeelnemers en handelaren",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "30196-O",
+  "dossiers": [
+   {
+    "nummer": "30196",
+    "toevoeging": null,
+    "titel": "Duurzame ontwikkeling en beleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-30196-O.html"
+ },
+ {
   "id": "2026D16110",
   "docId": "9d7b6929-8c5b-4403-875d-33b3397c9b0b",
   "bestand": "PDF",
@@ -34500,6 +37685,81 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15960"
    }
   ]
+ },
+ {
+  "id": "kst-28973-Y",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-03",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van VWS over deeladviezen I en II van de Gezondheidsraad inzake gezondheidsrisico’s rondom geitenhouderijen",
+  "zaak": null,
+  "ministerie": "Volksgezondheid, Welzijn en Sport",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-Y",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-Y.html"
+ },
+ {
+  "id": "kst-27879-K",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-03",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over stand van zaken energiemarkt voor consumenten",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27879-K",
+  "dossiers": [
+   {
+    "nummer": "27879",
+    "toevoeging": null,
+    "titel": "Versterking van de positie van de consument"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-27879-K.html"
+ },
+ {
+  "id": "kst-29023-AN",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-04-03",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van KGG over mogelijkheden inkoop voor marktpartijen, waaronder EBN, voor gas en herkomst gas",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AN",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AN.html"
  },
  {
   "id": "2026D15684",
@@ -35194,6 +38454,31 @@
   ]
  },
  {
+  "id": "kst-29023-AP",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-04-02",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van EZK over voortgang aanpak netcongestie",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AP",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AP.html"
+ },
+ {
   "id": "2026D15454",
   "docId": "a2275da9-b4f7-4c0e-a000-081b89051c48",
   "bestand": "PDF",
@@ -35669,6 +38954,31 @@
   ]
  },
  {
+  "id": "kst-36800-J-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-03-31",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-J-A",
+  "dossiers": [
+   {
+    "nummer": "36800-J",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-J-A.html"
+ },
+ {
   "id": "2026D14751",
   "docId": "103bb75a-7e8f-4e0d-9c14-03e3ae32d0b7",
   "bestand": "PDF",
@@ -35802,6 +39112,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D14872"
    }
   ]
+ },
+ {
+  "id": "kst-35386-O",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-03-30",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van I&W over het ontwerpbesluit veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-O",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-O.html"
  },
  {
   "id": "2026D14541",
@@ -35953,6 +39288,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D14582"
    }
   ]
+ },
+ {
+  "id": "kst-29023-AO",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-03-27",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG ter aanbieding van Toetsingskader risicoregelingen leningsfaciliteit ten behoeve van vullen gasopslagen 2027/2028",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AO",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AO.html"
+ },
+ {
+  "id": "kst-33037-BO",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-03-27",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over negatieve beslissing Europese Commissie op het door Nederland gedane verzoek tot nieuwe derogatie Nitraatrichtlijn",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BO",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BO.html"
  },
  {
   "id": "2026D14303",
@@ -36332,6 +39717,31 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-32813-BU",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-03-25",
+  "titel": null,
+  "onderwerp": "Verslag van de deskundigenbijeenkomst op 10 februari 2026 over de klimaatdoelstelling 2040, uitkomsten COP30 en de Klimaat- en Energieverkenning 2025",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BU",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BU.html"
  },
  {
   "id": "2026D13434",
@@ -38262,6 +41672,31 @@
   ]
  },
  {
+  "id": "kst-35334-CI",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-03-12",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van rapportages over monitoring en evaluatie Programma Stikstofreductie en Natuurverbetering",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CI",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35334-CI.html"
+ },
+ {
   "id": "2026D11094",
   "docId": "762857ad-6dab-42f7-a2e9-18c32c510865",
   "bestand": "PDF",
@@ -38600,6 +42035,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10861"
    }
   ]
+ },
+ {
+  "id": "kst-33118-HB",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-03-10",
+  "titel": null,
+  "onderwerp": "Brief van de minister van VRO ter aanbieding van het tweede reflectierapport van de Evaluatiecommissie Omgevingswet ‘Werk aan de winkel’",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HB",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HB.html"
+ },
+ {
+  "id": "kst-28625-H",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-03-10",
+  "titel": null,
+  "onderwerp": "Brief van de Europese Commissie betreffende de beantwoording van vragen over de strategie voor generatievernieuwing in de landbouw",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28625-H",
+  "dossiers": [
+   {
+    "nummer": "28625",
+    "toevoeging": null,
+    "titel": "Herziening van het Gemeenschappelijk Landbouwbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28625-H.html"
  },
  {
   "id": "2026D10594",
@@ -38999,6 +42484,31 @@
   ]
  },
  {
+  "id": "kst-32813-BT",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-03-05",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van LVVN over rapporten Wetenschappelijke Klimaatraad (WKR) en Nationaal Klimaatplatform (NKP)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BT",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BT.html"
+ },
+ {
   "id": "2026D09749",
   "docId": "a052a6cc-9bee-496c-ba98-4548989feec1",
   "bestand": "PDF",
@@ -39026,6 +42536,31 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-28625-G",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-03-04",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van LVVN over de Commissiemededeling: Strategie voor generatievernieuwing in de landbouw",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28625-G",
+  "dossiers": [
+   {
+    "nummer": "28625",
+    "toevoeging": null,
+    "titel": "Herziening van het Gemeenschappelijk Landbouwbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28625-G.html"
  },
  {
   "id": "2026D10466",
@@ -39187,6 +42722,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09228"
    }
   ]
+ },
+ {
+  "id": "kst-33118-HA",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-03-02",
+  "titel": null,
+  "onderwerp": "Brief van de minister van VRO over voortgang uitvoering Omgevingswet vierde kwartaal 2025",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HA",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HA.html"
  },
  {
   "id": "2026D09025",
@@ -39661,6 +43221,31 @@
   ]
  },
  {
+  "id": "kst-35386-N",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-02-20",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van I&W over het Ontwerpbesluit veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-N",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-N.html"
+ },
+ {
   "id": "2026D08009",
   "docId": "0e5241c8-7c37-432b-87a9-871765877745",
   "bestand": "PDF",
@@ -39814,6 +43399,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D08008"
    }
   ]
+ },
+ {
+  "id": "kst-31936-BY",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-02-19",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van LVVN over wijziging van het Luchthavenverkeerbesluit (LVB) Schiphol",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-BY",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-BY.html"
+ },
+ {
+  "id": "kst-33529-AB",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-02-19",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van KGG over uitbreiding wettelijk bewijsvermoeden mijnbouwactiviteiten in Nederland en afhandeling mijnbouwschade",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33529-AB",
+  "dossiers": [
+   {
+    "nummer": "33529",
+    "toevoeging": null,
+    "titel": "Gaswinning Groningen-veld"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33529-AB.html"
  },
  {
   "id": "2026D07735",
@@ -40037,6 +43672,31 @@
   ]
  },
  {
+  "id": "kst-28973-X",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-02-18",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van WUR-rapport Verkenning van maatregelen voor het verminderen van emissies van bioaerosolen uit melkgeitbedrijven",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-X",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-X.html"
+ },
+ {
   "id": "2026D07685",
   "docId": "8066b819-7266-4d73-8989-137f6b160fe1",
   "bestand": "PDF",
@@ -40228,6 +43888,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D07403"
    }
   ]
+ },
+ {
+  "id": "kst-36839-2",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-02-16",
+  "titel": null,
+  "onderwerp": "Oprichting Nucleaire Energie Organisatie Nederland B.V.",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36839-B",
+  "dossiers": [
+   {
+    "nummer": "36839",
+    "toevoeging": null,
+    "titel": "Oprichting Nucleaire Energie Organisatie Nederland B.V. (NEO NL)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36839-2.html"
+ },
+ {
+  "id": "kst-36839-C",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-02-16",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG over oprichting Nucleaire Energie Organisatie Nederland B.V. (NEO NL)",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36839-C",
+  "dossiers": [
+   {
+    "nummer": "36839",
+    "toevoeging": null,
+    "titel": "Oprichting Nucleaire Energie Organisatie Nederland B.V. (NEO NL)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36839-C.html"
  },
  {
   "id": "2026D07258",
@@ -40817,6 +44527,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06851"
    }
   ]
+ },
+ {
+  "id": "kst-32849-H",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-02-12",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG over nieuw beleid Mijnbouwschade Limburg met beroep op artikel 2.25, tweede lid CW 2016",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32849-H",
+  "dossiers": [
+   {
+    "nummer": "32849",
+    "toevoeging": null,
+    "titel": "Mijnbouw"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32849-H.html"
+ },
+ {
+  "id": "kst-36800-XXIII-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-02-12",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over over niet en gedeeltelijk uitgevoerde moties en over (deels) openstaande toezeggingen",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36800-XXIII-A",
+  "dossiers": [
+   {
+    "nummer": "36800-XXIII",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36800-XXIII-A.html"
  },
  {
   "id": "2026D06613",
@@ -42486,6 +46246,31 @@
   ]
  },
  {
+  "id": "kst-29023-AM",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-02-04",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG ter aanbieding van het eindrapport Aansluitoffensief - Acht doorbraken voor betere benutting van het elektriciteitsnet",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AM",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AM.html"
+ },
+ {
   "id": "2026D05140",
   "docId": "0a5890e1-14f8-4984-8dab-11b90f1c4285",
   "bestand": "PDF",
@@ -42652,6 +46437,81 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05150"
    }
   ]
+ },
+ {
+  "id": "kst-29023-AL",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-02-03",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over voortgang aanpak netcongestie",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AL",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AL.html"
+ },
+ {
+  "id": "kst-34287-AI",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-02-03",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van I&W over toezeggingen betreffende de milieueffectrapportage",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "34287-AI",
+  "dossiers": [
+   {
+    "nummer": "34287",
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet milieubeheer en de Crisis- en herstelwet in verband met de uitvoering van Richtlijn 2014/52/EU van het Europees Parlement en de Raad van 16 april 2014 tot wijziging van Richtlijn 2011/92/EU betreffende de milieueffectbeoordeling van bepaalde openbare en particuliere projecten (PbEU 2014, L 124) (implementatie herziening mer-richtlijn)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-34287-AI.html"
+ },
+ {
+  "id": "kst-30175-AC",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-02-03",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van I&W over straling en geo-engineering",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "30175-AC",
+  "dossiers": [
+   {
+    "nummer": "30175",
+    "toevoeging": null,
+    "titel": "Luchtkwaliteit"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-30175-AC.html"
  },
  {
   "id": "2026D04851",
@@ -43047,6 +46907,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D04845"
    }
   ]
+ },
+ {
+  "id": "kst-32813-BS",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-02-02",
+  "titel": null,
+  "onderwerp": "Brief van de ministers van KGG en I&W en de staatssecretaris van BZK over uitspraak rechtszaak Greenpeace tegen de Nederlandse Staat over klimaatverandering op Bonaire",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BS",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BS.html"
+ },
+ {
+  "id": "kst-33037-BN",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-02-02",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van LVVN over kwartaalrapportages CBS inzake fosfaat- en stikstofexcretie Nederlandse veestapel",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BN",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BN.html"
  },
  {
   "id": "2026D04661",
@@ -43478,6 +47388,31 @@
   ]
  },
  {
+  "id": "kst-33118-GZ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-01-29",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van VRO over stand van zaken Omgevingswet derde kwartaal 2025",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-GZ",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-GZ.html"
+ },
+ {
   "id": "2026D03943",
   "docId": "734bb461-b1e7-4a23-9d22-111ae2f37fde",
   "bestand": "PDF",
@@ -43777,6 +47712,131 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D03997"
    }
   ]
+ },
+ {
+  "id": "kst-35386-M",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-28",
+  "titel": null,
+  "onderwerp": "Brief aan de staatssecretaris van I&W over het stuiten van de voorhangtermijn bij het ontwerpbesluit veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-M",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-M.html"
+ },
+ {
+  "id": "kst-31936-BX",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-28",
+  "titel": null,
+  "onderwerp": "Brief aan de minister van I&W over het stuiten van de voorhangtermijn bij het ontwerpbesluit tot wijziging van het Luchthavenverkeerbesluit Schiphol",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-BX",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-BX.html"
+ },
+ {
+  "id": "kst-21501-08-AP",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-01-28",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over Milieuraad van 4 november 2025",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "21501-08-AP",
+  "dossiers": [
+   {
+    "nummer": "21501-08",
+    "toevoeging": null,
+    "titel": "Milieuraad"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-21501-08-AP.html"
+ },
+ {
+  "id": "kst-27858-J",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-28",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN en de staatssecretaris van I&W over uitkomsten en vervolgstappen evaluatie Wet gewasbescherming en biociden",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27858-J",
+  "dossiers": [
+   {
+    "nummer": "27858",
+    "toevoeging": null,
+    "titel": "Gewasbeschermingsbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-27858-J.html"
+ },
+ {
+  "id": "kst-32645-U",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-01-28",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van KGG over voortgang Programma Small Modular Reactors",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32645-U",
+  "dossiers": [
+   {
+    "nummer": "32645",
+    "toevoeging": null,
+    "titel": "Kernenergie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32645-U.html"
  },
  {
   "id": "2026D03708",
@@ -45191,6 +49251,31 @@
   ]
  },
  {
+  "id": "kst-31936-BW",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-23",
+  "titel": null,
+  "onderwerp": "Brief van de minister van I&W over correctie MER Schiphol 2026 zoals ontvangen bij aanbieding van de voorhang ontwerpbesluit tot wijziging van het Luchthavenverkeerbesluit (LVB) Schiphol",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-BW",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-BW.html"
+ },
+ {
   "id": "2026D02732",
   "docId": "1e7eb1a8-6eb6-4ca4-8778-032aefe77c3b",
   "bestand": "PDF",
@@ -45500,6 +49585,56 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-33576-AU",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-01-21",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van LVVN over tiende VRN en eindrapport Procesbegeleiding verbeteren en valideren wildtellingen",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33576-AU",
+  "dossiers": [
+   {
+    "nummer": "33576",
+    "toevoeging": null,
+    "titel": "Natuurbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33576-AU.html"
+ },
+ {
+  "id": "kst-30196-N",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-01-21",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van LVVN over het voorstel voor een Verordening tot wijziging van Verordening (EU) 2023/1115 wat betreft bepaalde verplichtingen van marktdeelnemers en handelaren",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "30196-N",
+  "dossiers": [
+   {
+    "nummer": "30196",
+    "toevoeging": null,
+    "titel": "Duurzame ontwikkeling en beleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-30196-N.html"
  },
  {
   "id": "2026D02288",
@@ -45847,6 +49982,81 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D02133"
    }
   ]
+ },
+ {
+  "id": "kst-36850-J-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-01-20",
+  "titel": null,
+  "onderwerp": "Blanco verslag",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36850-J-A",
+  "dossiers": [
+   {
+    "nummer": "36850-J",
+    "toevoeging": null,
+    "titel": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2025 (wijziging samenhangende met de Najaarsnota)"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36850-J-A.html"
+ },
+ {
+  "id": "kst-33576-AT",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-01-20",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van LVVN over het voorstel voor een Richtlijn tot wijziging van de beschermingsstatus van de wolf",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33576-AT",
+  "dossiers": [
+   {
+    "nummer": "33576",
+    "toevoeging": null,
+    "titel": "Natuurbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33576-AT.html"
+ },
+ {
+  "id": "kst-28973-W",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-20",
+  "titel": null,
+  "onderwerp": "Brief aan de Raad van State met het verzoek om voorlichting over de adviezen van de Gezondheidsraad inzake gezondheidsrisico’s rondom geitenhouderijen",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-W",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-W.html"
  },
  {
   "id": "2026D01975",
@@ -46275,6 +50485,31 @@
   ]
  },
  {
+  "id": "kst-31936-BV",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-19",
+  "titel": null,
+  "onderwerp": "Brief van de minister van I&W ter aanbieding van voorhang ontwerpbesluit tot wijziging van het Luchthavenverkeerbesluit (LVB) Schiphol",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-BV",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-BV.html"
+ },
+ {
   "id": "2026D01525",
   "docId": "3b4f433c-dc23-4291-b749-081fe1697a0a",
   "bestand": "PDF",
@@ -46556,6 +50791,56 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D01635"
    }
   ]
+ },
+ {
+  "id": "kst-35386-K",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-16",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van I&W ter aanbieding van het ontwerpbesluit veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-K",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-K.html"
+ },
+ {
+  "id": "kst-35386-L",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-16",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van I&W met een toelichting op het Ontwerpbesluit veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-L",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-L.html"
  },
  {
   "id": "2026D01390",
@@ -46866,6 +51151,56 @@
   ]
  },
  {
+  "id": "kst-36512-J",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-14",
+  "titel": null,
+  "onderwerp": "Brief aan de minister van VRO over het stuiten van de voorhangtermijn bij het ontwerpbesluit versterking regie volkshuisvesting",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36512-J",
+  "dossiers": [
+   {
+    "nummer": "36512",
+    "toevoeging": null,
+    "titel": "Wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36512-J.html"
+ },
+ {
+  "id": "kst-32813-BR",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-01-14",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van Financiën - FB&D over onderzoeksrapporten effecten broeikasemissie-beprijzing veehouderij en akkerbouw en herijking CO2-heffing glastuinbouw",
+  "zaak": null,
+  "ministerie": "Financiën",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BR",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BR.html"
+ },
+ {
   "id": "2026D00977",
   "docId": "4710f9fa-bc4a-40ba-adec-003991e4009b",
   "bestand": "PDF",
@@ -47033,6 +51368,31 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-28973-V",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-13",
+  "titel": null,
+  "onderwerp": "Brief van de voorzitters van de vaste commissie voor LNV en VWS met het voorstel tot het vragen van voorlichting aan de Afdeling advisering Raad van State naar aanleiding van adviezen Gezondheidsraad over gezondheidsrisico's rond geitenhouderijen",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-V",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-V.html"
  },
  {
   "id": "2026D00761",
@@ -47274,6 +51634,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D00486"
    }
   ]
+ },
+ {
+  "id": "kst-28973-U",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-01-09",
+  "titel": null,
+  "onderwerp": "Brief van de ministers van VWS en LVVN over kabinetsreactie deeladviezen I en II Gezondheidsraad inzake gezondheidsrisico’s rondom geitenhouderijen",
+  "zaak": null,
+  "ministerie": "Volksgezondheid, Welzijn en Sport",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-U",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-U.html"
  },
  {
   "id": "2026D00407",
@@ -47753,6 +52138,31 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-21501-33-Z",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-12-22",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van I&W naar aanleiding van het verslag van de Transportraad van 5 december 2024",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "21501-33-Z",
+  "dossiers": [
+   {
+    "nummer": "21501-33",
+    "toevoeging": null,
+    "titel": "Raad voor Vervoer, Telecommunicatie en Energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-21501-33-Z.html"
  },
  {
   "id": "2025D53820",
@@ -48719,6 +53129,106 @@
   ]
  },
  {
+  "id": "kst-36512-I",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-19",
+  "titel": null,
+  "onderwerp": "Brief van de minister van VRO ter aanbieding van de voorhang Besluit versterking regie volkshuisvesting",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36512-I",
+  "dossiers": [
+   {
+    "nummer": "36512",
+    "toevoeging": null,
+    "titel": "Wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36512-I.html"
+ },
+ {
+  "id": "kst-33037-BM",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-19",
+  "titel": null,
+  "onderwerp": "Brief van de ministers van LVVN en I&W en de staatssecretaris van I&W over uitstel vaststelling 8e actieprogramma Nitraatrichtlijn",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BM",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BM.html"
+ },
+ {
+  "id": "kst-36217-F",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-19",
+  "titel": null,
+  "onderwerp": "Brief van de minister van J&V ter aanbieding van de kabinetsreactie op de invoeringstoets van artikel 174a Gemeentewet",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36217-F",
+  "dossiers": [
+   {
+    "nummer": "36217",
+    "toevoeging": null,
+    "titel": "Wijziging van de Gemeentewet, de Wet openbare lichamen Bonaire, Sint Eustatius en Saba en enkele andere wetten in verband met uitbreiding van de sluitingsbevoegdheid van de burgemeester en de gezaghebber ter handhaving van de openbare orde en om enkele omissies te herstellen"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36217-F.html"
+ },
+ {
+  "id": "kst-36512-H",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-19",
+  "titel": null,
+  "onderwerp": "Brief van de minister van VRO over voortgang wetsvoorstel Versterking regie volkshuisvesting en lagere regelgeving",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36512-H",
+  "dossiers": [
+   {
+    "nummer": "36512",
+    "toevoeging": null,
+    "titel": "Wijziging van de Algemene wet bestuursrecht, de Huisvestingswet 2014, de Omgevingswet, de Wet maatschappelijke ondersteuning 2015 en de Woningwet in verband met de versterking van de regie op de volkshuisvesting en met het oog op enkele andere met de volkshuisvesting samenhangende maatregelen (Wet versterking regie volkshuisvesting)"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36512-H.html"
+ },
+ {
   "id": "2025D53226",
   "docId": "990e6803-8037-41fc-be20-12ad8d5bad78",
   "bestand": "PDF",
@@ -49179,6 +53689,56 @@
   ]
  },
  {
+  "id": "kst-27879-J",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-18",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG over stand van zaken energiemarkt voor consumenten",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27879-J",
+  "dossiers": [
+   {
+    "nummer": "27879",
+    "toevoeging": null,
+    "titel": "Versterking van de positie van de consument"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-27879-J.html"
+ },
+ {
+  "id": "kst-28625-F",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-12-18",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over de Commissiemededeling: Strategie voor generatievernieuwing in de landbouw",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28625-F",
+  "dossiers": [
+   {
+    "nummer": "28625",
+    "toevoeging": null,
+    "titel": "Herziening van het Gemeenschappelijk Landbouwbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28625-F.html"
+ },
+ {
   "id": "2025D52847",
   "docId": "fc580e8e-b7eb-4f40-9d60-00cfa1d8d3e0",
   "bestand": "PDF",
@@ -49430,6 +53990,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52852"
    }
   ]
+ },
+ {
+  "id": "kst-27625-O",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-12-17",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van I&W over het waterbeleid",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "27625-O",
+  "dossiers": [
+   {
+    "nummer": "27625",
+    "toevoeging": null,
+    "titel": "Waterbeleid"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-27625-O.html"
  },
  {
   "id": "2025D52447",
@@ -50164,6 +54749,31 @@
   ]
  },
  {
+  "id": "kst-32813-BQ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-12-12",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over reactie rapporten Wetenschappelijke Klimaatraad en Nationaal Klimaatplatform betreffende landbouw en klimaat",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BQ",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BQ.html"
+ },
+ {
   "id": "2025D51693",
   "docId": "e539429d-d2d3-4395-9f1a-0f50b67959c7",
   "bestand": "PDF",
@@ -50541,6 +55151,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51499"
    }
   ]
+ },
+ {
+  "id": "kst-33576-AS",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-11",
+  "titel": null,
+  "onderwerp": "Brief van de Europese Commissie over de beantwoording van nadere vragen betreffende het voorstel tot wijziging van de beschermingsstatus van de wolf",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33576-AS",
+  "dossiers": [
+   {
+    "nummer": "33576",
+    "toevoeging": null,
+    "titel": "Natuurbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33576-AS.html"
  },
  {
   "id": "2025D51209",
@@ -51024,6 +55659,31 @@
   ]
  },
  {
+  "id": "kst-33576-AR",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-10",
+  "titel": null,
+  "onderwerp": "Brief van de staatssecretaris van LVVN ter aanbieding van elfde Voortgangsrapportage Natuur (VRN) en VHR-rapportages",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33576-AR",
+  "dossiers": [
+   {
+    "nummer": "33576",
+    "toevoeging": null,
+    "titel": "Natuurbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33576-AR.html"
+ },
+ {
   "id": "2025D50949",
   "docId": "0a349e1c-da63-43c6-998c-3691621271d5",
   "bestand": "PDF",
@@ -51204,6 +55864,31 @@
     "relatie": "Mede ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-29023-AK",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-12-09",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over mogelijkheden inkoop voor marktpartijen, waaronder EBN, voor gas en herkomst gas",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AK",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AK.html"
  },
  {
   "id": "2025D50413",
@@ -51707,6 +56392,31 @@
   ]
  },
  {
+  "id": "kst-28973-T",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-08",
+  "titel": null,
+  "onderwerp": "Brief van de minister van VWS met aanbieding deel II advies Gezondheidsraad over de gezondheidsrisico’s rondom geitenhouderijen",
+  "zaak": null,
+  "ministerie": "Volksgezondheid, Welzijn en Sport",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-T",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-T.html"
+ },
+ {
   "id": "2025D50343",
   "docId": "e2a17836-dfd8-495f-b535-1af15244974a",
   "bestand": "PDF",
@@ -51847,6 +56557,31 @@
   ]
  },
  {
+  "id": "kst-33118-GY",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-12-05",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van LVVN over advies Raad van State ontwerpbesluit bescherming wolf en goudjakhals",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-GY",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-GY.html"
+ },
+ {
   "id": "2025D50043",
   "docId": "c38943aa-e33d-44c6-94bd-1fdfc403ca37",
   "bestand": "PDF",
@@ -51937,6 +56672,31 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-35334-CH",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-12-04",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van LVVN over rechtsbescherming, rechtsgelijkheid en bewaken rechtsstaat in relatie tot de uitwerking van natuur- en milieuwetgeving in Nederland, specifiek de situatie PAS-melders",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35334-CH",
+  "dossiers": [
+   {
+    "nummer": "35334",
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35334-CH.html"
  },
  {
   "id": "2025D49924",
@@ -52066,6 +56826,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49700"
    }
   ]
+ },
+ {
+  "id": "kst-31936-BU",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-12-03",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van LVVN over de wijziging van het Luchthavenverkeerbesluit (LVB) Schiphol",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "31936-BU",
+  "dossiers": [
+   {
+    "nummer": "31936",
+    "toevoeging": null,
+    "titel": "Luchtvaartbeleid"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-31936-BU.html"
  },
  {
   "id": "2025D49484",
@@ -52835,6 +57620,132 @@
   ]
  },
  {
+  "id": "kst-28625-D",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-11-28",
+  "titel": null,
+  "onderwerp": "Brief aan de Europese Commissie met vragen over de strategie voor generatievernieuwing in de landbouw",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28625-D",
+  "dossiers": [
+   {
+    "nummer": "28625",
+    "toevoeging": null,
+    "titel": "Herziening van het Gemeenschappelijk Landbouwbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28625-D.html"
+ },
+ {
+  "id": "kst-28973-S",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-28",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de ministers van VWS en LVVN over deel I van advies Gezondheidsraad over gezondheidsrisico’s rond veehouderijen",
+  "zaak": null,
+  "ministerie": "Volksgezondheid, Welzijn en Sport",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28973-S",
+  "dossiers": [
+   {
+    "nummer": "28973",
+    "toevoeging": null,
+    "titel": "Toekomst veehouderij"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28973-S.html"
+ },
+ {
+  "id": "kst-36861-A",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-11-28",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG over afzien van gaswinning onder de Waddenzee bij Ternaard",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36861-A",
+  "dossiers": [
+   {
+    "nummer": "36861",
+    "toevoeging": null,
+    "titel": "Wijziging van de begrotingsstaat van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2025 (Incidentele suppletoire begroting inzake Ternaard)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie",
+   "water-adaptatie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36861-A.html"
+ },
+ {
+  "id": "kst-28625-E",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-11-28",
+  "titel": null,
+  "onderwerp": "Brief van de minister van BZ over het BNC-fiche inzake de Commissiemededeling: Strategie voor generatievernieuwing in de landbouw",
+  "zaak": null,
+  "ministerie": "Buitenlandse Zaken",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28625-E",
+  "dossiers": [
+   {
+    "nummer": "28625",
+    "toevoeging": null,
+    "titel": "Herziening van het Gemeenschappelijk Landbouwbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28625-E.html"
+ },
+ {
+  "id": "kst-32813-BP",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-28",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van P&I over de stand van zaken van het Nederlandse Sociaal Klimaatplan",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "32813-BP",
+  "dossiers": [
+   {
+    "nummer": "32813",
+    "toevoeging": null,
+    "titel": "Kabinetsaanpak Klimaatbeleid"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BP.html"
+ },
+ {
   "id": "2025D48777",
   "docId": "bd9c6b97-8475-4ba0-ac69-3456221d2451",
   "bestand": "PDF",
@@ -53362,6 +58273,31 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-22112-JQ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-25",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van KGG over Europees actieplan windenergie",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "22112-JQ",
+  "dossiers": [
+   {
+    "nummer": "22112",
+    "toevoeging": null,
+    "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-22112-JQ.html"
  },
  {
   "id": "2025D47964",
@@ -54224,6 +59160,31 @@
   ]
  },
  {
+  "id": "kst-33037-BL",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-11-20",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN over voortgang mestproductie en LBV en LBV-plus naar aanleiding van derde kwartaalrapportage 2025 CBS",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BL",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BL.html"
+ },
+ {
   "id": "2025D47367",
   "docId": "9c5e02fc-8ab8-496a-9f19-1561e2b4b12d",
   "bestand": "PDF",
@@ -54870,6 +59831,31 @@
   ]
  },
  {
+  "id": "kst-35386-J",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-14",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van I&W over de Wet veilige jaarwisseling",
+  "zaak": null,
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "35386-J",
+  "dossiers": [
+   {
+    "nummer": "35386",
+    "toevoeging": null,
+    "titel": "Voorstel van wet van de leden Klaver en Ouwehand tot wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met de invoering van een vuurwerkverbod voor consumenten (Wet veilige jaarwisseling)"
+   }
+  ],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-35386-J.html"
+ },
+ {
   "id": "2025D46394",
   "docId": "0876ee53-4ccf-4045-a21b-1c3c172da40c",
   "bestand": "PDF",
@@ -55058,5 +60044,105 @@
     "relatie": "Mede ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-33037-BK",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-13",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van LVVN over voortgang ontwikkeling mestproductie naar aanleiding van eerste en tweede kwartaalrapportage 2025 van het CBS",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33037-BK",
+  "dossiers": [
+   {
+    "nummer": "33037",
+    "toevoeging": null,
+    "titel": "Mestbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33037-BK.html"
+ },
+ {
+  "id": "kst-33118-GX",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-13",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de staatssecretaris van LVVN over het ontwerpbesluit houdende wijziging van het Besluit activiteiten leefomgeving en van het Besluit kwaliteit leefomgeving (bescherming wolf en goudjakhals)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-GX",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-33118-GX.html"
+ },
+ {
+  "id": "kst-36539-D",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-12",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van KGG over de EU-Klimaatdoelstelling 2040",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "36539-D",
+  "dossiers": [
+   {
+    "nummer": "36539",
+    "toevoeging": null,
+    "titel": "Mededeling van de Commissie aan het Europees Parlement, de Raad, Het Europees Economisch en Sociaal Comité en het Comité van de Regio's Onze toekomst veiligstellen – De klimaatdoelstelling voor Europa voor 2040 en de weg naar klimaatneutraliteit tegen 2050 met het oog op de totstandbrenging van een duurzame, rechtvaardige en welvarende samenleving"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36539-D.html"
+ },
+ {
+  "id": "kst-29023-AJ",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-12",
+  "titel": null,
+  "onderwerp": "Verslag van een mondeling overleg op 30 september 2025 met de minister van KGG over industriebeleid, energie en klimaat",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AJ",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AJ.html"
  }
 ]

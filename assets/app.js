@@ -356,7 +356,7 @@
       // vraag of antwoord: de rij van die zaak op Kamervragen (sleutel: de vraag, anders het eerste antwoord)
       const href = x.soort === "Brief regering" ? lijstHref("kamerbrieven", x.id, slug)
         : lijstHref("kamervragen", (vraagRijen().find((r) => r.zaak && r.zaak === x.zaak) || x).id, slug);
-      items.push({ soort: "Stuk", datum: x.datum, html: feedLi(SOORT_KORT[x.soort] || x.soort, x.datum, feedMeta(esc(x.ministerie ? (isVraag(x) ? "aan " : "") + x.ministerie : "ministerie onbekend")),
+      items.push({ soort: "Stuk", datum: x.datum, html: feedLi(x.kamer ? `${SOORT_KORT[x.soort]}, ${x.kamer}` : SOORT_KORT[x.soort] || x.soort, x.datum, feedMeta(esc(x.ministerie ? (isVraag(x) ? "aan " : "") + x.ministerie : "ministerie onbekend")),
         x.onderwerp || x.titel, href, staart, false) });
     }
     // wetgeving: nieuw ingediende wetsvoorstellen
@@ -901,7 +901,9 @@
   const wetSoort = (z) => (z.soort === "Initiatiefwetgeving" ? "Initiatiefwetsvoorstel" : "Regering");
   // Fasen zoals op tweedekamer.nl; welke fase geldt volgt uit onze besluiten, vergaderingen en stemmingen
   // (de Kamer zelf zet elk open wetsvoorstel op Voorbereiding).
-  const WET_FASEN = ["Voorbereiding", "Debat", "Stemming", "Afgedaan"];
+  // na aanneming in de Tweede Kamer: fase Eerste Kamer tot de wet in het Staatsblad staat (data/tk/wetstukken.json, kamer: "Staatsblad")
+  const WET_FASEN = ["Voorbereiding", "Debat", "Stemming", "Eerste Kamer", "Afgedaan"];
+  const wetStb = (z) => (S.data.wetstukken[String(z.dossiers[0]?.nummer)] || []).find((d) => d.kamer === "Staatsblad");
   const AFGEDAAN = ["aangenomen", "verworpen", "ingetrokken", "vervallen"];
   const wetActiviteiten = onthoud((z) => {
     const nr = String(z.dossiers[0]?.nummer || "");
@@ -911,13 +913,16 @@
     return [...act, ...(z.debatten || []).filter((a) => !bekend.has(a.Nummer))];
   }, (z) => z.nummer);
   function wetFase(z) {
-    if (AFGEDAAN.includes(z.uitslag)) return 3;
+    // shortcut: een wet die de Eerste Kamer verwerpt, blijft in fase Eerste Kamer; pas aan als dat voorkomt
+    if (z.uitslag === "aangenomen") return wetStb(z) ? 4 : 3;
+    if (AFGEDAAN.includes(z.uitslag)) return 4;
     const soorten = z.besluiten.map((b) => b.soort || "");
     if (S.data.stemmingen[z.nummer] || z.uitslag === "aangehouden" || soorten.some((s) => /^Agenderen - stemmingen|^Stemmen - uitstellen/.test(s))) return 2;
     if (soorten.includes("Behandeling wordt voortgezet") || wetActiviteiten(z).some((a) => /^Plenair debat|^Wetgevingsoverleg|^Notaoverleg/.test(a.Soort) && a.Status === "Uitgevoerd")) return 1;
     return 0;
   }
-  const wetStatus = (z) => (wetFase(z) === 3 ? z.uitslag : WET_FASEN[wetFase(z)].toLowerCase());
+  // "Eerste Kamer" is een naam en houdt zijn hoofdletters
+  const wetStatus = (z) => { const f = wetFase(z); return f === 4 ? z.uitslag : f === 3 ? WET_FASEN[3] : WET_FASEN[f].toLowerCase(); };
   // Wetgevingsproces in gewone taal: besluiten zonder inhoud voor de lezer vallen weg, vaste soorten krijgen een eigen zin
   const STAP_WEG = /^LVIS|^Controversieel - niet|^Ter informatie|^Aanhouden - tot de volgende/;
   const STAP_TEKST = {
@@ -934,6 +939,8 @@
     const s = stukken.length ? [] : [{ datum: z.gestartOp, html: "Wetsvoorstel ingediend." }];
     // Kamerstukken (data/tk/wetstukken.json): titel naar tweedekamer.nl, nummer, en Lees in de eigen documentweergave
     for (const d of stukken) {
+      if (d.kamer === "Staatsblad") { s.push({ datum: d.datum, html: `Gepubliceerd in het Staatsblad: ${extLink(d.link, d.titel)}` }); continue; }
+      if (d.kamer === "Eerste Kamer") { s.push({ datum: d.datum, html: `Eerste Kamer: ${extLink(d.link, d.titel)} <span class="muted mono">${esc(`${z.dossiers[0].nummer}-${d.volgnummer}`)}</span>` }); continue; }
       const lees = docKnop({ ...d, id: d.document }, "Lees");
       s.push({ datum: d.datum, html: `${extLink(d.link, d.titel)} <span class="muted mono">${esc(`${z.dossiers[0].nummer}-${d.volgnummer}`)}</span>${lees ? ` · ${lees}` : ""}` });
     }
@@ -960,7 +967,7 @@
     zoektekst: (z) => `${z.titel} ${z.onderwerp} ${z.citeertitel || ""} ${z.nummer} ${dossierLabel(z)} ${z.indieners.map((i) => i.naam).join(" ")}`,
     filters: {
       thema: themaFilter(themasWet),
-      status: { label: "Status", waarden: (z) => [wetStatus(z)], orde: opVolgorde(["voorbereiding", "debat", "stemming", ...AFGEDAAN]), tekst: (v) => uitslagPill(v) },
+      status: { label: "Status", waarden: (z) => [wetStatus(z)], orde: opVolgorde(["voorbereiding", "debat", "stemming", "Eerste Kamer", ...AFGEDAAN]), tekst: (v) => uitslagPill(v) },
       soort: { label: "Ingediend door", waarden: (z) => [wetSoort(z)], orde: opVolgorde(["Regering", "Initiatiefwetsvoorstel"]), tekst: (v) => esc(v === "Regering" ? "Regering" : "Kamerleden (initiatief)") },
     },
     kolommen: [
@@ -985,8 +992,10 @@
   function faseBlok(z) {
     const fase = wetFase(z), volgende = wetStappen(z).find((x) => x.gepland);
     return `<div class="mstemming">
-      <ol class="wfasen" aria-label="Fase">${WET_FASEN.map((f, i) => `<li class="${i < fase || fase === 3 ? "klaar" : i === fase ? "nu" : ""}"${i === fase ? ` aria-current="step"` : ""}>${f}</li>`).join("")}</ol>
-      ${volgende ? `<p>Volgende stap: ${volgende.html}, ${fmtKort(volgende.datum)}</p>` : z.uitslag === "aangenomen" ? `<p>Na de Tweede Kamer behandelt de Eerste Kamer het wetsvoorstel.</p>` : ""}
+      <ol class="wfasen" aria-label="Fase">${WET_FASEN.map((f, i) => `<li class="${i < fase || fase === 4 ? "klaar" : i === fase ? "nu" : ""}"${i === fase ? ` aria-current="step"` : ""}>${f}</li>`).join("")}</ol>
+      ${volgende ? `<p>Volgende stap: ${volgende.html}, ${fmtKort(volgende.datum)}</p>`
+        : fase === 3 ? `<p>Aangenomen door de Tweede Kamer; nu bij de Eerste Kamer.</p>`
+        : wetStb(z) ? `<p>Aangenomen door de Eerste Kamer en gepubliceerd in het Staatsblad (${fmtKort(wetStb(z).datum)}).</p>` : ""}
     </div>`;
   }
 
@@ -1278,10 +1287,11 @@
     filters: {
       thema: themaFilter(themasBrief),
       ministerie: { label: "Ministerie", waarden: (x) => [x.ministerie || ""], orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
+      kamer: { label: "Kamer", waarden: (x) => [x.kamer || "Tweede Kamer"], orde: opVolgorde(["Tweede Kamer", "Eerste Kamer"]), tekst: (v) => esc(v) },
       rapport: { label: "Rapport", waarden: (x) => [(x.bijlagen || []).some(metRapport) ? "ja" : "nee"], orde: opVolgorde(["ja", "nee"]), tekst: (v) => (v === "ja" ? "Bevat rapport" : "Zonder rapport") },
     },
     kolommen: [
-      { titel: true, kop: "Kamerbrief over...", thCls: "ond", tdCls: "ond", cel: (x) => `<a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${titelMetPijl(overKlein(x.onderwerp || x.titel))}</a>${(x.bijlagen || []).some(metRapport) ? ` <span class="badge">Met rapport</span>` : ""}` },
+      { titel: true, kop: "Kamerbrief over...", thCls: "ond", tdCls: "ond", cel: (x) => `<a class="ltitel" href="${esc(x.link)}" target="_blank" rel="noopener">${titelMetPijl(overKlein(x.onderwerp || x.titel))}</a>${x.kamer ? ` <span class="badge">${esc(x.kamer)}</span>` : ""}${(x.bijlagen || []).some(metRapport) ? ` <span class="badge">Met rapport</span>` : ""}` },
       { filter: "ministerie", tdCls: "uitslag ministerie", cel: (x) => esc(x.ministerie || "Onbekend") },
       themaKolom(themasBrief),
       { kop: "Kamerstuk", thCls: "rechts hide-sm", tdCls: "kamerstuk rechts mono hide-sm", cel: (x) => esc(x.kamerstuk || ((x.dossiers || [])[0] || {}).nummer || "") },
@@ -1290,17 +1300,17 @@
     detail: (x) => {
       const ds = x.dossiers || [];
       return `<div class="mdetail">
-        <p>Document <span class="mono">${esc(x.id)}</span> · ${fmtKort(x.datum)}${x.ondertekenaar ? `, ondertekend door ${esc(x.ondertekenaar)}${x.functie ? ` (${esc(x.functie)})` : ""}` : ""}</p>
+        <p>${x.kamer ? `${esc(x.ekSoort || "Kamerstuk")} aan de Eerste Kamer · ` : ""}Document <span class="mono">${esc(x.id)}</span> · ${fmtKort(x.datum)}${x.ondertekenaar ? `, ondertekend door ${esc(x.ondertekenaar)}${x.functie ? ` (${esc(x.functie)})` : ""}` : ""}</p>
         ${ds.length ? `<div class="mstemming"><p class="mtelling">Kamerstuk</p><ul class="mstappen">${ds.map((d) => `<li><span class="mono">${esc(d.nummer)}${d.toevoeging ? "-" + esc(d.toevoeging) : ""}</span> ${esc(d.titel || "")}</li>`).join("")}</ul></div>` : ""}
         ${bijlagenBlok(x.bijlagen)}
-        <div class="mlinks">${docKnop({ ...x, titel: x.onderwerp || x.titel }, "Lees de brief")}${extLink(x.link, "Bekijk op tweedekamer.nl")}</div>
+        <div class="mlinks">${docKnop({ ...x, titel: x.onderwerp || x.titel }, "Lees de brief")}${extLink(x.link, x.kamer ? "Bekijk op officielebekendmakingen.nl" : "Bekijk op tweedekamer.nl")}</div>
       </div>`;
     },
   };
   function vragenBrieven() {
     const tab = location.hash.slice(1).split(/[/?]/)[0] === "brieven" ? "brieven" : "vragen";
     return tabelPagina(tab === "brieven" ? BRIEF_DEF : VRAAG_DEF,
-      tab === "brieven" ? paginaKop("Kamerbrieven", "Brieven van ministeries aan de Kamer") : paginaKop("Kamervragen", "Schriftelijke vragen met het antwoord"),
+      tab === "brieven" ? paginaKop("Kamerbrieven", "Brieven van ministeries aan de Tweede en Eerste Kamer") : paginaKop("Kamervragen", "Schriftelijke vragen met het antwoord"),
       tab === "brieven"
         ? "Kamerbrieven van ministeries over milieu, klimaat, energie, water, natuur en leefomgeving."
         : `Schriftelijke vragen van Kamerleden met het antwoord van het kabinet in dezelfde rij. Het kabinet heeft ${ANTWOORD_TERMIJN} dagen om te antwoorden.`,
