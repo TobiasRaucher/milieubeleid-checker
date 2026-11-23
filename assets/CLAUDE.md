@@ -138,7 +138,7 @@ alleen klassen `dv-…` en ids `footnote-…` door.
 - Grote schakelaar in plaats van de titel: "Komend" (standaard) toont wat komt; "Geweest" (`terugblik=1`) wat is geweest,
   nieuwste eerst. De filters gaan mee. Schakelaar, filters en zoekveld op één rij (geen knop
   "Eerdere vergaderingen" sinds 23 nov 2026); "Naar komende vergaderingen" onder Geweest.
-- Regel in drie kolommen: tijd (met de eindtijd eronder, "Eerstvolgend", of "tot hh:mm" bij inbreng), inhoud (titel 18/500, daaronder meta met themalabels),
+- Regel in drie kolommen: tijd (met de eindtijd eronder, "Eerstvolgend" (eerstvolgende vergadering of stemming; een stemdag gaat voor de vergaderingen met tijd op die dag), of "tot hh:mm" bij inbreng), inhoud (titel 18/500, daaronder meta met themalabels),
   rechts één uitklapknop (verticaal in het midden) en "Live op Debat Direct". Weekkop blijft staan bij scrollen. Alle lijnen even
   breed en overal 16px tussen lijn en tekst; binnen een dag op tijd, een inbrengtermijn bij gelijke tijd eerst.
 - Plenaire stemmingen per dag als regel (`stemmingenPerDag()`, ook voor Komt eraan), type Stemmingen, alleen in Komend.

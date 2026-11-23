@@ -362,7 +362,10 @@ thead th { border-top: 0; font-size: var(--t-12); font-weight: 500; color: var(-
 td { font-variant-numeric: tabular-nums; }
 td.nw { font-size: var(--t-13); color: var(--ink-2); }
 /* Moties en amendementen: rij opent tweedekamer.nl, de knop aan het eind klapt de stemming uit */
-.motietabel th.rechts, .motietabel td.rechts { text-align: right; }
+/* alles links, ook datum en Kamerstuk (Tobias, 23 nov 2026); alleen Rapport? (vinkje of kruisje) in het midden */
+.motietabel td.rapport, .motietabel th[data-f="rapport"] { text-align: center; }
+.motietabel th[data-f="rapport"] .facet { display: inline-block; }
+.ltitel.wet { font-weight: 400; }
 .motietabel th, .motietabel td { padding: 16px 12px; } /* 12 opzij: ruimte voor de filterknoppen in de kop (23 nov 2026) */
 .motietabel td { line-height: 22px; }
 .motietabel td.ond { font-size: var(--t-15); color: var(--ink); }
@@ -374,7 +377,7 @@ td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel thead .sorteer { color: var(--ink-2); }
 .motietabel thead .sorteer:hover { color: var(--ink); }
 .kopf .facet-n { font-size: var(--t-18); }
-.kopf .facet-menu { font-weight: 400; color: var(--ink); white-space: normal; }
+.kopf .facet-menu { font-weight: 400; color: var(--ink); white-space: normal; text-align: left; }
 .motietabel thead .schakelaar { margin-left: -12px; background: transparent; }
 .motietabel thead .schakelaar a { min-height: 36px; }
 .motietabel td.rapport .ico { width: 20px; height: 20px; color: var(--ink-2); }

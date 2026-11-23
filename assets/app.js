@@ -1043,6 +1043,15 @@
     const gezien = new Set();
     return s.filter((x) => x.datum && !gezien.has(x.datum + x.html) && gezien.add(x.datum + x.html)).sort((a, b) => a.datum.localeCompare(b.datum));
   }
+  // de wet waar het voorstel over gaat vet (Tobias, 23 nov 2026): de eerste wet na "wijziging van (de)", anders de citeertitel tussen haakjes aan het eind
+  // shortcut: herkent alleen die twee vormen; titels als "Goedkeuring van het Verdrag ..." blijven zonder vet
+  const WET_RE = /[Ww]ijziging (?:van )?(?:de |het )?([A-Z][^,()]*?)(?=,|(?<!-) en | in verband| ter | tot | ten | voor | om | met | teneinde | betreffende | houdende | inzake |\s*\(|\s*$)/, CITEER_RE = /\(([^()]*wet[^()]*)\)\s*$/i;
+  const wetVet = (t) => {
+    const w = WET_RE.exec(t), m = (w && /wet/i.test(w[1]) && w) || CITEER_RE.exec(t); // "tot wijziging van Verordening (EU) ..." is geen wet
+    if (!m) return esc(t);
+    const i = m.index + m[0].indexOf(m[1]);
+    return `${esc(t.slice(0, i))}<strong>${esc(m[1])}</strong>${esc(t.slice(i + m[1].length))}`;
+  };
   const WET_DEF = {
     tab: "wetgeving", eenheid: "wetsvoorstellen", knopLabel: ["Details tonen", "Details verbergen"],
     rijen: () => wetsvoorstellenTK(),
@@ -1054,7 +1063,7 @@
       soort: { label: "Ingediend door", waarden: (z) => [wetSoort(z)], orde: opVolgorde(["Regering", "Initiatiefwetsvoorstel"]), tekst: (v) => esc(v === "Regering" ? "Regering" : "Kamerleden (initiatief)") },
     },
     kolommen: [
-      { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => `<a class="ltitel" href="${wetHref(z)}">${esc(z.titel || z.onderwerp || "")}</a>` },
+      { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => `<a class="ltitel wet" href="${wetHref(z)}">${wetVet(z.titel || z.onderwerp || "")}</a>` },
       { filter: "status", tdCls: "uitslag", cel: (z) => uitslagPill(wetStatus(z)) },
       { filter: "soort", tdCls: "indiener hide-sm", cel: (z) => (z.soort === "Initiatiefwetgeving" ? indienerKort(z) : "Regering") },
       themaKolom(themasWet),
@@ -1814,7 +1823,10 @@
     const bereik = terug ? vast.filter(geweest) : [...stemRegels, ...vast.filter((i) => i.datum >= VANDAAG)];
     const items = bereik.filter((i) => afPast(i));
     const nu = new Date();
-    const eerst = terug ? null : vast.find((i) => i.gepland && !i.eigen && !i.inbreng && afPast(i) && i.a && new Date(i.a.Datum) >= nu);
+    // stemmingen doen mee op hun dag, vóór de vergaderingen met tijd (zoals in de lijst eronder)
+    // shortcut: het tijdstip van de stemmingen staat niet in de data, dus een stemming van vandaag blijft de hele dag eerstvolgend; tijd ophalen als dat stoort
+    const eerst = terug ? null : [...stemRegels, ...vast.filter((i) => i.gepland && !i.eigen && !i.inbreng && i.a && new Date(i.a.Datum) >= nu)]
+      .filter((i) => afPast(i)).sort((a, b) => a.t.localeCompare(b.t))[0];
     // per week, per dag
     const weken = new Map();
     const voeg = (dag, item) => {
@@ -2175,7 +2187,8 @@
     const filters = {
       thema: themaFilter(themasKd),
       soort: { label: "Soort", waarden: (d) => [d.soort || "Document"], orde: opVolgorde(["Nota", "Begroting", "Jaarverslag", "Wetsvoorstel"]), tekst: (v) => esc(v) },
-      uitgever: { label: "Uitgever", waarden: (d) => [d.uitgever || ""], orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
+      // meer uitgevers ("RIVM en WUR", "PBL, RIVM en WUR") tellen elk apart; "e.a." valt weg
+      uitgever: { label: "Uitgever", waarden: (d) => (d.uitgever ? d.uitgever.replace(/\s+e\.a\.$/, "").split(/, | en /) : [""]), orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
     };
     if (groep === "rapporten") delete filters.soort;
     if (groep === "begroting") filters.hoofdstuk = { label: "Hoofdstuk", waarden: (d) => [d.hoofdstuk || ""], orde: opVolgorde(["", ...hoofdstukken]),
