@@ -322,6 +322,7 @@
    "datum": "2026-11-19"
   },
   "sectoren": [
+   "natuur-stikstof-landbouw",
    "water-adaptatie"
   ],
   "document": "2026D59230",
@@ -14103,7 +14104,7 @@
    "datum": "2026-11-03"
   },
   "sectoren": [
-   "ruimte-mobiliteit"
+   "circulair-vervuiling"
   ],
   "document": "2026D53495",
   "docId": "c21f8a0e-6ce1-42f6-83d7-2f6afc80f1df",
@@ -22951,6 +22952,167 @@
   "volgnummer": 513,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21710&did=2026D49972",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21710"
+ },
+ {
+  "id": "20caa818-e7f2-475e-8730-3014eeef956f",
+  "nummer": "2026Z21687",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Vlottes over het bestuurscollege en de eilandsraad van Bonaire onder curatele stellen en de Rijksvertegenwoordiger verantwoordelijk maken voor het bestuur op het eiland ",
+  "citeertitel": null,
+  "gestartOp": "2026-10-08",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-10-08",
+    "stemmen": []
+   },
+   {
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-10-13",
+    "stemmen": [
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "verworpen",
+  "stemtelling": {
+   "voor": 34,
+   "tegen": 116,
+   "datum": "2026-10-13"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D49944",
+  "docId": "7f319ba7-101d-4428-b2e4-8378bbe9c767",
+  "bestand": "PDF",
+  "volgnummer": 22,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21687&did=2026D49944",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z21687"
  },
  {
   "id": "08892ce8-2985-4f92-a286-5f29cf46bbc4",
@@ -170653,6 +170815,160 @@
   "volgnummer": 492,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2025Z21587&did=2025D51069",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21587"
+ },
+ {
+  "id": "7de8dec0-f123-4bfc-86eb-427611c22152",
+  "nummer": "2025Z21711",
+  "soort": "Motie",
+  "titel": "Het Nederlands buitenlands beleid ten aanzien van Latijns-Amerika en de Cariben",
+  "onderwerp": "Motie van de leden Ceder en Vermeer over het versneld uitvoeren van de motie-Ceder om Bonaire te ondersteunen bij het verhogen van de lokale voedselproductie ",
+  "citeertitel": null,
+  "gestartOp": "2025-12-10",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Oordeel Kamer",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 29653,
+    "toevoeging": null,
+    "titel": "Het Nederlands buitenlands beleid ten aanzien van Latijns-Amerika en de Cariben"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.G.M. Ceder",
+    "fractie": "ChristenUnie",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2025-12-16",
+    "stemmen": [
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 4
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "GroenLinks-PvdA",
+      "naam": "GroenLinks-PvdA",
+      "soort": "Voor",
+      "zetels": 20
+     }
+    ]
+   },
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2025-12-10",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 112,
+   "tegen": 38,
+   "datum": "2025-12-16"
+  },
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2025D51366",
+  "docId": "de4c611b-0aeb-4f5a-90ae-d4b33f130cd9",
+  "bestand": "PDF",
+  "volgnummer": 70,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2025Z21711&did=2025D51366",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2025Z21711"
  },
  {
   "id": "962a7e96-4045-4d7b-8029-4a2416502292",

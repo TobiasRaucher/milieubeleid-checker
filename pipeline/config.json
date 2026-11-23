@@ -5,6 +5,8 @@
   "wetgeving": {
     "_uitleg": "Wetsvoorstellen vanaf startdatum komen in de checker als hun Kamerstuk in een sector staat of in insluiten, als de voortouwcommissie in altijdVoortouw staat, of als de (citeer)titel een trefwoord van een sector bevat. Kamerstukken in uitsluiten nooit (ook hun moties en amendementen niet). Moties en amendementen vanaf de algemene startdatum komen erin als hun onderwerp een trefwoord bevat of als ze bij een gevolgd wetsvoorstel horen.",
     "startdatum": "2019-01-01",
+    "_nietAlsTrefwoord_uitleg": "Trefwoorden van de sectoren die bij wetsvoorstellen niet meetellen. Bonaire staat als trefwoord in klimaat-energie zodat alle Kamervragen, brieven en moties over Bonaire binnenkomen (Klimaatzaak Bonaire, Tobias 23 nov 2026), maar niet elke wet voor Bonaire, Sint Eustatius en Saba. Zo ook waterschappen (niet elke bestuurswet die waterschappen noemt).",
+    "nietAlsTrefwoord": ["\\bBonaire", "\\bwaterschappen\\b"],
     "altijdVoortouw": {
       "K&GG": "klimaat-energie"
     },
@@ -243,7 +245,9 @@
         "\\bCOP ?\\d",
         "\\bGroningen.*(gas|schade|versterking)|\\bNij Groningen",
         "\\bfossiel",
-        "\\bCCS\\b|\\bafvang"
+        "\\bCCS\\b|\\bafvang",
+        "\\bBonaire",
+        "\\bgasproject"
       ]
     },
     "water-adaptatie": {
@@ -322,7 +326,9 @@
         "\\bNoordzee",
         "\\bzeespiegel",
         "\\brivier(en|gebied)",
-        "(?-i:\\bMaas(vlakte|dal|plas)?\\b(?! en)|\\bRijn\\b)"
+        "(?-i:\\bMaas(vlakte|dal|plas)?\\b(?! en)|\\bRijn\\b)",
+        "\\bwolkbreuk",
+        "\\bwaterschappen\\b"
       ],
       "activiteitTrefwoorden": [
         "\\bwater",
@@ -425,7 +431,10 @@
         "\\bammoniak",
         "\\bweidevogel",
         "\\bbijen\\b|\\bbestuiver",
-        "(?-i:\\bwol(f|ven)\\b)"
+        "(?-i:\\bwol(f|ven)\\b)",
+        "\\bkoraal",
+        "\\bzeehond",
+        "\\bpesticide"
       ],
       "activiteitTrefwoorden": [
         "\\bstikstof",
@@ -537,7 +546,9 @@
         "\\bomgevingsdienst",
         "\\bgrondstof",
         "\\bexterne veiligheid",
-        "\\bgevaarlijke stoffen"
+        "\\bgevaarlijke stoffen",
+        "\\bschadelijke stoffen|\\bgiftige stof",
+        "\\bstaalslak"
       ],
       "activiteitTrefwoorden": [
         "\\bcirculair",

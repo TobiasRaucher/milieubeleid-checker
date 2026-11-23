@@ -1089,6 +1089,34 @@
   ]
  },
  {
+  "id": "2026D57482",
+  "docId": "a6311b8d-c37a-4497-b055-7cc24e92cc44",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-11",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Vellinga-Beemsterboer over het wegvallen van de zeehondenopvang in Lauwersoog",
+  "zaak": "2026Z22280",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22280&did=2026D57482",
+  "bijlagen": [
+   {
+    "id": "2026D57483",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Vellinga-Beemsterboer over het wegvallen van de zeehondenopvang in Lauwersoog",
+    "bestand": "PDF",
+    "docId": "ea661037-9d59-4c7a-8444-547aa1babfd8",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D57483"
+   }
+  ]
+ },
+ {
   "id": "2026D57119",
   "docId": "1a4682c5-5b8a-4b9b-bfdf-8796d76e8582",
   "bestand": "DOCX",
@@ -2187,6 +2215,34 @@
   ]
  },
  {
+  "id": "2026D55239",
+  "docId": "611b8886-ab0e-4222-b083-26848fdc56f7",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-03",
+  "titel": null,
+  "onderwerp": "Toelichting Habitatrichtlijnrapportage zeehonden en bruinvis",
+  "zaak": "2026Z23916",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23916&did=2026D55239",
+  "bijlagen": [
+   {
+    "id": "2026D55240",
+    "titel": "Beslisnota bij Kamerbrief over toelichting Habitatrichtlijnrapportage zeehonden en bruinvis",
+    "bestand": "PDF",
+    "docId": "af579a59-858c-435a-9824-9990f533c470",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55240"
+   }
+  ]
+ },
+ {
   "id": "2026D54980",
   "docId": "e0fe4515-057a-4289-8057-3e27443e3512",
   "bestand": "DOCX",
@@ -2734,7 +2790,8 @@
    }
   ],
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "water-adaptatie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23791&did=2026D54900",
   "bijlagen": [
@@ -3109,6 +3166,35 @@
    {
     "naam": "A.S. Müller",
     "fractie": "VVD",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D54042",
+  "docId": "d4a739bc-8635-461c-8945-ceade65eb90f",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-10-29",
+  "titel": null,
+  "onderwerp": "Het bericht dat het Zeehondencentrum Pieterburen nog zeker één week openblijft na steun donateurs",
+  "zaak": "2026Z23399",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "S.P.A. Erkens",
+  "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23399&did=2026D54042",
+  "ministeries": [
+   "Landbouw, Visserij, Voedselzekerheid en Natuur"
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
   ]
@@ -4868,6 +4954,35 @@
   ]
  },
  {
+  "id": "2026D51259",
+  "docId": "a51d554e-d2c9-477b-8890-09f522e05510",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-10-14",
+  "titel": null,
+  "onderwerp": "Het wegvallen van de zeehondenopvang in Lauwersoog",
+  "zaak": "2026Z22280",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "S.P.A. Erkens",
+  "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22280&did=2026D51259",
+  "ministeries": [
+   "Landbouw, Visserij, Voedselzekerheid en Natuur"
+  ],
+  "indieners": [
+   {
+    "naam": "M.C.A. Vellinga-Beemsterboer",
+    "fractie": "D66",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D51281",
   "docId": "00ad4623-3deb-4364-b9d7-2108441f6200",
   "bestand": "PDF",
@@ -4921,6 +5036,34 @@
    "water-adaptatie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z22273&did=2026D51239"
+ },
+ {
+  "id": "2026D51382",
+  "docId": "ec460b8e-b875-4359-99f6-bb33932dcc80",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-10-14",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Heutink en Claassen over het artikel \"Honderdduizenden huizen kwetsbaar bij 'wolkbreuk van de eeuw': hier loop je het meeste risico op natte voeten\"",
+  "zaak": "2026Z19036",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19036&did=2026D51382",
+  "bijlagen": [
+   {
+    "id": "2026D51383",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Heutink en Claassen over het artikel \"Honderdduizenden huizen kwetsbaar bij 'wolkbreuk van de eeuw': hier loop je het meeste risico op natte voeten\"",
+    "bestand": "PDF",
+    "docId": "64f83da5-488b-4744-b06c-abc1a2e888f9",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D51383"
+   }
+  ]
  },
  {
   "id": "2026D51343",
@@ -5947,6 +6090,62 @@
   ]
  },
  {
+  "id": "2026D49192",
+  "docId": "09d77457-d089-40f4-8caa-540757f08d15",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-10-07",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Tseggai en De Hoop over het bericht dat 600 woningen op Bonaire verdwijnen aan toeristen",
+  "zaak": "2026Z19196",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "E. Boekholt-O’Sullivan",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19196&did=2026D49192",
+  "bijlagen": [
+   {
+    "id": "2026D49193",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Tseggai en De Hoop over het bericht dat 600 woningen op Bonaire verdwijnen aan toeristen",
+    "bestand": "PDF",
+    "docId": "ca260816-c76a-46bc-8f90-7060de407a67",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D49193"
+   }
+  ]
+ },
+ {
+  "id": "2026D49327",
+  "docId": "540a207a-a0ba-48e8-923c-ace2766c96be",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-10-07",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Kostić over het gezondheidsrisico van onduidelijkheid over spuitzones en onzorgvuldige toekenning van pesticiden",
+  "zaak": "2026Z18562",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "S.P.A. Erkens",
+  "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18562&did=2026D49327",
+  "bijlagen": [
+   {
+    "id": "2026D49328",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Kostić over het gezondheidsrisico van onduidelijkheid over spuitzones en onzorgvuldige toekenning van pesticiden",
+    "bestand": "PDF",
+    "docId": "1d6e5be6-ae11-452c-8631-2fd8778dd180",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D49328"
+   }
+  ]
+ },
+ {
   "id": "2026D49164",
   "docId": "47c8f09f-f5cc-47da-ba40-bf3887825a73",
   "bestand": "DOCX",
@@ -6924,6 +7123,47 @@
   ]
  },
  {
+  "id": "2026D48352",
+  "docId": "43db76af-dfdd-4ba8-95f9-03946da418ca",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-10-02",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2027",
+  "onderwerp": "Afschrift brief aan de gezaghebber van Bonaire inzake een verzoek om bericht en raad",
+  "zaak": "2026Z20977",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "37020-IV-29",
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2027"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z20977&did=2026D48352",
+  "bijlagen": [
+   {
+    "id": "2026D48353",
+    "titel": "Afschrift van reactiebrief gezaghebber Bonaire",
+    "bestand": "PDF",
+    "docId": "f44059c5-840a-447c-abeb-5520c762605f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48353"
+   },
+   {
+    "id": "2026D48354",
+    "titel": "Beslisnota bij Kamerbrief over afschrift brief aan de gezaghebber van Bonaire inzake een verzoek om bericht en raad",
+    "bestand": "PDF",
+    "docId": "d910f0b3-5132-44ef-a3a6-f9ed2c16539c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48354"
+   }
+  ]
+ },
+ {
   "id": "2026D48327",
   "docId": "0bd7142b-46b2-4e9d-91fb-07481870bace",
   "bestand": "DOCX",
@@ -7316,6 +7556,34 @@
     "bestand": "PDF",
     "docId": "973f6e5c-a375-4b7f-acaa-0e878dd5c08e",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47918"
+   }
+  ]
+ },
+ {
+  "id": "2026D47622",
+  "docId": "491b78ff-69c6-44ea-b4fb-ba9c40fa8da0",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-10-01",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Beckerman over het artikel ‘Giftige stof gebruikt bij veel huizen, woningcorporaties doen massaal onderzoek’",
+  "zaak": "2026Z17836",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "E. Boekholt-O’Sullivan",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17836&did=2026D47622",
+  "bijlagen": [
+   {
+    "id": "2026D47623",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Beckerman over het artikel ‘Giftige stof gebruikt bij veel huizen, woningcorporaties doen massaal onderzoek’",
+    "bestand": "PDF",
+    "docId": "03391fd8-43a6-464a-9cdc-048f1b6cabea",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D47623"
    }
   ]
  },
@@ -8723,6 +8991,34 @@
   ]
  },
  {
+  "id": "2026D46112",
+  "docId": "ae444fa6-d92c-4115-9661-4d90679c9b65",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-09-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Kostic over massasterfte van zwaluwen door pesticiden ",
+  "zaak": "2026Z10725",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10725&did=2026D46112",
+  "bijlagen": [
+   {
+    "id": "2026D46113",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Kostic over massasterfte van zwaluwen door pesticiden",
+    "bestand": "PDF",
+    "docId": "a851fb34-2f31-46e1-a5ba-0b8e22ee24df",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D46113"
+   }
+  ]
+ },
+ {
   "id": "2026D45840",
   "docId": "636871f0-87de-4b12-946f-9271f56e4c4e",
   "bestand": "DOCX",
@@ -8753,6 +9049,47 @@
     "bestand": "PDF",
     "docId": "a5dd8d03-ad00-45eb-be77-c8202857e264",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D45841"
+   }
+  ]
+ },
+ {
+  "id": "2026D46038",
+  "docId": "2dc53bfc-dbf5-4d72-aa83-bf26e8c9e7e5",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-09-24",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2027",
+  "onderwerp": "Brief aan de gezaghebber van Bonaire inzake een verzoek om bericht en raad",
+  "zaak": "2026Z19904",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "37020-IV-24",
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2027"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z19904&did=2026D46038",
+  "bijlagen": [
+   {
+    "id": "2026D46039",
+    "titel": "Afschrift brief aan gezaghebber Bonaire met verzoek om bericht en raad",
+    "bestand": "PDF",
+    "docId": "42454473-3428-4f1d-9cd1-98ad8db470b7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D46039"
+   },
+   {
+    "id": "2026D46040",
+    "titel": "Beslisnota bij brief aan de gezaghebber van Bonaire inzake een verzoek om bericht en raad",
+    "bestand": "PDF",
+    "docId": "3a967abd-84a6-454c-a3f4-c0d23d2d0713",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D46040"
    }
   ]
  },
@@ -9546,6 +9883,41 @@
   ]
  },
  {
+  "id": "2026D44454",
+  "docId": "5f5445fd-766b-4f71-884b-1a56bab0d507",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-09-18",
+  "titel": null,
+  "onderwerp": "Het bericht dat 600 woningen op Bonaire verdwijnen aan toeristen",
+  "zaak": "2026Z19196",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "E. Boekholt-O’Sullivan",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19196&did=2026D44454",
+  "ministeries": [
+   "Volkshuisvesting en Ruimtelijke Ordening",
+   "Binnenlandse Zaken en Koninkrijksrelaties"
+  ],
+  "indieners": [
+   {
+    "naam": "M. Tseggai",
+    "fractie": "PRO",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "H.E. de Hoop",
+    "fractie": "PRO",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D44529",
   "docId": "ca7fb68b-e5b4-4913-9308-1ce69be8be2e",
   "bestand": "DOCX",
@@ -9769,6 +10141,40 @@
     "naam": "A. Zalinyan",
     "fractie": "PRO",
     "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D44545",
+  "docId": "f8aa135b-ad71-4ffc-b981-41c4ba691d11",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-09-18",
+  "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden) ",
+  "onderwerp": "Financiële gevolgen huisvesting en enkele andere moties en toezeggingen gedaan tijdens het wetgevingsoverleg Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden",
+  "zaak": "2026Z19255",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "36867-17",
+  "dossiers": [
+   {
+    "nummer": 36867,
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden) "
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z19255&did=2026D44545",
+  "bijlagen": [
+   {
+    "id": "2026D44546",
+    "titel": "Beslisnota bij Kamerbrief over financiële gevolgen huisvesting en enkele andere moties en toezeggingen gedaan tijdens het wetgevingsoverleg Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden",
+    "bestand": "PDF",
+    "docId": "e3be3dfa-ff18-46e8-9b69-063918391b58",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44546"
    }
   ]
  },
@@ -10347,6 +10753,41 @@
     "bestand": "PDF",
     "docId": "64c8a3ab-4c2e-4faf-b19f-ea594ee58f7c",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D44670"
+   }
+  ]
+ },
+ {
+  "id": "2026D44066",
+  "docId": "e321d599-2b8b-4284-8b59-35adc1e013bb",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-09-17",
+  "titel": null,
+  "onderwerp": "Het artikel ‘Honderdduizenden huizen kwetsbaar bij ‘wolkbreuk van de eeuw’: hier loop je het meeste risico op natte voeten’",
+  "zaak": "2026Z19036",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19036&did=2026D44066",
+  "ministeries": [
+   "Infrastructuur en Waterstaat",
+   "Volkshuisvesting en Ruimtelijke Ordening"
+  ],
+  "indieners": [
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "R.A.B. Claassen",
+    "fractie": "Groep Markuszower",
+    "relatie": "Mede ondertekenaar"
    }
   ]
  },
@@ -11768,6 +12209,36 @@
   ]
  },
  {
+  "id": "2026D42538",
+  "docId": "8c094c42-2a96-43da-b448-4ce7bc3bae5b",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-09-10",
+  "titel": null,
+  "onderwerp": "Het gezondheidsrisico van onduidelijkheid over spuitzones en onzorgvuldige toekenning van pesticiden",
+  "zaak": "2026Z18562",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "S.P.A. Erkens",
+  "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18562&did=2026D42538",
+  "ministeries": [
+   "Landbouw, Visserij, Voedselzekerheid en Natuur",
+   "Volksgezondheid, Welzijn en Sport"
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D42416",
   "docId": "54e2c572-9a24-471c-a15b-77745f9e7bfe",
   "bestand": "DOCX",
@@ -12334,6 +12805,35 @@
   ]
  },
  {
+  "id": "2026D41798",
+  "docId": "a1f1fc36-2874-47dc-a938-bc7c7b99dec9",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-09-08",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Bromet en Tseggai over de berichtgeving dat nog geen 10% over is van het koraal rond Bonaire",
+  "zaak": "2026Z16666",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie",
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16666&did=2026D41798",
+  "bijlagen": [
+   {
+    "id": "2026D41799",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Bromet en Tseggai over de berichtgeving dat nog geen 10% over is van het koraal rond Bonaire",
+    "bestand": "PDF",
+    "docId": "3964695c-4e12-4526-be79-37619cecf389",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D41799"
+   }
+  ]
+ },
+ {
   "id": "2026D41635",
   "docId": "3c51a6de-7ff6-4f85-b0db-fed25cdc536c",
   "bestand": "PDF",
@@ -12770,6 +13270,63 @@
     "bestand": "PDF",
     "docId": "f3b62f4e-2229-4bca-98b2-7593ce90d9e8",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40765"
+   }
+  ]
+ },
+ {
+  "id": "2026D40751",
+  "docId": "c20681b7-dcf8-4a9c-8857-28302581ef74",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-09-03",
+  "titel": null,
+  "onderwerp": "Het artikel ‘Giftige stof gebruikt bij veel huizen, woningcorporaties doen massaal onderzoek’",
+  "zaak": "2026Z17836",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "E. Boekholt-O’Sullivan",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17836&did=2026D40751",
+  "ministeries": [
+   "Volkshuisvesting en Ruimtelijke Ordening"
+  ],
+  "indieners": [
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D40851",
+  "docId": "bf4a9797-9235-4842-8908-57648a3bd950",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-09-03",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Wiersma en Kostic over de taskforce staalslakken en de uitwerking van de handreiking",
+  "zaak": "2026Z15901",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z15901&did=2026D40851",
+  "bijlagen": [
+   {
+    "id": "2026D40852",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Wiersma en Kostic over de taskforce staalslakken en de uitwerking van de handreiking",
+    "bestand": "PDF",
+    "docId": "831c911b-08c8-4080-a0f1-f7bd1c456c9b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D40852"
    }
   ]
  },
@@ -15387,6 +15944,42 @@
   ]
  },
  {
+  "id": "2026D37865",
+  "docId": "4ed719e1-662d-4da3-abc7-d181d3e00642",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-08-04",
+  "titel": null,
+  "onderwerp": "De berichtgeving dat nog geen 10% over is van het koraal rond Bonaire",
+  "zaak": "2026Z16666",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie",
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16666&did=2026D37865",
+  "ministeries": [
+   "Infrastructuur en Waterstaat",
+   "Binnenlandse Zaken en Koninkrijksrelaties"
+  ],
+  "indieners": [
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "M. Tseggai",
+    "fractie": "PRO",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D37743",
   "docId": "3988db2b-2163-4c79-a3be-26264f465d1c",
   "bestand": "PDF",
@@ -17932,6 +18525,40 @@
   ]
  },
  {
+  "id": "2026D35809",
+  "docId": "f10e6f1c-1da1-4c3e-85bd-0e1bec94501d",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-07-07",
+  "titel": null,
+  "onderwerp": "De taskforce staalslakken en de uitwerking van de handreiking",
+  "zaak": "2026Z15901",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z15901&did=2026D35809",
+  "ministeries": [
+   "Infrastructuur en Waterstaat"
+  ],
+  "indieners": [
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D35863",
   "docId": "011aa49f-0a27-4b5f-8237-31099c3bf1d2",
   "bestand": "PDF",
@@ -18432,6 +19059,48 @@
     "bestand": "PDF",
     "docId": "1d172d31-bdca-4d3a-9258-68a161af8be5",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35674"
+   }
+  ]
+ },
+ {
+  "id": "2026D35579",
+  "docId": "c67c5d0e-b90e-492d-a70e-7d6b261783b4",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-07-06",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026",
+  "onderwerp": "Aanpak 'comply or explain' Bonaire, Sint Eustatius en Saba",
+  "zaak": "2026Z15846",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "36800-IV-72",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15846&did=2026D35579",
+  "bijlagen": [
+   {
+    "id": "2026D35580",
+    "titel": "Advies uitvoeringstoets Caribisch Nederland",
+    "bestand": "PDF",
+    "docId": "d699f03e-2759-44ce-b082-dfdfc083335f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35580",
+    "rapport": true
+   },
+   {
+    "id": "2026D35581",
+    "titel": "Beslisnota bij Kamerbrief over Aanpak 'comply or explain' Bonaire, Sint Eustatius en Saba",
+    "bestand": "PDF",
+    "docId": "ae09a10f-0120-4b89-b245-bda1b6be41d1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35581"
    }
   ]
  },
@@ -19297,6 +19966,59 @@
   ]
  },
  {
+  "id": "2026D34968",
+  "docId": "670a8691-fe4e-432c-ae47-e1d486986d7e",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-07-02",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2026",
+  "onderwerp": "Reactie op de brief van Scholengemeenschap Bonaire (SGB) over de position paper 2.0 “Onderwijs binnen het Nederlandse stelsel vraagt om Nederlandse randvoorwaarden\"",
+  "zaak": "2026Z15594",
+  "ministerie": "Onderwijs, Cultuur en Wetenschap",
+  "ondertekenaar": "J.Z.C.M. Tielen",
+  "functie": "staatssecretaris van Onderwijs, Cultuur en Wetenschap",
+  "kamerstuk": "36800-VIII-180",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "VIII",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15594&did=2026D34968",
+  "bijlagen": [
+   {
+    "id": "2026D34969",
+    "titel": "Beslisnota bij Kamerbrief over reactie op de brief van Scholengemeenschap Bonaire (SGB) over de position paper 2.0 “Onderwijs binnen het Nederlandse stelsel vraagt om Nederlandse randvoorwaarden\"",
+    "bestand": "PDF",
+    "docId": "10bee5e7-0533-4fd7-bdda-fb17ad5b6682",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D34969"
+   }
+  ]
+ },
+ {
+  "id": "2026D34337",
+  "docId": "fb51038b-1f68-48ed-b0d5-3d643f4a28d7",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-07-01",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Tijs van den Brink en Straatman over de toegankelijkheid van het notariaat op Bonaire",
+  "zaak": "2026Z09943",
+  "ministerie": "Justitie en Veiligheid",
+  "ondertekenaar": "K.T. van Bruggen",
+  "functie": "staatssecretaris van Justitie en Veiligheid",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09943&did=2026D34337"
+ },
+ {
   "id": "2026D34413",
   "docId": "b3559ed6-fd2b-4846-a6d7-545c6e3509fe",
   "bestand": "PDF",
@@ -19877,6 +20599,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33904"
    }
   ]
+ },
+ {
+  "id": "2026D33627",
+  "docId": "a4c14239-cad4-4c8a-874d-4e233797469f",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-06-30",
+  "titel": "Goedkeuring van enkele ministeriële regelingen tot aanpassing van wetten van Nederlands-Antilliaanse oorsprong voor de openbare lichamen Bonaire, Sint Eustatius en Saba (Tweede goedkeurings- en reparatiewet BES)",
+  "onderwerp": "Toelichting op de nota van wijziging inzake Goedkeuring van enkele ministeriële regelingen tot aanpassing van wetten van Nederlands-Antilliaanse oorsprong voor de openbare lichamen Bonaire, Sint Eustatius en Saba (Tweede goedkeurings- en reparatiewet BES) (Kamerstuk 33315)",
+  "zaak": "2026Z14965",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "33315-5",
+  "dossiers": [
+   {
+    "nummer": 33315,
+    "toevoeging": null,
+    "titel": "Goedkeuring van enkele ministeriële regelingen tot aanpassing van wetten van Nederlands-Antilliaanse oorsprong voor de openbare lichamen Bonaire, Sint Eustatius en Saba (Tweede goedkeurings- en reparatiewet BES)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z14965&did=2026D33627"
  },
  {
   "id": "2026D33669",
@@ -24448,6 +25195,40 @@
   ]
  },
  {
+  "id": "2026D28615",
+  "docId": "a7b1da0a-efbb-462d-80e4-6fa59b266cf2",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-06-10",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026",
+  "onderwerp": "Openstaande toezegging uit het commissiedebat Bonaire, Sint Eustatius en Saba van 27 mei 2026",
+  "zaak": "2026Z12626",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "36800-IV-62",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z12626&did=2026D28615",
+  "bijlagen": [
+   {
+    "id": "2026D28616",
+    "titel": "Beslisnota bij Kamerbrief over openstaande toezegging uit het commissiedebat Bonaire, Sint Eustatius en Saba van 27 mei 2026",
+    "bestand": "PDF",
+    "docId": "2dbf5a9a-cc6c-41c8-b574-c35eca686043",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28616"
+   }
+  ]
+ },
+ {
   "id": "2026D28580",
   "docId": "4d1e6205-8055-4959-91ee-84f75a212563",
   "bestand": "PDF",
@@ -25080,6 +25861,40 @@
     "bestand": "PDF",
     "docId": "59988fd1-1c92-4635-baab-18c64e9aedaa",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D27460"
+   }
+  ]
+ },
+ {
+  "id": "2026D27495",
+  "docId": "10e81633-53c1-4a34-b0ee-3f0c61bc9500",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-06-04",
+  "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden) ",
+  "onderwerp": "Overwegingen regeling (deeltijd)gedeputeerden in Verhogingswet",
+  "zaak": "2026Z12118",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "36867-15",
+  "dossiers": [
+   {
+    "nummer": 36867,
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden) "
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z12118&did=2026D27495",
+  "bijlagen": [
+   {
+    "id": "2026D27496",
+    "titel": "Beslisnota bij Kamerbrief over overwegingen regeling (deeltijd)gedeputeerden in Verhogingswet",
+    "bestand": "PDF",
+    "docId": "4b9a1761-4606-4bc2-b7ce-12588b7aa33c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D27496"
    }
   ]
  },
@@ -26949,6 +27764,7 @@
    }
   ],
   "sectoren": [
+   "klimaat-energie",
    "circulair-vervuiling"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z10965&did=2026D24881",
@@ -27061,6 +27877,35 @@
    {
     "naam": "H. Vermeer",
     "fractie": "BBB",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D24375",
+  "docId": "49ee4234-71bc-49d3-8ca3-2616c270994c",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-05-22",
+  "titel": null,
+  "onderwerp": "Massasterfte van zwaluwen door pesticiden",
+  "zaak": "2026Z10725",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "S.P.A. Erkens",
+  "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10725&did=2026D24375",
+  "ministeries": [
+   "Landbouw, Visserij, Voedselzekerheid en Natuur"
+  ],
+  "indieners": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
   ]
@@ -28275,6 +29120,41 @@
   ]
  },
  {
+  "id": "2026D22515",
+  "docId": "7d00422c-966b-4fc2-8ed3-cea49276c88d",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-05-15",
+  "titel": null,
+  "onderwerp": "De toegankelijkheid van het notariaat op Bonaire",
+  "zaak": "2026Z09943",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09943&did=2026D22515",
+  "ministeries": [
+   "Binnenlandse Zaken en Koninkrijksrelaties",
+   "Justitie en Veiligheid"
+  ],
+  "indieners": [
+   {
+    "naam": "T.A. (Tijs) van den Brink",
+    "fractie": "CDA",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "J.C.G. Straatman",
+    "fractie": "CDA",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D22567",
   "docId": "748215af-6ae3-42f6-9bb2-e447d3fe8abe",
   "bestand": "PDF",
@@ -29080,6 +29960,34 @@
     "bestand": "PDF",
     "docId": "a2cd32c7-4186-416f-9b24-7cdd842fa34a",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21304"
+   }
+  ]
+ },
+ {
+  "id": "2026D21298",
+  "docId": "7a2cdc27-2a26-4737-b3cf-8f83062d61f7",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-05-11",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Heera Dijk en Rooderkerk over de berichten 'Scholen Bonaire vol: tientallen kinderen de dupe' en 'Basisscholen zitten vol'",
+  "zaak": "2026Z05189",
+  "ministerie": "Onderwijs, Cultuur en Wetenschap",
+  "ondertekenaar": "J.Z.C.M. Tielen",
+  "functie": "staatssecretaris van Onderwijs, Cultuur en Wetenschap",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05189&did=2026D21298",
+  "bijlagen": [
+   {
+    "id": "2026D21299",
+    "titel": "Beslisnota bij Antwoord op vragen van de leden Heera Dijk en Rooderkerk over de berichten 'Scholen Bonaire vol: tientallen kinderen de dupe' en 'Basisscholen zitten vol'",
+    "bestand": "PDF",
+    "docId": "ae594d86-a515-4ea4-ad96-05d5bd990200",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D21299"
    }
   ]
  },
@@ -30289,6 +31197,47 @@
     "naam": "L.A.J.M. Dassen",
     "fractie": "Volt",
     "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D20142",
+  "docId": "0105c519-a3a4-4e08-9864-040bb9dc9035",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-04-24",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026",
+  "onderwerp": "Correctie Integraal overzicht Financiën Bonaire, Sint Eustatius en Saba 2025",
+  "zaak": "2026Z09017",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "36800-IV-54",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z09017&did=2026D20142",
+  "bijlagen": [
+   {
+    "id": "2026D20143",
+    "titel": "Integraal overzicht financiën Bonaire Sint Eustatius en Saba 2025- correctie",
+    "bestand": "PDF",
+    "docId": "f374b77e-1802-4bd6-ac44-f960bce1c129",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20143"
+   },
+   {
+    "id": "2026D20144",
+    "titel": "Beslisnota bij Kamerbrief over correctie integraal overzicht financiën Bonaire Sint Eustatius en Saba 2025",
+    "bestand": "PDF",
+    "docId": "f19b9e39-958b-48f7-ab09-1b596c178064",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D20144"
    }
   ]
  },
@@ -31862,6 +32811,47 @@
   ]
  },
  {
+  "id": "2026D18135",
+  "docId": "e3032393-d750-463f-97ee-83ce574b9943",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-04-16",
+  "titel": "Regels ten behoeve van de kinderopvang op Bonaire, Sint Eustatius en Saba (Wet kinderopvang BES)",
+  "onderwerp": "Invoering Wet kinderopvang BES per 1 januari 2026",
+  "zaak": "2026Z08072",
+  "ministerie": "Sociale Zaken en Werkgelegenheid",
+  "ondertekenaar": "J.A. Vijlbrief",
+  "functie": "minister van Sociale Zaken en Werkgelegenheid",
+  "kamerstuk": "36306-13",
+  "dossiers": [
+   {
+    "nummer": 36306,
+    "toevoeging": null,
+    "titel": "Regels ten behoeve van de kinderopvang op Bonaire, Sint Eustatius en Saba (Wet kinderopvang BES)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z08072&did=2026D18135",
+  "bijlagen": [
+   {
+    "id": "2026D18136",
+    "titel": "Beslisnota bij Kamerbrief Invoering Wet kinderopvang BES per 1 januari 2026 (min SZW)",
+    "bestand": "PDF",
+    "docId": "acc688f3-5752-4a86-b608-74f28a04c03b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18136"
+   },
+   {
+    "id": "2026D18137",
+    "titel": "Beslisnota bij Kamerbrief Invoering Wet kinderopvang BES per 1 januari 2026 (sts SZW)",
+    "bestand": "PDF",
+    "docId": "9f18dafe-928b-48a1-a2d3-ec5b436397d3",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18137"
+   }
+  ]
+ },
+ {
   "id": "2026D18054",
   "docId": "8c856eb9-d827-4fe2-a1a0-b6550c2929eb",
   "bestand": "PDF",
@@ -32669,6 +33659,40 @@
     "bestand": "PDF",
     "docId": "6ed7f7f2-ac05-4ece-baff-c7249b6f5cdb",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17589"
+   }
+  ]
+ },
+ {
+  "id": "2026D17228",
+  "docId": "0b48b6d0-0413-4e43-82f5-232534fc483d",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-04-10",
+  "titel": "Wijziging van de Gemeentewet, Provinciewet, Waterschapswet, Wet gemeenschappelijke regelingen en Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met een permanente regeling die beraadslagen en besluiten langs de elektronische weg voor decentrale volksvertegenwoordigingen mogelijk maakt (Wet digitaal vergaderen decentrale overheden)",
+  "onderwerp": "Appreciatie gewijzigd amendement van het lid Bikker over het slechts laten plaatvinden van digitaal vergaderen wanneer bijzondere omstandigheden in ernstige mate verhinderen dat kan worden bijeengekomen in een fysieke vergadering en de vergadering vanwege een zwaarwegend openbaar belang niet kan worden uitgesteld (Kamerstuk 36558-11)",
+  "zaak": "2026Z07682",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "P.E. Heerma",
+  "functie": "minister van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "36558-12",
+  "dossiers": [
+   {
+    "nummer": 36558,
+    "toevoeging": null,
+    "titel": "Wijziging van de Gemeentewet, Provinciewet, Waterschapswet, Wet gemeenschappelijke regelingen en Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met een permanente regeling die beraadslagen en besluiten langs de elektronische weg voor decentrale volksvertegenwoordigingen mogelijk maakt (Wet digitaal vergaderen decentrale overheden)"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z07682&did=2026D17228",
+  "bijlagen": [
+   {
+    "id": "2026D17229",
+    "titel": "Beslisnota bij Kamerbrief over appreciatie gewijzigd amendement van het lid Bikker over het slechts laten plaatvinden van digitaal vergaderen wanneer bijzondere omstandigheden in ernstige mate verhinderen dat kan worden bijeengekomen in een fysieke vergadering en de vergadering vanwege een zwaarwegend openbaar belang niet kan worden uitgesteld (Kamerstuk 36558-11)",
+    "bestand": "PDF",
+    "docId": "fee755b1-68c0-4ba8-a24b-1bfc0f7c9d1f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D17229"
    }
   ]
  },
@@ -33892,6 +34916,47 @@
   ]
  },
  {
+  "id": "2026D15614",
+  "docId": "b3bac3ae-1a3e-48ae-ac18-9c17e15fa2ce",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-04-02",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026",
+  "onderwerp": "Toetsingskader garantie DGS BES (depositogarantiestelsel Bonaire, Sint-Eustatius en Saba)",
+  "zaak": "2026Z06942",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "36800-IV-53",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z06942&did=2026D15614",
+  "bijlagen": [
+   {
+    "id": "2026D15615",
+    "titel": "Toetsingskader DGS BES",
+    "bestand": "PDF",
+    "docId": "5ab271bf-24c8-4ebd-9163-e6254333d05b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15615"
+   },
+   {
+    "id": "2026D15616",
+    "titel": "Beslisnota bij Kamerbrief Toetsingskader garantie DGS BES (depositogarantiestelsel Bonaire, Sint-Eustatius en Saba)",
+    "bestand": "PDF",
+    "docId": "ee83e33a-ddf2-4873-ada7-0d45a9587fa0",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15616"
+   }
+  ]
+ },
+ {
   "id": "2026D15501",
   "docId": "ff3cc99b-5c33-4215-aa1e-a606a7e79828",
   "bestand": "PDF",
@@ -34246,6 +35311,34 @@
     "bestand": "PDF",
     "docId": "4749a0e5-a48e-4478-96d1-46c5414851eb",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15457"
+   }
+  ]
+ },
+ {
+  "id": "2026D15301",
+  "docId": "6d5bf749-ef1d-4518-a550-9505cc1ed023",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-04-01",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Zalinyan en Kostić over het artikel “Het Rijk verbiedt gemeenten om eigen maatregelen te nemen tegen staalslakken",
+  "zaak": "2026Z04766",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z04766&did=2026D15301",
+  "bijlagen": [
+   {
+    "id": "2026D15302",
+    "titel": "Beslisnota bij Kamerbrief Antwoord op vragen van de leden Zalinyan en Kostić over het artikel “Het Rijk verbiedt gemeenten om eigen maatregelen te nemen tegen staalslakken",
+    "bestand": "PDF",
+    "docId": "440bbbd8-e2fb-4f5a-b2c8-ceca1a07a09b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15302"
    }
   ]
  },
@@ -36437,6 +37530,41 @@
   ]
  },
  {
+  "id": "2026D11877",
+  "docId": "ba910b1f-6a44-4a8d-9b48-0fca791898de",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-03-16",
+  "titel": null,
+  "onderwerp": "De berichten 'Scholen Bonaire vol: tientallen kinderen de dupe' en 'Basisscholen zitten vol'",
+  "zaak": "2026Z05189",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05189&did=2026D11877",
+  "ministeries": [
+   "Binnenlandse Zaken en Koninkrijksrelaties",
+   "Onderwijs, Cultuur en Wetenschap"
+  ],
+  "indieners": [
+   {
+    "naam": "H.L.O. (Heera) Dijk",
+    "fractie": "D66",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "I. Rooderkerk",
+    "fractie": "D66",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D11764",
   "docId": "353152e1-b503-47b2-82f5-1e632186ddd0",
   "bestand": "PDF",
@@ -37340,6 +38468,40 @@
   ]
  },
  {
+  "id": "2026D10911",
+  "docId": "96698400-8d40-4f38-b05c-2408b70196cc",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-03-10",
+  "titel": null,
+  "onderwerp": "Het artikel 'Rijk verbiedt gemeenten om eigen maatregelen te nemen tegen staalslakken'",
+  "zaak": "2026Z04766",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z04766&did=2026D10911",
+  "ministeries": [
+   "Infrastructuur en Waterstaat"
+  ],
+  "indieners": [
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D10854",
   "docId": "c04fc8b5-fd2c-4c28-a78c-2999fd2d1a05",
   "bestand": "PDF",
@@ -37999,6 +39161,34 @@
   ]
  },
  {
+  "id": "2026D09227",
+  "docId": "4bcda0ab-538c-414b-bb45-a7f059887335",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-03-02",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Van Ark over het bericht 'Sluipmoordenaar op de werkvloer: 3.000 doden per jaar door schadelijke stoffen’",
+  "zaak": "2026Z01004",
+  "ministerie": "Werk en Participatie",
+  "ondertekenaar": "A.A. Aartsen",
+  "functie": "minister van Werk en Participatie",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01004&did=2026D09227",
+  "bijlagen": [
+   {
+    "id": "2026D09228",
+    "titel": "Beslisnota bij Antwoord op vragen van het lid Van Ark over het bericht 'Sluipmoordenaar op de werkvloer: 3.000 doden per jaar door schadelijke stoffen’",
+    "bestand": "PDF",
+    "docId": "c45f21c8-bf7d-4d4e-b5ed-4a173e0dfe17",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09228"
+   }
+  ]
+ },
+ {
   "id": "2026D09025",
   "docId": "4314f622-591a-4efc-a74f-387affbb95a6",
   "bestand": "PDF",
@@ -38525,6 +39715,34 @@
     "naam": "A. Zalinyan",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D07891",
+  "docId": "e1f2b487-e8a5-4fc1-ada0-ae77d0d5d8bf",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-02-19",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Kröger, Bushoff en Teunissen  over het bericht 'Omstreden gasproject in Mozambique weer van start, met Nederlandse hulp'",
+  "zaak": "2026Z02491",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02491&did=2026D07891",
+  "bijlagen": [
+   {
+    "id": "2026D07892",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Kröger, Bushoff en Teunissen over het bericht 'Omstreden gasproject in Mozambique weer van start, met Nederlandse hulp'",
+    "bestand": "PDF",
+    "docId": "49e311c2-9aa4-4308-a094-a34f08b575b9",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D07892"
    }
   ]
  },
@@ -39491,6 +40709,47 @@
   ]
  },
  {
+  "id": "2026D07034",
+  "docId": "699f9fe2-50dc-4ff0-bf2c-1e30ebd49188",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-02-12",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026",
+  "onderwerp": "Verslag werkbezoek Bonaire, Sint Maarten en Curaçao",
+  "zaak": "2026Z03156",
+  "ministerie": "Volksgezondheid, Welzijn en Sport",
+  "ondertekenaar": "J.Z.C.M. Tielen",
+  "functie": "staatssecretaris van Volksgezondheid, Welzijn en Sport",
+  "kamerstuk": "36800-IV-46",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z03156&did=2026D07034",
+  "bijlagen": [
+   {
+    "id": "2026D07035",
+    "titel": "Conclusies van het zesde Bestuurlijk Vierlandenoverleg van 20 november 2025 in Sint Maarten betreffende samenwerking op het gebied van volksgezondheid binnen het Koninkrijk",
+    "bestand": "PDF",
+    "docId": "5e11cd5c-69e1-4b93-a253-06b92466dd69",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D07035"
+   },
+   {
+    "id": "2026D07036",
+    "titel": "Beslisnota bij Verslag werkbezoek Bonaire, Sint Maarten en Curaçao",
+    "bestand": "PDF",
+    "docId": "667b86fd-6c2e-40f3-a8de-2fcc05926187",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D07036"
+   }
+  ]
+ },
+ {
   "id": "2026D06846",
   "docId": "658e9105-e708-43c1-845b-5869af1c1478",
   "bestand": "PDF",
@@ -39545,6 +40804,7 @@
    }
   ],
   "sectoren": [
+   "klimaat-energie",
    "circulair-vervuiling"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z03067&did=2026D06850",
@@ -40785,6 +42045,46 @@
     "bestand": "PDF",
     "docId": "4ca35c77-917b-4022-b996-0729993ee495",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05998"
+   }
+  ]
+ },
+ {
+  "id": "2026D05742",
+  "docId": "509ac632-0f96-46c2-a61b-354ec4a75352",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-02-05",
+  "titel": null,
+  "onderwerp": "Het bericht 'Omstreden gasproject in Mozambique weer van start, met Nederlandse hulp'",
+  "zaak": "2026Z02491",
+  "ministerie": "Buitenlandse Zaken",
+  "ondertekenaar": "A. de Vries",
+  "functie": "staatssecretaris van Buitenlandse Zaken",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02491&did=2026D05742",
+  "ministeries": [
+   "Buitenlandse Zaken",
+   "Financiën"
+  ],
+  "indieners": [
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "T.J. Bushoff",
+    "fractie": "GroenLinks-PvdA",
+    "relatie": "Mede ondertekenaar"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Mede ondertekenaar"
    }
   ]
  },
@@ -44050,6 +45350,36 @@
   ]
  },
  {
+  "id": "2026D02492",
+  "docId": "d6e0a0ed-6c92-4b6c-8cff-11d74044e523",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-01-21",
+  "titel": null,
+  "onderwerp": "Het bericht 'Sluipmoordenaar op de werkvloer: 3.000 doden per jaar door schadelijke stoffen'",
+  "zaak": "2026Z01004",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.A. Aartsen",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01004&did=2026D02492",
+  "ministeries": [
+   "Infrastructuur en Waterstaat",
+   "Sociale Zaken en Werkgelegenheid"
+  ],
+  "indieners": [
+   {
+    "naam": "A.F.J. van Ark",
+    "fractie": "CDA",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D02423",
   "docId": "5b939b00-19f3-4610-b104-3955bd3fbff3",
   "bestand": "PDF",
@@ -45570,6 +46900,40 @@
   ]
  },
  {
+  "id": "2026D00820",
+  "docId": "aeb7fa5a-ac87-4046-8eec-088651192021",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-01-13",
+  "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden) ",
+  "onderwerp": "Verhoging aantal leden eilandsraden en bestuurscolleges",
+  "zaak": "2026Z00326",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van Marum",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "36867-5",
+  "dossiers": [
+   {
+    "nummer": 36867,
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet openbare lichamen Bonaire, Sint Eustatius en Saba in verband met de verhoging van het aantal eilandsraadsleden en eilandgedeputeerden (Wet verhoging aantal eilandsraadsleden en eilandgedeputeerden) "
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z00326&did=2026D00820",
+  "bijlagen": [
+   {
+    "id": "2026D00821",
+    "titel": "Beslisnota bij Kamerbrief over verhoging aantal leden eilandsraden en bestuurscolleges",
+    "bestand": "PDF",
+    "docId": "55a057a3-7710-49c1-b508-aa146f3a01fa",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D00821"
+   }
+  ]
+ },
+ {
   "id": "2026D01003",
   "docId": "365f7da1-f055-4266-912e-1909d18f3c71",
   "bestand": "PDF",
@@ -45884,6 +47248,34 @@
   ]
  },
  {
+  "id": "2026D00485",
+  "docId": "bdb8debc-a3fe-45d7-968d-766f02c1f17c",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-01-09",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Van Asten over het artikel ‘Waterschappen hebben geen zicht op bouwplannen in risicovolle gebieden'",
+  "zaak": "2025Z21154",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "M.C.G. Keijzer",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21154&did=2026D00485",
+  "bijlagen": [
+   {
+    "id": "2026D00486",
+    "titel": "Beslisnota bij Antwoord op vragen van het lid Van Asten over het artikel ‘Waterschappen hebben geen zicht op bouwplannen in risicovolle gebieden'",
+    "bestand": "PDF",
+    "docId": "63755ef6-d5bc-4eb5-8ec5-de0b8e4e9d9e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D00486"
+   }
+  ]
+ },
+ {
   "id": "2026D00407",
   "docId": "b85ba90a-a48a-4d8e-a708-049a97851cf6",
   "bestand": "PDF",
@@ -46066,6 +47458,40 @@
     "naam": "L.A.J.M. Dassen",
     "fractie": "Volt",
     "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D00195",
+  "docId": "6a09dd23-9d00-4faa-8b1c-e93db974ae69",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-01-07",
+  "titel": "Toekomst pensioenstelsel",
+  "onderwerp": "Stand van zaken van het wetsvoorstel dat de overdracht van de Appa-pensioenen naar het nieuwe pensioenstelsel regelt en onderzoek naar schatting van de kosten van de overgang naar het nieuwe stelsel voor provincies, gemeenten en waterschappen",
+  "zaak": "2026Z00086",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "F. Rijkaart",
+  "functie": "minister van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "32043-692",
+  "dossiers": [
+   {
+    "nummer": 32043,
+    "toevoeging": null,
+    "titel": "Toekomst pensioenstelsel"
+   }
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z00086&did=2026D00195",
+  "bijlagen": [
+   {
+    "id": "2026D00196",
+    "titel": "Beslisnota bij Kamerbrief over stand van zaken van het wetsvoorstel dat de overdracht van de Appa-pensioenen naar het nieuwe pensioenstelsel regelt en onderzoek naar schatting van de kosten van de overgang naar het nieuwe stelsel voor provincies, gemeenten en waterschappen",
+    "bestand": "PDF",
+    "docId": "5831e0f0-5c58-4b5f-98a3-f2d3724579bb",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D00196"
    }
   ]
  },
@@ -47006,6 +48432,47 @@
   ]
  },
  {
+  "id": "2025D53590",
+  "docId": "21b1920a-1bce-4ab4-914f-d68998859dc0",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2025-12-19",
+  "titel": "Wijziging van de Gemeentewet, de Wet openbare lichamen Bonaire, Sint Eustatius en Saba en enkele andere wetten in verband met uitbreiding van de sluitingsbevoegdheid van de burgemeester en de gezaghebber ter handhaving van de openbare orde en om enkele omissies te herstellen",
+  "onderwerp": "Kabinetsreactie op Invoeringstoets artikel 174a van de Gemeentewet",
+  "zaak": "2025Z22571",
+  "ministerie": "Justitie en Veiligheid",
+  "ondertekenaar": "F. van Oosten",
+  "functie": "minister van Justitie en Veiligheid",
+  "kamerstuk": "36217-15",
+  "dossiers": [
+   {
+    "nummer": 36217,
+    "toevoeging": null,
+    "titel": "Wijziging van de Gemeentewet, de Wet openbare lichamen Bonaire, Sint Eustatius en Saba en enkele andere wetten in verband met uitbreiding van de sluitingsbevoegdheid van de burgemeester en de gezaghebber ter handhaving van de openbare orde en om enkele omissies te herstellen"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22571&did=2025D53590",
+  "bijlagen": [
+   {
+    "id": "2025D53591",
+    "titel": "Invoeringstoets artikel 174a Gemeentewet",
+    "bestand": "PDF",
+    "docId": "85d93550-708b-43b3-a69f-a458a524c85c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53591"
+   },
+   {
+    "id": "2025D53592",
+    "titel": "Beslisnota bij Kabinetsreactie Invoeringstoets artikel 174a van de Gemeentewet",
+    "bestand": "PDF",
+    "docId": "0237d4b0-ad98-4309-bc09-897941c42f0b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53592"
+   }
+  ]
+ },
+ {
   "id": "2025D53782",
   "docId": "8892784c-96e8-4bfa-b8e5-de8d7b5d4601",
   "bestand": "PDF",
@@ -47864,6 +49331,7 @@
    }
   ],
   "sectoren": [
+   "natuur-stikstof-landbouw",
    "circulair-vervuiling"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22340&did=2025D52858",
@@ -49422,6 +50890,34 @@
   ]
  },
  {
+  "id": "2025D51203",
+  "docId": "e5d8501f-3842-4a65-bd32-d854ec09a223",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2025-12-10",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Ceder over het rapport ‘Behoeften en ondersteuning van mantelzorgers op Bonaire’",
+  "zaak": "2025Z19268",
+  "ministerie": "Volksgezondheid, Welzijn en Sport",
+  "ondertekenaar": "J.Z.C.M. Tielen",
+  "functie": "staatssecretaris van Volksgezondheid, Welzijn en Sport",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z19268&did=2025D51203",
+  "bijlagen": [
+   {
+    "id": "2025D51204",
+    "titel": "Beslisnota bij Kamerbrief Antwoord op vragen van het lid Ceder over het rapport ‘Behoeften en ondersteuning van mantelzorgers op Bonaire’",
+    "bestand": "PDF",
+    "docId": "a8fb9c92-fc61-420c-8685-7c673ed0fe29",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D51204"
+   }
+  ]
+ },
+ {
   "id": "2025D51107",
   "docId": "d79b59de-bba4-40e3-8d50-e2c4edde97f2",
   "bestand": "PDF",
@@ -50351,6 +51847,35 @@
   ]
  },
  {
+  "id": "2025D50043",
+  "docId": "c38943aa-e33d-44c6-94bd-1fdfc403ca37",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2025-12-04",
+  "titel": null,
+  "onderwerp": "Het artikel ‘Waterschappen hebben geen zicht op bouwplannen in risicovolle gebieden'",
+  "zaak": "2025Z21154",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "M.C.G. Keijzer",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21154&did=2025D50043",
+  "ministeries": [
+   "Volkshuisvesting en Ruimtelijke Ordening"
+  ],
+  "indieners": [
+   {
+    "naam": "R.J. van Asten",
+    "fractie": "D66",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2025D50044",
   "docId": "3045ec95-ed48-4b2e-b410-6fe3ab93164f",
   "bestand": "PDF",
@@ -50989,6 +52514,47 @@
     "bestand": "PDF",
     "docId": "38f9c3ab-27e6-4f40-907d-5700f0ed3870",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49390"
+   }
+  ]
+ },
+ {
+  "id": "2025D49291",
+  "docId": "31cb135c-ac61-4d33-919d-ceaa3eedc862",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2025-12-01",
+  "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026",
+  "onderwerp": "Integraal Overzicht Financiën Bonaire, Sint Eustatius en Saba 2025",
+  "zaak": "2025Z20900",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van Marum",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "36800-IV-26",
+  "dossiers": [
+   {
+    "nummer": 36800,
+    "toevoeging": "IV",
+    "titel": "Vaststelling van de begrotingsstaten van Koninkrijksrelaties (IV) en het BES-fonds (H) voor het jaar 2026"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z20900&did=2025D49291",
+  "bijlagen": [
+   {
+    "id": "2025D49292",
+    "titel": "Overzicht Financiën Bonaire, Sint Eustatius en Saba 2025",
+    "bestand": "PDF",
+    "docId": "e655005c-11f7-447b-83a7-b96d3955b0e7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49292"
+   },
+   {
+    "id": "2025D49293",
+    "titel": "Beslisnota bij Kamerbrief Integraal Overzicht Financiën Bonaire, Sint Eustatius en Saba 2025",
+    "bestand": "PDF",
+    "docId": "787ac8fc-f11e-4c34-a039-d989701db11a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49293"
    }
   ]
  },
@@ -51798,6 +53364,34 @@
   ]
  },
  {
+  "id": "2025D47964",
+  "docId": "2b762bba-4ba9-48a6-8cd3-1c0e66be0168",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2025-11-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Dijk over de berichten ‘Staalslakken op veel meer plekken gevonden: aantal locaties bijna verdubbeld’ en ‘Waar komen verwijderde staalslakken terecht? “Geen zicht op”’",
+  "zaak": "2025Z18850",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.A. Aartsen",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z18850&did=2025D47964",
+  "bijlagen": [
+   {
+    "id": "2025D47965",
+    "titel": "Beslisnota bij Antwoord op vragen van het lid Dijk over de berichten ‘Staalslakken op veel meer plekken gevonden: aantal locaties bijna verdubbeld’ en ‘Waar komen verwijderde staalslakken terecht? “Geen zicht op”’",
+    "bestand": "PDF",
+    "docId": "6bd0e81e-8caa-4431-869b-6da8b39dc8c2",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D47965"
+   }
+  ]
+ },
+ {
   "id": "2025D47879",
   "docId": "a0424a6f-7ed0-400c-944b-2952d6dd318a",
   "bestand": "PDF",
@@ -51956,6 +53550,34 @@
     "bestand": "PDF",
     "docId": "d51d7004-771d-4dee-bc88-077a2503c7e8",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D47918"
+   }
+  ]
+ },
+ {
+  "id": "2025D47968",
+  "docId": "bd217aa6-22e2-436d-bc29-5fd8acfb7f47",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2025-11-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Kostić en Gabriëls over de staalslakkenkwesties",
+  "zaak": "2025Z17930",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.A. Aartsen",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z17930&did=2025D47968",
+  "bijlagen": [
+   {
+    "id": "2025D47969",
+    "titel": "Beslisnota bij Antwoord op vragen van de leden Kostić en Gabriëls over de staalslakkenkwesties",
+    "bestand": "PDF",
+    "docId": "dc0585c1-2d38-4594-82f2-987b5c6f552d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D47969"
    }
   ]
  },

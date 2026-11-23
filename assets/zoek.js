@@ -169,16 +169,24 @@
         wie: wieVan((z.indieners || []).map((i) => i.naam), (z.indieners || []).map((i) => i.fractie)),
         indiener: (() => { const i = (z.indieners || []).find((x) => /^indiener|eerste/i.test(x.relatie || "")) || (z.indieners || [])[0]; return i ? `${hoofdletter(zonderVoorletters(i.naam))}${i.fractie ? ` (${i.fractie})` : ""}${z.indieners.length > 1 ? " c.s." : ""}` : ""; })(),
         kamerstuk: dossierLabel(z.dossiers), nummer: z.nummer,
-        // wetsvoorstel: de eigen pagina per Kamerstuk; moties en amendementen naar tweedekamer.nl
-        link: isWet && z.dossiers?.[0] ? `#wetgeving/${z.dossiers[0].nummer}` : MRThemas.tkUrl(z), extern: !(isWet && z.dossiers?.[0]), uitslag: z.uitslag,
+        // wetsvoorstel: de eigen pagina per Kamerstuk; moties en amendementen: hun rij op Moties of Amendementen, opengeklapt
+        link: isWet ? (z.dossiers?.[0] ? `#wetgeving/${z.dossiers[0].nummer}` : MRThemas.tkUrl(z)) : `#${z.soort === "Amendement" ? "amendementen" : "moties"}?open=${encodeURIComponent(z.nummer)}`,
+        extern: isWet && !z.dossiers?.[0], uitslag: z.uitslag,
       });
+    }
+    // Kamervragen staan per zaak als één rij (vraag plus antwoorden); de sleutel van die rij is de vraag, anders het eerste antwoord (app.js, vraagRijen)
+    const vraagRij = new Map();
+    for (const x of [...(D.stukken || [])].sort((a, b) => (a.datum || "").localeCompare(b.datum || ""))) {
+      if (!x.zaak || x.soort === "Brief regering") continue;
+      if (x.soort === "Schriftelijke vragen" || !vraagRij.has(x.zaak)) vraagRij.set(x.zaak, x.id);
     }
     for (const x of D.stukken || []) {
       add({
         id: "stuk:" + x.id, cat: "stukken", soort: SOORT_KORT[x.soort] || x.soort, datum: x.datum, sectoren: x.sectoren || [],
         titel: x.onderwerp || x.titel, tekst: j([x.titel !== (x.onderwerp || x.titel) ? x.titel : "", x.kamerstuk, x.id, x.ministerie && "ministerie van " + x.ministerie, ...(x.bijlagen || []).map((b) => b.titel)]),
         dossier: dossierTekst(x.dossiers),
-        personen: j([x.ondertekenaar, x.functie, ...(x.indieners || []).map((i) => `${i.naam} ${i.fractie || ""}`)]), link: x.link, extern: true, ministerie: x.ministerie,
+        personen: j([x.ondertekenaar, x.functie, ...(x.indieners || []).map((i) => `${i.naam} ${i.fractie || ""}`)]), ministerie: x.ministerie,
+        link: x.soort === "Brief regering" ? `#brieven?open=${encodeURIComponent(x.id)}` : `#vragen?open=${encodeURIComponent(vraagRij.get(x.zaak) || x.id)}`, extern: false,
         wie: wieVan([...(x.indieners || []).map((i) => i.naam), x.ondertekenaar], (x.indieners || []).map((i) => i.fractie)), zaak: x.zaak,
       });
     }

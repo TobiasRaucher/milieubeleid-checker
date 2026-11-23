@@ -603,6 +603,8 @@ def wetsvoorstellen(alle_zaken, regels):
     uit = {str(x) for x in cfg.get("uitsluiten", [])}
     insluiten = {str(x["nummer"]): x.get("sector") for x in cfg.get("insluiten", [])}
     altijd = cfg.get("altijdVoortouw", {})
+    # woorden die bij wetsvoorstellen niet als trefwoord tellen (bv. Bonaire: anders elke BES-wet)
+    niet = _regex(cfg.get("nietAlsTrefwoord", []))
     ruw = odata("Zaak", {
         "$filter": f"Verwijderd eq false and (Soort eq 'Wetgeving' or Soort eq 'Initiatiefwetgeving') and GestartOp ge {start}T00:00:00Z",
         "$select": LICHT_SELECT,
@@ -618,7 +620,8 @@ def wetsvoorstellen(alle_zaken, regels):
         sectoren += [insluiten[n] for n in nrs if insluiten.get(n)]
         sectoren += [altijd[v] for v in voortouw if v in altijd]
         if not sectoren:
-            sectoren = sectoren_op_trefwoord(f"{z.get('Titel') or ''} {z.get('Citeertitel') or ''}", regels)
+            titel = f"{z.get('Titel') or ''} {z.get('Citeertitel') or ''}"
+            sectoren = sectoren_op_trefwoord(niet.sub("", titel) if niet else titel, regels)
         if sectoren:
             gekozen[z["Id"]] = list(dict.fromkeys(sectoren))
     # uitgesloten Kamerstukken ook weghalen als ze via een vast dossier of zoekterm binnenkwamen

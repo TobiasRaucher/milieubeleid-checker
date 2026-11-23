@@ -517,7 +517,7 @@
     "onderwerp": "Voortgang uitvoering van de motie van het lid Van den Berg over de Energy & Health Campus (EHC) in Petten aan laten sluiten bij ontwikkelingen in het Nederlandse nucleaire onderzoek (Kamerstuk 33626-48)",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "33626-51",
       "soort": "Brief regering",
       "datum": "2026-11-03",
       "onderwerp": "Voortgang uitvoering van de motie van het lid Van den Berg over de Energy & Health Campus (EHC) in Petten aan laten sluiten bij ontwikkelingen in het Nederlandse nucleaire onderzoek (Kamerstuk 33626-48)",
@@ -4286,11 +4286,6 @@
   "voorzitter": null,
   "deelnemers": [
    {
-    "naam": "L. Bromet",
-    "fractie": "PRO",
-    "functie": "Tweede Kamerlid"
-   },
-   {
     "naam": "M.C.A. Vellinga-Beemsterboer",
     "fractie": "D66",
     "functie": "Tweede Kamerlid"
@@ -4301,13 +4296,28 @@
     "functie": "Tweede Kamerlid"
    },
    {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
     "naam": "L. Boelsma-Hoekstra",
     "fractie": "CDA",
     "functie": "Tweede Kamerlid"
    },
    {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
     "naam": "F.M. Wiersma",
     "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
     "functie": "Tweede Kamerlid"
    }
   ],
