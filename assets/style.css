@@ -250,6 +250,7 @@ footer a { color: var(--ink-2); }
 .badge.alarm { color: var(--alarm-tekst); }
 .badge.alarm::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--alarm); }
 .badge.stil { color: var(--muted); font-weight: 400; }
+.badge.rapport { font-size: var(--t-15); } /* even groot als de bijlage erachter */
 /* themalabels */
 .kaartlabels { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; margin: 4px 0 8px; }
 .tchips { display: inline-flex; flex-wrap: wrap; gap: 4px; }

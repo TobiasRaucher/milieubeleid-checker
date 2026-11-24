@@ -104,7 +104,7 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
   Niet in Net binnen.
 - `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Kolom en filter "Rapport?" (vinkje of streepje; tot 23 nov 2026 het label
   "Met rapport") als een bijlage een rapport is (`MRThemas.metRapport()`: herkend door de pipeline en niet afgewezen
-  in `data/rapporten.json`); in het bijlagenblok staan rapporten vooraan met het label "Rapport".
+  in `data/rapporten.json`); in het bijlagenblok staan rapporten vooraan met het label "Rapport:" (15).
   Sinds 23 nov 2026 ook brieven en verslagen aan de Eerste Kamer (`kamer: "Eerste Kamer"` in `stukken.json`): kolom en
   filter Kamer, link naar officielebekendmakingen.nl; in Net binnen en zoeken "Kamerbrief, Eerste Kamer".
 - Bijlagen in de uitgeklapte rij van een Kamerbrief en van een antwoord (`bijlagenBlok()`); de zoekfunctie zoekt ook op de titels.

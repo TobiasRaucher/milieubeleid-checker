@@ -1466,7 +1466,7 @@
   const overKlein = (t) => klein(String(t || "").trim().replace(/\s+/g, " ").replace(/^(over|inzake) /i, ""));
   // bijlagen bij een Kamerbrief of antwoord (beslisnota, rapporten, analyses), uit de Kamerdata
   const metRapport = (b) => window.MRThemas.metRapport(b, S.data.rapporten);
-  const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${metRapport(b) ? `<span class="badge">Rapport</span> ` : ""}${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}${docKnop(b, "Lees") ? ` ${docKnop(b, "Lees")}` : ""}</li>`).join("")}</ul></div>` : "");
+  const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${metRapport(b) ? `<span class="badge rapport">Rapport:</span> ` : ""}${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}${docKnop(b, "Lees") ? ` ${docKnop(b, "Lees")}` : ""}</li>`).join("")}</ul></div>` : "");
   function verzoekDetail(v) {
     // een gekoppelde brief: de rij op Kamerbrieven als die er is, anders tweedekamer.nl
     const antw = v.antwoorden.map((a) => {
