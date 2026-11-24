@@ -48,7 +48,7 @@
 
   /* Stoplicht voor status: de stip draagt de kleur, het woord de betekenis */
   --good: #00452a;               /* aangenomen, afgedaan, beantwoord */
-  --warning: #a87e00;            /* in behandeling, aangehouden, openstaand (oker, 3,7:1 op wit) */
+  --warning: #f2b705;            /* in behandeling, aangehouden, openstaand (geel, 1,8:1 op wit: alleen als stip naast het woord; Tobias, 24 nov 2026) */
   --bad: #e5320f;                /* verworpen (zelfde rood als de aandacht) */
   --neutraal-stip: #a5ada7;      /* ingetrokken, vervallen */
 
@@ -486,7 +486,7 @@ tr.detail.weg { animation: uitgang var(--d-kort) var(--ease) both; pointer-event
 .wp-titel { max-width: var(--leesbreedte); }
 .wp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0; font-size: var(--t-14); color: var(--ink-2); }
 /* volgende stap: wat, wanneer en bij wie, als eigen blok */
-.wp-stap { display: grid; gap: 4px; margin-top: 12px; padding: 16px 20px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); color: var(--ink-2); }
+.wp-stap { display: grid; gap: 4px; margin-top: 12px; padding: 16px 20px; background: var(--card); border: 2px solid var(--accent); border-radius: var(--r-card); color: var(--ink-2); }
 .wp-stap p { margin: 0; }
 tr.detail .wp-stap { background: var(--page); }
 .wp-stap .k { font-size: var(--t-13); color: var(--muted); }
@@ -514,9 +514,10 @@ tr.detail .wp-stap { background: var(--page); }
 .wtl-detail { padding: 12px 16px 16px; }
 .mlinks { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding-top: 12px; border-top: 1px solid var(--line); }
 /* tekst van een motie of amendement in de uitgeklapte rij: overwegingen ink-2, het besluitende deel in inkt */
-.mt-plek { padding: 16px 20px; background: var(--page); border: 1px solid var(--line); border-radius: var(--r-card); } /* de tekst als eigen kaart in de open rij (Tobias, 18 nov 2026) */
+.mt-plek { padding: 16px 20px; background: var(--page); border: 2px solid var(--accent); border-radius: var(--r-card); } /* de tekst als eigen kaart in de open rij (Tobias, 18 nov 2026) */
 .mt-tekst { display: grid; gap: 8px; font-size: var(--t-15); line-height: 24px; color: var(--ink-2); }
-.mt-tekst .mt-dictum { color: var(--ink); }
+.mt-tekst .mt-dictum { color: var(--ink); font-weight: 600; }
+.mt-tekst .mt-dictum.slot { font-weight: 400; } /* "en gaat over tot de orde van de dag" niet vet (Tobias, 24 nov 2026) */
 .mt-tekst .mt-kop { color: var(--ink); font-weight: 500; font-size: var(--t-15); margin-top: 4px; }
 .mt-tekst .mt-wijz { color: var(--ink); }
 .mt-plek details.meer { margin-top: 8px; }
@@ -798,7 +799,7 @@ details.thematermen > p.termen { color: var(--ink); }
 .mi-wetten button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .mi-kiezers { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
 .mi-doel { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--t-14); color: var(--ink); text-wrap: pretty; }
-.mi-kans { margin-top: 16px; padding: 16px; border: 1px solid var(--line); border-radius: var(--r-control); display: grid; gap: 4px; }
+.mi-kans { margin-top: 16px; padding: 16px; border: 2px solid var(--accent); border-radius: var(--r-control); display: grid; gap: 4px; }
 .mi-kans p { margin: 0; }
 .mi-kans-kop { font-size: var(--t-13); color: var(--ink-2); }
 .mi-kans-regel { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }

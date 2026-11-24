@@ -44,7 +44,7 @@
       { jaar: 2035, doel: "Stikstofwet: in 2035 74% van de stikstofgevoelige natuur onder de kritische depositiewaarde" },
     ],
   };
-  // Kleur van de kans (stoplicht): rood onder 50%, oker 50 tot 75%, bosgroen boven 75%.
+  // Kleur van de kans (stoplicht): rood onder 50%, geel 50 tot 75%, bosgroen boven 75%.
   const kansKlasse = (p) => (p < 0.5 ? "laag" : p <= 0.75 ? "midden" : "hoog");
   const BRON = {
     "85669NED": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85669NED/table",

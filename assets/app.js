@@ -787,7 +787,7 @@
     const t = (S.data.teksten || {})[z.nummer];
     if (!t || !t.blokken || !t.blokken.length) return `<p class="muted">De tekst is nog niet beschikbaar${z.docId ? "; bekijk het origineel" : ""}.</p>`;
     const blok = ([soort, x]) => soort === "kop" ? `<p class="mt-kop">${esc(x)}</p>`
-      : `<p${soort === "wijz" ? ` class="mt-wijz"` : DICTUM.test(x) ? ` class="mt-dictum"` : ""}>${esc(x)}</p>`;
+      : `<p${soort === "wijz" ? ` class="mt-wijz"` : DICTUM.test(x) ? ` class="mt-dictum${/^en gaat/i.test(x) ? " slot" : ""}"` : ""}>${esc(x)}</p>`;
     // amendement: eerst de toelichting (waar het om gaat), de wijziging zelf ingeklapt
     const tl = t.blokken.map((b) => b[0] === "kop" && b[1] === "Toelichting").lastIndexOf(true);
     const wijziging = tl > 0 ? t.blokken.slice(0, tl) : [];
