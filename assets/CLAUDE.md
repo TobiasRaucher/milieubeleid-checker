@@ -131,8 +131,10 @@ alleen klassen `dv-…` en ids `footnote-…` door.
     met `motieDetail()` (tekst via `vulTeksten()`);
   - eigen mijlpalen uit `data/agenda.json` met een veld `kamerstuk`.
   Onderaan "Mogelijk gerelateerd": Kamervragen die het Kamerstuknummer of de (citeer)titel noemen (nu nog geen enkele).
-- Geldende wetten: de kerndocumentgroep met `"pagina": "wetgeving"` (Wettelijk kader), via `wettenDef()`. De vette wet in de titel
-  van een wetsvoorstel linkt naar die rij (`wetTitel()`, `geldendeWet()`: op titel of `alias`; sinds 24 nov 2026).
+- Geldende wetten: de kerndocumentgroep met `"pagina": "wetgeving"` (Wettelijk kader), via `wettenDef()`. Elke wet in de titel
+  van een wetsvoorstel is vet (`wetDelen()`, `wetTitel()`): Nederlandse wetten linken naar die rij (`geldendeWet()`: op titel of `alias`),
+  EU-recht naar EUR-Lex (CELEX berekend uit soort en nummer; zonder nummer via `EU_NAMEN`). EU-recht staat niet op Geldende wetten.
+  Een nieuwe Nederlandse wet in een titel: rij toevoegen in `data/kerndocumenten.json` (groep `wet`), BWBR-nummer controleren.
 - Links via het Kamerstuknummer (`MRThemas.tkUrl`); OpenTK alleen als tweede link in de details.
 
 ## Agenda (`#agenda`)

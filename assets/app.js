@@ -1072,19 +1072,76 @@
     const gezien = new Set();
     return s.filter((x) => x.datum && !gezien.has(x.datum + x.html) && gezien.add(x.datum + x.html)).sort((a, b) => a.datum.localeCompare(b.datum));
   }
-  // de wet waar het voorstel over gaat vet (Tobias, 23 nov 2026): de eerste wet na "wijziging van (de)", anders de citeertitel tussen haakjes aan het eind
-  // shortcut: herkent alleen die twee vormen; titels als "Goedkeuring van het Verdrag ..." blijven zonder vet
-  const WET_RE = /[Ww]ijziging (?:van )?(?:de |het )?([A-Z][^,()]*?)(?=,|(?<!-) en | in verband| ter | tot | ten | voor | om | met | teneinde | betreffende | houdende | inzake |\s*\(|\s*$)/, CITEER_RE = /\(([^()]*wet[^()]*)\)\s*$/i;
-  // staat die wet op Geldende wetten, dan is het vette deel een link daarheen; de rest van de titel linkt naar het wetsvoorstel (Tobias, 24 nov 2026)
+  // de wet waar het voorstel over gaat vet (Tobias, 23 nov 2026): elke wet na "wijziging van (de)", anders de citeertitel tussen haakjes aan het eind
+  // shortcut: titels als "Goedkeuring van het Verdrag ..." blijven zonder vet
+  const WET_RE = /([A-Z][^,()]*?)(?=,|(?<!-) en | in verband| ter | tot | ten | voor | om | met | teneinde | betreffende | houdende | inzake | vanwege |\s*\(|\s*$)/y, CITEER_RE = /\(([^()]*wet[^()]*)\)\s*$/i;
+  // Nederlandse wetten linken naar Geldende wetten, EU-recht naar EUR-Lex; de rest van de titel linkt naar het wetsvoorstel (Tobias, 24 nov 2026)
   const geldendeWet = onthoud((naam) => kdData().reeksen.find((d) => d.groep === "wet" && [d.titel, ...(d.alias || [])].some((x) => x.toLowerCase() === naam.toLowerCase())), (naam) => naam);
-  const wetTitel = (z) => {
-    const t = z.titel || z.onderwerp || "", href = wetHref(z);
-    const w = WET_RE.exec(t), m = (w && /wet/i.test(w[1]) && w) || CITEER_RE.exec(t); // "tot wijziging van Verordening (EU) ..." is geen wet
-    if (!m) return `<a class="ltitel wet" href="${href}">${esc(t)}</a>`;
-    const i = m.index + m[0].indexOf(m[1]), voor = esc(t.slice(0, i)), vet = `<strong>${esc(m[1])}</strong>`, na = esc(t.slice(i + m[1].length)), g = geldendeWet(m[1]);
-    if (!g) return `<a class="ltitel wet" href="${href}">${voor}${vet}${na}</a>`;
-    const deel = (x, tab = "") => (x ? `<a class="ltitel wet" href="${href}"${tab}>${x}</a>` : "");
-    return `${deel(voor)}<a class="ltitel wet geldend" href="#wetgeving/wetten?open=${esc(g.id)}" title="Bekijk bij Geldende wetten">${vet}</a>${deel(na, voor ? ` tabindex="-1"` : "")}`;
+  const eurLex = (celex) => `https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:${celex}`;
+  // EU-recht dat titels zonder nummer noemen
+  const EU_NAMEN = [[/Nitraatrichtlijn/, "31991L0676"], [/Gasrichtlijn/, "32009L0073"], [/richtlijn milieuaansprakelijkheid/, "32004L0035"], [/Europese klimaatwet/, "32021R1119"],
+    [/verordening ontbossingsvrije grondstoffen en producten/, "32023R1115"], [/herziening van de richtlijn luchtkwaliteit/, "32024L2881"], [/herziening van de Richtlijn industriële emissies/, "32024L1785"],
+    [/PIE-verordening/, "32024R1244"], [/richtlijn hernieuwbare energie/, "32018L2001"]];
+  const EU_NR = String.raw`(?:nr\. )?(?:\((?:EU|EG)\) )?(?:nr\. )?(\d+)\/(\d+)(?:\/(?:EU|EG|EEG))?`;
+  const EU_RE = new RegExp(String.raw`(?:uitvoerings|gedelegeerde )?(richtlijn|verordening|besluit)(?:en)? ${EU_NR}`, "gi"), EU_VOLGENDE = new RegExp(`(?:, | en )(${EU_NR})`, "y");
+  // de rest van de officiële naam ("van het Europees Parlement ... betreffende ..."), tot wat er niet meer bij hoort
+  const EU_NAAM = / (?:van het Europees|van de Raad|betreffende|inzake|over) .*?(?=\s*[()]|,? en tot |,?\s*tot (?:wijziging|intrekking|vervanging)|,? (?:en )?ter (?:uitvoering|ondersteuning|gedeeltelijke|aanvullende)| (?:en )?ten behoeve| en in verband| wat betreft|\s*$)/y;
+  const celex = (soort, a, b) => {
+    const jaarAchter = b.length === 4 && !/^(19|20)\d\d$/.test(a), [j, n] = jaarAchter && a.length !== 2 ? [b, a] : [a, b]; // "nr. 168/2013" tegenover "2008/98" en "98/70"
+    return `3${j.length === 2 ? "19" + j : j}${{ r: "L", v: "R", b: "D" }[soort[0].toLowerCase()]}${n.padStart(4, "0")}`;
+  };
+  // de wetten in een titel: [begin, eind, adres, "EUR-Lex" | "Geldende wetten"]; zonder adres alleen vet
+  function wetDelen(t) {
+    const uit = [], gehad = new Set(), // elke wet één keer
+       voeg = (i, n, href, waar) => { if (n > i && !uit.some((x) => i < x[1] && n > x[0])) uit.push([i, n, href, waar]); };
+    const wet = (i, naam) => { const g = geldendeWet(naam); if (g && gehad.has(g.id)) return; if (g) gehad.add(g.id); voeg(i, i + naam.length, g && `#wetgeving/wetten?open=${encodeURIComponent(g.id)}`, "Geldende wetten"); };
+    // na "wijziging van (de)" en "en van de": het rijtje wetten; een bekende naam mag een komma of "en" bevatten
+    const bekend = kdData().reeksen.filter((d) => d.groep === "wet").flatMap((d) => [d.titel, ...(d.alias || [])]).sort((a, b) => b.length - a.length);
+    for (const s of t.matchAll(/(?:wijziging (?:van )?|en van |\) en )(?:de |het )?/gi)) {
+      for (let i = s.index + s[0].length; ;) {
+        WET_RE.lastIndex = i;
+        const naam = bekend.find((n) => t.slice(i, i + n.length).toLowerCase() === n.toLowerCase() && !/[\wë]/.test(t[i + n.length] || "")) || (WET_RE.exec(t) || [])[1];
+        if (!naam || !/wet/i.test(naam)) break;
+        wet(i, t.slice(i, i + naam.length));
+        const v = /^(?:, en |, | en )(?:van )?(?:de |het )?/.exec(t.slice(i + naam.length));
+        if (!v) break;
+        i += naam.length + v[0].length;
+      }
+    }
+    const c = !uit.length && CITEER_RE.exec(t);
+    if (c) wet(c.index + 1, c[1]);
+    for (const m of t.matchAll(EU_RE)) {
+      let i = m.index, n = i + m[0].length, href = eurLex(celex(m[1], m[2], m[3]));
+      for (let v; ;) {
+        EU_VOLGENDE.lastIndex = n;
+        if (!(v = EU_VOLGENDE.exec(t))) break;
+        voeg(i, n, href, "EUR-Lex");
+        n += v[0].length; i = n - v[1].length; href = eurLex(celex(m[1], v[2], v[3]));
+      }
+      EU_NAAM.lastIndex = n;
+      const rest = EU_NAAM.exec(t);
+      voeg(i, n + (rest ? rest[0].length : 0), href, "EUR-Lex");
+    }
+    for (const [re, nr] of EU_NAMEN) { const m = re.exec(t); if (m) voeg(m.index, m.index + m[0].length, eurLex(nr), "EUR-Lex"); }
+    return uit.sort((a, b) => a[0] - b[0]);
+  }
+  // zonder href (de pagina van het wetsvoorstel zelf) is de rest platte tekst
+  const wetTitel = (z, href = wetHref(z)) => {
+    const t = (z.titel || z.onderwerp || "").replace(/\s+/g, " ").trim();
+    let pos = 0, eerste = true, los = "", html = "";
+    // aaneengesloten tekst en vet zonder adres is één link; alleen de eerste zit in de tabvolgorde
+    const sluit = () => { if (los) { html += href ? `<a class="ltitel wet" href="${href}"${eerste ? "" : ` tabindex="-1"`}>${los}</a>` : los; eerste = false; los = ""; } };
+    for (const [i, n, adres, waar] of wetDelen(t)) {
+      const vet = `<strong>${esc(t.slice(i, n))}</strong>`;
+      los += esc(t.slice(pos, i));
+      pos = n;
+      if (!adres) { los += vet; continue; }
+      sluit();
+      html += `<a class="ltitel wet geldend" href="${esc(adres)}" title="Bekijk ${waar === "EUR-Lex" ? "op" : "bij"} ${waar}"${waar === "EUR-Lex" ? ` target="_blank" rel="noopener"` : ""}>${vet}</a>`;
+    }
+    los += esc(t.slice(pos));
+    sluit();
+    return html;
   };
   const WET_DEF = {
     tab: "wetgeving", eenheid: "wetsvoorstellen", knopLabel: "Details",
@@ -1097,7 +1154,7 @@
       soort: { label: "Ingediend door", waarden: (z) => [wetSoort(z)], orde: opVolgorde(["Regering", "Initiatiefwetsvoorstel"]), tekst: (v) => esc(v === "Regering" ? "Regering" : "Kamerleden (initiatief)") },
     },
     kolommen: [
-      { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: wetTitel },
+      { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => wetTitel(z) },
       { filter: "status", tdCls: "uitslag", cel: (z) => uitslagPill(wetStatus(z)) },
       { filter: "soort", tdCls: "indiener hide-sm", cel: (z) => (z.soort === "Initiatiefwetgeving" ? indienerKort(z) : "Regering") },
       themaKolom(themasWet),
@@ -1179,7 +1236,7 @@
     const voorstel = [...(S.data.wetstukken[nr] || [])].filter((d) => /voorstel van wet/i.test(d.titel) && docKnop(d, "x")).sort((a, b) => b.datum.localeCompare(a.datum))[0];
     const door = z.soort === "Initiatiefwetgeving" ? opsomming(z.indieners.map(naamFractie)) : "Regering";
     return `${terug}
-      <h1 class="wp-titel">${esc(z.titel || z.onderwerp || "")}</h1>
+      <h1 class="wp-titel">${wetTitel(z, "")}</h1>
       <p class="wp-meta"><span>Kamerstuk <span class="mono">${esc(dossierLabel(z))}</span></span><span>ingediend ${fmtKort(z.gestartOp)}</span><span>${esc(door)}</span>${themaChips(themasWet(z))}</p>
       <div class="wp-fase">${faseBlok(z)}</div>
       ${mlinks(voorstel ? docKnop({ ...voorstel, id: voorstel.document }, "Lees het wetsvoorstel", "") : "", `${extLink(tkUrl(z), "Bekijk op tweedekamer.nl")}${extLink(z.link, "Bekijk op OpenTK")}`, " wp-links")}
@@ -1460,13 +1517,15 @@
   }
 
   // een stuk op de agenda; is het onderwerp gelijk aan het agendapunt, dan niet nog eens; bij moties en amendementen de uitslag of de stemmingsdatum
-  function stukRegel(st, puntTitel) {
+  // "Alle moties" achter een stuk: alleen als er bij dat Kamerstuk moties zijn
+  const heeftMoties = onthoud((ks) => (S.data.zaken || []).some((z) => z.soort === "Motie" && z.dossiers.some((d) => `${d.nummer}${d.toevoeging ? "-" + d.toevoeging : ""}` === ks)), (ks) => ks);
+  function stukRegel(st, puntTitel, alleMoties) {
     const wie = st.ondertekenaar ? ` - ${esc(st.ondertekenaar)}${st.functie ? ", " + esc(st.functie) : ""}` : "";
     const onderwerp = (st.onderwerp || "").trim();
     const herhaalt = puntTitel && onderwerp.toLowerCase() === String(puntTitel).trim().toLowerCase();
     const motie = /^(motie|amendement)/i.test(st.soort || "");
     const stem = motie ? stemStatus(zaakUitLink(st.link)) : "";
-    return `<li>${stem ? `<div class="stukstem">${stem}</div>` : ""}${motieA(motie && zaakVanNr(zaakUitLink(st.link)), st.link)}${esc(st.kamerstuk || "document")}</a> ${esc(st.soort || "")}${st.datum ? ` d.d. ${fmtDatum(st.datum)}` : ""}${wie}${onderwerp && !herhaalt ? `: ${esc(onderwerp)}` : ""}</li>`;
+    return `<li>${stem ? `<div class="stukstem">${stem}</div>` : ""}${motieA(motie && zaakVanNr(zaakUitLink(st.link)), st.link)}${esc(st.kamerstuk || "document")}</a> ${esc(st.soort || "")}${st.datum ? ` d.d. ${fmtDatum(st.datum)}` : ""}${wie}${onderwerp && !herhaalt ? `: ${esc(onderwerp)}` : ""}${alleMoties ? ` ·&nbsp;<a href="#moties?q=${encodeURIComponent(alleMoties)}" aria-label="Alle moties bij Kamerstuk ${esc(alleMoties)}">Alle&nbsp;moties</a>` : ""}</li>`;
   }
   // zaaknummer uit een tweedekamer.nl-link (…?id=2026Z25015&did=…)
   const zaakUitLink = (l) => (/[?&]id=(\d{4}Z\d+)/.exec(l || "") || [])[1] || "";
@@ -1766,7 +1825,7 @@
   const agendaWerkbalk = () => ({ filters: AGENDA_FILTERS, st: S.af, rijen: [], past: afPast,
     zoek: (q) => { S.af.q = q; afToepassen(); }, zet: (f, vs) => { S.af[f] = vs; afToepassen(); }, wis: afWis });
 
-  // agendapunten met de te behandelen stukken (op Kamerstuknummer), en per Kamerstukdossier een link naar alle moties daarbij
+  // agendapunten met de te behandelen stukken (op Kamerstuknummer); per agendapunt achter het eerste stuk van een Kamerstuk een link naar alle moties daarbij
   const puntenVan = (a) => (a?.agendapunten || []).filter((ap) => (ap.stukken || []).length || !/:\s*$/.test(ap.onderwerp || ""));
   const opKamerstuk = (x, y) => (x.kamerstuk || "~").localeCompare(y.kamerstuk || "~", "nl", { numeric: true });
   // een motie of amendement uit onze data die als stuk bij een agendapunt staat: die staat daar in de vorm van motieLijst()
@@ -1776,13 +1835,12 @@
   function agendapuntenBlok(a) {
     const aps = puntenVan(a);
     if (!aps.length) return "";
-    const dossiers = uniek(aps.flatMap((ap) => (ap.stukken || []).map((st) => (st.kamerstuk || "").replace(/-[^-]+$/, "")).filter(Boolean)));
     const punt = (ap) => {
-      const st = [...(ap.stukken || [])].sort(opKamerstuk), ms = st.map(stukMotie).filter(Boolean), rest = st.filter((x) => !stukMotie(x));
-      return `<li><b>${esc((ap.onderwerp || "").replace(/:\s*$/, ""))}</b>${rest.length ? `<div class="small muted">Te behandelen:</div><ul class="stukken">${rest.map((x) => stukRegel(x, ap.onderwerp)).join("")}</ul>` : ""}${motieLijst(ms)}</li>`;
+      const st = [...(ap.stukken || [])].sort(opKamerstuk), ms = st.map(stukMotie).filter(Boolean), rest = st.filter((x) => !stukMotie(x)), gehad = new Set();
+      const dossier = (x) => { const ks = (x.kamerstuk || "").replace(/-[^-]+$/, ""); return ks && !gehad.has(ks) && gehad.add(ks) && heeftMoties(ks) ? ks : ""; };
+      return `<li><b>${esc((ap.onderwerp || "").replace(/:\s*$/, ""))}</b>${rest.length ? `<div class="small muted">Te behandelen:</div><ul class="stukken">${rest.map((x) => stukRegel(x, ap.onderwerp, dossier(x))).join("")}</ul>` : ""}${motieLijst(ms)}</li>`;
     };
-    return `<ol class="agendapunten">${aps.map(punt).join("")}</ol>`
-      + (dossiers.length ? `<div class="dossierlinks small">${dossiers.map((n) => `<a href="#moties?q=${encodeURIComponent(n)}">Alle moties bij Kamerstuk ${esc(n)}</a>`).join("")}</div>` : "");
+    return `<ol class="agendapunten">${aps.map(punt).join("")}</ol>`;
   }
   function deelnemersBlok(a, d = {}) {
     const bewinds = a.bewindspersonen || [];
@@ -1810,9 +1868,8 @@
     const inhoud = (n ? `<section><h4>Agendapunten</h4>${agendapuntenBlok(a)}</section>` : "") + (ms.length ? `<section><h4>Moties</h4>${motieLijst(ms)}</section>` : "");
     return `<button type="button" class="toggle knop licht" aria-expanded="${open}" aria-controls="b-${esc(id)}"><span class="pijltje" aria-hidden="true"></span><span class="dicht">${dicht}</span><span class="opn">Verberg ${wat}</span></button>
       <div class="body-wrap"><div class="body" id="b-${esc(id)}">
-        ${url ? `<div class="links">${extLink(url, "Bekijk op tweedekamer.nl")}</div>` : ""}
         ${deelnemers ? `<div class="sam-raster"><div class="sam-hoofd">${inhoud}</div><div class="sam-zij"><section><h4>Deelnemers</h4><div class="deelnemers">${deelnemers}</div></section></div></div>` : `<div>${inhoud}</div>`}
-        <button type="button" class="linkknop inklap" data-inklap>${hoofd(wat)} inklappen</button>
+        <div class="uitvoet">${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}<button type="button" class="linkknop inklap" data-inklap>${hoofd(wat)} inklappen</button></div>
       </div></div>`;
   }
 
@@ -1846,7 +1903,7 @@
     return `<button type="button" class="toggle knop" aria-expanded="${open}" aria-controls="b-${id}"><span class="pijltje" aria-hidden="true"></span><span class="dicht">Toon samenvatting</span><span class="opn">Verberg samenvatting</span></button>
       <div class="body-wrap"><div class="body" id="b-${id}">
         <div class="sam-raster"><div class="sam-hoofd">
-        <div class="links">${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}${d.video ? `<a href="${esc(d.video)}" target="_blank" rel="noopener">Terugkijken op Debat Direct</a>` : ""}${d.bron ? `<a href="${esc(d.bron)}" target="_blank" rel="noopener">Transcript</a>` : ""}</div>
+        <div class="links">${d.video ? `<a href="${esc(d.video)}" target="_blank" rel="noopener">Terugkijken op Debat Direct</a>` : ""}${d.bron ? `<a href="${esc(d.bron)}" target="_blank" rel="noopener">Transcript</a>` : ""}</div>
         ${blok("Aanzet", d.aanzet ? `<p>${esc(d.aanzet)}</p>` : "")}
         ${blok("Kern", `<p>${esc(d.gist)}</p>${(s.kern || []).length ? lijst(s.kern) : ""}`)}
         ${blok("Standpunten fracties", standpunten)}
@@ -1858,7 +1915,7 @@
         ${blok("Deelnemers", deelnemers ? `<div class="deelnemers">${deelnemers}</div>` : "")}
         </div></div>
         <div class="peil voetregel">${d.niveau === "kort" ? "Korte samenvatting" : "Samenvatting"} · ${esc(d.samengevatDoor)} · ${fmtKort(d.samengevatOp)} · op basis van het automatische transcript</div>
-        <button type="button" class="linkknop inklap" data-inklap>Samenvatting inklappen</button>
+        <div class="uitvoet">${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}<button type="button" class="linkknop inklap" data-inklap>Samenvatting inklappen</button></div>
       </div></div>`;
   }
 
