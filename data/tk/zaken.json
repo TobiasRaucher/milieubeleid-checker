@@ -1,5 +1,170 @@
 [
  {
+  "id": "e27fcf0b-a4c9-43c5-b71c-6a357c1b60df",
+  "nummer": "2026Z25960",
+  "soort": "Amendement",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Amendement van de leden Grinwis en Wiersma over budget voor het vergroten van de aanvoercapaciteit van het inlaatwerk Bernisse",
+  "citeertitel": null,
+  "gestartOp": "2026-11-23",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60126",
+  "docId": "680dde8d-33bd-4eb4-bff4-6bfe5fc5ccbf",
+  "bestand": "DOCX",
+  "volgnummer": 6,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/amendementen/detail?id=2026Z25960&did=2026D60126",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25960"
+ },
+ {
+  "id": "d992c89a-4c09-4a6e-a65f-49a8db4dc85d",
+  "nummer": "2026Z25988",
+  "soort": "Wetgeving",
+  "titel": "Wijziging van de Omgevingswet en andere wetten (energieprojecten)",
+  "onderwerp": "Wijziging van de Omgevingswet en andere wetten (energieprojecten)",
+  "citeertitel": null,
+  "gestartOp": "2026-11-23",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": null,
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37079,
+    "toevoeging": null,
+    "titel": "Wijziging van de Omgevingswet en andere wetten (energieprojecten)"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "J. de Bat",
+    "fractie": null,
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "document": null,
+  "docId": null,
+  "bestand": null,
+  "volgnummer": null,
+  "tkLink": null,
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25988",
+  "zoekterm": "Omgevingswet",
+  "debatten": []
+ },
+ {
+  "id": "581b2631-c409-4e85-bcb2-b062c35bd7ee",
+  "nummer": "2026Z25952",
+  "soort": "Wetgeving",
+  "titel": "Wijziging van de Omgevingswet en enkele andere wetten in verband met het aanbrengen van verbeteringen in het stelsel van de Omgevingswet (Wijzigingswet Omgevingswet stelselaspecten 20..)",
+  "onderwerp": "Wijziging van de Omgevingswet en enkele andere wetten in verband met het aanbrengen van verbeteringen in het stelsel van de Omgevingswet (Wijzigingswet Omgevingswet stelselaspecten 20..)",
+  "citeertitel": null,
+  "gestartOp": "2026-11-23",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": null,
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37077,
+    "toevoeging": null,
+    "titel": "Wijziging van de Omgevingswet en enkele andere wetten in verband met het aanbrengen van verbeteringen in het stelsel van de Omgevingswet (Wijzigingswet Omgevingswet stelselaspecten 20..)"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "E. Boekholt-O’Sullivan",
+    "fractie": null,
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "document": null,
+  "docId": null,
+  "bestand": null,
+  "volgnummer": null,
+  "tkLink": null,
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25952",
+  "zoekterm": "Omgevingswet",
+  "debatten": []
+ },
+ {
+  "id": "95b24ed9-b5de-4316-9040-aecb096802de",
+  "nummer": "2026Z25937",
+  "soort": "Amendement",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Amendement van het lid Van der Plas over middelen voor de oprichting en financiering van de Autoriteit Dierwaardige Veehouderij",
+  "citeertitel": null,
+  "gestartOp": "2026-11-23",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIV",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D60049",
+  "docId": "75e8d582-1c2e-4f6d-811b-1048dbe36bee",
+  "bestand": "DOCX",
+  "volgnummer": 33,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/amendementen/detail?id=2026Z25937&did=2026D60049",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z25937"
+ },
+ {
   "id": "6d2f0407-cae5-47bc-9ae6-23b0b10d1e33",
   "nummer": "2026Z25622",
   "soort": "Motie",

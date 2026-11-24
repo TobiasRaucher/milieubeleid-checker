@@ -1,5 +1,143 @@
 [
  {
+  "id": "2026D60018",
+  "docId": "276987b4-d98b-4315-9f70-171bbfa8a03c",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-23",
+  "titel": null,
+  "onderwerp": "Nahang Besluit afgifteplicht afgedankte elektrische en elektronische apparatuur (AEEA)",
+  "zaak": "2026Z25920",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25920&did=2026D60018",
+  "bijlagen": [
+   {
+    "id": "2026D60019",
+    "titel": "Besluit afgifteplicht AEEA",
+    "bestand": "PDF",
+    "docId": "89e5ca8b-083c-42e6-88a3-8dc539486f1b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60019"
+   },
+   {
+    "id": "2026D60020",
+    "titel": "Beslisnota bij Kamerbrief over nahang Besluit afgifteplicht afgedankte elektrische en elektronische apparatuur (AEEA)((Stb 2026, nr. 339)",
+    "bestand": "PDF",
+    "docId": "861bb0cd-499b-44c1-9a9a-3ea79b596764",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60020"
+   }
+  ]
+ },
+ {
+  "id": "2026D60296",
+  "docId": "8b2edf9b-a574-4133-a73c-2a8c69f2a189",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-23",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Den Hollander en Koorevaar over de uitvoering van de Landelijke verplaatsingsregeling veehouderijen met piekbelasting (Lvvp)",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/detail?did=2026D60296",
+  "bijlagen": [
+   {
+    "id": "2026D60297",
+    "titel": "Beslisnota bij Antwoord op vragen van de leden Den Hollander en Koorevaar over de uitvoering van de Landelijke verplaatsingsregeling veehouderijen met piekbelasting (Lvvp)",
+    "bestand": "PDF",
+    "docId": "3bf8b4e8-73f9-42de-be15-cb252d37b51c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60297"
+   }
+  ]
+ },
+ {
+  "id": "2026D60055",
+  "docId": "6a92c089-4ca0-4407-8701-557858105e50",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-23",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Teunissen over het gebruik van mogelijk excessief geweld door de politie op geweldloze klimaatactivisten",
+  "zaak": "2026Z21569",
+  "ministerie": "Justitie en Veiligheid",
+  "ondertekenaar": "D.M. van Weel",
+  "functie": "minister van Justitie en Veiligheid",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21569&did=2026D60055"
+ },
+ {
+  "id": "2026D60057",
+  "docId": "d878624a-3c6f-4abc-b5f7-8d5bf5735515",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-23",
+  "titel": null,
+  "onderwerp": "Voortgang aanpak fysieke leefomgeving Bonaire, Sint Eustatius en Saba",
+  "zaak": "2026Z25943",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "E. van der Burg",
+  "functie": "staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25943&did=2026D60057",
+  "bijlagen": [
+   {
+    "id": "2026D60058",
+    "titel": "Fysieke agenda en kaarten Bonaire",
+    "bestand": "PDF",
+    "docId": "7ac2d33a-d9e1-4dd7-91dd-96f2557425c1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60058"
+   },
+   {
+    "id": "2026D60060",
+    "titel": "Fysieke agenda en kaarten Saba",
+    "bestand": "PDF",
+    "docId": "450c359c-a2de-4735-9e48-160f3181c308",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60060"
+   },
+   {
+    "id": "2026D60059",
+    "titel": "Fysieke agenda en kaarten Sint Eustatius",
+    "bestand": "PDF",
+    "docId": "6067c645-940b-4170-bab9-d6ee77cf6177",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60059"
+   },
+   {
+    "id": "2026D60061",
+    "titel": "Overzicht wetgeving fysieke leefomgeving Bonaire Sint Eustatius en Saba",
+    "bestand": "PDF",
+    "docId": "228f6236-931b-42e0-a3a3-8ba6b298a3a7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60061"
+   },
+   {
+    "id": "2026D60062",
+    "titel": "Beslisnota bij Kamerbrief over voortgang aanpak fysieke leefomgeving Bonaire, Sint Eustatius en Saba",
+    "bestand": "PDF",
+    "docId": "51fd4229-4ec9-4ec9-9b87-e63ba88cba47",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60062"
+   }
+  ]
+ },
+ {
   "id": "2026D59744",
   "docId": "669270bc-de6b-45b1-8b4b-0beee6694765",
   "bestand": "DOCX",
@@ -2370,14 +2508,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
+  "titel": "Natuurbeleid",
   "onderwerp": "Toelichting Habitatrichtlijnrapportage zeehonden en bruinvis",
   "zaak": "2026Z23916",
   "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
   "ondertekenaar": "J. van Essen",
   "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "33576-580",
+  "dossiers": [
+   {
+    "nummer": 33576,
+    "toevoeging": null,
+    "titel": "Natuurbeleid"
+   }
+  ],
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -2427,19 +2571,68 @@
   ]
  },
  {
+  "id": "2026D55201",
+  "docId": "22f25e65-ec42-427c-9004-4fb304b739a0",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-03",
+  "titel": "Problematiek rondom stikstof en PFAS",
+  "onderwerp": "Ondersteuning aan de agrarische sector voor haalbare doelstellingen",
+  "zaak": "2026Z23903",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": "35334-491",
+  "dossiers": [
+   {
+    "nummer": 35334,
+    "toevoeging": null,
+    "titel": "Problematiek rondom stikstof en PFAS"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw",
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23903&did=2026D55201",
+  "bijlagen": [
+   {
+    "id": "2026D55202",
+    "titel": "WUR-rapport Reflectie maatregelpakket stikstof",
+    "bestand": "PDF",
+    "docId": "c6a5115f-80a1-468c-8f5d-7f8b8313376e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55202",
+    "rapport": true
+   },
+   {
+    "id": "2026D55203",
+    "titel": "Beslisnota bij Kamerbrief over ondersteuning aan de agrarische sector voor haalbare doelstellingen",
+    "bestand": "PDF",
+    "docId": "bff8a402-4db5-4bc8-b6f8-9431617f993d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55203"
+   }
+  ]
+ },
+ {
   "id": "2026D55256",
   "docId": "f6a25220-2fad-47c0-bdcf-5bd286565f98",
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
+  "titel": "Industriebeleid",
   "onderwerp": "Elektriciteitskosten industrie",
   "zaak": "2026Z23924",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "29826-332",
+  "dossiers": [
+   {
+    "nummer": 29826,
+    "toevoeging": null,
+    "titel": "Industriebeleid"
+   }
+  ],
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2622,19 +2815,66 @@
   ]
  },
  {
+  "id": "2026D55250",
+  "docId": "02c0329a-4219-4ba1-8f76-d4fe58f747df",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-03",
+  "titel": "Gewasbeschermingsbeleid",
+  "onderwerp": "Voortgangsrapportage SPARK project 2026-2",
+  "zaak": "2026Z23920",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "S.P.A. Erkens",
+  "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": "27858-778",
+  "dossiers": [
+   {
+    "nummer": 27858,
+    "toevoeging": null,
+    "titel": "Gewasbeschermingsbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z23920&did=2026D55250",
+  "bijlagen": [
+   {
+    "id": "2026D55251",
+    "titel": "SPARK voortgangsrapportage 2026-2",
+    "bestand": "PDF",
+    "docId": "297b039a-4ff3-40f1-a118-d169261c11e8",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55251"
+   },
+   {
+    "id": "2026D55252",
+    "titel": "Beslisnota bij Kamerbrief over voortgangsrapportage SPARK project 2026-2",
+    "bestand": "PDF",
+    "docId": "9ba4efd4-8943-48dd-8478-7eae5eaf808f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D55252"
+   }
+  ]
+ },
+ {
   "id": "2026D55244",
   "docId": "363deb36-4055-4979-b0a7-df02eb077007",
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-03",
-  "titel": null,
+  "titel": "(Glas)tuinbouw",
   "onderwerp": "Energietransitie glastuinbouw",
   "zaak": "2026Z23918",
   "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
   "ondertekenaar": "S.P.A. Erkens",
   "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "32627-74",
+  "dossiers": [
+   {
+    "nummer": 32627,
+    "toevoeging": null,
+    "titel": "(Glas)tuinbouw"
+   }
+  ],
   "sectoren": [
    "klimaat-energie"
   ],
@@ -6546,7 +6786,7 @@
  {
   "id": "2026D49434",
   "docId": "7e91865a-b091-47b8-bf12-3565a5ef1674",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-07",
   "titel": null,
@@ -6602,7 +6842,7 @@
  {
   "id": "2026D49327",
   "docId": "540a207a-a0ba-48e8-923c-ace2766c96be",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-07",
   "titel": null,
@@ -6706,7 +6946,7 @@
  {
   "id": "2026D49220",
   "docId": "ebd4c188-ae8f-4798-bb91-d9824a54ea9a",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-07",
   "titel": null,
@@ -7482,7 +7722,7 @@
  {
   "id": "2026D48758",
   "docId": "92da89d8-a86c-4ee3-91fa-ca69e2b2041f",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-05",
   "titel": null,
@@ -8406,7 +8646,7 @@
   ]
  },
  {
-  "id": "kst-1272656",
+  "id": "kst-36842-A",
   "kamer": "Eerste Kamer",
   "soort": "Brief regering",
   "ekSoort": "Verslag",
@@ -8428,7 +8668,7 @@
   "sectoren": [
    "circulair-vervuiling"
   ],
-  "link": "https://zoek.officielebekendmakingen.nl/kst-1272656.html"
+  "link": "https://zoek.officielebekendmakingen.nl/kst-36842-A.html"
  },
  {
   "id": "2026D47131",
@@ -9724,7 +9964,7 @@
  {
   "id": "2026D45869",
   "docId": "a6f02ada-65d3-449c-9223-472ef4e31019",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-09-24",
   "titel": null,
@@ -14132,7 +14372,7 @@
  {
   "id": "2026D41074",
   "docId": "18706585-2e43-44c1-90d8-d2b6f5ccc75c",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-04",
   "titel": "Omgevingsrecht",

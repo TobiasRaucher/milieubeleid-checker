@@ -14217,6 +14217,16 @@
    "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z21163&did=2026D48879"
   },
   {
+   "volgnummer": 56,
+   "soort": "Verslag van een wetgevingsoverleg",
+   "titel": "Verslag van een wetgevingsoverleg, gehouden op 21 september 2026, over de wet bijmengverplichting groen gas (voortzetting)",
+   "datum": "2026-11-23",
+   "document": "2026D60242",
+   "docId": "f3ee5d52-053b-411b-9d31-609b2524ae14",
+   "bestand": "DOCX",
+   "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D60242"
+  },
+  {
    "volgnummer": "A",
    "soort": "Voorstel van wet",
    "titel": "Gewijzigd voorstel van wet",
@@ -14687,6 +14697,70 @@
    "docId": "d7da3f65-9b71-43e6-b17a-a78c1e77673e",
    "bestand": "DOCX",
    "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23895&did=2026D55164"
+  }
+ ],
+ "37077": [
+  {
+   "volgnummer": 2,
+   "soort": "Voorstel van wet",
+   "titel": "Voorstel van wet",
+   "datum": "2026-11-20",
+   "document": "2026D60114",
+   "docId": "ced4d9c0-bc90-46c8-b6b5-2e878288776f",
+   "bestand": "DOCX",
+   "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25952&did=2026D60114"
+  },
+  {
+   "volgnummer": 3,
+   "soort": "Memorie van toelichting",
+   "titel": "Memorie van toelichting",
+   "datum": "2026-11-20",
+   "document": "2026D60115",
+   "docId": "85a6e56d-c774-460a-97fe-f399be320f75",
+   "bestand": "DOCX",
+   "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25952&did=2026D60115"
+  },
+  {
+   "volgnummer": 4,
+   "soort": "Advies Afdeling advisering Raad van State en Nader rapport",
+   "titel": "37077 Advies Afdeling advisering Raad van State en Nader rapport inzake wijziging van de Omgevingswet en enkele andere wetten in verband met het aanbrengen van verbeteringen in het stelsel van de Omgevingswet (Wijzigingswet Omgevingswet stelselaspecten 20..)",
+   "datum": "2026-11-20",
+   "document": "2026D60119",
+   "docId": "645270c6-0a6f-4509-8f77-686db016d0cd",
+   "bestand": "DOCX",
+   "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25952&did=2026D60119"
+  }
+ ],
+ "37079": [
+  {
+   "volgnummer": 2,
+   "soort": "Voorstel van wet",
+   "titel": "Voorstel van wet",
+   "datum": "2026-11-20",
+   "document": "2026D60224",
+   "docId": "b4cac420-1ecb-4adb-bad9-2bbaf09b3b2f",
+   "bestand": "DOCX",
+   "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25988&did=2026D60224"
+  },
+  {
+   "volgnummer": 3,
+   "soort": "Memorie van toelichting",
+   "titel": "Memorie van toelichting",
+   "datum": "2026-11-20",
+   "document": "2026D60243",
+   "docId": "cb7acc6b-2b8b-44c2-b852-bb0752c87dba",
+   "bestand": "DOCX",
+   "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25988&did=2026D60243"
+  },
+  {
+   "volgnummer": 4,
+   "soort": "Advies Afdeling advisering Raad van State en Nader rapport",
+   "titel": "Advies Afdeling advisering Raad van State en Nader rapport",
+   "datum": "2026-11-20",
+   "document": "2026D60250",
+   "docId": "784fd077-866e-4e43-b9bd-2f76609404da",
+   "bestand": "DOCX",
+   "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25988&did=2026D60250"
   }
  ]
 }

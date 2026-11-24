@@ -941,7 +941,7 @@
     "onderwerp": "Elektriciteitskosten industrie",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "29826-332",
       "soort": "Brief regering",
       "datum": "2026-11-03",
       "onderwerp": "Elektriciteitskosten industrie",
@@ -1345,7 +1345,7 @@
     "onderwerp": "Toelichting Habitatrichtlijnrapportage zeehonden en bruinvis",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "33576-580",
       "soort": "Brief regering",
       "datum": "2026-11-03",
       "onderwerp": "Toelichting Habitatrichtlijnrapportage zeehonden en bruinvis",
@@ -1582,68 +1582,6 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04782",
   "sectoren": [
    "natuur-stikstof-landbouw"
-  ]
- },
- {
-  "Id": "01e45305-4913-4974-9adc-21688ffe164f",
-  "Nummer": "2026A08292",
-  "Soort": "Inbreng feitelijke vragen",
-  "Onderwerp": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-  "Datum": "2026-12-08T14:00:00+01:00",
-  "Aanvangstijd": "2026-12-08T14:00:00+01:00",
-  "Eindtijd": "2026-12-08T14:00:00+01:00",
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
-  "Voortouwafkorting": "I&W",
-  "Besloten": true,
-  "Noot": null,
-  "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-    "stukken": []
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [],
-  "zaal": null,
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08292",
-  "sectoren": [
-   "water-adaptatie"
-  ]
- },
- {
-  "Id": "ba1c34f2-b868-471f-9b61-48a8273f8ab1",
-  "Nummer": "2026A08290",
-  "Soort": "Inbreng feitelijke vragen",
-  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-  "Datum": "2026-12-08T14:00:00+01:00",
-  "Aanvangstijd": "2026-12-08T14:00:00+01:00",
-  "Eindtijd": "2026-12-08T14:00:00+01:00",
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
-  "Voortouwafkorting": "I&W",
-  "Besloten": true,
-  "Noot": null,
-  "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-    "stukken": []
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [],
-  "zaal": null,
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08290",
-  "sectoren": [
-   "water-adaptatie"
   ]
  },
  {
@@ -2253,6 +2191,68 @@
   ]
  },
  {
+  "Id": "01e45305-4913-4974-9adc-21688ffe164f",
+  "Nummer": "2026A08292",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+  "Datum": "2026-12-01T14:00:00+01:00",
+  "Aanvangstijd": "2026-12-01T14:00:00+01:00",
+  "Eindtijd": "2026-12-01T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
+  "Voortouwafkorting": "I&W",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+    "stukken": []
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08292",
+  "sectoren": [
+   "water-adaptatie"
+  ]
+ },
+ {
+  "Id": "ba1c34f2-b868-471f-9b61-48a8273f8ab1",
+  "Nummer": "2026A08290",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+  "Datum": "2026-12-01T14:00:00+01:00",
+  "Aanvangstijd": "2026-12-01T14:00:00+01:00",
+  "Eindtijd": "2026-12-01T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
+  "Voortouwafkorting": "I&W",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+    "stukken": []
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08290",
+  "sectoren": [
+   "water-adaptatie"
+  ]
+ },
+ {
   "Id": "93249401-37e3-4489-a614-c032f1a06a7e",
   "Nummer": "2026A07452",
   "Soort": "Plenair debat (wetgeving)",
@@ -2818,7 +2818,7 @@
     "onderwerp": "Ondersteuning aan de agrarische sector voor haalbare doelstellingen",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "35334-491",
       "soort": "Brief regering",
       "datum": "2026-11-03",
       "onderwerp": "Ondersteuning aan de agrarische sector voor haalbare doelstellingen",
@@ -3555,7 +3555,7 @@
     "onderwerp": "Ondersteuning aan de agrarische sector voor haalbare doelstellingen",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "35334-491",
       "soort": "Brief regering",
       "datum": "2026-11-03",
       "onderwerp": "Ondersteuning aan de agrarische sector voor haalbare doelstellingen",
@@ -3916,10 +3916,10 @@
   ]
  },
  {
-  "Id": "09a7ab41-fd40-448b-9433-7b82294a7485",
-  "Nummer": "2026A07150",
+  "Id": "5bf93ecf-9399-4c30-8620-1ffd603af32a",
+  "Nummer": "2026A08674",
   "Soort": "Wetgevingsoverleg",
-  "Onderwerp": "Water - reservering voor mogelijke voortzetting wetgevingsoverleg 23 november ",
+  "Onderwerp": "Water (vervolg wetgevingsoverleg 23 november; voortzetting eerste termijn regering + tweede termijn)",
   "Datum": "2026-11-24T16:30:00+01:00",
   "Aanvangstijd": "2026-11-24T16:30:00+01:00",
   "Eindtijd": "2026-11-24T19:30:00+01:00",
@@ -3928,25 +3928,390 @@
   "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
   "Voortouwafkorting": "I&W",
   "Besloten": false,
-  "Noot": "<br />Reservering voor (eventuele) uitloop op 23 november 2026",
+  "Noot": "<strong>Aangekondige blokken beantwoording minister:</strong><ol><li>Algemeen en derde deltacommissie<em> (afgerond)</em></li><li>Droogte<em> (bezig)</em></li><li>Kaderrichtlijn water/waterkwaliteit</li><li>Milieu/pfas</li><li>Herprioritering</li><li>Waterveiligheid</li><li>Drinkwater</li><li>Overig</li></ol><br />De minister heeft toegezegd voorafgaand aan de hervatting een deel van de in de eerste termijn gestelde vragen schriftelijk te beantwoorden.",
   "SoortWeergave": "Wetgevingsoverleg",
-  "agendapunten": [],
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Lijst van vragen",
+      "datum": "2026-10-12",
+      "onderwerp": "Verslag houdende een lijst van vragen over vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027 (37020-J)",
+      "ondertekenaar": "R.A. Huizenga",
+      "functie": "voorzitter van de vaste commissie voor Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17081&did=2026D50576"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "37020-J Verslag houdende een lijst van vragen en antwoorden over vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027 ",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Verslag houdende een lijst van vragen en antwoorden",
+      "datum": "2026-11-09",
+      "onderwerp": "37020-J Verslag houdende een lijst van vragen en antwoorden over vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027 ",
+      "ondertekenaar": "R.A. Huizenga",
+      "functie": "voorzitter van de vaste commissie voor Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24447&did=2026D56426"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Verzamelbrief Water",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-19",
+      "onderwerp": "Verzamelbrief Water",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25725&did=2026D59502"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Fiche: Mededeling OceanEye: EU-initiatief voor oceaanobservatie",
+    "stukken": [
+     {
+      "kamerstuk": "22112-4423",
+      "soort": "Brief regering",
+      "datum": "2026-08-28",
+      "onderwerp": "Fiche: Mededeling OceanEye: EU-initiatief voor oceaanobservatie",
+      "ondertekenaar": "T.B.W. Berendsen",
+      "functie": "minister van Buitenlandse Zaken",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17405&did=2026D39731"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Nederlandse reactie op de openbare consultatie van de Europese Commissie over de herziening van de richtlijn Maritieme Ruimtelijke Planning/ de EU Oceaanwet",
+    "stukken": [
+     {
+      "kamerstuk": "22112-4403",
+      "soort": "Brief regering",
+      "datum": "2026-07-03",
+      "onderwerp": "Nederlandse reactie op de openbare consultatie van de Europese Commissie over de herziening van de richtlijn Maritieme Ruimtelijke Planning/ de EU Oceaanwet",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15804&did=2026D35482"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Kabinetsreactie op het WKR-advies ‘Meeveranderen met het klimaat’ en het WRR-advies ‘Mens en klimaat. De kracht van sociale infrastructuur bij adaptatie’",
+    "stukken": [
+     {
+      "kamerstuk": "32813-1570",
+      "soort": "Brief regering",
+      "datum": "2026-09-01",
+      "onderwerp": "Kabinetsreactie op het WKR-advies ‘Meeveranderen met het klimaat’ en het WRR-advies ‘Mens en klimaat. De kracht van sociale infrastructuur bij adaptatie’",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17600&did=2026D40271"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Kabinetsreactie op Deltaprogramma 2027",
+    "stukken": [
+     {
+      "kamerstuk": "37020-J-4",
+      "soort": "Brief regering",
+      "datum": "2026-09-15",
+      "onderwerp": "Kabinetsreactie op Deltaprogramma 2027",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18921&did=2026D43640"
+     }
+    ]
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Beantwoording vragen commissie over de kabinetsreactie op Deltaprogramma 2027 (Kamerstuk 37020-J-4)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Lijst van vragen en antwoorden",
+      "datum": "2026-11-09",
+      "onderwerp": "Lijst van vragen en antwoorden over de kabinetsreactie op Deltaprogramma 2027 (Kamerstuk 37020-J-4)",
+      "ondertekenaar": "R.A. Huizenga",
+      "functie": "voorzitter van de vaste commissie voor Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24449&did=2026D56431"
+     }
+    ]
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Beleidsreactie op technisch rapport ILT over risico’s van TFA voor onze drinkwaterkwaliteit",
+    "stukken": [
+     {
+      "kamerstuk": "35334-482",
+      "soort": "Brief regering",
+      "datum": "2026-09-11",
+      "onderwerp": "Beleidsreactie op technisch rapport ILT over risico’s van TFA voor onze drinkwaterkwaliteit",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18695&did=2026D42909"
+     }
+    ]
+   },
+   {
+    "volgorde": 10,
+    "onderwerp": "Noordzeeoverleg Voortgangsrapportage 11",
+    "stukken": [
+     {
+      "kamerstuk": "33450-142",
+      "soort": "Brief regering",
+      "datum": "2026-09-09",
+      "onderwerp": "Noordzeeoverleg Voortgangsrapportage 11",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18480&did=2026D42312"
+     }
+    ]
+   },
+   {
+    "volgorde": 11,
+    "onderwerp": "Reactie op het verzoek van het lid Vellinga-Beemsterboer over het bericht \"Natuurvriendelijk ontmantelen als uitzondering op de regel\"",
+    "stukken": [
+     {
+      "kamerstuk": "33561-104",
+      "soort": "Brief regering",
+      "datum": "2026-10-07",
+      "onderwerp": "Reactie op het verzoek van het lid Vellinga-Beemsterboer over het bericht \"Natuurvriendelijk ontmantelen als uitzondering op de regel\"",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z21376&did=2026D49330"
+     }
+    ]
+   },
+   {
+    "volgorde": 12,
+    "onderwerp": "30e Voortgangsrapportage Tweede Hoogwaterbeschermingsprogramma",
+    "stukken": [
+     {
+      "kamerstuk": "32698-99",
+      "soort": "Brief regering",
+      "datum": "2026-10-26",
+      "onderwerp": "30e Voortgangsrapportage Tweede Hoogwaterbeschermingsprogramma",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23031&did=2026D53083"
+     }
+    ]
+   },
+   {
+    "volgorde": 13,
+    "onderwerp": "Actualisatie van het Landelijk Crisisplan Hoogwater en Overstroming (LCP-HO)",
+    "stukken": [
+     {
+      "kamerstuk": "32698-98",
+      "soort": "Brief regering",
+      "datum": "2026-10-16",
+      "onderwerp": "Actualisatie van het Landelijk Crisisplan Hoogwater en Overstroming (LCP-HO)",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22584&did=2026D51926"
+     }
+    ]
+   },
+   {
+    "volgorde": 14,
+    "onderwerp": "Prioritering en perspectief Mobiliteits- en Deltafonds ",
+    "stukken": [
+     {
+      "kamerstuk": "37020-A-14",
+      "soort": "Brief regering",
+      "datum": "2026-10-16",
+      "onderwerp": "Prioritering en perspectief Mobiliteits- en Deltafonds ",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22564&did=2026D51852"
+     }
+    ]
+   },
+   {
+    "volgorde": 15,
+    "onderwerp": "Aanvaarding BBNJ-overeenkomst met goedkeuring door de Staten-Generaal achteraf",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-05",
+      "onderwerp": "Aanvaarding BBNJ-overeenkomst met goedkeuring door de Staten-Generaal achteraf",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24212&did=2026D55936"
+     }
+    ]
+   },
+   {
+    "volgorde": 16,
+    "onderwerp": "Besluit maatregelen stabilisatie bodem grote rivieren en afvoerverdeling Rijntakken bij laagwater",
+    "stukken": [
+     {
+      "kamerstuk": "31710-89",
+      "soort": "Brief regering",
+      "datum": "2026-07-10",
+      "onderwerp": "Besluit maatregelen stabilisatie bodem grote rivieren en afvoerverdeling Rijntakken bij laagwater",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z16075&did=2026D36331"
+     }
+    ]
+   },
+   {
+    "volgorde": 17,
+    "onderwerp": "Stand van zaken droogte",
+    "stukken": [
+     {
+      "kamerstuk": "27625-745",
+      "soort": "Brief regering",
+      "datum": "2026-07-16",
+      "onderwerp": "Stand van zaken droogte",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z16289&did=2026D36937"
+     }
+    ]
+   },
+   {
+    "volgorde": 18,
+    "onderwerp": "Stand van zaken droogte en overgang naar niveau 1 – dreigend watertekort",
+    "stukken": [
+     {
+      "kamerstuk": "27625-747",
+      "soort": "Brief regering",
+      "datum": "2026-09-03",
+      "onderwerp": "Stand van zaken droogte en overgang naar niveau 1 – dreigend watertekort",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17858&did=2026D40764"
+     }
+    ]
+   },
+   {
+    "volgorde": 19,
+    "onderwerp": "Rapport Zorgen over zoetwater; Onderzoek naar de voortgang van het Deltaprogramma Zoetwater",
+    "stukken": [
+     {
+      "kamerstuk": "31710-90",
+      "soort": "Brief Algemene Rekenkamer",
+      "datum": "2026-09-03",
+      "onderwerp": "Rapport Zorgen over zoetwater; Onderzoek naar de voortgang van het Deltaprogramma Zoetwater",
+      "ondertekenaar": "P.J. Duisenberg",
+      "functie": "president van de Algemene Rekenkamer",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17923&did=2026D40891"
+     }
+    ]
+   },
+   {
+    "volgorde": 20,
+    "onderwerp": "Maatregelen in de landbouw vanwege de droogte",
+    "stukken": [
+     {
+      "kamerstuk": "28625-385",
+      "soort": "Brief regering",
+      "datum": "2026-08-26",
+      "onderwerp": "Maatregelen in de landbouw vanwege de droogte",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17281&did=2026D39374"
+     }
+    ]
+   },
+   {
+    "volgorde": 21,
+    "onderwerp": "Reactie op het verzoek van het lid Keijzer over waterberging",
+    "stukken": [
+     {
+      "kamerstuk": "27625-762",
+      "soort": "Brief regering",
+      "datum": "2026-10-07",
+      "onderwerp": "Reactie op het verzoek van het lid Keijzer over waterberging",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z21342&did=2026D49281"
+     }
+    ]
+   },
+   {
+    "volgorde": 22,
+    "onderwerp": "(Nog te ontvangen) Schriftelijke beantwoording van een deel van de vragen uit de eerste termijn",
+    "stukken": []
+   }
+  ],
   "bewindspersonen": [
    {
     "naam": "V.P.G. Karremans",
     "functie": "minister van Infrastructuur en Waterstaat"
    }
   ],
-  "voorzitter": null,
-  "deelnemers": [],
+  "voorzitter": {
+   "naam": "R.A. Huizenga",
+   "fractie": "D66"
+  },
+  "deelnemers": [
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.C.A. Vellinga-Beemsterboer",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "B.A. Schutz",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L. Boelsma-Hoekstra",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
   "zaal": "Groen van Prinstererzaal",
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07150",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08674",
   "sectoren": [
    "water-adaptatie"
   ]
  },
  {
-  "Id": "5bf93ecf-9399-4c30-8620-1ffd603af32a",
+  "Id": "a64dc675-afb5-4e77-b932-501ebaae2f7e",
   "Nummer": "2026A02981",
   "Soort": "Wetgevingsoverleg",
   "Onderwerp": "Water",
@@ -4283,26 +4648,19 @@
     "functie": "minister van Infrastructuur en Waterstaat"
    }
   ],
-  "voorzitter": null,
+  "voorzitter": {
+   "naam": "R.A. Huizenga",
+   "fractie": "D66"
+  },
   "deelnemers": [
-   {
-    "naam": "M.C.A. Vellinga-Beemsterboer",
-    "fractie": "D66",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "B.A. Schutz",
-    "fractie": "VVD",
-    "functie": "Tweede Kamerlid"
-   },
    {
     "naam": "L. Bromet",
     "fractie": "PRO",
     "functie": "Tweede Kamerlid"
    },
    {
-    "naam": "L. Boelsma-Hoekstra",
-    "fractie": "CDA",
+    "naam": "M.C.A. Vellinga-Beemsterboer",
+    "fractie": "D66",
     "functie": "Tweede Kamerlid"
    },
    {
@@ -4311,17 +4669,32 @@
     "functie": "Tweede Kamerlid"
    },
    {
+    "naam": "B.A. Schutz",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
     "naam": "F.M. Wiersma",
     "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L. Boelsma-Hoekstra",
+    "fractie": "CDA",
     "functie": "Tweede Kamerlid"
    },
    {
     "naam": "P.A. Grinwis",
     "fractie": "ChristenUnie",
     "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
    }
   ],
-  "zaal": "Groen van Prinstererzaal",
+  "zaal": null,
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02981",
   "sectoren": [
    "water-adaptatie"
@@ -16069,13 +16442,13 @@
     "onderwerp": "Wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met het verhogen van het aandeel van gas uit hernieuwbare bronnen in de totale leveringen van gas aan afnemers (Wet bijmengverplichting groen gas) (voortzetting; tweede termijn)",
     "stukken": [
      {
-      "kamerstuk": "36947-53",
+      "kamerstuk": "36947-56",
       "soort": "Verslag van een wetgevingsoverleg",
-      "datum": "2026-10-16",
-      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 7 september 2026, over de wet bijmengverplichting groen gas",
+      "datum": "2026-11-23",
+      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 21 september 2026, over de wet bijmengverplichting groen gas (voortzetting)",
       "ondertekenaar": "J.M. Zwinkels",
       "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D51995"
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D60242"
      }
     ]
    },
@@ -18012,13 +18385,13 @@
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17619&did=2026D40310"
      },
      {
-      "kamerstuk": "36947-53",
+      "kamerstuk": "36947-56",
       "soort": "Verslag van een wetgevingsoverleg",
-      "datum": "2026-10-16",
-      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 7 september 2026, over de wet bijmengverplichting groen gas",
+      "datum": "2026-11-23",
+      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 21 september 2026, over de wet bijmengverplichting groen gas (voortzetting)",
       "ondertekenaar": "J.M. Zwinkels",
       "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D51995"
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D60242"
      },
      {
       "kamerstuk": "36947-8",
@@ -18962,13 +19335,13 @@
     "onderwerp": "Wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met het verhogen van het aandeel van gas uit hernieuwbare bronnen in de totale leveringen van gas aan afnemers (Wet bijmengverplichting groen gas) ",
     "stukken": [
      {
-      "kamerstuk": "36947-53",
+      "kamerstuk": "36947-56",
       "soort": "Verslag van een wetgevingsoverleg",
-      "datum": "2026-10-16",
-      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 7 september 2026, over de wet bijmengverplichting groen gas",
+      "datum": "2026-11-23",
+      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 21 september 2026, over de wet bijmengverplichting groen gas (voortzetting)",
       "ondertekenaar": "J.M. Zwinkels",
       "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D51995"
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D60242"
      }
     ]
    }
@@ -22208,13 +22581,13 @@
     "onderwerp": "Wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met het verhogen van het aandeel van gas uit hernieuwbare bronnen in de totale leveringen van gas aan afnemers (Wet bijmengverplichting groen gas) ",
     "stukken": [
      {
-      "kamerstuk": "36947-53",
+      "kamerstuk": "36947-56",
       "soort": "Verslag van een wetgevingsoverleg",
-      "datum": "2026-10-16",
-      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 7 september 2026, over de wet bijmengverplichting groen gas",
+      "datum": "2026-11-23",
+      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 21 september 2026, over de wet bijmengverplichting groen gas (voortzetting)",
       "ondertekenaar": "J.M. Zwinkels",
       "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D51995"
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D60242"
      }
     ]
    },
@@ -22377,13 +22750,13 @@
     "onderwerp": "Wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met het verhogen van het aandeel van gas uit hernieuwbare bronnen in de totale leveringen van gas aan afnemers (Wet bijmengverplichting groen gas) ",
     "stukken": [
      {
-      "kamerstuk": "36947-53",
+      "kamerstuk": "36947-56",
       "soort": "Verslag van een wetgevingsoverleg",
-      "datum": "2026-10-16",
-      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 7 september 2026, over de wet bijmengverplichting groen gas",
+      "datum": "2026-11-23",
+      "onderwerp": "Verslag van een wetgevingsoverleg, gehouden op 21 september 2026, over de wet bijmengverplichting groen gas (voortzetting)",
       "ondertekenaar": "J.M. Zwinkels",
       "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D51995"
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10595&did=2026D60242"
      }
     ]
    }
@@ -52760,7 +53133,7 @@
     "onderwerp": "Voortgangsrapportage SPARK project 2026-2",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "27858-778",
       "soort": "Brief regering",
       "datum": "2026-11-03",
       "onderwerp": "Voortgangsrapportage SPARK project 2026-2",
