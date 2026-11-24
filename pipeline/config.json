@@ -55,6 +55,21 @@
         "nummer": 36996,
         "sector": "circulair-vervuiling",
         "label": "Richtlijn bevordering van reparatie"
+      },
+      {
+        "nummer": 36678,
+        "sector": "financien",
+        "label": "Wet implementatie richtlijn duurzaamheidsrapportering (CSRD)"
+      },
+      {
+        "nummer": 36812,
+        "sector": "financien",
+        "label": "Belastingplan 2026"
+      },
+      {
+        "nummer": 37022,
+        "sector": "financien",
+        "label": "Belastingplan 2027"
       }
     ],
     "uitsluiten": [
@@ -82,7 +97,10 @@
       "\\bDieren (in|buiten) de veehouderij",
       "\\bdierproeven",
       "\\bstroomstootapparatuur",
-      "\\bdierenwelzijn"
+      "\\bdierenwelzijn",
+      "\\bBelastingplan",
+      "\\bfiscaliteit",
+      "\\bstaatsdeelneming"
     ]
   },
   "sectoren": {
@@ -646,6 +664,62 @@
         "Nota Ruimte",
         "Omgevingswet"
       ]
+    },
+    "financien": {
+      "_uitleg": "Milieu en energieprijzen bij Financiën (Tobias, 24 nov 2026). Eigen sector, zodat activiteitTrefwoorden alleen de commissie Financiën beperkt. Geen los 'autobelasting': dat staat in de titel van Kamerstuk 32800 (ook campers en kermisvoertuigen).",
+      "naam": "Financiën & fiscaliteit",
+      "actief": true,
+      "commissies": [
+        "FIN"
+      ],
+      "kamerstukdossiers": [],
+      "zoektermen": [],
+      "stukDossiers": [],
+      "trefwoorden": [
+        "\\bexportkrediet",
+        "\\bekv\\b",
+        "\\bTenneT\\b",
+        "\\bCSRD\\b|\\bCSDDD\\b",
+        "\\bduurzaamheidsrapport",
+        "\\bCBAM\\b|\\bCarbon Border",
+        "\\bgroene (obligatie|belasting|financiering)",
+        "\\bfiscale vergroening",
+        "\\bduurza(am|me) (beleggen|financier)",
+        "overwinst",
+        "\\bwindfall",
+        "\\boliebedrij",
+        "\\bolie- en gas",
+        "\\bbrandstof(prijs|prijzen|accijn)",
+        "\\baccijn.*brandstof",
+        "\\bbenzine",
+        "\\bdiesel",
+        "\\bdat tanken\\b",
+        "\\blandbouwvrijstelling",
+        "\\bLandbouwbesluit",
+        "\\bprikkels reparatie|\\breparatie van huishoud",
+        "Deelnemen zonder dogma",
+        "\\btoezeggingen autobelasting"
+      ],
+      "activiteitTrefwoorden": [
+        "^(?!.*(procedurevergadering|volkshuisvesting)).*\\b(fiscaliteit(?! - (Arbeid|Vermogen|Overige))|Belastingplan)",
+        "\\bfiscale vergroening",
+        "\\bstaatsdeelneming",
+        "\\bluchtvaartdeelneming",
+        "\\bTenneT\\b",
+        "\\bexportkrediet",
+        "\\bduurza",
+        "\\bCSRD\\b",
+        "\\benergie",
+        "\\bklimaat",
+        "\\bmilieu",
+        "\\bCBAM\\b"
+      ],
+      "plenaireZoektermen": [
+        "Belastingplan",
+        "Fiscaliteit",
+        "Staatsdeelnemingen",
+        "xportkrediet"
+      ]
     }
   },
   "verzoeken": {
@@ -667,7 +741,8 @@
     },
     "uitsluiten": [
       "^Uitstel\\b",
-      "^Uitstel beantwoording"
+      "^Uitstel beantwoording",
+      "brandstofprijzen voor taxi"
     ],
     "negeerInTekst": [
       "Economische Zaken en Klimaat",

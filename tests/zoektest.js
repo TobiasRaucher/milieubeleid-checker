@@ -57,6 +57,9 @@ const TESTS = [
   // commissieverzoeken (in de tabel Kamervragen)
   ["pan nederland natuurherstelverordening", "pan nederland", 3],
   ["greenpeace vonnis klimaatzaak bonaire", "vonnis klimaatzaak bonaire", 3],
+  // Financiën (sector financien, 24 nov 2026)
+  ["ekv", "exportkrediet", 3],
+  ["csrd", "duurzaamheidsrapportering", 5],
   // thema's
   ["adaptatie", "water", 12], // 12 sinds de commissieverzoeken (24 nov 2026): twee verzoeken over adaptatie staan terecht hoger
 ];

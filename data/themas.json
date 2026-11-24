@@ -103,7 +103,13 @@
         "emissierecht",
         "methaan",
         "arctisch",
-        "\\bboren\\b"
+        "\\bboren\\b",
+        "overwinst",
+        "windfall",
+        "oliebedrij",
+        "accijns.*(benzine|diesel|brandstof)",
+        "\\bbenzine",
+        "\\bdat tanken\\b"
       ]
     },
     "industrie-circulaire-economie": {
@@ -168,7 +174,8 @@
         "maatschappelijk verantwoord (opdrachtgeven|inkopen)",
         "indirecte kosten compensatie",
         "\\bikc\\b",
-        "gratis emissierecht"
+        "gratis emissierecht",
+        "huishoudapparaten"
       ]
     },
     "mobiliteit-infrastructuur": {
@@ -229,7 +236,11 @@
         "wegverkeer",
         "wegenbouw",
         "wegbeheer",
-        "wegennet"
+        "wegennet",
+        "premiumvlucht",
+        "privejet",
+        "oldtimer",
+        "youngtimer"
       ]
     },
     "gebouwde-omgeving": {
@@ -342,7 +353,10 @@
         "\\bnatuurinclusie",
         "nitraat",
         "\\bklei\\b|\\bklei-|kleigebied|kleigrond",
-        "\\bveen"
+        "\\bveen",
+        "landbouwvrijstelling",
+        "landbouwbesluit",
+        "onbewerkte biologische"
       ]
     },
     "water-bodem": {
@@ -490,7 +504,18 @@
         "milieuomnibus",
         "omnibus (voor )?milieu",
         "\\bdso\\b",
-        "digitaal stelsel omgevingswet"
+        "digitaal stelsel omgevingswet",
+        "exportkrediet",
+        "\\bekv\\b",
+        "\\bcsrd\\b",
+        "\\bcsddd\\b",
+        "duurzaamheidsrapport",
+        "groene obligatie",
+        "groene belasting",
+        "fiscale vergroening",
+        "duurzaam beleggen",
+        "groen beleggen",
+        "\\beia en mia\\b"
       ],
       "alleenZonderAndere": [
         "\\bmilieu",

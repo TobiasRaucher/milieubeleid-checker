@@ -400,6 +400,112 @@
   ]
  },
  {
+  "Id": "f3fa9dec-efd7-4b5b-a0e6-edf6b68f1927",
+  "Nummer": "2026A06411",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Staatsdeelnemingen",
+  "Datum": "2027-01-28T14:30:00+01:00",
+  "Aanvangstijd": "2027-01-28T14:30:00+01:00",
+  "Eindtijd": "2027-01-28T17:30:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "<span style=\"font-size:12px\">Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis</span>",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "*Indicatieve spreektijd per fractie 4 minuten*",
+    "stukken": []
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Afronding verkoopprogramma ABN AMRO",
+    "stukken": [
+     {
+      "kamerstuk": "31789-124",
+      "soort": "Brief regering",
+      "datum": "2026-07-22",
+      "onderwerp": "Afronding verkoopprogramma ABN AMRO",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z16451&did=2026D37314"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Nadere verkenning privatiseringsmogelijkheden Nederlandse Loterij",
+    "stukken": [
+     {
+      "kamerstuk": "28165-489",
+      "soort": "Brief regering",
+      "datum": "2026-10-13",
+      "onderwerp": "Nadere verkenning privatiseringsmogelijkheden Nederlandse Loterij",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22114&did=2026D50963"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Verkoopprogramma certificaten ABN AMRO",
+    "stukken": [
+     {
+      "kamerstuk": "31789-125",
+      "soort": "Brief regering",
+      "datum": "2026-10-07",
+      "onderwerp": "Verkoopprogramma certificaten ABN AMRO",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z21265&did=2026D49101"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Verzamelbrief staatsdeelnemingen oktober 2026",
+    "stukken": [
+     {
+      "kamerstuk": "28165-488",
+      "soort": "Brief regering",
+      "datum": "2026-10-13",
+      "onderwerp": "Verzamelbrief staatsdeelnemingen oktober 2026",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22032&did=2026D50746"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Heinen",
+    "functie": "minister van Financiën"
+   },
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "E.J. van der Maas",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Groen van Prinstererzaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06411",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "b9ba3277-be62-4e3f-b6f2-5675626d0ca7",
   "Nummer": "2026A06444",
   "Soort": "Technische briefing",
@@ -540,6 +646,168 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07906",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "95e85d44-8807-4726-97e5-8be2f59c2184",
+  "Nummer": "2025A02423",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Exportkredietverzekeringen",
+  "Datum": "2027-01-20T10:00:00+01:00",
+  "Aanvangstijd": "2027-01-20T10:00:00+01:00",
+  "Eindtijd": "2027-01-20T12:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "*Indicatieve spreektijd per fractie 3 minuten*",
+    "stukken": []
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Opvolging toezeggingen betreffende ekv-mandaat, internationale benchmark, beleidsdoorlichting, OESO-regels en herbeoordeling Mozambique project; en opvolging motie Aukje de Vries en Van der Lee (Kamerstuk 26485-446)",
+    "stukken": [
+     {
+      "kamerstuk": "36600-IX-39",
+      "soort": "Brief regering",
+      "datum": "2025-03-04",
+      "onderwerp": "Opvolging toezeggingen betreffende ekv-mandaat, internationale benchmark, beleidsdoorlichting, OESO-regels en herbeoordeling Mozambique project; en opvolging motie Aukje de Vries en Van der Lee (Kamerstuk 26485-446)",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z03849&did=2025D08864"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Monitor exportkredietverzekeringen 2024",
+    "stukken": [
+     {
+      "kamerstuk": "26485-452",
+      "soort": "Brief regering",
+      "datum": "2025-06-30",
+      "onderwerp": "Monitor exportkredietverzekeringen 2024",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z13614&did=2025D30833"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Nadere toelichting exportkredietverzekering voor het LNG project in Mozambique",
+    "stukken": [
+     {
+      "kamerstuk": "26485-458",
+      "soort": "Brief regering",
+      "datum": "2025-11-11",
+      "onderwerp": "Nadere toelichting exportkredietverzekering voor het LNG project in Mozambique",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z19616&did=2025D46041"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Update over de Nederlandse betrokkenheid bij het LNG-project in Mozambique",
+    "stukken": [
+     {
+      "kamerstuk": "26485-459",
+      "soort": "Brief regering",
+      "datum": "2025-12-01",
+      "onderwerp": "Update over de Nederlandse betrokkenheid bij het LNG-project in Mozambique",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20923&did=2025D49395"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Toekomst Exportkredietverzekering",
+    "stukken": [
+     {
+      "kamerstuk": "26485-460",
+      "soort": "Brief regering",
+      "datum": "2025-12-19",
+      "onderwerp": "Toekomst Exportkredietverzekering",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22625&did=2025D53786"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Jaarlijkse overzicht exportkredietverzekering (ekv) 2025",
+    "stukken": [
+     {
+      "kamerstuk": "26485-462",
+      "soort": "Brief regering",
+      "datum": "2026-06-24",
+      "onderwerp": "Jaarlijkse overzicht exportkredietverzekering (ekv) 2025",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z14461&did=2026D32381"
+     }
+    ]
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Informeren over de aangifte van fraude en de aanscherping van het beleid voor de exportkredietverzekering (EKV)",
+    "stukken": [
+     {
+      "kamerstuk": "26485-463",
+      "soort": "Brief regering",
+      "datum": "2026-07-03",
+      "onderwerp": "Informeren over de aangifte van fraude en de aanscherping van het beleid voor de exportkredietverzekering (EKV)",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15772&did=2026D35385"
+     }
+    ]
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Voorlopige gunningsbeslissing ekv-aanbesteding",
+    "stukken": [
+     {
+      "kamerstuk": "26485-467",
+      "soort": "Brief regering",
+      "datum": "2026-10-02",
+      "onderwerp": "Voorlopige gunningsbeslissing ekv-aanbesteding",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z20943&did=2026D48231"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "E.J. van der Maas",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Aletta Jacobszaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A02423",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -5990,6 +6258,254 @@
   ]
  },
  {
+  "Id": "d57c0d39-b2cd-4625-beaf-2c18f4be93ae",
+  "Nummer": "2026A08376",
+  "Soort": "Plenair debat (wetgeving)",
+  "Onderwerp": "Pakket Belastingplan 2027 (3e termijn)",
+  "Datum": "2026-11-12T10:16:00+01:00",
+  "Aanvangstijd": "2026-11-12T10:16:00+01:00",
+  "Eindtijd": "2026-11-12T18:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Plenair debat (wetgeving)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37025, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18843&did=2026D59014"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2026-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en Constitutionele toetsing om een  adviestraject te starten voor het wetsvoorstel Wet fiscale stimulering start-ups en  scale-ups (37024) ",
+      "ondertekenaar": "T.J. Bushoff",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18830&did=2026D45852"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37023, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18820&did=2026D59016"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37022, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18819&did=2026D59011"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Moties ingediend tijdens het debat",
+    "stukken": [
+     {
+      "kamerstuk": "37022-84",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van de leden Struijs en Bikker over indien de amendementen onder 37 022 nr. 78 en nr. 80 beide worden aangenomen, alleen de modernisering van de waarderingsregels en de actualisering van de rekenrente inzake papieren schenkingen uitvoeren conform amendement nr. 78",
+      "ondertekenaar": "J.A. Struijs",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24981&did=2026D57700"
+     },
+     {
+      "kamerstuk": "37022-83",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van het lid Jimmy Dijk over het opnemen van een jaarlijkse tandartscontrole voor iedereen in het basispakket ",
+      "ondertekenaar": "J.P. (Jimmy) Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24975&did=2026D57678"
+     },
+     {
+      "kamerstuk": "37022-82",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van het lid Jimmy Dijk over de studierente maximeren op 2,5 procent ",
+      "ondertekenaar": "J.P. (Jimmy) Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24974&did=2026D57677"
+     },
+     {
+      "kamerstuk": "37022-81",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van het lid Jimmy Dijk over de verruiming van de hypotheekrenteaftrek ongedaan maken ",
+      "ondertekenaar": "J.P. (Jimmy) Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24973&did=2026D57676"
+     },
+     {
+      "kamerstuk": "37022-85",
+      "soort": "Motie",
+      "datum": "2026-11-12",
+      "onderwerp": "Motie van de leden Keijzer en Stoffer over in de aangekondigde plannen Slagvaardige Overheid ook een plan opnemen over halvering van de hoeveelheid taken en fte's verbonden aan adviesorganen en adviescommissies rijksbreed ",
+      "ondertekenaar": "M.C.G. Keijzer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24984&did=2026D57703"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Reactie op verzoek van de leden Vermeer en Markuszower gedaan tijdens het debat over het Pakket Belastingplan 2027 van 12 november 2026",
+    "stukken": [
+     {
+      "kamerstuk": "37022-86",
+      "soort": "Brief regering",
+      "datum": "2026-11-12",
+      "onderwerp": "Reactie op het verzoek van de leden Vermeer en Markuszower, gedaan tijdens het debat over het Pakket Belastingplan 2027 van 12 november 2026",
+      "ondertekenaar": "R.A.A. Jetten",
+      "functie": "minister-president",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25011&did=2026D57771"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Reactie op het verzoek van het lid Eerdmans, gedaan tijdens het debat over het Pakket Belastingplan 2027 van 12 november 2026, over de samenloop tussen twee amendementen bij het pakket Belastingplan 2027 ",
+    "stukken": [
+     {
+      "kamerstuk": "37022-87",
+      "soort": "Brief regering",
+      "datum": "2026-11-12",
+      "onderwerp": "Reactie op het verzoek van het lid Eerdmans, gedaan tijdens het debat over het Pakket Belastingplan 2027 van 12 november 2026, over de samenloop tussen twee amendementen bij het pakket Belastingplan 2027 ",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25012&did=2026D57772"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "R.A.A. Jetten",
+    "functie": "minister-president"
+   },
+   {
+    "naam": "E. Heinen",
+    "functie": "minister van Financiën"
+   },
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "J.F. Klaver",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.M. Paternotte",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "G. Wilders",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.P. Brekelmans",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "B.J. Eerdmans",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Bontenbal",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M. Schenk",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.R.T. van Baarle",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.H. Bikker",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.A. Struijs",
+    "fractie": "50PLUS",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "G. Markuszower",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.C.G. Keijzer",
+    "fractie": "Keijzer",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08376",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "321beaa9-d46f-473d-884f-149d1d13233d",
   "Nummer": "2026A05817",
   "Soort": "Technische briefing",
@@ -6271,6 +6787,406 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05144",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "50475f3a-ddd2-486e-ac59-71c6da3383cf",
+  "Nummer": "2026A07998",
+  "Soort": "Plenair debat (wetgeving)",
+  "Onderwerp": "Aansluitend: Pakket Belastingplan 2027 (voortzetting)",
+  "Datum": "2026-11-10T18:45:00+01:00",
+  "Aanvangstijd": "2026-11-10T18:45:00+01:00",
+  "Eindtijd": "2026-11-10T22:37:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Plenair debat (wetgeving)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37025, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18843&did=2026D59014"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2026-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en Constitutionele toetsing om een  adviestraject te starten voor het wetsvoorstel Wet fiscale stimulering start-ups en  scale-ups (37024) ",
+      "ondertekenaar": "T.J. Bushoff",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18830&did=2026D45852"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37023, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18820&did=2026D59016"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37022, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18819&did=2026D59011"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Schriftelijke beantwoording op een deel van de vragen, gesteld tijdens het wetgevingsoverleg van 12 oktober 2026, over het pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": "37022-37",
+      "soort": "Brief regering",
+      "datum": "2026-10-16",
+      "onderwerp": "Schriftelijke beantwoording op een deel van de vragen, gesteld tijdens het wetgevingsoverleg van 12 oktober 2026, over het pakket Belastingplan 2027",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22602&did=2026D51987"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Aanpassingen Belastingplan en box 3",
+    "stukken": [
+     {
+      "kamerstuk": "37022-89",
+      "soort": "Brief regering",
+      "datum": "2026-11-03",
+      "onderwerp": "Aanpassingen Belastingplan en box 3",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23851&did=2026D55029"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Eerlijker en gerichter maken van de aftrek voor specifieke zorgkosten",
+    "stukken": [
+     {
+      "kamerstuk": "37020-XVI-110",
+      "soort": "Brief regering",
+      "datum": "2026-11-03",
+      "onderwerp": "Eerlijker en gerichter maken van de aftrek voor specifieke zorgkosten",
+      "ondertekenaar": "S.T.M. Hermans",
+      "functie": "minister van Volksgezondheid, Welzijn en Sport",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23905&did=2026D55206"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Moties ingediend tijdens het debat:",
+    "stukken": [
+     {
+      "kamerstuk": "37022-66",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van de leden Grinwis en Stoffer over na stemming over het Belastingplan de resterende mogelijkheden en onmogelijkheden voor aanpassing van parameters bij de Belastingdienst uiteenzetten",
+      "ondertekenaar": "P.A. Grinwis",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24749&did=2026D57068"
+     },
+     {
+      "kamerstuk": "37022-56",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Van Eijk over een toets op durfkapitaalinvestering als afzonderlijke route voor een RVO-verklaring voor start- en scale-ups ",
+      "ondertekenaar": "W.P.J. van Eijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24739&did=2026D57058"
+     },
+     {
+      "kamerstuk": "37022-63",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Ergin over voorstellen doen voor het matigen van de torenhoge prijzen van bepaalde levensmiddelen in relatie tot onze buurlanden ",
+      "ondertekenaar": "D.A. Ergin",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24746&did=2026D57065"
+     },
+     {
+      "kamerstuk": "37022-57",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Hoogeveen c.s. over het wetsvoorstel voor de volledige vermogenswinstbelasting uiterlijk met Prinsjesdag 2027 bij de Kamer indienen en die wet uiterlijk per 1 januari 2030 invoeren ",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24740&did=2026D57059"
+     },
+     {
+      "kamerstuk": "37022-55",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Van Eijk over onderzoek naar het bepalen van het innovatieboxvoordeel aan de hand van het aantal Wbso-uren ten opzichte van het totale aantal werknemers ",
+      "ondertekenaar": "W.P.J. van Eijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24738&did=2026D57057"
+     },
+     {
+      "kamerstuk": "37022-67",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Vermeer c.s. over de btw-verhoging op sierteelt definitief schrappen ",
+      "ondertekenaar": "H. Vermeer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24750&did=2026D57069"
+     },
+     {
+      "kamerstuk": "37022-61",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Ergin over voorstellen doen voor het matigen van de torenhoge brandstofprijzen in relatie tot onze buurlanden ",
+      "ondertekenaar": "D.A. Ergin",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24744&did=2026D57063"
+     },
+     {
+      "kamerstuk": "37022-70",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Markuszower over het opzeggen van het vertrouwen in het kabinet en een nieuwe verkenner aanwijzen het opzeggen van het vertrouwen in het kabinet",
+      "ondertekenaar": "G. Markuszower",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24753&did=2026D57072"
+     },
+     {
+      "kamerstuk": "37022-58",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van de leden Inge van Dijk en Grinwis over zoeken naar praktische oplossingen voor belemmeringen die de voorwaarden voor de BOR en de DSR kunnen opwerpen voor vruchtwisseling ",
+      "ondertekenaar": "I. (Inge) van Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24741&did=2026D57060"
+     },
+     {
+      "kamerstuk": "37022-62",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Ergin over de belastingen op boodschappen substantieel verlagen ",
+      "ondertekenaar": "D.A. Ergin",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24745&did=2026D57064"
+     },
+     {
+      "kamerstuk": "37022-60",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Ergin over de belastingen op brandstof substantieel verlagen ",
+      "ondertekenaar": "D.A. Ergin",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24743&did=2026D57062"
+     },
+     {
+      "kamerstuk": "37022-64",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van de leden Teunissen en Jimmy Dijk over de mogelijkheden inventariseren om overwinsten van olie- en gasbedrijven te belasten of af te romen ",
+      "ondertekenaar": "C. Teunissen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24747&did=2026D57066"
+     },
+     {
+      "kamerstuk": "37022-54",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Van Eijk over een regeling waarmee dga's hun bestaande pensioen in eigen beheer alsnog fiscaal neutraal kunnen omzetten ",
+      "ondertekenaar": "W.P.J. van Eijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24737&did=2026D57056"
+     },
+     {
+      "kamerstuk": "37022-68",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Van Brenk c.s. over bepaalde toetsstenen meenemen bij fundamentele herzieningen van het belasting- en toeslagenstelsel ",
+      "ondertekenaar": "C.M. van Brenk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24751&did=2026D57070"
+     },
+     {
+      "kamerstuk": "37022-59",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Schenk over het ontslag van het kabinet aanbieden indien het Belastingplan 2027 niet door beide Kamers wordt aanvaard ",
+      "ondertekenaar": "M. Schenk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24742&did=2026D57061"
+     },
+     {
+      "kamerstuk": "37022-69",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Markuszower over de vrijheidsbijdrage ook voor bedrijven afschaffen ",
+      "ondertekenaar": "G. Markuszower",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24752&did=2026D57071"
+     },
+     {
+      "kamerstuk": "37022-71",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van de leden Keijzer en Vermeer over in 2028 volledig afzien van de maatregel om het verlaagde btw-tarief van 9% op sierteeltproducten te verhogen ",
+      "ondertekenaar": "M.C.G. Keijzer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24754&did=2026D57073"
+     },
+     {
+      "kamerstuk": "37022-53",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van de leden Vlottes en Wilders over het vertrouwen in het kabinet opzeggen ",
+      "ondertekenaar": "E. Vlottes",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24736&did=2026D57055"
+     },
+     {
+      "kamerstuk": "37022-65",
+      "soort": "Motie",
+      "datum": "2026-11-10",
+      "onderwerp": "Motie van het lid Teunissen over onderzoek naar een reparatiefonds voor apparaten als telefoons en laptops",
+      "ondertekenaar": "C. Teunissen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24748&did=2026D57067"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Ingetrokken amendement",
+    "stukken": [
+     {
+      "kamerstuk": "37022-18",
+      "soort": "Amendement (gewijzigd/nader/vervangend)",
+      "datum": "2026-10-14",
+      "onderwerp": "Amendement van het lid Keijzer ter vervanging van nr. 13 over het lagere btw-tarief voor de sierteelt vanaf 2029 afschaffen",
+      "ondertekenaar": "M.C.G. Keijzer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22345&did=2026D51392"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   },
+   {
+    "naam": "E. Heinen",
+    "functie": "minister van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M. Schenk",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.A. Ergin",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C.M. van Brenk",
+    "fractie": "50PLUS",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "G. Markuszower",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.C.G. Keijzer",
+    "fractie": "Keijzer",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07998",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -6753,6 +7669,263 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07995",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "1e6589a3-a4a7-4c88-990f-30042c9c1d9e",
+  "Nummer": "2026A06617",
+  "Soort": "Plenair debat (wetgeving)",
+  "Onderwerp": "Pakket Belastingplan 2027 (1e TK)",
+  "Datum": "2026-11-04T15:30:00+01:00",
+  "Aanvangstijd": "2026-11-04T15:30:00+01:00",
+  "Eindtijd": "2026-11-04T00:38:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Plenair debat (wetgeving)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37025, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18843&did=2026D59014"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2026-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en Constitutionele toetsing om een  adviestraject te starten voor het wetsvoorstel Wet fiscale stimulering start-ups en  scale-ups (37024) ",
+      "ondertekenaar": "T.J. Bushoff",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18830&did=2026D45852"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37023, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18820&did=2026D59016"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37022, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18819&did=2026D59011"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Schriftelijke beantwoording op een deel van de vragen, gesteld tijdens het wetgevingsoverleg van 12 oktober 2026, over het pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": "37022-37",
+      "soort": "Brief regering",
+      "datum": "2026-10-16",
+      "onderwerp": "Schriftelijke beantwoording op een deel van de vragen, gesteld tijdens het wetgevingsoverleg van 12 oktober 2026, over het pakket Belastingplan 2027",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22602&did=2026D51987"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Aanpassingen Belastingplan en box 3",
+    "stukken": [
+     {
+      "kamerstuk": "37022-89",
+      "soort": "Brief regering",
+      "datum": "2026-11-03",
+      "onderwerp": "Aanpassingen Belastingplan en box 3",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23851&did=2026D55029"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Eerlijker en gerichter maken van de aftrek voor specifieke zorgkosten",
+    "stukken": [
+     {
+      "kamerstuk": "37020-XVI-110",
+      "soort": "Brief regering",
+      "datum": "2026-11-03",
+      "onderwerp": "Eerlijker en gerichter maken van de aftrek voor specifieke zorgkosten",
+      "ondertekenaar": "S.T.M. Hermans",
+      "functie": "minister van Volksgezondheid, Welzijn en Sport",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23905&did=2026D55206"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Reactie op verzoek van het lid Stultiens, gedaan tijdens de Regeling van Werkzaamheden van 3 november 2026, over dekking box 3 2040",
+    "stukken": [
+     {
+      "kamerstuk": "37022-90",
+      "soort": "Brief regering",
+      "datum": "2026-11-03",
+      "onderwerp": "Reactie op verzoek van het lid Stultiens, gedaan tijdens de Regeling van Werkzaamheden van 3 november 2026, over dekking box 3 2040",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23930&did=2026D55264"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Reactie op verzoek van het lid Markuszower, gedaan tijdens het debat Pakket Belastingplan 2027 op 4 november 2026, over dat de Europese Commissie de Europese stikstofregels zou willen versoepelen",
+    "stukken": [
+     {
+      "kamerstuk": "37022-91",
+      "soort": "Brief regering",
+      "datum": "2026-11-04",
+      "onderwerp": "Reactie op verzoek van het lid Markuszower, gedaan tijdens het debat Pakket Belastingplan 2027 op 4 november 2026, over dat de Europese Commissie de Europese stikstofregels zou willen versoepelen",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24060&did=2026D55627"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Reactie op verzoek van het lid Keijzer, gedaan tijdens de regeling van werkzaamheden op 3 november 2026, over besluitvorming belastingplan",
+    "stukken": [
+     {
+      "kamerstuk": "37022-92",
+      "soort": "Brief regering",
+      "datum": "2026-11-04",
+      "onderwerp": "Reactie op verzoek van het lid Keijzer, gedaan tijdens de regeling van werkzaamheden op 3 november 2026, over besluitvorming belastingplan",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24061&did=2026D55629"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "R.A.A. Jetten",
+    "functie": "minister-president"
+   },
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   },
+   {
+    "naam": "E. Heinen",
+    "functie": "minister van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "J.F. Klaver",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "G. Wilders",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M. Schenk",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.R.T. van Baarle",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C.M. van Brenk",
+    "fractie": "50PLUS",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "G. Markuszower",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.C.G. Keijzer",
+    "fractie": "Keijzer",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06617",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -9295,6 +10468,198 @@
   ]
  },
  {
+  "Id": "42ecc266-ce80-4360-adc6-f381fc3c1f15",
+  "Nummer": "2026A07563",
+  "Soort": "Wetgevingsoverleg",
+  "Onderwerp": "Pakket Belastingplan 2027 (eerste termijn Regering plus tweede termijn Kamer en regering)",
+  "Datum": "2026-10-26T11:00:00+01:00",
+  "Aanvangstijd": "2026-10-26T11:00:00+01:00",
+  "Eindtijd": "2026-10-26T23:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Wetgevingsoverleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Aanbieding pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": "37022-5",
+      "soort": "Brief regering",
+      "datum": "2026-09-15",
+      "onderwerp": "Pakket Belastingplan 2027",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18905&did=2026D43576"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Stand van zaken pakket Belastingplan 2027 ",
+    "stukken": [
+     {
+      "kamerstuk": "37022-20",
+      "soort": "Brief regering",
+      "datum": "2026-10-09",
+      "onderwerp": "Stand van zaken pakket Belastingplan 2027 ",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z21870&did=2026D50326"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37025, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18843&did=2026D59014"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2026-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en Constitutionele toetsing om een  adviestraject te starten voor het wetsvoorstel Wet fiscale stimulering start-ups en  scale-ups (37024) ",
+      "ondertekenaar": "T.J. Bushoff",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18830&did=2026D45852"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37023, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18820&did=2026D59016"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37022, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18819&did=2026D59011"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Schriftelijke beantwoording op een deel van de vragen, gesteld tijdens het wetgevingsoverleg van 12 oktober 2026, over het pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": "37022-37",
+      "soort": "Brief regering",
+      "datum": "2026-10-16",
+      "onderwerp": "Schriftelijke beantwoording op een deel van de vragen, gesteld tijdens het wetgevingsoverleg van 12 oktober 2026, over het pakket Belastingplan 2027",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22602&did=2026D51987"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": {
+   "naam": "C.A. (Chris) Jansen",
+   "fractie": "PVV"
+  },
+  "deelnemers": [
+   {
+    "naam": "D.A. Ergin",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M. Schenk",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C.M. van Brenk",
+    "fractie": "50PLUS",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Wttewaall van Stoetwegenzaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07563",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "79524b78-770d-4099-9ab8-c5550fd8019a",
   "Nummer": "2026A05143",
   "Soort": "Notaoverleg",
@@ -10947,6 +12312,188 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06650",
   "sectoren": [
    "water-adaptatie"
+  ]
+ },
+ {
+  "Id": "2c2e5545-425b-4a3d-ab6e-683b1be3e0ca",
+  "Nummer": "2026A04850",
+  "Soort": "Wetgevingsoverleg",
+  "Onderwerp": "Pakket Belastingplan 2027",
+  "Datum": "2026-10-12T11:00:00+02:00",
+  "Aanvangstijd": "2026-10-12T11:00:00+02:00",
+  "Eindtijd": "2026-10-12T19:00:00+02:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Wetgevingsoverleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Sprekersvolgorde en opgegeven spreektijden",
+    "stukken": []
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Aanbieding pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": "37022-5",
+      "soort": "Brief regering",
+      "datum": "2026-09-15",
+      "onderwerp": "Pakket Belastingplan 2027",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18905&did=2026D43576"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Stand van zaken pakket Belastingplan 2027 ",
+    "stukken": [
+     {
+      "kamerstuk": "37022-20",
+      "soort": "Brief regering",
+      "datum": "2026-10-09",
+      "onderwerp": "Stand van zaken pakket Belastingplan 2027 ",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z21870&did=2026D50326"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37025, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18843&did=2026D59014"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2026-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en Constitutionele toetsing om een  adviestraject te starten voor het wetsvoorstel Wet fiscale stimulering start-ups en  scale-ups (37024) ",
+      "ondertekenaar": "T.J. Bushoff",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18830&did=2026D45852"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37023, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18820&did=2026D59016"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37022, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18819&did=2026D59011"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": {
+   "naam": "C.A. (Chris) Jansen",
+   "fractie": "PVV"
+  },
+  "deelnemers": [
+   {
+    "naam": "D.A. Ergin",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M. Schenk",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C.M. van Brenk",
+    "fractie": "50PLUS",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Groen van Prinstererzaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04850",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -13395,6 +14942,47 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05578",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "36981b8c-e142-455d-bf38-4a5b727a0d0c",
+  "Nummer": "2026A04849",
+  "Soort": "Inbreng verslag (wetsvoorstel)",
+  "Onderwerp": "Belastingplan 2027",
+  "Datum": "2026-10-01T10:00:00+02:00",
+  "Aanvangstijd": "2026-10-01T10:00:00+02:00",
+  "Eindtijd": "2026-10-01T10:00:00+02:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng verslag (wetsvoorstel)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37022, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18819&did=2026D59011"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04849",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -16253,6 +17841,157 @@
   ]
  },
  {
+  "Id": "986b648c-b278-4eb5-888a-a1698234ca54",
+  "Nummer": "2026A05267",
+  "Soort": "Plenair debat (tweeminutendebat)",
+  "Onderwerp": "Tweeminutendebat Staatsdeelnemingen (CD 18/6)",
+  "Datum": "2026-09-22T18:10:00+02:00",
+  "Aanvangstijd": "2026-09-22T18:10:00+02:00",
+  "Eindtijd": "2026-09-22T18:25:00+02:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": "Toegevoegd tijdens de <a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=3daffaed-f354-4822-8284-46a285b7b2ed\">Regeling van werkzaamheden</a> van 23 juni (<a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=ccdd516d-baf7-4650-904d-ae1974feda29\">CD 18/6</a>)",
+  "SoortWeergave": "Tweeminutendebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Verslag van een commissiedebat, gehouden op 18 juni 2026, over Staatsdeelnemingen",
+    "stukken": [
+     {
+      "kamerstuk": "28165-479",
+      "soort": "Verslag van een commissiedebat",
+      "datum": "2026-09-07",
+      "onderwerp": "Verslag van een commissiedebat, gehouden op 18 juni 2026, over Staatsdeelnemingen",
+      "ondertekenaar": "C.A. (Chris) Jansen",
+      "functie": "voorzitter van de vaste commissie voor Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18172&did=2026D34244"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Moties ingediend tijdens het debat:",
+    "stukken": [
+     {
+      "kamerstuk": "28165-483",
+      "soort": "Motie",
+      "datum": "2026-09-22",
+      "onderwerp": "Motie van het lid Ceulemans c.s. over de borging van kritieke Nederlandse defensiecapaciteit primair vormgeven via langjarige opdrachten en concrete bestellingen",
+      "ondertekenaar": "S. Ceulemans",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z19599&did=2026D45432"
+     },
+     {
+      "kamerstuk": "28165-484",
+      "soort": "Motie",
+      "datum": "2026-09-22",
+      "onderwerp": "Motie van het lid Bushoff over de nationale investeringsinstelling mandateren om zich ook te richten op projecten waarvan het rendement onzeker is maar die mogelijk wel de economie ten goede komen ",
+      "ondertekenaar": "T.J. Bushoff",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z19600&did=2026D45433"
+     },
+     {
+      "kamerstuk": "28165-481",
+      "soort": "Motie",
+      "datum": "2026-09-22",
+      "onderwerp": "Motie van het lid Kostić over zich ervoor inzetten dat alle relevante FMO-documenten en informatie toegankelijk worden gemaakt voor nabestaanden en benadeelden ",
+      "ondertekenaar": "I. Kostić",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z19597&did=2026D45430"
+     },
+     {
+      "kamerstuk": "28165-485",
+      "soort": "Motie",
+      "datum": "2026-09-22",
+      "onderwerp": "Motie van het lid Bushoff over publieke belangen sterker verankeren in het staatsdeelnemingenbeleid ",
+      "ondertekenaar": "T.J. Bushoff",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z19601&did=2026D45434"
+     },
+     {
+      "kamerstuk": "28165-482",
+      "soort": "Motie",
+      "datum": "2026-09-22",
+      "onderwerp": "Motie van de leden Ceulemans en Hoogeveen over gelijktijdig uitvoeren van het wetgevingstraject bij Financiën en JenV omtrent mogelijke privatisering van de Nederlandse Loterij",
+      "ondertekenaar": "S. Ceulemans",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z19598&did=2026D45431"
+     },
+     {
+      "kamerstuk": "28165-480",
+      "soort": "Motie",
+      "datum": "2026-09-22",
+      "onderwerp": "Motie van het lid Kostić over in het deelnemingenbeleid de definitie van \"publiek belang\" opnemen ",
+      "ondertekenaar": "I. Kostić",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z19596&did=2026D45429"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Heinen",
+    "functie": "minister van Financiën"
+   },
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S. Ceulemans",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T.J. Bushoff",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J. Schoonis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E.J. van der Maas",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.P.C. (Tony) van Dijck",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05267",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "e825a2ef-fb9e-4873-a375-d901cc506d06",
   "Nummer": "2026A04751",
   "Soort": "Commissiedebat",
@@ -16993,6 +18732,99 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06555",
   "sectoren": [
    "ruimte-mobiliteit"
+  ]
+ },
+ {
+  "Id": "83a36c11-40eb-43e1-9c41-e205b349406f",
+  "Nummer": "2026A04847",
+  "Soort": "Technische briefing",
+  "Onderwerp": "Pakket Belastingplan 2027",
+  "Datum": "2026-09-21T14:00:00+02:00",
+  "Aanvangstijd": "2026-09-21T14:00:00+02:00",
+  "Eindtijd": "2026-09-21T16:00:00+02:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Technische briefing",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Pakket Belastingplan 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2026-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en Constitutionele toetsing om een  adviestraject te starten voor het wetsvoorstel Wet fiscale stimulering start-ups en  scale-ups (37024) ",
+      "ondertekenaar": "T.J. Bushoff",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18830&did=2026D45852"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37023, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18820&did=2026D59016"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Eindtekst",
+      "datum": "2026-11-12",
+      "onderwerp": "37022, eindtekst",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18819&did=2026D59011"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": {
+   "naam": "C.A. (Chris) Jansen",
+   "fractie": "PVV"
+  },
+  "deelnemers": [
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Groen van Prinstererzaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04847",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -19363,6 +21195,256 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04567",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "74b8c78e-4a5f-4869-bd98-94bbda631daf",
+  "Nummer": "2026A05354",
+  "Soort": "Plenair debat (tweeminutendebat)",
+  "Onderwerp": "Tweeminutendebat Fiscaliteit (CD 24/6)",
+  "Datum": "2026-07-02T10:30:00+02:00",
+  "Aanvangstijd": "2026-07-02T10:30:00+02:00",
+  "Eindtijd": "2026-07-02T11:00:00+02:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": "Toegevoegd tijdens de <a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=95d731a1-93e7-4069-8782-7f5b7d4e9334\">Regeling van werkzaamheden</a> van 24 juni 2026 (<a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=bab18f45-cf9c-441f-96cf-fbe1e2785079\">CD 24/6</a>)",
+  "SoortWeergave": "Tweeminutendebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Moties ingediend tijdens het debat",
+    "stukken": [
+     {
+      "kamerstuk": "32140-325",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Hoogeveen over een hogere realisatie dan geraamd binnen box 3 reserveren voor verbetering van het box 3-stelsel ",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15394&did=2026D34569"
+     },
+     {
+      "kamerstuk": "32140-320",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Inge van Dijk over de effecten van het toevoegen van fiscaal adviseurs ",
+      "ondertekenaar": "I. (Inge) van Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15388&did=2026D34560"
+     },
+     {
+      "kamerstuk": "32140-332",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Vermeer over afzien van de voorgenomen afschaffing van de gerichte vrijstelling op de personeelskorting ",
+      "ondertekenaar": "H. Vermeer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15401&did=2026D34576"
+     },
+     {
+      "kamerstuk": "32140-328",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Vlottes over de voorgenomen suikertaks niet invoeren ",
+      "ondertekenaar": "E. Vlottes",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15397&did=2026D34572"
+     },
+     {
+      "kamerstuk": "32140-330",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Dekker over zich internationaal niet inzetten voor verdergaande gelijkschakeling van belastingstelsels ",
+      "ondertekenaar": "R.J. Dekker",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15399&did=2026D34574"
+     },
+     {
+      "kamerstuk": "32140-326",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Oosterhuis over verkennen hoe dubbele energiebelasting bij opslag kan worden voorkomen ",
+      "ondertekenaar": "H. Oosterhuis",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15395&did=2026D34570"
+     },
+     {
+      "kamerstuk": "32140-327",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Vlottes over de btw op voedingsmiddelen schrappen ",
+      "ondertekenaar": "E. Vlottes",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15396&did=2026D34571"
+     },
+     {
+      "kamerstuk": "32140-324",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Hoogeveen over het realisatieregime eventueel als zelfstandig wetsvoorstel indienen ",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15393&did=2026D34568"
+     },
+     {
+      "kamerstuk": "32140-321",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Stoffer c.s. over geen fiscale eindheffing voor voormalige anbi’s invoeren ",
+      "ondertekenaar": "C. Stoffer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15389&did=2026D34561"
+     },
+     {
+      "kamerstuk": "32140-331",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Dekker over de belastingen zo hervormen dat de kloof tussen eenverdieners en tweeverdieners wordt gedicht ",
+      "ondertekenaar": "R.J. Dekker",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15400&did=2026D34575"
+     },
+     {
+      "kamerstuk": "32140-319",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van de leden Stultiens en Patijn over de parlementaire behandeling betreffende de samenvoegbepaling in de arbeidskorting volledig afronden en pas dan overgaan tot publicatie",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15386&did=2026D34557"
+     },
+     {
+      "kamerstuk": "32140-329",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Vlottes over overstappen op een box 3-stelsel waarbij geen papieren winst wordt belast ",
+      "ondertekenaar": "E. Vlottes",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15398&did=2026D34573"
+     },
+     {
+      "kamerstuk": "32140-323",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Hoogeveen over personenauto’s uit de bedrijfsvoorraad van erkende dealerbedrijven uitzonderen van de pseudo-eindheffing ",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15392&did=2026D34567"
+     },
+     {
+      "kamerstuk": "32140-317",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Stultiens over opties in kaart brengen om “boxhoppen” effectief tegen te gaan ",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15384&did=2026D34555"
+     },
+     {
+      "kamerstuk": "32140-322",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Stoffer over de doelmatigheid en doeltreffendheid van de verschillende suikerbelastingvarianten inzichtelijk maken ",
+      "ondertekenaar": "C. Stoffer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15390&did=2026D34563"
+     },
+     {
+      "kamerstuk": "32140-333",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Vermeer over uitspreken dat het gelijktijdig beloven van een miljardenopbrengst, gedragsverandering en inflatieneutraliteit getuigt van fiscaal wensdenken ",
+      "ondertekenaar": "H. Vermeer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15404&did=2026D34578"
+     },
+     {
+      "kamerstuk": "32140-318",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Stultiens over eventuele meevallers bij de hersteloperatie van box 3 niet inzetten voor nieuwe belastingkortingen bij vermogenden ",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15385&did=2026D34556"
+     },
+     {
+      "kamerstuk": "32140-316",
+      "soort": "Motie",
+      "datum": "2026-07-02",
+      "onderwerp": "Motie van het lid Stultiens c.s. over er alles aan te doen om voor 1 januari 2027 de belastingwetten en begrotingswetten van begrotingsjaar 2027 in beide Kamers behandeld te hebben ",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15382&did=2026D34552"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.J. Dekker",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05354",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -22830,6 +24912,321 @@
   ]
  },
  {
+  "Id": "94ced6db-5d9f-48b9-9b2a-94a760847f83",
+  "Nummer": "2026A02607",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Fiscaliteit",
+  "Datum": "2026-06-24T09:30:00+02:00",
+  "Aanvangstijd": "2026-06-24T09:30:00+02:00",
+  "Eindtijd": "2026-06-24T13:30:00+02:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "*Indicatieve spreektijd per fractie 5 min*",
+    "stukken": []
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Reactie op de motie van het lid Vijlbrief over effectievere vormgeving van de startersvrijstelling (Kamerstuk 32140-273) en motie van de leden Postma en Welzijn over bij wetgeving toetsen of een fiscale beslissing de woondoelen in de weg zit (Kamerstuk 36637-6)",
+    "stukken": [
+     {
+      "kamerstuk": "32847-1404",
+      "soort": "Brief regering",
+      "datum": "2026-03-12",
+      "onderwerp": "Reactie op de motie van het lid Vijlbrief over effectievere vormgeving van de startersvrijstelling (Kamerstuk 32140-273) en motie van de leden Postma en Welzijn over bij wetgeving toetsen of een fiscale beslissing de woondoelen in de weg zit (Kamerstuk 36637-6)",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z04964&did=2026D11320"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Afschrift van de schriftelijke inbreng op de publieke consultatie van het concept VN-raamwerkverdrag over internationale belastingsamenwerking",
+    "stukken": [
+     {
+      "kamerstuk": "25087-360",
+      "soort": "Brief regering",
+      "datum": "2026-03-11",
+      "onderwerp": "Afschrift van de schriftelijke inbreng op de publieke consultatie van het concept VN-raamwerkverdrag over internationale belastingsamenwerking",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z04839&did=2026D11027"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Reactie op de motie van het lid Hoogeveen over onderzoeken of een overdraagbaar heffingsvrij resultaat de gesignaleerde ongelijkheid zou mitigeren",
+    "stukken": [
+     {
+      "kamerstuk": "32140-303",
+      "soort": "Brief regering",
+      "datum": "2026-04-20",
+      "onderwerp": "Reactie op de motie van het lid Hoogeveen over onderzoeken of een overdraagbaar heffingsvrij resultaat de gesignaleerde ongelijkheid zou mitigeren (Kamerstuk 32140-292) ",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z08394&did=2026D18864"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "30-jaarstermijn hypotheekrenteaftrek (HRA)",
+    "stukken": [
+     {
+      "kamerstuk": "32140-305",
+      "soort": "Brief regering",
+      "datum": "2026-05-13",
+      "onderwerp": "30-jaarstermijn hypotheekrenteaftrek (HRA)",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z09804&did=2026D22046"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Evaluatie fiscale regelingen bos-, natuur- en cultuurgrond",
+    "stukken": [
+     {
+      "kamerstuk": "36812-124",
+      "soort": "Brief regering",
+      "datum": "2026-05-11",
+      "onderwerp": "Evaluatie fiscale regelingen bos-, natuur- en cultuurgrond",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z09524&did=2026D21473"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Onderhandelingen van belastingverdragen 2026",
+    "stukken": [
+     {
+      "kamerstuk": "25087-362",
+      "soort": "Brief regering",
+      "datum": "2026-04-23",
+      "onderwerp": "Onderhandelingen van belastingverdragen 2026",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z08831&did=2026D19708"
+     }
+    ]
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Stand van zaken verbetermogelijkheden ANBI-regeling",
+    "stukken": [
+     {
+      "kamerstuk": "36812-126",
+      "soort": "Brief regering",
+      "datum": "2026-06-01",
+      "onderwerp": "Stand van zaken verbetermogelijkheden ANBI-regeling",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z11551&did=2026D26362"
+     }
+    ]
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Jaarverslag FIOD 2025",
+    "stukken": [
+     {
+      "kamerstuk": "32715-6",
+      "soort": "Brief regering",
+      "datum": "2026-05-20",
+      "onderwerp": "Jaarverslag FIOD 2025",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z10341&did=2026D23386"
+     }
+    ]
+   },
+   {
+    "volgorde": 10,
+    "onderwerp": "Stand van zaken suikerbelasting",
+    "stukken": [
+     {
+      "kamerstuk": "32140-310",
+      "soort": "Brief regering",
+      "datum": "2026-06-12",
+      "onderwerp": "Stand van zaken suikerbelasting",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z13037&did=2026D29438"
+     }
+    ]
+   },
+   {
+    "volgorde": 11,
+    "onderwerp": "Kabinetsreactie evaluatie werkkostenregeling",
+    "stukken": [
+     {
+      "kamerstuk": "36812-129",
+      "soort": "Brief regering",
+      "datum": "2026-06-12",
+      "onderwerp": "Kabinetsreactie evaluatie werkkostenregeling",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z13036&did=2026D29436"
+     }
+    ]
+   },
+   {
+    "volgorde": 12,
+    "onderwerp": "Strategische agenda 2026-2030",
+    "stukken": [
+     {
+      "kamerstuk": "32140-309",
+      "soort": "Brief regering",
+      "datum": "2026-06-10",
+      "onderwerp": "Strategische agenda 2026-2030",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z12676&did=2026D28733"
+     }
+    ]
+   },
+   {
+    "volgorde": 13,
+    "onderwerp": "Monitoring effecten verhoging kansspelbelasting",
+    "stukken": [
+     {
+      "kamerstuk": "24557-284",
+      "soort": "Brief regering",
+      "datum": "2026-06-23",
+      "onderwerp": "Monitoring effecten verhoging kansspelbelasting",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z14257&did=2026D31964"
+     }
+    ]
+   },
+   {
+    "volgorde": 14,
+    "onderwerp": "Invalshoeken negatief beoordeelde fiscale regelingen",
+    "stukken": [
+     {
+      "kamerstuk": "32140-312",
+      "soort": "Brief regering",
+      "datum": "2026-06-23",
+      "onderwerp": "Invalshoeken negatief beoordeelde fiscale regelingen",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z14259&did=2026D31968"
+     }
+    ]
+   },
+   {
+    "volgorde": 15,
+    "onderwerp": "Verbetering wetsvoorstel Wet werkelijk rendement box 3 en traject doorontwikkeling",
+    "stukken": [
+     {
+      "kamerstuk": "36748-47",
+      "soort": "Brief regering",
+      "datum": "2026-06-19",
+      "onderwerp": "Verbetering wetsvoorstel Wet werkelijk rendement box 3 en traject doorontwikkeling",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z13912&did=2026D31190"
+     }
+    ]
+   },
+   {
+    "volgorde": 16,
+    "onderwerp": "Uitvoerbaarheidstoets decentrale overheden – schrappen vrijstelling zuiveringsslib in de afvalstoffenbelasting",
+    "stukken": [
+     {
+      "kamerstuk": "36812-130",
+      "soort": "Brief regering",
+      "datum": "2026-06-16",
+      "onderwerp": "Uitvoerbaarheidstoets decentrale overheden – schrappen vrijstelling zuiveringsslib in de afvalstoffenbelasting",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z13280&did=2026D30088"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": {
+   "naam": "C.A. (Chris) Jansen",
+   "fractie": "PVV"
+  },
+  "deelnemers": [
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.J. Dekker",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Suze Groenewegzaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02607",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "bab30349-7abf-4b54-9e00-d07db2c188a7",
   "Nummer": "2026A02689",
   "Soort": "Technische briefing",
@@ -23383,6 +25780,300 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05058",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "3995b7ab-8fbb-4ae4-af0e-f528ff1e28fe",
+  "Nummer": "2026A03850",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Staatsdeelnemingen",
+  "Datum": "2026-06-18T17:00:00+02:00",
+  "Aanvangstijd": "2026-06-18T17:00:00+02:00",
+  "Eindtijd": "2026-06-18T20:00:00+02:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis.",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "*Indicatieve spreektijd per fractie 4 minuten*",
+    "stukken": []
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Voortgangsrapportage de Volksbank over 2024",
+    "stukken": [
+     {
+      "kamerstuk": "33532-100",
+      "soort": "Brief regering",
+      "datum": "2025-07-08",
+      "onderwerp": "Voortgangsrapportage de Volksbank over 2024",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14429&did=2025D32997"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Afronding verkoopprogramma ABN AMRO",
+    "stukken": [
+     {
+      "kamerstuk": "31789-120",
+      "soort": "Brief regering",
+      "datum": "2025-07-25",
+      "onderwerp": "Afronding verkoopprogramma ABN AMRtO",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14908&did=2025D34435"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Deelname NLFI aandeleninkoopprogramma ABN AMRO 2025",
+    "stukken": [
+     {
+      "kamerstuk": "31789-121",
+      "soort": "Brief regering",
+      "datum": "2025-08-06",
+      "onderwerp": "Deelname NLFI aandeleninkoopprogramma ABN AMRO 2025",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z15025&did=2025D34685"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Verkoopprogramma certificaten ABN AMRO",
+    "stukken": [
+     {
+      "kamerstuk": "31789-122",
+      "soort": "Brief regering",
+      "datum": "2025-09-09",
+      "onderwerp": "Verkoopprogramma certificaten ABN AMRO",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16392&did=2025D37903"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Crisisindicatoren KLM – vervolg evaluatie steunpakket ",
+    "stukken": [
+     {
+      "kamerstuk": "29232-70",
+      "soort": "Brief regering",
+      "datum": "2025-09-30",
+      "onderwerp": "Crisisindicatoren KLM – vervolg evaluatie steunpakket ",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18195&did=2025D42534"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Evaluatie aandeelhouderschap luchtvaartdeelnemingen: Schiphol, Air France-KLM en KLM",
+    "stukken": [
+     {
+      "kamerstuk": "28165-467",
+      "soort": "Brief regering",
+      "datum": "2025-09-30",
+      "onderwerp": "Evaluatie aandeelhouderschap luchtvaartdeelnemingen: Schiphol, Air France-KLM en KLM",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18192&did=2025D42526"
+     }
+    ]
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Verslag van een schriftelijk overleg over het Jaarverslag Beheer staatsdeelnemingen 2024 (Kamerstuk 28165-461)",
+    "stukken": [
+     {
+      "kamerstuk": "28165-468",
+      "soort": "Verslag van een schriftelijk overleg",
+      "datum": "2025-10-07",
+      "onderwerp": "Verslag van een schriftelijk overleg over Jaarverslag Beheer staatsdeelnemingen 2024 (Kamerstuk 28165-461)",
+      "ondertekenaar": "J.M. Nijhof-Leeuw",
+      "functie": "voorzitter van de vaste commissie voor Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18774&did=2025D43678"
+     }
+    ]
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Reactie op verzoek commissie over buitenlandse investeringsplannen van de Schiphol Group",
+    "stukken": [
+     {
+      "kamerstuk": "31936-1257",
+      "soort": "Brief regering",
+      "datum": "2025-12-11",
+      "onderwerp": "Reactie op verzoek commissie over buitenlandse investeringsplannen van de Schiphol Group",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z21821&did=2025D51598"
+     }
+    ]
+   },
+   {
+    "volgorde": 10,
+    "onderwerp": "Ontwikkelingen beheer staatsdeelnemingen 2026",
+    "stukken": [
+     {
+      "kamerstuk": "28165-471",
+      "soort": "Brief regering",
+      "datum": "2026-02-17",
+      "onderwerp": "Ontwikkelingen beheer staatsdeelnemingen 2026",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z03392&did=2026D07629"
+     }
+    ]
+   },
+   {
+    "volgorde": 11,
+    "onderwerp": "Deelname NLFI aandeleninkoopprogramma ABN AMRO",
+    "stukken": [
+     {
+      "kamerstuk": "31789-123",
+      "soort": "Brief regering",
+      "datum": "2026-03-27",
+      "onderwerp": "Deelname NLFI aandeleninkoopprogramma ABN AMRO",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06364&did=2026D14361"
+     }
+    ]
+   },
+   {
+    "volgorde": 12,
+    "onderwerp": "Toezegging tijdens het commissiedebat luchtvaart van 21 april 2026 over begrenzing van het beloningsbeleid voor de top bij KLM ",
+    "stukken": [
+     {
+      "kamerstuk": "29232-71",
+      "soort": "Brief regering",
+      "datum": "2026-04-29",
+      "onderwerp": "Toezegging tijdens het commissiedebat luchtvaart van 21 april 2026 over begrenzing van het beloningsbeleid voor de top bij KLM ",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z09174&did=2026D20581"
+     }
+    ]
+   },
+   {
+    "volgorde": 13,
+    "onderwerp": "Kabinetsreactie op het RLIadvies Deelnemen zonder dogma's",
+    "stukken": [
+     {
+      "kamerstuk": "28165-477",
+      "soort": "Brief regering",
+      "datum": "2026-06-08",
+      "onderwerp": "Kabinetsreactie op het RLI-advies 'Deelnemen zonder dogma's'",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z12335&did=2026D28037"
+     }
+    ]
+   },
+   {
+    "volgorde": 14,
+    "onderwerp": "Voortgangsrapportage ASN Bank over 2025",
+    "stukken": [
+     {
+      "kamerstuk": "33532-102",
+      "soort": "Brief regering",
+      "datum": "2026-06-08",
+      "onderwerp": "Voortgangsrapportage ASN Bank over 2025",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z12341&did=2026D28045"
+     }
+    ]
+   },
+   {
+    "volgorde": 15,
+    "onderwerp": "Terugblik beheer staatsdeelnemingen 2025",
+    "stukken": [
+     {
+      "kamerstuk": "28165-476",
+      "soort": "Brief regering",
+      "datum": "2026-06-08",
+      "onderwerp": "Terugblik beheer staatsdeelnemingen 2025",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z12320&did=2026D27999"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Heinen",
+    "functie": "minister van Financiën"
+   },
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": {
+   "naam": "C.A. (Chris) Jansen",
+   "fractie": "PVV"
+  },
+  "deelnemers": [
+   {
+    "naam": "J. Schoonis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E.J. van der Maas",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T.J. Bushoff",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.P.C. (Tony) van Dijck",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Thorbeckezaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A03850",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -24092,6 +26783,31 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A03946",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "ac3f6f65-bebb-4969-82e3-c5c8f9370757",
+  "Nummer": "2026A01023",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Staatsdeelnemingen (Verplaatst naar 18 juni 2026)",
+  "Datum": "2026-06-17T10:00:00+02:00",
+  "Aanvangstijd": "2026-06-17T10:00:00+02:00",
+  "Eindtijd": "2026-06-17T13:00:00+02:00",
+  "Locatie": null,
+  "Status": "Verplaatst",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis.",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A01023",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -37659,6 +40375,152 @@
   ]
  },
  {
+  "Id": "953080c4-6aea-4801-8191-6e441367ff17",
+  "Nummer": "2026A02197",
+  "Soort": "Inbreng schriftelijk overleg",
+  "Onderwerp": "Fiscale vergroening",
+  "Datum": "2026-03-26T16:00:00+01:00",
+  "Aanvangstijd": "2026-03-26T16:00:00+01:00",
+  "Eindtijd": "2026-03-26T16:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng schriftelijk overleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Onderzoek gedifferentieerde vliegbelasting",
+    "stukken": [
+     {
+      "kamerstuk": "31396-7",
+      "soort": "Brief regering",
+      "datum": "2025-06-26",
+      "onderwerp": "Onderzoek gedifferentieerde vliegbelasting",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z13375&did=2025D30224"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Verkenning belastingvermindering energiebelasting toespitsen op huishoudens",
+    "stukken": [
+     {
+      "kamerstuk": "32140-261",
+      "soort": "Brief regering",
+      "datum": "2025-06-27",
+      "onderwerp": "Verkenning belastingvermindering energiebelasting toespitsen op huishoudens",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z13510&did=2025D30581"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Beprijzingsstudies gebouwde omgeving en ETS2 industrie",
+    "stukken": [
+     {
+      "kamerstuk": "32813-1525",
+      "soort": "Brief regering",
+      "datum": "2025-07-07",
+      "onderwerp": "Beprijzingsstudies gebouwde omgeving en ETS2 industrie",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14359&did=2025D32747"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Warmtebedrijven en energiebelasting",
+    "stukken": [
+     {
+      "kamerstuk": "36576-117",
+      "soort": "Brief regering",
+      "datum": "2025-07-11",
+      "onderwerp": "Warmtebedrijven en energiebelasting",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14591&did=2025D33428"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Overzicht van fiscale prikkels om circulaire transitie te versnellen",
+    "stukken": [
+     {
+      "kamerstuk": "32140-278",
+      "soort": "Brief regering",
+      "datum": "2025-09-26",
+      "onderwerp": "Overzicht van fiscale prikkels om circulaire transitie te versnellen",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z17957&did=2025D41878"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Beprijzingstudies veehouderij/akkerbouw en glastuinbouw",
+    "stukken": [
+     {
+      "kamerstuk": "32813-1536",
+      "soort": "Brief regering",
+      "datum": "2025-09-30",
+      "onderwerp": "Beprijzingstudies veehouderij/akkerbouw en glastuinbouw",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18212&did=2025D42577"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Kabinetsreactie onderzoek energie-investeringsaftrek (EIA) en milieu-investeringsaftrek (MIA)",
+    "stukken": [
+     {
+      "kamerstuk": "36812-7",
+      "soort": "Brief regering",
+      "datum": "2025-09-30",
+      "onderwerp": "Kabinetsreactie onderzoek energie-investeringsaftrek (EIA) en milieu-investeringsaftrek (MIA)",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18202&did=2025D42547"
+     }
+    ]
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Rapport werkgroep afvalsector",
+    "stukken": [
+     {
+      "kamerstuk": "30872-322",
+      "soort": "Brief regering",
+      "datum": "2025-12-19",
+      "onderwerp": "Rapport werkgroep afvalsector",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22583&did=2025D53627"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02197",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "2454eb53-b6ed-422a-bbe6-7b3a9dd98c11",
   "Nummer": "2026A00846",
   "Soort": "Rondetafelgesprek",
@@ -37885,6 +40747,169 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A01153",
   "sectoren": [
    "water-adaptatie"
+  ]
+ },
+ {
+  "Id": "ad156296-8da5-4dcc-adee-d5ad8a62f8c5",
+  "Nummer": "2026A02150",
+  "Soort": "Plenair debat (tweeminutendebat)",
+  "Onderwerp": "Tweeminutendebat Fiscaliteit (CD 11/3)",
+  "Datum": "2026-03-26T11:45:00+01:00",
+  "Aanvangstijd": "2026-03-26T11:45:00+01:00",
+  "Eindtijd": "2026-03-26T12:25:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": "Toegevoegd tijdens de <a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=b1a3a1b5-c403-4968-88be-8cdab80fd57c&tab=1\">Regeling van werkzaamheden</a> van 12 maart 2026 (<a href=\"https://parlisweb.tweedekamer.nl/Parlis/activiteit.aspx?Id=c15142d2-8870-4c1f-86da-45203d17e42c\">CD 11/3</a>)",
+  "SoortWeergave": "Tweeminutendebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Moties ingediend tijdens het debat:",
+    "stukken": [
+     {
+      "kamerstuk": "32140-300",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van de leden Vermeer en Van der Plas over de tulpentaks niet invoeren",
+      "ondertekenaar": "H. Vermeer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06245&did=2026D14080"
+     },
+     {
+      "kamerstuk": "32140-292",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van het lid Hoogeveen over onderzoeken of een overdraagbaar heffingsvrij resultaat de gesignaleerde ongelijkheid zou mitigeren ",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06236&did=2026D14067"
+     },
+     {
+      "kamerstuk": "32140-297",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van de leden Inge van Dijk en Van Eijk over fiscale regelingen met hoge administratieve lasten inventariseren en concrete vereenvoudigingsvoorstellen uitwerken ",
+      "ondertekenaar": "I. (Inge) van Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06241&did=2026D14075"
+     },
+     {
+      "kamerstuk": "32140-295",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van de leden Stultiens en Oosterhuis over invoering van differentiatie van de verbruiksbelasting alcoholvrije dranken ",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06239&did=2026D14072"
+     },
+     {
+      "kamerstuk": "32140-298",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van de leden Inge van Dijk en Van Eijk over oplossingsrichtingen voor de onwenselijke effecten van de pseudo-eindheffing ",
+      "ondertekenaar": "I. (Inge) van Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06242&did=2026D14076"
+     },
+     {
+      "kamerstuk": "32140-296",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van het lid Stultiens over bij het komende Belastingplan de belastingen op inkomen en arbeid verlagen ",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06240&did=2026D14074"
+     },
+     {
+      "kamerstuk": "32140-299",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van het lid Vermeer over de gevolgen van grenstoerisme voor de economische activiteit nauwkeurig integraal onderzoeken ",
+      "ondertekenaar": "H. Vermeer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06244&did=2026D14079"
+     },
+     {
+      "kamerstuk": "32140-291",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van de leden Hoogeveen en Grinwis over het herijken van de raming van het budgettaire beslag",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06235&did=2026D14066"
+     },
+     {
+      "kamerstuk": "32140-294",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van de leden Grinwis en Oosterhuis over een geleidelijker transitiepad voor de youngtimerregeling",
+      "ondertekenaar": "P.A. Grinwis",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06238&did=2026D14071"
+     },
+     {
+      "kamerstuk": "32140-293",
+      "soort": "Motie",
+      "datum": "2026-03-26",
+      "onderwerp": "Motie van het lid Hoogeveen over onderzoek naar een doorschuifregeling bij huwelijksvermogensrechtelijke overgangen in box 3 ",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z06237&did=2026D14070"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "GroenLinks-PvdA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02150",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -38640,6 +41665,47 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A00860",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "04270597-feb8-4457-a556-4794e737e933",
+  "Nummer": "2026A02186",
+  "Soort": "Inbreng schriftelijk overleg",
+  "Onderwerp": "Evaluatie aandeelhouderschap luchtvaartdeelnemingen: Schiphol, Air France-KLM en KLM",
+  "Datum": "2026-03-19T14:00:00+01:00",
+  "Aanvangstijd": "2026-03-19T14:00:00+01:00",
+  "Eindtijd": "2026-03-19T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng schriftelijk overleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Evaluatie aandeelhouderschap luchtvaartdeelnemingen: Schiphol, Air France-KLM en KLM",
+    "stukken": [
+     {
+      "kamerstuk": "28165-467",
+      "soort": "Brief regering",
+      "datum": "2025-09-30",
+      "onderwerp": "Evaluatie aandeelhouderschap luchtvaartdeelnemingen: Schiphol, Air France-KLM en KLM",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18192&did=2025D42526"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02186",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -39591,6 +42657,47 @@
   ]
  },
  {
+  "Id": "a34c2066-23c6-47a4-b90e-cdc91c6d87f4",
+  "Nummer": "2026A01420",
+  "Soort": "Inbreng schriftelijk overleg",
+  "Onderwerp": "Overeenkomst Duitse staat deelverkoop TenneT Duitsland",
+  "Datum": "2026-03-12T14:00:00+01:00",
+  "Aanvangstijd": "2026-03-12T14:00:00+01:00",
+  "Eindtijd": "2026-03-12T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng schriftelijk overleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Overeenkomst Duitse staat deelverkoop TenneT Duitsland",
+    "stukken": [
+     {
+      "kamerstuk": "28165-470",
+      "soort": "Brief regering",
+      "datum": "2026-02-03",
+      "onderwerp": "Overeenkomst Duitse staat deelverkoop TenneT Duitsland",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z02211&did=2026D05072"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A01420",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "f4187221-97c2-461e-8ae9-54dcce87fac6",
   "Nummer": "2025A05309",
   "Soort": "Commissiedebat",
@@ -39921,6 +43028,493 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A00294",
   "sectoren": [
    "klimaat-energie"
+  ]
+ },
+ {
+  "Id": "f1eb4db8-f15b-42b5-b80b-c8cde2d6e811",
+  "Nummer": "2026A01040",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Fiscaliteit",
+  "Datum": "2026-03-11T13:00:00+01:00",
+  "Aanvangstijd": "2026-03-11T13:00:00+01:00",
+  "Eindtijd": "2026-03-11T17:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "<span style=\"font-size:12px\">Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis</span>",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": " *Indicatieve spreektijd per fractie 5 minuten*",
+    "stukken": []
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Nationale fiscaliteit",
+    "stukken": [
+     {
+      "kamerstuk": "33772-7",
+      "soort": "Brief regering",
+      "datum": "2026-01-20",
+      "onderwerp": "Onderzoek van de Universiteit Leiden naar de werking van de informatiebeschikking ",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z00936&did=2026D02237"
+     },
+     {
+      "kamerstuk": "32813-1536",
+      "soort": "Brief regering",
+      "datum": "2025-09-30",
+      "onderwerp": "Beprijzingstudies veehouderij/akkerbouw en glastuinbouw",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18212&did=2025D42577"
+     },
+     {
+      "kamerstuk": "32140-286",
+      "soort": "Brief regering",
+      "datum": "2025-12-19",
+      "onderwerp": "Reactie op verzoek commissie over het rapport \"Green and progressive tax proposals for the Netherlands\" van Oxfam Novib en Milieudefensie",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22586&did=2025D53632"
+     },
+     {
+      "kamerstuk": "32140-280",
+      "soort": "Brief regering",
+      "datum": "2025-09-26",
+      "onderwerp": "Vereenvoudiging n.a.v. moties en de handreiking ‘Ritme in vereenvoudiging’",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z17988&did=2025D41965"
+     },
+     {
+      "kamerstuk": "32140-277",
+      "soort": "Brief regering",
+      "datum": "2025-09-23",
+      "onderwerp": "Digitaledienstenbelastingen",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z17624&did=2025D41203"
+     },
+     {
+      "kamerstuk": "31125-142",
+      "soort": "Brief regering",
+      "datum": "2025-08-29",
+      "onderwerp": "Kabinetsvisie op de motie van het lid Teunissen c.s. over een grondslag creëren voor een belasting op overwinsten van de wapenindustrie (Kamerstuk 28676-543)",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z15592&did=2025D36063"
+     },
+     {
+      "kamerstuk": "32140-261",
+      "soort": "Brief regering",
+      "datum": "2025-06-27",
+      "onderwerp": "Verkenning belastingvermindering energiebelasting toespitsen op huishoudens",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z13510&did=2025D30581"
+     },
+     {
+      "kamerstuk": "32140-288",
+      "soort": "Brief regering",
+      "datum": "2026-01-12",
+      "onderwerp": "Modernisering forfaits gebaseerd op de rente en levensverwachting in de schenk- en erfbelasting",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z00303&did=2026D00752"
+     },
+     {
+      "kamerstuk": "32140-186",
+      "soort": "Brief regering",
+      "datum": "2024-04-26",
+      "onderwerp": "Contourenbrief gedifferentieerde verbruiksbelasting van alcoholvrije dranken op basis van suikergehalte",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z07639&did=2024D17569"
+     },
+     {
+      "kamerstuk": "36602-162",
+      "soort": "Brief regering",
+      "datum": "2025-07-10",
+      "onderwerp": "Moties en toezegging inzake overdrachtsbelasting",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14500&did=2025D33176"
+     },
+     {
+      "kamerstuk": "32813-1525",
+      "soort": "Brief regering",
+      "datum": "2025-07-07",
+      "onderwerp": "Beprijzingsstudies gebouwde omgeving en ETS2 industrie",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14359&did=2025D32747"
+     },
+     {
+      "kamerstuk": "31066-1513",
+      "soort": "Brief regering",
+      "datum": "2025-10-06",
+      "onderwerp": "Stand van zaken belastingheffing over de Bijzondere Invaliditeitsverhoging (BIV)",
+      "ondertekenaar": "G.P. Tuinman",
+      "functie": "staatssecretaris van Defensie",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18726&did=2025D43512"
+     },
+     {
+      "kamerstuk": "32140-268",
+      "soort": "Brief regering",
+      "datum": "2025-07-11",
+      "onderwerp": "Vervolg omzetting verbruiksbelasting alcoholvrije dranken en tegemoetkoming toezeggingen",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14620&did=2025D33513"
+     },
+     {
+      "kamerstuk": "32140-187",
+      "soort": "Brief regering",
+      "datum": "2024-05-14",
+      "onderwerp": "Oplevering onderzoek naar de mogelijkheden voor een brede suikerbelasting op voedingsmiddelen",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z08188&did=2024D19017"
+     },
+     {
+      "kamerstuk": "32140-287",
+      "soort": "Brief regering",
+      "datum": "2026-01-12",
+      "onderwerp": "Evaluatie verlaagd tarief kleine brouwerijen",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z00278&did=2026D00678"
+     },
+     {
+      "kamerstuk": "36812-117",
+      "soort": "Brief regering",
+      "datum": "2026-01-12",
+      "onderwerp": "Overwogen opties voor dekking van het arrest van de Hoge Raad van 21 maart 2025 in de liquidatieverliesregeling",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z00304&did=2026D00758"
+     },
+     {
+      "kamerstuk": "32140-284",
+      "soort": "Brief regering",
+      "datum": "2025-12-08",
+      "onderwerp": "Handreiking ''Kiezen voor vereenvoudiging'' van de IBTD",
+      "ondertekenaar": "E. Heinen",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z21432&did=2025D50694"
+     },
+     {
+      "kamerstuk": "32140-281",
+      "soort": "Brief regering",
+      "datum": "2025-10-15",
+      "onderwerp": "Onderzoek naar mispercepties van marginale druk en arbeidsaanbod",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18977&did=2025D44233"
+     },
+     {
+      "kamerstuk": "31066-1524",
+      "soort": "Brief regering",
+      "datum": "2025-12-17",
+      "onderwerp": "Onderzoek verschillen commerciële en fiscale jaarrekeningen",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22288&did=2025D52715"
+     },
+     {
+      "kamerstuk": "32140-278",
+      "soort": "Brief regering",
+      "datum": "2025-09-26",
+      "onderwerp": "Overzicht van fiscale prikkels om circulaire transitie te versnellen",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z17957&did=2025D41878"
+     },
+     {
+      "kamerstuk": "36812-7",
+      "soort": "Brief regering",
+      "datum": "2025-09-30",
+      "onderwerp": "Kabinetsreactie onderzoek energie-investeringsaftrek (EIA) en milieu-investeringsaftrek (MIA)",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18202&did=2025D42547"
+     },
+     {
+      "kamerstuk": "36600-IX-46",
+      "soort": "Brief regering",
+      "datum": "2025-07-01",
+      "onderwerp": "Kabinetsreactie ANBI-evaluatie ANBI- en SBBI-regelingen",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z13840&did=2025D31379"
+     },
+     {
+      "kamerstuk": "36706-28",
+      "soort": "Brief regering",
+      "datum": "2025-12-18",
+      "onderwerp": "Voortgang tegenbewijsregeling box 3",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22472&did=2025D53266"
+     },
+     {
+      "kamerstuk": "32893-7",
+      "soort": "Brief regering",
+      "datum": "2025-06-27",
+      "onderwerp": "IMF rapport fiscale stelsel BES-eilanden",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z13524&did=2025D30617"
+     },
+     {
+      "kamerstuk": "30872-322",
+      "soort": "Brief regering",
+      "datum": "2025-12-19",
+      "onderwerp": "Rapport werkgroep afvalsector",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22583&did=2025D53627"
+     },
+     {
+      "kamerstuk": "36812-116",
+      "soort": "Brief regering",
+      "datum": "2025-12-16",
+      "onderwerp": "Toezegging overgangstermijn versoberen youngtimerregeling",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22173&did=2025D52465"
+     },
+     {
+      "kamerstuk": "35928-12",
+      "soort": "Brief regering",
+      "datum": "2022-12-09",
+      "onderwerp": "Reactie op verzoek commissie over een Kabinetsreactie op de voorstellen van CNV over werknemersparticipatie",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2022Z24777&did=2022D53215"
+     },
+     {
+      "kamerstuk": "31396-7",
+      "soort": "Brief regering",
+      "datum": "2025-06-26",
+      "onderwerp": "Onderzoek gedifferentieerde vliegbelasting",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z13375&did=2025D30224"
+     },
+     {
+      "kamerstuk": "32140-258",
+      "soort": "Brief regering",
+      "datum": "2025-06-06",
+      "onderwerp": "Heroverweging Wet Stroomlijnen (Fiscale vereenvoudigingswet 2017)",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z11601&did=2025D26654"
+     },
+     {
+      "kamerstuk": "29544-1306",
+      "soort": "Brief regering",
+      "datum": "2025-11-28",
+      "onderwerp": "Stand van zaken uitvoering van de motie van het lid Saris over een wetsvoorstel voorleggen waarin de 30%-regeling wordt versoberd (Kamerstuk 29544-1298)",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20825&did=2025D49062"
+     },
+     {
+      "kamerstuk": "36602-159",
+      "soort": "Brief regering",
+      "datum": "2025-06-12",
+      "onderwerp": "Uitvoering motie van het lid Van Eijk over onderzoek naar knelpunten rondom het fonds voor gemene rekening (Kamerstuk 36602-105)",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z11986&did=2025D27378"
+     },
+     {
+      "kamerstuk": "36602-163",
+      "soort": "Brief regering",
+      "datum": "2025-07-10",
+      "onderwerp": "Evaluatie werkkostenregeling",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14526&did=2025D33245"
+     },
+     {
+      "kamerstuk": "36576-117",
+      "soort": "Brief regering",
+      "datum": "2025-07-11",
+      "onderwerp": "Warmtebedrijven en energiebelasting",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14591&did=2025D33428"
+     },
+     {
+      "kamerstuk": "32140-267",
+      "soort": "Brief regering",
+      "datum": "2025-07-11",
+      "onderwerp": "Afgeronde evaluaties fiscale regelingen",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14590&did=2025D33425"
+     },
+     {
+      "kamerstuk": "32140-201",
+      "soort": "Verslag van een schriftelijk overleg",
+      "datum": "2024-06-24",
+      "onderwerp": "Verslag van een schriftelijk overleg over de contourenbrief gedifferentieerde verbruiksbelasting van alcoholvrije dranken op basis van suikergehalte (Kamerstuk 32140-186)",
+      "ondertekenaar": "J.Z.C.M. Tielen",
+      "functie": "voorzitter van de vaste commissie voor Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z11163&did=2024D26619"
+     },
+     {
+      "kamerstuk": "31066-1510",
+      "soort": "Brief regering",
+      "datum": "2025-07-21",
+      "onderwerp": "Fiscale geheimhoudingsplicht",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14813&did=2025D34120"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Internationale fiscaliteit",
+    "stukken": [
+     {
+      "kamerstuk": "25087-356",
+      "soort": "Brief regering",
+      "datum": "2025-12-15",
+      "onderwerp": "Vervolgonderzoek trailing tax",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22075&did=2025D52213"
+     },
+     {
+      "kamerstuk": "25087-357",
+      "soort": "Brief regering",
+      "datum": "2025-12-15",
+      "onderwerp": "Monitoring van de effecten van de aanpak van belastingontwijking",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22093&did=2025D52254"
+     },
+     {
+      "kamerstuk": "25087-358",
+      "soort": "Brief regering",
+      "datum": "2025-12-17",
+      "onderwerp": "Concept VN-raamwerkverdrag internationale belastingsamenwerking",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z22311&did=2025D52772"
+     },
+     {
+      "kamerstuk": "25087-349",
+      "soort": "Brief regering",
+      "datum": "2025-08-04",
+      "onderwerp": "Afschrift van de schriftelijke inbreng namens het Koninkrijk der Nederlanden op 21 juli jl. op de publieke consultatie van de issues notes voor een VN-raamwerkverdrag over internationale belastingsamenwerking",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z15007&did=2025D34654"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Vervolgonderzoek evaluatie gebruikelijkloonregeling",
+    "stukken": [
+     {
+      "kamerstuk": "36812-119",
+      "soort": "Brief regering",
+      "datum": "2026-03-03",
+      "onderwerp": "Vervolgonderzoek evaluatie gebruikelijkloonregeling",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z04191&did=2026D09641"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Evaluatie jaarlijkse ouder-kindschenkvrijstelling",
+    "stukken": [
+     {
+      "kamerstuk": "31066-1530",
+      "soort": "Brief regering",
+      "datum": "2026-03-02",
+      "onderwerp": "Evaluatie jaarlijkse ouder-kindschenkvrijstelling",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z04052&did=2026D09274"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Eerenberg",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": {
+   "naam": "T.M.T. van der Lee",
+   "fractie": "GroenLinks-PvdA"
+  },
+  "deelnemers": [
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "GroenLinks-PvdA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.J. Dekker",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "G. Markuszower",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Aletta Jacobszaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A01040",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -40964,6 +44558,31 @@
   ]
  },
  {
+  "Id": "bc4a1387-e9df-4814-85f1-c23346eff51d",
+  "Nummer": "2025A08354",
+  "Soort": "Wetgevingsoverleg",
+  "Onderwerp": "Wet implementatie richtlijn duurzaamheidsrapportering (Tot nader order uitgesteld)",
+  "Datum": "2026-03-02T10:00:00+01:00",
+  "Aanvangstijd": "2026-03-02T10:00:00+01:00",
+  "Eindtijd": "2026-03-02T15:00:00+01:00",
+  "Locatie": null,
+  "Status": "Verplaatst",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Wetgevingsoverleg",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A08354",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "6eec9c8a-681a-464c-86b8-b062dc49e194",
   "Nummer": "2026A00662",
   "Soort": "Inbreng verslag (wetsvoorstel)",
@@ -41234,6 +44853,31 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A00951",
   "sectoren": [
    "ruimte-mobiliteit"
+  ]
+ },
+ {
+  "Id": "165aa380-7ea9-41e3-8395-28c7e378ee0a",
+  "Nummer": "2025A08394",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Fiscaliteit (Verplaatst naar 11 maart 2026)",
+  "Datum": "2026-02-25T13:00:00+01:00",
+  "Aanvangstijd": "2026-02-25T13:00:00+01:00",
+  "Eindtijd": "2026-02-25T17:00:00+01:00",
+  "Locatie": null,
+  "Status": "Verplaatst",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "<span style=\"font-size:12px\">Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis</span>",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A08394",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -43034,6 +46678,31 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A04660",
   "sectoren": [
    "natuur-stikstof-landbouw"
+  ]
+ },
+ {
+  "Id": "cd4d13b7-e40d-4421-9c76-51d637d92f42",
+  "Nummer": "2025A06150",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Staatsdeelnemingen (Verplaatst naar 17 juni 2026)",
+  "Datum": "2026-02-04T10:00:00+01:00",
+  "Aanvangstijd": "2026-02-04T10:00:00+01:00",
+  "Eindtijd": "2026-02-04T13:00:00+01:00",
+  "Locatie": null,
+  "Status": "Verplaatst",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis.",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A06150",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -48511,6 +52180,47 @@
   ]
  },
  {
+  "Id": "2ca7807c-7889-4fa7-9c9d-dd4223c91dae",
+  "Nummer": "2025A08373",
+  "Soort": "Inbreng schriftelijk overleg",
+  "Onderwerp": "Fiche: Herziening Verordening Duurzaam Beleggen",
+  "Datum": "2026-01-13T14:00:00+01:00",
+  "Aanvangstijd": "2026-01-13T14:00:00+01:00",
+  "Eindtijd": "2026-01-13T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng schriftelijk overleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Fiche: Herziening Verordening Duurzaam Beleggen",
+    "stukken": [
+     {
+      "kamerstuk": "22112-4218",
+      "soort": "Brief regering",
+      "datum": "2025-12-05",
+      "onderwerp": "Fiche: Herziening Verordening Duurzaam Beleggen",
+      "ondertekenaar": "D.M. van Weel",
+      "functie": "minister van Buitenlandse Zaken",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z21321&did=2025D50378"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A08373",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "e8fc1dd5-4a5b-4378-aa5c-f9c0774871b8",
   "Nummer": "2025A07633",
   "Soort": "Plenair debat (tweeminutendebat)",
@@ -51549,6 +55259,701 @@
   ]
  },
  {
+  "Id": "92a693ba-0aaf-456b-8f26-aa791e498d11",
+  "Nummer": "2025A07146",
+  "Soort": "Plenair debat (wetgeving)",
+  "Onderwerp": "Pakket Belastingplan 2026 (antwoord 1e termijn + rest)",
+  "Datum": "2025-11-25T16:35:00+01:00",
+  "Aanvangstijd": "2025-11-25T16:35:00+01:00",
+  "Eindtijd": "2025-11-25T21:33:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Plenair debat (wetgeving)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Wijziging van enkele belastingwetten en enige andere wetten (Belastingplan 2026)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van enkele belastingwetten en enige andere wetten (Belastingplan 2026)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16924&did=2025D52710"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Wijziging van enkele belastingwetten en enige andere wetten (Overige fiscale maatregelen 2026)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van enkele belastingwetten en enige andere wetten (Overige fiscale maatregelen 2026)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16926&did=2025D52705"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Wijziging van de Wet belastingen op milieugrondslag in verband met differentiatie van het tarief van de vliegbelasting (Wet differentiatie vliegbelasting)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Wet belastingen op milieugrondslag in verband met differentiatie van het tarief van de vliegbelasting (Wet differentiatie vliegbelasting)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16934&did=2025D52706"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Wijziging van de Algemene wet inzake rijksbelastingen en enkele andere wetten in verband met het stroomlijnen van het fiscale inzagerecht (Wet stroomlijning fiscaal inzagerecht)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Algemene wet inzake rijksbelastingen en enkele andere wetten in verband met het stroomlijnen van het fiscale inzagerecht (Wet stroomlijning fiscaal inzagerecht)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16933&did=2025D52707"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Tweede wijziging van de Wet minimumbelasting 2024 in verband met de in december 2023, juni 2024 en januari 2025 internationaal overeengekomen administratieve richtsnoeren en een aantal overige technische wijzigingen (Tweede wet aanpassing Wet minimumbelasting 2024)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Tweede wijziging van de Wet minimumbelasting 2024 in verband met de in december 2023, juni 2024 en januari 2025 internationaal overeengekomen administratieve richtsnoeren en een aantal overige technische wijzigingen (Tweede wet aanpassing Wet minimumbelasting 2024)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16939&did=2025D52708"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Wijziging van de Wet op de internationale bijstandsverlening bij de heffing van belastingen en de Wet minimumbelasting 2024 in verband met de implementatie van Richtlijn (EU) 2025/872 van de Raad van 14 april 2025 tot wijziging van Richtlijn 2011/16/EU betreffende de administratieve samenwerking op het gebied van de belastingen (Wet implementatie EU-richtlijn gegevensuitwisseling minimumbelasting)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Wet op de internationale bijstandsverlening bij de heffing van belastingen en de Wet minimumbelasting 2024 in verband met de implementatie van Richtlijn (EU) 2025/872 van de Raad van 14 april 2025 tot wijziging van Richtlijn 2011/16/EU betreffende de administratieve samenwerking op het gebied van de belastingen (Wet implementatie EU-richtlijn gegevensuitwisseling minimumbelasting)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16941&did=2025D52709"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Rapport \"Verantwoord belasten; Voor een beter belastingbeleid\"",
+    "stukken": [
+     {
+      "kamerstuk": "36812-19",
+      "soort": "Brief Algemene Rekenkamer",
+      "datum": "2025-11-04",
+      "onderwerp": "Rapport \"Verantwoord belasten; Voor een beter belastingbeleid\"",
+      "ondertekenaar": "P.J. Duisenberg",
+      "functie": "president van de Algemene Rekenkamer",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z19455&did=2025D45536"
+     }
+    ]
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Wijziging van de Wet milieubeheer in verband met de nadere operationalisering van het mechanisme voor een koolstofcorrectie aan de grens",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2025-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en constitutionele toetsing om een adviestraject te starten voor het wetsvoorstel Wijziging van de Wet milieubeheer in verband met de nadere operationalisering van het mechanisme voor een koolstofcorrectie aan de grens (36819)",
+      "ondertekenaar": "M. van Nispen",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16943&did=2025D41492"
+     }
+    ]
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Schriftelijke antwoorden op een deel van de vragen die zijn gesteld tijdens het wetgevingsoverleg van maandag 17 november 2025 over het pakket Belastingplan 2026",
+    "stukken": [
+     {
+      "kamerstuk": "36812-34",
+      "soort": "Brief regering",
+      "datum": "2025-11-18",
+      "onderwerp": "Schriftelijke antwoorden op een deel van de vragen die zijn gesteld tijdens het wetgevingsoverleg van maandag 17 november 2025 over het pakket Belastingplan 2026",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z19996&did=2025D47011"
+     }
+    ]
+   },
+   {
+    "volgorde": 10,
+    "onderwerp": "Moties ingediend tijdens het debat",
+    "stukken": [
+     {
+      "kamerstuk": "36812-89",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van de leden Frederik Jansen en Vermeer over de meest recente verhoging van de accijns op tabak terugdraaien ",
+      "ondertekenaar": "F.J.H. (Frederik) Jansen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20503&did=2025D48289"
+     },
+     {
+      "kamerstuk": "36812-99",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Jimmy Dijk over het niet doorvoeren van de btw-verhoging op logies ",
+      "ondertekenaar": "J.P. (Jimmy) Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20514&did=2025D48300"
+     },
+     {
+      "kamerstuk": "36812-88",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Hoogeveen over het onderzoek naar de effecten van de vliegbelasting actualiseren",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20502&did=2025D48288"
+     },
+     {
+      "kamerstuk": "36812-93",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Teunissen over een eenduidige, juridische houdbare en uitvoerbare definitie van huishoudapparaten ",
+      "ondertekenaar": "C. Teunissen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20508&did=2025D48294"
+     },
+     {
+      "kamerstuk": "36812-96",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Grinwis c.s. over alsnog een mkb-toets en een ATR-advies betreffende invoering van een pseudo-eindheffing voor fossiele leaseauto's ",
+      "ondertekenaar": "P.A. Grinwis",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20511&did=2025D48297"
+     },
+     {
+      "kamerstuk": "36812-76",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Vlottes over de btw op boodschappen op 0% zetten en dit dekken door het budget voor ontwikkelingshulp te schrappen ",
+      "ondertekenaar": "E. Vlottes",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20490&did=2025D48276"
+     },
+     {
+      "kamerstuk": "36812-80",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Van Eijk  c.s. over binnen de verdere implementatie van de Wmebv hoge prioriteit geven aan de digitale bezwaarfase",
+      "ondertekenaar": "W.P.J. van Eijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20494&did=2025D48280"
+     },
+     {
+      "kamerstuk": "36812-90",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Frederik Jansen over de expatregeling versneld afbouwen ",
+      "ondertekenaar": "F.J.H. (Frederik) Jansen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20505&did=2025D48291"
+     },
+     {
+      "kamerstuk": "36812-81",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van de leden Stultiens en Jimmy Dijk over structureel in de gaten houden of een nieuwe buffelboete dreigt te ontstaan en indien nodig ingrijpen ",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20495&did=2025D48281"
+     },
+     {
+      "kamerstuk": "36812-79",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Van Eijk  c.s. over krachtig inzetten op een gelijk speelveld en behoud van de concurrentiekracht van het Europese en Nederlandse bedrijfsleven ",
+      "ondertekenaar": "W.P.J. van Eijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20493&did=2025D48279"
+     },
+     {
+      "kamerstuk": "36812-82",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Stultiens over met een voorstel komen om de taakstelling fiscale regelingen en constructies alsnog te halen ",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20496&did=2025D48282"
+     },
+     {
+      "kamerstuk": "36812-98",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Jimmy Dijk over het afschaffen van het belastingvoordeel voor private equitymanagers en een oplossing zoeken voor start-ups en scale-ups ",
+      "ondertekenaar": "J.P. (Jimmy) Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20513&did=2025D48299"
+     },
+     {
+      "kamerstuk": "36812-86",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Hoogeveen over een beleidskader met de voorwaarden voor en maximale bandbreedte van het beperken van de tabelcorrectiefactor ",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20500&did=2025D48286"
+     },
+     {
+      "kamerstuk": "36812-85",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Inge van Dijk c.s. over een voorstel voor het inpassen van de structurele indexering van de schijfgrens binnen het budget van de Wbso ",
+      "ondertekenaar": "I. (Inge) van Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20499&did=2025D48285"
+     },
+     {
+      "kamerstuk": "36812-87",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Hoogeveen over in de MFK-onderhandelingen uitdragen dat uitbreiding van Europese eigen middelen voor Nederland geen optie is ",
+      "ondertekenaar": "M.P. Hoogeveen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20501&did=2025D48287"
+     },
+     {
+      "kamerstuk": "36812-91",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Teunissen over de btw op diergeneeskundige zorg verlagen naar 0% ",
+      "ondertekenaar": "C. Teunissen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20506&did=2025D48292"
+     },
+     {
+      "kamerstuk": "36812-84",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Inge van Dijk c.s. over de Wet stroomlijning fiscaal inzagerecht verder uitwerken met de mogelijkheid tot aanvullende inzage in het fiscaal dossier ",
+      "ondertekenaar": "I. (Inge) van Dijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20498&did=2025D48284"
+     },
+     {
+      "kamerstuk": "36812-77",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Van Eijk  c.s. over een oplossing uitwerken voor de verzilveringsproblemen in de Wbso ",
+      "ondertekenaar": "W.P.J. van Eijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20491&did=2025D48277"
+     },
+     {
+      "kamerstuk": "36812-94",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Grinwis c.s. over een nationale handling fee voor pakketjes van buiten de Europese Unie",
+      "ondertekenaar": "P.A. Grinwis",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20509&did=2025D48295"
+     },
+     {
+      "kamerstuk": "36812-78",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van de leden Van Eijk  en Grinwis over het inzagerecht conform de Wet stroomlijning fiscaal inzagerecht in werking laten treden ",
+      "ondertekenaar": "W.P.J. van Eijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20492&did=2025D48278"
+     },
+     {
+      "kamerstuk": "36812-95",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Grinwis c.s. over een onderzoek naar de bijdrage van de fiscaliteit aan meer reparatie van huishoudelijke apparaten en andere productgroepen ",
+      "ondertekenaar": "P.A. Grinwis",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20510&did=2025D48296"
+     },
+     {
+      "kamerstuk": "36812-92",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Teunissen over aansluiten bij de internationale coalitie van landen voor het extra belasten van premiumvluchten en privéjets ",
+      "ondertekenaar": "C. Teunissen",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20507&did=2025D48293"
+     },
+     {
+      "kamerstuk": "36812-83",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Stultiens c.s. over de budgettaire opgave bij de aanstaande voorjaarsbesluitvorming zo veel mogelijk invullen met alternatieve maatregelen ",
+      "ondertekenaar": "L.C.J. Stultiens",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20497&did=2025D48283"
+     },
+     {
+      "kamerstuk": "36812-97",
+      "soort": "Motie",
+      "datum": "2025-11-25",
+      "onderwerp": "Motie van het lid Grinwis c.s. over fiscale knelpunten in de samenwerking tussen melkveehouders en akkerbouwers wegnemen ",
+      "ondertekenaar": "P.A. Grinwis",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20512&did=2025D48298"
+     }
+    ]
+   },
+   {
+    "volgorde": 11,
+    "onderwerp": "Ingetrokken amendement",
+    "stukken": [
+     {
+      "kamerstuk": "36812-54",
+      "soort": "Amendement",
+      "datum": "2025-11-24",
+      "onderwerp": "Amendement van het lid Van Eijk  over de pseudo-eindheffing laten aansluiten op de periode van daadwerkelijke ter beschikkingstelling",
+      "ondertekenaar": "W.P.J. van Eijk",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20369&did=2025D48005"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E.H.J. Heijnen",
+    "functie": "staatssecretaris van Financiën"
+   },
+   {
+    "naam": "S.T.M. Hermans",
+    "functie": "minister van Klimaat en Groene Groei"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "GroenLinks-PvdA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "F.J.H. (Frederik) Jansen",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A07146",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
+  "Id": "df9d3584-ef6d-4515-8cab-dc0c9c23690a",
+  "Nummer": "2025A06529",
+  "Soort": "Plenair debat (wetgeving)",
+  "Onderwerp": "Pakket Belastingplan 2026 (1e termijn Kamer)",
+  "Datum": "2025-11-20T13:36:00+01:00",
+  "Aanvangstijd": "2025-11-20T13:36:00+01:00",
+  "Eindtijd": "2025-11-20T17:15:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Plenair debat (wetgeving)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Wijziging van enkele belastingwetten en enige andere wetten (Belastingplan 2026)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van enkele belastingwetten en enige andere wetten (Belastingplan 2026)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16924&did=2025D52710"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Wijziging van enkele belastingwetten en enige andere wetten (Overige fiscale maatregelen 2026)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van enkele belastingwetten en enige andere wetten (Overige fiscale maatregelen 2026)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16926&did=2025D52705"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Wijziging van de Wet belastingen op milieugrondslag in verband met differentiatie van het tarief van de vliegbelasting (Wet differentiatie vliegbelasting)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Wet belastingen op milieugrondslag in verband met differentiatie van het tarief van de vliegbelasting (Wet differentiatie vliegbelasting)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16934&did=2025D52706"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Wijziging van de Algemene wet inzake rijksbelastingen en enkele andere wetten in verband met het stroomlijnen van het fiscale inzagerecht (Wet stroomlijning fiscaal inzagerecht)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Algemene wet inzake rijksbelastingen en enkele andere wetten in verband met het stroomlijnen van het fiscale inzagerecht (Wet stroomlijning fiscaal inzagerecht)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16933&did=2025D52707"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Tweede wijziging van de Wet minimumbelasting 2024 in verband met de in december 2023, juni 2024 en januari 2025 internationaal overeengekomen administratieve richtsnoeren en een aantal overige technische wijzigingen (Tweede wet aanpassing Wet minimumbelasting 2024)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Tweede wijziging van de Wet minimumbelasting 2024 in verband met de in december 2023, juni 2024 en januari 2025 internationaal overeengekomen administratieve richtsnoeren en een aantal overige technische wijzigingen (Tweede wet aanpassing Wet minimumbelasting 2024)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16939&did=2025D52708"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Wijziging van de Wet op de internationale bijstandsverlening bij de heffing van belastingen en de Wet minimumbelasting 2024 in verband met de implementatie van Richtlijn (EU) 2025/872 van de Raad van 14 april 2025 tot wijziging van Richtlijn 2011/16/EU betreffende de administratieve samenwerking op het gebied van de belastingen (Wet implementatie EU-richtlijn gegevensuitwisseling minimumbelasting)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Wet op de internationale bijstandsverlening bij de heffing van belastingen en de Wet minimumbelasting 2024 in verband met de implementatie van Richtlijn (EU) 2025/872 van de Raad van 14 april 2025 tot wijziging van Richtlijn 2011/16/EU betreffende de administratieve samenwerking op het gebied van de belastingen (Wet implementatie EU-richtlijn gegevensuitwisseling minimumbelasting)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16941&did=2025D52709"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Wijziging van de Wet milieubeheer in verband met de nadere operationalisering van het mechanisme voor een koolstofcorrectie aan de grens",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2025-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en constitutionele toetsing om een adviestraject te starten voor het wetsvoorstel Wijziging van de Wet milieubeheer in verband met de nadere operationalisering van het mechanisme voor een koolstofcorrectie aan de grens (36819)",
+      "ondertekenaar": "M. van Nispen",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16943&did=2025D41492"
+     }
+    ]
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Rapport \"Verantwoord belasten; Voor een beter belastingbeleid\"",
+    "stukken": [
+     {
+      "kamerstuk": "36812-19",
+      "soort": "Brief Algemene Rekenkamer",
+      "datum": "2025-11-04",
+      "onderwerp": "Rapport \"Verantwoord belasten; Voor een beter belastingbeleid\"",
+      "ondertekenaar": "P.J. Duisenberg",
+      "functie": "president van de Algemene Rekenkamer",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z19455&did=2025D45536"
+     }
+    ]
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Schriftelijke antwoorden op een deel van de vragen die zijn gesteld tijdens het wetgevingsoverleg van maandag 17 november 2025 over het pakket Belastingplan 2026",
+    "stukken": [
+     {
+      "kamerstuk": "36812-34",
+      "soort": "Brief regering",
+      "datum": "2025-11-18",
+      "onderwerp": "Schriftelijke antwoorden op een deel van de vragen die zijn gesteld tijdens het wetgevingsoverleg van maandag 17 november 2025 over het pakket Belastingplan 2026",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z19996&did=2025D47011"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E.H.J. Heijnen",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "GroenLinks-PvdA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T.H.P. Baudet",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.A. Ergin",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A06529",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
   "Id": "fe0877be-383e-4134-b165-b6cf1830cdb4",
   "Nummer": "2025A03978",
   "Soort": "Commissiedebat",
@@ -51592,6 +55997,383 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A03978",
   "sectoren": [
    "circulair-vervuiling"
+  ]
+ },
+ {
+  "Id": "93c67a95-7e18-4b1b-98b7-0970e5676f7f",
+  "Nummer": "2025A06710",
+  "Soort": "Wetgevingsoverleg",
+  "Onderwerp": "Pakket Belastingplan 2026  (eerste termijn Regering plus tweede termijn Kamer en regering)",
+  "Datum": "2025-11-19T11:00:00+01:00",
+  "Aanvangstijd": "2025-11-19T11:00:00+01:00",
+  "Eindtijd": "2025-11-19T23:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Wetgevingsoverleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Aanbieding pakket Belastingplan 2026",
+    "stukken": [
+     {
+      "kamerstuk": "36812-6",
+      "soort": "Brief regering",
+      "datum": "2025-09-17",
+      "onderwerp": "Aanbieding pakket Belastingplan 2026",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z17048&did=2025D39716"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Pakket Belastingplan 2026 ",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Wet belastingen op milieugrondslag in verband met differentiatie van het tarief van de vliegbelasting (Wet differentiatie vliegbelasting)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16934&did=2025D52706"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Wet op de internationale bijstandsverlening bij de heffing van belastingen en de Wet minimumbelasting 2024 in verband met de implementatie van Richtlijn (EU) 2025/872 van de Raad van 14 april 2025 tot wijziging van Richtlijn 2011/16/EU betreffende de administratieve samenwerking op het gebied van de belastingen (Wet implementatie EU-richtlijn gegevensuitwisseling minimumbelasting)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16941&did=2025D52709"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Tweede wijziging van de Wet minimumbelasting 2024 in verband met de in december 2023, juni 2024 en januari 2025 internationaal overeengekomen administratieve richtsnoeren en een aantal overige technische wijzigingen (Tweede wet aanpassing Wet minimumbelasting 2024)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16939&did=2025D52708"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2025-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en constitutionele toetsing om een adviestraject te starten voor het wetsvoorstel Wijziging van de Wet milieubeheer in verband met de nadere operationalisering van het mechanisme voor een koolstofcorrectie aan de grens (36819)",
+      "ondertekenaar": "M. van Nispen",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16943&did=2025D41492"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van enkele belastingwetten en enige andere wetten (Overige fiscale maatregelen 2026)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16926&did=2025D52705"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van enkele belastingwetten en enige andere wetten (Belastingplan 2026)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16924&did=2025D52710"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Algemene wet inzake rijksbelastingen en enkele andere wetten in verband met het stroomlijnen van het fiscale inzagerecht (Wet stroomlijning fiscaal inzagerecht)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16933&did=2025D52707"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Ingetrokken amendement",
+    "stukken": [
+     {
+      "kamerstuk": "36812-27",
+      "soort": "Amendement",
+      "datum": "2025-11-14",
+      "onderwerp": "Amendement van het lid Vermeer over het terugdraaien van de versobering van de oldtimerregeling",
+      "ondertekenaar": "H. Vermeer",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z19844&did=2025D46495"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Schriftelijke antwoorden op een deel van de vragen die zijn gesteld tijdens het wetgevingsoverleg van maandag 17 november 2025 over het pakket Belastingplan 2026",
+    "stukken": [
+     {
+      "kamerstuk": "36812-34",
+      "soort": "Brief regering",
+      "datum": "2025-11-18",
+      "onderwerp": "Schriftelijke antwoorden op een deel van de vragen die zijn gesteld tijdens het wetgevingsoverleg van maandag 17 november 2025 over het pakket Belastingplan 2026",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z19996&did=2025D47011"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E.H.J. Heijnen",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T.J. Bushoff",
+    "fractie": "GroenLinks-PvdA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "GroenLinks-PvdA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Thorbeckezaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A06710",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
+  "Id": "7aab9bba-60ca-4714-af60-1f7efc1bf34e",
+  "Nummer": "2025A05503",
+  "Soort": "Wetgevingsoverleg",
+  "Onderwerp": "Pakket Belastingplan 2026 (eerste termijn Kamer)",
+  "Datum": "2025-11-17T11:00:00+01:00",
+  "Aanvangstijd": "2025-11-17T11:00:00+01:00",
+  "Eindtijd": "2025-11-17T19:00:00+01:00",
+  "Locatie": null,
+  "Status": "Uitgevoerd",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Wetgevingsoverleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Aanbieding pakket Belastingplan 2026",
+    "stukken": [
+     {
+      "kamerstuk": "36812-6",
+      "soort": "Brief regering",
+      "datum": "2025-09-17",
+      "onderwerp": "Aanbieding pakket Belastingplan 2026",
+      "ondertekenaar": "E.H.J. Heijnen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z17048&did=2025D39716"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Pakket Belastingplan 2026 ",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Wet belastingen op milieugrondslag in verband met differentiatie van het tarief van de vliegbelasting (Wet differentiatie vliegbelasting)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16934&did=2025D52706"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Wet op de internationale bijstandsverlening bij de heffing van belastingen en de Wet minimumbelasting 2024 in verband met de implementatie van Richtlijn (EU) 2025/872 van de Raad van 14 april 2025 tot wijziging van Richtlijn 2011/16/EU betreffende de administratieve samenwerking op het gebied van de belastingen (Wet implementatie EU-richtlijn gegevensuitwisseling minimumbelasting)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16941&did=2025D52709"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Tweede wijziging van de Wet minimumbelasting 2024 in verband met de in december 2023, juni 2024 en januari 2025 internationaal overeengekomen administratieve richtsnoeren en een aantal overige technische wijzigingen (Tweede wet aanpassing Wet minimumbelasting 2024)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16939&did=2025D52708"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie",
+      "datum": "2025-09-24",
+      "onderwerp": "Besluit tijdelijke commissie Grondrechten en constitutionele toetsing om een adviestraject te starten voor het wetsvoorstel Wijziging van de Wet milieubeheer in verband met de nadere operationalisering van het mechanisme voor een koolstofcorrectie aan de grens (36819)",
+      "ondertekenaar": "M. van Nispen",
+      "functie": "voorzitter van de tijdelijke commissie Grondrechten en constitutionele toetsing",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16943&did=2025D41492"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van enkele belastingwetten en enige andere wetten (Overige fiscale maatregelen 2026)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16926&did=2025D52705"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van enkele belastingwetten en enige andere wetten (Belastingplan 2026)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16924&did=2025D52710"
+     },
+     {
+      "kamerstuk": null,
+      "soort": "Brief Eerste Kamer",
+      "datum": "2025-12-16",
+      "onderwerp": "Besluit Eerste Kamer inzake Wijziging van de Algemene wet inzake rijksbelastingen en enkele andere wetten in verband met het stroomlijnen van het fiscale inzagerecht (Wet stroomlijning fiscaal inzagerecht)",
+      "ondertekenaar": "Indiener/ondertekenaar n.v.t.",
+      "functie": "Functie n.v.t.",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16933&did=2025D52707"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Spreektijden per fractie",
+    "stukken": []
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E.H.J. Heijnen",
+    "functie": "staatssecretaris van Financiën"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.A. Ergin",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Oosterhuis",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "E. Vlottes",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "W.P.J. van Eijk",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.C.J. Stultiens",
+    "fractie": "GroenLinks-PvdA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Troelstrazaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A05503",
+  "sectoren": [
+   "financien"
   ]
  },
  {
@@ -52986,7 +57768,7 @@
     "onderwerp": "Reactie op verzoek commissie over centrale registratie van stalongelukken",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "28286-1487",
       "soort": "Brief regering",
       "datum": "2026-11-05",
       "onderwerp": "Reactie op verzoek commissie over centrale registratie van stalongelukken",
@@ -54077,6 +58859,351 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08339",
   "sectoren": [
    "ruimte-mobiliteit"
+  ]
+ },
+ {
+  "Id": "9b6c094c-4e6d-4047-b352-41207adb6f89",
+  "Nummer": "2023A04988",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Fiscaliteit - Milieu en Klimaat",
+  "Datum": null,
+  "Aanvangstijd": null,
+  "Eindtijd": null,
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": "Leden die wensen deel te nemen aan het commissiedebat wordt verzocht zich aan te melden via het tabblad deelnemers bij de activiteit in Parlis.",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "*Indicatieve spreektijd per fractie 4 minuten*",
+    "stukken": []
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Brieven vanaf februari 2026 (start kabinet-Jetten)",
+    "stukken": [
+     {
+      "kamerstuk": "32800-93",
+      "soort": "Brief regering",
+      "datum": "2026-06-22",
+      "onderwerp": "Stand van zaken toezeggingen autobelastingen",
+      "ondertekenaar": "E. Eerenberg",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z14023&did=2026D31448"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Brieven in het Kamerstukdossier \"Kabinetsaanpak Klimaatbeleid\" (32813) uit de periode december 2020 - juli 2023",
+    "stukken": [
+     {
+      "kamerstuk": "32813-1081",
+      "soort": "Brief regering",
+      "datum": "2022-07-01",
+      "onderwerp": "Hoofdlijnen Betalen naar Gebruik",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2022Z13846&did=2022D28577"
+     },
+     {
+      "kamerstuk": "32813-1406",
+      "soort": "Brief regering",
+      "datum": "2024-06-21",
+      "onderwerp": "Hand aan de kraan analyse 2024 - stimulering elektrische auto's",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z11102&did=2024D26452"
+     },
+     {
+      "kamerstuk": "32813-1290",
+      "soort": "Brief regering",
+      "datum": "2023-07-14",
+      "onderwerp": "Stimuleringsbeleid emissievrije personenauto's - \"hand aan de kraan\" analyse 2023 ",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2023Z13737&did=2023D32788"
+     },
+     {
+      "kamerstuk": "32813-1179",
+      "soort": "Brief regering",
+      "datum": "2023-03-20",
+      "onderwerp": "Tussenevaluatie fiscale regelingen emissieloze voertuigen en plug-in-hybrides",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2023Z04703&did=2023D11141"
+     },
+     {
+      "kamerstuk": "32813-1080",
+      "soort": "Brief regering",
+      "datum": "2022-07-07",
+      "onderwerp": "HADK-analyse emissievrije personenauto's 2022",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2022Z14561&did=2022D29961"
+     },
+     {
+      "kamerstuk": "32813-648",
+      "soort": "Brief regering",
+      "datum": "2020-12-17",
+      "onderwerp": "Eindrapportages onderzoek betalen naar gebruik",
+      "ondertekenaar": "J.A. Vijlbrief",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2020Z25390&did=2020D53298"
+     },
+     {
+      "kamerstuk": "32813-650",
+      "soort": "Brief regering",
+      "datum": "2020-12-17",
+      "onderwerp": "MKBA Betalen naar Gebruik",
+      "ondertekenaar": "J.A. Vijlbrief",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2020Z25389&did=2020D53296"
+     },
+     {
+      "kamerstuk": "32813-815",
+      "soort": "Brief regering",
+      "datum": "2021-07-14",
+      "onderwerp": "Stand van zaken 'Hand aan de kraan' analyse 2021 - fiscale stimulering emissievrije personenauto's",
+      "ondertekenaar": "J.A. Vijlbrief",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2021Z13706&did=2021D29195"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Brieven in het Kamerstukdossier \"Maatregelen op het gebied van autobelastingen (“Autobrief”)\" (32800) uit de periode december 2020 - juli 2025",
+    "stukken": [
+     {
+      "kamerstuk": "32800-74",
+      "soort": "Brief regering",
+      "datum": "2021-04-09",
+      "onderwerp": "Toezegging gedaan tijdens het algemeen overleg Autobelastingen van 4 november 2020, over de Keuzewijzer Autobelastingen",
+      "ondertekenaar": "J.A. Vijlbrief",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2021Z05681&did=2021D12532"
+     },
+     {
+      "kamerstuk": "32800-76",
+      "soort": "Brief regering",
+      "datum": "2022-07-01",
+      "onderwerp": "Evaluatierapport 'Bijzondere regelingen MRB en BPM' ",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2022Z13803&did=2022D28474"
+     },
+     {
+      "kamerstuk": "32800-80",
+      "soort": "Brief regering",
+      "datum": "2023-04-20",
+      "onderwerp": "Stand van zaken versterking handhaving op de bpm parallelimport",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2023Z07358&did=2023D17257"
+     },
+     {
+      "kamerstuk": "32800-73",
+      "soort": "Brief regering",
+      "datum": "2021-02-12",
+      "onderwerp": "Beschouwing over de import van gebruikte motorrijtuigen",
+      "ondertekenaar": "J.A. Vijlbrief",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2021Z03089&did=2021D06746"
+     },
+     {
+      "kamerstuk": "32800-77",
+      "soort": "Brief regering",
+      "datum": "2022-07-01",
+      "onderwerp": "Onderzoek gedragseffecten rond de overstap van NEDC naar WLTP voor de bpm",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2022Z13806&did=2022D28480"
+     },
+     {
+      "kamerstuk": "32800-75",
+      "soort": "Brief regering",
+      "datum": "2022-06-03",
+      "onderwerp": "Onderzoek MIA uitstootvrije personenautotaxi’s en taxibussen",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2022Z11184&did=2022D22984"
+     },
+     {
+      "kamerstuk": "32800-79",
+      "soort": "Brief regering",
+      "datum": "2022-11-17",
+      "onderwerp": "Onderzoek naar effecten van hoofdvarianten betalen naar gebruik in de autobelastingen",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2022Z22313&did=2022D48118"
+     },
+     {
+      "kamerstuk": "32800-89",
+      "soort": "Brief regering",
+      "datum": "2025-07-11",
+      "onderwerp": "De auto rijdt door: contourenbrief hervorming autobelastingen",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14578&did=2025D33385"
+     },
+     {
+      "kamerstuk": "32800-78",
+      "soort": "Brief regering",
+      "datum": "2022-09-30",
+      "onderwerp": "Onderzoek inzake de belasting van personenauto’s en motorrijwielen",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2022Z18302&did=2022D38877"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Brieven in het Kamerstukdossier \"Mobiliteitsbeleid\" (31305) uit de periode januari 2023 - juni 2024",
+    "stukken": [
+     {
+      "kamerstuk": "31305-461",
+      "soort": "Brief regering",
+      "datum": "2024-05-15",
+      "onderwerp": "Invulling aan de motie van het lid Van Ginneken over onderzoeken hoe de deelauto nader gestimuleerd kan worden binnen bestaande groene fiscale regelingen voor werkgevers (Kamerstuk 31305-422)",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z08286&did=2024D19373"
+     },
+     {
+      "kamerstuk": "31305-382",
+      "soort": "Brief regering",
+      "datum": "2023-01-19",
+      "onderwerp": "Onderzoek naar oplossingsrichtingen kilometerregistratie Betalen naar Gebruik en burgerpeiling",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2023Z00641&did=2023D01526"
+     },
+     {
+      "kamerstuk": "31305-409",
+      "soort": "Brief regering",
+      "datum": "2023-06-26",
+      "onderwerp": "Aanvullende onderzoeksrapporten Betalen naar Gebruik",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2023Z11922&did=2023D28352"
+     },
+     {
+      "kamerstuk": "31305-467",
+      "soort": "Brief regering",
+      "datum": "2024-06-13",
+      "onderwerp": "Marktverkenning emissievrije bestelauto's",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z10482&did=2024D24705"
+     },
+     {
+      "kamerstuk": "31305-415",
+      "soort": "Brief regering",
+      "datum": "2023-09-07",
+      "onderwerp": "Onderzoeken Betalen naar Gebruik",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2023Z14842&did=2023D35840"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Brieven in overige Kamerstukdossiers uit de periode april 2023 - juni 2025",
+    "stukken": [
+     {
+      "kamerstuk": "36202-138",
+      "soort": "Brief regering",
+      "datum": "2023-04-21",
+      "onderwerp": "Certificeringen en ramingstoelichtingen maatregelen april 2023",
+      "ondertekenaar": "S.A.M. Kaag",
+      "functie": "minister van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2023Z07435&did=2023D17456"
+     },
+     {
+      "kamerstuk": "36418-147",
+      "soort": "Brief regering",
+      "datum": "2024-06-20",
+      "onderwerp": "Toepassen laag schorsingstarief kamperauto",
+      "ondertekenaar": "M.L.A. van Rij",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z10975&did=2024D26090"
+     },
+     {
+      "kamerstuk": "32140-260",
+      "soort": "Brief regering",
+      "datum": "2025-06-24",
+      "onderwerp": "Goedkeurend beleid bpm - emissievrije bijzondere personenauto's en emissievrije motorrijwielen",
+      "ondertekenaar": "T. van Oostenbruggen",
+      "functie": "staatssecretaris van Financiën",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z13069&did=2025D29595"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2023A04988",
+  "sectoren": [
+   "financien"
+  ]
+ },
+ {
+  "Id": "9708c06c-9a76-4473-8b7d-f50c51eac2c9",
+  "Nummer": "2026A01430",
+  "Soort": "Wetgevingsoverleg",
+  "Onderwerp": "Wet implementatie richtlijn duurzaamheidsrapportering",
+  "Datum": null,
+  "Aanvangstijd": null,
+  "Eindtijd": null,
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Financiën",
+  "Voortouwafkorting": "FIN",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Wetgevingsoverleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Wet implementatie richtlijn duurzaamheidsrapportering",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief commissie aan bewindspersoon",
+      "datum": "2025-11-19",
+      "onderwerp": "Aan de minister van Financiën - Verzoek om informatie over de Wet implementatie richtlijn duurzaamheidsrapportering",
+      "ondertekenaar": "A.H.M. Weeber",
+      "functie": "griffier",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z00251&did=2025D47345"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Heinen",
+    "functie": "minister van Financiën"
+   },
+   {
+    "naam": "A.C.L. Rutte",
+    "functie": "staatssecretaris van Justitie en Veiligheid"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A01430",
+  "sectoren": [
+   "financien"
   ]
  }
 ]

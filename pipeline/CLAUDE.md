@@ -4,7 +4,7 @@ Geldt naast de root `CLAUDE.md`. Selectie aanpassen gebeurt in `config.json`, no
 
 ## Sectoren (`config.json`, `sectoren`)
 
-- Vijf sectoren: `klimaat-energie`, `water-adaptatie`, `natuur-stikstof-landbouw`, `circulair-vervuiling`, `ruimte-mobiliteit`.
+- Zes sectoren: `klimaat-energie`, `water-adaptatie`, `natuur-stikstof-landbouw`, `circulair-vervuiling`, `ruimte-mobiliteit`, `financien`.
   Sectoren bepalen wat de pipeline ophaalt; de site gebruikt thema's (zie `assets/CLAUDE.md`).
 - Per sector:
 
@@ -15,6 +15,10 @@ Geldt naast de root `CLAUDE.md`. Selectie aanpassen gebeurt in `config.json`, no
 | `kamerstukdossiers`, `zoektermen` | Moties en wetgeving |
 | `stukDossiers`, `trefwoorden` | Stukken van ministeries |
 
+- `financien` (sinds 24 nov 2026): milieu en energieprijzen bij Financiën (exportkrediet, TenneT, CSRD, CBAM, overwinsten,
+  brandstofprijs en -accijns), de debatten Belastingplan, Fiscaliteit en Staatsdeelnemingen, en de wetten 36678, 36812 en 37022
+  (`wetgeving.insluiten`, met al hun moties en amendementen, ook box 3). Zet amendementen op het Belastingplan zonder
+  milieu bij de themareview niet op leeg: dan haalt de relevantiepoort ze weg.
 - Soorten activiteiten: `ACTIVITEIT_SOORTEN` in `fetch_tk.py`, inclusief inbrengtermijnen
   (Inbreng schriftelijk overleg, Inbreng verslag, Inbreng feitelijke vragen).
 
@@ -51,6 +55,7 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
 - Uitstel (sinds 24 nov 2026): documenten `Mededeling (uitstel antwoord)` komen op zaaknummer in `uitstel` bij de vraag (`uitstellen()`), niet als los stuk.
 - Elk stuk heeft een `zaak`; een vraag en haar antwoord delen die en komen er altijd samen in.
 - Te ruim of te krap: `stukDossiers`/`trefwoorden` of `stukken.uitsluiten` in `config.json`.
+- Brieven die met "Uitstel" beginnen blijven weg, met hun bijlagen (Tobias, 24 nov 2026; vraag over 2026D60266).
 - Bijlagen (sinds 17 nov 2026): uit `BijlageDocument` (beslisnota, rapporten, juridische analyses) in `bijlagen`
   (`id`, `titel`, `bestand` PDF/DOCX, `link` naar tweedekamer.nl/downloads).
 - Rapporten (sinds 20 nov 2026): een bijlage waarvan de titel past bij `rapporten.titel` in `config.json` en niet bij

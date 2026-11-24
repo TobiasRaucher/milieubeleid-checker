@@ -35,6 +35,141 @@
   ]
  },
  {
+  "id": "2026D60375",
+  "docId": "474c31cd-02fb-44ea-a806-368f1f49e748",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Goudzwaard over de muizenschade aan grasland en de gevolgen voor mestregelgeving",
+  "zaak": "2026Z22748",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22748&did=2026D60375",
+  "bijlagen": [
+   {
+    "id": "2026D60376",
+    "titel": "Beslisnota bij Antwoord op vragen van het lid Goudzwaard over de muizenschade aan grasland en de gevolgen voor mestregelgeving",
+    "bestand": "PDF",
+    "docId": "45194144-87d8-4a4a-9431-197ac6d69a6d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60376"
+   }
+  ]
+ },
+ {
+  "id": "2026D60377",
+  "docId": "11a25b43-7544-4086-9572-3a5051251675",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Voor- en nadelen systemen ammoniaknormen en antwoord op vragen van het lid Bromet over ammoniaknormen",
+  "zaak": "2026Z26033",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26033&did=2026D60377",
+  "bijlagen": [
+   {
+    "id": "2026D60378",
+    "titel": "Kamervragen van het lid Bromet over ammoniaknormen",
+    "bestand": "PDF",
+    "docId": "19091b05-90db-4f23-8580-2225052001a1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60378"
+   },
+   {
+    "id": "2026D60379",
+    "titel": "Beslisnota bij Kamerbrief over voor- en nadelen systemen ammoniaknormen en antwoord op vragen van het lid Bromet over ammoniaknormen",
+    "bestand": "PDF",
+    "docId": "2bc9ebd9-1e97-48dd-b403-dea48bd5cc0d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60379"
+   }
+  ]
+ },
+ {
+  "id": "2026D60380",
+  "docId": "daef3ae5-79ed-4900-8b71-575e09760331",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Voortgang diverse onderwerpen mestbeleid",
+  "zaak": "2026Z26034",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26034&did=2026D60380",
+  "bijlagen": [
+   {
+    "id": "2026D60382",
+    "titel": "CDM advies 'Mestadditieven'",
+    "bestand": "PDF",
+    "docId": "fd35dc81-bdbd-40f6-aff4-75e8d2a70ffd",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60382",
+    "rapport": true
+   },
+   {
+    "id": "2026D60381",
+    "titel": "Effect van graslandvernieuwing op nitraatuitspoeling en lachgasemissie",
+    "bestand": "PDF",
+    "docId": "71e86ed5-05c6-40fa-a2e0-8e45256534d2",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60381"
+   },
+   {
+    "id": "2026D60383",
+    "titel": "Beslisnota bij Kamerbrief over voortgang diverse onderwerpen mestbeleid",
+    "bestand": "PDF",
+    "docId": "2ac7faec-d685-4236-b755-6feb96d8b098",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60383"
+   }
+  ]
+ },
+ {
+  "id": "2026D60402",
+  "docId": "fe088fc1-7851-4b3a-9c38-5ae1310d2c05",
+  "bestand": "DOCX",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Het bericht dat energiebedrijf Uniper onderzoekt hoe de locaties van voormalige energiecentrales in verschillende Europese landen, waaronder Nederland, kunnen worden herontwikkeld tot datacenters.",
+  "zaak": "2026Z26038",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z26038&did=2026D60402",
+  "ministeries": [
+   "Klimaat en Groene Groei"
+  ],
+  "indieners": [
+   {
+    "naam": "H.G. Jumelet",
+    "fractie": "CDA",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D60327",
   "docId": "9ce8fef7-66b7-4327-a1be-caa4db153207",
   "bestand": "DOCX",
@@ -59,6 +194,53 @@
     "bestand": "PDF",
     "docId": "46303b03-b07a-48a5-857a-c61a9b4d9a96",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60328"
+   }
+  ]
+ },
+ {
+  "id": "2026D60397",
+  "docId": "14667279-3d00-4fd8-9ca4-cad78c54b678",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Bromet over ammoniaknormen",
+  "zaak": "2026Z25663",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z25663&did=2026D60397"
+ },
+ {
+  "id": "2026D60385",
+  "docId": "0bee7e8b-714c-48ad-8f67-f460c2a165b1",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Vermeer over de voorgenomen tracékeuze voor de 380 kV-hoogspanningsverbinding Diemen-Ens ter hoogte van Muiderberg en de Hollandse Brug",
+  "zaak": "2026Z22286",
+  "ministerie": "Economische Zaken en Klimaat",
+  "ondertekenaar": "J. de Bat",
+  "functie": "staatssecretaris van Economische Zaken en Klimaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22286&did=2026D60385",
+  "bijlagen": [
+   {
+    "id": "2026D60386",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Vermeer over de voorgenomen tracékeuze voor de 380 kV-hoogspanningsverbinding Diemen-Ens ter hoogte van Muiderberg en de Hollandse Brug",
+    "bestand": "PDF",
+    "docId": "9407e8e4-6dbf-437a-ba9c-318a83d26954",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60386"
    }
   ]
  },
@@ -1105,6 +1287,47 @@
   ]
  },
  {
+  "id": "2026D58142",
+  "docId": "d9225b06-1d31-48a4-a111-9c4eb41d2e2a",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-16",
+  "titel": "Maatschappelijk verantwoord ondernemen",
+  "onderwerp": "Voorhang ontwerpbesluit Implementatie richtlijn over de duurzaamheidsrapportering",
+  "zaak": "2026Z25158",
+  "ministerie": "Justitie en Veiligheid",
+  "ondertekenaar": "K.T. van Bruggen",
+  "functie": "staatssecretaris van Justitie en Veiligheid",
+  "kamerstuk": "26485-470",
+  "dossiers": [
+   {
+    "nummer": 26485,
+    "toevoeging": null,
+    "titel": "Maatschappelijk verantwoord ondernemen"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25158&did=2026D58142",
+  "bijlagen": [
+   {
+    "id": "2026D58143",
+    "titel": "AMvB Implt CSRD na Omnibus en NvT",
+    "bestand": "DOCX",
+    "docId": "68af7eb0-5859-4c95-b576-9b3308510d71",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58143"
+   },
+   {
+    "id": "2026D58144",
+    "titel": "Beslisnota bij Kamerbrief over voorhang ontwerpbesluit Implementatie richtlijn",
+    "bestand": "PDF",
+    "docId": "9094274e-2fb8-4cb4-b28f-faf430868aba",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58144"
+   }
+  ]
+ },
+ {
   "id": "2026D58339",
   "docId": "609d3df6-f93e-4b11-a242-bdda27512a99",
   "bestand": "DOCX",
@@ -1275,6 +1498,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58313"
    }
   ]
+ },
+ {
+  "id": "kst-1280228",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-13",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de staatssecretaris van J&V over gewijzigd ontwerpbesluit Implementatie richtlijn duurzaamheidsrapportering",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "26485-F",
+  "dossiers": [
+   {
+    "nummer": "26485",
+    "toevoeging": null,
+    "titel": "Maatschappelijk verantwoord ondernemen"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1280228.html"
  },
  {
   "id": "2026D57580",
@@ -1702,6 +1950,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "financien",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20888&did=2026D56757",
@@ -4569,7 +4818,8 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "financien"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18555&did=2026D53036",
   "bijlagen": [
@@ -4840,7 +5090,8 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
-   "ruimte-mobiliteit"
+   "ruimte-mobiliteit",
+   "financien"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19356&did=2026D52471",
   "bijlagen": [
@@ -7730,6 +7981,41 @@
   ]
  },
  {
+  "id": "2026D48771",
+  "docId": "b975c4bb-ba88-428c-b90d-5b4234763bb4",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-10-05",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Heutink en Markuszower over het artikel dat stelt dat de benzineprijs naar een recordhoogte is gestegen en richting de € 3,00 per liter gaat",
+  "zaak": "2026Z18540",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18540&did=2026D48771",
+  "bijlagen": [
+   {
+    "id": "2026D48772",
+    "titel": "Aanbiedingsbrief",
+    "bestand": "DOCX",
+    "docId": "6350360d-9a46-4157-868d-8311c20e39f6",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48772"
+   },
+   {
+    "id": "2026D48773",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Heutink en Markuszower over het artikel dat stelt dat de benzineprijs naar een recordhoogte is gestegen en richting de € 3,00 per liter gaat",
+    "bestand": "PDF",
+    "docId": "1c888047-6ff5-4c5b-b7e1-18d27f2f9434",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48773"
+   }
+  ]
+ },
+ {
   "id": "2026D48791",
   "docId": "45278ed0-13ac-4665-bc8d-618ba6614b6b",
   "bestand": "PDF",
@@ -8292,6 +8578,41 @@
   ]
  },
  {
+  "id": "2026D48292",
+  "docId": "e69cf6a4-4782-4ce8-bb6e-652d58983cea",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-10-02",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Vermeer en Van der Plas over de gevolgen van de landbouwvrijstelling voor wisselteelt",
+  "zaak": "2026Z17352",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17352&did=2026D48292",
+  "bijlagen": [
+   {
+    "id": "2026D48293",
+    "titel": "Aanbiedingsbrief",
+    "bestand": "DOCX",
+    "docId": "7b6e6791-af30-4113-9ec8-0dc179b8f477",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48293"
+   },
+   {
+    "id": "2026D48294",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Vermeer en Van der Plas over de gevolgen van de landbouwvrijstelling voor wisselteelt",
+    "bestand": "PDF",
+    "docId": "aa6dc76a-1e44-489c-ab92-291f11e5243b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48294"
+   }
+  ]
+ },
+ {
   "id": "2026D48213",
   "docId": "1e7b62e6-6661-4f1d-bfc0-6ba18a3cfe4b",
   "bestand": "DOCX",
@@ -8388,6 +8709,40 @@
     "bestand": "PDF",
     "docId": "377f39d6-b8ee-4104-a477-ac3671d0d9d1",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48326"
+   }
+  ]
+ },
+ {
+  "id": "2026D48231",
+  "docId": "cb80c304-b9ec-4f01-a2cc-a72753d176a2",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-10-02",
+  "titel": "Maatschappelijk verantwoord ondernemen",
+  "onderwerp": "Voorlopige gunningsbeslissing ekv-aanbesteding",
+  "zaak": "2026Z20943",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": "26485-467",
+  "dossiers": [
+   {
+    "nummer": 26485,
+    "toevoeging": null,
+    "titel": "Maatschappelijk verantwoord ondernemen"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z20943&did=2026D48231",
+  "bijlagen": [
+   {
+    "id": "2026D48232",
+    "titel": "Beslisnota bij Kamerbrief over voorlopige gunningsbeslissing ekv-aanbesteding",
+    "bestand": "PDF",
+    "docId": "4d31c45b-1271-4005-897b-1936459b4e07",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48232"
    }
   ]
  },
@@ -8511,6 +8866,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "financien",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20888&did=2026D48125",
@@ -10936,7 +11292,8 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
-   "ruimte-mobiliteit"
+   "ruimte-mobiliteit",
+   "financien"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19356&did=2026D44881",
   "ministeries": [
@@ -10953,7 +11310,7 @@
  {
   "id": "2026D44971",
   "docId": "b1b9a35f-261b-434a-a574-7547c8c5cb9e",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-21",
   "titel": "Milieuraad",
@@ -11089,7 +11446,7 @@
  {
   "id": "2026D44954",
   "docId": "4abfa11c-f7cf-4c73-8952-f5af98c8f78a",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-21",
   "titel": "Industriebeleid",
@@ -11620,7 +11977,7 @@
  {
   "id": "2026D44585",
   "docId": "adead68c-6770-4594-a93c-5de2bb84d5fc",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-18",
   "titel": "Gewasbeschermingsbeleid",
@@ -11760,7 +12117,7 @@
  {
   "id": "2026D44616",
   "docId": "019adec4-6604-42f2-bb0e-8148cc8c0f2a",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-18",
   "titel": "Voorzienings- en leveringszekerheid energie",
@@ -12145,7 +12502,7 @@
  {
   "id": "2026D43619",
   "docId": "a6a9a0c8-df8e-44f8-97ae-00e639afe8f3",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-15",
   "titel": "Mariene Strategie voor het Nederlandse deel van de Noordzee",
@@ -13287,6 +13644,34 @@
   ]
  },
  {
+  "id": "2026D42931",
+  "docId": "cf67fb96-1877-48a3-aa4b-7dfff70924e4",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-09-11",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Markuszower over het bericht dat tanken in Nederland veel duurder is dan in de rest van Europa",
+  "zaak": "2026Z16560",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16560&did=2026D42931",
+  "bijlagen": [
+   {
+    "id": "2026D42932",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Markuszower over het bericht dat tanken in Nederland veel duurder is dan in de rest van Europa",
+    "bestand": "PDF",
+    "docId": "322c5305-7cc2-4cb1-892c-c68d7ec41a18",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42932"
+   }
+  ]
+ },
+ {
   "id": "2026D42804",
   "docId": "aa917fbd-44ec-43aa-a39e-a6e0137bee32",
   "bestand": "PDF",
@@ -13716,6 +14101,41 @@
   ]
  },
  {
+  "id": "2026D42512",
+  "docId": "0a707bca-e969-4add-950b-3c90cd82eb17",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-09-10",
+  "titel": null,
+  "onderwerp": "Het artikel dat stelt dat de benzineprijs naar een recordhoogte is gestegen en richting de € 3,00 per liter gaat",
+  "zaak": "2026Z18540",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18540&did=2026D42512",
+  "ministeries": [
+   "Financiën",
+   "Infrastructuur en Waterstaat"
+  ],
+  "indieners": [
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "G. Markuszower",
+    "fractie": "Groep Markuszower",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D42538",
   "docId": "8c094c42-2a96-43da-b448-4ce7bc3bae5b",
   "bestand": "PDF",
@@ -13880,7 +14300,8 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "financien"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18555&did=2026D42525",
   "ministeries": [
@@ -14156,6 +14577,34 @@
     "bestand": "PDF",
     "docId": "7fd59b6d-f744-4f72-8e55-131b8d758ab3",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42010"
+   }
+  ]
+ },
+ {
+  "id": "2026D42117",
+  "docId": "28eac540-98d3-4f48-a3f4-e1cf81ca2532",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-09-09",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Jimmy Dijk over oliebedrijven en raffinaderijen die extra winsten (overwinsten) maken tijdens de Iran-oorlog",
+  "zaak": "2026Z16434",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16434&did=2026D42117",
+  "bijlagen": [
+   {
+    "id": "2026D42118",
+    "titel": "Aanbiedingsbrief",
+    "bestand": "DOCX",
+    "docId": "397cc65c-98a1-4552-abff-3c941e934788",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D42118"
    }
   ]
  },
@@ -16227,6 +16676,50 @@
   ]
  },
  {
+  "id": "2026D39617",
+  "docId": "b2fed313-9b24-48fa-8b97-f60b8d41c864",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-08-28",
+  "titel": null,
+  "onderwerp": "De gevolgen van de landbouwvrijstelling voor wisselteelt",
+  "zaak": "2026Z17352",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17352&did=2026D39617",
+  "ministeries": [
+   "Landbouw, Visserij, Voedselzekerheid en Natuur",
+   "Financiën"
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D44474",
+    "docId": "8f11b65a-ec2b-4862-a752-7a4a5ecefc66",
+    "bestand": "PDF",
+    "datum": "2026-09-18",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17352&did=2026D44474"
+   }
+  ]
+ },
+ {
   "id": "kst-36800-XIV-L",
   "kamer": "Eerste Kamer",
   "soort": "Brief regering",
@@ -18196,6 +18689,35 @@
   ]
  },
  {
+  "id": "2026D37615",
+  "docId": "c873ec31-eb6d-4e1b-bc51-62e92d8f5839",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-07-29",
+  "titel": null,
+  "onderwerp": "Het bericht dat tanken in Nederland veel duurder is dan in de rest van Europa",
+  "zaak": "2026Z16560",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16560&did=2026D37615",
+  "ministeries": [
+   "Financiën"
+  ],
+  "indieners": [
+   {
+    "naam": "G. Markuszower",
+    "fractie": "Groep Markuszower",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D37616",
   "docId": "09a8476e-27e0-4b6e-810e-b34863deb63e",
   "bestand": "PDF",
@@ -18516,6 +19038,35 @@
     "bestand": "PDF",
     "docId": "70ecf77b-5fda-4a63-94a8-fce5d89c5fad",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D37401"
+   }
+  ]
+ },
+ {
+  "id": "2026D37286",
+  "docId": "ee93253a-66a6-4f2c-a3c9-aaad9aadd504",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-07-22",
+  "titel": null,
+  "onderwerp": "Oliebedrijven en raffinaderijen die extra winsten (overwinsten) maken tijdens de Iran-oorlog",
+  "zaak": "2026Z16434",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16434&did=2026D37286",
+  "ministeries": [
+   "Financiën"
+  ],
+  "indieners": [
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "relatie": "Eerste ondertekenaar"
    }
   ]
  },
@@ -21028,7 +21579,8 @@
    }
   ],
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "financien"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15935&did=2026D35911",
   "bijlagen": [
@@ -21630,6 +22182,40 @@
   "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HI.html"
  },
  {
+  "id": "2026D35371",
+  "docId": "9b52ec61-c369-48bf-ae7a-0391290d7f04",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-07-03",
+  "titel": "Deelnemingenbeleid Rijksoverheid",
+  "onderwerp": "Afronding transactie TenneT Duitsland",
+  "zaak": "2026Z15767",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "28165-478",
+  "dossiers": [
+   {
+    "nummer": 28165,
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15767&did=2026D35371",
+  "bijlagen": [
+   {
+    "id": "2026D35372",
+    "titel": "Beslisnota bij Kamerbrief over afronding transactie TenneT Duitsland",
+    "bestand": "PDF",
+    "docId": "0fbac96e-b4e1-4e73-b5b4-da5980c4e44b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35372"
+   }
+  ]
+ },
+ {
   "id": "2026D35478",
   "docId": "f31d4dbd-e3a6-4c70-91b5-08a5112b8154",
   "bestand": "PDF",
@@ -21858,6 +22444,40 @@
   ]
  },
  {
+  "id": "2026D35385",
+  "docId": "19204073-5857-46f0-a029-94f317b7aab8",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-07-03",
+  "titel": "Maatschappelijk verantwoord ondernemen",
+  "onderwerp": "Informeren over de aangifte van fraude en de aanscherping van het beleid voor de exportkredietverzekering (EKV)",
+  "zaak": "2026Z15772",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": "26485-463",
+  "dossiers": [
+   {
+    "nummer": 26485,
+    "toevoeging": null,
+    "titel": "Maatschappelijk verantwoord ondernemen"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15772&did=2026D35385",
+  "bijlagen": [
+   {
+    "id": "2026D35386",
+    "titel": "Beslisnota bij Kamerbrief over informeren over de aangifte van fraude en de aanscherping van het beleid voor de exportkredietverzekering (EKV)",
+    "bestand": "PDF",
+    "docId": "172407eb-fad7-4712-bd3d-a9e825b9e054",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35386"
+   }
+  ]
+ },
+ {
   "id": "2026D35510",
   "docId": "b831ee59-dd74-4808-b3bb-b20aae0f72fb",
   "bestand": "PDF",
@@ -22000,6 +22620,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D35376"
    }
   ]
+ },
+ {
+  "id": "kst-28165-BL",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-07-03",
+  "titel": null,
+  "onderwerp": "Brief van de minister van Financiën over afronding transactie TenneT Duitsland",
+  "zaak": null,
+  "ministerie": "Financiën",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28165-BL",
+  "dossiers": [
+   {
+    "nummer": "28165",
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28165-BL.html"
  },
  {
   "id": "kst-36867-D",
@@ -23443,6 +24088,40 @@
   ]
  },
  {
+  "id": "2026D33940",
+  "docId": "3136a01b-24ea-47e2-96e8-b41ed0b695a9",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-06-30",
+  "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie",
+  "onderwerp": "Reactie op de gewijzigde motie van het lid Flach c.s. over bezien wat nationaal op korte termijn gedaan kan worden om onnodige CBAM-kosten te vermijden (t.v.v. Kamerstuk 36800-XXIII-43) (Kamerstuk 36800-XXIII-55)",
+  "zaak": "2026Z15078",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": "22112-4397",
+  "dossiers": [
+   {
+    "nummer": 22112,
+    "toevoeging": null,
+    "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15078&did=2026D33940",
+  "bijlagen": [
+   {
+    "id": "2026D33941",
+    "titel": "Beslisnota bij Kamerbrief Reactie op de gewijzigde motie van het lid Flach c.s. over bezien wat nationaal op korte termijn gedaan kan worden om onnodige CBAM-kosten te vermijden (t.v.v. Kamerstuk 36800-XXIII-43) (KAmerstuk 36800-XXIII-55)",
+    "bestand": "PDF",
+    "docId": "2073c5fc-ffa8-42cf-850c-a565b3e61144",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33941"
+   }
+  ]
+ },
+ {
   "id": "2026D33735",
   "docId": "14225e66-72ea-4169-8387-d618e4142f88",
   "bestand": "PDF",
@@ -23457,6 +24136,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "financien",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z12987&did=2026D33735",
@@ -23661,6 +24341,61 @@
    "klimaat-energie"
   ],
   "link": "https://zoek.officielebekendmakingen.nl/kst-36867-C.html"
+ },
+ {
+  "id": "2026D33238",
+  "docId": "7b454243-06ce-46b3-b7f8-081d8ae520ab",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-06-29",
+  "titel": "Herziening Belastingstelsel",
+  "onderwerp": "Financiële prikkels reparatie",
+  "zaak": "2026Z14819",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": "32140-313",
+  "dossiers": [
+   {
+    "nummer": 32140,
+    "toevoeging": null,
+    "titel": "Herziening Belastingstelsel"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z14819&did=2026D33238",
+  "bijlagen": [
+   {
+    "id": "2026D33239",
+    "titel": "Overzicht financiële prikkels om reparatie te stimuleren",
+    "bestand": "PDF",
+    "docId": "28dde5fc-aed8-46d8-979d-53f2cef1e0d1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33239"
+   },
+   {
+    "id": "2026D33241",
+    "titel": "Overzicht stakeholders rondetafel fiscale en financiële prikkels reparatie",
+    "bestand": "PDF",
+    "docId": "3d0e699c-c06f-4274-952d-61294ef43a0b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33241"
+   },
+   {
+    "id": "2026D33240",
+    "titel": "Samenvatting stakeholderoverleg",
+    "bestand": "PDF",
+    "docId": "70da9c86-9a87-470b-9495-2342431e6677",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33240"
+   },
+   {
+    "id": "2026D33242",
+    "titel": "Beslisnota bij Kamerbrief Financiële prikkels reparatie",
+    "bestand": "PDF",
+    "docId": "84655686-4a6a-4ee0-883b-d199a6e9d8e2",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D33242"
+   }
+  ]
  },
  {
   "id": "2026D33381",
@@ -25024,6 +25759,54 @@
   ]
  },
  {
+  "id": "2026D32381",
+  "docId": "e5c8b891-47e0-45e2-8031-52b446dee4aa",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-06-24",
+  "titel": "Maatschappelijk verantwoord ondernemen",
+  "onderwerp": "Jaarlijkse overzicht exportkredietverzekering (ekv) 2025",
+  "zaak": "2026Z14461",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": "26485-462",
+  "dossiers": [
+   {
+    "nummer": 26485,
+    "toevoeging": null,
+    "titel": "Maatschappelijk verantwoord ondernemen"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z14461&did=2026D32381",
+  "bijlagen": [
+   {
+    "id": "2026D32383",
+    "titel": "Jaaroverzicht ADSB 2025",
+    "bestand": "PDF",
+    "docId": "b6ec0d10-1e97-469f-8adf-f6e11e2aa2eb",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32383"
+   },
+   {
+    "id": "2026D32382",
+    "titel": "Toetsingskader risicoregelingen exportkredietverzekering",
+    "bestand": "PDF",
+    "docId": "2f617b0a-f013-4ce8-9e52-93f5f1a5f65b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32382"
+   },
+   {
+    "id": "2026D32384",
+    "titel": "Beslisnota bij Kamerbrief Jaarlijkse overzicht exportkredietverzekering (ekv) 2025",
+    "bestand": "PDF",
+    "docId": "7c01c101-29d7-4a7e-8492-99edc9c83f45",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32384"
+   }
+  ]
+ },
+ {
   "id": "2026D32145",
   "docId": "8f31ae80-84a0-4547-94ab-535335a90e8d",
   "bestand": "PDF",
@@ -25884,6 +26667,48 @@
     "bestand": "PDF",
     "docId": "64eec363-8c23-403e-968f-e3aa5eaee173",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31568"
+   }
+  ]
+ },
+ {
+  "id": "2026D31448",
+  "docId": "5cdc5fac-1ba4-4e29-983b-74573a3f7f31",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-06-22",
+  "titel": "Maatregelen op het gebied van autobelastingen (“Autobrief”)",
+  "onderwerp": "Stand van zaken toezeggingen autobelastingen",
+  "zaak": "2026Z14023",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": "32800-93",
+  "dossiers": [
+   {
+    "nummer": 32800,
+    "toevoeging": null,
+    "titel": "Maatregelen op het gebied van autobelastingen (“Autobrief”)"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z14023&did=2026D31448",
+  "bijlagen": [
+   {
+    "id": "2026D31449",
+    "titel": "Verkenning vormgeving greentimer regeling",
+    "bestand": "PDF",
+    "docId": "0d25213d-b19d-479a-9a73-0751d7a3f42d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31449",
+    "rapport": true
+   },
+   {
+    "id": "2026D31450",
+    "titel": "Beslisnota bij Kamerbrief Stand van zaken toezeggingen autobelastingen",
+    "bestand": "PDF",
+    "docId": "14de99c4-b2ec-43fb-92f6-0d72914ace04",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D31450"
    }
   ]
  },
@@ -27390,6 +28215,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "financien",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z07912&did=2026D29573"
@@ -27415,7 +28241,8 @@
    }
   ],
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "financien"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z13092&did=2026D29571",
   "bijlagen": [
@@ -27468,6 +28295,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "financien",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z12987&did=2026D29468",
@@ -28559,6 +29387,40 @@
   ]
  },
  {
+  "id": "2026D28037",
+  "docId": "2104a482-462a-4d8c-88d7-95680b2deaba",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-06-08",
+  "titel": "Deelnemingenbeleid Rijksoverheid",
+  "onderwerp": "Kabinetsreactie op het RLI-advies 'Deelnemen zonder dogma's'",
+  "zaak": "2026Z12335",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "28165-477",
+  "dossiers": [
+   {
+    "nummer": 28165,
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z12335&did=2026D28037",
+  "bijlagen": [
+   {
+    "id": "2026D28038",
+    "titel": "Beslisnota bij Kamerbrief Kabinetsreactie op het RLI-advies 'Deelnemen zonder dogma's'",
+    "bestand": "PDF",
+    "docId": "5a26fa88-6d7f-459d-aeda-efdc6a71d52e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D28038"
+   }
+  ]
+ },
+ {
   "id": "2026D27754",
   "docId": "dadd1c3e-3c7a-4388-b7b2-ab93d385aea3",
   "bestand": "PDF",
@@ -28666,6 +29528,31 @@
    "ruimte-mobiliteit"
   ],
   "link": "https://zoek.officielebekendmakingen.nl/kst-33118-HF.html"
+ },
+ {
+  "id": "kst-28165-BK",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-06-08",
+  "titel": null,
+  "onderwerp": "Brief van de minister van Financiën over Kabinetsreactie Rli advies Deelnemen zonder Dogma's",
+  "zaak": null,
+  "ministerie": "Financiën",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28165-BK",
+  "dossiers": [
+   {
+    "nummer": "28165",
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28165-BK.html"
  },
  {
   "id": "2026D27701",
@@ -29069,6 +29956,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "financien",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09767&did=2026D26855",
@@ -32720,6 +33608,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "financien",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09767&did=2026D22079",
@@ -32883,6 +33772,48 @@
     "bestand": "PDF",
     "datum": "2026-06-03",
     "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09744&did=2026D26879"
+   }
+  ]
+ },
+ {
+  "id": "2026D22250",
+  "docId": "87c817be-598b-4243-8468-82e3a37e39fd",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-05-13",
+  "titel": "Wijziging van de Wet toezicht accountantsorganisaties, de Wet op het financieel toezicht, het Burgerlijk Wetboek en enige andere wetten in verband met de implementatie van Richtlijn (EU) 2022/2464 met betrekking tot duurzaamheidsrapportering door ondernemingen (Wet implementatie richtlijn duurzaamheidsrapportering)",
+  "onderwerp": "Kabinetsreactie op onderzoeksrapport IASP- lidstaatoptie in de CSRD",
+  "zaak": "2026Z09899",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "36678-12",
+  "dossiers": [
+   {
+    "nummer": 36678,
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet toezicht accountantsorganisaties, de Wet op het financieel toezicht, het Burgerlijk Wetboek en enige andere wetten in verband met de implementatie van Richtlijn (EU) 2022/2464 met betrekking tot duurzaamheidsrapportering door ondernemingen (Wet implementatie richtlijn duurzaamheidsrapportering)"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z09899&did=2026D22250",
+  "bijlagen": [
+   {
+    "id": "2026D22251",
+    "titel": "Onderzoeksrapport SEO 'Beleidsopties gebruik IASP-lidstaatoptie in de CSRD'",
+    "bestand": "PDF",
+    "docId": "bbc298c6-652e-46da-b3d9-8f783d879529",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22251",
+    "rapport": true
+   },
+   {
+    "id": "2026D22252",
+    "titel": "Beslisnota bij Kamerbrief over kabinetsreactie op onderzoeksrapport IASP-lidstaatoptie in de CSRD",
+    "bestand": "PDF",
+    "docId": "69bea70e-606b-410e-a5a8-8e82c6073be3",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D22252"
    }
   ]
  },
@@ -35277,6 +36208,25 @@
   ]
  },
  {
+  "id": "2026D20125",
+  "docId": "bbf239fa-424f-4ec3-882b-4626aa803017",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-04-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Dassen over het Reuters-bericht 'Exclusive: Five EU finance ministers call for tax on energy companies' windfall profits'",
+  "zaak": "2026Z07157",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z07157&did=2026D20125"
+ },
+ {
   "id": "2026D20251",
   "docId": "518a76a4-ce3b-4336-a242-bd9e14dbf9d6",
   "bestand": "PDF",
@@ -36446,6 +37396,34 @@
   ]
  },
  {
+  "id": "2026D18917",
+  "docId": "776259e3-aeaa-4acc-a0e5-d4325f6c97b7",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-04-20",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Zwinkels over social leasing als mogelijk instrument om huishoudens te beschermen tegen stijgende brandstofprijzen",
+  "zaak": "2026Z05436",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05436&did=2026D18917",
+  "bijlagen": [
+   {
+    "id": "2026D18918",
+    "titel": "Beslisnota bij Antwoord op vragen van het lid Zwinkels over social leasing als mogelijk instrument om huishoudens te beschermen tegen stijgende brandstofprijzen",
+    "bestand": "PDF",
+    "docId": "480d60d8-20b2-455c-aecf-4d6ac95596e8",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D18918"
+   }
+  ]
+ },
+ {
   "id": "2026D18922",
   "docId": "a5ed37bc-c424-44bd-99dd-e2a61cb4583b",
   "bestand": "PDF",
@@ -37113,6 +38091,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "financien",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z07912&did=2026D17877",
@@ -38560,7 +39539,8 @@
    }
   ],
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "financien"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z07394&did=2026D16572",
   "bijlagen": [
@@ -38735,6 +39715,35 @@
   ]
  },
  {
+  "id": "2026D16197",
+  "docId": "71bb2934-9e6f-46fe-8e06-c4cc4ce71814",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-04-07",
+  "titel": null,
+  "onderwerp": "Het Reuters-bericht 'Exclusive: Five EU finance ministers call for tax on energy companies' windfall profits'",
+  "zaak": "2026Z07157",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z07157&did=2026D16197",
+  "ministeries": [
+   "Financiën"
+  ],
+  "indieners": [
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D16159",
   "docId": "8498820b-b06a-41a6-b733-e00d2c33f8fe",
   "bestand": "PDF",
@@ -38904,6 +39913,47 @@
    "klimaat-energie"
   ],
   "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AN.html"
+ },
+ {
+  "id": "2026D15857",
+  "docId": "638f922b-d05b-4c45-a866-01d2e4893656",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-04-02",
+  "titel": "Deelnemingenbeleid Rijksoverheid",
+  "onderwerp": "Toetsingskader instellingsgarantie TenneT Nederland 2026",
+  "zaak": "2026Z07029",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "28165-472",
+  "dossiers": [
+   {
+    "nummer": 28165,
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z07029&did=2026D15857",
+  "bijlagen": [
+   {
+    "id": "2026D15858",
+    "titel": "Toetsingskader instellingsgarantie TenneT Nederland",
+    "bestand": "PDF",
+    "docId": "f79f642a-63ae-425d-8432-58d20e969d99",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15858"
+   },
+   {
+    "id": "2026D15859",
+    "titel": "Beslisnota bij Kamerbrief over toetsingskader instellingsgarantie TenneT Nederland 2026",
+    "bestand": "PDF",
+    "docId": "a38e3460-79db-4971-8a38-2bd1ea7de4ec",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D15859"
+   }
+  ]
  },
  {
   "id": "2026D15684",
@@ -41165,6 +42215,34 @@
   ]
  },
  {
+  "id": "2026D13545",
+  "docId": "c7d25481-e92d-4f8b-8ed2-c8e69f87278b",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-03-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Van Lanschot en Inge van Dijk over de Kamerbrief Toekomst exportkredietverzekering",
+  "zaak": "2026Z03097",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z03097&did=2026D13545",
+  "bijlagen": [
+   {
+    "id": "2026D13546",
+    "titel": "Beslisnota bij Kamerbrief Antwoord op vragen van de leden Van Lanschot en Inge van Dijk over de Kamerbrief Toekomst exportkredietverzekering",
+    "bestand": "PDF",
+    "docId": "e5c7349b-0155-41ff-a7b8-5af5de541570",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D13546"
+   }
+  ]
+ },
+ {
   "id": "2026D13376",
   "docId": "5a61f4bf-87d7-4c4a-b8a8-cc8e22801d35",
   "bestand": "PDF",
@@ -41591,6 +42669,36 @@
     "bestand": "PDF",
     "docId": "8da85a94-4d8f-48c2-9336-a3e1f452b090",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D13063"
+   }
+  ]
+ },
+ {
+  "id": "2026D12608",
+  "docId": "5dfb024d-4720-41ae-a8f3-04adfdd251ba",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-03-19",
+  "titel": null,
+  "onderwerp": "“Social leasing” als mogelijk instrument om huishoudens te beschermen tegen stijgende brandstofprijzen.",
+  "zaak": "2026Z05436",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05436&did=2026D12608",
+  "ministeries": [
+   "Infrastructuur en Waterstaat",
+   "Economische Zaken en Klimaat"
+  ],
+  "indieners": [
+   {
+    "naam": "J.M. Zwinkels",
+    "fractie": "CDA",
+    "relatie": "Eerste ondertekenaar"
    }
   ]
  },
@@ -43487,6 +44595,48 @@
   ]
  },
  {
+  "id": "2026D10741",
+  "docId": "5dfebe96-3769-402e-af1e-db65c682d83d",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-03-09",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Stoffer en Flach over het Landbouwbesluit",
+  "zaak": "2025Z22032",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22032&did=2026D10741",
+  "bijlagen": [
+   {
+    "id": "2026D10742",
+    "titel": "Aanbiedingsbrief",
+    "bestand": "DOCX",
+    "docId": "c984f956-d503-4a06-99f9-385f7934cc15",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10742"
+   },
+   {
+    "id": "2026D11700",
+    "titel": "Werkafspraak 2014",
+    "bestand": "PDF",
+    "docId": "f6952a44-a2d9-4f27-b3a1-bf4399c63188",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D11700"
+   },
+   {
+    "id": "2026D10743",
+    "titel": "Beslisnota bij Kamerbrief Antwoord op vragen van de leden Stoffer en Flach over het Landbouwbesluit",
+    "bestand": "PDF",
+    "docId": "d2160ada-86ba-4650-a59d-61acae7a971f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10743"
+   }
+  ]
+ },
+ {
   "id": "2026D10280",
   "docId": "547b6255-7081-4cd3-bc86-4b54991928ca",
   "bestand": "PDF",
@@ -43552,6 +44702,47 @@
     "naam": "M.C.A. Vellinga-Beemsterboer",
     "fractie": "D66",
     "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D10393",
+  "docId": "eacdcdd9-184c-4f0b-9595-b4d4f8a03ef5",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-03-06",
+  "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie",
+  "onderwerp": "Fiche: Verordening versterking Carbon Border Adjustment Mechanism en verordening Tijdelijk Fonds voor Koolstofvrijmaking",
+  "zaak": "2026Z04598",
+  "ministerie": "Buitenlandse Zaken",
+  "ondertekenaar": "T.B.W. Berendsen",
+  "functie": "minister van Buitenlandse Zaken",
+  "kamerstuk": "22112-4283",
+  "dossiers": [
+   {
+    "nummer": 22112,
+    "toevoeging": null,
+    "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z04598&did=2026D10393",
+  "bijlagen": [
+   {
+    "id": "2026D10394",
+    "titel": "Aanbiedingsbrief",
+    "bestand": "DOCX",
+    "docId": "c892af2a-5311-402c-8ecf-e6c6a230581c",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10394"
+   },
+   {
+    "id": "2026D10395",
+    "titel": "Beslisnota bij Fiche: Verordening versterking Carbon Border Adjustment Mechanism en verordening Tijdelijk Fonds voor Koolstofvrijmaking",
+    "bestand": "PDF",
+    "docId": "12ca090b-75e6-4008-9c9a-c88ae4bdec8b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D10395"
    }
   ]
  },
@@ -44076,6 +45267,48 @@
     "bestand": "PDF",
     "docId": "255b649e-d586-4e5d-b4fc-7f8d89a50932",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09026"
+   }
+  ]
+ },
+ {
+  "id": "2026D09000",
+  "docId": "921aea00-d87d-40a0-818b-52b526cf0a42",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-02-27",
+  "titel": "Beleidsdoorlichting Financiën",
+  "onderwerp": "Evaluatie Groene Obligatieprogramma",
+  "zaak": "2026Z03941",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "31935-96",
+  "dossiers": [
+   {
+    "nummer": 31935,
+    "toevoeging": null,
+    "titel": "Beleidsdoorlichting Financiën"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z03941&did=2026D09000",
+  "bijlagen": [
+   {
+    "id": "2026D09001",
+    "titel": "Evaluatie van het Groene Obligatieprogramma",
+    "bestand": "PDF",
+    "docId": "d198f170-a671-4d6c-b59c-5c38ccb5bc70",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09001",
+    "rapport": true
+   },
+   {
+    "id": "2026D09002",
+    "titel": "Beslisnota bij Kamerbrief Evaluatie Groene Obligatieprogramma",
+    "bestand": "PDF",
+    "docId": "cb85d851-54e8-4468-925a-7b5f7ebe52c7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D09002"
    }
   ]
  },
@@ -45845,6 +47078,40 @@
   ]
  },
  {
+  "id": "2026D06941",
+  "docId": "4f802ff5-daca-43a0-9b1c-5a6df5810524",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-02-12",
+  "titel": null,
+  "onderwerp": "De Kamerbrief Toekomst exportkredietverzekering",
+  "zaak": "2026Z03097",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z03097&did=2026D06941",
+  "ministeries": [
+   "Financiën"
+  ],
+  "indieners": [
+   {
+    "naam": "M.R.H. van Lanschot",
+    "fractie": "CDA",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "I. (Inge) van Dijk",
+    "fractie": "CDA",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D06850",
   "docId": "74cfa945-b53c-485e-8208-deae340a7354",
   "bestand": "PDF",
@@ -46932,6 +48199,40 @@
   ]
  },
  {
+  "id": "2026D06079",
+  "docId": "b8657e47-1c5a-4e57-afc7-e86aacf007d5",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-02-09",
+  "titel": "Wijziging van de Wet toezicht accountantsorganisaties, de Wet op het financieel toezicht, het Burgerlijk Wetboek en enige andere wetten in verband met de implementatie van Richtlijn (EU) 2022/2464 met betrekking tot duurzaamheidsrapportering door ondernemingen (Wet implementatie richtlijn duurzaamheidsrapportering)",
+  "onderwerp": "Reparatieclausule en wetgevingsoverleg CSRD",
+  "zaak": "2026Z02705",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "36678-11",
+  "dossiers": [
+   {
+    "nummer": 36678,
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet toezicht accountantsorganisaties, de Wet op het financieel toezicht, het Burgerlijk Wetboek en enige andere wetten in verband met de implementatie van Richtlijn (EU) 2022/2464 met betrekking tot duurzaamheidsrapportering door ondernemingen (Wet implementatie richtlijn duurzaamheidsrapportering)"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z02705&did=2026D06079",
+  "bijlagen": [
+   {
+    "id": "2026D06080",
+    "titel": "Beslisnota bij Implementatie richtlijn duurzaamheidsrapportering; uitstelverzoek wetgevingsoverleg 2 maart",
+    "bestand": "PDF",
+    "docId": "6785a294-8f31-4838-8954-cf537a1085cc",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D06080"
+   }
+  ]
+ },
+ {
   "id": "2026D06221",
   "docId": "5ecd79fc-b454-41ec-ab95-ecfed5855cc0",
   "bestand": "PDF",
@@ -47761,6 +49062,40 @@
   ]
  },
  {
+  "id": "2026D05072",
+  "docId": "a3dc9afa-bf9b-4d23-b889-64c79d846503",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2026-02-03",
+  "titel": "Deelnemingenbeleid Rijksoverheid",
+  "onderwerp": "Overeenkomst Duitse staat deelverkoop TenneT Duitsland",
+  "zaak": "2026Z02211",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "28165-470",
+  "dossiers": [
+   {
+    "nummer": 28165,
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z02211&did=2026D05072",
+  "bijlagen": [
+   {
+    "id": "2026D05073",
+    "titel": "Beslisnota bij Kamerbrief over overeenkomst Duitse staat deelverkoop TenneT Duitsland",
+    "bestand": "PDF",
+    "docId": "3e1704f6-8008-44f9-86f0-7826930c3329",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05073"
+   }
+  ]
+ },
+ {
   "id": "2026D05077",
   "docId": "75319553-1894-401a-b106-76f0a97d834d",
   "bestand": "PDF",
@@ -47842,6 +49177,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D05150"
    }
   ]
+ },
+ {
+  "id": "kst-28165-BH",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-02-03",
+  "titel": null,
+  "onderwerp": "Brief van de minister van Financiën over deelverkoop TenneT Duitsland aan Duitse staat",
+  "zaak": null,
+  "ministerie": "Financiën",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28165-BH",
+  "dossiers": [
+   {
+    "nummer": "28165",
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28165-BH.html"
  },
  {
   "id": "kst-29023-AL",
@@ -53864,6 +55224,47 @@
   ]
  },
  {
+  "id": "2025D53786",
+  "docId": "0665d761-387e-4027-af87-2628436958fa",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2025-12-19",
+  "titel": "Maatschappelijk verantwoord ondernemen",
+  "onderwerp": "Toekomst Exportkredietverzekering",
+  "zaak": "2025Z22625",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "26485-460",
+  "dossiers": [
+   {
+    "nummer": 26485,
+    "toevoeging": null,
+    "titel": "Maatschappelijk verantwoord ondernemen"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22625&did=2025D53786",
+  "bijlagen": [
+   {
+    "id": "2025D53787",
+    "titel": "Presentatie Rijkscommissie voor export-, import- en investeringsgaranties",
+    "bestand": "PDF",
+    "docId": "31cf250a-c1d6-4ffe-8529-689c04a8c5bb",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53787"
+   },
+   {
+    "id": "2025D53788",
+    "titel": "Beslisnota bij Kamerbrief over toekomst Exportkredietverzekering",
+    "bestand": "PDF",
+    "docId": "6bc27a2f-fc8e-4626-a4bf-f270602969bc",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D53788"
+   }
+  ]
+ },
+ {
   "id": "2025D53666",
   "docId": "e426bd8c-b8b3-4d36-8390-2c00648b2f55",
   "bestand": "PDF",
@@ -55392,6 +56793,31 @@
   ]
  },
  {
+  "id": "2025D52694",
+  "docId": "ae479b9e-b28c-494d-a03c-142d0a226e41",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2025-12-17",
+  "titel": "Deelnemingenbeleid Rijksoverheid",
+  "onderwerp": "Vertrouwelijke brief stand van zaken TenneT Duitsland",
+  "zaak": "2025Z22274",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "28165-469",
+  "dossiers": [
+   {
+    "nummer": 28165,
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22274&did=2025D52694"
+ },
+ {
   "id": "2025D52730",
   "docId": "7e49be2c-021a-4ba5-9c1a-4b3921efef2e",
   "bestand": "PDF",
@@ -55593,6 +57019,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52852"
    }
   ]
+ },
+ {
+  "id": "kst-28165-BG",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2025-12-17",
+  "titel": null,
+  "onderwerp": "Brief van de minister van Financiën over de stand van zaken TenneT Duitsland",
+  "zaak": null,
+  "ministerie": "Financiën",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28165-BG",
+  "dossiers": [
+   {
+    "nummer": "28165",
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28165-BG.html"
  },
  {
   "id": "kst-27625-O",
@@ -56155,6 +57606,41 @@
     "bestand": "PDF",
     "docId": "834c7be2-0ca4-4ae3-becb-6a4a93329f32",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2025D52321"
+   }
+  ]
+ },
+ {
+  "id": "2025D52358",
+  "docId": "ae948582-580d-4526-b76b-e393864ba00c",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2025-12-15",
+  "titel": null,
+  "onderwerp": "Het Landbouwbesluit",
+  "zaak": "2025Z22032",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "F.M. Wiersma",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22032&did=2025D52358",
+  "ministeries": [
+   "Landbouw, Visserij, Voedselzekerheid en Natuur",
+   "Financiën"
+  ],
+  "indieners": [
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "relatie": "Mede ondertekenaar"
    }
   ]
  },
@@ -57361,6 +58847,40 @@
   ]
  },
  {
+  "id": "2025D50970",
+  "docId": "aa4fa1b8-bc64-40a9-922b-554668007704",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2025-12-09",
+  "titel": "EU-voorstellen: Omnibus I (CSRD & CSDDD) COM (2025) 80 en COM (2025) 81",
+  "onderwerp": "Voorlopig politiek akkoord Omnibus I-CSDDD",
+  "zaak": "2025Z21536",
+  "ministerie": "Buitenlandse Zaken",
+  "ondertekenaar": "A. de Vries",
+  "functie": "staatssecretaris van Buitenlandse Zaken",
+  "kamerstuk": "36712-9",
+  "dossiers": [
+   {
+    "nummer": 36712,
+    "toevoeging": null,
+    "titel": "EU-voorstellen: Omnibus I (CSRD & CSDDD) COM (2025) 80 en COM (2025) 81"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z21536&did=2025D50970",
+  "bijlagen": [
+   {
+    "id": "2025D50971",
+    "titel": "Beslisnota bij Voorlopig politiek akkoord Omnibus I-CSDDD",
+    "bestand": "PDF",
+    "docId": "deb58b97-bcd5-4d46-8865-635b59dcf7f1",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D50971"
+   }
+  ]
+ },
+ {
   "id": "2025D50797",
   "docId": "41bd9dd0-4be2-47a5-93ca-60a6c7a4b169",
   "bestand": "PDF",
@@ -57492,6 +59012,40 @@
     "bestand": "PDF",
     "datum": "2026-01-09",
     "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21477&did=2026D00532"
+   }
+  ]
+ },
+ {
+  "id": "2025D50994",
+  "docId": "5c82c58f-bfbd-4fab-bbc9-face7759b8c8",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2025-12-09",
+  "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie",
+  "onderwerp": "Voortgang Europese wetgevingsdossiers, waaronder het triloogakkoord Omnibus I-pakket betreffende de CSRD",
+  "zaak": "2025Z21549",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "22112-4219",
+  "dossiers": [
+   {
+    "nummer": 22112,
+    "toevoeging": null,
+    "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z21549&did=2025D50994",
+  "bijlagen": [
+   {
+    "id": "2025D50995",
+    "titel": "Beslisnota bij Kamerbrief over voortgang Europese wetgevingsdossiers, waaronder het triloogakkoord Omnibus I-pakket betreffende de CSRD",
+    "bestand": "PDF",
+    "docId": "3e1c2c22-0825-4327-a077-1a28f66f8969",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D50995"
    }
   ]
  },
@@ -58104,6 +59658,47 @@
   ]
  },
  {
+  "id": "2025D50378",
+  "docId": "50671213-5cea-46e6-9099-73e86c4d1f8f",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2025-12-05",
+  "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie",
+  "onderwerp": "Fiche: Herziening Verordening Duurzaam Beleggen",
+  "zaak": "2025Z21321",
+  "ministerie": "Buitenlandse Zaken",
+  "ondertekenaar": "D.M. van Weel",
+  "functie": "minister van Buitenlandse Zaken",
+  "kamerstuk": "22112-4218",
+  "dossiers": [
+   {
+    "nummer": 22112,
+    "toevoeging": null,
+    "titel": "Nieuwe Commissievoorstellen en initiatieven van de lidstaten van de Europese Unie"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z21321&did=2025D50378",
+  "bijlagen": [
+   {
+    "id": "2025D50379",
+    "titel": "Aanbiedingsbrief",
+    "bestand": "DOCX",
+    "docId": "34ab7183-efb1-439c-bad7-d1e7aa50e51b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D50379"
+   },
+   {
+    "id": "2025D50380",
+    "titel": "Beslisnota bij Fiche: Herziening Verordening Duurzaam Beleggen",
+    "bestand": "PDF",
+    "docId": "f1bdc32e-234b-4357-b903-17fd573d0208",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D50380"
+   }
+  ]
+ },
+ {
   "id": "2025D50355",
   "docId": "400bf024-a9bd-493c-8988-b98ab6f88d64",
   "bestand": "PDF",
@@ -58503,6 +60098,40 @@
   ]
  },
  {
+  "id": "2025D49799",
+  "docId": "7e162efd-b528-477a-b0bd-d2f9b769dae6",
+  "bestand": "PDF",
+  "soort": "Brief regering",
+  "datum": "2025-12-03",
+  "titel": "Wijziging van de Wet toezicht accountantsorganisaties, de Wet op het financieel toezicht, het Burgerlijk Wetboek en enige andere wetten in verband met de implementatie van Richtlijn (EU) 2022/2464 met betrekking tot duurzaamheidsrapportering door ondernemingen (Wet implementatie richtlijn duurzaamheidsrapportering)",
+  "onderwerp": "Reactie op verzoek commissie over de Wet implementatie richtlijn duurzaamheidsrapportering",
+  "zaak": "2025Z21081",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Heinen",
+  "functie": "minister van Financiën",
+  "kamerstuk": "36678-10",
+  "dossiers": [
+   {
+    "nummer": 36678,
+    "toevoeging": null,
+    "titel": "Wijziging van de Wet toezicht accountantsorganisaties, de Wet op het financieel toezicht, het Burgerlijk Wetboek en enige andere wetten in verband met de implementatie van Richtlijn (EU) 2022/2464 met betrekking tot duurzaamheidsrapportering door ondernemingen (Wet implementatie richtlijn duurzaamheidsrapportering)"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z21081&did=2025D49799",
+  "bijlagen": [
+   {
+    "id": "2025D49800",
+    "titel": "Beslisnota bij Kamerbrief Reactie op verzoek commissie over de Wet implementatie richtlijn duurzaamheidsrapportering",
+    "bestand": "PDF",
+    "docId": "3d24e8ec-c828-4380-a733-90b1b8e52d10",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2025D49800"
+   }
+  ]
+ },
+ {
   "id": "kst-31936-BU",
   "kamer": "Eerste Kamer",
   "soort": "Brief regering",
@@ -58876,7 +60505,8 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "financien"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z19613&did=2025D49398"
  },
@@ -61328,6 +62958,31 @@
     "relatie": "Eerste ondertekenaar"
    }
   ]
+ },
+ {
+  "id": "kst-28165-BF",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2025-11-18",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van Financiën over afschaffen uitbrengen jaarverslagen beheer staatsdeelnemingen, TenneT Duitsland en integrale besluitvorming in samenhang met de governance bij staatsdeelnemingen",
+  "zaak": null,
+  "ministerie": "Financiën",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "28165-BF",
+  "dossiers": [
+   {
+    "nummer": "28165",
+    "toevoeging": null,
+    "titel": "Deelnemingenbeleid Rijksoverheid"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-28165-BF.html"
  },
  {
   "id": "2025D46888",

@@ -2875,6 +2875,33 @@
   ]
  },
  {
+  "id": "2025D49795",
+  "docId": "1c0853f9-935a-400f-85cb-0c792b452607",
+  "bestand": "PDF",
+  "datum": "2025-12-03",
+  "onderwerp": "Aan de minister van Infrastructuur en Waterstaat - verzoek om reactie op advies 'Deelnemen zonder dogma’s: werken aan leefomgevingsvraagstukken met overheidsdeelnemingen' van Rli",
+  "zaak": "2025Z21078",
+  "commissie": "vaste commissie voor Infrastructuur en Waterstaat",
+  "gerichtAan": [
+   "R. Tieman"
+  ],
+  "ministeries": [
+   "Infrastructuur en Waterstaat"
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z21078&did=2025D49795",
+  "antwoorden": [
+   {
+    "zaak": "2026Z12335",
+    "datum": "2026-06-08",
+    "onderwerp": "Kabinetsreactie op het RLIadvies Deelnemen zonder dogma's",
+    "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z12335&did=2026D28037"
+   }
+  ]
+ },
+ {
   "id": "2025D48825",
   "docId": "b2342ff4-9419-477d-b28c-c47a2e489247",
   "bestand": "PDF",
@@ -3113,6 +3140,33 @@
     "datum": "2025-12-17",
     "onderwerp": "Reactie op verzoek commissie over afschrift brief aan Bont voor Dieren en meerdere organisaties aan Eurocommissaris voor Milieu m.b.t. verbod op handel in zeehondenproducten",
     "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z22340&did=2025D52858"
+   }
+  ]
+ },
+ {
+  "id": "2025D47345",
+  "docId": "fa5b8cb7-2f44-450a-8a71-352cad861afe",
+  "bestand": "PDF",
+  "datum": "2025-11-19",
+  "onderwerp": "Aan de minister van Financiën - Verzoek om informatie over de Wet implementatie richtlijn duurzaamheidsrapportering",
+  "zaak": "2025Z20244",
+  "commissie": "vaste commissie voor Financiën",
+  "gerichtAan": [
+   "E. Heinen"
+  ],
+  "ministeries": [
+   "Financiën"
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z20244&did=2025D47345",
+  "antwoorden": [
+   {
+    "zaak": "2025Z21081",
+    "datum": "2025-12-03",
+    "onderwerp": "Reactie op verzoek commissie over de Wet implementatie richtlijn duurzaamheidsrapportering",
+    "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2025Z21081&did=2025D49799"
    }
   ]
  }
