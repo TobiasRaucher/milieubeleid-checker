@@ -35,13 +35,14 @@ Naslag (lees bij de taak):
 |---|---|
 | Kamerdata ophalen (geen AI) | `python3 pipeline/fetch_tk.py` |
 | Alleen teksten van moties en amendementen | `python3 pipeline/fetch_tk.py --teksten` |
+| Alleen rapporten herkennen aan de inhoud van bijlagen | `python3 pipeline/fetch_tk.py --rapporten` |
 | Alleen toezeggingen | `python3 pipeline/fetch_tk.py --toezeggingen` |
 | Alleen begrotingen (Kerndocumenten) | `python3 pipeline/fetch_tk.py --begrotingen` |
 | Agendafeed `data/agenda.ics` | `python3 pipeline/maak_ics.py` |
 | Thema's in het `<noscript>`-blok van `index.html` | `node pipeline/themas_noscript.js` |
 | Versies `?v=<hash>` in `index.html` (na elke wijziging in `assets/`) | `node pipeline/versie.js` |
 | Zoektest | `node tests/zoektest.js` |
-| Test selectie commissieverzoeken | `python3 tests/verzoektest.py` |
+| Test selectie commissieverzoeken en rapporten | `python3 tests/verzoektest.py` |
 | Themareview: CSV met nieuwe items | `node pipeline/themas_review.js --nieuw` |
 | Themareview: nagekeken CSV in de mapping | `node pipeline/themas_review.js --import <csv>` |
 | Site lokaal (poort 8765) | `preview_start` met naam `site` (`.claude/launch.json`) |
@@ -57,7 +58,7 @@ De Action `.github/workflows/update.yml` draait op werkdagen elk uur van 8 tot 1
 | `pipeline/fetch_tk.py` | Haalt activiteiten, zaken, stukken, stemmingen, toezeggingen, begrotingen op; Eerste Kamer-stukken en Staatsblad via officielebekendmakingen.nl (SRU) | script |
 | `pipeline/teksten.py` | Teksten van moties en amendementen (draait in `fetch_tk.py`) | script |
 | `pipeline/config.json` | Sectoren, trefwoorden, dossiers, in- en uitsluitingen | Claude/Tobias |
-| `data/tk/*.json` | `activiteiten`, `zaken`, `stukken`, `stemmingen`, `teksten`, `toezeggingen`, `begrotingen`, `wetstukken`, `verzoeken`, `meta` | alleen script |
+| `data/tk/*.json` | `activiteiten`, `zaken`, `stukken`, `stemmingen`, `teksten`, `toezeggingen`, `begrotingen`, `wetstukken`, `verzoeken`, `rapportcheck`, `meta` | alleen script |
 | `data/debatten.json` | Samenvattingen van debatten | Claude |
 | `data/agenda.json` | Mijlpalen, consultaties, deadlines (met bron-URL) | Claude |
 | `data/kerndocumenten.json` | Handmatige kerndocumenten (reeksen met edities) | Claude |

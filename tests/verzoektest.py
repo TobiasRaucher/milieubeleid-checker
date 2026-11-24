@@ -31,4 +31,10 @@ zaak = {"GerelateerdNaar": [brief("1", "Reactie op rapport PAN Nederland", "2026
                             brief("3", "Eerdere brief", "2026-06-02")],
         "GerelateerdVanuit": [brief("1", "Reactie op rapport PAN Nederland", "2026-08-27"), brief("4", "Motie", "2026-09-01", "Motie")]}
 assert [a["zaak"] for a in F.verzoek_antwoorden([zaak], "2026-06-03")] == ["1"]
+
+# rapport herkennen aan de eerste pagina's (2026D60381, waarvan de titel geen rapportwoord bevat)
+assert not F.is_rapport("Effect van graslandvernieuwing op nitraatuitspoeling en lachgasemissie")
+assert F.is_rapport_inhoud("Rapport\n1625\nEffect van graslandvernieuwing")
+assert F.is_rapport_inhoud("Wageningen\nLivestock Research")
+assert not F.is_rapport_inhoud("Geachte voorzitter, hierbij de stand van zaken")
 print("verzoektest: goed")

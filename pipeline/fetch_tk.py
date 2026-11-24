@@ -31,6 +31,8 @@ Alleen de begrotingsstukken bijwerken:
 
 Alleen de tekst van moties en amendementen bijwerken (data/tk/teksten.json, op basis van zaken.json):
   python3 pipeline/fetch_tk.py --teksten
+Alleen rapporten herkennen aan de inhoud van de bijlagen (op basis van stukken.json):
+  python3 pipeline/fetch_tk.py --rapporten
 
 Alleen de toezeggingen bijwerken (op basis van de bestaande activiteiten.json):
   python3 pipeline/fetch_tk.py --toezeggingen
@@ -45,8 +47,11 @@ import urllib.parse
 import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timezone
 from pathlib import Path
+
+import teksten
 
 BASE = "https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0/"
 ROOT = Path(__file__).resolve().parent.parent
@@ -439,6 +444,8 @@ def bestandssoort(content_type):
 
 RAPPORT = CONFIG.get("rapporten") or {}
 RAPPORT_RE = re.compile(RAPPORT.get("titel") or r"(?!)", re.I)
+RAPPORT_INHOUD_RE = re.compile(RAPPORT.get("inhoud") or r"(?!)", re.I)
+RAPPORT_INHOUD_NIET = [re.compile(p, re.I) for p in RAPPORT.get("uitsluitenInhoud") or []]
 RAPPORT_NIET = [re.compile(p, re.I) for p in RAPPORT.get("uitsluiten") or []]
 
 
@@ -460,8 +467,56 @@ def bijlagen(d):
                     "link": f"https://www.tweedekamer.nl/downloads/document?id={b['DocumentNummer']}"})
         if is_rapport(uit[-1]["titel"]):
             uit[-1]["rapport"] = True
-    # rapporten eerst, beslisnota's achteraan
-    return sorted(uit, key=lambda x: (x["titel"].lower().startswith("beslisnota"), not x.get("rapport"), x["titel"].lower()))
+    return sorted(uit, key=bijlage_volgorde)
+
+
+def bijlage_volgorde(b):
+    """Rapporten eerst, beslisnota's achteraan."""
+    return (b["titel"].lower().startswith("beslisnota"), not b.get("rapport"), b["titel"].lower())
+
+
+def is_rapport_inhoud(tekst):
+    return bool(RAPPORT_INHOUD_RE.search(re.sub(r"\s+", " ", tekst)[:3500]))
+
+
+def lees_rapport(b):
+    """Is deze pdf volgens de eerste vier pagina's een rapport? None: niet op te halen, volgende run opnieuw."""
+    import io
+    import pypdf
+    data = teksten._get(teksten.RESOURCE.format(b["docId"]))
+    if not data:
+        return None
+    try:
+        r = pypdf.PdfReader(io.BytesIO(data))
+        return len(r.pages) >= RAPPORT["minPaginas"] and is_rapport_inhoud("\n".join((p.extract_text() or "")[:1500] for p in r.pages[:4]))
+    except Exception:  # kapotte of beveiligde pdf: niet elke run opnieuw proberen
+        return False
+
+
+def rapporten_uit_inhoud(stuk_lijst):
+    """Zet rapport: true bij pdf-bijlagen die volgens de inhoud een rapport zijn. Elke pdf wordt één keer gelezen
+    (data/tk/rapportcheck.json); na een wijziging van het patroon in config.json opnieuw."""
+    import pypdf  # noqa: F401  zonder pypdf: hier stoppen, zodat er niets ten onrechte als gelezen telt
+    pad, regel = OUT / "rapportcheck.json", [RAPPORT["inhoud"], RAPPORT["minPaginas"]]
+    cache = json.loads(pad.read_text(encoding="utf-8")) if pad.exists() else {}
+    gelezen = cache["gelezen"] if cache.get("regel") == regel else {}
+    kandidaten = [b for s in stuk_lijst for b in s.get("bijlagen") or []
+                  if b.get("bestand") == "PDF" and b.get("docId") and not is_rapport(b["titel"])
+                  and not any(p.search(b["titel"]) for p in RAPPORT_NIET + RAPPORT_INHOUD_NIET)]
+    nieuw = list({b["id"]: b for b in kandidaten if b["id"] not in gelezen}.values())
+    with ThreadPoolExecutor(8) as ex:
+        uitkomst = ex.map(lees_rapport, nieuw)
+        gelezen.update({b["id"]: u for b, u in zip(nieuw, uitkomst) if u is not None})
+    for b in kandidaten:
+        if gelezen.get(b["id"]):
+            b["rapport"] = True
+    for s in stuk_lijst:
+        if s.get("bijlagen"):
+            s["bijlagen"].sort(key=bijlage_volgorde)
+    houd = {b["id"] for b in kandidaten}
+    gelezen = {k: v for k, v in sorted(gelezen.items()) if k in houd}
+    pad.write_text(json.dumps({"regel": regel, "gelezen": gelezen}, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"== {sum(gelezen.values())} rapporten herkend aan de inhoud, {len(nieuw)} pdf's gelezen")
 
 
 def ministerie_uit_functie(functie):
@@ -1200,6 +1255,11 @@ def main():
         FOUTEN.append(f"Eerste Kamer: {e}")
         log(f"    FOUT Eerste Kamer: {e}")
     if stuk_lijst:
+        try:
+            rapporten_uit_inhoud(stuk_lijst)
+        except Exception as e:
+            FOUTEN.append(f"rapporten: {e}")
+            log(f"    FOUT rapporten: {e}")
         (OUT / "stukken.json").write_text(json.dumps(stuk_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     if verzoek_lijst:
         (OUT / "verzoeken.json").write_text(json.dumps(verzoek_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -1221,7 +1281,6 @@ def main():
     # 8. de tekst van moties en amendementen (data/tk/teksten.json; zie pipeline/teksten.py)
     teksten_telling = None
     try:
-        import teksten
         teksten_telling = teksten.bijwerken(zaken_lijst)
     except Exception as e:
         FOUTEN.append(f"teksten: {e}")
@@ -1254,13 +1313,20 @@ def alleen_toezeggingen():
     log(f"Klaar: {len(tz)} toezeggingen")
 
 
+def alleen_rapporten():
+    lijst = json.loads((OUT / "stukken.json").read_text(encoding="utf-8"))
+    rapporten_uit_inhoud(lijst)
+    (OUT / "stukken.json").write_text(json.dumps(lijst, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 if __name__ == "__main__":
     if "--toezeggingen" in sys.argv:
         alleen_toezeggingen()
+    elif "--rapporten" in sys.argv:
+        alleen_rapporten()
     elif "--begrotingen" in sys.argv:
         alleen_begrotingen()
     elif "--teksten" in sys.argv:
-        import teksten
         teksten.bijwerken(json.loads((OUT / "zaken.json").read_text(encoding="utf-8")))
     else:
         main()

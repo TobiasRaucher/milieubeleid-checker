@@ -6,7 +6,9 @@ in de chat. Pas na een wijziging hier de beoordelingen aan die erdoor veranderen
 ## Hoe het werkt
 
 1. `fetch_tk.py` zet `rapport: true` bij bijlagen van Kamerbrieven waarvan de titel past bij `rapporten.titel` in
-   `pipeline/config.json` en niet bij `rapporten.uitsluiten`. Die kandidaten krijgen meteen het label op Kamerbrieven.
+   `pipeline/config.json` en niet bij `rapporten.uitsluiten`. Sinds 24 nov 2026 ook bij pdf's waarvan de eerste vier
+   pagina's passen bij `rapporten.inhoud` (rapportnummer, "Eindrapport", RIVM, WUR, PBL, TNO, CE Delft enz.; minstens
+   `minPaginas`, titel niet in `uitsluitenInhoud`). Die kandidaten krijgen meteen het label op Kamerbrieven.
 2. Claude beoordeelt nieuwe kandidaten bij "werk de checker bij" in `data/rapporten.json` (sleutel: D-nummer van de bijlage):
    - `{"oordeel": "ja", "uitgever": "PBL", "themas": [...]}`: op de pagina Rapporten. `uitgever` is `null` als de titel en
      de brief het niet zeggen; `themas` zijn die van de brief (mapping, anders de regels).
@@ -24,6 +26,8 @@ Beoordeel op de titel van de bijlage plus het onderwerp van de brief; open het d
 
 - Eindrapporten van onderzoek, evaluaties (ook tussentijdse beleidsevaluaties) en IBO's.
 - Adviezen van adviesraden, planbureaus en kennisinstellingen (Rli, WKR, WRR, SER, Raad van State, PBL, RIVM, TNO, ACVG, SodM).
+- Genummerde eindrapporten van kennisinstellingen (WUR, RIVM, TNO) bij een brief over landelijk beleid, ook als ze
+  technisch zijn (graslandvernieuwing, excretieforfaits; Tobias, 24 nov 2026). Oudere beoordelingen zijn hier niet op nagelopen.
 - Jaarlijkse monitors en balansen over landelijk beleid (Monitor RES, Monitor Energiebesparing, Staat van ons Klimaat).
 - Juridische adviezen over landelijk beleid (Landsadvocaat).
 - Schiphol en Groningen tellen als landelijk beleid.

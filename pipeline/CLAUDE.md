@@ -60,7 +60,10 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
   (`id`, `titel`, `bestand` PDF/DOCX, `link` naar tweedekamer.nl/downloads).
 - Rapporten (sinds 20 nov 2026): een bijlage waarvan de titel past bij `rapporten.titel` in `config.json` en niet bij
   `rapporten.uitsluiten` krijgt `rapport: true` en staat vooraan in `bijlagen`. Claude beoordeelt die kandidaten in
-  `data/rapporten.json` (`agent_docs/rapporten.md`). Te ruim of te krap: de patronen in `config.json`.
+  `data/rapporten.json` (`agent_docs/rapporten.md`). Sinds 24 nov 2026 leest `rapporten_uit_inhoud()` ook de eerste vier
+  pagina's van de andere pdf-bijlagen (`rapporten.inhoud`); elke pdf één keer, het resultaat staat in
+  `data/tk/rapportcheck.json` (na een wijziging van `inhoud` of `minPaginas` alles opnieuw, circa 6 minuten).
+  Niet herkend: scans zonder tekst en Word-bestanden. Te ruim of te krap: de patronen in `config.json`.
 - Voor de documentweergave zet `fetch_tk.py` `docId` en `bestand` (PDF, DOCX) bij moties, amendementen, stukken en
   bijlagen, en `volgnummer` bij moties en amendementen.
 

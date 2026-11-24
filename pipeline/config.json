@@ -784,6 +784,13 @@
       "^reactie op",
       "^kabinetsreactie",
       "^antwoord"
+    ],
+    "_uitlegInhoud": "Een pdf waarvan de titel niet past bij titel: rapport: true als de eerste vier pagina's passen bij inhoud en de pdf minstens minPaginas telt. Niet bij titels uit uitsluiten of uitsluitenInhoud.",
+    "inhoud": "\\b(rapport|report)[ -]*(nr\\.?|nummer|no\\.?|number)? ?\\d{3,}|\\b(rivm-(brief)?rapport|tno[ -](rapport|report|20\\d\\d r)|eindrapport|final report|onderzoeksrapport|adviesrapport|wageningen (livestock|environmental|economic|marine|plant|food|bioveterinary)|deltares|ce delft|planbureau voor de leefomgeving|centraal planbureau)",
+    "minPaginas": 8,
+    "uitsluitenInhoud": [
+      "^(beslis)?nota", "^oplegnota", "wijziging", "besluit", "regeling", "voortgang", "kwartaal", "werkprogramma", "bedrijfsverslag", "projectenboek",
+      "^reactie", "^brief", "^mer ", "plan-?mer", "aanbiedingsbrief"
     ]
   }
 }
