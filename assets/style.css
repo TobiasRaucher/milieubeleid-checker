@@ -18,13 +18,12 @@
   --t-20: 20px;   /* sectiekoppen, woordmerk op de telefoon */
   --t-24: 24px;   /* woordmerk */
   --t-30: 30px;   /* paginatitel, kerncijfers */
-  --t-36: 36px;   /* woordmerk */
-  --t-45: 45px;   /* openingszin Overzicht */
+  --t-45: 45px;   /* openingszin Overzicht, woordmerk */
   --t-64: 64px;   /* het CO2-getal */
 
   /* Letterafstand per grootte: hoe groter, hoe strakker; 15 en kleiner op 0 (Tobias, 19 nov 2026) */
-  --sp-45: -0.025em;  /* openingszin */
-  --sp-30: -0.02em;   /* paginatitel, kerncijfers, woordmerk (30 tot 36) */
+  --sp-45: -0.025em;  /* openingszin, woordmerk */
+  --sp-30: -0.02em;   /* paginatitel, kerncijfers */
   --sp-24: -0.01em;   /* sectiekoppen */
   --sp-18: -0.005em;  /* kaarttitels, schakelaar, ondertitel */
 
@@ -118,7 +117,7 @@ header.top .wrap { display: flex; align-items: center; gap: 8px 20px; padding-to
 .merk { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); border-radius: var(--r-control); }
 .merk:hover { color: var(--ink); }
 .merk .logo { width: var(--h-klein); height: var(--h-klein); flex: none; }
-.woordmerk { font-size: var(--t-36); font-weight: 600; letter-spacing: var(--sp-30); line-height: 1; color: var(--card); }
+.woordmerk { font-size: var(--t-45); font-weight: 600; letter-spacing: var(--sp-45); line-height: 1; color: var(--card); }
 /* radarsignaal bij het laden: drie boogjes vanaf de u, elke letter verschijnt als het eerste boogje er is (DESIGN.md, Motion) */
 .wm-radar { position: relative; display: inline-block; }
 .wm-radar span { display: inline-block; animation: wm-letter 700ms var(--ease) both; }
@@ -135,13 +134,13 @@ header.top .wrap { display: flex; align-items: center; gap: 8px 20px; padding-to
 @media (max-width: 1279px) { .woordmerk { display: none; } }
 
 /* Hoofdnavigatie: zelfde ronding als het zoekveld; balk 48 hoog, zoals logo en zoekveld */
-nav.tabs { position: relative; display: flex; flex: none; gap: 4px; padding: 4px; border-radius: var(--r-control); overflow: visible; }
-nav.tabs > a, .tab-knop { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 4px; min-height: calc(var(--h-klein) - 8px); padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); line-height: 1; text-decoration: none; color: var(--card); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+nav.tabs { position: relative; display: flex; flex: none; gap: 4px; padding: 0 4px; border-radius: var(--r-control); overflow: visible; }
+nav.tabs > a, .tab-knop { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 4px; min-height: var(--h-klein); padding: 0 16px; border: 0; border-radius: var(--r-control); background: transparent; font: inherit; font-size: var(--t-18); line-height: 1; text-decoration: none; color: var(--card); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 nav.tabs > a:hover:not(.active), .tab-menu:not(.active) .tab-knop:hover { background: var(--accent-hover); }
 nav.tabs > a.active, .tab-menu.active .tab-knop { color: var(--accent); font-weight: 500; }
 nav.tabs:not(.glij) > a.active { background: var(--card); }
 /* Uitzondering op "geen breedte animeren": de aanduiding staat los van de opmaak (absolute positie), dus het kost niets. Zie DESIGN.md. */
-.tab-glij { position: absolute; left: 0; top: 4px; bottom: 4px; width: 0; border-radius: 4px; background: var(--card); opacity: 0; pointer-events: none; will-change: transform; transition: transform var(--d-lang) var(--ease), width var(--d-lang) var(--ease), opacity var(--d-kort) var(--ease); }
+.tab-glij { position: absolute; left: 0; top: 0; bottom: 0; width: 0; border-radius: var(--r-control); background: var(--card); opacity: 0; pointer-events: none; will-change: transform; transition: transform var(--d-lang) var(--ease), width var(--d-lang) var(--ease), opacity var(--d-kort) var(--ease); }
 /* Documenten: een tab met een menu in twee kolommen (hover, klik of pijl omlaag; Escape sluit) */
 .tab-menu { position: static; } /* het menu hangt aan nav.tabs: even breed als de tabbalk (Tobias, 18 nov 2026) */
 .tab-knop .chev { width: 18px; height: 18px; vertical-align: 0; color: inherit; transition: transform var(--d-lang) var(--ease); }
@@ -797,10 +796,10 @@ details.thematermen > p.termen { color: var(--ink); }
 .mi-wetten button:hover:not([aria-pressed="true"]) { color: var(--accent); }
 .mi-wetten button[aria-pressed="true"] { background: var(--accent); color: var(--card); }
 .mi-wetten button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-/* jaarkeuze in de kop: 32 hoog, zodat de kop even hoog blijft als die van Net binnen */
-.mi-kop { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+/* jaarkeuze in de kop: rondom 8 vrij */
+.mi-kop { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 8px 8px 20px; }
 .mi-kop h2 { margin: 0; color: var(--card); }
-.mi-jaren { margin: -8px 0; background: var(--card); }
+.mi-jaren { background: var(--card); }
 .mi-jaren:empty { display: none; }
 .mi-jaren button { min-height: 32px; }
 .mi-links .mi-wetten { margin-bottom: 20px; }
