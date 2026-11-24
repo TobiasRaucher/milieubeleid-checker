@@ -246,6 +246,41 @@
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z25663&did=2026D60397"
  },
  {
+  "id": "2026D60585",
+  "docId": "f175ff7f-b000-4c3e-9cef-dff6ab45b15c",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Derde vervolgonderzoek monitoren grenseffecten verlaging brandstofaccijns",
+  "zaak": "2026Z26122",
+  "ministerie": "Financiën",
+  "ondertekenaar": "E. Eerenberg",
+  "functie": "staatssecretaris van Financiën",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26122&did=2026D60585",
+  "bijlagen": [
+   {
+    "id": "2026D60587",
+    "titel": "Beslisnota bij Kamerbrief over het derde vervolgonderzoek monitoren grenseffecten verlaging brandstofaccijns",
+    "bestand": "PDF",
+    "docId": "7c19f208-1885-4d7f-867e-cc20f3a6d09e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60587"
+   },
+   {
+    "id": "2026D60586",
+    "titel": "Vervolgonderzoek naar de grenseffecten bij de accijnswijzigingen op brandstoffen",
+    "bestand": "DOCX",
+    "docId": "013a1a30-cd40-4dfe-abf8-4738e32d5250",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60586"
+   }
+  ]
+ },
+ {
   "id": "2026D60506",
   "docId": "44efeb53-7335-43e7-a287-e365b1feab2b",
   "bestand": "DOCX",
@@ -6591,7 +6626,7 @@
  {
   "id": "2026D50522",
   "docId": "ddf05ce6-283d-40e7-a499-50c1c3e8ec83",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-12",
   "titel": null,
