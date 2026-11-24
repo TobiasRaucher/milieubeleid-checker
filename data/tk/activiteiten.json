@@ -57398,6 +57398,37 @@
   ]
  },
  {
+  "Id": "c631d475-4f26-41ca-8fe2-9a97c70db18d",
+  "Nummer": "2026A08732",
+  "Soort": "Plenair debat (dertigledendebat)",
+  "Onderwerp": "Dertigledendebat over de betekenis van de uitkomst van de klimaattop in Turkije voor de Europese klimaatinzet",
+  "Datum": null,
+  "Aanvangstijd": null,
+  "Eindtijd": null,
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": "Aangevraagd tijdens de <a href=\"https://parlisweb.tweedekamer.nl/parlis/activiteit.aspx?id=c8335817-9e30-47d8-befb-3dce3a6f26ca&tab=2&refresh=1\">Regeling van werkzaamheden</a> van 24 november 2026",
+  "SoortWeergave": "Dertigledendebat",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08732",
+  "sectoren": [
+   "klimaat-energie"
+  ]
+ },
+ {
   "Id": "1a2b4788-1760-4a1b-9a2d-d446c9bf0642",
   "Nummer": "2023A06087",
   "Soort": "Plenair debat (initiatiefwetgeving)",
