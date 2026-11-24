@@ -4217,7 +4217,7 @@
   "Aanvangstijd": "2026-11-24T16:30:00+01:00",
   "Eindtijd": "2026-11-24T19:30:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
   "Voortouwafkorting": "I&W",
   "Besloten": false,
@@ -4541,7 +4541,7 @@
    },
    {
     "volgorde": 22,
-    "onderwerp": "(Nog te ontvangen) Schriftelijke beantwoording van een deel van de vragen uit de eerste termijn",
+    "onderwerp": "Schriftelijke beantwoording van een deel van de vragen uit de eerste termijn",
     "stukken": [
      {
       "kamerstuk": null,
@@ -4790,7 +4790,7 @@
   "Aanvangstijd": "2026-11-23T10:00:00+01:00",
   "Eindtijd": "2026-11-23T15:00:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
   "Voortouwafkorting": "I&W",
   "Besloten": false,
