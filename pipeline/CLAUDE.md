@@ -59,7 +59,7 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
 - Bijlagen (sinds 17 nov 2026): uit `BijlageDocument` (beslisnota, rapporten, juridische analyses) in `bijlagen`
   (`id`, `titel`, `bestand` PDF/DOCX, `link` naar tweedekamer.nl/downloads).
 - Rapporten (sinds 20 nov 2026): een bijlage waarvan de titel past bij `rapporten.titel` in `config.json` en niet bij
-  `rapporten.uitsluiten` krijgt `rapport: true` en staat vooraan in `bijlagen`. Claude beoordeelt die kandidaten in
+  `rapporten.uitsluiten` krijgt `rapport: true` en staat in `bijlagen` na de beslisnota's (die staan altijd bovenaan). Claude beoordeelt die kandidaten in
   `data/rapporten.json` (`agent_docs/rapporten.md`). Sinds 24 nov 2026 leest `rapporten_uit_inhoud()` ook de eerste vier
   pagina's van de andere pdf-bijlagen (`rapporten.inhoud`); elke pdf één keer, het resultaat staat in
   `data/tk/rapportcheck.json` (na een wijziging van `inhoud` of `minPaginas` alles opnieuw, circa 6 minuten).

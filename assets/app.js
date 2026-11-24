@@ -818,10 +818,16 @@
   // Het gegevensmagazijn staat ophalen vanaf elke site toe (CORS), maar niet tonen in een iframe.
   const DOC_URL = (docId) => `https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0/Document/${encodeURIComponent(docId)}/resource`;
   const DOWNLOAD_URL = (dnr) => `https://www.tweedekamer.nl/downloads/document?id=${encodeURIComponent(dnr)}`;
+  const downloadUrl = (d) => (d.id || d.document ? DOWNLOAD_URL(d.id || d.document) : DOC_URL(d.docId));
   const LEESBAAR = new Set(["PDF", "DOCX"]);
   // knop die het document opent; d: {docId, bestand, id (D-nummer), titel, link}
-  const docKnop = (d, label, stijl = "licht klein") => (d && d.docId && LEESBAAR.has(d.bestand)
-    ? `<button type="button" class="doclees knop ${stijl}" data-doc="${esc(d.docId)}" data-bestand="${esc(d.bestand)}" data-dnr="${esc(d.id || d.document || "")}" data-titel="${esc(d.titel || "")}" data-link="${esc(d.link || "")}">${esc(label)}</button>` : "");
+  const leesbaar = (d) => !!(d && d.docId && LEESBAAR.has(d.bestand));
+  const docData = (d) => `data-doc="${esc(d.docId)}" data-bestand="${esc(d.bestand)}" data-dnr="${esc(d.id || d.document || "")}" data-titel="${esc(d.titel || "")}" data-link="${esc(d.link || "")}"`;
+  const docKnop = (d, label, stijl) => (leesbaar(d) ? `<button type="button" class="doclees knop ${stijl}" ${docData(d)}>${esc(label)}</button>` : "");
+  // document in een lijst: de link opent het venster, de knop erachter slaat het bestand op; zonder leesbaar document een gewone link
+  const docRegel = (d, label, na = "") => (leesbaar(d)
+    ? `<a class="doclees" href="${esc(d.link || DOC_URL(d.docId))}" aria-haspopup="dialog" ${docData(d)}>${esc(label)}</a>${na} <a class="knop licht klein" href="${esc(downloadUrl(d))}" target="_blank" rel="noopener" aria-label="Download ${esc(d.titel || label)}">Download</a>`
+    : `${extLink(d.link, label)}${na}`);
   // knoppenrij in de details: precies één bosgroene knop (stijl "" bij docKnop); zonder leesbaar document is dat de eerste link
   const mlinks = (knoppen, links, cls = "") => `<div class="mlinks${cls}">${knoppen || links.replace("<a ", `<a class="knop" `)}${knoppen ? links : ""}</div>`;
   let pdfjs = null, viewerToken = 0;
@@ -1017,8 +1023,8 @@
     }
   }
   document.addEventListener("click", (e) => {
-    const k = e.target.closest("button.doclees");
-    if (!k) return;
+    const k = e.target.closest(".doclees");
+    if (!k || (k.href && (e.metaKey || e.ctrlKey || e.shiftKey))) return; // een link blijft in een nieuw tabblad te openen
     e.preventDefault(); e.stopPropagation();
     toonDocument(k);
   });
@@ -1067,12 +1073,11 @@
     // de Kamerstukken (koninklijke boodschap, voorstel van wet) markeren het indienen zelf; anders één regel op de startdatum
     const stukken = S.data.wetstukken[String(z.dossiers[0]?.nummer)] || [];
     const s = stukken.length ? [] : [{ datum: z.gestartOp, html: "Wetsvoorstel ingediend." }];
-    // Kamerstukken (data/tk/wetstukken.json): titel naar tweedekamer.nl, nummer, en Lees in de eigen documentweergave
+    // Kamerstukken (data/tk/wetstukken.json): titel opent de documentweergave, met nummer en Download
     for (const d of stukken) {
       if (d.kamer === "Staatsblad") { s.push({ datum: d.datum, html: `Gepubliceerd in het Staatsblad: ${extLink(d.link, d.titel)}` }); continue; }
       if (d.kamer === "Eerste Kamer") { s.push({ datum: d.datum, html: `Eerste Kamer: ${extLink(d.link, d.titel)} <span class="muted mono">${esc(`${z.dossiers[0].nummer}-${d.volgnummer}`)}</span>` }); continue; }
-      const lees = docKnop({ ...d, id: d.document }, "Lees");
-      s.push({ datum: d.datum, html: `${extLink(d.link, d.titel)} <span class="muted mono">${esc(`${z.dossiers[0].nummer}-${d.volgnummer}`)}</span>${lees ? ` ${lees}` : ""}` });
+      s.push({ datum: d.datum, html: docRegel({ ...d, id: d.document }, d.titel, ` <span class="muted mono">${esc(`${z.dossiers[0].nummer}-${d.volgnummer}`)}</span>`) });
     }
     for (const b of z.besluiten) {
       const t = STAP_TEKST[b.soort] || (b.tekst || "").trim();
@@ -1466,7 +1471,12 @@
   const overKlein = (t) => klein(String(t || "").trim().replace(/\s+/g, " ").replace(/^(over|inzake) /i, ""));
   // bijlagen bij een Kamerbrief of antwoord (beslisnota, rapporten, analyses), uit de Kamerdata
   const metRapport = (b) => window.MRThemas.metRapport(b, S.data.rapporten);
-  const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${metRapport(b) ? `<span class="badge rapport">Rapport:</span> ` : ""}${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}${docKnop(b, "Lees") ? ` ${docKnop(b, "Lees")}` : ""}</li>`).join("")}</ul></div>` : "");
+  // beslisnota's staan altijd bovenaan (Tobias, 24 nov 2026); in het venster gaat "Op tweedekamer.nl" naar de brief of het antwoord (link)
+  const isBeslisnota = (b) => /beslisnota/i.test(b.titel);
+  const bijlagenBlok = (stukken) => {
+    const lijst = stukken.flatMap((x) => (x.bijlagen || []).map((b) => ({ ...b, link: x.link || b.link }))).sort((a, b) => isBeslisnota(b) - isBeslisnota(a));
+    return lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${metRapport(b) ? `<span class="badge rapport">Rapport:</span> ` : ""}${docRegel(b, b.titel, b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : "")}</li>`).join("")}</ul></div>` : "";
+  };
   function verzoekDetail(v) {
     // een gekoppelde brief: de rij op Kamerbrieven als die er is, anders tweedekamer.nl
     const antw = v.antwoorden.map((a) => {
@@ -1509,14 +1519,14 @@
       const aan = v ? (v.ministeries || []).length ? v.ministeries : [v.ministerie].filter(Boolean) : [];
       // het antwoord is de hoofdknop; zonder antwoord zijn dat de vragen
       const antwKnop = r.antwoorden.map((a, i) => docKnop({ ...a, titel: a.onderwerp || r.titel }, r.antwoorden.length > 1 ? `Lees antwoord ${i + 1}` : "Lees het antwoord", i ? "licht" : "")).join("");
-      const antw = r.antwoorden.map((a) => `<li><span class="datum">${fmtKort(a.datum)}</span> ${a.soort.includes("nader") ? "Nader antwoord" : "Beantwoord"}${a.ondertekenaar ? ` door ${esc(a.ondertekenaar)}${a.functie ? ` (${esc(a.functie)})` : ""}` : ""}${v && a.datum && v.datum ? `, na ${nl(dagenTot(v.datum, a.datum))} dagen` : ""} · ${extLink(a.link, "antwoord")}${a.kamerstuk ? ` · <span class="mono">${esc(a.kamerstuk)}</span>` : ""}</li>`);
+      const antw = r.antwoorden.map((a) => `<li><span class="datum">${fmtKort(a.datum)}</span> ${a.soort.includes("nader") ? "Nader antwoord" : "Beantwoord"}${a.ondertekenaar ? ` door ${esc(a.ondertekenaar)}${a.functie ? ` (${esc(a.functie)})` : ""}` : ""}${v && a.datum && v.datum ? `, na ${nl(dagenTot(v.datum, a.datum))} dagen` : ""} · ${docRegel({ ...a, titel: a.onderwerp || r.titel }, "antwoord")}${a.kamerstuk ? ` · <span class="mono">${esc(a.kamerstuk)}</span>` : ""}</li>`);
       // uitgestelde beantwoording staat vóór het antwoord, ook als dat er al is
-      const uitstel = r.uitstel.map((u) => `<li><span class="datum">${fmtKort(u.datum)}</span> Uitstel gemeld · ${extLink(u.link, "mededeling")} ${docKnop({ ...u, titel: `Uitstel: ${r.titel}` }, "Lees")}</li>`);
+      const uitstel = r.uitstel.map((u) => `<li><span class="datum">${fmtKort(u.datum)}</span> Uitstel gemeld · ${docRegel({ ...u, titel: `Uitstel: ${r.titel}` }, "mededeling")}</li>`);
       return `<div class="mdetail">
         <p>Zaak <span class="mono">${esc(r.zaak || "onbekend")}</span>${v ? ` · document <span class="mono">${esc(v.id)}</span> · gesteld ${fmtKort(v.datum)}` : ""}${door.length ? `, door ${opsomming(door)}` : ""}${aan.length ? `; gericht aan ${opsomming(aan.map(esc))}` : ""}</p>
         <div class="mstemming"><p class="mtelling">${r.antwoorden.length ? "Antwoord" : r.dagen > ANTWOORD_TERMIJN ? `Nog niet beantwoord, ${nl(r.dagen)} dagen na het stellen (termijn ${ANTWOORD_TERMIJN} dagen)` : `Nog niet beantwoord${r.dagen != null ? `, ${nl(r.dagen)} ${r.dagen === 1 ? "dag" : "dagen"} na het stellen` : ""}`}</p>
           ${uitstel.length + antw.length ? `<ul class="mstappen">${uitstel.join("")}${antw.join("")}</ul>` : ""}</div>
-        ${bijlagenBlok(r.antwoorden.flatMap((a) => a.bijlagen || []))}
+        ${bijlagenBlok(r.antwoorden)}
         ${v ? "" : `<p class="muted">De vraag zelf is van voor het begin van deze gegevens.</p>`}
         ${mlinks(`${antwKnop}${v ? docKnop({ ...v, titel: v.onderwerp || r.titel }, "Lees de vragen", antwKnop ? "licht" : "") : ""}`, `${v ? extLink(v.link, "Vragen op tweedekamer.nl") : ""}${r.antwoorden.map((a, i) => extLink(a.link, r.antwoorden.length > 1 ? `Antwoord ${i + 1} op tweedekamer.nl` : "Antwoord op tweedekamer.nl")).join("")}`)}
       </div>`;
@@ -1549,7 +1559,7 @@
         <p>${x.kamer ? `${esc(x.ekSoort || "Kamerstuk")} aan de Eerste Kamer · ` : ""}Document <span class="mono">${esc(x.id)}</span> · ${fmtKort(x.datum)}${x.ondertekenaar ? `, ondertekend door ${esc(x.ondertekenaar)}${x.functie ? ` (${esc(x.functie)})` : ""}` : ""}</p>
         ${ds.length ? `<div class="mstemming"><p class="mtelling">Kamerstuk</p><ul class="mstappen">${ds.map((d) => `<li><span class="mono">${esc(d.nummer)}${d.toevoeging ? "-" + esc(d.toevoeging) : ""}</span> ${esc(d.titel || "")}</li>`).join("")}</ul></div>` : ""}
         ${verz.length ? `<div class="mstemming"><p class="mtelling">Op verzoek van</p><ul class="mstappen">${verz.map((v) => `<li><span class="datum">${fmtKort(v.datum)}</span> Commissie ${esc(commissieKort(v))}: <a href="#vragen?open=${encodeURIComponent(v.id)}">${esc(window.MRThemas.verzoekTitel(v))}</a></li>`).join("")}</ul></div>` : ""}
-        ${bijlagenBlok(x.bijlagen)}
+        ${bijlagenBlok([x])}
         ${mlinks(docKnop({ ...x, titel: x.onderwerp || x.titel }, "Lees de brief", ""), extLink(x.link, x.kamer ? "Bekijk op officielebekendmakingen.nl" : "Bekijk op tweedekamer.nl"))}
       </div>`;
     },
@@ -2384,7 +2394,7 @@
     const kenm = [d.kenmerk ? (/^Kamerstuk /.test(d.kenmerk) ? `Kamerstuk <span class="mono">${esc(kdKenmerk(d.kenmerk))}</span>` : `<span class="mono">${esc(d.kenmerk)}</span>`) : "", d.document && d.document !== d.kenmerk ? `document <span class="mono">${esc(d.document)}</span>` : "",
       d.documentSoort ? esc(d.documentSoort.toLowerCase()) : "", d.datum ? `verschenen ${fmtKort(d.datum)}` : "", d.uitgever ? esc(d.uitgever) : ""].filter(Boolean);
     const eerder = d.eerder || [];
-    const ed = (e) => `<li>${e.datum ? `<span class="datum">${fmtKort(e.datum)}</span> ` : ""}${extLink(e.url, e.titel)}${e.kenmerk ? ` <span class="muted mono">${esc(kdKenmerk(e.kenmerk))}</span>` : ""}${docKnop({ ...e, id: e.document, link: e.url }, "Lees") ? ` ${docKnop({ ...e, id: e.document, link: e.url }, "Lees")}` : ""}</li>`;
+    const ed = (e) => `<li>${e.datum ? `<span class="datum">${fmtKort(e.datum)}</span> ` : ""}${docRegel({ ...e, id: e.document, link: e.url }, e.titel, e.kenmerk ? ` <span class="muted mono">${esc(kdKenmerk(e.kenmerk))}</span>` : "")}</li>`;
     return `<div class="mdetail">
       ${kenm.length ? `<p>${kenm.join(" · ")}</p>` : ""}
       ${d.brief ? `<div class="mstemming"><p class="mtelling">Bij Kamerbrief</p><ul class="mstappen"><li>${extLink(d.brief.link, d.brief.titel)} <span class="muted mono">${esc(d.brief.id)}</span></li></ul></div>` : ""}

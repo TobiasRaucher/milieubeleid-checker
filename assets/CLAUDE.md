@@ -104,15 +104,15 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
   Niet in Net binnen.
 - `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Kolom en filter "Rapport?" (vinkje of streepje; tot 23 nov 2026 het label
   "Met rapport") als een bijlage een rapport is (`MRThemas.metRapport()`: herkend door de pipeline en niet afgewezen
-  in `data/rapporten.json`); in het bijlagenblok staan rapporten vooraan met het label "Rapport:" (15).
+  in `data/rapporten.json`); in het bijlagenblok staan beslisnota's bovenaan en daarna rapporten, met het label "Rapport:" (15).
   Sinds 23 nov 2026 ook brieven en verslagen aan de Eerste Kamer (`kamer: "Eerste Kamer"` in `stukken.json`): kolom en
   filter Kamer, link naar officielebekendmakingen.nl; in Net binnen en zoeken "Kamerbrief, Eerste Kamer".
 - Bijlagen in de uitgeklapte rij van een Kamerbrief en van een antwoord (`bijlagenBlok()`); de zoekfunctie zoekt ook op de titels.
 
 ## Documentweergave
 
-Knoppen "Bekijk het origineel", "Lees de brief", "Lees de vragen", "Lees het antwoord" en "Lees" bij bijlagen (`docKnop()`)
-openen een venster (`toonDocument()`): pdf met pdf.js, Word met docx-preview en JSZip (beide in `vendor/`, pas geladen bij openen),
+Knoppen "Bekijk het origineel", "Lees de brief", "Lees de vragen", "Lees het antwoord" (`docKnop()`) en documentlinks in lijsten
+(`docRegel()`, sinds 24 nov 2026: bijlagen, antwoorden, uitstel, eerdere edities, stukken van een wet; met een knop Download ernaast) openen een venster (`toonDocument()`): pdf met pdf.js, Word met docx-preview en JSZip (beide in `vendor/`, pas geladen bij openen),
 rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat open, een iframe niet).
 Word (sinds 24 nov 2026, `DOCX_OPTIES`, `docxHerstel()`, `wordExtra()`): lettertype, grootte, vet, cursief, onderstreept en uitlijning
 uit het document. `docxHerstel()` herstelt fouten van docx-preview (standaardstijl, regelafstand), haalt onveilige links en elementen weg

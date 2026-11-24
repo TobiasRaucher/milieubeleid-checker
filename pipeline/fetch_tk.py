@@ -471,8 +471,8 @@ def bijlagen(d):
 
 
 def bijlage_volgorde(b):
-    """Rapporten eerst, beslisnota's achteraan."""
-    return (b["titel"].lower().startswith("beslisnota"), not b.get("rapport"), b["titel"].lower())
+    """Beslisnota's eerst (ook in bijlagenBlok() in app.js), dan rapporten."""
+    return ("beslisnota" not in b["titel"].lower(), not b.get("rapport"), b["titel"].lower())
 
 
 def is_rapport_inhoud(tekst):
