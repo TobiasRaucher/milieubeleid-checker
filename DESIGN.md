@@ -22,9 +22,9 @@ White carries the page, black is text and lines, forest is heads, action and "he
 
 | Colour | Means | Used for |
 | --- | --- | --- |
-| White | content | page, rows, cards, menus, chart, footer, fields, card, week and month headings; text on forest |
+| White | content | page, rows, cards, menus, chart, footer, fields, week and month headings; text on forest |
 | Black (ink) | text and lines | text, hairlines and borders (ink at 18%, only as a line), the line under a month heading |
-| Forest `--accent` | head, action, or you are here | header bar, table head, the 2px line under card and week headings, main buttons, links, filters, toggles, the chosen option, focus, the 4px strip of a hovered or open row |
+| Forest `--accent` | head, action, or you are here | header bar, table head, the heading bars on Overzicht and theme pages, the 2px line under week headings, main buttons, links, filters, toggles, the chosen option, focus, the 4px strip of a hovered or open row |
 | Red `--alarm` | attention | see "Attention and meaning" |
 
 | Role | Token | Value |
@@ -41,7 +41,7 @@ White carries the page, black is text and lines, forest is heads, action and "he
 - Greens are only these: forest and its hover `#002e1c`. No pale green and no grey fills.
 - States without a fill: hover on a menu option, card, chip or outlined button is a forest edge; a hovered or open row gets a 4px forest strip on its left; a search match is bold with a forest underline; a switcher track, tag, note or chance block has a `--line` edge.
 - `--accent` `#00452a` (11.1:1 on white). Headings, plain column names and resting row titles stay ink; titles turn forest on hover. The one exception to "green is action" is the dot of aangenomen.
-- The header bar and the table head are the only large forest areas. Elsewhere forest is limited to main buttons, filters in use, the chosen switcher or chart option, and text or borders of second-level buttons. The footer stays white.
+- The header bar, the table head and the heading bars of Net binnen, Komt eraan and Hoe staan we er voor? (since 24 Nov 2026) are the only large forest areas. Elsewhere forest is limited to main buttons, filters in use, the chosen switcher or chart option, and text or borders of second-level buttons. The footer stays white.
 - A focused field gets a 2px forest edge (border plus 1px ring); on the header bar the focus ring is white.
 - The document type in Net binnen and badges are ink.
 
@@ -144,7 +144,7 @@ lucide, inline SVG through `ico()` in `assets/app.js` (class `.ico`): **16px, st
 
 ## Overzicht lists
 
-- Order and widths: Net binnen left (3fr), Komt eraan right (2fr) from 1000px; stacked in that order below. Both sections have their heading on white with a 2px forest line under it, on top of the card (since 24 Nov 2026; 24/500 on Overzicht, like "Hoe staan we er voor?" below them (lists above the chart since 23 Nov 2026, Tobias) (a card since 16 Nov 2026; the switcher has no top margin inside it). Above everything sits `.ov-intro`: one `h1` (`.ov-lead`, 45/500, ink, max 36ch; the page's `h1`) and one paragraph (`.ov-uitleg`, 18/400, ink-2, max `--leesbreedte`; since 18 Nov 2026, with links to Thema's, Agenda, Wetgeving, Moties, Amendementen, Kamervragen and Kamerbrieven), 32 above, 8 between, no accent or frame. The first row of Komt eraan is the next plenary vote when one is planned (`komendeStemming()`): `Stemmingen` (link to `#moties`), the `dagKort` date and "Plenaire vergadering", then "n moties en n amendementen" as the title, linking to that day on Agenda (opened), with "Stemming morgen" on line 1; no red and no Eerstvolgend badge. Komt eraan is filled up to 15 rows and then trimmed after drawing (`passKomtEraan()`) until it is no longer than Net binnen, so both columns end about level. The two cards stretch to one bottom edge: the list grows, the kaartvoet stays at the bottom.
+- Order and widths: Net binnen left (3fr), Komt eraan right (2fr) from 1000px; stacked in that order below. Both sections have their heading in white on a forest bar (the year switcher in it on a white ground), on top of the card (since 24 Nov 2026; 24/500 on Overzicht, like "Hoe staan we er voor?" below them (lists above the chart since 23 Nov 2026, Tobias) (a card since 16 Nov 2026; the switcher has no top margin inside it). Above everything sits `.ov-intro`: one `h1` (`.ov-lead`, 45/500, ink, max 36ch; the page's `h1`) and one paragraph (`.ov-uitleg`, 18/400, ink-2, max `--leesbreedte`; since 18 Nov 2026, with links to Thema's, Agenda, Wetgeving, Moties, Amendementen, Kamervragen and Kamerbrieven), 32 above, 8 between, no accent or frame. The first row of Komt eraan is the next plenary vote when one is planned (`komendeStemming()`): `Stemmingen` (link to `#moties`), the `dagKort` date and "Plenaire vergadering", then "n moties en n amendementen" as the title, linking to that day on Agenda (opened), with "Stemming morgen" on line 1; no red and no Eerstvolgend badge. Komt eraan is filled up to 15 rows and then trimmed after drawing (`passKomtEraan()`) until it is no longer than Net binnen, so both columns end about level. The two cards stretch to one bottom edge: the list grows, the kaartvoet stays at the bottom.
 - A Net binnen row follows the row rule (Do 6): `Kamerbrief  18 nov 2026  Klimaat en Groene Groei` on line 1, the title on line 2, then a tail: indiener as surname plus fractie with c.s. (same `indienerKort` as the Moties table) and `· Voor X / Tegen Y`, the Kamerstuk number and title for a stuk, or the Kamerstuk number for a wetsvoorstel. Komt eraan uses the same rows: type, date and time, commissie; the vote row reads `Stemmingen  di 24 nov  Plenaire vergadering`. Names in titles lose their initials after "het lid" or "de leden".
 
 ## Themes

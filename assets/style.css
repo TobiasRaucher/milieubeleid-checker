@@ -788,8 +788,8 @@ details.thematermen > p.termen { color: var(--ink); }
 
 /* Wat Nederland uitstoot: de hoofdgrafiek van Overzicht, met de doelen uit de Klimaatwet en de stikstofwet */
 /* kop boven een kaart, zoals Net binnen en Komt eraan (sinds 16 nov 2026) */
-/* kop op wit met een bosgroene lijn eronder (Tobias, 24 nov 2026) */
-.mi-kop, .ov-onder > section > h2:first-child { margin: 40px 0 0; padding: 12px 20px; background: var(--card); border: 1px solid var(--line); border-bottom: 2px solid var(--accent); border-radius: var(--r-card) var(--r-card) 0 0; }
+/* kop wit op bosgroen (Tobias, 24 nov 2026) */
+.mi-kop, .ov-onder > section > h2:first-child { margin: 40px 0 0; padding: 12px 20px; background: var(--accent); color: var(--card); border: 1px solid var(--accent); border-radius: var(--r-card) var(--r-card) 0 0; }
 .mi-kop + .card, .ov-onder > section > h2 + .card { border-top: 0; border-radius: 0 0 var(--r-card) var(--r-card); }
 .mi-kop h2, .ov-onder h2 { font-size: var(--t-24); letter-spacing: var(--sp-24); }
 /* wet kiezen: kleine schakelaar op 18px, zelfde vorm als de andere schakelaars */
@@ -799,8 +799,8 @@ details.thematermen > p.termen { color: var(--ink); }
 .mi-wetten button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* jaarkeuze in de kop: 32 hoog, zodat de kop even hoog blijft als die van Net binnen */
 .mi-kop { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.mi-kop h2 { margin: 0; }
-.mi-jaren { margin: -8px 0; }
+.mi-kop h2 { margin: 0; color: var(--card); }
+.mi-jaren { margin: -8px 0; background: var(--card); }
 .mi-jaren:empty { display: none; }
 .mi-jaren button { min-height: 32px; }
 .mi-links .mi-wetten { margin-bottom: 20px; }
@@ -913,6 +913,7 @@ button:active:not(:disabled), .chip:active, .knop:active, nav.tabs a:active, .ta
   nav.tabs, form.zoek, .filters, .werkbalk, .actieve-filters, .naarboven, .debat .toggle, .skiplink, #agendaknoppen, .mi-tip, .mi-hover, .mi-wetten { display: none !important; }
   .debat .body-wrap { grid-template-rows: 1fr; visibility: visible; }
   .card, .tl-dag, tr { break-inside: avoid; }
+  .mi-kop, .ov-onder > section > h2:first-child { print-color-adjust: exact; }
   a { color: inherit; }
   #view.binnenkomst, .wm-radar :is(span, path) { animation: none; }
 }
