@@ -50,7 +50,7 @@
   --neutraal-stip: #a5ada7;      /* ingetrokken, vervallen */
 
   /* Bediening: 50% groter dan de oorspronkelijke 36px (Tobias, 17 nov 2026) */
-  --h-control: 56px;             /* tabs, zoekveld, werkbalk, filterknoppen */
+  --h-control: 56px;             /* tabelkop */
   --h-klein: 48px;               /* compacte knoppen: actieve filters, menuregels */
 
   /* Vorm: afronding per grootte; binnenste = buitenste min de ruimte ertussen */
@@ -61,7 +61,7 @@
 
   /* Ruimte: alles op een raster van 4px */
   --breedte: 1720px;             /* maximale breedte van de inhoud */
-  --marge: clamp(16px, 2.5vw, 40px); /* ruimte links en rechts */
+  --marge: clamp(16px, round(2.4vw, 8px), 40px); /* ruimte links en rechts: 32 op 1280 en 1440, 40 vanaf 1500 */
   --leesbreedte: 92ch;           /* maximale regellengte van lopende tekst */
 
   /* Beweging: één curve, drie duren */
@@ -87,6 +87,7 @@ b, strong { font-weight: 600; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 #view:focus { outline: none; }
 .muted { color: var(--muted); }
+:where(p) { margin: 12px 0; } /* in plaats van de browsermarge (1em, niet op het raster) */
 .small { font-size: var(--t-13); }
 /* mono alleen voor bronstempels, assen, Kamerstuk- en zaaknummers en meetwaarden; datums en tijden in DM Sans met vaste cijferbreedte */
 .mono, .peil, .stamp, .mi-as, .mi-eind, .mi-reflabel { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
@@ -133,7 +134,7 @@ header.top .wrap { display: flex; align-items: center; gap: 8px 20px; padding-to
 
 /* Hoofdnavigatie: zelfde ronding als het zoekveld; balk 48 hoog, zoals logo en zoekveld */
 nav.tabs { position: relative; display: flex; flex: none; gap: 4px; padding: 0 4px; border-radius: var(--r-control); overflow: visible; }
-nav.tabs > a, .tab-knop { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 4px; min-height: var(--h-klein); padding: 0 16px; border: 0; border-radius: var(--r-control); background: transparent; font: inherit; font-size: var(--t-18); line-height: 1; text-decoration: none; color: var(--card); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+nav.tabs > a, .tab-knop { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 4px; min-height: var(--h-klein); padding: 0 16px; border: 0; border-radius: var(--r-control); background: transparent; font: inherit; font-size: var(--t-18); letter-spacing: var(--sp-18); line-height: 1; text-decoration: none; color: var(--card); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 nav.tabs > a:hover:not(.active), .tab-menu:not(.active) .tab-knop:hover { background: var(--accent-hover); }
 nav.tabs > a.active, .tab-menu.active .tab-knop { color: var(--accent); font-weight: 500; }
 nav.tabs:not(.glij) > a.active { background: var(--card); }
@@ -149,7 +150,7 @@ nav.tabs:not(.glij) > a.active { background: var(--card); }
 .tab-menu:hover:not(.dicht, .open) :is(.tab-lijst, .chev) { transition-delay: 100ms; } /* alleen openen bij aanwijzen wacht even: langs het menu bewegen opent het niet (Tobias, 19 nov 2026) */
 .tab-groep { display: flex; flex-direction: column; gap: 8px; }
 .tab-groepkop { margin: 0; padding: 8px 0 4px; /* kop op één lijn met de linkerrand van de kaarten (Tobias, 19 nov 2026) */ font-size: var(--t-13); font-weight: 500; color: var(--muted); }
-.tab-lijst a { display: flex; align-items: center; min-height: var(--h-klein); padding: 8px 12px; background: var(--page); border: 1px solid var(--line); border-radius: var(--r-control); font-size: var(--t-18); font-weight: 500; line-height: 1.3; color: var(--ink); text-decoration: none; transition: background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+.tab-lijst a { display: flex; align-items: center; min-height: var(--h-klein); padding: 8px 12px; background: var(--page); border: 1px solid var(--line); border-radius: var(--r-control); font-size: var(--t-18); letter-spacing: var(--sp-18); font-weight: 500; line-height: 1.3; color: var(--ink); text-decoration: none; transition: background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 .tab-lijst a:hover { border-color: var(--accent); }
 .tab-lijst a[aria-current] { border-color: var(--accent); font-weight: 600; }
 .tab-lijst a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
@@ -157,7 +158,7 @@ nav.tabs:not(.glij) > a.active { background: var(--card); }
 /* Zoeken in de kop: altijd zichtbaar, zoekt in de hele site */
 form.zoek { position: relative; flex: 1 1 160px; min-width: 0; max-width: 360px; }
 .zoek-ico { position: absolute; left: 16px; top: 50%; width: 20px; height: 20px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-form.zoek input { width: 100%; height: var(--h-klein); font: inherit; font-size: var(--t-18); color: var(--ink); background: var(--card); border: 1px solid transparent; border-radius: var(--r-control); padding: 0 44px 0 48px; transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease); }
+form.zoek input { width: 100%; height: var(--h-klein); font: inherit; font-size: var(--t-18); letter-spacing: var(--sp-18); color: var(--ink); background: var(--card); border: 1px solid transparent; border-radius: var(--r-control); padding: 0 44px 0 48px; transition: background-color var(--d-kort) var(--ease), border-color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease); }
 form.zoek input::placeholder { color: var(--muted); }
 form.zoek input:hover { border-color: var(--line); }
 form.zoek input:focus { outline: none; box-shadow: 0 0 0 2px var(--accent), 0 0 0 4px var(--card); }
@@ -173,7 +174,7 @@ h2 { font-size: var(--t-24); line-height: 1.25; letter-spacing: var(--sp-24); ma
 h3 { font-size: var(--t-15); line-height: 1.35; margin: 0 0 4px; }
 /* paginatitel: de eerste kop van een pagina */
 #view > h1:first-child, #view > .terug + h1, .kop > h1:first-child, .kop > .terug + h1, #zoekres > h2 { font-size: var(--t-30); line-height: 1.15; letter-spacing: var(--sp-30); margin: 32px 0 8px; }
-#view > h1:first-child + p, #view > .terug + h1 + p, .kop > h1:first-child + p, .kop > .terug + h1 + p { max-width: var(--leesbreedte); margin: 0 0 8px; font-size: var(--t-18); line-height: 1.5; color: var(--ink-2); text-wrap: pretty; } /* ondertitel (Tobias, 18 nov 2026) */
+#view > h1:first-child + p, #view > .terug + h1 + p:not(.wp-meta), .kop > h1:first-child + p, .kop > .terug + h1 + p { max-width: var(--leesbreedte); margin: 0 0 8px; font-size: var(--t-18); letter-spacing: var(--sp-18); line-height: 1.5; color: var(--ink-2); text-wrap: pretty; } /* ondertitel (Tobias, 18 nov 2026) */
 h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px; font-size: var(--t-15); font-weight: 600; color: var(--ink); padding-bottom: 8px; border-bottom: 1px solid var(--line); }
 .telregel { margin: 12px 0; }
 
@@ -193,7 +194,8 @@ h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px;
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 20px; transition: border-color var(--d-kort) var(--ease); }
 .card > h3 { font-size: var(--t-18); line-height: 1.3; letter-spacing: var(--sp-18); margin: 0 0 8px; }
 .card > p { margin: 12px 0; }
-.card.zoektips > h3, .tekstkaart > h3 { font-size: var(--t-15); font-weight: 600; margin-top: 20px; }
+.card.zoektips > h3, .tekstkaart > h3 { font-size: var(--t-15); letter-spacing: 0; font-weight: 600; margin-top: 20px; }
+.tekstkaart ul { margin: 12px 0; }
 .kaartvoet, .voetregel { margin-top: 12px; font-size: var(--t-13); }
 .kaartvoet { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 /* voet van een kaart: haarlijn over de volle breedte, 8 rondom de knoppen (Tobias, 24 nov 2026) */
@@ -326,24 +328,24 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .facet[open] > .facet-menu { opacity: 1; transform: none; transition-duration: var(--d-menu); }
 @starting-style { .facet[open] > .facet-menu { opacity: 0; transform: translateY(-4px) scale(0.98); } }
 .facet.al-open[open] > .facet-menu { transition: none; } /* opnieuw getekend terwijl open: niet opnieuw binnenkomen */
-.facet-menu label { user-select: none; display: flex; align-items: center; gap: 12px; min-height: var(--h-klein); padding: 4px 12px; border-radius: var(--r-control); font-size: var(--t-18); cursor: pointer; }
+.facet-menu label { user-select: none; display: flex; align-items: center; gap: 12px; min-height: var(--h-klein); padding: 4px 12px; border-radius: var(--r-control); font-size: var(--t-18); letter-spacing: var(--sp-18); cursor: pointer; }
 .facet-menu label:hover { box-shadow: inset 0 0 0 1px var(--accent); }
 .facet-menu label:has(input:checked), .facet-menu label:has(input:checked) .status { font-weight: 600; }
 .facet-menu label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: -2px; }
 .facet-menu label > span:first-of-type { flex: 1; }
-.facet-menu .n { color: var(--muted); font-size: var(--t-15); }
+.facet-menu .n { color: var(--muted); font-size: var(--t-15); letter-spacing: 0; }
 .facet-menu input { accent-color: var(--accent); width: 20px; height: 20px; margin: 0; }
-.facet-menu .status { font-size: var(--t-18); font-weight: 400; }
+.facet-menu .status { font-size: var(--t-18); letter-spacing: var(--sp-18); font-weight: 400; }
 .actieve-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 16px; }
 .actieve-filters[hidden] { display: none; }
-.actieve-filters .chip.actief { min-height: var(--h-klein); padding: 0 12px 0 16px; font-size: var(--t-18); }
+.actieve-filters .chip.actief { min-height: var(--h-klein); padding: 0 12px 0 16px; font-size: var(--t-18); letter-spacing: var(--sp-18); }
 .actieve-filters .chip.actief .ico { width: 20px; height: 20px; }
 .actieve-filters .status { font-size: inherit; font-weight: 400; }
 .actieve-filters .linkknop { font-size: var(--t-15); }
 
 /* grote schakelaar Moties / Amendementen: staat in voor de paginatitel; zelfde vorm als de hoofdtabs (gekozen vlak in een dunne rand), op 20px */
 .schakelaar { display: inline-flex; gap: 4px; padding: 4px; margin: 0; box-shadow: inset 0 0 0 1px var(--line); border-radius: var(--r-control); }
-.schakelaar a { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 16px; border-radius: 4px; font-size: var(--t-18); font-weight: 500; letter-spacing: var(--sp-18); color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
+.schakelaar a { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 4px; font-size: var(--t-18); font-weight: 500; letter-spacing: var(--sp-18); color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease), box-shadow var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 .schakelaar a:hover:not([aria-current]) { color: var(--accent); }
 .schakelaar a[aria-current="page"] { background: var(--accent); color: var(--card); }
 .schakelaar a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -400,7 +402,7 @@ thead .facet-menu :focus-visible, thead .facet-menu label:has(:focus-visible) { 
 .motietabel thead .sorteer, .motietabel thead .sorteer .ico { color: var(--card); }
 .kopf .facet-menu { font-weight: 400; color: var(--ink); white-space: normal; text-align: left; }
 .motietabel thead .schakelaar { margin-left: -7px; /* rondom het witte deel 9px groen */ box-shadow: none; }
-.motietabel thead .schakelaar a { min-height: 36px; font-size: var(--t-15); color: var(--card); }
+.motietabel thead .schakelaar a { min-height: 36px; font-size: var(--t-15); letter-spacing: 0; color: var(--card); }
 .motietabel thead .schakelaar a:hover:not([aria-current]) { color: var(--card); background: var(--accent-hover); }
 .motietabel thead .schakelaar a[aria-current="page"] { background: var(--card); color: var(--accent); }
 .motietabel td.rapport .ico { width: 20px; height: 20px; color: var(--ink-2); }
@@ -483,13 +485,13 @@ tr.detail.weg { animation: uitgang var(--d-kort) var(--ease) both; pointer-event
 .wfasen .nu { border-top-color: var(--ink); color: var(--ink); font-weight: 500; }
 /* pagina per wetsvoorstel (#wetgeving/<Kamerstuk>): kop, fase, links, dan de tijdlijn per dag (datum links, oudste boven) */
 .wp-titel { max-width: var(--leesbreedte); }
-.wp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0; font-size: var(--t-14); color: var(--ink-2); }
+.wp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 8px; font-size: var(--t-14); color: var(--ink-2); }
 /* volgende stap: wat, wanneer en bij wie, als eigen blok */
 .wp-stap { display: grid; gap: 4px; margin-top: 12px; padding: 16px 20px; background: var(--card); border: 2px solid var(--accent); border-radius: var(--r-card); color: var(--ink-2); }
 .wp-stap p { margin: 0; }
 tr.detail .wp-stap { background: var(--page); }
 .wp-stap .k { font-size: var(--t-13); color: var(--muted); }
-.wp-stapnaam { font-size: var(--t-18); line-height: 1.35; font-weight: 500; color: var(--ink); }
+.wp-stapnaam { font-size: var(--t-18); letter-spacing: var(--sp-18); line-height: 1.35; font-weight: 500; color: var(--ink); }
 .wp-stapmeta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; font-size: var(--t-14); }
 .wp-fase { max-width: var(--leesbreedte); margin-top: 24px; font-size: var(--t-15); color: var(--ink-2); }
 .wp-links { max-width: var(--leesbreedte); margin-top: 16px; }
@@ -536,7 +538,7 @@ dialog.docview[open]::backdrop { background: rgba(14, 20, 17, 0.32); }
 .dv-kop { display: flex; align-items: flex-start; gap: 24px; padding: 16px 16px 16px 24px; border-bottom: 1px solid var(--line); }
 .dv-kopt { flex: 1; min-width: 0; }
 .dv-meta { margin: 0 0 4px; font-family: var(--font-mono); font-size: var(--t-12); color: var(--muted); }
-.dv-kop h2 { margin: 0; font-size: var(--t-18); line-height: 24px; font-weight: 500; letter-spacing: 0; }
+.dv-kop h2 { margin: 0; font-size: var(--t-18); line-height: 24px; font-weight: 500; letter-spacing: var(--sp-18); }
 .dv-acties { display: flex; gap: 16px; align-items: center; min-height: 32px; font-size: var(--t-13); white-space: nowrap; }
 .dv-sluit { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 0; border-radius: var(--r-control); background: none; color: var(--ink-2); cursor: pointer; transition: background-color var(--d-kort) var(--ease); }
 .dv-sluit:hover { box-shadow: inset 0 0 0 1px var(--accent); color: var(--accent); }
@@ -566,7 +568,7 @@ dialog.docview[open]::backdrop { background: rgba(14, 20, 17, 0.32); }
 .dv-inhoud { position: sticky; top: 0; max-height: calc(100vh - 160px); overflow: auto; font-size: var(--t-14); line-height: 20px; }
 .dv-inhoud-kop { margin: 0 0 8px; padding: 0 8px; font-weight: 500; color: var(--ink); }
 .dv-inhoud ol { list-style: none; margin: 0; padding: 0; }
-.dv-inhoud a { display: block; padding: 6px 8px; border-radius: var(--r-control); color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease); }
+.dv-inhoud a { display: block; padding: 4px 8px; border-radius: var(--r-control); color: var(--ink-2); text-decoration: none; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease); }
 .dv-inhoud a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .dv-inhoud a[aria-current="true"] { color: var(--ink); font-weight: 500; box-shadow: 0 0 0 1px var(--line); }
 /* tekstlaag van pdf.js: onzichtbare, selecteerbare tekst boven de afbeelding van de pagina (uit pdf_viewer.css) */
@@ -637,7 +639,7 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-dag { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 0; border-bottom: 1px solid var(--line); scroll-margin-top: 92px; }
 .tl-datum { text-align: center; line-height: 1.15; padding-top: 16px; }
 .tl-datum .wd { font-size: var(--t-12); font-weight: 500; color: var(--ink-2); }
-.tl-datum .dn { font-size: var(--t-24); font-weight: 500; font-variant-numeric: tabular-nums; }
+.tl-datum .dn { font-size: var(--t-24); letter-spacing: var(--sp-24); font-weight: 500; font-variant-numeric: tabular-nums; }
 .tl-datum .mn { font-size: var(--t-12); color: var(--muted); }
 /* vandaag: rood woord en dagnummer en een rode lijn links; geen vlak (Tobias, 19 nov 2026) */
 .tl-dag.vandaag { box-shadow: inset 2px 0 0 var(--alarm); }
@@ -657,12 +659,13 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-item > .body-wrap { grid-column: 1 / -1; grid-row: 4; }
 .tl-item.debat:is(:hover, .open) { box-shadow: inset 4px 0 var(--accent); }
 .tl-item.leeg { display: block; }
-.tl-tijd { font-size: var(--t-18); line-height: 1.35; font-weight: 500; color: var(--ink); }
+.tl-tijd { font-size: var(--t-18); letter-spacing: var(--sp-18); line-height: 1.35; font-weight: 500; color: var(--ink); }
 .tl-eind { display: block; font-size: var(--t-14); font-weight: 400; color: var(--ink-2); }
+.tl-tijd > span { letter-spacing: 0; }
 .tl-tijd .badge { display: flex; margin-top: 2px; white-space: normal; line-height: 16px; }
 .badge.termijn { color: var(--ink); font-size: var(--t-14); font-weight: 600; }
 .badge.termijn.alarm { color: var(--alarm-tekst); }
-.tl-titel { font-size: var(--t-18); font-weight: 500; line-height: 1.35; margin-bottom: 4px; text-wrap: pretty; }
+.tl-titel { font-size: var(--t-18); letter-spacing: var(--sp-18); font-weight: 500; line-height: 1.35; margin-bottom: 4px; text-wrap: pretty; }
 .tl-dag.verleden .tl-titel a, .tl-item.voorbij .tl-titel a { color: var(--ink-2); }
 .tl-item.mijlpaal .tl-titel { color: var(--ink); }
 /* een vergadering met samenvatting of agenda klapt ook uit met een klik op de regel */
@@ -706,7 +709,6 @@ ul.zook .status { font-size: var(--t-13); }
 .zsug-titel { display: block; font-size: var(--t-14); line-height: 20px; color: var(--ink); overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .zsug-titel mark { background: none; color: inherit; font-weight: 600; text-decoration: underline 2px var(--accent); text-underline-offset: 2px; }
 .zsug-alle { margin-top: 4px; border-top: 1px solid var(--line); border-radius: 0 0 var(--r-control) var(--r-control); font-size: var(--t-14); color: var(--ink-2); }
-.zoeklijst li { padding: 16px 0; }
 .zoeklijst .ztitel { font-weight: 500; font-size: var(--t-15); }
 .zoeklijst .zfrag { font-size: var(--t-14); color: var(--ink-2); margin-top: 4px; }
 .zoeklijst mark, .ztitel mark { background: none; color: inherit; font-weight: 600; text-decoration: underline 2px var(--accent); text-underline-offset: 2px; }
@@ -792,7 +794,7 @@ details.thematermen > p.termen { color: var(--ink); }
 .mi-kop + .card, .ov-onder > section > h2 + .card { border-top: 0; border-radius: 0 0 var(--r-card) var(--r-card); }
 .mi-kop h2, .ov-onder h2 { font-size: var(--t-24); letter-spacing: var(--sp-24); }
 /* wet en jaar kiezen: zelfde schakelaar, 32 per keuze, 8 van de rand (Tobias, 24 nov 2026) */
-.mi-wetten button { display: inline-flex; align-items: center; min-height: 32px; padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); font-weight: 500; color: var(--ink-2); cursor: pointer; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease); }
+.mi-wetten button { display: inline-flex; align-items: center; min-height: 32px; padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); letter-spacing: var(--sp-18); font-weight: 500; color: var(--ink-2); cursor: pointer; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease); }
 .mi-wetten button:hover:not([aria-pressed="true"]) { color: var(--accent); }
 .mi-wetten button[aria-pressed="true"] { background: var(--accent); color: var(--card); }
 .mi-wetten button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }

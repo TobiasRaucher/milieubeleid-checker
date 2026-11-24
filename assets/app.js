@@ -2258,7 +2258,7 @@
       const metKop = komend.length;
       blokken += `<section class="zsectie" aria-labelledby="zeerder">${metKop ? `<h3 id="zeerder" class="zkop">Eerder <span class="n">${nl(rest.length)}</span></h3>` : `<h3 id="zeerder" class="${blokken ? "zkop" : "sr-only"}">Resultaten <span class="n">${nl(rest.length)}</span></h3>`}
         <div class="card">${inhoud}
-        ${rest.length > S.zoekMax ? `<div class="kaartvoet"><button type="button" class="chip" id="zmeer">Toon meer <span class="n">${nl(rest.length - S.zoekMax)} over</span></button></div>` : ""}</div></section>`;
+        ${rest.length > S.zoekMax ? `<div class="kaartvoet"><button type="button" class="knop licht" id="zmeer">Toon meer <span class="n">${nl(rest.length - S.zoekMax)} over</span></button></div>` : ""}</div></section>`;
     }
 
     // niets gevonden: zeggen waardoor, en wat wel werkt

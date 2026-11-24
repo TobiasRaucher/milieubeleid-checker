@@ -5,12 +5,12 @@ const lees = (f) => fs.readFileSync(path.join(__dirname, "..", f), "utf8");
 
 const RUIMTE = new Set([0, 1, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64]); // 4px-raster; 1 en 2 alleen als bijstelling
 // Bestaande uitzonderingen: plaats voor een icoon of uitlijning op een andere rand. Nieuwe alleen na overleg met Tobias.
-const UITZONDERING = [/^form\.zoek input$/, /^\.filters select$/, /^\.schakelaar a$/, /^\.kopf \.facet > summary$/, /^\.motietabel thead \.schakelaar$/,
-  /^\.dv-inhoud a$/, /^ol\.agendapunten$/];
+const UITZONDERING = [/^form\.zoek input$/, /^\.filters select$/, /^\.kopf \.facet > summary$/, /^\.motietabel thead \.schakelaar$/,
+  /^ol\.agendapunten$/];
 const KLEUR_OK = /^#fff$/; // papier in de documentviewer, tekst op de skiplink
 
 function controleer(css) {
-  const fouten = [];
+  const fouten = [], groot = new Map(), spatie = new Set();
   css = css.replace(/\/\*[\s\S]*?\*\//g, (c) => c.replace(/[^\n]/g, " "));
   for (const m of css.matchAll(/([^{};]+)\{([^{}]*)\}/g)) {
     const keuze = m[1].trim();
@@ -19,6 +19,10 @@ function controleer(css) {
     for (const d of m[2].matchAll(/([\w-]+)\s*:\s*([^;]+)/g)) {
       const [, e, w] = d, meld = (waarom) => fouten.push(`regel ${regel}: ${keuze} { ${e}: ${w.trim()} } ${waarom}`);
       if (/^font(-size)?$/.test(e) && /\d(px|rem|em)\b/.test(w)) meld("gebruik --t-*");
+      const t = e === "font-size" && w.match(/--t-(\d+)/);
+      if (t && t[1] >= 18) groot.set(keuze, regel);
+      if (e === "letter-spacing" && /--sp-/.test(w)) spatie.add(keuze);
+      if (e === "letter-spacing" && /--sp-/.test(w) && !new RegExp("--t-" + w.match(/--sp-(\d+)/)[1] + "\\b").test(m[2])) meld("--sp-* hoort bij dezelfde --t-*");
       if (e === "font-weight" && /\b([7-9]00|bold)\b/.test(w)) meld("nooit zwaarder dan 600");
       for (const k of w.replace(/url\([^)]*\)/g, "").match(/#[0-9a-f]{3,8}\b/gi) || []) if (!KLEUR_OK.test(k)) meld("gebruik een kleurtoken");
       if (/radius/.test(e) && (w.match(/[\d.]+px/g) || []).some((p) => parseFloat(p) > 4)) meld("gebruik --r-*");
@@ -26,11 +30,13 @@ function controleer(css) {
         for (const p of w.match(/[\d.]+px/g) || []) if (!RUIMTE.has(parseFloat(p))) meld("niet op het raster");
     }
   }
+  // 18 en groter heeft altijd zijn letterafstand (eenmaal per selector; een kleinere stand in @media hoeft niet opnieuw)
+  for (const [keuze, regel] of groot) if (!spatie.has(keuze)) fouten.push(`regel ${regel}: ${keuze} mist letter-spacing: var(--sp-*)`);
   return fouten;
 }
 
 // zelftest: elke soort fout wordt gevonden, en goede regels niet
-for (const r of ["font-size: 17px", "font-weight: 700", "color: #123456", "border-radius: 9px", "padding: 10px"])
+for (const r of ["font-size: 17px", "font-weight: 700", "color: #123456", "border-radius: 9px", "padding: 10px", "font-size: var(--t-18)", "font-size: var(--t-15); letter-spacing: var(--sp-18)"])
   if (controleer(`a { ${r} }`).length !== 1) throw new Error("zelftest mist: " + r);
 if (controleer("a { padding: 8px 12px; font-size: var(--t-15); border-radius: 4px }").length) throw new Error("zelftest: valse melding");
 
