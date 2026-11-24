@@ -12,14 +12,12 @@
   /* Lettergroottes (alleen deze) */
   --t-12: 12px;   /* meta, labels, bronstempel, assen */
   --t-13: 13px;   /* bijschriften, secundaire tekst */
-  --t-14: 14px;   /* bediening, tabellen, lijsten */
-  --t-15: 15px;   /* lopende tekst */
-  --t-18: 18px;   /* kaarttitels */
-  --t-20: 20px;   /* sectiekoppen, woordmerk op de telefoon */
-  --t-24: 24px;   /* woordmerk */
+  --t-14: 14px;   /* meta, tabelcellen, chips, knoppen */
+  --t-15: 15px;   /* rijtitels, lopende tekst */
+  --t-18: 18px;   /* tabs, schakelaars, zoekvelden, kaarttitels */
+  --t-24: 24px;   /* sectiekoppen, dagnummer op Agenda */
   --t-30: 30px;   /* paginatitel, kerncijfers */
   --t-45: 45px;   /* openingszin Overzicht, woordmerk */
-  --t-64: 64px;   /* het CO2-getal */
 
   /* Letterafstand per grootte: hoe groter, hoe strakker; 15 en kleiner op 0 (Tobias, 19 nov 2026) */
   --sp-45: -0.025em;  /* openingszin, woordmerk */
@@ -198,6 +196,8 @@ h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 32px 0 12px;
 .card.zoektips > h3, .tekstkaart > h3 { font-size: var(--t-15); font-weight: 600; margin-top: 20px; }
 .kaartvoet, .voetregel { margin-top: 12px; font-size: var(--t-13); }
 .kaartvoet { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+/* voet van een kaart: haarlijn over de volle breedte, 8 rondom de knoppen (Tobias, 24 nov 2026) */
+.card > .kaartvoet { margin: 16px -20px -20px; padding: 8px; border-top: 1px solid var(--line); }
 .voetregel + .kaartvoet, .voetregel + div, .kaartvoet + .voetregel { margin-top: 4px; }
 .note { border: 1px solid var(--line); border-radius: var(--r-card); padding: 12px 16px; font-size: var(--t-14); color: var(--ink); margin: 16px 0; text-wrap: pretty; }
 .empty { color: var(--muted); padding: 20px; text-align: center; text-wrap: pretty; }
@@ -224,7 +224,7 @@ footer a { color: var(--ink-2); }
   .stat:nth-child(odd) { border-left: 0; }
   .stat:nth-child(n + 3) { border-top: 1px solid var(--line); }
   .stats.drie .stat:last-child { grid-column: 1 / -1; }
-  .stat .num { font-size: 24px; }
+  .stat .num { font-size: var(--t-24); }
 }
 
 /* Bronstempel: het vaste kenmerk. Bron · plek · peildatum, overal in hetzelfde formaat. */
@@ -704,12 +704,12 @@ ul.zook .status { font-size: var(--t-13); }
 .zsug-optie:hover, .zsug-optie[aria-selected="true"] { box-shadow: inset 0 0 0 1px var(--accent); }
 .zsug-meta { display: flex; align-items: center; gap: 8px; font-size: var(--t-12); color: var(--muted); margin-bottom: 2px; }
 .zsug-titel { display: block; font-size: var(--t-14); line-height: 20px; color: var(--ink); overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-.zsug-titel mark { background: none; color: inherit; font-weight: 700; text-decoration: underline 2px var(--accent); text-underline-offset: 2px; }
+.zsug-titel mark { background: none; color: inherit; font-weight: 600; text-decoration: underline 2px var(--accent); text-underline-offset: 2px; }
 .zsug-alle { margin-top: 4px; border-top: 1px solid var(--line); border-radius: 0 0 var(--r-control) var(--r-control); font-size: var(--t-14); color: var(--ink-2); }
 .zoeklijst li { padding: 16px 0; }
 .zoeklijst .ztitel { font-weight: 500; font-size: var(--t-15); }
 .zoeklijst .zfrag { font-size: var(--t-14); color: var(--ink-2); margin-top: 4px; }
-.zoeklijst mark, .ztitel mark { background: none; color: inherit; font-weight: 700; text-decoration: underline 2px var(--accent); text-underline-offset: 2px; }
+.zoeklijst mark, .ztitel mark { background: none; color: inherit; font-weight: 600; text-decoration: underline 2px var(--accent); text-underline-offset: 2px; }
 .zoektips { color: var(--ink-2); }
 .zoektips code { font-family: var(--font-mono); font-size: var(--t-13); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; }
 /* Thema's: overzicht van tien vaste thema's als 5 x 2 tegels met alleen de naam; elke tegel is één link (DESIGN.md, "Themes") */
@@ -788,21 +788,21 @@ details.thematermen > p.termen { color: var(--ink); }
 /* Wat Nederland uitstoot: de hoofdgrafiek van Overzicht, met de doelen uit de Klimaatwet en de stikstofwet */
 /* kop boven een kaart, zoals Net binnen en Komt eraan (sinds 16 nov 2026) */
 /* kop wit op bosgroen (Tobias, 24 nov 2026) */
-.mi-kop, .ov-onder > section > h2:first-child { margin: 40px 0 0; padding: 12px 20px; background: var(--accent); color: var(--card); border: 1px solid var(--accent); border-radius: var(--r-card) var(--r-card) 0 0; }
+.mi-kop, .ov-onder > section > h2:first-child { display: flex; align-items: center; min-height: 58px; margin: 40px 0 0; padding: 12px 20px; background: var(--accent); color: var(--card); border: 1px solid var(--accent); border-radius: var(--r-card) var(--r-card) 0 0; }
 .mi-kop + .card, .ov-onder > section > h2 + .card { border-top: 0; border-radius: 0 0 var(--r-card) var(--r-card); }
 .mi-kop h2, .ov-onder h2 { font-size: var(--t-24); letter-spacing: var(--sp-24); }
-/* wet kiezen: kleine schakelaar op 18px, zelfde vorm als de andere schakelaars */
-.mi-wetten button { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); font-weight: 500; color: var(--ink-2); cursor: pointer; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease); }
+/* wet en jaar kiezen: zelfde schakelaar, 32 per keuze, 8 van de rand (Tobias, 24 nov 2026) */
+.mi-wetten button { display: inline-flex; align-items: center; min-height: 32px; padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); font-weight: 500; color: var(--ink-2); cursor: pointer; transition: background-color var(--d-kort) var(--ease), color var(--d-kort) var(--ease); }
 .mi-wetten button:hover:not([aria-pressed="true"]) { color: var(--accent); }
 .mi-wetten button[aria-pressed="true"] { background: var(--accent); color: var(--card); }
 .mi-wetten button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* jaarkeuze in de kop: rondom 8 vrij */
-.mi-kop { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 8px 8px 20px; }
+.mi-kop { justify-content: space-between; gap: 12px; padding: 8px 8px 8px 20px; }
 .mi-kop h2 { margin: 0; color: var(--card); }
 .mi-jaren { background: var(--card); }
 .mi-jaren:empty { display: none; }
-.mi-jaren button { min-height: 32px; }
-.mi-links .mi-wetten { margin-bottom: 20px; }
+.mi-links .mi-wetten { display: flex; width: fit-content; margin: -12px 0 12px -12px; } /* kaartrand 20 min 12 is 8 */
+.mi-links .mi-groep-knoppen { margin-left: -12px; }
 .mi-doel { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--t-14); color: var(--ink); text-wrap: pretty; }
 .mi-kans { margin-top: 16px; padding: 16px; border: 2px solid var(--accent); border-radius: var(--r-control); display: grid; gap: 4px; }
 .mi-kans p { margin: 0; }

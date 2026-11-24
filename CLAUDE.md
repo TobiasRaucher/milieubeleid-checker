@@ -10,6 +10,9 @@ over de open data van de Tweede Kamer. GitHub Pages publiceert `main`.
 - Alleen desktop: ontwerp en controleer niets voor telefoonbreedte.
 - Alleen Chrome: test en controleer alleen in Chrome (Tobias, 19 nov 2026); niet in Safari of Firefox.
 - Elke wijziging aan het uiterlijk volgt `DESIGN.md`; dat gaat voor alles, ook voor skills.
+- Nieuwe onderdelen bouw je direct met de maten, lettertypes en klassen uit DESIGN.md, "Standard sizes" (Tobias, 24 nov 2026);
+  kies niets op het oog. Staat het er niet in: neem de rij die er het meest op lijkt, of vraag het en leg het antwoord daar vast.
+  Vraagt Tobias een andere maat, pas dan de rij in die tabel aan en voer hem door op alle plekken met hetzelfde onderdeel.
 - Kleur is wit, donkergroen, zwart (Tobias, 24 nov 2026; DESIGN.md, "Colour"): wit is inhoud, zwart is tekst en lijn,
   bosgroen (`--accent`) is kop, actie of "hier ben je", rood (`--alarm`) is alleen aandacht. Geen lichtgroen, geen grijze vlakken, geen nieuwe kleuren of tokens zonder te vragen.
 - Zet niets terug wat Tobias heeft laten weghalen (zie "Bewust weg" onder Grenzen) zonder te vragen.
@@ -42,6 +45,7 @@ Naslag (lees bij de taak):
 | Thema's in het `<noscript>`-blok van `index.html` | `node pipeline/themas_noscript.js` |
 | Versies `?v=<hash>` in `index.html` (na elke wijziging in `assets/`) | `node pipeline/versie.js` |
 | Zoektest | `node tests/zoektest.js` |
+| Ontwerptest (maten, letters, kleuren volgens DESIGN.md) | `node tests/ontwerptest.js` |
 | Test selectie commissieverzoeken en rapporten | `python3 tests/verzoektest.py` |
 | Themareview: CSV met nieuwe items | `node pipeline/themas_review.js --nieuw` |
 | Themareview: nagekeken CSV in de mapping | `node pipeline/themas_review.js --import <csv>` |
@@ -110,7 +114,7 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 **Altijd**
 - Schrijf toe aan de spreker ("volgens PRO") wat geen geverifieerd feit is.
 - Controleer elke URL voordat je hem toevoegt aan `data/agenda.json` of `data/kerndocumenten.json`.
-- Draai `node pipeline/versie.js` voor elke commit die iets in `assets/` wijzigt.
+- Draai `node pipeline/versie.js` en `node tests/ontwerptest.js` voor elke commit die iets in `assets/` wijzigt.
 - Commit en push naar `main` na elke afgeronde, gecontroleerde wijziging, zonder te vragen, tenzij Tobias anders zegt.
   Neem `.Rhistory` en `.claude/` niet mee.
 - Vindt Tobias iets niet dat er wel is: voeg een synoniem toe in `data/zoeksynoniemen.json` en/of een regel in `tests/zoektest.js`.
