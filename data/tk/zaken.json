@@ -560,7 +560,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -586,14 +586,14 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -614,7 +614,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Overbodig",
   "behandelstatus": null,
   "dossiers": [
@@ -633,9 +633,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -647,7 +647,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangenomen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -668,7 +668,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
@@ -687,9 +687,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -701,7 +701,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangenomen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -748,8 +748,8 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
@@ -776,7 +776,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -802,14 +802,14 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -849,8 +849,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
@@ -863,7 +863,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangehouden",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -884,7 +884,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -910,14 +910,14 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "ruimte-mobiliteit"
@@ -1046,7 +1046,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1075,9 +1075,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -1089,7 +1089,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -1184,8 +1184,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
@@ -1198,7 +1198,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangehouden",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -1297,8 +1297,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - aangehouden (al tijdens debat)",
+    "tekst": "Aangehouden (tijdens debat).",
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
@@ -1386,7 +1386,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1415,9 +1415,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -1429,7 +1429,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -1504,7 +1504,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1533,9 +1533,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -1547,7 +1547,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -1568,7 +1568,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-17",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1587,9 +1587,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -1601,7 +1601,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "klimaat-energie"
@@ -1622,7 +1622,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1648,14 +1648,14 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -1717,7 +1717,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
@@ -1758,14 +1758,14 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangenomen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -1787,7 +1787,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1806,9 +1806,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -1820,7 +1820,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -1841,7 +1841,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1860,9 +1860,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -1874,7 +1874,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -1895,7 +1895,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
@@ -1931,14 +1931,14 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangenomen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -1959,7 +1959,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -1978,9 +1978,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -1992,7 +1992,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -2013,7 +2013,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -2032,9 +2032,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -2046,7 +2046,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -2067,7 +2067,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -2093,14 +2093,14 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -2392,7 +2392,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
@@ -2411,9 +2411,9 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
-    "stemmingssoort": null,
+    "soort": "Stemmen - verworpen",
+    "tekst": "Verworpen.",
+    "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
     "stemmen": []
    },
@@ -2425,7 +2425,7 @@
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "verworpen",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -81799,6 +81799,13 @@
     "tekst": "In handen gesteld van de vaste commissie voor Klimaat en Groene Groei",
     "stemmingssoort": null,
     "datum": "2026-06-25",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-08",
     "stemmen": []
    },
    {

@@ -1598,7 +1598,7 @@
     "onderwerp": "Verklaring van Esbjerg",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "33561-105",
       "soort": "Brief regering",
       "datum": "2026-11-06",
       "onderwerp": "Verklaring van Esbjerg",
@@ -4538,6 +4538,11 @@
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z26071&did=2026D60473"
      }
     ]
+   },
+   {
+    "volgorde": 23,
+    "onderwerp": "Moties ingediend tijdens het debat:",
+    "stukken": []
    }
   ],
   "bewindspersonen": [
