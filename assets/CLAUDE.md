@@ -112,11 +112,12 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 ## Documentweergave
 
 Knoppen "Bekijk het origineel", "Lees de brief", "Lees de vragen", "Lees het antwoord" en "Lees" bij bijlagen (`docKnop()`)
-openen een venster (`toonDocument()`): pdf met pdf.js, Word met mammoth (beide in `vendor/`, pas geladen bij openen),
+openen een venster (`toonDocument()`): pdf met pdf.js, Word met docx-preview en JSZip (beide in `vendor/`, pas geladen bij openen),
 rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat open, een iframe niet).
-Word (sinds 23 nov 2026, `WORD_STIJLEN`, `wordExtra()`): Kamervragen genummerd (stijl `ListParagraph`), in een antwoord het
-nummer en "Antwoord" vet, voetnoten in een kaartje bij het cijfer, vanaf 3 tussenkoppen een inhoud links. `schoonHtml()` laat
-alleen klassen `dv-…` en ids `footnote-…` door.
+Word (sinds 24 nov 2026, `DOCX_OPTIES`, `docxHerstel()`, `wordExtra()`): lettertype, grootte, vet, cursief, onderstreept en uitlijning
+uit het document. `docxHerstel()` herstelt fouten van docx-preview (standaardstijl, regelafstand), haalt onveilige links en elementen weg
+en zet het blad op de tekstbreedte van Word. Geen briefhoofd en voettekst. Kamervragen zelf genummerd als de nummering in het bestand
+ontbreekt; voetnoten in een kaartje bij het cijfer; vanaf 3 tussenkoppen een inhoud links.
 
 ## Wetgeving (`#wetgeving`, `#wetgeving/wetten`, `#wetgeving/<Kamerstuk>`)
 

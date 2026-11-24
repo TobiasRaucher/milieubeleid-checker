@@ -814,7 +814,7 @@
   const tekstBlok = (z) => (z.soort === "Motie" || z.soort === "Amendement"
     ? `<div class="mt-plek" data-tekst="${esc(z.nummer)}">${S.data.teksten ? tekstHtml(z) : `<p class="muted">Tekst laden</p>`}</div>` : "");
 
-  // Documentweergave: pdf (pdf.js) en Word (mammoth) rechtstreeks uit de open data van de Kamer.
+  // Documentweergave: pdf (pdf.js) en Word (docx-preview) rechtstreeks uit de open data van de Kamer.
   // Het gegevensmagazijn staat ophalen vanaf elke site toe (CORS), maar niet tonen in een iframe.
   const DOC_URL = (docId) => `https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0/Document/${encodeURIComponent(docId)}/resource`;
   const DOWNLOAD_URL = (dnr) => `https://www.tweedekamer.nl/downloads/document?id=${encodeURIComponent(dnr)}`;
@@ -847,36 +847,65 @@
     dlg.addEventListener("close", () => { viewerToken++; document.documentElement.classList.remove("dv-open"); setTimeout(() => { if (!dlg.open) $("#dv-body").innerHTML = ""; }, 200); }); // leeg na het vervagen (--d-menu)
     return dlg;
   }
-  // alleen eenvoudige opmaak uit een Word-bestand overnemen
-  // Word-stijlen van de Kamer die mammoth niet kent: vragen (ListParagraph, vaak zonder gedefinieerde nummering) en de
-  // kopjes "1" en "Antwoord" in een antwoord (Huisstijl-Kopje)
-  const WORD_STIJLEN = ["p.ListParagraph => p.dv-nr:fresh", "p.Lijstalinea => p.dv-nr:fresh", "p[style-name='Huisstijl-Kopje'] => p.dv-kopje:fresh"];
-  // Word-weergave dichter bij Word (Tobias, 23 nov 2026): lege regels weg, Kamervragen genummerd, voetnoten bij de tekst,
-  // vanaf 3 tussenkoppen een inhoud in de zijbalk
+  // Word-weergave als in Word (Tobias, 24 nov 2026): lettertype, grootte, vet, cursief, onderstreept en uitlijning uit het
+  // document (docx-preview); Kamervragen genummerd, voetnoten bij de tekst, vanaf 3 tussenkoppen een inhoud in de zijbalk.
+  // shortcut: briefhoofd en voettekst niet getoond; docx-preview zet de zwevende kaders daarvan op de verkeerde plek
+  const DOCX_OPTIES = { className: "dvw", renderHeaders: false, renderFooters: false, renderAltChunks: false, ignoreLastRenderedPageBreak: true, useBase64URL: true };
+  const metTerugval = (f) => `${f.trim()}, Verdana, sans-serif`;
+  const VOETNOOT = /voetnoot|footnote|eindnoot|endnote/i;
+  function docxHerstel(art) {
+    for (const st of art.querySelectorAll("style")) {
+      st.textContent = st.textContent
+        // docx-preview geeft de standaardstijl alleen aan de alinea, niet aan de tekst erin: dan wint het lettertype van docDefaults
+        .replace(/\.dvw p, (p\.[\w-]+) span \{/g, ".dvw p, .dvw p span, $1 span {")
+        .replace(/\.dvw span \{(?=\s*font-family)/, ".dvw, .dvw span {")
+        // "minstens 12pt" werd "100% + 12pt"
+        .replace(/calc\(100% \+ ([\d.]+pt)\)/g, "max(1.2em, $1)")
+        .replace(/font-family: ([^;}]+);/g, (_, f) => `font-family: ${metTerugval(f)};`);
+    }
+    for (const el of art.querySelectorAll("*")) {
+      if (/^(SCRIPT|IFRAME|OBJECT|EMBED|LINK|META|FORM|INPUT|BUTTON)$/i.test(el.tagName)) { el.remove(); continue; }
+      for (const a of [...el.attributes]) {
+        if (/^on/i.test(a.name) || (/href$/i.test(a.name) && !/^(https?:|mailto:|#|data:image\/)/i.test(a.value))) el.removeAttribute(a.name);
+      }
+      if (el.tagName === "A" && /^(https?:|mailto:)/i.test(el.getAttribute("href") || "")) { el.target = "_blank"; el.rel = "noopener"; }
+      if (el.style?.fontFamily) el.style.fontFamily = metTerugval(el.style.fontFamily);
+      if (el.style?.lineHeight.includes("100% +")) el.style.lineHeight = el.style.lineHeight.replace(/calc\(100% \+ ([\d.]+pt)\)/, "max(1.2em, $1)");
+    }
+    // regels even lang als in Word, maar zonder de brede paginamarges
+    for (const sec of art.querySelectorAll("section.dvw")) {
+      const c = getComputedStyle(sec);
+      sec.style.setProperty("--tekst", `${Math.round(sec.offsetWidth - parseFloat(c.paddingLeft) - parseFloat(c.paddingRight))}px`);
+    }
+  }
   function wordExtra(body) {
     const art = body.querySelector(".dv-docx");
-    for (const p of art.querySelectorAll("p")) {
-      while (p.lastChild && (p.lastChild.nodeName === "BR" || (p.lastChild.nodeType === 3 && !p.lastChild.textContent.trim()))) p.lastChild.remove();
-      if (!p.textContent.trim() && !p.querySelector("img")) p.remove();
-      // in een antwoord staan het vraagnummer en "Antwoord" vaak als gewone alinea: vet, zoals in Word
-      else if (/^(Vraag\s*)?\d{1,3}\.?$|^Antwoord(\s+\d{1,3})?$/.test(p.textContent.trim())) p.classList.add("dv-kopje");
+    const tekstVan = (p) => [...p.querySelectorAll("span")].filter((x) => !x.querySelector("span") && x.textContent.trim());
+    // Kamervragen verwijzen vaak naar een nummering die niet in het bestand zit: dan zelf nummeren
+    // shortcut: herkend aan de aanhef; uitbreiden als een ander soort stuk ook genummerd moet
+    if (/Vragen van (het lid|de leden)/.test(art.querySelector("section")?.textContent.slice(0, 800))) {
+      for (const p of art.querySelectorAll('p[class*="dvw-num-"]')) {
+        if (p.textContent.trim() && getComputedStyle(p, "::before").content === "none") p.classList.add("dv-nr");
+      }
     }
-    // shortcut: Kamervragen herkend aan de aanhef; uitbreiden als een ander soort stuk ook genummerd moet
-    if (/Vragen van (het lid|de leden)/.test(art.textContent.slice(0, 800))) art.classList.add("vragen");
 
     // voetnoten: klik of muis op het cijfer toont de noot eronder; de lijst onderaan blijft staan
-    const isRef = (el) => el.closest?.('a[href^="#footnote-"]:not([href^="#footnote-ref"]), a[href^="#endnote-"]:not([href^="#endnote-ref"])');
+    // docx-preview geeft verwijzing en noot geen id: koppelen op volgorde binnen een blad
+    for (const sec of art.querySelectorAll("section.dvw")) {
+      const noten = [...sec.querySelectorAll(":scope > ol > li")];
+      const refs = [...sec.querySelectorAll("article sup")].filter((x) => /^\d+$/.test(x.textContent.trim()) && VOETNOOT.test(x.closest("span[class]")?.className || ""));
+      if (refs.length !== noten.length) continue; // liever geen kaartje dan de verkeerde noot
+      refs.forEach((x, i) => { x._noot = noten[i]; x.classList.add("dv-ref"); x.tabIndex = 0; });
+    }
+    const isRef = (el) => el.closest?.("sup.dv-ref");
     let noot = null, timer = 0;
     const sluit = () => { clearTimeout(timer); noot?.remove(); noot = null; };
     const toon = (a) => {
-      if (noot && noot.dataset.voor === a.getAttribute("href")) return;
+      if (noot && noot._van === a) return;
       sluit();
-      const li = art.querySelector(a.getAttribute("href"));
-      if (!li) return;
       noot = document.createElement("div");
-      noot.className = "dv-noot"; noot.dataset.voor = a.getAttribute("href");
-      noot.innerHTML = li.innerHTML;
-      noot.querySelectorAll('a[href*="note-ref"]').forEach((x) => x.remove());
+      noot.className = "dv-noot dvw"; noot._van = a;
+      noot.innerHTML = a._noot.innerHTML;
       const ra = a.getBoundingClientRect(), rb = art.getBoundingClientRect();
       noot.style.setProperty("--x", `${Math.round(Math.min(ra.left - rb.left, rb.width - 440))}px`);
       noot.style.setProperty("--y", `${Math.round(ra.bottom - rb.top + 4)}px`);
@@ -884,19 +913,21 @@
     };
     art.addEventListener("click", (e) => {
       const a = isRef(e.target);
-      if (a) { e.preventDefault(); toon(a); } else if (!e.target.closest(".dv-noot")) sluit();
+      if (a) toon(a); else if (!e.target.closest(".dv-noot")) sluit();
+      // verwijzing binnen het document: geen hashwissel, die zou de router laten springen
+      const hier = e.target.closest('a[href^="#"]');
+      if (hier) { e.preventDefault(); art.querySelector(`#${CSS.escape(hier.getAttribute("href").slice(1))}`)?.scrollIntoView({ block: "start" }); }
     });
     art.addEventListener("mouseover", (e) => { const a = isRef(e.target); if (a || e.target.closest(".dv-noot")) { clearTimeout(timer); if (a) toon(a); } });
     art.addEventListener("mouseout", (e) => { if (isRef(e.target) || e.target.closest(".dv-noot")) { clearTimeout(timer); timer = setTimeout(sluit, 250); } });
-    body.onkeydown = (e) => { if (e.key === "Escape" && noot) { e.preventDefault(); sluit(); } };
+    body.onkeydown = (e) => { if (e.key === "Escape" && noot) { e.preventDefault(); sluit(); } else if (e.key === "Enter" && isRef(e.target)) toon(isRef(e.target)); };
 
     // inhoud: koppen, of alinea's die alleen vette tekst zijn (tussenkoppen in Kamerbrieven)
-    const koppen = [...art.querySelectorAll("h1, h2, h3, p")].filter((el) => {
+    const koppen = [...art.querySelectorAll("section.dvw > article p")].filter((el) => {
       const t = el.textContent.trim();
-      if (el.closest("table, li")) return false; // vette cellen en noten zijn geen tussenkop
-      if (/^H/.test(el.tagName)) return !!t;
-      return el.children.length === 1 && el.firstElementChild.tagName === "STRONG" && el.firstElementChild.textContent.trim() === t
-        && t.length < 120 && /[a-z]{3}/.test(t);
+      if (!t || el.closest("table, li")) return false; // vette cellen en noten zijn geen tussenkop
+      if (/dvw_(kop|heading)-?\d/i.test(el.className)) return true;
+      return t.length < 120 && /[a-z]{3}/.test(t) && tekstVan(el).every((x) => getComputedStyle(x).fontWeight >= 600);
     });
     if (koppen.length < 3) return;
     koppen.forEach((k, i) => { k.id = `dv-k${i}`; });
@@ -920,22 +951,6 @@
     body.onscroll = markeer;
     markeer();
   }
-  function schoonHtml(html) {
-    const t = document.createElement("template");
-    t.innerHTML = html;
-    for (const el of t.content.querySelectorAll("*")) {
-      if (/^(SCRIPT|STYLE|IFRAME|OBJECT|EMBED|LINK|META|FORM|INPUT|BUTTON)$/.test(el.tagName)) { el.remove(); continue; }
-      for (const a of [...el.attributes]) {
-        const ok = (a.name === "href" && /^(https?:|mailto:|#)/i.test(a.value)) || (a.name === "src" && /^data:image\//i.test(a.value))
-          || ["alt", "colspan", "rowspan"].includes(a.name)
-          // onze eigen klassen uit de styleMap van mammoth en de ankers van voetnoten (wordExtra())
-          || (a.name === "class" && /^dv-[a-z]+$/.test(a.value)) || (a.name === "id" && /^(foot|end)note(-ref)?-\d+$/.test(a.value));
-        if (!ok) el.removeAttribute(a.name);
-      }
-      if (el.tagName === "A" && el.getAttribute("href") && !el.getAttribute("href").startsWith("#")) { el.target = "_blank"; el.rel = "noopener"; }
-    }
-    return t.innerHTML;
-  }
   async function toonDocument(k) {
     const dlg = viewer(), token = ++viewerToken;
     const { doc, bestand, dnr, titel, link } = k.dataset;
@@ -956,12 +971,16 @@
     const fout = () => { if (token === viewerToken) body.innerHTML = `<div class="dv-fout"><p>Het document kon hier niet worden getoond.</p><p>${extLink(dnr ? DOWNLOAD_URL(dnr) : DOC_URL(doc), "Download het bestand")}${link ? ` of ${extLink(link, "bekijk het op tweedekamer.nl")}` : ""}.</p></div>` };
     try {
       if (bestand === "DOCX") {
-        if (!window.mammoth) await laadScript("assets/vendor/mammoth.browser.min.js");
+        if (!window.JSZip) await laadScript("assets/vendor/jszip.min.js");
+        if (!window.docx) await laadScript("assets/vendor/docx-preview.min.js");
         const r = await fetch(DOC_URL(doc));
         if (!r.ok) throw new Error(r.status);
-        const html = (await window.mammoth.convertToHtml({ arrayBuffer: await r.arrayBuffer() }, { styleMap: WORD_STIJLEN })).value;
+        const art = document.createElement("article");
+        art.className = "dv-docx";
+        await window.docx.renderAsync(await r.arrayBuffer(), art, null, DOCX_OPTIES);
         if (token !== viewerToken) return;
-        body.innerHTML = `<article class="dv-docx">${schoonHtml(html)}</article>`;
+        body.replaceChildren(art);
+        docxHerstel(art);
         wordExtra(body);
         return;
       }

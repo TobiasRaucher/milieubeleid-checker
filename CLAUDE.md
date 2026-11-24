@@ -26,6 +26,7 @@ Naslag (lees bij de taak):
 - `agent_docs/samenvatten.md`: debatten samenvatten met gehoord.de en het formaat van `data/debatten.json`.
 - `agent_docs/uitstoot-grafiek.md`: het blok "Wat Nederland uitstoot" (`assets/milieu.js`).
 - `agent_docs/zoekfunctie.md`: zoekindex en resultatenpagina (`assets/zoek.js`).
+- `agent_docs/elk-uur.md`: hoe cron-job.org de Action elk uur start.
 - `agent_docs/rapporten.md`: criteria en werkwijze voor de pagina Rapporten en de kolom "Rapport?" op Kamerbrieven.
 
 ## Commando's
@@ -45,7 +46,7 @@ Naslag (lees bij de taak):
 | Themareview: nagekeken CSV in de mapping | `node pipeline/themas_review.js --import <csv>` |
 | Site lokaal (poort 8765) | `preview_start` met naam `site` (`.claude/launch.json`) |
 
-De Action `.github/workflows/update.yml` draait elke werkdag om 05:17 en 17:17 UTC `fetch_tk.py`,
+De Action `.github/workflows/update.yml` draait op werkdagen elk uur van 8 tot 19 (gestart door cron-job.org, zie `agent_docs/elk-uur.md`; GitHub-schema 05:17 en 17:17 UTC als vangnet) `fetch_tk.py`,
 `maak_ics.py`, `themas_noscript.js` en `versie.js`, en commit `data/tk`, `data/agenda.ics` en `index.html`.
 `fetch_tk.py` heeft `pypdf` nodig (voorlopige teksten uit pdf).
 
@@ -69,7 +70,7 @@ De Action `.github/workflows/update.yml` draait elke werkdag om 05:17 en 17:17 U
 | `assets/zoek.js` | Zoekindex (MiniSearch) | |
 | `assets/milieu.js` | Grafiek "Wat Nederland uitstoot" | |
 | `assets/style.css` | Ontwerpknoppen (tokens) bovenaan | |
-| `assets/vendor/` | MiniSearch, pdf.js, mammoth (niet wijzigen) | |
+| `assets/vendor/` | MiniSearch, pdf.js, docx-preview, JSZip (niet wijzigen) | |
 | `data/dossiers.json` | Wordt niet meer gelezen (zie Grenzen) | |
 
 ## Werk de checker bij

@@ -381,6 +381,8 @@ td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel td.rapport, .motietabel th[data-f="rapport"] { text-align: center; }
 .motietabel th[data-f="rapport"] .facet { display: inline-block; }
 .ltitel.wet { font-weight: 400; }
+a.ltitel.wet:not(.geldend):hover { text-decoration: none; } /* hele titel onderlijnen is te druk (Tobias, 24 nov 2026) */
+tbody tr.row:hover .ltitel:is(.wet, .geldend) { color: var(--accent); }
 .ltitel.geldend { text-decoration: underline; text-decoration-color: var(--line-sterk); text-underline-offset: 3px; }
 .wp-titel .ltitel.geldend { text-decoration-thickness: 1px; }
 a.ltitel.geldend:hover { text-decoration-color: currentColor; }
@@ -441,7 +443,7 @@ tr.grens + tr.maand > th { border-top: 0; }
 tbody tr.row { cursor: pointer; transition: background-color var(--d-kort) var(--ease); }
 /* aangewezen of open: groene streep links; de rij blijft wit */
 tbody tr.row:is(:hover, .open) > td:first-child, tr.detail > td { box-shadow: inset 4px 0 var(--accent); }
-tbody tr.row:hover .ltitel { color: var(--accent); text-decoration: underline; text-decoration-color: var(--line-sterk); text-underline-offset: 3px; }
+tbody tr.row:hover .ltitel:not(.wet, .geldend) { color: var(--accent); text-decoration: underline; text-decoration-color: var(--line-sterk); text-underline-offset: 3px; }
 tbody tr.row .ltitel:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 /* rode lijn: hierboven is nieuw sinds de vorige werkdag (app.js, grensIndex) */
 tbody tr.grens > td, .list li.grens { padding: 8px 0 0; border-top: 0; color: var(--alarm-tekst); font-size: var(--t-12); line-height: 16px; }
@@ -543,22 +545,23 @@ dialog.docview[open]::backdrop { background: rgba(14, 20, 17, 0.32); }
 .dv-paginas { display: grid; gap: 16px; justify-content: center; }
 .dv-pagina { position: relative; width: var(--w); height: var(--h); background: #fff; box-shadow: 0 0 0 1px var(--line); border-radius: 2px; overflow: hidden; }
 .dv-pagina canvas { display: block; width: 100%; height: 100%; }
-.dv-docx { max-width: 760px; margin: 0 auto; padding: 40px 48px; background: #fff; box-shadow: 0 0 0 1px var(--line); border-radius: 2px; font-size: var(--t-15); line-height: 24px; color: var(--ink); }
-.dv-docx p { margin: 0 0 12px; }
-.dv-docx h1, .dv-docx h2, .dv-docx h3 { font-size: var(--t-15); font-weight: 500; margin: 20px 0 8px; }
-.dv-docx table { border-collapse: collapse; margin: 0 0 12px; font-size: var(--t-14); }
-.dv-docx td, .dv-docx th { border: 1px solid var(--line); padding: 4px 8px; vertical-align: top; }
+/* Word-weergave (Tobias, 24 nov 2026): opmaak uit het document (docx-preview), witte bladen; voetnoot bij de tekst, inhoud links */
+/* tabelstijl van de site niet in het document */
+.dv-docx { position: relative; counter-reset: dv-vraag; line-height: normal; }
+.dv-docx table { width: auto; font-size: inherit; }
+.dv-docx td { padding: 0; border: 0; font-variant-numeric: normal; }
+.dv-docx .dvw-wrapper { display: grid; gap: 16px; justify-content: center; padding: 0; background: none; }
+.dv-docx .dvw-wrapper > section.dvw { margin: 0; hyphens: manual; background: #fff; box-shadow: 0 0 0 1px var(--line); border-radius: 2px; }
+.dv-docx .dvw-wrapper > section.dvw[style*="--tekst"] { box-sizing: content-box; width: var(--tekst) !important; min-height: 0 !important; padding: 40px 48px !important; }
+.dv-docx .dvw-wrapper a { color: var(--accent); text-decoration: underline; }
+.dv-docx :is(sup, sub) { line-height: 0; }
 .dv-docx img { max-width: 100%; height: auto; }
-/* Word-weergave (Tobias, 23 nov 2026): vragen genummerd in de marge, kopjes van een antwoord vet, voetnoot bij de tekst, inhoud links */
-.dv-docx { position: relative; counter-reset: dv-vraag; }
-.dv-docx.vragen p.dv-nr { position: relative; counter-increment: dv-vraag; }
-.dv-docx.vragen p.dv-nr::before { content: counter(dv-vraag) "."; position: absolute; left: -36px; width: 28px; text-align: right; font-weight: 500; color: var(--ink); }
-.dv-docx p.dv-kopje { font-weight: 500; color: var(--ink); margin-bottom: 4px; }
-.dv-docx sup a { padding: 0 2px; text-decoration: none; font-weight: 500; }
+.dv-docx p.dv-nr { counter-increment: dv-vraag; position: relative; }
+.dv-docx p.dv-nr::before { content: counter(dv-vraag) "."; position: absolute; left: -24px; }
+.dv-docx sup.dv-ref { padding: 0 2px; color: var(--accent); cursor: pointer; }
 .dv-noot { position: absolute; z-index: 2; left: max(0px, var(--x)); top: var(--y); width: 420px; padding: 12px 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); font-size: var(--t-14); line-height: 20px; }
-.dv-noot p { margin: 0; }
-.dv-body.met-inhoud { display: grid; grid-template-columns: 200px minmax(0, 760px); justify-content: center; align-items: start; gap: 24px; }
-.dv-body.met-inhoud .dv-docx { margin: 0; }
+.dv-noot :is(p, span) { margin: 0; font-size: inherit !important; line-height: inherit !important; }
+.dv-body.met-inhoud { display: grid; grid-template-columns: 200px minmax(0, auto); justify-content: center; align-items: start; gap: 24px; }
 .dv-inhoud { position: sticky; top: 0; max-height: calc(100vh - 160px); overflow: auto; font-size: var(--t-14); line-height: 20px; }
 .dv-inhoud-kop { margin: 0 0 8px; padding: 0 8px; font-weight: 500; color: var(--ink); }
 .dv-inhoud ol { list-style: none; margin: 0; padding: 0; }

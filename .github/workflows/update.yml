@@ -1,12 +1,17 @@
 name: Data bijwerken (Tweede Kamer open data)
 
-# Draait automatisch elke werkdag om 05:17 en 17:17 UTC (06:17 en 18:17 Nederlandse wintertijd).
+# cron-job.org start deze Action elk uur op werkdagen van 8 tot 19 uur (agent_docs/elk-uur.md).
+# Het schema hieronder is het vangnet: GitHub start geplande runs vaak uren te laat.
 # Handmatig kan ook: Actions > "Data bijwerken" > "Run workflow".
 # Uitzetten? Zet een # voor de twee schedule-regels hieronder.
 on:
   workflow_dispatch:
   schedule:
     - cron: "17 5,17 * * 1-5"   # werkdagen om 05:17 en 17:17 UTC
+
+# nooit twee runs tegelijk
+concurrency:
+  group: data-bijwerken
 
 permissions:
   contents: write
@@ -16,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main # een run die moest wachten begint bij de nieuwste stand
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -25,18 +32,21 @@ jobs:
         run: python3 pipeline/fetch_tk.py
       - name: Agendafeed maken
         run: python3 pipeline/maak_ics.py
-      - name: Thema-lijst voor noscript
-        run: node pipeline/themas_noscript.js
-      - name: Asset-versies
-        run: node pipeline/versie.js
+      # index.html (thema-lijst en versies) pas maken op de nieuwste main: tijdens het ophalen (9 minuten) kan er iets zijn gepusht
       - name: Wijzigingen opslaan
         run: |
           git config user.name "checker-bot"
           git config user.email "checker-bot@users.noreply.github.com"
-          git add data/tk data/agenda.ics index.html
-          if git diff --cached --quiet; then
-            echo "Geen wijzigingen."
-          else
-            git commit -m "Data bijgewerkt $(date -u +%Y-%m-%d)"
-            git push
-          fi
+          for poging in 1 2 3; do
+            git fetch --depth 1 origin main
+            git reset -q FETCH_HEAD
+            git add data/tk data/agenda.ics
+            git checkout -q -- .
+            node pipeline/themas_noscript.js
+            node pipeline/versie.js
+            git add index.html
+            if git diff --cached --quiet; then echo "Geen wijzigingen."; exit 0; fi
+            git commit -q -m "Data bijgewerkt $(TZ=Europe/Amsterdam date '+%Y-%m-%d %H:%M')"
+            git push origin HEAD:main && exit 0
+          done
+          exit 1
