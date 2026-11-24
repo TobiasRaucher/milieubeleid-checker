@@ -604,8 +604,9 @@ dl.facts dd { margin: 0; max-width: var(--leesbreedte); }
 .sam-raster { display: grid; gap: 0 48px; }
 .sam-hoofd, .sam-zij { min-width: 0; }
 @media (min-width: 1100px) {
-  .sam-raster { grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr); align-items: start; }
-  .sam-zij { font-size: var(--t-14); }
+  .sam-raster { grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr); column-gap: 24px; }
+  .sam-zij { font-size: var(--t-14); padding-left: 24px; }
+  .sam-zij:has(section) { border-left: 1px solid var(--line); }
   .sam-zij .deelnemers { grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); }
 }
 ol.agendapunten { padding-left: 28px; /* plaats voor nummers van twee cijfers: .body knipt */ margin: 0; }

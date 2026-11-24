@@ -1525,7 +1525,7 @@
     const herhaalt = puntTitel && onderwerp.toLowerCase() === String(puntTitel).trim().toLowerCase();
     const motie = /^(motie|amendement)/i.test(st.soort || "");
     const stem = motie ? stemStatus(zaakUitLink(st.link)) : "";
-    return `<li>${stem ? `<div class="stukstem">${stem}</div>` : ""}${motieA(motie && zaakVanNr(zaakUitLink(st.link)), st.link)}${esc(st.kamerstuk || "document")}</a> ${esc(st.soort || "")}${st.datum ? ` d.d. ${fmtDatum(st.datum)}` : ""}${wie}${onderwerp && !herhaalt ? `: ${esc(onderwerp)}` : ""}${alleMoties ? ` ·&nbsp;<a href="#moties?q=${encodeURIComponent(alleMoties)}" aria-label="Alle moties bij Kamerstuk ${esc(alleMoties)}">Alle&nbsp;moties</a>` : ""}</li>`;
+    return `<li>${stem ? `<div class="stukstem">${stem}</div>` : ""}${motieA(motie && zaakVanNr(zaakUitLink(st.link)), st.link)}${esc(st.soort || "Document")}${st.kamerstuk ? ` (${esc(st.kamerstuk)})` : ""}</a>${st.datum ? ` d.d. ${fmtDatum(st.datum)}` : ""}${wie}${onderwerp && !herhaalt ? `: ${esc(onderwerp)}` : ""}${alleMoties ? ` ·&nbsp;<a href="#moties?q=${encodeURIComponent(alleMoties)}" aria-label="Alle moties bij Kamerstuk ${esc(alleMoties)}">Alle&nbsp;moties</a>` : ""}</li>`;
   }
   // zaaknummer uit een tweedekamer.nl-link (…?id=2026Z25015&did=…)
   const zaakUitLink = (l) => (/[?&]id=(\d{4}Z\d+)/.exec(l || "") || [])[1] || "";
