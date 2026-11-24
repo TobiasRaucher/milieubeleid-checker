@@ -330,6 +330,7 @@
         33450
       ],
       "trefwoorden": [
+        "(?<!op het )(?<!naar )(?<!boven )\\bwater\\b",
         "\\bwater(beleid|kwaliteit|veiligheid|schaarste|overlast|beheer|systeem|ste[lr]|bodem)",
         "\\bdrinkwater",
         "\\bgrondwater",

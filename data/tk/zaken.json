@@ -1,5 +1,1006 @@
 [
  {
+  "id": "db3b4805-92f6-4402-91b6-2e64c66df65d",
+  "nummer": "2026Z26141",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Grinwis c.s.",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "L. Boelsma-Hoekstra",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60612",
+  "docId": "a7cd5be6-0047-40a1-9e84-3b4f9d114576",
+  "bestand": "PDF",
+  "volgnummer": 23,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26141&did=2026D60612",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26141"
+ },
+ {
+  "id": "643a0a6e-5adf-42f0-8630-35b293c9e03a",
+  "nummer": "2026Z26128",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Goudzwaard",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60593",
+  "docId": "6eb040f9-a9c5-406c-b5b9-a7a331333f45",
+  "bestand": "PDF",
+  "volgnummer": 12,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26128&did=2026D60593",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26128"
+ },
+ {
+  "id": "d4bc6619-ea1b-46da-964e-594528f008d0",
+  "nummer": "2026Z26140",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Heutink c.s.",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "L. Boelsma-Hoekstra",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "B.A. Schutz",
+    "fractie": "VVD",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60611",
+  "docId": "835875ad-db24-48b7-8e7f-016b18e839fb",
+  "bestand": "PDF",
+  "volgnummer": 22,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26140&did=2026D60611",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26140"
+ },
+ {
+  "id": "31b3743f-80dd-44f5-b071-63bb55b0ca08",
+  "nummer": "2026Z26124",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Bromet",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60589",
+  "docId": "310bd612-12a5-4924-9edc-91e8efa4a1a6",
+  "bestand": "PDF",
+  "volgnummer": 8,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26124&did=2026D60589",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26124"
+ },
+ {
+  "id": "6e9697cd-bd3a-4b6b-8053-6828d06cd23a",
+  "nummer": "2026Z26137",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Wiersma",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60608",
+  "docId": "1b4666a5-2e36-492b-aea2-a3a165d4d3ce",
+  "bestand": "PDF",
+  "volgnummer": 19,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26137&did=2026D60608",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26137"
+ },
+ {
+  "id": "841393ac-4f9f-438a-a91d-80d8c1cd1d65",
+  "nummer": "2026Z26139",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Wiersma",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60610",
+  "docId": "5520e4f8-358a-4187-b62b-cb1d66ee9519",
+  "bestand": "PDF",
+  "volgnummer": 21,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26139&did=2026D60610",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26139"
+ },
+ {
+  "id": "3e23fea8-540b-4c74-b67e-878df97215fe",
+  "nummer": "2026Z26135",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Wiersma",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60605",
+  "docId": "d70590b0-0068-4672-8378-e9edc8d2824d",
+  "bestand": "PDF",
+  "volgnummer": 18,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26135&did=2026D60605",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26135"
+ },
+ {
+  "id": "7e248d25-76b5-427a-856f-8bb744d979aa",
+  "nummer": "2026Z26130",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Boelsma-Hoekstra c.s.",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "B.A. Schutz",
+    "fractie": "VVD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "L. Boelsma-Hoekstra",
+    "fractie": "CDA",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "M.C.A. Vellinga-Beemsterboer",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60595",
+  "docId": "c130e05a-5260-41e4-9542-85528c0677e0",
+  "bestand": "PDF",
+  "volgnummer": 14,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26130&did=2026D60595",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26130"
+ },
+ {
+  "id": "bc87954c-6a43-4fe6-bcc6-8f5f3a78f0be",
+  "nummer": "2026Z26127",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Goudzwaard",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60592",
+  "docId": "f33ef5b4-42a5-4d8c-a9c0-c5f5a6f6759f",
+  "bestand": "PDF",
+  "volgnummer": 11,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26127&did=2026D60592",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26127"
+ },
+ {
+  "id": "3a971fa0-3540-405f-9632-8f6a0e69bacc",
+  "nummer": "2026Z26132",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Wiersma c.s.",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "B.A. Schutz",
+    "fractie": "VVD",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60599",
+  "docId": "6ced91a2-62af-45a1-9965-7ca77c6a6fed",
+  "bestand": "PDF",
+  "volgnummer": 15,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26132&did=2026D60599",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26132"
+ },
+ {
+  "id": "91fa5e17-7483-4cab-ba44-a82f3d9467a8",
+  "nummer": "2026Z26125",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van de leden Vellinga-Beemsterboer en Grinwis",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M.C.A. Vellinga-Beemsterboer",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60590",
+  "docId": "8ce43179-ba37-409a-be07-5dbbdd86ae6e",
+  "bestand": "PDF",
+  "volgnummer": 9,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26125&did=2026D60590",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26125"
+ },
+ {
+  "id": "dc2ae7f0-8a62-4d81-b32d-cf086cfc0640",
+  "nummer": "2026Z26134",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Wiersma",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60604",
+  "docId": "bb7a272d-a9ca-4f8e-b052-56988d5aefbf",
+  "bestand": "PDF",
+  "volgnummer": 17,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26134&did=2026D60604",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26134"
+ },
+ {
+  "id": "f36c83fd-3586-488c-bbf1-dca1e126aab8",
+  "nummer": "2026Z26142",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Grinwis c.s.",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "L. Boelsma-Hoekstra",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60613",
+  "docId": "bc27adfb-fb14-4338-a26c-ff1efb2c34dc",
+  "bestand": "PDF",
+  "volgnummer": 24,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26142&did=2026D60613",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26142"
+ },
+ {
+  "id": "3fe6a285-448d-40c4-884d-dff91b7c5192",
+  "nummer": "2026Z26129",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Goudzwaard",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M. Goudzwaard",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60594",
+  "docId": "aad0a02f-c36e-43f1-98ac-3f44b2e423d1",
+  "bestand": "PDF",
+  "volgnummer": 13,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26129&did=2026D60594",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26129"
+ },
+ {
+  "id": "587f63ee-c1c1-435c-808c-e8217392e27b",
+  "nummer": "2026Z26126",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van het lid Vellinga-Beemsterboer c.s.",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "B.A. Schutz",
+    "fractie": "VVD",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "M.C.A. Vellinga-Beemsterboer",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "L. Boelsma-Hoekstra",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60591",
+  "docId": "f7b3937f-1ab2-438f-a059-75f0d080e082",
+  "bestand": "PDF",
+  "volgnummer": 10,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26126&did=2026D60591",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26126"
+ },
+ {
+  "id": "0ac59d4a-6fec-448b-87d2-f74cee9e462f",
+  "nummer": "2026Z26123",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van de leden Bromet en Zalinyan",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60588",
+  "docId": "ef53be2e-5033-4521-8f47-3ed3032bfe3a",
+  "bestand": "PDF",
+  "volgnummer": 7,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26123&did=2026D60588",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26123"
+ },
+ {
+  "id": "2c80d476-30d8-4b5b-bb0b-f97fcddecb6e",
+  "nummer": "2026Z26138",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van de leden Wiersma en Heutink",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60609",
+  "docId": "a975b00a-18a8-48fb-a5e8-8d7c94b50f57",
+  "bestand": "PDF",
+  "volgnummer": 20,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26138&did=2026D60609",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26138"
+ },
+ {
+  "id": "0d75e1d3-a643-4f7e-9841-fb7cb71e564d",
+  "nummer": "2026Z26133",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
+  "onderwerp": "Motie van de leden Wiersma en Grinwis",
+  "citeertitel": null,
+  "gestartOp": "2026-11-24",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "J",
+    "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-24",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60600",
+  "docId": "3b126a00-16f9-4925-a731-ba05c3c7140f",
+  "bestand": "PDF",
+  "volgnummer": 16,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26133&did=2026D60600",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26133"
+ },
+ {
   "id": "e27fcf0b-a4c9-43c5-b71c-6a357c1b60df",
   "nummer": "2026Z25960",
   "soort": "Amendement",
@@ -88831,6 +89832,170 @@
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13515"
  },
  {
+  "id": "cf29efcd-d460-4ccf-a1aa-7ee1e99f4a1a",
+  "nummer": "2026Z13377",
+  "soort": "Motie",
+  "titel": "Europese Raad",
+  "onderwerp": "Gewijzigde motie van het lid Diederik van Dijk c.s. over een internationale water- en voedselzekerheidstop organiseren tijdens het Nederlandse EU-voorzitterschap in 2029 (t.v.v. 21501-20-2422)",
+  "citeertitel": null,
+  "gestartOp": "2026-06-17",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Niet beschikbaar bij gewijzigde moties en/of amendementen",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "20",
+    "titel": "Europese Raad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "A.F.J. van Ark",
+    "fractie": "CDA",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "D.J.H. (Diederik) van Dijk",
+    "fractie": "SGP",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Stemmen - aangenomen",
+    "tekst": "Aangenomen.",
+    "stemmingssoort": "Met handopsteken",
+    "datum": "2026-06-17",
+    "stemmen": [
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
+   }
+  ],
+  "uitslag": "aangenomen",
+  "stemtelling": {
+   "voor": 118,
+   "tegen": 32,
+   "datum": "2026-06-17"
+  },
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D30260",
+  "docId": "6c13e3d6-5182-4871-be55-c4cb4702af52",
+  "bestand": "PDF",
+  "volgnummer": 2431,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13377&did=2026D30260",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13377"
+ },
+ {
   "id": "9ff1215b-8603-482e-a9af-abc7d8d88d34",
   "nummer": "2026Z13530",
   "soort": "Motie",
@@ -91930,6 +93095,58 @@
   "volgnummer": 501,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13264&did=2026D30061",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13264"
+ },
+ {
+  "id": "16441483-bcc7-486f-b676-03cec39c94b3",
+  "nummer": "2026Z13302",
+  "soort": "Motie",
+  "titel": "Europese Raad",
+  "onderwerp": "Motie van de leden Diederik van Dijk en Stoffer over een internationale water- en voedselzekerheidstop organiseren tijdens het Nederlandse EU-voorzitterschap in 2029 ",
+  "citeertitel": null,
+  "gestartOp": "2026-06-16",
+  "vergaderjaar": "2025-2026",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontijdig",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 21501,
+    "toevoeging": "20",
+    "titel": "Europese Raad"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C. Stoffer",
+    "fractie": "SGP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "D.J.H. (Diederik) van Dijk",
+    "fractie": "SGP",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
+    "stemmingssoort": null,
+    "datum": "2026-06-16",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D30114",
+  "docId": "222686a3-0a2a-43cc-a4e1-13e3c1df94e1",
+  "bestand": "PDF",
+  "volgnummer": 2422,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13302&did=2026D30114",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z13302"
  },
  {
   "id": "52e11156-92cd-4b5b-b97c-2254ee3d651f",
@@ -97747,7 +98964,8 @@
    "datum": "2026-06-09"
   },
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "water-adaptatie"
   ],
   "document": "2026D28075",
   "docId": "26e4732e-4492-4204-afd1-0a5028e98613",
@@ -100366,7 +101584,8 @@
   "uitslag": "in behandeling",
   "stemtelling": null,
   "sectoren": [
-   "klimaat-energie"
+   "klimaat-energie",
+   "water-adaptatie"
   ],
   "document": "2026D27206",
   "docId": "357a357a-c214-4618-899a-5ff29f4e18e1",
@@ -169318,7 +170537,8 @@
   },
   "sectoren": [
    "circulair-vervuiling",
-   "ruimte-mobiliteit"
+   "ruimte-mobiliteit",
+   "water-adaptatie"
   ],
   "document": "2026D04909",
   "docId": "7a45b51f-3df7-4dba-b1ce-b8a551a26133",

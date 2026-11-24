@@ -1,5 +1,25 @@
 [
  {
+  "id": "2026D58826",
+  "docId": "1b1ca548-c497-43b5-a648-d9deae9e592e",
+  "bestand": "PDF",
+  "datum": "2026-11-18",
+  "onderwerp": "Aan de minister van Infrastructuur en Waterstaat - Verzoek om reactie op commentaar Provincie Zuid-Holland t.b.v. wetgevingsoverleg Water op 23 november 2026",
+  "zaak": "2026Z25453",
+  "commissie": "vaste commissie voor Infrastructuur en Waterstaat",
+  "gerichtAan": [
+   "V.P.G. Karremans"
+  ],
+  "ministeries": [
+   "Infrastructuur en Waterstaat"
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25453&did=2026D58826",
+  "antwoorden": []
+ },
+ {
   "id": "2026D58853",
   "docId": "6bbad9e7-31bf-4f05-9250-913346f2b1ff",
   "bestand": "PDF",
@@ -661,6 +681,7 @@
    "Infrastructuur en Waterstaat"
   ],
   "sectoren": [
+   "water-adaptatie",
    "natuur-stikstof-landbouw"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z13727&did=2026D30879",
@@ -2363,6 +2384,26 @@
     "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z13931&did=2026D31219"
    }
   ]
+ },
+ {
+  "id": "2026D02617",
+  "docId": "c5c46fcf-64a8-4017-8c64-1a062a0a8613",
+  "bestand": "PDF",
+  "datum": "2026-01-22",
+  "onderwerp": "Aan de minister van LVVN - verzoek om minister van LVVN aan te laten sluiten bij het WGO Water op 2 februari",
+  "zaak": "2026Z01186",
+  "commissie": "vaste commissie voor Infrastructuur en Waterstaat",
+  "gerichtAan": [
+   "F.M. Wiersma"
+  ],
+  "ministeries": [
+   "Landbouw, Visserij, Voedselzekerheid en Natuur"
+  ],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z01186&did=2026D02617",
+  "antwoorden": []
  },
  {
   "id": "2026D02668",

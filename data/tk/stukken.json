@@ -1,5 +1,33 @@
 [
  {
+  "id": "2026D60473",
+  "docId": "96f5b4ff-68dd-4c0e-82a8-27b92aa426a9",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Schriftelijke beantwoording van vragen gesteld tijdens de eerste termijn van het wetgevingsoverleg, gehouden op 23 november 2026 over water",
+  "zaak": "2026Z26071",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26071&did=2026D60473",
+  "bijlagen": [
+   {
+    "id": "2026D60474",
+    "titel": "Beslisnota bij schriftelijke beantwoording van vragen gesteld tijdens de eerste termijn van het wetgevingsoverleg, gehouden op 23 november 2026 over water",
+    "bestand": "PDF",
+    "docId": "09382cd7-d3ae-4df7-ab1f-bbe45b6bbaeb",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60474"
+   }
+  ]
+ },
+ {
   "id": "2026D60341",
   "docId": "6177e85a-f123-431b-afd1-2df33cd8dde3",
   "bestand": "DOCX",
@@ -614,6 +642,62 @@
   ]
  },
  {
+  "id": "2026D59502",
+  "docId": "019aff8d-10c5-4c98-bd7e-0e112161507b",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-19",
+  "titel": null,
+  "onderwerp": "Verzamelbrief Water",
+  "zaak": "2026Z25725",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25725&did=2026D59502",
+  "bijlagen": [
+   {
+    "id": "2026D59507",
+    "titel": "Beslisnota bij Verzamelbrief Water",
+    "bestand": "PDF",
+    "docId": "a8c56af4-f279-4590-a2d8-c950fcaabdfc",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59507"
+   },
+   {
+    "id": "2026D59504",
+    "titel": "Klimaatplan Bonaire 2026-2050",
+    "bestand": "PDF",
+    "docId": "dd43c756-f89b-4aae-881c-b62359deb568",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59504"
+   },
+   {
+    "id": "2026D59505",
+    "titel": "Klimaatplan Sint Eustatius",
+    "bestand": "PDF",
+    "docId": "d01cf5c5-c90c-4a8e-9dd2-aa58b3915c5d",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59505"
+   },
+   {
+    "id": "2026D59503",
+    "titel": "Quickscan riooloverstorten",
+    "bestand": "PDF",
+    "docId": "9fef5978-a8ee-4cd0-b6a9-ea85e128c522",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59503"
+   },
+   {
+    "id": "2026D59506",
+    "titel": "Saba Climate Plan en Action Agenda",
+    "bestand": "PDF",
+    "docId": "4118d82f-88f2-4077-b3ba-c10cc57cb045",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59506"
+   }
+  ]
+ },
+ {
   "id": "2026D59329",
   "docId": "0f178486-2f50-4c06-8605-19f8a1f70d89",
   "bestand": "DOCX",
@@ -876,6 +960,34 @@
     "docId": "2cefb147-a992-43aa-b716-f1fff1c297d9",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58863",
     "rapport": true
+   }
+  ]
+ },
+ {
+  "id": "2026D59130",
+  "docId": "b14d5e1c-fe04-472f-b1a3-15842aba4628",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-18",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Zalinyan en Kathmann over het bericht ‘Nederland weet amper hoeveel stroom en water zijn datacentra opslokken’",
+  "zaak": "2026Z21054",
+  "ministerie": "Economische Zaken en Klimaat",
+  "ondertekenaar": "W.J.M. Aerdts",
+  "functie": "staatssecretaris van Economische Zaken en Klimaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21054&did=2026D59130",
+  "bijlagen": [
+   {
+    "id": "2026D59131",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Zalinyan en Kathmann over het bericht ‘Nederland weet amper hoeveel stroom en water zijn datacentra opslokken’",
+    "bestand": "PDF",
+    "docId": "0afdb0c7-5318-41e0-9e86-bd5bd55b27f6",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D59131"
    }
   ]
  },
@@ -4347,6 +4459,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "water-adaptatie",
    "natuur-stikstof-landbouw"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22637&did=2026D53440",
@@ -5451,6 +5564,7 @@
   "kamerstuk": null,
   "dossiers": [],
   "sectoren": [
+   "water-adaptatie",
    "natuur-stikstof-landbouw"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22637&did=2026D52086",
@@ -8358,6 +8472,50 @@
     "bestand": "DOCX",
     "datum": "2026-11-16",
     "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21047&did=2026D58220"
+   }
+  ]
+ },
+ {
+  "id": "2026D48572",
+  "docId": "e2f340ad-e671-4785-a2a0-af43feecc8b5",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-10-05",
+  "titel": null,
+  "onderwerp": "Het bericht ‘Nederland weet amper hoeveel stroom en water zijn datacentra opslokken’",
+  "zaak": "2026Z21054",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21054&did=2026D48572",
+  "ministeries": [
+   "Infrastructuur en Waterstaat",
+   "Economische Zaken en Klimaat"
+  ],
+  "indieners": [
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "B.C. Kathmann",
+    "fractie": "PRO",
+    "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D53052",
+    "docId": "8ebb9e42-f2b4-40dd-a434-e793a20370a5",
+    "bestand": "DOCX",
+    "datum": "2026-10-26",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21054&did=2026D53052"
    }
   ]
  },
@@ -12121,7 +12279,7 @@
  {
   "id": "2026D44689",
   "docId": "ea1aa838-9d70-4de4-8e3e-56fee9d71bdc",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-18",
   "titel": "Wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met het verhogen van het aandeel van gas uit hernieuwbare bronnen in de totale leveringen van gas aan afnemers (Wet bijmengverplichting groen gas) ",
@@ -25927,6 +26085,34 @@
   ]
  },
  {
+  "id": "2026D32454",
+  "docId": "e078e539-8789-4399-add7-a1882930c049",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-06-25",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Bromet over de verhoogde kans op extreem hoog water voor de Nederlandse kust",
+  "zaak": "2026Z12988",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z12988&did=2026D32454",
+  "bijlagen": [
+   {
+    "id": "2026D32455",
+    "titel": "Beslisnota bij Kamerbrief Antwoord op vragen van het lid Bromet over de verhoogde kans op extreem hoog water voor de Nederlandse kust",
+    "bestand": "PDF",
+    "docId": "7f7377b6-15c7-451a-8303-d7712bb5394e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D32455"
+   }
+  ]
+ },
+ {
   "id": "2026D32600",
   "docId": "2c16c3af-448e-400c-b50d-eb8d21682d32",
   "bestand": "PDF",
@@ -28567,6 +28753,35 @@
     "bestand": "PDF",
     "docId": "2e243e65-5f1c-4b17-9d1a-9002d85ed712",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D29459"
+   }
+  ]
+ },
+ {
+  "id": "2026D29469",
+  "docId": "cca6f45a-465b-4c2d-9545-d227a664f45f",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-06-12",
+  "titel": null,
+  "onderwerp": "De verhoogde kans op extreem hoog water voor de Nederlandse kust",
+  "zaak": "2026Z12988",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z12988&did=2026D29469",
+  "ministeries": [
+   "Infrastructuur en Waterstaat"
+  ],
+  "indieners": [
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "relatie": "Eerste ondertekenaar"
    }
   ]
  },
@@ -41515,6 +41730,34 @@
     "bestand": "PDF",
     "docId": "e5249e59-d78b-498d-badd-16be75a13d8e",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D14809"
+   }
+  ]
+ },
+ {
+  "id": "2026D14793",
+  "docId": "f24f4e74-941f-4066-a8f1-693b7359230c",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-03-30",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Heutink en Jansen vragen over het bericht 'Nederlandse grensboeren halen doelen niet door vervuild water uit Duitsland: dit voelt wel oneerlijk'",
+  "zaak": "2025Z22662",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22662&did=2026D14793",
+  "bijlagen": [
+   {
+    "id": "2026D14794",
+    "titel": "Beslisnota bij Antwoord op vragen van de leden Heutink en Jansen vragen over het bericht 'Nederlandse grensboeren halen doelen niet door vervuild water uit Duitsland: dit voelt wel oneerlijk'",
+    "bestand": "PDF",
+    "docId": "bbb6b229-e10e-4f52-91d6-7a55d15b9dc7",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D14794"
    }
   ]
  },
@@ -55270,6 +55513,50 @@
     "bestand": "PDF",
     "datum": "2026-01-12",
     "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22682&did=2026D00676"
+   }
+  ]
+ },
+ {
+  "id": "2025D53919",
+  "docId": "bb0db182-38bd-4025-b447-f5fecd0fd061",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2025-12-22",
+  "titel": null,
+  "onderwerp": "Het bericht 'Nederlandse grensboeren halen doelen niet door vervuild water uit Duitsland: dit voelt wel oneerlijk'",
+  "zaak": "2025Z22662",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "R. Tieman",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22662&did=2025D53919",
+  "ministeries": [
+   "Infrastructuur en Waterstaat",
+   "Landbouw, Visserij, Voedselzekerheid en Natuur"
+  ],
+  "indieners": [
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "PVV",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "C.A. (Chris) Jansen",
+    "fractie": "PVV",
+    "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D00560",
+    "docId": "e1cb4327-0b66-47b0-a324-85c6d948e868",
+    "bestand": "PDF",
+    "datum": "2026-01-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22662&did=2026D00560"
    }
   ]
  },

@@ -1,10 +1,10 @@
 {
- "bijgewerkt": "2026-11-24T17:09:39+00:00",
+ "bijgewerkt": "2026-11-24T17:54:13+00:00",
  "status": "ok",
- "aantalZaken": 1507,
+ "aantalZaken": 1527,
  "aantalActiviteiten": 513,
- "aantalStukken": 1741,
- "aantalVerzoeken": 126,
+ "aantalStukken": 1749,
+ "aantalVerzoeken": 128,
  "aantalToezeggingen": 341,
  "uitgesloten": {
   "zaken": 0,
@@ -12,8 +12,8 @@
   "verzoeken": 0
  },
  "teksten": {
-  "ob": 1310,
-  "pdf": 77
+  "ob": 1312,
+  "pdf": 93
  },
  "fouten": [],
  "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl); Eerste Kamer en Staatsblad via officielebekendmakingen.nl"
