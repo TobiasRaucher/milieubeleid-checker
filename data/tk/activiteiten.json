@@ -4527,7 +4527,17 @@
    {
     "volgorde": 22,
     "onderwerp": "(Nog te ontvangen) Schriftelijke beantwoording van een deel van de vragen uit de eerste termijn",
-    "stukken": []
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-24",
+      "onderwerp": "Schriftelijke beantwoording van vragen gesteld tijdens de eerste termijn van het wetgevingsoverleg, gehouden op 23 november 2026 over water",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z26071&did=2026D60473"
+     }
+    ]
    }
   ],
   "bewindspersonen": [
@@ -4972,7 +4982,7 @@
     "functie": "Tweede Kamerlid"
    }
   ],
-  "zaal": null,
+  "zaal": "Groen van Prinstererzaal",
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02981",
   "sectoren": [
    "water-adaptatie"
@@ -57798,7 +57808,7 @@
     "onderwerp": "Reactie op verzoek commissie over oversterfte onder landbouwdieren tijdens hitteperiodes",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "28286-1489",
       "soort": "Brief regering",
       "datum": "2026-11-05",
       "onderwerp": "Reactie op verzoek commissie over oversterfte onder landbouwdieren tijdens hitteperiodes",

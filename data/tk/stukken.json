@@ -171,6 +171,34 @@
   ]
  },
  {
+  "id": "2026D60471",
+  "docId": "2a84f278-0c53-4f56-bc3c-978719a80b52",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Kostić over het bericht dat het Zeehondencentrum Pieterburen nog zeker één week openblijft na steun donateurs",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/detail?did=2026D60471",
+  "bijlagen": [
+   {
+    "id": "2026D60472",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Kostić over het bericht dat het Zeehondencentrum Pieterburen nog zeker één week openblijft na steun donateurs",
+    "bestand": "PDF",
+    "docId": "2c5682f2-22a0-4ca9-a15d-4184dc2e8a55",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60472"
+   }
+  ]
+ },
+ {
   "id": "2026D60327",
   "docId": "9ce8fef7-66b7-4327-a1be-caa4db153207",
   "bestand": "DOCX",
@@ -1417,7 +1445,7 @@
  {
   "id": "2026D58118",
   "docId": "96386aa5-c309-41c8-b1dc-e888077fbf83",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Schriftelijke vragen",
   "datum": "2026-11-16",
   "titel": null,
@@ -11695,7 +11723,7 @@
  {
   "id": "2026D44621",
   "docId": "c7afdb3f-f1ee-4dd1-92d1-2a4ce5b9aa93",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-18",
   "titel": "Schoon en zuinig",
@@ -13549,7 +13577,7 @@
  {
   "id": "2026D42867",
   "docId": "ed360d93-448d-467b-b302-1bc9f6fc4440",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-11",
   "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2026",
