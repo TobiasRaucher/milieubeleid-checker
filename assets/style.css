@@ -650,7 +650,7 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-item { display: grid; grid-template-columns: 96px minmax(0, 1fr) auto; grid-template-rows: auto auto 1fr; column-gap: 16px; padding: 8px 12px; margin: 0 -12px; }
 .tl-item > .tl-tijd, .tl-item > .tl-inhoud { grid-row: 1 / 4; }
 /* de uitklapknop verticaal in het midden van de regel; met Live (alleen vandaag) staat de link eronder */
-.tl-item > .toggle { grid-column: 3; grid-row: 1 / 4; align-self: center; justify-self: end; justify-content: flex-start; min-width: 240px; margin-top: 0; } /* alle knoppen even breed (Tobias, 24 nov 2026) */
+.tl-item > .toggle { grid-column: 3; grid-row: 1 / 4; align-self: center; justify-self: end; justify-content: flex-start; min-width: 228px; margin-top: 0; } /* alle knoppen even breed: past om "Toon agenda (xxx punten)" (Tobias, 24 nov 2026) */
 .tl-item:has(> .tl-live) > .toggle { grid-row: 1 / 3; align-self: start; }
 .tl-item > .tl-live { grid-column: 3; grid-row: 3; align-self: end; justify-self: end; padding-top: 4px; }
 .tl-item > .body-wrap { grid-column: 1 / -1; grid-row: 4; }
@@ -668,7 +668,7 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-item.debat { cursor: pointer; }
 .tl-item.debat .body-wrap { cursor: auto; }
 .tl-verwijs { margin-top: 8px; }
-.tl-live { margin-top: 8px; }
+.tl-live { margin-top: 8px; font-size: var(--t-14); }
 .naar-ander { margin: 0 0 16px; }
 .tijdlijn + .small + .naar-ander { margin-top: 16px; }
 .tl-live a[target="_blank"]::after { content: ""; display: inline-block; width: 12px; height: 12px; margin-left: 4px; vertical-align: -1px; background: var(--muted); -webkit-mask: var(--ext) center / 12px no-repeat; mask: var(--ext) center / 12px no-repeat; }
