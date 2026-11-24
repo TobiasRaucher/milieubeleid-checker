@@ -301,14 +301,14 @@
   function vulUitstoot(doos) {
     haal().then((reeks) => {
       const wetten = el("div", { class: "schakelaar mi-wetten", role: "group", "aria-label": "Wet" });
-      const jaren = el("div", { class: "schakelaar mi-wetten", role: "group", "aria-label": "Doeljaar" });
+      const jaren = doos.parentElement.querySelector(".mi-jaren"); // staat in de kop van het blok
       const knoppen = el("div", { class: "mi-groep-knoppen", role: "group", "aria-label": "Stof" });
       const stat = el("div", { class: "mi-stat" });
       const doelTekst = el("div", { class: "mi-doelen" });
       const plek = el("div", { class: "mi-plek" });
       const voet = el("div", { class: "mi-onder" });
-      vervang(doos, el("div", { class: "mi-kiezers" }, wetten, jaren), el("div", { class: "mi-uitstoot-raster" },
-        el("div", { class: "mi-links" }, knoppen, stat, doelTekst),
+      vervang(doos, el("div", { class: "mi-uitstoot-raster" },
+        el("div", { class: "mi-links" }, wetten, knoppen, stat, doelTekst),
         el("div", { class: "mi-rechts" }, plek, voet)));
 
       function tekenAlles() {
@@ -340,7 +340,7 @@
   /* ---------- koppeling met app.js ---------- */
   window.MRMilieu = {
     // een kop met een kaart eronder, zoals Net binnen en Komt eraan (sinds 16 nov 2026)
-    sectieHtml: () => `<section class="mi-sectie" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><h2 id="mi-uitstoot-kop">Hoe staan we er voor?</h2><div class="card mi-inhoud"><div class="sk sk-kaart"></div></div></section>`,
+    sectieHtml: () => `<section class="mi-sectie" id="mi-uitstoot" aria-labelledby="mi-uitstoot-kop"><div class="mi-kop"><h2 id="mi-uitstoot-kop">Hoe staan we er voor?</h2><div class="schakelaar mi-wetten mi-jaren" role="group" aria-label="Doeljaar"></div></div><div class="card mi-inhoud"><div class="sk sk-kaart"></div></div></section>`,
     vul() {
       const u = document.querySelector("#mi-uitstoot .mi-inhoud"); if (u) vulUitstoot(u);
     },
