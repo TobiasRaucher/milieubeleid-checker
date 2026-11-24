@@ -10,8 +10,8 @@ over de open data van de Tweede Kamer. GitHub Pages publiceert `main`.
 - Alleen desktop: ontwerp en controleer niets voor telefoonbreedte.
 - Alleen Chrome: test en controleer alleen in Chrome (Tobias, 19 nov 2026); niet in Safari of Firefox.
 - Elke wijziging aan het uiterlijk volgt `DESIGN.md`; dat gaat voor alles, ook voor skills.
-- Kleur volgt 60-30-10 (Tobias, 23 nov 2026; DESIGN.md, "Colour"): wit is inhoud, lichtgroen (`--surface`) is structuur,
-  bosgroen (`--accent`) is actie of "hier ben je", rood (`--alarm`) is alleen aandacht. Geen grijze vlakken, geen nieuwe kleuren of tokens zonder te vragen.
+- Kleur is wit, donkergroen, zwart (Tobias, 24 nov 2026; DESIGN.md, "Colour"): wit is inhoud, zwart is tekst en lijn,
+  bosgroen (`--accent`) is kop, actie of "hier ben je", rood (`--alarm`) is alleen aandacht. Geen lichtgroen, geen grijze vlakken, geen nieuwe kleuren of tokens zonder te vragen.
 - Zet niets terug wat Tobias heeft laten weghalen (zie "Bewust weg" onder Grenzen) zonder te vragen.
 - Selectie te ruim of te krap: pas `pipeline/config.json` aan, nooit de data in `data/tk/`.
 - Prioriteit: de wijziging van de Klimaatwet na de Klimaatzaak Bonaire. Zolang het wetsvoorstel
@@ -126,6 +126,7 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 - Op Overzicht: CO2-band, kerncijfers, Aandachtsdossier, Laatste samenvattingen, planetaire grenzen, Recente stemmingen
   en Nieuwste stukken als losse blokken (met `fetch_milieu.py`). Zie `agent_docs/uitstoot-grafiek.md` voor wat de grafiek bewust weglaat.
 - Introteksten en ondertitels boven tabellen en op Agenda (ondertitels weer weg sinds 23 nov 2026); tellingen en introtekst op `#themas`.
+- Lichtgroen, overal (sinds 24 nov 2026).
 - Grijze vlakken en het roze vlak onder de uitstootlijn (sinds 23 nov 2026).
 - Het label "Nieuw" op `#themas` (sinds 23 nov 2026).
 - De knop "Eerdere vergaderingen" op Agenda (sinds 23 nov 2026).
