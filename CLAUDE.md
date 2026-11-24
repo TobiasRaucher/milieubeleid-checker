@@ -40,6 +40,7 @@ Naslag (lees bij de taak):
 | Thema's in het `<noscript>`-blok van `index.html` | `node pipeline/themas_noscript.js` |
 | Versies `?v=<hash>` in `index.html` (na elke wijziging in `assets/`) | `node pipeline/versie.js` |
 | Zoektest | `node tests/zoektest.js` |
+| Test selectie commissieverzoeken | `python3 tests/verzoektest.py` |
 | Themareview: CSV met nieuwe items | `node pipeline/themas_review.js --nieuw` |
 | Themareview: nagekeken CSV in de mapping | `node pipeline/themas_review.js --import <csv>` |
 | Site lokaal (poort 8765) | `preview_start` met naam `site` (`.claude/launch.json`) |
@@ -55,7 +56,7 @@ De Action `.github/workflows/update.yml` draait elke werkdag om 05:17 en 17:17 U
 | `pipeline/fetch_tk.py` | Haalt activiteiten, zaken, stukken, stemmingen, toezeggingen, begrotingen op; Eerste Kamer-stukken en Staatsblad via officielebekendmakingen.nl (SRU) | script |
 | `pipeline/teksten.py` | Teksten van moties en amendementen (draait in `fetch_tk.py`) | script |
 | `pipeline/config.json` | Sectoren, trefwoorden, dossiers, in- en uitsluitingen | Claude/Tobias |
-| `data/tk/*.json` | `activiteiten`, `zaken`, `stukken`, `stemmingen`, `teksten`, `toezeggingen`, `begrotingen`, `wetstukken`, `meta` | alleen script |
+| `data/tk/*.json` | `activiteiten`, `zaken`, `stukken`, `stemmingen`, `teksten`, `toezeggingen`, `begrotingen`, `wetstukken`, `verzoeken`, `meta` | alleen script |
 | `data/debatten.json` | Samenvattingen van debatten | Claude |
 | `data/agenda.json` | Mijlpalen, consultaties, deadlines (met bron-URL) | Claude |
 | `data/kerndocumenten.json` | Handmatige kerndocumenten (reeksen met edities) | Claude |

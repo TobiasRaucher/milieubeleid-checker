@@ -19,7 +19,7 @@ const MAP_PAD = "data/themas-mapping.json";
 
 function laad() {
   const data = {
-    zaken: lees("data/tk/zaken.json", []), stukken: lees("data/tk/stukken.json", []), activiteiten: lees("data/tk/activiteiten.json", []),
+    zaken: lees("data/tk/zaken.json", []), stukken: lees("data/tk/stukken.json", []), verzoeken: lees("data/tk/verzoeken.json", []), activiteiten: lees("data/tk/activiteiten.json", []),
     debatten: lees("data/debatten.json", { debatten: [] }).debatten, agenda: lees("data/agenda.json", { items: [] }).items,
     kerndocumenten: lees("data/kerndocumenten.json", {}), begrotingen: lees("data/tk/begrotingen.json", []), rapporten: lees("data/rapporten.json", {}),
   };
@@ -30,7 +30,7 @@ function laad() {
 const LINK = (x) => {
   const r = x.ref || {};
   if (x.sleutel.startsWith("zaak:")) return r.tkLink || r.link || "";
-  if (x.sleutel.startsWith("stuk:")) return r.link || "";
+  if (/^(stuk|verzoek):/.test(x.sleutel)) return r.link || "";
   if (x.sleutel.startsWith("debat:")) return r.tkLink || r.video || r.bron || "";
   return r.url || "";
 };

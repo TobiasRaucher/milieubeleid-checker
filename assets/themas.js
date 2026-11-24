@@ -37,6 +37,7 @@
   const sleutel = {
     zaak: (z) => "zaak:" + z.nummer,
     stuk: (s) => "stuk:" + s.id,
+    verzoek: (v) => "verzoek:" + v.id,
     debat: (nummerOfId) => "debat:" + nummerOfId,
     agenda: (i) => "agenda:" + (i.datum || "zonder-datum") + "-" + norm(i.titel).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60),
   };
@@ -193,6 +194,9 @@
     return [...per.values()].map((l) => { l.sort((a, b) => sl(b).localeCompare(sl(a))); return { ...l[0], eerder: l.slice(1) }; });
   }
 
+  // commissieverzoek zonder aanhef: "Aan de minister van X - Verzoek om ..." -> "Verzoek om ..."
+  const verzoekTitel = (v) => String(v.onderwerp || "").replace(/^Aan [^-]+?\s*-\s*/i, "");
+
   function bronItems(data) {
     const uit = [];
     const zaken = data.zaken || [], stukken = data.stukken || [], acts = data.activiteiten || [];
@@ -212,6 +216,10 @@
     // stukken
     for (const s of stukken) {
       uit.push({ sleutel: sleutel.stuk(s), soort: /antwoord/i.test(s.soort) ? "antwoord" : s.soort === "Schriftelijke vragen" ? "vraag" : "brief", datum: s.datum, titel: stukTitel(s), overig: [], dossiers: (s.dossiers || []).map((d) => d.titel), ref: s, momenten: [] });
+    }
+    // commissieverzoeken staan in de tabel Kamervragen en tellen daar mee
+    for (const v of data.verzoeken || []) {
+      uit.push({ sleutel: sleutel.verzoek(v), soort: "vraag", datum: v.datum, titel: verzoekTitel(v), overig: [], dossiers: [], ref: v, momenten: [] });
     }
     // vergaderingen: samenvattingen en uitgevoerde activiteiten zonder samenvatting
     const perNummer = new Map(acts.map((a) => [a.Nummer, a]));
@@ -274,5 +282,5 @@
     return `https://www.tweedekamer.nl/zoeken?q=${encodeURIComponent(z.nummer)}`;
   }
 
-  return { THEMAS, SOORTEN, maak, tkUrl, kerndocumenten, kerndocReeksen, metRapport, norm, sleutel, bronItems, themasVanItem, korteTitel, stukTitel, typeNaam };
+  return { THEMAS, SOORTEN, maak, tkUrl, kerndocumenten, kerndocReeksen, metRapport, norm, sleutel, bronItems, themasVanItem, korteTitel, stukTitel, verzoekTitel, typeNaam };
 });

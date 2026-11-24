@@ -48,6 +48,7 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
 
 - Kamerbrieven, Kamervragen (soort `Schriftelijke vragen`, met `indieners` en de ministeries waaraan ze gericht zijn) en
   antwoorden die bij een sector horen (KGG altijd).
+- Uitstel (sinds 24 nov 2026): documenten `Mededeling (uitstel antwoord)` komen op zaaknummer in `uitstel` bij de vraag (`uitstellen()`), niet als los stuk.
 - Elk stuk heeft een `zaak`; een vraag en haar antwoord delen die en komen er altijd samen in.
 - Te ruim of te krap: `stukDossiers`/`trefwoorden` of `stukken.uitsluiten` in `config.json`.
 - Bijlagen (sinds 17 nov 2026): uit `BijlageDocument` (beslisnota, rapporten, juridische analyses) in `bijlagen`
@@ -117,3 +118,10 @@ Elk met het hoofddocument (memorie van toelichting of jaarverslag) met `zaak`, `
 - `themas_noscript.js`: thema's met tellingen in het `<noscript>`-blok van `index.html`.
 - `themas_review.js`: wekelijkse review (zie `assets/CLAUDE.md`, Thema's).
 - `versie.js`: zet `?v=<hash van de inhoud>` bij elk bestand uit `assets/` in `index.html`.
+
+## Commissieverzoeken (`data/tk/verzoeken.json`, sinds 24 nov 2026)
+
+- Brieven van Kamercommissies aan bewindspersonen met een verzoek (`commissieverzoeken()`): trefwoord van een sector of gericht aan een ministerie in
+  `altijdMinisteries`, en `verzoeken` in `config.json` (insluiten, uitsluiten). Een rij per zaak. Test: `python3 tests/verzoektest.py`.
+- `antwoorden`: Kamerbrieven die de Kamer aan de zaak koppelt (`GerelateerdNaar`, `GerelateerdVanuit`), zelfde dag of later, geen uitstelbericht.
+  De koppeling mist antwoorden (Greenpeace over Bonaire, 22 mei 2026, beantwoord 24 juli).

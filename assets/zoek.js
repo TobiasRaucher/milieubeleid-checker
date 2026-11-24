@@ -190,6 +190,14 @@
         wie: wieVan([...(x.indieners || []).map((i) => i.naam), x.ondertekenaar], (x.indieners || []).map((i) => i.fractie)), zaak: x.zaak,
       });
     }
+    // commissieverzoeken: een rij in de tabel Kamervragen
+    for (const v of D.verzoeken || []) {
+      add({
+        id: "verzoek:" + v.id, cat: "stukken", soort: "Commissieverzoek", datum: v.datum, sectoren: v.sectoren, titel: MRThemas.verzoekTitel(v),
+        tekst: j([v.commissie, v.id, v.zaak, ...v.ministeries.map((m) => "ministerie van " + m)]), personen: j(v.gerichtAan), ministerie: v.ministeries[0],
+        link: "#vragen?open=" + encodeURIComponent(v.id), extern: false, wie: wieVan(v.gerichtAan, []), zaak: v.zaak,
+      });
+    }
     for (const a of D.activiteiten || []) {
       if (samengevat.has(a.Nummer) || !["Gepland", "Uitgevoerd"].includes(a.Status)) continue;
       const gepland = a.Status === "Gepland";
@@ -241,6 +249,7 @@
     [["amendement", "amendementen"], "amendementen", (d) => d.soort === "Amendement"],
     [["kamerbrief", "kamerbrieven", "brief", "brieven"], "Kamerbrieven", (d) => d.soort === "Kamerbrief"],
     [["kamervragen", "kamervraag", "vragen"], "Kamervragen en antwoorden", (d) => d.soort === "Kamervragen" || d.soort === "Antwoord Kamervragen"],
+    [["commissieverzoek", "commissieverzoeken"], "commissieverzoeken", (d) => d.soort === "Commissieverzoek"],
     [["antwoord", "antwoorden"], "antwoorden op Kamervragen", (d) => d.soort === "Antwoord Kamervragen"],
     [["commissiedebat", "commissiedebatten"], "commissiedebatten", (d) => /^Commissiedebat/.test(d.soort)],
     [["tweeminutendebat", "tweeminutendebatten"], "tweeminutendebatten", (d) => /Tweeminutendebat/.test(d.soort)],

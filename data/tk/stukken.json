@@ -1,5 +1,68 @@
 [
  {
+  "id": "2026D60341",
+  "docId": "6177e85a-f123-431b-afd1-2df33cd8dde3",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Geannoteerde Agenda Milieuraad 11 december 2026",
+  "zaak": "2026Z26018",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "A.W.H. Bertram",
+  "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26018&did=2026D60341",
+  "bijlagen": [
+   {
+    "id": "2026D60342",
+    "titel": "Geannoteerde Agenda Milieuraad 11 december 2026",
+    "bestand": "PDF",
+    "docId": "4752a97f-7c90-44fb-a006-3dbe82813621",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60342"
+   },
+   {
+    "id": "2026D60343",
+    "titel": "Beslisnota bij Kamerbrief over geannoteerde agenda Milieuraad 11 december 2026",
+    "bestand": "PDF",
+    "docId": "c585b5fb-4827-44b6-aee3-6da574366a99",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60343"
+   }
+  ]
+ },
+ {
+  "id": "2026D60327",
+  "docId": "9ce8fef7-66b7-4327-a1be-caa4db153207",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Keijzer over de opbrengsten en publieke kosten van windenergie op zee",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/detail?did=2026D60327",
+  "bijlagen": [
+   {
+    "id": "2026D60328",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Keijzer over de opbrengsten en publieke kosten van windenergie op zee",
+    "bestand": "PDF",
+    "docId": "46303b03-b07a-48a5-857a-c61a9b4d9a96",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60328"
+   }
+  ]
+ },
+ {
   "id": "2026D60018",
   "docId": "276987b4-d98b-4315-9f70-171bbfa8a03c",
   "bestand": "DOCX",
@@ -2455,14 +2518,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-04",
-  "titel": null,
+  "titel": "Wijziging van enkele belastingwetten en enige andere wetten (Belastingplan 2027)",
   "onderwerp": "Reactie op verzoek van het lid Markuszower, gedaan tijdens het debat Pakket Belastingplan 2027 op 4 november 2026, over dat de Europese Commissie de Europese stikstofregels zou willen versoepelen",
   "zaak": "2026Z24060",
   "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
   "ondertekenaar": "J. van Essen",
   "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "37022-91",
+  "dossiers": [
+   {
+    "nummer": 37022,
+    "toevoeging": null,
+    "titel": "Wijziging van enkele belastingwetten en enige andere wetten (Belastingplan 2027)"
+   }
+  ],
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3690,6 +3759,15 @@
     "fractie": "VVD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D59842",
+    "docId": "d9a44567-e8da-44dc-bbae-531835683c34",
+    "bestand": "DOCX",
+    "datum": "2026-11-20",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23397&did=2026D59842"
+   }
   ]
  },
  {
@@ -3747,6 +3825,15 @@
     "naam": "A.J. Flach",
     "fractie": "SGP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D60150",
+    "docId": "73ddaed8-29b5-4b4a-8260-3e6aeb14c1af",
+    "bestand": "DOCX",
+    "datum": "2026-11-23",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23401&did=2026D60150"
    }
   ]
  },
@@ -4598,6 +4685,15 @@
     "fractie": "CDA",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D57680",
+    "docId": "3a392f2e-bdc3-4ec2-a3b5-49325552129e",
+    "bestand": "DOCX",
+    "datum": "2026-11-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22800&did=2026D57680"
+   }
   ]
  },
  {
@@ -4689,6 +4785,15 @@
     "naam": "M. Goudzwaard",
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D56248",
+    "docId": "0e6b70b2-995f-4c5b-8aad-fe9f53d78829",
+    "bestand": "DOCX",
+    "datum": "2026-11-06",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22748&did=2026D56248"
    }
   ]
  },
@@ -5657,6 +5762,15 @@
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D53144",
+    "docId": "62ea2a0f-ab9f-4d4c-9246-51e299bfc525",
+    "bestand": "DOCX",
+    "datum": "2026-10-27",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22286&did=2026D53144"
+   }
   ]
  },
  {
@@ -5772,6 +5886,15 @@
     "naam": "W.D. Bolhuis",
     "fractie": "PRO",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D56327",
+    "docId": "b8d2d14b-a24c-4e5f-a18a-dff980bf6b90",
+    "bestand": "DOCX",
+    "datum": "2026-11-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z22278&did=2026D56327"
    }
   ]
  },
@@ -6423,6 +6546,15 @@
     "fractie": "Keijzer",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D53079",
+    "docId": "6198bbb3-418f-4f5e-8b7e-d40415604210",
+    "bestand": "DOCX",
+    "datum": "2026-10-26",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21767&did=2026D53079"
+   }
   ]
  },
  {
@@ -6486,6 +6618,15 @@
     "naam": "C. Teunissen",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D54193",
+    "docId": "f1a4031c-e20c-40d9-9160-7965458502ec",
+    "bestand": "DOCX",
+    "datum": "2026-10-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21569&did=2026D54193"
    }
   ]
  },
@@ -6643,6 +6784,15 @@
     "naam": "P. van Duijvenvoorde",
     "fractie": "FVD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D53081",
+    "docId": "82bcd0c3-7680-469a-ac53-f2cbca30f97d",
+    "bestand": "DOCX",
+    "datum": "2026-10-26",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21558&did=2026D53081"
    }
   ]
  },
@@ -7182,6 +7332,15 @@
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D53013",
+    "docId": "586f53bd-3e0c-41db-ba92-c3863d078532",
+    "bestand": "DOCX",
+    "datum": "2026-10-26",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21185&did=2026D53013"
+   }
   ]
  },
  {
@@ -7344,6 +7503,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D53932",
+    "docId": "47d970bb-c2f5-4080-b35d-1485ad097a41",
+    "bestand": "DOCX",
+    "datum": "2026-10-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21187&did=2026D53932"
+   }
   ]
  },
  {
@@ -7481,6 +7649,15 @@
     "naam": "M.C.G. Keijzer",
     "fractie": "Keijzer",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D52650",
+    "docId": "537d579a-71fc-4adc-83d8-a8a9a105b6f4",
+    "bestand": "DOCX",
+    "datum": "2026-10-23",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21049&did=2026D52650"
    }
   ]
  },
@@ -7674,6 +7851,15 @@
     "naam": "M.C.G. Keijzer",
     "fractie": "Keijzer",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D58220",
+    "docId": "eeb9cc04-0c94-48fb-9d49-0f1c6787d616",
+    "bestand": "DOCX",
+    "datum": "2026-11-16",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z21047&did=2026D58220"
    }
   ]
  },
@@ -8166,6 +8352,15 @@
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D52286",
+    "docId": "ec8cf7dc-270f-48dd-baaf-9b310eb63c3c",
+    "bestand": "DOCX",
+    "datum": "2026-10-20",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20887&did=2026D52286"
+   }
   ]
  },
  {
@@ -8328,6 +8523,15 @@
     "fractie": "VVD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D51400",
+    "docId": "66bfe5c3-09ce-4112-a1ca-3c58f9905c6d",
+    "bestand": "DOCX",
+    "datum": "2026-10-15",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20888&did=2026D51400"
+   }
   ]
  },
  {
@@ -8486,6 +8690,15 @@
     "fractie": "SGP",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D52285",
+    "docId": "dd4a0dfe-c688-473e-acfe-7a7d97572373",
+    "bestand": "DOCX",
+    "datum": "2026-10-20",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20698&did=2026D52285"
+   }
   ]
  },
  {
@@ -8546,6 +8759,15 @@
     "naam": "J.G.L.M. Bühler",
     "fractie": "CDA",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D51538",
+    "docId": "fc70380c-2ee7-40d6-a5fd-7375dddbca88",
+    "bestand": "DOCX",
+    "datum": "2026-10-15",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20515&did=2026D51538"
    }
   ]
  },
@@ -10825,6 +11047,15 @@
     "fractie": "FVD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D45898",
+    "docId": "9679998a-8d61-4f37-bd00-9d6022aed6be",
+    "bestand": "PDF",
+    "datum": "2026-09-24",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19355&did=2026D45898"
+   }
   ]
  },
  {
@@ -10892,7 +11123,7 @@
  {
   "id": "2026D44500",
   "docId": "fd4cb338-443d-4652-9cca-03b62ada934b",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-18",
   "titel": "Vaststelling van de begrotingsstaat van het Deltafonds voor het jaar 2027",
@@ -11515,6 +11746,15 @@
     "fractie": "D66",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D50432",
+    "docId": "863a58b3-b448-4902-848c-7e375006499c",
+    "bestand": "DOCX",
+    "datum": "2026-10-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19193&did=2026D50432"
+   }
   ]
  },
  {
@@ -11554,7 +11794,7 @@
  {
   "id": "2026D44533",
   "docId": "0b464d38-9dc0-492c-8eb6-ab1ae18a1aff",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Brief regering",
   "datum": "2026-09-18",
   "titel": "Gaswinning",
@@ -11685,6 +11925,15 @@
     "naam": "J.C.G. Straatman",
     "fractie": "CDA",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D50310",
+    "docId": "e4d75b71-f37e-4ccd-a857-64e7502efdf9",
+    "bestand": "DOCX",
+    "datum": "2026-10-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z19184&did=2026D50310"
    }
   ]
  },
@@ -12849,6 +13098,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D46608",
+    "docId": "f0f6f014-8635-4a43-88b8-0b8d086ee6c8",
+    "bestand": "PDF",
+    "datum": "2026-09-28",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18643&did=2026D46608"
+   }
   ]
  },
  {
@@ -13485,6 +13743,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D48812",
+    "docId": "bd8a53d1-61ac-44ba-815f-086113e4a8bf",
+    "bestand": "PDF",
+    "datum": "2026-10-05",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18562&did=2026D48812"
+   }
   ]
  },
  {
@@ -13549,6 +13816,15 @@
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D47548",
+    "docId": "0bef2acb-9787-45cc-9246-ea6fa174b938",
+    "bestand": "PDF",
+    "datum": "2026-09-30",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18558&did=2026D47548"
+   }
   ]
  },
  {
@@ -13578,6 +13854,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D48381",
+    "docId": "95cc637b-afa0-44fd-ab28-b85d7dbdc12a",
+    "bestand": "PDF",
+    "datum": "2026-10-05",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18556&did=2026D48381"
+   }
   ]
  },
  {
@@ -13606,6 +13891,15 @@
     "naam": "D.J. van den Berg",
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D44583",
+    "docId": "f60601ad-aa35-4b50-81ba-13af5697957c",
+    "bestand": "PDF",
+    "datum": "2026-09-18",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18555&did=2026D44583"
    }
   ]
  },
@@ -13893,6 +14187,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D47226",
+    "docId": "e267485e-4b1e-4dc4-b91e-f00769f567e7",
+    "bestand": "PDF",
+    "datum": "2026-09-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18393&did=2026D47226"
+   }
   ]
  },
  {
@@ -13923,6 +14226,15 @@
     "fractie": "PRO",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D46956",
+    "docId": "901f08ba-c9a7-4dac-825f-dae646b6a058",
+    "bestand": "PDF",
+    "datum": "2026-09-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18395&did=2026D46956"
+   }
   ]
  },
  {
@@ -13952,6 +14264,15 @@
     "naam": "D.J. van den Berg",
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D47436",
+    "docId": "26d48b12-59c2-4275-b1db-f3702f7fb12e",
+    "bestand": "PDF",
+    "datum": "2026-09-30",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18385&did=2026D47436"
    }
   ]
  },
@@ -14108,6 +14429,15 @@
     "naam": "C.A.M. van der Plas",
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D46380",
+    "docId": "e3965b7a-b0b0-4ee3-8796-f69f9ca971a0",
+    "bestand": "PDF",
+    "datum": "2026-09-25",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z18193&did=2026D46380"
    }
   ]
  },
@@ -14366,6 +14696,15 @@
     "naam": "I. Kostić",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D47085",
+    "docId": "0f4f3f00-0d73-4a7f-bed9-87d3b8f7803c",
+    "bestand": "PDF",
+    "datum": "2026-09-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17988&did=2026D47085"
    }
   ]
  },
@@ -14930,6 +15269,15 @@
     "fractie": "PVV",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D45096",
+    "docId": "4ce0cd6c-a6a3-4c43-91cf-41b1fdee9ca3",
+    "bestand": "PDF",
+    "datum": "2026-09-21",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17698&did=2026D45096"
+   }
   ]
  },
  {
@@ -15141,6 +15489,15 @@
     "fractie": "SP",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D43015",
+    "docId": "1f1c221a-3ed9-4c62-bbef-c9480d09db1d",
+    "bestand": "PDF",
+    "datum": "2026-09-14",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17531&did=2026D43015"
+   }
   ]
  },
  {
@@ -15339,6 +15696,15 @@
     "naam": "J.G.L.M. Bühler",
     "fractie": "CDA",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D45725",
+    "docId": "ac9bb353-a040-4ef3-902d-88ecb4fcc72f",
+    "bestand": "PDF",
+    "datum": "2026-09-23",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17449&did=2026D45725"
    }
   ]
  },
@@ -15774,6 +16140,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D44608",
+    "docId": "4d866ac6-172b-45a4-9e67-bbb1af55e875",
+    "bestand": "PDF",
+    "datum": "2026-09-18",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17362&did=2026D44608"
+   }
   ]
  },
  {
@@ -15804,6 +16179,15 @@
     "naam": "I. Kostić",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D44605",
+    "docId": "eb35fcbb-be33-42df-a6f9-27bd00a89661",
+    "bestand": "PDF",
+    "datum": "2026-09-18",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17359&did=2026D44605"
    }
   ]
  },
@@ -16468,6 +16852,15 @@
     "fractie": "D66",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D46453",
+    "docId": "1ecc52e3-91c4-4613-a4bb-073251c9c811",
+    "bestand": "PDF",
+    "datum": "2026-09-25",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17163&did=2026D46453"
+   }
   ]
  },
  {
@@ -16528,6 +16921,22 @@
     "naam": "C. Teunissen",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D42916",
+    "docId": "4b18a6e5-419d-49d8-8f13-c838dcc68b2e",
+    "bestand": "PDF",
+    "datum": "2026-09-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17010&did=2026D42916"
+   },
+   {
+    "id": "2026D48608",
+    "docId": "a239f75f-1750-4bf4-b276-b1d9666f39cc",
+    "bestand": "PDF",
+    "datum": "2026-10-05",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17010&did=2026D48608"
    }
   ]
  },
@@ -16612,6 +17021,15 @@
     "naam": "I. Kostić",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D41148",
+    "docId": "9fc82fc7-e1b0-4090-9b98-1212f56cbbba",
+    "bestand": "PDF",
+    "datum": "2026-09-04",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17009&did=2026D41148"
    }
   ]
  },
@@ -16742,6 +17160,15 @@
     "naam": "S.M. Beckerman",
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D41969",
+    "docId": "f58c6c2b-1c50-4a6d-b306-5763878b7bcf",
+    "bestand": "PDF",
+    "datum": "2026-09-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16983&did=2026D41969"
    }
   ]
  },
@@ -16952,6 +17379,15 @@
     "fractie": "CDA",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D41789",
+    "docId": "d1665938-31da-4320-8c6c-7f73e5b02585",
+    "bestand": "PDF",
+    "datum": "2026-09-08",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16941&did=2026D41789"
+   }
   ]
  },
  {
@@ -17048,6 +17484,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D39536",
+    "docId": "5f37f648-0ecc-41fd-a9b0-75b674856468",
+    "bestand": "PDF",
+    "datum": "2026-08-27",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16907&did=2026D39536"
+   }
   ]
  },
  {
@@ -17082,6 +17527,15 @@
     "naam": "H.D. Heutink",
     "fractie": "Groep Markuszower",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D41054",
+    "docId": "09fe3da1-05c9-4462-b67f-af322ae94d0f",
+    "bestand": "PDF",
+    "datum": "2026-09-04",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16905&did=2026D41054"
    }
   ]
  },
@@ -17139,6 +17593,15 @@
     "naam": "P.C. (Peter) de Groot",
     "fractie": "VVD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D39538",
+    "docId": "ec3ec315-6dee-4569-b613-1cbecd5333f5",
+    "bestand": "PDF",
+    "datum": "2026-08-27",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16885&did=2026D39538"
    }
   ]
  },
@@ -17232,6 +17695,15 @@
     "fractie": "Groep Markuszower",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D41104",
+    "docId": "f3fcd327-8301-41e3-be57-88231ab8697a",
+    "bestand": "PDF",
+    "datum": "2026-09-04",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16846&did=2026D41104"
+   }
   ]
  },
  {
@@ -17301,6 +17773,15 @@
     "naam": "E.C. Prickaertz",
     "fractie": "PVV",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D39642",
+    "docId": "f891319d-bbe5-4482-b7fa-6169fe18b1df",
+    "bestand": "PDF",
+    "datum": "2026-08-28",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16775&did=2026D39642"
    }
   ]
  },
@@ -17606,6 +18087,15 @@
     "fractie": "PRO",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D37997",
+    "docId": "be219534-09ff-4655-9a00-de0280deee46",
+    "bestand": "PDF",
+    "datum": "2026-08-06",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16608&did=2026D37997"
+   }
   ]
  },
  {
@@ -17664,6 +18154,15 @@
     "naam": "A. Kops",
     "fractie": "PVV",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D38595",
+    "docId": "524e8dad-924e-4263-a2c7-da66babfc9fb",
+    "bestand": "PDF",
+    "datum": "2026-08-19",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16587&did=2026D38595"
    }
   ]
  },
@@ -17852,6 +18351,15 @@
     "naam": "D.J. van den Berg",
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D37624",
+    "docId": "d1a7c178-9848-4fd4-9115-82d1123e4ece",
+    "bestand": "PDF",
+    "datum": "2026-07-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16508&did=2026D37624"
    }
   ]
  },
@@ -18244,6 +18752,15 @@
     "fractie": "PRO",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D38129",
+    "docId": "2af0843d-3898-4499-b0f8-2f038e7cdf35",
+    "bestand": "PDF",
+    "datum": "2026-08-10",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16276&did=2026D38129"
+   }
   ]
  },
  {
@@ -18274,6 +18791,15 @@
     "naam": "C. Teunissen",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D37950",
+    "docId": "179d4872-5a00-43d3-901f-65ca01448ff5",
+    "bestand": "PDF",
+    "datum": "2026-08-06",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16275&did=2026D37950"
    }
   ]
  },
@@ -18338,6 +18864,15 @@
     "naam": "P.A. Grinwis",
     "fractie": "ChristenUnie",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D37903",
+    "docId": "83f9f763-c617-4b3c-ba49-ff7b2ec517c5",
+    "bestand": "PDF",
+    "datum": "2026-08-05",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16258&did=2026D37903"
    }
   ]
  },
@@ -18507,6 +19042,15 @@
     "naam": "E. Ouwehand",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D37189",
+    "docId": "b307271c-048a-4a73-bc51-78e605e27557",
+    "bestand": "PDF",
+    "datum": "2026-07-21",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16208&did=2026D37189"
    }
   ]
  },
@@ -18949,6 +19493,15 @@
     "naam": "C. Stoffer",
     "fractie": "SGP",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D37493",
+    "docId": "bf666f0b-f09c-49b9-a6a6-5d0da35cdc98",
+    "bestand": "PDF",
+    "datum": "2026-07-27",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16156&did=2026D37493"
    }
   ]
  },
@@ -19593,6 +20146,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D38860",
+    "docId": "86e13e41-d550-4f40-a17a-191c88fdfbb7",
+    "bestand": "PDF",
+    "datum": "2026-08-21",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z15998&did=2026D38860"
+   }
   ]
  },
  {
@@ -19711,6 +20273,15 @@
     "naam": "A. Zalinyan",
     "fractie": "PRO",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D36990",
+    "docId": "6d7a212c-28ed-4bf2-bcc0-2c4d2a9921bf",
+    "bestand": "PDF",
+    "datum": "2026-07-16",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16000&did=2026D36990"
    }
   ]
  },
@@ -19968,6 +20539,15 @@
     "naam": "L.A.J.M. Dassen",
     "fractie": "Volt",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D36989",
+    "docId": "69219430-ff45-4ef5-a190-7d33d5293298",
+    "bestand": "PDF",
+    "datum": "2026-07-16",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z16006&did=2026D36989"
    }
   ]
  },
@@ -20354,6 +20934,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D37502",
+    "docId": "8e756237-1129-45f4-97a1-c3bc6a4b1bf3",
+    "bestand": "PDF",
+    "datum": "2026-07-27",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z15898&did=2026D37502"
+   }
   ]
  },
  {
@@ -20608,6 +21197,15 @@
     "naam": "I. Kostić",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D36197",
+    "docId": "40f5562d-e145-4378-8be7-5db808c56159",
+    "bestand": "PDF",
+    "datum": "2026-07-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z15828&did=2026D36197"
    }
   ]
  },
@@ -21942,6 +22540,15 @@
     "fractie": "CDA",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D39645",
+    "docId": "9abfc0ec-c901-4d17-9fa1-ea72599a66e1",
+    "bestand": "PDF",
+    "datum": "2026-08-28",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z15265&did=2026D39645"
+   }
   ]
  },
  {
@@ -22066,6 +22673,15 @@
     "naam": "I. Kostić",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D36199",
+    "docId": "7db201b4-0f03-46ba-b800-df9f6c7307ec",
+    "bestand": "PDF",
+    "datum": "2026-07-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z15267&did=2026D36199"
    }
   ]
  },
@@ -26112,6 +26728,15 @@
     "fractie": "Groep Markuszower",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D37399",
+    "docId": "181a2b4b-087b-49aa-aaa2-ae429fa2c407",
+    "bestand": "PDF",
+    "datum": "2026-07-24",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z13643&did=2026D37399"
+   }
   ]
  },
  {
@@ -27350,6 +27975,15 @@
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D34240",
+    "docId": "75646669-8498-4fd9-8238-73d3f7a6d98c",
+    "bestand": "PDF",
+    "datum": "2026-07-01",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z12603&did=2026D34240"
+   }
   ]
  },
  {
@@ -28191,6 +28825,15 @@
     "fractie": "VVD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D33157",
+    "docId": "c5f132a5-4ca3-4dc1-98d1-b7f55c953984",
+    "bestand": "PDF",
+    "datum": "2026-06-26",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z12157&did=2026D33157"
+   }
   ]
  },
  {
@@ -28365,6 +29008,15 @@
     "naam": "L.A.J.M. Dassen",
     "fractie": "Volt",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D32053",
+    "docId": "e06b3fa2-ba08-4427-9223-6ee6e02ef074",
+    "bestand": "PDF",
+    "datum": "2026-06-24",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z11820&did=2026D32053"
    }
   ]
  },
@@ -28569,6 +29221,15 @@
     "naam": "M.C.G. Keijzer",
     "fractie": "Keijzer",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D31292",
+    "docId": "e42988bb-3043-4074-b9de-239ee6501736",
+    "bestand": "PDF",
+    "datum": "2026-06-19",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z11806&did=2026D31292"
    }
   ]
  },
@@ -30278,6 +30939,15 @@
     "fractie": "GroenLinks-PvdA",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D31248",
+    "docId": "dc380944-d7ab-45d0-b660-7aaa53f97a79",
+    "bestand": "PDF",
+    "datum": "2026-06-19",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10867&did=2026D31248"
+   }
   ]
  },
  {
@@ -30474,6 +31144,15 @@
     "fractie": "D66",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D29457",
+    "docId": "363308d8-ae38-42e6-b52c-13ed6ac44e4c",
+    "bestand": "PDF",
+    "datum": "2026-06-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10565&did=2026D29457"
+   }
   ]
  },
  {
@@ -30502,6 +31181,15 @@
     "naam": "H. Vermeer",
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D31223",
+    "docId": "435448a3-0631-4eca-b2c6-115af526b943",
+    "bestand": "PDF",
+    "datum": "2026-06-19",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10546&did=2026D31223"
    }
   ]
  },
@@ -30729,6 +31417,15 @@
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D27687",
+    "docId": "1196cff3-cdf5-4753-8a17-051e31cf6662",
+    "bestand": "PDF",
+    "datum": "2026-06-05",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10550&did=2026D27687"
+   }
   ]
  },
  {
@@ -30798,6 +31495,15 @@
     "naam": "C. Teunissen",
     "fractie": "PvdD",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D28084",
+    "docId": "f23dc1a2-8422-4ea9-a753-6bdd30f72ba6",
+    "bestand": "PDF",
+    "datum": "2026-06-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10562&did=2026D28084"
    }
   ]
  },
@@ -30945,6 +31651,15 @@
     "naam": "J.P. (Jimmy) Dijk",
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D30024",
+    "docId": "323f6f86-5417-4daa-9091-5444b02bf648",
+    "bestand": "PDF",
+    "datum": "2026-06-16",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10724&did=2026D30024"
    }
   ]
  },
@@ -31398,6 +32113,15 @@
     "naam": "J.M. Zwinkels",
     "fractie": "CDA",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D28679",
+    "docId": "dccc02d3-6dbb-4480-8b93-ca4fb112a601",
+    "bestand": "PDF",
+    "datum": "2026-06-10",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z10207&did=2026D28679"
    }
   ]
  },
@@ -31876,6 +32600,15 @@
     "fractie": "CDA",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D29532",
+    "docId": "683309a0-30b5-481c-89c7-e873767d76d2",
+    "bestand": "PDF",
+    "datum": "2026-06-15",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09943&did=2026D29532"
+   }
   ]
  },
  {
@@ -32034,6 +32767,15 @@
     "fractie": "PVV",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D29299",
+    "docId": "3e16919b-871a-4952-9422-8b3a5c8cc7f3",
+    "bestand": "PDF",
+    "datum": "2026-06-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09760&did=2026D29299"
+   }
   ]
  },
  {
@@ -32133,6 +32875,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D26879",
+    "docId": "85c65651-8441-4838-97af-940d27af71a8",
+    "bestand": "PDF",
+    "datum": "2026-06-03",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09744&did=2026D26879"
+   }
   ]
  },
  {
@@ -32161,6 +32912,15 @@
     "naam": "L.G. de Vos",
     "fractie": "FVD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D29428",
+    "docId": "55665160-d515-47c0-ac6a-7e48ea969659",
+    "bestand": "PDF",
+    "datum": "2026-06-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09750&did=2026D29428"
    }
   ]
  },
@@ -32196,6 +32956,15 @@
     "naam": "P.C. (Peter) de Groot",
     "fractie": "VVD",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D26653",
+    "docId": "e47d980d-f546-41e1-ba79-68e23a98b395",
+    "bestand": "PDF",
+    "datum": "2026-06-02",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09765&did=2026D26653"
    }
   ]
  },
@@ -32468,6 +33237,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D26792",
+    "docId": "8ebc0e0e-a052-4d9b-bae9-b49f47787ce1",
+    "bestand": "PDF",
+    "datum": "2026-06-03",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09585&did=2026D26792"
+   }
   ]
  },
  {
@@ -32662,6 +33440,15 @@
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D27472",
+    "docId": "dcd6dbb2-1ccd-4952-81ed-e1ab89f599bb",
+    "bestand": "PDF",
+    "datum": "2026-06-04",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09483&did=2026D27472"
+   }
   ]
  },
  {
@@ -32696,6 +33483,15 @@
     "naam": "R.J. van Asten",
     "fractie": "D66",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D26033",
+    "docId": "6bcd513a-0b4f-4d4e-8673-64d668fbae21",
+    "bestand": "PDF",
+    "datum": "2026-05-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09485&did=2026D26033"
    }
   ]
  },
@@ -33564,6 +34360,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D24423",
+    "docId": "90b925dd-87bd-46fd-9e1d-50ce17ed774c",
+    "bestand": "PDF",
+    "datum": "2026-05-22",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09303&did=2026D24423"
+   }
   ]
  },
  {
@@ -33620,6 +34425,15 @@
     "naam": "J.P. (Jimmy) Dijk",
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D24059",
+    "docId": "73e9eb7b-cfa7-4cc6-8693-65c42cd92462",
+    "bestand": "PDF",
+    "datum": "2026-05-21",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09270&did=2026D24059"
    }
   ]
  },
@@ -34298,6 +35112,15 @@
     "fractie": "Volt",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D24072",
+    "docId": "c45e7384-1844-4396-b379-a8ea835ae0bc",
+    "bestand": "PDF",
+    "datum": "2026-05-21",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z09070&did=2026D24072"
+   }
   ]
  },
  {
@@ -34373,6 +35196,15 @@
     "naam": "H.E. de Hoop",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D21377",
+    "docId": "e9959dcf-8226-44e7-b284-efb33bde314b",
+    "bestand": "PDF",
+    "datum": "2026-05-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z08987&did=2026D21377"
    }
   ]
  },
@@ -34969,6 +35801,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D24455",
+    "docId": "556051c0-1417-41ef-bbc4-21335a08aa77",
+    "bestand": "PDF",
+    "datum": "2026-05-22",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z08879&did=2026D24455"
+   }
   ]
  },
  {
@@ -34998,6 +35839,15 @@
     "naam": "F.M. Wiersma",
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D24498",
+    "docId": "35cb169c-4611-43c9-a6ad-3059374e488e",
+    "bestand": "PDF",
+    "datum": "2026-05-22",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z08873&did=2026D24498"
    }
   ]
  },
@@ -35102,6 +35952,15 @@
     "naam": "A.S. van Oosterhout",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D21376",
+    "docId": "3f569570-6eea-415c-9dc9-1f82683c3a51",
+    "bestand": "PDF",
+    "datum": "2026-05-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z08500&did=2026D21376"
    }
   ]
  },
@@ -36055,6 +36914,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D21389",
+    "docId": "14134f5d-2113-4c08-b7ca-1eac6855d97c",
+    "bestand": "PDF",
+    "datum": "2026-05-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z08078&did=2026D21389"
+   }
   ]
  },
  {
@@ -36447,6 +37315,15 @@
     "naam": "H. Vermeer",
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D20653",
+    "docId": "748763e8-83d3-492a-b9a1-4b5e388a7a03",
+    "bestand": "PDF",
+    "datum": "2026-04-30",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z07919&did=2026D20653"
    }
   ]
  },
@@ -37158,6 +38035,15 @@
     "fractie": "PVV",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D20034",
+    "docId": "4f28b2c6-07c8-46d1-8f0a-d7247ca2630e",
+    "bestand": "PDF",
+    "datum": "2026-04-24",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z07617&did=2026D20034"
+   }
   ]
  },
  {
@@ -37198,6 +38084,15 @@
     "naam": "J.P. (Jimmy) Dijk",
     "fractie": "SP",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D20029",
+    "docId": "f6ae8774-7029-4da8-8047-e2fc0aa45f4f",
+    "bestand": "PDF",
+    "datum": "2026-04-24",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z07629&did=2026D20029"
    }
   ]
  },
@@ -37758,6 +38653,15 @@
     "fractie": "CDA",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D20640",
+    "docId": "5b3dda3e-863f-4e93-97ee-a26e2b3e13b3",
+    "bestand": "PDF",
+    "datum": "2026-04-30",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z07153&did=2026D20640"
+   }
   ]
  },
  {
@@ -38057,6 +38961,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D17827",
+    "docId": "a3ad90b2-cf17-45d3-81a7-36e6bce6a56a",
+    "bestand": "PDF",
+    "datum": "2026-04-15",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z06931&did=2026D17827"
+   }
   ]
  },
  {
@@ -38226,6 +39139,15 @@
     "naam": "M.C.A. Vellinga-Beemsterboer",
     "fractie": "D66",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D18301",
+    "docId": "f6ba1c13-f117-40a4-9010-02252422dcaa",
+    "bestand": "PDF",
+    "datum": "2026-04-16",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z06921&did=2026D18301"
    }
   ]
  },
@@ -38808,6 +39730,15 @@
     "naam": "C. Teunissen",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D19189",
+    "docId": "0d09c6ef-d69e-49ee-a044-45af331e5c84",
+    "bestand": "PDF",
+    "datum": "2026-04-21",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z06772&did=2026D19189"
    }
   ]
  },
@@ -39893,6 +40824,15 @@
     "fractie": "GroenLinks-PvdA",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D17737",
+    "docId": "b89b0c2c-3621-4977-977f-c7a9b7f2b1aa",
+    "bestand": "PDF",
+    "datum": "2026-04-15",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z06053&did=2026D17737"
+   }
   ]
  },
  {
@@ -40044,6 +40984,15 @@
     "fractie": "CDA",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D17826",
+    "docId": "7803c62c-2dad-4e1f-ad18-e5ab07326994",
+    "bestand": "PDF",
+    "datum": "2026-04-15",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05930&did=2026D17826"
+   }
   ]
  },
  {
@@ -40100,6 +41049,15 @@
     "naam": "F.M. Wiersma",
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D18748",
+    "docId": "92391f08-13a2-44bc-b26e-6fa2f6793cbb",
+    "bestand": "PDF",
+    "datum": "2026-04-20",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05931&did=2026D18748"
    }
   ]
  },
@@ -40591,6 +41549,15 @@
     "fractie": "JA21",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D16563",
+    "docId": "04c36f78-1ab6-49ea-a808-b7465d2a6ac9",
+    "bestand": "PDF",
+    "datum": "2026-04-08",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05637&did=2026D16563"
+   }
   ]
  },
  {
@@ -40872,6 +41839,15 @@
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D18343",
+    "docId": "15b17133-76cf-40c8-89f0-25e2101cb8d2",
+    "bestand": "PDF",
+    "datum": "2026-04-16",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05442&did=2026D18343"
+   }
   ]
  },
  {
@@ -41143,6 +42119,15 @@
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D17978",
+    "docId": "9e9bc24c-129a-4d8a-8834-ddc25e6378e8",
+    "bestand": "PDF",
+    "datum": "2026-04-15",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05284&did=2026D17978"
+   }
   ]
  },
  {
@@ -41211,6 +42196,15 @@
     "naam": "I. Rooderkerk",
     "fractie": "D66",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D17691",
+    "docId": "7a6ac638-1226-49f1-8cda-0d0540355805",
+    "bestand": "PDF",
+    "datum": "2026-04-14",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05189&did=2026D17691"
    }
   ]
  },
@@ -41450,6 +42444,15 @@
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D14579",
+    "docId": "a58c8f85-17e1-4ea6-8c19-e2a7e660e1e6",
+    "bestand": "PDF",
+    "datum": "2026-03-27",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05193&did=2026D14579"
+   }
   ]
  },
  {
@@ -41515,6 +42518,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D17430",
+    "docId": "2d5ccf81-c70e-48d1-b9b6-f63127453e0d",
+    "bestand": "PDF",
+    "datum": "2026-04-13",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05192&did=2026D17430"
+   }
   ]
  },
  {
@@ -41555,6 +42567,15 @@
     "naam": "J.P. (Jimmy) Dijk",
     "fractie": "SP",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D15547",
+    "docId": "e5f70ae4-2482-419a-93ed-0b1ceb7d536c",
+    "bestand": "PDF",
+    "datum": "2026-04-02",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05108&did=2026D15547"
    }
   ]
  },
@@ -41671,6 +42692,15 @@
     "naam": "S.C. Kröger",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D16118",
+    "docId": "858720d8-53c0-4c4a-9ff0-c59bae8d2e3e",
+    "bestand": "PDF",
+    "datum": "2026-04-07",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z05118&did=2026D16118"
    }
   ]
  },
@@ -42415,6 +43445,15 @@
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D16012",
+    "docId": "2bf9c679-133e-4ec3-a6d8-de165084925e",
+    "bestand": "PDF",
+    "datum": "2026-04-03",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z04658&did=2026D16012"
+   }
   ]
  },
  {
@@ -42656,6 +43695,15 @@
     "fractie": "FVD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D14298",
+    "docId": "8b2ea5da-6618-472f-a83a-bcf2ef9f56e0",
+    "bestand": "PDF",
+    "datum": "2026-03-26",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z04361&did=2026D14298"
+   }
   ]
  },
  {
@@ -42774,6 +43822,15 @@
     "naam": "L.A.J.M. Dassen",
     "fractie": "Volt",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D14237",
+    "docId": "f0a40a84-9ace-4c64-a4d7-cd5eca6dafb1",
+    "bestand": "PDF",
+    "datum": "2026-03-26",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z04233&did=2026D14237"
    }
   ]
  },
@@ -43188,6 +44245,15 @@
     "fractie": "GroenLinks-PvdA",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D11781",
+    "docId": "65d2dcb6-bfd4-409d-a12c-4c2a094423b7",
+    "bestand": "PDF",
+    "datum": "2026-03-16",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z03648&did=2026D11781"
+   }
   ]
  },
  {
@@ -43216,6 +44282,15 @@
     "naam": "A.J. Flach",
     "fractie": "SGP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D11015",
+    "docId": "433db517-4e19-40f1-84dd-87ad6af7dde1",
+    "bestand": "PDF",
+    "datum": "2026-03-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z03618&did=2026D11015"
    }
   ]
  },
@@ -43281,6 +44356,15 @@
     "fractie": "PvdD",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D12393",
+    "docId": "da0502d5-9023-4d0a-bdda-c1279677a302",
+    "bestand": "PDF",
+    "datum": "2026-03-18",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z03534&did=2026D12393"
+   }
   ]
  },
  {
@@ -43328,6 +44412,15 @@
     "naam": "A. Podt",
     "fractie": "D66",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D11724",
+    "docId": "62bc3ae2-b4d1-4780-8281-55c89c28c213",
+    "bestand": "PDF",
+    "datum": "2026-03-13",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z03541&did=2026D11724"
    }
   ]
  },
@@ -44517,6 +45610,15 @@
     "fractie": "SP",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D09936",
+    "docId": "9c0c3afd-31b8-4953-a535-21d75be89232",
+    "bestand": "PDF",
+    "datum": "2026-03-05",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z03245&did=2026D09936"
+   }
   ]
  },
  {
@@ -44655,6 +45757,15 @@
     "naam": "H. Vermeer",
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D09813",
+    "docId": "511ae24b-f5c5-445b-98fb-8cc15df077db",
+    "bestand": "PDF",
+    "datum": "2026-03-04",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z03080&did=2026D09813"
    }
   ]
  },
@@ -45404,6 +46515,15 @@
     "fractie": "ChristenUnie",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D11018",
+    "docId": "28bcb38f-2cb8-4381-9941-a036be19c4eb",
+    "bestand": "PDF",
+    "datum": "2026-03-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02804&did=2026D11018"
+   }
   ]
  },
  {
@@ -45466,6 +46586,15 @@
     "naam": "C.A.M. van der Plas",
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D10425",
+    "docId": "4477b418-06a2-4148-9b4d-e32f7c62380b",
+    "bestand": "PDF",
+    "datum": "2026-03-06",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02720&did=2026D10425"
    }
   ]
  },
@@ -45640,6 +46769,15 @@
     "naam": "S.C. Kröger",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D09175",
+    "docId": "a1b44461-e876-4e39-8c08-fcbd18c4e08e",
+    "bestand": "PDF",
+    "datum": "2026-03-02",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02717&did=2026D09175"
    }
   ]
  },
@@ -46120,6 +47258,15 @@
     "fractie": "PVV",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D10812",
+    "docId": "1379f5db-2849-4e6a-a1d6-41aee16c1a13",
+    "bestand": "PDF",
+    "datum": "2026-03-10",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02493&did=2026D10812"
+   }
   ]
  },
  {
@@ -46195,6 +47342,15 @@
     "naam": "T.J. Bushoff",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D07867",
+    "docId": "0590e0a2-9302-4ba1-9ed2-1929d6493b3b",
+    "bestand": "PDF",
+    "datum": "2026-02-19",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02497&did=2026D07867"
    }
   ]
  },
@@ -46565,6 +47721,15 @@
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D06775",
+    "docId": "76d16b11-6992-415d-aca0-1ee591430247",
+    "bestand": "PDF",
+    "datum": "2026-02-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02186&did=2026D06775"
+   }
   ]
  },
  {
@@ -46821,6 +47986,15 @@
     "naam": "C. Stoffer",
     "fractie": "SGP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D06020",
+    "docId": "6c4aa40b-b14a-4fc5-806b-a6a6df4903d9",
+    "bestand": "PDF",
+    "datum": "2026-02-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02050&did=2026D06020"
    }
   ]
  },
@@ -47118,6 +48292,15 @@
     "fractie": "D66",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D06204",
+    "docId": "db470507-923e-4892-a6b2-d3f7fc641630",
+    "bestand": "PDF",
+    "datum": "2026-02-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z02048&did=2026D06204"
+   }
   ]
  },
  {
@@ -47344,6 +48527,15 @@
     "fractie": "PvdD",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D06311",
+    "docId": "53212bb3-24e6-4b3e-9c05-05ec167628c6",
+    "bestand": "PDF",
+    "datum": "2026-02-10",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01963&did=2026D06311"
+   }
   ]
  },
  {
@@ -47494,6 +48686,15 @@
     "fractie": "ChristenUnie",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D07904",
+    "docId": "ef162b80-d839-4982-9b80-57dfa25f8673",
+    "bestand": "PDF",
+    "datum": "2026-02-19",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01789&did=2026D07904"
+   }
   ]
  },
  {
@@ -47523,6 +48724,15 @@
     "naam": "L.A.J.M. Dassen",
     "fractie": "Volt",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D06033",
+    "docId": "227b2a1b-9dc1-40fc-844c-1aac38c7d459",
+    "bestand": "PDF",
+    "datum": "2026-02-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01793&did=2026D06033"
    }
   ]
  },
@@ -47559,6 +48769,15 @@
     "naam": "C. Teunissen",
     "fractie": "PvdD",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D09307",
+    "docId": "315ad2b5-73a1-4f2a-8565-2820e588d763",
+    "bestand": "PDF",
+    "datum": "2026-03-02",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01790&did=2026D09307"
    }
   ]
  },
@@ -47625,6 +48844,15 @@
     "fractie": "SGP",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D05956",
+    "docId": "a61a6491-5b78-4ffb-8372-5aaa19d20064",
+    "bestand": "PDF",
+    "datum": "2026-02-06",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01794&did=2026D05956"
+   }
   ]
  },
  {
@@ -47686,6 +48914,15 @@
     "fractie": "PvdD",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D06031",
+    "docId": "35e8be5a-ff92-41c4-9da7-a7f8c0250c61",
+    "bestand": "PDF",
+    "datum": "2026-02-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01634&did=2026D06031"
+   }
   ]
  },
  {
@@ -47720,6 +48957,15 @@
     "naam": "M. Tseggai",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D09910",
+    "docId": "9d0fb033-56dd-43a0-ba68-30a77a910b33",
+    "bestand": "PDF",
+    "datum": "2026-03-05",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01619&did=2026D09910"
    }
   ]
  },
@@ -47756,6 +49002,15 @@
     "naam": "C. Teunissen",
     "fractie": "PvdD",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D06030",
+    "docId": "7646a8f2-da39-408c-8799-e3063e916d0e",
+    "bestand": "PDF",
+    "datum": "2026-02-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01632&did=2026D06030"
    }
   ]
  },
@@ -49702,6 +50957,15 @@
     "fractie": "CDA",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D06839",
+    "docId": "3ec5aaaf-0aa7-4ab9-b60f-3b26a1c3baf6",
+    "bestand": "PDF",
+    "datum": "2026-02-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z01004&did=2026D06839"
+   }
   ]
  },
  {
@@ -50360,6 +51624,15 @@
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D09151",
+    "docId": "6de9428c-41e7-43d8-b93b-88312dc46cdc",
+    "bestand": "PDF",
+    "datum": "2026-03-02",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z00791&did=2026D09151"
+   }
   ]
  },
  {
@@ -50863,6 +52136,15 @@
     "fractie": "D66",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D05071",
+    "docId": "077d37b5-8832-4256-8d49-bf9841e108f4",
+    "bestand": "PDF",
+    "datum": "2026-02-03",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z00699&did=2026D05071"
+   }
   ]
  },
  {
@@ -51353,6 +52635,15 @@
     "fractie": "D66",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D04860",
+    "docId": "29b6a9b1-b541-456e-b162-daaa38d69f1c",
+    "bestand": "PDF",
+    "datum": "2026-02-02",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z00465&did=2026D04860"
+   }
   ]
  },
  {
@@ -51606,6 +52897,15 @@
     "naam": "D.J. van den Berg",
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D04861",
+    "docId": "72c93d4b-4bd0-43cb-9f82-1b4ed2644287",
+    "bestand": "PDF",
+    "datum": "2026-02-02",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z00337&did=2026D04861"
    }
   ]
  },
@@ -51975,6 +53275,15 @@
     "fractie": "D66",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D04406",
+    "docId": "ddcb7f16-dbc5-4b58-b44c-e035ea5c2ae4",
+    "bestand": "PDF",
+    "datum": "2026-01-30",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z00126&did=2026D04406"
+   }
   ]
  },
  {
@@ -52053,6 +53362,15 @@
     "naam": "J.P. (Jimmy) Dijk",
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D03838",
+    "docId": "faa0510d-4676-4ca8-afcf-eb6767b17054",
+    "bestand": "PDF",
+    "datum": "2026-01-28",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z00091&did=2026D03838"
    }
   ]
  },
@@ -52191,6 +53509,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D03601",
+    "docId": "cf05bf96-4258-46dc-8883-312360a35068",
+    "bestand": "PDF",
+    "datum": "2026-01-27",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z00004&did=2026D03601"
+   }
   ]
  },
  {
@@ -52321,6 +53648,15 @@
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D00676",
+    "docId": "ed612386-77ae-428c-baca-e740f9213e9c",
+    "bestand": "PDF",
+    "datum": "2026-01-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22682&did=2026D00676"
+   }
   ]
  },
  {
@@ -52376,6 +53712,15 @@
     "naam": "A. Zalinyan",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D01902",
+    "docId": "afe5ad56-6f92-451a-9463-b7a99ed1bd06",
+    "bestand": "PDF",
+    "datum": "2026-01-19",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22658&did=2026D01902"
    }
   ]
  },
@@ -54172,6 +55517,15 @@
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D00220",
+    "docId": "2984ed76-3751-4492-b285-495ddfbe60bc",
+    "bestand": "PDF",
+    "datum": "2026-01-07",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22312&did=2026D00220"
+   }
   ]
  },
  {
@@ -54200,6 +55554,15 @@
     "naam": "A.S. van Oosterhout",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D00186",
+    "docId": "459bf14a-d093-43e1-90c8-42f37fc0574d",
+    "bestand": "PDF",
+    "datum": "2026-01-07",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22300&did=2026D00186"
    }
   ]
  },
@@ -54422,6 +55785,15 @@
     "fractie": "JA21",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D53284",
+    "docId": "2fa37c2a-bbfc-4e05-8861-6dddad3d8246",
+    "bestand": "PDF",
+    "datum": "2025-12-18",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22167&did=2025D53284"
+   }
   ]
  },
  {
@@ -54452,6 +55824,15 @@
     "naam": "A.S. van Oosterhout",
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D52901",
+    "docId": "c7010ebf-74ef-4f81-ad85-44938811e1ae",
+    "bestand": "PDF",
+    "datum": "2025-12-17",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z22165&did=2025D52901"
    }
   ]
  },
@@ -56103,6 +57484,15 @@
     "fractie": "PVV",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D00532",
+    "docId": "ccedfc97-8c47-4d7a-8094-a2d5d9445aec",
+    "bestand": "PDF",
+    "datum": "2026-01-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21477&did=2026D00532"
+   }
   ]
  },
  {
@@ -56555,6 +57945,15 @@
     "fractie": "GroenLinks-PvdA",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D51423",
+    "docId": "7285f634-cfec-499d-883c-12c2c18d55cc",
+    "bestand": "PDF",
+    "datum": "2025-12-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21366&did=2025D51423"
+   }
   ]
  },
  {
@@ -56629,6 +58028,15 @@
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D00531",
+    "docId": "e1a2567a-6eaa-4f9c-85d2-db43a0792503",
+    "bestand": "PDF",
+    "datum": "2026-01-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21375&did=2026D00531"
+   }
   ]
  },
  {
@@ -56683,6 +58091,15 @@
     "naam": "I. Kostić",
     "fractie": "PvdD",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D01244",
+    "docId": "4a90a9cc-cdff-4399-b182-08702d477a2d",
+    "bestand": "PDF",
+    "datum": "2026-01-14",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21298&did=2026D01244"
    }
   ]
  },
@@ -56882,6 +58299,15 @@
     "fractie": "VVD",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D54066",
+    "docId": "f7d5293d-f20f-4450-be52-145eccf34c1c",
+    "bestand": "PDF",
+    "datum": "2025-12-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21155&did=2025D54066"
+   }
   ]
  },
  {
@@ -56994,6 +58420,15 @@
     "naam": "S.M. Beckerman",
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D00472",
+    "docId": "6c76d1ba-cfad-4467-ba8c-a4d6c85a3ddd",
+    "bestand": "PDF",
+    "datum": "2026-01-09",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21051&did=2026D00472"
    }
   ]
  },
@@ -57329,6 +58764,15 @@
     "naam": "H. Vermeer",
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D52256",
+    "docId": "c9ecb58d-5ba5-4c4b-8425-d07fc5b2f7b4",
+    "bestand": "PDF",
+    "datum": "2025-12-15",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z20947&did=2025D52256"
    }
   ]
  },
@@ -58130,6 +59574,15 @@
     "fractie": "JA21",
     "relatie": "Mede ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D51812",
+    "docId": "e613f7f4-da27-4b7e-a049-04295a19393e",
+    "bestand": "PDF",
+    "datum": "2025-12-12",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z20670&did=2025D51812"
+   }
   ]
  },
  {
@@ -58511,6 +59964,15 @@
     "naam": "J.P. (Jimmy) Dijk",
     "fractie": "SP",
     "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D52918",
+    "docId": "f89ed359-2d61-4158-b9f9-05b62d47ab76",
+    "bestand": "PDF",
+    "datum": "2025-12-17",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z20419&did=2025D52918"
    }
   ]
  },
@@ -59480,6 +60942,15 @@
     "fractie": "GroenLinks-PvdA",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D52838",
+    "docId": "4f51b6ab-1522-4339-b7c4-cad5e3dee8e9",
+    "bestand": "PDF",
+    "datum": "2025-12-17",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z20070&did=2025D52838"
+   }
   ]
  },
  {
@@ -60124,6 +61595,15 @@
     "fractie": "BBB",
     "relatie": "Eerste ondertekenaar"
    }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D49923",
+    "docId": "e63219f1-14fa-4ae6-9da7-978cf5751e6a",
+    "bestand": "PDF",
+    "datum": "2025-12-03",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z19788&did=2025D49923"
+   }
   ]
  },
  {
@@ -60282,6 +61762,15 @@
     "naam": "P. van Houwelingen",
     "fractie": "FVD",
     "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D49922",
+    "docId": "06ff7451-7f0c-40c8-b9b6-0ecf35e74039",
+    "bestand": "PDF",
+    "datum": "2025-12-03",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z19778&did=2025D49922"
    }
   ]
  },

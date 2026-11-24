@@ -14,7 +14,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<
 const nl = (n) => n.toLocaleString("nl-NL");
 
 const data = {
-  zaken: lees("data/tk/zaken.json", []), stukken: lees("data/tk/stukken.json", []), activiteiten: lees("data/tk/activiteiten.json", []),
+  zaken: lees("data/tk/zaken.json", []), stukken: lees("data/tk/stukken.json", []), verzoeken: lees("data/tk/verzoeken.json", []), activiteiten: lees("data/tk/activiteiten.json", []),
   debatten: lees("data/debatten.json", { debatten: [] }).debatten, agenda: lees("data/agenda.json", { items: [] }).items,
   kerndocumenten: lees("data/kerndocumenten.json", {}), begrotingen: lees("data/tk/begrotingen.json", []), rapporten: lees("data/rapporten.json", {}),
 };

@@ -96,6 +96,12 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 ## Kamervragen en Kamerbrieven (`#vragen`, `#brieven`; twee pagina's sinds 17 nov 2026)
 
 - `#vragen`: Kamervragen, één rij per zaak met het antwoord erbij; Status Beantwoord, Open of Termijn verstreken (na 21 dagen).
+- Status "Uitstel gemeld" (sinds 24 nov 2026): nog geen antwoord en een uitstelbericht (`uitstel` bij de vraag, uit de pipeline), ook binnen
+  21 dagen. De uitstelberichten staan in de details, ook bij een beantwoorde vraag.
+- Commissieverzoeken (sinds 24 nov 2026, keuze van Tobias: in deze tabel, geen eigen pagina): `data/tk/verzoeken.json`, kolom en filter Soort,
+  `verzoekDetail()`, thema via sleutel `verzoek:<id>`. Status alleen Beantwoord (Kamerbrief gekoppeld door de Kamer) of "Geen antwoord bekend",
+  nooit Open of Termijn verstreken: er is geen termijn en de koppeling is niet volledig. In de details van een Kamerbrief: "Op verzoek van".
+  Niet in Net binnen.
 - `#brieven`: Kamerbrieven. Geen introtekst boven de tabel. Kolom en filter "Rapport?" (vinkje of streepje; tot 23 nov 2026 het label
   "Met rapport") als een bijlage een rapport is (`MRThemas.metRapport()`: herkend door de pipeline en niet afgewezen
   in `data/rapporten.json`); in het bijlagenblok staan rapporten vooraan met het label "Rapport".

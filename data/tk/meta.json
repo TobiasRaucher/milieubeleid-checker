@@ -1,13 +1,15 @@
 {
- "bijgewerkt": "2026-11-24T08:28:37+00:00",
+ "bijgewerkt": "2026-11-24T10:16:47+00:00",
  "status": "ok",
  "aantalZaken": 1351,
  "aantalActiviteiten": 484,
- "aantalStukken": 1685,
+ "aantalStukken": 1687,
+ "aantalVerzoeken": 124,
  "aantalToezeggingen": 320,
  "uitgesloten": {
   "zaken": 0,
-  "stukken": 23
+  "stukken": 23,
+  "verzoeken": 0
  },
  "teksten": {
   "ob": 1188,

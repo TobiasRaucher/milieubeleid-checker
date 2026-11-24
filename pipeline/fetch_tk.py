@@ -20,6 +20,7 @@ Wat er wordt opgehaald (per actieve sector in pipeline/config.json):
     trefwoord bevat)
   * stukken van ministeries (Kamerbrieven, antwoorden op Kamervragen) die volgens
     stukDossiers/trefwoorden bij een sector horen; zie "stukken" in config.json
+  * uitstelberichten bij Kamervragen (veld "uitstel" bij de vraag) en commissieverzoeken (zie "verzoeken" in config.json)
   * toezeggingen uit het toezeggingenregister van de Kamer die bij een gevolgde activiteit horen
     (plus alle toezeggingen van de ministeries in toezeggingen.altijdMinisteries)
 
@@ -567,6 +568,89 @@ def stukken(start):
     return out
 
 
+def oude_uitstellen():
+    """Uitstelberichten uit de vorige run: {zaak: [bericht]}."""
+    try:
+        oud = json.loads((OUT / "stukken.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+    return {x["zaak"]: x["uitstel"] for x in oud if x.get("uitstel")}
+
+
+def uitstellen(start):
+    """Mededelingen over uitstel van het antwoord op Kamervragen: {zaak: [bericht]}, oudste eerst."""
+    rec = odata("Document", {"$filter": f"Verwijderd eq false and Soort eq 'Mededeling (uitstel antwoord)' and Datum ge {start}T00:00:00Z",
+                             "$select": "Id,DocumentNummer,Datum,ContentType", "$expand": "Zaak($select=Nummer)", "$orderby": "Datum"}, max_pages=200)
+    uit = {}
+    for d in rec:
+        for z in d.get("Zaak") or []:
+            uit.setdefault(z["Nummer"], []).append({
+                "id": d["DocumentNummer"], "docId": d["Id"], "bestand": bestandssoort(d.get("ContentType")), "datum": (d.get("Datum") or "")[:10],
+                "link": f"https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id={z['Nummer']}&did={d['DocumentNummer']}"})
+    return uit
+
+
+def is_verzoek(onderwerp):
+    """Inhoudelijk verzoek van een commissie, geen procedurele brief (config.json, verzoeken)."""
+    cfg = CONFIG["verzoeken"]
+    uit = _regex(cfg["uitsluiten"])
+    return bool(_regex(cfg["insluiten"]).search(onderwerp)) and not (uit and uit.search(onderwerp))
+
+
+def verzoek_antwoorden(zaken_, datum):
+    """Kamerbrieven die de Kamer aan het verzoek koppelt: zelfde dag of later, geen uitstelbericht."""
+    per = {}
+    for z in zaken_:
+        for g in (z.get("GerelateerdNaar") or []) + (z.get("GerelateerdVanuit") or []):
+            gd = (g.get("GestartOp") or "")[:10]
+            if not g.get("Verwijderd") and g.get("Soort") == "Brief regering" and gd >= datum and not re.match(r"uitstel\b", g.get("Onderwerp") or "", re.I):
+                # zonder documentnummer geeft de Kamer "Pagina niet gevonden"
+                did = next((x["DocumentNummer"] for x in g.get("Document") or [] if x.get("Soort") == "Brief regering"), None)
+                per[g["Nummer"]] = {"zaak": g["Nummer"], "datum": gd, "onderwerp": g.get("Onderwerp"),
+                                    "link": (f"https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id={g['Nummer']}&did={did}" if did
+                                             else f"https://www.tweedekamer.nl/zoeken?q={g['Nummer']}")}
+    return sorted(per.values(), key=lambda x: x["datum"])
+
+
+def commissieverzoeken(start, regels):
+    """Brieven waarin een Kamercommissie een bewindspersoon om een reactie of informatie vraagt."""
+    soort = " or ".join(f"Soort eq '{x}'" for x in CONFIG["verzoeken"]["soorten"])
+    rel = "$select=Nummer,Soort,Onderwerp,GestartOp,Verwijderd;$expand=Document($filter=Verwijderd eq false;$select=DocumentNummer,Soort)"
+    rec = odata("Document", {"$filter": f"Verwijderd eq false and ({soort}) and Datum ge {start}T00:00:00Z",
+                             "$select": "Id,DocumentNummer,Onderwerp,Datum,ContentType", "$orderby": "Datum",
+                             "$expand": f"Zaak($select=Nummer,Soort;$expand=ZaakActor($select=ActorNaam,Functie,Relatie),GerelateerdNaar({rel}),GerelateerdVanuit({rel}))"},
+                max_pages=200)
+    altijd = (CONFIG.get("stukken") or {}).get("altijdMinisteries", {})
+    uit, gezien = [], set()
+    for d in rec:
+        onderwerp = re.sub(r"\s+", " ", d.get("Onderwerp") or "").strip()
+        eigen = [z for z in d.get("Zaak") or [] if z.get("Soort") == "Brief commissie"]
+        if not eigen or not is_verzoek(onderwerp):
+            continue
+        actoren = [a for z in eigen for a in z.get("ZaakActor") or []]
+        gericht = [a for a in actoren if a.get("Relatie") == "Gericht aan"]
+        ministeries = [m for m in dict.fromkeys(ministerie_uit_functie(a.get("Functie")) for a in gericht) if m]
+        sectoren = sectoren_op_trefwoord(schone_tekst(onderwerp), regels)
+        for m, c in altijd.items():
+            if any(m in x for x in ministeries) and c in regels and c not in sectoren:
+                sectoren.append(c)
+        # een tweede brief bij dezelfde zaak is dezelfde rij
+        zaak = eigen[0]["Nummer"]
+        if not gericht or not sectoren or zaak in gezien:
+            continue
+        gezien.add(zaak)
+        datum = (d.get("Datum") or "")[:10]
+        uit.append({
+            "id": d["DocumentNummer"], "docId": d["Id"], "bestand": bestandssoort(d.get("ContentType")), "datum": datum,
+            "onderwerp": onderwerp, "zaak": zaak,
+            "commissie": next((a["ActorNaam"] for a in actoren if a.get("Relatie") == "Voortouwcommissie"), None),
+            "gerichtAan": list(dict.fromkeys(a["ActorNaam"] for a in gericht if a.get("ActorNaam"))), "ministeries": ministeries, "sectoren": sectoren,
+            "link": f"https://www.tweedekamer.nl/kamerstukken/detail?id={zaak}&did={d['DocumentNummer']}",
+            "antwoorden": verzoek_antwoorden(eigen, datum),
+        })
+    return uit[::-1]
+
+
 def toezeggingen(start, act_nummers):
     """Officiële toezeggingen (toezeggingenregister Tweede Kamer) bij gevolgde activiteiten."""
     cfg = CONFIG.get("toezeggingen", {})
@@ -684,21 +768,22 @@ def breed_zoeken(alle_zaken, regels, wet_dossiers, start, act_sectoren=None):
     log(f"== moties en amendementen: {len(ruw)} bekeken, {len(gekozen)} erbij ({via_act} via een gevolgde vergadering)")
 
 
-def relevantiepoort(alle_zaken, stuk_lijst):
+def relevantiepoort(alle_zaken, stuk_lijst, verzoek_lijst):
     """Items die bij de themareview bewust geen thema kregen (data/themas-mapping.json, themas leeg) zijn niet
     relevant voor milieubeleid en gaan eruit. Een Kamervraag en haar antwoord gaan samen."""
     try:
         mapping = json.loads((ROOT / "data" / "themas-mapping.json").read_text(encoding="utf-8"))
     except Exception:
-        return alle_zaken, stuk_lijst, {}
+        return alle_zaken, stuk_lijst, verzoek_lijst, {}
     leeg = {k for k, v in mapping.items() if isinstance(v, dict) and not v.get("themas")}
     zaken_uit = {i: z for i, z in alle_zaken.items() if f"zaak:{z['nummer']}" not in leeg}
     weg_zaken = {s["zaak"] for s in stuk_lijst if f"stuk:{s['id']}" in leeg and s.get("zaak")
                  and (s["soort"] == "Schriftelijke vragen" or s["soort"].startswith("Antwoord"))}
     stukken_uit = [s for s in stuk_lijst if f"stuk:{s['id']}" not in leeg and s.get("zaak") not in weg_zaken]
-    telling = {"zaken": len(alle_zaken) - len(zaken_uit), "stukken": len(stuk_lijst) - len(stukken_uit)}
+    verzoeken_uit = [v for v in verzoek_lijst if f"verzoek:{v['id']}" not in leeg]
+    telling = {"zaken": len(alle_zaken) - len(zaken_uit), "stukken": len(stuk_lijst) - len(stukken_uit), "verzoeken": len(verzoek_lijst) - len(verzoeken_uit)}
     log(f"== niet relevant (review zonder thema): {telling}")
-    return zaken_uit, stukken_uit, telling
+    return zaken_uit, stukken_uit, verzoeken_uit, telling
 
 
 def _dossiers(filter_expr, top=60):
@@ -1028,6 +1113,26 @@ def main():
         FOUTEN.append(f"stukken: {e}")
         log(f"    FOUT stukken: {e}")
 
+    # 5a. uitstelberichten bij Kamervragen; mislukt het ophalen, dan blijven die van de vorige run staan
+    try:
+        uitstel = uitstellen(start)
+    except Exception as e:
+        FOUTEN.append(f"uitstel Kamervragen: {e}")
+        log(f"    FOUT uitstel Kamervragen: {e}")
+        uitstel = oude_uitstellen()
+    for x in stuk_lijst:
+        if x["soort"] == "Schriftelijke vragen" and uitstel.get(x["zaak"]):
+            x["uitstel"] = uitstel[x["zaak"]]
+
+    # 5b. commissieverzoeken (in de tabel Kamervragen)
+    verzoek_lijst = []
+    try:
+        verzoek_lijst = commissieverzoeken(start, regels)
+        log(f"== {len(verzoek_lijst)} commissieverzoeken")
+    except Exception as e:
+        FOUTEN.append(f"commissieverzoeken: {e}")
+        log(f"    FOUT commissieverzoeken: {e}")
+
     # 6. toezeggingen bij de gevolgde activiteiten
     tz_lijst = []
     try:
@@ -1056,7 +1161,7 @@ def main():
         log(f"    FOUT begrotingen: {e}")
 
     # 7. wat bij de review "zonder thema" kreeg, is niet relevant en gaat eruit
-    alle_zaken, stuk_lijst, uitgesloten = relevantiepoort(alle_zaken, stuk_lijst)
+    alle_zaken, stuk_lijst, verzoek_lijst, uitgesloten = relevantiepoort(alle_zaken, stuk_lijst, verzoek_lijst)
     if stem_data:
         # alleen de moties en amendementen die de checker volgt
         gevolgd = {z["nummer"] for z in alle_zaken.values()}
@@ -1096,6 +1201,8 @@ def main():
         log(f"    FOUT Eerste Kamer: {e}")
     if stuk_lijst:
         (OUT / "stukken.json").write_text(json.dumps(stuk_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
+    if verzoek_lijst:
+        (OUT / "verzoeken.json").write_text(json.dumps(verzoek_lijst, ensure_ascii=False, indent=1), encoding="utf-8")
     if stem_data:
         (OUT / "stemmingen.json").write_text(json.dumps(stem_data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     if begr:
@@ -1127,6 +1234,7 @@ def main():
         "aantalZaken": len(zaken_lijst),
         "aantalActiviteiten": len(act_lijst),
         "aantalStukken": len(stuk_lijst),
+        "aantalVerzoeken": len(verzoek_lijst),
         "aantalToezeggingen": len(tz_lijst),
         "uitgesloten": uitgesloten,
         "teksten": teksten_telling,

@@ -81,7 +81,7 @@
   async function init() {
     // shortcut: alle data in één keer (17 nov 2026: ~8 MB, ~0,8 MB met gzip, zaken.json parsen ~30 ms); per pagina laden pas
     // als de data flink groeit of de eerste weergave merkbaar traag wordt (audit .impeccable/audit/, P2 "All data loads up front")
-    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken, rapporten] = await Promise.all([
+    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken] = await Promise.all([
       load("pipeline/config.json", { sectoren: {} }),
       load("data/debatten.json", { debatten: [] }),
       load("data/agenda.json", { items: [] }),
@@ -98,6 +98,7 @@
       load("data/tk/begrotingen.json", []),
       load("data/tk/wetstukken.json", {}),
       load("data/rapporten.json", {}),
+      load("data/tk/verzoeken.json", []),
     ]);
     // stemmingen.json: {zaak: {datum, tijd, activiteit}} (oud formaat: {zaak: datum}); de site gebruikt drie platte tabellen
     const stemDatum = {}, stemActiviteit = {}, stemTijd = {};
@@ -105,7 +106,7 @@
       if (typeof v === "string") stemDatum[nr] = v;
       else if (v && v.datum) { stemDatum[nr] = v.datum; stemTijd[nr] = v.tijd; if (v.activiteit) stemActiviteit[nr] = v.activiteit; }
     }
-    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, stemTijd, kerndocumenten, begrotingen, wetstukken, rapporten };
+    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, stemTijd, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
       $("#stamp").textContent = "";
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
@@ -318,7 +319,7 @@
     ? t.replace(/(\b(?:lid|leden|en)\s+|,\s*)(?:[A-ZÀ-Ý][a-z]{0,2}\.)+\s*(?:\([^)]*\)\s*)?(?=\p{Lu}|[a-z]{1,3}\s)/gu, "$1")
     : t);
   // De soort vooraan een regel (DESIGN.md, "Rows"): een link naar zijn lijstpagina als die bestaat, anders gewone tekst.
-  const SOORT_PAGINA = { Kamerbrief: "#brieven", Kamervragen: "#vragen", "Antwoord Kamervragen": "#vragen", Motie: "#moties", Amendement: "#amendementen", Wetsvoorstel: "#wetgeving", Stemmingen: "#moties" };
+  const SOORT_PAGINA = { Kamerbrief: "#brieven", Kamervragen: "#vragen", "Antwoord Kamervragen": "#vragen", Commissieverzoek: "#vragen?soort=Commissieverzoek", Motie: "#moties", Amendement: "#amendementen", Wetsvoorstel: "#wetgeving", Stemmingen: "#moties" };
   const soortTag = (soort, href = SOORT_PAGINA[soort]) => (href ? `<a class="tag" href="${esc(href)}">${esc(soort)}</a>` : `<span class="tag">${esc(soort)}</span>`);
   const agendaTypeTag = (type) => soortTag(type, `#agenda?type=${encodeURIComponent(type)}`);
   // Zoekresultaat: vergaderingen naar de Agenda op dat type (geweest: Terugblik), documenten naar hun lijstpagina
@@ -1389,6 +1390,9 @@
   const dagenTot = (van, tot) => Math.round((Date.parse(tot) - Date.parse(van)) / 864e5);
   // "Antwoord op vragen van het lid Kostić over ..." -> ["Kostić"] (alleen als de vraag zelf niet in de data staat)
   const vragenstellersUitTitel = (t) => { const m = /vragen van (?:het lid|de leden) (.+?) (?:over|inzake|naar aanleiding van) /i.exec(t || ""); return m ? m[1].split(/,\s*| en /).map((n) => n.trim()).filter(Boolean) : []; };
+  // een verzoek heeft geen termijn, en de koppeling met een antwoord is niet volledig: dus nooit "open" of "verstreken"
+  const GEEN_ANTWOORD = "Geen antwoord bekend";
+  const commissieKort = (v) => String(v.commissie || "").replace(/^(vaste |algemene )?commissie voor (de )?/i, "") || "onbekend";
   let _vragen = null;
   function vraagRijen() {
     if (_vragen && _vragen.bron === S.data.stukken) return _vragen.rijen;
@@ -1410,19 +1414,29 @@
       r.ministeries = v ? (v.ministeries && v.ministeries.length ? v.ministeries : [v.ministerie].filter(Boolean)) : uniek(r.antwoorden.map((x) => x.ministerie).filter(Boolean));
       r.link = (v || a).link;
       r.dagen = a || !r.datum ? null : dagenTot(r.datum, VANDAAG);
-      r.status = a ? "Beantwoord" : r.dagen > ANTWOORD_TERMIJN ? "Termijn verstreken" : "Open";
+      r.uitstel = (v && v.uitstel) || [];
+      r.status = a ? "Beantwoord" : r.uitstel.length ? "Uitstel gemeld" : r.dagen > ANTWOORD_TERMIJN ? "Termijn verstreken" : "Open";
       r.dossiers = [...(v ? v.dossiers || [] : []), ...r.antwoorden.flatMap((x) => x.dossiers || [])];
       r.kamerstuk = r.antwoorden.map((x) => x.kamerstuk).find(Boolean) || (v && v.kamerstuk) || null;
       return r;
     });
+    for (const x of (S.data.verzoeken || []).filter(inSector)) rijen.push({
+      id: x.id, zaak: x.zaak, verzoek: x, vraag: null, antwoorden: [], uitstel: [], datum: x.datum, titel: window.MRThemas.verzoekTitel(x),
+      indieners: [], ministeries: x.ministeries, link: x.link, dagen: null, dossiers: [], kamerstuk: null,
+      status: x.antwoorden.length ? "Beantwoord" : GEEN_ANTWOORD });
+    rijen.sort((a, b) => (b.datum || "").localeCompare(a.datum || ""));
     _vragen = { bron: S.data.stukken, rijen };
     return rijen;
   }
-  const themasVraag = onthoud((r) => uniek([r.vraag, ...r.antwoorden].filter(Boolean).flatMap(themasVanStuk)), (r) => r.id);
+  const themasVanVerzoek = (x) => S.T.item(TS.verzoek(x), window.MRThemas.verzoekTitel(x), []);
+  const themasVraag = onthoud((r) => r.verzoek ? themasVanVerzoek(r.verzoek) : uniek([r.vraag, ...r.antwoorden].filter(Boolean).flatMap(themasVanStuk)), (r) => r.id);
   const themasBrief = onthoud((x) => themasVanStuk(x), (x) => x.id);
-  const VRAAG_STATUS = { Beantwoord: "afgedaan", Open: "openstaand", "Termijn verstreken": "openstaand" };
+  const VRAAG_STATUS = { Beantwoord: "afgedaan", Open: "openstaand", "Uitstel gemeld": "openstaand", "Termijn verstreken": "openstaand", [GEEN_ANTWOORD]: "ingetrokken" };
+  const vraagSoort = (r) => (r.verzoek ? "Commissieverzoek" : "Kamervraag");
   const vraagStatus = (r) => statusPunt(r.status, VRAAG_STATUS[r.status]);
+  const commissieAfk = (v) => { const a = (S.data.activiteiten || []).find((x) => x.Voortouwnaam === v.commissie && x.Voortouwafkorting); return `Commissie ${a ? a.Voortouwafkorting : commissieKort(v)}`; };
   function vragenstellerKort(r) {
+    if (r.verzoek) return `<span title="${esc(hoofd(r.verzoek.commissie || ""))}">${esc(commissieAfk(r.verzoek))}</span>`;
     const i = r.indieners[0];
     if (!i) return leegCel("Vragensteller onbekend");
     const naam = achternaam(i.naam), fr = i.fractie && i.fractie !== naam ? ` (${esc(i.fractie)})` : "";
@@ -1434,18 +1448,35 @@
   // bijlagen bij een Kamerbrief of antwoord (beslisnota, rapporten, analyses), uit de Kamerdata
   const metRapport = (b) => window.MRThemas.metRapport(b, S.data.rapporten);
   const bijlagenBlok = (lijst) => (lijst && lijst.length ? `<div class="mstemming"><p class="mtelling">${lijst.length === 1 ? "Bijlage" : `Bijlagen (${lijst.length})`}</p><ul class="mstappen">${lijst.map((b) => `<li>${metRapport(b) ? `<span class="badge">Rapport</span> ` : ""}${extLink(b.link, b.titel)}${b.bestand ? ` <span class="muted mono">${esc(b.bestand)}</span>` : ""}${docKnop(b, "Lees") ? ` ${docKnop(b, "Lees")}` : ""}</li>`).join("")}</ul></div>` : "");
+  function verzoekDetail(v) {
+    // een gekoppelde brief: de rij op Kamerbrieven als die er is, anders tweedekamer.nl
+    const antw = v.antwoorden.map((a) => {
+      const b = (S.data.stukken || []).find((x) => x.zaak === a.zaak && x.soort === "Brief regering");
+      return `<li><span class="datum">${fmtKort(a.datum)}</span> ${b ? `<a href="#brieven?open=${encodeURIComponent(b.id)}">${esc(a.onderwerp)}</a>` : extLink(a.link, a.onderwerp)}</li>`;
+    });
+    return `<div class="mdetail">
+      <p>Zaak <span class="mono">${esc(v.zaak)}</span> · document <span class="mono">${esc(v.id)}</span> · ${fmtKort(v.datum)}, van de ${esc(v.commissie || "commissie (onbekend)")}${v.gerichtAan.length ? `; gericht aan ${opsomming(v.gerichtAan.map(esc))}` : ""}</p>
+      <div class="mstemming"><p class="mtelling">${antw.length ? "Kamerbrief met antwoord" : GEEN_ANTWOORD}</p>
+        ${antw.length ? `<ul class="mstappen">${antw.join("")}</ul>` : ""}
+        <p class="muted">De koppeling tussen verzoek en Kamerbrief komt van de Tweede Kamer en is niet volledig. Voor een verzoek geldt geen vaste antwoordtermijn.</p></div>
+      ${mlinks(docKnop({ ...v, titel: v.onderwerp }, "Lees het verzoek", ""), extLink(v.link, "Bekijk op tweedekamer.nl"))}
+    </div>`;
+  }
   const VRAAG_DEF = {
     tab: "vragen", eenheid: "Kamervragen", knopLabel: "Vraag en antwoord",
     rijen: vraagRijen, datum: (r) => r.datum, sleutel: (r) => r.id,
-    zoektekst: (r) => `${r.titel} ${r.zaak || ""} ${r.kamerstuk || ""} ${r.indieners.map((i) => `${i.naam} ${i.fractie || ""}`).join(" ")} ${r.ministeries.join(" ")} ${[r.vraag, ...r.antwoorden].filter(Boolean).map((x) => `${x.id} ${x.ondertekenaar || ""} ${x.onderwerp || ""}`).join(" ")} ${r.dossiers.map((d) => `${d.nummer} ${d.titel || ""}`).join(" ")}`,
+    zoektekst: (r) => `${r.titel} ${r.zaak || ""} ${r.kamerstuk || ""} ${r.indieners.map((i) => `${i.naam} ${i.fractie || ""}`).join(" ")} ${r.verzoek ? `${r.id} ${r.verzoek.commissie} ${r.verzoek.gerichtAan.join(" ")} ` : ""}${r.ministeries.join(" ")} ${[r.vraag, ...r.antwoorden].filter(Boolean).map((x) => `${x.id} ${x.ondertekenaar || ""} ${x.onderwerp || ""}`).join(" ")} ${r.dossiers.map((d) => `${d.nummer} ${d.titel || ""}`).join(" ")}`,
     filters: {
       thema: themaFilter(themasVraag),
-      status: { label: "Status", waarden: (r) => [r.status], orde: opVolgorde(["Beantwoord", "Open", "Termijn verstreken"]), tekst: (v) => statusPunt(v, VRAAG_STATUS[v]) },
-      fractie: fractieFilter("Gesteld door", (r) => r.indieners),
+      soort: { label: "Soort", waarden: (r) => [vraagSoort(r)], orde: opVolgorde(["Kamervraag", "Commissieverzoek"]), tekst: (v) => esc(v) },
+      status: { label: "Status", waarden: (r) => [r.status], orde: opVolgorde(["Beantwoord", "Open", "Uitstel gemeld", "Termijn verstreken", GEEN_ANTWOORD]), tekst: (v) => statusPunt(v, VRAAG_STATUS[v]) },
+      fractie: { label: "Gesteld door", waarden: (r) => (r.verzoek ? [`Commissie ${commissieKort(r.verzoek)}`] : uniek(r.indieners.map((i) => fractieNaam(i.fractie)).filter(Boolean))),
+        orde: (vs) => [...vs].sort((a, b) => a.startsWith("Commissie ") - b.startsWith("Commissie ") || nlSort.compare(a, b)), tekst: (v) => esc(v) },
       ministerie: { label: "Gericht aan", waarden: (r) => (r.ministeries.length ? r.ministeries : [""]), orde: opVolgorde([]), tekst: (v) => esc(v || "Onbekend") },
     },
     kolommen: [
       { titel: true, kop: "Vragen over...", thCls: "ond", tdCls: "ond", cel: (r) => rijTitel(overKlein(r.titel)) },
+      { filter: "soort", tdCls: "uitslag", cel: vraagSoort },
       { filter: "status", tdCls: "uitslag", cel: vraagStatus },
       { filter: "fractie", tdCls: "indiener hide-sm", cel: vragenstellerKort },
       { filter: "ministerie", tdCls: "ministerie hide-sm", cel: (r) => ministerieKort(r.ministeries) },
@@ -1453,16 +1484,19 @@
       { datum: true, kop: "Gesteld" },
     ],
     detail: (r) => {
+      if (r.verzoek) return verzoekDetail(r.verzoek);
       const v = r.vraag;
       const door = r.indieners.map(naamFractie);
       const aan = v ? (v.ministeries || []).length ? v.ministeries : [v.ministerie].filter(Boolean) : [];
       // het antwoord is de hoofdknop; zonder antwoord zijn dat de vragen
       const antwKnop = r.antwoorden.map((a, i) => docKnop({ ...a, titel: a.onderwerp || r.titel }, r.antwoorden.length > 1 ? `Lees antwoord ${i + 1}` : "Lees het antwoord", i ? "licht" : "")).join("");
       const antw = r.antwoorden.map((a) => `<li><span class="datum">${fmtKort(a.datum)}</span> ${a.soort.includes("nader") ? "Nader antwoord" : "Beantwoord"}${a.ondertekenaar ? ` door ${esc(a.ondertekenaar)}${a.functie ? ` (${esc(a.functie)})` : ""}` : ""}${v && a.datum && v.datum ? `, na ${nl(dagenTot(v.datum, a.datum))} dagen` : ""} · ${extLink(a.link, "antwoord")}${a.kamerstuk ? ` · <span class="mono">${esc(a.kamerstuk)}</span>` : ""}</li>`);
+      // uitgestelde beantwoording staat vóór het antwoord, ook als dat er al is
+      const uitstel = r.uitstel.map((u) => `<li><span class="datum">${fmtKort(u.datum)}</span> Uitstel gemeld · ${extLink(u.link, "mededeling")} ${docKnop({ ...u, titel: `Uitstel: ${r.titel}` }, "Lees")}</li>`);
       return `<div class="mdetail">
         <p>Zaak <span class="mono">${esc(r.zaak || "onbekend")}</span>${v ? ` · document <span class="mono">${esc(v.id)}</span> · gesteld ${fmtKort(v.datum)}` : ""}${door.length ? `, door ${opsomming(door)}` : ""}${aan.length ? `; gericht aan ${opsomming(aan.map(esc))}` : ""}</p>
-        <div class="mstemming"><p class="mtelling">${r.antwoorden.length ? "Antwoord" : r.status === "Termijn verstreken" ? `Nog niet beantwoord, ${nl(r.dagen)} dagen na het stellen (termijn ${ANTWOORD_TERMIJN} dagen)` : `Nog niet beantwoord${r.dagen != null ? `, ${nl(r.dagen)} ${r.dagen === 1 ? "dag" : "dagen"} na het stellen` : ""}`}</p>
-          ${antw.length ? `<ul class="mstappen">${antw.join("")}</ul>` : ""}</div>
+        <div class="mstemming"><p class="mtelling">${r.antwoorden.length ? "Antwoord" : r.dagen > ANTWOORD_TERMIJN ? `Nog niet beantwoord, ${nl(r.dagen)} dagen na het stellen (termijn ${ANTWOORD_TERMIJN} dagen)` : `Nog niet beantwoord${r.dagen != null ? `, ${nl(r.dagen)} ${r.dagen === 1 ? "dag" : "dagen"} na het stellen` : ""}`}</p>
+          ${uitstel.length + antw.length ? `<ul class="mstappen">${uitstel.join("")}${antw.join("")}</ul>` : ""}</div>
         ${bijlagenBlok(r.antwoorden.flatMap((a) => a.bijlagen || []))}
         ${v ? "" : `<p class="muted">De vraag zelf is van voor het begin van deze gegevens.</p>`}
         ${mlinks(`${antwKnop}${v ? docKnop({ ...v, titel: v.onderwerp || r.titel }, "Lees de vragen", antwKnop ? "licht" : "") : ""}`, `${v ? extLink(v.link, "Vragen op tweedekamer.nl") : ""}${r.antwoorden.map((a, i) => extLink(a.link, r.antwoorden.length > 1 ? `Antwoord ${i + 1} op tweedekamer.nl` : "Antwoord op tweedekamer.nl")).join("")}`)}
@@ -1491,9 +1525,11 @@
     ],
     detail: (x) => {
       const ds = x.dossiers || [];
+      const verz = x.zaak ? (S.data.verzoeken || []).filter((v) => v.antwoorden.some((a) => a.zaak === x.zaak)) : [];
       return `<div class="mdetail">
         <p>${x.kamer ? `${esc(x.ekSoort || "Kamerstuk")} aan de Eerste Kamer · ` : ""}Document <span class="mono">${esc(x.id)}</span> · ${fmtKort(x.datum)}${x.ondertekenaar ? `, ondertekend door ${esc(x.ondertekenaar)}${x.functie ? ` (${esc(x.functie)})` : ""}` : ""}</p>
         ${ds.length ? `<div class="mstemming"><p class="mtelling">Kamerstuk</p><ul class="mstappen">${ds.map((d) => `<li><span class="mono">${esc(d.nummer)}${d.toevoeging ? "-" + esc(d.toevoeging) : ""}</span> ${esc(d.titel || "")}</li>`).join("")}</ul></div>` : ""}
+        ${verz.length ? `<div class="mstemming"><p class="mtelling">Op verzoek van</p><ul class="mstappen">${verz.map((v) => `<li><span class="datum">${fmtKort(v.datum)}</span> Commissie ${esc(commissieKort(v))}: <a href="#vragen?open=${encodeURIComponent(v.id)}">${esc(window.MRThemas.verzoekTitel(v))}</a></li>`).join("")}</ul></div>` : ""}
         ${bijlagenBlok(x.bijlagen)}
         ${mlinks(docKnop({ ...x, titel: x.onderwerp || x.titel }, "Lees de brief", ""), extLink(x.link, x.kamer ? "Bekijk op officielebekendmakingen.nl" : "Bekijk op tweedekamer.nl"))}
       </div>`;
@@ -1505,7 +1541,7 @@
       tab === "brieven" ? paginaKop("Kamerbrieven") : paginaKop("Kamervragen"),
       tab === "brieven"
         ? "Kamerbrieven van ministeries over milieu, klimaat, energie, water, natuur en leefomgeving."
-        : `Schriftelijke vragen van Kamerleden met het antwoord van het kabinet in dezelfde rij. Het kabinet heeft ${ANTWOORD_TERMIJN} dagen om te antwoorden.`,
+        : `Schriftelijke vragen van Kamerleden met het antwoord van het kabinet in dezelfde rij, en verzoeken van Kamercommissies aan bewindspersonen. Voor Kamervragen heeft het kabinet ${ANTWOORD_TERMIJN} dagen om te antwoorden.`,
       tab === "brieven" ? "Zoek op onderwerp of Kamerstuk" : "Zoek op onderwerp, Kamerlid of ministerie");
   }
 
@@ -2355,7 +2391,7 @@
         <p>MilieuRadar volgt Nederlands milieubeleid in het parlement: wetsvoorstellen, moties en amendementen met de stemming per fractie, de agenda van de Kamer met samenvattingen van debatten, Kamervragen met de antwoorden, en Kamerbrieven. Alle fracties krijgen evenveel ruimte.</p>
         <h3>Hoe het werkt</h3>
         <ul>
-          <li><b>Automatisch:</b> een script haalt moties, amendementen, stemmingen, activiteiten, Kamerbrieven, Kamervragen en de antwoorden daarop op uit de <a href="https://opendata.tweedekamer.nl">open data van de Tweede Kamer</a>. Daar komt geen AI aan te pas.</li>
+          <li><b>Automatisch:</b> een script haalt moties, amendementen, stemmingen, activiteiten, Kamerbrieven, Kamervragen en de antwoorden daarop, uitstelberichten en verzoeken van Kamercommissies op uit de <a href="https://opendata.tweedekamer.nl">open data van de Tweede Kamer</a>. Daar komt geen AI aan te pas.</li>
           <li><b>Samenvattingen:</b> debatten worden door Claude samengevat op basis van automatische transcripten van <a href="https://gehoord.de/beraadslagingen">gehoord.de</a>. Die transcripten zijn niet door mensen gecorrigeerd en sprekers kunnen er soms een paar seconden naast zitten. Gebruik de links om na te luisteren en citeer de Handelingen.</li>
           <li><b>Toezeggingen</b> bij een samengevatte vergadering komen uit het toezeggingenregister van de Tweede Kamer; als de vergadering daar nog niet in staat, uit de samenvatting.</li>
           <li><b>Thema's</b>: alles valt in tien vaste thema's (zie <a href="#themas">Thema's</a>). Een voorstel komt uit trefwoorden in titels, agendapunten en Kamerstukdossiers; nagekeken indelingen gaan daarvoor. Wat de trefwoorden niet zeker kunnen indelen, blijft zonder thema tot het is beoordeeld. Moties worden aan een vergadering gekoppeld als de datum en het Kamerstukdossier overeenkomen; bij twijfel niet.</li>

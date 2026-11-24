@@ -7,7 +7,7 @@ const T = require("../assets/themas.js");
 const lees = (p) => JSON.parse(fs.readFileSync(path.join(__dirname, "..", p), "utf8"));
 const D = {
   debatten: lees("data/debatten.json").debatten, zaken: lees("data/tk/zaken.json"),
-  stukken: lees("data/tk/stukken.json"), activiteiten: lees("data/tk/activiteiten.json"), agenda: lees("data/agenda.json").items, toezeggingen: lees("data/tk/toezeggingen.json"),
+  stukken: lees("data/tk/stukken.json"), verzoeken: lees("data/tk/verzoeken.json"), activiteiten: lees("data/tk/activiteiten.json"), agenda: lees("data/agenda.json").items, toezeggingen: lees("data/tk/toezeggingen.json"),
   kerndocumenten: lees("data/kerndocumenten.json"), begrotingen: lees("data/tk/begrotingen.json"), rapporten: lees("data/rapporten.json"), teksten: lees("data/tk/teksten.json"),
   T: T.maak(lees("data/themas.json")),
 };
@@ -54,12 +54,16 @@ const TESTS = [
   ["wet klimaat", "klimaatwet", 3],
   // partijnamen
   ["partij voor de dieren natuur", "natuur", 5],
+  // commissieverzoeken (in de tabel Kamervragen)
+  ["pan nederland natuurherstelverordening", "pan nederland", 3],
+  ["greenpeace vonnis klimaatzaak bonaire", "vonnis klimaatzaak bonaire", 3],
   // thema's
-  ["adaptatie", "water", 10],
+  ["adaptatie", "water", 12], // 12 sinds de commissieverzoeken (24 nov 2026): twee verzoeken over adaptatie staan terecht hoger
 ];
 // soortwoorden: alle resultaten moeten van die soort zijn
 const SOORT_TESTS = [
   ["motie stikstof", (d) => d.soort === "Motie"],
+  ["commissieverzoek schiphol", (d) => d.soort === "Commissieverzoek"],
   ["kamerbrief netcongestie", (d) => d.soort === "Kamerbrief"],
   ["commissiedebat water", (d) => /^Commissiedebat/.test(d.soort)],
   ["toezegging drinkwater", (d) => d.soort === "Toezegging"],
