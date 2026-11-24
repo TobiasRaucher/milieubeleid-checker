@@ -15,10 +15,9 @@
   const grensIndex = (datums) => { const i = datums.findIndex((d) => String(d || "").slice(0, 10) < NIEUW_VANAF); return i > 0 ? i : -1; };
   // "vandaag", "morgen", "over 2 dagen"; alleen binnen twee weken, anders "" (de datum zegt dan genoeg)
   const overDagen = (dag) => { const n = Math.round((Date.parse(dag) - Date.parse(VANDAAG)) / 864e5); return n === 0 ? "vandaag" : n === 1 ? "morgen" : n > 1 && n <= 14 ? `over ${n} dagen` : ""; };
-  // label bij een inbrengtermijn of stemming; rood alleen op de dag zelf (DESIGN.md). moment: ISO-tijdstip van de termijn
-  function termijn(woord, dag, moment) {
+  // label bij "Volgende stap" van een wetsvoorstel; rood alleen op de dag zelf (DESIGN.md)
+  function termijn(woord, dag) {
     const wanneer = overDagen(dag);
-    if (woord === "Sluit" && moment && dag === VANDAAG && new Date(moment) < new Date()) return `<span class="badge stil termijn">Gesloten</span>`;
     return wanneer ? `<span class="badge termijn${wanneer === "vandaag" ? " alarm" : ""}">${hoofd(`${woord} ${wanneer}`.trim())}</span>` : "";
   }
   const WEEKDAGEN = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"];
@@ -100,13 +99,13 @@
       load("data/tk/wetstukken.json", {}),
       load("data/rapporten.json", {}),
     ]);
-    // stemmingen.json: {zaak: {datum, activiteit}} (oud formaat: {zaak: datum}); de site gebruikt twee platte tabellen
-    const stemDatum = {}, stemActiviteit = {};
+    // stemmingen.json: {zaak: {datum, tijd, activiteit}} (oud formaat: {zaak: datum}); de site gebruikt drie platte tabellen
+    const stemDatum = {}, stemActiviteit = {}, stemTijd = {};
     for (const [nr, v] of Object.entries(stemmingen || {})) {
       if (typeof v === "string") stemDatum[nr] = v;
-      else if (v && v.datum) { stemDatum[nr] = v.datum; if (v.activiteit) stemActiviteit[nr] = v.activiteit; }
+      else if (v && v.datum) { stemDatum[nr] = v.datum; stemTijd[nr] = v.tijd; if (v.activiteit) stemActiviteit[nr] = v.activiteit; }
     }
-    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, kerndocumenten, begrotingen, wetstukken, rapporten };
+    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, stemTijd, kerndocumenten, begrotingen, wetstukken, rapporten };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
       $("#stamp").textContent = "";
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
@@ -305,11 +304,11 @@
   // Geen tijden in de data, dus binnen één dag: Wetgeving, dan Stemming, dan Stuk.
   const NET_BINNEN_MAX = 10;
   const FEED_ORDE = { Wetgeving: 0, Stemming: 1, Ingediend: 2, Stuk: 3 };
-  // Net binnen en Komt eraan linken naar de eigen lijstpagina met die rij opengeklapt (tweedekamer.nl staat in de rij);
+  // Net binnen en Komt eraan linken naar de eigen lijstpagina met die rij(en, gescheiden door een komma) opengeklapt (tweedekamer.nl staat in de rij);
   // op een themapagina naar de tabel van dat thema (#themas/<slug>?type=<param>&open=<sleutel>)
   const LIJST_PAGINA = { moties: "moties", amendementen: "amendementen", kamerbrieven: "brieven", kamervragen: "vragen" };
   const lijstHref = (param, sleutel, slug) => {
-    const open = sleutel ? `open=${encodeURIComponent(sleutel)}` : "";
+    const open = sleutel ? `open=${sleutel.split(",").map(encodeURIComponent).join(",")}` : "";
     return slug ? `#themas/${slug}?type=${param}${open ? "&" + open : ""}` : `#${LIJST_PAGINA[param]}${open ? "?" + open : ""}`;
   };
   const isDag = (d) => /^\d{4}-\d{2}-\d{2}$/.test(d || "") && d <= VANDAAG;
@@ -342,20 +341,20 @@
       items.push({ soort: "Stemming", datum: t.datum, html: feedLi(z.soort, t.datum, feedMeta(uitslagPill(z.uitslag)),
         onderwerpZin(z), lijstHref(z.soort === "Amendement" ? "amendementen" : "moties", z.nummer, slug), `<span class="nw">${indienerKort(z)}</span>${t.voor + t.tegen ? ` <span class="nw">· Voor ${t.voor} / Tegen ${t.tegen}</span>` : ""}`, false) });
     }
-    // ingediend en nog niet gestemd: één regel per vergadering (of dag) en soort, met een link naar die vergadering op de Agenda
+    // ingediend en nog niet gestemd: één regel per vergadering (of dag) en soort, met een link naar precies die rijen in de tabel (Tobias, 24 nov 2026)
     const { actVanZaak } = motieKoppeling(), ingediend = new Map();
     for (const z of motiesEnAmendementen()) {
       if (z.stemtelling || !isDag(z.gestartOp)) continue;
       if (slug && !themasMotie(z).includes(slug)) continue;
       const a = actVanZaak.get(z.nummer), dag = z.gestartOp, k = `${a ? a.Nummer : dag}|${z.soort}`;
-      if (!ingediend.has(k)) ingediend.set(k, { a, dag, soort: z.soort, n: 0 });
-      ingediend.get(k).n++;
+      if (!ingediend.has(k)) ingediend.set(k, { a, dag, soort: z.soort, nrs: [] });
+      ingediend.get(k).nrs.push(z.nummer);
     }
     for (const g of ingediend.values()) {
-      const param = g.soort === "Amendement" ? "amendementen" : "moties";
-      const titel = `${nl(g.n)} ${g.soort === "Amendement" ? (g.n === 1 ? "amendement" : "amendementen") : g.n === 1 ? "motie" : "moties"} ingediend`;
+      const param = g.soort === "Amendement" ? "amendementen" : "moties", n = g.nrs.length;
+      const titel = `${nl(n)} ${g.soort === "Amendement" ? (n === 1 ? "amendement" : "amendementen") : n === 1 ? "motie" : "moties"} ingediend`;
       items.push({ soort: "Ingediend", datum: g.dag, html: feedLi(g.soort, g.dag, feedMeta(g.a ? esc(vergaderNaam(g.a)) : ""),
-        titel, g.a ? `#agenda/a-${g.a.Nummer}${slug ? `?thema=${slug}` : ""}` : lijstHref(param, "", slug), "", false) });
+        titel, lijstHref(param, g.nrs.join(","), slug), "", false) });
     }
     for (const x of stukkenInSector()) {
       if (!isDag(x.datum)) continue;
@@ -393,10 +392,12 @@
       if (!dag || dag < VANDAAG) continue;
       const th = themasMotie(z);
       if (slugs.length && !th.some((x) => slugs.includes(x))) continue;
-      const t = perDag.get(dag) || { m: 0, a: 0, themas: new Set(), zaken: [] };
+      const t = perDag.get(dag) || { m: 0, a: 0, tijd: "", themas: new Set(), zaken: [] };
       if (z.soort === "Amendement") t.a++; else t.m++;
       th.forEach((x) => t.themas.add(x));
       t.zaken.push(z);
+      const tijd = S.data.stemTijd[z.nummer]; // de vroegste van die dag
+      if (tijd && (!t.tijd || tijd < t.tijd)) t.tijd = tijd;
       perDag.set(dag, t);
     }
     return perDag;
@@ -406,12 +407,13 @@
     return [deel(t.m, "motie", "moties"), deel(t.a, "amendement", "amendementen")].filter(Boolean).join(" en ");
   };
   // Eerstvolgende plenaire stemming als [sorteersleutel, regel in de vorm van agendaLi()] voor Komt eraan, of null als er niets gepland is.
-  // Sleutel dag + "~": achteraan die dag (de stemmingen zijn aan het eind van de vergadering).
+  // Zonder begintijd achteraan die dag, zoals agendaKey().
   function komendeStemming(slug) {
     const perDag = stemmingenPerDag(slug ? [slug] : []);
     if (!perDag.size) return null;
     const dag = [...perDag.keys()].sort()[0];
-    return [dag + "~", `<li><div class="regelmeta">${soortTag("Stemmingen")}<span class="datum">${fmtKort(dag)}</span><span>Plenaire vergadering</span>${termijn("Stemming", dag)}</div><a class="ltitel" href="#agenda/s-${dag}${slug ? `?thema=${esc(slug)}` : ""}">${esc(stemTitel(perDag.get(dag)))}</a></li>`];
+    const t = perDag.get(dag);
+    return [dag + (t.tijd || "~"), `<li><div class="regelmeta">${soortTag("Stemmingen")}<span class="datum">${fmtKort(dag)}${t.tijd ? ` ${esc(t.tijd)}` : ""}</span><span>Plenaire vergadering</span></div><a class="ltitel" href="#agenda/s-${dag}${slug ? `?thema=${esc(slug)}` : ""}">${esc(stemTitel(t))}</a></li>`];
   }
   // Ruim gevuld (KOMT_MAX); na het tekenen haalt passKomtEraan() regels weg tot de kaart niet langer is dan Net binnen.
   const KOMT_MAX = 15;
@@ -586,7 +588,7 @@
 
   function tabelStaat(def) {
     const q = hashQuery();
-    const st = { q: (q.q || []).join(","), richting: (q.volgorde || [])[0] === "oud" ? "asc" : "desc", open: (q.open || [])[0] || "" };
+    const st = { q: (q.q || []).join(","), richting: (q.volgorde || [])[0] === "oud" ? "asc" : "desc", open: q.open || [] };
     for (const k of Object.keys(def.filters)) st[k] = q[k] || [];
     return st;
   }
@@ -764,9 +766,10 @@
       tr.querySelector("button.uitklap").setAttribute("aria-expanded", String(!open));
     });
     toepassen();
-    // ?open=<sleutel> (bv. vanaf de Agenda): die rij opengeklapt in beeld; toepassen() heeft open al uit de URL gehaald
-    const i = st.open ? rows.findIndex((z) => def.sleutel(z) === st.open) : -1;
-    if (i >= 0) { const knop = $(`#mbody tr[data-i="${i}"] button.uitklap`); knop.click(); setTimeout(() => knop.closest("tr").scrollIntoView({ block: "center" }), 0); }
+    // ?open=<sleutel>[,<sleutel>] (bv. vanaf Net binnen): die rijen opengeklapt, de bovenste in beeld; toepassen() heeft open al uit de URL gehaald
+    const knoppen = rows.flatMap((z, i) => (st.open.includes(def.sleutel(z)) ? [$(`#mbody tr[data-i="${i}"] button.uitklap`)] : []));
+    knoppen.forEach((k) => k.click());
+    if (knoppen.length) setTimeout(() => knoppen[0].closest("tr").scrollIntoView({ block: "center" }), 0);
   }
   // "A, B en C"
   const opsomming = (xs) => (xs.length > 1 ? `${xs.slice(0, -1).join(", ")} en ${xs[xs.length - 1]}` : xs.join(""));
@@ -1061,7 +1064,7 @@
       const opAgenda = S.data.activiteiten.some((x) => x.Nummer === a.Nummer);
       s.push({ datum: dag, html: opAgenda ? `<a href="#agenda/a-${esc(a.Nummer)}">${esc(typeNaam(a.Soort))}</a>` : extLink(a.tkLink, typeNaam(a.Soort)), gepland: a.Status !== "Uitgevoerd" && dag >= VANDAAG,
         tijd: ((x) => (x && x !== "00:00" ? `${/^Inbreng/.test(a.Soort) ? "tot " : ""}${x}` : ""))(tijdNL(a.Aanvangstijd || a.Datum)), wie: a.Voortouwnaam || a.Voortouwafkorting ? commissieNaam(a) : "",
-        label: /^Inbreng/.test(a.Soort) ? termijn("Sluit", dag, a.Aanvangstijd || a.Datum) : "" });
+        label: /^Inbreng/.test(a.Soort) ? termijn("Sluit", dag) : "" });
     }
     const stem = S.data.stemmingen[z.nummer], sa = S.data.stemActiviteit[z.nummer];
     if (stem >= VANDAAG && !AFGEDAAN.includes(z.uitslag) && !s.some((x) => x.datum === stem && /Stemming/.test(x.html)))
@@ -1072,11 +1075,16 @@
   // de wet waar het voorstel over gaat vet (Tobias, 23 nov 2026): de eerste wet na "wijziging van (de)", anders de citeertitel tussen haakjes aan het eind
   // shortcut: herkent alleen die twee vormen; titels als "Goedkeuring van het Verdrag ..." blijven zonder vet
   const WET_RE = /[Ww]ijziging (?:van )?(?:de |het )?([A-Z][^,()]*?)(?=,|(?<!-) en | in verband| ter | tot | ten | voor | om | met | teneinde | betreffende | houdende | inzake |\s*\(|\s*$)/, CITEER_RE = /\(([^()]*wet[^()]*)\)\s*$/i;
-  const wetVet = (t) => {
+  // staat die wet op Geldende wetten, dan is het vette deel een link daarheen; de rest van de titel linkt naar het wetsvoorstel (Tobias, 24 nov 2026)
+  const geldendeWet = onthoud((naam) => kdData().reeksen.find((d) => d.groep === "wet" && [d.titel, ...(d.alias || [])].some((x) => x.toLowerCase() === naam.toLowerCase())), (naam) => naam);
+  const wetTitel = (z) => {
+    const t = z.titel || z.onderwerp || "", href = wetHref(z);
     const w = WET_RE.exec(t), m = (w && /wet/i.test(w[1]) && w) || CITEER_RE.exec(t); // "tot wijziging van Verordening (EU) ..." is geen wet
-    if (!m) return esc(t);
-    const i = m.index + m[0].indexOf(m[1]);
-    return `${esc(t.slice(0, i))}<strong>${esc(m[1])}</strong>${esc(t.slice(i + m[1].length))}`;
+    if (!m) return `<a class="ltitel wet" href="${href}">${esc(t)}</a>`;
+    const i = m.index + m[0].indexOf(m[1]), voor = esc(t.slice(0, i)), vet = `<strong>${esc(m[1])}</strong>`, na = esc(t.slice(i + m[1].length)), g = geldendeWet(m[1]);
+    if (!g) return `<a class="ltitel wet" href="${href}">${voor}${vet}${na}</a>`;
+    const deel = (x, tab = "") => (x ? `<a class="ltitel wet" href="${href}"${tab}>${x}</a>` : "");
+    return `${deel(voor)}<a class="ltitel wet geldend" href="#wetgeving/wetten?open=${esc(g.id)}" title="Bekijk bij Geldende wetten">${vet}</a>${deel(na, voor ? ` tabindex="-1"` : "")}`;
   };
   const WET_DEF = {
     tab: "wetgeving", eenheid: "wetsvoorstellen", knopLabel: "Details",
@@ -1089,7 +1097,7 @@
       soort: { label: "Ingediend door", waarden: (z) => [wetSoort(z)], orde: opVolgorde(["Regering", "Initiatiefwetsvoorstel"]), tekst: (v) => esc(v === "Regering" ? "Regering" : "Kamerleden (initiatief)") },
     },
     kolommen: [
-      { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: (z) => `<a class="ltitel wet" href="${wetHref(z)}">${wetVet(z.titel || z.onderwerp || "")}</a>` },
+      { titel: true, kop: "Wetsvoorstel", thCls: "ond", tdCls: "ond", cel: wetTitel },
       { filter: "status", tdCls: "uitslag", cel: (z) => uitslagPill(wetStatus(z)) },
       { filter: "soort", tdCls: "indiener hide-sm", cel: (z) => (z.soort === "Initiatiefwetgeving" ? indienerKort(z) : "Regering") },
       themaKolom(themasWet),
@@ -1491,14 +1499,14 @@
     return [...eigen, ...kamer].filter((i) => { const k = sleutel(i); if (seen.has(k)) return false; seen.add(k); return true; })
       .sort((a, b) => opCode(agendaKey(a), agendaKey(b)));
   }
-  // datum plus tijd; zonder tijd achteraan de dag. Vergelijken op code: localeCompare zet "~" vóór de cijfers
-  const agendaKey = (i) => sortKey(i.datum) + (i.tijd || "~");
+  // datum plus tijd; zonder tijd achteraan de dag, een inbrengtermijn bij gelijke tijd eerst (zoals op Agenda). Vergelijken op code: localeCompare zet "~" vóór de cijfers
+  const agendaKey = (i) => sortKey(i.datum) + (i.tijd || "~") + (/^Inbreng/.test(i._act?.Soort || "") ? "" : "~");
   const opCode = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
   // een Kameractiviteit opent op de Agenda (op een themapagina met dat themafilter); een eigen mijlpaal gaat naar zijn bron
   function agendaLi(i, slug) {
     const titel = i._act ? `<a class="ltitel" href="#agenda/a-${esc(i._act.Nummer)}${slug ? `?thema=${esc(slug)}` : ""}">${esc(i.titel)}</a>`
       : i.url ? `<a class="ltitel" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titel)}</a>` : `<span class="ltitel">${esc(i.titel)}</span>`;
-    return `<li><div class="regelmeta">${agendaTypeTag(i.type)}<span class="datum">${fmtKort(i.datum)}${i.tijd ? ` ${esc(i.tijd)}` : ""}</span>${i.commissie ? `<span>${esc(i.commissie)}</span>` : ""}${i._act && /^Inbreng/.test(i._act.Soort || "") ? termijn("Sluit", i.datum, i._act.Aanvangstijd || i._act.Datum) : ""}</div>${titel}</li>`;
+    return `<li><div class="regelmeta">${agendaTypeTag(i.type)}<span class="datum">${fmtKort(i.datum)}${i.tijd ? ` ${esc(i.tijd)}` : ""}</span>${i.commissie ? `<span>${esc(i.commissie)}</span>` : ""}</div>${titel}</li>`;
   }
   /* ---------- Thema's, commissies en ministeries ---------- */
   const TYPE_NORM = { "Plenair debat (tweeminutendebat)": "Tweeminutendebat", "Plenair debat (debat)": "Plenair debat", "Plenair debat (dertigledendebat)": "Dertigledendebat", "Plenair debat (initiatiefwetgeving)": "Plenair debat (wetgeving)", "Inbreng verslag (wetsvoorstel)": "Inbreng verslag" };
@@ -1862,15 +1870,13 @@
     const terug = S.af.terug;
     // binnen het zichtbare bereik; daarover gaan ook de aantallen in de filtermenu's
     // plenaire stemmingen als eigen regel per dag (niet in Terugblik); de aantallen volgen het themafilter, zonder ministerie
-    const stemRegels = terug ? [] : [...stemmingenPerDag(S.af.thema)].map(([dag, t]) => ({ id: "s-" + dag, datum: dag, t: dag, tijd: "", type: "Stemmingen",
+    const stemRegels = terug ? [] : [...stemmingenPerDag(S.af.thema)].map(([dag, t]) => ({ id: "s-" + dag, datum: dag, t: `${dag}T${t.tijd || "~"}`, tijd: t.tijd, type: "Stemmingen",
       titel: stemTitel(t), zaken: t.zaken, commissie: "Plenaire vergadering", ministerie: [], thema: [...t.themas], gepland: true, stem: true }));
     const bereik = terug ? vast.filter(geweest) : [...stemRegels, ...vast.filter((i) => i.datum >= VANDAAG)];
     const items = bereik.filter((i) => afPast(i));
     const nu = new Date();
-    // stemmingen doen mee op hun dag, vóór de vergaderingen met tijd (zoals in de lijst eronder)
-    // shortcut: het tijdstip van de stemmingen staat niet in de data, dus een stemming van vandaag blijft de hele dag eerstvolgend; tijd ophalen als dat stoort
-    const eerst = terug ? null : [...stemRegels, ...vast.filter((i) => i.gepland && !i.eigen && !i.inbreng && i.a && new Date(i.a.Datum) >= nu)]
-      .filter((i) => afPast(i)).sort((a, b) => a.t.localeCompare(b.t))[0];
+    const eerst = terug ? null : [...stemRegels.filter((i) => i.datum > VANDAAG || !i.tijd || i.tijd >= tijdNL(nu)), ...vast.filter((i) => i.gepland && !i.eigen && !i.inbreng && i.a && new Date(i.a.Datum) >= nu)]
+      .filter((i) => afPast(i)).sort((a, b) => opCode(a.t, b.t))[0];
     // per week, per dag
     const weken = new Map();
     const voeg = (dag, item) => {
@@ -1897,7 +1903,7 @@
       // een regel die uitklapt: de titel klapt uit, de link naar de Kamer staat in de inhoud
       const titel = i.url && !uitklap ? `<a href="${esc(i.url)}" ${extern ? 'target="_blank" rel="noopener"' : ""}>${esc(i.titel)}</a>` : esc(i.titel);
       return `<li class="tl-item${voorbij ? " voorbij" : ""}${i.eigen ? " mijlpaal" : ""}${uitklap ? " debat" : ""}${uitklap && samOpen.has(i.id) ? " open" : ""}"${i.id ? ` id="${esc(i.id)}"` : ""}>
-        <div class="tl-tijd">${esc(i.tijd || "")}${i.eind ? `<span class="tl-eind">tot ${esc(i.eind)}</span>` : ""}${i === eerst ? `<span class="badge alarm">Eerstvolgend</span>` : ""}${i.inbreng && i.gepland ? termijn("Sluit", i.datum, i.t) : i.stem ? termijn("Stemming", i.datum) : ""}</div>
+        <div class="tl-tijd">${esc(i.tijd || "")}${i.eind ? `<span class="tl-eind">tot ${esc(i.eind)}</span>` : ""}${i === eerst ? `<span class="badge alarm">Eerstvolgend</span>` : ""}</div>
         <div class="tl-inhoud">
           <div class="tl-titel">${titel}</div>
           <div class="tl-meta"><span class="tag">${esc(i.type)}</span>${i.commissie ? `<span>${esc(i.commissie)}</span>` : ""}${i.a?.zaal ? `<span>${esc(i.a.zaal)}</span>` : ""}${i.a?.Besloten && !i.inbreng ? `<span class="badge stil">Besloten</span>` : ""}${metSam && i.sam.niveau === "kort" ? `<span class="badge stil" title="Korte samenvatting: alleen de hoofdlijn">Kort</span>` : ""}${i.thema.length && !i.stem ? themaChips(i.thema, true) : ""}</div>
@@ -1917,7 +1923,7 @@
           const isV = dag === VANDAAG;
           return `<div class="tl-dag ${isV ? "vandaag" : ""} ${dag < VANDAAG ? "verleden" : ""}" ${isV ? 'id="vandaag"' : ""}>
             <div class="tl-datum"><div class="wd">${isV ? "Vandaag" : WEEKDAGEN[d.getDay()].slice(0, 2)}</div><div class="dn">${+dag.slice(8)}</div><div class="mn">${MAANDEN_KORT[+dag.slice(5, 7) - 1]}</div></div>
-            <ul class="tl-lijst">${l.length ? l.sort((a, b) => a.t.localeCompare(b.t) || !!b.inbreng - !!a.inbreng).map(regel).join("") : `<li class="tl-item leeg muted">${afGefilterd() ? "Niets met deze filters vandaag" : "Geen vergaderingen vandaag"}</li>`}</ul>
+            <ul class="tl-lijst">${l.length ? l.sort((a, b) => opCode(a.t.slice(0, 16), b.t.slice(0, 16)) || !!b.inbreng - !!a.inbreng).map(regel).join("") : `<li class="tl-item leeg muted">${afGefilterd() ? "Niets met deze filters vandaag" : "Geen vergaderingen vandaag"}</li>`}</ul>
           </div>`;
         }).join("")}
       </section>`;

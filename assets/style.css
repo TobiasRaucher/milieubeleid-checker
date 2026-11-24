@@ -139,8 +139,7 @@ header.top .wrap { display: flex; align-items: center; gap: 8px 20px; padding-to
 
 /* Hoofdnavigatie: zelfde ronding als het zoekveld; balk 48 hoog, zoals logo en zoekveld */
 nav.tabs { position: relative; display: flex; flex: none; gap: 4px; padding: 4px; border-radius: var(--r-control); overflow: visible; }
-nav.tabs > a, .tab-knop { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 4px; min-height: calc(var(--h-klein) - 8px); padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); line-height: 1; text-decoration: none; color: var(--op-accent); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
-nav.tabs > a:hover, .tab-knop:hover { color: var(--card); }
+nav.tabs > a, .tab-knop { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 4px; min-height: calc(var(--h-klein) - 8px); padding: 0 16px; border: 0; border-radius: 4px; background: transparent; font: inherit; font-size: var(--t-18); line-height: 1; text-decoration: none; color: var(--card); white-space: nowrap; cursor: pointer; transition: color var(--d-kort) var(--ease), background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
 nav.tabs > a:hover:not(.active), .tab-menu:not(.active) .tab-knop:hover { background: var(--accent-hover); }
 nav.tabs > a.active, .tab-menu.active .tab-knop { color: var(--accent); font-weight: 500; }
 nav.tabs:not(.glij) > a.active { background: var(--card); }
@@ -171,7 +170,7 @@ form.zoek input:focus { outline: none; box-shadow: 0 0 0 2px var(--accent), 0 0 
 form.zoek input::-webkit-search-cancel-button { cursor: pointer; }
 .zoek-toets { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-family: var(--font-mono); font-size: var(--t-13); line-height: 24px; min-width: 24px; text-align: center; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 4px; pointer-events: none; transition: opacity var(--d-kort) var(--ease); }
 form.zoek input:focus ~ .zoek-toets, form.zoek input:not(:placeholder-shown) ~ .zoek-toets { opacity: 0; }
-header.top .stamp { flex: none; margin-left: auto; color: var(--op-accent); font-size: var(--t-12); line-height: 16px; text-align: right; white-space: nowrap; }
+header.top .stamp { flex: none; margin-left: auto; color: var(--card); font-size: var(--t-12); line-height: 16px; text-align: right; white-space: nowrap; }
 @media (max-width: 1279px) { header.top .stamp { white-space: normal; max-width: 112px; } }
 
 /* ===================== Pagina-opbouw en koppen ===================== */
@@ -386,6 +385,8 @@ td.nw { font-size: var(--t-13); color: var(--ink-2); }
 .motietabel td.rapport, .motietabel th[data-f="rapport"] { text-align: center; }
 .motietabel th[data-f="rapport"] .facet { display: inline-block; }
 .ltitel.wet { font-weight: 400; }
+.ltitel.geldend { text-decoration: underline; text-decoration-color: var(--line-sterk); text-underline-offset: 3px; }
+a.ltitel.geldend:hover { text-decoration-color: currentColor; }
 .motietabel th, .motietabel td { padding: 16px 12px; } /* 12 opzij: ruimte voor de filterknoppen in de kop (23 nov 2026) */
 .motietabel td { line-height: 22px; }
 .motietabel td.ond { font-size: var(--t-15); color: var(--ink); }
@@ -648,10 +649,10 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 /* regel: tijd (met Eerstvolgend) | inhoud | rechts de uitklapknop en Live; de uitgeklapte inhoud over de volle breedte */
 .tl-item { display: grid; grid-template-columns: 96px minmax(0, 1fr) auto; grid-template-rows: auto auto 1fr; column-gap: 16px; padding: 8px 12px; margin: 0 -12px; border-radius: var(--r-card); transition: background-color var(--d-kort) var(--ease); }
 .tl-item > .tl-tijd, .tl-item > .tl-inhoud { grid-row: 1 / 4; }
-/* de uitklapknop verticaal in het midden van de regel; Live (alleen vandaag) onderaan.
-   shortcut: bij een heel korte regel van vandaag kunnen ze elkaar raken; terugkomen als dat gebeurt */
-.tl-item > .toggle { grid-column: 3; grid-row: 1 / 4; align-self: center; justify-self: end; margin-top: 0; }
-.tl-item > .tl-live { grid-column: 3; grid-row: 3; align-self: end; justify-self: end; }
+/* de uitklapknop verticaal in het midden van de regel; met Live (alleen vandaag) staat de link eronder */
+.tl-item > .toggle { grid-column: 3; grid-row: 1 / 4; align-self: center; justify-self: end; justify-content: flex-start; min-width: 240px; margin-top: 0; } /* alle knoppen even breed (Tobias, 24 nov 2026) */
+.tl-item:has(> .tl-live) > .toggle { grid-row: 1 / 3; align-self: start; }
+.tl-item > .tl-live { grid-column: 3; grid-row: 3; align-self: end; justify-self: end; padding-top: 4px; }
 .tl-item > .body-wrap { grid-column: 1 / -1; grid-row: 4; }
 .tl-item.debat:not(.open):hover { background: var(--surface); }
 .tl-item.leeg { display: block; }
@@ -659,9 +660,7 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-eind { display: block; font-size: var(--t-14); font-weight: 400; color: var(--ink-2); }
 .tl-tijd .badge { display: flex; margin-top: 2px; white-space: normal; line-height: 16px; }
 .badge.termijn { color: var(--ink); font-size: var(--t-14); font-weight: 600; }
-.tl-tijd .badge.termijn { font-size: var(--t-13); }
 .badge.termijn.alarm { color: var(--alarm-tekst); }
-.badge.termijn.stil { color: var(--muted); }
 .tl-titel { font-size: var(--t-18); font-weight: 500; line-height: 1.35; margin-bottom: 4px; text-wrap: pretty; }
 .tl-dag.verleden .tl-titel a, .tl-item.voorbij .tl-titel a { color: var(--ink-2); }
 .tl-item.mijlpaal .tl-titel { color: var(--ink); }

@@ -129,6 +129,7 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 - Grijze vlakken en het roze vlak onder de uitstootlijn (sinds 23 nov 2026).
 - Het label "Nieuw" op `#themas` (sinds 23 nov 2026).
 - De knop "Eerdere vergaderingen" op Agenda (sinds 23 nov 2026).
+- De labels "Sluit over n dagen", "Stemming vandaag" en "Gesloten" op Agenda en in Komt eraan (sinds 24 nov 2026).
 - Kerndocumenten in de groep "Europese Unie" (`"verborgen": true`) en EU-documenten in het algemeen: komt later.
 
 **Vermijden**

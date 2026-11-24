@@ -315,7 +315,7 @@ def activiteiten(commissies, start, plenaire_termen):
 
 
 def stemmingen(start):
-    """{zaaknummer: {"datum", "activiteit"}} uit de agendapunten van plenaire Stemmingen. Per zaak de eerstvolgende
+    """{zaaknummer: {"datum", "tijd" (als bekend), "activiteit"}} uit de agendapunten van plenaire Stemmingen. Per zaak de eerstvolgende
     geplande stemming, en anders de laatst gehouden (een motie kan worden uitgesteld en opnieuw geagendeerd).
     "activiteit" is het nummer van die Stemmingen-activiteit (voor de link naar tweedekamer.nl)."""
     rec = odata("Activiteit", {
@@ -330,6 +330,7 @@ def stemmingen(start):
         dag = (a.get("Datum") or "")[:10]
         if not dag:
             continue
+        tijd = a["Datum"][11:16]  # de Kamer geeft Nederlandse tijd; 00:00 is geen tijd
         for ap in a.get("Agendapunt") or []:
             for z in ap.get("Zaak") or []:
                 n = z.get("Nummer")
@@ -337,6 +338,8 @@ def stemmingen(start):
                     continue
                 oud = (uit.get(n) or {}).get("datum")
                 nieuw = {"datum": dag, "activiteit": a.get("Nummer")}
+                if tijd and tijd != "00:00":
+                    nieuw["tijd"] = tijd
                 if oud is None:
                     uit[n] = nieuw
                 elif dag >= vandaag and (oud < vandaag or dag < oud):

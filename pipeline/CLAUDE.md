@@ -67,7 +67,7 @@ Wat bij de themareview bewust geen thema kreeg (`themas: []` in `data/themas-map
 
 ## Stemmingen (`data/tk/stemmingen.json`, sinds 17 nov 2026)
 
-- Uit de plenaire `Stemmingen`-activiteiten: `{zaaknummer: {datum, activiteit}}`; de eerstvolgende geplande stemming gaat voor.
+- Uit de plenaire `Stemmingen`-activiteiten: `{zaaknummer: {datum, tijd, activiteit}}` (tijd: Nederlandse begintijd, als de Kamer die geeft); de eerstvolgende geplande stemming gaat voor.
 - `app.js` leest ook nog het oude formaat `{zaak: datum}`.
 
 ## Toezeggingen (`data/tk/toezeggingen.json`)
