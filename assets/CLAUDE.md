@@ -5,8 +5,8 @@ Alleen desktop. Functies staan in `app.js` tenzij anders vermeld.
 
 ## Kop en navigatie (sinds 17 nov 2026)
 
-- Tabs: Overzicht, Thema's, Agenda en Documenten (menu in twee kolommen: Uit de Tweede Kamer met Wetgeving, Moties,
-  Amendementen, Kamervragen, Kamerbrieven; Kabinet, adviseurs en rechter met de vier Kerndocumenten-groepen (Kabinetsplannen, Begrotingen, Rapporten, Rechtspraak); opent bij hover (na 100 ms), klik of pijl omlaag; elke routewissel sluit het), dan
+- Tabs: Overzicht, Thema's, Agenda en Documenten (menu in twee kolommen: Tweede Kamer met Wetgeving, Moties,
+  Amendementen, Kamervragen, Kamerbrieven; Overig met de vier Kerndocumenten-groepen (Kabinetsplannen, Begrotingen, Rapporten, Rechtspraak); opent bij hover (na 100 ms), klik of pijl omlaag; elke routewissel sluit het), dan
   een zoekveld dat altijd zichtbaar is (`/` zet de cursor erin) en de stempel "Bijgewerkt". "Over" staat in de footer.
 - Op alle documentpagina's is Documenten actief en heeft de menuregel `aria-current` (`route()`, `kdGroep()`).
 - Kop en bediening zijn sinds 17 nov 2026 50% groter (`--h-klein` 48, tabelkop `--h-control` 56); tabeltekst weer 15/14 (zie DESIGN.md).
