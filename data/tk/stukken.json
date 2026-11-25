@@ -483,15 +483,22 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-23",
-  "titel": null,
+  "titel": "Landelijk afvalbeheerplan",
   "onderwerp": "Nahang Besluit afgifteplicht afgedankte elektrische en elektronische apparatuur (AEEA)",
   "zaak": "2026Z25920",
   "ministerie": "Klimaat en Groene Groei",
   "ondertekenaar": "S. van Veldhoven-van der Meer",
   "functie": "minister van Klimaat en Groene Groei",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "30872-331",
+  "dossiers": [
+   {
+    "nummer": 30872,
+    "toevoeging": null,
+    "titel": "Landelijk afvalbeheerplan"
+   }
+  ],
   "sectoren": [
+   "circulair-vervuiling",
    "klimaat-energie"
   ],
   "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z25920&did=2026D60018",
@@ -1815,6 +1822,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D58313"
    }
   ]
+ },
+ {
+  "id": "kst-1281888",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief regering",
+  "datum": "2026-11-16",
+  "titel": null,
+  "onderwerp": "Voorhang ontwerpbesluit Implementatie richtlijn over de duurzaamheidsrapportering",
+  "zaak": null,
+  "ministerie": null,
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "26485-470",
+  "dossiers": [
+   {
+    "nummer": "26485",
+    "toevoeging": null,
+    "titel": "Maatschappelijk verantwoord ondernemen"
+   }
+  ],
+  "sectoren": [
+   "financien"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1281888.html"
  },
  {
   "id": "kst-1280228",
@@ -6853,7 +6885,7 @@
  {
   "id": "2026D50555",
   "docId": "4f12c532-242b-41f0-8fd1-a0e438449d36",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-12",
   "titel": null,
