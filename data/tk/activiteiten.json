@@ -586,6 +586,21 @@
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z19712&did=2026D45651"
      }
     ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Beleidsagenda Energieopslag 2026",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-09",
+      "onderwerp": "Beleidsagenda Energieopslag 2026",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24376&did=2026D56328"
+     }
+    ]
    }
   ],
   "bewindspersonen": [
@@ -1014,6 +1029,21 @@
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23795&did=2026D54911"
      }
     ]
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Voortgangsrapportage sectorakkoord gaswinning in de energietransitie",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-10",
+      "onderwerp": "Voortgangsrapportage sectorakkoord gaswinning in de energietransitie",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24595&did=2026D56769"
+     }
+    ]
    }
   ],
   "bewindspersonen": [
@@ -1216,6 +1246,81 @@
       "ondertekenaar": "S. van Veldhoven-van der Meer",
       "functie": "minister van Klimaat en Groene Groei",
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23924&did=2026D55256"
+     }
+    ]
+   },
+   {
+    "volgorde": 15,
+    "onderwerp": "Bestuurlijke opdracht Powerport regio Moerdijk",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-11",
+      "onderwerp": "Bestuurlijke opdracht Powerport regio Moerdijk",
+      "ondertekenaar": "J. de Bat",
+      "functie": "staatssecretaris van Economische Zaken en Klimaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24880&did=2026D57457"
+     }
+    ]
+   },
+   {
+    "volgorde": 16,
+    "onderwerp": "Rijksinzet haven- en industriecluster Moerdijk",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-10",
+      "onderwerp": "Rijksinzet haven- en industriecluster Moerdijk",
+      "ondertekenaar": "J. de Bat",
+      "functie": "staatssecretaris van Economische Zaken en Klimaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24570&did=2026D56710"
+     }
+    ]
+   },
+   {
+    "volgorde": 17,
+    "onderwerp": "Ontwikkelingen Carbon Capture and Storage (CCS)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-19",
+      "onderwerp": "Ontwikkelingen Carbon Capture and Storage (CCS)",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25723&did=2026D59495"
+     }
+    ]
+   },
+   {
+    "volgorde": 18,
+    "onderwerp": "Onderbouwing stikstofmaatregelen industrie (3.1. CW)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-18",
+      "onderwerp": "Onderbouwing stikstofmaatregelen industrie (3.1. CW)",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25529&did=2026D59060"
+     }
+    ]
+   },
+   {
+    "volgorde": 19,
+    "onderwerp": "Nationale ruimtelijk-economische strategie voor de energie-intensieve haven- en industrieclusters",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-10",
+      "onderwerp": "Nationale ruimtelijk-economische strategie voor de energie-intensieve haven- en industrieclusters",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24573&did=2026D56716"
      }
     ]
    }
@@ -1440,6 +1545,47 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02828",
   "sectoren": [
    "circulair-vervuiling"
+  ]
+ },
+ {
+  "Id": "92e8087e-a897-4e0d-a39e-25b47e063bad",
+  "Nummer": "2026A08735",
+  "Soort": "Inbreng schriftelijk overleg",
+  "Onderwerp": "Reactie van het kabinet op het advies van het IGH inzake klimaatverandering",
+  "Datum": "2026-12-10T12:00:00+01:00",
+  "Aanvangstijd": "2026-12-10T12:00:00+01:00",
+  "Eindtijd": "2026-12-10T12:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Klimaat en Groene Groei",
+  "Voortouwafkorting": "K&GG",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng schriftelijk overleg",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Reactie van het kabinet op het advies van het IGH inzake klimaatverandering",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-16",
+      "onderwerp": "Reactie van het kabinet op het advies van het IGH inzake klimaatverandering",
+      "ondertekenaar": "T.B.W. Berendsen",
+      "functie": "minister van Buitenlandse Zaken",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25127&did=2026D58055"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08735",
+  "sectoren": [
+   "klimaat-energie"
   ]
  },
  {
@@ -1788,6 +1934,21 @@
       "ondertekenaar": "J.M. Zwinkels",
       "functie": "voorzitter van de vaste commissie voor Klimaat en Groene Groei",
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22140&did=2026D51039"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Verslag Energieraad 29 oktober 2026 (Luxemburg)",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-18",
+      "onderwerp": "Verslag Energieraad 29 oktober 2026 (Luxemburg)",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25462&did=2026D58862"
      }
     ]
    }
@@ -3215,6 +3376,11 @@
     "functie": "Tweede Kamerlid"
    },
    {
+    "naam": "D.D. Mathijsen",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
     "naam": "P.A. Grinwis",
     "fractie": "ChristenUnie",
     "functie": "Tweede Kamerlid"
@@ -3227,11 +3393,6 @@
    {
     "naam": "C.A.M. van der Plas",
     "fractie": "BBB",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "L.A.J.M. Dassen",
-    "fractie": "Volt",
     "functie": "Tweede Kamerlid"
    }
   ],
@@ -3952,6 +4113,11 @@
     "functie": "Tweede Kamerlid"
    },
    {
+    "naam": "D.D. Mathijsen",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
     "naam": "P.A. Grinwis",
     "fractie": "ChristenUnie",
     "functie": "Tweede Kamerlid"
@@ -3964,11 +4130,6 @@
    {
     "naam": "C.A.M. van der Plas",
     "fractie": "BBB",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "L.A.J.M. Dassen",
-    "fractie": "Volt",
     "functie": "Tweede Kamerlid"
    }
   ],
@@ -56736,7 +56897,23 @@
   "Besloten": false,
   "Noot": null,
   "SoortWeergave": "Commissiedebat",
-  "agendapunten": [],
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Dialoog in de klimaat en energietransitie",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-11",
+      "onderwerp": "Dialoog in de klimaat en energietransitie",
+      "ondertekenaar": "S. van Veldhoven-van der Meer",
+      "functie": "minister van Klimaat en Groene Groei",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24823&did=2026D57276"
+     }
+    ]
+   }
+  ],
   "bewindspersonen": [],
   "voorzitter": null,
   "deelnemers": [],
@@ -57424,6 +57601,21 @@
    {
     "naam": "A.S. van Oosterhout",
     "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
     "functie": "Tweede Kamerlid"
    }
   ],

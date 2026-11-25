@@ -1591,11 +1591,118 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     }
+    ]
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 46,
+   "tegen": 104,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -1638,7 +1745,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -1649,7 +1859,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 124,
+   "tegen": 26,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -1692,7 +1906,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -1703,7 +2020,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 95,
+   "tegen": 55,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -1807,11 +2128,118 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     }
+    ]
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 32,
+   "tegen": 118,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -1915,11 +2343,118 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 30,
+   "tegen": 120,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "ruimte-mobiliteit"
   ],
@@ -1962,7 +2497,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -1973,7 +2611,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 120,
+   "tegen": 30,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2016,7 +2658,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2027,7 +2772,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 144,
+   "tegen": 6,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2080,7 +2829,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2091,7 +2943,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 51,
+   "tegen": 99,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2134,7 +2990,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2145,7 +3104,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 130,
+   "tegen": 20,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie",
    "natuur-stikstof-landbouw"
@@ -2255,11 +3218,118 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 150,
+   "tegen": 0,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2363,11 +3433,118 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 150,
+   "tegen": 0,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2420,7 +3597,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2431,7 +3711,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 26,
+   "tegen": 124,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2481,11 +3765,118 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     }
+    ]
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 124,
+   "tegen": 26,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2538,7 +3929,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2549,7 +4043,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 26,
+   "tegen": 124,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2592,7 +4090,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2603,7 +4204,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 59,
+   "tegen": 91,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "klimaat-energie"
   ],
@@ -2653,11 +4258,118 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 52,
+   "tegen": 98,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -2763,11 +4475,118 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     }
+    ]
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 128,
+   "tegen": 22,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -2811,7 +4630,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2822,7 +4744,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 52,
+   "tegen": 98,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -2865,7 +4791,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2876,7 +4905,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 38,
+   "tegen": 112,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -2936,11 +4969,118 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     }
+    ]
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 131,
+   "tegen": 19,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -2983,7 +5123,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Tegen",
+      "zetels": 9
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -2994,7 +5237,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 40,
+   "tegen": 110,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3037,7 +5284,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -3048,7 +5398,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 52,
+   "tegen": 98,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3098,11 +5452,118 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Voor",
+      "zetels": 19
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     }
+    ]
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 52,
+   "tegen": 98,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3167,11 +5628,118 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     }
+    ]
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 128,
+   "tegen": 22,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3229,7 +5797,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -3240,7 +5911,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 105,
+   "tegen": 45,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3298,7 +5973,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -3309,7 +6087,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 121,
+   "tegen": 29,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3362,7 +6144,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -3373,7 +6258,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 124,
+   "tegen": 26,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3416,7 +6305,110 @@
     "tekst": "Verworpen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Tegen",
+      "zetels": 26
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Tegen",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Tegen",
+      "zetels": 22
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Tegen",
+      "zetels": 18
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -3427,7 +6419,11 @@
    }
   ],
   "uitslag": "verworpen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 30,
+   "tegen": 120,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3497,11 +6493,118 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     }
+    ]
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 128,
+   "tegen": 22,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3554,7 +6657,110 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Voor",
+      "zetels": 20
+     },
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Tegen",
+      "zetels": 7
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     }
+    ]
    },
    {
     "soort": "Ingediend",
@@ -3565,7 +6771,11 @@
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 107,
+   "tegen": 43,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
@@ -3615,11 +6825,118 @@
     "tekst": "Aangenomen.",
     "stemmingssoort": "Met handopsteken",
     "datum": "2026-11-24",
-    "stemmen": []
+    "stemmen": [
+     {
+      "fractie": "FVD",
+      "naam": "FVD",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "50PLUS",
+      "naam": "50PLUS",
+      "soort": "Voor",
+      "zetels": 2
+     },
+     {
+      "fractie": "ChristenUnie",
+      "naam": "ChristenUnie",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "Keijzer",
+      "naam": "Keijzer",
+      "soort": "Voor",
+      "zetels": 1
+     },
+     {
+      "fractie": "DENK",
+      "naam": "DENK",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "BBB",
+      "naam": "BBB",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "D66",
+      "naam": "D66",
+      "soort": "Voor",
+      "zetels": 26
+     },
+     {
+      "fractie": "Volt",
+      "naam": "Volt",
+      "soort": "Tegen",
+      "zetels": 1
+     },
+     {
+      "fractie": "PRO",
+      "naam": "PRO",
+      "soort": "Tegen",
+      "zetels": 20
+     },
+     {
+      "fractie": "CDA",
+      "naam": "CDA",
+      "soort": "Voor",
+      "zetels": 18
+     },
+     {
+      "fractie": "JA21",
+      "naam": "JA21",
+      "soort": "Voor",
+      "zetels": 9
+     },
+     {
+      "fractie": "SGP",
+      "naam": "SGP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "PVV",
+      "naam": "PVV",
+      "soort": "Tegen",
+      "zetels": 19
+     },
+     {
+      "fractie": "PvdD",
+      "naam": "PvdD",
+      "soort": "Tegen",
+      "zetels": 3
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "naam": "Groep Markuszower",
+      "soort": "Voor",
+      "zetels": 7
+     },
+     {
+      "fractie": "SP",
+      "naam": "SP",
+      "soort": "Voor",
+      "zetels": 3
+     },
+     {
+      "fractie": "VVD",
+      "naam": "VVD",
+      "soort": "Voor",
+      "zetels": 22
+     }
+    ]
    }
   ],
   "uitslag": "aangenomen",
-  "stemtelling": null,
+  "stemtelling": {
+   "voor": 104,
+   "tegen": 46,
+   "datum": "2026-11-24"
+  },
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],

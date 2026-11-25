@@ -1,5 +1,89 @@
 [
  {
+  "id": "2026D60626",
+  "docId": "3d0bd887-c732-49ea-ae1a-4836ab596d9c",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-25",
+  "titel": null,
+  "onderwerp": "Amortisatie waterstoftransportnetwerk",
+  "zaak": "2026Z26150",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26150&did=2026D60626",
+  "bijlagen": [
+   {
+    "id": "2026D60627",
+    "titel": "Beslisnota bij Kamerbrief over amortisatie waterstoftransportnetwerk",
+    "bestand": "PDF",
+    "docId": "6de57356-87f9-4971-9003-ca99e054f44a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60627"
+   }
+  ]
+ },
+ {
+  "id": "2026D60656",
+  "docId": "70e3ccbb-b106-4e75-87c3-5e6235a30b99",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-25",
+  "titel": null,
+  "onderwerp": "Voortgang Gemeenschappelijk Landbouwbeleid 2026",
+  "zaak": "2026Z26161",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "J. van Essen",
+  "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26161&did=2026D60656",
+  "bijlagen": [
+   {
+    "id": "2026D60657",
+    "titel": "Beslisnota bij Kamerbrief over voortgang Gemeenschappelijk Landbouwbeleid 2026",
+    "bestand": "PDF",
+    "docId": "9d55c26f-581c-413d-818b-a4493628650e",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60657"
+   }
+  ]
+ },
+ {
+  "id": "2026D60630",
+  "docId": "aa1b185d-c354-4568-b8dc-ad7d194641c5",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-25",
+  "titel": null,
+  "onderwerp": "Reactie op verzoek commissie over visserij op blauwvintonijn op de Noordzee",
+  "zaak": "2026Z26153",
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": "S.P.A. Erkens",
+  "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26153&did=2026D60630",
+  "bijlagen": [
+   {
+    "id": "2026D60631",
+    "titel": "Beslisnota bij Kamerbrief met reactie op verzoek commissie over visserij op blauwvintonijn op de Noordzee",
+    "bestand": "PDF",
+    "docId": "8b9bbc9e-e897-4c67-8125-8e3221608ad3",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60631"
+   }
+  ]
+ },
+ {
   "id": "2026D60473",
   "docId": "96f5b4ff-68dd-4c0e-82a8-27b92aa426a9",
   "bestand": "DOCX",
@@ -2119,7 +2203,7 @@
    {
     "id": "2026D56992",
     "titel": "Verlenging Regeling Provinciale Maatregelen PASmelders 2024",
-    "bestand": "DOCX",
+    "bestand": "PDF",
     "docId": "4c0a6620-09ad-421b-9f78-929d9225d3e8",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56992"
    },
