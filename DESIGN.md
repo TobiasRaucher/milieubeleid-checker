@@ -71,6 +71,7 @@ White carries the page, black is text and lines, forest is heads, action and "he
   - Text in a button is 50% of the button height: 18 in 36 (`--h-klein`), 15 in 30 (`--h-15`), 14 in 28 (`--h-14`), 13 in 26, 12 in 24. Control heights may therefore leave the 4px grid. The 56 table head is not a button.
   - The header bar is twice the wordmark: 90.
   - Different text sizes on one line share one baseline (`align-items: baseline`; never center), header bar and Agenda date column included.
+  - Text of different sizes that belongs together: the space from baseline to capital is the size of the smaller text (title 15 under meta 14: 14; tail 13: 13; Agenda title 18 over meta 14: 14). The line height already gives most of it, so the CSS margin is only 0 to 4px. Lines of one size, links back and text of another context are outside this rule.
   - A heading always has more space above than below.
   - Shadow is layers of small neutral shadows, never one large one: `--schaduw-1` buttons and fields, `--schaduw-2` cards, theme tiles, document sheets and the header bar once the page scrolls, `--schaduw-3` everything that floats. Borders stay.
 - Inside controls 4 to 12; list rows 12 apart; groups 12 to 24; above a section head 40; page bottom 64; a paragraph without its own margin 12 above and below.
@@ -90,7 +91,7 @@ Every new part is built from this table without asking; do not pick sizes by eye
 | Switcher in a card or heading bar | `.schakelaar.mi-wetten` (in a bar on a white ground, `.mi-jaren`) | 18/500; chosen white on forest | 36 per option, 44 in all | 8 to every edge it touches |
 | Card | `.card` | | | padding 20, radius 12, 1px `--line`; 24 between cards side by side |
 | Card footer with links | `.card > .kaartvoet` with `.knop.licht` | 14/500 forest | 28 buttons | 16 above; 1px `--line` across the full card; 8 around and between buttons |
-| List row | `.list li` | meta 14/400 ink-2, title 15/500 ink, tail 13 ink-2 | | 12 above and below, 1px `--line` between rows; 4 between meta and title; 12 between meta parts |
+| List row | `.list li` | meta 14/400 ink-2, title 15/500 ink, tail 13 ink-2 | | 12 above and below, 1px `--line` between rows; 14 from meta to title (baseline to capital); 12 between meta parts |
 | Table head | `thead` via `tabelPagina()` | 15/600 white on forest | 56 | |
 | Table cell | `.motietabel td` | title 15/500 ink, other cells 14 ink-2, line height 22 | | 16 12 |
 | Emphasis block (the one thing to read) | `.mt-plek`, `.wp-stap`, `.mi-kans` | text 15/24; decisive line 600 | | 2px `--accent` border; `.mt-plek` and `.wp-stap` 16 20, radius 12; `.mi-kans` 16, radius 8 (it lies inside a card) |

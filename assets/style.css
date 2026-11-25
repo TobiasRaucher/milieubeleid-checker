@@ -196,7 +196,7 @@ h3.groepkop { display: flex; align-items: center; gap: 8px; margin: 48px 0 12px;
    Beide kaarten rekken mee tot dezelfde onderrand; de lijst vult de ruimte, de kaartvoet blijft onderaan. */
 .ov-intro { margin: 32px 0 0; }
 .ov-lead { font-size: var(--t-45); font-weight: 500; line-height: 1.15; letter-spacing: var(--sp-45); color: var(--ink); margin: 0; max-width: 36ch; }
-.ov-uitleg { margin: 8px 0 0; font-size: var(--t-18); letter-spacing: var(--sp-18); font-weight: 400; color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
+.ov-uitleg { margin: 0; font-size: var(--t-18); letter-spacing: var(--sp-18); font-weight: 400; color: var(--ink-2); max-width: var(--leesbreedte); text-wrap: pretty; }
 .ov-onder { display: grid; gap: 0 24px; align-items: stretch; }
 .ov-onder > section { display: flex; flex-direction: column; }
 .ov-onder > section > h2:first-child { margin-top: 40px; }
@@ -372,14 +372,16 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .list li { padding: 12px 0; border-top: 1px solid var(--line); }
 .list li:first-child { border-top: 0; padding-top: 0; }
 .list li:last-child { padding-bottom: 0; }
-.list li > .tchips { margin-top: 4px; }
+.list li > .tchips { margin-top: 0; }
 /* Regels (DESIGN.md, "Rows"): kopregel met soort, datum en context in ink-2; de titel op een eigen regel; eventueel een staart */
 .regelmeta, .zmeta, .tl-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; font-size: var(--t-14); line-height: 22px; color: var(--ink-2); }
-.regelmeta, .zmeta { margin-bottom: 4px; }
+.regelmeta, .zmeta { margin-bottom: 2px; }
+/* een themalabel (24) maakt de metaregel (22) niet hoger */
+:is(.regelmeta, .zmeta, .tl-meta) .tchips { margin-block: -2px; }
 .regelmeta .datum, .zmeta .datum { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .regelmeta .tag, .zmeta .tag, .tl-meta .tag { padding: 0; box-shadow: none; border-radius: 0; font-size: inherit; line-height: inherit; font-weight: 500; color: var(--ink); text-decoration: none; }
 .regelmeta a.tag:hover, .zmeta a.tag:hover { text-decoration: underline; text-underline-offset: 3px; }
-.regel-staart { margin-top: 4px; font-size: var(--t-13); color: var(--ink-2); }
+.regel-staart { margin-top: 1px; font-size: var(--t-13); color: var(--ink-2); }
 .regel-staart .mono { font-size: var(--t-12); }
 
 .tablewrap { position: relative; overflow-x: auto; background: var(--card); border-bottom: 1px solid var(--line); }
@@ -499,7 +501,7 @@ tr.detail.weg { animation: uitgang var(--d-kort) var(--ease) both; pointer-event
 .wp-titel { max-width: var(--leesbreedte); }
 .wp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 8px; font-size: var(--t-14); color: var(--ink-2); }
 /* volgende stap: wat, wanneer en bij wie, als eigen blok */
-.wp-stap { display: grid; gap: 4px; margin-top: 12px; padding: 16px 20px; background: var(--card); border: 2px solid var(--accent); border-radius: var(--r-card); color: var(--ink-2); }
+.wp-stap { display: grid; gap: 2px; margin-top: 12px; padding: 16px 20px; background: var(--card); border: 2px solid var(--accent); border-radius: var(--r-card); color: var(--ink-2); }
 .wp-stap p { margin: 0; }
 tr.detail .wp-stap { background: var(--page); }
 .wp-stap .k { font-size: var(--t-13); color: var(--muted); }
@@ -553,7 +555,7 @@ dialog.docview[open]::backdrop { background: rgba(14, 20, 17, 0.32); }
 @starting-style { dialog.docview[open] { opacity: 0; transform: scale(0.96); } dialog.docview[open]::backdrop { background: rgba(14, 20, 17, 0); } }
 .dv-kop { display: flex; align-items: flex-start; gap: 24px; padding: 16px 16px 16px 24px; border-bottom: 1px solid var(--line); }
 .dv-kopt { flex: 1; min-width: 0; }
-.dv-meta { margin: 0 0 4px; font-family: var(--font-mono); font-size: var(--t-12); color: var(--muted); }
+.dv-meta { margin: 0 0 1px; font-family: var(--font-mono); font-size: var(--t-12); color: var(--muted); }
 .dv-kop h2 { margin: 0; font-size: var(--t-18); line-height: 24px; font-weight: 500; letter-spacing: var(--sp-18); }
 .dv-acties { display: flex; gap: 16px; align-items: center; min-height: 32px; font-size: var(--t-13); white-space: nowrap; }
 .dv-sluit { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 0; border-radius: var(--r-control); background: none; color: var(--ink-2); cursor: pointer; transition: background-color var(--d-kort) var(--ease), transform var(--d-kort) var(--ease); }
@@ -661,10 +663,10 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .weeklabel { font-size: var(--t-13); font-weight: 500; color: var(--ink); }
 .tl-dag { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 0; border-bottom: 1px solid var(--line); scroll-margin-top: 92px; }
 .tl-datum { text-align: center; line-height: 1.15; padding: 16px 0 12px; }
-.tl-datum .wd { font-size: var(--t-12); font-weight: 500; color: var(--ink-2); }
+.tl-datum .wd { margin-bottom: 1px; font-size: var(--t-12); font-weight: 500; color: var(--ink-2); }
 .tl-datum .wd::before { content: "\200b"; font-size: var(--t-18); letter-spacing: var(--sp-18); line-height: 1.35; } /* zelfde baseline als de tijd ernaast */
 .tl-datum .dn { font-size: var(--t-24); letter-spacing: var(--sp-24); font-weight: 500; font-variant-numeric: tabular-nums; }
-.tl-datum .mn { font-size: var(--t-12); color: var(--muted); }
+.tl-datum .mn { margin-top: 4px; font-size: var(--t-12); color: var(--muted); }
 /* vandaag: rood woord en dagnummer en een rode lijn links; geen vlak (Tobias, 19 nov 2026) */
 .tl-dag.vandaag { box-shadow: inset 2px 0 0 var(--alarm); }
 .tl-dag.vandaag .wd, .tl-dag.vandaag .dn { color: var(--alarm-tekst); }
@@ -682,20 +684,21 @@ ul.stukken .stukstem .status { font-size: var(--t-13); }
 .tl-item > .tl-live { grid-column: 3; grid-row: 3; align-self: end; justify-self: end; padding-top: 4px; }
 .tl-item > .body-wrap { grid-column: 1 / -1; grid-row: 4; }
 .tl-item.debat:is(:hover, .open) { box-shadow: inset 4px 0 var(--accent); }
+.tl-lijst > .tl-item:first-child { min-height: 96px; } /* de datum links past boven de haarlijn */
 .tl-item.leeg { display: block; }
 .tl-tijd { font-size: var(--t-18); letter-spacing: var(--sp-18); line-height: 1.35; font-weight: 500; color: var(--ink); }
-.tl-eind { display: block; font-size: var(--t-14); font-weight: 400; color: var(--ink-2); }
+.tl-eind { display: block; margin-top: 4px; font-size: var(--t-14); font-weight: 400; color: var(--ink-2); }
 .tl-tijd > span { letter-spacing: 0; }
 .tl-tijd .badge { display: flex; margin-top: 2px; white-space: normal; line-height: 16px; }
 .badge.termijn { color: var(--ink); font-size: var(--t-14); font-weight: 600; }
 .badge.termijn.alarm { color: var(--alarm-tekst); }
-.tl-titel { font-size: var(--t-18); letter-spacing: var(--sp-18); font-weight: 500; line-height: 1.35; margin-bottom: 4px; text-wrap: pretty; }
+.tl-titel { font-size: var(--t-18); letter-spacing: var(--sp-18); font-weight: 500; line-height: 1.35; margin-bottom: 1px; text-wrap: pretty; }
 .tl-dag.verleden .tl-titel a, .tl-item.voorbij .tl-titel a { color: var(--ink-2); }
 .tl-item.mijlpaal .tl-titel { color: var(--ink); }
 /* een vergadering met samenvatting of agenda klapt ook uit met een klik op de regel */
 .tl-item.debat { cursor: pointer; }
 .tl-item.debat .body-wrap { cursor: auto; }
-.tl-verwijs { margin-top: 8px; }
+.tl-verwijs { margin-top: 1px; }
 .tl-live { margin-top: 8px; font-size: var(--t-14); }
 .naar-ander { margin: 0 0 16px; }
 .tijdlijn + .small + .naar-ander { margin-top: 16px; }
@@ -734,7 +737,7 @@ ul.zook .status { font-size: var(--t-13); }
 .zsug-titel mark { background: none; color: inherit; font-weight: 600; text-decoration: underline 2px var(--accent); text-underline-offset: 2px; }
 .zsug-alle { margin-top: 4px; border-top: 1px solid var(--line); border-radius: 0 0 var(--r-control) var(--r-control); font-size: var(--t-14); color: var(--ink-2); }
 .zoeklijst .ztitel { font-weight: 500; font-size: var(--t-15); }
-.zoeklijst .zfrag { font-size: var(--t-14); color: var(--ink-2); margin-top: 4px; }
+.zoeklijst .zfrag { font-size: var(--t-14); color: var(--ink-2); margin-top: 2px; }
 .zoeklijst mark, .ztitel mark { background: none; color: inherit; font-weight: 600; text-decoration: underline 2px var(--accent); text-underline-offset: 2px; }
 .zoektips { color: var(--ink-2); }
 .zoektips code { font-family: var(--font-mono); font-size: var(--t-13); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; }
@@ -830,10 +833,10 @@ details.thematermen > p.termen { color: var(--ink); }
 .mi-links .mi-wetten { display: flex; width: fit-content; margin: -12px 0 12px -12px; } /* kaartrand 20 min 12 is 8 */
 .mi-links .mi-groep-knoppen { margin-left: -12px; }
 .mi-doel { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--t-14); color: var(--ink); text-wrap: pretty; }
-.mi-kans { margin-top: 16px; padding: 16px; border: 2px solid var(--accent); border-radius: var(--r-control); display: grid; gap: 4px; }
+.mi-kans { margin-top: 16px; padding: 16px; border: 2px solid var(--accent); border-radius: var(--r-control); display: grid; gap: 0; }
 .mi-kans p { margin: 0; }
 .mi-kans-kop { font-size: var(--t-13); color: var(--ink-2); }
-.mi-kans-regel { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+.mi-kans-regel { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 12px; }
 .mi-kans-waarde { font-size: var(--t-30); font-weight: 500; letter-spacing: var(--sp-30); color: var(--ink); font-variant-numeric: tabular-nums; line-height: 36px; }
 .mi-kans-oordeel { display: inline-flex; align-items: center; gap: 8px; font-size: var(--t-14); color: var(--ink); }
 .mi-kans .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--neutraal-stip); flex: none; }
@@ -845,9 +848,9 @@ details.thematermen > p.termen { color: var(--ink); }
 @media (min-width: 1000px) { .mi-uitstoot-raster { grid-template-columns: minmax(272px, 1fr) minmax(0, 3.4fr); align-items: start; } }
 .mi-groep-knoppen { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .mi-groep-knoppen .chip { min-width: 56px; justify-content: center; }
-.mi-stat-waarde { font-size: var(--t-15); color: var(--ink-2); }
-.mi-stat-waarde b { font-size: var(--t-30); font-weight: 500; color: var(--ink); letter-spacing: var(--sp-30); margin-right: 4px; font-variant-numeric: tabular-nums; }
-.mi-stat-sub { color: var(--ink-2); margin-top: 4px; }
+.mi-stat-waarde { font-size: var(--t-15); line-height: 20px; color: var(--ink-2); }
+.mi-stat-waarde b { line-height: 32px; font-size: var(--t-30); font-weight: 500; color: var(--ink); letter-spacing: var(--sp-30); margin-right: 4px; font-variant-numeric: tabular-nums; }
+.mi-stat-sub { color: var(--ink-2); margin-top: 2px; }
 .mi-stat-sub .nw { white-space: nowrap; }
 .mi-plek { min-height: 304px; }
 @media (min-width: 700px) { .mi-plek { min-height: 384px; } }
