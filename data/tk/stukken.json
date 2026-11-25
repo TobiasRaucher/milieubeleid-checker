@@ -143,6 +143,31 @@
   ]
  },
  {
+  "id": "kst-1281994",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-25",
+  "titel": null,
+  "onderwerp": "Verslag van een schriftelijk overleg met de minister van VRO over de Monitor Werking Omgevingswet en enige andere stukken",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33118-HM",
+  "dossiers": [
+   {
+    "nummer": "33118",
+    "toevoeging": null,
+    "titel": "Omgevingsrecht"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1281994.html"
+ },
+ {
   "id": "2026D60473",
   "docId": "96f5b4ff-68dd-4c0e-82a8-27b92aa426a9",
   "bestand": "DOCX",
@@ -2785,14 +2810,20 @@
   "bestand": "DOCX",
   "soort": "Brief regering",
   "datum": "2026-11-06",
-  "titel": null,
+  "titel": "Grondstoffenvoorzieningszekerheid",
   "onderwerp": "Kabinetsinzet Europees centrum voor kritieke grondstoffen",
   "zaak": "2026Z24328",
   "ministerie": "Economische Zaken en Klimaat",
   "ondertekenaar": "H.G. Herbert",
   "functie": "minister van Economische Zaken en Klimaat",
-  "kamerstuk": null,
-  "dossiers": [],
+  "kamerstuk": "32852-432",
+  "dossiers": [
+   {
+    "nummer": 32852,
+    "toevoeging": null,
+    "titel": "Grondstoffenvoorzieningszekerheid"
+   }
+  ],
   "sectoren": [
    "circulair-vervuiling"
   ],
