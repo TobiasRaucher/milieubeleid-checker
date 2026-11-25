@@ -54,9 +54,12 @@ flowchart TD
   MAP --> MAIN
   MAIN --> SITE["MilieuRadar in de browser"]
   CBS["CBS open data: uitstoot"] --> SITE
+  TKDATA --> CTRL["controle.yml, elke werkdag:<br/>alarm en openstaand werk"]
+  CTRL --> ISS["GitHub-issue, label controle"]
+  ISS -.-> TOB
   classDef auto fill:#1f4d3a,stroke:#000,color:#fff
   classDef hand fill:#fff,stroke:#000,color:#000,stroke-dasharray:5 4
-  class CRON,ACT,TK,OB,FETCH,TKDATA,ICS,NOS,MAIN,SITE,CBS auto
+  class CRON,ACT,TK,OB,FETCH,TKDATA,ICS,NOS,MAIN,SITE,CBS,CTRL,ISS auto
   class TOB,CL,GEH,DEB,RAP,AG,REV,NAK,MAP,CFG hand
 ```
 

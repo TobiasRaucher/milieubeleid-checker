@@ -41,6 +41,7 @@ Naslag (lees bij de taak):
 | Alleen rapporten herkennen aan de inhoud van bijlagen | `python3 pipeline/fetch_tk.py --rapporten` |
 | Alleen toezeggingen | `python3 pipeline/fetch_tk.py --toezeggingen` |
 | Kandidaten: brieven bij openstaande toezeggingen | `python3 pipeline/toezeggingbrieven.py <vanaf JJJJ-MM-DD>` |
+| Openstaand werk en alarm (geen AI; zelftest met `--test`) | `python3 pipeline/controle.py <uitvoer.md>` |
 | Alleen begrotingen (Kerndocumenten) | `python3 pipeline/fetch_tk.py --begrotingen` |
 | Agendafeed `data/agenda.ics` | `python3 pipeline/maak_ics.py` |
 | Thema's in het `<noscript>`-blok van `index.html` | `node pipeline/themas_noscript.js` |
@@ -54,6 +55,8 @@ Naslag (lees bij de taak):
 
 De Action `.github/workflows/update.yml` draait op werkdagen elk uur van 8 tot 19 (gestart door cron-job.org, zie `agent_docs/elk-uur.md`; GitHub-schema 05:17 en 17:17 UTC als vangnet) `fetch_tk.py`,
 `maak_ics.py`, `themas_noscript.js` en `versie.js`, en commit `data/tk`, `data/agenda.ics` en `index.html`.
+De Action `.github/workflows/controle.yml` draait op werkdagen `controle.py` (data te oud of gekrompen, tests, openstaand werk, agenda, dode links) en werkt
+het GitHub-issue met label `controle` bij; bij een alarm wordt de run rood en stuurt GitHub een mail.
 `fetch_tk.py` heeft `pypdf` nodig (voorlopige teksten uit pdf).
 
 ## Architectuur
@@ -85,6 +88,7 @@ De Action `.github/workflows/update.yml` draait op werkdagen elk uur van 8 tot 1
 
 Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 
+0. Lees het issue: `gh issue list --label controle` (wat staat open, dode links, verlopen agenda-items).
 1. `git pull`, dan `python3 pipeline/fetch_tk.py` en `python3 pipeline/maak_ics.py`. Controleer `data/tk/meta.json` op fouten.
 2. Zoek nieuwe debatten: activiteiten met Status `Uitgevoerd` (relevante soorten) in `data/tk/activiteiten.json`
    die nog niet in `data/debatten.json` staan (koppeling op datum + soort). Sla procedurevergaderingen over.

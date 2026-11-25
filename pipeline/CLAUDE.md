@@ -125,6 +125,7 @@ Elk met het hoofddocument (memorie van toelichting of jaarverslag) met `zaak`, `
   als hele dag. De abonneerknop is weg, de feed blijft voor bestaande abonnementen.
 - `themas_noscript.js`: thema's met tellingen in het `<noscript>`-blok van `index.html`.
 - `themas_review.js`: wekelijkse review (zie `assets/CLAUDE.md`, Thema's).
+- `controle.py`: de controle in `controle.yml`; schrijft alleen het issue, niets in `data/`. Grenzen staan bovenin het script.
 - `versie.js`: zet `?v=<hash van de inhoud>` bij elk bestand uit `assets/` in `index.html`.
 
 ## Commissieverzoeken (`data/tk/verzoeken.json`, sinds 24 nov 2026)

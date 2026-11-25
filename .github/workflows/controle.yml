@@ -1,0 +1,42 @@
+name: Controle (openstaand werk en alarm)
+
+# Los van update.yml, zodat een uitval daarvan ook wordt gemeld. Geen AI.
+# Werkt één issue bij (label "controle"); bij een alarm wordt de run rood en stuurt GitHub een mail.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 13 * * 1-5"   # werkdagen; GitHub start vaak uren later
+
+concurrency:
+  group: controle
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  controle:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0       # geschiedenis voor de vergelijking met gisteren
+          filter: blob:none    # zonder alle oude bestanden
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: pypdf (voor verzoektest.py)
+        run: pip install pypdf
+      - name: Controleren
+        run: python3 pipeline/controle.py "$RUNNER_TEMP/issue.md"
+      - name: Issue bijwerken
+        if: always()
+        run: |
+          test -s "$RUNNER_TEMP/issue.md"
+          gh label create controle --color 1f4d3a --description "Automatische controle" --force
+          nr=$(gh issue list --label controle --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$nr" ]; then gh issue edit "$nr" --body-file "$RUNNER_TEMP/issue.md"
+          else gh issue create --title "Controle: openstaand werk" --label controle --body-file "$RUNNER_TEMP/issue.md"; fi
