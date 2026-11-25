@@ -164,6 +164,7 @@ ontbreekt; voetnoten in een kaartje bij het cijfer; vanaf 3 tussenkoppen een inh
   Een klik op een themalabel zet dat thema aan of uit.
 - Vergaderingen zonder samenvatting met agendapunten en/of moties klappen uit met één knop ("Toon agenda (n punten)",
   "Toon n moties", "Toon agenda en n moties"; `agendaBlok(a, id, ms)`/`agendapuntenBlok()`/`deelnemersBlok()`).
+  Toezeggingen uit het register staan tussen agendapunten en moties (25 nov 2026); is er niets anders, dan heet de knop "Toon n toezeggingen".
   Moties en amendementen die als stuk bij een agendapunt staan (meestal "Moties ingediend tijdens het debat") staan daar
   in de vorm van `motieLijst()` (`stukMotie()`); het losse blok Moties, ook in een samenvatting, toont alleen de rest (`inPunten()`).
   Moties en amendementen linken naar hun opengeklapte rij (`#moties?open=<zaak>`; `open=` werkt op elke tabel via `def.sleutel`). Stukken op

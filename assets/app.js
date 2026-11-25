@@ -2024,12 +2024,12 @@
   };
   function agendaBlok(a, id, ms = [], url = "") {
     const al = inPunten(a); ms = ms.filter((z) => !al.has(z.nummer));
-    const n = heeftAgenda(a) ? puntenVan(a).length : 0, open = samOpen.has(id), deelnemers = deelnemersBlok(a), transcript = gehoordLinks(a);
-    if (!n && !ms.length && !(deelnemers && transcript)) return "";
+    const n = heeftAgenda(a) ? puntenVan(a).length : 0, open = samOpen.has(id), deelnemers = deelnemersBlok(a), transcript = gehoordLinks(a), tz = a.Nummer ? toezeggingenVan([a.Nummer]) : [];
+    if (!n && !ms.length && !tz.length && !(deelnemers && transcript)) return "";
     const nm = `${ms.length} ${ms.length === 1 ? "motie" : "moties"}`;
-    const dicht = n && ms.length ? `Toon agenda en ${nm}` : n ? `Toon agenda (${n} ${n === 1 ? "punt" : "punten"})` : !ms.length ? "Toon deelnemers" : `Toon ${nm} (${ms.filter((z) => z.uitslag === "aangenomen").length} aangenomen)`;
-    const wat = n && ms.length ? "agenda en moties" : n ? "agenda" : ms.length ? "moties" : "deelnemers";
-    const inhoud = (n ? `<section><h4>Agendapunten</h4>${agendapuntenBlok(a)}</section>` : "") + (ms.length ? `<section><h4>Moties</h4>${motieLijst(ms)}</section>` : "");
+    const dicht = n && ms.length ? `Toon agenda en ${nm}` : n ? `Toon agenda (${n} ${n === 1 ? "punt" : "punten"})` : !ms.length ? (tz.length ? `Toon ${tz.length} ${tz.length === 1 ? "toezegging" : "toezeggingen"}` : "Toon deelnemers") : `Toon ${nm} (${ms.filter((z) => z.uitslag === "aangenomen").length} aangenomen)`;
+    const wat = n && ms.length ? "agenda en moties" : n ? "agenda" : ms.length ? "moties" : tz.length ? "toezeggingen" : "deelnemers";
+    const inhoud = (n ? `<section><h4>Agendapunten</h4>${agendapuntenBlok(a)}</section>` : "") + (tz.length ? `<section><h4>Toezeggingen</h4>${toezeggingenLijst(tz)}</section>` : "") + (ms.length ? `<section><h4>Moties</h4>${motieLijst(ms)}</section>` : "");
     return `<button type="button" class="toggle knop licht" aria-expanded="${open}" aria-controls="b-${esc(id)}"><span class="pijltje" aria-hidden="true"></span><span class="dicht">${dicht}</span><span class="opn">Verberg ${wat}</span></button>
       <div class="body-wrap"><div class="body" id="b-${esc(id)}">
         ${!inhoud ? `<div class="deelnemers">${deelnemers}</div>` : n && deelnemers ? `<div class="sam-raster"><div class="sam-hoofd">${inhoud}</div><div class="sam-zij"><section><h4>Deelnemers</h4><div class="deelnemers">${deelnemers}</div></section></div></div>` : `<div>${inhoud}</div>`}
@@ -2061,6 +2061,9 @@
     }).join("");
   }
 
+  const toezeggingenVan = (nummers) => (S.data.toezeggingen || []).filter((t) => nummers.includes(t.activiteit));
+  const toezeggingenLijst = (ts) => `<ul class="tzlijst">${ts.map((t) => `<li>${statusPill(t.status)} ${esc(t.tekst)} <span class="small muted">(${esc(t.bewindspersoon)})</span>${toezeggingBrieven(t)}</li>`).join("")}</ul><div class="small muted">Uit het toezeggingenregister van de Kamer.</div>`;
+
   function samenvattingBlok(d, url = "") {
     const s = d.samenvatting || {};
     const a = activiteitVan(d) || {};
@@ -2070,9 +2073,8 @@
     const deelnemers = deelnemersBlok(a, d);
     const standpunten = (s.partijen || []).map((p) => `<div class="party"><b>${esc(p.fractie)}</b> <span class="muted small">${esc(p.spreker)}</span><div>${esc(p.positie)}</div>${p.link ? `<a class="small" href="${esc(p.link)}" target="_blank" rel="noopener">Terugluisteren</a>` : ""}</div>`).join("")
       + ((s.kabinet || []).length ? `<div class="party"><b>Kabinet</b> <span class="muted small">${esc(d.bewindspersoon || "")}</span>${lijst(s.kabinet)}</div>` : "");
-    const officieel = (S.data.toezeggingen || []).filter((t) => [d.activiteit, ...(d.extraActiviteiten || [])].includes(t.activiteit));
-    const toezeggingen = (officieel.length
-      ? `<ul class="tzlijst">${officieel.map((t) => `<li>${statusPill(t.status)} ${esc(t.tekst)} <span class="small muted">(${esc(t.bewindspersoon)})</span>${toezeggingBrieven(t)}</li>`).join("")}</ul><div class="small muted">Uit het toezeggingenregister van de Kamer.</div>`
+    const officieel = toezeggingenVan([d.activiteit, ...(d.extraActiviteiten || [])]);
+    const toezeggingen = (officieel.length ? toezeggingenLijst(officieel)
       : (s.toezeggingen || []).length ? lijst(s.toezeggingen) : "") +
       ((s.doorgeleid || []).length ? `<div class="small muted">Doorgeleid:</div>${lijst(s.doorgeleid)}` : "");
     const id = esc(d.id), open = samOpen.has("d-" + d.id);
