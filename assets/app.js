@@ -81,7 +81,7 @@
   async function init() {
     // shortcut: alle data in één keer (17 nov 2026: ~8 MB, ~0,8 MB met gzip, zaken.json parsen ~30 ms); per pagina laden pas
     // als de data flink groeit of de eerste weergave merkbaar traag wordt (audit .impeccable/audit/, P2 "All data loads up front")
-    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken] = await Promise.all([
+    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken, gehoord] = await Promise.all([
       load("pipeline/config.json", { sectoren: {} }),
       load("data/debatten.json", { debatten: [] }),
       load("data/agenda.json", { items: [] }),
@@ -99,6 +99,7 @@
       load("data/tk/wetstukken.json", {}),
       load("data/rapporten.json", {}),
       load("data/tk/verzoeken.json", []),
+      load("data/gehoord.json", { debatten: {} }),
     ]);
     // stemmingen.json: {zaak: {datum, tijd, activiteit}} (oud formaat: {zaak: datum}); de site gebruikt drie platte tabellen
     const stemDatum = {}, stemActiviteit = {}, stemTijd = {};
@@ -106,7 +107,7 @@
       if (typeof v === "string") stemDatum[nr] = v;
       else if (v && v.datum) { stemDatum[nr] = v.datum; stemTijd[nr] = v.tijd; if (v.activiteit) stemActiviteit[nr] = v.activiteit; }
     }
-    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, stemTijd, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken };
+    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, stemTijd, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken, gehoord: gehoord.debatten };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
       $("#stamp").textContent = "";
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
@@ -114,7 +115,7 @@
     }
     S.T = window.MRThemas.maak(themas, themaMapping);
     // meest recente moment waarop data of samenvattingen zijn bijgewerkt
-    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, agenda.bijgewerkt, kerndocumenten.bijgewerkt, rapporten.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
+    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, agenda.bijgewerkt, kerndocumenten.bijgewerkt, rapporten.bijgewerkt, gehoord.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
     $("#stamp").textContent = stempels.length ? `Bijgewerkt ${fmtTijdstip(new Date(Math.max(...stempels)))}` : "Bijgewerkt onbekend";
     bindZoekveld();
     window.addEventListener("hashchange", route);
@@ -2013,6 +2014,11 @@
     return !(aps.length === 1 && !(aps[0].stukken || []).length && (aps[0].onderwerp || "").trim().toLowerCase() === (a.Onderwerp || "").trim().toLowerCase());
   }
   // uitklapbare agenda en/of moties bij een vergadering zonder samenvatting: één knop per rij
+  // transcript op gehoord.de (data/gehoord.json); een vergadering in delen heeft meer links
+  const gehoordLinks = (a) => {
+    const ids = S.data.gehoord[a.Nummer] || [];
+    return ids.length ? `<div class="links">${ids.map((g, i) => extLink(`https://gehoord.de/beraadslagingen/${g}`, `Transcript op gehoord.de${ids.length > 1 ? `, deel ${i + 1}` : ""}`)).join("")}</div>` : "";
+  };
   function agendaBlok(a, id, ms = [], url = "") {
     const al = inPunten(a); ms = ms.filter((z) => !al.has(z.nummer));
     const n = heeftAgenda(a) ? puntenVan(a).length : 0, open = samOpen.has(id), deelnemers = n ? deelnemersBlok(a) : "";
@@ -2020,7 +2026,7 @@
     const nm = `${ms.length} ${ms.length === 1 ? "motie" : "moties"}`;
     const dicht = n && ms.length ? `Toon agenda en ${nm}` : n ? `Toon agenda (${n} ${n === 1 ? "punt" : "punten"})` : `Toon ${nm} (${ms.filter((z) => z.uitslag === "aangenomen").length} aangenomen)`;
     const wat = n && ms.length ? "agenda en moties" : n ? "agenda" : "moties";
-    const inhoud = (n ? `<section><h4>Agendapunten</h4>${agendapuntenBlok(a)}</section>` : "") + (ms.length ? `<section><h4>Moties</h4>${motieLijst(ms)}</section>` : "");
+    const inhoud = gehoordLinks(a) + (n ? `<section><h4>Agendapunten</h4>${agendapuntenBlok(a)}</section>` : "") + (ms.length ? `<section><h4>Moties</h4>${motieLijst(ms)}</section>` : "");
     return `<button type="button" class="toggle knop licht" aria-expanded="${open}" aria-controls="b-${esc(id)}"><span class="pijltje" aria-hidden="true"></span><span class="dicht">${dicht}</span><span class="opn">Verberg ${wat}</span></button>
       <div class="body-wrap"><div class="body" id="b-${esc(id)}">
         ${deelnemers ? `<div class="sam-raster"><div class="sam-hoofd">${inhoud}</div><div class="sam-zij"><section><h4>Deelnemers</h4><div class="deelnemers">${deelnemers}</div></section></div></div>` : `<div>${inhoud}</div>`}
@@ -2058,7 +2064,7 @@
     return `<button type="button" class="toggle knop" aria-expanded="${open}" aria-controls="b-${id}"><span class="pijltje" aria-hidden="true"></span><span class="dicht">Toon samenvatting</span><span class="opn">Verberg samenvatting</span></button>
       <div class="body-wrap"><div class="body" id="b-${id}">
         <div class="sam-raster"><div class="sam-hoofd">
-        <div class="links">${d.video ? `<a href="${esc(d.video)}" target="_blank" rel="noopener">Terugkijken op Debat Direct</a>` : ""}${d.bron ? `<a href="${esc(d.bron)}" target="_blank" rel="noopener">Transcript</a>` : ""}</div>
+        <div class="links">${d.video ? `<a href="${esc(d.video)}" target="_blank" rel="noopener">Terugkijken op Debat Direct</a>` : ""}${d.bron ? `<a href="${esc(d.bron)}" target="_blank" rel="noopener">Transcript op gehoord.de</a>` : ""}</div>
         ${blok("Aanzet", d.aanzet ? `<p>${esc(d.aanzet)}</p>` : "")}
         ${blok("Kern", `<p>${esc(d.gist)}</p>${(s.kern || []).length ? lijst(s.kern) : ""}`)}
         ${blok("Standpunten fracties", standpunten)}

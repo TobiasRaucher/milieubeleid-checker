@@ -67,6 +67,7 @@ De Action `.github/workflows/update.yml` draait op werkdagen elk uur van 8 tot 1
 | `data/agenda.json` | Mijlpalen, consultaties, deadlines (met bron-URL) | Claude |
 | `data/kerndocumenten.json` | Handmatige kerndocumenten (reeksen met edities) | Claude |
 | `data/rapporten.json` | Beoordeling van rapportkandidaten (bijlagen bij Kamerbrieven): ja met uitgever, of nee met reden | Claude |
+| `data/gehoord.json` | Debat op gehoord.de per activiteitnummer (link in de uitgeklapte agenda) | Claude |
 | `data/themas.json` | Trefwoordregels voor thema's | Claude/Tobias |
 | `data/themas-mapping.json` | Goedgekeurde thema per item (uit de review) | review-script |
 | `data/zoeksynoniemen.json` | Synoniemen en afkortingen voor zoeken | Claude |
@@ -86,6 +87,8 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
 2. Zoek nieuwe debatten: activiteiten met Status `Uitgevoerd` (relevante soorten) in `data/tk/activiteiten.json`
    die nog niet in `data/debatten.json` staan (koppeling op datum + soort). Sla procedurevergaderingen over.
 3. Vat elk nieuw relevant debat samen volgens `agent_docs/samenvatten.md`. Staan er veel open, meld dan aan Tobias hoeveel.
+   Zet elk nieuw debat (ook van vandaag) dat niet wordt samengevat met zijn nummer op gehoord.de in `data/gehoord.json`: `search_debates` op datum, koppel op titel,
+   zaal en tijd; bij twijfel of minder dan 5 fragmenten niet.
    Beoordeel nieuwe rapportkandidaten (bijlagen met `rapport: true` die nog niet in `data/rapporten.json` staan) volgens `agent_docs/rapporten.md`.
 4. Werk `data/agenda.json` bij bij nieuwe mijlpalen, consultaties of deadlines (met bron-URL; zoek bij twijfel
    op eerstekamer.nl, internetconsultatie.nl, officielebekendmakingen.nl).
