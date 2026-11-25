@@ -171,7 +171,8 @@ ontbreekt; voetnoten in een kaartje bij het cijfer; vanaf 3 tussenkoppen een inh
 - Zaal (`zaal`, vaak leeg; plenair = "Plenaire zaal"), label Besloten, en bij openbare vergaderingen van vandaag "Live op Debat Direct".
 - Samenvattingen klappen uit ("Toon samenvatting", of een klik op de regel); bij meer activiteiten staat ze bij de hoofdactiviteit en verwijzen de
   andere ernaar. Samenvatting in twee kolommen: inhoud links, agendapunten en deelnemers rechts.
-  Toezeggingen uit het register, anders uit de samenvatting.
+  Toezeggingen uit het register, anders uit de samenvatting; eronder de brief (`toezeggingBrieven()`): uit het register (`brieven`),
+  anders uit `data/toezeggingen.json`, met "Nog niet verwerkt in het register". De status zelf komt altijd uit het register.
 - `#agenda/d-<samenvatting-id>` en `#agenda/a-<activiteitnummer>` openen die vergadering (in Terugblik als ze is geweest).
 
 ## Kerndocumenten (`#kerndocumenten/<groep>`)

@@ -711,7 +711,8 @@ def toezeggingen(start, act_nummers):
     cfg = CONFIG.get("toezeggingen", {})
     altijd = set(cfg.get("altijdMinisteries", ["Klimaat en Groene Groei"]))
     rec = odata("Toezegging", {"$filter": f"Verwijderd eq false and Aanmaakdatum ge {start}T00:00:00Z",
-                               "$orderby": "Aanmaakdatum desc"}, max_pages=100)
+                               "$orderby": "Aanmaakdatum desc",
+                               "$expand": "KamerbriefNakoming($select=DocumentNummer,Datum,Onderwerp,Verwijderd)"}, max_pages=100)
     uit = []
     for t in rec:
         if t.get("ActiviteitNummer") not in act_nummers and t.get("Ministerie") not in altijd:
@@ -724,6 +725,9 @@ def toezeggingen(start, act_nummers):
             "ministerie": t.get("Ministerie"), "bewindspersoon": naam, "functie": t.get("Functie"),
             "activiteit": t.get("ActiviteitNummer"), "datum": (t.get("Aanmaakdatum") or "")[:10],
             "nakoming": None if nak.startswith("0001") else nak[:10], "gewijzigd": (t.get("GewijzigdOp") or "")[:10],
+            # brief waarmee de toezegging volgens het register is nagekomen
+            "brieven": [{"id": b["DocumentNummer"], "datum": (b.get("Datum") or "")[:10], "onderwerp": (b.get("Onderwerp") or "").strip()}
+                        for b in t.get("KamerbriefNakoming") or [] if not b.get("Verwijderd") and b.get("DocumentNummer")],
         })
     return uit
 

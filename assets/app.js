@@ -81,7 +81,7 @@
   async function init() {
     // shortcut: alle data in één keer (17 nov 2026: ~8 MB, ~0,8 MB met gzip, zaken.json parsen ~30 ms); per pagina laden pas
     // als de data flink groeit of de eerste weergave merkbaar traag wordt (audit .impeccable/audit/, P2 "All data loads up front")
-    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken, gehoord] = await Promise.all([
+    const [config, debatten, agenda, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingenData, themaMapping, stemmingen, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken, gehoord, toezeggingBrieven] = await Promise.all([
       load("pipeline/config.json", { sectoren: {} }),
       load("data/debatten.json", { debatten: [] }),
       load("data/agenda.json", { items: [] }),
@@ -100,6 +100,7 @@
       load("data/rapporten.json", {}),
       load("data/tk/verzoeken.json", []),
       load("data/gehoord.json", { debatten: {} }),
+      load("data/toezeggingen.json", { brieven: {} }),
     ]);
     // stemmingen.json: {zaak: {datum, tijd, activiteit}} (oud formaat: {zaak: datum}); de site gebruikt drie platte tabellen
     const stemDatum = {}, stemActiviteit = {}, stemTijd = {};
@@ -107,7 +108,7 @@
       if (typeof v === "string") stemDatum[nr] = v;
       else if (v && v.datum) { stemDatum[nr] = v.datum; stemTijd[nr] = v.tijd; if (v.activiteit) stemActiviteit[nr] = v.activiteit; }
     }
-    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, stemTijd, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken, gehoord: gehoord.debatten };
+    S.data = { config, debatten: debatten.debatten, agenda: agenda.items, zaken, activiteiten, meta, stukken, synoniemen, themas, toezeggingen: toezeggingenData, stemmingen: stemDatum, stemActiviteit, stemTijd, kerndocumenten, begrotingen, wetstukken, rapporten, verzoeken, gehoord: gehoord.debatten, toezeggingBrieven: toezeggingBrieven.brieven };
     if (!zaken.length && !activiteiten.length && !debatten.debatten.length) {
       $("#stamp").textContent = "";
       $("#view").innerHTML = `<div class="card empty laadfout"><h2>De gegevens konden niet worden geladen</h2><p>Controleer je verbinding en probeer het opnieuw.</p><button type="button" class="knop" onclick="location.reload()">Opnieuw proberen</button></div>`;
@@ -115,7 +116,7 @@
     }
     S.T = window.MRThemas.maak(themas, themaMapping);
     // meest recente moment waarop data of samenvattingen zijn bijgewerkt
-    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, agenda.bijgewerkt, kerndocumenten.bijgewerkt, rapporten.bijgewerkt, gehoord.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
+    const stempels = [meta.bijgewerkt, debatten.bijgewerkt, agenda.bijgewerkt, kerndocumenten.bijgewerkt, rapporten.bijgewerkt, gehoord.bijgewerkt, toezeggingBrieven.bijgewerkt].filter(Boolean).map((t) => new Date(t)).filter((d) => !isNaN(d));
     $("#stamp").textContent = stempels.length ? `Bijgewerkt ${fmtTijdstip(new Date(Math.max(...stempels)))}` : "Bijgewerkt onbekend";
     bindZoekveld();
     window.addEventListener("hashchange", route);
@@ -2048,6 +2049,18 @@
       </div></div>`;
   }
 
+  // brieven bij een toezegging: uit het register, anders onze eigen koppeling (data/toezeggingen.json) zolang het register nog openstaand zegt
+  function toezeggingBrieven(t) {
+    const uitRegister = (t.brieven || []).length > 0;
+    const brieven = uitRegister ? t.brieven : ((S.data.toezeggingBrieven || {})[t.nummer] || []).map((id) => ({ id }));
+    return brieven.map((b) => {
+      const s = S.data.stukken.find((x) => x.id === b.id);
+      if (!s && !b.onderwerp) return "";
+      const regel = s ? docRegel(s, MRThemas.stukTitel(s)) : extLink(`https://www.tweedekamer.nl/kamerstukken/detail?id=${b.id}&did=${b.id}`, hoofd(b.onderwerp));
+      return `<div class="small">${uitRegister ? "Stuk van" : "Nog niet verwerkt in het register; brief van"} ${fmtKort((s || b).datum)}: ${regel}</div>`;
+    }).join("");
+  }
+
   function samenvattingBlok(d, url = "") {
     const s = d.samenvatting || {};
     const a = activiteitVan(d) || {};
@@ -2059,7 +2072,7 @@
       + ((s.kabinet || []).length ? `<div class="party"><b>Kabinet</b> <span class="muted small">${esc(d.bewindspersoon || "")}</span>${lijst(s.kabinet)}</div>` : "");
     const officieel = (S.data.toezeggingen || []).filter((t) => [d.activiteit, ...(d.extraActiviteiten || [])].includes(t.activiteit));
     const toezeggingen = (officieel.length
-      ? `<ul class="tzlijst">${officieel.map((t) => `<li>${statusPill(t.status)} ${esc(t.tekst)} <span class="small muted">(${esc(t.bewindspersoon)})</span></li>`).join("")}</ul><div class="small muted">Uit het toezeggingenregister van de Kamer.</div>`
+      ? `<ul class="tzlijst">${officieel.map((t) => `<li>${statusPill(t.status)} ${esc(t.tekst)} <span class="small muted">(${esc(t.bewindspersoon)})</span>${toezeggingBrieven(t)}</li>`).join("")}</ul><div class="small muted">Uit het toezeggingenregister van de Kamer.</div>`
       : (s.toezeggingen || []).length ? lijst(s.toezeggingen) : "") +
       ((s.doorgeleid || []).length ? `<div class="small muted">Doorgeleid:</div>${lijst(s.doorgeleid)}` : "");
     const id = esc(d.id), open = samOpen.has("d-" + d.id);

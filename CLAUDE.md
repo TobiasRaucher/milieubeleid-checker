@@ -40,6 +40,7 @@ Naslag (lees bij de taak):
 | Alleen teksten van moties en amendementen | `python3 pipeline/fetch_tk.py --teksten` |
 | Alleen rapporten herkennen aan de inhoud van bijlagen | `python3 pipeline/fetch_tk.py --rapporten` |
 | Alleen toezeggingen | `python3 pipeline/fetch_tk.py --toezeggingen` |
+| Kandidaten: brieven bij openstaande toezeggingen | `python3 pipeline/toezeggingbrieven.py <vanaf JJJJ-MM-DD>` |
 | Alleen begrotingen (Kerndocumenten) | `python3 pipeline/fetch_tk.py --begrotingen` |
 | Agendafeed `data/agenda.ics` | `python3 pipeline/maak_ics.py` |
 | Thema's in het `<noscript>`-blok van `index.html` | `node pipeline/themas_noscript.js` |
@@ -68,6 +69,7 @@ De Action `.github/workflows/update.yml` draait op werkdagen elk uur van 8 tot 1
 | `data/kerndocumenten.json` | Handmatige kerndocumenten (reeksen met edities) | Claude |
 | `data/rapporten.json` | Beoordeling van rapportkandidaten (bijlagen bij Kamerbrieven): ja met uitgever, of nee met reden | Claude |
 | `data/gehoord.json` | Debat op gehoord.de per activiteitnummer (link in de uitgeklapte agenda) | Claude |
+| `data/toezeggingen.json` | Brief bij een toezegging die in het register nog openstaat | Claude |
 | `data/themas.json` | Trefwoordregels voor thema's | Claude/Tobias |
 | `data/themas-mapping.json` | Goedgekeurde thema per item (uit de review) | review-script |
 | `data/zoeksynoniemen.json` | Synoniemen en afkortingen voor zoeken | Claude |
@@ -90,6 +92,9 @@ Bij "werk de checker bij" (of "werk MilieuRadar bij"):
    Zet elk nieuw debat (ook van vandaag) dat niet wordt samengevat met zijn nummer op gehoord.de in `data/gehoord.json`: `search_debates` op datum, koppel op titel,
    zaal en tijd; bij twijfel of minder dan 5 fragmenten niet.
    Beoordeel nieuwe rapportkandidaten (bijlagen met `rapport: true` die nog niet in `data/rapporten.json` staan) volgens `agent_docs/rapporten.md`.
+   Draai `python3 pipeline/toezeggingbrieven.py <datum van bijgewerkt in data/toezeggingen.json>`, lees de kandidaten en zet alleen
+   zekere koppelingen (de brief noemt de toezegging of het debat en levert precies wat is toegezegd) in `data/toezeggingen.json`;
+   een aankondiging of gedeeltelijk antwoord telt niet.
 4. Werk `data/agenda.json` bij bij nieuwe mijlpalen, consultaties of deadlines (met bron-URL; zoek bij twijfel
    op eerstekamer.nl, internetconsultatie.nl, officielebekendmakingen.nl).
    - Zet bij elke wijziging `bijgewerkt` bovenin het gewijzigde bestand (ISO, UTC, bv. `2026-11-12T15:49:00Z`).
