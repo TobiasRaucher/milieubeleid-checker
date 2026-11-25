@@ -537,6 +537,31 @@
   ]
  },
  {
+  "id": "kst-1281947",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Verslag",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Verslag van een nader schriftelijk overleg met de minister van VRO over het PBL-rapport Stresstest kwetsbare gebieden",
+  "zaak": null,
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "34682-AG",
+  "dossiers": [
+   {
+    "nummer": "34682",
+    "toevoeging": null,
+    "titel": "Nationale Omgevingsvisie"
+   }
+  ],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1281947.html"
+ },
+ {
   "id": "2026D60018",
   "docId": "276987b4-d98b-4315-9f70-171bbfa8a03c",
   "bestand": "DOCX",
