@@ -1070,7 +1070,15 @@
     "relatie": "Indiener"
    }
   ],
-  "besluiten": [],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-03",
+    "stemmen": []
+   }
+  ],
   "uitslag": "in behandeling",
   "stemtelling": null,
   "sectoren": [
@@ -1111,7 +1119,15 @@
     "relatie": "Indiener"
    }
   ],
-  "besluiten": [],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-03",
+    "stemmen": []
+   }
+  ],
   "uitslag": "in behandeling",
   "stemtelling": null,
   "sectoren": [

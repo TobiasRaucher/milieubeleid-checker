@@ -2635,6 +2635,31 @@
   ]
  },
  {
+  "Id": "b552051c-80af-4f74-9d95-75c9315eb991",
+  "Nummer": "2026A08525",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+  "Datum": "2026-12-01T14:00:00+01:00",
+  "Aanvangstijd": "2026-12-01T14:00:00+01:00",
+  "Eindtijd": "2026-12-01T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Klimaat en Groene Groei",
+  "Voortouwafkorting": "K&GG",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08525",
+  "sectoren": [
+   "klimaat-energie"
+  ]
+ },
+ {
   "Id": "01e45305-4913-4974-9adc-21688ffe164f",
   "Nummer": "2026A08292",
   "Soort": "Inbreng feitelijke vragen",
