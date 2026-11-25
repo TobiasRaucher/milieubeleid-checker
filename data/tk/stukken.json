@@ -56,6 +56,65 @@
   ]
  },
  {
+  "id": "2026D60757",
+  "docId": "07351882-e4a3-460b-bd97-61897df3668e",
+  "bestand": "DOCX",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-11-25",
+  "titel": null,
+  "onderwerp": "Het dreigende verdwijnen van plastic melkflessen en de gevolgen voor hoogwaardige recycling",
+  "zaak": "2026Z26212",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling",
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z26212&did=2026D60757",
+  "ministeries": [
+   "Klimaat en Groene Groei"
+  ],
+  "indieners": [
+   {
+    "naam": "D.J. Huidekooper",
+    "fractie": "D66",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D60763",
+  "docId": "e1f126da-2f99-45d6-af82-9af502916c7f",
+  "bestand": "DOCX",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-11-25",
+  "titel": null,
+  "onderwerp": "De Europese CO2-heffing voor huishoudens",
+  "zaak": "2026Z26221",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z26221&did=2026D60763",
+  "ministeries": [
+   "Klimaat en Groene Groei"
+  ],
+  "indieners": [
+   {
+    "naam": "A. Kops",
+    "fractie": "PVV",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D60630",
   "docId": "aa1b185d-c354-4568-b8dc-ad7d194641c5",
   "bestand": "DOCX",
@@ -6725,7 +6784,7 @@
  {
   "id": "2026D50953",
   "docId": "920fdac1-8c30-48f5-aea9-b68a72256889",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-13",
   "titel": null,
@@ -6753,7 +6812,7 @@
  {
   "id": "2026D50949",
   "docId": "aecae955-d5e7-409b-ba6d-b7a773d5ef28",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "soort": "Antwoord schriftelijke vragen",
   "datum": "2026-10-13",
   "titel": null,
