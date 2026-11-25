@@ -857,12 +857,57 @@
   }
   // Word-weergave als in Word (Tobias, 24 nov 2026): lettertype, grootte, vet, cursief, onderstreept en uitlijning uit het
   // document (docx-preview); Kamervragen genummerd, voetnoten bij de tekst, vanaf 3 tussenkoppen een inhoud in de zijbalk.
-  // shortcut: briefhoofd en voettekst niet getoond; docx-preview zet de zwevende kaders daarvan op de verkeerde plek
-  const DOCX_OPTIES = { className: "dvw", renderHeaders: false, renderFooters: false, renderAltChunks: false, ignoreLastRenderedPageBreak: true, useBase64URL: true };
-  const metTerugval = (f) => `${f.trim()}, Verdana, sans-serif`;
+  // briefhoofd en voettekst staan op hun plek in Word (Tobias, 25 nov 2026)
+  const DOCX_OPTIES = { className: "dvw", renderAltChunks: false, ignoreLastRenderedPageBreak: false, useBase64URL: true };
+  // Carlito heeft de letterbreedtes van Calibri (Google Fonts, pas bij het eerste Word-document; Tobias, 25 nov 2026)
+  const CARLITO = "https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+  let carlito;
+  const laadCarlito = () => (carlito ||= new Promise((klaar) => {
+    const l = Object.assign(document.createElement("link"), { rel: "stylesheet", href: CARLITO, onload: klaar, onerror: klaar });
+    document.head.append(l);
+  }).then(() => Promise.allSettled(["", "bold ", "italic ", "italic bold "].map((w) => document.fonts.load(`${w}16px Carlito`)))));
+  const metTerugval = (f) => `${f.trim()}, ${/calibri|aptos/i.test(f) ? "Carlito" : /cambria/i.test(f) ? "Georgia" : "Verdana"}, sans-serif`;
+  // Word rekent een regelafstand over de natuurlijke regelhoogte van het lettertype, css over de lettergrootte
+  const regelhoogte = (f) => (/^\W*(arial|times)/i.test(f) ? 1.15 : /^\W*cambria/i.test(f) ? 1.17 : 1.22);
   const VOETNOOT = /voetnoot|footnote|eindnoot|endnote/i;
   // het bestand klaarmaken voor docx-preview: dat neemt ook het Aziatische lettertype (eastAsia) over als gewoon lettertype,
   // en kent geen grafieken; die krijgen een merkteken en worden na het tekenen een svg (wordGrafiek)
+  // kop- en voettekst: paginanummers en zwevende kaders krijgen een merkteken, want docx-preview kent ze niet (kaderPlek)
+  function kopVooraf(t) {
+    const x = new DOMParser().parseFromString(t, "application/xml"), W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
+    const alle = (el, naam) => [...el.getElementsByTagNameNS(W, naam)], at = (el, naam) => el?.getAttributeNS(W, naam) || "";
+    const merk = (p, tekst) => {
+      const r = x.createElementNS(W, "w:r"), w = x.createElementNS(W, "w:t");
+      w.textContent = `@@${tekst}@@`; r.append(w);
+      const na = alle(p, "pPr")[0];
+      if (na?.parentNode === p) na.after(r); else p.prepend(r);
+    };
+    const plek = (soort, b, h, hor, ver, kx, ky) => `kader:${[soort, b, h, hor, ver, kx, ky].join(":")}`;
+    // <w:fldSimple> is een veld in één element
+    for (const f of alle(x, "fldSimple")) {
+      const code = at(f, "instr").match(/\b(PAGE|NUMPAGES|SECTIONPAGES)\b/)?.[1], w = alle(f, "t");
+      if (code && w.length) { w.forEach((y) => { y.textContent = ""; }); w[0].textContent = code === "PAGE" ? "@@blad@@" : "@@bladen@@"; }
+      if (code) f.replaceWith(...f.children);
+    }
+    for (const fr of alle(x, "framePr")) {
+      const p = fr.parentNode.parentNode;
+      if (p.localName === "p") merk(p, plek("p", at(fr, "w"), at(fr, "h"), at(fr, "hAnchor"), at(fr, "vAnchor"), at(fr, "x"), at(fr, "y")));
+    }
+    for (const tp of alle(x, "tblpPr")) {
+      const p = alle(tp.parentNode.parentNode, "p")[0];
+      if (p) merk(p, plek("t", "", "", at(tp, "horzAnchor"), at(tp, "vertAnchor"), at(tp, "tblpX"), at(tp, "tblpY")));
+      tp.remove();
+    }
+    let veld = null;
+    for (const r of alle(x, "r")) {
+      const kind = (naam) => [...r.children].find((k) => k.localName === naam); // niet dieper: een tekstvak zit ook in een run
+      const c = kind("fldChar"), tekst = kind("t"), code = kind("instrText")?.textContent.match(/\b(PAGE|NUMPAGES|SECTIONPAGES)\b/)?.[1];
+      if (c && at(c, "fldCharType") !== "separate") veld = at(c, "fldCharType") === "begin" ? {} : null;
+      else if (code && veld) veld.code = code;
+      else if (veld?.code && tekst) { tekst.textContent = veld.klaar ? "" : veld.code === "PAGE" ? "@@blad@@" : "@@bladen@@"; veld.klaar = true; }
+    }
+    return new XMLSerializer().serializeToString(x);
+  }
   async function docxVooraf(buffer) {
     const zip = await window.JSZip.loadAsync(buffer), grafieken = [];
     const lees = (pad) => zip.file(pad)?.async("string");
@@ -880,6 +925,7 @@
           return `<w:t>@@grafiek${grafieken.length - 1}@@</w:t>`;
         });
       }
+      if (/\/(header|footer)\d*\.xml$/.test(f.name) || (f.name === "word/document.xml" && t.includes("<w:framePr"))) t = kopVooraf(t);
       zip.file(f.name, t);
     }
     for (const g of grafieken) g.xml = await xml(`word/${relatie.get(g.id)}`);
@@ -932,6 +978,35 @@
     const legenda = reeksen.map((s) => `<span><svg viewBox="0 0 24 4" width="24" height="4" aria-hidden="true"><line x2="24" y1="2" y2="2" stroke="${s.kleur}" stroke-width="3"${s.streep ? ` stroke-dasharray="6 3"` : ""}/></svg>${esc(s.naam)}</span>`).join("");
     return `<span class="dv-grafiek"><svg viewBox="0 0 ${b} ${h - 28}" role="img" aria-label="Lijngrafiek: ${esc(reeksen.map((s) => s.naam).join(", "))}"><g class="raster">${raster}</g>${assen}<g class="lijnen">${lijnen}</g></svg><span class="dv-legenda">${legenda}</span></span>`;
   }
+  // paginanummers invullen en zwevende kaders van het briefhoofd zetten waar ze in Word staan (merktekens uit kopVooraf)
+  function kaderPlek(sec, blad, bladen) {
+    const c = getComputedStyle(sec), px = (tw) => `${(+tw || 0) / 15}px`;
+    for (const sp of [...sec.querySelectorAll("span")].filter((x) => !x.children.length && x.textContent.includes("@@"))) {
+      const m = sp.textContent.match(/@@kader:([^@]*)@@/);
+      sp.textContent = sp.textContent.replace("@@blad@@", blad).replace("@@bladen@@", bladen).replace(/@@kader:[^@]*@@/, "");
+      if (!m) continue;
+      const [, b, , hor, ver, x, y] = m[1].split(":");
+      const el = sp.closest("table") || sp.closest("p");
+      if (el.closest(".dv-kader")) continue;
+      // kaderalinea's met dezelfde plek horen bij elkaar: de volgende schuift in het kader van de vorige
+      const vorig = el.previousElementSibling;
+      if (vorig?.classList.contains("dv-kader") && vorig.dataset.plek === m[1]) { vorig.append(el); continue; }
+      const kader = document.createElement("div");
+      kader.className = "dv-kader"; kader.dataset.plek = m[1];
+      const links = hor === "page" ? "0px" : c.paddingLeft;
+      kader.style.left = `calc(${links} + ${px(x)})`;
+      if (b) kader.style.width = px(b);
+      if (ver === "page") kader.style.top = px(y);
+      else if (ver === "margin") kader.style.top = `calc(${c.paddingTop} + ${px(y)})`;
+      el.before(kader); kader.append(el);
+    }
+    // tekstvakken: "ten opzichte van de pagina" staat wel in de stijl, maar css kent het niet
+    for (const vak of sec.querySelectorAll("svg[style*='mso-position']")) {
+      const stijl = vak.getAttribute("style");
+      if (/horizontal-relative:page/.test(stijl)) vak.style.left = "0";
+      if (/vertical-relative:page/.test(stijl)) vak.style.top = "0";
+    }
+  }
   function docxHerstel(art, grafieken, thema) {
     for (const sp of art.querySelectorAll("span")) {
       const m = !sp.children.length && sp.textContent.match(/^@@grafiek(\d+)@@$/);
@@ -944,6 +1019,7 @@
         .replace(/\.dvw span \{(?=\s*font-family)/, ".dvw, .dvw span {")
         // "minstens 12pt" werd "100% + 12pt"
         .replace(/calc\(100% \+ ([\d.]+pt)\)/g, "max(1.2em, $1)")
+        .replace(/line-height: ([\d.]+);/g, "line-height: calc($1 * var(--lr, 1.22));")
         .replace(/font-family: ([^;}]+);/g, (_, f) => `font-family: ${metTerugval(f)};`);
     }
     for (const el of art.querySelectorAll("*")) {
@@ -954,14 +1030,26 @@
       if (el.tagName === "A" && /^(https?:|mailto:)/i.test(el.getAttribute("href") || "")) { el.target = "_blank"; el.rel = "noopener"; }
       if (el.style?.fontFamily) el.style.fontFamily = metTerugval(el.style.fontFamily);
       if (el.style?.lineHeight.includes("100% +")) el.style.lineHeight = el.style.lineHeight.replace(/calc\(100% \+ ([\d.]+pt)\)/, "max(1.2em, $1)");
+      else if (/^[\d.]+$/.test(el.style?.lineHeight)) el.style.lineHeight = `calc(${el.style.lineHeight} * var(--lr, 1.22))`;
     }
-    // regels even lang als in Word, maar zonder de brede paginamarges
-    for (const sec of art.querySelectorAll("section.dvw")) {
-      if (!sec.textContent.trim() && !sec.querySelector("img, svg")) { sec.remove(); continue; } // voorblad met alleen een briefhoofd
+    for (const p of art.querySelectorAll("p")) {
+      // een regeleinde aan het eind van een alinea is in Word een witregel, in html niet
+      let eind = p.lastChild;
+      while (eind?.lastChild) eind = eind.lastChild;
+      if (eind?.nodeName === "BR" && p.textContent.trim()) eind.after(document.createElement("br"));
+      const sp = [...p.querySelectorAll("span")].find((x) => !x.children.length && x.textContent.trim());
+      if (sp) p.style.setProperty("--lr", regelhoogte(getComputedStyle(sp).fontFamily));
+    }
+    const bladen = [...art.querySelectorAll("section.dvw")].filter((sec) => {
+      const leeg = !sec.textContent.trim() && !sec.querySelector("img, svg");
+      if (leeg) sec.remove();
+      return !leeg;
+    });
+    for (const [i, sec] of bladen.entries()) {
+      kaderPlek(sec, i + 1, bladen.length);
       const c = getComputedStyle(sec), tekst = Math.round(sec.offsetWidth - parseFloat(c.paddingLeft) - parseFloat(c.paddingRight));
-      sec.style.setProperty("--tekst", `${tekst}px`);
       // wat in Word in de brede marge hangt (inhoudsopgave), begint hier op de tekstlijn
-      for (const p of sec.querySelectorAll("article p")) {
+      for (const p of sec.querySelectorAll(":scope > article p")) {
         const k = getComputedStyle(p);
         if (parseFloat(k.textIndent) + parseFloat(k.marginInlineStart) < -24) p.style.textIndent = `${-parseFloat(k.marginInlineStart)}px`;
       }
@@ -972,7 +1060,7 @@
       }
       // figuren en tabellen breder dan de tekst: kleiner, in verhouding
       for (const img of sec.querySelectorAll("img")) if (img.offsetWidth > tekst) (img.parentElement.tagName === "DIV" ? img.parentElement : img).style.zoom = tekst / img.offsetWidth;
-      for (const t of sec.querySelectorAll("table")) if (!t.parentElement.closest("table") && t.offsetWidth > tekst) t.style.zoom = tekst / t.offsetWidth;
+      for (const t of sec.querySelectorAll(":scope > article table")) if (!t.parentElement.closest("table") && t.offsetWidth > tekst) t.style.zoom = tekst / t.offsetWidth;
     }
   }
   function wordExtra(body) {
@@ -1022,7 +1110,7 @@
     // inhoud: koppen, of alinea's die alleen vette tekst zijn (tussenkoppen in Kamerbrieven)
     const koppen = [...art.querySelectorAll("section.dvw > article p")].filter((el) => {
       const t = el.textContent.trim();
-      if (!t || el.closest("table, li") || /dvw_(inhopg|toc)\d/i.test(el.className)) return false; // vette cellen, noten en de inhoudsopgave zijn geen tussenkop
+      if (!t || el.closest("table, li, .dv-kader") || /dvw_(inhopg|toc)\d/i.test(el.className)) return false; // vette cellen, noten en de inhoudsopgave zijn geen tussenkop
       if (/dvw_(kop|heading)-?\d/i.test(el.className) || el.querySelector('[id^="_Toc"]')) return true; // _Toc: hier wijst de inhoudsopgave naar
       return t.length < 120 && /[a-z]{3}/.test(t) && tekstVan(el).every((x) => getComputedStyle(x).fontWeight >= 600);
     });
@@ -1072,6 +1160,7 @@
         if (!window.docx) await laadScript("assets/vendor/docx-preview.min.js");
         const r = await fetch(DOC_URL(doc));
         if (!r.ok) throw new Error(r.status);
+        await laadCarlito();
         const art = document.createElement("article");
         art.className = "dv-docx";
         const { bestand: klaar, grafieken, thema } = await docxVooraf(await r.arrayBuffer());

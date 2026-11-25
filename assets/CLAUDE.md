@@ -116,7 +116,8 @@ Knoppen "Bekijk het origineel", "Lees de brief", "Lees de vragen", "Lees het ant
 rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat open, een iframe niet).
 Word (sinds 24 nov 2026, `DOCX_OPTIES`, `docxVooraf()`, `wordGrafiek()`, `docxHerstel()`, `wordExtra()`): lettertype, grootte, vet, cursief, onderstreept en uitlijning
 uit het document. `docxVooraf()` haalt vóór het tekenen het eastAsia-lettertype weg (docx-preview gebruikt dat als gewoon lettertype) en
-vervangt grafieken door een merkteken; `wordGrafiek()` tekent die als svg (alleen lijngrafieken). `docxHerstel()` herstelt fouten van docx-preview (standaardstijl, regelafstand), haalt onveilige links en elementen weg
+vervangt grafieken door een merkteken; `wordGrafiek()` tekent die als svg (alleen lijngrafieken). `kopVooraf()` zet merktekens bij paginanummers en zwevende kaders (briefhoofd);
+`kaderPlek()` zet ze op hun plek. Calibri en Aptos verschijnen in Carlito (`laadCarlito()`, Google Fonts, bij het eerste Word-document). Bladen breken waar Word ze het laatst brak. `docxHerstel()` herstelt fouten van docx-preview (standaardstijl, regelafstand), haalt onveilige links en elementen weg
 en zet het blad op de tekstbreedte van Word. Geen briefhoofd en voettekst. Kamervragen zelf genummerd als de nummering in het bestand
 ontbreekt; voetnoten in een kaartje bij het cijfer; vanaf 3 tussenkoppen een inhoud links.
 
