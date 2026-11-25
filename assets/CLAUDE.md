@@ -112,10 +112,11 @@ Filters, zoekterm en volgorde staan in de URL. Regels: DESIGN.md, "Tables".
 ## Documentweergave
 
 Knoppen "Bekijk het origineel", "Lees de brief", "Lees de vragen", "Lees het antwoord" (`docKnop()`) en documentlinks in lijsten
-(`docRegel()`, sinds 24 nov 2026: bijlagen, antwoorden, uitstel, eerdere edities, stukken van een wet; met een knop Download ernaast) openen een venster (`toonDocument()`): pdf met pdf.js, Word met docx-preview en JSZip (beide in `vendor/`, pas geladen bij openen),
+(`docRegel()`, sinds 24 nov 2026: bijlagen, antwoorden, uitstel, eerdere edities, stukken van een wet; met het woord Download als link ernaast) openen een venster (`toonDocument()`): pdf met pdf.js, Word met docx-preview en JSZip (beide in `vendor/`, pas geladen bij openen),
 rechtstreeks uit het gegevensmagazijn (`Document/<docId>/resource`; CORS staat open, een iframe niet).
-Word (sinds 24 nov 2026, `DOCX_OPTIES`, `docxHerstel()`, `wordExtra()`): lettertype, grootte, vet, cursief, onderstreept en uitlijning
-uit het document. `docxHerstel()` herstelt fouten van docx-preview (standaardstijl, regelafstand), haalt onveilige links en elementen weg
+Word (sinds 24 nov 2026, `DOCX_OPTIES`, `docxVooraf()`, `wordGrafiek()`, `docxHerstel()`, `wordExtra()`): lettertype, grootte, vet, cursief, onderstreept en uitlijning
+uit het document. `docxVooraf()` haalt vóór het tekenen het eastAsia-lettertype weg (docx-preview gebruikt dat als gewoon lettertype) en
+vervangt grafieken door een merkteken; `wordGrafiek()` tekent die als svg (alleen lijngrafieken). `docxHerstel()` herstelt fouten van docx-preview (standaardstijl, regelafstand), haalt onveilige links en elementen weg
 en zet het blad op de tekstbreedte van Word. Geen briefhoofd en voettekst. Kamervragen zelf genummerd als de nummering in het bestand
 ontbreekt; voetnoten in een kaartje bij het cijfer; vanaf 3 tussenkoppen een inhoud links.
 

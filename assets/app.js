@@ -824,9 +824,9 @@
   const leesbaar = (d) => !!(d && d.docId && LEESBAAR.has(d.bestand));
   const docData = (d) => `data-doc="${esc(d.docId)}" data-bestand="${esc(d.bestand)}" data-dnr="${esc(d.id || d.document || "")}" data-titel="${esc(d.titel || "")}" data-link="${esc(d.link || "")}"`;
   const docKnop = (d, label, stijl) => (leesbaar(d) ? `<button type="button" class="doclees knop ${stijl}" ${docData(d)}>${esc(label)}</button>` : "");
-  // document in een lijst: de link opent het venster, de knop erachter slaat het bestand op; zonder leesbaar document een gewone link
+  // document in een lijst: de link opent het venster, het woord Download erachter slaat het bestand op; zonder leesbaar document een gewone link
   const docRegel = (d, label, na = "") => (leesbaar(d)
-    ? `<a class="doclees" href="${esc(d.link || DOC_URL(d.docId))}" aria-haspopup="dialog" ${docData(d)}>${esc(label)}</a>${na} <a class="knop licht klein" href="${esc(downloadUrl(d))}" target="_blank" rel="noopener" aria-label="Download ${esc(d.titel || label)}">Download</a>`
+    ? `<a class="doclees" href="${esc(d.link || DOC_URL(d.docId))}" aria-haspopup="dialog" ${docData(d)}>${esc(label)}</a>${na} <a class="download" href="${esc(downloadUrl(d))}" target="_blank" rel="noopener" aria-label="Download ${esc(d.titel || label)}">Download</a>`
     : `${extLink(d.link, label)}${na}`);
   // knoppenrij in de details: precies één bosgroene knop (stijl "" bij docKnop); zonder leesbaar document is dat de eerste link
   const mlinks = (knoppen, links, cls = "") => `<div class="mlinks${cls}">${knoppen || links.replace("<a ", `<a class="knop" `)}${knoppen ? links : ""}</div>`;
@@ -859,7 +859,82 @@
   const DOCX_OPTIES = { className: "dvw", renderHeaders: false, renderFooters: false, renderAltChunks: false, ignoreLastRenderedPageBreak: true, useBase64URL: true };
   const metTerugval = (f) => `${f.trim()}, Verdana, sans-serif`;
   const VOETNOOT = /voetnoot|footnote|eindnoot|endnote/i;
-  function docxHerstel(art) {
+  // het bestand klaarmaken voor docx-preview: dat neemt ook het Aziatische lettertype (eastAsia) over als gewoon lettertype,
+  // en kent geen grafieken; die krijgen een merkteken en worden na het tekenen een svg (wordGrafiek)
+  async function docxVooraf(buffer) {
+    const zip = await window.JSZip.loadAsync(buffer), grafieken = [];
+    const lees = (pad) => zip.file(pad)?.async("string");
+    const xml = async (pad) => { const t = await lees(pad); return t && new DOMParser().parseFromString(t, "application/xml"); };
+    const rels = await xml("word/_rels/document.xml.rels"), thema = await xml("word/theme/theme1.xml");
+    const relatie = new Map([...(rels?.querySelectorAll("Relationship") || [])].map((x) => [x.getAttribute("Id"), x.getAttribute("Target")]));
+    for (const f of zip.file(/^word\/[\w-]+\.xml$/)) {
+      let t = (await f.async("string")).replace(/<w:rFonts\b[^>]*>/g, (x) => x.replace(/ w:eastAsia(Theme)?="[^"]*"/g, ""));
+      if (f.name === "word/document.xml") {
+        t = t.replace(/<w:drawing>(?:(?!<\/w:drawing>)[\s\S])*?<\/w:drawing>/g, (x) => {
+          const id = x.match(/<c:chart\b[^>]*\br:id="([^"]+)"/)?.[1];
+          if (!id) return x;
+          const [, b, h] = x.match(/<wp:extent cx="(\d+)" cy="(\d+)"/) || [0, 5486400, 2743200];
+          grafieken.push({ id, b: b / 9525, h: h / 9525 });
+          return `<w:t>@@grafiek${grafieken.length - 1}@@</w:t>`;
+        });
+      }
+      zip.file(f.name, t);
+    }
+    for (const g of grafieken) g.xml = await xml(`word/${relatie.get(g.id)}`);
+    return { bestand: await zip.generateAsync({ type: "arraybuffer" }), grafieken, thema };
+  }
+  // lijngrafiek uit Word, met de waarden, kleuren en assen uit het bestand
+  // shortcut: alleen lijngrafieken (de enige soort in de bijlagen van nov 2026); andere soorten krijgen een zin
+  function wordGrafiek({ xml, b, h }, thema) {
+    const kind = (el, naam) => [...(el?.children || [])].find((x) => x.localName === naam);
+    const alle = (el, naam) => [...(el?.getElementsByTagNameNS("*", naam) || [])];
+    const val = (el, naam) => alle(el, naam)[0]?.getAttribute("val");
+    const lijn = alle(xml, "lineChart")[0], soorten = [...(alle(xml, "plotArea")[0]?.children || [])].filter((x) => /Chart$/.test(x.localName));
+    if (!lijn || soorten.length !== 1 || val(lijn, "grouping") !== "standard") return `<em>Deze grafiek kan hier niet worden getoond; hij staat in het bestand (Download).</em>`;
+    const punten = (el) => alle(el, "pt").map((p) => ({ i: +p.getAttribute("idx"), v: alle(p, "v")[0]?.textContent, code: p.getAttribute("formatCode") || alle(el, "formatCode")[0]?.textContent || "" }));
+    const kleur = (ln) => {
+      const k = alle(ln, "srgbClr")[0]?.getAttribute("val"), sch = alle(ln, "schemeClr")[0]?.getAttribute("val");
+      const hex = k || (sch && alle(alle(thema, sch)[0], "srgbClr")[0]?.getAttribute("val"));
+      return /^[\da-f]{6}$/i.test(hex || "") ? `#${hex}` : "currentColor";
+    };
+    const reeksen = alle(lijn, "ser").map((s) => {
+      const ln = alle(kind(s, "spPr"), "ln")[0];
+      return { naam: alle(kind(s, "tx"), "v")[0]?.textContent || "", kleur: kleur(ln), streep: /dash/i.test(val(ln, "prstDash") || ""), cat: punten(kind(s, "cat")), ps: punten(kind(s, "val")).map((p) => ({ i: p.i, y: +p.v })).filter((p) => Number.isFinite(p.y)) };
+    });
+    const ys = reeksen.flatMap((s) => s.ps.map((p) => p.y));
+    if (!ys.length) return "";
+    const datum = (n) => new Date(Date.UTC(1899, 11, 30) + n * 864e5);
+    const isDatum = (c) => /[dmy]/i.test(c.code.replace(/general|"[^"]*"/gi, "")) && Number.isFinite(+c.v);
+    const cats = new Map((reeksen.find((s) => s.cat.length)?.cat || []).map((c) => [c.i, c])), n = Math.max(...reeksen.flatMap((s) => s.ps.map((p) => p.i))) + 1;
+    const opDatum = alle(xml, "dateAx").length && [...cats.values()].every(isDatum);
+    // de as begint bij 0, zoals in Word, behalve als de waarden dicht bij elkaar liggen
+    const as = alle(xml, "valAx")[0], hoog = Math.max(...ys), laag = Math.min(...ys);
+    const ruw = (hoog - (laag > hoog * 5 / 6 ? laag : Math.min(0, laag))) / 5 || 1, tien = 10 ** Math.floor(Math.log10(ruw));
+    const stap = +(val(as, "majorUnit") || [1, 2, 5, 10].find((x) => x * tien >= ruw * 0.999) * tien);
+    const y0 = +(val(as, "min") ?? Math.floor((laag > hoog * 5 / 6 ? laag : Math.min(0, laag)) / stap) * stap), y1 = +(val(as, "max") ?? Math.ceil(hoog / stap - 1e-9) * stap);
+    const code = alle(as, "numFmt")[0]?.getAttribute("formatCode") || "", pct = code.includes("%"), dec = Math.max(0, -Math.floor(Math.log10(stap * (pct ? 100 : 1)) + 1e-9));
+    const getal = (v) => `${code.includes("€") ? "€ " : ""}${(pct ? v * 100 : v).toLocaleString("nl-NL", { minimumFractionDigits: code.includes("€") ? Math.max(2, dec) : dec, maximumFractionDigits: Math.max(2, dec) })}${pct ? "%" : ""}`;
+    const x0 = 56, x1 = b - 24, yb = h - 64, yt = 16;
+    const px = (i) => { if (!opDatum) return x0 + ((i + 0.5) / n) * (x1 - x0); const d = [...cats.values()].map((c) => +c.v), a = Math.min(...d), z = Math.max(...d); return x0 + ((+cats.get(i)?.v - a) / (z - a || 1)) * (x1 - x0); };
+    const py = (y) => yb - ((y - y0) / (y1 - y0 || 1)) * (yb - yt);
+    const raster = Array.from({ length: Math.round((y1 - y0) / stap) + 1 }, (_, k) => y0 + k * stap)
+      .map((v) => `<line x1="${x0}" x2="${x1}" y1="${py(v)}" y2="${py(v)}"/><text x="${x0 - 8}" y="${py(v) + 4}" text-anchor="end">${esc(getal(v))}</text>`).join("");
+    let vorige = -Infinity;
+    const assen = [...cats.values()].map((c) => {
+      const x = px(c.i);
+      if (x - vorige < 80) return ""; // labels die elkaar raken vallen weg
+      vorige = x;
+      return `<text x="${x}" y="${yb + 20}" text-anchor="middle">${esc(isDatum(c) ? fmtKort(datum(+c.v).toISOString().slice(0, 10)) : c.v)}</text>`;
+    }).join("");
+    const lijnen = reeksen.map((s) => `<polyline points="${s.ps.map((p) => `${px(p.i).toFixed(1)},${py(p.y).toFixed(1)}`).join(" ")}" stroke="${s.kleur}"${s.streep ? ` stroke-dasharray="8 4"` : ""}/>`).join("");
+    const legenda = reeksen.map((s) => `<span><svg viewBox="0 0 24 4" width="24" height="4" aria-hidden="true"><line x2="24" y1="2" y2="2" stroke="${s.kleur}" stroke-width="3"${s.streep ? ` stroke-dasharray="6 3"` : ""}/></svg>${esc(s.naam)}</span>`).join("");
+    return `<span class="dv-grafiek"><svg viewBox="0 0 ${b} ${h - 28}" role="img" aria-label="Lijngrafiek: ${esc(reeksen.map((s) => s.naam).join(", "))}"><g class="raster">${raster}</g>${assen}<g class="lijnen">${lijnen}</g></svg><span class="dv-legenda">${legenda}</span></span>`;
+  }
+  function docxHerstel(art, grafieken, thema) {
+    for (const sp of art.querySelectorAll("span")) {
+      const m = !sp.children.length && sp.textContent.match(/^@@grafiek(\d+)@@$/);
+      if (m && grafieken[m[1]]) sp.outerHTML = wordGrafiek(grafieken[m[1]], thema);
+    }
     for (const st of art.querySelectorAll("style")) {
       st.textContent = st.textContent
         // docx-preview geeft de standaardstijl alleen aan de alinea, niet aan de tekst erin: dan wint het lettertype van docDefaults
@@ -880,8 +955,22 @@
     }
     // regels even lang als in Word, maar zonder de brede paginamarges
     for (const sec of art.querySelectorAll("section.dvw")) {
-      const c = getComputedStyle(sec);
-      sec.style.setProperty("--tekst", `${Math.round(sec.offsetWidth - parseFloat(c.paddingLeft) - parseFloat(c.paddingRight))}px`);
+      if (!sec.textContent.trim() && !sec.querySelector("img, svg")) { sec.remove(); continue; } // voorblad met alleen een briefhoofd
+      const c = getComputedStyle(sec), tekst = Math.round(sec.offsetWidth - parseFloat(c.paddingLeft) - parseFloat(c.paddingRight));
+      sec.style.setProperty("--tekst", `${tekst}px`);
+      // wat in Word in de brede marge hangt (inhoudsopgave), begint hier op de tekstlijn
+      for (const p of sec.querySelectorAll("article p")) {
+        const k = getComputedStyle(p);
+        if (parseFloat(k.textIndent) + parseFloat(k.marginInlineStart) < -24) p.style.textIndent = `${-parseFloat(k.marginInlineStart)}px`;
+      }
+      // bijgesneden figuur: docx-preview vergroot vanuit het midden, waardoor hij naast zijn plek valt
+      for (const img of sec.querySelectorAll("img")) {
+        const [t, r, b, l] = (img.style.clipPath.match(/[\d.]+(?=%)/g) || []).map(Number);
+        if (l != null) img.style.transformOrigin = `${(l / (l + 100 - r) || 0) * 100}% ${(t / (t + 100 - b) || 0) * 100}%`;
+      }
+      // figuren en tabellen breder dan de tekst: kleiner, in verhouding
+      for (const img of sec.querySelectorAll("img")) if (img.offsetWidth > tekst) (img.parentElement.tagName === "DIV" ? img.parentElement : img).style.zoom = tekst / img.offsetWidth;
+      for (const t of sec.querySelectorAll("table")) if (!t.parentElement.closest("table") && t.offsetWidth > tekst) t.style.zoom = tekst / t.offsetWidth;
     }
   }
   function wordExtra(body) {
@@ -931,8 +1020,8 @@
     // inhoud: koppen, of alinea's die alleen vette tekst zijn (tussenkoppen in Kamerbrieven)
     const koppen = [...art.querySelectorAll("section.dvw > article p")].filter((el) => {
       const t = el.textContent.trim();
-      if (!t || el.closest("table, li")) return false; // vette cellen en noten zijn geen tussenkop
-      if (/dvw_(kop|heading)-?\d/i.test(el.className)) return true;
+      if (!t || el.closest("table, li") || /dvw_(inhopg|toc)\d/i.test(el.className)) return false; // vette cellen, noten en de inhoudsopgave zijn geen tussenkop
+      if (/dvw_(kop|heading)-?\d/i.test(el.className) || el.querySelector('[id^="_Toc"]')) return true; // _Toc: hier wijst de inhoudsopgave naar
       return t.length < 120 && /[a-z]{3}/.test(t) && tekstVan(el).every((x) => getComputedStyle(x).fontWeight >= 600);
     });
     if (koppen.length < 3) return;
@@ -983,10 +1072,11 @@
         if (!r.ok) throw new Error(r.status);
         const art = document.createElement("article");
         art.className = "dv-docx";
-        await window.docx.renderAsync(await r.arrayBuffer(), art, null, DOCX_OPTIES);
+        const { bestand: klaar, grafieken, thema } = await docxVooraf(await r.arrayBuffer());
+        await window.docx.renderAsync(klaar, art, null, DOCX_OPTIES);
         if (token !== viewerToken) return;
         body.replaceChildren(art);
-        docxHerstel(art);
+        docxHerstel(art, grafieken, thema);
         wordExtra(body);
         return;
       }
@@ -1526,9 +1616,9 @@
         <p>Zaak <span class="mono">${esc(r.zaak || "onbekend")}</span>${v ? ` · document <span class="mono">${esc(v.id)}</span> · gesteld ${fmtKort(v.datum)}` : ""}${door.length ? `, door ${opsomming(door)}` : ""}${aan.length ? `; gericht aan ${opsomming(aan.map(esc))}` : ""}</p>
         <div class="mstemming"><p class="mtelling">${r.antwoorden.length ? "Antwoord" : r.dagen > ANTWOORD_TERMIJN ? `Nog niet beantwoord, ${nl(r.dagen)} dagen na het stellen (termijn ${ANTWOORD_TERMIJN} dagen)` : `Nog niet beantwoord${r.dagen != null ? `, ${nl(r.dagen)} ${r.dagen === 1 ? "dag" : "dagen"} na het stellen` : ""}`}</p>
           ${uitstel.length + antw.length ? `<ul class="mstappen">${uitstel.join("")}${antw.join("")}</ul>` : ""}</div>
-        ${bijlagenBlok(r.antwoorden)}
         ${v ? "" : `<p class="muted">De vraag zelf is van voor het begin van deze gegevens.</p>`}
         ${mlinks(`${antwKnop}${v ? docKnop({ ...v, titel: v.onderwerp || r.titel }, "Lees de vragen", antwKnop ? "licht" : "") : ""}`, `${v ? extLink(v.link, "Vragen op tweedekamer.nl") : ""}${r.antwoorden.map((a, i) => extLink(a.link, r.antwoorden.length > 1 ? `Antwoord ${i + 1} op tweedekamer.nl` : "Antwoord op tweedekamer.nl")).join("")}`)}
+        ${bijlagenBlok(r.antwoorden)}
       </div>`;
     },
   };
@@ -1559,8 +1649,8 @@
         <p>${x.kamer ? `${esc(x.ekSoort || "Kamerstuk")} aan de Eerste Kamer · ` : ""}Document <span class="mono">${esc(x.id)}</span> · ${fmtKort(x.datum)}${x.ondertekenaar ? `, ondertekend door ${esc(x.ondertekenaar)}${x.functie ? ` (${esc(x.functie)})` : ""}` : ""}</p>
         ${ds.length ? `<div class="mstemming"><p class="mtelling">Kamerstuk</p><ul class="mstappen">${ds.map((d) => `<li><span class="mono">${esc(d.nummer)}${d.toevoeging ? "-" + esc(d.toevoeging) : ""}</span> ${esc(d.titel || "")}</li>`).join("")}</ul></div>` : ""}
         ${verz.length ? `<div class="mstemming"><p class="mtelling">Op verzoek van</p><ul class="mstappen">${verz.map((v) => `<li><span class="datum">${fmtKort(v.datum)}</span> Commissie ${esc(commissieKort(v))}: <a href="#vragen?open=${encodeURIComponent(v.id)}">${esc(window.MRThemas.verzoekTitel(v))}</a></li>`).join("")}</ul></div>` : ""}
-        ${bijlagenBlok([x])}
         ${mlinks(docKnop({ ...x, titel: x.onderwerp || x.titel }, "Lees de brief", ""), extLink(x.link, x.kamer ? "Bekijk op officielebekendmakingen.nl" : "Bekijk op tweedekamer.nl"))}
+        ${bijlagenBlok([x])}
       </div>`;
     },
   };

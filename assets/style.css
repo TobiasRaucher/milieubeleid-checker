@@ -280,7 +280,6 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .knop:hover { background: var(--accent-hover); color: var(--card); }
 .knop.licht { background: var(--page); color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
 .knop.licht:hover { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); }
-.knop.klein { min-height: 28px; padding: 0 12px; font-size: var(--t-13); vertical-align: middle; }
 .knop:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .linkknop { position: relative; background: none; border: 0; color: var(--ink-2); font: inherit; font-size: var(--t-13); text-decoration: underline; text-decoration-color: var(--line-sterk); text-underline-offset: 3px; cursor: pointer; padding: 4px; }
 .linkknop:hover { color: var(--accent); text-decoration-color: currentColor; }
@@ -518,6 +517,9 @@ tr.detail .wp-stap { background: var(--page); }
 .wtl-zaak summary .status { flex: none; }
 .wtl-detail { padding: 12px 16px 16px; }
 .mlinks { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding-top: 12px; border-top: 1px solid var(--line); }
+/* bijlagen onder de knoppenrij: de lijn staat ertussen (Tobias, 25 nov 2026) */
+.mlinks:has(+ .mstemming) { padding-top: 0; border-top: 0; }
+.mlinks + .mstemming { padding-top: 12px; border-top: 1px solid var(--line); }
 /* tekst van een motie of amendement in de uitgeklapte rij: overwegingen ink-2, het besluitende deel in inkt */
 .mt-plek { padding: 16px 20px; background: var(--page); border: 2px solid var(--accent); border-radius: var(--r-card); } /* de tekst als eigen kaart in de open rij (Tobias, 18 nov 2026) */
 .mt-tekst { display: grid; gap: 8px; font-size: var(--t-15); line-height: 24px; color: var(--ink-2); }
@@ -559,10 +561,16 @@ dialog.docview[open]::backdrop { background: rgba(14, 20, 17, 0.32); }
 .dv-docx td { padding: 0; border: 0; font-variant-numeric: normal; }
 .dv-docx .dvw-wrapper { display: grid; gap: 16px; justify-content: center; padding: 0; background: none; }
 .dv-docx .dvw-wrapper > section.dvw { margin: 0; hyphens: manual; background: #fff; box-shadow: 0 0 0 1px var(--line); border-radius: 2px; }
-.dv-docx .dvw-wrapper > section.dvw[style*="--tekst"] { box-sizing: content-box; width: var(--tekst) !important; min-height: 0 !important; padding: 40px 48px !important; }
+.dv-docx .dvw-wrapper > section.dvw[style*="--tekst"] { box-sizing: content-box; width: var(--tekst) !important; min-height: 0 !important; padding: 40px !important; }
 .dv-docx .dvw-wrapper a { color: var(--accent); text-decoration: underline; }
 .dv-docx :is(sup, sub) { line-height: 0; }
-.dv-docx img { max-width: 100%; height: auto; }
+.dv-grafiek { display: block; font-size: var(--t-12); line-height: 16px; text-indent: 0; }
+.dv-grafiek > svg { display: block; width: 100%; height: auto; }
+.dv-grafiek text { fill: currentColor; font-size: var(--t-12); }
+.dv-grafiek .raster line { stroke: var(--line); }
+.dv-grafiek polyline { fill: none; stroke-width: 3; stroke-linejoin: round; }
+.dv-legenda { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 16px; }
+.dv-legenda > span { display: inline-flex; align-items: center; gap: 8px; }
 .dv-docx p.dv-nr { counter-increment: dv-vraag; position: relative; }
 .dv-docx p.dv-nr::before { content: counter(dv-vraag) "."; position: absolute; left: -24px; }
 .dv-docx sup.dv-ref { padding: 0 2px; color: var(--accent); cursor: pointer; }
