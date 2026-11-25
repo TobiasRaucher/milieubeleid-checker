@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-12T20:59:39Z",
+ "bijgewerkt": "2026-11-25T10:00:00Z",
  "debatten": [
   {
    "id": "246687",
@@ -855,6 +855,7 @@
   },
   {
    "id": "312911",
+   "activiteit": "2026A04337",
    "datum": "2026-11-03",
    "type": "Technische briefing",
    "commissie": "Landbouw, Visserij, Voedselzekerheid en Natuur",

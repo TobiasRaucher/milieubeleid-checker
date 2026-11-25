@@ -2013,24 +2013,24 @@
     if (!aps.length) return false;
     return !(aps.length === 1 && !(aps[0].stukken || []).length && (aps[0].onderwerp || "").trim().toLowerCase() === (a.Onderwerp || "").trim().toLowerCase());
   }
-  // uitklapbare agenda en/of moties bij een vergadering zonder samenvatting: één knop per rij
+  // uitklapbare agenda en/of moties bij een vergadering zonder samenvatting: één knop per rij; is die er niet, dan de deelnemers en het transcript
   // transcript op gehoord.de (data/gehoord.json); een vergadering in delen heeft meer links
   const gehoordLinks = (a) => {
     const ids = S.data.gehoord[a.Nummer] || [];
-    return ids.length ? `<div class="links">${ids.map((g, i) => extLink(`https://gehoord.de/beraadslagingen/${g}`, `Transcript op gehoord.de${ids.length > 1 ? `, deel ${i + 1}` : ""}`)).join("")}</div>` : "";
+    return ids.map((g, i) => extLink(`https://gehoord.de/beraadslagingen/${g}`, `Transcript op gehoord.de${ids.length > 1 ? `, deel ${i + 1}` : ""}`)).join("");
   };
   function agendaBlok(a, id, ms = [], url = "") {
     const al = inPunten(a); ms = ms.filter((z) => !al.has(z.nummer));
-    const n = heeftAgenda(a) ? puntenVan(a).length : 0, open = samOpen.has(id), deelnemers = n ? deelnemersBlok(a) : "";
-    if (!n && !ms.length) return "";
+    const n = heeftAgenda(a) ? puntenVan(a).length : 0, open = samOpen.has(id), deelnemers = deelnemersBlok(a), transcript = gehoordLinks(a);
+    if (!n && !ms.length && !(deelnemers && transcript)) return "";
     const nm = `${ms.length} ${ms.length === 1 ? "motie" : "moties"}`;
-    const dicht = n && ms.length ? `Toon agenda en ${nm}` : n ? `Toon agenda (${n} ${n === 1 ? "punt" : "punten"})` : `Toon ${nm} (${ms.filter((z) => z.uitslag === "aangenomen").length} aangenomen)`;
-    const wat = n && ms.length ? "agenda en moties" : n ? "agenda" : "moties";
-    const inhoud = gehoordLinks(a) + (n ? `<section><h4>Agendapunten</h4>${agendapuntenBlok(a)}</section>` : "") + (ms.length ? `<section><h4>Moties</h4>${motieLijst(ms)}</section>` : "");
+    const dicht = n && ms.length ? `Toon agenda en ${nm}` : n ? `Toon agenda (${n} ${n === 1 ? "punt" : "punten"})` : !ms.length ? "Toon deelnemers" : `Toon ${nm} (${ms.filter((z) => z.uitslag === "aangenomen").length} aangenomen)`;
+    const wat = n && ms.length ? "agenda en moties" : n ? "agenda" : ms.length ? "moties" : "deelnemers";
+    const inhoud = (n ? `<section><h4>Agendapunten</h4>${agendapuntenBlok(a)}</section>` : "") + (ms.length ? `<section><h4>Moties</h4>${motieLijst(ms)}</section>` : "");
     return `<button type="button" class="toggle knop licht" aria-expanded="${open}" aria-controls="b-${esc(id)}"><span class="pijltje" aria-hidden="true"></span><span class="dicht">${dicht}</span><span class="opn">Verberg ${wat}</span></button>
       <div class="body-wrap"><div class="body" id="b-${esc(id)}">
-        ${deelnemers ? `<div class="sam-raster"><div class="sam-hoofd">${inhoud}</div><div class="sam-zij"><section><h4>Deelnemers</h4><div class="deelnemers">${deelnemers}</div></section></div></div>` : `<div>${inhoud}</div>`}
-        <div class="uitvoet">${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}<button type="button" class="linkknop inklap" data-inklap>${hoofd(wat)} inklappen</button></div>
+        ${!inhoud ? `<div class="deelnemers">${deelnemers}</div>` : n && deelnemers ? `<div class="sam-raster"><div class="sam-hoofd">${inhoud}</div><div class="sam-zij"><section><h4>Deelnemers</h4><div class="deelnemers">${deelnemers}</div></section></div></div>` : `<div>${inhoud}</div>`}
+        <div class="uitvoet">${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}${transcript}<button type="button" class="linkknop inklap" data-inklap>${hoofd(wat)} inklappen</button></div>
       </div></div>`;
   }
 
@@ -2064,7 +2064,7 @@
     return `<button type="button" class="toggle knop" aria-expanded="${open}" aria-controls="b-${id}"><span class="pijltje" aria-hidden="true"></span><span class="dicht">Toon samenvatting</span><span class="opn">Verberg samenvatting</span></button>
       <div class="body-wrap"><div class="body" id="b-${id}">
         <div class="sam-raster"><div class="sam-hoofd">
-        <div class="links">${d.video ? `<a href="${esc(d.video)}" target="_blank" rel="noopener">Terugkijken op Debat Direct</a>` : ""}${d.bron ? `<a href="${esc(d.bron)}" target="_blank" rel="noopener">Transcript op gehoord.de</a>` : ""}</div>
+        ${d.video ? `<div class="links"><a href="${esc(d.video)}" target="_blank" rel="noopener">Terugkijken op Debat Direct</a></div>` : ""}
         ${blok("Aanzet", d.aanzet ? `<p>${esc(d.aanzet)}</p>` : "")}
         ${blok("Kern", `<p>${esc(d.gist)}</p>${(s.kern || []).length ? lijst(s.kern) : ""}`)}
         ${blok("Standpunten fracties", standpunten)}
@@ -2076,7 +2076,7 @@
         ${blok("Deelnemers", deelnemers ? `<div class="deelnemers">${deelnemers}</div>` : "")}
         </div></div>
         <div class="peil voetregel">${d.niveau === "kort" ? "Korte samenvatting" : "Samenvatting"} · ${esc(d.samengevatDoor)} · ${fmtKort(d.samengevatOp)} · op basis van het automatische transcript</div>
-        <div class="uitvoet">${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}<button type="button" class="linkknop inklap" data-inklap>Samenvatting inklappen</button></div>
+        <div class="uitvoet">${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}${d.bron ? extLink(d.bron, "Transcript op gehoord.de") : ""}<button type="button" class="linkknop inklap" data-inklap>Samenvatting inklappen</button></div>
       </div></div>`;
   }
 
