@@ -2017,6 +2017,8 @@
   // transcript op gehoord.de (data/gehoord.json); een vergadering in delen heeft meer links
   const gehoordLinks = (a) => {
     const ids = S.data.gehoord[a.Nummer] || [];
+    // vandaag en nog geen nummer bekend: het overzicht, waar alle debatten van de dag staan (Tobias, 25 nov 2026)
+    if (!ids.length && a.Datum && dagNL(new Date(a.Datum)) === VANDAAG && !a.Besloten && !/^Inbreng/.test(a.Soort)) return extLink("https://gehoord.de/beraadslagingen", "Debatten van vandaag op gehoord.de");
     return ids.map((g, i) => extLink(`https://gehoord.de/beraadslagingen/${g}`, `Transcript op gehoord.de${ids.length > 1 ? `, deel ${i + 1}` : ""}`)).join("");
   };
   function agendaBlok(a, id, ms = [], url = "") {
