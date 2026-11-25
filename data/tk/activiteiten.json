@@ -3394,6 +3394,11 @@
     "naam": "C.A.M. van der Plas",
     "fractie": "BBB",
     "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T. ten Hove",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
    }
   ],
   "zaal": "Plenaire zaal",
@@ -4131,6 +4136,11 @@
     "naam": "C.A.M. van der Plas",
     "fractie": "BBB",
     "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T. ten Hove",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
    }
   ],
   "zaal": "Plenaire zaal",
@@ -4296,7 +4306,53 @@
    "naam": "J.M. Zwinkels",
    "fractie": "CDA"
   },
-  "deelnemers": [],
+  "deelnemers": [
+   {
+    "naam": "A.S. Müller",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.D. Heutink",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.J. van den Berg",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.S. van Oosterhout",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.G. Jumelet",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Kops",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "F.C.O. Klos",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
   "zaal": "Thorbeckezaal",
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04028",
   "sectoren": [
