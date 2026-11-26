@@ -87,7 +87,7 @@
   ],
   "document": "2026D60810",
   "docId": "5515059d-eb47-4080-8662-0fd3c7a6e4ed",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 67,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26256&did=2026D60810",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26256"
@@ -134,7 +134,7 @@
   ],
   "document": "2026D60806",
   "docId": "92de9750-d8dd-4eab-8223-2af611fa88ee",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 63,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26252&did=2026D60806",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26252"
@@ -3363,12 +3363,6 @@
     "datum": "2026-11-24",
     "stemmen": [
      {
-      "fractie": "Volt",
-      "naam": "Volt",
-      "soort": "Tegen",
-      "zetels": 1
-     },
-     {
       "fractie": "VVD",
       "naam": "VVD",
       "soort": "Voor",
@@ -3477,7 +3471,7 @@
   "uitslag": "aangenomen",
   "stemtelling": {
    "voor": 130,
-   "tegen": 20,
+   "tegen": 19,
    "datum": "2026-11-24"
   },
   "sectoren": [

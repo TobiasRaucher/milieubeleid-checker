@@ -3395,7 +3395,48 @@
    }
   ],
   "voorzitter": null,
-  "deelnemers": [],
+  "deelnemers": [
+   {
+    "naam": "R.J. van Asten",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.N.J. Nobel",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.S. Steen",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.R.F. Clemminck",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P. van Duijvenvoorde",
+    "fractie": "FVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
   "zaal": "Wttewaall van Stoetwegenzaal",
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06447",
   "sectoren": [
