@@ -2747,6 +2747,31 @@
   ]
  },
  {
+  "Id": "10c8129f-6685-41e4-8b84-3dba6a967b96",
+  "Nummer": "2026A08817",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
+  "Datum": "2026-12-01T14:00:00+01:00",
+  "Aanvangstijd": "2026-12-01T14:00:00+01:00",
+  "Eindtijd": "2026-12-01T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+  "Voortouwafkorting": "VRO",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08817",
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ]
+ },
+ {
   "Id": "93249401-37e3-4489-a614-c032f1a06a7e",
   "Nummer": "2026A07452",
   "Soort": "Plenair debat (wetgeving)",

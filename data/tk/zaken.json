@@ -1,5 +1,51 @@
 [
  {
+  "id": "3fad0a80-2f39-4581-9062-95af3447df0a",
+  "nummer": "2026Z26345",
+  "soort": "Motie",
+  "titel": "Gaswinning",
+  "onderwerp": "Gewijzigde motie van de leden Bushoff en Beckerman over onnodig vertragende factoren en overbodige bureaucratie rondom isolatiemaatregel 29 wegnemen (t.v.v. 33529-1389)",
+  "citeertitel": null,
+  "gestartOp": "2026-11-26",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Niet beschikbaar bij gewijzigde moties en/of amendementen",
+  "behandelstatus": null,
+  "dossiers": [],
+  "indieners": [
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "T.J. Bushoff",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D61028",
+  "docId": "56460887-cb44-4a67-8869-163d1cde9f4a",
+  "bestand": "DOCX",
+  "volgnummer": null,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26345&did=2026D61028",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26345"
+ },
+ {
   "id": "ac56e42b-44b4-4b4b-94de-159b442fd08e",
   "nummer": "2026Z26256",
   "soort": "Motie",
@@ -235,6 +281,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-25",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -258,7 +311,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-25",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Ontijdig",
   "behandelstatus": null,
   "dossiers": [
@@ -55570,8 +55623,8 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ter informatie",
+    "tekst": "Ter informatie; het wetsvoorstel is op 12 november 2026 aangenomen.",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -205079,8 +205132,8 @@
     "stemmen": []
    },
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Agenderen - wetgevingsoverleg",
+    "tekst": "Agenderen voor behandeling in een wetgevingsoverleg.",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
