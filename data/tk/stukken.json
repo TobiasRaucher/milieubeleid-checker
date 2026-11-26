@@ -1,5 +1,80 @@
 [
  {
+  "id": "2026D61126",
+  "docId": "66e002ae-eb46-40f1-8215-0d2c2e60c494",
+  "bestand": "DOCX",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-11-26",
+  "titel": null,
+  "onderwerp": "Het bericht 'Aanvulling op vergunningaanvraag PFAS-lozingen: verdere verlaging aangevraagde vracht'",
+  "zaak": "2026Z26383",
+  "ministerie": "Infrastructuur en Waterstaat",
+  "ondertekenaar": "V.P.G. Karremans",
+  "functie": "minister van Infrastructuur en Waterstaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z26383&did=2026D61126",
+  "ministeries": [
+   "Infrastructuur en Waterstaat"
+  ],
+  "indieners": [
+   {
+    "naam": "J.M. Zwinkels",
+    "fractie": "CDA",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "D.J. Huidekooper",
+    "fractie": "D66",
+    "relatie": "Mede ondertekenaar"
+   },
+   {
+    "naam": "L. Boelsma-Hoekstra",
+    "fractie": "CDA",
+    "relatie": "Mede ondertekenaar"
+   },
+   {
+    "naam": "M.C.A. Vellinga-Beemsterboer",
+    "fractie": "D66",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2026D61123",
+  "docId": "f2009134-8874-48d7-aecb-fd02ed8798c4",
+  "bestand": "DOCX",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-11-26",
+  "titel": null,
+  "onderwerp": "Het artikel 'Accountant dringt aan op afboekingen Tata Steel IJmuiden'",
+  "zaak": "2026Z26381",
+  "ministerie": "Economische Zaken en Klimaat",
+  "ondertekenaar": "H.G. Herbert",
+  "functie": "minister van Economische Zaken en Klimaat",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "circulair-vervuiling",
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z26381&did=2026D61123",
+  "ministeries": [
+   "Economische Zaken en Klimaat",
+   "Klimaat en Groene Groei"
+  ],
+  "indieners": [
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
   "id": "2026D60626",
   "docId": "3d0bd887-c732-49ea-ae1a-4836ab596d9c",
   "bestand": "DOCX",
