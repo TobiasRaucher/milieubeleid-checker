@@ -1,5 +1,307 @@
 [
  {
+  "id": "ac56e42b-44b4-4b4b-94de-159b442fd08e",
+  "nummer": "2026Z26256",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Jimmy Dijk over een voorstel voor een prijsplafond voor brandstofprijzen naar Duits en Belgisch voorbeeld ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-25",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIII",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "J.P. (Jimmy) Dijk",
+    "fractie": "SP",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-25",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "financien"
+  ],
+  "document": "2026D60810",
+  "docId": "5515059d-eb47-4080-8662-0fd3c7a6e4ed",
+  "bestand": "PDF",
+  "volgnummer": 67,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26256&did=2026D60810",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26256"
+ },
+ {
+  "id": "8c70a704-ff77-4b02-9c7b-7a861def5919",
+  "nummer": "2026Z26252",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Schenk over maatregelen om de verschillen in energiekosten voor de industrie ten opzichte van België, Duitsland en Frankrijk zo veel mogelijk weg te nemen",
+  "citeertitel": null,
+  "gestartOp": "2026-11-25",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIII",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M. Schenk",
+    "fractie": "FVD",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-25",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D60806",
+  "docId": "92de9750-d8dd-4eab-8223-2af611fa88ee",
+  "bestand": "PDF",
+  "volgnummer": 63,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26252&did=2026D60806",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26252"
+ },
+ {
+  "id": "a40f6a11-d291-44c8-a9e8-a18a315fcf0f",
+  "nummer": "2026Z26232",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Van der Lee c.s. over financieringsinstrumenten om projecten voor prioritaire kritieke grondstoffen te realiseren ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-25",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIII",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "T.M.T. van der Lee",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "L.A.J.M. Dassen",
+    "fractie": "Volt",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-25",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "circulair-vervuiling"
+  ],
+  "document": "2026D60786",
+  "docId": "182e0633-2222-447d-bc0e-ecc9639a95be",
+  "bestand": "PDF",
+  "volgnummer": 48,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26232&did=2026D60786",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26232"
+ },
+ {
+  "id": "ed69a349-87df-4676-9fda-bccdec7cbbbc",
+  "nummer": "2026Z26235",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027",
+  "onderwerp": "Motie van de leden Oualhadj en Klos over een maakagenda voor de Noordzee ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-25",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIII",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Economische Zaken en Klimaat (XIII) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "F.C.O. Klos",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "A. Oualhadj",
+    "fractie": "D66",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-25",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D60789",
+  "docId": "3127205c-4686-4544-8c2a-b3c531f19e9a",
+  "bestand": "PDF",
+  "volgnummer": 51,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26235&did=2026D60789",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26235"
+ },
+ {
+  "id": "7f609523-47b1-41df-b194-efb568b02996",
+  "nummer": "2026Z26168",
+  "soort": "Motie",
+  "titel": "Gaswinning",
+  "onderwerp": "Motie van het lid Vermeer over aantoonbare meerkosten van isolatie die voortvloeien uit het behoud van karakteristieke onderdelen subsidiabel maken ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-25",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 33529,
+    "toevoeging": null,
+    "titel": "Gaswinning"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "H. Vermeer",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-25",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D60666",
+  "docId": "d772db28-4457-4b43-be6c-6667ccecb168",
+  "bestand": "PDF",
+  "volgnummer": 1392,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26168&did=2026D60666",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26168"
+ },
+ {
+  "id": "97b9d10c-b59e-4c70-9418-f7793d36637b",
+  "nummer": "2026Z26164",
+  "soort": "Motie",
+  "titel": "Gaswinning",
+  "onderwerp": "Motie van de leden Bushoff en Beckerman over vertragende factoren en bureaucratie rondom isolatiemaatregel 29 wegnemen ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-25",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 33529,
+    "toevoeging": null,
+    "titel": "Gaswinning"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "T.J. Bushoff",
+    "fractie": "PRO",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-25",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "document": "2026D60661",
+  "docId": "4c12de88-a96f-4818-acd7-2ea5e2ca1476",
+  "bestand": "PDF",
+  "volgnummer": 1389,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26164&did=2026D60661",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26164"
+ },
+ {
   "id": "db3b4805-92f6-4402-91b6-2e64c66df65d",
   "nummer": "2026Z26141",
   "soort": "Motie",
