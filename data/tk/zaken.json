@@ -191,7 +191,7 @@
   ],
   "document": "2026D60786",
   "docId": "182e0633-2222-447d-bc0e-ecc9639a95be",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 48,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26232&did=2026D60786",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26232"
@@ -243,7 +243,7 @@
   ],
   "document": "2026D60789",
   "docId": "3127205c-4686-4544-8c2a-b3c531f19e9a",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 51,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26235&did=2026D60789",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26235"
@@ -297,7 +297,7 @@
   ],
   "document": "2026D60666",
   "docId": "d772db28-4457-4b43-be6c-6667ccecb168",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 1392,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26168&did=2026D60666",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26168"
@@ -349,7 +349,7 @@
   ],
   "document": "2026D60661",
   "docId": "4c12de88-a96f-4818-acd7-2ea5e2ca1476",
-  "bestand": "DOCX",
+  "bestand": "PDF",
   "volgnummer": 1389,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26164&did=2026D60661",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26164"
@@ -62525,6 +62525,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
+   },
+   {
     "soort": "Stemmen - aangehouden",
     "tekst": "Aangehouden.",
     "stemmingssoort": null,
@@ -106073,6 +106080,13 @@
     "stemmen": []
    },
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
+   },
+   {
     "soort": "Stemmen - aangehouden",
     "tekst": "Aangehouden.",
     "stemmingssoort": null,
@@ -121120,6 +121134,13 @@
     "tekst": "Aangehouden.",
     "stemmingssoort": null,
     "datum": "2026-09-01",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
     "stemmen": []
    }
   ],

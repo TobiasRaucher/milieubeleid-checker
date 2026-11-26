@@ -2194,279 +2194,25 @@
   ]
  },
  {
-  "Id": "add133ad-6f6d-40cd-b37d-05bb2d80697c",
+  "Id": "4460429b-7f69-4bd9-a5d7-6d5e220fa88d",
   "Nummer": "2025A05314",
   "Soort": "Commissiedebat",
-  "Onderwerp": "Klimaat en voedsel",
+  "Onderwerp": "Klimaat en voedsel TOT NADER ORDER UITGESTELD",
   "Datum": "2026-12-03T10:00:00+01:00",
   "Aanvangstijd": "2026-12-03T10:00:00+01:00",
   "Eindtijd": "2026-12-03T14:00:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Verplaatst",
   "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
   "Voortouwafkorting": "LVVN",
   "Besloten": false,
   "Noot": "SPREEKTIJD EERSTE TERMIJN 4 MINUTEN",
   "SoortWeergave": "Commissiedebat",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "Uitvoering van de gewijzigde motie van de leden Podt en Vedder over ketenafspraken om de afzet van eiwitgewassen te garanderen en het verdienmodel te versterken (Kamerstuk 30252-203)",
-    "stukken": [
-     {
-      "kamerstuk": "30252-205",
-      "soort": "Brief regering",
-      "datum": "2025-05-12",
-      "onderwerp": "Uitvoering van de gewijzigde motie van de leden Podt en Vedder over ketenafspraken om de afzet van eiwitgewassen te garanderen en het verdienmodel te versterken (Kamerstuk 30252-203)",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z09027&did=2025D20738"
-     }
-    ]
-   },
-   {
-    "volgorde": 2,
-    "onderwerp": "Biologische Landbouw juli 2025",
-    "stukken": [
-     {
-      "kamerstuk": "29842-46",
-      "soort": "Brief regering",
-      "datum": "2025-07-07",
-      "onderwerp": "Biologische Landbouw juli 2025",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14382&did=2025D32855"
-     }
-    ]
-   },
-   {
-    "volgorde": 3,
-    "onderwerp": "Reactie op rapporten Wetenschappelijke Klimaatraad en Nationaal Klimaatplatform",
-    "stukken": [
-     {
-      "kamerstuk": "32813-1528",
-      "soort": "Brief regering",
-      "datum": "2025-07-11",
-      "onderwerp": "Reactie op rapporten Wetenschappelijke Klimaatraad en Nationaal Klimaatplatform",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14600&did=2025D33453"
-     }
-    ]
-   },
-   {
-    "volgorde": 4,
-    "onderwerp": "Evaluatie Duurzaam Voedselbeleid 2022-2025",
-    "stukken": [
-     {
-      "kamerstuk": "31532-298",
-      "soort": "Brief regering",
-      "datum": "2025-09-01",
-      "onderwerp": "Evaluatie Duurzaam Voedselbeleid 2022-2025",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z15684&did=2025D36235"
-     }
-    ]
-   },
-   {
-    "volgorde": 5,
-    "onderwerp": "Voedselverspilling in Nederland - Stand van zaken en nieuwe cijfers Monitor Voedselverspilling Update 2009-2023",
-    "stukken": [
-     {
-      "kamerstuk": "31532-299",
-      "soort": "Brief regering",
-      "datum": "2025-09-04",
-      "onderwerp": "Voedselverspilling in Nederland - Stand van zaken en nieuwe cijfers Monitor Voedselverspilling Update 2009-2023",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16020&did=2025D37021"
-     }
-    ]
-   },
-   {
-    "volgorde": 6,
-    "onderwerp": "Skal-tarieven voor importcontroles",
-    "stukken": [
-     {
-      "kamerstuk": "30252-208",
-      "soort": "Brief regering",
-      "datum": "2025-09-22",
-      "onderwerp": "Skal-tarieven voor importcontroles",
-      "ondertekenaar": "J.F. Rummenie",
-      "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z17494&did=2025D40787"
-     }
-    ]
-   },
-   {
-    "volgorde": 7,
-    "onderwerp": "Verzamelbrief transparantie voedsel",
-    "stukken": [
-     {
-      "kamerstuk": "31532-300",
-      "soort": "Brief regering",
-      "datum": "2025-09-30",
-      "onderwerp": "Verzamelbrief transparantie voedsel",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18131&did=2025D42378"
-     }
-    ]
-   },
-   {
-    "volgorde": 8,
-    "onderwerp": "Teelt en afzet eiwitrijke gewassen en vervolg Bean Deal",
-    "stukken": [
-     {
-      "kamerstuk": "30252-211",
-      "soort": "Brief regering",
-      "datum": "2025-10-02",
-      "onderwerp": "Teelt en afzet eiwitrijke gewassen en vervolg Bean Deal",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18610&did=2025D43241"
-     }
-    ]
-   },
-   {
-    "volgorde": 9,
-    "onderwerp": "Belemmeringen in regelingen voor biologische landbouw",
-    "stukken": [
-     {
-      "kamerstuk": "29842-47",
-      "soort": "Brief regering",
-      "datum": "2025-12-10",
-      "onderwerp": "Belemmeringen in regelingen voor biologische landbouw",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z21704&did=2025D51353"
-     }
-    ]
-   },
-   {
-    "volgorde": 10,
-    "onderwerp": "Reactie signalering WKR 'bossen en bodems in zwaar weer'",
-    "stukken": [
-     {
-      "kamerstuk": "33576-475",
-      "soort": "Brief regering",
-      "datum": "2026-02-13",
-      "onderwerp": "Reactie signalering WKR 'bossen en bodems in zwaar weer'",
-      "ondertekenaar": "F.M. Wiersma",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z03302&did=2026D07337"
-     }
-    ]
-   },
-   {
-    "volgorde": 11,
-    "onderwerp": "Voedselverspilling bij Consumenten Thuis in 2025",
-    "stukken": [
-     {
-      "kamerstuk": "31532-307",
-      "soort": "Brief regering",
-      "datum": "2026-06-09",
-      "onderwerp": "Voedselverspilling bij Consumenten Thuis in 2025",
-      "ondertekenaar": "S.P.A. Erkens",
-      "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z12360&did=2026D28077"
-     }
-    ]
-   },
-   {
-    "volgorde": 12,
-    "onderwerp": "Voornemen ophoging Subsidieregeling Emissieloos Landbouwmaterieel",
-    "stukken": [
-     {
-      "kamerstuk": "30252-216",
-      "soort": "Brief regering",
-      "datum": "2026-06-17",
-      "onderwerp": "Voornemen ophoging Subsidieregeling Emissieloos Landbouwmaterieel",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z13317&did=2026D30140"
-     }
-    ]
-   },
-   {
-    "volgorde": 13,
-    "onderwerp": "Subsidie voor Keurmerkenwijzer Milieu Centraal",
-    "stukken": [
-     {
-      "kamerstuk": "31532-309",
-      "soort": "Brief regering",
-      "datum": "2026-07-02",
-      "onderwerp": "Subsidie voor Keurmerkenwijzer Milieu Centraal",
-      "ondertekenaar": "S.P.A. Erkens",
-      "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15368&did=2026D34527"
-     }
-    ]
-   },
-   {
-    "volgorde": 14,
-    "onderwerp": "Stand van zaken uitvoering van het Actieplan biologische landbouw",
-    "stukken": [
-     {
-      "kamerstuk": "29842-48",
-      "soort": "Brief regering",
-      "datum": "2026-07-06",
-      "onderwerp": "Stand van zaken uitvoering van het Actieplan biologische landbouw",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15816&did=2026D35546"
-     }
-    ]
-   },
-   {
-    "volgorde": 15,
-    "onderwerp": "Stand van zaken klimaatopgave landbouw en landgebruik",
-    "stukken": [
-     {
-      "kamerstuk": "28625-386",
-      "soort": "Brief regering",
-      "datum": "2026-09-14",
-      "onderwerp": "Stand van zaken klimaatopgave landbouw en landgebruik",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18802&did=2026D43245"
-     }
-    ]
-   },
-   {
-    "volgorde": 16,
-    "onderwerp": "Nationale Biogrondstoffenstrategie (BGS)",
-    "stukken": [
-     {
-      "kamerstuk": "32813-1588",
-      "soort": "Brief regering",
-      "datum": "2026-10-16",
-      "onderwerp": "Nationale Biogrondstoffenstrategie (BGS)",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22557&did=2026D51839"
-     }
-    ]
-   }
-  ],
-  "bewindspersonen": [
-   {
-    "naam": "J. van Essen",
-    "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur"
-   },
-   {
-    "naam": "S.P.A. Erkens",
-    "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur"
-   },
-   {
-    "naam": "S. van Veldhoven-van der Meer",
-    "functie": "minister van Klimaat en Groene Groei"
-   }
-  ],
+  "agendapunten": [],
+  "bewindspersonen": [],
   "voorzitter": null,
   "deelnemers": [],
-  "zaal": "Groen van Prinstererzaal",
+  "zaal": null,
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2025A05314",
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -2498,7 +2244,7 @@
   ]
  },
  {
-  "Id": "84f92bdd-b66e-4806-a37b-b0815b42d41c",
+  "Id": "50e1d252-5a1f-4a26-b930-01c179ca9d99",
   "Nummer": "2026A06511",
   "Soort": "Commissiedebat",
   "Onderwerp": "Mestbeleid  TOT NADER ORDER UITGESTELD",
@@ -2506,68 +2252,17 @@
   "Aanvangstijd": "2026-12-02T14:00:00+01:00",
   "Eindtijd": "2026-12-02T18:00:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Verplaatst",
   "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
   "Voortouwafkorting": "LVVN",
   "Besloten": false,
   "Noot": "SPREEKTIJD EERSTE TERMIJN 5 MINUTEN",
   "SoortWeergave": "Commissiedebat",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "Publicatie CBS Monitor fosfaat- en stikstofexcretie in dierlijke mest tweede kwartaal 2026",
-    "stukken": [
-     {
-      "kamerstuk": "33037-649",
-      "soort": "Brief regering",
-      "datum": "2026-08-25",
-      "onderwerp": "Publicatie CBS Monitor fosfaat- en stikstofexcretie in dierlijke mest tweede kwartaal 2026",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17244&did=2026D39249"
-     }
-    ]
-   },
-   {
-    "volgorde": 2,
-    "onderwerp": "Diverse onderwerpen mestbeleid",
-    "stukken": [
-     {
-      "kamerstuk": "33037-648",
-      "soort": "Brief regering",
-      "datum": "2026-07-06",
-      "onderwerp": "Diverse onderwerpen mestbeleid",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15884&did=2026D35752"
-     }
-    ]
-   },
-   {
-    "volgorde": 3,
-    "onderwerp": "Rapportage Nederlands mestbeleid 2025",
-    "stukken": [
-     {
-      "kamerstuk": "33037-647",
-      "soort": "Brief regering",
-      "datum": "2026-06-29",
-      "onderwerp": "Rapportage Nederlands mestbeleid 2025",
-      "ondertekenaar": "J. van Essen",
-      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z14954&did=2026D33586"
-     }
-    ]
-   }
-  ],
-  "bewindspersonen": [
-   {
-    "naam": "J. van Essen",
-    "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur"
-   }
-  ],
+  "agendapunten": [],
+  "bewindspersonen": [],
   "voorzitter": null,
   "deelnemers": [],
-  "zaal": "Groen van Prinstererzaal",
+  "zaal": null,
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06511",
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -58260,6 +57955,285 @@
   ]
  },
  {
+  "Id": "add133ad-6f6d-40cd-b37d-05bb2d80697c",
+  "Nummer": "2026A08820",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Klimaat en voedsel TOT NADER ORDER UITGESTELD",
+  "Datum": null,
+  "Aanvangstijd": null,
+  "Eindtijd": null,
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "Voortouwafkorting": "LVVN",
+  "Besloten": false,
+  "Noot": "SPREEKTIJD EERSTE TERMIJN 4 MINUTEN",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Uitvoering van de gewijzigde motie van de leden Podt en Vedder over ketenafspraken om de afzet van eiwitgewassen te garanderen en het verdienmodel te versterken (Kamerstuk 30252-203)",
+    "stukken": [
+     {
+      "kamerstuk": "30252-205",
+      "soort": "Brief regering",
+      "datum": "2025-05-12",
+      "onderwerp": "Uitvoering van de gewijzigde motie van de leden Podt en Vedder over ketenafspraken om de afzet van eiwitgewassen te garanderen en het verdienmodel te versterken (Kamerstuk 30252-203)",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z09027&did=2025D20738"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Biologische Landbouw juli 2025",
+    "stukken": [
+     {
+      "kamerstuk": "29842-46",
+      "soort": "Brief regering",
+      "datum": "2025-07-07",
+      "onderwerp": "Biologische Landbouw juli 2025",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14382&did=2025D32855"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Reactie op rapporten Wetenschappelijke Klimaatraad en Nationaal Klimaatplatform",
+    "stukken": [
+     {
+      "kamerstuk": "32813-1528",
+      "soort": "Brief regering",
+      "datum": "2025-07-11",
+      "onderwerp": "Reactie op rapporten Wetenschappelijke Klimaatraad en Nationaal Klimaatplatform",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z14600&did=2025D33453"
+     }
+    ]
+   },
+   {
+    "volgorde": 4,
+    "onderwerp": "Evaluatie Duurzaam Voedselbeleid 2022-2025",
+    "stukken": [
+     {
+      "kamerstuk": "31532-298",
+      "soort": "Brief regering",
+      "datum": "2025-09-01",
+      "onderwerp": "Evaluatie Duurzaam Voedselbeleid 2022-2025",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z15684&did=2025D36235"
+     }
+    ]
+   },
+   {
+    "volgorde": 5,
+    "onderwerp": "Voedselverspilling in Nederland - Stand van zaken en nieuwe cijfers Monitor Voedselverspilling Update 2009-2023",
+    "stukken": [
+     {
+      "kamerstuk": "31532-299",
+      "soort": "Brief regering",
+      "datum": "2025-09-04",
+      "onderwerp": "Voedselverspilling in Nederland - Stand van zaken en nieuwe cijfers Monitor Voedselverspilling Update 2009-2023",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z16020&did=2025D37021"
+     }
+    ]
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Skal-tarieven voor importcontroles",
+    "stukken": [
+     {
+      "kamerstuk": "30252-208",
+      "soort": "Brief regering",
+      "datum": "2025-09-22",
+      "onderwerp": "Skal-tarieven voor importcontroles",
+      "ondertekenaar": "J.F. Rummenie",
+      "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z17494&did=2025D40787"
+     }
+    ]
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Verzamelbrief transparantie voedsel",
+    "stukken": [
+     {
+      "kamerstuk": "31532-300",
+      "soort": "Brief regering",
+      "datum": "2025-09-30",
+      "onderwerp": "Verzamelbrief transparantie voedsel",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18131&did=2025D42378"
+     }
+    ]
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Teelt en afzet eiwitrijke gewassen en vervolg Bean Deal",
+    "stukken": [
+     {
+      "kamerstuk": "30252-211",
+      "soort": "Brief regering",
+      "datum": "2025-10-02",
+      "onderwerp": "Teelt en afzet eiwitrijke gewassen en vervolg Bean Deal",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z18610&did=2025D43241"
+     }
+    ]
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Belemmeringen in regelingen voor biologische landbouw",
+    "stukken": [
+     {
+      "kamerstuk": "29842-47",
+      "soort": "Brief regering",
+      "datum": "2025-12-10",
+      "onderwerp": "Belemmeringen in regelingen voor biologische landbouw",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2025Z21704&did=2025D51353"
+     }
+    ]
+   },
+   {
+    "volgorde": 10,
+    "onderwerp": "Reactie signalering WKR 'bossen en bodems in zwaar weer'",
+    "stukken": [
+     {
+      "kamerstuk": "33576-475",
+      "soort": "Brief regering",
+      "datum": "2026-02-13",
+      "onderwerp": "Reactie signalering WKR 'bossen en bodems in zwaar weer'",
+      "ondertekenaar": "F.M. Wiersma",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z03302&did=2026D07337"
+     }
+    ]
+   },
+   {
+    "volgorde": 11,
+    "onderwerp": "Voedselverspilling bij Consumenten Thuis in 2025",
+    "stukken": [
+     {
+      "kamerstuk": "31532-307",
+      "soort": "Brief regering",
+      "datum": "2026-06-09",
+      "onderwerp": "Voedselverspilling bij Consumenten Thuis in 2025",
+      "ondertekenaar": "S.P.A. Erkens",
+      "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z12360&did=2026D28077"
+     }
+    ]
+   },
+   {
+    "volgorde": 12,
+    "onderwerp": "Voornemen ophoging Subsidieregeling Emissieloos Landbouwmaterieel",
+    "stukken": [
+     {
+      "kamerstuk": "30252-216",
+      "soort": "Brief regering",
+      "datum": "2026-06-17",
+      "onderwerp": "Voornemen ophoging Subsidieregeling Emissieloos Landbouwmaterieel",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z13317&did=2026D30140"
+     }
+    ]
+   },
+   {
+    "volgorde": 13,
+    "onderwerp": "Subsidie voor Keurmerkenwijzer Milieu Centraal",
+    "stukken": [
+     {
+      "kamerstuk": "31532-309",
+      "soort": "Brief regering",
+      "datum": "2026-07-02",
+      "onderwerp": "Subsidie voor Keurmerkenwijzer Milieu Centraal",
+      "ondertekenaar": "S.P.A. Erkens",
+      "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15368&did=2026D34527"
+     }
+    ]
+   },
+   {
+    "volgorde": 14,
+    "onderwerp": "Stand van zaken uitvoering van het Actieplan biologische landbouw",
+    "stukken": [
+     {
+      "kamerstuk": "29842-48",
+      "soort": "Brief regering",
+      "datum": "2026-07-06",
+      "onderwerp": "Stand van zaken uitvoering van het Actieplan biologische landbouw",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15816&did=2026D35546"
+     }
+    ]
+   },
+   {
+    "volgorde": 15,
+    "onderwerp": "Stand van zaken klimaatopgave landbouw en landgebruik",
+    "stukken": [
+     {
+      "kamerstuk": "28625-386",
+      "soort": "Brief regering",
+      "datum": "2026-09-14",
+      "onderwerp": "Stand van zaken klimaatopgave landbouw en landgebruik",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z18802&did=2026D43245"
+     }
+    ]
+   },
+   {
+    "volgorde": 16,
+    "onderwerp": "Nationale Biogrondstoffenstrategie (BGS)",
+    "stukken": [
+     {
+      "kamerstuk": "32813-1588",
+      "soort": "Brief regering",
+      "datum": "2026-10-16",
+      "onderwerp": "Nationale Biogrondstoffenstrategie (BGS)",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z22557&did=2026D51839"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "J. van Essen",
+    "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur"
+   },
+   {
+    "naam": "S.P.A. Erkens",
+    "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur"
+   },
+   {
+    "naam": "S. van Veldhoven-van der Meer",
+    "functie": "minister van Klimaat en Groene Groei"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08820",
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ]
+ },
+ {
   "Id": "16f77c33-3f35-4ce8-8491-3c00dbd1f099",
   "Nummer": "2026A05650",
   "Soort": "Commissiedebat",
@@ -58513,6 +58487,82 @@
   "deelnemers": [],
   "zaal": null,
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08543",
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ]
+ },
+ {
+  "Id": "84f92bdd-b66e-4806-a37b-b0815b42d41c",
+  "Nummer": "2026A08818",
+  "Soort": "Commissiedebat",
+  "Onderwerp": "Mestbeleid  TOT NADER ORDER UITGESTELD",
+  "Datum": null,
+  "Aanvangstijd": null,
+  "Eindtijd": null,
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "Voortouwafkorting": "LVVN",
+  "Besloten": false,
+  "Noot": "SPREEKTIJD EERSTE TERMIJN 5 MINUTEN",
+  "SoortWeergave": "Commissiedebat",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Publicatie CBS Monitor fosfaat- en stikstofexcretie in dierlijke mest tweede kwartaal 2026",
+    "stukken": [
+     {
+      "kamerstuk": "33037-649",
+      "soort": "Brief regering",
+      "datum": "2026-08-25",
+      "onderwerp": "Publicatie CBS Monitor fosfaat- en stikstofexcretie in dierlijke mest tweede kwartaal 2026",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17244&did=2026D39249"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "Diverse onderwerpen mestbeleid",
+    "stukken": [
+     {
+      "kamerstuk": "33037-648",
+      "soort": "Brief regering",
+      "datum": "2026-07-06",
+      "onderwerp": "Diverse onderwerpen mestbeleid",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15884&did=2026D35752"
+     }
+    ]
+   },
+   {
+    "volgorde": 3,
+    "onderwerp": "Rapportage Nederlands mestbeleid 2025",
+    "stukken": [
+     {
+      "kamerstuk": "33037-647",
+      "soort": "Brief regering",
+      "datum": "2026-06-29",
+      "onderwerp": "Rapportage Nederlands mestbeleid 2025",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z14954&did=2026D33586"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "J. van Essen",
+    "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08818",
   "sectoren": [
    "natuur-stikstof-landbouw"
   ]
