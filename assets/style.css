@@ -315,6 +315,8 @@ button.tchip[aria-pressed="true"] { background: var(--accent); border-color: var
 .kopbalk > .kop > :last-child { margin-bottom: 0; }
 .kopbalk > .werkbalk { flex: 0 0 auto; max-width: 100%; margin: 24px 0 0 auto; }
 .kopbalk > .werkbalk input[type=search] { width: 440px; } /* anders telt de werkbalk het zoekveld te smal en breekt hij binnen zichzelf af */
+.kopbalk > .werkbalk:has(> .schakelaar.klein) { flex-basis: 100%; flex-wrap: nowrap; } /* themapagina: zoekveld naast de onderdelen, in de breedte die overblijft (Tobias, 26 nov 2026) */
+.kopbalk > .werkbalk:has(> .schakelaar.klein) input[type=search] { width: auto; flex: 1 1 0; min-width: 160px; max-width: 440px; }
 .kopbalk > .actieve-filters { flex-basis: 100%; margin-top: 12px; }
 .kopbalk + .tablewrap { margin-top: 16px; }
 .facetten:empty { display: none; }
