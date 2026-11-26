@@ -147,7 +147,7 @@
         id: "debat:" + d.id, cat: "debatten", soort: d.type || "Debat", datum: d.datum, sectoren: d.sector ? [d.sector] : [],
         titel: d.titel, kern: j([d.gist, d.aanzet]),
         tekst: j([...(s.partijen || []).map((p) => p.positie), ...(s.kabinet || []), ...(s.toezeggingen || []), ...(s.kern || []), s.moties,
-          ...(s.vervolg || []), ...(a.agendapunten || []).map((ap) => ap.onderwerp), d.commissie, a.Voortouwnaam]),
+          ...(s.vervolg || []), ...(a.agendapunten || []).map((ap) => ap.onderwerp), d.commissie, a.Voortouwnaam, d.activiteit, ...(d.extraActiviteiten || [])]),
         personen: j([...(s.partijen || []).map((p) => `${p.fractie} ${p.spreker}`), d.bewindspersoon, ...(d.deskundigen || []).map((x) => `${x.naam} ${x.organisatie || ""}`),
           ...(a.bewindspersonen || []).map((b) => b.naam)]),
         wie: wieVan([...(s.partijen || []).map((p) => p.spreker), d.bewindspersoon, ...(a.bewindspersonen || []).map((b) => b.naam)], (s.partijen || []).map((p) => p.fractie)),

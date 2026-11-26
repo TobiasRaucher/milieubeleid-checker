@@ -1457,8 +1457,9 @@
     const K = kdData(), groepen = new Set(K.groepen.filter((g) => g.pagina === "wetgeving").map((g) => g.id));
     return {
       tab: "wetgeving/wetten", eenheid: "wetten", knopLabel: "Details", gedeeld: ["thema"],
-      rijen: () => K.reeksen.filter((d) => groepen.has(d.groep)),
-      datum: (d) => d.datum, sleutel: (d) => d.id,
+      // op alfabet (Tobias, 26 nov 2026): zonder datum laat tabelVolgorde deze volgorde staan
+      rijen: () => K.reeksen.filter((d) => groepen.has(d.groep)).sort((a, b) => a.titel.localeCompare(b.titel, "nl")),
+      datum: () => "", sleutel: (d) => d.id,
       zoektekst: (d) => [d.titel, d.afkorting, d.kenmerk, d.uitgever].filter(Boolean).join(" "),
       filters: { thema: themaFilter(K.themasVan) },
       kolommen: [

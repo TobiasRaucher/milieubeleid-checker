@@ -43,6 +43,8 @@ const TESTS = [
   ["energieën", "energie", 10],
   ["co₂-opslag", "co2-opslag", 3],
   ["36169", "klimaatwet", 2],
+  // vergadernummer van een samengevat debat (Tobias, 26 nov 2026)
+  ["2026A06066", "ets-herziening", 1],
   // de technische briefing "Natura 2000-gebied Hollandse kust" is op 17 nov 2026 geannuleerd (en dus niet meer in de index)
   ["vogelrichtlijn hollandse kust", "hollandse kust", 3],
   // alleen in de tekst van de motie: "Natura 2000" staat niet in het onderwerp

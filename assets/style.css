@@ -122,11 +122,11 @@ header.top { position: sticky; top: 0; z-index: 5; background: var(--accent); co
 @keyframes kop-schaduw { from { box-shadow: none; } to { box-shadow: var(--schaduw-2); } }
 header.top { animation: kop-schaduw linear both; animation-timeline: scroll(root); animation-range: 0 8px; }
 :is(.merk, nav.tabs > a, .tab-knop):focus-visible { outline-color: var(--card); }
-header.top .wrap { display: flex; align-items: baseline; align-content: center; flex-wrap: wrap; gap: 8px 20px; min-height: 90px; /* twee keer het woordmerk van 45 (Tobias, 25 nov 2026) */ }
+header.top .wrap { display: flex; align-items: center; align-content: center; flex-wrap: wrap; gap: 8px 20px; min-height: 64px; /* twee keer de zichtbare hoogte van "milieuradar" (l tot basislijn 32; Tobias, 26 nov 2026); alles op het midden */ }
 .merk { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); border-radius: var(--r-control); }
 .merk:hover { color: var(--ink); }
 .merk .logo { width: 48px; height: 48px; flex: none; }
-.woordmerk { align-self: baseline; margin-top: 2px; font-size: var(--t-45); font-weight: 600; letter-spacing: var(--sp-45); line-height: 1; color: var(--card); }
+.woordmerk { margin-top: 2px; /* letters (l tot basislijn) precies op het midden */ font-size: var(--t-45); font-weight: 600; letter-spacing: var(--sp-45); line-height: 1; color: var(--card); }
 /* radarsignaal bij het laden: drie boogjes vanaf de u, elke letter verschijnt als het eerste boogje er is (DESIGN.md, Motion) */
 .wm-radar { position: relative; display: inline-block; }
 .wm-radar span { display: inline-block; animation: wm-letter 700ms var(--ease) both; }
@@ -912,8 +912,8 @@ details.thematermen > p.termen { color: var(--ink); }
 @keyframes uitgang { to { opacity: 0; } }
 /* Nieuwe pagina: één korte binnenkomst, alleen bij wisselen van tab */
 #view.binnenkomst { animation: binnenkomst var(--d-lang) var(--ease) both; }
-:target, .debat, .tl-dag, .card[id] { scroll-margin-top: calc(var(--kop-h, 90px) + 16px); }
-.tl-item[id] { scroll-margin-top: calc(var(--kop-h, 90px) + 56px); } /* ook onder de weekkop die blijft staan */
+:target, .debat, .tl-dag, .card[id] { scroll-margin-top: calc(var(--kop-h, 64px) + 16px); }
+.tl-item[id] { scroll-margin-top: calc(var(--kop-h, 64px) + 56px); } /* ook onder de weekkop die blijft staan */
 
 /* Toegankelijkheid */
 @media (prefers-reduced-motion: reduce) {
