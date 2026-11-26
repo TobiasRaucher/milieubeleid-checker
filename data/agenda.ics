@@ -10,7 +10,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:2026A07695@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270624T110000Z
 DTEND:20270624T140000Z
 SUMMARY:Wetgevingsoverleg: Jaarverslagen Infrastructuur en Waterstaat
@@ -24,7 +24,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07692@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270616T110000Z
 DTEND:20270616T150000Z
 SUMMARY:Commissiedebat: Water
@@ -38,7 +38,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07688@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270512T110000Z
 DTEND:20270512T150000Z
 SUMMARY:Commissiedebat: Externe veiligheid
@@ -51,25 +51,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A07685@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20270414T110000Z
-DTEND:20270414T150000Z
-SUMMARY:Commissiedebat: Luchtvaart
-DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
- amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A07685\
- nAgendapunten:\n- Reactie op het het NRC-artikel over de nieuwe geluidgren
- swaarden rond Schiphol\n- Nationale aanpak taskforce drones en kabinetsrea
- ctie op het rapport van het Versnellingsnetwerk drones\n- Inwerkingtreding
-  algehele wijziging Luchthavenverkeerbesluit Schiphol
-LOCATION:Troelstrazaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A07685
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A07684@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270310T120000Z
 DTEND:20270310T160000Z
 SUMMARY:Commissiedebat: Leefomgeving
@@ -83,7 +66,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07947@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270303T120000Z
 DTEND:20270303T150000Z
 SUMMARY:Commissiedebat: Wadden
@@ -98,7 +81,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05152@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270203T090000Z
 DTEND:20270203T130000Z
 SUMMARY:Commissiedebat: Circulaire economie
@@ -116,7 +99,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06411@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270128T133000Z
 DTEND:20270128T163000Z
 SUMMARY:Commissiedebat: Staatsdeelnemingen
@@ -133,7 +116,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06444@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270127T140000Z
 DTEND:20270127T150000Z
 SUMMARY:Technische briefing: Rapport 'Circulair versterkt' door de Wetensch
@@ -149,7 +132,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05151@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270127T090000Z
 DTEND:20270127T130000Z
 SUMMARY:Commissiedebat: Duurzame energiedragers 
@@ -164,7 +147,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07906@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270120T090000Z
 DTEND:20270120T130000Z
 SUMMARY:Commissiedebat: Kernenergie 
@@ -180,7 +163,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2025A02423@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270120T090000Z
 DTEND:20270120T110000Z
 SUMMARY:Commissiedebat: Exportkredietverzekeringen
@@ -203,7 +186,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07067@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270118T090000Z
 DTEND:20270118T153000Z
 SUMMARY:Notaoverleg: AMvB Dierwaardige veehouderij
@@ -219,7 +202,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05097@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20270113T090000Z
 DTEND:20270113T130000Z
 SUMMARY:Commissiedebat: Mijnbouw
@@ -241,7 +224,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06382@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20270111
 SUMMARY:Plenair debat (wetgeving): Wijziging van de Wet milieubeheer en de 
  Wet op de economische delicten in verband met een jaarverplichting voor he
@@ -274,7 +257,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A02571@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261217T120000Z
 DTEND:20261217T160000Z
 SUMMARY:Commissiedebat: Verduurzaming Industrie 
@@ -295,23 +278,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A07540@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20261216T160000Z
-DTEND:20261216T200000Z
-SUMMARY:Notaoverleg: Nota Ruimte
-DESCRIPTION:Volkshuisvesting en Ruimtelijke Ordening\nTweede Kamer: https:/
- /www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id
- =2026A07540\nAgendapunten:\n- Nota Ruimte: Nederland wordt niet groter\, w
- el ruimer
-LOCATION:Troelstrazaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A07540
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A02828@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261210T120000Z
 DTEND:20261210T160000Z
 SUMMARY:Commissiedebat: Externe veiligheid
@@ -332,7 +300,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08735@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261210
 SUMMARY:Inbreng schriftelijk overleg: Reactie van het kabinet op het advies
   van het IGH inzake klimaatverandering
@@ -346,7 +314,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04354@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261209T130000Z
 DTEND:20261209T170000Z
 SUMMARY:Commissiedebat: Natuur
@@ -373,7 +341,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07634@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261209T120000Z
 DTEND:20261209T141500Z
 SUMMARY:Rondetafelgesprek: Een verbod op fossiele reclame
@@ -388,7 +356,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04755@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261208T170000Z
 DTEND:20261208T200000Z
 SUMMARY:Commissiedebat: Energieraad (formeel) d.d. 10 december 2026 en klim
@@ -407,7 +375,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04782@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261208T160000Z
 DTEND:20261208T200000Z
 SUMMARY:Commissiedebat: Landbouw- en Visserijraad (december)
@@ -422,7 +390,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08390@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261203
 SUMMARY:Inbreng verslag: Wijziging van de Wet milieubeheer en de Uitvoering
  swet digitaledienstenverordening in verband met de implementatie van Richt
@@ -440,7 +408,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07640@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261203T090000Z
 DTEND:20261203T130000Z
 SUMMARY:Commissiedebat: Leveringszekerheid
@@ -456,25 +424,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A05439@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20261201T153000Z
-DTEND:20261201T183000Z
-SUMMARY:Commissiedebat: Milieuraad op 11 december 2026 - alleen milieuonder
- werpen
-DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
- amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A05439\
- nAgendapunten:\n- Geannoteerde Agenda Milieuraad 11 december 2026 (alleen 
- milieuonderwerpen)\n- Verslag Milieuraad 12 oktober 2026 te Luxemburg (all
- een milieuonderwerpen)
-LOCATION:Troelstrazaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A05439
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A08525@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:Inbreng feitelijke vragen: Wijziging van begrotingsstaten van het M
  inisterie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijzigin
@@ -487,7 +438,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08292@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:Inbreng feitelijke vragen: Wijziging van de begrotingsstaat van het
   Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)
@@ -502,7 +453,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08290@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:Inbreng feitelijke vragen: Wijziging van de begrotingsstaten van he
  t Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wi
@@ -518,7 +469,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08608@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:Inbreng feitelijke vragen: Wijziging van de begrotingsstaten van he
  t Ministerie van Landbouw\, Visserij\, Voedselzekerheid en Natuur (XIV) en
@@ -532,22 +483,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A08817@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART;VALUE=DATE:20261201
-SUMMARY:Inbreng feitelijke vragen: Wijziging van de begrotingsstaten van he
- t Ministerie van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het 
- jaar 2026 (wijziging samenhangende met de Najaarsnota)
-DESCRIPTION:Volkshuisvesting en Ruimtelijke Ordening\nTweede Kamer: https:/
- /www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id
- =2026A08817
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A08817
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A07452@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261130
 SUMMARY:Plenair debat (wetgeving): Voorstel van wet van het lid Ouwehand to
  t wijziging van de Wet dieren en de Wet op de economische delicten in verb
@@ -565,38 +502,9 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A05404@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART;VALUE=DATE:20261130
-SUMMARY:Plenair debat (wetgeving): Begroting Volkshuisvesting en Ruimtelijk
- e Ordening
-DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
- debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A054
- 04\nAgendapunten:\n- Vaststelling van de begrotingsstaten van Volkshuisves
- ting en Ruimtelijke Ordening (XXII) voor het jaar 2027
-LOCATION:Plenaire zaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
- details/activiteit?id=2026A05404
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:2026A08505@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART;VALUE=DATE:20261127
-SUMMARY:Inbreng feitelijke vragen: Nota Ruimte: Nederland wordt niet groter
- \, wel ruimer
-DESCRIPTION:Volkshuisvesting en Ruimtelijke Ordening\nTweede Kamer: https:/
- /www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id
- =2026A08505\nAgendapunten:\n- Nota Ruimte: Nederland wordt niet groter\, w
- el ruimer
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A08505
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A08637@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20261126T141500Z
+DTSTAMP:20261126T151840Z
+DTSTART:20261126T143000Z
 DTEND:20261126T220000Z
 SUMMARY:Plenair debat (wetgeving): Begroting Landbouw\, Visserij\, Voedselz
  ekerheid en Natuur (voortzetting)
@@ -627,34 +535,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A06447@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20261126T123000Z
-DTEND:20261126T163000Z
-SUMMARY:Commissiedebat: Ruimtelijke Ordening 
-DESCRIPTION:Volkshuisvesting en Ruimtelijke Ordening\nTweede Kamer: https:/
- /www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id
- =2026A06447\nAgendapunten:\n- Permanente bewoning van recreatiewoningen \n
- - Opzet Periodieke rapportage artikel 3 VRO 2020-2026\n- Kabinetsreactie o
- p het Rli-advies 'Falen en Opstaan'\n- Digitaal en datageïnformeerd werke
- n in de fysieke leefomgeving\n- Kabinetsreactie op tweede reflectierapport
-  `Werk aan de winkel’ van de Evaluatiecommissie Omgevingswet\n- Rapporta
- ge 2025 - Monitor Werking Omgevingswet\n- Resultaten Bestuurlijke Overlegg
- en Leefomgeving 2026\n- Reactie op motie van het lid Van der Plas over uit
- eenzetten hoe de eerdere bepaling uit de Crisis- en herstelwet onderdeel k
- an worden in de Omgevingswet zodat woningbouw en bijbehorende energie-infr
- astructuur sneller gerealiseerd worden (Kamerstuk 36800-26)\n- De verstede
- lijkingsstrategie Twente\n- Voornemen tot overleg met Kavel 10 over de Bas
- isvoorziening Beeldmateriaal\n- Reactie op verzoek commissie over de Perio
- dieke Rapportage VRO 2020-2026
-LOCATION:Wttewaall van Stoetwegenzaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A06447
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A08520@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261126
 SUMMARY:Inbreng schriftelijk overleg: Appreciatie Commissievoorstel tot wij
  ziging Methaanverordening
@@ -668,7 +550,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05409@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261125T134500Z
 DTEND:20261124T230100Z
 SUMMARY:Plenair debat (wetgeving): Begroting Landbouw\, Visserij\, Voedselz
@@ -701,7 +583,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04028@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261125T090000Z
 DTEND:20261125T130000Z
 SUMMARY:Commissiedebat: Netcongestie en elektriciteitsnet
@@ -719,7 +601,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08540@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261125
 SUMMARY:Inbreng verslag: Wijziging van de Omgevingswet (spoedwet vervangen 
  omgevingswaarden stikstofdepositie door omgevingswaarden stikstofemissie) 
@@ -735,7 +617,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08674@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261124T153000Z
 DTEND:20261124T183000Z
 SUMMARY:Wetgevingsoverleg: Water (vervolg wetgevingsoverleg 23 november\; v
@@ -768,7 +650,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A02981@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261123T090000Z
 DTEND:20261123T140000Z
 SUMMARY:Wetgevingsoverleg: Water
@@ -800,7 +682,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08492@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261119T091500Z
 DTEND:20261119T094000Z
 SUMMARY:Tweeminutendebat: Tweeminutendebat Landbouw- en Visserijraad d.d. 2
@@ -816,7 +698,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08389@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261119T090000Z
 DTEND:20261119T120000Z
 SUMMARY:Commissiedebat: Vergunningverlening\, toezicht en handhaving (VTH-s
@@ -833,7 +715,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08323@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261118T120000Z
 DTEND:20261118T130000Z
 SUMMARY:Technische briefing: Wijziging van de Omgevingswet (spoedwet vervan
@@ -849,7 +731,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06131@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261117T151500Z
 DTEND:20261117T160000Z
 SUMMARY:Tweeminutendebat: Tweeminutendebat Kernenergie (CD 2/7)
@@ -863,7 +745,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08432@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261117
 SUMMARY:Inbreng schriftelijk overleg: AMvB Dierwaardige veehouderij
 DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
@@ -876,7 +758,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08126@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261116
 SUMMARY:Inbreng schriftelijk overleg: Landbouw- en Visserijraad (november)
 DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
@@ -893,7 +775,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06484@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261116T093000Z
 DTEND:20261116T170000Z
 SUMMARY:Wetgevingsoverleg: Fonds voor stikstof\, landbouw en natuur
@@ -911,7 +793,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06162@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261112T201500Z
 DTEND:20261112T224200Z
 SUMMARY:Plenair debat: Debat over het advies van het Nationaal Burgerberaad
@@ -929,7 +811,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08376@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261112T091600Z
 DTEND:20261112T170000Z
 SUMMARY:Plenair debat (wetgeving): Pakket Belastingplan 2027 (3e termijn)
@@ -948,7 +830,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A08066@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261111T150000Z
 DTEND:20261111T160000Z
 SUMMARY:Technische briefing: Strategisch gasbeleid
@@ -963,7 +845,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07414@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261111T101500Z
 DTEND:20261111T111500Z
 SUMMARY:Technische briefing: Onderzoeksrapport over natuurbeheer in veengeb
@@ -980,7 +862,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07998@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261110T174500Z
 DTEND:20261110T213700Z
 SUMMARY:Plenair debat (wetgeving): Aansluitend: Pakket Belastingplan 2027 (
@@ -1000,7 +882,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07995@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261105T150000Z
 DTEND:20261105T211800Z
 SUMMARY:Plenair debat (wetgeving): Begroting Klimaat en Groene Groei (37 02
@@ -1021,7 +903,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06617@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261104T143000Z
 DTEND:20261103T233800Z
 SUMMARY:Plenair debat (wetgeving): Pakket Belastingplan 2027 (1e TK)
@@ -1045,7 +927,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07012@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261104T130000Z
 DTEND:20261104T160000Z
 SUMMARY:Rondetafelgesprek: AMvB Dierwaardige veehouderij
@@ -1060,7 +942,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05417@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261104T091500Z
 DTEND:20261104T143000Z
 SUMMARY:Plenair debat (wetgeving): Begroting Klimaat en Groene Groei (37 02
@@ -1078,7 +960,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04337@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261103T160000Z
 DTEND:20261103T170000Z
 SUMMARY:Technische briefing: Klimaat- en Energieverkenning in relatie tot d
@@ -1093,24 +975,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A03042@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20261103T153000Z
-DTEND:20261103T163000Z
-SUMMARY:Technische briefing: Update wetenschappelijk factsheet Toekomst ver
- duurzaming luchtvaart 
-DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
- amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A03042\
- nAgendapunten:\n- Wetenschappelijke factsheet dr. ing. Paul Peeters en ir.
-  Joris Melkert "Toekomst verduurzaming luchtvaart - update 2026"
-LOCATION:Troelstrazaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A03042
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A07734@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261029T180000Z
 DTEND:20261029T223800Z
 SUMMARY:Plenair debat (wetgeving): Begroting Infrastructuur en Waterstaat (
@@ -1144,7 +1010,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07431@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261029T143000Z
 DTEND:20261029T153000Z
 SUMMARY:Technische briefing: Beschouwing over het concept van de Klimaat- e
@@ -1162,7 +1028,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07122@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261029T143000Z
 DTEND:20261029T153000Z
 SUMMARY:Technische briefing: 'Leidende principes dierwaardige veehouderij' 
@@ -1178,7 +1044,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04274@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261029T120000Z
 DTEND:20261029T130000Z
 SUMMARY:Technische briefing: Stafbriefing (besloten) over Dashboard klimaat
@@ -1193,7 +1059,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04332@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261029T090000Z
 DTEND:20261029T110000Z
 SUMMARY:Rondetafelgesprek: Biologische Landbouw
@@ -1208,7 +1074,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07432@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261028T131500Z
 DTEND:20261028T144500Z
 SUMMARY:Rondetafelgesprek: Zon op dak: van potentie naar realisatie 
@@ -1224,7 +1090,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06391@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261028T120000Z
 DTEND:20261028T130000Z
 SUMMARY:Technische briefing: Inzet onderhandelingen VN-klimaatconferentie (
@@ -1238,7 +1104,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06125@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261028T101500Z
 DTEND:20261028T111500Z
 SUMMARY:Technische briefing: Uitvoeringswet Natuurherstelverordening
@@ -1252,7 +1118,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05415@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261028T094500Z
 DTEND:20261028T151500Z
 SUMMARY:Plenair debat (wetgeving): Begroting Infrastructuur en Waterstaat (
@@ -1282,27 +1148,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A07455@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20261028T091500Z
-DTEND:20261028T094500Z
-SUMMARY:Tweeminutendebat: Tweeminutendebat Luchtvaart (CD 7/10)
-DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
- debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A074
- 55\nAgendapunten:\n- Afschrift reactie op de brief van Stichting S4R m.b.t
- . Luchthavenverkeerbesluit Schiphol (LVB)\n- Reactie op de factsheet 'Stik
- stof en Luchtvaart' van Stichting S4R\n- Dertiende voortgangsbrief Program
- ma Omgeving Luchthaven Schiphol\n- Reactie op verzoek commissie over de br
- ief van de Vereniging Bewoners tegen Vliegtuigoverlast Rotterdam (BTV) inz
- ake luchthavenbesluit Rotterdam\n- Moties ingediend tijdens het debat:
-LOCATION:Plenaire zaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
- details/activiteit?id=2026A07455
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A07563@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261026T100000Z
 DTEND:20261026T220000Z
 SUMMARY:Wetgevingsoverleg: Pakket Belastingplan 2027 (eerste termijn Regeri
@@ -1320,7 +1167,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05143@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261026T090000Z
 DTEND:20261026T143000Z
 SUMMARY:Notaoverleg: Energiesysteem
@@ -1341,7 +1188,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04872@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261019
 SUMMARY:Inbreng schriftelijk overleg: Landbouw- en Visserijraad (oktober)
 DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
@@ -1358,7 +1205,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06655@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261015T140000Z
 DTEND:20261015T150000Z
 SUMMARY:Technische briefing: Volume- en tijdsafhankelijke nettarieven door 
@@ -1375,7 +1222,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05429@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261015T120000Z
 DTEND:20261015T150000Z
 SUMMARY:Wetgevingsoverleg: Begrotingsonderzoek Infrastructuur en Waterstaat
@@ -1392,24 +1239,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A06579@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART;VALUE=DATE:20261015
-SUMMARY:Inbreng feitelijke vragen: Vaststelling van de begrotingsstaten van
-  het Ministerie van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor h
- et jaar 2027 (37020-XXII)
-DESCRIPTION:Volkshuisvesting en Ruimtelijke Ordening\nTweede Kamer: https:/
- /www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id
- =2026A06579\nAgendapunten:\n- Vaststelling van de begrotingsstaten van Vol
- kshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2027 (37020-XXI
- I)
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A06579
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A07120@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261015T110000Z
 DTEND:20261015T120000Z
 SUMMARY:Technische briefing: Het Nationaal Plan Energiesysteem Actualisatie
@@ -1427,7 +1258,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07596@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261015T081600Z
 DTEND:20261015T083000Z
 SUMMARY:Tweeminutendebat: Tweeminutendebat Energieraad (formeel) d.d. 29 ok
@@ -1443,7 +1274,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05278@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261015T080000Z
 DTEND:20261015T110000Z
 SUMMARY:Commissiedebat: Dieren buiten de veehouderij en dierproeven
@@ -1472,7 +1303,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04753@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261014T130000Z
 DTEND:20261014T160000Z
 SUMMARY:Commissiedebat: Energieraad (formeel) d.d. 29 oktober 2026
@@ -1492,7 +1323,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06388@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261014T110000Z
 DTEND:20261014T120000Z
 SUMMARY:Technische briefing: ROB-advies over democratische controle en zegg
@@ -1510,7 +1341,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07200@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261013T170000Z
 DTEND:20261013T193000Z
 SUMMARY:Commissiedebat: Energie voor huishoudens (voortzetting)
@@ -1537,7 +1368,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06890@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261012
 SUMMARY:Inbreng feitelijke vragen: Kabinetsreactie op Deltaprogramma 2027
 DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
@@ -1549,7 +1380,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06650@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261012
 SUMMARY:Inbreng feitelijke vragen: Ontwerpbegroting Deltafonds (J) voor het
   jaar 2027
@@ -1563,7 +1394,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04850@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261012T090000Z
 DTEND:20261012T170000Z
 SUMMARY:Wetgevingsoverleg: Pakket Belastingplan 2027
@@ -1579,7 +1410,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06616@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261009
 SUMMARY:Inbreng feitelijke vragen: Maatregelen in de landbouw vanwege de dr
  oogte
@@ -1593,7 +1424,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05515@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261008T170500Z
 DTEND:20261008T173500Z
 SUMMARY:Tweeminutendebat: Tweeminutendebat Water (CD 25/6)
@@ -1609,7 +1440,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06595@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261008T131500Z
 DTEND:20261008T161500Z
 SUMMARY:Commissiedebat: Wadden
@@ -1633,7 +1464,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06437@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261008
 SUMMARY:Inbreng verslag: Wijziging van de Wet milieubeheer in verband met d
  e invoering van de verplichting tot het stellen van milieuprestatie-eisen 
@@ -1649,7 +1480,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06370@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261008
 SUMMARY:Inbreng verslag: Goedkeuring van het op 27 augustus 2025 te ‘s-Gr
  avenhage tot stand gekomen Verdrag tussen de regering van het Koninkrijk d
@@ -1669,7 +1500,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04665@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261008T080000Z
 DTEND:20261008T130000Z
 SUMMARY:Commissiedebat: Gewasbeschermingsmiddelen
@@ -1689,39 +1520,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A06597@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20261007T170000Z
-DTEND:20261007T210000Z
-SUMMARY:Commissiedebat: Luchtvaart
-DESCRIPTION:Infrastructuur en Waterstaat\nTweede Kamer: https://www.tweedek
- amer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06597\
- nAgendapunten:\n- Vervolgstappen uitspraken luchthavens Eindhoven\, RTHA e
- n Lelystad\n- Beleidsreactie op de Staat van de luchtvaart 2026\n- Nieuwe 
- besluiten luchthavens Eindhoven\, Rotterdam The Hague en Lelystad\n- React
- ie op verzoek commissie over Vogel- en Natuurwacht Flevoland m.b.t. openst
- elling van Lelystad Airport\n- Antwoorden op vragen commissie over de reac
- tie op het rapport externe adviescommissie "uitvoering programma Luchtruim
- herziening" (Kamerstuk 31936-1269)\n- Beantwoording vragen commissie over 
- nieuwe besluiten luchthavens Eindhoven\, Rotterdam The Hague en Lelystad (
- Kamerstuk 31936-1298)\n- Afdoening van de motie van het lid Heutink over o
- nderzoeken welke maatregelen genomen kunnen worden om de achterstand bij d
- e ILT weg te werken (Kamerstuk 31936-1288)\n- Natuur en Milieu Gelderland 
- over Lelystad Airport\n- Onderzoek Actualisatie PSO Bovenwindse Eilanden\n
- - Verzamelbrief Luchtvaart Q2 2026\n- Monitoring geluidhinder en slaapvers
- toring bij civiele en militaire luchthavens\n- Halfjaarverslag milieu en e
- xterne veiligheid Schiphol\n- Verzamelbrief Luchtvaart\n- Benchmark luchth
- aventarieven en overheidsheffingen 2025\n- Reactienota over het advies van
-  de Commissie voor de milieueffectrapportage over het milieueffectrapport 
- Luchthavenbesluit Rotterdam
-LOCATION:Troelstrazaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
- details?id=2026A06597
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A04260@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261007T123000Z
 DTEND:20261007T143000Z
 SUMMARY:Rondetafelgesprek: Investeringsfonds Duurzame Landbouw (IDL) 
@@ -1736,7 +1536,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06610@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261007
 SUMMARY:Inbreng feitelijke vragen: Vaststelling van de begrotingsstaten van
   Klimaat en Groene Groei (XXIII) voor het jaar 2027
@@ -1750,7 +1550,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06618@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261007
 SUMMARY:Inbreng feitelijke vragen: Vaststelling van de begrotingsstaat van 
  het Klimaat- en Energiefonds voor het jaar 2027
@@ -1764,7 +1564,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A07374@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261007T110500Z
 DTEND:20261007T112000Z
 SUMMARY:Tweeminutendebat: Tweeminutendebat Milieuraad (CD 7/10)
@@ -1779,7 +1579,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06730@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261007T080000Z
 DTEND:20261007T110000Z
 SUMMARY:Commissiedebat: Milieuraad op 12 oktober 2026
@@ -1799,7 +1599,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06787@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261006T154500Z
 DTEND:20261006T170000Z
 SUMMARY:Technische briefing: EU-wetenschapstoets ETS-herziening en analyse 
@@ -1818,7 +1618,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05428@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261006T143000Z
 DTEND:20261006T193000Z
 SUMMARY:Commissiedebat: Leefomgeving
@@ -1847,7 +1647,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06867@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261005
 SUMMARY:Inbreng feitelijke vragen: Nationaal Plan Energiesysteem Actualisat
  ie 2026
@@ -1861,7 +1661,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06599@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261005
 SUMMARY:Inbreng schriftelijk overleg: EU-strategie voor de veehouderij
 DESCRIPTION:Landbouw\, Visserij\, Voedselzekerheid en Natuur\nTweede Kamer:
@@ -1874,7 +1674,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A02265@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261001T184000Z
 DTEND:20261001T191000Z
 SUMMARY:Tweeminutendebat: Tweeminutendebat Internationale klimaatstrategie 
@@ -1892,7 +1692,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05537@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261001
 SUMMARY:Inbreng verslag: Regels in verband met de toepassing van tweerichti
  ngscontracten ter verrekening van verschillen ter uitvoering van artikel 1
@@ -1913,7 +1713,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06371@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261001
 SUMMARY:Inbreng verslag: Wijziging van de Energiewet\, de Wet belastingen o
  p milieugrondslag en de Wet op de accijns\, ter implementatie van het EU-w
@@ -1934,7 +1734,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06123@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261001T104500Z
 DTEND:20261001T114500Z
 SUMMARY:Technische briefing: Convenant Gewasbescherming 
@@ -1949,7 +1749,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A05578@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20261001T080000Z
 DTEND:20261001T102500Z
 SUMMARY:Rondetafelgesprek: Rondetafelgesprek Advies Nationaal Burgerberaad 
@@ -1968,7 +1768,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04849@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20261001
 SUMMARY:Inbreng verslag: Belastingplan 2027
 DESCRIPTION:Financiën\nTweede Kamer: https://www.tweedekamer.nl/debat_en_v
@@ -1980,7 +1780,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A00908@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20260930T120000Z
 DTEND:20260930T160000Z
 SUMMARY:Commissiedebat: Voortgang klimaatbeleid
@@ -2006,7 +1806,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06430@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20260930T120000Z
 DTEND:20260930T133000Z
 SUMMARY:Technische briefing: Reflectie van het PBL op de kabinetsbrief ‘W
@@ -2024,7 +1824,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A04239@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20260930T080000Z
 DTEND:20260930T090000Z
 SUMMARY:Technische briefing: Kennismakingsgesprek Mijnraad 
@@ -2039,28 +1839,8 @@ URL:https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026A06147@milieuradar
-DTSTAMP:20261126T141359Z
-DTSTART:20260929T163000Z
-DTEND:20260929T215600Z
-SUMMARY:Plenair debat: Debat over het Luchthavenverkeerbesluit Schiphol 
-DESCRIPTION:Plenaire vergadering\nTweede Kamer: https://www.tweedekamer.nl/
- debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A061
- 47\nAgendapunten:\n- Reactienota op het milieueffectrapport (MER) voor de 
- wijziging van het luchthavenverkeerbesluit Schiphol (LVB)\n- Resultaten tw
- eede tussentijdse monitoring maatregelen balanced approach-procedure\n- Aa
- nbieding advies Afdeling Advisering Raad van State en het herziene milieue
- ffectrapport (MER) bij het Luchthavenverkeersbesluit (LVB) Schiphol\n- Nad
- ere duiding advies Afdeling Advisering Raad van State\n- Moties ingediend 
- tijdens het debat:
-LOCATION:Plenaire zaal
-URL:https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/
- details/activiteit?id=2026A06147
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:2026A06333@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20260929T145000Z
 DTEND:20260929T151000Z
 SUMMARY:Tweeminutendebat: Tweeminutendebat Ontwerp-Natuurplan (CD 3/9)
@@ -2079,7 +1859,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2026A06458@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART:20260929T143000Z
 DTEND:20260929T145000Z
 SUMMARY:Tweeminutendebat: Tweeminutendebat Informele bijeenkomst van Milieu
@@ -2097,7 +1877,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-07-28-wijziging-klimaatwet-moet-in-werking-zijn-vonnis-@milieuradar
-DTSTAMP:20261126T141359Z
+DTSTAMP:20261126T151840Z
 DTSTART;VALUE=DATE:20270728
 DTEND;VALUE=DATE:20270729
 SUMMARY:Deadline: Wijziging Klimaatwet moet in werking zijn (vonnis Klimaat
