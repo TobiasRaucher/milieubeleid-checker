@@ -1,22 +1,20 @@
 {
- "bijgewerkt": "2026-11-26T15:18:40+00:00",
- "status": "gedeeltelijk",
- "aantalZaken": 1499,
- "aantalActiviteiten": 460,
+ "bijgewerkt": "2026-11-26T15:37:59+00:00",
+ "status": "ok",
+ "aantalZaken": 1534,
+ "aantalActiviteiten": 517,
  "aantalStukken": 1760,
  "aantalVerzoeken": 128,
- "aantalToezeggingen": 284,
+ "aantalToezeggingen": 354,
  "uitgesloten": {
   "zaken": 0,
   "stukken": 23,
   "verzoeken": 0
  },
  "teksten": {
-  "ob": 1283,
+  "ob": 1318,
   "pdf": 94
  },
- "fouten": [
-  "activiteiten ruimte-mobiliteit: Mislukt na 4 pogingen: https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0/Activiteit?$filter=Verwijderd%20eq%20false%20and%20(Soort%20eq%20'Commissiedebat'%20or%20Soort%20eq%20'Plenair%20debat'%20or%20Soort%20eq%20'Tweeminutendebat'%20or%20Soort%20eq%20'Wetgevingsoverleg'%20or%20Soort%20eq%20'Notaoverleg'%20or%20Soort%20eq%20'Rondetafelgesprek'%20or%20Soort%20eq%20'Technische%20briefing'%20or%20Soort%20eq%20'Hoorzitting'%20or%20Soort%20eq%20'Notaoverleg%20(wetgeving)'%20or%20Soort%20eq%20'Debat'%20or%20Soort%20eq%20'Dertigledendebat'%20or%20Soort%20eq%20'Interpellatie')%20and%20(Voortouwafkorting%20eq%20'I%26W'%20or%20Voortouwafkorting%20eq%20'VRO')%20and%20(Datum%20ge%202025-11-12T00:00:00Z%20or%20(Status%20eq%20'Gepland'%20and%20Datum%20eq%20null))&$select=Id,Nummer,Soort,Onderwerp,Datum,Aanvangstijd,Eindtijd,Locatie,Status,Voortouwnaam,Voortouwafkorting,Besloten,Noot,Kamer&$expand=Agendapunt($filter%3DVerwijderd%20eq%20false%3B$select%3DVolgorde,Onderwerp%3B$expand%3DZaak($select%3DNummer,Soort,Onderwerp%3B$expand%3DDocument($filter%3DVerwijderd%20eq%20false%3B$select%3DDocumentNummer,Soort,Datum,Onderwerp,Volgnummer%3B$expand%3DKamerstukdossier($select%3DNummer,Toevoeging),DocumentActor($select%3DActorNaam,Functie,Relatie)))),ActiviteitActor($filter%3DVerwijderd%20eq%20false%3B$select%3DActorNaam,ActorFractie,Functie,Relatie,Volgorde),Reservering($expand%3DZaal($select%3DNaam))&$orderby=Datum%20desc"
- ],
+ "fouten": [],
  "bron": "Tweede Kamer open data (gegevensmagazijn.tweedekamer.nl); Eerste Kamer en Staatsblad via officielebekendmakingen.nl"
 }
