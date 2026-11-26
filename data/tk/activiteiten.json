@@ -3715,9 +3715,9 @@
   "Onderwerp": "Begroting Landbouw, Visserij, Voedselzekerheid en Natuur (1e TK)",
   "Datum": "2026-11-25T14:45:00+01:00",
   "Aanvangstijd": "2026-11-25T14:45:00+01:00",
-  "Eindtijd": "2026-11-25T22:30:00+01:00",
+  "Eindtijd": "2026-11-25T00:01:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "TK",
   "Voortouwafkorting": "TK",
   "Besloten": false,
@@ -6177,7 +6177,7 @@
     "onderwerp": "Verslag Landbouw- en Visserijraad 26 oktober 2026",
     "stukken": [
      {
-      "kamerstuk": null,
+      "kamerstuk": "21501-32-1858",
       "soort": "Brief regering",
       "datum": "2026-11-06",
       "onderwerp": "Verslag Landbouw- en Visserijraad 26 oktober 2026",

@@ -9,7 +9,7 @@
   "gestartOp": "2026-11-25",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -27,8 +27,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-25",
     "stemmen": []
@@ -56,7 +56,7 @@
   "gestartOp": "2026-11-25",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -74,8 +74,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-25",
     "stemmen": []
@@ -103,7 +103,7 @@
   "gestartOp": "2026-11-25",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -131,8 +131,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-25",
     "stemmen": []
@@ -160,7 +160,7 @@
   "gestartOp": "2026-11-25",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -183,8 +183,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-25",
     "stemmen": []
@@ -212,7 +212,7 @@
   "gestartOp": "2026-11-25",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -230,8 +230,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-25",
     "stemmen": []
@@ -244,7 +244,7 @@
   ],
   "document": "2026D60666",
   "docId": "d772db28-4457-4b43-be6c-6667ccecb168",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 1392,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26168&did=2026D60666",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26168"
@@ -259,7 +259,7 @@
   "gestartOp": "2026-11-25",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontijdig",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -282,8 +282,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-25",
     "stemmen": []
@@ -296,7 +296,7 @@
   ],
   "document": "2026D60661",
   "docId": "4c12de88-a96f-4818-acd7-2ea5e2ca1476",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 1389,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26164&did=2026D60661",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26164"
