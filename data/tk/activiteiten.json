@@ -2686,9 +2686,9 @@
   "Nummer": "2026A08637",
   "Soort": "Plenair debat (wetgeving)",
   "Onderwerp": "Begroting Landbouw, Visserij, Voedselzekerheid en Natuur (voortzetting)",
-  "Datum": "2026-11-26T14:30:00+01:00",
-  "Aanvangstijd": "2026-11-26T14:30:00+01:00",
-  "Eindtijd": "2026-11-26T22:30:00+01:00",
+  "Datum": "2026-11-26T15:15:00+01:00",
+  "Aanvangstijd": "2026-11-26T15:15:00+01:00",
+  "Eindtijd": "2026-11-26T23:00:00+01:00",
   "Locatie": null,
   "Status": "Gepland",
   "Voortouwnaam": "TK",
@@ -3069,6 +3069,21 @@
       "ondertekenaar": "J. van Essen",
       "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24853&did=2026D57334"
+     }
+    ]
+   },
+   {
+    "volgorde": 26,
+    "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Landbouw, Visserij, Voedselzekerheid en Natuur op 25 november 2026",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Brief regering",
+      "datum": "2026-11-26",
+      "onderwerp": "Schriftelijke antwoorden op vragen gesteld tijdens de eerste termijn van de begrotingsbehandeling van Landbouw, Visserij, Voedselzekerheid en Natuur op 25 november 2026",
+      "ondertekenaar": "J. van Essen",
+      "functie": "minister van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z26396&did=2026D61138"
      }
     ]
    }

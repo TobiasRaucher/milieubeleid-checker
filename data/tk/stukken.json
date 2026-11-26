@@ -2984,6 +2984,47 @@
   ]
  },
  {
+  "id": "2026D56230",
+  "docId": "46685d20-ea1c-4fba-8b17-d849d2df2044",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-06",
+  "titel": "Parlementaire enquête aardgaswinning Groningen",
+  "onderwerp": "Meerjarig Uitvoeringsplan Economische Agenda Groningen",
+  "zaak": "2026Z24340",
+  "ministerie": "Binnenlandse Zaken en Koninkrijksrelaties",
+  "ondertekenaar": "P.E. Heerma",
+  "functie": "minister van Binnenlandse Zaken en Koninkrijksrelaties",
+  "kamerstuk": "35561-80",
+  "dossiers": [
+   {
+    "nummer": 35561,
+    "toevoeging": null,
+    "titel": "Parlementaire enquête aardgaswinning Groningen"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z24340&did=2026D56230",
+  "bijlagen": [
+   {
+    "id": "2026D56232",
+    "titel": "Beslisnota bij Kamerbrief over Meerjarig Uitvoeringsplan Economische Agenda Groningen",
+    "bestand": "PDF",
+    "docId": "d1dd1757-1bd3-44ef-bc03-025ed88a1b4a",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56232"
+   },
+   {
+    "id": "2026D56231",
+    "titel": "Meerjarig uitvoeringsplan Economische Agenda voor Groningen en Noord-Drenthe 2026-2028",
+    "bestand": "PDF",
+    "docId": "e550e887-35f6-4a2c-967a-14dd0828e80b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D56231"
+   }
+  ]
+ },
+ {
   "id": "2026D56176",
   "docId": "195c3ca0-7738-4cc0-8198-ffdea99ecea6",
   "bestand": "DOCX",
@@ -9354,7 +9395,7 @@
    {
     "id": "2026D52286",
     "docId": "ec8cf7dc-270f-48dd-baaf-9b310eb63c3c",
-    "bestand": "DOCX",
+    "bestand": "PDF",
     "datum": "2026-10-20",
     "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20887&did=2026D52286"
    }
@@ -9727,7 +9768,7 @@
    {
     "id": "2026D52285",
     "docId": "dd4a0dfe-c688-473e-acfe-7a7d97572373",
-    "bestand": "DOCX",
+    "bestand": "PDF",
     "datum": "2026-10-20",
     "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z20698&did=2026D52285"
    }
