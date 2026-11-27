@@ -1,5 +1,33 @@
 [
  {
+  "id": "2026D61806",
+  "docId": "0b739ed8-e024-4c85-9711-0ba41db9aee7",
+  "bestand": "DOCX",
+  "soort": "Brief regering",
+  "datum": "2026-11-27",
+  "titel": null,
+  "onderwerp": "Uitvoering ETS2 opt-in glastuinbouw",
+  "zaak": "2026Z26693",
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": "S. van Veldhoven-van der Meer",
+  "functie": "minister van Klimaat en Groene Groei",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z26693&did=2026D61806",
+  "bijlagen": [
+   {
+    "id": "2026D61807",
+    "titel": "Beslisnota bij Kamerbrief over uitvoering ETS2 opt-in glastuinbouw",
+    "bestand": "PDF",
+    "docId": "538acc82-d502-4624-9cdf-371df1fd1d1b",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D61807"
+   }
+  ]
+ },
+ {
   "id": "2026D61621",
   "docId": "095382b2-ce7b-4dad-afd3-48ede7fd62da",
   "bestand": "DOCX",
@@ -24,6 +52,34 @@
     "bestand": "PDF",
     "docId": "606308e4-697c-4c0d-8fbd-860d2a4d831f",
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D61622"
+   }
+  ]
+ },
+ {
+  "id": "2026D61783",
+  "docId": "60aeb04c-dfcd-4f26-85ea-5b7704ab43fc",
+  "bestand": "DOCX",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-11-27",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Beckerman en Bushoff over de berichten \"Nij Begun worstelt met lange wachttijd isolatieplannen\" en \"Pekelders lopen vast bij aanvraag isolatiesubsidie, gemeente schiet te hulp en trekt de knip\"",
+  "zaak": "2026Z23736",
+  "ministerie": "Volkshuisvesting en Ruimtelijke Ordening",
+  "ondertekenaar": "E. Boekholt-O’Sullivan",
+  "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23736&did=2026D61783",
+  "bijlagen": [
+   {
+    "id": "2026D61784",
+    "titel": "Beslisnota bij antwoord op vragen van de leden Beckerman en Bushoff over de berichten \"Nij Begun worstelt met lange wachttijd isolatieplannen\" en \"Pekelders lopen vast bij aanvraag isolatiesubsidie, gemeente schiet te hulp en trekt de knip\"",
+    "bestand": "PDF",
+    "docId": "c4319983-95bf-4558-bb49-aa375eba4f4f",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D61784"
    }
   ]
  },
@@ -759,6 +815,31 @@
     "link": "https://www.tweedekamer.nl/downloads/document?id=2026D60386"
    }
   ]
+ },
+ {
+  "id": "kst-1282493",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN ter aanbieding van Verzamelbrief Natuur november 2026",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "33576-AV",
+  "dossiers": [
+   {
+    "nummer": "33576",
+    "toevoeging": null,
+    "titel": "Natuurbeleid"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1282493.html"
  },
  {
   "id": "kst-1281947",

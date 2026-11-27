@@ -1397,6 +1397,43 @@
   ]
  },
  {
+  "Id": "1ab92d76-ff48-47c7-b83f-81a1bdc099b1",
+  "Nummer": "2026A02045",
+  "Soort": "Procedurevergadering",
+  "Onderwerp": "Procedurevergadering Volkshuisvesting en Ruimtelijke Ordening",
+  "Datum": "2026-12-15T16:30:00+01:00",
+  "Aanvangstijd": "2026-12-15T16:30:00+01:00",
+  "Eindtijd": "2026-12-15T17:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+  "Voortouwafkorting": "VRO",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Procedurevergadering",
+  "agendapunten": [
+   {
+    "volgorde": 4,
+    "onderwerp": "Klimaatbewuster doorbouwen met Routekaart wlc-gwp (whole-life-cycle global-warming-potential)",
+    "zaken": [
+     "2026Z26677"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A02045",
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "besluitenlijst": null
+ },
+ {
   "Id": "27ecdd13-725e-4b7e-99bc-6687036f23a8",
   "Nummer": "2026A02828",
   "Soort": "Commissiedebat",
@@ -2171,6 +2208,26 @@
     "onderwerp": "Reactie op de brief van het presidium over een adviesaanvraag aan de Wetenschappelijke Klimaatraad over de opschaling van groene ketens",
     "zaken": [
      "2026Z25831"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 20,
+    "onderwerp": "Uitvoering ETS2 opt-in glastuinbouw",
+    "zaken": [
+     "2026Z26693"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 21,
+    "onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
+    "zaken": [
+     "2026Z24386"
     ],
     "besluiten": [],
     "voorstel": true,
@@ -3046,6 +3103,47 @@
   ]
  },
  {
+  "Id": "b552051c-80af-4f74-9d95-75c9315eb991",
+  "Nummer": "2026A08525",
+  "Soort": "Inbreng feitelijke vragen",
+  "Onderwerp": "Wijziging van begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+  "Datum": "2026-12-01T14:00:00+01:00",
+  "Aanvangstijd": "2026-12-01T14:00:00+01:00",
+  "Eindtijd": "2026-12-01T14:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Klimaat en Groene Groei",
+  "Voortouwafkorting": "K&GG",
+  "Besloten": true,
+  "Noot": null,
+  "SoortWeergave": "Inbreng feitelijke vragen",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
+    "stukken": [
+     {
+      "kamerstuk": "37060-XXIII-1",
+      "soort": "Voorstel van wet",
+      "datum": "2026-11-27",
+      "onderwerp": "Voorstel van wet",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24386&did=2026D57082"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08525",
+  "sectoren": [
+   "klimaat-energie"
+  ]
+ },
+ {
   "Id": "01e45305-4913-4974-9adc-21688ffe164f",
   "Nummer": "2026A08292",
   "Soort": "Inbreng feitelijke vragen",
@@ -3151,7 +3249,17 @@
    {
     "volgorde": 1,
     "onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
-    "stukken": []
+    "stukken": [
+     {
+      "kamerstuk": "37060-XXII-1",
+      "soort": "Voorstel van wet",
+      "datum": "2026-11-27",
+      "onderwerp": "Voorstel van wet",
+      "ondertekenaar": null,
+      "functie": null,
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24387&did=2026D57088"
+     }
+    ]
    }
   ],
   "bewindspersonen": [],
@@ -3172,7 +3280,7 @@
   "Aanvangstijd": "2026-11-27T14:00:00+01:00",
   "Eindtijd": "2026-11-27T14:00:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
   "Voortouwafkorting": "VRO",
   "Besloten": true,
