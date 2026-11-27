@@ -2400,7 +2400,13 @@
   "Besloten": true,
   "Noot": null,
   "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [],
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
+    "stukken": []
+   }
+  ],
   "bewindspersonen": [],
   "voorzitter": null,
   "deelnemers": [],
@@ -2512,7 +2518,13 @@
   "Besloten": true,
   "Noot": null,
   "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [],
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
+    "stukken": []
+   }
+  ],
   "bewindspersonen": [],
   "voorzitter": null,
   "deelnemers": [],
@@ -2580,6 +2592,11 @@
    {
     "naam": "L. Bromet",
     "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.A. Ergin",
+    "fractie": "DENK",
     "functie": "Tweede Kamerlid"
    }
   ],

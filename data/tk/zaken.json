@@ -19,7 +19,15 @@
     "relatie": "Indiener"
    }
   ],
-  "besluiten": [],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   }
+  ],
   "uitslag": "in behandeling",
   "stemtelling": null,
   "sectoren": [
@@ -69,6 +77,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Ingediend",
     "tekst": "Ingediend",
@@ -123,6 +138,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -176,6 +198,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -228,6 +257,13 @@
     "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
@@ -286,6 +322,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -332,6 +375,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Stemmen - aangehouden",
     "tekst": "Aangehouden.",
@@ -394,6 +444,13 @@
     "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
@@ -462,6 +519,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -508,6 +572,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Ingediend",
     "tekst": "Ingediend",
@@ -561,6 +632,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "aangehouden",
@@ -602,6 +680,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Ingediend",
     "tekst": "Ingediend",
@@ -674,6 +759,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Ingediend",
     "tekst": "Ingediend",
@@ -891,6 +983,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -905,7 +1004,7 @@
   ],
   "document": "2026D61174",
   "docId": "57247e06-2e75-4bf9-8d1a-5e22e54107ce",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 54,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26411&did=2026D61174",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26411"
@@ -995,6 +1094,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -1041,6 +1147,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Ingediend",
     "tekst": "Ingediend",
@@ -1089,6 +1202,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -1135,6 +1255,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Ingediend",
     "tekst": "Ingediend",
@@ -1198,6 +1325,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-25",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -1249,6 +1383,13 @@
     "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-25",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
@@ -1530,6 +1671,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -1576,6 +1724,13 @@
     "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-24",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
@@ -1654,6 +1809,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -1700,6 +1862,13 @@
     "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-24",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
@@ -1748,6 +1917,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -1795,6 +1971,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -1841,6 +2024,13 @@
     "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-24",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
@@ -1914,6 +2104,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -1960,6 +2157,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Ingediend",
     "tekst": "Ingediend",
@@ -2023,6 +2227,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -2075,6 +2286,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -2126,6 +2344,13 @@
     "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-24",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
@@ -2199,6 +2424,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -2245,6 +2477,13 @@
     "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-24",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
@@ -2303,6 +2542,13 @@
   ],
   "besluiten": [
    {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
+   {
     "soort": "Ingediend",
     "tekst": "Ingediend",
     "stemmingssoort": null,
@@ -2354,6 +2600,13 @@
    }
   ],
   "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
+   },
    {
     "soort": "Ingediend",
     "tekst": "Ingediend",
@@ -2412,6 +2665,13 @@
     "stemmingssoort": null,
     "datum": "2026-11-24",
     "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
+    "stemmen": []
    }
   ],
   "uitslag": "in behandeling",
@@ -2463,6 +2723,13 @@
     "tekst": "Aangehouden.",
     "stemmingssoort": null,
     "datum": "2026-11-24",
+    "stemmen": []
+   },
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-12-01",
     "stemmen": []
    }
   ],
