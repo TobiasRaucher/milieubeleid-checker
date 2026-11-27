@@ -202,9 +202,9 @@
       if (samengevat.has(a.Nummer) || !["Gepland", "Uitgevoerd"].includes(a.Status)) continue;
       const gepland = a.Status === "Gepland";
       add({
-        id: "act:" + a.Nummer, cat: gepland ? "agenda" : "debatten", soort: (a.SoortWeergave || a.Soort) + (gepland ? "" : " (niet samengevat)"),
+        id: "act:" + a.Nummer, cat: gepland ? "agenda" : "debatten", soort: (a.SoortWeergave || a.Soort) + (gepland || a.Soort === "Procedurevergadering" ? "" : " (niet samengevat)"),
         datum: dag(a.Datum), sectoren: a.sectoren || [], titel: a.Onderwerp,
-        tekst: j([...(a.agendapunten || []).flatMap((ap) => [ap.onderwerp, ...(ap.stukken || []).map((st) => st.onderwerp)]), a.Voortouwnaam, a.Nummer]),
+        tekst: j([...(a.agendapunten || []).flatMap((ap) => [ap.onderwerp, ...(ap.besluiten || []), ...(ap.stukken || []).map((st) => st.onderwerp)]), a.Voortouwnaam, a.Nummer]),
         personen: j((a.bewindspersonen || []).map((b) => b.naam)),
         wie: wieVan((a.bewindspersonen || []).map((b) => b.naam), []),
         link: "#agenda/a-" + a.Nummer,

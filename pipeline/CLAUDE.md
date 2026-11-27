@@ -134,3 +134,13 @@ Elk met het hoofddocument (memorie van toelichting of jaarverslag) met `zaak`, `
   `altijdMinisteries`, en `verzoeken` in `config.json` (insluiten, uitsluiten). Een rij per zaak. Test: `python3 tests/verzoektest.py`.
 - `antwoorden`: Kamerbrieven die de Kamer aan de zaak koppelt (`GerelateerdNaar`, `GerelateerdVanuit`), zelfde dag of later, geen uitstelbericht.
   De koppeling mist antwoorden (Greenpeace over Bonaire, 22 mei 2026, beantwoord 24 juli).
+
+## Procedurevergaderingen (sinds 27 nov 2026, `procedurevergaderingen()`)
+
+- Procedurevergaderingen van alle commissies van de sectoren, in `activiteiten.json` met per agendapunt `besluiten` (teksten),
+  `voorstel` (true bij een geplande vergadering: dan is het een voorstel) en `zaken`, plus `besluitenlijst` (`docId`, PDF).
+  Punten zonder besluit (brievenlijsten, overzichten) vallen weg.
+- K&GG (`procedurevergaderingen.allePunten` in `config.json`): alle punten. Bij de brede commissies (I&W, LVVN, VRO, FIN) alleen punten
+  over een zaak die de checker volgt (stuk, commissieverzoek, motie of wet); zonder zulke punten valt de vergadering weg.
+- Genomen besluiten (geen voorstellen) staan ook bij het stuk: `besluiten` in `stukken.json` (`datum`, `activiteit`, `commissie`, `teksten`).
+- Ze worden niet samengevat (root `CLAUDE.md`, stap 2).

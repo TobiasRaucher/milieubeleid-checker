@@ -320,6 +320,71 @@ def activiteiten(commissies, start, plenaire_termen):
     return [normaliseer_activiteit(a) for a in uit]
 
 
+PV_EXPAND = (
+    "Agendapunt($filter=Verwijderd eq false;$select=Volgorde,Onderwerp;"
+    "$expand=Besluit($filter=Verwijderd eq false;$select=BesluitTekst,Status),Zaak($select=Nummer)),"
+    "Document($filter=Verwijderd eq false and Soort eq 'Besluitenlijst procedurevergadering';$select=Id,DocumentNummer,ContentType)"
+)
+
+
+def procedurevergaderingen(com_sectoren, start, relevant):
+    """Procedurevergaderingen van de gevolgde commissies met het besluit per agendapunt (Tobias, 27 nov 2026).
+    Een besluit met Status 'Voorstel' (geplande vergadering) heet op de site 'Voorstel'. Agendapunten zonder besluit
+    (brievenlijsten, overzichten) vallen weg. Bij een brede commissie (alle behalve `allePunten` in config.json) alleen
+    de punten over een zaak die de checker volgt (`relevant`); een vergadering zonder zulke punten valt weg."""
+    cfg = CONFIG.get("procedurevergaderingen") or {}
+    voortouw = " or ".join(f"Voortouwafkorting eq '{c}'" for c in com_sectoren)
+    rec = odata("Activiteit", {
+        "$filter": f"Verwijderd eq false and Soort eq 'Procedurevergadering' and ({voortouw}) and Datum ge {start}T00:00:00Z",
+        "$select": ACT_SELECT, "$expand": PV_EXPAND, "$orderby": "Datum desc"}, max_pages=20)
+    uit = []
+    for a in rec:
+        if a.get("Status") in ("Geannuleerd", "Verplaatst"):
+            continue
+        alles = a.get("Voortouwafkorting") in cfg.get("allePunten", [])
+        punten = []
+        for ap in sorted(a.get("Agendapunt") or [], key=lambda x: x.get("Volgorde") or 0):
+            zaken = [z["Nummer"] for z in ap.get("Zaak") or [] if z.get("Nummer")]
+            teksten = []
+            for b in ap.get("Besluit") or []:
+                t = (b.get("BesluitTekst") or "").strip()
+                if t and t not in teksten:
+                    teksten.append(t)
+            if not teksten or not (alles or any(z in relevant for z in zaken)):
+                continue
+            voorstel = all(b.get("Status") == "Voorstel" for b in ap.get("Besluit") or [])
+            punten.append({"volgorde": ap.get("Volgorde"), "onderwerp": ap.get("Onderwerp"), "zaken": zaken,
+                           "besluiten": teksten, "voorstel": voorstel, "stukken": []})
+        if not punten and not alles:
+            continue
+        out = {k: a.get(k) for k in ["Id", "Nummer", "Soort", "Onderwerp", "Datum", "Aanvangstijd", "Eindtijd", "Locatie", "Status",
+                                     "Voortouwnaam", "Voortouwafkorting", "Besloten", "Noot"]}
+        doc = next(iter(a.get("Document") or []), None)
+        tk_link = f"https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id={a.get('Nummer')}"
+        out.update({"SoortWeergave": "Procedurevergadering", "agendapunten": punten, "bewindspersonen": [], "voorzitter": None,
+                    "deelnemers": [], "zaal": a.get("Locatie"), "tkLink": tk_link,
+                    "sectoren": com_sectoren[a.get("Voortouwafkorting")],
+                    "besluitenlijst": {"docId": doc["Id"], "id": doc.get("DocumentNummer"), "bestand": bestandssoort(doc.get("ContentType")),
+                                       "titel": a.get("Onderwerp"), "link": tk_link} if doc else None})
+        uit.append(out)
+    return uit
+
+
+def besluiten_bij_stukken(stuk_lijst, pv):
+    """Zet bij elk stuk de genomen besluiten van procedurevergaderingen over zijn zaak (geen voorstellen), oudste eerst."""
+    per_zaak = {}
+    for a in sorted(pv, key=lambda x: x.get("Datum") or ""):
+        for p in a["agendapunten"]:
+            if p["voorstel"]:
+                continue
+            for z in p["zaken"]:
+                per_zaak.setdefault(z, []).append({"datum": (a.get("Datum") or "")[:10], "activiteit": a.get("Nummer"),
+                                                   "commissie": a.get("Voortouwafkorting"), "teksten": p["besluiten"]})
+    for x in stuk_lijst:
+        if per_zaak.get(x.get("zaak")):
+            x["besluiten"] = per_zaak[x["zaak"]]
+
+
 def stemmingen(start):
     """{zaaknummer: {"datum", "tijd" (als bekend), "activiteit"}} uit de agendapunten van plenaire Stemmingen. Per zaak de eerstvolgende
     geplande stemming, en anders de laatst gehouden (een motie kan worden uitgesteld en opnieuw geagendeerd).
@@ -1225,6 +1290,24 @@ def main():
         # alleen de moties en amendementen die de checker volgt
         gevolgd = {z["nummer"] for z in alle_zaken.values()}
         stem_data = {n: d for n, d in stem_data.items() if n in gevolgd}
+
+    # 7b. procedurevergaderingen met besluiten; de besluiten ook bij de Kamerbrieven en Kamervragen
+    try:
+        com_sectoren = {}
+        for code, s in CONFIG["sectoren"].items():
+            if s.get("actief"):
+                for c in s["commissies"]:
+                    com_sectoren.setdefault(c, []).append(code)
+        relevant = ({x["zaak"] for x in stuk_lijst} | {x["zaak"] for x in verzoek_lijst}
+                    | {z["nummer"] for z in alle_zaken.values()})
+        pv = procedurevergaderingen(com_sectoren, start, relevant)
+        for a in pv:
+            alle_act[a["Id"]] = a
+        besluiten_bij_stukken(stuk_lijst, pv)
+        log(f"== {len(pv)} procedurevergaderingen")
+    except Exception as e:
+        FOUTEN.append(f"procedurevergaderingen: {e}")
+        log(f"    FOUT procedurevergaderingen: {e}")
 
     OUT.mkdir(parents=True, exist_ok=True)
     zaken_lijst = sorted(alle_zaken.values(), key=lambda z: z["gestartOp"] or "", reverse=True)

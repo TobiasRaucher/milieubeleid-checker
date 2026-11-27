@@ -170,6 +170,10 @@ ontbreekt; voetnoten in een kaartje bij het cijfer; vanaf 3 tussenkoppen een inh
   in de vorm van `motieLijst()` (`stukMotie()`); het losse blok Moties, ook in een samenvatting, toont alleen de rest (`inPunten()`).
   Moties en amendementen linken naar hun opengeklapte rij (`#moties?open=<zaak>`; `open=` werkt op elke tabel via `def.sleutel`). Stukken op
   Kamerstuknummer; moties en amendementen met uitslag of stemmingsdatum; per Kamerstukdossier een link naar `#moties?q=<nummer>`.
+- Procedurevergaderingen (sinds 27 nov 2026, `procedurevergaderingen()` in de pipeline): type "Procedurevergadering", alleen op Agenda (niet in
+  Komt eraan). Uitgeklapt per agendapunt het besluit ("Voorstel" bij een geplande vergadering; `besluitPunt()`), met een link naar de brief
+  op de site (`stukVanZaak()`), en onderaan de besluitenlijst in de documentweergave. Thema's: die van de brieven op de agenda, niet van de
+  agendapunten. Bij een Kamerbrief staat het besluit in de details als "Besluit commissie" (veld `besluiten` in `stukken.json`).
 - Zaal (`zaal`, vaak leeg; plenair = "Plenaire zaal"), label Besloten, en bij openbare vergaderingen van vandaag "Live op Debat Direct".
 - Samenvattingen klappen uit ("Toon samenvatting", of een klik op de regel); bij meer activiteiten staat ze bij de hoofdactiviteit en verwijzen de
   andere ernaar. Samenvatting in twee kolommen: inhoud links, agendapunten en deelnemers rechts.

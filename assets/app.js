@@ -1741,6 +1741,7 @@
         <p>${x.kamer ? `${esc(x.ekSoort || "Kamerstuk")} aan de Eerste Kamer · ` : ""}Document <span class="mono">${esc(x.id)}</span> · ${fmtKort(x.datum)}${x.ondertekenaar ? `, ondertekend door ${esc(x.ondertekenaar)}${x.functie ? ` (${esc(x.functie)})` : ""}` : ""}</p>
         ${ds.length ? `<div class="mstemming"><p class="mtelling">Kamerstuk</p><ul class="mstappen">${ds.map((d) => `<li><span class="mono">${esc(d.nummer)}${d.toevoeging ? "-" + esc(d.toevoeging) : ""}</span> ${esc(d.titel || "")}</li>`).join("")}</ul></div>` : ""}
         ${verz.length ? `<div class="mstemming"><p class="mtelling">Op verzoek van</p><ul class="mstappen">${verz.map((v) => `<li><span class="datum">${fmtKort(v.datum)}</span> Commissie ${esc(commissieKort(v))}: <a href="#vragen?open=${encodeURIComponent(v.id)}">${esc(window.MRThemas.verzoekTitel(v))}</a></li>`).join("")}</ul></div>` : ""}
+        ${(x.besluiten || []).length ? `<div class="mstemming"><p class="mtelling">Besluit commissie</p><ul class="mstappen">${x.besluiten.map((b) => `<li><span class="datum">${fmtKort(b.datum)}</span> <a href="#agenda/a-${encodeURIComponent(b.activiteit)}">Procedurevergadering ${esc(b.commissie)}</a>: ${b.teksten.map(esc).join(" ")}</li>`).join("")}</ul></div>` : ""}
         ${mlinks(docKnop({ ...x, titel: x.onderwerp || x.titel }, "Lees de brief", ""), extLink(x.link, x.kamer ? "Bekijk op officielebekendmakingen.nl" : "Bekijk op tweedekamer.nl"))}
         ${bijlagenBlok([x])}
       </div>`;
@@ -1793,7 +1794,8 @@
   /* ---------- Agenda ---------- */
   function agendaItems() {
     const eigen = S.data.agenda.filter(inSector).map((i) => ({ ...i, bron: "eigen" }));
-    const kamer = S.data.activiteiten.filter((a) => inSector(a) && a.Status === "Gepland").map((a) => ({
+    // procedurevergaderingen alleen op Agenda, niet in Komt eraan
+    const kamer = S.data.activiteiten.filter((a) => inSector(a) && a.Status === "Gepland" && a.Soort !== "Procedurevergadering").map((a) => ({
       datum: a.Datum ? dagNL(new Date(a.Datum)) : null, tijd: ((x) => (x && x !== "00:00" ? x : null))(tijdNL(a.Aanvangstijd || a.Datum)), // zoals op de Agenda (tijdlijnItems)
       type: soortLabel(a), titel: a.Onderwerp, url: a.tkLink || `https://berthub.eu/tkconv/activiteit.html?nummer=${a.Nummer}`, bron: "tk", commissie: commissieNaam(a), _act: a,
     }));
@@ -1837,7 +1839,10 @@
   const TS = window.MRThemas.sleutel;
   function themasVanAct(a) {
     if (!a) return [];
-    if (!_themaCache.has(a.Nummer)) _themaCache.set(a.Nummer, S.T.item(TS.debat(a.Nummer), a.Onderwerp, (a.agendapunten || []).map((ap) => ap.onderwerp)));
+    // een procedurevergadering heeft de thema's van de brieven op haar agenda, niet van alle agendapunten bij elkaar
+    if (!_themaCache.has(a.Nummer)) _themaCache.set(a.Nummer, a.Soort === "Procedurevergadering"
+      ? uniek((a.agendapunten || []).flatMap((ap) => (ap.zaken || []).map(stukVanZaak).filter(Boolean).flatMap(themasBrief)))
+      : S.T.item(TS.debat(a.Nummer), a.Onderwerp, (a.agendapunten || []).map((ap) => ap.onderwerp)));
     return _themaCache.get(a.Nummer);
   }
   function themasVanDebat(d) {
@@ -2079,10 +2084,20 @@
   const stukMotie = (st) => (/^(motie|amendement)/i.test(st.soort || "") && zaakVanNr(zaakUitLink(st.link))) || null;
   // nummers van de moties die al in de agendapunten staan; het losse blok Moties toont alleen de rest
   const inPunten = (a) => new Set(heeftAgenda(a) ? puntenVan(a).flatMap((ap) => (ap.stukken || []).map(stukMotie).filter(Boolean).map((z) => z.nummer)) : []);
+  // procedurevergadering: per agendapunt het besluit (of het voorstel, bij een geplande vergadering) en de brief op de site
+  let _stukZaak = null;
+  const stukVanZaak = (n) => (_stukZaak ||= new Map(S.data.stukken.map((x) => [x.zaak, x]))).get(n);
+  const stukHref = (x) => (x.soort === "Brief regering" ? lijstHref("kamerbrieven", x.id) : lijstHref("kamervragen", (vraagRijen().find((r) => r.zaak && r.zaak === x.zaak) || x).id));
+  const besluitPunt = (ap) => {
+    const x = (ap.zaken || []).map(stukVanZaak).find(Boolean);
+    const titel = esc((ap.onderwerp || "").replace(/:\s*$/, ""));
+    return `<li><b>${x ? `<a href="${esc(stukHref(x))}">${titel}</a>` : titel}</b><div class="small">${ap.voorstel ? "Voorstel" : "Besluit"}: ${ap.besluiten.map(esc).join(" ")}</div></li>`;
+  };
   function agendapuntenBlok(a) {
     const aps = puntenVan(a);
     if (!aps.length) return "";
     const punt = (ap) => {
+      if (ap.besluiten) return besluitPunt(ap);
       const st = [...(ap.stukken || [])].sort(opKamerstuk), ms = st.map(stukMotie).filter(Boolean), rest = st.filter((x) => !stukMotie(x)), gehad = new Set();
       const dossier = (x) => { const ks = (x.kamerstuk || "").replace(/-[^-]+$/, ""); return ks && !gehad.has(ks) && gehad.add(ks) && heeftMoties(ks) ? ks : ""; };
       return `<li><b>${esc((ap.onderwerp || "").replace(/:\s*$/, ""))}</b>${rest.length ? `<div class="small muted">Te behandelen:</div><ul class="stukken">${rest.map((x) => stukRegel(x, ap.onderwerp, dossier(x))).join("")}</ul>` : ""}${motieLijst(ms)}</li>`;
@@ -2123,7 +2138,7 @@
     return `<button type="button" class="toggle knop licht" aria-expanded="${open}" aria-controls="b-${esc(id)}"><span class="pijltje" aria-hidden="true"></span><span class="dicht">${dicht}</span><span class="opn">Verberg ${wat}</span></button>
       <div class="body-wrap"><div class="body" id="b-${esc(id)}">
         ${!inhoud ? `<div class="deelnemers">${deelnemers}</div>` : n && deelnemers ? `<div class="sam-raster"><div class="sam-hoofd">${inhoud}</div><div class="sam-zij"><section><h4>Deelnemers</h4><div class="deelnemers">${deelnemers}</div></section></div></div>` : `<div>${inhoud}</div>`}
-        <div class="uitvoet">${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}${transcript}<button type="button" class="linkknop inklap" data-inklap>${hoofd(wat)} inklappen</button></div>
+        <div class="uitvoet">${a.besluitenlijst ? docRegel(a.besluitenlijst, "Besluitenlijst") : ""}${url ? extLink(url, "Bekijk op tweedekamer.nl") : ""}${transcript}<button type="button" class="linkknop inklap" data-inklap>${hoofd(wat)} inklappen</button></div>
       </div></div>`;
   }
 

@@ -757,6 +757,10 @@
       "21501-33"
     ]
   },
+  "procedurevergaderingen": {
+    "_uitleg": "Procedurevergaderingen van de commissies van de sectoren, met het besluit per agendapunt (sinds 27 nov 2026). Bij de commissies in allePunten alle punten met een besluit; bij de andere (brede) commissies alleen punten over een zaak die de checker volgt.",
+    "allePunten": ["K&GG"]
+  },
   "toezeggingen": {
     "_uitleg": "Toezeggingen uit het toezeggingenregister van de Tweede Kamer. Een toezegging komt in de checker als ze bij een gevolgde activiteit hoort, of als ze van een van deze ministeries is.",
     "altijdMinisteries": [
