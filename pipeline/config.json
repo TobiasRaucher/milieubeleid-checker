@@ -246,7 +246,7 @@
         "\\bLNG\\b",
         "\\bkern(energie|centrale)",
         "\\bwind ?(op|parken|park|energie)",
-        "\\bzonne",
+        "\\bzonne(?!tje)",
         "\\bzon op",
         "\\bwarmte(net|transitie|pomp|wet|fonds)",
         "\\bcollectieve warmte",
@@ -743,7 +743,9 @@
     "uitsluiten": [
       "^Uitstel\\b",
       "^Uitstel beantwoording",
-      "brandstofprijzen voor taxi"
+      "brandstofprijzen voor taxi",
+      "Palestijnen uit Gaza",
+      "betrapte drugskoeriers"
     ],
     "negeerInTekst": [
       "Economische Zaken en Klimaat",

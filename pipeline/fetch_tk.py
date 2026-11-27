@@ -350,7 +350,8 @@ def procedurevergaderingen(com_sectoren, start, relevant):
                 t = (b.get("BesluitTekst") or "").strip()
                 if t and t not in teksten:
                     teksten.append(t)
-            if not teksten or not (alles or any(z in relevant for z in zaken)):
+            # een geplande vergadering heeft voorstellen zonder tekst: het punt blijft staan als het een besluit of een zaak heeft
+            if not (teksten or ap.get("Besluit") or zaken) or not (alles or any(z in relevant for z in zaken)):
                 continue
             voorstel = all(b.get("Status") == "Voorstel" for b in ap.get("Besluit") or [])
             punten.append({"volgorde": ap.get("Volgorde"), "onderwerp": ap.get("Onderwerp"), "zaken": zaken,
@@ -375,7 +376,7 @@ def besluiten_bij_stukken(stuk_lijst, pv):
     per_zaak = {}
     for a in sorted(pv, key=lambda x: x.get("Datum") or ""):
         for p in a["agendapunten"]:
-            if p["voorstel"]:
+            if p["voorstel"] or not p["besluiten"]:
                 continue
             for z in p["zaken"]:
                 per_zaak.setdefault(z, []).append({"datum": (a.get("Datum") or "")[:10], "activiteit": a.get("Nummer"),

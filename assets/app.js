@@ -2091,7 +2091,7 @@
   const besluitPunt = (ap) => {
     const x = (ap.zaken || []).map(stukVanZaak).find(Boolean);
     const titel = esc((ap.onderwerp || "").replace(/:\s*$/, ""));
-    return `<li><b>${x ? `<a href="${esc(stukHref(x))}">${titel}</a>` : titel}</b><div class="small">${ap.voorstel ? "Voorstel" : "Besluit"}: ${ap.besluiten.map(esc).join(" ")}</div></li>`;
+    return `<li><b>${x ? `<a href="${esc(stukHref(x))}">${titel}</a>` : titel}</b>${ap.besluiten.length ? `<div class="small">${ap.voorstel ? "Voorstel" : "Besluit"}: ${ap.besluiten.map(esc).join(" ")}</div>` : ""}</li>`;
   };
   function agendapuntenBlok(a) {
     const aps = puntenVan(a);
