@@ -1592,7 +1592,7 @@
   "Id": "4d0c9df2-dbcb-47f8-b81e-509b67f7f59c",
   "Nummer": "2026A08839",
   "Soort": "Technische briefing",
-  "Onderwerp": "Expertgroep Gezondheid IJmond",
+  "Onderwerp": "Expertgroep Gezondheid IJmond over haar derde advies",
   "Datum": "2026-12-10T11:15:00+01:00",
   "Aanvangstijd": "2026-12-10T11:15:00+01:00",
   "Eindtijd": "2026-12-10T12:15:00+01:00",
@@ -1603,7 +1603,28 @@
   "Besloten": false,
   "Noot": null,
   "SoortWeergave": "Technische briefing",
-  "agendapunten": [],
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Derde advies van de Expertgroep Gezondheid IJmond",
+    "stukken": [
+     {
+      "kamerstuk": "28089-377",
+      "soort": "Brief regering",
+      "datum": "2026-07-01",
+      "onderwerp": "Derde advies Expertgroep Gezondheid IJmond",
+      "ondertekenaar": "A.W.H. Bertram",
+      "functie": "staatssecretaris van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z15292&did=2026D34351"
+     }
+    ]
+   },
+   {
+    "volgorde": 2,
+    "onderwerp": "De sprekers worden op een later moment bekendgemaakt.",
+    "stukken": []
+   }
+  ],
   "bewindspersonen": [],
   "voorzitter": null,
   "deelnemers": [],
@@ -2432,6 +2453,11 @@
    {
     "naam": "D.A. Ergin",
     "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.J.G. Graus",
+    "fractie": "PVV",
     "functie": "Tweede Kamerlid"
    }
   ],
