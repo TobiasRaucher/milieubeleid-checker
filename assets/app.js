@@ -538,7 +538,7 @@
       const basis = actief.def();
       return tabelPagina(actief.tdef, kop,
         `${esc(actief.label)} met het thema ${esc(t.label)}; dezelfde tabel als op <a href="#${basis.tab}?thema=${encodeURIComponent(t.slug)}">${esc(actief.alle)}</a>.`,
-        actief.hint, schak);
+        "Zoeken", schak); // kort: het veld is hier smal (Tobias, 27 nov 2026)
     }
     // Overzicht: Net binnen en Komt eraan, zoals op de voorpagina, alleen voor dit thema
     const binnen = netBinnen(t.slug);
