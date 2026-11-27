@@ -9376,6 +9376,34 @@
   ]
  },
  {
+  "id": "2026D48850",
+  "docId": "df351e53-d3a2-46ad-9ec9-639e032c4884",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-10-06",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van het lid Teunissen over het in het zonnetje zetten van Booking, terwijl dit bedrijf bijdraagt aan illegale Israëlische nederzettingen op bezet Palestijns gebied",
+  "zaak": "2026Z17010",
+  "ministerie": "Buitenlandse Handel en Ontwikkelingssamenwerking",
+  "ondertekenaar": "S.W. Sjoerdsma",
+  "functie": "minister van Buitenlandse Handel en Ontwikkelingssamenwerking",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17010&did=2026D48850",
+  "bijlagen": [
+   {
+    "id": "2026D48851",
+    "titel": "Beslisnota bij antwoord op vragen van het lid Teunissen over het in het zonnetje zetten van Booking, terwijl dit bedrijf bijdraagt aan illegale Israëlische nederzettingen op bezet Palestijns gebied",
+    "bestand": "PDF",
+    "docId": "067c4b0b-629c-4b11-bd7e-1f99dec27e09",
+    "link": "https://www.tweedekamer.nl/downloads/document?id=2026D48851"
+   }
+  ]
+ },
+ {
   "id": "2026D48937",
   "docId": "b2c07ce4-a422-4794-80e2-79267c79be09",
   "bestand": "DOCX",
@@ -11514,6 +11542,25 @@
     ]
    }
   ]
+ },
+ {
+  "id": "2026D47201",
+  "docId": "d88f74e7-e399-46fb-aab4-91a7e4c5cc02",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-09-29",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Ellian en De Beer over het bericht \"Palestijnen uit Gaza na maanden toch met Nederlandse hulp geland op Schiphol\"",
+  "zaak": "2026Z14589",
+  "ministerie": "Asiel en Migratie",
+  "ondertekenaar": "G. van den Brink",
+  "functie": "minister van Asiel en Migratie",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z14589&did=2026D47201"
  },
  {
   "id": "2026D47141",
@@ -20298,6 +20345,49 @@
     "teksten": [
      "Reeds geagendeerd voor het schriftelijk overleg Informele Transportraad van 20 en 21 september, waarvoor inbreng is geleverd op donderdag 3 september 2026."
     ]
+   }
+  ]
+ },
+ {
+  "id": "2026D38626",
+  "docId": "dba5e641-348f-49b2-a762-2d42c19c8898",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-08-19",
+  "titel": null,
+  "onderwerp": "Het in het zonnetje zetten van Booking, terwijl dit bedrijf bijdraagt aan illegale Israëlische nederzettingen op bezet Palestijns gebied",
+  "zaak": "2026Z17010",
+  "ministerie": null,
+  "ondertekenaar": "R.A.A. Jetten",
+  "functie": "minister-president",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17010&did=2026D38626",
+  "ministeries": [],
+  "indieners": [
+   {
+    "naam": "C. Teunissen",
+    "fractie": "PvdD",
+    "relatie": "Eerste ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2026D42916",
+    "docId": "4b18a6e5-419d-49d8-8f13-c838dcc68b2e",
+    "bestand": "PDF",
+    "datum": "2026-09-11",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17010&did=2026D42916"
+   },
+   {
+    "id": "2026D48608",
+    "docId": "a239f75f-1750-4bf4-b276-b1d9666f39cc",
+    "bestand": "PDF",
+    "datum": "2026-10-05",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z17010&did=2026D48608"
    }
   ]
  },
@@ -29316,6 +29406,42 @@
    "natuur-stikstof-landbouw"
   ],
   "link": "https://zoek.officielebekendmakingen.nl/kst-35334-CM.html"
+ },
+ {
+  "id": "2026D32695",
+  "docId": "9b8cef61-33fb-4a3f-9569-0f9d23b217ab",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2026-06-25",
+  "titel": null,
+  "onderwerp": "Het bericht 'Palestijnen uit Gaza na maanden toch met Nederlandse hulp geland op Schiphol'",
+  "zaak": "2026Z14589",
+  "ministerie": "Onderwijs, Cultuur en Wetenschap",
+  "ondertekenaar": "R.M. Letschert",
+  "functie": "minister van Onderwijs, Cultuur en Wetenschap",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z14589&did=2026D32695",
+  "ministeries": [
+   "Onderwijs, Cultuur en Wetenschap",
+   "Asiel en Migratie",
+   "Buitenlandse Zaken"
+  ],
+  "indieners": [
+   {
+    "naam": "U. Ellian",
+    "fractie": "VVD",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "M.E.E. de Beer",
+    "fractie": "VVD",
+    "relatie": "Mede ondertekenaar"
+   }
+  ]
  },
  {
   "id": "2026D32823",
@@ -59456,6 +59582,25 @@
   ]
  },
  {
+  "id": "2026D02677",
+  "docId": "b005940c-b2be-4b08-b2d3-b847a8f27795",
+  "bestand": "PDF",
+  "soort": "Antwoord schriftelijke vragen",
+  "datum": "2026-01-22",
+  "titel": null,
+  "onderwerp": "Antwoord op vragen van de leden Ellian en Michon-Derkzen over het bericht ‘Rechters geven op Schiphol betrapte drugskoeriers lagere straf door scheefgroei’",
+  "zaak": "2025Z21155",
+  "ministerie": "Justitie en Veiligheid",
+  "ondertekenaar": "F. van Oosten",
+  "functie": "minister van Justitie en Veiligheid",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21155&did=2026D02677"
+ },
+ {
   "id": "2026D02726",
   "docId": "d3336d71-11ec-43a6-a209-f276f51e5b06",
   "bestand": "PDF",
@@ -68171,6 +68316,49 @@
     "naam": "R.J. van Asten",
     "fractie": "D66",
     "relatie": "Eerste ondertekenaar"
+   }
+  ]
+ },
+ {
+  "id": "2025D50044",
+  "docId": "3045ec95-ed48-4b2e-b410-6fe3ab93164f",
+  "bestand": "PDF",
+  "soort": "Schriftelijke vragen",
+  "datum": "2025-12-04",
+  "titel": null,
+  "onderwerp": "Het bericht ‘Rechters geven op Schiphol betrapte drugskoeriers lagere straf door scheefgroei’",
+  "zaak": "2025Z21155",
+  "ministerie": "Justitie en Veiligheid",
+  "ondertekenaar": "F. van Oosten",
+  "functie": "minister van Justitie en Veiligheid",
+  "kamerstuk": null,
+  "dossiers": [],
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ],
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21155&did=2025D50044",
+  "ministeries": [
+   "Justitie en Veiligheid"
+  ],
+  "indieners": [
+   {
+    "naam": "U. Ellian",
+    "fractie": "VVD",
+    "relatie": "Eerste ondertekenaar"
+   },
+   {
+    "naam": "I.J.M. Michon-Derkzen",
+    "fractie": "VVD",
+    "relatie": "Mede ondertekenaar"
+   }
+  ],
+  "uitstel": [
+   {
+    "id": "2025D54066",
+    "docId": "f7d5293d-f20f-4450-be52-145eccf34c1c",
+    "bestand": "PDF",
+    "datum": "2025-12-29",
+    "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2025Z21155&did=2025D54066"
    }
   ]
  },
