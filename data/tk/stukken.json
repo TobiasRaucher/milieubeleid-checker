@@ -7,7 +7,7 @@
   "datum": "2026-11-27",
   "titel": null,
   "onderwerp": "Antwoord op vragen van het lid Van der Plas over het afschieten van wolvenroedels in Duitsland en de toenemende aanvallen van wolven op landbouwhuisdieren",
-  "zaak": null,
+  "zaak": "2026Z23733",
   "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
   "ondertekenaar": "S.P.A. Erkens",
   "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur",
@@ -16,7 +16,7 @@
   "sectoren": [
    "natuur-stikstof-landbouw"
   ],
-  "link": "https://www.tweedekamer.nl/kamerstukken/detail?did=2026D61621",
+  "link": "https://www.tweedekamer.nl/kamerstukken/kamervragen/detail?id=2026Z23733&did=2026D61621",
   "bijlagen": [
    {
     "id": "2026D61622",
@@ -688,6 +688,31 @@
    "ruimte-mobiliteit"
   ],
   "link": "https://zoek.officielebekendmakingen.nl/kst-1281947.html"
+ },
+ {
+  "id": "kst-1282415",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-11-24",
+  "titel": null,
+  "onderwerp": "Brief van de minister van LVVN over verzoek spoedige behandeling begroting LVVN 2027 en spoedwet vervangen omgevingswaarden stikstofdepositie door omgevingswaarden stikstofemissie",
+  "zaak": null,
+  "ministerie": "Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "37020 XIV-B",
+  "dossiers": [
+   {
+    "nummer": "37020 XIV",
+    "toevoeging": null,
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-1282415.html"
  },
  {
   "id": "2026D60018",
