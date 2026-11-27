@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-11-25T09:30:00Z",
+  "bijgewerkt": "2026-11-27T12:06:00Z",
   "_uitleg": "Debat op gehoord.de per activiteitnummer, voor vergaderingen zonder samenvatting (die hebben hun eigen bron). Meer nummers: een vergadering in delen. Geen debat met minder dan 5 fragmenten.",
   "debatten": {
     "2025A05890": ["21991"],
@@ -43,7 +43,6 @@
     "2026A03850": ["133575"],
     "2026A03942": ["69407"],
     "2026A03971": ["147244"],
-    "2026A04028": ["362202"],
     "2026A04053": ["75918"],
     "2026A04066": ["108642"],
     "2026A04081": ["118421"],

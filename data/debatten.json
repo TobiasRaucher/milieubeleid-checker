@@ -1,6 +1,6 @@
 {
  "_uitleg": "Samenvattingen van debatten, geschreven door Claude op basis van de (automatische) transcripten van gehoord.de. Geen officiële bron: citeer de Handelingen. Elk debat linkt naar het transcript zodat je kunt nalezen en terugkijken.",
- "bijgewerkt": "2026-11-25T10:00:00Z",
+ "bijgewerkt": "2026-11-27T12:06:00Z",
  "debatten": [
   {
    "id": "246687",
@@ -3688,6 +3688,107 @@
    "samengevatDoor": "Claude",
    "samengevatOp": "2026-11-12",
    "bron": "https://gehoord.de/beraadslagingen/261199"
+  },
+  {
+   "id": "362202",
+   "datum": "2026-11-25",
+   "type": "Commissiedebat",
+   "commissie": "Klimaat en Groene Groei",
+   "titel": "Netcongestie en elektriciteitsnet",
+   "bewindspersoon": "Staatssecretaris De Bat (KGG)",
+   "activiteit": "2026A04028",
+   "video": "https://debatdirect.tweedekamer.nl/2026-11-25/klimaat/thorbeckezaal/netcongestie-en-elektriciteitsnet-10-00",
+   "aanzet": "Commissiedebat over de aanpak van netcongestie, na een reeks brieven van de staatssecretaris over de crisisaanpak in Flevoland, Gelderland en Utrecht, de crisiswetgeving, het eerder aanvragen van netcapaciteit voor woningbouw en de beleidsagenda energieopslag. Kort ervoor verscheen een onderzoek van adviesbureau Sirm dat het net in 40 tot 60% van de onderzochte gebieden minder vol noemt dan de netbeheerders aannemen.",
+   "gist": "De staatssecretaris scherpte de ambitie aan: de wachtlijst voor een netaansluiting (ruim 15.000 aanvragen) moet eind 2028 gehalveerd zijn en in 2030 'genormaliseerd', in plaats van halvering in 2030. JA21 betwijfelde of dat haalbaar is. Bijna alle fracties vroegen naar de groeiprognoses van de netbeheerders na het Sirm-onderzoek; volgens de staatssecretaris rekenen de nieuwe congestieonderzoeken van eind 2026 met een scenario van vertraagde transitie en een uniforme rapportagestandaard. CDA en D66 vonden het tempo van de crisiswetgeving te laag (onderdelen pas in 2027 of 2028); de staatssecretaris wijst een vergunning van rechtswege ('wie zwijgt, stemt toe') af omdat die volgens hem vertraagt in plaats van versnelt. De Europese stikstofvrijstelling voor netuitbreiding wil hij zonder nationale koppen invoeren, met besluitvorming mogelijk al in maart 2027. Groep Markuszower en PVV gaven het klimaatbeleid (wind, zon, elektrificatie) de schuld van de netcongestie; PRO wilde meer regie op datacenters, die volgens haar bijna een derde van het gevraagde vermogen op de wachtlijst vormen.",
+   "samenvatting": {
+    "partijen": [
+     {
+      "fractie": "VVD",
+      "spreker": "Alisha Müller",
+      "positie": "Noemt netcongestie een topprioriteit en de kabinetsinzet 'te mager' vergeleken met stikstof. Wil meer ambitie dan halvering van de wachtlijst in 2030, nieuwe congestieonderzoeken op realistischere prognoses (na het Sirm-onderzoek), datadeling over de wachtlijst, meer geld voor congestiemanagement in plaats van alleen verzwaren (2025: 1,6 miljoen tegenover 235 miljard aan netverzwaring tot 2040) en snelle invoering van de stikstofvrijstelling. Vroeg een tweeminutendebat aan.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=260980"
+     },
+     {
+      "fractie": "SGP",
+      "spreker": "André Flach",
+      "positie": "Wil ruimte voor innovatieve oplossingen zoals groepscontracten en projectnetten, en vindt dat netbeheerders flexibiliteit te moeizaam benutten (bv. hoofdelijke aansprakelijkheid bij groepscontracten). Vraagt de flex-e-regeling ook voor mkb met een kleinverbruikersaansluiting, lagere nettarieven voor batterijen, behoud van regelbaar vermogen van WKK's in de glastuinbouw en verplichte datadeling met gemeenten.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=261070"
+     },
+     {
+      "fractie": "Groep Markuszower",
+      "spreker": "Hidde Heutink",
+      "positie": "Noemt netcongestie het gevolg van 'jarenlang bestuurlijk falen' van VVD, D66 en CDA en van te snelle elektrificatie met wind en zon sinds het Klimaatakkoord. Wil procedures (MER, natuurvergunning, participatie) drastisch inkorten en vroeg waarom het kabinet Europese versoepeling van de MER-regels niet steunt.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=261100"
+     },
+     {
+      "fractie": "PRO",
+      "spreker": "Sjoukje van Oosterhout",
+      "positie": "Noemt de maatschappelijke schade 10 tot 40 miljard per jaar (volgens de Boston Consulting Group). Wil regie op datacenters en een 'voorzorgpauze', voorrang voor projecten met groot maatschappelijk belang zoals woningbouw, een pragmatische beoordeling van het eerder aanvragen door gemeenten, beter benutten van het net (volgens onderzoek 40 miljard besparing), decentrale oplossingen en publieke medefinanciering om de nettarieven te dempen.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=261150"
+     },
+     {
+      "fractie": "JA21",
+      "spreker": "Daniël van den Berg",
+      "positie": "Wijst op stijgende netkosten per huishouden (van 250 euro in 2022 naar 1.200 euro in 2040, volgens JA21) en vroeg wie de meerkosten van netbewust bouwen betaalt; de beloofde brief daarover kwam niet voor Prinsjesdag. Vroeg naar een noodplan bij black-outs deze winter en twijfelt of halvering van de wachtlijst technisch haalbaar is. Ziet het verkleinen van te zware aansluitingen als eigen verantwoordelijkheid van mensen.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=261231"
+     },
+     {
+      "fractie": "CDA",
+      "spreker": "Henk Jumelet",
+      "positie": "De wachtlijst voor grootverbruikers groeide het afgelopen halfjaar nog met 344 tot 15.498 aanvragen. Wil concrete doelen en mijlpalen voor de komende twee tot drie jaar, de onderdelen van de crisiswetgeving tegelijk in plaats van na elkaar, vergunningvrije uitbreiding binnen bestaande stations en een ministeriële regeling die netbeheerders verplicht netdata openbaar te maken.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=261295"
+     },
+     {
+      "fractie": "PVV",
+      "spreker": "Alexander Kops",
+      "positie": "Verwijt het kabinet dat ander beleid (meer windturbines, ETS2, een verplichte warmtepomp) de netcongestie verergert. Vindt weersafhankelijke stroom onbetrouwbaar en vroeg wat de staatssecretaris doet om te voorkomen dat stroomstoringen kwetsbare patiënten in gevaar brengen. Twijfelt of de crisisaanpak, met maatregelen vanaf medio 2027, op tijd effect heeft.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=261332"
+     },
+     {
+      "fractie": "D66",
+      "spreker": "Felix Klos",
+      "positie": "Vraagt 'crisistempo' en wil weten wanneer elke maatregel naar de Kamer komt. Vindt de afwijzing van vergunning van rechtswege te vaag en wil dat het kabinet onderzoekt voor welke categorieën het wel kan. Dient met de ChristenUnie een amendement in voor 15 miljoen euro extra voor de flex-e-regeling (ongeveer 60 megawatt), wil een XL-variant voor grote verbruikers, en wil dat netbeheerders 300.000 huishoudens en kleine bedrijven met een te zware aansluiting actief waarschuwen.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=261353"
+     },
+     {
+      "fractie": "BBB",
+      "spreker": "Henk Vermeer",
+      "positie": "Volgens aannemers laten regionale netbeheerders aannemerscapaciteit liggen doordat extra werk opnieuw moet worden aanbesteed. Wil per provincie zien welke projecten zijn versneld en hoeveel woningen risico lopen, en eerst eenvoudiger flexibele contracten met een eerlijke vergoeding in plaats van normen voor flexibiliteit. Waarschuwt dat commerciële batterijen op prijs reageren en congestie ook kunnen vergroten.",
+      "link": "https://gehoord.de/beraadslagingen/362202?segment=261392"
+     }
+    ],
+    "kabinet": [
+     "Ambitie: de wachtlijst (in aantal aanvragen, niet in vermogen) eind 2028 gehalveerd en in 2030 genormaliseerd. Daarvoor moet de wachtlijst worden opgeschoond en lopen de netuitbreidingen door. In de regio Flevoland, Gelderland en Utrecht is ongeveer 600 megawatt gevonden; die aanpak wordt nu in Noord-Brabant (14 netvlakken) en daarna in de rest van het land toegepast.",
+     "De netbeheerders leveren eind 2026 nieuwe congestieonderzoeken op met een scenario van vertraagde transitie en een uniforme rapportagestandaard; het Sirm-rapport noemt hij een welkome aanvulling.",
+     "Voor woningbouw is volgens de staatssecretaris in totaal veel ruimte: ruim 500.000 woningen zitten als onderhanden werk bij de netbeheerders en via het eerder aanvragen kwam een vergelijkbaar aantal erbij. Netbeheerders en gemeenten moeten samen de kansrijke projecten selecteren.",
+     "Vergunning van rechtswege helpt volgens hem niet: termijnen worden verlengd, rechters zijn kritisch en Europese regels (MER, Habitatrichtlijn, Verdrag van Aarhus) sluiten het voor de belangrijkste vergunningen uit. De crisiswetgeving komt in delen, zodat niets op het laatste onderdeel hoeft te wachten.",
+     "De stikstofvrijstelling voor netuitbreiding uit het Europese netpakket wordt één op één ingevoerd, met besluitvorming mogelijk in maart 2027. De vergunningvrije uitbreiding van bestaande stations komt in het tweede kwartaal van 2027. Projecten van 110 en 150 kV gaan naar de provincies, niet naar het Rijk.",
+     "Congestiemanagement groeit (8 miljoen euro in 2026) en in 2027 komen nieuwe vormen van flexcontracten. De flex-e-regeling gaat in de eerste helft van 2027 open, maar niet voor kleinverbruikers. Een keurmerk voor energiemanagementsystemen vindt hij nu te vertragend.",
+     "Actief waarschuwen bij te zware aansluitingen vindt hij te veel werk voor de netbeheerders; dat loopt via installateurs. Voor de winter zijn maatregelen tegen black-outs getroffen, zoals gasturbines en batterijen.",
+     "Met de staatssecretaris van Digitale Zaken komt vroeg in 2027 een beleidsagenda voor datacenters en rekencapaciteit."
+    ],
+    "toezeggingen": [
+     "In de voortgangsbrief van maart 2027: een reflectie op de nieuwe congestieonderzoeken van de netbeheerders.",
+     "In dezelfde voortgangsbrief: de voortgang van het opschonen van de wachtlijsten (richting Jumelet).",
+     "In dezelfde voortgangsbrief: de uitkomst van het gesprek met de minister van IenW over Europese milieuwetgeving (MER) en netprojecten (richting Heutink).",
+     "In dezelfde voortgangsbrief: een reactie op het signaal dat regionale netbeheerders aannemerscapaciteit niet benutten door aanbestedingsregels (richting Vermeer).",
+     "In dezelfde voortgangsbrief: de stand van zaken over het delen van netdata en of een ministeriële regeling nodig is (richting Jumelet)."
+    ],
+    "doorgeleid": [
+     "Brief van de minister van VRO over wie de meerkosten van netbewust bouwen betaalt, voor het eind van 2026; de staatssecretaris rappelleert (richting Van den Berg)."
+    ],
+    "moties": "Geen; Müller (VVD) vroeg een tweeminutendebat aan.",
+    "vervolg": [
+     "Tweeminutendebat Netcongestie en elektriciteitsnet.",
+     "Nieuwe congestieonderzoeken van de netbeheerders, eind 2026.",
+     "Voortgangsbrief netcongestie, maart 2027.",
+     "Beleidsagenda datacenters en rekencapaciteit, begin 2027."
+    ]
+   },
+   "samengevatDoor": "Claude",
+   "samengevatOp": "2026-11-27",
+   "sector": "klimaat-energie",
+   "bron": "https://gehoord.de/beraadslagingen/362202"
   }
  ]
 }
