@@ -1,5 +1,104 @@
 [
  {
+  "id": "1fe79054-0236-4bcc-adc3-0402f2e371a8",
+  "nummer": "2026Z26437",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van Buitenlandse Handel en Ontwikkelingssamenwerking (XVII) voor het jaar 2027",
+  "onderwerp": "Motie van de leden Hoogeveen en Maes over geen ruimere uitleg bij de Wivo van de verplichtingen vanuit de CSDDD ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-26",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XVII",
+    "titel": "Vaststelling van de begrotingsstaat van Buitenlandse Handel en Ontwikkelingssamenwerking (XVII) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M.P. Hoogeveen",
+    "fractie": "JA21",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "N.C.J. Maes",
+    "fractie": "VVD",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "financien"
+  ],
+  "document": "2026D61207",
+  "docId": "447b6e31-56ff-4d21-8f27-68c04ffbabd9",
+  "bestand": "PDF",
+  "volgnummer": 71,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26437&did=2026D61207",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26437"
+ },
+ {
+  "id": "618fd562-3e0a-4282-afd6-7c79a5b2ef34",
+  "nummer": "2026Z26557",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Van der Plas over bezien welk deel van het budget voor CoP Noordzee kan worden overgeheveld naar het VIN ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-26",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIV",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D61433",
+  "docId": "a7fdae58-8c01-4b82-bc10-9bffde13cc1c",
+  "bestand": "PDF",
+  "volgnummer": 86,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26557&did=2026D61433",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26557"
+ },
+ {
   "id": "3fad0a80-2f39-4581-9062-95af3447df0a",
   "nummer": "2026Z26345",
   "soort": "Motie",
@@ -44,6 +143,120 @@
   "volgnummer": null,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26345&did=2026D61028",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26345"
+ },
+ {
+  "id": "37866715-cbd5-4308-b9dd-98b2200c289d",
+  "nummer": "2026Z26411",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaat van Buitenlandse Handel en Ontwikkelingssamenwerking (XVII) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Ceder c.s. over zich ervoor inzetten dat de TFFF bijdraagt aan de bescherming van bossen en de rechten van inheemse bevolkingsgroepen ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-26",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XVII",
+    "titel": "Vaststelling van de begrotingsstaat van Buitenlandse Handel en Ontwikkelingssamenwerking (XVII) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "D.G.M. Ceder",
+    "fractie": "ChristenUnie",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "S.C. Kröger",
+    "fractie": "PRO",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "P. Bamenga",
+    "fractie": "D66",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D61174",
+  "docId": "57247e06-2e75-4bf9-8d1a-5e22e54107ce",
+  "bestand": "PDF",
+  "volgnummer": 54,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26411&did=2026D61174",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26411"
+ },
+ {
+  "id": "fe5d6b5f-a033-44ea-baad-d21ca70bbc83",
+  "nummer": "2026Z26558",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Motie van het lid Ten Hove c.s. over geen onomkeerbare besluiten over stikstofmaatregelen totdat de Europese Commissie haar beoordeling van de Vogel- en Habitatrichtlijn bekend heeft gemaakt ",
+  "citeertitel": null,
+  "gestartOp": "2026-11-26",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Nog niet bekend",
+  "behandelstatus": null,
+  "dossiers": [
+   {
+    "nummer": 37020,
+    "toevoeging": "XIV",
+    "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027"
+   }
+  ],
+  "indieners": [
+   {
+    "naam": "M.C.G. Keijzer",
+    "fractie": "Keijzer",
+    "relatie": "Medeindiener"
+   },
+   {
+    "naam": "T. ten Hove",
+    "fractie": "Groep Markuszower",
+    "relatie": "Indiener"
+   },
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "relatie": "Medeindiener"
+   }
+  ],
+  "besluiten": [
+   {
+    "soort": null,
+    "tekst": null,
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "document": "2026D61434",
+  "docId": "5273fd25-9818-4ab2-a0de-b5780250b094",
+  "bestand": "PDF",
+  "volgnummer": 87,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26558&did=2026D61434",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26558"
  },
  {
   "id": "ac56e42b-44b4-4b4b-94de-159b442fd08e",

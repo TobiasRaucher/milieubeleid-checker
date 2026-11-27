@@ -2576,6 +2576,11 @@
     "naam": "A. Podt",
     "fractie": "D66",
     "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
    }
   ],
   "zaal": "Plenaire zaal",
@@ -2744,7 +2749,7 @@
   "Onderwerp": "Begroting Landbouw, Visserij, Voedselzekerheid en Natuur (voortzetting)",
   "Datum": "2026-11-26T15:30:00+01:00",
   "Aanvangstijd": "2026-11-26T15:30:00+01:00",
-  "Eindtijd": "2026-11-26T23:00:00+01:00",
+  "Eindtijd": "2026-11-26T22:31:00+01:00",
   "Locatie": null,
   "Status": "Gepland",
   "Voortouwnaam": "TK",
@@ -3223,7 +3228,7 @@
       "kamerstuk": "37020-XIV-88",
       "soort": "Motie",
       "datum": "2026-11-26",
-      "onderwerp": "Motie van het lid Ten Hove",
+      "onderwerp": "Motie van het lid Ten Hove over onderzoek naar de omvang en oorzaken van de gruttosterfte in andere landen en het aandeel hiervan op de totale gruttopopulatie ",
       "ondertekenaar": "T. ten Hove",
       "functie": "Tweede Kamerlid",
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z26559&did=2026D61435"
@@ -3919,7 +3924,7 @@
   "Aanvangstijd": "2026-11-26T12:00:00+01:00",
   "Eindtijd": "2026-11-26T12:00:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "vaste commissie voor Klimaat en Groene Groei",
   "Voortouwafkorting": "K&GG",
   "Besloten": true,
@@ -4701,7 +4706,43 @@
   ],
   "bewindspersonen": [],
   "voorzitter": null,
-  "deelnemers": [],
+  "deelnemers": [
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R. den Hollander",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "C.A. (Chris) Jansen",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.C. Koorevaar",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "T. ten Hove",
+    "fractie": "Groep Markuszower",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Podt",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
   "zaal": null,
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08540",
   "sectoren": [
