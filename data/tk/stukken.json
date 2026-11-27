@@ -13767,31 +13767,6 @@
   "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AY.html"
  },
  {
-  "id": "kst-1270682",
-  "kamer": "Eerste Kamer",
-  "soort": "Brief regering",
-  "ekSoort": "Brief",
-  "datum": "2026-09-15",
-  "titel": null,
-  "onderwerp": "Brief van de minister van KGG ter aanbieding van kabinetsreactie ontwikkeling energierekening huishoudens",
-  "zaak": null,
-  "ministerie": "Klimaat en Groene Groei",
-  "ondertekenaar": null,
-  "functie": null,
-  "kamerstuk": "29023-AX",
-  "dossiers": [
-   {
-    "nummer": "29023",
-    "toevoeging": null,
-    "titel": "Voorzienings- en leveringszekerheid energie"
-   }
-  ],
-  "sectoren": [
-   "klimaat-energie"
-  ],
-  "link": "https://zoek.officielebekendmakingen.nl/kst-1270682.html"
- },
- {
   "id": "kst-32813-BY",
   "kamer": "Eerste Kamer",
   "soort": "Brief regering",
@@ -13815,6 +13790,31 @@
    "klimaat-energie"
   ],
   "link": "https://zoek.officielebekendmakingen.nl/kst-32813-BY.html"
+ },
+ {
+  "id": "kst-29023-AX",
+  "kamer": "Eerste Kamer",
+  "soort": "Brief regering",
+  "ekSoort": "Brief",
+  "datum": "2026-09-15",
+  "titel": null,
+  "onderwerp": "Brief van de minister van KGG ter aanbieding van kabinetsreactie ontwikkeling energierekening huishoudens",
+  "zaak": null,
+  "ministerie": "Klimaat en Groene Groei",
+  "ondertekenaar": null,
+  "functie": null,
+  "kamerstuk": "29023-AX",
+  "dossiers": [
+   {
+    "nummer": "29023",
+    "toevoeging": null,
+    "titel": "Voorzienings- en leveringszekerheid energie"
+   }
+  ],
+  "sectoren": [
+   "klimaat-energie"
+  ],
+  "link": "https://zoek.officielebekendmakingen.nl/kst-29023-AX.html"
  },
  {
   "id": "2026D43111",
