@@ -2751,7 +2751,7 @@
   "Aanvangstijd": "2026-11-26T15:30:00+01:00",
   "Eindtijd": "2026-11-26T22:31:00+01:00",
   "Locatie": null,
-  "Status": "Gepland",
+  "Status": "Uitgevoerd",
   "Voortouwnaam": "TK",
   "Voortouwafkorting": "TK",
   "Besloten": false,
@@ -3556,6 +3556,21 @@
       "ondertekenaar": "J.C. Koorevaar",
       "functie": "Tweede Kamerlid",
       "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z26540&did=2026D61416"
+     }
+    ]
+   },
+   {
+    "volgorde": 28,
+    "onderwerp": "Ingetrokken amendement",
+    "stukken": [
+     {
+      "kamerstuk": "37020-XIV-7",
+      "soort": "Amendement",
+      "datum": "2026-11-16",
+      "onderwerp": "Amendement van het lid Koorevaar over middelen voor mobiele stikstofmetingen en vliegtuigmetingen",
+      "ondertekenaar": "J.C. Koorevaar",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z25100&did=2026D57978"
      }
     ]
    }
@@ -4693,13 +4708,13 @@
     "onderwerp": "Wijziging van de Omgevingswet (spoedwet vervangen omgevingswaarden stikstofdepositie door omgevingswaarden stikstofemissie)",
     "stukken": [
      {
-      "kamerstuk": null,
-      "soort": "Advies Afdeling advisering Raad van State",
-      "datum": "2026-11-03",
-      "onderwerp": "37052 Advies Afdeling advisering Raad van State inzake wijziging van de Omgevingswet (spoedwet vervangen omgevingswaarden stikstofdepositie door omgevingswaarden stikstofemissie)",
-      "ondertekenaar": "S. van Haersma Buma",
-      "functie": "vicepresident van de Raad van State",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23895&did=2026D55162"
+      "kamerstuk": "37052-5",
+      "soort": "Verslag (initiatief)wetsvoorstel (nader)",
+      "datum": "2026-11-27",
+      "onderwerp": "Verslag ",
+      "ondertekenaar": "H.S. Steen",
+      "functie": "voorzitter van de vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z23895&did=2026D61505"
      }
     ]
    }

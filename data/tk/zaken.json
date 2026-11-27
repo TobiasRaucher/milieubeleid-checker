@@ -1,5 +1,38 @@
 [
  {
+  "id": "a04447c3-5185-447a-af6f-d9c166f11b76",
+  "nummer": "2026Z26588",
+  "soort": "Motie",
+  "titel": "Vaststelling van de begrotingsstaten van het Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (XIV) en het Diergezondheidsfonds (F) voor het jaar 2027",
+  "onderwerp": "Gewijzigde motie van het lid Beckerman over voorkomen dat de Waddenzee op de lijst van bedreigd werelderfgoed komt (t.v.v. 37020-XIV-76)",
+  "citeertitel": null,
+  "gestartOp": "2026-11-27",
+  "vergaderjaar": "2026-2027",
+  "afgedaan": false,
+  "kabinetsappreciatie": "Niet beschikbaar bij gewijzigde moties en/of amendementen",
+  "behandelstatus": null,
+  "dossiers": [],
+  "indieners": [
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "relatie": "Indiener"
+   }
+  ],
+  "besluiten": [],
+  "uitslag": "in behandeling",
+  "stemtelling": null,
+  "sectoren": [
+   "water-adaptatie"
+  ],
+  "document": "2026D61503",
+  "docId": "b4f16281-f54c-4c93-aea8-694d063f26aa",
+  "bestand": "DOCX",
+  "volgnummer": null,
+  "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26588&did=2026D61503",
+  "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26588"
+ },
+ {
   "id": "fe5d6b5f-a033-44ea-baad-d21ca70bbc83",
   "nummer": "2026Z26558",
   "soort": "Motie",
@@ -9,7 +42,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -37,8 +70,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -67,7 +100,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -85,8 +118,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -115,7 +148,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -138,8 +171,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -168,7 +201,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -220,7 +253,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -253,8 +286,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -282,7 +315,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Verzocht motie aan te houden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -300,14 +333,14 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangehouden",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
@@ -329,7 +362,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -357,8 +390,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -386,7 +419,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -429,8 +462,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -458,7 +491,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -476,8 +509,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -505,7 +538,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -523,14 +556,14 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Stemmen - aangehouden",
+    "tekst": "Aangehouden.",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
    }
   ],
-  "uitslag": "in behandeling",
+  "uitslag": "aangehouden",
   "stemtelling": null,
   "sectoren": [
    "circulair-vervuiling"
@@ -552,7 +585,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -570,8 +603,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -599,7 +632,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -642,8 +675,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -830,7 +863,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -886,8 +919,8 @@
   "citeertitel": null,
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "afgedaan": true,
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -905,8 +938,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -934,7 +967,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -962,8 +995,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -991,7 +1024,7 @@
   "gestartOp": "2026-11-26",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Oordeel Kamer",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -1009,8 +1042,8 @@
   ],
   "besluiten": [
    {
-    "soort": null,
-    "tekst": null,
+    "soort": "Ingediend",
+    "tekst": "Ingediend",
     "stemmingssoort": null,
     "datum": "2026-11-26",
     "stemmen": []
@@ -2597,7 +2630,7 @@
   "gestartOp": "2026-11-23",
   "vergaderjaar": "2026-2027",
   "afgedaan": false,
-  "kabinetsappreciatie": "Nog niet bekend",
+  "kabinetsappreciatie": "Ontraden",
   "behandelstatus": null,
   "dossiers": [
    {
@@ -5845,7 +5878,7 @@
   "citeertitel": null,
   "gestartOp": "2026-11-16",
   "vergaderjaar": "2026-2027",
-  "afgedaan": false,
+  "afgedaan": true,
   "kabinetsappreciatie": "Nog niet bekend",
   "behandelstatus": null,
   "dossiers": [
@@ -5862,8 +5895,16 @@
     "relatie": "Indiener"
    }
   ],
-  "besluiten": [],
-  "uitslag": "in behandeling",
+  "besluiten": [
+   {
+    "soort": "Stemmen - ingetrokken",
+    "tekst": "Ingetrokken.",
+    "stemmingssoort": null,
+    "datum": "2026-11-26",
+    "stemmen": []
+   }
+  ],
+  "uitslag": "ingetrokken",
   "stemtelling": null,
   "sectoren": [
    "natuur-stikstof-landbouw"
