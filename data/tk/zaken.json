@@ -274,7 +274,7 @@
   ],
   "document": "2026D61207",
   "docId": "447b6e31-56ff-4d21-8f27-68c04ffbabd9",
-  "bestand": "PDF",
+  "bestand": "DOCX",
   "volgnummer": 71,
   "tkLink": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z26437&did=2026D61207",
   "link": "https://berthub.eu/tkconv/zaak.html?nummer=2026Z26437"
@@ -208153,7 +208153,7 @@
     "soort": null,
     "tekst": null,
     "stemmingssoort": null,
-    "datum": "2026-11-30",
+    "datum": "2026-12-02",
     "stemmen": []
    },
    {
@@ -208214,7 +208214,7 @@
    {
     "Nummer": "2026A07452",
     "Soort": "Plenair debat (wetgeving)",
-    "Datum": "2026-11-30T00:00:00+01:00",
+    "Datum": "2026-12-02T18:30:00+01:00",
     "Status": "Gepland",
     "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07452"
    }

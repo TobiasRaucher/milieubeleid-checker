@@ -1589,6 +1589,31 @@
   ]
  },
  {
+  "Id": "4d0c9df2-dbcb-47f8-b81e-509b67f7f59c",
+  "Nummer": "2026A08839",
+  "Soort": "Technische briefing",
+  "Onderwerp": "Expertgroep Gezondheid IJmond",
+  "Datum": "2026-12-10T11:15:00+01:00",
+  "Aanvangstijd": "2026-12-10T11:15:00+01:00",
+  "Eindtijd": "2026-12-10T12:15:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Klimaat en Groene Groei",
+  "Voortouwafkorting": "K&GG",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Technische briefing",
+  "agendapunten": [],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": "Wttewaall van Stoetwegenzaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08839",
+  "sectoren": [
+   "klimaat-energie"
+  ]
+ },
+ {
   "Id": "b026a78b-756a-427e-b04a-b28ee4101b42",
   "Nummer": "2026A04354",
   "Soort": "Commissiedebat",
@@ -2085,6 +2110,123 @@
   ]
  },
  {
+  "Id": "b004e89c-4632-4676-86ce-a5aa25601b19",
+  "Nummer": "2026A08908",
+  "Soort": "Plenair debat (wetgeving)",
+  "Onderwerp": "Begroting Volkshuisvesting en Ruimtelijke Ordening (37020-XXII) voortzettting",
+  "Datum": "2026-12-03T10:16:00+01:00",
+  "Aanvangstijd": "2026-12-03T10:16:00+01:00",
+  "Eindtijd": "2026-12-03T15:30:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Plenair debat (wetgeving)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Vaststelling van de begrotingsstaten van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Lijst van vragen",
+      "datum": "2026-10-15",
+      "onderwerp": "Verslag houdende een lijst van vragen inzake vaststelling van de begrotingsstaten van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2027 (Kamerstuk 37020-XXII)",
+      "ondertekenaar": "L. Bromet",
+      "functie": "voorzitter van de vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17055&did=2026D51686"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Boekholt-O’Sullivan",
+    "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "H.E. de Hoop",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.J. van Asten",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.M. van Leijen",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J. Mooiman",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.N.J. Nobel",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.C. (Peter) de Groot",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.R.F. Clemminck",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.S. Steen",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. el Abassi",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08908",
+  "sectoren": [
+   "ruimte-mobiliteit"
+  ]
+ },
+ {
   "Id": "b473f0c0-cda3-45c5-bd47-52fd55df8c79",
   "Nummer": "2026A07640",
   "Soort": "Commissiedebat",
@@ -2219,6 +2361,87 @@
   ]
  },
  {
+  "Id": "93249401-37e3-4489-a614-c032f1a06a7e",
+  "Nummer": "2026A07452",
+  "Soort": "Plenair debat (wetgeving)",
+  "Onderwerp": "Voorstel van wet van het lid Ouwehand tot wijziging van de Wet dieren en de Wet op de economische delicten in verband met het uitfaseren van de bio-industrie en het waarborgen van een dierwaardige veehouderij (36562) 1TK",
+  "Datum": "2026-12-02T18:30:00+01:00",
+  "Aanvangstijd": "2026-12-02T18:30:00+01:00",
+  "Eindtijd": "2026-12-02T22:30:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Plenair debat (wetgeving)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Voorstel van wet van het lid Ouwehand tot wijziging van de Wet dieren en de Wet op de economische delicten in verband met het uitfaseren van de bio-industrie en het waarborgen van een dierwaardige veehouderij",
+    "stukken": [
+     {
+      "kamerstuk": "36562-14",
+      "soort": "Brief lid / fractie",
+      "datum": "2026-11-26",
+      "onderwerp": "Brief van de initiatiefnemer over de HUF-toets die door de Nederlandse Voedsel- en Warenautoriteit (NVWA) is uitgevoerd ten behoeve van het initiatiefwetsvoorstel van het lid Ouwehand tot wijziging van de Wet dieren en de Wet op de economische delicten in verband met het uitfaseren van de bio-industrie en het waarborgen van een dierwaardige veehouderij",
+      "ondertekenaar": "E. Ouwehand",
+      "functie": "Tweede Kamerlid",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z09210&did=2026D61088"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Ouwehand",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.P.A. Erkens",
+    "functie": "staatssecretaris van Landbouw, Visserij, Voedselzekerheid en Natuur"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "C.A.M. van der Plas",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. Kostić",
+    "fractie": "PvdD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Podt",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "L. Bromet",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.A. Ergin",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07452",
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ]
+ },
+ {
   "Id": "139847d2-0059-4da9-a52f-1559bd9706bb",
   "Nummer": "2026A05148",
   "Soort": "Commissiedebat",
@@ -2266,6 +2489,123 @@
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A06511",
   "sectoren": [
    "natuur-stikstof-landbouw"
+  ]
+ },
+ {
+  "Id": "afd82bcd-60ad-4c62-8c23-d639b7518ed5",
+  "Nummer": "2026A05404",
+  "Soort": "Plenair debat (wetgeving)",
+  "Onderwerp": "Begroting Volkshuisvesting en Ruimtelijke Ordening (37020-XXII) 1TK",
+  "Datum": "2026-12-01T16:45:00+01:00",
+  "Aanvangstijd": "2026-12-01T16:45:00+01:00",
+  "Eindtijd": "2026-12-01T22:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "TK",
+  "Voortouwafkorting": "TK",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Plenair debat (wetgeving)",
+  "agendapunten": [
+   {
+    "volgorde": 1,
+    "onderwerp": "Vaststelling van de begrotingsstaten van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2027",
+    "stukken": [
+     {
+      "kamerstuk": null,
+      "soort": "Lijst van vragen",
+      "datum": "2026-10-15",
+      "onderwerp": "Verslag houdende een lijst van vragen inzake vaststelling van de begrotingsstaten van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2027 (Kamerstuk 37020-XXII)",
+      "ondertekenaar": "L. Bromet",
+      "functie": "voorzitter van de vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17055&did=2026D51686"
+     }
+    ]
+   }
+  ],
+  "bewindspersonen": [
+   {
+    "naam": "E. Boekholt-O’Sullivan",
+    "functie": "minister van Volkshuisvesting en Ruimtelijke Ordening"
+   }
+  ],
+  "voorzitter": null,
+  "deelnemers": [
+   {
+    "naam": "H.E. de Hoop",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A. Zalinyan",
+    "fractie": "PRO",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.J. van Asten",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "R.M. van Leijen",
+    "fractie": "D66",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J. Mooiman",
+    "fractie": "PVV",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "J.N.J. Nobel",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.C. (Peter) de Groot",
+    "fractie": "VVD",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "D.R.F. Clemminck",
+    "fractie": "JA21",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "H.S. Steen",
+    "fractie": "CDA",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "I. el Abassi",
+    "fractie": "DENK",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "A.J. Flach",
+    "fractie": "SGP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "P.A. Grinwis",
+    "fractie": "ChristenUnie",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "S.M. Beckerman",
+    "fractie": "SP",
+    "functie": "Tweede Kamerlid"
+   },
+   {
+    "naam": "F.M. Wiersma",
+    "fractie": "BBB",
+    "functie": "Tweede Kamerlid"
+   }
+  ],
+  "zaal": "Plenaire zaal",
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05404",
+  "sectoren": [
+   "ruimte-mobiliteit"
   ]
  },
  {
@@ -2386,37 +2726,6 @@
   ]
  },
  {
-  "Id": "b552051c-80af-4f74-9d95-75c9315eb991",
-  "Nummer": "2026A08525",
-  "Soort": "Inbreng feitelijke vragen",
-  "Onderwerp": "Wijziging van begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-  "Datum": "2026-12-01T14:00:00+01:00",
-  "Aanvangstijd": "2026-12-01T14:00:00+01:00",
-  "Eindtijd": "2026-12-01T14:00:00+01:00",
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "vaste commissie voor Klimaat en Groene Groei",
-  "Voortouwafkorting": "K&GG",
-  "Besloten": true,
-  "Noot": null,
-  "SoortWeergave": "Inbreng feitelijke vragen",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Klimaat en Groene Groei (XXIII) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
-    "stukken": []
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [],
-  "zaal": null,
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08525",
-  "sectoren": [
-   "klimaat-energie"
-  ]
- },
- {
   "Id": "01e45305-4913-4974-9adc-21688ffe164f",
   "Nummer": "2026A08292",
   "Soort": "Inbreng feitelijke vragen",
@@ -2530,190 +2839,6 @@
   "deelnemers": [],
   "zaal": null,
   "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A08817",
-  "sectoren": [
-   "ruimte-mobiliteit"
-  ]
- },
- {
-  "Id": "93249401-37e3-4489-a614-c032f1a06a7e",
-  "Nummer": "2026A07452",
-  "Soort": "Plenair debat (wetgeving)",
-  "Onderwerp": "Voorstel van wet van het lid Ouwehand tot wijziging van de Wet dieren en de Wet op de economische delicten in verband met het uitfaseren van de bio-industrie en het waarborgen van een dierwaardige veehouderij (36562)",
-  "Datum": "2026-11-30T00:00:00+01:00",
-  "Aanvangstijd": null,
-  "Eindtijd": null,
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "TK",
-  "Voortouwafkorting": "TK",
-  "Besloten": false,
-  "Noot": null,
-  "SoortWeergave": "Plenair debat (wetgeving)",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "Voorstel van wet van het lid Ouwehand tot wijziging van de Wet dieren en de Wet op de economische delicten in verband met het uitfaseren van de bio-industrie en het waarborgen van een dierwaardige veehouderij",
-    "stukken": [
-     {
-      "kamerstuk": "36562-14",
-      "soort": "Brief lid / fractie",
-      "datum": "2026-11-26",
-      "onderwerp": "Brief van de initiatiefnemer over de HUF-toets die door de Nederlandse Voedsel- en Warenautoriteit (NVWA) is uitgevoerd ten behoeve van het initiatiefwetsvoorstel van het lid Ouwehand tot wijziging van de Wet dieren en de Wet op de economische delicten in verband met het uitfaseren van de bio-industrie en het waarborgen van een dierwaardige veehouderij",
-      "ondertekenaar": "E. Ouwehand",
-      "functie": "Tweede Kamerlid",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2024Z09210&did=2026D61088"
-     }
-    ]
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [
-   {
-    "naam": "C.A.M. van der Plas",
-    "fractie": "BBB",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "I. Kostić",
-    "fractie": "PvdD",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "S.M. Beckerman",
-    "fractie": "SP",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "A. Podt",
-    "fractie": "D66",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "L. Bromet",
-    "fractie": "PRO",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "D.A. Ergin",
-    "fractie": "DENK",
-    "functie": "Tweede Kamerlid"
-   }
-  ],
-  "zaal": "Plenaire zaal",
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07452",
-  "sectoren": [
-   "natuur-stikstof-landbouw"
-  ]
- },
- {
-  "Id": "b004e89c-4632-4676-86ce-a5aa25601b19",
-  "Nummer": "2026A05404",
-  "Soort": "Plenair debat (wetgeving)",
-  "Onderwerp": "Begroting Volkshuisvesting en Ruimtelijke Ordening",
-  "Datum": "2026-11-30T00:00:00+01:00",
-  "Aanvangstijd": null,
-  "Eindtijd": null,
-  "Locatie": null,
-  "Status": "Gepland",
-  "Voortouwnaam": "TK",
-  "Voortouwafkorting": "TK",
-  "Besloten": false,
-  "Noot": null,
-  "SoortWeergave": "Plenair debat (wetgeving)",
-  "agendapunten": [
-   {
-    "volgorde": 1,
-    "onderwerp": "Vaststelling van de begrotingsstaten van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2027",
-    "stukken": [
-     {
-      "kamerstuk": null,
-      "soort": "Lijst van vragen",
-      "datum": "2026-10-15",
-      "onderwerp": "Verslag houdende een lijst van vragen inzake vaststelling van de begrotingsstaten van Volkshuisvesting en Ruimtelijke Ordening (XXII) voor het jaar 2027 (Kamerstuk 37020-XXII)",
-      "ondertekenaar": "L. Bromet",
-      "functie": "voorzitter van de vaste commissie voor Volkshuisvesting en Ruimtelijke Ordening",
-      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z17055&did=2026D51686"
-     }
-    ]
-   }
-  ],
-  "bewindspersonen": [],
-  "voorzitter": null,
-  "deelnemers": [
-   {
-    "naam": "H.E. de Hoop",
-    "fractie": "PRO",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "A. Zalinyan",
-    "fractie": "PRO",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "R.J. van Asten",
-    "fractie": "D66",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "R.M. van Leijen",
-    "fractie": "D66",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "J. Mooiman",
-    "fractie": "PVV",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "J.N.J. Nobel",
-    "fractie": "VVD",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "P.C. (Peter) de Groot",
-    "fractie": "VVD",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "D.R.F. Clemminck",
-    "fractie": "JA21",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "H.S. Steen",
-    "fractie": "CDA",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "I. el Abassi",
-    "fractie": "DENK",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "A.J. Flach",
-    "fractie": "SGP",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "P.A. Grinwis",
-    "fractie": "ChristenUnie",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "S.M. Beckerman",
-    "fractie": "SP",
-    "functie": "Tweede Kamerlid"
-   },
-   {
-    "naam": "F.M. Wiersma",
-    "fractie": "BBB",
-    "functie": "Tweede Kamerlid"
-   }
-  ],
-  "zaal": "Plenaire zaal",
-  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05404",
   "sectoren": [
    "ruimte-mobiliteit"
   ]
