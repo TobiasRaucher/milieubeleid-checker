@@ -2104,7 +2104,79 @@
   "Besloten": false,
   "Noot": null,
   "SoortWeergave": "Procedurevergadering",
-  "agendapunten": [],
+  "agendapunten": [
+   {
+    "volgorde": 5,
+    "onderwerp": "Nahang Besluit afgifteplicht afgedankte elektrische en elektronische apparatuur (AEEA)",
+    "zaken": [
+     "2026Z25920"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 6,
+    "onderwerp": "Wijziging van de Wet milieubeheer ten behoeve van de implementatie van de Verordening (EU) 2024/3012 van het Europees Parlement en de Raad van 27 november 2024 tot vaststelling van een certificeringskader van de Unie voor permanente koolstofverwijderingen, koolstoflandbeheer en koolstofopslag in producten (Uitvoeringswet verordening certificeringskader voor permanente koolstofverwijderingen, koolstoflandbeheer en koolstofopslag in producten)",
+    "zaken": [
+     "2026Z26097",
+     "2026Z14222"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 7,
+    "onderwerp": "Amortisatie waterstoftransportnetwerk",
+    "zaken": [
+     "2026Z26150"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 8,
+    "onderwerp": "Reactie op verzoek commissie inzake Commentaar Greenpeace Nederland t.b.v. technische briefing Rechtelijke uitspraak in de  Bonaire-klimaatzaak d.d. 13 mei 2026",
+    "zaken": [
+     "2026Z16482"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 9,
+    "onderwerp": "Energietransitie Bonaire",
+    "zaken": [
+     "2026Z15313"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 10,
+    "onderwerp": "Hoger beroep Klimaatzaak Greenpeace Bonaire",
+    "zaken": [
+     "2026Z07681"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 14,
+    "onderwerp": "Reactie op de brief van het presidium over een adviesaanvraag aan de Wetenschappelijke Klimaatraad over de opschaling van groene ketens",
+    "zaken": [
+     "2026Z25831"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   }
+  ],
   "bewindspersonen": [],
   "voorzitter": null,
   "deelnemers": [],
@@ -2542,6 +2614,202 @@
   "sectoren": [
    "natuur-stikstof-landbouw"
   ]
+ },
+ {
+  "Id": "ffabac05-24ab-4fc2-ba5d-3a566456eec0",
+  "Nummer": "2026A04231",
+  "Soort": "Procedurevergadering",
+  "Onderwerp": "Procedurevergadering Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "Datum": "2026-12-02T11:15:00+01:00",
+  "Aanvangstijd": "2026-12-02T11:15:00+01:00",
+  "Eindtijd": "2026-12-02T12:15:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Landbouw, Visserij, Voedselzekerheid en Natuur",
+  "Voortouwafkorting": "LVVN",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Procedurevergadering",
+  "agendapunten": [
+   {
+    "volgorde": 8,
+    "onderwerp": "Voortgang Gemeenschappelijk Landbouwbeleid 2026",
+    "zaken": [
+     "2026Z26161"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 11,
+    "onderwerp": "Uitwerking agrarisch natuurbeheer",
+    "zaken": [
+     "2026Z25611"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 12,
+    "onderwerp": "Verzamelbrief Natuur november 2026",
+    "zaken": [
+     "2026Z26085"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 14,
+    "onderwerp": "Publicatie derde kwartaalrapportage 2026 CBS-monitor fosfaat- en stikstofexcretie",
+    "zaken": [
+     "2026Z25464"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 18,
+    "onderwerp": "Voor- en nadelen systemen ammoniaknormen en antwoord op vragen van het lid Bromet over ammoniaknormen",
+    "zaken": [
+     "2026Z26033"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 19,
+    "onderwerp": "Voortgang diverse onderwerpen mestbeleid",
+    "zaken": [
+     "2026Z26034"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 25,
+    "onderwerp": "Reactie op verzoek commissie over visserij op blauwvintonijn op de Noordzee",
+    "zaken": [
+     "2026Z26153"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 31,
+    "onderwerp": "Beantwoording resterende vragen gesteld tijdens het wetgevingsoverleg Fonds voor stikstof, landbouw en natuur van 16 november 2026",
+    "zaken": [
+     "2026Z25722"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 34,
+    "onderwerp": "Verzamelbrief moties, toezeggingen en verzoeken commissie LVVN met betrekking tot aanpak landbouw, natuur en stikstof ",
+    "zaken": [
+     "2026Z25255"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A04231",
+  "sectoren": [
+   "natuur-stikstof-landbouw"
+  ],
+  "besluitenlijst": null
+ },
+ {
+  "Id": "4c33f09b-c672-4ffe-9d12-b020d9531896",
+  "Nummer": "2026A01350",
+  "Soort": "Procedurevergadering",
+  "Onderwerp": "Procedurevergadering Infrastructuur en Waterstaat",
+  "Datum": "2026-12-02T10:15:00+01:00",
+  "Aanvangstijd": "2026-12-02T10:15:00+01:00",
+  "Eindtijd": "2026-12-02T11:00:00+01:00",
+  "Locatie": null,
+  "Status": "Gepland",
+  "Voortouwnaam": "vaste commissie voor Infrastructuur en Waterstaat",
+  "Voortouwafkorting": "I&W",
+  "Besloten": false,
+  "Noot": null,
+  "SoortWeergave": "Procedurevergadering",
+  "agendapunten": [
+   {
+    "volgorde": 18,
+    "onderwerp": "Appreciatie moties ingediend tijdens het commissiedebat Milieuraad op 7 oktober 2026 over luchtvaart",
+    "zaken": [
+     "2026Z25188"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 21,
+    "onderwerp": "Verzamelbrief Water",
+    "zaken": [
+     "2026Z25725"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 22,
+    "onderwerp": "Onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
+    "zaken": [
+     "2026Z25719"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 23,
+    "onderwerp": "Schriftelijke beantwoording van vragen gesteld tijdens de eerste termijn van het wetgevingsoverleg, gehouden op 23 november 2026 over water",
+    "zaken": [
+     "2026Z26071"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 24,
+    "onderwerp": "Geannoteerde Agenda Milieuraad 11 december 2026",
+    "zaken": [
+     "2026Z26018"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   }
+  ],
+  "bewindspersonen": [],
+  "voorzitter": null,
+  "deelnemers": [],
+  "zaal": null,
+  "tkLink": "https://www.tweedekamer.nl/debat_en_vergadering/commissievergaderingen/details?id=2026A01350",
+  "sectoren": [
+   "water-adaptatie",
+   "circulair-vervuiling",
+   "ruimte-mobiliteit"
+  ],
+  "besluitenlijst": null
  },
  {
   "Id": "afd82bcd-60ad-4c62-8c23-d639b7518ed5",
@@ -10359,6 +10627,16 @@
      "Agenderen voor het commissiedebat Natuur op 9 december 2026."
     ],
     "voorstel": false,
+    "stukken": []
+   },
+   {
+    "volgorde": 17,
+    "onderwerp": "Reactie op PBL-hoofdlijnenreflectie Ontwerp-Natuurplan",
+    "zaken": [
+     "2026Z21819"
+    ],
+    "besluiten": [],
+    "voorstel": true,
     "stukken": []
    },
    {
@@ -22647,6 +22925,16 @@
      "Agenderen voor het commissiedebat Energieraad op 14 oktober 2026."
     ],
     "voorstel": false,
+    "stukken": []
+   },
+   {
+    "volgorde": 23,
+    "onderwerp": "Voorstel EU-rapporteur Klimaat voor nadere invulling technische briefing uitkomst EU-wetenschapstoets ETS-herziening ",
+    "zaken": [
+     "2026Z19006"
+    ],
+    "besluiten": [],
+    "voorstel": true,
     "stukken": []
    },
    {
@@ -40185,6 +40473,26 @@
     "stukken": []
    },
    {
+    "volgorde": 19,
+    "onderwerp": "Voorstel EU-rapporteur Klimaat voor position paper over Europees 2040-maatregelenpakket",
+    "zaken": [
+     "2026Z10998"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 22,
+    "onderwerp": "Voorstel van de verantwoordingsrapporteur voor analyse van het Jaarverslag KGG 2025",
+    "zaken": [
+     "2026Z11255"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
     "volgorde": 27,
     "onderwerp": "Slotwet Ministerie van Klimaat en Groene Groei 2025",
     "zaken": [
@@ -47060,6 +47368,16 @@
      "Voor kennisgeving aangenomen."
     ],
     "voorstel": false,
+    "stukken": []
+   },
+   {
+    "volgorde": 13,
+    "onderwerp": "Oproep deelname werkgroep wetgevingskwaliteit",
+    "zaken": [
+     "2026Z07180"
+    ],
+    "besluiten": [],
+    "voorstel": true,
     "stukken": []
    },
    {
