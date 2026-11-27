@@ -2143,7 +2143,7 @@
   "SoortWeergave": "Procedurevergadering",
   "agendapunten": [
    {
-    "volgorde": 5,
+    "volgorde": 6,
     "onderwerp": "Nahang Besluit afgifteplicht afgedankte elektrische en elektronische apparatuur (AEEA)",
     "zaken": [
      "2026Z25920"
@@ -2153,7 +2153,7 @@
     "stukken": []
    },
    {
-    "volgorde": 6,
+    "volgorde": 7,
     "onderwerp": "Wijziging van de Wet milieubeheer ten behoeve van de implementatie van de Verordening (EU) 2024/3012 van het Europees Parlement en de Raad van 27 november 2024 tot vaststelling van een certificeringskader van de Unie voor permanente koolstofverwijderingen, koolstoflandbeheer en koolstofopslag in producten (Uitvoeringswet verordening certificeringskader voor permanente koolstofverwijderingen, koolstoflandbeheer en koolstofopslag in producten)",
     "zaken": [
      "2026Z26097",
@@ -2164,7 +2164,7 @@
     "stukken": []
    },
    {
-    "volgorde": 7,
+    "volgorde": 8,
     "onderwerp": "Amortisatie waterstoftransportnetwerk",
     "zaken": [
      "2026Z26150"
@@ -2174,7 +2174,7 @@
     "stukken": []
    },
    {
-    "volgorde": 8,
+    "volgorde": 9,
     "onderwerp": "Reactie op verzoek commissie inzake Commentaar Greenpeace Nederland t.b.v. technische briefing Rechtelijke uitspraak in de  Bonaire-klimaatzaak d.d. 13 mei 2026",
     "zaken": [
      "2026Z16482"
@@ -2184,7 +2184,7 @@
     "stukken": []
    },
    {
-    "volgorde": 9,
+    "volgorde": 10,
     "onderwerp": "Energietransitie Bonaire",
     "zaken": [
      "2026Z15313"
@@ -2194,30 +2194,20 @@
     "stukken": []
    },
    {
-    "volgorde": 10,
-    "onderwerp": "Hoger beroep Klimaatzaak Greenpeace Bonaire",
-    "zaken": [
-     "2026Z07681"
-    ],
-    "besluiten": [],
-    "voorstel": true,
-    "stukken": []
-   },
-   {
-    "volgorde": 14,
-    "onderwerp": "Reactie op de brief van het presidium over een adviesaanvraag aan de Wetenschappelijke Klimaatraad over de opschaling van groene ketens",
-    "zaken": [
-     "2026Z25831"
-    ],
-    "besluiten": [],
-    "voorstel": true,
-    "stukken": []
-   },
-   {
-    "volgorde": 20,
+    "volgorde": 12,
     "onderwerp": "Uitvoering ETS2 opt-in glastuinbouw",
     "zaken": [
      "2026Z26693"
+    ],
+    "besluiten": [],
+    "voorstel": true,
+    "stukken": []
+   },
+   {
+    "volgorde": 16,
+    "onderwerp": "Reactie op de brief van het presidium over een adviesaanvraag aan de Wetenschappelijke Klimaatraad over de opschaling van groene ketens",
+    "zaken": [
+     "2026Z25831"
     ],
     "besluiten": [],
     "voorstel": true,
@@ -2806,7 +2796,7 @@
   "SoortWeergave": "Procedurevergadering",
   "agendapunten": [
    {
-    "volgorde": 18,
+    "volgorde": 19,
     "onderwerp": "Appreciatie moties ingediend tijdens het commissiedebat Milieuraad op 7 oktober 2026 over luchtvaart",
     "zaken": [
      "2026Z25188"
@@ -2816,7 +2806,7 @@
     "stukken": []
    },
    {
-    "volgorde": 21,
+    "volgorde": 22,
     "onderwerp": "Verzamelbrief Water",
     "zaken": [
      "2026Z25725"
@@ -2826,7 +2816,7 @@
     "stukken": []
    },
    {
-    "volgorde": 22,
+    "volgorde": 23,
     "onderwerp": "Onderzoek gedeeltelijk PFAS-lozingsverbod en vervolg",
     "zaken": [
      "2026Z25719"
@@ -2836,7 +2826,7 @@
     "stukken": []
    },
    {
-    "volgorde": 23,
+    "volgorde": 24,
     "onderwerp": "Schriftelijke beantwoording van vragen gesteld tijdens de eerste termijn van het wetgevingsoverleg, gehouden op 23 november 2026 over water",
     "zaken": [
      "2026Z26071"
@@ -2846,7 +2836,7 @@
     "stukken": []
    },
    {
-    "volgorde": 24,
+    "volgorde": 25,
     "onderwerp": "Geannoteerde Agenda Milieuraad 11 december 2026",
     "zaken": [
      "2026Z26018"
@@ -3147,7 +3137,7 @@
   "Id": "01e45305-4913-4974-9adc-21688ffe164f",
   "Nummer": "2026A08292",
   "Soort": "Inbreng feitelijke vragen",
-  "Onderwerp": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
+  "Onderwerp": "Wijziging van de begrotingsstaat van het Deltafonds (J) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
   "Datum": "2026-12-01T14:00:00+01:00",
   "Aanvangstijd": "2026-12-01T14:00:00+01:00",
   "Eindtijd": "2026-12-01T14:00:00+01:00",
@@ -3161,8 +3151,18 @@
   "agendapunten": [
    {
     "volgorde": 1,
-    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-    "stukken": []
+    "onderwerp": "Wijziging van de begrotingsstaat van het Deltafonds voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
+    "stukken": [
+     {
+      "kamerstuk": "37060-J-2",
+      "soort": "Memorie van toelichting",
+      "datum": "2026-11-27",
+      "onderwerp": "Memorie van toelichting",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24417&did=2026D57154"
+     }
+    ]
    }
   ],
   "bewindspersonen": [],
@@ -3192,8 +3192,18 @@
   "agendapunten": [
    {
     "volgorde": 1,
-    "onderwerp": "(Nog te ontvangen) Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met Najaarsnota)",
-    "stukken": []
+    "onderwerp": "Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Najaarsnota)",
+    "stukken": [
+     {
+      "kamerstuk": "37060-XII-2",
+      "soort": "Memorie van toelichting",
+      "datum": "2026-11-27",
+      "onderwerp": "Memorie van toelichting",
+      "ondertekenaar": "V.P.G. Karremans",
+      "functie": "minister van Infrastructuur en Waterstaat",
+      "link": "https://www.tweedekamer.nl/kamerstukken/detail?id=2026Z24398&did=2026D57124"
+     }
+    ]
    }
   ],
   "bewindspersonen": [],
