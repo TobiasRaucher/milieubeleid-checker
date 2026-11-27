@@ -32,6 +32,8 @@ Alle keuzes staan in de URL: `#zoeken?q=…&cat=moties&periode=maand&wie=f:pvv`.
 - Periode: Alle jaren, Deze Kamerperiode (`config.startdatum`), Afgelopen maand; geldt alleen voor wat is geweest.
 - Namen: fracties en Kamerleden of bewindspersonen in de zoekvraag geven een knop "Alleen …" (indiener, vragensteller of
   spreker; GroenLinks-PvdA telt als PRO). Alleen een naam met die knop toont alles van die persoon of fractie.
+  Zonder die knop telt een naam van meer woorden naast andere zoekwoorden niet als zoekwoord, maar gaan stukken van die
+  persoon of fractie voor (sinds 27 nov 2026: "dieren" uit Partij voor de Dieren vond dierenwelzijn).
 - Moties en amendementen met dezelfde titel (gewijzigd, ter vervanging, opnieuw ingediend) zijn één rij met "Ook: …" (`voegSamen()`).
 - Geen resultaten: welk filter het veroorzaakt, "Bedoelde je …?" (dichtstbijzijnde bekende woorden), welke losse woorden wel
   iets opleveren, en de thema's. "Bedoelde je" staat ook in de telregel bij alleen gedeeltelijke of tikfouttreffers.

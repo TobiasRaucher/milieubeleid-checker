@@ -394,7 +394,10 @@
       // namen: als keuze aangeboden; gekozen (opts.wie) worden ze een filter en geen zoekwoord meer
       const wieOpties = vindWie(tk);
       const wie = opts.wie ? wieOpties.find((w) => w.k === opts.wie) || null : null;
-      if (wie) tk = tk.filter((t, i) => i < wie.start || i >= wie.start + wie.len);
+      // niet gekozen: een naam van meer woorden met nog andere zoekwoorden telt niet als zoekwoord ("dieren" uit Partij voor de Dieren
+      // vond dierenwelzijn), maar stukken van die persoon of fractie gaan voor (Tobias, 27 nov 2026)
+      const naam = !wie && wieOpties.find((w) => w.len > 1 && w.len < tk.length);
+      if (wie || naam) { const w = wie || naam; tk = tk.filter((t, i) => i < w.start || i >= w.start + w.len); }
       const delen = [];
       for (let i = 0; i < tk.length;) {
         const gr = vindGroep(tk, i);
@@ -430,6 +433,7 @@
       let resultaten = res.map((r) => ({ doc: perId.get(r.id), score: r.score, termen: new Set(r.terms), inTitel: r.velden.has("titel"), zwak: r.zwak }));
       const tikfout = resultaten.length > 0 && resultaten.every((r) => r.zwak);
       if (!tikfout) resultaten = resultaten.filter((r) => !r.zwak);
+      if (naam) resultaten.sort((a, b) => b.doc.wie.includes(naam.k) - a.doc.wie.includes(naam.k));
       return { modus, frasen, typeFilter, wieOpties, wie, resultaten, tikfout };
     }
 
